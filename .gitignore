@@ -1,6 +1,12 @@
 # secrets
 .envrc
+.envrc.*
 *.env
+# editor swap/backup files (can hold secrets from open files)
+*.swp
+*.swo
+*~
+.*.sw?
 # OS / tooling
 .DS_Store
 **/.DS_Store
