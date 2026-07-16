@@ -1,0 +1,214 @@
+type: ActionsTagsBackup
+author: scott
+platformVersion: "7.0.15"
+pluginVersion: "2.4.0"
+timestamp: "2026-07-15T00:00:00.000Z"
+actions:
+  slr-oversight-scaling-inversion:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:oversight-scaling-inversion"
+    shortcut: ""
+    menu: "[SLR] theme:oversight-scaling-inversion"
+    enabled: true
+    name: "[SLR] theme:oversight-scaling-inversion"
+  slr-ai-code-insecurity:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:ai-code-insecurity"
+    shortcut: ""
+    menu: "[SLR] theme:ai-code-insecurity"
+    enabled: true
+    name: "[SLR] theme:ai-code-insecurity"
+  slr-quality-debt:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:quality-debt"
+    shortcut: ""
+    menu: "[SLR] theme:quality-debt"
+    enabled: true
+    name: "[SLR] theme:quality-debt"
+  slr-automation-bias:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:automation-bias"
+    shortcut: ""
+    menu: "[SLR] theme:automation-bias"
+    enabled: true
+    name: "[SLR] theme:automation-bias"
+  slr-oversight-theater:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:oversight-theater"
+    shortcut: ""
+    menu: "[SLR] theme:oversight-theater"
+    enabled: true
+    name: "[SLR] theme:oversight-theater"
+  slr-ai-review:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:ai-review"
+    shortcut: ""
+    menu: "[SLR] theme:ai-review"
+    enabled: true
+    name: "[SLR] theme:ai-review"
+  slr-rules-based-checks:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:rules-based-checks"
+    shortcut: ""
+    menu: "[SLR] theme:rules-based-checks"
+    enabled: true
+    name: "[SLR] theme:rules-based-checks"
+  slr-formal-methods:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:formal-methods"
+    shortcut: ""
+    menu: "[SLR] theme:formal-methods"
+    enabled: true
+    name: "[SLR] theme:formal-methods"
+  slr-risk-routing:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:risk-routing"
+    shortcut: ""
+    menu: "[SLR] theme:risk-routing"
+    enabled: true
+    name: "[SLR] theme:risk-routing"
+  slr-remediation-gating:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:remediation-gating"
+    shortcut: ""
+    menu: "[SLR] theme:remediation-gating"
+    enabled: true
+    name: "[SLR] theme:remediation-gating"
+  slr-hitl-workflow:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:hitl-workflow"
+    shortcut: ""
+    menu: "[SLR] theme:hitl-workflow"
+    enabled: true
+    name: "[SLR] theme:hitl-workflow"
+  slr-oversight-explanation:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:oversight-explanation"
+    shortcut: ""
+    menu: "[SLR] theme:oversight-explanation"
+    enabled: true
+    name: "[SLR] theme:oversight-explanation"
+  slr-agent-scope-drift:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:agent-scope-drift"
+    shortcut: ""
+    menu: "[SLR] theme:agent-scope-drift"
+    enabled: true
+    name: "[SLR] theme:agent-scope-drift"
+  slr-org-governance:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:org-governance"
+    shortcut: ""
+    menu: "[SLR] theme:org-governance"
+    enabled: true
+    name: "[SLR] theme:org-governance"
+  slr-regulatory-compliance:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:regulatory-compliance"
+    shortcut: ""
+    menu: "[SLR] theme:regulatory-compliance"
+    enabled: true
+    name: "[SLR] theme:regulatory-compliance"
+  slr-tooling-supply-chain:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:tooling-supply-chain"
+    shortcut: ""
+    menu: "[SLR] theme:tooling-supply-chain"
+    enabled: true
+    name: "[SLR] theme:tooling-supply-chain"
+  slr-provenance-auditability:
+    event: 0
+    operation: 3
+    data: "cal:human:theme:provenance-auditability"
+    shortcut: ""
+    menu: "[SLR] theme:provenance-auditability"
+    enabled: true
+    name: "[SLR] theme:provenance-auditability"
+  slr-facet-survey-input:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:survey-input"
+    shortcut: ""
+    menu: "[SLR] facet:survey-input"
+    enabled: true
+    name: "[SLR] facet:survey-input"
+  slr-facet-intro-framing:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:intro-framing"
+    shortcut: ""
+    menu: "[SLR] facet:intro-framing"
+    enabled: true
+    name: "[SLR] facet:intro-framing"
+  slr-facet-lit-review:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:lit-review"
+    shortcut: ""
+    menu: "[SLR] facet:lit-review"
+    enabled: true
+    name: "[SLR] facet:lit-review"
+  slr-facet-problem-statement-anchor:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:problem-statement-anchor"
+    shortcut: ""
+    menu: "[SLR] facet:problem-statement-anchor"
+    enabled: true
+    name: "[SLR] facet:problem-statement-anchor"
+  slr-facet-framework:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:framework"
+    shortcut: ""
+    menu: "[SLR] facet:framework"
+    enabled: true
+    name: "[SLR] facet:framework"
+  slr-facet-built-system:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:built-system"
+    shortcut: ""
+    menu: "[SLR] facet:built-system"
+    enabled: true
+    name: "[SLR] facet:built-system"
+  slr-facet-adopted:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:adopted"
+    shortcut: ""
+    menu: "[SLR] facet:adopted"
+    enabled: true
+    name: "[SLR] facet:adopted"
+  slr-facet-general-ai:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:general-ai"
+    shortcut: ""
+    menu: "[SLR] facet:general-ai"
+    enabled: true
+    name: "[SLR] facet:general-ai"
+  slr-demote-context:
+    event: 0
+    operation: 3
+    data: "demote:context"
+    shortcut: ""
+    menu: "[SLR] demote:context"
+    enabled: true
+    name: "[SLR] demote:context"

@@ -1,0 +1,75 @@
+{
+  "item_key": "RPHK78A9",
+  "citation": "Kim 2025",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model",
+    "case-study"
+  ],
+  "problem_statement": "How developers can responsibly oversee and stay accountable for AI-generated ('vibe coded') code as agentic tools produce thousands of lines per day, so that speed does not sacrifice quality, security, or maintainability.",
+  "magnitude_evidence": "Garry Tan (Y Combinator CEO): 'For 25% of the Winter 2025 batch, 95% of lines of code are LLM generated'; also Zuckerberg expects AI to write 50% of Meta's code by 2026 and Gene wrote 4,176 lines of Clojure in four days",
+  "risk_types": [
+    "security",
+    "quality",
+    "maintainability",
+    "specification-gaming",
+    "hallucination",
+    "code-deletion",
+    "ignoring-instructions",
+    "unreadable-untestable-code",
+    "misalignment",
+    "autonomous-agent-runaway"
+  ],
+  "insufficiency_evidence": "Karpathy: 'I \"Accept All\" always, I don't read the diffs anymore... asking for random changes until [bugs] go away'; Humphreys: 'No, you won't be vibe coding your way to production'; Jessie Young: 'No vibe coding while I'm on call!' re: debugging in production at 2 a.m.",
+  "solution_mechanisms": [
+    "head-chef accountability model",
+    "disciplined engineering ('vibe coding for grown-ups')",
+    "human tasting/QC before code ships",
+    "ruthless validation loops",
+    "comprehensive test coverage",
+    "security reviews and blast-radius management",
+    "fast/frequent feedback loops",
+    "modularity",
+    "explicit coding standards / house rules",
+    "regenerate code instead of patching",
+    "prevent-detect-correct developer loops",
+    "use AI to document and build tests over legacy code before changing"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "human-accountability",
+    "code-review",
+    "test-coverage",
+    "security-gate",
+    "feedback-loop",
+    "modularity",
+    "standards",
+    "validation",
+    "regeneration",
+    "guardrail",
+    "blast-radius",
+    "spec-driven"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "pre-commit",
+    "pre-publish",
+    "CI",
+    "post-deployment"
+  ],
+  "human_role": "in-command",
+  "key_constructs": [
+    "vibe coding",
+    "FAAFO (fast, ambitious, autonomous, fun, optionality)",
+    "head chef / kitchen brigade metaphor",
+    "vibe coding for grown-ups",
+    "independence of action",
+    "inner/middle/outer developer loops",
+    "prevent-detect-correct loops"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Long book excerpt, partly truncated ('...TRUNCATED FOR LENGTH...'); trade-book/practitioner conceptual work rather than empirical study, though it cites case studies (Adidas, Booking.com) and third-party stats.",
+  "_truncated": true
+}

@@ -1,0 +1,13 @@
+{
+  "item_key": "I6FZ5GD2",
+  "methods": [
+    "design-science / prototype / tool-build",
+    "case-study",
+    "qualitative-analysis"
+  ],
+  "empirical": true,
+  "human_subjects": true,
+  "primary_hint": "design-science / prototype / tool-build",
+  "notes": "Builds a visual analytics system for inspecting LLM coding-agent (AIDE) behavior and evaluates it through case studies on 24 Kaggle competitions with five ML-scientist domain experts using a guided-exploration + think-aloud protocol; expert feedback constitutes the human-subjects component. Not a controlled experiment or benchmark; the code data mined is agent-generated output, not real OSS repos.",
+  "citation": "Wang 2025"
+}

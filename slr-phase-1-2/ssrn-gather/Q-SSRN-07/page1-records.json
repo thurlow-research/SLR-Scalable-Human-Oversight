@@ -1,0 +1,706 @@
+{
+  "count": 50,
+  "total": "868",
+  "page": "1",
+  "records": [
+    {
+      "abstractId": "6646938",
+      "title": "The AI Act and Prediction Markets: Why Horizontal AI Regulation Cannot Comprehensively Govern Platform-Level Risk",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6646938",
+      "authors": [
+        "Przemyslaw Ostojski"
+      ],
+      "affiliations": [],
+      "pages": 24,
+      "posted": "25 Apr 2026",
+      "snippet": "To map this mismatch, the article develops a four-step AI Act Applicability Matrix and runs it across the four harm pathways. / The framework extends beyond prediction markets: the interaction between horizontal AI regulation and sector-specific product governance is one of the / prediction markets, AI Act, regulatory incompleteness, horizontal AI governance, product classification",
+      "downloads": 0
+    },
+    {
+      "abstractId": "6433418",
+      "title": "AI: Defend the Defender: Part IV — Fault-Tolerant Defense Architecture (Revise Edition)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6433418",
+      "authors": [
+        "Vi Nhat Son"
+      ],
+      "affiliations": [],
+      "pages": 61,
+      "posted": "25 Apr 2026",
+      "snippet": "However, these systems introduce novel attack surfaces-including data poisoning, adversarial perturbation, governance manipulation, and vendor absorptionthat / The AoR addresses a critical gap in existing frameworks-MITRE ATLAS, NIST AI RMF, and vendor-specific XDR architectures-none of which provide a unified",
+      "downloads": 2
+    },
+    {
+      "abstractId": "6430238",
+      "title": "The Luevano Standard: Engineering Algorithmic Consistency as a Prerequisite for Institutional Runtime Authority",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6430238",
+      "authors": [
+        "Alberto Rocha"
+      ],
+      "affiliations": [],
+      "pages": 359,
+      "posted": "24 Apr 2026",
+      "snippet": "Oversight is provided by the Independent Luevano Registry (ILR), a proposed tripartite meta-governance body representing state, industry, and civil society / ), ISO/IEC 42001:2023, and the EU AI Act (Regulation (EU) 2024/1689). / algorithmic governance, sovereignty gap, runtime verification, EU AI Act, civil rights, Artificial Compliance Intelligence, ACI, Luevano Standard",
+      "downloads": 3
+    },
+    {
+      "abstractId": "6639519",
+      "title": "RESPONSIBLE AI: A GOVERNANCE FRAMEWORK FOR ENTERPRISES",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6639519",
+      "authors": [
+        "Rahul Kiran .G"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 83,
+      "posted": "24 Apr 2026",
+      "snippet": "Despite the emergence of regulatory frameworks such as the European Union AI Act (2024), the United States NIST AI Risk Management Framework (2023), India's / incidents, significant improvement in regulatory compliance readiness, and measurable increases in stakeholder trust.",
+      "downloads": 2
+    },
+    {
+      "abstractId": "6636918",
+      "title": "Watching the Watchmen: Overseers’ Algorithm Aversion in AI Arbitration",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6636918",
+      "authors": [
+        "Bahadir Koksal"
+      ],
+      "affiliations": [
+        "University of Hamburg - Institute of Law and Economics"
+      ],
+      "pages": 12,
+      "posted": "24 Apr 2026",
+      "snippet": "generation become institutionally established, the dominant regulatory and scholarly response has converged on an important safeguard: human-in-the-loop oversight / The EU AI Act, institutional arbitration rules, and judicial practice all require a human decision-maker to review and validate AI-generated awards before",
+      "downloads": 1
+    },
+    {
+      "abstractId": "6630678",
+      "title": "Governing Algorithmic Capital: Principal-Agent Theory, AI Accountability Gaps, and the Case for the Chartered Financial Intelligence Architect (CFIA)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6630678",
+      "authors": [
+        "Michael Clark"
+      ],
+      "affiliations": [],
+      "pages": 14,
+      "posted": "24 Apr 2026",
+      "snippet": "The result is what we term the governance accountability gap: a structural mismatch between the AI capabilities deployed by investment firms and the human / oversight competencies available to govern them. / principal-agent theory, CFIA, AI governance, algorithmic accountability, investment management, model risk, EU AI Act, professional credentialing, accountability",
+      "downloads": 2
+    },
+    {
+      "abstractId": "6619303",
+      "title": "Maria V. Tuchina Algorithmic Jurisdiction and the Transformation of the Competence of Judicial Bodies of Integration Associations in Digital Cross-Border",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6619303",
+      "authors": [
+        "Maria Tuchina"
+      ],
+      "affiliations": [
+        "Moscow State Institute of International Relations (MGIMO)"
+      ],
+      "pages": 4,
+      "posted": "24 Apr 2026",
+      "snippet": "In the EU, judicial competence expands toward oversight of automated decision-making and platform governance within a multi-level regulatory architecture / (GDPR, DSA, AI Act).",
+      "downloads": 0
+    },
+    {
+      "abstractId": "6618958",
+      "title": "The Digital Markets Act and Artificial Intelligence: Embedded Functionality, Dual-Track Enforcement, and the 2026 Review",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6618958",
+      "authors": [
+        "Przemyslaw Ostojski"
+      ],
+      "affiliations": [],
+      "pages": 15,
+      "posted": "24 Apr 2026",
+      "snippet": "where AI conduct maps onto listed obligations; Article 102 supplies the more adaptable instrument for AI practices outside the closed catalogue; and the AI / Act adds a parallel safety and governance layer. • The 2026 review under Article 53 is the decisive legal moment-it must resolve whether AI assistants / artificial intelligence, general-purpose AI, embedded functionality, core platform services, virtual assistants, self-preferencing, dual-track enforcement, AI / Act, Article 102 TFEU, 2026 review, anti-circumvention, Article 13 DMA",
+      "downloads": 0
+    },
+    {
+      "abstractId": "6610019",
+      "title": "THE LEX AI: MANDATORY AI GOVERNANCE AND THE DIGITAL TRIBUNAL IN INTERNATIONAL ARBITRATION",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6610019",
+      "authors": [
+        "Barry Appleton"
+      ],
+      "affiliations": [
+        "New York Law School"
+      ],
+      "pages": 35,
+      "posted": "24 Apr 2026",
+      "snippet": "This article argues that AI regulation now constitutes a distinct mandatory overlay on international arbitral proceedings, analogous / under the EU AI Act, New York Convention enforcement, and equality of arms. / International arbitration, Lex AI, AI governance, Legal Ethics and AI, Arbitral procedure, Lex Data, Data Privacy, Conflict of Laws",
+      "downloads": 1
+    },
+    {
+      "abstractId": "6421019",
+      "title": "Bias Is No Longer a Bug: It's a Compliance Failure",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6421019",
+      "authors": [
+        "Sue Eze"
+      ],
+      "affiliations": [],
+      "pages": 21,
+      "posted": "24 Apr 2026",
+      "snippet": "The paper explores how new regulations, including Article 10(5) of the EU AI Act, seek to address this dilemma by permitting carefully controlled processing / Ultimately, the paper redefines bias as a governance risk: not merely a flaw in algorithms, but a failure in organisational oversight across the AI lifecycle / AI governance, algorithmic fairness, EU AI Act, GDPR, responsible AI, bias auditing, AI compliance",
+      "downloads": 2
+    },
+    {
+      "abstractId": "6390878",
+      "title": "THEMIS-xAI (Trusted High-Bash Evidence Integrity System for Explainable AI): A Unified Architecture for Cryptographically-Anchored AI Governance, Runtime Policy Enforcement, Explainability, Security, and Multi-Framework Regulatory Compliance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6390878",
+      "authors": [
+        "Heath Emerson"
+      ],
+      "affiliations": [],
+      "pages": 75,
+      "posted": "24 Apr 2026",
+      "snippet": "integrates cryptographic evidence management, runtime policy enforcement, explainability generation, privacy-preserving verification, and continuous compliance / We demonstrate that THEMIS-xAI achieves 83% coverage of the NIST AI RMF 1.0 control set (advancing from a 72% baseline), provides architectural / AI governance, explainable AI, LLM interpretability, cryptographic audit trail, Merkle-DAG, zero-knowledge proofs, decision provenance, NIST AI RMF, EU / AI Act, SOC 2, FedRAMP, RBAC, compliance automation, ethical AI",
+      "downloads": 3
+    },
+    {
+      "abstractId": "6382458",
+      "title": "Technical Appendix: A Proposed Attested-Verifiable Inference Architecture for the Luevano Standard",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6382458",
+      "authors": [
+        "Alberto Rocha"
+      ],
+      "affiliations": [],
+      "pages": 12,
+      "posted": "23 Apr 2026",
+      "snippet": "as an assurance architecture combining zero-knowledge proofs for model inference with remote attestation, providing stronger runtime evidence for AI governance / It frames this as a technological measure supporting EU AI Act Article 9 and Article 11 compliance demonstration, not as a universal legal solution. / Luevano Standard, Zero-Knowledge Proofs, AI Governance, EU AI Act, Verifiable Inference",
+      "downloads": 9
+    },
+    {
+      "abstractId": "6376400",
+      "title": "Anumati: Proof of Adherence as a Formal Consent Model for Autonomous Agent Protocols",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6376400",
+      "authors": [
+        "Ravi Kiran Kadaboina"
+      ],
+      "affiliations": [],
+      "pages": 25,
+      "posted": "23 Apr 2026",
+      "snippet": "agent consent, proof of adherence, A2A protocol, Model Context Protocol, AI governance, EU AI Act, formal verification, TLA+",
+      "downloads": 3
+    },
+    {
+      "abstractId": "6506258",
+      "title": "AI Governance as Safety Management: A Pre Execution Control Architecture for AI Safety and Autonomous Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6506258",
+      "authors": [
+        "Dr. Bryan McCaa"
+      ],
+      "affiliations": [],
+      "pages": 44,
+      "posted": "23 Apr 2026",
+      "snippet": "The architecture incorporates enforceable human oversight conditions, immutable audit records / The architecture incorporates enforceable human oversight conditions, immutable audit records / from passive oversight to active control. / AI governance, safety management systems, execution risk, pre-execution control, EU AI Act, NIST AI RMF, authorization architecture, human oversight, EU / AI Act",
+      "downloads": 4
+    },
+    {
+      "abstractId": "6373698",
+      "title": "Ixnos: A Deterministic Fragment Identifier Protocol for AI Training Data",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6373698",
+      "authors": [
+        "Antalouzia Elliott"
+      ],
+      "affiliations": [],
+      "pages": 12,
+      "posted": "23 Apr 2026",
+      "snippet": "fine-grained overlap between training sets and evaluation benchmarks, reproduce exact dataset compositions, or support audit workflows related to data governance / regulations such as the EU AI Act. / training data provenance, dataset fingerprinting, benchmark contamination, reproducibility, data governance, EU AI Act, GDPR, fragment identification",
+      "downloads": 7
+    },
+    {
+      "abstractId": "6373300",
+      "title": "The Principle of Governance Relativity: Frame-Invariant AI Governance Across Domains",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6373300",
+      "authors": [
+        "Jonathan Lai"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 5,
+      "posted": "23 Apr 2026",
+      "snippet": "ai governance, ai safety, ai regulation, pre-execution governance, human authority verification, volitional verification, integrated governance architecture / , authorization integrity, behavioral divergence, governance architecture, recursive governance",
+      "downloads": 2
+    },
+    {
+      "abstractId": "6362518",
+      "title": "Artificial Intelligence in Cyber Defense: Opportunities, Risks, and Governance Challenges for U.S. Critical Infrastructure",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6362518",
+      "authors": [
+        "Abdoulie Sowe"
+      ],
+      "affiliations": [
+        "Seattle University"
+      ],
+      "pages": 20,
+      "posted": "23 Apr 2026",
+      "snippet": ", due process, and ethical governance in national security contexts. / AI Act. / Opportunities, Risks, and Governance Challenges for U.S. / Intelligence (AI), Cyber Defense, Critical Infrastructure, National Security, Machine Learning, Ransomware, Adversarial AI, Data Poisoning, Automation and Oversight",
+      "downloads": 10
+    },
+    {
+      "abstractId": "6628958",
+      "title": "Governance-by-Design for AI Compliance: Compiling EU AI Act Duties into Computable Operating-Agreement Clauses",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6628958",
+      "authors": [
+        "Hiroshi G. Okuno",
+        "Mayumi J. Okuno"
+      ],
+      "affiliations": [
+        "Kyoto University - Graduate School of Informatics"
+      ],
+      "pages": 11,
+      "posted": "23 Apr 2026",
+      "snippet": "Regulations such as the EU AI Act impose detailed, process‑oriented duties on providers of high‑risk AI systems, yet many organizations operationalize / Our core technical contribution is a transpilation method that converts key EU AI Act obligations---risk management, data governance, logging",
+      "downloads": 9
+    },
+    {
+      "abstractId": "6516459",
+      "title": "Institutional Accountability and Legitimate Inference in Algorithmic Adjudication: Beyond Trustworthy AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6516459",
+      "authors": [
+        "Ignacio Cofone"
+      ],
+      "affiliations": [],
+      "pages": 23,
+      "posted": "22 Apr 2026",
+      "snippet": "Algorithmic Decision-Making, Trustworthy AI, Explainability, Algorithmic Accountability, AI Governance, Automated Decision-Making, Due Process, AI Regulation",
+      "downloads": 1
+    },
+    {
+      "abstractId": "6337818",
+      "title": "Sycophancy, Automation Bias, and Compressed Diffusion: An Unaddressed Convergence in AI Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6337818",
+      "authors": [
+        "Caleb Janski"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 41,
+      "posted": "22 Apr 2026",
+      "snippet": "in use -- including the NIST AI RMF, ISO/IEC 42001, COSO ERM, and the EU AI Act -- provides organizational structures that could accommodate individual / Four governance mechanisms are proposed: AI tool literacy as a compliance competency, constraints engineering, evaluation-first training, and retrospective",
+      "downloads": 12
+    },
+    {
+      "abstractId": "6509259",
+      "title": "A Pragmatic Approach to Regulating AI Agents",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6509259",
+      "authors": [
+        "Philipp Hacker",
+        "Matthias Holweg"
+      ],
+      "affiliations": [
+        "European University Viadrina Frankfurt (Oder) - European New School of Digital Studies",
+        "University of Oxford - Said Business School"
+      ],
+      "pages": 35,
+      "posted": "22 Apr 2026",
+      "snippet": "We cover two central components: first, the regulatory classification of agents under the EU AI Act, and second, the legal status and validity of autonomous / Act. / Artificial Intelligence, AI Regulation, Agentic AI, Contract Law",
+      "downloads": 282
+    },
+    {
+      "abstractId": "6329558",
+      "title": "Recursive Meta-Governance: A Formal Framework for Self-Stabilizing Institutions in the Superintelligence Era",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6329558",
+      "authors": [
+        "Edward Kipkalya"
+      ],
+      "affiliations": [],
+      "pages": 21,
+      "posted": "21 Apr 2026",
+      "snippet": "We demonstrate applicability through lightweight formal simulations and four conceptual case studies: the EU AI Act (Regulation (EU) 2024/1689 / Unlike static external oversight models, RMG creates an adaptive, self-correcting governance layer that co-evolves with the systems it regulates / AI governance, recursive systems, mechanism design, superintelligence, institutional engineering, scalable oversight, category theory, alignment preservation / , Recursive Meta-Governance",
+      "downloads": 15
+    },
+    {
+      "abstractId": "6329378",
+      "title": "Detecting AI Memory Poisoning from Observable Behavior: Behavioral Shadow Inference, Semantic Intent Decomposition, and Three-Tier Agentic Remediation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6329378",
+      "authors": [
+        "Jamel Robinson"
+      ],
+      "affiliations": [],
+      "pages": 16,
+      "posted": "21 Apr 2026",
+      "snippet": "behavioral shadow inference, dual-encoder contrastive learning, learning flywheel, semantic threat intelligence, differential privacy, wavelet decomposition, EU / AI Act, FTC compliance, AI memory poisoning, agentic AI, adversarial attacks, large language models",
+      "downloads": 5
+    },
+    {
+      "abstractId": "6329141",
+      "title": "Tracing Bias Origin and Predicting Bias Emergence Across AI Platforms via Cryptographic Provenance Graphs and Neural Granger Causal Consensus",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6329141",
+      "authors": [
+        "Jamel Robinson"
+      ],
+      "affiliations": [],
+      "pages": 17,
+      "posted": "21 Apr 2026",
+      "snippet": "This paper presents a unified architecture addressing these provenance, prediction, and governance gaps through four technically distinct contributions / International bias provenance, causal attribution, directed acyclic graph, Granger causality, neural Granger, transfer entropy, blockchain, Shapley attribution, EU / AI Act, bias emergence prediction, proactive alert, remediation playbook, focal loss, sequential probability ratio test, spatiotemporal clustering, event",
+      "downloads": 4
+    },
+    {
+      "abstractId": "6320283",
+      "title": "Your Agents Are an Autonomous Liability The Fiduciary Fallout of Probabilistic Tool Calls",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6320283",
+      "authors": [
+        "Dustin Allen",
+        "Hearsch Jariwala"
+      ],
+      "affiliations": [],
+      "pages": 37,
+      "posted": "21 Apr 2026",
+      "snippet": "In the agentic era, spending millions on closed-source cognitive engines actively subsidizes the collapse of your own regulatory compliance posture. / We demonstrate that a model passing safety tests in a staging sandbox can statistically drift into critical non-compliance under production loads due to / Agentic AI, Large Language Model, Autonomous Agents, Fiduciary Liability, Corporate Governance, AI Regulation, Enterprise GRC, Artificial Intelligence,",
+      "downloads": 9
+    },
+    {
+      "abstractId": "6315058",
+      "title": "Default-No: Contract-Gated Execution as Structural Governance for Autonomous AI Agents",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6315058",
+      "authors": [
+        "Rob Stillwell"
+      ],
+      "affiliations": [],
+      "pages": 23,
+      "posted": "21 Apr 2026",
+      "snippet": "Governance rules are implemented as frozen data structures that the runtime physically prevents from modification. / This pattern is domain-agnostic and provides a structural foundation for compliance with the NIST AI Risk Management Framework, the EU AI Act, and IEEE / AI governance, contract-gated execution, autonomous agents, default-no architecture, tool execution, deterministic governance, AI safety",
+      "downloads": 3
+    },
+    {
+      "abstractId": "6457879",
+      "title": "Digital Jurisprudence by Design: The Digital Warrant, Neuro-Symbolic Compliance Architecture, and Evidentiary Non-Repudiation in Transnational AI-Assisted Legal Practice",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6457879",
+      "authors": [
+        "Edward Gridin"
+      ],
+      "affiliations": [],
+      "pages": 48,
+      "posted": "20 Apr 2026",
+      "snippet": "EU AI Act's ex-ante mandates and the United States' ex-post tort deterrence model leaves multinational legal entities in a structurally irresolvable compliance / AI Act and NIST AI RMF by design. / Artificial Intelligence, Legal Technology (LegalTech), E-Discovery, Digital Jurisprudence, EU AI Act, Neuro-Symbolic AI, Linear AI, Multi-Agent Systems / , Algorithmic Opacity, Zero-Trust Architecture, Predictive Compliance, Algorithmic Due Process, Evidentiary Non-Repudiation, Federal Rules of Civil Procedure",
+      "downloads": 16
+    },
+    {
+      "abstractId": "6614394",
+      "title": "Edge-Constrained Video Analytics: A Comprehensive Survey on Detection, Tracking, and Recognition",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6614394",
+      "authors": [
+        "Mukhiddin Amonkulovich Toshpulatov",
+        "Wookey Lee",
+        "Jinsoo Cho"
+      ],
+      "affiliations": [
+        "Inha University",
+        "Inha University",
+        "Gachon University"
+      ],
+      "pages": 41,
+      "posted": "20 Apr 2026",
+      "snippet": "methods, we cover edge-cloud collaborative computing, privacy-preserving machine learning, algorithmic fairness, and the regulatory landscape including the EU / AI Act.",
+      "downloads": 8
+    },
+    {
+      "abstractId": "6612858",
+      "title": "The Quadripartite Structure of Civilization: Religion, Dogma, Slavery & Submission — K4 Matrix — as Framework for the Contemporary AI Ecosystem\nA critical thought adequate to its object — human / AI system co-production",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6612858",
+      "authors": [
+        "Christy Garnier"
+      ],
+      "affiliations": [],
+      "pages": 19,
+      "posted": "20 Apr 2026",
+      "snippet": ", and the problem of compliance (how are subjects produced who accept or desire this order?). / The paper demonstrates that current regulatory interventions — GDPR, EU AI Act, content moderation frameworks — address at most two of the six K4 edges",
+      "downloads": 5
+    },
+    {
+      "abstractId": "6612300",
+      "title": "The Hollow Pyramid in Legal Services: Generative AI, Junior-Layer Compression, and the Future of Partner Formation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6612300",
+      "authors": [
+        "bo liu"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 9,
+      "posted": "20 Apr 2026",
+      "snippet": "identify where automation pressure is already high, where AI primarily increases leverage, and where AI itself creates new demand for specialized legal and governance / Third, AI regulation and governance work form a paradoxical growth area in which lawyers become more valuable as AI adoption expands.",
+      "downloads": 4
+    },
+    {
+      "abstractId": "6610518",
+      "title": "The Accountability Vacuum: Why Agentic AI Governance Fails Under Conditions of Expertise Erosion",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6610518",
+      "authors": [
+        "Gabriel Sze"
+      ],
+      "affiliations": [],
+      "pages": 19,
+      "posted": "20 Apr 2026",
+      "snippet": "Existing responsible AI governance frameworks, which includes the EU AI Act, NIST AI-RMF, and ISO/IEC 42001 tried to address this challenge by mandating / The paper concludes by identifying the design implications for governance architecture: accountability must be treated not as a compliance layer applied / agentic AI, AI governance, accountability, human oversight, expertise erosion, responsible AI, automation bias, governance architecture",
+      "downloads": 9
+    },
+    {
+      "abstractId": "6608462",
+      "title": "From Caremark to Cybermark: the Governance Turn of NIS2 and the Fiduciary Duty of Cyber Oversight",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6608462",
+      "authors": [
+        "Maria Lucia Passador"
+      ],
+      "affiliations": [
+        "Bocconi University - Department of Law"
+      ],
+      "pages": 16,
+      "posted": "20 Apr 2026",
+      "snippet": "It argues that NIS 2 codifies an administrative fiduciary standard of cyber oversight, functionally convergent with the U.S. duty-of-oversight doctrine / Act, and identifies an emerging norm of cyber stewardship as the fiduciary signature of the digital corporation. / NIS 2, cyber governance, directors' duties, Caremark, EU corporate law, supply-chain due diligence",
+      "downloads": 11
+    },
+    {
+      "abstractId": "6593499",
+      "title": "Towards an Agentic State: Implications for Finnish Legislation and Organizational Disruption A conceptual and analytical article grounded in a structured review of interdisciplinary literature and contemporary Finnish and EU legal frameworks",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6593499",
+      "authors": [
+        "Ilkka Haukijärvi"
+      ],
+      "affiliations": [],
+      "pages": 24,
+      "posted": "20 Apr 2026",
+      "snippet": "Key legal pressure points include traceability, explainability, attribution of responsibility, procedural safeguards, and continuous oversight, with traceability / The article argues that the key question is not whether agentic systems are legally permissible, but under what conditions, safeguards, governance arrangements / agentic state, public administration, Finland, AI Act, administrative law, organizational change, oversight, bureaucracy, information systems strategy,",
+      "downloads": 5
+    },
+    {
+      "abstractId": "6586758",
+      "title": "Better Safe Than Sorry… Or Not?: Rethinking the Risk-Based Approach of the EU Artificial Intelligence Act",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6586758",
+      "authors": [
+        "Anastasiia Dardykina",
+        "Robert C. Bird"
+      ],
+      "affiliations": [
+        "University of Vaasa",
+        "University of Connecticut - School of Business"
+      ],
+      "pages": 25,
+      "posted": "20 Apr 2026",
+      "snippet": "This manuscript considers how the AI Act operationalizes the risk-based approach and evaluates whether it is applied appropriately in light of the AI Act's / and participate in future governance with the AI Act's requirements.",
+      "downloads": 23
+    },
+    {
+      "abstractId": "6586378",
+      "title": "The Entry/Exit System of the EU: TCNs between the processing of personal data and AI applications at the borders",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6586378",
+      "authors": [
+        "Alessandro Catano"
+      ],
+      "affiliations": [],
+      "pages": 173,
+      "posted": "20 Apr 2026",
+      "snippet": "It will then go on to analyse the compliance of the EES with the General Data Protection Regulation (EU) 2016/679 (GDPR), the Law Enforcement Directive / The essay will further investigate the relationship between the EES and the Artificial Intelligence Regulation (EU) 2024/1689 (AI Act), with the aim of",
+      "downloads": 6
+    },
+    {
+      "abstractId": "6585000",
+      "title": "AI Image Governance in Luxury Fashion: A Strategic Framework for Brand Equity Protection",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6585000",
+      "authors": [
+        "Rafael Leonardo Carlesso"
+      ],
+      "affiliations": [],
+      "pages": 10,
+      "posted": "20 Apr 2026",
+      "snippet": "This paper introduces AI Image Governance as a dedicated strategic discipline for the luxury fashion sector. / The paper argues that AI Image Governance is a structural necessity for luxury organizations seeking to maintain brand equity, regulatory compliance, and / AI Governance, Luxury Fashion, Brand Equity, Generative AI, EU AI Act, Image Governance, Disclosure, Brand Strategy, Permissibility Matrix, Brand Management",
+      "downloads": 8
+    },
+    {
+      "abstractId": "6574019",
+      "title": "THE REASONED RATIFICATION REPORT (IRR): DOCUMENTED HUMAN OVERSIGHT, INTEGRATED TRACEABILITY AND CONTROL OF AI-ASSISTED JUDICIAL DECISIONS",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6574019",
+      "authors": [
+        ""
+      ],
+      "affiliations": [],
+      "pages": 25,
+      "posted": "20 Apr 2026",
+      "snippet": "This article proposes and systematises the Reasoned Ratification Report (IRR) as a mechanism of documented human oversight for judicial decisions assisted / An architectural variant of the IRR is also proposed-termed the Inverse IRR or documented positive silence-which reverses the compliance burden: the system / judicial artificial intelligence, human oversight, integrated traceability, compliance by design, IRR, Inverse IRR, automation bias, AI Act, Instruction",
+      "downloads": 6
+    },
+    {
+      "abstractId": "6570698",
+      "title": "COMPARATIVE GOVERNANCE OF EMOTIONAL AI: CHINA'S ANTHROPOMORPHIC INTERACTIVE SERVICES MEASURES AND THE GLOBAL REGULATORY LANDSCAPE",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6570698",
+      "authors": [
+        "Marcel Osmond"
+      ],
+      "affiliations": [],
+      "pages": 12,
+      "posted": "20 Apr 2026",
+      "snippet": "This article provides the first comparative legal analysis of this regulation, systematically comparing its governance mechanisms against the European / Union AI Act, the Singapore Model AI Governance Framework, and the emerging United States state-level approach. / Emotional AI, Anthropomorphic AI, Comparative AI Governance, China AI Regulation, EU AI Act, Singapore Model AI Governance Framework, AI Companion Chatbot / Regulation, Psychological Manipulation Risk, Design-Based Prohibitions, Human Oversight Obligations",
+      "downloads": 155
+    },
+    {
+      "abstractId": "6565158",
+      "title": "Intention, Integration, and the Implementation Gap: Why AI Governance Frameworks Are Misread as Risk Checklists",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6565158",
+      "authors": [
+        "Ivo Oskar Titscher"
+      ],
+      "affiliations": [],
+      "pages": 18,
+      "posted": "20 Apr 2026",
+      "snippet": "The EU AI Act and ISO/IEC 42001 are widely treated as risk-management checklists, yet both frameworks are constructed around a different object: the AI / AI Act, ISO 42001 Clauses 6.1.2 and 6.1.4, and the NIST AI RMF. / AI governance, EU AI Act, ISO/IEC 42001, intended purpose, compliance theatre, human-AI delegation, integration ontology, AI risk management",
+      "downloads": 863
+    },
+    {
+      "abstractId": "6562379",
+      "title": "AI Regulation Regimes and Competitive Outcomes: A Game-Theoretic Analysis of Regulatory Competition in Frontier Technologies",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6562379",
+      "authors": [
+        "Suresh L. Paul",
+        "Herman Sahni"
+      ],
+      "affiliations": [
+        "Baldwin Wallace University"
+      ],
+      "pages": 2,
+      "posted": "20 Apr 2026",
+      "snippet": "This paper develops a game-theoretic model of regulatory competition between the United States and the European Union in the governance of frontier, self-improving / The model embeds contemporary AI governance within the regulatory competition literature, extending classical race-to-the-bottom frameworks to accommodate / AI governance, coordination failure, race to the bottom, technology policy, regulatory competition, AI Economics",
+      "downloads": 3
+    },
+    {
+      "abstractId": "6560018",
+      "title": "ECONOMICS OF AUTHORITY #9 The Compounding Imperative: Why No Actor in the Autonomous Economy Can Afford to Slow Down",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6560018",
+      "authors": [
+        "Kevin Fenske"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 17,
+      "posted": "20 Apr 2026",
+      "snippet": ", ethical standards, governance frameworks, regulatory compliance-functions as a compounding disadvantage in a race where falling behind is existential / This is not a counsel of despair about governance. / Hyperscaler Competition, Enterprise Adoption, Nation State Rivalry, and the Governance Paradox, AI governance, AI arms race, geopolitical competition, / semiconductor supply chain, financial warfare, platform economics, AI regulation, autonomous systems",
+      "downloads": 2
+    },
+    {
+      "abstractId": "6559939",
+      "title": "ECONOMICS OF AUTHORITY EoA #8 Federated Authority and Inter-Organizational AI Execution The Unsolved Boundary Problem and a Dual-Authorization Mechanism",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6559939",
+      "authors": [
+        "Kevin Fenske"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 8,
+      "posted": "20 Apr 2026",
+      "snippet": "This mechanism requires no central authority, no shared identity infrastructure, no new governance institution, and no negotiation at runtime. / AI governance, federated systems, cross-organizational AI, AI accountability, enterprise AI, AI regulation, data sovereignty, interoperability",
+      "downloads": 3
+    },
+    {
+      "abstractId": "6559898",
+      "title": "ECONOMICS OF AUTHORITY #7 An Infrastructure for Governing Autonomous Economic Action",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6559898",
+      "authors": [
+        "Kevin Fenske"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 9,
+      "posted": "20 Apr 2026",
+      "snippet": "of the wage channel, the concentration of capital into the energy-compute-hardware complex, the failure of traditional measurement, and the limits of governance / This paper describes the infrastructure layer that addresses what governance can address-the execution layer, where autonomous systems make binding economic / AI governance, autonomous systems, authority layer, AI accountability, enterprise AI, AI regulation, execution governance, machine speed economics",
+      "downloads": 4
+    },
+    {
+      "abstractId": "6552159",
+      "title": "Human-in-the-loop Isn't a Checkbox: Designing Meaningful Intervention in Automated AI Decisions",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6552159",
+      "authors": [
+        "Sue Eze"
+      ],
+      "affiliations": [],
+      "pages": 24,
+      "posted": "20 Apr 2026",
+      "snippet": "As organisations increasingly automate decision-making with machine learning, \"human-inthe-loop\" is often used as a compliance label rather than a genuine / This creates a false sense of oversight: accountability is assigned to humans, while agency remains with the system. / AI governance, human-in-the-loop, automated decision-making, algorithmic accountability, explainability, AI risk management, EU AI Act, ISO 42001, model / governance, decision system, AI Auditing, algorithmic governance",
+      "downloads": 2
+    },
+    {
+      "abstractId": "6539098",
+      "title": "Algorithmic Incompetence: Forgotten Diligence and the Adolescence of Power",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6539098",
+      "authors": [
+        "Domenica Lista"
+      ],
+      "affiliations": [],
+      "pages": 21,
+      "posted": "20 Apr 2026",
+      "snippet": "A comparative survey of governance models-the EU's risk based AI Act, Singapore's \"principal hierarchy\" for agentic AI, Japan's \"circuit breaker\" mechanism / The paper identifies the NIST AI RMF, ISO/IEC 42001 and ICGN Guidance on AI as operationally convergent parameters that render measurable obligations already / algorithmic governance, fiduciary duty, AI Act, board liability, duty of care, human oversight, corporate governance, NIST AI RMF, ICGN, Caremark doctrine",
+      "downloads": 16
+    },
+    {
+      "abstractId": "6530399",
+      "title": "The Structural Illegality of the UN Security Council Veto under the Doctrine of Human Dignity",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6530399",
+      "authors": [
+        "Leon Xu"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 10,
+      "posted": "20 Apr 2026",
+      "snippet": "It examines the constitutional elaboration of dignity in India (Puttaswamy), South Africa (Makwanyane; Beadica 49), and the European Union's AI Act, and / The article concludes by calling for the adoption of this framework in AI governance, mental health reform, and climate policy. / human dignity, conservation law, Klimabeschluss, intertemporal freedom, CRPD, involuntary psychiatric detention, erga omnes, EU AI Act, constraint coherence",
+      "downloads": 10
+    },
+    {
+      "abstractId": "6525558",
+      "title": "Integrity as a Leadership Capability: Reflections on the OECD Anti-Corruption and Integrity Outlook 2026",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6525558",
+      "authors": [
+        "María Dapena Gómez"
+      ],
+      "affiliations": [],
+      "pages": 5,
+      "posted": "20 Apr 2026",
+      "snippet": "Moving beyond compliance-based frameworks, the report reframes integrity as a strategic, systemic and leadership-driven function-a transition with significant / The paper draws on the OECD Integrity Outlook 2026, the OECD Public Integrity Framework, and current EU governance instruments including the AI Act and / public integrity, public leadership, anti-corruption, human-centred governance, AI in public administration, OECD, organisational culture, digital transformation",
+      "downloads": 20
+    },
+    {
+      "abstractId": "6521399",
+      "title": "Compliant but Unauthorized: Why AI Systems Can Follow Oversight Rules and Still Act Without Permission",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6521399",
+      "authors": [
+        "Hyunkeun Shin"
+      ],
+      "affiliations": [],
+      "pages": 10,
+      "posted": "20 Apr 2026",
+      "snippet": "Article 14 of the EU AI Act establishes human oversight as a central requirement for high-risk AI systems. / Without such requirements, compliance with Article 14 risks institutionalizing oversight without control, allowing formally compliant systems to",
+      "downloads": 0
+    },
+    {
+      "abstractId": "6519238",
+      "title": "The AI License Model A Conceptual Framework for Distributed AI Productivity Rights",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6519238",
+      "authors": [
+        "Ivo Ferrari"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 6,
+      "posted": "20 Apr 2026",
+      "snippet": "The model is situated within the political economy literature on AI governance, particularly in relation to Acemoglu and Restrepo (2018), Kasy (2025), / and Autor (2024), and is offered as a structural complement to existing regulatory frameworks including the EU AI Act. / artificial intelligence, labor displacement, mechanism design, democratic governance, tradable permits, cryptographic enforcement, political economy",
+      "downloads": 1
+    },
+    {
+      "abstractId": "6518643",
+      "title": "The Illusion of Human Oversight: A Structural Gap in the EU AI Act",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6518643",
+      "authors": [
+        "Hyunkeun Shin"
+      ],
+      "affiliations": [],
+      "pages": 11,
+      "posted": "20 Apr 2026",
+      "snippet": "In response, the European Union's AI Act establishes a comprehensive regulatory framework aimed at ensuring safety, accountability, and human oversight / While the regulation defines oversight as an obligation, it does not specify how oversight is to be enforced at the system level.",
+      "downloads": 2
+    }
+  ]
+}

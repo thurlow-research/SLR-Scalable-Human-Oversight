@@ -1,0 +1,63 @@
+{
+  "item_key": "LB84WJKI",
+  "citation": "Takerngsaksiri 2025",
+  "evidence_type": [
+    "empirical",
+    "system-tool",
+    "case-study",
+    "benchmark"
+  ],
+  "problem_statement": "Existing LLM-based software development agents are evaluated only on historical benchmarks, rarely incorporate human feedback at each stage, and are not deployed in practice, leaving open how oversight can keep AI-generated plans and code aligned with human expectations in enterprise settings.",
+  "magnitude_evidence": "In 2024, Atlassian had over 12,000 engineers submitting over 950,000 pull requests",
+  "risk_types": [
+    "code-quality",
+    "functional-incorrectness",
+    "incomplete-changes",
+    "defects",
+    "non-functional-requirements",
+    "generalizability",
+    "maintainability"
+  ],
+  "insufficiency_evidence": "Without human involvement, 33% of participants agreed the generated code solved their task; 54% and 67% disagreed the code contains no defects/fulfilled non-functional requirements and completely solved the task without human involvement, respectively",
+  "solution_mechanisms": [
+    "human-in-the-loop multi-agent framework (HULA)",
+    "AI Planner Agent for file localization and plan generation",
+    "AI Coding Agent for code changes",
+    "human review/edit/re-generate at plan and code stages",
+    "self-refinement via compiler/linter feedback",
+    "human approval gate before PR",
+    "LLM-as-a-Judge code similarity evaluation",
+    "integration into JIRA workflow"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "multi-agent",
+    "human-in-command",
+    "llm-as-judge",
+    "self-refinement",
+    "tool-feedback",
+    "plan-review-gate",
+    "code-review",
+    "escalation",
+    "human-approval",
+    "decentralized-planning"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "planning",
+    "code-review",
+    "pre-commit",
+    "pre-publish"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Human-in-the-Loop LLM-based Agents (HULA)",
+    "human intelligence and human authority",
+    "Human-AI synergy",
+    "Decentralized Planning Decentralized Execution (DPDE)"
+  ],
+  "governance_refs": [],
+  "scope_fit": "solution",
+  "notes": null,
+  "_truncated": false
+}

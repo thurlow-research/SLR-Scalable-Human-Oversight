@@ -1,0 +1,75 @@
+{
+  "item_key": "5RLPIA3K",
+  "citation": "Eric Swidey 2026",
+  "evidence_type": [
+    "system-tool",
+    "conceptual-position",
+    "framework-model",
+    "case-study"
+  ],
+  "problem_statement": "Current AI hiring systems present humans with scores and recommendations that they cannot meaningfully interpret, enabling autonomous AI decisions and rubber-stamping that fail EU AI Act Article 14's meaningful human-oversight requirements for high-risk employment AI.",
+  "magnitude_evidence": "In Mobley v. Workday, plaintiff applied to over 100 positions and was rejected for all; class certified May 16, 2025; rejections sent at 1:00 AM indicating no human review",
+  "risk_types": [
+    "automation-bias",
+    "discrimination/bias",
+    "legal",
+    "protected-characteristic proxies",
+    "autonomous-decisioning",
+    "data-quality",
+    "fundamental-rights"
+  ],
+  "insufficiency_evidence": "\"humans rubber-stamp AI decisions... they click 'Proceed' or 'Reject.' This is not human oversight. This is automation bias codified into a workflow\"; explainability dashboards showing factor contributions are \"not the same as enabling genuine interpretation\"",
+  "solution_mechanisms": [
+    "multi-agent adversarial debate (Advocate/Adversary/Arbitrator)",
+    "cross-vendor arbitrator to reduce single-source bias",
+    "mandatory bias check per candidate",
+    "human decision interface showing full reasoning",
+    "engagement-gated UI with time-on-task tracking",
+    "automatic escalation queue for bias/low-confidence",
+    "cryptographic hash-chain audit trail",
+    "architectural (non-bypassable) human-in-command"
+  ],
+  "mechanism_keywords": [
+    "adversarial-verification",
+    "multi-agent-debate",
+    "llm-as-judge",
+    "decorrelation",
+    "cross-vendor-ensemble",
+    "hitl",
+    "human-in-command",
+    "escalation",
+    "risk-routing",
+    "bias-gate",
+    "explainability",
+    "audit-trail",
+    "provenance",
+    "hash-chain",
+    "engagement-enforcement",
+    "anti-rubber-stamping"
+  ],
+  "oversight_locus": [
+    "pre-decision",
+    "human-review",
+    "candidate-evaluation",
+    "runtime-intervention"
+  ],
+  "human_role": "in-command",
+  "key_constructs": [
+    "VARI (Verified Adversarial Reasoning Intelligence)",
+    "Adversarial Verification System (AVS)",
+    "Advocate/Adversary/Arbitrator agents",
+    "architectural vs. procedural compliance",
+    "AI informs. Human decides."
+  ],
+  "governance_refs": [
+    "EU AI Act",
+    "EU AI Act Article 14",
+    "EU AI Act Annex III Point 4(a)",
+    "EU AI Act Article 26",
+    "EU AI Act Article 27",
+    "Mobley v. Workday"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

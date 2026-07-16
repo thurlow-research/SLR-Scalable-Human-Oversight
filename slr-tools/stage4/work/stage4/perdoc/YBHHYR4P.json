@@ -1,0 +1,65 @@
+{
+  "item_key": "YBHHYR4P",
+  "citation": "Perry 2023",
+  "evidence_type": [
+    "empirical",
+    "controlled-experiment",
+    "case-study"
+  ],
+  "problem_statement": "The document examines whether developers using AI code assistants (built on OpenAI's Codex) write more insecure code, and how their interaction patterns and misplaced trust in the assistant introduce security vulnerabilities that go unnoticed.",
+  "magnitude_evidence": "Participants with access to an AI assistant wrote insecure solutions more often than the control group for four of five tasks; e.g., only 3% of AI-group participants wrote a secure signing solution vs. 21% of control (p=0.039), and 36% with AI wrote SQL-injection-vulnerable code vs. 7% of control (p=0.041)",
+  "risk_types": [
+    "security",
+    "insecure-cryptography",
+    "sql-injection",
+    "path-traversal",
+    "buffer-overflow",
+    "integer-overflow",
+    "unsafe-randomness",
+    "input-sanitization",
+    "overconfidence"
+  ],
+  "insufficiency_evidence": "Participants with access to an AI assistant were more likely to believe they wrote secure code than those without, suggesting such tools may lead users to be overconfident about security flaws; many experiment participants simply accepted the AI solution without additional verification for security",
+  "solution_mechanisms": [
+    "prompt refinement before use",
+    "intent prediction to route to security constraints",
+    "constrain/safeguard AI outputs",
+    "IDE integrated warnings and library documentation display",
+    "validation tests on generated code",
+    "secure library defaults",
+    "user education on testing AI output",
+    "security-oriented RLHF feedback",
+    "static-analysis filtering of training data",
+    "expose temperature parameter to users"
+  ],
+  "mechanism_keywords": [
+    "prompt-refinement",
+    "guardrail",
+    "intent-classification",
+    "output-constraints",
+    "ide-warnings",
+    "provenance",
+    "static-analysis",
+    "secure-defaults",
+    "rlhf",
+    "human-verification",
+    "training-data-curation",
+    "user-education"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "pre-commit"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "false sense of security",
+    "query repair",
+    "prompt language taxonomy",
+    "mental models of the assistant"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

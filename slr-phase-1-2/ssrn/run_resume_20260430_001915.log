@@ -1,0 +1,135 @@
+nohup: ignoring input
+[00:19:15] Resuming with 3864 total items, 2646 already processed
+[00:22:00]   [2650/3864] discard=623 maybe=1047 keep=980 err=3 rate=0.02/s eta=837min
+[00:28:18]   [2660/3864] discard=625 maybe=1051 keep=984 err=3 rate=0.03/s eta=778min
+[00:34:43]   [2670/3864] discard=626 maybe=1054 keep=990 err=3 rate=0.03/s eta=770min
+[00:41:05]   [2680/3864] discard=629 maybe=1055 keep=996 err=3 rate=0.03/s eta=760min
+[00:47:24]   [2690/3864] discard=629 maybe=1059 keep=1002 err=3 rate=0.03/s eta=751min
+[00:53:47]   [2700/3864] discard=631 maybe=1064 keep=1005 err=3 rate=0.03/s eta=744min
+[01:00:08]   [2710/3864] discard=631 maybe=1070 keep=1009 err=3 rate=0.03/s eta=737min
+[01:07:04]   [2720/3864] discard=634 maybe=1072 keep=1014 err=3 rate=0.03/s eta=739min
+[01:14:05]   [2730/3864] discard=636 maybe=1075 keep=1019 err=3 rate=0.03/s eta=740min
+[01:21:22]   [2740/3864] discard=640 maybe=1080 keep=1020 err=3 rate=0.03/s eta=743min
+[01:26:45] [2745/3864] 6A58RTBY CLAUDE ERROR: claude-timeout
+[01:32:36]   [2750/3864] discard=641 maybe=1085 keep=1024 err=4 rate=0.02/s eta=786min
+[01:39:02]   [2760/3864] discard=642 maybe=1087 keep=1031 err=4 rate=0.02/s eta=773min
+[01:45:21]   [2770/3864] discard=646 maybe=1090 keep=1034 err=4 rate=0.02/s eta=760min
+[01:51:40]   [2780/3864] discard=649 maybe=1093 keep=1038 err=4 rate=0.02/s eta=748min
+[01:58:04]   [2790/3864] discard=652 maybe=1097 keep=1041 err=4 rate=0.02/s eta=737min
+[02:04:25]   [2800/3864] discard=653 maybe=1102 keep=1045 err=4 rate=0.02/s eta=727min
+[02:10:41]   [2810/3864] discard=654 maybe=1106 keep=1050 err=4 rate=0.02/s eta=716min
+[02:17:01]   [2820/3864] discard=655 maybe=1110 keep=1055 err=4 rate=0.02/s eta=707min
+[02:23:29]   [2830/3864] discard=657 maybe=1111 keep=1062 err=4 rate=0.02/s eta=698min
+[02:29:52]   [2840/3864] discard=659 maybe=1115 keep=1066 err=4 rate=0.02/s eta=689min
+[02:36:22]   [2850/3864] discard=663 maybe=1121 keep=1066 err=4 rate=0.02/s eta=682min
+[02:42:43]   [2860/3864] discard=668 maybe=1124 keep=1068 err=4 rate=0.02/s eta=673min
+[02:49:01]   [2870/3864] discard=671 maybe=1127 keep=1072 err=4 rate=0.02/s eta=665min
+[02:55:28]   [2880/3864] discard=673 maybe=1131 keep=1076 err=4 rate=0.02/s eta=657min
+[03:01:49]   [2890/3864] discard=676 maybe=1135 keep=1079 err=4 rate=0.03/s eta=649min
+[03:08:17]   [2900/3864] discard=678 maybe=1140 keep=1082 err=4 rate=0.03/s eta=641min
+[03:14:36]   [2910/3864] discard=680 maybe=1145 keep=1085 err=4 rate=0.03/s eta=634min
+[03:20:59]   [2920/3864] discard=681 maybe=1153 keep=1086 err=4 rate=0.03/s eta=626min
+[03:27:19]   [2930/3864] discard=683 maybe=1158 keep=1089 err=4 rate=0.03/s eta=618min
+[03:33:45]   [2940/3864] discard=686 maybe=1163 keep=1091 err=4 rate=0.03/s eta=611min
+[03:40:10]   [2950/3864] discard=690 maybe=1168 keep=1092 err=4 rate=0.03/s eta=604min
+[03:46:29]   [2960/3864] discard=691 maybe=1175 keep=1094 err=4 rate=0.03/s eta=597min
+[03:53:03]   [2970/3864] discard=694 maybe=1181 keep=1095 err=4 rate=0.03/s eta=590min
+[03:59:28]   [2980/3864] discard=696 maybe=1186 keep=1098 err=4 rate=0.03/s eta=583min
+[04:05:51]   [2990/3864] discard=698 maybe=1192 keep=1100 err=4 rate=0.03/s eta=576min
+[04:12:10]   [3000/3864] discard=698 maybe=1196 keep=1106 err=4 rate=0.03/s eta=568min
+[04:18:26]   [3010/3864] discard=699 maybe=1201 keep=1110 err=4 rate=0.03/s eta=561min
+[04:24:44]   [3020/3864] discard=702 maybe=1205 keep=1113 err=4 rate=0.03/s eta=554min
+[04:31:16]   [3030/3864] discard=703 maybe=1208 keep=1119 err=4 rate=0.03/s eta=547min
+[04:37:39]   [3040/3864] discard=705 maybe=1213 keep=1122 err=4 rate=0.03/s eta=540min
+[04:43:59]   [3050/3864] discard=707 maybe=1216 keep=1127 err=4 rate=0.03/s eta=533min
+[04:50:17]   [3060/3864] discard=711 maybe=1221 keep=1128 err=4 rate=0.03/s eta=526min
+[04:56:36]   [3070/3864] discard=713 maybe=1225 keep=1132 err=4 rate=0.03/s eta=519min
+[05:02:54]   [3080/3864] discard=715 maybe=1228 keep=1137 err=4 rate=0.03/s eta=512min
+[05:09:19]   [3090/3864] discard=720 maybe=1230 keep=1140 err=4 rate=0.03/s eta=506min
+[05:15:48]   [3100/3864] discard=721 maybe=1237 keep=1142 err=4 rate=0.03/s eta=499min
+[05:22:09]   [3110/3864] discard=723 maybe=1242 keep=1145 err=4 rate=0.03/s eta=492min
+[05:28:37]   [3120/3864] discard=725 maybe=1249 keep=1146 err=4 rate=0.03/s eta=486min
+[05:34:58]   [3130/3864] discard=729 maybe=1252 keep=1149 err=4 rate=0.03/s eta=479min
+[05:41:23]   [3140/3864] discard=731 maybe=1260 keep=1149 err=4 rate=0.03/s eta=472min
+[05:47:46]   [3150/3864] discard=734 maybe=1266 keep=1150 err=4 rate=0.03/s eta=465min
+[05:54:14]   [3160/3864] discard=737 maybe=1273 keep=1150 err=4 rate=0.03/s eta=459min
+[06:00:36]   [3170/3864] discard=737 maybe=1283 keep=1150 err=4 rate=0.03/s eta=452min
+[06:06:59]   [3180/3864] discard=738 maybe=1292 keep=1150 err=4 rate=0.03/s eta=445min
+[06:13:23]   [3190/3864] discard=739 maybe=1300 keep=1151 err=4 rate=0.03/s eta=439min
+[06:19:54]   [3200/3864] discard=740 maybe=1307 keep=1153 err=4 rate=0.03/s eta=432min
+[06:26:09]   [3210/3864] discard=742 maybe=1313 keep=1155 err=4 rate=0.03/s eta=425min
+[06:32:30]   [3220/3864] discard=744 maybe=1321 keep=1155 err=4 rate=0.03/s eta=419min
+[06:38:56]   [3230/3864] discard=745 maybe=1328 keep=1157 err=4 rate=0.03/s eta=412min
+[06:45:21]   [3240/3864] discard=747 maybe=1334 keep=1159 err=4 rate=0.03/s eta=406min
+[06:51:39]   [3250/3864] discard=749 maybe=1342 keep=1159 err=4 rate=0.03/s eta=399min
+[06:58:00]   [3260/3864] discard=751 maybe=1350 keep=1159 err=4 rate=0.03/s eta=392min
+[07:04:24]   [3270/3864] discard=751 maybe=1359 keep=1160 err=4 rate=0.03/s eta=386min
+[07:10:50]   [3280/3864] discard=751 maybe=1365 keep=1164 err=4 rate=0.03/s eta=379min
+[07:17:12]   [3290/3864] discard=752 maybe=1372 keep=1166 err=4 rate=0.03/s eta=373min
+[07:23:46]   [3300/3864] discard=754 maybe=1379 keep=1167 err=4 rate=0.03/s eta=366min
+[07:30:04]   [3310/3864] discard=754 maybe=1388 keep=1168 err=4 rate=0.03/s eta=359min
+[07:36:25]   [3320/3864] discard=756 maybe=1394 keep=1170 err=4 rate=0.03/s eta=353min
+[07:42:47]   [3330/3864] discard=757 maybe=1402 keep=1171 err=4 rate=0.03/s eta=346min
+[07:49:11]   [3340/3864] discard=758 maybe=1411 keep=1171 err=4 rate=0.03/s eta=340min
+[07:55:28]   [3350/3864] discard=759 maybe=1416 keep=1175 err=4 rate=0.03/s eta=333min
+[08:01:47]   [3360/3864] discard=762 maybe=1422 keep=1176 err=4 rate=0.03/s eta=326min
+[08:08:08]   [3370/3864] discard=763 maybe=1429 keep=1178 err=4 rate=0.03/s eta=320min
+[08:14:36]   [3380/3864] discard=763 maybe=1438 keep=1179 err=4 rate=0.03/s eta=313min
+[08:20:57]   [3390/3864] discard=767 maybe=1443 keep=1180 err=4 rate=0.03/s eta=307min
+[08:27:21]   [3400/3864] discard=768 maybe=1450 keep=1182 err=4 rate=0.03/s eta=300min
+[08:33:40]   [3410/3864] discard=769 maybe=1456 keep=1185 err=4 rate=0.03/s eta=294min
+[08:39:59]   [3420/3864] discard=772 maybe=1463 keep=1185 err=4 rate=0.03/s eta=287min
+[08:46:19]   [3430/3864] discard=774 maybe=1470 keep=1186 err=4 rate=0.03/s eta=281min
+[08:52:40]   [3440/3864] discard=778 maybe=1474 keep=1188 err=4 rate=0.03/s eta=274min
+[08:59:00]   [3450/3864] discard=779 maybe=1481 keep=1190 err=4 rate=0.03/s eta=268min
+[09:05:23]   [3460/3864] discard=782 maybe=1488 keep=1190 err=4 rate=0.03/s eta=261min
+[09:11:42]   [3470/3864] discard=784 maybe=1496 keep=1190 err=4 rate=0.03/s eta=255min
+[09:18:03]   [3480/3864] discard=785 maybe=1504 keep=1191 err=4 rate=0.03/s eta=248min
+[09:24:21]   [3490/3864] discard=792 maybe=1505 keep=1193 err=4 rate=0.03/s eta=242min
+[09:30:48]   [3500/3864] discard=794 maybe=1512 keep=1194 err=4 rate=0.03/s eta=235min
+[09:37:08]   [3510/3864] discard=795 maybe=1517 keep=1198 err=4 rate=0.03/s eta=229min
+[09:43:27]   [3520/3864] discard=796 maybe=1525 keep=1199 err=4 rate=0.03/s eta=222min
+[09:49:44]   [3530/3864] discard=797 maybe=1533 keep=1200 err=4 rate=0.03/s eta=216min
+[09:56:06]   [3540/3864] discard=798 maybe=1541 keep=1201 err=4 rate=0.03/s eta=209min
+[10:02:24]   [3550/3864] discard=801 maybe=1547 keep=1202 err=4 rate=0.03/s eta=203min
+[10:08:44]   [3560/3864] discard=805 maybe=1552 keep=1203 err=4 rate=0.03/s eta=196min
+[10:15:05]   [3570/3864] discard=809 maybe=1558 keep=1203 err=4 rate=0.03/s eta=190min
+[10:21:26]   [3580/3864] discard=810 maybe=1563 keep=1207 err=4 rate=0.03/s eta=183min
+[10:27:45]   [3590/3864] discard=812 maybe=1569 keep=1209 err=4 rate=0.03/s eta=177min
+[10:34:07]   [3600/3864] discard=816 maybe=1574 keep=1210 err=4 rate=0.03/s eta=170min
+[10:40:46]   [3610/3864] discard=820 maybe=1579 keep=1211 err=4 rate=0.03/s eta=164min
+[10:47:05]   [3620/3864] discard=824 maybe=1584 keep=1212 err=4 rate=0.03/s eta=157min
+[10:53:26]   [3630/3864] discard=825 maybe=1591 keep=1214 err=4 rate=0.03/s eta=151min
+[10:59:49]   [3640/3864] discard=828 maybe=1597 keep=1215 err=4 rate=0.03/s eta=144min
+[11:06:08]   [3650/3864] discard=830 maybe=1603 keep=1217 err=4 rate=0.03/s eta=138min
+[11:12:26]   [3660/3864] discard=833 maybe=1606 keep=1221 err=4 rate=0.03/s eta=131min
+[11:18:51]   [3670/3864] discard=835 maybe=1612 keep=1223 err=4 rate=0.03/s eta=125min
+[11:25:11]   [3680/3864] discard=839 maybe=1618 keep=1223 err=4 rate=0.03/s eta=119min
+[11:31:33]   [3690/3864] discard=840 maybe=1625 keep=1225 err=4 rate=0.03/s eta=112min
+[11:37:58]   [3700/3864] discard=840 maybe=1630 keep=1230 err=4 rate=0.03/s eta=106min
+[11:44:20]   [3710/3864] discard=841 maybe=1637 keep=1232 err=4 rate=0.03/s eta=99min
+[11:50:52]   [3720/3864] discard=841 maybe=1646 keep=1233 err=4 rate=0.03/s eta=93min
+[11:57:12]   [3730/3864] discard=847 maybe=1649 keep=1234 err=4 rate=0.03/s eta=86min
+[12:03:34]   [3740/3864] discard=847 maybe=1654 keep=1239 err=4 rate=0.03/s eta=80min
+[12:09:53]   [3750/3864] discard=848 maybe=1660 keep=1242 err=4 rate=0.03/s eta=73min
+[12:16:18]   [3760/3864] discard=851 maybe=1665 keep=1244 err=4 rate=0.03/s eta=67min
+[12:22:49]   [3770/3864] discard=853 maybe=1672 keep=1245 err=4 rate=0.03/s eta=61min
+[12:29:26]   [3780/3864] discard=854 maybe=1676 keep=1250 err=4 rate=0.03/s eta=54min
+[12:35:47]   [3790/3864] discard=855 maybe=1683 keep=1252 err=4 rate=0.03/s eta=48min
+[12:42:10]   [3800/3864] discard=858 maybe=1688 keep=1254 err=4 rate=0.03/s eta=41min
+[12:48:35]   [3810/3864] discard=862 maybe=1690 keep=1258 err=4 rate=0.03/s eta=35min
+[12:55:02]   [3820/3864] discard=865 maybe=1693 keep=1262 err=4 rate=0.03/s eta=28min
+[13:01:38]   [3830/3864] discard=867 maybe=1695 keep=1268 err=4 rate=0.03/s eta=22min
+[13:08:01]   [3840/3864] discard=869 maybe=1697 keep=1274 err=4 rate=0.03/s eta=15min
+[13:14:21]   [3850/3864] discard=869 maybe=1700 keep=1281 err=4 rate=0.03/s eta=9min
+[13:20:41]   [3860/3864] discard=871 maybe=1700 keep=1289 err=4 rate=0.03/s eta=3min
+[13:22:35] 
+=== DONE ===
+[13:22:35] Total processed: 3863
+[13:22:35] Discarded: 871
+[13:22:35] Maybe: 1701
+[13:22:35] Kept: 1291
+[13:22:35] Errors: 4
+[13:22:35] 
+CSV: /home/scott/slr/ssrn/decisions.csv
+[13:22:35] Decisions: /home/scott/slr/ssrn/decisions.jsonl

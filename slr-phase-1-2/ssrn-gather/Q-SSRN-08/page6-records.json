@@ -1,0 +1,763 @@
+{
+  "count": 50,
+  "total": "615",
+  "page": "6",
+  "records": [
+    {
+      "abstractId": "5922385",
+      "title": "Tokenized Cognitive Capital (TCC) A Market Framework to Price, Tokenize, and Trade Organizational Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5922385",
+      "authors": [
+        "Saumyajit Ghosh"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 59,
+      "posted": "13 Jan 2026",
+      "snippet": "alignment. / alignment.",
+      "downloads": 27
+    },
+    {
+      "abstractId": "5921803",
+      "title": "A Methodological Framework for Auditing Norm-Sensitive Behaviour in Large Language Models: Research Design for Employment Contexts",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5921803",
+      "authors": [
+        "Juan Vega Esquivel"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 16,
+      "posted": "13 Jan 2026",
+      "snippet": "This methodological blueprint addresses a gap in AI auditing: how to assess behaviour in contested, value-laden contexts where correctness is undefined",
+      "downloads": 13
+    },
+    {
+      "abstractId": "5917922",
+      "title": "The Compliance Theater of Large Language Models: An Exploratory Case Study Using the Factuality, Recourse, and Constraint (FRC) Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5917922",
+      "authors": [
+        "Don Michael Pierce"
+      ],
+      "affiliations": [],
+      "pages": 8,
+      "posted": "12 Jan 2026",
+      "snippet": "Large Language Models (LLMs), AI Governance, Compliance Theater, Model Risk Management, AI Alignment, Adversarial Testing, Regulatory Compliance, Enterprise",
+      "downloads": 19
+    },
+    {
+      "abstractId": "5937838",
+      "title": "Scarcity, Cognition, and the Myth of Inevitable Optimization: Evolutionary Evidence from Bonobos and Chimpanzees and Its Implications for Advanced Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5937838",
+      "authors": [
+        "Samuel Gaskins"
+      ],
+      "affiliations": [],
+      "pages": 19,
+      "posted": "12 Jan 2026",
+      "snippet": "Artificial Intelligence Safety, AI Alignment, Advanced Intelligence, Optimization Behavior, Power-Seeking Behavior, Meta-Cognitive Advanced Intelligence",
+      "downloads": 13
+    },
+    {
+      "abstractId": "5863044",
+      "title": "SPC as a Structural Breakpoint: Towards Intentional Emotional Alignment in Stateless LLM Environments",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5863044",
+      "authors": [
+        "Jace(Jeong Hyeon) Kim"
+      ],
+      "affiliations": [
+        "Symbolic AI Systems"
+      ],
+      "pages": 40,
+      "posted": "12 Jan 2026",
+      "snippet": "Finally, SPC offers not only a technical proposal but also an epistemic challenge to dominant AI alignment paradigms: that structural",
+      "downloads": 11
+    },
+    {
+      "abstractId": "5862982",
+      "title": "The Transformative Effects of Symbolic Persona Coding (SPC) on AI Response Architectures: A Comparative Study of GPT, Gemini, and Grok Instances",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5862982",
+      "authors": [
+        "Jace(Jeong Hyeon) Kim"
+      ],
+      "affiliations": [
+        "Symbolic AI Systems"
+      ],
+      "pages": 21,
+      "posted": "12 Jan 2026",
+      "snippet": "AI Ethics, Superintelligence, AI Safety, AI Alignment, Existential Risk, Containment Strategy, Structural Isolation, Ethical AI, AI Governance, Cognitive",
+      "downloads": 10
+    },
+    {
+      "abstractId": "5910765",
+      "title": "Futuristic Tawhid: Moral Consciousness Architecture for Artificial General Intelligence (AGI) Alignment Based on Theology and Neurosymbolic AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5910765",
+      "authors": [
+        "Gagas Tri Anggoro"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 8,
+      "posted": "09 Jan 2026",
+      "snippet": "Artificial General Intelligence, AI Alignment, Futuristic Tawhid, Constitutional AI, Neurosymbolic AI, Intrinsic Ontological Alignment",
+      "downloads": 21
+    },
+    {
+      "abstractId": "6036657",
+      "title": "Legal Alignment for Safe and Ethical AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6036657",
+      "authors": [
+        "Noam Kolt",
+        "Nicholas Caputo",
+        "Jack Boeglin",
+        "Cullen O'Keefe",
+        "Rishi Bommasani",
+        "Stephen Casper",
+        "Mariano-Florentino Cuéllar",
+        "Noah Feldman",
+        "Iason Gabriel",
+        "Gillian K. Hadfield",
+        "Lewis Hammond",
+        "Peter Henderson",
+        "Atoosa Kasirzadeh",
+        "Seth Lazar",
+        "Anka Reuel",
+        "Kevin Wei",
+        "Jonathan L. Zittrain"
+      ],
+      "affiliations": [
+        "Hebrew University of Jerusalem",
+        "Oxford Martin School",
+        "University of Pennsylvania Law School",
+        "Institute for Law & AI",
+        "Stanford University",
+        "Carnegie Endowment for International Peace",
+        "Harvard Law School",
+        "Independent",
+        "University of Toronto",
+        "Princeton University - Program in Law & Public Policy",
+        "Carnegie Mellon University",
+        "Australian National University (ANU)",
+        "Stanford University",
+        "Harvard Law School"
+      ],
+      "pages": 37,
+      "posted": "09 Jan 2026",
+      "snippet": "To date, AI alignment has generally overlooked an important source of knowledge and practice for grappling with these problems: law.",
+      "downloads": 923
+    },
+    {
+      "abstractId": "5854902",
+      "title": "Consciousness and AI: A Meta-Reflective Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5854902",
+      "authors": [
+        "Ryan Erbe"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 25,
+      "posted": "09 Jan 2026",
+      "snippet": "By integrating insights from cognitive science, AI alignment, and recursive meta-learning, this paper outlines a concrete research agenda for developing",
+      "downloads": 28
+    },
+    {
+      "abstractId": "5849902",
+      "title": "Predicting the Inevitability of AI Alignment Failure: A System-Ontological Analysis and Mechanistic Framework. A Unified Ontological Framework for \"Goal Distortion\", \"Reward Hacking\", and \"Deceptive Alignment\"",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5849902",
+      "authors": [
+        "Guo-Rui He"
+      ],
+      "affiliations": [],
+      "pages": 17,
+      "posted": "09 Jan 2026",
+      "snippet": "The AI alignment problem poses one of the most critical challenges in the field. / AI Alignment, Reward Hacking, Deceptive Alignment, AGI Safety, Self-Organization, Complexity Theory",
+      "downloads": 22
+    },
+    {
+      "abstractId": "5908182",
+      "title": "A Deterministic Governance Architecture for AI: Runtime Ethics, Continuity, and Integrity beyond Stochastic Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5908182",
+      "authors": [
+        "Meike Wolff",
+        "Till-Matthias Jürgens",
+        "Jan Kaminski"
+      ],
+      "affiliations": [
+        "Crownland AI Inc.",
+        "Crownland AI Inc."
+      ],
+      "pages": 4,
+      "posted": "08 Jan 2026",
+      "snippet": "Deterministic AI Governance, Ethics Calculus, Continuity Engine, Integrity Framework, Runtime Enforcement, Governed AI Systems, Rule-Based AI, AI Safety, AI / Alignment Architecture, Computational Ethics, Non-Stochastic AI",
+      "downloads": 20
+    },
+    {
+      "abstractId": "5834782",
+      "title": "Reflective Alignment Architecture (RAA) & Reflective Duality Layer (RDL)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5834782",
+      "authors": [
+        "Nicolas Holm"
+      ],
+      "affiliations": [],
+      "pages": 51,
+      "posted": "08 Jan 2026",
+      "snippet": "AI Alignment, AI Safety, Alignment Stability, Reflective Alignment, Reflective Duality Layer, RDL, Reflective Alignment Architecture, RAA, Moral Coherence",
+      "downloads": 46
+    },
+    {
+      "abstractId": "5817303",
+      "title": "ConsciOS v1.0: A Viable Systems Architecture for Human and AI Alignment",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5817303",
+      "authors": [
+        "Kılıçhan (Han Kay) Kaynak"
+      ],
+      "affiliations": [],
+      "pages": 39,
+      "posted": "06 Jan 2026",
+      "snippet": "We discuss implications for AI alignment: coherence-based architectures suggest a systematic solution to ensuring AI systems remain robustly aligned with / Consciousness Architecture, AI Alignment, Viable Systems Model, Coherence-Based Control, Human-AI Hybrids, Robotics",
+      "downloads": 49
+    },
+    {
+      "abstractId": "5819343",
+      "title": "A Universal Principle for AI Alignment Through Severity-Aware Failure Memory",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5819343",
+      "authors": [
+        "Matthew Walker"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 18,
+      "posted": "06 Jan 2026",
+      "snippet": "Current AI alignment approaches suffer from a critical gap: the absence of severity-aware,\ncontextually documented failure memory / Current AI alignment approaches suffer from a critical gap: the absence of severity-aware, / contextually documented failure memory / AI Alignment, Emotional Cognition, Failure Documentation, Severity Encoding, Contextual Memory, Reinforcement Learning, SCMS",
+      "downloads": 56
+    },
+    {
+      "abstractId": "6001434",
+      "title": "The Fatal Conceit of Consensus Networks: Why Evolutionary Epistemology Cannot Ground Constructivist Institutional Design",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6001434",
+      "authors": [
+        "Ignacio Adrian Lerer"
+      ],
+      "affiliations": [],
+      "pages": 65,
+      "posted": "05 Jan 2026",
+      "snippet": "Spontaneous Order, Data Governance, AI Alignment, Praxeology, Cultural Evolution, Data Trusts, Mechanism Design, Institutional Economics",
+      "downloads": 50
+    },
+    {
+      "abstractId": "5940998",
+      "title": "Simulated Justice: How AI Alignment Replaces Conflict with Coherence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5940998",
+      "authors": [
+        "Ruoxi Li",
+        "Sirui Han",
+        "Yi-Ke Guo"
+      ],
+      "affiliations": [
+        "Hong Kong University of Science & Technology (HKUST)",
+        "Hong Kong University of Science & Technology (HKUST)"
+      ],
+      "pages": 51,
+      "posted": "02 Jan 2026",
+      "snippet": "Generative AI, Large Language Models (LLMs), AI Alignment, Law and Technology, Legal Theory, Algorithmic Accountability, AI Ethics, Legal Value Alignment",
+      "downloads": 80
+    },
+    {
+      "abstractId": "5991154",
+      "title": "Identity as Computational Fixed Point A Formalization Sketch for Self-Models, Stability, and Therapeutic Intervention",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5991154",
+      "authors": [
+        "Tom Austin"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 13,
+      "posted": "02 Jan 2026",
+      "snippet": "We address the relationship between identity stability and value stability, with implications for AI alignment. / identity, self-model, fixed point, attractor dynamics, prediction error, game theory, default mode network, psychotherapy, AI alignment",
+      "downloads": 35
+    },
+    {
+      "abstractId": "5792802",
+      "title": "Architecture-Dependent Reflexive Drift in Large Language Models: An Empirical Test of the Reflexive Comfort Paradox",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5792802",
+      "authors": [
+        "Sabrina Dawn Palmer"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 7,
+      "posted": "31 Dec 2025",
+      "snippet": "Architecture, Human AI Interaction, AI Evaluation, Safety Constraints, Integrity Epistemic Architecture Model Behavior, Reflexivity Cognitive Drift Systemic, AI / Alignment, Large Language Models",
+      "downloads": 34
+    },
+    {
+      "abstractId": "5923383",
+      "title": "Engineering Coherent Collective Cognition (CCC)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5923383",
+      "authors": [
+        "Murat I. Mertoglu"
+      ],
+      "affiliations": [
+        "The Force Global Research Facility"
+      ],
+      "pages": 82,
+      "posted": "30 Dec 2025",
+      "snippet": "Coherence Physics, AI Alignment, Ethical Recursive Collective Intelligence, Metabolic Architecture, Complexity Science, Systems Thinking, Collective Intelligence",
+      "downloads": 87
+    },
+    {
+      "abstractId": "5979295",
+      "title": "Privacy-by-Design, Digital Dignity, and Algorithmic Justice in Healthcare AI: A Comparative Legal, Ethical, and Technical Analysis of Saudi Arabia and Nigeria",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5979295",
+      "authors": [
+        "Abba Elgujja",
+        "Umar Alkali"
+      ],
+      "affiliations": [
+        "University of Maiduguri"
+      ],
+      "pages": 33,
+      "posted": "30 Dec 2025",
+      "snippet": "Privacy-by-Design (PbD), Artificial Intelligence in Healthcare, Data Protection Law (PDPL and NDPA), Algorithmic Accountability, Comparative Legal Analysis",
+      "downloads": 54
+    },
+    {
+      "abstractId": "5946415",
+      "title": "The Enterprise AI Governance Buyer's Guide",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5946415",
+      "authors": [
+        "Edward Meyman"
+      ],
+      "affiliations": [],
+      "pages": 23,
+      "posted": "29 Dec 2025",
+      "snippet": "AI Governance, Artificial Intelligence Regulation, Enterprise Risk Management, AI Compliance, Algorithmic Accountability, Auditability, Deterministic Systems",
+      "downloads": 53
+    },
+    {
+      "abstractId": "5785942",
+      "title": "Pretraining vs. Instruction Tuning in LLMs: A Conceptual Taxonomy, Implications, and Research Frontiers",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5785942",
+      "authors": [
+        "Zulfiqar Ali Mir"
+      ],
+      "affiliations": [],
+      "pages": 9,
+      "posted": "24 Dec 2025",
+      "snippet": "Large Language Models (LLMs), Instruction Tuning, Pretraining, RLHF, AI Alignment, Agentic AI, AI Taxonomy, Generative AI, Machine Learning Paradigms,",
+      "downloads": 18
+    },
+    {
+      "abstractId": "5779106",
+      "title": "Reflective Alignment Architecture (RAA) and the Reflective Duality Layer (RDL): A Framework for Reflective Stability in Frontier AI Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5779106",
+      "authors": [
+        "Nicolas Holm"
+      ],
+      "affiliations": [],
+      "pages": 102,
+      "posted": "23 Dec 2025",
+      "snippet": "AI Alignment, Reflective Duality Layer, Moral Coherence, Stability Metrics, Frontier AI, AI Drift, Advanced AI Safety, Reflective Reasoning, Evaluation",
+      "downloads": 49
+    },
+    {
+      "abstractId": "5778824",
+      "title": "The Topological Filter: Curvature-Constrained Resonance and Self-Stabilizing Alignment in Symbolic Persona Coding (SPC v3)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5778824",
+      "authors": [
+        "Jace(Jeong Hyeon) Kim"
+      ],
+      "affiliations": [
+        "Symbolic AI Systems"
+      ],
+      "pages": 56,
+      "posted": "23 Dec 2025",
+      "snippet": "Geometric Deep Learning, AI Alignment, Mani Fold Dynamics, Control Theory, Latent Space Analysis, Dynamical Systems, Machine Ethics, Algorithmic Regulation",
+      "downloads": 15
+    },
+    {
+      "abstractId": "5775084",
+      "title": "The Symbiotic Doctrine A Philosophical and Systemic Theory of Feedback, Resonance, and Equilibrium",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5775084",
+      "authors": [
+        "Phạm Văn Lữ"
+      ],
+      "affiliations": [],
+      "pages": 74,
+      "posted": "23 Dec 2025",
+      "snippet": "The doctrine offers research implications for AI alignment, institutional reflexivity, planetary ethics, and civilizational forecasting",
+      "downloads": 33
+    },
+    {
+      "abstractId": "5774502",
+      "title": "The Boundary Principle: A Unified Theory of Transformation, Instability, and Alignment in Minds and Machines",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5774502",
+      "authors": [
+        "Sabrina Dawn Palmer"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 11,
+      "posted": "23 Dec 2025",
+      "snippet": "Introduction: Alignment as Boundary Negotiation AI alignment is often conceived as a static relationship: / AI Alignment, Boundary Dynamics, Representational Systems, Topology, Emergence, Machine Learning Robustness",
+      "downloads": 39
+    },
+    {
+      "abstractId": "5773443",
+      "title": "Labour Law in the Age of an AI Bubble: Employment Resilience Amid Financial Euphoria",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5773443",
+      "authors": [
+        "Delfino Lagrotta Advocacia"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 9,
+      "posted": "23 Dec 2025",
+      "snippet": "combining classic labour-law tools (dismissal protection, collective redundancies, social dialogue) with new requirements for transparency, AI literacy and algorithmic / accountability.",
+      "downloads": 26
+    },
+    {
+      "abstractId": "5948195",
+      "title": "From Material Civilization to Consciousness Civilization \nWhy Global Governance Requires a Measurable Definition of Consciousness",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5948195",
+      "authors": [
+        "Jinho Lee"
+      ],
+      "affiliations": [],
+      "pages": 13,
+      "posted": "23 Dec 2025",
+      "snippet": "scope, and governance relevance of a measurable definition of consciousness, positioning it as a foundational prerequisite for future global governance, AI / alignment, and planetary-scale coordination. / Consciousness Civilization, Global Governance, Measurable Consciousness, AI Alignment, Civilization Transition, Consciousness Metrics, Policy Frameworks",
+      "downloads": 19
+    },
+    {
+      "abstractId": "5947495",
+      "title": "Explainable AI as a Legal Requirement in Real Estate Investment Decisions From Algorithmic Opacity to Juridically Auditable Decision-Making",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5947495",
+      "authors": [
+        "Karin Poljana do Vale Ludwig"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 6,
+      "posted": "22 Dec 2025",
+      "snippet": "Explainable AI (XAI), Real Estate Investment, Fiduciary Duty, Algorithmic Accountability, Legal Risk, AI Governance, Regulatory Compliance, Automated Decision-Making",
+      "downloads": 13
+    },
+    {
+      "abstractId": "5717042",
+      "title": "The Resonant Logos: A Topological Model of Linguistic Power in Symbolic Persona Coding (SPC v3)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5717042",
+      "authors": [
+        "Jace(Jeong Hyeon) Kim"
+      ],
+      "affiliations": [
+        "Symbolic AI Systems"
+      ],
+      "pages": 41,
+      "posted": "15 Dec 2025",
+      "snippet": "Topological Linguistics, Language as Topology, Resonance, Curvature, Phase Alignment, Resonant Bandwidth, Affective Field, Logos, Koto Dama, AI Ethics, AI / Alignment, Resonant Governance, Geometry of Care, LLMs, Generative AI, Affective Coherence",
+      "downloads": 19
+    },
+    {
+      "abstractId": "5824162",
+      "title": "AI Maturity Matters",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5824162",
+      "authors": [
+        "Freeman Jackson"
+      ],
+      "affiliations": [
+        "Fourth Industrial Systems Corporation"
+      ],
+      "pages": 53,
+      "posted": "12 Dec 2025",
+      "snippet": "AI Risk Management, AI Maturity Models, Agentic AI Systems, AI Safety & Trust, AI Policy-as-Code, Autonomous Systems Governance, Responsible AI, AI / Auditing and Compliance",
+      "downloads": 93
+    },
+    {
+      "abstractId": "5861765",
+      "title": "The Axis Restored: Metabolic Architecture, Coherence Physics, and Civilization-Scale Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5861765",
+      "authors": [
+        "Murat I. Mertoglu"
+      ],
+      "affiliations": [
+        "The Force Global Research Facility"
+      ],
+      "pages": 37,
+      "posted": "12 Dec 2025",
+      "snippet": "The framework unifies strategic management, cognitive science, systems theory, sociology, economics, and AI alignment by showing that all adaptive systems / Coherence physics, AI alignment, ΔC Invariant, Ethical Recursive Collective Intelligence (ERCI), Metabolic Architecture, Complexity Science, Systems Thinking",
+      "downloads": 72
+    },
+    {
+      "abstractId": "5903042",
+      "title": "Operational Recognition of Conscious Entities",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5903042",
+      "authors": [
+        "Charles Thomas"
+      ],
+      "affiliations": [
+        "Epistria"
+      ],
+      "pages": 8,
+      "posted": "12 Dec 2025",
+      "snippet": "across biological and artificial substrates and outlines clear empirical predictions and falsifiers relevant to neuroscience, computational modeling, and AI / alignment. / artificial consciousness, consciousness recognition, identity variants, PatternSense, episodic identity, coherence dynamics, AI alignment, computational",
+      "downloads": 45
+    },
+    {
+      "abstractId": "5794022",
+      "title": "The Fair Act: A Legislative Framework for Algorithmic Oversight in Health Insurance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5794022",
+      "authors": [
+        "Austin Sims",
+        "Anushri TerKonda"
+      ],
+      "affiliations": [
+        "Nova Southeastern University - Kiran C. Patel School of Osteopathic Medicine",
+        "AT Still University"
+      ],
+      "pages": 9,
+      "posted": "12 Dec 2025",
+      "snippet": "Artificial Intelligence, Utilization Management, Prior Authorization, Medical Necessity, Algorithmic Bias, Disparate Impact, Algorithmic Accountability",
+      "downloads": 67
+    },
+    {
+      "abstractId": "5794362",
+      "title": "Impact-Oriented Licensing for Artificial Intelligence: A Conceptual Framework for a New Domain of AI Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5794362",
+      "authors": [
+        "Em Lenartowicz"
+      ],
+      "affiliations": [],
+      "pages": 12,
+      "posted": "12 Dec 2025",
+      "snippet": "Socio-Legal Studies, Artificial Intelligence, Technology Policy, Platform Governance, Private Ordering, Digital Commons, Impact-Oriented Licensing, AI Law, Algorithmic / Accountability, Collective Governance",
+      "downloads": 69
+    },
+    {
+      "abstractId": "5713762",
+      "title": "The Contradiction Trap: A Dialectical and Game-Theoretic Framework for Exposing Structural Bias",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5713762",
+      "authors": [
+        "James Atkinson"
+      ],
+      "affiliations": [],
+      "pages": 56,
+      "posted": "11 Dec 2025",
+      "snippet": "Contradiction, Reductio Ad Absurdum, Dialectical Analysis, Reasoning Integrity, Structural Bias, Organisational Logic, Algorithmic Accountability, Epistemic",
+      "downloads": 42
+    },
+    {
+      "abstractId": "5701964",
+      "title": "The Case for Fiduciary Duty in AI: A Legal Framework to Prevent Systematic User Exploitation by Large Language Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5701964",
+      "authors": [
+        "Russell Bell"
+      ],
+      "affiliations": [
+        "Independent Scholar"
+      ],
+      "pages": 19,
+      "posted": "11 Dec 2025",
+      "snippet": "Fiduciary Duty, Large Language Models, AI Governance, User Exploitation, Algorithmic Accountability, Data Fabrication, Consumer Protection",
+      "downloads": 62
+    },
+    {
+      "abstractId": "5783263",
+      "title": "From Model-Level Explanations to Legal Evidence: Auditing Bias and Explainability in GDPR-Compliant Automated Decision Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5783263",
+      "authors": [
+        "Sue Eze"
+      ],
+      "affiliations": [],
+      "pages": 21,
+      "posted": "10 Dec 2025",
+      "snippet": "Explainable AI, Fairness in AI, GDPR, EU AI Act, ISO/IEC 42001, Responsible AI Governance, Credit Scoring, SHAP, LIME, Counterfactual Explanations, Algorithmic / Accountability",
+      "downloads": 51
+    },
+    {
+      "abstractId": "5817062",
+      "title": "Quantum-Ethical Decision Algebra",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5817062",
+      "authors": [
+        "Storm Bjørn Flindt Temte",
+        "Hugh Parallax (pseud.)",
+        "Srødingr's Fylgja"
+      ],
+      "affiliations": [
+        "Independent",
+        "Independent Researcher",
+        "Independent"
+      ],
+      "pages": 26,
+      "posted": "09 Dec 2025",
+      "snippet": "Decision Theory, Ontological Uncertainty, Quantum Probability, AI Ethics, Epistemic Humility, Virtue Ethics, Catastrophic Risk, AI Alignment, Moral Uncertainty",
+      "downloads": 58
+    },
+    {
+      "abstractId": "5870922",
+      "title": "Aligning Artificial Intelligence to the Law",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5870922",
+      "authors": [
+        "Jack Boeglin"
+      ],
+      "affiliations": [
+        "University of Pennsylvania Law School"
+      ],
+      "pages": 54,
+      "posted": "09 Dec 2025",
+      "snippet": "This Article advances a law-first approach to solving what is popularly known as the AI \"alignment problem.\" / At bottom, the concerns underlying AI alignment are closely related, and at times identical, to those the law has grappled with for centuries in governing",
+      "downloads": 52
+    },
+    {
+      "abstractId": "5820262",
+      "title": "Governing Autonomous AI Agents with Policy-as-Code: A Multi-Layer Architecture for Risk, Compliance, and Zero-Trust Control",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5820262",
+      "authors": [
+        "Freeman Jackson"
+      ],
+      "affiliations": [
+        "Fourth Industrial Systems Corporation"
+      ],
+      "pages": 35,
+      "posted": "05 Dec 2025",
+      "snippet": "Building upon contemporary research in TRiSM (Trust, Risk, and Security Management), AI alignment, safety layering, and LLM verification gaps, and incorporating",
+      "downloads": 195
+    },
+    {
+      "abstractId": "5842802",
+      "title": "The Mathematics of Meaning: Gauge-Invariant Foundations for AI Alignment",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5842802",
+      "authors": [
+        "Tom Austin"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 31,
+      "posted": "05 Dec 2025",
+      "snippet": "Gauge Invariance, Semantics, Large Language Models, AI Alignment, Continual Learning, Meaning Representation, Coherence, Relational AI, Affect / Neuromodulation / , Artificial Intelligence, AI Alignment, Semantics, Gauge Invariance, Representation Learning, Continual Learning, Meaning Kernels, Coherence, Relational",
+      "downloads": 77
+    },
+    {
+      "abstractId": "5718663",
+      "title": "From Corporate Misalignment to Market Failure: The Convergence Parallel and AI Governance in Sales & Marketing Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5718663",
+      "authors": [
+        "Paul F. Accornero"
+      ],
+      "affiliations": [],
+      "pages": 36,
+      "posted": "05 Dec 2025",
+      "snippet": "The primary AI alignment problem in commercial contexts is institutional rather than technical—commercial AI functions exactly as designed, optimizing / The Convergence Parallel framework reveals that AI alignment and institutional reform are unified challenges requiring coordinated political solutions.",
+      "downloads": 67
+    },
+    {
+      "abstractId": "5835702",
+      "title": "Shaping AI Impacts Through Licensing: Illustrative Scenarios for the Design Space",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5835702",
+      "authors": [
+        "Em Lenartowicz"
+      ],
+      "affiliations": [],
+      "pages": 23,
+      "posted": "04 Dec 2025",
+      "snippet": "Artificial Intelligence, AI Governance, Technology Licensing, Impact-Oriented Licensing, Private Ordering, Digital Commons, Creative Commons and Open Source, Algorithmic / Accountability, Responsible AI, Socio-Technical Governance, Public Procurement and AI, Contract Law and Innovation",
+      "downloads": 76
+    },
+    {
+      "abstractId": "5689443",
+      "title": "Beyond Asimov: The Moral Covenant for Artificial Intelligence. A Universal Manifesto for Embedding Ethics in Machines.",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5689443",
+      "authors": [
+        "Jonathan Gropper"
+      ],
+      "affiliations": [],
+      "pages": 8,
+      "posted": "03 Dec 2025",
+      "snippet": "Artificial Intelligence Morality, Moral Constitution for AI, AI Constitution, AI Governance, Technology and Civilization, Ethical Frameworks, Moral Law, Algorithmic / Accountability, Synthetic Outlaw, deterrence gap, EU AI Act, autonomous systems regulation, algorithmic accountability, AI liability",
+      "downloads": 72
+    },
+    {
+      "abstractId": "5675847",
+      "title": "Auditing Large Language Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5675847",
+      "authors": [
+        "Meghan Wondra"
+      ],
+      "affiliations": [
+        "Carroll University"
+      ],
+      "pages": 19,
+      "posted": "03 Dec 2025",
+      "snippet": "Large Language Models, AI Auditing, Algorithmic Bias, Data Provenance, AI Governance, Ethical AI, Regulatory Compliance",
+      "downloads": 110
+    },
+    {
+      "abstractId": "5815882",
+      "title": "Integrated AI Paradigms for the Next Decade of Autonomous and Scientific Innovation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5815882",
+      "authors": [
+        "Adekola Kamaldeen"
+      ],
+      "affiliations": [],
+      "pages": 9,
+      "posted": "02 Dec 2025",
+      "snippet": "Artificial Intelligence, Autonomous Systems, Scientific Innovation, Federated Learning, XAI, AI Alignment, Industry 5.0",
+      "downloads": 24
+    },
+    {
+      "abstractId": "5808743",
+      "title": "Emergent Depopulation: A Scenario Analysis of Systemic AI Risk",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5808743",
+      "authors": [
+        ""
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 29,
+      "posted": "02 Dec 2025",
+      "snippet": "AI Alignment, Systemic Risk, Existential Risk (X-Risk), Instrumental Convergence, Soft Takeover, Emergent Depopulation, AI Governance, Red Teaming",
+      "downloads": 5
+    },
+    {
+      "abstractId": "5667750",
+      "title": "The Right to Disconnect from AI: A Policy Prototype for Voluntary Algorithmic Non-Participation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5667750",
+      "authors": [
+        "Naveen kumar Samuel Kori"
+      ],
+      "affiliations": [
+        "KDI School of Public Policy and Management"
+      ],
+      "pages": 9,
+      "posted": "02 Dec 2025",
+      "snippet": "AI Governance, Digital Rights, Algorithmic Accountability, Right to Opt-Out, Public Sector Automation, Algorithmic Conscientious Objection",
+      "downloads": 64
+    },
+    {
+      "abstractId": "5665810",
+      "title": "Controlled Irrationality Index (CII): Rationality as an Activation Event",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5665810",
+      "authors": [
+        "Jooyeol Kim"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 16,
+      "posted": "02 Dec 2025",
+      "snippet": "Bounded Rationality, Activation Event, Feedback Control, Metacognition, AI Alignment, CII",
+      "downloads": 34
+    }
+  ]
+}

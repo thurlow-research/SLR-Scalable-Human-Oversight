@@ -1,0 +1,14 @@
+{
+  "item_key": "5DI9B43K",
+  "methods": [
+    "design-science/prototype/tool-build",
+    "benchmark-evaluation",
+    "formal-analysis/verification",
+    "ablation-study"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science/prototype/tool-build",
+  "notes": "Builds an LLM agent + formalizer/verifier pipeline (Souffl\u00e9 Datalog) and evaluates it on 20 MSAN bugs and 20 program-equivalence queries (from CRQBench/Fbounds-Safety). Includes an ablation on iterative formalization (Mode 1 vs Mode 2). Authors used human/manual judgment to label agent responses as valid/invalid, but this is expert annotation of outputs, not a human-subjects study.",
+  "citation": "Sistla 2025"
+}

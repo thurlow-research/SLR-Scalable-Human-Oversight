@@ -1,0 +1,68 @@
+{
+  "item_key": "LGZXFLSJ",
+  "citation": "Hein 2025",
+  "evidence_type": [
+    "empirical",
+    "case-study",
+    "framework-model"
+  ],
+  "problem_statement": "The paper investigates how three software organizations causally explain the risks of using generative AI in development, surfacing a self-reinforcing loop in which mistrust drives validation yet organizations can never be sure AI-generated code has been sufficiently validated.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "mistrust",
+    "insecure-code",
+    "quality",
+    "maintainability",
+    "hallucination",
+    "insufficient-validation",
+    "data-management/privacy",
+    "legal/copyright",
+    "job-displacement",
+    "cost",
+    "domain-inappropriateness",
+    "reputational",
+    "regulatory-sanctions",
+    "lack-of-control",
+    "lack-of-transparency"
+  ],
+  "insufficiency_evidence": "\"software organizations can never be certain whether AI-generated code is sufficiently validated\" \u2014 Mistrust of AI, Insufficient validation of AI output, and Insufficient/insecure AI output form a perpetual circular reasoning loop",
+  "solution_mechanisms": [
+    "human validation of AI output before integration",
+    "testing tools / static analysis flagging AI-introduced issues",
+    "internal (on-premise) hosting of generative AI",
+    "internal usage policies for generative AI",
+    "developer training/upskilling on AI tools",
+    "causal mapping as a risk decision-aid for prioritization and communication"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "code-review",
+    "static-analysis",
+    "testing-gate",
+    "policy",
+    "on-premise-hosting",
+    "training",
+    "causal-mapping",
+    "risk-management",
+    "continuous-reassessment"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-commit",
+    "code-review",
+    "CI"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "root risks",
+    "chaining risks",
+    "tail-end risks",
+    "isolated risks",
+    "circular reasoning loop of risks",
+    "causal mapping of generative AI risks"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Unreviewed preprint; causal maps (Figures 1-4) are images and their content is only partially recoverable from the surrounding text.",
+  "_truncated": false
+}

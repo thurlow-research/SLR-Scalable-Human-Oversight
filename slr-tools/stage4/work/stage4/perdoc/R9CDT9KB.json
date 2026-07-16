@@ -1,0 +1,68 @@
+{
+  "item_key": "R9CDT9KB",
+  "citation": "A. Mahmud 2025",
+  "evidence_type": [
+    "system-tool",
+    "empirical",
+    "benchmark"
+  ],
+  "problem_statement": "Automated security testing in CI/CD pipelines produces excessive false positives and treats all LLM predictions as equally reliable, eroding developer trust; the paper addresses how to route AI-generated vulnerability assessments between automated gates and human review based on model confidence.",
+  "magnitude_evidence": "Developers face floods of security alerts with weak precision; teams mute scans, defer reviews, and adopt a 'fix later' mentality; industrial reports document these frictions extensively [1],[2]",
+  "risk_types": [
+    "security",
+    "vulnerability",
+    "false-positives",
+    "alert-fatigue",
+    "over-reliance",
+    "miscalibration",
+    "overconfidence",
+    "quality"
+  ],
+  "insufficiency_evidence": "Bandit and Semgrep report detection rates of 62.7% and 47.6%, missing 37.3% (Bandit) and 52.4% (Semgrep) of validation vulnerabilities; and LLMs treated as single-shot classifiers report high confidence on incorrect results causing developers to over-rely on wrong predictions",
+  "solution_mechanisms": [
+    "three-stage confidence-propagating pipeline",
+    "multi-LLM ensemble with confidence-weighted voting",
+    "cross-stage confidence propagation / trust score",
+    "confidence-based routing between automated gates and human review",
+    "CI/CD action mapping (block/require-review/warn/approve)",
+    "inter-model agreement quantification",
+    "calibration measurement (ECE)"
+  ],
+  "mechanism_keywords": [
+    "ensemble",
+    "llm-as-judge",
+    "calibration",
+    "uncertainty-quantification",
+    "confidence-propagation",
+    "risk-routing",
+    "escalation",
+    "hitl",
+    "security-gate",
+    "confidence-weighted-voting",
+    "decorrelation",
+    "staged-decomposition",
+    "trust-score"
+  ],
+  "oversight_locus": [
+    "CI",
+    "pre-deployment",
+    "code-review",
+    "generation-time"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "trust-calibrated multi-stage pipeline",
+    "confidence propagation",
+    "trust score (\u03c4)",
+    "confidence-aware routing",
+    "trust as a trajectory"
+  ],
+  "governance_refs": [
+    "CWE",
+    "CVE",
+    "NVD"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

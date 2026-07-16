@@ -1,0 +1,13 @@
+{
+  "item_key": "QWHE9EXH",
+  "methods": [
+    "design-science/prototype/tool-build",
+    "benchmark-evaluation",
+    "dataset-contribution"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science/prototype/tool-build",
+  "notes": "Builds the STELP secure-execution engine and empirically evaluates it on safety (TBR/TAR), correctness, and latency against a self-built human-validated benchmark (InjectedHumanEval) and a CodeShield baseline. Human annotators only validated dataset samples, which is not a human-subjects study.",
+  "citation": "Shinde 2026"
+}

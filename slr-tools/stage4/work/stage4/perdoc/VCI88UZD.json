@@ -1,0 +1,88 @@
+{
+  "item_key": "VCI88UZD",
+  "citation": "Enyedi 2026",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model",
+    "secondary-review"
+  ],
+  "problem_statement": "As LLMs increasingly assemble software from reusable modules, the ecosystem lacks a trustworthy substrate of vetted, provenance-rich, security-reviewed building blocks, so AI-assembled systems inherit supply-chain risk from components with unclear provenance and insufficient review.",
+  "magnitude_evidence": "SolarWinds propagated a malicious signed update to approximately 18,000 downstream organizations; XZ Utils was a dependency for nearly 30,000 Debian and Ubuntu packages",
+  "risk_types": [
+    "supply-chain",
+    "security",
+    "provenance-opacity",
+    "maintainer-compromise",
+    "dependency-injection",
+    "build-system-subversion",
+    "quality",
+    "vulnerability-persistence",
+    "unpredictable-composition"
+  ],
+  "insufficiency_evidence": "CMU SUSVIBES benchmark: leading agents achieve functional correctness on roughly 61% of tasks, but only 10.5% of these outputs satisfy both functional and security requirements; also formal verification 'does not scale to entire application ecosystems' and SLSA/Sigstore 'remain optional, and adoption varies widely'",
+  "solution_mechanisms": [
+    "human-certified module repositories",
+    "certification and provenance workflow",
+    "multi-tier assurance levels",
+    "explicit machine-readable interface contracts",
+    "secure-by-default assembly constraints",
+    "sandboxed behavioral validation",
+    "SLSA-aligned provenance attestation",
+    "identity-based ephemeral signing with transparency log",
+    "AI-aware constrained assembly pipeline",
+    "multi-party review against maintainer compromise",
+    "runtime monitoring and continuous attestation",
+    "typed languages as compiler-enforced guardrails"
+  ],
+  "mechanism_keywords": [
+    "provenance",
+    "attestation",
+    "certification",
+    "human-certification",
+    "curation",
+    "policy-as-code",
+    "contract-driven",
+    "assurance-tiers",
+    "secure-by-default",
+    "sandboxing",
+    "signing",
+    "transparency-log",
+    "multi-party-review",
+    "guardrail",
+    "observability",
+    "spec-driven",
+    "supply-chain-security",
+    "constrained-composition"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "intake",
+    "pre-publish",
+    "code-review",
+    "CI",
+    "build",
+    "runtime"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Human-Certified Module Repositories (HCMRs)",
+    "assurance tiers",
+    "contract-aware composition",
+    "secure-by-default assembly constraints",
+    "typed languages as compiler-enforced guardrails"
+  ],
+  "governance_refs": [
+    "SLSA",
+    "Sigstore",
+    "in-toto",
+    "DSSE",
+    "ISO 16363",
+    "CoreTrustSeal",
+    "SBOM",
+    "zero-trust",
+    "Azure Verified Modules"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

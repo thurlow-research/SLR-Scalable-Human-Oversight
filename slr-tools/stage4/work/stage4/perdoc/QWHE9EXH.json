@@ -1,0 +1,76 @@
+{
+  "item_key": "QWHE9EXH",
+  "citation": "Shinde 2026",
+  "evidence_type": [
+    "system-tool",
+    "empirical",
+    "benchmark",
+    "dataset"
+  ],
+  "problem_statement": "Direct execution of LLM-generated code in production/agentic systems is unsafe\u2014it can be unstable, erroneous, or contain vulnerabilities and malicious attacks\u2014yet human code reviews and traditional secure testing tools are impractical or untrustworthy in headless, low-latency workflows.",
+  "magnitude_evidence": "Meta's CodeShield reported a True Block Rate of 0.68 and True Allow Rate of 0.93 on InjectedHumanEval; dataset comprises 164 safe and 470 unsafe samples across a subset of CWE vulnerabilities",
+  "risk_types": [
+    "security",
+    "malicious-code",
+    "hallucination",
+    "resource-exhaustion",
+    "code-injection",
+    "data-poisoning",
+    "supply-chain",
+    "deserialization",
+    "infinite-loop",
+    "unsafe-reflection",
+    "vulnerabilities"
+  ],
+  "insufficiency_evidence": "human code reviews and traditional secure testing tools are impractical or untrustworthy; CodeShield reported a TBR of 0.68 (missing ~32% of malicious samples) and offers limited security coverage and lacks configurable controls",
+  "solution_mechanisms": [
+    "transpiler-based secure code execution",
+    "AST validation against safe grammar subset",
+    "configurable risk-tolerance policies",
+    "safe code generation with injected controls",
+    "tool-call proxy isolation",
+    "timeouts and retry with exponential backoff",
+    "runtime feedback loop to code-gen LLM",
+    "LLM security-critic feedback for repair",
+    "audit logging for governance"
+  ],
+  "mechanism_keywords": [
+    "guardrail",
+    "security-gate",
+    "policy-as-code",
+    "ast-validation",
+    "safe-grammar-subset",
+    "sandbox-alternative",
+    "risk-configuration",
+    "tool-call-proxy",
+    "timeout",
+    "retry",
+    "feedback-loop",
+    "llm-as-judge",
+    "self-repair",
+    "observability",
+    "provenance",
+    "defense-in-depth"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-execution",
+    "runtime"
+  ],
+  "human_role": "none",
+  "key_constructs": [
+    "STELP (Secure Transpiler and Executor of LLM-Generated Programs)",
+    "safe grammar configuration",
+    "InjectedHumanEval",
+    "True Block Rate (TBR)",
+    "True Allow Rate (TAR)",
+    "security critic feedback LLM"
+  ],
+  "governance_refs": [
+    "CWE (MITRE)",
+    "OWASP Top 10"
+  ],
+  "scope_fit": "both",
+  "notes": "Some figures/tables (AST diagrams, code snippets) rendered as garbled OCR but core text is intact; human oversight is explicitly framed as impractical, so STELP is a fully automated mechanism (human_role none).",
+  "_truncated": false
+}

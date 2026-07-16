@@ -1,0 +1,13 @@
+{
+  "item_key": "8KJEKBGT",
+  "methods": [
+    "benchmark-evaluation",
+    "controlled-experiment",
+    "dataset-contribution"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "benchmark-evaluation",
+  "notes": "Zero-shot/chain-of-thought LLM evaluation on curated code datasets (HumanEval, MBPP, SecurityEval) measuring accuracy/F1 across 9 models; controlled manipulation via prompting technique and code perturbations. No human participants. dataset-contribution is minor (curated/filtered subsets rather than a new released dataset).",
+  "citation": "Jensen 2024"
+}

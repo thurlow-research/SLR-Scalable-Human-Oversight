@@ -1,0 +1,15 @@
+{
+  "item_key": "96XE669R",
+  "methods": [
+    "benchmark-evaluation",
+    "design-science/prototype/tool-build",
+    "dataset-contribution",
+    "measurement-study",
+    "conceptual/framework"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "benchmark-evaluation",
+  "notes": "Builds VERICODE (a taxonomy of 30 verifiable code instructions + deterministic verifiers) and the SWE-IF testbed, then benchmarks 31 LLMs measuring functional correctness and instruction following. Correlates metrics against pre-existing LMArena human-preference Elo ratings (secondary data, not newly collected participant data), so human_subjects=false. A small manual spot-check of 100 instances by two authors is validation, not a user study.",
+  "citation": "Zhong 2025"
+}

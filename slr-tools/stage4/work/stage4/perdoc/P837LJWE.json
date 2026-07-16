@@ -1,0 +1,85 @@
+{
+  "item_key": "P837LJWE",
+  "citation": "Bhatnagar 2026",
+  "evidence_type": [
+    "case-study",
+    "empirical",
+    "framework-model"
+  ],
+  "problem_statement": "How to safely govern and oversee LLM-generated code during a high-stakes, PCI-compliant migration of an 85,000-line legacy C# payment monolith to a cloud-native architecture, so AI-driven refactoring does not introduce security or compliance failures.",
+  "magnitude_evidence": "migration of ~85,000 lines of legacy ASP.NET/C# code (incl. ~15,000 lines of distributed session-management logic) of a mission-critical, high-volume payment portal",
+  "risk_types": [
+    "security",
+    "PCI-compliance",
+    "hardcoded-secrets",
+    "environment-leakage",
+    "least-privilege/IAM",
+    "architecturally-flawed-code",
+    "hallucination",
+    "technical-debt",
+    "maintainability",
+    "architectural-drift"
+  ],
+  "insufficiency_evidence": "the \"Stochastic Parrots\" risk remains: the propensity for AI to generate syntactically plausible but architecturally flawed code; also AI proposed overly permissive IAM roles requiring human \"Strategic Rollbacks\"",
+  "solution_mechanisms": [
+    "four-pillar Human-in-the-Loop framework",
+    "five-stage constraint-based collaborative workflow",
+    "Strategic Rollbacks of non-compliant AI proposals",
+    "frozen model version (Claude 4 Sonnet) at temperature 0",
+    "Chain-of-Thought prompting for deconstruction",
+    "standardized Prompt Signatures / constraint templates",
+    "LLM as first-pass security auditor",
+    "Four-Eyes mandatory human review gates",
+    "dual-layer SAST (Fortify) + container (Prisma) scanning",
+    "mandatory human approval gates in GitLab CI/CD",
+    "Compliance-Aware Prompting (future work)"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "constraint-based-prompting",
+    "strategic-rollback",
+    "human-approval-gate",
+    "four-eyes",
+    "review-gate",
+    "frozen-model",
+    "temperature-zero",
+    "chain-of-thought",
+    "prompt-signature",
+    "security-gate",
+    "sast",
+    "container-scanning",
+    "least-privilege",
+    "escalation",
+    "spec-driven",
+    "guardrail"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "pre-commit",
+    "CI",
+    "pre-deployment"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Thinking Partner",
+    "Four-Pillar HITL Framework",
+    "Environment Leakage",
+    "Strategic Rollbacks",
+    "Constraint-Based Prompting",
+    "Prompt Signatures",
+    "LLM-Assisted Software Engineering (LASE)",
+    "Abstraction Gap",
+    "Compliance-Aware Prompting",
+    "Lifecycle Compression",
+    "High-Fidelity Validation"
+  ],
+  "governance_refs": [
+    "PCI-DSS",
+    "HIPAA",
+    "Principle of Least Privilege"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

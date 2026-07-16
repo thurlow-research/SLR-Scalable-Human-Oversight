@@ -1,0 +1,73 @@
+{
+  "item_key": "GAD5Z8PV",
+  "citation": "Vargas 2025",
+  "evidence_type": [
+    "system-tool",
+    "case-study",
+    "empirical"
+  ],
+  "problem_statement": "AI-assisted debugging in the 'vibe coding' era increasingly produces code modifications that introduce unnecessary complexity, break existing functionality, or address nonexistent problems, and these harmful suggestions can reach production if applied verbatim.",
+  "magnitude_evidence": "Evaluating 15 software bugs, analyzed 69 AI-generated fix propositions; SLEAN accepted only 22 fixes (31.9%) while rejecting 47 that would have been harmful if applied verbatim",
+  "risk_types": [
+    "breaking-functionality",
+    "over-engineering",
+    "unnecessary-complexity",
+    "scope-creep",
+    "fixing-nonexistent-problems",
+    "symptom-not-root-cause",
+    "syntax-errors",
+    "code-quality-violations",
+    "misunderstanding-existing-code",
+    "security",
+    "maintainability"
+  ],
+  "insufficiency_evidence": "Individual AI systems demonstrated systematic bias toward comprehensive refactoring, security hardening, and architectural modifications; 47 of 69 raw AI-generated fixes (68%) would have been harmful if applied verbatim",
+  "solution_mechanisms": [
+    "three-phase multi-provider ensemble protocol",
+    "independent parallel analysis (Phase 1)",
+    "cross-critique/peer review (Phase 2)",
+    "arbitration synthesis with accept/reject (Phase 3)",
+    "five quality gates in arbitration",
+    "minimal causal edit enforcement / scope pruning",
+    "provider-agnostic file-driven orchestration",
+    "versioned audit-trail artifacts with attribution",
+    "deterministic orchestration for CI/CD"
+  ],
+  "mechanism_keywords": [
+    "ensemble",
+    "decorrelation",
+    "cross-critique",
+    "adversarial-verification",
+    "arbitration",
+    "consensus",
+    "multi-provider",
+    "llm-as-judge",
+    "provenance",
+    "auditability",
+    "scope-control",
+    "quality-gates",
+    "determinism",
+    "policy-as-code",
+    "convergence"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-commit",
+    "code-review",
+    "CI",
+    "pre-deployment"
+  ],
+  "human_role": "none",
+  "key_constructs": [
+    "SLEAN (Simple Lightweight Ensemble Analysis Network)",
+    "input minimalism paradox",
+    "Type 1 / Type 2 input classification",
+    "Arbitration Flag",
+    "Convergence Flag",
+    "vibe coder simulation"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Case study by a commercial vendor (CyAura AI); arbitrator shares same architecture as one analyzer, a self-noted bias limitation; some OCR artifacts in text.",
+  "_truncated": false
+}

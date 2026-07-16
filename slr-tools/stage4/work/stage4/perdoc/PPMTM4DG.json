@@ -1,0 +1,66 @@
+{
+  "item_key": "PPMTM4DG",
+  "citation": "X. Yu 2024",
+  "evidence_type": [
+    "empirical",
+    "controlled-experiment"
+  ],
+  "problem_statement": "The paper examines whether ChatGPT can reliably self-verify the correctness, security, and repair-success of code it generates, since multi-agent setups let it act as both developer and tester without anyone assessing whether its self-verification actually validates the code.",
+  "magnitude_evidence": "ChatGPT generates correct code with an average success rate of 57%, code completions without vulnerabilities at 73%, and successful repairs at 70%; among valid completions, 13 (27%) are actually vulnerable, aligning with Pearce et al. and Khoury et al. that ChatGPT has a high likelihood of generating vulnerable code",
+  "risk_types": [
+    "hallucination",
+    "self-contradiction",
+    "security",
+    "vulnerability",
+    "code-quality",
+    "incorrect-verification",
+    "false-positives",
+    "over-trust-in-AI"
+  ],
+  "insufficiency_evidence": "With the direct question prompt ChatGPT erroneously believes it accomplished tasks with average error rates of 39% (generation), 25% (completion), 28% (repair); even the guiding question leaves 67% average missing report rate for incorrect code and 59% for failed repairs; test-report explanations are on average 75% inaccurate for incorrectly generated code and failed repairs",
+  "solution_mechanisms": [
+    "ChatGPT self-verification of its own code",
+    "direct-question verification prompt",
+    "guiding-question (negative assertion) prompt",
+    "test-report generation prompt",
+    "human developer review of outputs",
+    "prompt engineering to improve self-verification",
+    "collecting self-contradiction instances for fine-tuning",
+    "GitHub CodeQL + manual developer inspection for ground truth"
+  ],
+  "mechanism_keywords": [
+    "self-verification",
+    "llm-as-judge",
+    "prompt-engineering",
+    "guiding-question",
+    "test-report",
+    "adversarial-prompting",
+    "hitl",
+    "human-review",
+    "static-analysis",
+    "multi-agent",
+    "self-consistency",
+    "fine-tuning"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "post-generation-verification",
+    "code-review",
+    "pre-commit"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "self-contradictory hallucination",
+    "self-verification capability",
+    "direct question prompt",
+    "guiding question prompt",
+    "test report prompt",
+    "negative vs positive guiding question"
+  ],
+  "governance_refs": [
+    "MITRE CWE Top 25"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

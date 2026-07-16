@@ -1,0 +1,13 @@
+{
+  "item_key": "VG8PSMM7",
+  "methods": [
+    "design-science / prototype / tool-build",
+    "benchmark-evaluation",
+    "dataset-contribution"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "benchmark-evaluation",
+  "notes": "Builds the LLM-PLC-AS framework and benchmarks 21 prompting techniques across 25 curated PLC use cases, evaluating generated code via BLEU (lexical), LLM-in-the-Loop (LLM-as-judge), and Human-in-the-Loop expert review. HITL uses certified PLC engineers as expert code raters (inter-rater agreement reported), which is expert evaluation of artifacts rather than a survey/interview/user-study, so human_subjects is coded false. Also releases an annotated dataset (Zenodo).",
+  "citation": "Adnyana 2026"
+}

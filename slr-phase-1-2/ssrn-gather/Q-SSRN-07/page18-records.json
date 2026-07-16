@@ -1,0 +1,315 @@
+{
+  "count": 18,
+  "total": "868",
+  "page": "18",
+  "records": [
+    {
+      "abstractId": "3959746",
+      "title": "Conformity Assessments and Post-market Monitoring: A Guide to the Role of Auditing in the Proposed European AI Regulation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3959746",
+      "authors": [
+        "Jakob Mökander",
+        "maria axente",
+        "Federico Casolari",
+        "Luciano Floridi"
+      ],
+      "affiliations": [
+        "University of Oxford - Oxford Internet Institute",
+        "affiliation not provided to SSRN",
+        "Alma Mater Studiorum - University of Bologna",
+        "Yale University - Digital Ethics Center"
+      ],
+      "pages": 32,
+      "posted": "10 Nov 2021",
+      "snippet": "Artificial intelligence, Auditing, Certification, Conformity assessment, European Union, Governance, Regulation, Technology",
+      "downloads": 319
+    },
+    {
+      "abstractId": "3921216",
+      "title": "The Flaws of Policies Requiring Human Oversight of Government Algorithms",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3921216",
+      "authors": [
+        "Ben Green"
+      ],
+      "affiliations": [
+        "University of Michigan at Ann Arbor - Society of Fellows"
+      ],
+      "pages": 22,
+      "posted": "13 Sep 2021",
+      "snippet": "First, evidence suggests that people are unable to perform the desired oversight functions. / In light of these flaws, I propose a shift from human oversight to institutional oversight as the central mechanism for regulating government algorithms / Human oversight; Human in the loop; Algorithmic governance; Automated decision-making; Artificial intelligence; AI regulation&",
+      "downloads": 2896
+    },
+    {
+      "abstractId": "3871099",
+      "title": "Legal AI Systems in the EU’s proposed Artificial Intelligence Act",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3871099",
+      "authors": [
+        "Sebastian Felix Schwemer",
+        "Letizia Tomada",
+        "Tommaso Pasini"
+      ],
+      "affiliations": [
+        "BI Norwegian Business School",
+        "University of Copenhagen, Centre for Information and Innovation Law (CIIR)",
+        "University of Copenhagen - Department of Computer Science"
+      ],
+      "pages": 8,
+      "posted": "08 Jul 2021",
+      "snippet": "European Union, Artificial Intelligence Act, AI regulation, high-risk AI systems, legal sector, intelligent assistance, human oversight, data governance",
+      "downloads": 1498
+    },
+    {
+      "abstractId": "3871635",
+      "title": "Aligning AI Regulation to Sociotechnical Change",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3871635",
+      "authors": [
+        "Matthijs M. Maas"
+      ],
+      "affiliations": [
+        "Institute for Law & AI"
+      ],
+      "pages": 23,
+      "posted": "06 Jul 2021",
+      "snippet": "This chapter argues that while existing (inter)national AI governance approaches are important, they are often siloed. / regulation. / Artificial Intelligence, AI, Regulation, Sociotechnical Change, Techlaw, Regulatory Rationale, Regulatory Target, Problem Logics",
+      "downloads": 1512
+    },
+    {
+      "abstractId": "3873097",
+      "title": "Artificial Intelligence and Corporate Social Responsibility",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3873097",
+      "authors": [
+        "Susan von Struensee"
+      ],
+      "affiliations": [
+        "Global Research Initiative"
+      ],
+      "pages": 77,
+      "posted": "06 Jul 2021",
+      "snippet": "Ethical behavior instead indicates compliance with specific values. / AI regulation is hard for national governments to do by themselves. / AI, AI Ethics, Artificial Intelligence, Digital Dementia, OECD AI Principles, Corporate Governance, the Joint Artificial Intelligence Center (JAIC), National",
+      "downloads": 1149
+    },
+    {
+      "abstractId": "3873786",
+      "title": "The AI Regulation: Entering an AI Regulatory Winter? Why An Ad Hoc Directive on Ai in Employment Is Required",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3873786",
+      "authors": [
+        "Aida Ponce"
+      ],
+      "affiliations": [
+        "European Trade Union Institute (ETUI)"
+      ],
+      "pages": 9,
+      "posted": "30 Jun 2021",
+      "snippet": ". • High-risk uses are permitted subject to compliance with specific requirements and an ex ante conformity assessment based on internal control checks",
+      "downloads": 315
+    },
+    {
+      "abstractId": "3846781",
+      "title": "Creating a European Health Data Space. Obstacles in Four Key Legal Areas",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3846781",
+      "authors": [
+        "Anastasiya Kiseleva",
+        "Paul De Hert"
+      ],
+      "affiliations": [
+        "Vrije Universiteit Brussel (VUB)",
+        "Free University of Brussels (VUB)- LSTS"
+      ],
+      "pages": 18,
+      "posted": "18 May 2021",
+      "snippet": "European Health Data Space, EU Data Strategy, AI Regulation, personal data, non personal data, rules on healthcare provision in the EU, health policy, / data policy, AI policy, Data Act, Data Governance Act",
+      "downloads": 587
+    },
+    {
+      "abstractId": "3846898",
+      "title": "EU Proposed AI Legal Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3846898",
+      "authors": [
+        "Emre Kazim",
+        "Charles Kerrigan",
+        "Adriano Koshiyama"
+      ],
+      "affiliations": [
+        "Holistic AI",
+        "CMS London",
+        "Department of Computer Science, University College London"
+      ],
+      "pages": 9,
+      "posted": "18 May 2021",
+      "snippet": "We conclude with notes on the legal status of algorithms, the status of GDPR in light of AI regulation and, the geopolitical ramifications of EU AI regulation / Regulation, Compliance, Artificial Intelligence, Accountability, Governance, Fairness, Transparency, European Union",
+      "downloads": 732
+    },
+    {
+      "abstractId": "3839744",
+      "title": "Experimental Regulations for AI: Sandboxes for Morals and Mores",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3839744",
+      "authors": [
+        "Sofia Ranchordas"
+      ],
+      "affiliations": [
+        "Tilburg Law School"
+      ],
+      "pages": 31,
+      "posted": "06 May 2021",
+      "snippet": "Key examples are the EU Coordinated Plan on AI and the recently published EU AI Regulation Proposal which refer to the importance of experimenting with / the Fintech sector, regulatory sandboxes create a testbed for a selected number of innovative projects, by waiving otherwise applicable rules, guiding compliance / Artificial Intelligence, regulatory sandboxes, AI, technology, innovation, law, regulation, experimental regulations, experimental legal regimes, EU AI / Regulation",
+      "downloads": 2167
+    },
+    {
+      "abstractId": "3828206",
+      "title": "AI Technologies and Accountability in Digital Health",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3828206",
+      "authors": [
+        "Eva Thelisson"
+      ],
+      "affiliations": [
+        "MIT Connection Science"
+      ],
+      "pages": 30,
+      "posted": "19 Apr 2021",
+      "snippet": "Special attention is given to the governance of AI systems by international institutions (EU Proposal on AI Regulation, OECD, Council of Europe, etc) but / Secondly, we propose possible solutions to shape a sound policy in digital health taking into account a rights-based governance framework. / Trustworthy Artificial Intelligence, Digital Health, Personalized Medicine, Human Rights, Data Protection, Digital Ethics, Data Governance, Internet of",
+      "downloads": 423
+    },
+    {
+      "abstractId": "3817999",
+      "title": "Artificial intelligence, human rights, democracy, and the rule of law: a primer",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3817999",
+      "authors": [
+        "David Leslie",
+        "Christopher Burr",
+        "Mhairi Aitken",
+        "Josh Cowls",
+        "Michael Katell",
+        "Morgan Briggs"
+      ],
+      "affiliations": [
+        "The Alan Turing Institute",
+        "University of Oxford - Oxford Internet Institute, The Alan Turing Institute",
+        "The Alan Turing Institute",
+        "University of Oxford - Oxford Internet Institute",
+        "The Alan Turing Institute Public Policy Programme",
+        "The Alan Turing Institute"
+      ],
+      "pages": 46,
+      "posted": "06 Apr 2021",
+      "snippet": "It also aims to provide some background information on the areas of AI innovation, human rights law, technology policy, and compliance mechanisms covered / Artificial Intelligence, AI ethics, democracy, human right, the rule of law, AI governance, AI regulation, responsible research and innovation",
+      "downloads": 841
+    },
+    {
+      "abstractId": "3772500",
+      "title": "AI Impact Assessment: A Policy Prototyping Experiment",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3772500",
+      "authors": [
+        "Norberto Nuno Gomes de Andrade",
+        "Verena Kontschieder"
+      ],
+      "affiliations": [
+        "IE Law School",
+        "Facebook"
+      ],
+      "pages": 91,
+      "posted": "18 Feb 2021",
+      "snippet": ") policy effectiveness; 3) policy costs.The goal was to derive evidence-based recommendations relevant to ongoing policy debates around the future of AI / regulation. / artificial intelligence, artificial intelligence and regulation, AI regulation, artificial intelligence and law, AI law, artificial intelligence governance / , AI governance, risk assessment, impact assessment, policy prototyping, governance, experimental legislation, experimental regulation",
+      "downloads": 384
+    },
+    {
+      "abstractId": "3786567",
+      "title": "AI Regulation in the European Union and Trade Law: How Can Accountability of AI and a High Level of Consumer Protection Prevail over a Trade Discipline on Source Code?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3786567",
+      "authors": [
+        "Kristina Irion"
+      ],
+      "affiliations": [
+        "University of Amsterdam"
+      ],
+      "pages": 81,
+      "posted": "18 Feb 2021",
+      "snippet": "This study forms a comprehensive understanding of this issue that intersects three different areas: (1) emerging EU governance of AI and (2) the / This study concludes that the source code clause within trade law indeed restricts the EU’s right to regulate in the field of AI governance in several",
+      "downloads": 569
+    },
+    {
+      "abstractId": "3768214",
+      "title": "A Structural Solution to Mitigating Artificial Intelligence Bias in Administrative Agencies",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3768214",
+      "authors": [
+        "Aram A. Gavoor",
+        "Raffi Teperdjian"
+      ],
+      "affiliations": [
+        "George Washington University - Law School",
+        "George Washington University - Law School"
+      ],
+      "pages": 25,
+      "posted": "12 Feb 2021",
+      "snippet": "only begun to address these issues by establishing broad-stroke foundational principles and recommendations that can lead to the development of optimal AI / regulation and general utilization.",
+      "downloads": 312
+    },
+    {
+      "abstractId": "3717451",
+      "title": "Mapping the Stony Road toward Trustworthy AI: Expectations, Problems, Conundrums",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3717451",
+      "authors": [
+        "Gernot Rieder",
+        "Judith Simon",
+        "Pak-Hang Wong"
+      ],
+      "affiliations": [
+        "University of Hamburg - Department of Informatics",
+        "University Hamburg -Department of Informatics",
+        "Independent"
+      ],
+      "pages": 14,
+      "posted": "29 Dec 2020",
+      "snippet": "To some, the guidelines are an important step for the governance of AI. To others, the guidelines distract effort from genuine AI regulation.",
+      "downloads": 1146
+    },
+    {
+      "abstractId": "3705590",
+      "title": "Shaping the Law of AI: Transatlantic Perspectives",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3705590",
+      "authors": [
+        "Mauritz Kop"
+      ],
+      "affiliations": [
+        "Stanford University"
+      ],
+      "pages": 27,
+      "posted": "18 Dec 2020",
+      "snippet": "Simultaneous to preparing its Law of AI, the EC is designing a legislative framework for data governance: The Data Act. / risks vary per industry and per technology, policy makers should differentiate more explicitly between economic sectors when they design their digital governance / AI, Regulation, European Commission, Law of AI, Legal Framework, Trustworthy AI, Risks, Data Act, Access, Machine Learning, Overarching Core AI Rules,",
+      "downloads": 263
+    },
+    {
+      "abstractId": "3602299",
+      "title": "Banking on AI: Mandating a Proactive Approach to AI Regulation in the Financial Sector",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3602299",
+      "authors": [
+        "Jon Truby",
+        "Rafael Dean Brown",
+        "Andrew M. Dahdal"
+      ],
+      "affiliations": [
+        "National University Singapore",
+        "Qatar University College of Law",
+        "Qatar University - College of Law"
+      ],
+      "pages": 12,
+      "posted": "11 Jun 2020",
+      "snippet": "Despite an emerging international consensus on principles of AI governance, lawmakers have so far failed to translate those principles into regulations / intelligence is rapidly influencing the financial sector with innumerable potential benefits, such as enhancing financial services and improving regulatory compliance / artificial intelligence, AI, financial sector, finance, financial markets, AI regulation, financial regulation, FinTech, RegTech",
+      "downloads": 235
+    },
+    {
+      "abstractId": "3382342",
+      "title": "Artificial Intelligence: The Very Human Dangers of Dysfunctional Design and Autocratic Corporate Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3382342",
+      "authors": [
+        "Alan J. Dignam"
+      ],
+      "affiliations": [
+        "Queen Mary University of London - School of Law"
+      ],
+      "pages": 50,
+      "posted": "06 May 2019",
+      "snippet": "Artificial Intelligence (AI) decision-making technology and proposes a regulatory model to place public rather than private interest at the heart of AI / regulation.",
+      "downloads": 1284
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "item_key": "E9RAWBDT",
+  "methods": [
+    "qualitative-analysis",
+    "interviews",
+    "social-media-content-analysis",
+    "grounded-theory",
+    "conceptual/framework/theory-building"
+  ],
+  "empirical": true,
+  "human_subjects": true,
+  "primary_hint": "qualitative-analysis",
+  "notes": "Flexible qualitative coding (Deterding & Waters, adapted from grounded theory) of 134 social-media posts and 5,000+ comments from Reddit/LinkedIn plus 11 semi-structured developer interviews, synthesized into a theory/framework of vibe coding. Human subjects via interviews and public-post analysis. Not repository-mining (mines social discourse, not code repos).",
+  "citation": "Pimenova 2025"
+}

@@ -1,0 +1,65 @@
+{
+  "item_key": "4FGIVVTG",
+  "citation": "Omidvar-Tehrani 2024",
+  "evidence_type": [
+    "empirical",
+    "case-study",
+    "system-tool"
+  ],
+  "problem_statement": "The document addresses how developers should collaborate with and oversee LLM-generated code modifications during large-scale, application-level code migration (e.g., Java 8 to Java 17) spanning entire codebases, and how much control and oversight humans want over AI output.",
+  "magnitude_evidence": "QCT upgraded 1000 Java 8 applications to Java 17 in two days, with each upgrade taking 10 minutes on average, vs 2+ days previously (Amazon internal benchmark); low 4.8% accuracy of resolving GitHub issues on SWE-Bench using Claude V2",
+  "risk_types": [
+    "hallucination",
+    "security",
+    "quality",
+    "correctness",
+    "incomplete-output",
+    "supply-chain",
+    "trust-erosion",
+    "test-failure"
+  ],
+  "insufficiency_evidence": "Participant P7 received a hallucinated output but trusted it for the whole session, trying to debug errors to no avail, not questioning the output until probed by the interviewer; 5 other participants gave up reviewing AI code and restarted the upgrade from scratch",
+  "solution_mechanisms": [
+    "human-as-director guiding AI output",
+    "human-as-reviewer of AI code",
+    "trust framework across model-outcome types",
+    "surfacing/exposing AI limitations transparently",
+    "citations and reasoning references for changes",
+    "robust test-suite results as trust signal",
+    "recognition-over-recall error assistance",
+    "user preference setting to guide AI",
+    "learning from past upgrade history"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "human-in-the-loop",
+    "code-review",
+    "trust-calibration",
+    "transparency",
+    "diff-review",
+    "provenance",
+    "test-gate",
+    "escalation",
+    "preference-elicitation",
+    "explainability"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "pre-commit",
+    "CI"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "human as director",
+    "human as reviewer",
+    "trust framework",
+    "correct-looking output with unintended consequences",
+    "recognition rather than recall",
+    "hand-off model of human-AI partnership"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

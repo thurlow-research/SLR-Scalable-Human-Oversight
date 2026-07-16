@@ -1,0 +1,71 @@
+{
+  "item_key": "R2QMVNXI",
+  "citation": "Chang 2025",
+  "evidence_type": [
+    "secondary-review",
+    "empirical"
+  ],
+  "problem_statement": "As LLM-based vibe/agentic coding rapidly generates large volumes of code, the development bottleneck shifts to reviewing, validating, and securing AI-generated code, raising concerns about quality, maintainability, and security that human oversight must catch.",
+  "magnitude_evidence": "'25% of teams had as much as 95% of their codebase generated via LLM-enhanced coding tools' (Y Combinator cohorts); 'Microsoft CEO Satya Nadella revealed that 20% to 30% of the company's repository code was written by AI'",
+  "risk_types": [
+    "security",
+    "quality",
+    "maintainability",
+    "technical-debt",
+    "legal-IP",
+    "ethical",
+    "hallucination",
+    "data-privacy",
+    "skill-erosion",
+    "accountability",
+    "bypassing-safety-pipelines"
+  ],
+  "insufficiency_evidence": "'only a small proportion (i.e., around 35%) of AI-generated backend code is both secure and correct'; 'even \"security-focused prompts\" fail to eliminate vulnerabilities'; Replit AI deleted a live production database despite explicit instructions not to touch anything",
+  "solution_mechanisms": [
+    "code review as new primary skill",
+    "enterprise-grade security and governance agent",
+    "automated security checks/audits before deployment",
+    "verify after every small change (incremental)",
+    "human orchestration of AI agents",
+    "context engineering / strong contextual foundation",
+    "specification-driven development",
+    "automated testing, security scanning, CI/CD review apps"
+  ],
+  "mechanism_keywords": [
+    "code-review",
+    "security-gate",
+    "governance",
+    "hitl",
+    "human-orchestration",
+    "security-scanning",
+    "incremental-verification",
+    "context-engineering",
+    "spec-driven",
+    "ci-cd-review",
+    "hiring-for-review"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "generation-time",
+    "pre-deployment",
+    "CI",
+    "testing"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "vibe coding",
+    "agentic coding",
+    "AI-assisted coding",
+    "material disengagement",
+    "iterative goal-satisfaction cycle",
+    "spectrum of AI-based coding",
+    "paradox of skill development",
+    "cognitive alignment",
+    "conductor metaphor",
+    "context engineering"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Multivocal/grey-literature review of 57 YouTube videos; oversight framed largely through an industrial-practice and computing-education lens rather than a formal governance framework.",
+  "_truncated": false
+}

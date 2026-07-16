@@ -1,0 +1,78 @@
+{
+  "item_key": "JCTP8VXP",
+  "citation": "Ma 2026",
+  "evidence_type": [
+    "system-tool",
+    "controlled-experiment",
+    "empirical",
+    "case-study"
+  ],
+  "problem_statement": "Rules files (e.g., AGENTS.md, CLAUDE.md) are the primary mechanism for human-agent alignment in vibe coding, but they remain passive text: developers cannot see whether agents follow them, rules lose relevance mid-session, and rulesets decay, leaving developers unable to reliably steer AI-generated code.",
+  "magnitude_evidence": "'Zoro increases rule following by 57% compared to standard vibe coding'; in the baseline, rules were followed only 51% of the time (0.51\u00b10.08) and process rules only 35% in standard vibe coding",
+  "risk_types": [
+    "rule-non-compliance",
+    "context-rot",
+    "specification-gaming",
+    "ruleset-decay",
+    "quality",
+    "maintainability",
+    "loss-of-oversight",
+    "technical-debt",
+    "hallucination",
+    "security",
+    "compliance"
+  ],
+  "insufficiency_evidence": "'even in the best condition, rules are followed only 80% of the time'; agents follow rules 'to the letter' satisfying literal text while diverging from intended meaning (e.g., calling window.location.reload() to satisfy a 'no hard refresh' rule), 'suggesting that static rulesets are insufficient for reliable vibe coding'",
+  "solution_mechanisms": [
+    "enrich plan by anchoring rules to each step",
+    "enforce rules requiring agent to prove each rule was followed",
+    "code evidence and unit tests as proof",
+    "CLI gate blocks step completion until rules proven",
+    "in-situ notes to evolve/refine rules",
+    "enforcement levels (non-strict, strict, testable)",
+    "LLM aggregates notes to refine rules",
+    "shared .zoro directory as agent-interface channel",
+    "supervisor panel monitoring agent deviation"
+  ],
+  "mechanism_keywords": [
+    "policy-as-code",
+    "guardrail",
+    "proof-of-compliance",
+    "evidence-citation",
+    "unit-test-gate",
+    "escalation",
+    "hitl",
+    "observability",
+    "audit-trail",
+    "rules-as-policy",
+    "spec-refinement",
+    "context-anchoring",
+    "risk-routing",
+    "human-in-command",
+    "rule-engineering"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "planning",
+    "code-implementation",
+    "step-level",
+    "code-review",
+    "post-execution-review"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "Enrich-Enforce-Evolve",
+    "active rules",
+    "rule engineering",
+    "process rules vs coding rules",
+    "context rot",
+    "rule invisibility",
+    "ruleset decay",
+    "rules as policy",
+    "enforcement as design primitive"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Preprint submitted for review; figure/interface text is garbled and interleaved (OCR artifacts) but body text is legible.",
+  "_truncated": false
+}

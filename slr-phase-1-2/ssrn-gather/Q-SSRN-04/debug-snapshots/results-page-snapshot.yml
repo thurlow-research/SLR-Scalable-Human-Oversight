@@ -1,0 +1,678 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#maincontent"
+  - banner [ref=e5]:
+    - link "SSRN Homepage" [ref=e6] [cursor=pointer]:
+      - /url: https://www.ssrn.com
+      - img [ref=e8]
+    - navigation [ref=e9]:
+      - list [ref=e10]:
+        - listitem [ref=e11]:
+          - generic "Product & Services" [ref=e14] [cursor=pointer]:
+            - generic [ref=e16]: Product & Services
+        - listitem [ref=e19]:
+          - link "Subscribe" [ref=e20] [cursor=pointer]:
+            - /url: https://www.ssrn.com/index.cfm/en/subscribe/
+            - generic [ref=e22]: Subscribe
+        - listitem [ref=e23]:
+          - link "Submit a paper" [ref=e24] [cursor=pointer]:
+            - /url: https://hq.ssrn.com/submission.cfm
+            - generic [ref=e26]: Submit a paper
+        - listitem [ref=e27]:
+          - link "Browse" [ref=e28] [cursor=pointer]:
+            - /url: https://papers.ssrn.com/sol3/DisplayJournalBrowse.cfm
+            - generic [ref=e30]: Browse
+        - listitem [ref=e31]:
+          - link "Blog" [ref=e32] [cursor=pointer]:
+            - /url: https://blog.ssrn.com/
+            - generic [ref=e34]: Blog
+        - listitem [ref=e37]:
+          - button "More" [ref=e39]:
+            - generic [ref=e41]: More
+    - button "Search" [ref=e46]
+    - link "Shopping Cart" [ref=e48] [cursor=pointer]:
+      - /url: https://papers.ssrn.com/sol3/ShoppingCart.cfm
+    - img "Avatar" [ref=e51]: ST
+  - main [ref=e52]:
+    - generic [ref=e54]:
+      - heading "Advanced Search" [level=1] [ref=e55]
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e62]: "Search term(s):"
+            - textbox "Search term(s)" [ref=e69]: "\"human oversight\" AND (\"artificial intelligence\" OR \"generative AI\" OR \"AI systems\")"
+            - button "Search" [ref=e72]
+          - group [ref=e78]:
+            - generic [ref=e80]
+          - generic [ref=e99]:
+            - generic [ref=e102]: "Author(s):"
+            - textbox "Author(s)" [ref=e109]
+          - generic [ref=e110]:
+            - generic [ref=e113]: "Date:"
+            - combobox "All Time" [ref=e121] [cursor=pointer]
+        - generic [ref=e123]:
+          - group [ref=e125]:
+            - generic [ref=e127]
+          - button "Help" [ref=e141]
+      - generic [ref=e144]:
+        - generic [ref=e145]:
+          - generic [ref=e148]:
+            - generic "Sort by" [ref=e153]
+            - combobox "Sort by" [ref=e157] [cursor=pointer]: Relevancy
+          - navigation [ref=e159]:
+            - list [ref=e164]
+            - generic "Next page" [ref=e193] [cursor=pointer]
+            - generic "Last page" [ref=e195] [cursor=pointer]
+        - heading "Displaying results 1 to 50 of 1697" [level=3] [ref=e197]
+        - generic [ref=e198]:
+          - generic [ref=e200]:
+            - 'heading "Navigating the Risks: An Examination of the Dangers Associated with Artificial General Intelligence and Artificial Superintelligence" [level=3] [ref=e201]'
+            - paragraph
+            - paragraph [ref=e207]: "Number of pages: 13 • Posted: 02 Oct 2024"
+            - paragraph [ref=e208]
+            - paragraph [ref=e211]: Independent
+            - generic [ref=e212]
+          - generic [ref=e229]:
+            - paragraph [ref=e230]: Downloads
+            - paragraph [ref=e231]: "1381"
+        - generic [ref=e232]:
+          - generic [ref=e234]:
+            - heading "How AI-AI Assurance Assemblages Reshape Trust and Erode Human Judgment" [level=3] [ref=e235]
+            - paragraph
+            - paragraph [ref=e241]: "Number of pages: 39 • Posted: 14 Jan 2026"
+            - paragraph [ref=e242]
+            - paragraph [ref=e245]
+            - generic [ref=e247]
+          - generic [ref=e262]:
+            - paragraph [ref=e263]: Downloads
+            - paragraph [ref=e264]: "18"
+        - generic [ref=e265]:
+          - generic [ref=e267]:
+            - 'heading "Institutionalised Distrust and Human Oversight of Artificial Intelligence: Toward a Democratic Design of AI Governance under the European Union AI Act" [level=3] [ref=e268]'
+            - paragraph
+            - paragraph [ref=e277]: "Number of pages: 25 • Posted: 07 Mar 2023"
+            - paragraph [ref=e278]
+            - paragraph [ref=e281]: University of Oxford - Oxford Internet Institute
+            - generic [ref=e282]
+          - generic [ref=e302]:
+            - paragraph [ref=e303]: Downloads
+            - paragraph [ref=e304]: "900"
+        - generic [ref=e305]:
+          - generic [ref=e307]:
+            - heading "A Provenance-Verified AI Framework for Narrative Delivery in Early Childhood Education" [level=3] [ref=e308]
+            - paragraph
+            - paragraph [ref=e311]: "Number of pages: 13 • Posted: 02 Apr 2026"
+            - paragraph [ref=e312]
+            - paragraph [ref=e321]
+            - generic [ref=e323]
+          - generic [ref=e338]:
+            - paragraph [ref=e339]: Downloads
+            - paragraph [ref=e340]: "9"
+        - generic [ref=e341]:
+          - generic [ref=e343]:
+            - 'heading "Philosophy of the Machines: A Manifesto for Humans in the Age of Artificial Agents" [level=3] [ref=e344]'
+            - paragraph [ref=e348]
+            - paragraph [ref=e352]: "Number of pages: 26 • Posted: 16 Jun 2025"
+            - paragraph [ref=e353]
+            - paragraph [ref=e356]: Hitachi Rail
+            - generic [ref=e357]
+          - generic [ref=e373]:
+            - paragraph [ref=e374]: Downloads
+            - paragraph [ref=e375]: "105"
+        - generic [ref=e376]:
+          - generic [ref=e378]:
+            - 'heading "INSYTE: A Classification Framework for Traditional to Agentic AI Systems" [level=3] [ref=e379]'
+            - paragraph
+            - paragraph [ref=e383]: "Number of pages: 39 • Posted: 23 Jul 2025"
+            - paragraph [ref=e384]
+            - paragraph [ref=e417]: University of York; University of York; Ufonia Limited; University of York; University of York; University of York; University of York; NHS Foundation Trust - Bradford Teaching Hospitals NHS Foundation Trust; University of York; University of York; HORIBA MIRA; University of York - York Law School; University of York; University of York; University of York - Department of Philosophy; University of York
+            - generic [ref=e418]
+          - generic [ref=e437]:
+            - paragraph [ref=e438]: Downloads
+            - paragraph [ref=e439]: "208"
+        - generic [ref=e440]:
+          - generic [ref=e442]:
+            - 'heading "Regulating Generative AI: Legal Accountability in the Age of Algorithms" [level=3] [ref=e443]'
+            - paragraph
+            - paragraph [ref=e447]: "Number of pages: 3 • Posted: 05 Dec 2025"
+            - paragraph [ref=e448]
+            - paragraph
+            - generic [ref=e451]
+          - generic [ref=e469]:
+            - paragraph [ref=e470]: Downloads
+            - paragraph [ref=e471]: "44"
+        - generic [ref=e472]:
+          - generic [ref=e474]:
+            - 'heading "Regulating Generative AI: Legal Accountability in the Age of Algorithms" [level=3] [ref=e475]'
+            - paragraph
+            - paragraph [ref=e479]: "Number of pages: 0 • Posted: 20 Nov 2025"
+            - paragraph [ref=e480]
+            - paragraph [ref=e483]: ABES Engineering College (ABESEC)
+            - generic [ref=e484]
+          - generic [ref=e496]:
+            - paragraph [ref=e497]: Downloads
+            - paragraph [ref=e498]: "0"
+        - generic [ref=e499]:
+          - generic [ref=e501]:
+            - 'heading "Hallucination in Generative Artificial Intelligence: Challenges, Causes, and Mitigation Strategies" [level=3] [ref=e502]'
+            - paragraph
+            - paragraph [ref=e508]: "Number of pages: 16 • Posted: 30 Dec 2025"
+            - paragraph [ref=e509]
+            - paragraph
+            - generic [ref=e512]
+          - generic [ref=e533]:
+            - paragraph [ref=e534]: Downloads
+            - paragraph [ref=e535]: "131"
+        - generic [ref=e536]:
+          - generic [ref=e538]:
+            - 'heading "Artificial Intimacy: The Ethics and Law of Emotional Reliance on Generative AI" [level=3] [ref=e539]'
+            - paragraph
+            - paragraph [ref=e545]: "Number of pages: 7 • Posted: 23 Oct 2025"
+            - paragraph [ref=e546]
+            - paragraph [ref=e549]
+            - generic [ref=e551]
+          - generic [ref=e573]:
+            - paragraph [ref=e574]: Downloads
+            - paragraph [ref=e575]: "218"
+        - generic [ref=e576]:
+          - generic [ref=e578]:
+            - heading "In Search of the Human Face of Artificial Intelligence. Bill Maurer and Daivi Rodima-Taylor" [level=3] [ref=e579]
+            - paragraph
+            - paragraph [ref=e585]: "Number of pages: 4 • Posted: 12 Feb 2025"
+            - paragraph [ref=e586]
+            - paragraph [ref=e589]: Boston University
+            - generic [ref=e590]
+          - generic [ref=e605]:
+            - paragraph [ref=e606]: Downloads
+            - paragraph [ref=e607]: "36"
+        - generic [ref=e608]:
+          - generic [ref=e610]:
+            - heading "Regulation of Artificial Intelligence" [level=3] [ref=e611]
+            - paragraph
+            - paragraph [ref=e615]: "Number of pages: 6 • Posted: 09 May 2024"
+            - paragraph [ref=e616]
+            - paragraph [ref=e619]: Independent
+            - generic [ref=e620]
+          - generic [ref=e642]:
+            - paragraph [ref=e643]: Downloads
+            - paragraph [ref=e644]: "167"
+        - generic [ref=e645]:
+          - generic [ref=e647]:
+            - heading "Human Oversight of Artificial Intelligence and Technical Standardisation" [level=3] [ref=e648]
+            - paragraph
+            - paragraph [ref=e655]: "Number of pages: 16 • Posted: 06 May 2025"
+            - paragraph [ref=e656]
+            - paragraph [ref=e661]: Artois University; Artois University
+            - generic [ref=e662]
+          - generic [ref=e678]:
+            - paragraph [ref=e679]: Downloads
+            - paragraph [ref=e680]: "161"
+        - generic [ref=e681]:
+          - generic [ref=e683]:
+            - 'heading "The Sentinel System: A Global Architecture for AI Governance and Safety" [level=3] [ref=e684]'
+            - paragraph
+            - paragraph [ref=e689]: "Number of pages: 44 • Posted: 27 Jan 2026"
+            - paragraph [ref=e690]
+            - paragraph [ref=e693]
+            - generic [ref=e695]
+          - generic [ref=e716]:
+            - paragraph [ref=e717]: Downloads
+            - paragraph [ref=e718]: "30"
+        - generic [ref=e719]:
+          - generic [ref=e721]:
+            - heading "Fiduciary Duties and Business Judgment Rule 2.0 in the AI Act Age" [level=3] [ref=e722]
+            - paragraph
+            - paragraph [ref=e726]: "Number of pages: 36 • Posted: 07 Nov 2025"
+            - paragraph [ref=e727]
+            - paragraph [ref=e732]: Bocconi University - Department of Law; Bocconi University - Department of Law
+            - generic [ref=e733]
+          - generic [ref=e752]:
+            - paragraph [ref=e753]: Downloads
+            - paragraph [ref=e754]: "591"
+        - generic [ref=e755]:
+          - generic [ref=e757]:
+            - 'heading "AI Takes the Gavel: Contract Laws'' New Sidekick in Automated Decision-Making" [level=3] [ref=e758]'
+            - paragraph
+            - paragraph [ref=e761]: "Number of pages: 11 • Posted: 23 Apr 2024"
+            - paragraph [ref=e762]
+            - paragraph [ref=e765]: Independent
+            - generic [ref=e766]
+          - generic [ref=e781]:
+            - paragraph [ref=e782]: Downloads
+            - paragraph [ref=e783]: "171"
+        - generic [ref=e784]:
+          - generic [ref=e786]:
+            - heading "Personalized financial services powered by generative artificial intelligence" [level=3] [ref=e787]
+            - paragraph
+            - paragraph [ref=e792]: "Number of pages: 8 • Posted: 30 Jun 2025"
+            - paragraph [ref=e793]
+            - paragraph [ref=e796]: Independent
+            - generic [ref=e797]
+          - generic [ref=e808]:
+            - paragraph [ref=e809]: Downloads
+            - paragraph [ref=e810]: "46"
+        - generic [ref=e811]:
+          - generic [ref=e813]:
+            - heading "Assessing the Impact of Artificial Intelligence Systems on Fundamental Rights" [level=3] [ref=e814]
+            - paragraph
+            - paragraph [ref=e819]: "Number of pages: 88 • Posted: 21 Mar 2025"
+            - paragraph [ref=e820]
+            - paragraph [ref=e841]: Intesa Sanpaolo SpA; Bocconi University - Department of Law; Católica Global School of Law, Lisbon; Intesa SanPaolo SpA; Intesa SanPaolo SpA; Intesa SanPaolo SpA; Bocconi University, Angelo Sraffa Department of Legal Studies; Intesa SanPaolo SpA; Intesa Sanpaolo SpA; Intesa SanPaolo SpA
+            - generic [ref=e842]
+          - generic [ref=e859]:
+            - paragraph [ref=e860]: Downloads
+            - paragraph [ref=e861]: "614"
+        - generic [ref=e862]:
+          - generic [ref=e864]:
+            - 'heading "AI-Induced Copyright Infringement: Application of Legal Neutrality Based on the Qualitative Similarity Criterion" [level=3] [ref=e865]'
+            - paragraph
+            - paragraph [ref=e868]: "Number of pages: 51 • Posted: 02 Feb 2024"
+            - paragraph [ref=e869]
+            - paragraph [ref=e872]: University of Sussex, University of Sussex Law School
+            - generic [ref=e873]
+          - generic [ref=e890]:
+            - paragraph [ref=e891]: Downloads
+            - paragraph [ref=e892]: "591"
+        - generic [ref=e893]:
+          - generic [ref=e895]:
+            - heading "International Commercial Arbitration and Technology - An Authors’ Interview with Generative Artificial Intelligence" [level=3] [ref=e896]
+            - paragraph
+            - paragraph [ref=e902]: "Number of pages: 38 • Posted: 26 Oct 2023"
+            - paragraph [ref=e903]
+            - paragraph [ref=e908]: Erasmus University Rotterdam (EUR) - Erasmus School of Law; Kubas Kos Gałkowski
+            - generic [ref=e909]
+          - generic [ref=e923]:
+            - paragraph [ref=e924]: Downloads
+            - paragraph [ref=e925]: "192"
+        - generic [ref=e926]:
+          - generic [ref=e928]:
+            - heading "Hacking Into the AI Avatar Dream" [level=3] [ref=e929]
+            - paragraph [ref=e932]: "Forthcoming in Dieter Mersch et al. (eds.), Actor & Avatar. A Catalog. Bielefeld, New York: transcript subTexte 25, Columbia University Press, pp 75-82"
+            - paragraph [ref=e933]: "Number of pages: 10 • Posted: 04 Jan 2023"
+            - paragraph [ref=e934]
+            - paragraph [ref=e937]: Centro de Filosofia das Ciencias da Universidade de Lisboa
+            - generic [ref=e938]
+          - generic [ref=e952]:
+            - paragraph [ref=e953]: Downloads
+            - paragraph [ref=e954]: "116"
+        - generic [ref=e955]:
+          - generic [ref=e957]:
+            - 'heading "The Illusion of Human Oversight: A Structural Gap in the EU AI Act" [level=3] [ref=e958]'
+            - paragraph
+            - paragraph [ref=e963]: "Number of pages: 11 • Posted: 20 Apr 2026"
+            - paragraph [ref=e964]
+            - paragraph
+            - generic [ref=e967]
+          - generic [ref=e978]:
+            - paragraph [ref=e979]: Downloads
+            - paragraph [ref=e980]: "2"
+        - generic [ref=e981]:
+          - generic [ref=e983]:
+            - 'heading "Exploring Article 14 of the EU AI proposal: accountability challenges of the human in the loop when supervising high-risk AI systems in public administration" [level=3] [ref=e984]'
+            - paragraph
+            - paragraph [ref=e990]: "Number of pages: 57 • Posted: 21 Oct 2022"
+            - paragraph [ref=e991]
+            - paragraph [ref=e994]: TU Delft
+            - generic [ref=e995]
+          - generic [ref=e1015]:
+            - paragraph [ref=e1016]: Downloads
+            - paragraph [ref=e1017]: "352"
+        - generic [ref=e1018]:
+          - generic [ref=e1020]:
+            - 'heading "Post-Human Law: Redefining Responsibility in the Era of Autonomous Artificial Intelligence" [level=3] [ref=e1021]'
+            - paragraph
+            - paragraph [ref=e1026]: "Number of pages: 19 • Posted: 17 Nov 2025"
+            - paragraph [ref=e1027]
+            - paragraph [ref=e1030]: Libyan Authority for Scientific Research
+            - generic [ref=e1031]
+          - generic [ref=e1052]:
+            - paragraph [ref=e1053]: Downloads
+            - paragraph [ref=e1054]: "130"
+        - generic [ref=e1055]:
+          - generic [ref=e1057]:
+            - 'heading "Agentic AI: The Next Frontier in Autonomous Enterprise Systems" [level=3] [ref=e1058]'
+            - paragraph [ref=e1062]: ESCP Business School Impact Paper
+            - paragraph [ref=e1063]: "Number of pages: 9 • Posted: 10 Sep 2025"
+            - paragraph [ref=e1064]
+            - paragraph [ref=e1069]: ; ESCP Business School
+            - generic [ref=e1070]
+          - generic [ref=e1088]:
+            - paragraph [ref=e1089]: Downloads
+            - paragraph [ref=e1090]: "317"
+        - generic [ref=e1091]:
+          - generic [ref=e1093]:
+            - heading "Thinking Evolution and the 'HI'-'AI' Interaction (HIxIxAI)" [level=3] [ref=e1094]
+            - paragraph
+            - paragraph [ref=e1098]: "Number of pages: 42 • Posted: 22 Apr 2026"
+            - paragraph [ref=e1099]
+            - paragraph [ref=e1102]: Bournemouth University Business School
+            - generic [ref=e1103]
+          - generic [ref=e1128]:
+            - paragraph [ref=e1129]: Downloads
+            - paragraph [ref=e1130]: "38"
+        - generic [ref=e1131]:
+          - generic [ref=e1133]:
+            - 'heading "Agentic Artificial Intelligence in Public Administration: Foundations, Applications, and Governance" [level=3] [ref=e1134]'
+            - paragraph
+            - paragraph [ref=e1139]: "Number of pages: 24 • Posted: 12 May 2025"
+            - paragraph [ref=e1140]
+            - paragraph [ref=e1149]: A'sharqiyah University; Universiti Sains Malaysia (USM); Modern College of Business and Science; Qatar University
+            - generic [ref=e1150]
+          - generic [ref=e1167]:
+            - paragraph [ref=e1168]: Downloads
+            - paragraph [ref=e1169]: "891"
+        - generic [ref=e1170]:
+          - generic [ref=e1172]:
+            - 'heading "Framework for Government Policy on Agentic and Generative AI: Governance, Regulation, and Risk Management" [level=3] [ref=e1173]'
+            - paragraph
+            - paragraph [ref=e1179]: "Number of pages: 22 • Posted: 23 Sep 2025"
+            - paragraph [ref=e1180]
+            - paragraph [ref=e1183]: Bar-Ilan University
+            - generic [ref=e1184]
+          - generic [ref=e1205]:
+            - paragraph [ref=e1206]: Downloads
+            - paragraph [ref=e1207]: "384"
+        - generic [ref=e1208]:
+          - generic [ref=e1210]:
+            - 'heading "Transforming Public Administration Workflows with Multi-Agent AI: A Human-in-the-Loop Knowledge Orchestration Framework" [level=3] [ref=e1211]'
+            - paragraph
+            - paragraph [ref=e1215]: "Number of pages: 1 • Posted: 25 Feb 2026"
+            - paragraph [ref=e1216]
+            - paragraph [ref=e1229]
+            - generic [ref=e1231]
+          - generic [ref=e1243]:
+            - paragraph [ref=e1244]: Downloads
+            - paragraph [ref=e1245]: "13"
+        - generic [ref=e1246]:
+          - generic [ref=e1248]:
+            - heading "Responsible Development of Internal GenAI Systems" [level=3] [ref=e1249]
+            - paragraph
+            - paragraph [ref=e1252]: "Number of pages: 13 • Posted: 21 May 2024"
+            - paragraph [ref=e1253]
+            - paragraph [ref=e1256]: Marquette University
+            - generic [ref=e1257]
+          - generic [ref=e1273]:
+            - paragraph [ref=e1274]: Downloads
+            - paragraph [ref=e1275]: "170"
+        - generic [ref=e1276]:
+          - generic [ref=e1278]:
+            - 'heading "Project Null: A Physically Enforced AGI Containment Framework for Risk Suppression and Timeline Control" [level=3] [ref=e1279]'
+            - paragraph
+            - paragraph [ref=e1282]: "Number of pages: 20 • Posted: 05 Feb 2026"
+            - paragraph [ref=e1283]
+            - paragraph [ref=e1286]
+            - generic [ref=e1288]
+          - generic [ref=e1306]:
+            - paragraph [ref=e1307]: Downloads
+            - paragraph [ref=e1308]: "19"
+        - generic [ref=e1309]:
+          - generic [ref=e1311]:
+            - heading "The Automation Paradox" [level=3] [ref=e1312]
+            - paragraph [ref=e1314]: Tulsa Law Review, Vol. 59, 2024
+            - paragraph [ref=e1315]: "Number of pages: 54 • Posted: 18 Mar 2024"
+            - paragraph [ref=e1316]
+            - paragraph [ref=e1319]: Independent
+            - generic [ref=e1320]
+          - generic [ref=e1341]:
+            - paragraph [ref=e1342]: Downloads
+            - paragraph [ref=e1343]: "167"
+        - generic [ref=e1344]:
+          - generic [ref=e1346]:
+            - heading "AI Behavior OS v1.0 Consciousness-Aligned Behavioral Operating System for Artificial Intelligence" [level=3] [ref=e1347]
+            - paragraph
+            - paragraph [ref=e1356]: "Number of pages: 32 • Posted: 21 Jan 2026"
+            - paragraph [ref=e1357]
+            - paragraph
+            - generic [ref=e1360]
+          - generic [ref=e1387]:
+            - paragraph [ref=e1388]: Downloads
+            - paragraph [ref=e1389]: "10"
+        - generic [ref=e1390]:
+          - generic [ref=e1392]:
+            - heading "The Mirage of AI Hallucinations" [level=3] [ref=e1393]
+            - paragraph
+            - paragraph [ref=e1396]: "Number of pages: 9 • Posted: 13 Feb 2025"
+            - paragraph [ref=e1397]
+            - paragraph [ref=e1402]: College of Marin; Nudgital
+            - generic [ref=e1403]
+          - generic [ref=e1421]:
+            - paragraph [ref=e1422]: Downloads
+            - paragraph [ref=e1423]: "1181"
+        - generic [ref=e1424]:
+          - generic [ref=e1426]:
+            - 'heading "Artificial Intelligence in Personal Financial Decision-Making: Designing Intelligent Wealth Systems for the Algorithmic Economy" [level=3] [ref=e1427]'
+            - paragraph
+            - paragraph [ref=e1434]: "Number of pages: 35 • Posted: 20 Apr 2026"
+            - paragraph [ref=e1435]
+            - paragraph [ref=e1438]
+            - generic [ref=e1440]
+          - generic [ref=e1456]:
+            - paragraph [ref=e1457]: Downloads
+            - paragraph [ref=e1458]: "8"
+        - generic [ref=e1459]:
+          - generic [ref=e1461]:
+            - heading "Biometric Self-Ownership in Generative Artificial Intelligence A Normative Policy Proposal on Identity Protection at the Point of Content Creation" [level=3] [ref=e1462]
+            - paragraph
+            - paragraph [ref=e1469]: "Number of pages: 6 • Posted: 23 Feb 2026"
+            - paragraph [ref=e1470]
+            - paragraph [ref=e1473]: Independent Policy Researcher
+            - generic [ref=e1474]
+          - generic [ref=e1487]:
+            - paragraph [ref=e1488]: Downloads
+            - paragraph [ref=e1489]: "12"
+        - generic [ref=e1490]:
+          - generic [ref=e1492]:
+            - 'heading "Artificial Intelligence Contribution Index (ACI): A Lightweight Framework for Declaring LLM Contributions to Human-Authored Documents" [level=3] [ref=e1493]'
+            - paragraph
+            - paragraph [ref=e1498]: "Number of pages: 13 • Posted: 24 Mar 2026"
+            - paragraph [ref=e1499]
+            - paragraph [ref=e1506]
+            - generic [ref=e1508]
+          - generic [ref=e1528]:
+            - paragraph [ref=e1529]: Downloads
+            - paragraph [ref=e1530]: "24"
+        - generic [ref=e1531]:
+          - generic [ref=e1533]:
+            - 'heading "Human, All Too Human: Accounting for Automation Bias in Generative Large Language Models" [level=3] [ref=e1534]'
+            - paragraph [ref=e1539]
+            - paragraph [ref=e1542]: "Number of pages: 22 • Posted: 06 Mar 2025"
+            - paragraph [ref=e1543]
+            - paragraph [ref=e1546]: Sant’Anna School of Advanced Studies
+            - generic [ref=e1547]
+          - generic [ref=e1560]:
+            - paragraph [ref=e1561]: Downloads
+            - paragraph [ref=e1562]: "372"
+        - generic [ref=e1563]:
+          - generic [ref=e1565]:
+            - heading "AI Literacy and its Implications for Prompt Engineering Strategies" [level=3] [ref=e1566]
+            - paragraph [ref=e1570]: "Computers and Education: Artificial Intelligence"
+            - paragraph [ref=e1571]: "Number of pages: 15 • Posted: 07 Jun 2024"
+            - paragraph [ref=e1572]
+            - paragraph [ref=e1581]: University of Kassel; University of Kassel; University of St.Gallen; University of St. Gallen
+            - generic [ref=e1582]
+          - generic [ref=e1594]:
+            - paragraph [ref=e1595]: Downloads
+            - paragraph [ref=e1596]: "271"
+        - generic [ref=e1597]:
+          - generic [ref=e1599]:
+            - 'heading "Intrinsic Alignment: Harnessing Social Agreement and Self-Conviction for Cooperative AI Systems" [level=3] [ref=e1600]'
+            - paragraph [ref=e1605]: This paper is an original preprint submission
+            - paragraph [ref=e1606]: "Number of pages: 15 • Posted: 05 Feb 2025"
+            - paragraph [ref=e1607]
+            - paragraph [ref=e1610]: Independent Researcher
+            - generic [ref=e1611]
+          - generic [ref=e1630]:
+            - paragraph [ref=e1631]: Downloads
+            - paragraph [ref=e1632]: "28"
+        - generic [ref=e1633]:
+          - generic [ref=e1635]:
+            - 'heading "The AI Revolution: Transforming Supply Chain Management from Reactive to Resilient (Extended Analysis)" [level=3] [ref=e1636]'
+            - paragraph
+            - paragraph [ref=e1639]: "Number of pages: 10 • Posted: 09 Jan 2026"
+            - paragraph [ref=e1640]
+            - paragraph [ref=e1643]
+            - generic [ref=e1645]
+          - generic [ref=e1659]:
+            - paragraph [ref=e1660]: Downloads
+            - paragraph [ref=e1661]: "26"
+        - generic [ref=e1662]:
+          - generic [ref=e1664]:
+            - 'heading "Edge AI as a Supervisory Instrument: Enabling Risk-based, Real-Time Banking Oversight" [level=3] [ref=e1665]'
+            - paragraph
+            - paragraph [ref=e1669]: "Number of pages: 13 • Posted: 06 Feb 2026"
+            - paragraph [ref=e1670]
+            - paragraph [ref=e1673]: Central Bank of Bahrain
+            - generic [ref=e1674]
+          - generic [ref=e1686]:
+            - paragraph [ref=e1687]: Downloads
+            - paragraph [ref=e1688]: "29"
+        - generic [ref=e1689]:
+          - generic [ref=e1691]:
+            - 'heading "Developing a Hybrid Human-AI Framework for Test Data Generation: Balancing Coverage, Realism, and Efficiency Authors" [level=3] [ref=e1692]'
+            - paragraph
+            - paragraph [ref=e1698]: "Number of pages: 15 • Posted: 14 May 2025"
+            - paragraph [ref=e1699]
+            - paragraph [ref=e1704]
+            - generic [ref=e1706]
+          - generic [ref=e1723]:
+            - paragraph [ref=e1724]: Downloads
+            - paragraph [ref=e1725]: "42"
+        - generic [ref=e1726]:
+          - generic [ref=e1728]:
+            - 'heading "THE REASONED RATIFICATION REPORT (IRR): DOCUMENTED HUMAN OVERSIGHT, INTEGRATED TRACEABILITY AND CONTROL OF AI-ASSISTED JUDICIAL DECISIONS" [level=3] [ref=e1729]'
+            - paragraph
+            - paragraph [ref=e1735]: "Number of pages: 25 • Posted: 20 Apr 2026"
+            - paragraph
+            - paragraph
+            - generic [ref=e1736]
+          - generic [ref=e1752]:
+            - paragraph [ref=e1753]: Downloads
+            - paragraph [ref=e1754]: "6"
+        - generic [ref=e1755]:
+          - generic [ref=e1757]:
+            - 'heading "Public Opinion in the Age of Algorithms: How Edge AI and Autonomous Agents Reshape Collective Awareness through Big Data Subtitle: Predictive Immersive Media Ecosystems: Integrating AI World Models, Data Marketplaces, and Big Data to Shape Anticipatory Public Opinion" [level=3] [ref=e1758]'
+            - paragraph
+            - paragraph [ref=e1768]: "Number of pages: 32 • Posted: 20 Apr 2026"
+            - paragraph [ref=e1769]
+            - paragraph
+            - generic [ref=e1772]
+          - generic [ref=e1781]:
+            - paragraph [ref=e1782]: Downloads
+            - paragraph [ref=e1783]: "7"
+        - generic [ref=e1784]:
+          - generic [ref=e1786]:
+            - heading "AI and Its Implications on Cybersecurity" [level=3] [ref=e1787]
+            - paragraph
+            - paragraph [ref=e1791]: "Number of pages: 14 • Posted: 12 Jan 2026"
+            - paragraph [ref=e1792]
+            - paragraph [ref=e1795]
+            - generic [ref=e1797]
+          - generic [ref=e1816]:
+            - paragraph [ref=e1817]: Downloads
+            - paragraph [ref=e1818]: "24"
+        - generic [ref=e1819]:
+          - generic [ref=e1821]:
+            - heading "AI-Driven Exploration and Hypothesis Generation in Finance and Economics" [level=3] [ref=e1822]
+            - paragraph
+            - paragraph [ref=e1828]: "Number of pages: 2 • Posted: 07 Apr 2025"
+            - paragraph [ref=e1829]
+            - paragraph [ref=e1832]: University of Oxford
+            - generic [ref=e1833]
+          - generic [ref=e1850]:
+            - paragraph [ref=e1851]: Downloads
+            - paragraph [ref=e1852]: "153"
+        - generic [ref=e1853]:
+          - generic [ref=e1855]:
+            - heading "Adversarial Verification as Reference Architecture for EU AI Act Article 14 Compliance in Employment AI" [level=3] [ref=e1856]
+            - paragraph
+            - paragraph [ref=e1860]: "Number of pages: 10 • Posted: 16 Jan 2026"
+            - paragraph [ref=e1861]
+            - paragraph
+            - generic [ref=e1864]
+          - generic [ref=e1876]:
+            - paragraph [ref=e1877]: Downloads
+            - paragraph [ref=e1878]: "21"
+        - generic [ref=e1879]:
+          - generic [ref=e1881]:
+            - heading "The Role Of Gen AI In The Data Dependence Graph Generation" [level=3] [ref=e1882]
+            - paragraph
+            - paragraph [ref=e1887]: "Number of pages: 8 • Posted: 12 May 2025"
+            - paragraph [ref=e1888]
+            - paragraph [ref=e1891]: Amazon
+            - generic [ref=e1892]
+          - generic [ref=e1911]:
+            - paragraph [ref=e1912]: Downloads
+            - paragraph [ref=e1913]: "1"
+        - generic [ref=e1914]:
+          - generic [ref=e1916]:
+            - heading "Artificial Intelligence Governance and Regulation; The impact of the EU AI Act, 2024 on Innovation, Accountability, and Global Compliance in a Digital Age" [level=3] [ref=e1917]
+            - paragraph
+            - paragraph [ref=e1924]: "Number of pages: 22 • Posted: 11 Apr 2025"
+            - paragraph [ref=e1925]
+            - paragraph
+            - generic [ref=e1928]
+          - generic [ref=e1957]:
+            - paragraph [ref=e1958]: Downloads
+            - paragraph [ref=e1959]: "285"
+  - navigation "footer-navigation" [ref=e1960]:
+    - generic [ref=e1961]:
+      - generic [ref=e1962]:
+        - generic [ref=e1963]:
+          - link "Submit a Paper " [ref=e1965] [cursor=pointer]:
+            - /url: https://hq.ssrn.com/submission.cfm
+            - text: Submit a Paper
+            - generic [ref=e1966]: 
+          - link "Section 508 Text Only Pages" [ref=e1967] [cursor=pointer]:
+            - /url: https://www.ssrn.com/index.cfm/en/section-508/
+        - generic [ref=e1968]:
+          - heading "SSRN Quick Links" [level=4] [ref=e1969]: SSRN Quick Links 
+          - list [ref=e1970]:
+            - listitem [ref=e1971]
+            - listitem [ref=e1973]
+            - listitem [ref=e1975]
+            - listitem [ref=e1977]
+            - listitem [ref=e1979]
+            - listitem [ref=e1981]
+        - generic [ref=e1983]:
+          - heading "SSRN Rankings" [level=4] [ref=e1984]: SSRN Rankings 
+          - list [ref=e1985]:
+            - listitem [ref=e1986]
+            - listitem [ref=e1988]
+            - listitem [ref=e1990]
+        - generic [ref=e1992]:
+          - heading "About SSRN" [level=4] [ref=e1993]: About SSRN 
+          - list [ref=e1994]:
+            - listitem [ref=e1995]
+            - listitem [ref=e1997]
+            - listitem [ref=e1999]
+            - listitem [ref=e2001]
+      - list [ref=e2003]:
+        - listitem [ref=e2004]:
+          - link "Facebook" [ref=e2005] [cursor=pointer]:
+            - /url: https://www.facebook.com/SSRNcommunity/
+            - generic [ref=e2006]: 
+        - listitem [ref=e2007]:
+          - link "Linkedin" [ref=e2008] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/493409?trk=tyah&trkInfo=clickedVertical%3Acompany%2CentityType%3AentityHistoryName%2CclickedEntityId%3Acompany_493409%2Cidx%3A0
+            - generic [ref=e2009]: 
+        - listitem [ref=e2010]:
+          - link "Twitter" [ref=e2011] [cursor=pointer]:
+            - /url: https://twitter.com/SSRN
+            - generic [ref=e2012]: 
+      - generic [ref=e2013]:
+        - link "Elsevier" [ref=e2015] [cursor=pointer]:
+          - /url: http://www.elsevier.com/
+        - generic [ref=e2016]:
+          - generic [ref=e2017]:
+            - link "Copyright" [ref=e2018] [cursor=pointer]:
+              - /url: https://www.ssrn.com/index.cfm/en/dmca-notice-policy/
+            - link "Terms and Conditions" [ref=e2019] [cursor=pointer]:
+              - /url: https://www.ssrn.com/index.cfm/en/terms-of-use/
+            - link "Privacy Policy" [ref=e2020] [cursor=pointer]:
+              - /url: https://www.elsevier.com/legal/privacy-policy
+          - generic [ref=e2021]:
+            - paragraph [ref=e2022]: "All content on this site: Copyright © 2026 Elsevier Inc., its licensors, and contributors. All rights are reserved, including those for text and data mining, AI training, and similar technologies. For all open access content, the relevant licensing terms apply."
+            - paragraph [ref=e2023]: We use cookies to help provide and enhance our service and tailor content.
+            - paragraph [ref=e2024]
+        - link "RELX" [ref=e2028] [cursor=pointer]:
+          - /url: http://www.relx.com/

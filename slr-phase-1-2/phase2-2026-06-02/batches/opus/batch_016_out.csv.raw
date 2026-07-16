@@ -1,0 +1,28 @@
+Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.
+I'll work through each paper applying the operationalizability test and tier criteria.
+
+```csv
+item_key,decision,confidence,rationale,prior_decision,prior_confidence
+ZS3KBZTP,discard,high,"Framework addresses scalable oversight but superintelligence framing and category theory formalism require substantial re-derivation for software engineering teams; no structural parallel to code review workflows.",maybe,medium
+TYTD8HNL,discard,high,"Abstract provides only keywords with no methodology or findings; cannot assess operationalizability without content describing what the framework actually produces.",maybe,medium
+BKSNXFDK,keep,medium,"Risk scorecard mechanism for continuous compliance with NIST RMF alignment is directly transferable; software orgs managing AI tools face same GRC requirements as financial firms adopting AI.",maybe,medium
+I2J69IHM,keep,medium,"Governance-to-production gap diagnostic concept transfers directly—software engineering organizations deploying AI coding tools face the same maturity-alignment problem; the framework structure generalizes beyond banking.",maybe,medium
+NL97MRGR,discard,high,"UX/interface annotation standard for web agents; human oversight provisions are at the interface layer not the code review/governance layer—connection to reviewing AI-generated code requires substantial argument not present.",maybe,medium
+3NBKLXY3,discard,high,"Abstract explicitly states AURA is 'an infrastructural reference layer rather than a governance' framework; pre-standard testbed status means not yet operationalizable by software teams.",maybe,medium
+X73CHPN8,discard,medium,"Liability decomposition framework is domain-locked to financial instruments (flash crashes, DeFi, DORA); the risk quantification methods don't transfer to code accountability without substantial re-derivation.",maybe,medium
+5XLKWKF4,discard,high,"Paper is a critique ('Illusions of Control') proposing conceptual architecture; no evidence of concrete implementable mechanisms—descriptive of problems rather than operationalizable solutions.",maybe,medium
+9B8UDBZG,discard,medium,"No abstract available; cannot apply operationalizability test or verify relevance to software code governance—title alone insufficient for inclusion in synthesis corpus.",maybe,low
+INU3M3BG,keep,high,"Explicitly addresses operationalization of accountability for agentic AI with tool-mediated execution—structurally parallel to AI coding assistants; addresses the exact gap (underspecified operationalization) this SLR targets.",maybe,medium
+5WLF2NZU,discard,medium,"Negative finding (UI designs insufficient to correct misconceptions) on general users not developers; limited actionability for software teams—describes phenomenon without providing intervention mechanism.",maybe,medium
+P6F3MVBT,discard,medium,"Automation bias causing reversed attributions is an interesting psychological finding but descriptive not prescriptive; no governance mechanism or process a software team could implement.",maybe,medium
+AG7UJKDE,keep,high,"Survey synthesizes metamorphic testing methodologies for LLM code reliability and hallucination detection; MT provides oracle-independent quality assurance directly applicable to AI-generated code validation.",maybe,medium
+HFDFK4CN,discard,medium,"Approval-tax and comprehension-tax concepts are compelling but military command hierarchy differs structurally from software team code review; transfer requires derivation work beyond scope of original framework.",maybe,medium
+W2ZVHTSQ,discard,medium,"No abstract available; cannot assess methodology, scope, or transferability—title alone insufficient to confirm operationalizable contribution.",maybe,low
+CMICJSPL,keep,medium,"Synchronous/asynchronous HITL review architectures and rubric-based expert capture mechanisms transfer with minimal adaptation to AI code review workflows; the structural parallel is direct.",maybe,medium
+NK5VHI9V,keep,high,"Quantified automation bias (47%) and confirmation bias (37%) in technical analysts reviewing AI outputs; security analysts evaluating AI alerts is structurally parallel to developers reviewing AI code—XAI and trust calibration mitigations directly applicable.",maybe,medium
+Y4YHMRYE,discard,low,"Title is directly relevant but truncated abstract shows only exploratory framing ('examines', 'exploring') without confirmed methodology or findings; cannot verify operationalizable contribution.",maybe,low
+4TYKTMN4,keep,medium,"Verification debt concept for foundation model outputs addresses core challenge of AI code governance; defensibility-first framework provides decision architecture applicable to engineering organizations even without explicit software scope.",maybe,medium
+6N8BFFFK,discard,medium,"Abstract provides only problem statement (governance and security challenges) without confirmed operationalizable findings; descriptive framing without methodology or mechanism.",maybe,medium
+```
+
+**Summary**: 8 keep, 12 discard. The keeps cluster around papers with transferable mechanisms (risk scorecards, HITL architectures, metamorphic testing, quantified automation bias) or frameworks addressing operationalization gaps directly parallel to software development contexts. Discards were primarily due to: no abstract content (3), domain-locked frameworks requiring substantial re-derivation (4), descriptive rather than prescriptive contributions (3), or infrastructure/critique pieces without implementable mechanisms (2).

@@ -1,0 +1,12 @@
+{
+  "item_key": "NGIH5T4C",
+  "methods": [
+    "conceptual/position",
+    "narrative-review"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position",
+  "notes": "Short essay-style synthesis citing AI code-review tools (Copilot, CodeGuru, Google) and secondary literature; illustrative 'case studies' are anecdotal descriptions, not original empirical investigation\u2014no data collection, methodology, or evaluation of its own.",
+  "citation": "Batte 2025"
+}

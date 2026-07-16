@@ -1,0 +1,63 @@
+{
+  "item_key": "I6FZ5GD2",
+  "citation": "Wang 2025",
+  "evidence_type": [
+    "system-tool",
+    "case-study",
+    "empirical"
+  ],
+  "problem_statement": "ML scientists lack visibility into how LLM coding agents (e.g., AIDE) iteratively generate, debug, and refine code, and manual inspection of individual outputs makes it hard to track code evolution, compare iterations, and identify improvement opportunities.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "quality",
+    "buggy-code",
+    "repeated-bugs",
+    "wasted-compute",
+    "local-minima",
+    "incorrect-metrics",
+    "lack-of-memory",
+    "redundant-code"
+  ],
+  "insufficiency_evidence": "\"The current approach of manually inspecting individual outputs is inefficient\"; and the agent \"can repeat the same bug due to the lack of persistent memory\" because debugging \"focuses solely on the immediate parent buggy node\"",
+  "solution_mechanisms": [
+    "interactive tree view enriched with visual encodings",
+    "code-difference (line-level) view",
+    "function-level AST-based code similarity score",
+    "projection view of code embeddings",
+    "package-usage frequency view",
+    "tree-edit-distance clustering/dendrograms",
+    "three-level comparative analysis framework",
+    "LLM-generated cluster-difference summaries"
+  ],
+  "mechanism_keywords": [
+    "visual-analytics",
+    "observability",
+    "transparency",
+    "hitl",
+    "comparative-analysis",
+    "code-diff",
+    "ast-similarity",
+    "embedding-projection",
+    "clustering",
+    "prompt-engineering",
+    "debugging",
+    "bug-list-memory"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "post-run",
+    "iteration-review"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "three-level comparative analysis framework (Code-Level, Process-Level, LLM-Level)",
+    "function-level code similarity",
+    "solution-seeking process",
+    "solution-tree"
+  ],
+  "governance_refs": [],
+  "scope_fit": "solution",
+  "notes": "Text contains garbled math-italic Unicode and scattered figure/caption fragments; focus is ML coding agents rather than general software oversight.",
+  "_truncated": false
+}

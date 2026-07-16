@@ -1,0 +1,53 @@
+{
+  "item_key": "E689ZAXC",
+  "citation": "Zhou 2026",
+  "evidence_type": [
+    "empirical",
+    "controlled-experiment"
+  ],
+  "problem_statement": "The document examines whether human review (a peer or supervisor evaluating a worker's output) increases meaningful human engagement with AI-generated content, and finds that outcome-focused review instead makes workers offload to AI, accepting its output with little modification.",
+  "magnitude_evidence": "\"Two-thirds of people do not modify the AI-generated content (27)\"; workers \"are spending two more hours on average trying to fix the low-quality AI-generated content they encountered at work (10)\"",
+  "risk_types": [
+    "AI-slop",
+    "quality",
+    "passive-acceptance",
+    "over-reliance",
+    "loss-of-human-contribution"
+  ],
+  "insufficiency_evidence": "\"participants who believed that their work would be reviewed by another person submitted a post that was more similar to the AI-generated content (M = 0.82) compared to participants in the No Review condition (M = 0.75), t(239) = 2.38, p = 0.018\" \u2014 review paradoxically reduced modification across seven experiments (N=2,895)",
+  "solution_mechanisms": [
+    "outcome-focused review (fails)",
+    "peer review",
+    "supervisor review",
+    "process-transparent review (show AI original + final)",
+    "require AI interaction log disclosure"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "peer-review",
+    "supervisor-review",
+    "accountability",
+    "process-accountability",
+    "provenance",
+    "audit-trail",
+    "disclosure",
+    "process-transparency"
+  ],
+  "oversight_locus": [
+    "pre-submission",
+    "code-review",
+    "post-hoc-review"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "outcome accountability vs process accountability",
+    "offloading vs collaboration",
+    "AI slop",
+    "cognitive misers",
+    "process transparency"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Domain is AI-generated knowledge-work content (social media posts, postcards, lesson plans), not AI-generated code specifically; relevance is by analogy to human oversight of AI output. Coding is mentioned only as an example use of AI.",
+  "_truncated": false
+}

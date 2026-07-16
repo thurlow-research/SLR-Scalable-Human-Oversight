@@ -1,0 +1,718 @@
+{
+  "count": 50,
+  "total": "611",
+  "page": "3",
+  "records": [
+    {
+      "abstractId": "6532658",
+      "title": "VERDICT WEIGHT: A Context-Adaptive Multi-Source Confidence Synthesis Framework for Autonomous AI Intelligence Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6532658",
+      "authors": [
+        "Andre Byrd"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 9,
+      "posted": "09 Apr 2026",
+      "snippet": "domains spanning cybersecurity, healthcare diagnostics, financial fraud detection, defense intelligence fusion, autonomous vehicle sensor fusion, and enterprise / confidence calibration, threat intelligence, multi-source fusion, adversarial AI, autonomous systems, evidence scoring, AI governance, VERDICT WEIGHT,",
+      "downloads": 21
+    },
+    {
+      "abstractId": "6265018",
+      "title": "The 3C Model of AI-Driven Accountability Transitions: Chance, Choice, and Change",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6265018",
+      "authors": [
+        "Songhee Kang"
+      ],
+      "affiliations": [],
+      "pages": 5,
+      "posted": "09 Apr 2026",
+      "snippet": "This paper introduces the 3C Model of AI-Driven Accountability Transitions, a theoretical framework explaining how AI adoption unfolds through shifts in / By reframing AI diffusion as an accountability transition problem, the 3C model provides an analytical bridge between AI governance, techno-economic modeling / AI-Driven Institutional Transitions, Risk-Triggered Adoption Dynamics, Accountability Reallocation",
+      "downloads": 8
+    },
+    {
+      "abstractId": "6352958",
+      "title": "Artifact Authenticity Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6352958",
+      "authors": [
+        "Christopher Ermis"
+      ],
+      "affiliations": [],
+      "pages": 61,
+      "posted": "09 Apr 2026",
+      "snippet": "Current AI governance frameworks — including the EU AI Act, NIST AI RMF, and ISO/IEC 42001 — establish documentation requirements for high-risk AI systems / strong>Integrity Gap: the condition in which an organization's compliance posture cannot be technically verified by any party, including the organization",
+      "downloads": 8
+    },
+    {
+      "abstractId": "6374898",
+      "title": "From Ad Hoc to Optimised: Maturity, Adoption and the Governance of AI-Enabled Assurance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6374898",
+      "authors": [
+        "Roni van der Fehr"
+      ],
+      "affiliations": [],
+      "pages": 9,
+      "posted": "08 Apr 2026",
+      "snippet": "Second, a phased adoption pathway that translates readiness into an ordered implementation sequence with defined entry conditions and phase completion / The paper also argues, drawing on implementation failure research and organisational change theory, that the preconditions for successful adoption are / AI assurance maturity, capability assessment, phased adoption, responsible AI, AI governance, change management, implementation failure, continuous improvement",
+      "downloads": 3
+    },
+    {
+      "abstractId": "6253940",
+      "title": "Intelligence Beyond Knowledge: Control, Autonomy, and the Logical Architecture of Artificial Agency",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6253940",
+      "authors": [
+        "Huiwen Han"
+      ],
+      "affiliations": [],
+      "pages": 7,
+      "posted": "08 Apr 2026",
+      "snippet": "Intelligence, on this account, is not epistemic accumulation but the organization and reflexive reorganization of control under constraint. / AI Ethics, Artificial Intelligence, DIKW Hierarchy, Control Theory, Artificial Agency, Category Error, AI Governance, Large Language Models, Levels of",
+      "downloads": 8
+    },
+    {
+      "abstractId": "6501601",
+      "title": "Agentic AI in Private Equity: Multi-Agent Orchestration for End-to-End Deal Workflows",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6501601",
+      "authors": [
+        "Leigh Coney"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 17,
+      "posted": "07 Apr 2026",
+      "snippet": "The term \"agentic AI\" has become the most overused phrase in enterprise software marketing. / The term \"agentic AI\" has become the most overused phrase in enterprise software marketing. / Agentic AI, multi-agent systems, private equity, deal workflows, AI architecture, due diligence automation, investment committee, AI governance, context",
+      "downloads": 29
+    },
+    {
+      "abstractId": "6353198",
+      "title": "Agentic AI Governance in Private Equity: A Behavioral Framework for Autonomous Decision Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6353198",
+      "authors": [
+        "Leigh Coney"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 21,
+      "posted": "07 Apr 2026",
+      "snippet": "Current approaches treat agentic AI governance as a technical compliance exercise-focused on data access controls, audit trails, and regulatory checklists / Agentic AI governance, autonomous AI agents, private equity, human-in-the-loop oversight, AI trust calibration, behavioral science, decision-making frameworks / , AI adoption resistance, fiduciary duty, AI risk management, organizational psychology, investment committee AI, deal screening AI, portfolio monitoring",
+      "downloads": 19
+    },
+    {
+      "abstractId": "6525358",
+      "title": "How does your AI Model Make Decisions? Behavioral Fingerprinting of Foundation AI Models and Organizational Culture Alignment",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6525358",
+      "authors": [
+        "Geoff Gibbins"
+      ],
+      "affiliations": [],
+      "pages": 61,
+      "posted": "07 Apr 2026",
+      "snippet": "Applying the same framework to 18 global organizations enables direct model-organization alignment analysis across 3,168 scored responses. / We discuss implications for enterprise AI governance, model selection, and the emerging regulatory landscape under the EU AI Act. / artificial intelligence, organizational culture, decision culture, foundation models, behavioral fingerprinting, enterprise AI governance, cultural alignment",
+      "downloads": 25
+    },
+    {
+      "abstractId": "6457518",
+      "title": "Annex To Technical Note Four: VLI Calibration Companion - Scenario-Achored Calibration Under V = 0",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6457518",
+      "authors": [
+        "Andrew J Devin"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 0,
+      "posted": "06 Apr 2026",
+      "snippet": "Verification absence, Sensitivity Inversion, VLI Calibration Companion, Verification Burden Distribution, VBD, verification liability, liability pricing, AI / governance, decision governance, enterprise AI risk, auditability, reconstructability, epistemic debt, post-deployment governance, corporate governance",
+      "downloads": 0
+    },
+    {
+      "abstractId": "6458099",
+      "title": "Essay: Fluent, Certain And Wrong By Design",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6458099",
+      "authors": [
+        "Andrew J Devin"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 0,
+      "posted": "06 Apr 2026",
+      "snippet": "Synthetic-Plausibility Effect, ACU classification, epistemic debt, KEV framework, V = 0, verification absence, institutional liability, AI governance, / reconstructability, defensibility, auditability, enterprise AI risk, generative AI, consequential decision-making, governance engineering, Pack Producibility",
+      "downloads": 0
+    },
+    {
+      "abstractId": "6478162",
+      "title": "Litigation Paper: When AI-Assisted Decisions Reach Litigation, What Evidence Actually Exists?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6478162",
+      "authors": [
+        "Andrew J Devin"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 0,
+      "posted": "06 Apr 2026",
+      "snippet": "This paper argues that the primary litigation risk in enterprise AI is not merely model error, but evidentiary failure under scrutiny. / AI Governance, enterprise AI, litigation risk, evidentiary failure, V = 0, verification absence, decision record, decision defensibility, hostile examination",
+      "downloads": 0
+    },
+    {
+      "abstractId": "6448879",
+      "title": "DeepConnect: Harnessing AI to Elevate Collective Human Potential AI as Shared Connective Infrastructure for Collective Sensemaking and Prudent Execution",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6448879",
+      "authors": [
+        "Anthony K. H. Tung"
+      ],
+      "affiliations": [],
+      "pages": 38,
+      "posted": "06 Apr 2026",
+      "snippet": "Yet the dominant adoption pattern for generative AI-private, individualized assistants-risks fragmenting shared mental models and quietly increasing semantic / Collective Intelligence, Sociotechnical Systems, Generative AI, Knowledge Graphs, Interdisciplinary Collaboration, AI Governance, AI Prudence, Knowledge",
+      "downloads": 38
+    },
+    {
+      "abstractId": "6437982",
+      "title": "Continuous Governance Across Enterprise AI and Agentic Systems: Governing What You Cannot See",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6437982",
+      "authors": [
+        "Michael R. Robinette"
+      ],
+      "affiliations": [],
+      "pages": 14,
+      "posted": "02 Apr 2026",
+      "snippet": "This paper makes three original contributions to the governance of artificial intelligence systems in regulated enterprise environments. / Third, it presents the first unified governance loop connecting model risk governance [1] and the NIST AI Risk Management Framework [2] to the governance / Responsible AI, AI governance, agentic AI, Continuous Governance, enterprise risk management, delegated authority, authority drift, autonomy tiering, EU",
+      "downloads": 26
+    },
+    {
+      "abstractId": "6482358",
+      "title": "The Authorization Threshold: Defining the Standard for Governance in AI Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6482358",
+      "authors": [
+        "Edward Meyman"
+      ],
+      "affiliations": [],
+      "pages": 13,
+      "posted": "02 Apr 2026",
+      "snippet": "This paper argues that prevailing approaches to AI governance remain procedural in nature, focusing on capabilities such as observability, control mechanisms / governance from interpretive oversight to formal authorization. / AI governance, authorization, deterministic governance, proof-carrying decisions, constraint formalization, regulatory compliance, enterprise AI, governance",
+      "downloads": 8
+    },
+    {
+      "abstractId": "6297038",
+      "title": "The AI Implementation Paradox: Organizational Contradictions and the Emergence of the AI-Native Organization",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6297038",
+      "authors": [
+        "Christian Lawrence"
+      ],
+      "affiliations": [],
+      "pages": 40,
+      "posted": "02 Apr 2026",
+      "snippet": "This paper introduces the concept of the \"AI-native organization,\" defined as an organization structurally redesigned to integrate AI as an amplifier of / The framework contributes to the emerging literature on AI governance, human-AI collaboration, and organizational transformation by providing a structured / Artificial Intelligence, Human Resources, Organizational Design, AI Governance, Future of Work, Human-AI Collaboration, Automation, Decision Support Systems",
+      "downloads": 23
+    },
+    {
+      "abstractId": "6426760",
+      "title": "Protocol-Mediated Execution Governance for LLM Agent Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6426760",
+      "authors": [
+        "Ari Harrison"
+      ],
+      "affiliations": [],
+      "pages": 21,
+      "posted": "02 Apr 2026",
+      "snippet": "As large language models transition from conversational assistants to autonomous agents capable of executing actions inside enterprise infrastructure, / AI governance, LLM agents, execution authority, Model Context Protocol, Zero Trust architecture, prompt injection, tool-mediated execution, confused deputy",
+      "downloads": 10
+    },
+    {
+      "abstractId": "6508277",
+      "title": "Governing Foreign Generative AI Through Deployment Routes in the Global South",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6508277",
+      "authors": [
+        "Abdullah X"
+      ],
+      "affiliations": [],
+      "pages": 22,
+      "posted": "02 Apr 2026",
+      "snippet": "The claim is scoped to cross-border application-programming-interface, cloud-mediated enterprise, and public-sector deployments, not to open-weight local / Generative AI policy, AI governance, Global South, cloud infrastructure, procurement, data protection",
+      "downloads": 7
+    },
+    {
+      "abstractId": "6429338",
+      "title": "The Missing Control Plane in Healthcare AI: A Framework for Deterministic Governance in Regulated Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6429338",
+      "authors": [
+        "Roddy Radnia"
+      ],
+      "affiliations": [],
+      "pages": 10,
+      "posted": "02 Apr 2026",
+      "snippet": "However, adoption in regulated contexts remains limited. / healthcare AI governance, deterministic interpretation, semantic admissibility boundary, control plane architecture, clinical audit infrastructure, compliance",
+      "downloads": 39
+    },
+    {
+      "abstractId": "6391521",
+      "title": "The Autonomy Accountability Framework: A Governance Standard for Autonomous AI Agent Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6391521",
+      "authors": [
+        "V. P."
+      ],
+      "affiliations": [],
+      "pages": 8,
+      "posted": "01 Apr 2026",
+      "snippet": "AI agent systems are evolving from tools into autonomous operational actors capable of executing actions across financial systems, enterprise infrastructure / AI Governance, Autonomous AI Agents, AI Risk Management, AI Accountability, Agentic AI, AI Safety, Autonomous Systems, AI Governance Framework",
+      "downloads": 15
+    },
+    {
+      "abstractId": "6504726",
+      "title": "Centralizing or Localizing AI in Diversified Firms? The Contingent Role of Smart Products and Ecosystem-Facing Value Creation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6504726",
+      "authors": [
+        "Yancy Vaillant",
+        "Marin Jovanovic",
+        "Esteban Lafuente"
+      ],
+      "affiliations": [
+        "Department of Strategy, Entrepreneurship & Innovation",
+        "Copenhagen Business School",
+        "School of Business, Costa Rica Institute of Technology (ITCR)"
+      ],
+      "pages": 39,
+      "posted": "01 Apr 2026",
+      "snippet": "Drawing on the theory of the firm and recent arguments about digital diversification, we theorize that the performance impact of AI implementation locus / The findings contribute to the emerging literature on digital diversification by showing that AI governance should be treated as a portfolio design problem",
+      "downloads": 8
+    },
+    {
+      "abstractId": "6394298",
+      "title": "A Testing Schema for Methods and Systems of Methods",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6394298",
+      "authors": [
+        "Eric Cafritz"
+      ],
+      "affiliations": [],
+      "pages": 24,
+      "posted": "31 Mar 2026",
+      "snippet": "The schema integrates the algebraic substrate of Annex 0, the local–global organization of Annex I, the operator-compatibility conditions of Annex II, / Formal Methods, Evaluation Theory, Testing Framework, Proof Theory, Natural Deduction, Logic, AI Governance, Conversational Systems, Retrieval-Augmented",
+      "downloads": 14
+    },
+    {
+      "abstractId": "6230939",
+      "title": "The Ragsdale Framework for Autonomization: The Effort Composition Model",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6230939",
+      "authors": [
+        "Marc Ragsdale"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 22,
+      "posted": "31 Mar 2026",
+      "snippet": "redistribution follows a structured Replaceability Ladder, beginning with analytical and rule-based tasks and advancing toward orchestration and bounded enterprise / Organizations, Replaceability Ladder, Supervisory Compression, Orchestration Shift, Organizational Autonomization, Machine-Human Effort Redistribution, AI / Governance, Organizational Maturity Models, Decision Latency, Autonomous Operating Environments, Work Coordination Theory, Structural Readiness, Enterprise",
+      "downloads": 11
+    },
+    {
+      "abstractId": "6474461",
+      "title": "When Technology Resists Governance: Material Properties and Herd Behavior in IT Governance Formation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6474461",
+      "authors": [
+        "John Tripp"
+      ],
+      "affiliations": [],
+      "pages": 51,
+      "posted": "31 Mar 2026",
+      "snippet": "After the 2023 AI regulatory surge, vocabulary convergence substantially outpaced substantive change, and few firms describe formal AI governance structures / despite near-universal risk vocabulary adoption. / IT artifact, AI governance, IT governance infrastructure, herd behavior, technology adoption, corporate disclosure, NLP",
+      "downloads": 6
+    },
+    {
+      "abstractId": "6389658",
+      "title": "Licensing, Liability, and the Speed of AI Displacement: Legal Determinants of Labour Market Impact",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6389658",
+      "authors": [
+        "Sang Ha Lee"
+      ],
+      "affiliations": [
+        "Sungkyunkwan University"
+      ],
+      "pages": 35,
+      "posted": "31 Mar 2026",
+      "snippet": "The debate over AI governance is organised around whether existing law suffices or new AI-specific legislation is needed. / The debate over AI governance is organised around whether existing law suffices or new AI-specific legislation is needed. / governance debates by focusing attention on the regulatory baseline already in operation.",
+      "downloads": 19
+    },
+    {
+      "abstractId": "6386038",
+      "title": "From the AI Act to a European AI Agency: Completing the Union’s Regulatory Architecture",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6386038",
+      "authors": [
+        "Georgios Pavlidis"
+      ],
+      "affiliations": [
+        "NUP"
+      ],
+      "pages": 17,
+      "posted": "31 Mar 2026",
+      "snippet": "The adoption of the EU AI Act marks an important step in this direction, establishing a harmonised legal framework that includes detailed provisions on / AI governance, as well as the creation of the European AI Office.",
+      "downloads": 19
+    },
+    {
+      "abstractId": "6309398",
+      "title": "Civilizational Necessity and the Zeroing of Choice: AI Inevitability as a Category Error",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6309398",
+      "authors": [
+        "Joseph Hurd"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 11,
+      "posted": "30 Mar 2026",
+      "snippet": "Contemporary discourse surrounding artificial intelligence (AI) increasingly frames adoption not as a contingent policy choice but as a civilizational / Here, \"category error\" (Ryle, 1949, pp. 16-17) refers to treating descriptive adoption forecasts as normative mandates (Hume, 1739/1978, Book 3, Part 1 / precautionary principle, risk governance, risk analysis, risk framing, decision-making under uncertainty, systemic risk, policy analysis, technology governance, AI / governance, accountability, legitimacy, inevitability framing, civilizational necessity, zeroing of choice",
+      "downloads": 16
+    },
+    {
+      "abstractId": "6220958",
+      "title": "Privacy-Preserving Data Processing and Federated Learning in Cloud Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6220958",
+      "authors": [
+        "Taylor Robert"
+      ],
+      "affiliations": [],
+      "pages": 7,
+      "posted": "30 Mar 2026",
+      "snippet": "However, the widespread adoption of cloud systems raises significant concerns regarding privacy, security, and compliance. / Privacy-Preserving Computing, Federated Learning, Cloud Systems, Edge-AI, Data Security, Distributed Systems, AI Governance",
+      "downloads": 7
+    },
+    {
+      "abstractId": "6459612",
+      "title": "Agentic Workflow Drift and Agentic Workflow Subversion: A New Risk Taxonomy for the Governance of Agentic AI in Financial Services",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6459612",
+      "authors": [
+        "Maureen Doyle-Spare"
+      ],
+      "affiliations": [],
+      "pages": 29,
+      "posted": "30 Mar 2026",
+      "snippet": "Drift occurs when agentic systems reconcile inconsistent definitions across enterprise platforms into a working logic that no human explicitly approved / Subversion is the enterprise risk surface that emerges when this drift propagates across workflows, or is deliberately exploited by sophisticated actors / Knowledge Graph, AI Governance, Operational Risk, Control Architecture, Banking Controls, Agentic AI, Model Risk Management, Financial Regulation, Workflow",
+      "downloads": 42
+    },
+    {
+      "abstractId": "6217819",
+      "title": "Inference-Time Governance for Quiet Failure Mitigation in Large Language Model Systems: A Three-Mechanism Architecture",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6217819",
+      "authors": [
+        "Arijit Chatterjee"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 14,
+      "posted": "27 Mar 2026",
+      "snippet": "These quiet failures evade standard quality metrics and pose significant risks in enterprise deployments where fluent but unsupported outputs are costly / The framework is lightweight, auditable, and designed to meet the governance and compliance needs of enterprise AI deployment. / Large language models, inference-time governance, quiet failures, coherence regulation, enterprise AI, LLM safety, systems design, AI Governance, Artificial",
+      "downloads": 9
+    },
+    {
+      "abstractId": "6211238",
+      "title": "A Governance-First Architecture for Multi-Tenant Retrieval-Augmented Generation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6211238",
+      "authors": [
+        "Arthit Pukhampuang"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 7,
+      "posted": "26 Mar 2026",
+      "snippet": "As Retrieval-Augmented Generation (RAG) systems enter regulated enterprise environments, architectural assumptions optimized for speed and simplicity increasingly / Retrieval-Augmented Generation, RAG, AI Governance, Multi-Tenant Systems, Compliance-by-Design",
+      "downloads": 12
+    },
+    {
+      "abstractId": "6383259",
+      "title": "Propagation of Ambiguity-Bearing Outputs Across Interconnected Systems Environment",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6383259",
+      "authors": [
+        "Myriam Ayada"
+      ],
+      "affiliations": [],
+      "pages": 50,
+      "posted": "26 Mar 2026",
+      "snippet": "AI and AI Agents become embedded in organizations' operational workflows, AI-generated outputs are increasingly consumed by legacy and heterogeneous enterprise / Generative AI, Agentic AI, AI Safety, Semantic Drift, Systemic Risk, Interconnected Systems, Large Language Models (LLMs), MLOps, Automated Decision Making, AI / Governance, AI Risk Management, Cascading Failures, Enterprise AI, Ambiguity-Bearing Outputs, Inter-System AI Risk, Interconnected Systems Environment",
+      "downloads": 19
+    },
+    {
+      "abstractId": "6424518",
+      "title": "Navigating the AI Regulatory Labyrinth: A Comparative Analysis of Legal, Technical, and Audit Frameworks for Compliance by Design",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6424518",
+      "authors": [
+        "Sung Woo Shon"
+      ],
+      "affiliations": [],
+      "pages": 9,
+      "posted": "26 Mar 2026",
+      "snippet": "As artificial intelligence (AI) systems become embedded in critical infrastructure, enterprise workflows, and public services, the global governance landscape / This paper presents a comparative analysis of six influential AI governance frameworks: the European Union Artificial Intelligence Act (EU AI Act), the / Copyright Office guidance, AI governance, AI governance framework",
+      "downloads": 16
+    },
+    {
+      "abstractId": "6350762",
+      "title": "AI's Social Impact in Gipuzkoa",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6350762",
+      "authors": [
+        "Igor Calzada",
+        "Itziar Eizaguirre"
+      ],
+      "affiliations": [
+        "Ikerbasque Foundation UPV/EHU",
+        "University of the Basque Country - Gipuzkoa Campus"
+      ],
+      "pages": 3,
+      "posted": "26 Mar 2026",
+      "snippet": "Significant generational differences reveal a growing skills-based digital divide, with much higher adoption rates among younger cohorts / >legitimate AI governance grounded in transparency, digital rights, and inclusive public policies.",
+      "downloads": 9
+    },
+    {
+      "abstractId": "6199178",
+      "title": "Security and Risk Implications of Transformer-Based Large Language Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6199178",
+      "authors": [
+        "Sergey Saburov"
+      ],
+      "affiliations": [],
+      "pages": 26,
+      "posted": "25 Mar 2026",
+      "snippet": "The growing adoption of Large Language Models (LLMs) across a wide range of applications has introduced new challenges in application security, complementing / Prompt Injection, Agentic AI Systems, Retrieval-Augmented Generation (RAG), AI Risk Management, Model Governance, Semantic Vulnerability, AI Security,",
+      "downloads": 18
+    },
+    {
+      "abstractId": "6466703",
+      "title": "Human-Centric AI Governance in Digital HRM: A Conceptual Framework for Responsible Digital Business",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6466703",
+      "authors": [
+        "Hani F. Al-Fawareh"
+      ],
+      "affiliations": [
+        "Amman Arab University"
+      ],
+      "pages": 35,
+      "posted": "25 Mar 2026",
+      "snippet": "Existing research has examined responsible AI, digital transformation, and AI-enabled HRM, yet these conversations remain insufficiently integrated. / This paper addresses that gap by developing a human-centric conceptual framework for AI governance in digital HRM and positioning it as a foundation for / Artificial intelligence, Digital HRM, AI governance, Responsible digital business, Human-centric AI",
+      "downloads": 21
+    },
+    {
+      "abstractId": "6195238",
+      "title": "GOPEL Infrastructure Specification and HAIA-RECCLIN Operational Model for AI Provider Plurality Implementation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6195238",
+      "authors": [
+        "Basil Puglisi"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 17,
+      "posted": "24 Mar 2026",
+      "snippet": "Any organization operating multiple AI platforms benefits from deterministic dispatch, cryptographic audit trails, checkpoint gates, and tamper-evident / AI Governance, GOPEL, Multi-AI Systems, Provider Plurality, Human Oversight, Automation Bias, Non-Cognitive Agent, HAIA-RECCLIN, Checkpoint-Based Governance",
+      "downloads": 8
+    },
+    {
+      "abstractId": "6448880",
+      "title": "The AI Intelligence Deficit: The Missing Layer Between AI Investment and AI Value",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6448880",
+      "authors": [
+        ""
+      ],
+      "affiliations": [],
+      "pages": 11,
+      "posted": "24 Mar 2026",
+      "snippet": "Drawing on market data indicating that 95% of enterprise AI pilots fail to deliver measurable returns and 42% of organisations abandoned the majority of / AI investment, artificial intelligence, information asymmetry, AI adoption, independent validation, signal degradation, AI governance, due diligence, vendor",
+      "downloads": 54
+    },
+    {
+      "abstractId": "6463758",
+      "title": "From AI adoption to AI advantage: why configuration design matters",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6463758",
+      "authors": [
+        "Johnny Chan"
+      ],
+      "affiliations": [
+        "University of Auckland Business School"
+      ],
+      "pages": 13,
+      "posted": "24 Mar 2026",
+      "snippet": "AI innovation, dynamic capabilities, innovation configurations, AI governance, scale-diversity trade-off",
+      "downloads": 6
+    },
+    {
+      "abstractId": "6335258",
+      "title": "Ethical Considerations and Algorithmic Bias of Artificial Intelligence in Education",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6335258",
+      "authors": [
+        "Dimple Patil"
+      ],
+      "affiliations": [
+        "Hurix Digital, Andheri, India"
+      ],
+      "pages": 10,
+      "posted": "24 Mar 2026",
+      "snippet": "The fast adoption of artificial intelligence (AI) in the educational field has raised powerful questions about the bias, fairness, and ethical responsibility / AI usage in the learning experience.",
+      "downloads": 25
+    },
+    {
+      "abstractId": "6462379",
+      "title": "Designing Accountable Human–AI Teaming in Industrial Production: A Governance Framework for Agentic, Tool-Mediated Workflows",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6462379",
+      "authors": [
+        "Chris Heiler",
+        "Eric Grosse"
+      ],
+      "affiliations": [
+        "Saarland University",
+        "Saarland University"
+      ],
+      "pages": 39,
+      "posted": "24 Mar 2026",
+      "snippet": "intelligence (AI) systems combine goal-directed planning with tool-mediated execution and iterative monitoring across the manufacturing execution system, enterprise / Existing responsible-AI and governance research provides valuable principles; however, the following remain underspecified: operationalization of accountability",
+      "downloads": 16
+    },
+    {
+      "abstractId": "6309601",
+      "title": "Operational Certainty Theorem : A Formal Framework for Quantifying Verifiable Governance in Enterprise Valuation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6309601",
+      "authors": [
+        "Guillaume Emmanuel Kaldjob"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 31,
+      "posted": "23 Mar 2026",
+      "snippet": "KALDJOB Guillaume Emmanuel, Founder of Scalar-os, Valuation Multiples, Valuation Multiples, Private Equity, Cryptography, Risk Premium, AI Governance,",
+      "downloads": 16
+    },
+    {
+      "abstractId": "6458818",
+      "title": "The AI Productivity Paradox: Saving Time Takes Time",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6458818",
+      "authors": [
+        "John Lande"
+      ],
+      "affiliations": [
+        "University of Missouri School of Law"
+      ],
+      "pages": 6,
+      "posted": "23 Mar 2026",
+      "snippet": "artificial intelligence, AI productivity paradox, legal profession, dispute resolution, mediation, negotiation, professional decision-making, technology adoption / , legal technology, AI ethics, AI risk management, professional responsibility, practice systems, productivity, learning curve, innovation adoption, behavioral",
+      "downloads": 32
+    },
+    {
+      "abstractId": "6415059",
+      "title": "Braking-Device Inversion in Frontier AI Governance:\n\nEvidence from Document Revision Sequences, 2023–2026",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6415059",
+      "authors": [
+        "Masateru Morimoto"
+      ],
+      "affiliations": [],
+      "pages": 24,
+      "posted": "23 Mar 2026",
+      "snippet": "These three equilibrium forms are unified by the mechanism of braking-device inversion: the same competitive pressure that motivates institutional adoption",
+      "downloads": 14
+    },
+    {
+      "abstractId": "6326238",
+      "title": "Winning Without Losing: India's Cognitive Security Imperative in an Era of AI-Enabled Warfare",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6326238",
+      "authors": [
+        "Aman Bandvi"
+      ],
+      "affiliations": [],
+      "pages": 40,
+      "posted": "23 Mar 2026",
+      "snippet": "governance architecture have systematically failed to address. / Its translation to the Global South — where structural vulnerabilities differ profoundly — requires conceptual reconstruction, not adoption. / Cognitive Sovereignty, Responsible AI, AI Governance, India, Global South, Disinformation, Deepfakes, National Security, Democratic Resilience, Information",
+      "downloads": 36
+    },
+    {
+      "abstractId": "6406338",
+      "title": "Algorithms and Capital: How AI Reshapes Corporate Finance Decisions",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6406338",
+      "authors": [
+        "Charilaos Mertzanis"
+      ],
+      "affiliations": [
+        "Abu Dhabi University"
+      ],
+      "pages": 49,
+      "posted": "21 Mar 2026",
+      "snippet": ", and model risk, and outline identification strategies using staggered adoption, regulatory shocks, and crosscountry data. / The framework highlights dynamic, heterogeneous effects and the central role of AI governance in determining financing outcomes.",
+      "downloads": 63
+    },
+    {
+      "abstractId": "6185561",
+      "title": "Artificial Intelligence in Banking as a Driver of Financial Inclusion for Reducing Poverty and Inequality - A Conceptual Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6185561",
+      "authors": [
+        "Bakkaprabhu .",
+        "Sujatha Susanna Kumari D"
+      ],
+      "affiliations": [
+        "Central University of Karnataka - Department of Commerce"
+      ],
+      "pages": 14,
+      "posted": "19 Mar 2026",
+      "snippet": "In addition, the chapter critically discusses ethical, regulatory, and governance challenges related AI adoption in banking, including issues of algorithmic / Artificial Intelligence, Banking, Financial Inclusion, Poverty Reduction, Inequality, Sustainable Finance, FinTech, Responsible AI",
+      "downloads": 30
+    },
+    {
+      "abstractId": "6352698",
+      "title": "Bounded Agency: An Ethical and Institutional Limit for Autonomous AI Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6352698",
+      "authors": [
+        "Ravi Bhagavatula"
+      ],
+      "affiliations": [],
+      "pages": 23,
+      "posted": "19 Mar 2026",
+      "snippet": "Across financial systems, content platforms, healthcare AI, and enterprise automation, the absence of Bounded Agency appears systemic rather than exceptional / governance. / Bounded Agency, Bounded Agency Limit (BAL), AI Governance, Autonomous Systems, Algorithmic Decision-Making, Institutional Design, AI Ethics, System Complexity",
+      "downloads": 25
+    },
+    {
+      "abstractId": "6351779",
+      "title": "Sustainable AI for Schools: Embedding Climate Accountability in Educational Technology Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6351779",
+      "authors": [
+        "Haylee Massaro"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 6,
+      "posted": "19 Mar 2026",
+      "snippet": "and multilateral organizations embed climate disclosure, sustainable procurement standards, and child-centered environmental impact assessments into AI / governance frameworks for schools.",
+      "downloads": 14
+    },
+    {
+      "abstractId": "6314038",
+      "title": "A Sector-Agnostic Contextual Validation Architecture for AI Reliability in High-Stakes Environments: Empirical Evidence from Healthcare, Infrastructure, and Retail Deployments",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6314038",
+      "authors": [
+        "Ameer Fahad Ali Khan"
+      ],
+      "affiliations": [],
+      "pages": 11,
+      "posted": "19 Mar 2026",
+      "snippet": "The deployment of artificial intelligence systems in high-stakes operational environmentsincluding healthcare, critical infrastructure, and large-scale enterprise / The architecture directly addresses requirements identified in the NIST AI Risk Management Framework (AI RMF 1.0) and aligns with national AI safety priorities / AI Reliability, Hallucination Mitigation, Contextual Validation, Critical Infrastructure AI, Healthcare AI, Enterprise AI Safety, Retrieval-Augmented Generation / , Multi-Layer Validation, AI Risk Management",
+      "downloads": 14
+    },
+    {
+      "abstractId": "6313620",
+      "title": "Trust Infrastructure for the AI Economy: Reducing Financial Risk and Fraud in Regulated Sectors through Semantic Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6313620",
+      "authors": [
+        "Ashutosh Bhatnagar",
+        "Ganesh Pokhariyal"
+      ],
+      "affiliations": [
+        "IIT Roorkee, Haridwar, Uttarakhand-247667, India",
+        "University of Nairobi"
+      ],
+      "pages": 23,
+      "posted": "19 Mar 2026",
+      "snippet": "Artificial intelligence assistants are rapidly being deployed in regulated sectors such as healthcare systems, enterprise environments, and global finance / A single AI error in clinical decision support can trigger malpractice claims; in insurance processing, it can amplify fraud; in enterprise knowledge systems / Algorithmic Trading Security, Market Manipulation Prevention, Financial Fraud Mitigation, Healthcare AI, Enterprise AI Assistants, Prompt Injection, LLM / Security, AI Governance, Semantic Instruction Layer, Trustworthy AI, Economic Risk Management, Compliance Automation, Clinical Decision Support, AI Watermarks",
+      "downloads": 31
+    }
+  ]
+}

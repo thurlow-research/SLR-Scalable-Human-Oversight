@@ -1,0 +1,26 @@
+Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.
+I'll work through each paper systematically using the operationalizability test and tier criteria.
+
+```
+item_key,decision,confidence,rationale,prior_decision,prior_confidence
+TIFCAJQR,discard,high,"Abstract consists only of keywords with no substantive content; cannot assess whether paper provides operationalizable contribution beyond topic labels",maybe,low
+CYSJ3A27,discard,medium,"HITL labor architecture addresses workforce configuration and certification pathways in labor markets; mechanism concerns job design not output validation — transfer to code review requires substantial domain re-derivation",maybe,medium
+THUAX4U7,keep,medium,"CI/CD governance patterns and compliance frameworks for autonomous AI agents are directly applicable to software engineering pipelines; agentic AI deployment mechanisms transfer despite public administration primary domain",maybe,medium
+62S6DFXY,keep,medium,"NIST AI RMF-aligned framework with computable permission boundaries and monitoring thresholds provides operationalizable governance-measurement-management loop; optimization methodology transfers to AI code governance",maybe,medium
+FGR7FN35,discard,medium,"AI liability framework addresses products liability and oversight conceptually but abstract does not indicate operationalizable guidance an engineering org could implement; legal scholarship without compliance framework",maybe,medium
+G23UAFBT,discard,high,"Board-level risk materiality in financial terms (free cash flow, enterprise value) has no software engineering connection; framework serves directors and CFOs not engineering teams managing AI code",maybe,medium
+I6FZ5GD2,keep,high,"Visual analytics system for examining LLM coding agent behaviors across code-level, process-level, and LLM-level analysis directly supports human oversight of AI code generation; mechanism is immediately applicable despite ML competition framing",maybe,medium
+UGQ9DT5M,discard,medium,"Legal scholarship analyzing existence of EU truth-related duties for LLMs; interpretive analysis without operational compliance framework or software-specific guidance",maybe,medium
+9YGXMUW3,discard,high,"Forensic investigation framework recovers chat artifacts post-incident; mechanism is audit/forensics not governance of code generation during development",maybe,medium
+ZKKBHG9W,keep,medium,"Artefact-based transparency framework with YAML schema, Transparency Scorecard, and Registry provides operationalizable assessment methodology explicitly inspired by software development principles",maybe,medium
+ZXLWTKRF,discard,high,"Abstract contains only appendix references and keyword metadata; no substantive description of contribution to evaluate",discard,low
+ET5U88I7,keep,medium,"Empirical finding that mechanistic interpretability fails to enable human oversight correction challenges core oversight assumption; negative result is actionable — don't rely on interpretability alone for safety-critical review",maybe,medium
+UCJ7LTG9,discard,medium,"Behavioral experiment measuring algorithm appreciation provides weight-of-advice metrics; research contribution to trust calibration literature but no operational framework for software engineering adoption",maybe,medium
+3XJHPV3K,keep,low,"Quantifiable safeguard degradation metrics (deviation rates, compliance decay over interaction volume) provide monitoring signals; mechanism could detect AI coding tool drift but conversational AI domain limits direct applicability",maybe,medium
+4CR8GVNV,keep,medium,"HITL drift detection and recalibration framework with defined evaluation metrics for persistent AI agents; mechanism transfers to long-running coding assistants that maintain context over sessions",maybe,medium
+RCRQT2RZ,keep,medium,"Compliance-as-code for machine-readable regulation with explicit reference to generative tools in enterprise workflows; mechanism applies to automated compliance checking in software engineering pipelines",maybe,medium
+HQIXPITB,keep,low,"Parasuraman-level framework clarifying HITL/HOTL/HOVL control distinctions for AI system architecture; prescriptive content uncertain but definitional framework informs oversight design choices",maybe,medium
+BFPEC3IK,discard,medium,"Identifies interpretability gap in AI-assisted institutional decisions but abstract indicates diagnostic analysis of what's missing rather than prescriptive mechanisms to address it",maybe,medium
+6MTQV7V3,discard,high,"Abstract corrupted with repeated placeholder text; no evaluable content despite potentially relevant keywords",discard,low
+PBFMRG3B,discard,high,"No abstract available; hallucination classification topic cannot be assessed for operationalizability from title alone",discard,low
+```

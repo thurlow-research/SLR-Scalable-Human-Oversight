@@ -1,0 +1,73 @@
+{
+  "item_key": "34ELRWJH",
+  "citation": "Goodhue 2025",
+  "evidence_type": [
+    "conceptual-position",
+    "case-study"
+  ],
+  "problem_statement": "AI-assisted 'vibe coding' lets non-experts build sophisticated applications while the AI makes thousands of legally consequential micro-decisions (licensing, privacy, security) without human legal oversight, creating a mismatch between technical capacity and legal/compliance infrastructure.",
+  "magnitude_evidence": "Perry et al.: 'participants who had access to an AI assistant wrote significantly less secure code than those without access,' with only 3% of AI-assisted developers implementing secure encryption compared to 22% without AI (Perry et al. 2785)",
+  "risk_types": [
+    "legal",
+    "compliance",
+    "security",
+    "privacy/data-protection",
+    "intellectual-property",
+    "open-source-licensing",
+    "supply-chain",
+    "regulatory",
+    "liability",
+    "marketing-substantiation",
+    "training-data-contamination"
+  ],
+  "insufficiency_evidence": "Traditional legal service delivery models\u2014manual document review, hourly consultation, post-hoc compliance audits\u2014cannot match AI-assisted development's velocity or solo entrepreneurship's economics; hourly legal rates of $300-800 place review beyond solo entrepreneurs' reach",
+  "solution_mechanisms": [
+    "embedded compliance automation",
+    "real-time compliance checks in dev workflow",
+    "prompt-based dependency/license auditing",
+    "automated data-collection mapping",
+    "automated security code review",
+    "automated legal document generation (ToS, privacy policy, incident response)",
+    "legal-by-design integrated into IDE"
+  ],
+  "mechanism_keywords": [
+    "compliance-automation",
+    "policy-as-code",
+    "legal-by-design",
+    "dependency-audit",
+    "license-scanning",
+    "data-mapping",
+    "security-gate",
+    "prompt-engineering",
+    "shift-left",
+    "provenance",
+    "guardrail"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-publish",
+    "code-review",
+    "development-environment"
+  ],
+  "human_role": "unspecified",
+  "key_constructs": [
+    "vibe coding",
+    "embedded compliance automation",
+    "compliance at the speed of code",
+    "legal-by-design",
+    "one-person billion-dollar company"
+  ],
+  "governance_refs": [
+    "GDPR",
+    "CCPA",
+    "COPPA",
+    "PCI DSS",
+    "FTC Act",
+    "NIST Framework for Responsible AI Development",
+    "OWASP Top 10 for LLM Applications",
+    "EU AI Act"
+  ],
+  "scope_fit": "both",
+  "notes": "Legal-practitioner opinion/position piece; not empirical study by author (cites others' empirical work). Governance_refs 'EU AI Act' not explicitly named\u2014remove if strict; document cites GDPR/NIST/OWASP directly.",
+  "_truncated": false
+}

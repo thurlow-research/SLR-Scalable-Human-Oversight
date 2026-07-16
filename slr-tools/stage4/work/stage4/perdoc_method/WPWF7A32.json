@@ -1,0 +1,12 @@
+{
+  "item_key": "WPWF7A32",
+  "methods": [
+    "conceptual/position",
+    "framework"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position/framework",
+  "notes": "Presents the DevLicOps framework for managing ACA licensing risks; grounded in prior literature and informal/anecdotal conversations with IT professionals (a single interview is mentioned anecdotally, not as systematic data collection). No systematic empirical study or dataset of its own.",
+  "citation": "Sharma 2025"
+}

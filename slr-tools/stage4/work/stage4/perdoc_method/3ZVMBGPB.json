@@ -1,0 +1,13 @@
+{
+  "item_key": "3ZVMBGPB",
+  "methods": [
+    "conceptual/position",
+    "framework-model",
+    "literature-review/mapping"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position",
+  "notes": "Vision paper: reviews the historical evolution of code review and synthesizes prior literature, then proposes a five-stage AI-powered agentic code review framework with human-in-the-loop gates. It offers no implementation, no prototype evaluation, and collects no data \u2014 all quantitative figures cited are drawn from prior studies, not measured here. The embedded literature synthesis is narrative/argument-building, not a systematic review.",
+  "citation": "Kamal\u0131 2026"
+}

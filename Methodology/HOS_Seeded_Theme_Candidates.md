@@ -1,0 +1,108 @@
+# HOS-Seeded Theme Candidates (staging — graft before classifying cores)
+
+**Status:** staging / not yet grafted. Source: synthesis of ~76 HOS research findings
+(`~/Code/HumanOversightSystem/Human/research/`) against the SLR themes, 2026-07-13.
+**Do not treat as finalized themes.** Graft the corpus-grounded ones into
+`Emerging_Themes.md` / `Problem_Statement_Evidence.md` / `slr-conventions` *before* the
+core-article classification pass.
+
+## Guardrail — how HOS may and may not inform the SLR
+
+HOS is the **learning vehicle, not an SLR data source**. Two kinds of HOS findings, neither
+is direct SLR evidence:
+1. **Pass-through corpus reading-notes** — HOS's notes on *corpus papers* (Mitropoulos 2026
+   framing attack; Ferdous 2026 confidence/refactor-risk; Charoenwet/AgenticSCR 2026
+   corroboration-ranking; Parris/AIRA 2026 scanner-masking; Kumar/SWE-PRBench single-reviewer
+   recall; Watanabe 2026 agentic-PR size; Loker/CodeRabbit 2025 the "1.7×" claim). These point
+   to *papers* — ground themes on those, don't double-count as HOS corroboration.
+2. **HOS-original experience** — HOS's own design lessons. These are **theme hypotheses to
+   validate against the corpus**, never self-validating (avoid the reflexivity trap).
+
+**Action before grafting:** cross-check the pass-through papers against the library (some are
+likely already cores/contexts; missing ones are retrieval/snowball candidates), so each grafted
+theme stands on corpus evidence.
+
+## A. Sharpeners for T0 — the oversight-scaling inversion (graft into Problem_Statement_Evidence)
+
+- ⭐ **"The gap is enforcement, not knowledge."** A governance audit found ~21 fail-opens,
+  nearly every one violating a principle already *written down*. Reframes the insufficiency
+  layer: orgs don't lack oversight *policy* — the policy is **documented but not mechanically
+  enforced**. Upgrades the problem statement from "do orgs oversee AI code?" to "**is their
+  oversight enforced or merely advisory?**" (HOS: `unenforceable-rules-need-verification-mechanisms`.)
+- **Task-class, not touched-content, is the agentic risk axis.** Refactor/chore break most yet
+  read as "maintenance" and get lightest review → a concrete mechanism for *why* the riskiest AI
+  output is least inspected. (Pass-through: Ferdous 2026, Watanabe 2026.)
+- **Citation-hygiene caveat for the T0 anchor:** the "AI code ~1.7× buggier" premise traces to
+  ONE source (Loker/CodeRabbit 2025, 470 PRs, AI-*co-authored* ≠ autonomous). Cite the chain
+  precisely or the premise is attackable.
+- **Unit of analysis:** AI-code quality is a *session* property, not a single-PR one — errors
+  interlock across steps ("house of cards"). (HOS-original: `working-state-invariant`.)
+
+## B. New theme candidate — T3: "The overseer is itself an untrusted, attackable component"
+
+*Thesis:* AI reviewers/scanners are not a trusted oracle — they emit confident false signal, can
+be socially engineered, and can suppress true signal — so the oversight layer needs its own
+verification before its output drives action. This is the **strengths/limits-of-current-oversight**
+limb of the RQ, and it cross-links T1 (a framing attack *is* a supply-chain attack on the
+oversight layer).
+- Confident non-reproducing reports (3/4). (HOS-original: `reviewer-agents-file-confident-non-reproducing-reports`.)
+- 100% success flipping reviewer verdicts via PR-prose framing. (Corpus: Mitropoulos 2026.)
+- LLM synthesis layer masks a real scanner FAIL as "this is fine." (Corpus: Parris/AIRA 2026.)
+- Guard that records-but-doesn't-halt executes the refused action. (HOS: `a-guard-that-doesnt-halt-is-not-a-guard`.)
+**Graft plan:** anchor on the *corpus* papers (Mitropoulos/Parris/…); check they're in the library first.
+
+## C. Core-criteria refinement (graft into slr-conventions §criteria)
+
+- **Gate on a computed/independent signal, never the model's self-report.** Model confidence is
+  saturated (99.9% at 8–10) and flat vs defect rate; a reviewer's own "approve" can't override its
+  own findings list. **Bounds the SNR-driving-attention discriminator:** the routing signal must be
+  independent of the producer. This is exactly why `VTDG995V` (calibration → *computed*
+  review-intensity) is core, but "route review by the model's own confidence" is disqualified.
+  (HOS/corpus: `agent-confidence-is-uninformative…`, `gate-on-computed-signal-not-self-reported-verdict`,
+  `self-classification-cannot-gate-the-human-boundary`, Ferdous 2026.)
+
+## D. Corroborations of existing themes (fold as supporting points)
+
+- **T1 (tooling supply chain)** extends from *installed* tooling to *invoked* tooling: oversight
+  instruments that shell out to vendor CLIs **fail open** (removed flag, changed output, auth lapse
+  → "ran, found nothing"); CI is a generous superset so absence-failures are invisible until field
+  install ("green can mean the gate never ran"). (`tooling-drift-in-validation-pipelines`,
+  `ci-is-blind-to-consumer-environment-failures`, `oversight-gate-must-declare-its-deps-and-fail-loud`.)
+- **T2 (explanation)**: near-verbatim support — an escalation drives action only with three layers
+  (descriptive/contextual/actionable) and project-calibrated thresholds
+  (`structured-fault-explanation-drives-developer-action`, corpus Adejumo & Johnson 2025); review
+  *volume* is itself a failure mode → rank by corroboration strength, not LLM plausibility
+  (`corroboration-ranked-review…`); and for *review*, more context degrades detection
+  (`more-context-makes-llm-review-worse-not-better`).
+
+## E. Backlog — strong lenses, HOS-design-heavy, validate against corpus before promoting
+
+- **Decorrelated / cross-vendor ensemble review** as load-bearing coverage (single-reviewer recall
+  15–31%). (`cross-vendor-review-finds-real-bugs`, `gates-and-review-are-complementary`,
+  `oversight-blindspot-documentation-discoverability` — the "N-dimension overseer is blind to
+  dimension N+1 and to its own blindness" point is distinctive.)
+- **Tiered, cost-aware review economics — "deployability = correctness"**: oversight that is correct
+  but uneconomical or unforced *gets turned off*; gate expensive review by transition significance
+  (inner-loop/pre-PR/release) with a cheap deterministic trigger. (`three-tier-review-cost-model`,
+  `cost-gating-autonomous-oversight-loops`.)
+- **Governance invariants** (governance/policy limb): only automation-tightens / human-relaxes
+  (`ratchet-principle`); an override with no expiry becomes the policy (`an-override-must-expire…`);
+  the recorder must not be in the recorded set; the oversight-*disabling* valve must be more
+  auditable than the gates; forge-proof human gate needs identity-separation + server-side
+  enforcement (`human-gate-enforcement-limits`); two-key enable.
+- **Silent non-execution = clean result**: bypassed/skipped/never-invoked oversight is
+  indistinguishable from "reviewed and clean" → force unskippable execution + loud, distinct N/A
+  (`orchestrator-absorbs-roles-pipeline-bypassed-by-default`, `explicit-na-audit-entries`). *(Closely
+  related to the T0 "enforcement not knowledge" reframe.)*
+- **Non-deterministic reviewer convergence** ("pass = zero-NEW, feed it its own issue tracker,
+  allow an accept disposition").
+- **Interactive vs autonomous = one role, two modes** (governance boundary, not code boundary);
+  specify the post-action handoff or the agent bypasses the review loop.
+
+## Grafting checklist (do before classifying cores)
+1. Cross-check pass-through corpus papers (Mitropoulos, Ferdous, Charoenwet, Parris, Kumar,
+   Watanabe, Loker) against the library → in-corpus? retrieval/snowball candidates?
+2. Ground **T3 (untrusted overseer)** on those corpus papers → add to `Emerging_Themes.md`.
+3. Fold **A** (enforcement-not-knowledge, task-class-risk, 1.7× caveat) into `Problem_Statement_Evidence.md`.
+4. Add **C** (computed-signal-not-self-report) to `slr-conventions` core criteria.
+5. Decide which **E** backlog lenses have corpus support → promote or drop.

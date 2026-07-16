@@ -1,0 +1,14 @@
+{
+  "item_key": "SHK6KAX6",
+  "methods": [
+    "repository-mining/MSR",
+    "measurement-study",
+    "qualitative-analysis",
+    "dataset-contribution"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "repository-mining/MSR",
+  "notes": "Mining-challenge study over the AIDev dataset of ~933k agentic GitHub PRs, filtered to 387 build-related PRs / 945 build files. Runs the Sniffer static analyzer to measure code smells before/after AI changes (RQ1), plus manual/qualitative labeling with Fleiss' Kappa inter-rater agreement to categorize smell-eliminating refactorings (RQ2) and analyze PR acceptance/merge behavior (RQ3). Analyzes human review comments only as observational artifacts, not collected participant data, so human_subjects=false. Ships a labeled-PR replication dataset.",
+  "citation": "Ghammam 2026"
+}

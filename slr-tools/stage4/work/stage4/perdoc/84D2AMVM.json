@@ -1,0 +1,77 @@
+{
+  "item_key": "84D2AMVM",
+  "citation": "McKay 2024",
+  "evidence_type": [
+    "conceptual-position",
+    "secondary-review"
+  ],
+  "problem_statement": "This document addresses whether human-in-the-loop (HITL) oversight of higher-risk AI-enabled decision-making can be made effective, examining the human and contextual factors that undercut an overseer's ability to independently judge and challenge AI outputs.",
+  "magnitude_evidence": "In Asch's conformity experiments, 'Over half the test subjects conformed with an erroneous group response at least once'; and a radiology study found 'about half the time even very experienced radiologists could be negatively influenced by an incorrect AI recommendation'",
+  "risk_types": [
+    "automation-bias",
+    "complacency",
+    "conformity",
+    "over-trust",
+    "deskilling",
+    "machine-persuasion",
+    "workload",
+    "misaligned-incentives",
+    "hallucination",
+    "bias",
+    "asymmetric-blame"
+  ],
+  "insufficiency_evidence": "'Merely informing overseers that the system is fallible and requires verification is not fully effective at preventing automation bias'; and 'Even data scientists and AI experts have been shown to over-trust the ability of AI tools to detect issues'",
+  "solution_mechanisms": [
+    "overseer candidate screening for conformity/complacency/confidence",
+    "mock-scenario testing of overseers",
+    "overseer training including experienced AI errors",
+    "sharing anonymized AI-error cases across overseer community",
+    "workload caps based on verification time",
+    "performance measures treating omission and commission errors equally",
+    "periodic injected test decisions",
+    "persuasion-resistant UI design",
+    "risk-proportional HITL role classification",
+    "'appropriate technical and organizational measures' governance requirements"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "candidate-screening",
+    "training",
+    "error-injection",
+    "workload-cap",
+    "incentive-alignment",
+    "escalation",
+    "persuasion-defense",
+    "risk-routing",
+    "classification",
+    "policy-as-code",
+    "governance-minimums"
+  ],
+  "oversight_locus": [
+    "decision-time",
+    "human-review",
+    "post-deployment"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "human-in-the-loop",
+    "automation bias",
+    "complacency",
+    "social loafing",
+    "algorithmic aversion",
+    "algorithmic appreciation",
+    "white-box paradox",
+    "asymmetric blame",
+    "subjective expected utility calculus",
+    "action-inaction blameworthiness asymmetry"
+  ],
+  "governance_refs": [
+    "EU AI Act",
+    "NIST AI RMF",
+    "UK ICO AI and data protection toolkit",
+    "GDPR"
+  ],
+  "scope_fit": "both",
+  "notes": "Document concerns human oversight of AI-enabled decision-making generally, not AI-generated code specifically; relevant by analogy to oversight of AI outputs.",
+  "_truncated": false
+}

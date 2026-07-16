@@ -1,0 +1,61 @@
+{
+  "item_key": "96XE669R",
+  "citation": "Zhong 2025",
+  "evidence_type": [
+    "benchmark",
+    "empirical",
+    "framework-model",
+    "dataset"
+  ],
+  "problem_statement": "Code evaluation for LLM-generated code (\"vibe coding\") is anchored to functional correctness (pass@k) and overlooks the non-functional instructions and preferences users routinely screen for, so models can score high on benchmarks yet fail the human \"vibe check.\"",
+  "magnitude_evidence": "LMArena coding subset \"contains over 800K human votes\" aggregated into Elo ratings; 31 LLMs across 10 families evaluated with \"over 10K instruction-level evaluations.\"",
+  "risk_types": [
+    "misalignment-with-user-preference",
+    "quality",
+    "maintainability",
+    "functional-regression",
+    "style-convention-nonadherence",
+    "documentation-gaps"
+  ],
+  "insufficiency_evidence": "\"rankings of code LLMs from Copilot Arena exhibit weak or negative correlations with functional scores on popular benchmarks\"; even the best model reaches only 46.75% and 40.95% task-level success under five instructions.",
+  "solution_mechanisms": [
+    "VeriCode taxonomy of 30 verifiable code instructions",
+    "deterministic linter/AST/regex verifiers returning binary pass/fail",
+    "SWE-IF testbed augmenting BigCodeBench and LiveCodeBench",
+    "LLM-based instruction selector for relevance/non-conflict",
+    "composite functional + instruction-following score as human-preference proxy",
+    "verifiable reward signal for model training/RLVR"
+  ],
+  "mechanism_keywords": [
+    "verifiable-instructions",
+    "deterministic-verifier",
+    "linter-based",
+    "static-analysis",
+    "ast-analysis",
+    "taxonomy",
+    "benchmark-augmentation",
+    "composite-score",
+    "instruction-following",
+    "verifiable-reward",
+    "llm-as-selector"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "pre-commit",
+    "CI"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "vibe check",
+    "vibe coding",
+    "VeriCode",
+    "SWE-IF",
+    "instruction following (IF)",
+    "functional regression rate (FRk)"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Header title \"Vibe checker\" differs from the paper's actual title \"SWE-IF: Aligning Code Evaluation with Human Preference\"; some math notation is garbled in extraction but content is intact.",
+  "_truncated": false
+}

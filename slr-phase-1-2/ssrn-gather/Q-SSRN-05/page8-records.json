@@ -1,0 +1,1001 @@
+{
+  "count": 50,
+  "total": "441",
+  "page": "8",
+  "records": [
+    {
+      "abstractId": "4976738",
+      "title": "Regenerating Justice: ChatGPT and the Legal Minefield of Generative AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4976738",
+      "authors": [
+        "Katie Szilagyi"
+      ],
+      "affiliations": [
+        "University of Manitoba"
+      ],
+      "pages": 33,
+      "posted": "14 Nov 2024",
+      "snippet": "Generative AI (GenAI) has taken the Internet by storm. / Even well-meaning individuals aiming to keep a “human-in-the-loop” of any automated decision can fall prey to this phenomenon. / ChatGPT, automation bias, automation complacency, generative AI, GenAI, law & technology, science & technology studies, large language models,",
+      "downloads": 285
+    },
+    {
+      "abstractId": "4945698",
+      "title": "Using Multimodal AI to Streamline Contract Management Processes",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4945698",
+      "authors": [
+        "Daniel J. Finkenstadt",
+        "T. T. Eapen"
+      ],
+      "affiliations": [
+        "Wolf Stake Consulting LLC",
+        "Center for Creative Foresight"
+      ],
+      "pages": 1,
+      "posted": "09 Oct 2024",
+      "snippet": "This article explores how multimodal AI (MMAI) can revolutionize contract management by integrating diverse data types like text, audio, and video. / A human-in-the-loop approach is indispensable to ensure the accuracy and reliability of AI outputs, blending AI's capabilities with expert judgment.",
+      "downloads": 2
+    },
+    {
+      "abstractId": "4930677",
+      "title": "Beyond Black-Box: Structuring Landing Page Recommender Systems Using Predicted Intents",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4930677",
+      "authors": [
+        "Yuyan Wang",
+        "Cheenar Banerjee",
+        "Samer Chucri",
+        "Minmin Chen"
+      ],
+      "affiliations": [
+        "Stanford Graduate School of Business",
+        "Google Inc.",
+        "Google Inc.",
+        "Google Inc."
+      ],
+      "pages": 62,
+      "posted": "18 Sep 2024",
+      "snippet": "and generalizable framework for integrating behavioral and structural insights into real-time industrial personalization systems, paving the way for human-in-the-loop / AI design.",
+      "downloads": 408
+    },
+    {
+      "abstractId": "4921696",
+      "title": "Cyborgs, Centaurs and Self-Automators: The Three Modes of Human-GenAI Knowledge Work and Their Implications for Skilling and the Future of Expertise",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4921696",
+      "authors": [
+        "Steven Randazzo",
+        "Hila Lifshitz-Assaf",
+        "Katherine Kellogg",
+        "Fabrizio Dell'Acqua",
+        "Ethan R. Mollick",
+        "François Candelon",
+        "Karim R. Lakhani"
+      ],
+      "affiliations": [
+        "Laboratory for Innovation Science at Harvard",
+        "Harvard University Lab for Innovation Sciences",
+        "Massachusetts Institute of Technology (MIT) - Sloan School of Management",
+        "Harvard Business School",
+        "Boston Consulting Group",
+        "Harvard Business School - Technology and Operations Management Group"
+      ],
+      "pages": 63,
+      "posted": "12 Sep 2024",
+      "snippet": "Research on human–AI collaboration in professional settings has focused primarily on isolated interactions between knowledge professionals and AI, usually / We show how what seems to be the same “human-in-the-loop” workflow for decision making is actually enacted in three ways with significantly different implications / generative AI, artificial intelligence, knowledge work, co-creation, human-AI interaction, future of work, responsible AI",
+      "downloads": 1569
+    },
+    {
+      "abstractId": "4921359",
+      "title": "Preposition Salad: Making Sense of Human-in/on/over-the-Loop Control for AI Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4921359",
+      "authors": [
+        "Aditya Singh",
+        "Zoe Szajnfarber"
+      ],
+      "affiliations": [
+        "George Washington University",
+        "the George Washington University"
+      ],
+      "pages": 16,
+      "posted": "27 Aug 2024",
+      "snippet": "Governments across the world have called for AI to be trustworthy. / human-in-the-loop and human-on-the-loop control. / trustworthy AI, system architecture, human factors",
+      "downloads": 182
+    },
+    {
+      "abstractId": "4921086",
+      "title": "From Data to Model Structure: A Generative Algorithm to Develop System Dynamics Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4921086",
+      "authors": [
+        "Guido Veldhuis",
+        "Freek van Wermeskerken",
+        "Olaf Visker",
+        "Patrick Steinmann",
+        "Sebastiaan Deuten",
+        "Rob van Waas"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 28,
+      "posted": "09 Aug 2024",
+      "snippet": "While artificial intelligence (AI) applications are increasingly used for model calibration and analysis, their application in model development is still / the challenges encountered and reflects on the future of modeller-algorithm collaboration, setting the stage for future research aimed at developing ‘human-in-the-loop",
+      "downloads": 160
+    },
+    {
+      "abstractId": "4918017",
+      "title": "Unifying Community-Wide Whole-Brain Imaging Datasets Enables Robust Automated Neuron Identification and Reveals Determinants of Neuron Positioning in C. elegans",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4918017",
+      "authors": [
+        "Daniel Y. Sprague",
+        "Kevin Rusch",
+        "Raymond L. Dunn",
+        "Jackson M. Borchardt",
+        "Steven Ban",
+        "Greg Bubnis",
+        "Grace C. Chiu",
+        "Chentao Wen",
+        "Ryoga Suzuki",
+        "Shivesh Chaudhary",
+        "Hyun Jee Lee",
+        "Zikai Yu",
+        "Benjamin Dichter",
+        "Ryan Ly",
+        "Shuichi Onami",
+        "Hang Lu",
+        "Koutarou D. Kimura",
+        "Eviatar Yemini",
+        "Saul Kato"
+      ],
+      "affiliations": [
+        "University of California, San Francisco (UCSF) - Department of Neurology",
+        "University of Massachusetts Worcester - UMass Chan Medical School",
+        "University of California, San Francisco (UCSF) - Department of Cell and Tissue Biology",
+        "University of California, San Francisco (UCSF) - Department of Neurology",
+        "University of California, San Francisco (UCSF) - Department of Neurology",
+        "University of California, San Francisco (UCSF) - Department of Neurology",
+        "University of California, San Francisco (UCSF) - Department of Neurology",
+        "RIKEN Center for Biosystems Dynamics Research",
+        "Nagoya City University",
+        "Georgia Institute of Technology",
+        "Georgia Institute of Technology",
+        "Georgia Institute of Technology",
+        "CatalystNeuro, LLC",
+        "University of California, Berkeley - Lawrence Berkeley National Laboratory (Berkeley Lab)",
+        "RIKEN Center for Biosystems Dynamics Research",
+        "Georgia Institute of Technology",
+        "Nagoya City University",
+        "University of Massachusetts Worcester - UMass Chan Medical School",
+        "University of California, San Francisco (UCSF) - Department of Neurology"
+      ],
+      "pages": 35,
+      "posted": "08 Aug 2024",
+      "snippet": "approach for C. elegans volumetric microscopy data, still or video, consisting of a standardized format, data pre-processing techniques, and a set of human-in-the-loop / To facilitate communal use of this repository, we created open-source software, code, web-based tools, and tutorials to explore and curate datasets for",
+      "downloads": 21
+    },
+    {
+      "abstractId": "4883326",
+      "title": "AI in the Courtroom: The Boundaries of RoboLawyers and RoboJudges",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4883326",
+      "authors": [
+        "Hadar Yoana Jabotinsky",
+        "Michal Lavi"
+      ],
+      "affiliations": [
+        "The Hadar Jabotinsky Center for Interdisciplinary Research of Financial Markets, Crises and Technology (HJC)",
+        "The Hadar Jabotinsky Center for Interdisciplinary Research of Financial Markets, Crises and Technology (HJC)"
+      ],
+      "pages": 108,
+      "posted": "31 Jul 2024",
+      "snippet": "Additionally, should we consider the automation of legal systems to incorporate RoboJudges, which suggest penalties to human judges based on big data analysis / Moreover, the automation of legal representation and judicial decisions within state courts infringes upon the legitimacy of the legal system, the rule / AI Act, GDPR, human in the loop, section 230CDA, LegalTech ,Black Box, explainability, autonomy, automation bias,rule of law, legitimacy, algorithmic",
+      "downloads": 828
+    },
+    {
+      "abstractId": "4899548",
+      "title": "Automated Law Enforcement - Perfect Vision or Dystopia?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4899548",
+      "authors": [
+        "Antje von Ungern-Sternberg"
+      ],
+      "affiliations": [],
+      "pages": 21,
+      "posted": "24 Jul 2024",
+      "snippet": "makes clear that legislation and fundamental rights set limits: for example, data protection shields against certain forms of surveillance, profiling and automation / Whereas, procedural rights (like human oversight and human review) and material rights (like freedom of expression or information) strengthen the position",
+      "downloads": 172
+    },
+    {
+      "abstractId": "4876633",
+      "title": "AI and Tools for Expanding Access to Justice",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4876633",
+      "authors": [
+        "Quinten Steenhuis"
+      ],
+      "affiliations": [
+        "Suffolk University Law School"
+      ],
+      "pages": 17,
+      "posted": "28 Jun 2024",
+      "snippet": ", The Resurrection Project's Migrant Work Authorization Clinic, and Rentervention, we will discuss the need for human oversight and co-authoring with human / review when using generative AI. / AI, LLMs, Access to Justice, Law and Technology, Legal Technology, Document Automation, Machine Learning, Expert Systems",
+      "downloads": 541
+    },
+    {
+      "abstractId": "4842646",
+      "title": "Constitutive Practices of Administrative Law as Limits on Legal Automation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4842646",
+      "authors": [
+        "Frank Pasquale"
+      ],
+      "affiliations": [
+        "Cornell University - Law School"
+      ],
+      "pages": 16,
+      "posted": "20 Jun 2024",
+      "snippet": "A “legal process” account of the rule of law hinges on the availability of human review, appeals, and dialogic interaction. / Other practices by persons, for persons, are essential and intrinsically important, and properly resist being converted into machine-readable code.",
+      "downloads": 164
+    },
+    {
+      "abstractId": "4854548",
+      "title": "Towards Unsupervised Domain-Specific Open-World Recognition",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4854548",
+      "authors": [
+        "Gusti Ahmad Fanshuri Alfarisy",
+        "Owais Ahmed Malik",
+        "Wee Hong Ong"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "University of Brunei Darussalam",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 28,
+      "posted": "05 Jun 2024",
+      "snippet": "Filtering these novel objects manually requires human-in-the-loop which is costly and unable to learn on the job. / Our source code is available at https://github.com/gusti-alfarisy/udor",
+      "downloads": 50
+    },
+    {
+      "abstractId": "4800801",
+      "title": "Paywalling Humans",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4800801",
+      "authors": [
+        "Nizan Geslevich Packin"
+      ],
+      "affiliations": [
+        "City University of New York (CUNY) - Department of Law"
+      ],
+      "pages": 27,
+      "posted": "03 Jun 2024",
+      "snippet": "This Article addresses the trend of relegating human customer service to AI agents and automated premium-services in the wake of advancing automation and / Further, it discusses the Human-In-The-Loop concept, advocating for an approach that enhances customer experience with automation without sacrificing human",
+      "downloads": 166
+    },
+    {
+      "abstractId": "4851102",
+      "title": "Interpretable Artificial Intelligence Evolved Policies Applied in Renewable Energy Trading",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4851102",
+      "authors": [
+        "Konstantinos Parginos",
+        "Ricardo J. Bessa",
+        "Simon Camal",
+        "Georges Kariniotakis"
+      ],
+      "affiliations": [
+        "Mines Paris - PSL",
+        "affiliation not provided to SSRN",
+        "Mines Paris - PSL",
+        "Mines Paris - PSL"
+      ],
+      "pages": 11,
+      "posted": "01 Jun 2024",
+      "snippet": "Artificial intelligence, interpretability, geneticprogramming, explainable AI, symbolic learning, transfer learning, renewableenergy, trading, human-in-the-loop",
+      "downloads": 66
+    },
+    {
+      "abstractId": "4835935",
+      "title": "Completeness, Correctness and Conciseness of Physician-Written Versus Large Language Model Generated Patient Summaries Integrated in Electronic Health Records",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4835935",
+      "authors": [
+        "Rosanne Schoonbeek",
+        "Jessica Workum",
+        "Stephanie C.E. Schuit",
+        "Job Doornberg",
+        "Tom P. van der Laan",
+        "Charlotte M.H.H.T. Bootsma-Robroeks"
+      ],
+      "affiliations": [
+        "University of Groningen - University Medical Center Groningen",
+        "Elisabeth-Tweesteden Hospital",
+        "University of Groningen - University Medical Center Groningen",
+        "University of Groningen - University Medical Center Groningen",
+        "University of Groningen - University Medical Center Groningen",
+        "University of Groningen - University Medical Center Groningen"
+      ],
+      "pages": 16,
+      "posted": "24 May 2024",
+      "snippet": "The AI-application as described in this study does not fall within the Medical Device Regulation scope. / in the loop’ principles.",
+      "downloads": 914
+    },
+    {
+      "abstractId": "4821951",
+      "title": "Balancing the Scale: Navigating Ethical and Practical Challenges of Artificial Intelligence (Ai) Integration in Legal Practices",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4821951",
+      "authors": [
+        "Ammar Zafar"
+      ],
+      "affiliations": [
+        "University of Liverpool"
+      ],
+      "pages": 51,
+      "posted": "08 May 2024",
+      "snippet": "The study advocates for a \"human in the loop\" strategy that combines human knowledge and AI techniques to mitigate biases and guarantee individualised / legal results to ensure AI functions as a complement rather than a replacement, the paper concludes by emphasising the necessity of preserving the human",
+      "downloads": 92
+    },
+    {
+      "abstractId": "4798300",
+      "title": "Occlusion-Based Detection of Trojan-Triggering Inputs in Large Language Models of Code",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798300",
+      "authors": [
+        "Aftab Hussain",
+        "Md Rafiqul Islam Rabin",
+        "Toufique Ahmed",
+        "Mohammad Amin Alipour",
+        "Bowen Xu"
+      ],
+      "affiliations": [
+        "University of Houston",
+        "University of Houston",
+        "affiliation not provided to SSRN",
+        "University of Houston",
+        "North Carolina State University"
+      ],
+      "pages": 14,
+      "posted": "22 Apr 2024",
+      "snippet": "These models are trained on large datasets of code, where it is hard to verify each data point. / manipulative behaviors inside themodels, which can compromise the integrity of the models in downstream tasks.In this paper, we propose an occlusion-based human-in-the-loop / Trojan detection, Large language code model, Security",
+      "downloads": 21
+    },
+    {
+      "abstractId": "4750634",
+      "title": "Lost in the Loop: Who is the 'Human' of the Human in the Loop",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4750634",
+      "authors": [
+        "Jake Goldenfein"
+      ],
+      "affiliations": [
+        "Melbourne Law School - University of Melbourne"
+      ],
+      "pages": 22,
+      "posted": "06 Apr 2024",
+      "snippet": "However, there is little scientific evidence that laws requiring a human in the loop improve decision outcomes. / What political work does human in the loop do, what kinds of political configurations does it enable? / Human in the loop, AI Accountability, Automated Decision-Making, Adminstrative Law",
+      "downloads": 521
+    },
+    {
+      "abstractId": "4763287",
+      "title": "A Reasonable Apprehension of AI Bias: Lessons from R v. RDS",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4763287",
+      "authors": [
+        "Teresa Scassa"
+      ],
+      "affiliations": [
+        "University of Ottawa - Common Law Section"
+      ],
+      "pages": 15,
+      "posted": "21 Mar 2024",
+      "snippet": "RDS that are relevant to the AI context. The first is the tension between facts and opinion. / Fourth is the role of the human-in-the-loop. / artificial intelligence, bias, AI bias, AI discrimination, AI, discriminatory bias, automated decision-making, automated decision making",
+      "downloads": 314
+    },
+    {
+      "abstractId": "4767161",
+      "title": "Active Few-Shot Learning for Rare Bioacoustic Feature Annotation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4767161",
+      "authors": [
+        "Benjamin McEwen",
+        "Kaspar Soltero",
+        "Stefanie Gutschmidt",
+        "Andrew Bainbridge-Smith",
+        "James Atlas",
+        "Richard Green"
+      ],
+      "affiliations": [
+        "University of Canterbury",
+        "University of Canterbury",
+        "University of Canterbury",
+        "University of Canterbury",
+        "University of Canterbury",
+        "University of Canterbury"
+      ],
+      "pages": 25,
+      "posted": "21 Mar 2024",
+      "snippet": "A few-shot active learning recommender system in a human-in-the-loop process prioritises the annotation of low-certainty samples. / All code and data is available at https://github.com/Listening-Lab/Annotator.",
+      "downloads": 59
+    },
+    {
+      "abstractId": "4729741",
+      "title": "To Use AI or not Use AI? Autonomous Weapon Systems and their complicated relationship with the right to life",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4729741",
+      "authors": [
+        "Yuval Shany"
+      ],
+      "affiliations": [
+        "Hebrew University of Jerusalem - Faculty of Law and Institute of Criminology"
+      ],
+      "pages": 24,
+      "posted": "15 Mar 2024",
+      "snippet": "The increased prevalence of AI technology developed or adapted for military use raises difficult questions relating to the compatibility of this new technology / In Part One, I will review briefly some actual and potential applications of AI in military contexts. / Lethal autonomous weapon systems, right to life, international humanitarian law, human dignity, accountability and transparency, meaningful human control / , International Committee of the Red Cross, military AI",
+      "downloads": 351
+    },
+    {
+      "abstractId": "4741095",
+      "title": "LLM-Based Frameworks for Power Engineering from Routine to Novel Tasks",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4741095",
+      "authors": [
+        "Ran Li",
+        "Chuanqing Pu",
+        "Junyi Tao",
+        "Canbing Li",
+        "Feilong Fan",
+        "Yue Xiang",
+        "Sijie Chen"
+      ],
+      "affiliations": [
+        "Shanghai Jiao Tong University (SJTU)",
+        "Shanghai Jiao Tong University (SJTU)",
+        "Shanghai Jiao Tong University (SJTU)",
+        "Shanghai Jiao Tong University (SJTU) - Department of Electrical Engineering",
+        "Shanghai Jiao Tong University (SJTU)",
+        "Sichuan University",
+        "Shanghai Jiao Tong University (SJTU)"
+      ],
+      "pages": 13,
+      "posted": "28 Feb 2024",
+      "snippet": "For complex tasks with limited prior knowledge, we propose a human-in-the-loop framework to enable engineers and LLMs to collaboratively solve the problem / Through a comparative study between two frameworks, we find that human-in-the-loop features like web access, problem decomposition with field knowledge",
+      "downloads": 37
+    },
+    {
+      "abstractId": "4656578",
+      "title": "Artificial Intelligence (AI) Influence in Law: Balancing Technological Advancements with Ethical Considerations",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4656578",
+      "authors": [
+        "Ammar Zafar"
+      ],
+      "affiliations": [
+        "University of Liverpool"
+      ],
+      "pages": 13,
+      "posted": "04 Jan 2024",
+      "snippet": "The paper explores the use of artificial intelligence (AI) in law, discussing the ethical and practical issues that arise as well as how it affects customary / The study promotes a \"human in the loop\" strategy that combines human knowledge and AI techniques to mitigate biases and guarantee individualised legal",
+      "downloads": 227
+    },
+    {
+      "abstractId": "4652554",
+      "title": "Artificial Intelligence, Meaningful Human Control, and International Criminal Law",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4652554",
+      "authors": [
+        "Guido Acquaviva"
+      ],
+      "affiliations": [
+        "Università degli studi di Padova"
+      ],
+      "pages": 26,
+      "posted": "03 Jan 2024",
+      "snippet": "In this context, the notion of meaningful human control has been proposed to address some of the challenges of ensuring accountability for serious violations / One possibility might be to link — conceptually, or even legally — meaningful human control with the ‘control theory’ propounded at the International Criminal / AI, AWS, Artificial intelligence, drones, ICL, IHL, ICC, accountability, modes of responsibility, meaningful human control, MHC, warfare",
+      "downloads": 369
+    },
+    {
+      "abstractId": "4661195",
+      "title": "Weaving Pathways for Justice with GPT: LLM-driven automated drafting of interactive legal applications",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4661195",
+      "authors": [
+        "Quinten Steenhuis",
+        "David Colarusso",
+        "Bryce Willey"
+      ],
+      "affiliations": [
+        "Suffolk University Law School",
+        "Suffolk University Law School",
+        "Suffolk University - Suffolk University, Law School, Students"
+      ],
+      "pages": 12,
+      "posted": "20 Dec 2023",
+      "snippet": "review, and a hybrid method. / We conclude that the hybrid model of constrained automated drafting with human review is best suited to the task of authoring guided interviews. / document automation, generative AI, large language models, forms, form automation, guided interviews, interactive legal applications",
+      "downloads": 78
+    },
+    {
+      "abstractId": "4659476",
+      "title": "Enterprise Large Language Models: Knowledge Characteristics, Risks and Organizational Activities",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4659476",
+      "authors": [
+        "Daniel E. O'Leary"
+      ],
+      "affiliations": [
+        "University of Southern California - Marshall School of Business"
+      ],
+      "pages": 11,
+      "posted": "20 Dec 2023",
+      "snippet": "Since the release of OpenAI’s ChatGPT, there has been substantial interest in and concern about generative AI systems. / This paper investigates some of the characteristics, risks and limitations with the enterprise use of generative AI systems. / Generative AI Systems (GAIS), Large Language Models (LLM), Expertise, Enterprise Generative AI, Generative AI Manipulation, Experimental / Analysis, Human-in-the-Loop, BARD, ChatGPT, BlenderBot,",
+      "downloads": 261
+    },
+    {
+      "abstractId": "4633965",
+      "title": "Combating Alert Fatigue in the Security Operations Centre",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4633965",
+      "authors": [
+        "Paul Kearney",
+        "Mohammed Abdelsamea",
+        "Xavier Schmoor",
+        "Fayyaz Shah",
+        "Ian Vickers"
+      ],
+      "affiliations": [
+        "Northcliffe Cybersecurity Research",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 34,
+      "posted": "30 Nov 2023",
+      "snippet": "The research contribution presented is a novel approach, named CHILL (Continuous Human-in-the-Loop Learning) whereby human expert and AI agent work as / a team, with knowledge being transferred from expert to AI apprentice over time. / cybersecurity operations, alert fatigue, AI, continuous learning, causal models",
+      "downloads": 671
+    },
+    {
+      "abstractId": "4647568",
+      "title": "AI liability in Europe: How does it complement risk regulation and deal with the problem of human oversight?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4647568",
+      "authors": [
+        "Beatriz Botero Arcila"
+      ],
+      "affiliations": [
+        "Institut d'Etudes Politiques de Paris (Sciences Po) - Sciences Po Law School - Ecole de Droit de Sciences Po"
+      ],
+      "pages": 17,
+      "posted": "29 Nov 2023",
+      "snippet": "liability rules to address AI harms when they occur. / Directive, and an AI Liability effectively complement the AI Act and how they address the particularities of AI-human interactions. / AI Liability, AI Act, Human in the loop, Human-AI systems, AI harms, Liability law, fault based liability, strict liability, AI complexity, AI opacity",
+      "downloads": 340
+    },
+    {
+      "abstractId": "4616709",
+      "title": "Transparency in Artificial Intelligence: A Legal Perspective",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4616709",
+      "authors": [
+        "Vasiliki Papadouli"
+      ],
+      "affiliations": [
+        "Vrije Universiteit Brussel (VUB)"
+      ],
+      "pages": 16,
+      "posted": "28 Nov 2023",
+      "snippet": "However, these concerns do not minimize the importance of transparency for the future of AI; they actually propose a different means of AI being perceived / a human-in-the-loop approach. / autonomous AI systems; opacity; black-box effect; transparency",
+      "downloads": 408
+    },
+    {
+      "abstractId": "4638172",
+      "title": "A Value Co-Creation Perspective on Data Labeling in Hybrid Intelligence Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4638172",
+      "authors": [
+        "Mahei Manhai Li",
+        "Philipp Reinhard",
+        "Sarah Oeste-Reiß",
+        "Christoph Peters",
+        "J. M. Leimeister"
+      ],
+      "affiliations": [
+        "University of Kassel - Information Systems",
+        "University of Kassel - Information Systems",
+        "University of Kassel - Information Systems",
+        "University of St. Gallen",
+        "University of St. Gallen"
+      ],
+      "pages": 0,
+      "posted": "22 Nov 2023",
+      "snippet": "Ultimately, insufficient labeled data leads to diminishing returns in AI performance. / Following a design science research approach, we provide a novel human-in-the-loop (HIL) design for ITSM support ticket recommendations by incorporating / Hybrid Intelligence, Artificial Intelligence, Value Co-creation, IT-Service-Management (ITSM), IT support, machine learning, human-in-the-loop",
+      "downloads": 0
+    },
+    {
+      "abstractId": "4617143",
+      "title": "An Active Learning Artificial Intelligence Driven Framework for Building Collaborative Visual Inspection Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4617143",
+      "authors": [
+        "Daniel Bruce",
+        "Harshal A. Sanghvi",
+        "Ravi Behara",
+        "Ankur Agarwal"
+      ],
+      "affiliations": [
+        "Florida Atlantic University",
+        "Florida Atlantic University",
+        "Florida Atlantic University",
+        "Florida Atlantic University"
+      ],
+      "pages": 60,
+      "posted": "08 Nov 2023",
+      "snippet": "also reviews a set of specific industry use cases and shows how the proposed framework can be applied to augment these types of inspection models with a human / review and feedback loop to significantly boost overall system performance.",
+      "downloads": 75
+    },
+    {
+      "abstractId": "4587250",
+      "title": "Effective Generative AI: The Human-Algorithm Centaur",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4587250",
+      "authors": [
+        "Soroush Saghafian"
+      ],
+      "affiliations": [
+        "Harvard University - Harvard Kennedy School (HKS)"
+      ],
+      "pages": 30,
+      "posted": "27 Oct 2023",
+      "snippet": "AI approaches. / span>human-in-the-loop methods? / Generative AI, Human-algorithm Centaur",
+      "downloads": 353
+    },
+    {
+      "abstractId": "4604447",
+      "title": "Exploring Novel Ai-Based Approaches for Plant Features Extraction in Image Datasets with Small Size: The Case Study of Nitrogen Estimation in Sorghum Using Uav-Based Rgb Sensing",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4604447",
+      "authors": [
+        "Hajar HAMMOUCH",
+        "Suchitra Patil",
+        "Mounim A. A. El Yacoubi",
+        "Jan Masner",
+        "Jana Kholová",
+        "Sunita Choudhary",
+        "Krithika Anbazhagan",
+        "Jiří Vaněk",
+        "Huafeng Qin",
+        "Michal Stočes",
+        "Hassan Berbia",
+        "Adinarayana Jagarlapudi",
+        "Magesh Chandramouli",
+        "Srinivas Mamidi",
+        "KVSV Prasad",
+        "Rekha Baddam"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "Institut Polytechnique de Paris",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "Chongqing University",
+        "affiliation not provided to SSRN",
+        "Mohammed V University of Rabat",
+        "affiliation not provided to SSRN",
+        "Purdue University",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 33,
+      "posted": "17 Oct 2023",
+      "snippet": "We have assessed statistical and AI-based models for N prediction, namely multiple linear regression (MLR), multi-layer perceptron (MLP) and various convolutional / the deep features learned automatically by the CNN and the human-expertise-based handcrafted features, harnessing, thereby, a deep learning model with human-in-the-loop / Precise Phenotyping, Unmanned Aerial Vehicle, Human-in-the-Loop CNN, Small Dataset, Minimum Technology",
+      "downloads": 62
+    },
+    {
+      "abstractId": "4520754",
+      "title": "Meaningful XAI Based on User-centric Design Methodology: Combining Legal and Human-computer Interaction (HCI) Approaches to Achieve Meaningful Algorithmic Explainability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4520754",
+      "authors": [
+        "Winston Maxwell",
+        "Bruno Dumas"
+      ],
+      "affiliations": [
+        "Telecom Paris - Institut Polytechnique de Paris",
+        "University of Namur"
+      ],
+      "pages": 45,
+      "posted": "12 Oct 2023",
+      "snippet": "identify four main operational contexts for explainability: XAI for the upstream design and testing phase; XAI for human-on-the-loop control; XAI for human-in-the-loop / These guidelines would apply to the AI Act, but also to the other EU texts requiring explanations for algorithmic systems and results. / AI, explainability, user-centric, HCI, GDPR, AI Act, human-computer interaction",
+      "downloads": 204
+    },
+    {
+      "abstractId": "4594780",
+      "title": "Effective Generative AI: The Human-Algorithm Centaur",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4594780",
+      "authors": [
+        "Soroush Saghafian"
+      ],
+      "affiliations": [
+        "Harvard University - Harvard Kennedy School (HKS)"
+      ],
+      "pages": 30,
+      "posted": "10 Oct 2023",
+      "snippet": "AI approaches. / span>human-in-the-loop methods? / Centaurs, Generative AI, Large Language Models, Human-AI Algorithms",
+      "downloads": 247
+    },
+    {
+      "abstractId": "4546411",
+      "title": "Joint Recommendation: Open Comment on University of the Philippines’ Principles for Responsible AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4546411",
+      "authors": [
+        "Lyantoniette Chua",
+        "Feil Immanuel Aquino",
+        "Neriah BJ Ato",
+        "Michael Borrelli",
+        "Sean Musch",
+        "Charles Kerrigan",
+        "Adrienne Heinrich"
+      ],
+      "affiliations": [
+        "Michael Dukakis Institute for Leadership and Innovation - Center for AI and Digital Policy",
+        "The Ambit",
+        "PizzaPy - Cebu Python Users Group",
+        "AI & Partners",
+        "AI & Partners",
+        "CMS London",
+        "UnionBank of the Philippines"
+      ],
+      "pages": 18,
+      "posted": "28 Sep 2023",
+      "snippet": "The ‘UP AI Principles’ is a values-based approach consisting of 10 principles, namely: (1) public good, (2) everyone should benefit, (3) meaningful human / control, (4) transparency, (5) fairness, (6) safety, (7) environment friendly, (8) collaboration, (9) accountability, and (10) governance. / AI, AI Governance, Responsible AI, Global South, Majority World, Philippines, University, Higher Education",
+      "downloads": 441
+    },
+    {
+      "abstractId": "4551063",
+      "title": "Meaningful Human Control to Detect Algorithmic Errors",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4551063",
+      "authors": [
+        "Winston Maxwell"
+      ],
+      "affiliations": [
+        "Telecom Paris - Institut Polytechnique de Paris"
+      ],
+      "pages": 30,
+      "posted": "27 Aug 2023",
+      "snippet": "to the October 6, 2020 ruling of the CJEU, many other statutes and court decisions require human control over algorithmic decisions: the EU’s proposed AI / human control, AI, artificial intelligence, explainability, meaningful human control, GDPR, AI Act, human rights, error detection, Ligue des droits humains",
+      "downloads": 156
+    },
+    {
+      "abstractId": "4521411",
+      "title": "Addressing Automation Bias Through Verifiability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4521411",
+      "authors": [
+        "Lukas Hondrich",
+        "Hannah Ruschemeier"
+      ],
+      "affiliations": [
+        "Fernuniversität in Hagen - University of Hagen",
+        "Universität Osnabrück - Faculty of Law"
+      ],
+      "pages": 6,
+      "posted": "04 Aug 2023",
+      "snippet": "The phenomenon of human bias finds a new facet in the hybrid human-machine interaction of today’s digitized decision-making systems: automation bias describes / ameliorating automation bias. / automation bias, human centered computing, algorithmic regulation, human-in-the-loop, verification",
+      "downloads": 113
+    },
+    {
+      "abstractId": "4528484",
+      "title": "Human-in-The-Loop for Bayesian Autonomous Materials Phase Mapping",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4528484",
+      "authors": [
+        "Felix Adams",
+        "Austin McDannald",
+        "Ichiro Takeuchi",
+        "Aaron Kusne"
+      ],
+      "affiliations": [
+        "Government of the United States of America - Materials Measurement Science Division"
+      ],
+      "pages": 14,
+      "posted": "02 Aug 2023",
+      "snippet": "Autonomous experimentation (AE) combines machine learning and research hardware automation in a closed loop, guiding subsequent experiments toward user / human-in-the-loop, autonomous materials research, Machine Learning, phase mapping",
+      "downloads": 19
+    },
+    {
+      "abstractId": "4524129",
+      "title": "Artificial Fiduciaries",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4524129",
+      "authors": [
+        "Zhaoyi Li"
+      ],
+      "affiliations": [
+        "Albany Law School"
+      ],
+      "pages": 81,
+      "posted": "01 Aug 2023",
+      "snippet": "Currently, there is little scholarship discussing the intersection of AI and corporate governance. / It also explores the “human in the loop” option in the context of artificial fiduciaries. / Corporate Governance; Fiduciary Duty; AI Directors; Law and Tech",
+      "downloads": 752
+    },
+    {
+      "abstractId": "4494272",
+      "title": "Gracenote.ai: Legal Generative AI for Regulatory Compliance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4494272",
+      "authors": [
+        "Jules Ioannidis",
+        "Joshua Harper",
+        "Ming Sheng Quah",
+        "Dan Hunter"
+      ],
+      "affiliations": [
+        "Gracenote.ai",
+        "Gracenote.ai",
+        "Gracenote.ai",
+        "King's College London - The Dickson Poon School of Law"
+      ],
+      "pages": 12,
+      "posted": "10 Jul 2023",
+      "snippet": "investigate the transformative potential of large language models (LLMs) in the legal and regulatory compliance domain by developing advanced generative AI / A human-in-the-loop control mechanism is used as a final backstop to ensure accuracy and mitigate risk. / AutoGPT, compliance, expert systems, GPT-4, GRC, LangChain, large language models, legal generative AI, legal text embeddings, prompt engineering, regulation",
+      "downloads": 979
+    },
+    {
+      "abstractId": "4503135",
+      "title": "Revolutionizing Defect Recognition in Hard Metal Industry Through Ai Explainability, Human-in-The-Loop Approaches and Cognitive Mechanisms",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4503135",
+      "authors": [
+        "Thanasis Kotsiopoulos",
+        "Gerasimos Papakostas",
+        "Thanasis Vafeiadis",
+        "Vasileios Dimitriadis",
+        "Alexandros Nizamis",
+        "Andrea Bolzoni",
+        "Davide Bellinati",
+        "Dimosthenis Ioannidis",
+        "Konstantinos Votis",
+        "Dimitrios Tzovaras",
+        "Panagiotis Sarigiannidis"
+      ],
+      "affiliations": [
+        "Centre for Research and Technology Hellas (CERTH) - Information Technologies Institute",
+        "Centre for Research and Technology Hellas (CERTH) - Information Technologies Institute",
+        "Centre for Research and Technology Hellas (CERTH) - Information Technologies Institute",
+        "Centre for Research and Technology Hellas (CERTH) - Information Technologies Institute",
+        "Centre for Research and Technology Hellas (CERTH) - Information Technologies Institute",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "Centre for Research and Technology Hellas (CERTH) - Information Technologies Institute",
+        "Centre for Research and Technology Hellas (CERTH) - Information Technologies Institute",
+        "Centre for Research and Technology Hellas (CERTH) - Information Technologies Institute",
+        "University of Western Macedonia - Department of Electrical and Computer Engineering"
+      ],
+      "pages": 29,
+      "posted": "07 Jul 2023",
+      "snippet": "Defect detection is one of the core problems’ categories that Industry 4.0 concepts like automation, IoT, digitization and AI aimed to solve. / growing technologies such as interpretable and explainable AI (XAI) services, human-in-the-loop approaches and cognitive retraining mechanisms. / Defect detection, defect localization, deep learning, explainability AI, human-in-the-loop, digital platform, hard metal industry",
+      "downloads": 134
+    },
+    {
+      "abstractId": "4475995",
+      "title": "Assigning AI: Seven Approaches for Students, with Prompts",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4475995",
+      "authors": [
+        "Ethan R. Mollick",
+        "Lilach Mollick"
+      ],
+      "affiliations": [
+        "University of Pennsylvania - Wharton School"
+      ],
+      "pages": 48,
+      "posted": "21 Jun 2023",
+      "snippet": "The authors propose seven approaches for utilizing AI in classrooms: AI-tutor, AI-coach, AI-mentor, AI-teammate, AI-tool, AI-simulator, and AI-student, / By challenging students to remain the \"human in the loop,\" the authors aim to enhance learning outcomes while ensuring that AI serves as a supportive tool / AI, LLM, Education, Prompts",
+      "downloads": 57248
+    },
+    {
+      "abstractId": "4437806",
+      "title": "Eight Recommendations for Ethical and Legal Assessments of Robotic Systems Interacting with Humans",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4437806",
+      "authors": [
+        "Thomas Burri",
+        "Markus Christen",
+        "Juliane Beck",
+        "Daniel Trusilo"
+      ],
+      "affiliations": [
+        "University of St. Gallen",
+        "University of Zurich",
+        "University of St. Gallen",
+        "University of St. Gallen"
+      ],
+      "pages": 23,
+      "posted": "14 May 2023",
+      "snippet": "Meaningful Human Control, Robots, AI, International Law, Human Rights, Humanitarian Law, Ethics, Policy",
+      "downloads": 122
+    },
+    {
+      "abstractId": "4404773",
+      "title": "A Conceptual Model for Labeling in Reinforcement Learning Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4404773",
+      "authors": [
+        "Philipp Reinhard",
+        "Mahei Manhai Li",
+        "Ernestine Dickhaut",
+        "Cornelius Reh",
+        "Christoph Peters",
+        "J. M. Leimeister"
+      ],
+      "affiliations": [
+        "University of Kassel - Information Systems",
+        "University of Kassel - Information Systems",
+        "University of Kassel",
+        "Independent",
+        "University of Kassel",
+        "University of St. Gallen"
+      ],
+      "pages": 16,
+      "posted": "13 Apr 2023",
+      "snippet": "Still, its underlying data for training and testing the AI systems is provided by human annotators through human-in-the-loop configurations. / However, due to the high effort for annotators and lack of incentives, AI systems face low underlying data quality. / Human-in-the-loop, Interactive labeling, Artificial intelligence, Value co-creation",
+      "downloads": 61
+    },
+    {
+      "abstractId": "4405396",
+      "title": "Role of chatGPT in Journalism: According to chatGPT",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4405396",
+      "authors": [
+        "Som Biswas"
+      ],
+      "affiliations": [
+        "University of Tennessee, Memphis - Health Science Center"
+      ],
+      "pages": 5,
+      "posted": "31 Mar 2023",
+      "snippet": "Human review and editing are still necessary to ensure accuracy and maintain the unique skills and perspectives of human journalists. / chatGPT, Journalism, AI, Artificial Intelligence",
+      "downloads": 1096
+    },
+    {
+      "abstractId": "4373355",
+      "title": "Regulating Algorithmic Management: A Blueprint",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4373355",
+      "authors": [
+        "Jeremias Adams-Prassl",
+        "Halefom H. Abraha",
+        "Aislinn Kelly-Lyth",
+        "M. Six Silberman",
+        "Sangh Rakshita"
+      ],
+      "affiliations": [
+        "University of Oxford - Faculty of Law",
+        "Utrecht University - Faculty of Law",
+        "University of Oxford - Faculty of Law",
+        "University of Oxford, Faculty of Law"
+      ],
+      "pages": 32,
+      "posted": "04 Mar 2023",
+      "snippet": "How should regulators respond to the automation of the full range of traditional employer functions, from hiring workers through to firing them? / Algorithmic Management, Privacy Harm, Information Asymmetry, Human Agency, Data Protection, Information Access, Human in the Loop, Impact Assessments",
+      "downloads": 746
+    },
+    {
+      "abstractId": "4342529",
+      "title": "The Concept of 'The Human' in the Critique of Autonomous Weapons",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4342529",
+      "authors": [
+        "Kevin Jon Heller"
+      ],
+      "affiliations": [
+        "University of Copenhagen (Centre for Military Studies)"
+      ],
+      "pages": 75,
+      "posted": "02 Feb 2023",
+      "snippet": "Given those flaws, and in light of rapid improvement in sensor and AI technology, it is only a matter of time until autonomous weapons are able to comply / Finally, the section ends by discussing why the concept of “meaningful human control” is an undesirable solution to the supposed problems of AWS and should / Autonomous Weapons, LAWS, AWS, Killer Robots, AI, IHL, Laws of War, LARS",
+      "downloads": 1161
+    },
+    {
+      "abstractId": "4338862",
+      "title": "The Law of AI for Good",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4338862",
+      "authors": [
+        "Orly Lobel"
+      ],
+      "affiliations": [
+        "University of San Diego School of Law"
+      ],
+      "pages": 69,
+      "posted": "26 Jan 2023",
+      "snippet": "This article pivots the debates about automation, finding that the focus on AI wrongs is descriptively inaccurate, undermining a balanced analysis of the / This article argues that the dominant policy frameworks regulating AI risks—emphasizing the right to human decision-making (human-in-the-loop) and the / artificial intelligence policy, ai, techlash, human-machine, automation, governance, algorithmic decision-making, bias, surveillance, policy, public trust / , technology law, equality, safeguards, AI-for-good, machine learning, AI Bill of Rights, Algorithmic Accountability Act of 2022, GDPR, EU AI Act, privacy",
+      "downloads": 2405
+    },
+    {
+      "abstractId": "4293710",
+      "title": "Tracking and Handling Behavioral Biases in Active Learning Frameworks",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4293710",
+      "authors": [
+        "Deepesh Agarwal",
+        "Balasubramaniam Natarajan"
+      ],
+      "affiliations": [
+        "Kansas State University",
+        "Kansas State University"
+      ],
+      "pages": 31,
+      "posted": "13 Dec 2022",
+      "snippet": "The computational capabilities of AI engines integrated with human knowledge and experience can help create intelligent human-in-the-loop (HITL) decision / However, modeling human behavior in collaborative human-AI decision setup is not straightforward. / Behavioral Biases, Active learning, human-in-the-loop systems, collaborative decision environment, human behavior modeling",
+      "downloads": 63
+    }
+  ]
+}

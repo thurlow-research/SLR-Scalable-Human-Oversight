@@ -1,0 +1,56 @@
+{
+  "item_key": "UIXCRBQX",
+  "citation": "Ferdous 2026",
+  "evidence_type": [
+    "empirical",
+    "system-tool",
+    "dataset"
+  ],
+  "problem_statement": "AI coding agents increasingly author pull requests, but whether\u2014and in what task contexts\u2014they introduce breaking changes (backward-compatibility violations) versus human developers is underexplored, making the reliability of AI-generated PRs hard to assess for review.",
+  "magnitude_evidence": "OpenAI Codex created more than 400,000 PRs in open-source GitHub repositories within the first two months of its release [19]; study analyzed 7,191 agent-generated vs 1,402 human-authored PRs from AIDev",
+  "risk_types": [
+    "breaking-changes",
+    "backward-compatibility",
+    "quality",
+    "maintainability",
+    "security",
+    "bugs",
+    "refactoring-risk",
+    "test-failures"
+  ],
+  "insufficiency_evidence": "Breaking changes occur across all high-confidence levels (8\u201310), ranging from 3.16% to 3.96%, indicating that AI agents' confidence scores alone do not guarantee safe code; 'confidence scores alone are insufficient for prioritizing review or deployment'",
+  "solution_mechanisms": [
+    "AST-based breaking-change detector from Git diffs",
+    "17-pattern breaking-change detection (removals/modifications/additions)",
+    "potential breaking change rate metric",
+    "task-specific enhanced review policy",
+    "confidence-independent maintenance review",
+    "breaking-change benchmarks for AI code"
+  ],
+  "mechanism_keywords": [
+    "ast-analysis",
+    "static-analysis",
+    "breaking-change-detection",
+    "diff-analysis",
+    "risk-routing",
+    "task-aware-review",
+    "confidence-calibration",
+    "benchmark",
+    "code-review"
+  ],
+  "oversight_locus": [
+    "pre-commit",
+    "code-review",
+    "CI"
+  ],
+  "human_role": "escalation-target",
+  "key_constructs": [
+    "Confidence Trap",
+    "Potential Breaking Change Rate",
+    "Safer Builders, Risky Maintainers"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

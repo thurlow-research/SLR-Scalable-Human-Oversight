@@ -1,0 +1,42 @@
+2787 items; 2737 pending
+  complete: 31  url-only-fix: 1278  need-openalex: 1428
+  batch-fetching 561 DOIs from OpenAlex ...
+[openalex] HTTP 404 on https://api.openalex.org/works/doi:10.48550/arxiv.2411.10877?select=id,doi,title,display_name,authorships,publication_ye
+[openalex] HTTP 404 on https://api.openalex.org/works/doi:10.48550/arxiv.2501.12948?select=id,doi,title,display_name,authorships,publication_ye
+[openalex] HTTP 404 on https://api.openalex.org/works/doi:10.1145/12944.12948?select=id,doi,title,display_name,authorships,publication_year,pub
+[openalex] HTTP 404 on https://api.openalex.org/works/doi:10.48550/arxiv.2407.21783?select=id,doi,title,display_name,authorships,publication_ye
+[openalex] HTTP 404 on https://api.openalex.org/works/doi:10.48550/arxiv.2005.11401?select=id,doi,title,display_name,authorships,publication_ye
+[openalex] HTTP 404 on https://api.openalex.org/works/doi:10.48550/arxiv.1707.06347?select=id,doi,title,display_name,authorships,publication_ye
+[openalex] HTTP 404 on https://api.openalex.org/works/doi:10.48550/arxiv.2303.08774?select=id,doi,title,display_name,authorships,publication_ye
+[openalex] HTTP 404 on https://api.openalex.org/works/doi:10.48550/arxiv.2404.16130?select=id,doi,title,display_name,authorships,publication_ye
+[openalex] HTTP 404 on https://api.openalex.org/works/doi:10.48550/arxiv.2402.01411?select=id,doi,title,display_name,authorships,publication_ye
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:Software%20engineering%3A%20report%20of%20a%20conference%20sponsored%
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:Software%20architecture%20in%20practice%20%2C%204th%20ed.%20Boston%2C
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:RQ3%20what%20do%20developers%20recommend%20to%20improve%20the%20secur
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:Consistent%20or%20not%3F%20An%20investigation%20of%20using%20pull%20r
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:Constants%20at%20top%3A%20moved%20all%20constants%20%28MOD%2C%20BUFSI
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:Compilers%3A%20principles%2C%20techniques%2C%20and%20tools%20%282nd%2
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:Conference%E2%80%9917%2C%20july%202017%2C%20washington%2C%20DC%2C%20U
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:Conference%E2%80%9917%2C%20july%202017%2C%20washington%2C%20DC%2C%20U
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:%E2%80%9CClaude%20code%20documentation%2C%E2%80%9D&per-page=1&select=
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:%E2%80%9CClaude%20code%E2%80%99s%20source%20code%20appears%20to%20hav
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:%E2%80%9CChatgpt%20as%20a%20software%20development%20tool%3A%20the%20
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:CHI-tools%20for%20thought%20workshop%2C%20april%2C%202026%2C%20barcel
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:CHIWORK%20%E2%80%9926%2C%20june%2022%E2%80%9325%2C%202026&per-page=1&
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:Case%20study%20research%20and%20applications%3A%20design%20and%20meth
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:Case%20study%20research%20and%20applications%2C%20vol.%206&per-page=1
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:Can%20OpenAI%20codex%20and%20other%20large%20language%20models%20help
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:%E2%80%9CBun%E2%80%99s%20frontend%20development%20server%20%E2%80%93%
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:%E2%80%9CAzure%20verified%20modules%20-%20monthly%20update%20jan%2024
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:At%20what%20level%20did%20you%20take%20your%20computer%20security%20c
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:ATaxonomyforLearning%2C%20teaching%2CandAssessing%3AARevisionofBloom%
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:Association%20for%20computational%20linguistics%20%22%20why%20should%
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:Artificial%20intelligence%2C%20judicial%20decision-mak%20-%20ing%20an
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:Artificial%20intelligence%20%28AI%29%3A%20multidis%20-%20ciplinary%20
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:%E2%80%A2%20are%20you%20currently%20a%20student%3F%20%28yes/No%29%20%
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:%E2%80%9CAnthropic%20goes%20nude%2C%20exposes%20claude%20code%20sourc
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:%E2%80%9CAiqase%3A%20quality%20assurance%20for%20ai-augmented%20softw
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:AI%20copilot%20code%20quality%3A%202025%20look%20back%20at%2012%20mon
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:.%20AI%20coding%20tool%20replit%20wiped%20database%2C%20called%20it%2
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:agents%20and%20developers%2C%E2%80%9D%202026%2C%20company%20blog%2C%2
+[openalex] HTTP 400 on https://api.openalex.org/works?filter=title.search:Agents.md%20community.%202024.%20AGENTS.md%3A%20a%20simple%2C%20open%

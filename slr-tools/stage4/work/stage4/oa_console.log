@@ -1,0 +1,141 @@
+19:41:38 INFO    === OpenAlex URL/title pass START | polite-pool mailto=sthurlow@purdue.edu ===
+19:41:41 INFO    collection 4WMXV36M: 58 items
+19:41:45 INFO    collection TJTE4QWX: 179 items
+19:41:45 INFO    183 unique items; 136 need OpenAlex upgrade (missing/weak URL or rough title)
+19:41:45 INFO    [1/136] no OpenAlex match (0.5s) :: De-v GPT: studying developer-Chat GPT conversations
+19:41:46 INFO    [2/136] matched, nothing to fill :: Multi-objective code reviewer recommendations: balancin
+19:41:46 INFO    [3/136] no OpenAlex match (0.4s) :: Proposal: adoption of official AI contri-bution & copyr
+19:41:47 INFO    [4/136] no OpenAlex match (0.4s) :: Exploring Gen AI in Software Development: Insights from
+19:41:47 INFO    [5/136] no OpenAlex match (0.2s) :: What Guides Our Choices? Modeling Developers’ Trust and
+19:41:47 INFO    [6/136] no OpenAlex match (0.5s) :: How to review code written by AI
+19:41:48 INFO    [7/136] no OpenAlex match (0.1s) :: Trust in LLM in SE
+19:41:48 INFO    [8/136] no OpenAlex match (0.4s) :: AIDev: dataset for AI development analytics
+19:41:48 INFO    [9/136] no OpenAlex match (0.4s) :: A synthesis of pain points and strategies , including c
+19:41:49 INFO    [10/136] no OpenAlex match (0.2s) :: “If the system didn’t show me how it performed on the t
+19:41:49 INFO    [11/136] no OpenAlex match (0.4s) :: Write clear and structured prompts that capture functio
+19:41:49 INFO    [12/136] no OpenAlex match (0.2s) :: Run regression checks and compare results before accept
+19:41:49 INFO    [13/136] no OpenAlex match (0.2s) :: Maintain traceability by linking prompts, generated cod
+19:41:50 INFO    [14/136] no OpenAlex match (0.4s) :: Update BDD or acceptance scenarios whenever requirement
+19:41:50 INFO    [15/136] no OpenAlex match (0.1s) :: Request senior review for high-impact regenerated compo
+19:41:50 INFO    [16/136] no OpenAlex match (0.2s) :: Track data and IP sources and keep records needed for c
+19:41:50 INFO    [17/136] no OpenAlex match (0.4s) :: Strengthen pipelines by ensuring reproducible builds, f
+19:41:51 INFO    [18/136] no OpenAlex match (0.1s) :: Based on these criteria, evaluate the code and determin
+19:41:51 INFO    [19/136] no OpenAlex match (0.2s) :: and encourage contributions from the community to promo
+19:41:51 INFO    [20/136] no OpenAlex match (0.2s) :: We provide an online appendix with all of our data and 
+19:41:51 INFO    [21/136] no OpenAlex match (0.4s) :: self-IEEE TRANSACTIONS ON SOFTWARE ENGINEERING verifica
+19:41:52 INFO    [22/136] no OpenAlex match (0.2s) :: Protect your code against licensing risks
+19:41:52 INFO    [23/136] no OpenAlex match (0.2s) :: Agents.md community. 2024. AGENTS.md: a simple, open fo
+19:41:52 INFO    [24/136] no OpenAlex match (0.2s) :: Benchmarking the text-to-sql capability of large langua
+19:41:52 INFO    [25/136] no OpenAlex match (0.2s) :: Ci/cd for vibe coding: or how i learned to stop worryin
+19:41:52 INFO    [26/136] no OpenAlex match (0.2s) :: Greptile: the AI code reviewer
+19:41:53 INFO    [27/136] no OpenAlex match (0.4s) :: Harness engineering: leveraging codex in an agent-first
+19:41:53 INFO    [28/136] no OpenAlex match (0.2s) :: I algorithmic description of CodeAgent pipeline with QA
+19:41:53 INFO    [29/136] no OpenAlex match (0.1s) :: . Integrating artificial intelligence with DevOps: adva
+19:41:53 INFO    [30/136] no OpenAlex match (0.4s) :: “Introducing AURI: security intelligence for AI coding 
+19:41:54 INFO    [31/136] no OpenAlex match (0.2s) :: . Orchestrate teams of claude code sessions
+19:41:54 INFO    [32/136] no OpenAlex match (0.2s) :: PREFACE: property-driven reinforcement for automated co
+19:41:54 INFO    [33/136] no OpenAlex match (0.2s) :: “The great vibecoding debate: do typed languages really
+19:41:54 INFO    [34/136] no OpenAlex match (0.2s) :: The vibe coding trap: how AI accelerates delivery - and
+19:41:55 INFO    [35/136] no OpenAlex match (0.5s) :: Why I’m declining your AI-generated MR
+19:41:55 INFO    [36/136] no OpenAlex match (0.2s) :: Why "vibe coding" fails in enterprise: AI’s real limits
+19:41:55 INFO    [37/136] matched, nothing to fill :: Fine-tuning large language models to improve accuracy a
+19:41:55 INFO    [38/136] matched, nothing to fill :: Vibe coding in practice: motivations,challenges, and a 
+19:41:55 INFO    [39/136] no OpenAlex match (0.2s) :: Position: Humans are Missing from AI Coding Agent Resea
+19:41:56 INFO    [40/136] matched, nothing to fill :: SecureVibeBench: Benchmarking Secure Vibe Coding of AI 
+19:41:56 INFO    [41/136] no OpenAlex match (0.2s) :: let’s make every pull request meaningful: an empirical 
+19:41:56 INFO    [42/136] no OpenAlex match (0.2s) :: Is github’s copilot as bad as humans at introducing vul
+19:41:57 INFO    [43/136] no OpenAlex match (0.5s) :: “LL Ms in web development: evaluating LLM-generated PHP
+19:41:57 INFO    [44/136] no OpenAlex match (0.2s) :: Facilitating Trustin AI-assisted Software tools
+19:41:57 INFO    [45/136] no OpenAlex match (0.2s) :: Overseeing Agents Without Constant oversight:Challenges
+19:41:57 INFO    [46/136] no OpenAlex match (0.2s) :: Who Writesthe Docsin SE3.0? Agent vs. Human documentati
+19:41:57 INFO    [47/136] no OpenAlex match (0.2s) :: Good Vibrations?A Qualitative Studyof Co-creation,commu
+19:41:58 INFO    [48/136] no OpenAlex match (0.5s) :: Code provenance: use of AI-generated content
+19:41:58 INFO    [49/136] no OpenAlex match (0.2s) :: Truman Bench profiling LL Ms’ ability to help non-progr
+19:41:58 INFO    [50/136] no OpenAlex match (0.2s) :: Sec Repo Bench: benchmarking LL Ms for secure code gene
+19:41:59 INFO    [51/136] no OpenAlex match (0.2s) :: Rethinking autonomy: pre vent ing failure sin ai driven
+19:41:59 INFO    [52/136] no OpenAlex match (0.2s) :: LL Mx CPG: context-aware vulnerability detection throug
+19:41:59 INFO    [53/136] no OpenAlex match (0.2s) :: COM-PASS: a mult i dimensional benchmark for evaluating
+19:41:59 INFO    [54/136] no OpenAlex match (0.2s) :: Dear diary: a randomized controlled trial of generative
+19:41:59 INFO    [55/136] no OpenAlex match (0.2s) :: Benefits and challenges of vibe programming
+19:42:00 INFO    [56/136] no OpenAlex match (0.2s) :: An insight into security code review with LL Ms: capabi
+19:42:00 INFO    [57/136] no OpenAlex match (0.2s) :: Repo Exec: evaluate code generation with a repository-l
+19:42:00 INFO    [58/136] no OpenAlex match (0.2s) :: Is your AI-generated code really secure? Evaluating Lar
+19:42:00 INFO    [59/136] no OpenAlex match (0.2s) :: Code Judge: evaluating code generation with large langu
+19:42:00 INFO    [60/136] no OpenAlex match (0.2s) :: Ranking LLM-generated loop In-variants for program veri
+19:42:01 INFO    [61/136] no OpenAlex match (0.2s) :: How secure is code generated by Chat GPT? ar Xiv:
+19:42:01 INFO    [62/136] no OpenAlex match (0.2s) :: Evaluating thecodequalityofai-assistedcodegenerationtoo
+19:42:01 INFO    [63/136] no OpenAlex match (0.2s) :: Is Git Hub Copilota Substitutefor Human Pair-programmin
+19:42:01 INFO    [64/136] no OpenAlex match (0.2s) :: Taking flight with copilot: early insights and opportun
+19:42:01 INFO    [65/136] no OpenAlex match (0.2s) :: Model Context Protocol(MCP)at First Glance:Studyingthe 
+19:42:02 INFO    [66/136] no OpenAlex match (0.2s) :: Shield against LLM generated insecure code
+19:42:02 INFO    [67/136] no OpenAlex match (0.2s) :: Adversarial Attack classification and Robustness Testin
+19:42:02 INFO    [68/136] no OpenAlex match (0.4s) :: we have a package for you a comprehensive analysis of p
+19:42:02 INFO    [69/136] no OpenAlex match (0.2s) :: auto mating code revie wac ti viti es by large scale pr
+19:42:03 INFO    [70/136] no OpenAlex match (0.2s) :: Semantic Commit: Helping Users Update Intent specific a
+19:42:03 INFO    [71/136] no OpenAlex match (0.2s) :: Validating AI-Generated Codewith Live Programming
+19:42:03 INFO    [72/136] no OpenAlex match (0.2s) :: an empirical evaluation of Git Hub Copilot’s code sugge
+19:42:04 INFO    [73/136] no OpenAlex match (0.5s) :: Does GitHub copilot improve code quality? Here’s what t
+19:42:04 INFO    [74/136] no OpenAlex match (0.3s) :: “Benchmarking and studying the llm-based code review,”
+19:42:04 INFO    [75/136] no OpenAlex match (0.2s) :: The end of the curl bug-bounty
+19:42:04 INFO    [76/136] no OpenAlex match (0.2s) :: A characterization of practice : where and why vibe cod
+19:42:04 INFO    [77/136] no OpenAlex match (0.2s) :: To what extent are existing cybersecurity best practice
+19:42:05 INFO    [78/136] no OpenAlex match (0.2s) :: Check what’s missing. AI failure often manifests as omi
+19:42:05 INFO    [79/136] no OpenAlex match (0.2s) :: Any tier promotions or demotions? Promotion requires: m
+19:42:05 INFO    [80/136] no OpenAlex match (0.2s) :: Was validation effort correctly estimated? Compare budg
+19:42:05 INFO    [81/136] no OpenAlex match (0.2s) :: Plausibility as proxy for correctness. Output is optimi
+19:42:05 INFO    [82/136] no OpenAlex match (0.2s) :: Phase 0 bypass. Starting with architecture without unde
+19:42:06 INFO    [83/136] no OpenAlex match (0.2s) :: Observability. Each gate makes observable properties of
+19:42:06 INFO    [84/136] no OpenAlex match (0.2s) :: VA-human absence. Relying exclusively on automated test
+19:42:06 INFO    [85/136] no OpenAlex match (0.2s) :: Monolithic session. Design, code, and tests in a single
+19:42:06 INFO    [86/136] no OpenAlex match (0.2s) :: Validation theater. Asking the AI “is this design good?
+19:42:06 INFO    [87/136] no OpenAlex match (0.3s) :: Format consistency analysis between commit and original
+19:42:07 INFO    [88/136] no OpenAlex match (0.2s) :: 2024a. Security vulnerability detection with multitask 
+19:42:07 INFO    [89/136] no OpenAlex match (0.2s) :: “Secure and observable ci/cd practices for ai-powered d
+19:42:07 INFO    [90/136] no OpenAlex match (0.2s) :: Nearly half of all code generated by ai found to contai
+19:42:07 INFO    [91/136] no OpenAlex match (0.2s) :: Why ci/cd is the secret to unlocking vibe coding at sca
+19:42:07 INFO    [92/136] no OpenAlex match (0.2s) :: “Ai-assisted test generation and quality assurance in s
+19:42:08 INFO    [93/136] no OpenAlex match (0.2s) :: Monitor security using regular automated scans, with AI
+19:42:08 INFO    [94/136] no OpenAlex match (0.2s) :: We propose precise definitions for trust, distrust, and
+19:42:08 INFO    [95/136] no OpenAlex match (0.2s) :: We complement our review with a survey study of 25 part
+19:42:09 INFO    [96/136] PATCHED WHP43VQK: DOI+abstractNote+creators+url (0.2s) :: Systematically finding security vulnerabiliti
+19:42:09 INFO    [97/136] no OpenAlex match (0.2s) :: How to test for compliance with human oversight require
+19:42:09 INFO    [98/136] no OpenAlex match (0.2s) :: A foot in the backdoor: applying systems control theory
+19:42:10 INFO    [99/136] no OpenAlex match (0.2s) :: Adding repository custom instructions for GitHub copi-l
+19:42:10 INFO    [100/136] no OpenAlex match (0.2s) :: AI copilot code quality: 2025 look back at 12 months of
+19:42:10 INFO    [101/136] no OpenAlex match (0.2s) :: AI copilot code quality: 2025 research
+19:42:11 INFO    [102/136] PATCHED F2C2DWSI: DOI+creators+url (0.2s) :: AI-assisted programming may decrease the prod
+19:42:11 INFO    [103/136] no OpenAlex match (0.2s) :: “Aiqase: quality assurance for ai-augmented software en
+19:42:11 INFO    [104/136] no OpenAlex match (0.2s) :: Analyze how developers address new security and ethical
+19:42:11 INFO    [105/136] no OpenAlex match (0.2s) :: AppSec for the vibe coding era — GitHub AppSec AI summi
+19:42:12 INFO    [106/136] PATCHED KPGJPZT7: DOI+abstractNote+creators+title+url (0.3s) :: Automation bias: a systematic review
+19:42:13 INFO    [107/136] no OpenAlex match (0.2s) :: Balancing AI tensions: moving from AI adoption to effec
+19:42:13 INFO    [108/136] PATCHED WFHWD8XB: DOI+creators+url (0.2s) :: . Bridging the expectation gap: characterizin
+19:42:14 INFO    [109/136] no OpenAlex match (0.2s) :: Can OpenAI codex and other large language models help u
+19:42:14 INFO    [110/136] no OpenAlex match (0.2s) :: “Drawbacks in detecting vulnerabilities: a study of lar
+19:42:14 INFO    [111/136] no OpenAlex match (0.2s) :: “Drs-oss: llm-driven diff risk scoring tool for pr risk
+19:42:15 INFO    [112/136] PATCHED G4EG3NMU: DOI+abstractNote+creators+date+title+url (0.3s) :: Effective human oversight of AI-based systems
+19:42:15 INFO    [113/136] no OpenAlex match (0.2s) :: “Endor labs launches free tool AURI after study finds o
+19:42:15 INFO    [114/136] no OpenAlex match (0.2s) :: From naptime to big sleep: using large language models 
+19:42:16 INFO    [115/136] no OpenAlex match (0.4s) :: From here to autonomy: lessons learned from human–autom
+19:42:16 INFO    [116/136] no OpenAlex match (0.2s) :: “Gpt-3.5 for code review automation: how do few-shot le
+19:42:16 INFO    [117/136] no OpenAlex match (0.2s) :: “How software engineers and coders actually use AI”
+19:42:17 INFO    [118/136] no OpenAlex match (0.2s) :: Human-AI collaboration in software engineering: a syste
+19:42:17 INFO    [119/136] PATCHED B8U9JING: abstractNote+url (0.2s) :: Improving code review by predicting reviewers
+19:42:18 INFO    [120/136] no OpenAlex match (0.2s) :: LLM2 ’s code often took longer to execute, as shown by 
+19:42:18 INFO    [121/136] no OpenAlex match (0.2s) :: LLM3 often generated buggy code, as shown by the red po
+19:42:18 INFO    [122/136] no OpenAlex match (0.2s) :: MSR 2026 mining challenge. An empirical analysis of tes
+19:42:18 INFO    [123/136] no OpenAlex match (0.2s) :: “October 2025 update: GenAI code security report,”
+19:42:18 INFO    [124/136] no OpenAlex match (0.2s) :: Ode r eview in the a ge of ai: a v ision for a gentic c
+19:42:19 INFO    [125/136] no OpenAlex match (0.2s) :: pandas contributors. 2026. Automated contributions poli
+19:42:19 INFO    [126/136] no OpenAlex match (0.2s) :: . Replication package for: what to cut? Predicting un-n
+19:42:19 INFO    [127/136] no OpenAlex match (0.2s) :: RQ3 what do developers recommend to improve the securit
+19:42:20 INFO    [128/136] PATCHED 9M9C8EJQ: DOI+abstractNote+creators+date+title+url (0.2s) :: “SALLM: security generated code,”
+19:42:20 INFO    [129/136] no OpenAlex match (0.2s) :: S ECURE V IBE B ENCH : evaluating secure coding capabil
+19:42:20 INFO    [130/136] no OpenAlex match (0.2s) :: “Security and configuration vulnerabilities in ai-gener
+19:42:20 INFO    [131/136] no OpenAlex match (0.2s) :: Survey of generative AI in code generation: privacy, se
+19:42:21 INFO    [132/136] no OpenAlex match (0.2s) :: The AI teammate framework: a four-step framework for pr
+19:42:21 INFO    [133/136] no OpenAlex match (0.2s) :: the code has vulnerabilities. 1. SQL injection
+19:42:21 INFO    [134/136] no OpenAlex match (0.2s) :: Vibe coding in production: a founder/CTO’s 2025 AI engi
+19:42:21 INFO    [135/136] no OpenAlex match (0.2s) :: Vibe coding vs low-code/No-code: security risks and CI/
+19:42:21 INFO    [136/136] no OpenAlex match (0.2s) :: Vibe coding at scale: customizing AI assistants for ent
+19:42:21 INFO    === DONE: URLs filled 7, titles canonicalized 3 | matched 11, no-match 125, of 136 ===

@@ -1,0 +1,15 @@
+{
+  "item_key": "ID7IN65K",
+  "methods": [
+    "survey/questionnaire",
+    "qualitative-analysis",
+    "reflexive-thematic-analysis",
+    "LLM-assisted-qualitative-coding",
+    "conceptual/framework"
+  ],
+  "empirical": true,
+  "human_subjects": true,
+  "primary_hint": "qualitative-analysis",
+  "notes": "Secondary/parallel qualitative analysis of open-ended free-text responses from a prior IRB-approved survey of 860 Microsoft developers; uses a human-in-the-loop, multi-model (GPT/Gemini/Claude) council-based reflexive thematic analysis pipeline with inter-rater reliability and majority-vote consensus to derive 22 desired AI systems and the 'bounded delegation' framework. No tool is built or benchmarked.",
+  "citation": "Choudhuri 2026"
+}

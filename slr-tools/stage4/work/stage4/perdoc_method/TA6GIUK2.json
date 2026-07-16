@@ -1,0 +1,14 @@
+{
+  "item_key": "TA6GIUK2",
+  "methods": [
+    "conceptual/position",
+    "framework/taxonomy",
+    "controlled-experiment",
+    "benchmark-evaluation"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position",
+  "notes": "Primarily a position/argument paper (author states 'the argument is structural, not empirical') that develops three hypotheses and proposes a novel defect taxonomy. It is backed by three small self-described 'contrived' experiments: LLM reviewers run over a curated planted-bug corpus (5 functions each, multiple runs, multi-model cross-family panel) with BDD scenarios as a deterministic baseline \u2014 a controlled/benchmark-style evaluation the author explicitly frames as directional, not statistically significant. No human participants (models, not people, are the subjects).",
+  "citation": "Zietsman 2026"
+}

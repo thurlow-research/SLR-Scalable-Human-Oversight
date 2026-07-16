@@ -1,0 +1,14 @@
+{
+  "item_key": "XJAXB98T",
+  "methods": [
+    "qualitative-analysis",
+    "document-analysis",
+    "grounded-theory",
+    "conceptual/framework"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "qualitative-analysis",
+  "notes": "Comparative qualitative document analysis of publicly visible GenAI-governance materials from 67 OSS projects, using iterative open coding with constant comparison and inter-rater agreement (Cohen's kappa); grounded-theory-style coding produces a framework of concerns, orientations, and 12 strategies. No human participants \u2014 analyzes project documents/artifacts, not surveys or interviews.",
+  "citation": "Yang 2026"
+}

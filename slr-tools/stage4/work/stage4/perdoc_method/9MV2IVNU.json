@@ -1,0 +1,13 @@
+{
+  "item_key": "9MV2IVNU",
+  "methods": [
+    "conceptual/position",
+    "framework/model",
+    "governance-framework-proposal"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position",
+  "notes": "Pure conceptual/argumentative paper: introduces the 'Rubber-Stamp Risk' failure mode and a prescriptive intervention architecture (Override/Escalate/Explain), proposed KPIs, and ISO/PDCA governance mappings. Illustrative use cases (credit, hiring, healthcare) are hypothetical worked examples, not empirical case studies; no data collection, evaluation, or participants.",
+  "citation": "Eze 2026"
+}

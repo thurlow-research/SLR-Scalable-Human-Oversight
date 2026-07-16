@@ -1,0 +1,75 @@
+{
+  "item_key": "QI8246A3",
+  "citation": "Li 2025",
+  "evidence_type": [
+    "empirical",
+    "dataset",
+    "case-study"
+  ],
+  "problem_statement": "Autonomous coding agents now submit AI-generated pull requests at massive scale, but human-centric code review has not scaled to match, creating a growing imbalance between agentic PR submission rates and review capacity that threatens quality assurance and accountability.",
+  "magnitude_evidence": "456,535 Agentic-PRs by five agents across 61,453 repositories and 47,303 developers; OpenAI Codex alone created over 400,000 PRs in under two months; one developer submitted 164 Codex-assisted PRs in 3 days vs. 176 human PRs over 3.5 years",
+  "risk_types": [
+    "quality",
+    "maintainability",
+    "trust",
+    "review-bottleneck",
+    "accountability",
+    "provenance/attribution",
+    "provider-bias",
+    "security",
+    "long-term-code-quality"
+  ],
+  "insufficiency_evidence": "Agentic-PRs are reviewed/closed much faster (Codex accepted PRs in 0.3h vs human 3.9h) yet 'this rapid pace may suggest superficial review rather than genuine confidence... it remains uncertain whether these Agentic-PRs undergo meaningful scrutiny or are merely triaged'; 58.2% of Agentic-PRs receive no explicit review; provider-aligned review bots may 'overlook stylistic issues or latent errors'",
+  "solution_mechanisms": [
+    "dynamic review triage by risk/complexity",
+    "route low-risk PRs to bots, escalate high-impact to senior reviewers",
+    "reviewer recommender systems tuned for workload",
+    "hybrid human-bot co-review / first-pass screening",
+    "standardized authorship attribution labeling",
+    "agents provide structured rationales/test plans",
+    "orchestration frameworks preserving human oversight",
+    "governance models for agent autonomy and accountability",
+    "dynamic benchmarking / living leaderboards",
+    "cross-provider review bots for diverse evaluation",
+    "rule-based static analysis for security review"
+  ],
+  "mechanism_keywords": [
+    "risk-routing",
+    "triage",
+    "escalation",
+    "hitl",
+    "reviewer-recommender",
+    "hybrid-review",
+    "provenance",
+    "attribution",
+    "orchestration",
+    "governance",
+    "accountability",
+    "llm-as-reviewer",
+    "dynamic-benchmark",
+    "static-analysis",
+    "observability"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "pre-commit",
+    "CI",
+    "pre-publish"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "SE 3.0 (Agentic Software Engineering)",
+    "SE 1.5 (Predictive Coding)",
+    "AI Teammates",
+    "Autonomous Coding Agents",
+    "AIDev dataset",
+    "Agentic-PRs",
+    "software repositories as training environments",
+    "living leaderboards",
+    "provider-aligned PR-review loops"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

@@ -1,0 +1,14 @@
+{
+  "item_key": "HBR7QZ2C",
+  "methods": [
+    "design-science / prototype / tool-build",
+    "formal-analysis/proof",
+    "measurement-study",
+    "conceptual/position/framework"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science / prototype / tool-build",
+  "notes": "Core contribution is a policy-engine architecture with formal governed-action model and an FSM enforcement specification (formal-analysis of safety/liveness properties). Includes a prototype evaluation measuring unsafe-action reduction (~71%) and latency overhead across three workloads, but the evaluation is thinly reported/illustrative (aggregate charts, no dataset or protocol detail). 'Unsafe actions' were rated by human reviewers as annotators, which is not a human-subjects/participant study, so human_subjects=false.",
+  "citation": "Jackson 2025"
+}

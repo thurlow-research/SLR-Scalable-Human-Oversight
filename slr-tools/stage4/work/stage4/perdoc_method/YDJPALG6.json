@@ -1,0 +1,11 @@
+{
+  "item_key": "YDJPALG6",
+  "methods": [
+    "conceptual/position/framework"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position/framework",
+  "notes": "Proposes the Process-oriented Explainability (PoE) framework with three conceptual pillars and describes an intended technical implementation and an illustrative scenario, but builds no working artifact and collects/evaluates no data; empirical validation is explicitly deferred to future work.",
+  "citation": "Casserini 2026"
+}

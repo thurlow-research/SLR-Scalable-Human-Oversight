@@ -1,0 +1,128 @@
+nohup: ignoring input
+[2026-06-03 03:27:35] === Pass 2 Orchestration ===
+[2026-06-03 03:27:35] Workdir: /home/scott/slr/phase2
+[2026-06-03 03:27:35] Checkpoint: /home/scott/slr/phase2/checkpoint.json
+[2026-06-03 03:27:35] STEP 1: Export already done — skipping
+[2026-06-03 03:27:35] STEP 2: Randomization already done — skipping
+[2026-06-03 03:27:35] STEP 3: Sonnet batch split already done — skipping
+[2026-06-03 03:27:35] STEP 4: Running Sonnet screening...
+[2026-06-03 03:27:35]   Sonnet batch_001: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_002: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_003: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_004: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_005: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_006: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_007: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_008: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_009: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_010: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_011: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_012: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_013: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_014: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_015: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_016: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_017: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_018: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_019: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_020: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_021: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_022: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_023: already done — skipping
+[2026-06-03 03:27:35]   Sonnet batch_024: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_025: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_026: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_027: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_028: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_029: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_030: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_031: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_032: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_033: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_034: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_035: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_036: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_037: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_038: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_039: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_040: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_041: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_042: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_043: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_044: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_045: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_046: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_047: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_048: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_049: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_050: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_051: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_052: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_053: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_054: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_055: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_056: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_057: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_058: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_059: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_060: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_061: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_062: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_063: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_064: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_065: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_066: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_067: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_068: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_069: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_070: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_071: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_072: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_073: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_074: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_075: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_076: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_077: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_078: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_079: already done — skipping
+[2026-06-03 03:27:36]   Sonnet batch_080: already done — skipping
+[2026-06-03 03:27:36] STEP 5: Sonnet consolidation already done — skipping
+[2026-06-03 03:27:36] STEP 6: Sonnet routing already done — skipping
+[2026-06-03 03:27:36] STEP 7: Opus batch split already done — skipping
+[2026-06-03 03:27:36] STEP 8: Running Opus review...
+[2026-06-03 03:27:37]   Opus batch_001: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_002: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_003: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_004: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_005: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_006: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_007: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_008: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_009: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_010: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_011: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_012: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_013: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_014: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_015: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_016: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_017: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_018: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_019: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_020: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_021: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_022: already done — skipping
+[2026-06-03 03:27:37]   Opus batch_023: already done — skipping
+[2026-06-03 03:27:37] STEP 9: Consolidating Opus results...
+Consolidated 477 Opus decisions
+Decisions: {'keep': 191, 'discard': 263, '': 23}
+Confidence: {'medium': 276, 'low': 38, 'high': 140, '': 23}
+[2026-06-03 03:27:37] STEP 10: Routing Opus results...
+Opus apply queue: 438
+Human review:     39
+[2026-06-03 03:27:37] STEP 11: Applying decisions to Zotero...
+Total to apply: 3953
+  keep=971 maybe=73 discard=2908
+  (maybe = phase1-maybe items promoted by Sonnet keep — go to Phase2 02-Maybe)
+  Sonnet direct: 3466  Promoted maybe: 73  Opus: 438
+python3: can't open file '/home/scott/slr/phase2/apply_screening_decisions.py': [Errno 2] No such file or directory

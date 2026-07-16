@@ -1,0 +1,70 @@
+{
+  "item_key": "VG8PSMM7",
+  "citation": "Adnyana 2026",
+  "evidence_type": [
+    "benchmark",
+    "system-tool",
+    "framework-model",
+    "empirical"
+  ],
+  "problem_statement": "How to reliably generate deterministic, safety-compliant IEC 61131-3 PLC code with prompt-engineered LLMs across heterogeneous vendor ecosystems, and rigorously validate its correctness and safety before deployment.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "safety",
+    "quality",
+    "determinism",
+    "vendor-compliance",
+    "maintainability",
+    "hallucination",
+    "correctness",
+    "logic-errors"
+  ],
+  "insufficiency_evidence": "BLEU 'operates at a surface level and cannot guarantee semantic correctness or compliance with safety-critical requirements'; LITL 'remains a proxy for expert judgment' so HITL in vendor IDEs supplies the authoritative safety checks",
+  "solution_mechanisms": [
+    "fixed-prompt invariant template framework (LLM-PLC-AS)",
+    "layered BLEU/LITL/HITL validation pipeline",
+    "LLM-in-the-loop semantic scoring by independent validator LLMs",
+    "human-in-the-loop expert safety-critical review gate",
+    "BLEU lexical triage with escalation triggers",
+    "adaptive prompt scoring reinforcement layer",
+    "21-technique prompting taxonomy by functional role",
+    "cross-check syntax with secondary LLMs",
+    "multi-validator triangulation with inter-rater calibration"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "llm-as-judge",
+    "litl",
+    "prompt-engineering",
+    "layered-validation",
+    "spec-driven",
+    "chain-of-verification",
+    "ensemble",
+    "triangulation",
+    "calibration",
+    "escalation",
+    "risk-routing",
+    "acceptance-gate",
+    "reproducibility",
+    "provenance"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "pre-deployment"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "LLM-PLC-AS",
+    "LLM-in-the-Loop (LITL)",
+    "Adaptive Prompt Scoring and Reinforcement Layer",
+    "three-layer safety-verification hierarchy (logical/simulated/physical)",
+    "risk-aware acceptance gate"
+  ],
+  "governance_refs": [
+    "IEC 61131-3"
+  ],
+  "scope_fit": "solution",
+  "notes": "Full text truncated in the middle; some tables/appendices abbreviated.",
+  "_truncated": true
+}

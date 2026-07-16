@@ -1,0 +1,83 @@
+{
+  "item_key": "ID7IN65K",
+  "citation": "Choudhuri 2026",
+  "evidence_type": [
+    "empirical",
+    "framework-model"
+  ],
+  "problem_statement": "As AI accelerates code generation, verification and oversight (review, testing, incident triage, compliance) become the bottleneck; the paper surveys developers to identify what AI oversight/support systems should be built and what behavioral constraints keep humans accountable.",
+  "magnitude_evidence": "'writing code accounts for roughly one-tenth of their day' yet most AI tooling targets that fraction; survey of 860 Microsoft developers; 'The resulting flow of AI-generated output is already outpacing existing verification practices [40]'",
+  "risk_types": [
+    "quality",
+    "maintainability",
+    "security",
+    "AI-induced-technical-debt",
+    "hallucination",
+    "workslop",
+    "provenance-loss",
+    "review-not-scaling",
+    "developer-burnout",
+    "regression",
+    "compliance",
+    "accountability-erosion",
+    "overconfidence"
+  ],
+  "insufficiency_evidence": "'So many of the PR automated comments are just plain wrong' (P609); 'AI is very bad at understanding the context and throwing wrong answers with utmost confidence, makes us waste time instead of helping' (P223); AI output 'already outpacing existing verification practices'",
+  "solution_mechanisms": [
+    "embedded quality gate at authorship time",
+    "change-aware test generation and quality gates",
+    "pre-merge security advisor with patch suggestions",
+    "context-aware PR review assistant",
+    "compliance evidence compiler/interpreter",
+    "change risk radar for regression warning",
+    "scoped-PR builder for tech-debt removal",
+    "trace-to-diff root cause workbench",
+    "repository context graph for cross-file changes",
+    "telemetry correlation/incident triage assistant",
+    "continuous documentation synchronizer",
+    "cross-cutting guardrails (authority scoping, provenance, uncertainty signaling, least-privilege)"
+  ],
+  "mechanism_keywords": [
+    "shift-left",
+    "quality-gate",
+    "security-gate",
+    "change-aware-testing",
+    "provenance",
+    "uncertainty-signaling",
+    "authority-scoping",
+    "least-privilege",
+    "hitl",
+    "human-in-command",
+    "escalation",
+    "risk-routing",
+    "calibration",
+    "observability",
+    "guardrail",
+    "spec-driven",
+    "bounded-delegation",
+    "multi-model-council",
+    "decorrelation"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-commit",
+    "pre-merge",
+    "code-review",
+    "CI",
+    "runtime",
+    "post-deployment"
+  ],
+  "human_role": "in-command",
+  "key_constructs": [
+    "bounded delegation",
+    "right-shift problem/burden",
+    "council-based thematic analysis",
+    "four guardrails: authority scoping, provenance, uncertainty signaling, least-privilege"
+  ],
+  "governance_refs": [
+    "Responsible AI (RAI)"
+  ],
+  "scope_fit": "both",
+  "notes": "Reports stated preferences (systems developers want but did not have), not adoption or evaluation; single-organization (Microsoft) survey; arXiv preprint.",
+  "_truncated": false
+}

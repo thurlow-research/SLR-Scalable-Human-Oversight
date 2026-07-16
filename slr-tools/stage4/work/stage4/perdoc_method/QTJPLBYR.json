@@ -1,0 +1,15 @@
+{
+  "item_key": "QTJPLBYR",
+  "methods": [
+    "controlled-experiment",
+    "design-science/prototype/tool-build",
+    "survey/questionnaire",
+    "benchmark-evaluation",
+    "case-study"
+  ],
+  "empirical": true,
+  "human_subjects": true,
+  "primary_hint": "controlled-experiment",
+  "notes": "Self-described controlled experiment with three specification-varying cases generating code via a multi-module LLM pipeline (tool-build), then evaluated by 13 human experts via an online questionnaire (human_subjects) and by 5 LLM evaluators against fixed OWASP/inclusivity rubrics (benchmark-style scoring). Grounded in a single healthcare user story (case-study flavor). Small sample (n=13); a preprint, not peer-reviewed.",
+  "citation": "Bilal Naqvi 2026"
+}

@@ -1,0 +1,863 @@
+{
+  "count": 50,
+  "total": "615",
+  "page": "11",
+  "records": [
+    {
+      "abstractId": "4651978",
+      "title": "Ethics Lost in Translation: Trustworthy AI from Governance to Regulation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4651978",
+      "authors": [
+        "Irina Carnat"
+      ],
+      "affiliations": [
+        "Sant’Anna School of Advanced Studies"
+      ],
+      "pages": 34,
+      "posted": "20 Dec 2023",
+      "snippet": "accountability bridges the gap between the ethics guidelines and the regulatory framework, as shown by a first comparative glance at the US-proposed Algorithmic / Accountability Act and the EU-proposed AI Act through the lenses of the recently proposed amendments concerning foundation models, thus providing the / Trustworthy AI, Algorithmic accountability, AI regulation, AI governance, AI ethics",
+      "downloads": 215
+    },
+    {
+      "abstractId": "4666854",
+      "title": "Systemic Regulation of Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4666854",
+      "authors": [
+        "Yonathan A. Arbel",
+        "Matthew Tokson",
+        "Albert Lin"
+      ],
+      "affiliations": [
+        "University of Alabama - School of Law",
+        "University of Utah - S.J. Quinney College of Law",
+        "University of California, Davis - School of Law"
+      ],
+      "pages": 75,
+      "posted": "19 Dec 2023",
+      "snippet": "It is also among the first works of legal scholarship to address the AI alignment problem and the global risks of failing to ensure that AIs are aligned",
+      "downloads": 1019
+    },
+    {
+      "abstractId": "4636695",
+      "title": "Johnson’s Algorithmic Accountability and Platform Responsibility",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4636695",
+      "authors": [
+        "Kirsten Martin"
+      ],
+      "affiliations": [],
+      "pages": 16,
+      "posted": "30 Nov 2023",
+      "snippet": "I use online platforms to illustrate the importance of Johnson’s approach to algorithmic accountability.",
+      "downloads": 67
+    },
+    {
+      "abstractId": "4605509",
+      "title": "AI Alignment and Social Choice: Fundamental Limitations and Policy Implications",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4605509",
+      "authors": [
+        "Abhilash Mishra"
+      ],
+      "affiliations": [
+        "Equitech Futures"
+      ],
+      "pages": 10,
+      "posted": "16 Nov 2023",
+      "snippet": "Reinforcement learning with human feedback (RLHF) has emerged as the key framework for AI alignment. / alignment using RLHF is impossible.",
+      "downloads": 134
+    },
+    {
+      "abstractId": "4598305",
+      "title": "Explainable Fairness in Regulatory Algorithmic Auditing",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4598305",
+      "authors": [
+        "Cathy O'Neil",
+        "Holli Sargeant",
+        "Jacob Appel"
+      ],
+      "affiliations": [
+        "Independent",
+        "Independent"
+      ],
+      "pages": 0,
+      "posted": "18 Oct 2023",
+      "snippet": "The framework promotes algorithmic accountability and transparency by focusing on explainability to regulators and the public.",
+      "downloads": 0
+    },
+    {
+      "abstractId": "4494799",
+      "title": "Understanding the Distinction Between Technical and Governance Audits for AI: A Critical Analysis",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4494799",
+      "authors": [
+        "Jeffrey Kluge"
+      ],
+      "affiliations": [
+        "KidsTechEthics"
+      ],
+      "pages": 26,
+      "posted": "03 Oct 2023",
+      "snippet": "Ultimately, through balanced, pragmatic guidelines and a commitment to transparency and ethics, organizations can implement responsible AI auditing and",
+      "downloads": 164
+    },
+    {
+      "abstractId": "4568208",
+      "title": "AI Audits: Who, When, How...Or Even If?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4568208",
+      "authors": [
+        "Evan Selinger",
+        "Brenda Leong",
+        "Albert Fox Cahn"
+      ],
+      "affiliations": [
+        "Rochester Institute of Technology - Department of Philosophy",
+        "Luminos.Law",
+        "Surveillance Technology Oversight Project"
+      ],
+      "pages": 24,
+      "posted": "14 Sep 2023",
+      "snippet": "Because AI auditing is still in its early stages, many questions remain about how to best conduct them.",
+      "downloads": 1327
+    },
+    {
+      "abstractId": "4561009",
+      "title": "Algorithms, Automation and Administrative Procedure at EU Level",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4561009",
+      "authors": [
+        "Oriol Mir Puigpelat"
+      ],
+      "affiliations": [
+        "Universitat Pompeu Fabra (UPF)"
+      ],
+      "pages": 28,
+      "posted": "07 Sep 2023",
+      "snippet": "This Chapter aims to underline the important contribution of the classical institution of administrative procedure to the current debate on algorithmic / accountability in the public sector.",
+      "downloads": 260
+    },
+    {
+      "abstractId": "4531532",
+      "title": "Evaluating Algorithmic Regulation Policies: A Game Theoretic Analysis",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4531532",
+      "authors": [
+        "Carolyn Gideon"
+      ],
+      "affiliations": [
+        "Tufts University - Fletcher School"
+      ],
+      "pages": 22,
+      "posted": "07 Aug 2023",
+      "snippet": "We will evaluate several major proposed policies, including aspects of the EU Artificial Intelligence Act, the US Algorithmic Accountability Act, and the",
+      "downloads": 227
+    },
+    {
+      "abstractId": "4520179",
+      "title": "AI Alignment Network (ALIGN) - Intellectual Property Incentives to Help Address AI Alignment Problems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4520179",
+      "authors": [
+        "C. Eric Schulman"
+      ],
+      "affiliations": [
+        "Fish & Richardson"
+      ],
+      "pages": 7,
+      "posted": "26 Jul 2023",
+      "snippet": "Recent public releases of large language models have captured the public’s attention and re-surfaced the so-called AI alignment problem. / This article proposes intellectual property incentives to help address AI alignment problems and potentially AI safety more broadly. / patent, license, AI alignment",
+      "downloads": 178
+    },
+    {
+      "abstractId": "4509797",
+      "title": "Explainable AI and Pricing Algorithms: A Case For Accountability in Pricing",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4509797",
+      "authors": [
+        "Brahm sareen"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 19,
+      "posted": "21 Jul 2023",
+      "snippet": "To propose solutions, the pape advocates for enhanced transparency and algorithmic accountability, emphasizing the need for companies to disclose information",
+      "downloads": 384
+    },
+    {
+      "abstractId": "4476325",
+      "title": "Large Language Models as Tax Attorneys: A Case Study in Legal Capabilities Emergence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4476325",
+      "authors": [
+        "John Nay",
+        "David Karamardian",
+        "Sarah B. Lawsky",
+        "Wenting Tao",
+        "Meghana Bhat",
+        "Raghav Jain",
+        "Aaron Travis Lee",
+        "Jonathan H. Choi",
+        "Jungo Kasai"
+      ],
+      "affiliations": [
+        "Stanford University - CodeX - Center for Legal Informatics",
+        "Independent",
+        "University of Illinois College of Law",
+        "Independent",
+        "Independent",
+        "Independent",
+        "Washington University School of Law",
+        "Independent"
+      ],
+      "pages": 20,
+      "posted": "22 Jun 2023",
+      "snippet": "Artificial Intelligence, Large Language Models, Machine Learning, Natural Language Processing, Retrieval Augmented Generation, Computational Law, AI Alignment",
+      "downloads": 486
+    },
+    {
+      "abstractId": "4476167",
+      "title": "Algorithmic Accountability Act of 2022 with The EU Artificial Intelligence Act",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4476167",
+      "authors": [
+        "Noha Lea Halim",
+        "Urs Gasser"
+      ],
+      "affiliations": [
+        "Technische Universität München (TUM), TUM School of Social Sciences and Technology",
+        "Harvard University - Berkman Klein Center for Internet & Society"
+      ],
+      "pages": 18,
+      "posted": "22 Jun 2023",
+      "snippet": "Algorithmic Accountability Act and the EU AI Act among the main (proposed) legislative guideposts.",
+      "downloads": 2635
+    },
+    {
+      "abstractId": "4461107",
+      "title": "What Is It Like to Be an AI? The Alignment Problem and the Emergence of Artificial Intelligence: Reflections on the Complexity of Consciousness and Agency",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4461107",
+      "authors": [
+        "Baldolino Calvino",
+        "Antonio Conselheiro",
+        "Angell Gunn"
+      ],
+      "affiliations": [
+        "College of Natural Philosophy",
+        "Tir na nÓg University - Hy-Brasil Institute for Advanced Study (H-BIAS)",
+        "Tir na nÓg University - Hy-Brasil Institute for Advanced Study (H-BIAS)"
+      ],
+      "pages": 22,
+      "posted": "09 Jun 2023",
+      "snippet": "artificial intelligence, AI alignment, Maturana, biology of cognition, Lacan",
+      "downloads": 145
+    },
+    {
+      "abstractId": "4461532",
+      "title": "Framing Online Speech Governance As An Algorithmic Accountability Issue",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4461532",
+      "authors": [
+        "Mehtab Khan"
+      ],
+      "affiliations": [
+        "Yale Law School"
+      ],
+      "pages": 26,
+      "posted": "08 Jun 2023",
+      "snippet": "accountability lens. / Third, I situate this discussion of speech governance within a broader framework of algorithmic accountability to guide future regulatory interventions",
+      "downloads": 214
+    },
+    {
+      "abstractId": "4430778",
+      "title": "Understanding Accountability in Algorithmic Supply Chains",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4430778",
+      "authors": [
+        "Jennifer Cobbe",
+        "Michael Veale",
+        "Jatinder Singh"
+      ],
+      "affiliations": [
+        "University of Cambridge - Faculty of Law",
+        "University of Cambridge -- Dept. Computer Science & Technology (Computer Laboratory)"
+      ],
+      "pages": 12,
+      "posted": "17 May 2023",
+      "snippet": "Academic and policy proposals on algorithmic accountability often seek to understand algorithmic systems in their socio-technical context, recognising / We argue that algorithmic accountability discussions must consider supply chains and the difficult implications they raise for the governance and accountability / algorithmic accountability, supply chains, AI as a Service, general purpose AI, accountability horizon, political economy",
+      "downloads": 756
+    },
+    {
+      "abstractId": "4423897",
+      "title": "Flexible, Pro-Innovation Governance Strategies for Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4423897",
+      "authors": [
+        "Adam D. Thierer"
+      ],
+      "affiliations": [
+        "R Street Institute"
+      ],
+      "pages": 40,
+      "posted": "02 May 2023",
+      "snippet": "Regulatory proposals are multiplying rapidly as academics and policymakers consider ways to achieve “AI alignment”—that is, to make sure that algorithmic",
+      "downloads": 583
+    },
+    {
+      "abstractId": "4396251",
+      "title": "Artificial Intelligence and Dual Contract *",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4396251",
+      "authors": [
+        "Qian Qi"
+      ],
+      "affiliations": [
+        "Peking University"
+      ],
+      "pages": 59,
+      "posted": "31 Mar 2023",
+      "snippet": "concerns regarding strategic manipulation and the emergence of unintended collusion in AI-driven systems, particularly in the context of the broader AI / alignment problem. / JEL classification: D21, D43, D83, L12, L13 Artificial intelligence, dual contract, principal-agent problem, algorithmic collusion, AI alignment",
+      "downloads": 104
+    },
+    {
+      "abstractId": "4389118",
+      "title": "Artificial Intelligence and the Economics of Decision-Making",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4389118",
+      "authors": [
+        "Wim Naudé"
+      ],
+      "affiliations": [
+        "RWTH Aachen University"
+      ],
+      "pages": 35,
+      "posted": "15 Mar 2023",
+      "snippet": "The second contribution is to show that using EUT restricts AI systems to narrow applications, which are \"small worlds\" where concerns about AI alignment",
+      "downloads": 175
+    },
+    {
+      "abstractId": "4375080",
+      "title": "Adjudicating Algorithms: Accountability in Regulation of Surveillance, Privacy, and Discrimination",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4375080",
+      "authors": [
+        "Peter Margulies"
+      ],
+      "affiliations": [
+        "Roger Williams University School of Law"
+      ],
+      "pages": 43,
+      "posted": "01 Mar 2023",
+      "snippet": "In addition, many scholars urging algorithmic accountability have failed to fully grapple with functional tradeoffs, such as the importance of tailored",
+      "downloads": 176
+    },
+    {
+      "abstractId": "4349890",
+      "title": "Implementing Algorithmic Governance: Clarifying Impact Assessments Through Mock Exercises",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4349890",
+      "authors": [
+        "Lucas Wright",
+        "Winfield Mac",
+        "Joshua Clark"
+      ],
+      "affiliations": [
+        "Cornell University",
+        "Cornell University",
+        "Cornell University"
+      ],
+      "pages": 34,
+      "posted": "08 Feb 2023",
+      "snippet": "The Algorithmic Accountability Act of 2022 proposes action against the unrestrained and invisible impact that algorithms can have in our society.",
+      "downloads": 141
+    },
+    {
+      "abstractId": "4350343",
+      "title": "Strong Objectivity for Algorithmic Systems: Accountability and Fairness as Organizational Imperatives",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4350343",
+      "authors": [
+        "Emanuel Moss",
+        "Jacob Metcalf"
+      ],
+      "affiliations": [
+        "Data & Society Research Institute"
+      ],
+      "pages": 10,
+      "posted": "07 Feb 2023",
+      "snippet": "Algorithmic accountability, algorithmic fairness, strong objectivity",
+      "downloads": 2
+    },
+    {
+      "abstractId": "4340676",
+      "title": "Artificial Intelligence and Dual Contract *",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4340676",
+      "authors": [
+        "Qian Qi"
+      ],
+      "affiliations": [
+        "Peking University"
+      ],
+      "pages": 59,
+      "posted": "30 Jan 2023",
+      "snippet": "concerns regarding strategic manipulation and the emergence of unintended collusion in AI-driven systems, particularly in the context of the broader AI / alignment problem. / JEL classification: D21, D43, D83, L12, L13 Artificial intelligence, dual contract, principal-agent problem, algorithmic collusion, AI alignment",
+      "downloads": 112
+    },
+    {
+      "abstractId": "4338862",
+      "title": "The Law of AI for Good",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4338862",
+      "authors": [
+        "Orly Lobel"
+      ],
+      "affiliations": [
+        "University of San Diego School of Law"
+      ],
+      "pages": 69,
+      "posted": "26 Jan 2023",
+      "snippet": "Trade Commission (FTC) report, the Biden administration’s 2022 AI Bill of Rights and American and European legislative reform efforts, including the Algorithmic / Accountability Act of 2022, the Data Privacy and Protection Act of 2022, the European General Data Protection Regulation (GDPR) and the new draft EU AI / algorithmic decision-making, bias, surveillance, policy, public trust, technology law, equality, safeguards, AI-for-good, machine learning, AI Bill of Rights, Algorithmic / Accountability Act of 2022, GDPR, EU AI Act, privacy",
+      "downloads": 2405
+    },
+    {
+      "abstractId": "4336557",
+      "title": "Big Proctor: Online Proctoring Problems and How FERPA Can Promote Student Data Due Process",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4336557",
+      "authors": [
+        "Elana Zeide"
+      ],
+      "affiliations": [
+        "University of Nebraska Schools of Law and Engineering"
+      ],
+      "pages": 67,
+      "posted": "25 Jan 2023",
+      "snippet": "However, FERPA’s overlooked rights of review, explanation, and contestation offer a stop-gap solution to promote algorithmic accountability and due process",
+      "downloads": 370
+    },
+    {
+      "abstractId": "4335945",
+      "title": "Large Language Models as Fiduciaries: A Case Study Toward Robustly Communicating With Artificial Intelligence Through Legal Standards",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4335945",
+      "authors": [
+        "John Nay"
+      ],
+      "affiliations": [
+        "Stanford University - CodeX - Center for Legal Informatics"
+      ],
+      "pages": 27,
+      "posted": "25 Jan 2023",
+      "snippet": "Learning, Natural Language Processing, NLP, Self-Supervised Learning, Reinforcement Learning, RL, Large Language Models, Foundation Models, AI Safety, AI / Alignment, AI & Law, AI Policy, Computational Legal Studies, Computational Law, Standards, Prompt Engineering",
+      "downloads": 526
+    },
+    {
+      "abstractId": "4324880",
+      "title": "Automated Administration: Administrative Law and Algorithmic Decision-Making in India",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4324880",
+      "authors": [
+        "Divij Joshi"
+      ],
+      "affiliations": [
+        "University College London"
+      ],
+      "pages": 17,
+      "posted": "18 Jan 2023",
+      "snippet": "administrative law, algorithmic accountability, artificial intelligence",
+      "downloads": 258
+    },
+    {
+      "abstractId": "4316615",
+      "title": "Large Language Models as Corporate Lobbyists",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4316615",
+      "authors": [
+        "John Nay"
+      ],
+      "affiliations": [
+        "Stanford University - CodeX - Center for Legal Informatics"
+      ],
+      "pages": 9,
+      "posted": "04 Jan 2023",
+      "snippet": "Intelligence, AI, Machine Learning, Natural Language Processing, NLP, Self-Supervised Learning, Large Language Models, GPT, Foundation Models, AI Safety, AI / Alignment, AI & Law, AI Policy, Computational Legal Studies, Computational Law, Law-Making, Public Policy, Policy-Making, Lobbying",
+      "downloads": 1387
+    },
+    {
+      "abstractId": "4215994",
+      "title": "Digital Futures in Mind: Reflecting on Technological Experiments in Mental Health & Crisis Support",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4215994",
+      "authors": [
+        "Jonah Bossewitch",
+        "Lydia X.Z. Brown",
+        "Piers M. Gooding",
+        "Leah Harris",
+        "James Horton",
+        "Simon Katterl",
+        "Keris Myrick",
+        "Kelechi Ubozoh",
+        "Alberto Vasquez Encalada"
+      ],
+      "affiliations": [
+        "Independent",
+        "Independent",
+        "La Trobe Law School",
+        "Independent",
+        "Independent",
+        "Independent",
+        "Independent",
+        "Independent",
+        "Independent"
+      ],
+      "pages": 96,
+      "posted": "14 Dec 2022",
+      "snippet": "and colleagues at the AI Now research institute observe that disability and mental health have been largely omitted from discussions about AI-bias and algorithmic / accountability.",
+      "downloads": 194
+    },
+    {
+      "abstractId": "4268345",
+      "title": "The US Algorithmic Accountability Act of 2022 vs. The EU Artificial Intelligence Act: What can they learn from each other?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4268345",
+      "authors": [
+        "Jakob Mökander",
+        "Prathm Juneja",
+        "David Watson",
+        "Luciano Floridi"
+      ],
+      "affiliations": [
+        "University of Oxford - Oxford Internet Institute",
+        "affiliation not provided to SSRN",
+        "King's College London",
+        "Yale University - Digital Ethics Center"
+      ],
+      "pages": 9,
+      "posted": "18 Nov 2022",
+      "snippet": "Algorithmic Accountability Act of 2022 (US AAA) is a pragmatic approach to balancing the benefits and risks of automated decision systems.",
+      "downloads": 505
+    },
+    {
+      "abstractId": "4266365",
+      "title": "Artificial Intelligence Accountability of Public Administration in Canada",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4266365",
+      "authors": [
+        "Paul Daly",
+        "Brandon Orct"
+      ],
+      "affiliations": [
+        "University of Ottawa - Common Law Section",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 33,
+      "posted": "15 Nov 2022",
+      "snippet": "Soft law comprises the majority of algorithmic accountability in Canada at this current juncture. / Consequently, soft law has, and will likely continue to have, a strong role in shaping the law of algorithmic accountability.",
+      "downloads": 623
+    },
+    {
+      "abstractId": "4243532",
+      "title": "Interconnectedness and Financial Stability in the Era of Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4243532",
+      "authors": [
+        "Nydia Remolina"
+      ],
+      "affiliations": [
+        "Singapore Management University - Yong Pung How School of Law"
+      ],
+      "pages": 19,
+      "posted": "12 Oct 2022",
+      "snippet": "systemic risk, financial stability, AI governance, AI auditing, suptech, AI in finance",
+      "downloads": 321
+    },
+    {
+      "abstractId": "4217148",
+      "title": "The Subjects and Stages of AI Dataset Development: A Framework for Dataset Accountability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4217148",
+      "authors": [
+        "Mehtab Khan",
+        "Alex Hanna"
+      ],
+      "affiliations": [
+        "Yale Law School",
+        "Distributed AI Research Institute"
+      ],
+      "pages": 79,
+      "posted": "11 Oct 2022",
+      "snippet": "We situate our discussion within wider discussion of current debates and proposals related to algorithmic accountability.",
+      "downloads": 3671
+    },
+    {
+      "abstractId": "4227350",
+      "title": "AI Audit Washing and Accountability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4227350",
+      "authors": [
+        "Ellen P. Goodman",
+        "Julia Trehu"
+      ],
+      "affiliations": [
+        "German Marshall Fund of the United States (GMF)"
+      ],
+      "pages": 38,
+      "posted": "30 Sep 2022",
+      "snippet": "In the absence of greater specification and more independent auditors, the risk is that AI auditing becomes AI audit washing.",
+      "downloads": 1380
+    },
+    {
+      "abstractId": "4218031",
+      "title": "Law Informs Code: A Legal Informatics Approach to Aligning Artificial Intelligence with Humans",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4218031",
+      "authors": [
+        "John Nay"
+      ],
+      "affiliations": [
+        "Stanford University - CodeX - Center for Legal Informatics"
+      ],
+      "pages": 69,
+      "posted": "15 Sep 2022",
+      "snippet": "alignment. / Toward society-AI alignment, we present a framework for understanding law as the applied philosophy of multi-agent alignment, harnessing public law as / Natural Language Processing, Reinforcement Learning, RL from Human Feedback, Self-Supervised Learning, Large Language Models, Foundation Models, AI Safety, AI / Alignment, AI Ethics, AI & Law, AI Policy, Computational Law",
+      "downloads": 655
+    },
+    {
+      "abstractId": "4193199",
+      "title": "A Critical Assessment of the Algorithmic Accountability Act of 2022",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4193199",
+      "authors": [
+        "Furkan Gursoy",
+        "Ryan Kennedy",
+        "Ioannis Kakadiaris"
+      ],
+      "affiliations": [
+        "University of Houston",
+        "University of Houston",
+        "University of Houston"
+      ],
+      "pages": 8,
+      "posted": "20 Aug 2022",
+      "snippet": "On April 3rd, 2022, a group of US lawmakers introduced the Algorithmic Accountability Act of 2022. / This study paves the way for further discussions to shape algorithmic accountability regulations. / algorithmic accountability, automated decision systems, augmented critical decision processes, artificial intelligence, impact assessments, legislation",
+      "downloads": 1313
+    },
+    {
+      "abstractId": "4148214",
+      "title": "Why Firms Should Want Algorithmic Accountability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4148214",
+      "authors": [
+        "Kalinda Ukanwa",
+        "William Rand",
+        "Peter Pal Zubcsek"
+      ],
+      "affiliations": [
+        "University of California, Irvine - Paul Merage School of Business",
+        "North Carolina State University",
+        "Tel Aviv University - Coller School of Management"
+      ],
+      "pages": 28,
+      "posted": "07 Jul 2022",
+      "snippet": "We show that a lack of algorithmic accountability may lead consumers to paradoxically believe that a firm with an unfair algorithm is less biased than / algorithmic accountability, algorithmic fairness, service failure, word-of-mouth, social influence, diffusion",
+      "downloads": 231
+    },
+    {
+      "abstractId": "4142849",
+      "title": "From Algorithmic Accountability to Digital Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4142849",
+      "authors": [
+        "Jakob Mökander",
+        "Luciano Floridi"
+      ],
+      "affiliations": [
+        "University of Oxford - Oxford Internet Institute",
+        "Yale University - Digital Ethics Center"
+      ],
+      "pages": 4,
+      "posted": "24 Jun 2022",
+      "snippet": "Algorithmic Accountability Act of 2022 (US AAA) constitutes a pragmatic approach to balancing the benefits and risks brought by automated decision systems",
+      "downloads": 604
+    },
+    {
+      "abstractId": "4121483",
+      "title": "Aligned with Whom? Direct and Social Goals for AI Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4121483",
+      "authors": [
+        "Avital Balwit",
+        "Anton Korinek"
+      ],
+      "affiliations": [
+        "University of Oxford",
+        "University of Virginia"
+      ],
+      "pages": 25,
+      "posted": "27 May 2022",
+      "snippet": "As artificial intelligence (AI) becomes more powerful and widespread, the AI alignment problem - how to ensure that AI systems pursue the goals that we",
+      "downloads": 6
+    },
+    {
+      "abstractId": "4105801",
+      "title": "Expanding Civil Rights to Combat Digital Discrimination on the Basis of Poverty",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105801",
+      "authors": [
+        "Michele E. Gilman"
+      ],
+      "affiliations": [
+        "University of Baltimore - School of Law"
+      ],
+      "pages": 55,
+      "posted": "16 May 2022",
+      "snippet": "updating analog-era civil rights laws for our datafied society, as well as to bolster civil rights within comprehensive data privacy protections and algorithmic / accountability standards. / poverty, discrimination, data privacy, algorithmic accountability, civil rights, artificial intelligence",
+      "downloads": 249
+    },
+    {
+      "abstractId": "4108462",
+      "title": "The Human Rights Implications of the Use of AI in the Digital Welfare State: Lessons Learned from the Dutch Syri Case",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4108462",
+      "authors": [
+        "Mando (Adamantia) Rachovitsa",
+        "Niclas Johann"
+      ],
+      "affiliations": [
+        "University of Nottingham",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 15,
+      "posted": "13 May 2022",
+      "snippet": "analysis unpacks the relevance and complementarity of three legal/regulatory frameworks governing algorithmic systems: data protection, human rights law and algorithmic / accountability.",
+      "downloads": 282
+    },
+    {
+      "abstractId": "4104823",
+      "title": "Using sensitive data to prevent discrimination by artificial intelligence: does the GDPR need a new exception?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4104823",
+      "authors": [
+        "Marvin van Bekkum",
+        "Frederik Zuiderveen Borgesius"
+      ],
+      "affiliations": [
+        "iHub, Radboud University, Nijmegen",
+        "iHub, Radboud University, Nijmegen"
+      ],
+      "pages": 12,
+      "posted": "09 May 2022",
+      "snippet": "Non-discrimination, Data Protection, AI, Automated Decision-Making, Artificial Intelligence, Special Categories of Data, AI fairness testing, AI auditing",
+      "downloads": 663
+    },
+    {
+      "abstractId": "4104003",
+      "title": "Aligned with Whom? Direct and Social Goals for AI Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4104003",
+      "authors": [
+        "Anton Korinek",
+        "Avital Balwit"
+      ],
+      "affiliations": [
+        "University of Virginia",
+        "University of Oxford"
+      ],
+      "pages": 24,
+      "posted": "09 May 2022",
+      "snippet": "As artificial intelligence (AI) becomes more powerful and widespread, the AI alignment problem—how to ensure that AI systems pursue the goals that we want",
+      "downloads": 51
+    },
+    {
+      "abstractId": "4095654",
+      "title": "Algorithmic Accountability in the Judiciary",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4095654",
+      "authors": [
+        "Amulya Ashwathappa",
+        "Sandhya PR",
+        "Leah Verghese",
+        "Siddharth Mandrekar Rao",
+        "DAKSH India"
+      ],
+      "affiliations": [
+        "DAKSH",
+        "DAKSH",
+        "DAKSH",
+        "DAKSH",
+        "DAKSH India"
+      ],
+      "pages": 54,
+      "posted": "03 May 2022",
+      "snippet": "",
+      "downloads": 246
+    },
+    {
+      "abstractId": "4098190",
+      "title": "Algorithmic Grey Holes",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4098190",
+      "authors": [
+        "Alicia Solow-Niederman"
+      ],
+      "affiliations": [
+        "George Washington University - Law School"
+      ],
+      "pages": 24,
+      "posted": "03 May 2022",
+      "snippet": "But the relentless pursuit of transparency blinks the reality that algorithmic accountability is more complicated than opening a box.",
+      "downloads": 336
+    },
+    {
+      "abstractId": "4095525",
+      "title": "How to Save Face & the Fourth Amendment: Developing an Algorithmic Accountability Industry for Facial Recognition Technology in Law Enforcement",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4095525",
+      "authors": [
+        "Patrick K. Lin"
+      ],
+      "affiliations": [],
+      "pages": 47,
+      "posted": "30 Apr 2022",
+      "snippet": "",
+      "downloads": 146
+    },
+    {
+      "abstractId": "4087843",
+      "title": "Silenced on Social Media: The Gatekeeping Functions of Shadowbans In The American Twitterverse",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4087843",
+      "authors": [
+        "Kokil Jaidka",
+        "Subhayan Mukerjee",
+        "Yphtach Lelkes"
+      ],
+      "affiliations": [
+        "National University of Singapore (NUS) - Department of Communications and New Media",
+        "University of Pennsylvania, Annenberg School for Communication",
+        "University of Pennsylvania - Department of Political Science"
+      ],
+      "pages": 41,
+      "posted": "29 Apr 2022",
+      "snippet": "The findings have implications for algorithmic accountability and the design of future audit studies of social media platforms.",
+      "downloads": 853
+    },
+    {
+      "abstractId": "4072436",
+      "title": "Dilemmas in AI Regulation: An Exposition of the Regulatory Trade-Offs Between Responsibility and Innovation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4072436",
+      "authors": [
+        "Markus Trengove",
+        "Emre Kazim"
+      ],
+      "affiliations": [
+        "Holistic AI",
+        "Holistic AI"
+      ],
+      "pages": 14,
+      "posted": "06 Apr 2022",
+      "snippet": "Regulation; Artificial Intelligence; Compliance; Governance; Legislation; Risk Assessment; EU AI Act; UK Data Strategy; Algorithmic Accountability Act",
+      "downloads": 644
+    },
+    {
+      "abstractId": "3964899",
+      "title": "Are Algorithmic Decisions Perceived as Legitimate? The Effect of Process and Outcomes on Perceptions of Legitimacy of Algorithmic Decisions",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3964899",
+      "authors": [
+        "Kirsten Martin",
+        "Ari Ezra Waldman"
+      ],
+      "affiliations": [
+        "University of California, Irvine School of Law"
+      ],
+      "pages": 18,
+      "posted": "01 Apr 2022",
+      "snippet": "To date, the algorithmic accountability literature has elided a fundamentally empirical question important to business ethics and management: Under what",
+      "downloads": 135
+    },
+    {
+      "abstractId": "4064091",
+      "title": "capAI - A Procedure for Conducting Conformity Assessment of AI Systems in Line with the EU Artificial Intelligence Act",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4064091",
+      "authors": [
+        "Luciano Floridi",
+        "Matthias Holweg",
+        "Mariarosaria Taddeo",
+        "Javier Amaya",
+        "Jakob Mökander",
+        "Yuni Wen"
+      ],
+      "affiliations": [
+        "Yale University - Digital Ethics Center",
+        "University of Oxford - Said Business School",
+        "University of Oxford - Oxford Internet Institute",
+        "University of Oxford - Said Business School",
+        "University of Oxford - Oxford Internet Institute",
+        "University of Oxford - Said Business School"
+      ],
+      "pages": 91,
+      "posted": "25 Mar 2022",
+      "snippet": "AI, AI Act, AI legislation, AI Auditing, Conformity Assessment, EU, Trustworthy AI",
+      "downloads": 23558
+    }
+  ]
+}

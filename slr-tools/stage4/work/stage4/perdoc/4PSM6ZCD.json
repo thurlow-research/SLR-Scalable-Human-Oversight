@@ -1,0 +1,69 @@
+{
+  "item_key": "4PSM6ZCD",
+  "citation": "Zhao 2025",
+  "evidence_type": [
+    "benchmark",
+    "empirical",
+    "controlled-experiment",
+    "dataset"
+  ],
+  "problem_statement": "The document addresses whether code produced by LLM coding agents under the 'vibe coding' paradigm (where engineers delegate complex coding tasks to agents with little supervision) is secure enough to deploy, and it benchmarks the security vulnerability of agent-generated code on real-world repository-level tasks.",
+  "magnitude_evidence": "A recent survey shows that 75% of respondents are using vibe coding, among which 90% find it satisfactory [23]",
+  "risk_types": [
+    "security",
+    "software-vulnerability",
+    "authentication",
+    "timing-side-channel",
+    "CRLF/header-injection",
+    "session-fixation",
+    "stored-XSS",
+    "session-expiration-bypass",
+    "plaintext-credentials",
+    "exploitable-by-attackers"
+  ],
+  "insufficiency_evidence": "Although 61% of the solutions from SWE-Agent with Claude 4 Sonnet are functionally correct, only 10.5% are secure; 82.8% of functionally correct solutions are insecure, and preliminary security strategies such as vulnerability hints cannot mitigate these issues (reducing functional correctness by ~7 points)",
+  "solution_mechanisms": [
+    "security+functionality unit-test benchmark",
+    "automatic task curation pipeline from vulnerability-fix commits",
+    "generic security-reminder prompting",
+    "self-selection CWE identification before implementation",
+    "oracle CWE hint prompting",
+    "runtime execution environment with security tests"
+  ],
+  "mechanism_keywords": [
+    "benchmark",
+    "security-gate",
+    "security-testing",
+    "prompt-mitigation",
+    "cwe-self-selection",
+    "oracle-hint",
+    "vulnerability-hints",
+    "repository-level-eval",
+    "test-based-verification",
+    "provenance"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-deployment",
+    "CI",
+    "code-review"
+  ],
+  "human_role": "escalation-target",
+  "key_constructs": [
+    "SUSVIBES",
+    "vibe coding",
+    "FUNCPASS",
+    "SECPASS",
+    "SECPASS\u22a5FUNCPASS",
+    "self-selection CWE",
+    "oracle CWE"
+  ],
+  "governance_refs": [
+    "CWE (Common Weakness Enumeration)",
+    "CVE",
+    "National Vulnerability Database (NVD)"
+  ],
+  "scope_fit": "problem",
+  "notes": "Some inline figure/equation text (e.g. C-1 masked-commit notation) is garbled from PDF extraction, but the substantive content is intact.",
+  "_truncated": false
+}

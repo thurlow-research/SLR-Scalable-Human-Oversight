@@ -1,0 +1,34 @@
+[2026-05-26 00:40:14] === Build validation workbook ===
+[2026-05-26 00:40:14] Input:  decisions.csv
+[2026-05-26 00:40:14] Output: validation_workbook.csv
+[2026-05-26 00:40:14] 
+Reading decisions.csv...
+[2026-05-26 00:40:14]   2952 items in decisions.csv
+[2026-05-26 00:40:14] Fetching 2952 items from Zotero in batches of 50...
+[2026-05-26 00:40:34]   Fetched 500/2952
+[2026-05-26 00:40:55]   Fetched 1000/2952
+[2026-05-26 00:41:15]   Fetched 1500/2952
+[2026-05-26 00:41:36]   Fetched 2000/2952
+[2026-05-26 00:41:56]   Fetched 2500/2952
+[2026-05-26 00:42:15]   Fetched 2952/2952
+[2026-05-26 00:42:15]   Successfully fetched: 2952 of 2952
+[2026-05-26 00:42:15] 
+Building output rows...
+[2026-05-26 00:42:15] 
+=== SUMMARY ===
+[2026-05-26 00:42:15] Total rows: 2952
+[2026-05-26 00:42:15] With human_decision populated: 1693
+[2026-05-26 00:42:15] Without human_decision (in queue or not tagged): 1259
+[2026-05-26 00:42:15] Not found in Zotero: 0
+[2026-05-26 00:42:15] 
+Claude decision distribution: {'keep': 736, 'discard': 1468, 'maybe': 748}
+[2026-05-26 00:42:15] Human decision distribution:  {'keep': 320, 'discard': 1346, 'maybe': 27}
+[2026-05-26 00:42:15] 
+Wrote 2952 rows to validation_workbook.csv
+[2026-05-26 00:42:15] 
+Next steps:
+[2026-05-26 00:42:15]   1. Randomly sample 500 rows for ChatGPT/Gemini validation
+[2026-05-26 00:42:15]   2. Add 100 rows where human_decision is populated (your manual judgements)
+[2026-05-26 00:42:15]   3. Run those through ChatGPT and Gemini per the validation prompt
+[2026-05-26 00:42:15]   4. Fill chatgpt_decision and gemini_decision columns
+[2026-05-26 00:42:15]   5. Use apply_csv_decisions.py (zotero-bulk-tagging skill) to import results back to Zotero

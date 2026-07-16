@@ -1,0 +1,15 @@
+{
+  "item_key": "Y4TIF9KW",
+  "methods": [
+    "design-science / prototype / tool-build",
+    "benchmark-evaluation",
+    "case-study",
+    "qualitative-analysis",
+    "expert-review"
+  ],
+  "empirical": true,
+  "human_subjects": true,
+  "primary_hint": "design-science / prototype / tool-build",
+  "notes": "DSR paper building the Code Prism artifact, evaluated three ways: benchmark-style tool comparison on the single DVNA vulnerable repo (case-study context), plus qualitative feedback from 2 security auditors and 2 UX specialists (human_subjects via expert review). Evaluation is limited/qualitative and single-repo by the authors' own admission.",
+  "citation": "A. N. A. Hadee 2025"
+}

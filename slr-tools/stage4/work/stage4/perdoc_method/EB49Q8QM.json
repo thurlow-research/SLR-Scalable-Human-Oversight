@@ -1,0 +1,12 @@
+{
+  "item_key": "EB49Q8QM",
+  "methods": [
+    "conceptual/position/framework",
+    "literature-review/mapping"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position/framework",
+  "notes": "Argument-based model development using a critical-thinking (premise-conclusion) method grounded entirely in secondary literature; produces four CSFs and the Influence-Impact-Mitigation of Automation Bias model. Authors explicitly state the framework has not been empirically tested and defer data collection to future work. Illustrative cyber-attack examples are secondary-source vignettes, not case-study data.",
+  "citation": "Tilbury 2024"
+}

@@ -1,0 +1,24 @@
+Cores: 114
+Resolving cores to S2 ids ...
+  resolved 103/114: {'ARXIV': 47, 'DOI': 44, 'title': 9, 'title-weak': 3}
+Fetching references + aggregating co-citations ...
+  20/103 cores processed, 622 unique refs so far
+  40/103 cores processed, 1298 unique refs so far
+  60/103 cores processed, 1782 unique refs so far
+  80/103 cores processed, 2463 unique refs so far
+  100/103 cores processed, 2809 unique refs so far
+
+Unique referenced works: 2857
+Not already in our corpus: 2787
+co-citation distribution (count : #refs / #refs-not-in-corpus):
+  cited by 20 cores :     1 refs  (1 not-in-corpus)
+  cited by 14 cores :     1 refs  (0 not-in-corpus)
+  cited by  8 cores :     3 refs  (2 not-in-corpus)
+  cited by  7 cores :     2 refs  (2 not-in-corpus)
+  cited by  6 cores :     4 refs  (4 not-in-corpus)
+  cited by  5 cores :     8 refs  (7 not-in-corpus)
+  cited by  4 cores :    12 refs  (10 not-in-corpus)
+  cited by  3 cores :    54 refs  (49 not-in-corpus)
+  cited by  2 cores :   210 refs  (196 not-in-corpus)
+
+Outputs -> /Users/scott/Library/CloudStorage/OneDrive-purdue.edu/Systemic Literature Review/slr-tools/stage4/work/stage4/core_cocitation.csv (+ .json), core_s2_resolution.csv

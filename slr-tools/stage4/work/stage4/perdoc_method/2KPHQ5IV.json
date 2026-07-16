@@ -1,0 +1,13 @@
+{
+  "item_key": "2KPHQ5IV",
+  "methods": [
+    "conceptual/position",
+    "framework-model",
+    "illustrative-scenario"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position",
+  "notes": "Vision/position paper proposing the 'Agentic Consensus' paradigm and a formal framework (I,C,A,E with operators \u03a6/\u03a8). The two 'case studies' (Section 4) are explicitly illustrative hypothetical scenarios, not empirical data. It proposes an evaluation framework and benchmark task families but does not implement, run, or evaluate anything\u2014no tool built, no data collected, no experiments conducted.",
+  "citation": "Wang 2026"
+}

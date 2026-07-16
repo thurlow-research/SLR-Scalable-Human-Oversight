@@ -1,0 +1,16 @@
+{
+  "item_key": "LGZXFLSJ",
+  "methods": [
+    "multi-case-study",
+    "interviews",
+    "qualitative-analysis",
+    "causal-mapping",
+    "longitudinal-study",
+    "member-checking/validation-workshop"
+  ],
+  "empirical": true,
+  "human_subjects": true,
+  "primary_hint": "multi-case-study",
+  "notes": "Qualitative multi-case study of three Danish software organizations; 15 semi-structured interviews plus validation interviews a year later and a cross-case workshop, analyzed via causal mapping to visualize interconnected risks of generative AI. No tool build, benchmark, or quantitative measurement.",
+  "citation": "Hein 2025"
+}

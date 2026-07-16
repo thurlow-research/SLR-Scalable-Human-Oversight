@@ -1,0 +1,63 @@
+{
+  "item_key": "MFSZPSPU",
+  "citation": "Shi 2025",
+  "evidence_type": [
+    "empirical",
+    "framework-model",
+    "system-tool",
+    "case-study"
+  ],
+  "problem_statement": "Reliable offline evaluation of AI/APR-generated patch validity is hard: execution-based tests (pass@k) do not capture true validity, and manual expert assessment is costly and inconsistent, making it hard to oversee AI-generated patches at scale.",
+  "magnitude_evidence": "At k=20, 96% of patches passed reproduction tests while only 80% were judged valid (16-point gap); out of 504 patches that passed reproduction tests, 219 (43.5%) were deemed invalid by the LLM judge",
+  "risk_types": [
+    "quality",
+    "test-overfitting",
+    "root-cause-masking",
+    "incomplete-fix",
+    "regression",
+    "security",
+    "specification-violation",
+    "hallucination",
+    "evaluation-unreliability"
+  ],
+  "insufficiency_evidence": "Independent human raters showed low inter-rater agreement (Fleiss's kappa 0.31) using self-authored rubrics; on SWE-Bench, prior work found many test-passing patches were functionally incorrect (e.g., Recoder only 54.3% of plausible patches correct); LLM judge precision only 0.65 on full benchmark (false positives)",
+  "solution_mechanisms": [
+    "LLM-generated per-bug rubric",
+    "human review/refinement of rubric into golden rubric",
+    "LLM-as-a-judge patch validity labeling",
+    "rubric template with root cause + requirements + examples",
+    "two-stage generate-then-judge framework",
+    "use judge as automated screener to filter invalid patches",
+    "self-improvement cycle flagging low-confidence cases for human feedback"
+  ],
+  "mechanism_keywords": [
+    "llm-as-judge",
+    "rubric-guided-evaluation",
+    "hitl",
+    "human-refinement",
+    "spec-driven",
+    "calibration",
+    "screening-filter",
+    "confidence-routing",
+    "escalation",
+    "template-standardization"
+  ],
+  "oversight_locus": [
+    "post-generation",
+    "offline-evaluation",
+    "pre-deployment",
+    "code-review"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "golden rubric",
+    "human-in-the-loop rubric-guided patch evaluation",
+    "evaluation gap (F2P vs valid)",
+    "valid@k",
+    "(pass & LLM-valid)@k"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

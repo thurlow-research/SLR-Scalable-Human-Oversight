@@ -1,0 +1,79 @@
+{
+  "item_key": "N7E3MR2V",
+  "citation": "P. R. P 2025",
+  "evidence_type": [
+    "system-tool",
+    "conceptual-position",
+    "framework-model"
+  ],
+  "problem_statement": "SDLC processes still depend on manual oversight, causing delays, misaligned requirements, and rework; the paper addresses how to embed governance and human approval into an agentic AI system that automates the software development lifecycle while managing risks like hallucination and miscalibration.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "hallucination",
+    "misclassification",
+    "estimator-miscalibration",
+    "biased-decision-making",
+    "prompt-injection",
+    "accountability",
+    "transparency",
+    "quality",
+    "rework"
+  ],
+  "insufficiency_evidence": "\"most of these automation efforts are narrow in scope... rather than coordinating the entire workflow. The burden of decision-making, planning, and cross-tool synchronization still rests on human project managers and engineering leads.\"",
+  "solution_mechanisms": [
+    "governance guardrails for human approval",
+    "human approval at critical decision points",
+    "decision logs and audit trails",
+    "observability/telemetry",
+    "safeguards against hallucination and misclassification",
+    "CI quality gates (coverage, SAST/DAST)",
+    "flaky-test quarantine",
+    "preview environments for client validation",
+    "hybrid parametric+ML estimation with uncertainty intervals",
+    "staged/progressive deployment rollouts",
+    "delay-diagnostic classifier",
+    "specialized multi-agent orchestration"
+  ],
+  "mechanism_keywords": [
+    "guardrail",
+    "hitl",
+    "human-approval",
+    "observability",
+    "audit-trail",
+    "decision-log",
+    "quality-gate",
+    "security-gate",
+    "sast-dast",
+    "preview-environment",
+    "staged-rollout",
+    "calibration",
+    "uncertainty-quantification",
+    "multi-agent",
+    "orchestration",
+    "spec-driven",
+    "escalation"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-commit",
+    "CI",
+    "pre-publish",
+    "code-review",
+    "post-deployment",
+    "runtime"
+  ],
+  "human_role": "in-command",
+  "key_constructs": [
+    "SDLC AutoPilot AI",
+    "scope churn",
+    "governance guardrails",
+    "hybrid human-AI collaboration",
+    "agentic automation"
+  ],
+  "governance_refs": [
+    "SWEBOK"
+  ],
+  "scope_fit": "solution",
+  "notes": "Proposed/aspirational system; evaluation results are from a proposed framework with synthetic case studies and self-reported gains, not independently validated.",
+  "_truncated": false
+}

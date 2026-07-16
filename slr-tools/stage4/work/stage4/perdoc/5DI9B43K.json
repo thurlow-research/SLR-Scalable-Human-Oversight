@@ -1,0 +1,57 @@
+{
+  "item_key": "5DI9B43K",
+  "citation": "Sistla 2025",
+  "evidence_type": [
+    "system-tool",
+    "empirical",
+    "benchmark"
+  ],
+  "problem_statement": "LLM-based code reasoning agents produce incorrect or hallucinated answers when explaining code, judging equivalence, or validating auto-generated code, so their outputs must be manually verified before they can be trusted. The paper addresses automatically validating an agent's reasoning steps to reduce this manual oversight burden.",
+  "magnitude_evidence": "\"the agent hallucinates on 40% of the problems (8/20)\" for program equivalence queries; for MSAN bugs 12/100 runs had invalid explanations by human judgment",
+  "risk_types": [
+    "hallucination",
+    "incorrect-reasoning",
+    "correctness",
+    "memory-safety",
+    "out-of-bounds-access",
+    "developer-productivity"
+  ],
+  "insufficiency_evidence": "LLM-as-judge \"is not foolproof either and is still susceptible to the LLM judge hallucinating\"; and manual review is costly \u2014 answers \"need to be manually verified before they can be trusted\" requiring \"human effort\" and \"slower developer productivity\"; the formal verifier itself has \"perfect precision and low recall\" (validated only 18/88, later 36/88)",
+  "solution_mechanisms": [
+    "extract formal representation of agent's reasoning",
+    "verify reasoning steps with formal verification tools",
+    "CodeSemantics/AgentClaims/VerificationCondition framework",
+    "Datalog/Souffl\u00e9 formalization of agent claims",
+    "post-facto verification of LLM prose reasoning",
+    "iterative formalization to synthesize missing predicates",
+    "trace extraction from agent explanations"
+  ],
+  "mechanism_keywords": [
+    "formal-verification",
+    "autoformalization",
+    "datalog",
+    "program-analysis",
+    "verification-condition",
+    "post-hoc-verification",
+    "hallucination-detection",
+    "static-analysis",
+    "llm-as-judge"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "generation-time",
+    "post-generation"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "CodeSemantics",
+    "AgentClaims",
+    "VerificationCondition",
+    "verified code reasoning",
+    "post-facto reasoning-step verification"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Text contains minor PDF-extraction garbling (spaced-out code, figure captions interleaved) but is readable; one sentence appears truncated (\"falsely concludes the programs\").",
+  "_truncated": false
+}

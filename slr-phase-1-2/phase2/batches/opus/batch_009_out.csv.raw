@@ -1,0 +1,28 @@
+Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.
+I'll work through each paper systematically against the operationalizability test and tier criteria.
+
+```csv
+item_key,decision,confidence,rationale,prior_decision,prior_confidence
+EPBF85Q9,discard,high,"Abstract is keywords plus a single-line claim; no mechanism, methodology, or findings visible to assess operationalizability for SE teams.",discard,low
+Z2EYJP79,keep,medium,"Empirical governance gap data (85% lack protective measures despite 95% risk awareness) quantifies adoption barriers; risk-prioritization frameworks for resource-constrained environments transfer to SE teams.",maybe,medium
+WIFK95JQ,keep,medium,"Auditing methodology for LLM behavior where correctness is undefined directly applies to AI code quality assessment; employment domain but the audit framework structure transfers without re-derivation.",maybe,medium
+3X9FU8H9,discard,high,"Abstract is keywords plus one claim about monitoring costs; no game-theoretic model, methodology, or concrete mechanism described to operationalize.",maybe,medium
+77GQQEXZ,discard,medium,"Legal technology commentary proposing generic audit mechanisms; 'three reasons to pause' framing is cautionary not constructive; no reproducible methodology or specified mechanisms.",maybe,low
+FWCGTMFN,keep,medium,"Risk-scaled oversight framework with maturity-based adoption path provides domain-agnostic governance mechanisms; risk tiers map to code criticality without substantial re-derivation.",maybe,medium
+4A6JE4Z8,discard,high,"No abstract; title indicates social AI capabilities research without governance, oversight, or risk measurement angle.",discard,low
+JW9744N2,discard,medium,"No abstract to assess operationalizability; OT security principles for industrial systems may not transfer to software code governance without the content to evaluate.",maybe,low
+YHXNQBEB,keep,medium,"SWAR mechanism for scalable human oversight of LLM outputs addresses identical structural problem to code review; validation pipeline and risk assessment approach transfer directly.",maybe,medium
+27D36V3E,keep,medium,"Empirical case study of AI code tools in SMEs with quantified error reduction (50%) provides reproducible methodology; IP and over-reliance risks identified for governance consideration.",maybe,medium
+IMLDX22L,discard,high,"Abstract is keywords only (AI Auditing, Cybersecurity Risk Assessment); cannot assess operationalizability without substantive content.",maybe,medium
+ISFAYYKX,discard,medium,"Reproducible accuracy methodology but scope is SQL syntax only; human supervision finding is descriptive not a framework; too narrow to operationalize general AI code governance.",maybe,medium
+5EU48D9J,discard,high,"Abstract is keywords only; no substantive content to assess whether any actionable contribution exists.",discard,low
+ZQY67LDF,keep,medium,"Empirical interview study identifies overreliance risks and security vulnerabilities in AI adoption; findings on rushed implementation and accountability gaps inform governance timing and risk signals.",maybe,medium
+QBZTPWQR,keep,medium,"Verifiable context engineering with accountability mechanisms and GitHub assistant exemplar demonstrates SE relevance; traceability infrastructure directly applicable to AI code assistant governance.",maybe,medium
+4GSP8DTH,discard,medium,"Creative IP authorship framing doesn't transfer to code where work-for-hire and different liability structures apply; mandatory transparency requirement too generic without code-specific operationalization.",maybe,medium
+KJRRCXTZ,discard,high,"Abstract is keywords plus one provocative claim about liability; no concrete framework, methodology, or operationalizable mechanism described.",maybe,medium
+CIHI7CTY,keep,medium,"Execution authorization and responsibility attribution mechanisms directly apply to AI code commit/deploy gates; deterministic reproducibility supports audit requirements.",maybe,medium
+NZXY7X7U,keep,medium,"Pre-execution control at inference-to-execution boundary is structurally identical to code review before merge; the gap between AI output and action is exactly the code governance problem.",maybe,medium
+DLN8GFHU,discard,medium,"AI experimentation documentation framework targets researchers, not software teams; documents AI development process not AI-generated code artifacts that SE teams need to govern.",maybe,medium
+```
+
+**Summary**: 11 keep, 9 discard. The keeps cluster around: empirical governance gap studies (Z2EYJP79, ZQY67LDF), transferable oversight mechanisms (FWCGTMFN, YHXNQBEB, CIHI7CTY, NZXY7X7U), auditing methodologies for LLM outputs (WIFK95JQ), and AI code tool case studies (27D36V3E, QBZTPWQR). Discards were primarily keyword-only abstracts with no assessable content or domain-specific papers without transferable mechanisms.

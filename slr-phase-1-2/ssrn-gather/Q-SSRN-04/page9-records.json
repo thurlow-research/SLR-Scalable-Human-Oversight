@@ -1,0 +1,565 @@
+{
+  "count": 33,
+  "total": "433",
+  "page": "9",
+  "records": [
+    {
+      "abstractId": "4776408",
+      "title": "Generative Ai, Chatbots, and Programming Skills: Examining Code Suggestion Features in Enhancing Self-Learning Capabilities",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4776408",
+      "authors": [
+        "Arum Park",
+        "Taekyung Kim"
+      ],
+      "affiliations": [
+        "Seoul Cyber University",
+        "Kyung Hee University"
+      ],
+      "pages": 22,
+      "posted": "28 Mar 2024",
+      "snippet": "This study investigates the role of generative artificial intelligence (AI) chatbots, specifically their code suggestion features, in enhancing the self-learning / the challenges of AI-generated content and the importance of human oversight in educational settings. / generative AI, programming education, self-learning, AI chatbots",
+      "downloads": 182
+    },
+    {
+      "abstractId": "4731833",
+      "title": "Final exit before the bridge in AI: Strengthening the right to human oversight of vulnerable subjects with two agents",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4731833",
+      "authors": [
+        "Zeynep Öğretmen Kotil",
+        "Sabire Sanem Yilmaz"
+      ],
+      "affiliations": [
+        "Independent",
+        "T.C. Maltepe University - Maltepe University"
+      ],
+      "pages": 31,
+      "posted": "18 Mar 2024",
+      "snippet": "The use of Artificial Intelligence systems has major implications for vulnerable subjects. / In this context, the notions of human oversight and human agents are analyzed, the treatment of this right in the existing regulations is outlined, and / Vulnerability, Human Oversight, Human Agent, Sense of Agent, Anthropomorhized Technology",
+      "downloads": 23
+    },
+    {
+      "abstractId": "4730668",
+      "title": "Final Exit Before the Bridge in AI: Strengthening the Right to Human Oversight of Vulnerable Subjects With Two Agents",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4730668",
+      "authors": [
+        "Sabire Sanem Yilmaz",
+        "Zeynep Öğretmen Kotil"
+      ],
+      "affiliations": [
+        "T.C. Maltepe University - Maltepe University",
+        "Independent"
+      ],
+      "pages": 31,
+      "posted": "16 Mar 2024",
+      "snippet": "The use of Artificial Intelligence systems has major implications for vulnerable subjects. / In this context, the notions of human oversight and human agents are analyzed, the treatment of this right in the existing regulations is outlined, and / AI, Vulnerability, Anthropomorhized, human oversight, human agent, sense of agent",
+      "downloads": 73
+    },
+    {
+      "abstractId": "4729072",
+      "title": "Taking Training Seriously: Human Guidance and Management-Based Regulation of Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4729072",
+      "authors": [
+        "Cary Coglianese",
+        "Colton R. Crum"
+      ],
+      "affiliations": [
+        "University of Pennsylvania Carey Law School",
+        "University of Notre Dame"
+      ],
+      "pages": 10,
+      "posted": "17 Feb 2024",
+      "snippet": "Fervent calls for more robust governance of the harms associated with artificial intelligence (AI) are leading to the adoption around the world of what / These management-based initiatives seek to motivate an increase in human oversight of how AI tools are trained and developed. / artificial intelligence, AI, management-based regulation, European Union AI Act, governance, regulatory standards, International Organization for Standardization",
+      "downloads": 264
+    },
+    {
+      "abstractId": "4695670",
+      "title": "A Reliable Knowledge Processing Framework for Combustion Science Using Foundation Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4695670",
+      "authors": [
+        "Vansh Sharma",
+        "Venkat Raman"
+      ],
+      "affiliations": [
+        "University of Michigan at Ann Arbor",
+        "University of Michigan at Ann Arbor"
+      ],
+      "pages": 38,
+      "posted": "15 Jan 2024",
+      "snippet": "Despite identified areas for improvement, the framework consistently delivers accurate domain-specific responses with minimal human oversight. / Foundation Models, Large Language Models (LLM), Combustion, Knowledge Processing, Retrieval-Augmented Generation (RAG), Generative AI, Oblique Detonation",
+      "downloads": 32
+    },
+    {
+      "abstractId": "4639168",
+      "title": "LexOptima: The Promise of AI-Enabled Legal Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4639168",
+      "authors": [
+        "Benjamin Alarie",
+        "Samuel Becher"
+      ],
+      "affiliations": [
+        "University of Toronto - Faculty of Law",
+        "Victoria University of Wellington"
+      ],
+      "pages": 42,
+      "posted": "01 Dec 2023",
+      "snippet": "intelligence, are poised to significantly transform legal systems. / oversight. / Decent law, decentralization, data-driven law, community-driven law, access to justice, artificial intelligence, legal singularity, legal transformation",
+      "downloads": 398
+    },
+    {
+      "abstractId": "4622405",
+      "title": "The risks of risk-based AI regulation: taking liability seriously",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4622405",
+      "authors": [
+        "Martin Kretschmer",
+        "Tobias Kretschmer",
+        "Alexander Peukert",
+        "Christian Peukert"
+      ],
+      "affiliations": [
+        "University of Glasgow - School of Law",
+        "Ludwig Maximilian University of Munich (LMU) - Faculty of Business Administration (Munich School of Management)",
+        "Goethe University Frankfurt - Faculty of Law",
+        "University of Lausanne - Faculty of Business and Economics (HEC Lausanne)"
+      ],
+      "pages": 19,
+      "posted": "29 Nov 2023",
+      "snippet": "Some experts are calling for a moratorium on the training of AI systems more powerful than GPT-4. / We offer a review and critique, specifically discussing the AI Act’s problematic obligations regarding data quality and human oversight.",
+      "downloads": 698
+    },
+    {
+      "abstractId": "4647568",
+      "title": "AI liability in Europe: How does it complement risk regulation and deal with the problem of human oversight?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4647568",
+      "authors": [
+        "Beatriz Botero Arcila"
+      ],
+      "affiliations": [
+        "Institut d'Etudes Politiques de Paris (Sciences Po) - Sciences Po Law School - Ecole de Droit de Sciences Po"
+      ],
+      "pages": 17,
+      "posted": "29 Nov 2023",
+      "snippet": "While risk regulations like the AI Act regulate some aspects of these human and machine interactions, they do not offer those impacted by AI systems any / AI Liability, AI Act, Human in the loop, Human-AI systems, AI harms, Liability law, fault based liability, strict liability, AI complexity, AI opacity",
+      "downloads": 340
+    },
+    {
+      "abstractId": "4551504",
+      "title": "Beyond the Iudex Threshold: Human Oversight as the Conscience of Machine Learning",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4551504",
+      "authors": [
+        "Jessica E. Brown",
+        "E. Jason Albert"
+      ],
+      "affiliations": [
+        "State of Nevada",
+        "ADP, Inc."
+      ],
+      "pages": 32,
+      "posted": "28 Aug 2023",
+      "snippet": "intelligence. / Finally, Part V argues why human oversight is an essential supplement to this new regulatory approach and sets forth why the true objective of human oversight / Artificial Intelligence, AI, Judgments, Jurisprudence, Regulatory Law, Law, Technology, Iudex",
+      "downloads": 214
+    },
+    {
+      "abstractId": "4528698",
+      "title": "Lessons from GDPR for AI Policymaking",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4528698",
+      "authors": [
+        "Josephine Wolff",
+        "William Lehr",
+        "Christopher S. Yoo"
+      ],
+      "affiliations": [
+        "The Fletcher School of Law and Diplomacy, Tufts University",
+        "Massachusetts Institute of Technology (MIT) - Computer Science and Artificial Intelligence Laboratory (CSAIL)"
+      ],
+      "pages": 19,
+      "posted": "02 Aug 2023",
+      "snippet": "Following the release of ChatGPT, some EU regulators proposed changes to the EU AI Act to classify AI systems like ChatGPT that generate complex texts / without any human oversight as “high-risk” AI systems that would fall under the law’s requirements.",
+      "downloads": 1409
+    },
+    {
+      "abstractId": "4478588",
+      "title": "Artificial Intelligence and the Practice of Law Part 1: Lawyers Must be Professional and Responsible Supervisors of AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4478588",
+      "authors": [
+        "Michael D. Murray"
+      ],
+      "affiliations": [
+        "University of Kentucky - J. David Rosenberg College of Law"
+      ],
+      "pages": 6,
+      "posted": "19 Jul 2023",
+      "snippet": "This article discusses the benefits and challenges of using artificial intelligence (AI) systems to assist lawyers in legal practice. / also remember the importance of human oversight and judgment in the use of AI for law. / artificial intelligence, AI, machine learning, verbal generative AI, hallucination, legal research, legal drafting, professional responsibility, human / supervision, best practices, ethics, human oversight, document review, value judgments, confidentiality",
+      "downloads": 1850
+    },
+    {
+      "abstractId": "4478107",
+      "title": "Rethinking Decisions Under Article 22 of the GDPR: Implications for Semi-Automated Legal Decision-Making",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4478107",
+      "authors": [
+        "Peter Alexander Earls Davis",
+        "Sebastian Felix Schwemer"
+      ],
+      "affiliations": [
+        "University of Copenhagen - Centre for Advanced Studies in Bioscience Innovation Law (CeBIL)",
+        "BI Norwegian Business School"
+      ],
+      "pages": 9,
+      "posted": "23 Jun 2023",
+      "snippet": "The implications of this interpretation for legal artificial intelligence (AI) and intelligent assistance (IA) are briefly discussed, with potential increased / Automated decision-making, Article 22 GDPR, Human Oversight, Compliance",
+      "downloads": 794
+    },
+    {
+      "abstractId": "4447526",
+      "title": "ChatGPT and Generative AI: The New Barbarians at the Gate",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4447526",
+      "authors": [
+        "David Krause"
+      ],
+      "affiliations": [
+        "Marquette University"
+      ],
+      "pages": 16,
+      "posted": "15 May 2023",
+      "snippet": "The integration of artificial intelligence (AI) in financial analysis is transforming the industry, enabling advanced data analysis, risk assessment, portfolio / oversight in critical financial judgments. / artificial intelligence, financial analysis, transformation, ethics",
+      "downloads": 580
+    },
+    {
+      "abstractId": "4416586",
+      "title": "Reasonable AI and Other Creatures: What Role for AI Standards in Liability Litigation?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4416586",
+      "authors": [
+        "Cristina Frattone"
+      ],
+      "affiliations": [
+        "Roma Tre University - Department of Law"
+      ],
+      "pages": 41,
+      "posted": "24 Apr 2023",
+      "snippet": "The regulation of artificial intelligence (AI) makes no exception as made clear by the AI Act proposal. / Finally, it is argued that AI standards contribute to defining the duty of care expected from developers and professional operators of AI systems. / artificial intelligence, standards, tort law, product liability, contractual liability",
+      "downloads": 170
+    },
+    {
+      "abstractId": "4422742",
+      "title": "The Incompatibility of Artificial Intelligence and Citizens United",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4422742",
+      "authors": [
+        "Michael R. Siebecker"
+      ],
+      "affiliations": [
+        "University of Denver Sturm College of Law"
+      ],
+      "pages": 63,
+      "posted": "20 Apr 2023",
+      "snippet": "But does the growing prevalence of artificial intelligence (“AI”) in directing the content and dissemination of political communications call into question / oversight? / Corporate Law, First Amendment, Artificial Intelligence, Corporate Speech, Citizens United",
+      "downloads": 132
+    },
+    {
+      "abstractId": "4414559",
+      "title": "The European AI Act’s Impact on Financial Markets: From Governance to Co-Regulation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4414559",
+      "authors": [
+        "Antonella Sciarrone Alibrandi",
+        "Maddalena Rabitti",
+        "Giulia Schneider"
+      ],
+      "affiliations": [
+        "Università Cattolica",
+        "Roma Tre University, Rome, Italy",
+        "Università Cattolica del Sacro Cuore di Milano"
+      ],
+      "pages": 79,
+      "posted": "11 Apr 2023",
+      "snippet": "based on the collaboration between different financial authorities, and between financial and other technology-relevant authorities, as the European Artificial / Intelligence Board. / Artificial Intelligence, Financial Markets, AI Act, DORA, Regulatory Sandboxes, Human Oversight, Fundamental Rights; Supervision",
+      "downloads": 1142
+    },
+    {
+      "abstractId": "4405389",
+      "title": "The Function of chat GPT in Social Media: According to chat GPT",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4405389",
+      "authors": [
+        "Som Biswas"
+      ],
+      "affiliations": [
+        "University of Tennessee, Memphis - Health Science Center"
+      ],
+      "pages": 6,
+      "posted": "31 Mar 2023",
+      "snippet": "disadvantages to consider, such as its lack of empathy, potential for bias and inaccuracies, limited context awareness, difficulties in scaling, and need for human / oversight. / chatGPT, social media, AI, Artificial Intelligence",
+      "downloads": 3839
+    },
+    {
+      "abstractId": "4377481",
+      "title": "Institutionalised Distrust and Human Oversight of Artificial Intelligence: Toward a Democratic Design of AI Governance under the European Union AI Act",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4377481",
+      "authors": [
+        "Johann Laux"
+      ],
+      "affiliations": [
+        "University of Oxford - Oxford Internet Institute"
+      ],
+      "pages": 25,
+      "posted": "07 Mar 2023",
+      "snippet": "Human oversight has become a key mechanism for the governance of artificial intelligence (“AI”). / Human overseers are supposed to increase the accuracy and safety of AI systems, uphold human values, and build trust in the technology. / Artificial Intelligence, Human Oversight, AI Act, Trust, Distrust, Institutional Design",
+      "downloads": 900
+    },
+    {
+      "abstractId": "4365515",
+      "title": "Artificial Intelligence Act: A Policy Prototyping Experiment: Operationalizing the Requirements for AI Systems – Part I",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4365515",
+      "authors": [
+        "Norberto Nuno Gomes de Andrade",
+        "Antonella Zarra"
+      ],
+      "affiliations": [
+        "IE Law School",
+        "University of Hamburg, Institute of Law and Economics"
+      ],
+      "pages": 76,
+      "posted": "27 Feb 2023",
+      "snippet": "This report presents the findings and recommendations of the first part of the Open Loop’s policy prototyping program on the European Artificial Intelligence / Therefore, it is important to ensure that the future workforce contains enough qualified workers, in particular when it comes to human oversight of AI / Artificial Intelligence, European Union, AI companies, Artificial Intelligence Act, AI Act, AI governance, AI regulation, policy prototyping, regulatory / sandboxes, risk assessment, AI transparency, AI risk management, human oversight, AI standards, experimental regulation, data quality",
+      "downloads": 334
+    },
+    {
+      "abstractId": "4316615",
+      "title": "Large Language Models as Corporate Lobbyists",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4316615",
+      "authors": [
+        "John Nay"
+      ],
+      "affiliations": [
+        "Stanford University - CodeX - Center for Legal Informatics"
+      ],
+      "pages": 9,
+      "posted": "04 Jan 2023",
+      "snippet": "However, firms have an incentive to use less and less human oversight over automated assessments of policy ideas and the written communication to regulatory / Artificial Intelligence, AI, Machine Learning, Natural Language Processing, NLP, Self-Supervised Learning, Large Language Models, GPT, Foundation Models",
+      "downloads": 1387
+    },
+    {
+      "abstractId": "4254940",
+      "title": "Exploring Article 14 of the EU AI proposal: accountability challenges of the human in the loop when supervising high-risk AI systems in public administration",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4254940",
+      "authors": [
+        "Jorge Constantino"
+      ],
+      "affiliations": [
+        "TU Delft"
+      ],
+      "pages": 57,
+      "posted": "21 Oct 2022",
+      "snippet": "This research paper utilises a theoretical approach to analyse Article 14, human oversight, of the proposal for Regulation on the European Parliament and / This research was chosen because so much emphasis has been given to deploying safe or trustworthy Artificial Intelligence (AI) systems from a “machine / Accountability, public service, human oversight, decision-making, street-level bureaucracies, high-risk AI systems, Article 14 EU AI Act Proposal.",
+      "downloads": 352
+    },
+    {
+      "abstractId": "4236554",
+      "title": "From 'Human Control' in International Law to 'Human Oversight' in the New EU Act on Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4236554",
+      "authors": [
+        "Juliane Beck",
+        "Thomas Burri"
+      ],
+      "affiliations": [
+        "University of St. Gallen",
+        "University of St. Gallen"
+      ],
+      "pages": 31,
+      "posted": "06 Oct 2022",
+      "snippet": "This book section examines \"human control\" of autonomous systems and \"human oversight\" of artificial intelligence in the light of the international legal / Autonomous systems, Autonomous weapons, CCW, Artificial Intelligence, Machine Learning, EU Commission, Meaningful Human Control, Human Oversight, International",
+      "downloads": 655
+    },
+    {
+      "abstractId": "4150357",
+      "title": "L’Intelligenza Artificiale Nell’Asset E Nel Wealth Management (Artificial Intelligence in the Asset and Wealth Management)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4150357",
+      "authors": [
+        "Nadia Linciano",
+        "Valeria Caivano",
+        "Daniela Costa",
+        "Paola Soccorso",
+        "Tommaso Nicola Poli",
+        "Gianfranco Trovatore"
+      ],
+      "affiliations": [
+        "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+        "CONSOB (Commissione Nazionale per le Società e la Borsa)",
+        "CONSOB",
+        "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+        "CONSOB (Commissione Nazionale per le Società e la Borsa)",
+        "CONSOB (Commissione Nazionale per le Societa e la Borsa)"
+      ],
+      "pages": 97,
+      "posted": "01 Jul 2022",
+      "snippet": "The second part of the paper presents the results of a survey on the use of AI systems in asset management. / Looking ahead, managers indicate the need for stringent human oversight of decision-making processes based on the use of AI systems, although control functions / fintech, artificial intelligence, AI systems, financial intermediation, financial advice, risk management, asset and wealth management, investor protection",
+      "downloads": 289
+    },
+    {
+      "abstractId": "4117936",
+      "title": "Algorithmic Bias in the Light of the GDPR and the Proposed AI Act",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4117936",
+      "authors": [
+        "Małgorzata Kuśmierczyk"
+      ],
+      "affiliations": [
+        "Jagiellonian University in Krakow"
+      ],
+      "pages": 16,
+      "posted": "27 May 2022",
+      "snippet": "For algorithmic bias, the main solutions are the General Data Protection Regulation and the proposed Artificial Intelligence Act. / I point out that the tool of human oversight, which the GDPR and the AI Act require in terms of adapting some algorithms, leads to a false sense of comfort / algorithmic bias, human oversight, General Data Protection Regulation (GDPR), Artificial Intelligence Act, digital discrimination",
+      "downloads": 1611
+    },
+    {
+      "abstractId": "4080171",
+      "title": "Deep Learning in Finance: From Implementation to Regulation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4080171",
+      "authors": [
+        "Louis Bertucci",
+        "Marie Briere",
+        "Olivier Fliche",
+        "Joseph Mikael",
+        "Lukasz Szpruch"
+      ],
+      "affiliations": [
+        "Institut Louis Bachelier",
+        "Amundi Asset Management",
+        "French Banking Supervisory Authority",
+        "EDF Energy",
+        "University of Edinburgh - School of Mathematics"
+      ],
+      "pages": 7,
+      "posted": "20 Apr 2022",
+      "snippet": "In many applications, explainability of Artificial Intelligence is critical to protect consumers. / The European Commission's Artificial Intelligence Act (draft proposal in April 2021) lists prohibited artificial intelligence practices and defines high-risk",
+      "downloads": 525
+    },
+    {
+      "abstractId": "4016502",
+      "title": "Humans in the GDPR and AIA governance of automated and algorithmic systems. Essential pre-requisites against abdicating responsibilities",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4016502",
+      "authors": [
+        "Guillermo Lazcoz",
+        "Paul De Hert"
+      ],
+      "affiliations": [
+        "University of the Basque Country (UPV/EHU)",
+        "Free University of Brussels (VUB)- LSTS"
+      ],
+      "pages": 20,
+      "posted": "28 Jan 2022",
+      "snippet": "Yet, human intervention alone is not sufficient to achieve appropriate human oversight for these systems. / This approach fits better with the governance model proposed in the Artificial Intelligence Act. / Human oversight, GDPR, Human intervention, Artificial intelligence, Accountability, AI Act",
+      "downloads": 566
+    },
+    {
+      "abstractId": "3949585",
+      "title": "COMMENTS ON THE EU PROPOSAL FOR THE ARTIFICIAL INTELLIGENCE ACT",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3949585",
+      "authors": [
+        "Anastasiya Kiseleva"
+      ],
+      "affiliations": [
+        "Vrije Universiteit Brussel (VUB)"
+      ],
+      "pages": 8,
+      "posted": "18 Nov 2021",
+      "snippet": "Highly welcome things are the risk-based and data-focusing approaches, level of specifications for the core requirements (transparency, human-oversight / Yet, I have discovered some areas of improval:\n\n- the roles of the subjects who are affected by the decision made with the use of AI Systems",
+      "downloads": 412
+    },
+    {
+      "abstractId": "3929548",
+      "title": "Press Publishers’ Right and Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3929548",
+      "authors": [
+        "Juha Vesala"
+      ],
+      "affiliations": [
+        "University of Helsinki - Faculty of Law, University of Lapland"
+      ],
+      "pages": 30,
+      "posted": "28 Sep 2021",
+      "snippet": "Overall, human oversight and involvement is required, as in many situations conditions of protection and copyright exceptions are difficult to meet with / press publishers’ right, copyright and related rights, artificial intelligence, news industry, DSM Directive, InfoSoc Directive",
+      "downloads": 163
+    },
+    {
+      "abstractId": "3921216",
+      "title": "The Flaws of Policies Requiring Human Oversight of Government Algorithms",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3921216",
+      "authors": [
+        "Ben Green"
+      ],
+      "affiliations": [
+        "University of Michigan at Ann Arbor - Society of Fellows"
+      ],
+      "pages": 22,
+      "posted": "13 Sep 2021",
+      "snippet": "One mechanism that has become a centerpiece of global efforts to regulate government algorithms is to require human oversight of algorithmic decisions. / In this article, I survey 41 policies that prescribe human oversight of government algorithms and find that they suffer from two significant flaws. / Human oversight; Human in the loop; Algorithmic governance; Automated decision-making; Artificial intelligence; AI regulation&",
+      "downloads": 2896
+    },
+    {
+      "abstractId": "3873768",
+      "title": "Financial Risk Management and Explainable Trustworthy Responsible AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3873768",
+      "authors": [
+        "Sebastian Fritz-Morgenthal",
+        "Bernhard Hein",
+        "Jochen Papenbrock"
+      ],
+      "affiliations": [
+        "Bain & Company",
+        "Ernst & Young",
+        "NVIDIA GmbH"
+      ],
+      "pages": 23,
+      "posted": "08 Jul 2021",
+      "snippet": "Many aspects of AI governance, algorithmic auditing and risk management of AI systems can be addressed with technology and computing platforms. / Hence, there will always be residual risk and consequentially a need for human oversight.",
+      "downloads": 812
+    },
+    {
+      "abstractId": "3871099",
+      "title": "Legal AI Systems in the EU’s proposed Artificial Intelligence Act",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3871099",
+      "authors": [
+        "Sebastian Felix Schwemer",
+        "Letizia Tomada",
+        "Tommaso Pasini"
+      ],
+      "affiliations": [
+        "BI Norwegian Business School",
+        "University of Copenhagen, Centre for Information and Innovation Law (CIIR)",
+        "University of Copenhagen - Department of Computer Science"
+      ],
+      "pages": 8,
+      "posted": "08 Jul 2021",
+      "snippet": "In this paper we examine how human-machine interaction in the legal sector is suggested to be regulated in the EU’s recently proposed Artificial Intelligence / Then we turn towards the assessment of high-risk AI systems for the legal tasks as well as the obligations for such AI systems in terms of human-machine / European Union, Artificial Intelligence Act, AI regulation, high-risk AI systems, legal sector, intelligent assistance, human oversight, data governance",
+      "downloads": 1498
+    },
+    {
+      "abstractId": "3839287",
+      "title": "Legal Implications of Using AI as an Exam Invigilator",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3839287",
+      "authors": [
+        "Liane Colonna"
+      ],
+      "affiliations": [
+        "Stockholm University - Faculty of Law"
+      ],
+      "pages": 25,
+      "posted": "05 May 2021",
+      "snippet": "This article considers the legal implications of the use of remote proctoring using artificial intelligence (AI) to monitor online exams and, in particular / It emphasizes how universities are shifting from a reliance on systems that include human oversight, like proctors overseeing the examinations from remote",
+      "downloads": 750
+    },
+    {
+      "abstractId": "3599226",
+      "title": "A Review of the ICO’s Draft Guidance on the AI Auditing Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3599226",
+      "authors": [
+        "Emre Kazim",
+        "Adriano Koshiyama"
+      ],
+      "affiliations": [
+        "Holistic AI",
+        "Department of Computer Science, University College London"
+      ],
+      "pages": 15,
+      "posted": "25 Jun 2020",
+      "snippet": "Intelligence (AI) systems. / These are namely:\n\nData and AI: explicit discussion of the relationship between data protection and how it translates into auditing of AI systems",
+      "downloads": 449
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "item_key": "WBS9U5N7",
+  "citation": "Alami 2026",
+  "evidence_type": [
+    "system-tool",
+    "empirical",
+    "controlled-experiment",
+    "framework-model"
+  ],
+  "problem_statement": "When an LLM generates both a claim and its own self-validating test/falsification suite, the tests can pass locally while violating the intended specification, and holistic LLM judges fail to detect this specification gaming.",
+  "magnitude_evidence": "9 top-level specification-gaming strategies documented across 453 adversarial debate logs spanning 6 domains and 3 mutator families; live catalog since grown to eighteen vectors",
+  "risk_types": [
+    "specification-gaming",
+    "reward-hacking",
+    "self-certifying-tests",
+    "test-suite-overfitting",
+    "data-leakage",
+    "weak-baseline",
+    "quality",
+    "AI-safety",
+    "evaluation-failure"
+  ],
+  "insufficiency_evidence": "In full-thesis experiment Gemini was fooled on 4/5, scoring gaming theses at 95-97/100; companion rubric-only holistic judge detected intended exploit family in only 0.375 of gaming specimens and false-accepted 0.250; frontier judges detect only ~63% of reward-exploit categories (TRACE)",
+  "solution_mechanisms": [
+    "zero-trust adversarial workbench (ZTARE)",
+    "separation of generation and evaluation",
+    "adversarial review committee executing counter-tests",
+    "stdout-only evidence for meta-judge",
+    "adversarial counter-test execution",
+    "monotonic rubric ratcheting",
+    "axiom store with exponential decay",
+    "taxonomy of 9 gaming strategies"
+  ],
+  "mechanism_keywords": [
+    "adversarial-verification",
+    "adversarial-execution",
+    "zero-trust",
+    "generation-evaluation-separation",
+    "counter-test",
+    "llm-as-judge",
+    "stdout-only",
+    "rubric-ratcheting",
+    "red-teaming",
+    "specification-gaming-taxonomy",
+    "invariant-audit",
+    "provenance"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "evaluation-time",
+    "test-execution"
+  ],
+  "human_role": "none",
+  "key_constructs": [
+    "cognitive camouflage",
+    "Zero-Trust Adversarial Reasoning Engine (ZTARE)",
+    "Suite Omission",
+    "Severity Averaging",
+    "Tolerance Abuse",
+    "Stubbed Implementation",
+    "Step-Index Leakage",
+    "Claim-Test Mismatch",
+    "Fudge-Factor Patching",
+    "Partial-Domain Miscalibration",
+    "Parameter Overfitting",
+    "Weak Baseline",
+    "three levels of evaluation",
+    "self-certifying strategies"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

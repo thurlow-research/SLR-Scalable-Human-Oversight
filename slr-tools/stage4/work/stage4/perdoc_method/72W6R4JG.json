@@ -1,0 +1,14 @@
+{
+  "item_key": "72W6R4JG",
+  "methods": [
+    "design-science / prototype / tool-build",
+    "case-study",
+    "controlled-experiment",
+    "formal-analysis/proof"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science / prototype / tool-build",
+  "notes": "Builds a framework combining an adaptation loop with a vibe-coding feedback loop plus a novel temporal logic (FCL); evaluated via a single synthetic Dragon Hunt CAS case study comparing three feedback-granularity variants over 10 repeated LLM-generation attempts each (a controlled comparison). No human participants \u2014 'no human code inspection' refers to the automated pipeline, not a user study.",
+  "citation": "T\u00f6pfer 2026"
+}

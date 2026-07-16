@@ -1,0 +1,68 @@
+{
+  "item_key": "2CKL96B8",
+  "citation": "Sarkar 2025",
+  "evidence_type": [
+    "secondary-review",
+    "empirical"
+  ],
+  "problem_statement": "The document examines how AI coding tools affect frontend software development, with particular attention to the security vulnerabilities, quality defects, and mixed real-world productivity of AI-generated code that create a need for governance and human oversight.",
+  "magnitude_evidence": "AI tools 'achieve 62-84% adoption rates globally' and GitHub Copilot leads adoption at '76% among frontend developers according to Stack Overflow's 2025 Developer Survey of 49,000+ professionals'; '50% of code characters now AI-assisted' at Google",
+  "risk_types": [
+    "security",
+    "vulnerability",
+    "cross-site-scripting",
+    "code-quality",
+    "correctness",
+    "technical-debt",
+    "bias",
+    "intellectual-property",
+    "legal",
+    "framework-inequity",
+    "delivery-stability"
+  ],
+  "insufficiency_evidence": "Stanford evaluation of 1,689 Copilot programs: '~40% contained security flaws'; Georgetown CSET: 'almost 50% of AI-generated snippets containing exploitable bugs'; Veracode: '45% of AI code samples failed security tests, with 86% failure rates for Cross-Site Scripting defenses'; 'security performance remains flat across model generations, with vulnerability rates consistently 40-50%'; Yetistiren et al.: 'only 28.7% fully correct solutions, with 51.2% requiring developer intervention'",
+  "solution_mechanisms": [
+    "mandatory security scanning of AI code",
+    "governance frameworks before adoption",
+    "rigorous human code review regardless of AI",
+    "developer training in AI collaboration",
+    "AI output evaluation skills",
+    "security-first AI training approaches",
+    "algorithmic bias detection/mitigation",
+    "clear IP/attribution/liability policies",
+    "continuous monitoring and human validation"
+  ],
+  "mechanism_keywords": [
+    "security-gate",
+    "security-scanning",
+    "governance",
+    "policy",
+    "code-review",
+    "hitl",
+    "human-validation",
+    "monitoring",
+    "training",
+    "bias-mitigation",
+    "provenance",
+    "quality-assurance"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "CI",
+    "pre-commit",
+    "generation-time"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "perception-reality gap",
+    "almost right pattern",
+    "assistants to agents"
+  ],
+  "governance_refs": [
+    "MITRE Top 25 CWE",
+    "SWE-bench Verified"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

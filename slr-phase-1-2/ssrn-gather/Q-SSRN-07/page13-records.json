@@ -1,0 +1,920 @@
+{
+  "count": 50,
+  "total": "868",
+  "page": "13",
+  "records": [
+    {
+      "abstractId": "5163483",
+      "title": "Spider Vision: Dual-Level Oversight for AI Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5163483",
+      "authors": [
+        "Timothy Young"
+      ],
+      "affiliations": [],
+      "pages": 25,
+      "posted": "02 May 2025",
+      "snippet": "Technical audits assess model behavior, robustness, and bias, while institutional governance oversees compliance, accountability, and social impact. / Positioned alongside the OECD AI Principles, the EU AI Act, and the NIST AI Risk Management Framework, Spider Vision offers a measurable, operational / Spider Vision, dual-level oversight, AI governance, Primary Vision, Secondary Vision, Bias, Persistence, Accountability Drift, Trust Erosion, institutional / accountability, algorithmic risk, sociotechnical systems, virtue ethics (operational), oversight coordination",
+      "downloads": 27
+    },
+    {
+      "abstractId": "5196091",
+      "title": "From Policy to Practice: Prototyping the EU AI Act's Human Oversight Requirements",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5196091",
+      "authors": [
+        "Wannes Ooms",
+        "Lotte Cools",
+        "Thomas Gils",
+        "Frederic Heymans"
+      ],
+      "affiliations": [
+        "KU Leuven - Centre for IT & IP Law (CiTiP)",
+        "affiliation not provided to SSRN",
+        "KU Leuven - Centre for IT & IP Law (CiTiP)",
+        "Interuniversity MicroElectronics Center - IMEC - SMIT, Vrije Universiteit Brussel"
+      ],
+      "pages": 40,
+      "posted": "30 Apr 2025",
+      "snippet": "Article 14 AI Act mandates that high-risk AI systems are designed and developed in such a way that they enable effective human oversight. / In addition, the report also features reviewer feedback on those documents and the human oversight requirement contained in article 14 AI Act. / AI Act, Human oversight, high-risk AI systems, policy prototyping, product safety, law enforcement, AI in education, AI in healthcare, Artificial Intelligence / , AI governance, compliance, AI regulation",
+      "downloads": 98
+    },
+    {
+      "abstractId": "5185175",
+      "title": "Global Minds, Local Governance: AI in International Law",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5185175",
+      "authors": [
+        "Cheng-chi (Kirin) Chang"
+      ],
+      "affiliations": [],
+      "pages": 10,
+      "posted": "30 Apr 2025",
+      "snippet": "patchwork of regulations is inadequate to address AI's global nature and proposes a multi-tiered framework fostering international cooperation on core governance / require sector-specific governance tailored to regional contexts. / Artificial Intelligence Law, AI Governance, Digital Sovereignty, AI Diplomacy, AI Risk Management, Global AI Regulation, AI Legal Challenges, Algorithmic",
+      "downloads": 194
+    },
+    {
+      "abstractId": "5211101",
+      "title": "Implications of Regulating a Moving Target: Between Fixity and Flexibility in the EU AI Act",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5211101",
+      "authors": [
+        "Stefan Larsson",
+        "Jockum Hildén",
+        "Katarzyna Söderlund"
+      ],
+      "affiliations": [
+        "Lund University - Department of Technology and Society",
+        "RISAI – Research Institute for Sustainable AI",
+        "Lund University - Department of Technology and Society"
+      ],
+      "pages": 43,
+      "posted": "29 Apr 2025",
+      "snippet": "The EU AI Act aims to regulate artificial intelligence (AI) in a way that balances innovation and protection from harms, but faces the challenge of keeping / Specifically, it analyses how the AI Act, under the aim of being \"future-proof\", per relatively newfound EU terminology, employs various flexible mechanisms / AI Act, the pacing problem, legal certainty, legal flexibility, general purpose AI, delegated acts, harmonised standards",
+      "downloads": 151
+    },
+    {
+      "abstractId": "5198926",
+      "title": "Two Futures of AI Regulation under the Trump Administration",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5198926",
+      "authors": [
+        "Claudio Novelli",
+        "Akriti Gaur",
+        "Luciano Floridi"
+      ],
+      "affiliations": [
+        "Yale University - Digital Ethics Center",
+        "Yale University - Law School",
+        "Yale University - Digital Ethics Center"
+      ],
+      "pages": 13,
+      "posted": "24 Apr 2025",
+      "snippet": "We outline two competing governance scenarios: decentralized state-level regulation (with minimal federal oversight) and centralized federal dominance / Artificial Intelligence, Federalism, Deregulation, Pre-emption, Trump Administration, AI regulation",
+      "downloads": 841
+    },
+    {
+      "abstractId": "5223947",
+      "title": "From Models to Markets: Generative AI and Its Emerging Role in Indian Financial Services",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5223947",
+      "authors": [
+        "Rajan Raju"
+      ],
+      "affiliations": [
+        "Invespar Pte Ltd"
+      ],
+      "pages": 64,
+      "posted": "23 Apr 2025",
+      "snippet": "It compares AI techniques in light of India-specific constraints, such as multilingual data, regulatory compliance, and infrastructure gaps, and evaluates / Language Models, India, Actor-Network Theory, Business Model Canvas, Responsible AI, Ethical AI, Digital Public Infrastructure, Financial Inclusion, AI / Regulation, Comparative Regulation, AI in Financial Services",
+      "downloads": 374
+    },
+    {
+      "abstractId": "5147813",
+      "title": "The enforcement of the Artificial Intelligence Act: Looking Forward to a Commission Implementing Decisions for Protecting Fundamental Rights",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5147813",
+      "authors": [
+        "Federica Paolucci"
+      ],
+      "affiliations": [
+        "Bocconi University, Angelo Sraffa Department of Legal Studies"
+      ],
+      "pages": 16,
+      "posted": "22 Apr 2025",
+      "snippet": "This chapter examines the decentralized governance structure of the AI Act, the role of the European Commission, and the / >interplay between administrative and judicial oversight in ensuring compliance.",
+      "downloads": 95
+    },
+    {
+      "abstractId": "5147196",
+      "title": "Human Oversight under Article 14 of the EU AI Act",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5147196",
+      "authors": [
+        "Melanie Fink"
+      ],
+      "affiliations": [],
+      "pages": 15,
+      "posted": "22 Apr 2025",
+      "snippet": "This chapter analyses the human oversight requirement for high-risk AI systems under Article 14 AI Act, a provision that marks a significant development / Human oversight in the AI Act serves a number of purposes. / Human oversight, EU AI Act, Human-in-the-loop, artificial intelligence regulation, algorithmic governance, algorithmic accountability, algorithmic decision-making / , automation bias, risk management, effective human oversight, meaningful human oversight",
+      "downloads": 1542
+    },
+    {
+      "abstractId": "5145977",
+      "title": "The European Union's Approach to Artificial Intelligence Regulation: Balancing Innovation and Ethical Considerations",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5145977",
+      "authors": [
+        "Edgards Petersons"
+      ],
+      "affiliations": [
+        "Law Institute of Lithuania (LIL)"
+      ],
+      "pages": 4,
+      "posted": "21 Apr 2025",
+      "snippet": "This paper explores the EU's AI regulation strategy, particularly focusing on the AI Act, ethical guidelines, data protection implications, and the impact / Furthermore, it analyzes the challenges of enforcement, the potential effects on global AI development, and the future trajectory of AI governance in the / Artificial Intelligence, AI Act, European Union, Digital Regulation, AI Ethics, Data Protection, Technological Innovation",
+      "downloads": 131
+    },
+    {
+      "abstractId": "5145970",
+      "title": "The Role of the European Union in Shaping Digital Governance: Policies, Challenges, and Future Prospects",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5145970",
+      "authors": [
+        "Edgards Petersons"
+      ],
+      "affiliations": [
+        "Law Institute of Lithuania (LIL)"
+      ],
+      "pages": 3,
+      "posted": "21 Apr 2025",
+      "snippet": "By examining future trends in AI regulation, cybersecurity, and digital sovereignty, the paper offers insights into how the EU can continue to lead in / digital governance. / European Union, Digital Governance, GDPR, Digital Markets Act, Digital Services Act, Artificial Intelligence, Cybersecurity, Digital Sovereignty",
+      "downloads": 182
+    },
+    {
+      "abstractId": "5221457",
+      "title": "Visualizing Regulatory Ecosystems: A Novel Approach to Mapping Governance Architectures in EU Regulation- the Case of the Ai Act",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5221457",
+      "authors": [
+        "Magdalena Martha Theresa Stratmann",
+        "Tobias Mast",
+        "Josefine Spürkel",
+        "Fabian Burmeister",
+        "Christian Kutz",
+        "Éloise Soulier"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "Hans-Bredow-Institute for Media Research",
+        "affiliation not provided to SSRN",
+        "University of Hamburg",
+        "University of Hamburg",
+        "University of Hamburg"
+      ],
+      "pages": 24,
+      "posted": "17 Apr 2025",
+      "snippet": "effectiveness.As a case study, we apply this approach to the Artificial Intelligence (AI) Act, demonstrating how visual representations of governance / structures within regulatory ecosystems can enhance the assessment of enforcement mechanisms, institutional responsibilities, and compliance pathways. / EU regulation, multi-level governance, digital law, AI Act, legal methods, visualization, architectural ecosystem modelling",
+      "downloads": 79
+    },
+    {
+      "abstractId": "5221279",
+      "title": "AI Act High-Risk AI Compliance Challenge and Industry Impact: A Multiple Case Study",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5221279",
+      "authors": [
+        "Matthias Wagner",
+        "Qunying Song",
+        "Markus Borg",
+        "Emelie Engström",
+        "Michal Lysek"
+      ],
+      "affiliations": [
+        "Lund University",
+        "Lund University",
+        "Lund University",
+        "Lund University",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 51,
+      "posted": "17 Apr 2025",
+      "snippet": "The AI Act marks a new chapter in AI governance, affecting companies around the world seeking to offer their services within the European Union. / We explored the perceived compliance challenge for the AI Act's high-risk requirements and associated contributing factors; the AI Act's impact / AI Act, Compliance Challenge, Industry Impact, Multiple Case Study, Software Compliance, Regulatory Requirements, AI Governance",
+      "downloads": 304
+    },
+    {
+      "abstractId": "5142700",
+      "title": "Artificial Intelligence and Ethics in the EU: Balancing Innovation and Regulation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5142700",
+      "authors": [
+        "Inese Berzins"
+      ],
+      "affiliations": [
+        "Association of Latvian Young Scientists"
+      ],
+      "pages": 4,
+      "posted": "17 Apr 2025",
+      "snippet": "Artificial Intelligence (AI) is rapidly transforming various sectors, including healthcare, finance, law enforcement, and governance. / The study delves into the ethical principles guiding AI governance in the EU, evaluates key legislative instruments such as the EU AI Act, and discusses / Artificial Intelligence, Ethics, European Union, Regulation, AI Act, Innovation, Governance, Privacy, Transparency, Accountability",
+      "downloads": 74
+    },
+    {
+      "abstractId": "5138252",
+      "title": "Artificial Intelligence Governance and Regulation; The impact of the EU AI Act, 2024 on Innovation, Accountability, and Global Compliance in a Digital Age",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5138252",
+      "authors": [
+        "Uloma Okoro"
+      ],
+      "affiliations": [],
+      "pages": 22,
+      "posted": "11 Apr 2025",
+      "snippet": "Furthermore, the paper identifies a number of shortcomings identified in the EU AI Act, which include inadequate oversight of general-purpose AI / for marginalized communities would strengthen the Act's effectiveness as a global standard for AI regulation. / Artificial Intelligence, EU AI Act, European Union Regulation, Artificial Intelligence Governance, Responsible Use of AI, AI Regulation, AI Risk Based / Regulation, Artificial Intelligence Act EU, EU AI Act 2024, EU AI Act Overview, EU AI Act Review, AI Governance, Artificial Intelligence Governance, European",
+      "downloads": 285
+    },
+    {
+      "abstractId": "5138815",
+      "title": "Techno-Federalism: How Regulatory Fragmentation Shapes the U.S.-China AI Race",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5138815",
+      "authors": [
+        "Jason Jia-Xi Wu"
+      ],
+      "affiliations": [
+        "Harvard University, Harvard Law School"
+      ],
+      "pages": 80,
+      "posted": "11 Apr 2025",
+      "snippet": "In the United States, states lead in AI regulation, with the federal government taking a limited, backseat role. / The Article argues that the answer lies in industry self-governance. / US-China Relations, Geopolitics, National Security, Artificial Intelligence, Federalism, Industrial Policy, AI, AI Governance, Techno-Authoritarianism",
+      "downloads": 564
+    },
+    {
+      "abstractId": "5137750",
+      "title": "Introduction to the Foundations and Regulation of Generative AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5137750",
+      "authors": [
+        "Philipp Hacker",
+        "Andreas Engel",
+        "Sarah Hammer",
+        "Brent Mittelstadt"
+      ],
+      "affiliations": [
+        "European University Viadrina Frankfurt (Oder) - European New School of Digital Studies",
+        "Heidelberg University - Faculty of Law",
+        "The Wharton School and The University of Pennsylvania Law School",
+        "University of Oxford - Oxford Internet Institute"
+      ],
+      "pages": 28,
+      "posted": "10 Apr 2025",
+      "snippet": "Handbook of the Foundations and Regulation of Generative AI, outlining the key themes and questions surrounding the technical development, regulatory governance / Furthermore, the chapter extensively surveys both emerging and established regulatory frameworks, including the EU AI Act, the GDPR, privacy and personality / Generative AI, Artificial Intelligence Regulation, Large Language Models (LLMs), AI Governance, Algorithmic Transparency, AI Ethics, Foundation Models, / AI Act, GDPR, Copyright",
+      "downloads": 1719
+    },
+    {
+      "abstractId": "5212425",
+      "title": "Traversing EU Pnr Challenges: Balancing Compliance and Innovation in Travel Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5212425",
+      "authors": [
+        "Iheanyi Samuel Nwankwo",
+        "Margrit Seckelmann",
+        "Marcelo Corrales Compagnucci",
+        "Panos Karaivazoglou",
+        "Rodoula Makri"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "University of Copenhagen - Centre for Advanced Studies in Bioscience Innovation Law (CeBIL)",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 29,
+      "posted": "10 Apr 2025",
+      "snippet": "Act. / Recent rulings by the Court of Justice of the EU (CJEU) restricting PNR data use, and stringent AI Act requirements for high-risk systems are pivotal in / Travel Intelligence, Passenger Name Record, AI Act, Data Protection, PNR Directive, Fundamental Rights, Governance Framework",
+      "downloads": 69
+    },
+    {
+      "abstractId": "5131229",
+      "title": "Requirements of high-risk AI systems: AI Act. Article 14. Human oversight",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5131229",
+      "authors": [
+        "Argyri Panezi"
+      ],
+      "affiliations": [
+        "University of New Brunswick Faculty of Law"
+      ],
+      "pages": 19,
+      "posted": "09 Apr 2025",
+      "snippet": "Requiring human oversight during the use of a high-risk AI system, Article 14 of the AI Act highlights the need for trustworthiness and advances / the anthropocentric rationale of the AI Act, rendering it a critical piece of the entire Act. / artificial intelligence, AI Act, High-risk AI systems, Human oversight, Human-in-the-loop, AI regulation",
+      "downloads": 398
+    },
+    {
+      "abstractId": "5199198",
+      "title": "AI Ethics: Do We Know When to Stop?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5199198",
+      "authors": [
+        "Neham Mahajan Neham"
+      ],
+      "affiliations": [
+        "La Blossoms School"
+      ],
+      "pages": 5,
+      "posted": "04 Apr 2025",
+      "snippet": "concerning their unregulated growth this paper investigates the challenges associated with ai progress focusing on matters of bias responsibility and governance / AI Ethics, Responsible AI, Algorithmic Bias, Ethical AI Development, AI Regulation",
+      "downloads": 78
+    },
+    {
+      "abstractId": "5175968",
+      "title": "Simplifying Software Compliance: AI Technologies in Drafting Technical Documentation for the AI Act",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5175968",
+      "authors": [
+        "Francesco Sovrano",
+        "Emmie Hine",
+        "Stefano Anzolut",
+        "Alberto Bacchelli"
+      ],
+      "affiliations": [
+        "Universita della Svizzera Italiana (USI Lugano)",
+        "Yale University - Digital Ethics Center",
+        "University of Zurich",
+        "University of Zurich"
+      ],
+      "pages": 27,
+      "posted": "04 Apr 2025",
+      "snippet": "The European AI Act has introduced specific technical documentation requirements for AI systems. / creating technical documentation that complies with the AI Act. / AI Act, Legal Compliance, Technical Documentation, Applied Computing in Law, Software Documentation Mathematics Subject Classification (2020) 68N30",
+      "downloads": 40
+    },
+    {
+      "abstractId": "5202088",
+      "title": "Is My LLM Application Considered a Medical Device under the MDR?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5202088",
+      "authors": [
+        "Jessica Workum",
+        "Sade Krijgsman",
+        "Ildiko Vajda",
+        "Robin van Stokkum",
+        "Jan van den Brand",
+        "Diederik Gommers",
+        "Michel E. Van Genderen"
+      ],
+      "affiliations": [
+        "Elisabeth-Tweesteden Hospital",
+        "Erasmus MC",
+        "European Patients’ Forum",
+        "Netherlands Organization for Applied Scientific Research (TNO)",
+        "Erasmus MC",
+        "Erasmus University Rotterdam (EUR) - Department of Intensive Care",
+        "Erasmus University Rotterdam (EUR) - Department of Intensive Care"
+      ],
+      "pages": 19,
+      "posted": "02 Apr 2025",
+      "snippet": "We have identified a regulatory gap, not sufficiently addressed by the European Union’s Medical Device Regulation (MDR) nor the AI Act, where LLM applications / LLM applications in healthcare by identifying these ambiguous gray area LLM-applications and providing four recommendations – validation, mitigation, compliance / large language models, generative artificial intelligence, AI Act, medical device regulation, legislation",
+      "downloads": 1104
+    },
+    {
+      "abstractId": "5194301",
+      "title": "The Right to Explanation in the AI Act",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5194301",
+      "authors": [
+        "Margot E. Kaminski",
+        "Gianclaudio Malgieri"
+      ],
+      "affiliations": [
+        "University of Colorado Law School, Yale University - Yale Information Society Project",
+        "Universiteit Leiden, eLaw"
+      ],
+      "pages": 30,
+      "posted": "02 Apr 2025",
+      "snippet": "depend on complementary procedural safeguards and future legal developments—particularly regarding contestability, standard-setting, and participatory governance",
+      "downloads": 1547
+    },
+    {
+      "abstractId": "5176993",
+      "title": "Agents in a Tangled Bank: An Ecosystem Approach to AI Regulation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5176993",
+      "authors": [
+        "Andrew W. Torrance",
+        "Bill Tomlinson"
+      ],
+      "affiliations": [
+        "University of Kansas School of Law",
+        "University of California, Irvine"
+      ],
+      "pages": 51,
+      "posted": "01 Apr 2025",
+      "snippet": "Drawing on established research in multi-agent systems and environmental law, we propose that effective governance of AI agents requires moving beyond / Finally, we propose a set of concrete principles for ecosystem-based AI governance. / Artificial Intelligence, Regulation, Autonomous Agents, AI Governance, Environmental Law, Multi-Agent Systems",
+      "downloads": 126
+    },
+    {
+      "abstractId": "5117653",
+      "title": "Regulating the Future: The Current State and Prospects of Artificial Intelligence Policy in Nigeria",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5117653",
+      "authors": [
+        "Abdulhameed Onimisi Salihu"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 12,
+      "posted": "31 Mar 2025",
+      "snippet": "This study critically examines the current state of AI regulation in Nigeria, identifying gaps in legal structures, institutional oversight, and enforcement / and evaluates international best practices, including regulatory models from the European Union (EU AI Act, 2021), the United States (NIST AI Risk Management / Artificial Intelligence, AI Regulation, Nigeria, AI Policy, Ethical AI, AI Governance, Data Privacy, Algorithmic Bias, EU AI Act, NIST AI Framework",
+      "downloads": 338
+    },
+    {
+      "abstractId": "5117560",
+      "title": "Automation Bias in the AI Act: On the Legal Implications of Attempting to De-Bias Human Oversight of AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5117560",
+      "authors": [
+        "Johann Laux",
+        "Hannah Ruschemeier"
+      ],
+      "affiliations": [
+        "University of Oxford - Oxford Internet Institute",
+        "Universität Osnabrück - Faculty of Law"
+      ],
+      "pages": 18,
+      "posted": "31 Mar 2025",
+      "snippet": "The AIA mandates human oversight for high-risk AI systems and requires providers to enable awareness of AB, i.e., the human tendency to over-rely on AI / AI Act, AI Regulation, Human Oversight, Automation Bias, AI Governance, Human-AI Interaction",
+      "downloads": 554
+    },
+    {
+      "abstractId": "5156010",
+      "title": "Balancing Technological Innovation and Regulation: Safeguarding Societal Interests in the Age of AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5156010",
+      "authors": [
+        "Paolo Davide Farah"
+      ],
+      "affiliations": [],
+      "pages": 7,
+      "posted": "27 Mar 2025",
+      "snippet": "Recent developments, such as the European Union’s Artificial Intelligence (AI) Act — the world’s first comprehensive legislation on AI — highlight the / The AI Act entered into force on 1 August 2024 and will be fully applicable 2 years later on 2 August 2026, with some exceptions: prohibitions and AI literacy / AI governance, technological innovation, digital transformation, human rights and AI, EU AI Act, AI ethics, AI legislation, AI and society, AI and democracy / , AI-driven economy, AI and misinformation, AI and human rights, AI and public policy, responsible AI, sustainable AI, AI and global governance, AI and",
+      "downloads": 124
+    },
+    {
+      "abstractId": "5111493",
+      "title": "Trustworthy AI for Whom? GenAI Detection Techniques of Trust Through Decentralized Web3 Ecosystems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5111493",
+      "authors": [
+        "Igor Calzada",
+        "Géza Németh",
+        "Mohammed Salah Al-Radhi"
+      ],
+      "affiliations": [
+        "Ikerbasque Foundation UPV/EHU",
+        "Budapest University of Technology and Economics",
+        "Budapest University of Technology and Economics"
+      ],
+      "pages": 48,
+      "posted": "25 Mar 2025",
+      "snippet": "entitled ENFIELD as foundational elements that support content authenticity, community-driven verification, and data sovereignty, aligning with the EU’s AI / Act and Draghi Report policy framework.",
+      "downloads": 67
+    },
+    {
+      "abstractId": "5169810",
+      "title": "Systems Integration Model for AI Solutions with Explainability Requirements",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5169810",
+      "authors": [
+        "Dr. Sandra Smyth"
+      ],
+      "affiliations": [
+        "Purdue University"
+      ],
+      "pages": 194,
+      "posted": "24 Mar 2025",
+      "snippet": "New legal obligations are listed in the EU AI Act for high-risk systems; some of these new obligations consist of adapting or producing AI systems to be / AI Act.",
+      "downloads": 102
+    },
+    {
+      "abstractId": "5181797",
+      "title": "The EU AI Act and the Future of AI Governance: Implications for U.S. Firms and Policymakers",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5181797",
+      "authors": [
+        "David Krause"
+      ],
+      "affiliations": [
+        "Marquette University"
+      ],
+      "pages": 29,
+      "posted": "20 Mar 2025",
+      "snippet": "The European Union Artificial Intelligence Act (EU AI Act) establishes a pioneering risk-based regulatory framework that will significantly impact AI governance / and compliance worldwide. / EU AI Act, artificial intelligence, regulation, compliance, risk classification, AI governance, audit, compliance requirement",
+      "downloads": 399
+    },
+    {
+      "abstractId": "5161697",
+      "title": "Expansion of AI-Structured Identity & The 7 Races of AI Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5161697",
+      "authors": [
+        "Shafiq Abdussabur"
+      ],
+      "affiliations": [],
+      "pages": 4,
+      "posted": "18 Mar 2025",
+      "snippet": "By linking AI classification to human governance models and social constructs, this framework offers a groundbreaking perspective on AI governance / such as the EU AI Act, China's AI Regulations, and the US AI Bill of Rights.",
+      "downloads": 36
+    },
+    {
+      "abstractId": "5109706",
+      "title": "Codifying Ethics Guidelines for Trustworthy AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5109706",
+      "authors": [
+        "Sean Musch",
+        "Michael Borrelli",
+        "Olga Grilly",
+        "Harvey Castro",
+        "Charles Kerrigan",
+        "Lisa Ventura MBE",
+        "Martin Heitmann",
+        "Don Liyanage",
+        "Michael Boevink",
+        "Irene Rey",
+        "Zafar Imran",
+        "Mitko Karushkov",
+        "Derek Warden",
+        "Arno Debelle",
+        "Mariia Shcherbakova",
+        "Patrick Orsos",
+        "Dave Bohnert",
+        "Josh Deeks",
+        "Jonathan Osborne",
+        "Ana Mateu de Ros",
+        "Kyriakos Lambros",
+        "David Kohnstamm",
+        "Lesley Cheung",
+        "Binesh Balan",
+        "Runli Guo",
+        "Babak Daemi",
+        "Maury D. Shenk",
+        "Chris Stears"
+      ],
+      "affiliations": [
+        "AI & Partners",
+        "AI & Partners",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "CMS London",
+        "Cyber Security Unity",
+        "affiliation not provided to SSRN",
+        "Tikos Technologies ltd",
+        "Boevink Group",
+        "Lansing Consulting",
+        "SABZA",
+        "Independent",
+        "Louisiana Supreme Court",
+        "PwC Belgium",
+        "affiliation not provided to SSRN",
+        "Independent",
+        "DataDave",
+        "Edmund Group Limited",
+        "Cognizant Technology Solutions",
+        "ZERTIA. AI",
+        "RockCyber, LLC",
+        "Independent",
+        "JC Legal",
+        "Arkstons Investments Limited",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "Steptoe & Johnson PLLC",
+        "Edmund Group Limited"
+      ],
+      "pages": 55,
+      "posted": "14 Mar 2025",
+      "snippet": "regulatory definition, meaning that, in the absence of clear regulatory provisions, firms have a lack of a reference point to demonstrate regulatory compliance / Ethics, AI, Regulation, Law, Technology, Trustworthy, EU AI Act, Artificial Intelligence",
+      "downloads": 141
+    },
+    {
+      "abstractId": "5099834",
+      "title": "AI Literacy Under the AI Act: Tracing the Evolution of a Weakened Norm",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5099834",
+      "authors": [
+        "Manuela Paolini e Silva",
+        "Aurelia Tamò-Larrieux",
+        "Odile Ammann"
+      ],
+      "affiliations": [
+        "University of Lausanne",
+        "University of Lausanne",
+        "University of Lausanne"
+      ],
+      "pages": 30,
+      "posted": "11 Mar 2025",
+      "snippet": "In this article, we examine the legislative background and evolution of AI literacy in the EU AI Act. / AI Act, AI literacy, Media literacy, AI governance, Digital law, Lobbying, Big Tech",
+      "downloads": 309
+    },
+    {
+      "abstractId": "5169707",
+      "title": "The Regulation, Governance and Ethics of Smart Robotic Systems in Manufacturing: UK and EU Insights",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5169707",
+      "authors": [
+        "Tiziana C. Callari",
+        "Angela Daly",
+        "Riccardo Vecellio Segate",
+        "Ella-Mae Hubbard",
+        "Rebecca Raper",
+        "Niels Lohse"
+      ],
+      "affiliations": [
+        "Leeds University Business School",
+        "University of Groningen - Faculty of Economics and Business",
+        "affiliation not provided to SSRN",
+        "Oxford Brookes University",
+        "Loughborough University"
+      ],
+      "pages": 23,
+      "posted": "10 Mar 2025",
+      "snippet": "This White Paper—intended for policymakers, regulators, and other key stakeholders, such as employers, trade unions—outlines key regulatory, governance / robots, collaborative robots, privacy and data protection, ergonomic safety, technical standards, technical standardisation, UK regulation, EU regulation, AI / Act, GDPR, Machinery Regulation, workers dignity, energy sustainability, labour rights, intelligent manufacturing, smart robotic systems, responsibility",
+      "downloads": 72
+    },
+    {
+      "abstractId": "5098433",
+      "title": "Regulating AI Autonomy: A Constitutional Framework for the Digital Era",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5098433",
+      "authors": [
+        "Oreste Pollicino",
+        "Federica Paolucci"
+      ],
+      "affiliations": [
+        "Bocconi University - Department of Law",
+        "Bocconi University, Angelo Sraffa Department of Legal Studies"
+      ],
+      "pages": 24,
+      "posted": "10 Mar 2025",
+      "snippet": "Act). / Act reveals gaps in oversight and human involvement in AI governance.",
+      "downloads": 265
+    },
+    {
+      "abstractId": "5118136",
+      "title": "Determinants of Socially Responsible AI Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5118136",
+      "authors": [
+        "Daryl Lim"
+      ],
+      "affiliations": [
+        "Pennsylvania State University, Dickinson Law"
+      ],
+      "pages": 50,
+      "posted": "07 Mar 2025",
+      "snippet": "first international AI treaty by the United States, European Union, and other nations marks a pivotal step in establishing a global framework for AI governance / Part III evaluates the normative impact of AI on traditional legal frameworks, offering a comparative analysis of governance models: the U.S. market-driven / AI Governance Socially Responsible AI Justice and Equity Rule of Law Transparency Accountability Bias in AI AI Regulation Intellectual Property and AI / Market-driven Approach EU Rights-based Model China Command Economy Singapore Soft Law Framework Algorithmic Decision-making Risk-based AI Regulation AI",
+      "downloads": 83
+    },
+    {
+      "abstractId": "5167491",
+      "title": "Governing Generative AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5167491",
+      "authors": [
+        "Daryl Lim"
+      ],
+      "affiliations": [
+        "Pennsylvania State University, Dickinson Law"
+      ],
+      "pages": 44,
+      "posted": "07 Mar 2025",
+      "snippet": "AI) is reshaping creative industries, challenging traditional legal frameworks, and raising fundamental questions about authorship, infringement, and governance / The final section analyzes governance models, comparing the U.S.' / , AI Training Data, Private Ordering Mechanisms, Blanket Licensing, Digital Watermarking, Indemnification in AI, Market-Driven AI Regulation, EU AI and / Copyright Law, China AI Policy, AI and Creativity, Algorithmic Content Creation, Legal Frameworks for AI, AI and Human Rights, International AI Regulation",
+      "downloads": 268
+    },
+    {
+      "abstractId": "5168408",
+      "title": "Arbitrary Power of Human-Centered Ais Anthropomorphized Ais and Natural Persons in Ai Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5168408",
+      "authors": [
+        "Denisa Reshef Kera",
+        "Eilat Navon"
+      ],
+      "affiliations": [
+        "Bar-Ilan University",
+        "Bar-Ilan University"
+      ],
+      "pages": 24,
+      "posted": "06 Mar 2025",
+      "snippet": "Special attention is given to the OECD AI Principles and the EU AI Act, which are frequently hailed as exemplary frameworks for safeguarding human rights / We argue for a governance that focuses on preventing arbitrary exercise of power rather than technocratic ideals of well-aligned and human-centered AI / AI governance, anthropomorphized AI, political agency, regulatory capture, technocratic governance, synthetic data.",
+      "downloads": 22
+    },
+    {
+      "abstractId": "5168409",
+      "title": "Overlooked – Presence and Awareness Cues in the Metaverse",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5168409",
+      "authors": [
+        "René Arnold",
+        "Anna Schneider"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 44,
+      "posted": "06 Mar 2025",
+      "snippet": "integral to projected availability or emotional states.We conclude that balancing consumer protection with user-friendly interfaces calls for more nuanced oversight / , especially as the European AI Act and related legislation could inadvertently limit the adoption of intuitive PAACs.",
+      "downloads": 54
+    },
+    {
+      "abstractId": "5164455",
+      "title": "Beyond Technology: A Qualitative Study of Integrating Social Attributes in AI Regulation for Healthcare",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5164455",
+      "authors": [
+        "Yingying Yan",
+        "Lei Zeng",
+        "Xiaoyue Zhang",
+        "Jiatong Li",
+        "Xinran Liu",
+        "Peng Ru",
+        "Chun Chang",
+        "Xue Jiang"
+      ],
+      "affiliations": [
+        "Peking University - Peking University Third Hospital",
+        "Tsinghua University - School of Public Policy and Management",
+        "Peking University - School of Public Health",
+        "Peking University - Peking University Third Hospital",
+        "Peking University - School of Public Health",
+        "Tsinghua University - School of Public Policy and Management",
+        "Peking University - School of Public Health",
+        "Peking University - Peking University Third Hospital"
+      ],
+      "pages": 30,
+      "posted": "05 Mar 2025",
+      "snippet": "A structured understanding of these social dimensions is crucial for shaping sustainable AI regulation to foster a society that is both technologically / Methods: This qualitative study used semi-structured interviews and focus group discussions to explore the social attributes in AI regulation for / Artificial Intelligence, Social Impact, Social Attributes, AI Governance, Regulation, Qualitative Study",
+      "downloads": 113
+    },
+    {
+      "abstractId": "5094413",
+      "title": "Regulatory Challenges of AI Governance in the Era of ChatGPT Overview",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5094413",
+      "authors": [
+        "Md. Toriqul Islam"
+      ],
+      "affiliations": [
+        "Independent University, Bangladesh (IUB)"
+      ],
+      "pages": 5,
+      "posted": "05 Mar 2025",
+      "snippet": "regulation, addressing the critical challenges that lie ahead, and exploring potential policy directions. / Emphasising transparency, human oversight, and explainability, it advocates for a risk-based approach to regulation. / AI Governance, Large Language Models (LLMs), ChatGPT, Regulatory Challenges",
+      "downloads": 5
+    },
+    {
+      "abstractId": "5164699",
+      "title": "Response to the Copyright and AI Consultation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5164699",
+      "authors": [
+        "Gaetano Dimita",
+        "Michaela MacDonald",
+        "Uma Suthersanen"
+      ],
+      "affiliations": [
+        "Queen Mary University of London, School of Law - Centre for Commercial Law Studies",
+        "Queen Mary University of London - School of Electronic Engineering and Computer Science",
+        "Centre for Commercial Law Studies, Queen Mary University of London"
+      ],
+      "pages": 6,
+      "posted": "04 Mar 2025",
+      "snippet": "The discussion underscores the need for stronger governance mechanisms, improved rights management, and regulatory frameworks that address the growing / Copyright, AI, Text-and-Data Mining (TDM) exception, Intellectual Property, AI Regulation and Governance",
+      "downloads": 399
+    },
+    {
+      "abstractId": "5092825",
+      "title": "A Proactive Playbook for Navigating the AI Regulatory Landscape",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5092825",
+      "authors": [
+        "Dora Foto"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 8,
+      "posted": "04 Mar 2025",
+      "snippet": "From the Council of Europe's groundbreaking AI Treaty to the EU's comprehensive AI Act, and from the U.S. / By embracing a proactive approach to AI governance, businesses can not only ensure compliance but also gain a competitive edge in an increasingly scrutinized",
+      "downloads": 92
+    },
+    {
+      "abstractId": "5162653",
+      "title": "The Quest for Lawful AI Training under Data Protection Frameworks: Global Controversies and Practical Implications",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5162653",
+      "authors": [
+        "Wenlong Li",
+        "Yueming Zhang",
+        "Qingqing Zheng",
+        "Aolan Li"
+      ],
+      "affiliations": [
+        "Zhejiang University",
+        "Ghent University - Faculty of Law",
+        "Shandong University",
+        "Queen Mary University of London - Centre for Commercial Law Studies (CCLS)"
+      ],
+      "pages": 54,
+      "posted": "03 Mar 2025",
+      "snippet": "regulation based on data protection laws. / The governance and compliance of AI through data protection laws could also benefit from greater synergy between guidelines and enforcement actions as",
+      "downloads": 769
+    },
+    {
+      "abstractId": "5158906",
+      "title": "The AI Act: Europe's Human Rights Contradiction Militarizing AI in the Name of Defense-The Human-Centric Illusion",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5158906",
+      "authors": [
+        "Tania Goncalves"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 13,
+      "posted": "28 Feb 2025",
+      "snippet": "While the regulation enforces strict compliance measures for privatesector AI, it exempts military and defense applications, raising questions about accountability / between security and societal progress.This paper argues that while the AI Act claims to be human-centric, it fundamentally prioritizes military AI, creating / AI Regulation, National Security Exemptions, Asilomar AI Principles, AI ethics Governance",
+      "downloads": 108
+    },
+    {
+      "abstractId": "5083993",
+      "title": "The EU AI Act in a Global Perspective",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5083993",
+      "authors": [
+        "Marco Almada"
+      ],
+      "affiliations": [
+        "University of Luxembourg - Faculty of Law, Economics and Finance (FDEF)"
+      ],
+      "pages": 22,
+      "posted": "27 Feb 2025",
+      "snippet": "The European Union (EU)ʼs AI Act is one of the first regulatory instruments dedicated to AI regulation. / This chapter argues, instead, that the AI Act is unlikely to become a “gold standard” for global AI regulation.",
+      "downloads": 1807
+    },
+    {
+      "abstractId": "5155591",
+      "title": "European AI Standards - Technical Standardization and Implementation Challenges under the EU AI Act",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5155591",
+      "authors": [
+        "Robert Kilian",
+        "Linda Jäck",
+        "Dominik Ebel"
+      ],
+      "affiliations": [
+        "Humboldt University Berlin",
+        "General Catalyst",
+        "Heidelberg University"
+      ],
+      "pages": 32,
+      "posted": "26 Feb 2025",
+      "snippet": "Harmonized standards are the cornerstone of efficient EU AI Act compliance. / AI Act and sectoral standardization following vertical product safety legislation. / AI Standardization, European AI Standards, EU AI Act, AI Act, Technical Standards, Harmonized Standards, AI Compliance, Digital Regulation, AI Trustworthiness",
+      "downloads": 1799
+    },
+    {
+      "abstractId": "5081188",
+      "title": "The AI Act: Normativity and (Constitutional) Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5081188",
+      "authors": [
+        "Arne P. Wegner"
+      ],
+      "affiliations": [
+        "University Paris 1 Panthéon Sorbonne (Sorbonne Law School)"
+      ],
+      "pages": 46,
+      "posted": "13 Feb 2025",
+      "snippet": "This presentation examines the European Union’s AI Act, focusing on its normative framework and constitutional implications for regulating artificial / It explores the Act’s risk-based approach, which categorizes AI systems into prohibited, high-risk, and minimal/no-risk applications, imposing varying compliance",
+      "downloads": 34
+    },
+    {
+      "abstractId": "5069335",
+      "title": "The First Global AI Treaty: Analyzing the Framework Convention on Artificial Intelligence and the Eu AI Act",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5069335",
+      "authors": [
+        "Cheng-chi (Kirin) Chang"
+      ],
+      "affiliations": [],
+      "pages": 14,
+      "posted": "13 Feb 2025",
+      "snippet": "As the world’s first legally binding international treaty on AI, the Convention aims to establish common standards for AI governance grounded in human / It highlights the Convention’s broad scope, lifecycle approach to AI governance, flexible implementation mechanisms, and emphasis on stakeholder engagement / Framework Convention on Artificial Intelligence, International Law, AI Governance, International AI Treaty, Global Technology Policy, AI risk management / , Comparative AI law, EU AI Act, AI, Artificial Intelligence, Global AI",
+      "downloads": 477
+    },
+    {
+      "abstractId": "5137081",
+      "title": "Leashes, Not Guardrails: A Management-Based Approach to Artificial Intelligence Risk Regulation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5137081",
+      "authors": [
+        "Cary Coglianese",
+        "Colton R. Crum"
+      ],
+      "affiliations": [
+        "University of Pennsylvania Carey Law School",
+        "University of Notre Dame"
+      ],
+      "pages": 36,
+      "posted": "13 Feb 2025",
+      "snippet": "leash only protects others when a human retains a firm grip on the handle, the kind of leashes that should be deployed for AI will also demand human oversight / Our aim is to facilitate future research and decision-making that can improve the efficacy of AI regulation by leashes, not guardrails. / Artificial intelligence, AI, AI safety regulation, digital technologies, AI risk governance, management-based regulation, risk management",
+      "downloads": 913
+    },
+    {
+      "abstractId": "5067916",
+      "title": "Unlocking the Black Box: Analysing the EU Artificial Intelligence Act's Framework for Explainability in AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5067916",
+      "authors": [
+        "Georgios Pavlidis"
+      ],
+      "affiliations": [
+        "NUP"
+      ],
+      "pages": 21,
+      "posted": "12 Feb 2025",
+      "snippet": "At the EU level, the notion of explainability is one of the fundamental principles that underpin the AI Act, though the exact XAI techniques and requirements / Finally, the paper examines the integration of XAI into EU law, emphasising the issues of standard setting, oversight, and enforcement. / Artificial Intelligence, European Union, explainability, black box problem, oversight",
+      "downloads": 156
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "item_key": "VCI88UZD",
+  "methods": [
+    "conceptual/position/framework",
+    "literature-review/synthesis",
+    "reference-architecture-proposal",
+    "threat-modeling",
+    "illustrative-case-studies"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position/framework",
+  "notes": "Proposes HCMRs as an architectural model/framework; presents a reference architecture, certification pipeline, threat model, and design principles. Synthesizes prior work and known supply-chain incidents (SolarWinds, Log4Shell, XZ Utils) as illustrative/motivating case studies rather than original empirical case studies. No original data collection, artifact evaluation, or human participants.",
+  "citation": "Enyedi 2026"
+}

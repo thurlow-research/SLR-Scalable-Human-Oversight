@@ -1,0 +1,191 @@
+# Theme-Tagging Calibration — Design & Findings
+
+**Vibe Coding Governance SLR · methodology + results record**
+**Started:** 2026-07-14 · Status: **Set A (AI) complete; Set B (human) pending**
+
+Purpose: before applying the 16-theme controlled vocabulary (see `Emerging_Themes.md` → *Tag
+reference*) to all 149 cores, establish **tagging reliability** on a small calibrated sample —
+cross-model agreement first, then human-vs-model. This mirrors the Stage-3 cross-model QA approach
+(κ, human-confirm) but for a *different task*: multi-label theme assignment rather than keep/discard
+screening, so calibration is re-established from scratch.
+
+---
+
+## 1. Design
+
+**Sample.** 20 cores drawn at random (Python `random.seed(714)`, reproducible) from the 149-item
+Core set, split into two disjoint sets of 10:
+- **Set A — "01-AI Calibration Run"** (Zotero collection `JFN8693L`): tagged by 3 models →
+  cross-*model* agreement + worked examples.
+- **Set B — "02-Human Calibration Run"** (Zotero collection `IURU9UTA`): **Scott tags first, blind**,
+  then the 3 models → human-vs-model agreement. (Blind-first preserves an unbiased human baseline.)
+
+| Set A (`JFN8693L`) | Set B (`IURU9UTA`) |
+|---|---|
+| UB2EVUFU UDVHQ5HR Z8TPRNEU T8E8SCCG M74M3RFJ | B644HQFS 6DXZGHD9 E95T8E88 7V7SRG43 UW2R6BBJ |
+| 2CKL96B8 T72TU8B5 VG6CIDQW 22JBEZNK F9JM9CI6 | BAWCBT9R E3E5YA2E 5VTAJISY TF56EPIP R4WJZBSF |
+
+**Taggers (three distinct frontier families, top reasoning tier).**
+| Label | Model | How run |
+|---|---|---|
+| `opus` | Claude Opus (this assistant) | 5 subagents, 2 papers each, full-text read |
+| `fable` | Claude Fable 5 | 5 subagents (`model:fable`), 2 papers each, full-text read (added 2026-07-14) |
+| `codex` | `gpt-5.6-sol` (OpenAI) | `codex exec --skip-git-repo-check -c model_reasoning_effort=high` |
+| `gemini` | Gemini 3.1 Pro (High), via `agy` | `agy -p … --model "Gemini 3.1 Pro (High)"` |
+
+Deliberately three *different* vendors (not `agy`'s Claude option, which would duplicate Opus; not
+Gemini Flash, which is not Opus-equivalent).
+
+**Input.** **Full document text** (child TXT attachments, 2k–32k words each) — per Scott, tagging is
+on document contents, not title/abstract. All 20 items had both PDF + TXT.
+
+**Instrument.** Identical vocabulary cheat-sheet + prompt for every tagger (`TAG_CHEATSHEET.md`,
+`model_prompt_prefix.txt`). Each tagger returns, per paper: one **primary** theme, all **theme**
+memberships (multi-label, on *membership not mention*), any **facet** tags, and a ≤12-word rationale
+per tag. Output = strict JSON.
+
+**Tag scheme in Zotero (source-encoded so all taggers coexist on one item, fully reversible via the
+`cal:` prefix):**
+- `cal:<model>:theme:<slug>` — each theme membership (explicit `theme:` marker added 2026-07-15, so it
+  strip-maps to the final `theme:<slug>` convention)
+- `cal:<model>:primary:theme:<slug>` — the single primary theme (same `theme:<slug>` tail as the
+  membership tag, with `primary:` prepended — consistent schema)
+- `cal:<model>:facet:<slug>` — each facet
+- `demote:<state>` (plain, not source-encoded) — transient re-scope flag, e.g. `demote:context`: this
+  core looks like it belongs in another disposition; batch-reviewed then moved + flag removed.
+- (human will be `cal:human:*`). After adjudication, the agreed set lands as plain `theme:<slug>`.
+
+**Tooling** (in the session scratchpad; scripts are resumable/idempotent): `run_setA_cli.sh`
+(codex+gemini loop with per-call `timeout 300` + JSON salvage), Opus subagents, `write_tags.py`
+(additive PATCH with `If-Unmodified-Since-Version`). Model outputs kept as per-tagger JSON files
+(`tags/<model>/<key>.json`) → comparison; no plain `theme:` writes during calibration.
+
+**Process notes / lessons (for the full run):** (1) don't double-background (`nohup … &` inside a
+background call spawned racing runners); run one tracked process. (2) Concurrent writers can
+concatenate two JSON objects into one file — normalize each file to its first valid object
+(`json.JSONDecoder().raw_decode`) before parsing. (3) `agy`/`codex` occasionally emit empty output on
+a long paper; the idempotent `[ ! -s ]` guard + re-run fills gaps. (4) Zotero PATCH returns 204 with
+an empty body — don't `json.loads` it.
+
+---
+
+## 2. What we did
+
+- Drew the sample, populated the two Zotero collections (additive collection membership).
+- Downloaded the 20 TXT full-texts.
+- Tagged **Set A** with all three models on full text; wrote 30 source-encoded tag sets to the
+  `01-AI Calibration Run` items in Zotero.
+- Computed cross-model agreement (below).
+- Delivered Scott a self-contained **Set B human-tagging packet** (`SETB_PACKET_FULL.md`).
+- **Froze the instrument** pending Set B (see §4 decision).
+
+---
+
+## 3. What we observed — Set A cross-model agreement (n=10)
+
+### 3.1 Primary "home" theme — highly reliable
+Unanimous **9/10**. Pairwise primary match: **codex–gemini 10/10, opus–codex 9/10, opus–gemini 9/10.**
+
+| key | opus | codex | gemini |
+|---|---|---|---|
+| UB2EVUFU | **hitl-workflow** | ai-review | ai-review |
+| UDVHQ5HR | ai-review | ai-review | ai-review |
+| Z8TPRNEU | hitl-workflow | hitl-workflow | hitl-workflow |
+| T8E8SCCG | rules-based-checks | rules-based-checks | rules-based-checks |
+| M74M3RFJ | regulatory-compliance | regulatory-compliance | regulatory-compliance |
+| 2CKL96B8 | ai-code-insecurity | ai-code-insecurity | ai-code-insecurity |
+| T72TU8B5 | risk-routing | risk-routing | risk-routing |
+| VG6CIDQW | hitl-workflow | hitl-workflow | hitl-workflow |
+| 22JBEZNK | automation-bias | automation-bias | automation-bias |
+| F9JM9CI6 | hitl-workflow | hitl-workflow | hitl-workflow |
+
+The lone disagreement (`UB2EVUFU`) is a **ranking** call, not a miss: each model's chosen primary is
+*present in the other two's membership sets* (ai-review ↔ hitl-workflow, a multi-agent framework with
+async human oversight).
+
+### 3.2 Secondary (multi-label) breadth — where all the noise is
+- **Themes per paper:** opus **4.7**, codex **5.0**, gemini **2.7**.
+- **Pairwise theme-set Jaccard:** opus–codex 0.53, opus–gemini 0.48, **codex–gemini 0.62**.
+- **Consensus core vs long tail:** across the 10 papers, **23** tags all-three agree on vs **27**
+  asserted by a *single* model. ~Half the secondary tags are one model's opinion.
+
+### 3.3 Model signatures (directional bias) — assignment counts / 10 papers
+| theme | opus | codex | gemini | read |
+|---|---|---|---|---|
+| hitl-workflow | 5 | 5 | 5 | unambiguous |
+| regulatory-compliance | 1 | 1 | 1 | unambiguous |
+| provenance-auditability | 4 | 4 | **0** | gemini blind to it |
+| risk-routing | 4 | 5 | **1** | gemini under |
+| agent-scope-drift | 3 | 4 | **1** | gemini under |
+| governance-frameworks | 2 | 4 | 1 | codex over |
+| oversight-explanation | 5 | **7** | 4 | codex over |
+| rules-based-checks | 4 | **7** | 4 | codex over |
+| automation-bias | **4** | 1 | 1 | opus only |
+| oversight-theater | **2** | 0 | 0 | **opus only** |
+| tooling-supply-chain | **1** | 0 | 0 | **opus only** |
+
+- **gemini = conservative floor** — anchors on the primary; skips relational themes
+  (provenance-auditability 0, risk-routing/agent-scope-drift 1).
+- **codex = liberal ceiling** — over-extends process themes (rules-based-checks, oversight-explanation 7).
+- **opus = middle, but the *only* model reaching the insufficiency layer** (oversight-theater,
+  tooling-supply-chain, automation-bias).
+- **Facets** follow the same shape: gemini under-tags (survey-input 2 vs 4/4; problem-statement-anchor
+  3 vs 5/5).
+
+### 3.5 Fable 5 added as a 4th tagger (2026-07-14) — the decisive comparison
+Ran Claude **Fable 5** on Set A (same instrument, full text). It produced the run's most telling result.
+
+- **Fable clusters with Gemini, not with Opus** — despite both being Claude. Pairwise theme Jaccard:
+  **fable–gemini 0.86** (tightest pair in the whole matrix), fable–codex 0.62, codex–gemini 0.62,
+  opus–codex 0.53, **fable–opus 0.49**, opus–gemini 0.48. → Tagging breadth is **not a vendor/family
+  effect**; it's a verbosity disposition. Vendor doesn't predict behavior.
+- **Two breadth camps:** liberal = codex 5.0 / opus 4.7 themes/paper; conservative = gemini 2.7 /
+  **fable 2.6** (the most conservative tagger).
+- **Opus is the outlier among *all four*, 3-to-1, on the insufficiency layer.** Fable (a Claude model)
+  skips these just like Gemini/codex: automation-bias (opus 4 · fable 1 · codex 1 · gemini 1),
+  oversight-theater (2 · 0 · 0 · 0), tooling-supply-chain (1 · 0 · 0 · 0), oversight-scaling-inversion
+  (2 · 0 · 1 · 1). Only Opus reaches them.
+- **Primary theme across 4 models: 8/10 unanimous.** Two splits, both *ranking calls at known theme
+  adjacencies*: `UB2EVUFU` (Opus hitl-workflow vs three ai-review) and `T72TU8B5`/Hedwig (Fable
+  hitl-workflow vs three risk-routing — the routing↔control-surface boundary).
+- `provenance-auditability`/`risk-routing` split on the *liberal/conservative* axis (opus+codex reach
+  them; fable+gemini don't), distinct from the insufficiency-layer axis.
+
+### 3.4 Insights
+1. **Structure agreed, breadth contested.** Primary theme is essentially solved; disagreement lives
+   entirely in secondary membership.
+2. **Opus is the outlier among all four models (3-to-1), and its outlier tags are the substantive
+   ones.** With Fable added, three independent models (fable, codex, gemini) converge on a narrower
+   reading and *only Opus* reaches the limits-of-oversight themes (automation-bias, oversight-theater,
+   tooling-supply-chain). A naive **model-majority vote would systematically drop exactly those
+   themes.** Crucially, Fable is a *Claude* model yet sides with the narrow camp (fable–gemini J=0.86),
+   so this is **not vendor-driven** — it's a breadth disposition, and Opus's is the distinctive one.
+   Reproduces the Stage-3 finding (**model consensus ≠ human; Opus ≈ human**). Do **not** auto-assign
+   secondary tags by model majority; the human (Set B) is the arbiter on the now-3:1 split.
+3. **Breadth is the tunable knob:** gemini too thin for complete rosters; codex slightly over; the
+   right target is unknown until the human sets it.
+4. **Well-defined vs fuzzy themes:** hitl-workflow / regulatory-compliance are crisp; the over/under-
+   applied `oversight-explanation`, `rules-based-checks`, `provenance-auditability` are the boundaries
+   to sharpen in `Emerging_Themes.md`.
+
+---
+
+## 4. Decisions
+
+- **Freeze the instrument through Set B.** Do not iterate the prompt or tag definitions on Set A
+  model results — that would tune the instrument toward *model consensus*, the known-wrong target
+  (§3.4 #2), and break A/B comparability. Iterate **once, after Set B, anchored on the human tags.**
+- Source-encode all calibration tags (`cal:<model>:…`); keep disposition-independent; reversible.
+- Primary theme is reliable enough to model-assign with a light human check; secondary breadth is the
+  open policy question Set B resolves.
+
+---
+
+## 5. Open / next steps
+1. **Scott tags Set B blind** (packet delivered).
+2. Run the 3 models on Set B; write `cal:human:*` + `cal:<model>:*`; compute **human-vs-model** agreement.
+3. **Decisive test:** does the human tag `automation-bias` / `oversight-theater` / `provenance-
+   auditability` where only Opus did? → settles whether Opus's breadth is correct or over-reaching.
+4. **Iterate the instrument once** (breadth rule in the prompt calibrated to the human; sharpen the 3
+   fuzzy boundaries; add/trim insufficiency-layer cues per the human result).
+5. Run the **full 149** under the finalized instrument; human-confirm the long tail per the agreed policy.

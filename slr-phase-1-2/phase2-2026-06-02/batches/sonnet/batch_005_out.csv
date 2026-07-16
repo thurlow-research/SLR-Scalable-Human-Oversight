@@ -1,0 +1,51 @@
+item_key,decision,confidence,rationale
+CLFKMXSL,discard,high,Addresses algorithmic accountability legislation at a policy level with no actionable mechanism for software engineering organizations managing AI-generated code.
+7NAH36ZU,maybe,medium,Tamper-evident causal logging for AI agent actions could transfer to audit trails for AI-generated code, but the abstract lacks specifics on software development contexts.
+HKHIFK8W,discard,high,Focuses on identity credential binding to LLM sessions for trust infrastructure, with no connection to code governance, review, or software engineering oversight.
+7V2JLRNH,discard,high,Surveys global AI governance frameworks at a high level with no operationalizable mechanism for software engineering organizations or AI-generated code oversight.
+EKRSXH9P,discard,medium,Proposes a conceptual authority stack model for AI integrity that is definitional and philosophical without actionable measurement or governance mechanism for software contexts.
+UVR3CRHA,discard,high,Addresses copyright in generative AI training data with no connection to code governance, software engineering oversight, or AI-generated code risk management.
+X6P3XIKC,keep,high,Provides a causal taxonomy clarifying HITL/HOTL distinctions grounded in causal structure, directly applicable to designing human oversight mechanisms for AI-generated code review.
+H7ZEP6FZ,maybe,medium,Comparative analysis of six AI governance frameworks including EU AI Act and NIST AI RMF could inform compliance-by-design for software organizations, but the abstract lacks a specific software/DevSecOps angle.
+8RVCSXVH,discard,high,Addresses geopolitical technology diffusion using semiconductor trade as a case study with no relevance to AI-generated code governance or software engineering oversight.
+7KGWL9F6,discard,high,Focuses on AI adoption in the Indian judiciary, a domain-specific non-software HITL context with no transferable mechanism for software engineering governance.
+G93BHSPC,discard,high,Addresses AI governance in scientific research with policy recommendations focused on disclosure and literacy, not operationalizable for software engineering code oversight.
+MFGUSDBF,discard,high,Focuses on generative AI content moderation and misinformation under the Digital Services Act with no connection to code generation, software engineering, or developer oversight.
+MXDJZLDQ,discard,medium,Addresses training data contamination as a threat to generative AI but focuses on geopolitical/adversarial framing rather than providing actionable governance mechanisms for software engineering organizations.
+K2T37VEM,discard,high,Addresses labor law adaptation to technological change with no connection to AI-generated code governance, software engineering oversight, or risk measurement.
+GQ77TLZN,discard,high,Philosophical critique of AI alignment treating safety as an optimization constraint with no operationalizable mechanism relevant to software engineering governance.
+DBA6R6A3,keep,high,Presents a reproducible ML pipeline for automated bug triaging with quantified F1-score performance on a large GitHub dataset, directly actionable for managing issue triage at scale in software organizations.
+WP522IIJ,discard,medium,Proposes a framework for human-shaped AGI emphasizing distributed agency, but remains conceptual without operationalizable mechanisms for software engineering code oversight contexts.
+TL59BYKT,maybe,medium,Maps generative AI litigation patterns as an empirical dataset that could inform liability risk frameworks, but focuses on insurance/legal market rather than engineering governance mechanisms.
+U32NRMDM,keep,high,Provides longitudinal empirical evidence of declining review intensity and stagnant quality after AI adoption across major open-source repositories, directly quantifying the oversight capacity problem for software organizations.
+X7UFTMIV,discard,high,Introductory foundational AI governance chapter covering principles without domain-specific or operationalizable mechanisms for software engineering contexts.
+FHUGCNKY,keep,high,Directly defines vibe coding, identifies governance risks including black-box codebases and responsibility gaps, and proposes a research agenda with organization-centered directions actionable for software engineering teams.
+TEDB6XP3,discard,high,Analyzes copyright's volitional conduct doctrine for generative AI with no connection to code governance, software engineering oversight, or risk management.
+54383TI5,keep,medium,Proposes a Code Digital Twin framework integrating human-in-the-loop feedback to preserve tacit knowledge for enterprise software development, offering a concrete mechanism for governing AI-assisted code evolution.
+DQM82F3L,keep,medium,Describes tooling including AI Act-aligned risk assessment and NLP Guard for harmful attribute detection, suggesting operational mechanisms for responsible AI implementation in engineering workflows.
+S57GJ9VD,keep,high,Directly addresses AI Act technical documentation compliance for AI systems with concrete tooling for software organizations, providing actionable compliance pathway.
+6UICXLK2,discard,high,Addresses copyright and authorship for AI-generated creative works with no connection to code governance or software engineering oversight mechanisms.
+C5JRYCCM,discard,high,Focuses on environmental AI regulation and carbon footprint governance with no connection to software engineering oversight or AI-generated code risk management.
+9YX3L9YY,keep,high,Provides a roadmap for operationalizing responsible AI through software engineering practices including multi-level governance, process-oriented development, and architectural patterns directly applicable to engineering organizations.
+36NC2GK8,maybe,medium,Financial-sector agentic AI governance framework with behavioral stress testing and risk taxonomy could transfer to software engineering contexts but requires substantial domain re-derivation.
+VKI8X7NK,discard,high,Classic TAM paper on technology acceptance with no connection to AI-generated code governance, oversight mechanisms, or software engineering risk management.
+JVRQU9NX,discard,high,Philosophical framework grounded in human nature institutionalism for AI ethics with no operationalizable mechanism for software engineering governance contexts.
+YJLK5FPA,keep,medium,Proposes GOPEL governance infrastructure framework with explicit attention to automation bias and provider plurality, offering structural mechanisms transferable to software engineering oversight contexts.
+N5RK5TBY,maybe,medium,Introduces Proactivity Ratio as a formal governance metric for agentic AI systems which could transfer to measuring oversight capacity in code review pipelines, but the domain focus is customer experience services.
+A5LVWQT2,keep,high,Reports large-scale implementation of multi-LLM pipeline for code documentation at BNP Paribas with hybrid human-review governance, providing empirical evidence and governance-aligned practice for regulated software environments.
+2WHHEPAA,discard,high,Philosophical moral naturalist account of AI alignment without operationalizable mechanisms or connection to software engineering governance contexts.
+9UD7P759,discard,medium,Addresses fairness and transparency in financial AI using causal GNNs with no connection to software engineering oversight, code governance, or AI-generated code risk management.
+3XL8EKLJ,keep,high,Systematically reviews LLM-based code audit methods across vulnerability detection, clone detection, and style analysis, providing directly actionable survey of automated code quality mechanisms for software organizations.
+TUDRYIY6,discard,medium,Applies HITL and XAI to industrial defect detection in hard metal manufacturing, a physical-domain non-software context not transferable to code review governance without substantial re-derivation.
+5RSE2SYS,keep,medium,Experimentally quantifies algorithm aversion and overconfidence dynamics in AI-assisted judgment, providing empirical basis for trust calibration mechanisms applicable to developer oversight of AI-generated code.
+ZMWWZQY7,discard,high,Analyzes CFPB consumer complaint disclosure as a bank disciplining mechanism with no connection to software engineering governance or AI-generated code oversight.
+F65Q6WM3,discard,high,Proposes an AI classification framework based on social constructs with no operationalizable mechanism for software engineering governance or code oversight contexts.
+6YK8UXHA,discard,high,Addresses AI delegation and human oversight in Brazilian judicial processes, a domain-specific non-software HITL context not transferable to code review governance.
+VEACAIIR,discard,high,Book on privacy and contextual integrity with no connection to AI-generated code governance, software engineering oversight, or risk management mechanisms.
+V744RI26,discard,high,Philosophical paper revisiting Russell's epistemology in light of AI with no operationalizable mechanism for software engineering governance or code oversight.
+DEAIIZYY,discard,high,Analyzes copyright metaphors confounding generative AI legal analysis with no connection to software engineering governance or AI-generated code risk management.
+DYHZ6GR8,discard,high,Addresses copyright law for generative AI training and output with no connection to software engineering oversight, code governance, or developer risk management.
+LB84WJKI,keep,high,Implements and deploys a human-in-the-loop LLM agent framework for software development in production at Atlassian, with empirical evaluation of code quality concerns and developer oversight mechanisms.
+BZ4K52DU,keep,high,Introduces Governance-as-Code as an executable constraint mechanism for MLOps with conditional delegation and HITL, directly operationalizable for software engineering organizations managing AI-generated code at velocity.
+27L5PH25,discard,medium,Proposes AI governance framework for hiring decisions focused on recruitment fairness and HR compliance with no connection to software engineering, code generation, or developer oversight contexts.
+LQK5PZ9M,keep,high,Develops a technical theory of assurance throughput and evidence flow loss in layered AI systems with direct application to maintaining oversight provenance in AI-assisted software development pipelines.

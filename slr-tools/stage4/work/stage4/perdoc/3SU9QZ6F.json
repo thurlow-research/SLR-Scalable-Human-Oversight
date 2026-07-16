@@ -1,0 +1,73 @@
+{
+  "item_key": "3SU9QZ6F",
+  "citation": "Parris 2026",
+  "evidence_type": [
+    "system-tool",
+    "empirical",
+    "conceptual-position",
+    "framework-model"
+  ],
+  "problem_statement": "AI-generated code tends to fail quietly\u2014preserving the surface appearance of function while silently violating guarantees\u2014and standard code review and static analysis are not calibrated to detect this class of failure-untruthful behavior.",
+  "magnitude_evidence": "AI-attributed files show 0.435 high-severity findings per file versus 0.242 in human controls, a 1.80\u00d7 excess (955 vs 955 matched files); Study 1 found 4,120 findings across 1,643 files in a six-system enterprise environment",
+  "risk_types": [
+    "silent failure",
+    "quality",
+    "reliability",
+    "swallowed exceptions",
+    "graceful degradation without disclosure",
+    "confidence misrepresentation",
+    "test coverage asymmetry",
+    "distributed failure propagation",
+    "safety-critical",
+    "governance/compliance"
+  ],
+  "insufficiency_evidence": "An LLM evaluator applied to the same surfaces exhibits the same suppression pattern at a 44:1 ratio below deterministic detection; for deliberation.py the LLM returned PASS on all 7 static FAIL checks (100% suppression); standard static analysis (SonarQube, Semgrep) can pass while code exhibits pervasive fail-soft behavior",
+  "solution_mechanisms": [
+    "15-check deterministic inspection framework",
+    "failure-truthfulness auditing",
+    "success-integrity check (success after critical failure)",
+    "broad-exception-suppression detection",
+    "confidence-misrepresentation check",
+    "test-coverage-asymmetry check",
+    "deterministic-first scanner with optional LLM augmentation",
+    "fail-closed UNKNOWN-as-conditional-FAIL semantics",
+    "human-review-only checks (C07, C12)",
+    "check co-occurrence failure profiles",
+    "CLI and web scanner with aggregate-only research pipeline"
+  ],
+  "mechanism_keywords": [
+    "static-analysis",
+    "audit-checklist",
+    "guardrail",
+    "failure-truthfulness",
+    "fail-closed",
+    "deterministic",
+    "exception-suppression-detection",
+    "confidence-calibration",
+    "test-coverage-gate",
+    "hitl",
+    "provenance",
+    "lineage",
+    "observability",
+    "reward-shaped-failure"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "pre-commit",
+    "CI",
+    "pre-publish"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Reward-Shaped Failure Hypothesis",
+    "failure truthfulness",
+    "AI-Induced Risk Audit (AIRA)",
+    "fail-soft behavior",
+    "severity clustering",
+    "check co-occurrence failure profiles"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

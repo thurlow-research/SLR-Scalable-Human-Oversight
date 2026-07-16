@@ -1,0 +1,61 @@
+{
+  "item_key": "PD297DUM",
+  "citation": "Kudriavtseva 2025",
+  "evidence_type": [
+    "empirical"
+  ],
+  "problem_statement": "The document investigates how developers perceive the security of AI-generated code from GenAI tools like Copilot and ChatGPT, since these tools may reproduce vulnerable code learned from open-source training data.",
+  "magnitude_evidence": "studies have shown that Copilot generates insecure code about 40% of the time [31], and only 5 out of 21 programs produced by ChatGPT were initially secure [20]; the 2024 OSSRA report revealed 84% of analyzed codebases contain at least one vulnerability, with 74% having high-risk vulnerabilities",
+  "risk_types": [
+    "security",
+    "overreliance-on-AI",
+    "quality",
+    "maintainability",
+    "privacy",
+    "ethical",
+    "supply-chain",
+    "hallucination",
+    "lack-of-transparency",
+    "auditability",
+    "bias"
+  ],
+  "insufficiency_evidence": "participants who had access to an AI assistant tended to write less secure code compared to those without [32]; only about a quarter of developers expressed confidence in AI-generated code; 43% expressed a lack of confidence in the security of AI-generated code",
+  "solution_mechanisms": [
+    "thorough human review before integration",
+    "code scanning tools for vulnerability detection",
+    "avoid submitting sensitive data to GAI tools",
+    "increased documentation of generated code",
+    "more cautious deployment to production",
+    "choosing reputable/security-focused GAI vendors",
+    "testing generated code"
+  ],
+  "mechanism_keywords": [
+    "code-review",
+    "hitl",
+    "vulnerability-scanning",
+    "sast",
+    "data-minimization",
+    "documentation",
+    "human-oversight",
+    "vendor-selection",
+    "testing"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "pre-commit",
+    "pre-publish",
+    "generation-time"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "overreliance on AI without human oversight",
+    "Dunning-Kruger effect in secure coding self-assessment",
+    "proficiency disconnect with/without AI"
+  ],
+  "governance_refs": [
+    "GDPR"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

@@ -1,0 +1,970 @@
+item_key,final,target_collection,reviewed,tags,title
+9M68WEJA,context,85JVIR9X,True,s3:opus:core|s3:human:context,From industry claims to empirical reality: an empirical study of code review age
+CDJ5CGEV,context,85JVIR9X,True,s3:opus:core|s3:human:context,Deep learning-based code reviews: a paradigm shift or a double-edged sword?
+424WFD9R,context,85JVIR9X,True,s3:opus:core|s3:human:context,Human-AI synergy in agentic code review
+9D9QSWGZ,context,85JVIR9X,True,s3:opus:core|s3:human:context,These aren't the reviews you're looking for how humans review AI-generated pull 
+NV5QU9G2,context,85JVIR9X,True,s3:opus:core|s3:human:context,Security in the age of AI teammates: an empirical study of agentic pull requests
+I2IWRQVZ,context,85JVIR9X,True,s3:opus:core|s3:human:context,MOSAIC-bench: measuring compositional vulnerability induction in coding agents
+BPMFPZZB,context,85JVIR9X,True,s3:opus:core|s3:human:context,Applying generative artificial intelligence for vulnerability fixing in a propri
+QG34FIKD,context,85JVIR9X,True,s3:opus:core|s3:human:context,Why human guidance matters in collaborative vibe coding
+RDNMBD6N,context,85JVIR9X,True,s3:opus:core|s3:human:context,Context-aware pipeline for automated code review using large language models
+P868GNU7,context,85JVIR9X,True,s3:opus:core|s3:human:context,On the use of agentic coding: an empirical study of pull requests on GitHub
+DR3HKXW7,context,85JVIR9X,True,s3:opus:core|s3:human:context|lit-review,A survey of vibe coding with large language models
+5NY5HVNV,context,85JVIR9X,True,s3:opus:core|s3:human:context,Accountability in code review: the role of intrinsic drivers&nbsp;and the impact
+D93DVDLG,context,85JVIR9X,True,s3:opus:core|s3:human:context,Impact of an LLM-based review assistant in practice: a mixed open-/closed-source
+G3FISG9I,context,85JVIR9X,True,s3:opus:core|s3:human:context,"Vibe coding in practice: motivations, challenges, and a future outlook -- a grey"
+5JZQD2VK,context,85JVIR9X,True,s3:opus:core|s3:human:context,Vibe coding: programming through conversation with artificial intelligence
+CBXBKRA9,context,85JVIR9X,True,s3:opus:core|s3:human:context,Rethinking code review workflows with LLM assistance: an empirical study
+U32NRMDM,context,85JVIR9X,True,s3:opus:core|s3:human:context,Examining software engineering practices in the pre-AI and post-AI ERA
+XACCJD46,context,85JVIR9X,True,s3:opus:core|s3:human:context,Novice developers produce larger review overhead for project maintainers while v
+JFFKDXG8,context,85JVIR9X,True,s3:opus:core|s3:human:context,Building software by rolling the dice: a qualitative study of vibe coding
+732VDKJD,context,85JVIR9X,True,s3:opus:core|s3:human:context,Vibe coding as a reconfiguration of intent mediation in software development: de
+J5TG9IQB,context,85JVIR9X,True,s3:opus:core|s3:human:context,From code-centric to intent-centric software engineering: a reflexive thematic a
+7C3MCTVH,context,85JVIR9X,True,s3:opus:core|s3:human:context,Understanding dominant themes in reviewing agentic AI-authored code
+HLFJPDC4,context,85JVIR9X,True,s3:opus:core|s3:human:context,A roadmap for modern code review: challenges and opportunities
+5ISRZX6M,context,85JVIR9X,True,s3:opus:core|s3:human:context,Evaluating large language models for code review
+2Z4PZABF,context,85JVIR9X,True,s3:opus:core|s3:human:context,Regulatory gap: why model risk management is structurally ill-suited to govern A
+PG2GXVY8,context,85JVIR9X,True,s3:opus:core|s3:human:context,How readable is model-generated code? Examining readability and visual inspectio
+AGMUZP58,context,85JVIR9X,True,s3:opus:core|s3:human:context,Self-admitted GenAI usage in open-source software
+WNGESYPT,context,85JVIR9X,True,s3:opus:core|s3:human:context,Automated code review in practice
+UDT3AA4A,context,85JVIR9X,True,s3:opus:core|s3:human:context|lit-review,A survey on the role of LLMs in AI-based software development: augmentation and 
+UAIILG4K,context,85JVIR9X,True,s3:opus:core|s3:human:context|lit-review,AI-native software engineering and vibe coding: a strategic technical survey for
+DZYEZVFE,context,85JVIR9X,True,s3:opus:core|s3:human:context|lit-review,Human-AI experience in integrated development environments: a systematic literat
+8CQRCPW2,context,85JVIR9X,True,s3:opus:core|s3:human:context,SWE-PRBench: benchmarking AI code review quality against pull request feedback
+SMJR57VX,context,85JVIR9X,True,s3:opus:core|s3:human:context,Code review agent benchmark
+WBFBCN9G,context,85JVIR9X,True,s3:opus:core|s3:human:context|lit-review,"Large language models in programming: a meta-analysis of tools, users, and human"
+TPAAIV8D,context,85JVIR9X,True,s3:opus:core|s3:human:context,Security degradation in iterative AI code generation: a systematic analysis of t
+EVQPIQWK,context,85JVIR9X,True,s3:opus:core|s3:human:context,Poisoned ChatGPT finds work for idle hands: exploring developers’ coding practic
+CLHB8SRT,context,85JVIR9X,True,s3:opus:core|s3:human:context,"More code, less understanding? On the impact of AI assistants on developers’ pro"
+MQ5KZQTX,context,85JVIR9X,True,s3:opus:core|s3:human:context,Human and machine: how software engineers perceive and engage with AI-assisted c
+ETHYCZEC,context,85JVIR9X,True,s3:opus:core|s3:human:context,Different by design: understanding human-AI collaboration through GitHub pull re
+TNLFBKAF,context,85JVIR9X,True,s3:opus:core|s3:human:context,Generative AI vibe coding for prototyping industrial systems
+2LXUVY4P,context,85JVIR9X,True,s3:opus:core|s3:human:context,A study on spec-driven development utilizing AI and vibe coding
+VJ5WZ2ZE,context,85JVIR9X,True,s3:opus:core|s3:human:context,SWE-chat: coding agent interactions from real users in the wild
+BISE8375,context,85JVIR9X,True,s3:opus:core|s3:human:context,Human-AI collaboration for scaling agile regression testing: an agentic-AI teamm
+C76VDWWV,context,85JVIR9X,True,s3:opus:core|s3:human:context,An empirical study of generative AI adoption in software engineering
+Q8Z3T386,context,85JVIR9X,True,s3:opus:core|s3:human:context|lit-review,The AI productivity paradox in software development: a meta-analysis of implemen
+F4G9XXBR,context,85JVIR9X,True,s3:opus:core|s3:human:context,SysTradeBench: an iterative build-test-patch benchmark for strategy-to-code trad
+735ZR4IY,context,85JVIR9X,True,s3:opus:core|s3:human:context,LLMs in coding and their impact on the commercial software engineering landscape
+NB795DM8,context,85JVIR9X,True,s3:opus:core|s3:human:context,Between policy and practice: GenAI adoption in agile software development teams
+A9N5BYY9,context,85JVIR9X,True,s3:opus:core|s3:human:context,AI-powered code reviews: leveraging large language models
+6ABGGGRP,context,85JVIR9X,True,s3:opus:core|s3:human:context,State of AI-assisted software development
+VZN9KJ7H,context,85JVIR9X,True,s3:opus:core|s3:human:context,Compile-time security analysis and optimization of sensitive string producers
+33HNWZ53,context,85JVIR9X,True,s3:opus:core|s3:human:context,AgentClick: a skill-based human-in-the-loop review layer for terminal AI agents
+UMCQ52IC,context,85JVIR9X,True,s3:opus:core|s3:human:context,"Humans integrate, agents fix: how agent-authored pull requests are referenced in"
+V6E7B93A,context,85JVIR9X,True,s3:opus:core|s3:human:context,CR-bench: evaluating the real-world utility of AI code review agents
+8J86V6HB,context,85JVIR9X,True,s3:opus:core|s3:human:context,Why agentic-PRs get rejected: a comparative study of coding agents
+DYKE748V,context,85JVIR9X,True,s3:opus:core|s3:human:context,The role of firm AI capabilities in generative AI-pair coding
+7GE63LDE,context,85JVIR9X,True,s3:opus:core|s3:human:context,Repairing infrastructure-as-code using large language models
+U3IQJ4VK,context,85JVIR9X,True,s3:opus:core|s3:human:context,Security weaknesses of copilot-generated code in GitHub projects: an empirical s
+DVQATU3E,context,85JVIR9X,True,s3:opus:core|s3:human:context,Everyday practitioner experiences of AI-first policies adopted by U.S. big tech 
+2UTQYY3T,context,85JVIR9X,True,s3:opus:core|s3:human:context,From assessment to enhancement of pull requests at scale: aligning code reviews 
+S7BJA4RD,context,85JVIR9X,True,s3:opus:core|s3:human:context,AI-assisted collaboration: exploring developer experience with GitHub copilot an
+6237UYZI,context,85JVIR9X,True,s3:opus:core|s3:human:context,A user-centered security evaluation of copilot
+VZ9H37V5,context,85JVIR9X,True,s3:opus:core|s3:human:context,Context before code: an experience report on vibe coding in practice
+JB32U5RE,context,85JVIR9X,True,s3:opus:core|s3:human:context,Agentic pipelines in embedded software engineering: emerging practices and chall
+8M6347W6,context,85JVIR9X,True,s3:opus:core|s3:human:context,Adversarial bug reports as a security risk in language model-based automated pro
+6N2VXJBE,context,85JVIR9X,True,s3:opus:core|s3:human:context|lit-review,A survey on large language model impact on software evolvability and maintainabi
+M5AY5FJF,context,85JVIR9X,True,s3:opus:core|s3:human:context,The ordo-causal attribution deficit: a prudential capital framework for autonomo
+6DIZURHK,context,85JVIR9X,True,s3:opus:core|s3:human:context,"How to redesign frontends now that 50-70% of UI is AI-generated, dynamic, or age"
+7KEUNEP4,context,85JVIR9X,True,s3:opus:core|s3:human:context,Next-generation code transformation for legacy .NET systems with generative AI
+J7D3EN5T,context,85JVIR9X,True,s3:opus:core|s3:human:context,ThreatPrism: multi-framework threat intelligence for AI-assisted software develo
+5QUHNUQQ,context,85JVIR9X,True,s3:opus:core|s3:human:context,Who writes the docs in SE 3.0? Agent vs. Human documentation pull requests
+FXKRNI3I,context,85JVIR9X,True,s3:opus:core|s3:human:context,Towards designing user interfaces for optimized human-AI communication and super
+I3PFG3TZ,context,85JVIR9X,True,s3:opus:core|s3:human:context,A review of research on AI-assisted code generation and AI-driven code review
+BEFM3MT6,context,85JVIR9X,True,s3:opus:core|s3:human:context,AI in the software development lifecycle: insights and open research questions
+LKVVWDF6,context,85JVIR9X,True,s3:opus:core|s3:human:context,CoT+ (chain-of-thought extended): a reproducible multi-reasoning prompting archi
+DXPHT26U,context,85JVIR9X,True,s3:opus:core|s3:human:context,AACR-bench: evaluating automatic code review with holistic repository-level cont
+VR9AM6VV,context,85JVIR9X,True,s3:opus:core|s3:human:context,AgenticSCR: an autonomous agentic secure code review for immature vulnerabilitie
+462N6DT8,context,85JVIR9X,True,s3:opus:core|s3:human:context,Developers’ dilemma: opportunities and pitfalls of generative AI for software de
+J2G46JPM,context,85JVIR9X,True,s3:opus:core|s3:human:context,Just another copy and paste? Comparing the security vulnerabilities of ChatGPT g
+G4BQ2IUU,context,85JVIR9X,True,s3:opus:core|s3:human:context,Factors influencing the quality of AI-generated code: a synthesis of empirical e
+UDEHDB27,context,85JVIR9X,True,s3:opus:core|s3:human:context,Do AI coding agents log like humans? An empirical study
+N2UHFWQ3,context,85JVIR9X,True,s3:opus:core|s3:human:context,LLM-driven code refactoring: opportunities and limitations
+6UC9YDPD,context,85JVIR9X,True,s3:opus:core|s3:human:context,Improving automated code reviews: learning from experience
+9HPPSFM6,context,85JVIR9X,True,s3:opus:context|s3:human:context,The flaws of policies requiring human oversight of government algorithms
+PNCL8T9B,context,85JVIR9X,True,s3:opus:core|s3:human:context,Confident but incorrect: mitigating hallucination and overconfidence in agentic 
+4K8J6X33,context,85JVIR9X,True,s3:opus:context|s3:human:context,Institutionalised distrust and human oversight of artificial intelligence: towar
+K4CKRTEI,context,85JVIR9X,True,s3:opus:core|s3:human:context,AI vs human code gen report: AI code creates 1.7x more issues
+6QSXGBDM,context,85JVIR9X,True,s3:opus:core|s3:human:context,DSCode comparator: an interactive interface for comparing models and evaluating 
+VQTXS6R4,context,85JVIR9X,True,s3:opus:core|s3:human:context,Issue-oriented agent-based framework for automated review comment generation
+DN9R4PDQ,context,85JVIR9X,True,s3:opus:context|s3:human:context,Vibe coding for product design: understanding product team members' perceptions 
+A4DHCSII,context,85JVIR9X,True,s3:opus:core|s3:human:context,Integrating RAG and LLM for automated code review in practice
+6Z82ABMA,context,85JVIR9X,True,s3:opus:context|s3:human:context,When is generated code difficult to comprehend? Assessing AI agent python code p
+8IQR9PNB,context,85JVIR9X,True,s3:opus:context|s3:human:context,Code with me or for me? How increasing AI automation transforms developer workfl
+4XV5EN3P,context,85JVIR9X,True,s3:opus:context|s3:human:context,AgentSight: system-level observability for AI agents using eBPF
+76DYS6RI,context,85JVIR9X,True,s3:opus:core|s3:human:context,Model-assisted and human-guided: perceptions and practices of software professio
+EJRHHVTN,context,85JVIR9X,True,s3:opus:context|s3:human:context,Software testing with large language models: an interview study with practitione
+RBQZMXWT,context,85JVIR9X,True,s3:opus:context|s3:human:context,Does pass rate tell the whole story? Evaluating design constraint compliance in 
+74UAHJ47,context,85JVIR9X,True,s3:opus:context|s3:human:context,Exploring automation bias in human–AI collaboration: a review and implications f
+LQVJ7XT6,context,85JVIR9X,True,s3:opus:context|s3:human:context|lit-review,State of the art of the security of code generated by LLMs: a systematic literat
+YMXUXDFK,context,85JVIR9X,True,s3:opus:context|s3:human:context,Detection of vulnerabilities in AI-generated java code using random forest algor
+PWC7TXTM,context,85JVIR9X,True,s3:opus:context|s3:human:context,Why you shouldn't fully trust ChatGPT: a synthesis of this AI tool's error rates
+IZQGW3IU,context,85JVIR9X,True,s3:opus:context|s3:human:context,
+QZNURHZQ,context,85JVIR9X,True,s3:opus:context|s3:human:context,The evaluation paradox: cognitive atrophy and the erosion of human oversight in 
+KREBS4T3,context,85JVIR9X,True,s3:opus:context|s3:human:context,From policy to practice: prototyping the EU AI act's human oversight requirement
+BZ4K52DU,context,85JVIR9X,True,s3:opus:context|s3:human:context,Responsible machine learning operations: closing the gap between speed and overs
+3RWMYI5B,context,85JVIR9X,True,s3:opus:context|s3:human:context,Adversarial precedent memory: hardening LLM evaluators through mined failure con
+JGSFEKVA,context,85JVIR9X,True,s3:opus:context|s3:human:context,Use it or slowly lose it: expertise atrophy with organizational AI usage
+9IPQ7228,context,85JVIR9X,True,s3:opus:context|s3:human:context,Automating modelica module generation using large language models: a case study 
+EVIRWHTD,context,85JVIR9X,True,s3:opus:context|s3:human:context,Vibe coding: toward an AI-native paradigm for semantic and intent-driven program
+XSUGEJT2,context,85JVIR9X,True,s3:opus:context|s3:human:context,Investigating autonomous agent contributions in the wild: activity patterns and 
+FSASVSDT,context,85JVIR9X,True,s3:opus:context|s3:human:context|lit-review,Navigating the risks: a survey of security and privacy threats in LLM-based agen
+YRBG342S,context,85JVIR9X,True,s3:opus:context|s3:human:context,Synergizing human-AI cooperation in automated software testing: a balance for en
+ZP7AKMBR,context,85JVIR9X,True,s3:opus:context|s3:human:context,Investigating generative AI’s impact on software organizations’ security practic
+5H6KQCJM,context,85JVIR9X,True,s3:opus:context|s3:human:context,Will it survive? Deciphering the fate of AI-generated code in open source
+2VYT4B7G,context,85JVIR9X,True,s3:opus:context|s3:human:context,Artificial intelligence risk management framework (AI RMF 1.0)
+ZPAZL9I7,context,85JVIR9X,True,s3:opus:context|s3:human:context,Trustworthiness of large language models for code
+D84PYEZM,context,85JVIR9X,True,s3:opus:context|s3:human:context,"Invisible risks, visible code: a vision for understanding ethical debt in AI-bas"
+2MPUZHQL,context,85JVIR9X,True,s3:opus:context|s3:human:context,Asleep at the keyboard? Assessing the security of GitHub copilot’s code contribu
+UJL4BZZ9,context,85JVIR9X,True,s3:opus:context|s3:human:context,Application of large language models in software development: review of the curr
+5F7E92UD,context,85JVIR9X,True,s3:opus:context|s3:human:context,Is vibe coding the future? An empirical assessment of LLM generated codes for co
+GD3RMX4R,context,85JVIR9X,True,s3:opus:context|s3:human:context,On integrating resilience and human oversight into LLM-assisted modeling workflo
+B56YY529,context,85JVIR9X,True,s3:opus:context|s3:human:context|lit-review|theme:oversight,Algorithmic accountability of low-code/No-code artificial intelligence: a litera
+93672HBY,context,85JVIR9X,True,s3:opus:context|s3:human:context,“You’re on a bicycle with a little motor”: benefits and challenges of using AI c
+2CBE8X9X,context,85JVIR9X,True,s3:opus:context|s3:human:context,Prompting as governance: behavioral gaps and control system failures in AI-assis
+ACPKFPNE,context,85JVIR9X,True,s3:opus:context|s3:human:context,Operationalizing trust: a five-step human-in-the-loop (HITL) governance framewor
+X6P3XIKC,context,85JVIR9X,True,s3:opus:context|s3:human:context,Corrective: a causal taxonomy of human runtime involvement in AI systems
+GMKAC37M,context,85JVIR9X,True,s3:opus:context|s3:human:context,A systematic review of watermarking and attribution for AI generated code
+NH5MSAQ4,context,85JVIR9X,True,s3:opus:context|s3:human:context,A fully automated agent for end-to-end code translation and validation
+EHEQPUT7,context,85JVIR9X,True,s3:opus:context|s3:human:context|lit-review,"The ''who"", ''what"", and ''how"" of responsible AI governance: a systematic revie"
+KLVCD5PJ,context,85JVIR9X,True,s3:opus:context|s3:human:context,Governing citizen development to address low-code platform challenges
+MDUDAMYC,context,85JVIR9X,True,s3:opus:context|s3:human:context,"From shadow it to shadow AI–threats, risks and opportunities for organizations"
+BD6EVT65,context,85JVIR9X,True,s3:opus:context|s3:human:context,On the complexities of testing for compliance with human oversight requirements 
+YJECSBHW,context,85JVIR9X,True,s3:opus:context|s3:human:context,Towards automated governance: a DSL for human-agent collaboration in software pr
+SHFHRTUL,context,85JVIR9X,True,s3:opus:context|s3:human:context,iCodeReviewer: improving secure code review with mixture of prompts
+I7X7LTNR,context,85JVIR9X,True,s3:opus:context|s3:human:context,A preliminary study on large language models self-negotiation in software engine
+ADV48DKV,context,85JVIR9X,True,s3:opus:context|s3:human:context,The stability trap: evaluating the reliability of LLM-based instruction adherenc
+4VM5FRXQ,context,85JVIR9X,True,s3:opus:context|s3:human:context,Trustworthy AI software engineers
+9CP6AU7D,context,85JVIR9X,True,s3:opus:context|s3:human:context,Clawed and dangerous: can we trust open agentic systems?
+6JHWQ5GW,context,85JVIR9X,True,s3:opus:context|s3:human:context,Are we aligned? A preliminary investigation of the alignment of responsible AI v
+MHK56HCY,context,85JVIR9X,True,s3:opus:context|s3:human:context,Agentic AI as assurance infrastructure: design principles for a continuous secon
+SEVQQF2T,context,85JVIR9X,True,s3:opus:context|s3:human:context,Decision architecture - a tunable governance model for human-AI decision boundar
+M29MMPY7,context,85JVIR9X,True,s3:opus:context|s3:human:context,Operating imperfect AI: reliability drift and human congestion
+FYU7H5WR,context,85JVIR9X,True,s3:opus:context|s3:human:context,Beyond productivity: evaluating the hidden costs of generative AI in software de
+LZPAIXTQ,context,85JVIR9X,True,s3:opus:context|s3:human:context,LLM scalability risk for agentic-AI and model supply chain security
+8TD7PXM7,context,85JVIR9X,True,s3:opus:context|s3:human:context,Toward author-guided review: an agentic architecture for reflective code review
+TLLPXSB5,context,85JVIR9X,True,s3:opus:context|s3:human:context,Enhancing cloud security assessment frameworks for the generative AI era: an act
+4YEK87VE,context,85JVIR9X,True,s3:opus:context|s3:human:context,Generative AI and organizational structure in the knowledge economy
+5KGLSCGB,context,85JVIR9X,True,s3:opus:context|s3:human:context,Exploring altered open source software development patterns in a time of generat
+TTEUEB9V,context,85JVIR9X,True,s3:opus:context|s3:human:context,NIST AI 600-1: Generative Artificial Intelligence Profile
+7PPE2M2I,context,85JVIR9X,True,s3:opus:context|s3:human:context,Turning off your better judgment: algorithmic conformity in artificial intellige
+68R7GWHB,context,85JVIR9X,True,s3:opus:context|s3:human:context|lit-review,A survey of bugs in AI-generated code
+E9JBQV78,context,85JVIR9X,True,s3:opus:context|s3:human:context,An LLM-assisted approach to designing software architectures using ADD
+WEWQ9NTT,context,85JVIR9X,True,s3:opus:context|s3:human:context,Verified adversarial reasoning intelligence (VARI): multi-agent adversarial veri
+M26XRCRE,context,85JVIR9X,True,s3:opus:context|s3:human:context,"Sycophancy, automation bias, and compressed diffusion: an unaddressed convergenc"
+TSKXN5SS,context,85JVIR9X,True,s3:opus:context|s3:human:context,The darkest mirror: how AI authority bias threatens individual agency and what a
+YWP5VZD3,context,85JVIR9X,True,s3:opus:context|s3:human:context,"Human, all too human: accounting for automation bias in generative large languag"
+BAQXVTG8,context,85JVIR9X,True,s3:opus:context|s3:human:context,Inside the scaffold: a source-code taxonomy of coding agent architectures
+ET5U88I7,context,85JVIR9X,True,s3:opus:context|s3:human:context,Interpretability without actionability: mechanistic intervention methods fail to
+25RCNRY9,context,85JVIR9X,True,s3:opus:context|s3:human:context,Human-AI collaboration in software engineering: lessons learned from a hands-on 
+NSJ9U3H3,context,85JVIR9X,True,s3:opus:context|s3:human:context,Pramana: a protocol-layer treatment of claim verification in autonomous agent ne
+RRFXCNIV,context,85JVIR9X,True,s3:opus:context|s3:human:context,Tracking the moving target: a framework for continuous evaluation of LLM test ge
+6EWNCJCT,context,85JVIR9X,True,s3:opus:context|s3:human:context,A multi-agent RAG framework for regulatory compliance checking of software requi
+W49D6ZQU,context,85JVIR9X,True,s3:opus:context|s3:human:context,DevSecOps for secure and scalable citizen development
+V2VGFTVU,context,85JVIR9X,True,s3:opus:context|s3:human:context,Assessing output reliability and similarity of large language models in software
+CNGP5KBB,context,85JVIR9X,True,s3:opus:context|s3:human:context,LAURA: enhancing code review generation with context-enriched retrieval-augmente
+NT8TBPDP,context,85JVIR9X,True,s3:opus:context|s3:human:context,Evaluating the source code review performance of LLM-based AI chatbots
+APAJ2WGB,context,85JVIR9X,True,s3:opus:context|s3:human:context,Comparative analysis of the code generated by popular large language models (LLM
+R7H5R4ET,context,85JVIR9X,True,s3:opus:context|s3:human:context,Building trustworthy AI solutions: a case for practical solutions for small busi
+9IJUVTWL,context,85JVIR9X,True,s3:opus:context|s3:human:context,Assessing the security of GitHub copilot's generated code - a targeted replicati
+RJYEVZY4,context,85JVIR9X,True,s3:opus:context|s3:human:context,Analyzing code injection attacks on LLM-based multi-agent systems in software de
+4M94HGCT,context,85JVIR9X,True,s3:opus:context|s3:human:context,AI governance in the system development life cycle: insights on responsible mach
+EGIZ2F3T,context,85JVIR9X,True,s3:opus:context|s3:human:context,Conversational AI as a coding assistant: understanding programmers' interactions
+HD5ACBJD,context,85JVIR9X,True,s3:opus:context|s3:human:context,Adjust for trust: mitigating trust-induced inappropriate reliance on AI assistan
+TCNBDBIP,context,85JVIR9X,True,s3:opus:context|s3:human:context,Coherence under acceleration: judgment integrity In a high-velocity convergence 
+Y6SH3JXG,context,85JVIR9X,True,s3:opus:context|s3:human:context,The accountability vacuum: why agentic AI governance fails under conditions of e
+4F5PX7PE,context,85JVIR9X,True,s3:opus:context|s3:human:context,Decision-making with human-in-the-loop: a field experiment of explained AI in pu
+SMHWVB9J,context,85JVIR9X,True,s3:opus:context|s3:human:context,"Designing human-automation redundancy: overreliance, automation shirking, and th"
+B5IQS4ZL,context,85JVIR9X,True,s3:opus:context|s3:human:context,Requirements of high-risk AI systems: AI act. Article 14. Human oversight
+VYRHTLLM,context,85JVIR9X,True,s3:opus:context|s3:human:context,Turning off your better judgment -algorithmic conformity in AI-human collaborati
+J998BUDB,context,85JVIR9X,True,s3:opus:context|s3:human:context,Lights-off data factory: measuring epistemic autonomy in governance-first data s
+R775N6KW,context,85JVIR9X,True,s3:opus:context|s3:human:context,Operational AI governance and the runtime decision ownership gap
+S85B7LEF,context,85JVIR9X,True,s3:opus:context|s3:human:context,Human-centered artificial intelligence in cybersecurity: towards trustworthy and
+U9Z4PE4D,context,85JVIR9X,True,s3:opus:context|s3:human:context,AI-assisted bug prediction and code review automation using machine learning
+HBUHJB3P,context,85JVIR9X,True,s3:opus:context|s3:human:context,The omission gap: defining the professional standard of care for human review of
+FLDAS7UC,context,85JVIR9X,True,s3:opus:context|s3:human:context,From friction to design: verification architecture for AI-augmented institutions
+MFSG8J76,context,85JVIR9X,True,s3:opus:context|s3:human:context,ISO/IEC 42001:2023 — Artificial Intelligence Management System
+9ZYC2VGV,context,85JVIR9X,True,s3:opus:context|s3:human:context,An AI-assisted data migration framework for salesforce modernization (a governed
+52PTUFU8,context,85JVIR9X,False,s3:opus:context,The evolution of technical debt from DevOps to generative AI: a multivocal liter
+B9XME6V7,context,85JVIR9X,False,s3:opus:context,Software doping analysis for human oversight
+NLVKS7SM,context,85JVIR9X,False,s3:opus:context,Promoting reliable artificial intelligence by means of an ethical foundation for
+35GIS9BQ,context,85JVIR9X,False,s3:opus:context,Design patterns for machine learning-based systems with humans in the loop
+QDQEBT6T,context,85JVIR9X,False,s3:opus:context,AI act high-risk requirements readiness: industrial perspectives and case compan
+NAS4ZSWE,context,85JVIR9X,False,s3:opus:context,A modular code generation method for industrial automation systems based on larg
+DXDKC299,context,85JVIR9X,False,s3:opus:context,"Vibe coding entanglements – repositioning boundaries of intention, authorship, a"
+EFJ9USXZ,context,85JVIR9X,False,s3:opus:context,Enhancing code generation via bidirectional comment-level mutual grounding
+9S7TPW3X,context,85JVIR9X,False,s3:opus:context,Can we trust the AI pair programmer? Copilot for API misuse detection and correc
+Y6FAXXSG,context,85JVIR9X,False,s3:opus:context,Augmenting large language models with static code analysis for automated code qu
+DQ72G4Z3,context,85JVIR9X,False,s3:opus:context,Not all trust is the same: effects of decision workflow and explanations in huma
+QMKQC7SC,context,85JVIR9X,False,s3:opus:context,LLMs corrupt your documents when you delegate
+FCTKES78,context,85JVIR9X,False,s3:opus:context,Lost in code generation: reimagining the role of software models in AI-driven so
+FXX4A9CW,context,85JVIR9X,False,s3:opus:context,Agentic business process management: practitioner perspectives on agent governan
+K4EQ3GFV,context,85JVIR9X,False,s3:opus:context,Reliance authorization in AI systems: defining operational decision thresholds —
+48A4LRHQ,context,85JVIR9X,False,s3:opus:context,Artificial intelligence act: a policy prototyping experiment: operationalizing t
+PPTEB7TI,context,85JVIR9X,False,s3:opus:context,How AI-AI assurance assemblages reshape trust and erode human judgment
+CI9BRU7M,context,85JVIR9X,False,s3:opus:context,Bridging the gap using GPT-4 to summarize and explain static analysis warnings a
+TPT6DD7N,context,85JVIR9X,False,s3:opus:context,Managing uncertainty in LLM-based multi-agent system operation
+VCI7FSVP,context,85JVIR9X,False,s3:opus:context,Governance-by-design for AI compliance: compiling EU AI act duties into computab
+XKUKHSNS,context,85JVIR9X,False,s3:opus:context,Toward responsible autonomy: the opportunities and obstacles of large language m
+3SD23IKB,context,85JVIR9X,False,s3:opus:context,NIST AI 100-1: AI Risk Management Framework (AI RMF 1.0)
+UWNI3G8N,context,85JVIR9X,False,s3:opus:context,NIST AI 100-1: AI Risk Management Framework
+C2K75UGE,context,85JVIR9X,False,s3:opus:context,The vicious circles of skill erosion: a case study of cognitive automation
+XXCF6IHG,context,85JVIR9X,False,s3:opus:context,The effect of AI-induced outcome favorability on vigilance performance—an explor
+WMN397BS,context,85JVIR9X,False,s3:opus:context,Leveraging large language models in the software development lifecycle: opportun
+G9DKEEUF,context,85JVIR9X,False,s3:opus:context,Human oversight and fail-safe mechanisms in AI agents
+4VXJUF5I,context,85JVIR9X,False,s3:opus:context,From tokens to tactics: operationalizing generative AI in enterprise workflows
+UIPQFFDH,context,85JVIR9X,False,s3:opus:context,Agentic business process management: practitioner perspectives on agent governan
+VFZXPDJX,context,85JVIR9X,False,s3:opus:context,Enhancing human-machine pair inspection with risk number and code inspection dia
+C4DWC33F,context,85JVIR9X,False,s3:opus:context,What guides our choices? Modeling developers' trust and behavioral intentions to
+9YX3L9YY,context,85JVIR9X,False,s3:opus:context,Towards a roadmap on software engineering for responsible AI
+Q7XTKJLZ,context,85JVIR9X,False,s3:opus:context,"Is this you, LLM? Recognizing AI-written programs with multilingual code stylome"
+63HRKWDI,context,85JVIR9X,False,s3:opus:context,Enhancing pull request reviews: leveraging large language models to detect incon
+MFKY7QMT,context,85JVIR9X,False,s3:opus:context,Advancing secure and standard source code generation techniques
+USAEPERT,context,85JVIR9X,False,s3:opus:context,Understanding specification-driven code generation with LLMs: an empirical study
+98A3UITB,context,85JVIR9X,False,s3:opus:context,Impact and implications of generative AI for enterprise architects in agile envi
+4KJP7IPK,context,85JVIR9X,False,s3:opus:context,Generative AI and the transformation of software development practices
+FWCGTMFN,context,85JVIR9X,False,s3:opus:context,"Governing AI agents: risk, compliance, and accountability in law and finance"
+KWKXUK8X,context,85JVIR9X,False,s3:opus:context,Verifiable governance architecture (VGA) for organisations and teams with human 
+H2F9R5RA,context,85JVIR9X,False,s3:opus:context,WHEEL OS™: a human governance diagnostic framework for autonomous agentic system
+ADUKIXA3,context,85JVIR9X,False,s3:opus:context,From ethification to juridification: human oversight and the potential crowding 
+H66M6N9R,context,85JVIR9X,False,s3:opus:context,The paradox of governance calibration at machine speed: why human intervention c
+CUE8AP27,context,85JVIR9X,False,s3:opus:context,"Putting a human in the loop: increasing uptake, but decreasing accuracy of autom"
+9ZEWVXCE,context,85JVIR9X,False,s3:opus:context,The confirm-conflict-validate (CCV) protocol: a multi-model governance framework
+TUE9R2PH,context,85JVIR9X,False,s3:opus:context,OpenPort protocol: a security governance specification for AI agent tool access
+F8EFSTBB,context,85JVIR9X,False,s3:opus:context,Governing AI-supported decision structures in cybersecurity governance: an integ
+DS98KNBC,context,85JVIR9X,False,s3:opus:context,Epistemic debt: the economics of ungoverned AI
+MJKFY8UC,context,85JVIR9X,False,s3:opus:context,"Finance-grade assurance for agentic AI: verifiable governance, systemic risk mit"
+Z2VYE325,context,85JVIR9X,False,s3:opus:context,"ZelC: a cybersecurity-native programming language for intent-gated, capability-s"
+TF2C996H,context,85JVIR9X,False,s3:opus:context,Human-efficient annotation system via active semi supervised learning and select
+WCXEVQ57,context,85JVIR9X,False,s3:opus:context,Real-time adaptive code analysis with a self-learning multi-agent framework: a r
+ZQY67LDF,context,85JVIR9X,False,s3:opus:context,"Trust and transparency in AI: industry voices on data, ethics, and compliance"
+27D36V3E,context,85JVIR9X,False,s3:opus:context,The ethical concerns raised using AI tools on software development systems
+I46KFFJ3,context,85JVIR9X,False,s3:opus:context,Principles of AI governance and model risk management: master the techniques for
+BNRUD6KT,context,85JVIR9X,False,s3:opus:context,Legal and regulatory frameworks governing generative AI for enterprises
+2FLDI3TC,context,85JVIR9X,False,s3:opus:context,How can generative AI enhance software management? Is it better done than perfec
+W4SE9AT7,context,85JVIR9X,False,s3:opus:context,Exploring the synergistic collaboration of human agentic-AI in enhancing the sec
+24ZVGAAA,context,85JVIR9X,False,s3:opus:context,Embedding ethical AI risks in public sector risk management practice an explorat
+JJCDT5DE,context,85JVIR9X,False,s3:opus:context,AI-augmented software engineering: revolutionizing or challenging software quali
+R6JISKKW,context,85JVIR9X,False,s3:opus:context,"AI failures, hidden vulnerabilities, and forensic oversight in energy cybersecur"
+4Y7AZ5YZ,context,85JVIR9X,False,s3:opus:context,A first-principles based risk assessment framework and the IEEE P3396 standard
+7BU88K3Z,context,85JVIR9X,False,s3:opus:context,"Expectations, outcomes, and challenges of modern code review"
+TLJPGLK9,context,85JVIR9X,False,s3:opus:context,AI CHAOS! 2nd workshop on the challenges for human oversight of AI systems
+TI4RF68X,context,85JVIR9X,False,s3:opus:context,Towards the integration of large language models into the software development l
+TLEX7FBP,context,85JVIR9X,False,s3:opus:context,"Security and quality in LLM-generated code: a multi-language, multi-model analys"
+N32ITKU4,context,85JVIR9X,False,s3:opus:context,PwnPilot: reflections on trusting trust in the age of large language models and 
+N8HSZ7BC,context,85JVIR9X,False,s3:opus:context,Licoeval: evaluating LLMs on license compliance in code generation
+DUBFF52U,context,85JVIR9X,False,s3:opus:context,Liability in AI-enabled clinical decision support: toward a tiered responsibilit
+49IHA2L9,context,85JVIR9X,False,s3:opus:context,How secure is AI-based coding?: a security analysis using STRIDE and data flow d
+ZX2H4BUM,context,85JVIR9X,False,s3:opus:context,Enhancing security in industrial firmware code generation via structured prompt 
+3TMPC3T8,context,85JVIR9X,False,s3:opus:context,Comparative analysis of loop-free function evaluation using ChatGPT and copilot 
+ECBCGAGQ,context,85JVIR9X,False,s3:opus:context,Are we aligned? A preliminary investigation of the alignment of responsible AI v
+GFCB367T,context,85JVIR9X,False,s3:opus:context,"AI - integrated DevSecOps for scalable, secure, and modern cloud architectures"
+8L2G3J4Q,context,85JVIR9X,False,s3:opus:context,♪ with a little help from my (LLM) friends: enhancing static analysis with LLMs 
+829FQPTJ,context,85JVIR9X,False,s3:opus:context,Code fingerprints: disentangled attribution of LLM-generated code
+BP8HVTMW,context,85JVIR9X,False,s3:opus:context,Fingerprinting AI coding agents on GitHub
+FD999VQE,context,85JVIR9X,False,s3:opus:context,Abductive vibe coding (extended abstract)
+455MHPCI,context,85JVIR9X,False,s3:opus:context,A survey of generative AI adoption and perceived productivity among scientists w
+53PNZE7Q,context,85JVIR9X,False,s3:opus:context,"Bring your own AI (BYOAI) in the workplace: patterns, pitfalls, and the BYOAI-go"
+TX3W8A55,context,85JVIR9X,False,s3:opus:context,Agentic AI: an EU AI act paradigm shift?
+E9N676RP,context,85JVIR9X,False,s3:opus:context,The execution control layer: a formal architectural boundary for agentic AI syst
+WDAHJR8T,context,85JVIR9X,False,s3:opus:context,Silent drift: how extended AI conversations systematically degrade in quality -a
+BRN6IZKL,context,85JVIR9X,False,s3:opus:context,The handshake protocol: protecting expert judgment in sustained human-AI collabo
+CMB4FJZZ,context,85JVIR9X,False,s3:opus:context,Execution-witness binding: proof-carrying authorization for LLM agent runtimes
+WRF2X8QE,context,85JVIR9X,False,s3:opus:context,Artificial intelligence systems in the European union: guidelines and architectu
+TEFL3IWF,context,85JVIR9X,False,s3:opus:context,Spider vision: dual-level oversight for AI governance
+8BLIERUP,context,85JVIR9X,False,s3:opus:context,Deterministic AI governance via post-processing constraint layers: the DELIA arc
+8V6QGZL6,context,85JVIR9X,False,s3:opus:context,AI governance and the verification gap: a framework for law and policy under com
+5GB3K5C2,context,85JVIR9X,False,s3:opus:context,TRACE: a governance-first execution framework providing architectural assurance 
+RF4Z8MIE,context,85JVIR9X,False,s3:opus:context,The illusion of human oversight: a structural gap in the EU AI act
+SI8QMR68,context,85JVIR9X,False,s3:opus:context,Compliant but unauthorized: why AI systems can follow oversight rules and still 
+PJJNTMKB,context,85JVIR9X,False,s3:opus:context,Watching the watchmen: overseers’ algorithm aversion in AI arbitration
+G3AYIXB2,context,85JVIR9X,False,s3:opus:context,"From ad hoc to optimised: maturity, adoption and the governance of AI-enabled as"
+JAN7FV3A,context,85JVIR9X,False,s3:opus:context,End-to-end risk governance for organizational use of AI tools: a prevent-detect-
+H59NQ796,context,85JVIR9X,False,s3:opus:context,Humans in the loop
+3TL98CSA,context,85JVIR9X,False,s3:opus:context,"Enterprise large language models: knowledge characteristics, risks and organizat"
+9U8PK4ZP,context,85JVIR9X,False,s3:opus:context,Responsible engagement: human–AI work system design for counteracting agency rev
+D2ZIMQ95,context,85JVIR9X,False,s3:opus:context,"Evaluating agentic AI systems: a balanced framework for performance, robustness,"
+CMW3AWRD,context,85JVIR9X,False,s3:opus:context,When LLMs hurt more than help: understanding decision failures under AI assistan
+5EBI274G,context,85JVIR9X,False,s3:opus:context,Intrinsic participatory governance of autonomous agents: runtime oversight and o
+PDU9YDGM,context,85JVIR9X,False,s3:opus:context,Decision design as judgment architecture structuring authority and accountabilit
+6F5S59DR,context,85JVIR9X,False,s3:opus:context,The board's new observer: fiduciary duties and algorithmic agency under the 2026
+JS58YQWN,context,85JVIR9X,False,s3:opus:context,Computable trust architecture: a formal framework for runtime AI governance
+2F6I3J7E,context,85JVIR9X,False,s3:opus:context,Exploring article 14 of the EU AI proposal: accountability challenges of the hum
+NKII6YDD,context,85JVIR9X,False,s3:opus:context,When to delegate to artificial intelligence: a constrained resource optimization
+PH5NTI5G,context,85JVIR9X,False,s3:opus:context,Automation bias in the AI act: on the legal implications of attempting to de-bia
+X2WIHJNW,context,85JVIR9X,False,s3:opus:context,Hybrid governance framework: governing human-AI decision authority in AI-enabled
+685XDDE9,context,85JVIR9X,False,s3:opus:context,Pioneering ethical AI integration in enterprise workflows: a framework for scala
+HKK5KQXB,context,85JVIR9X,False,s3:opus:context,VIRTSI: a novel trust dynamics model enhancing artificial intelligence collabora
+BGH8KIK7,context,85JVIR9X,False,s3:opus:context,Transforming LLMs into domain experts: a case study of train trajectory evaluati
+D62FTR38,context,85JVIR9X,False,s3:opus:context,"Stuck on suggestions: automation bias, the anchoring effect, and the factors tha"
+NK5VHI9V,context,85JVIR9X,False,s3:opus:context,Human factors in AI-driven cybersecurity: cognitive biases and trust issues
+MZZTVXIF,context,85JVIR9X,False,s3:opus:context,Exploring collaborative decision-making: a quasi-experimental study of human and
+HWBR9AAF,context,85JVIR9X,False,s3:opus:context,Explainability does not mitigate the negative impact of incorrect AI advice in a
+ZX8V7UJS,context,85JVIR9X,False,s3:opus:context,AIOps for reliability: evaluating large language models for automated root cause
+V4EEV4PB,context,85JVIR9X,False,s3:opus:context,Prompt governance in financial AI: comparative performance of structured framewo
+CMICJSPL,context,85JVIR9X,False,s3:opus:context,Building feedback loops between human expertise and large language model systems
+XTJ7LEZ8,context,85JVIR9X,False,s3:opus:context,Benchmarking prompt engineering techniques for secure code generation with GPT m
+VVSDJXJC,context,85JVIR9X,False,s3:opus:context,A framework for the adoption and integration of generative AI in midsize organiz
+7TIXFDC9,context,85JVIR9X,False,s3:opus:context,AutoReview: an LLM-based multi-agent system for security issue-oriented code rev
+KNEMNE5W,context,85JVIR9X,False,s3:opus:context,Social bias in LLM-generated code: benchmark and mitigation
+BBEZB8IP,context,85JVIR9X,False,s3:opus:context,RepoReviewer: a local-first multi-agent architecture for repository-level code r
+PZI2IMW6,context,85JVIR9X,False,s3:opus:context,Beyond task completion: an assessment framework for evaluating agentic AI system
+QNHBEIHD,context,85JVIR9X,False,s3:opus:context,LLMs in web development: evaluating LLM-generated PHP code unveiling vulnerabili
+9BA5E3CA,context,85JVIR9X,False,s3:opus:context,How to build an AI governance framework with data governance
+9PSY7JAR,context,85JVIR9X,False,s3:opus:context,Hooked on artificial agents: a systems thinking perspective
+FWFK2V9M,context,85JVIR9X,False,s3:opus:context,Extending microsoft power platform with responsible AI: a model for trustworthy 
+72YYXQXX,context,85JVIR9X,False,s3:opus:context,Epistemic gain in M-space: a metric for AI governance in complex systems
+UU8XQFGB,context,85JVIR9X,False,s3:opus:context,Agent trajectory explorer: visualizing and providing feedback on agent trajector
+GPL5G889,context,85JVIR9X,False,s3:opus:context,A model for types and levels of human interaction with automation
+WANIXQUJ,context,85JVIR9X,False,s3:opus:context,SCCA: a multi-agent code security analysis framework for AI-assisted code genera
+CAXNTRJF,context,85JVIR9X,False,s3:opus:context,Machine learning solutions to automated governance and code analysis to complian
+U7KVI9E2,context,85JVIR9X,False,s3:opus:context,"Large language models and simple, stupid bugs"
+UXBQBMKF,context,85JVIR9X,False,s3:opus:context,Exploring the challenges and opportunities of AI-assisted codebase generation
+TAM6DHLU,context,85JVIR9X,False,s3:opus:context,Automatic program repair as semantic suggestions: an empirical study
+QA6MIBD8,context,85JVIR9X,False,s3:opus:context,Artificially insecure: examining GitHub copilot’s AI-based vulnerability prevent
+P3SQKC4R,context,85JVIR9X,False,s3:opus:context,On large language models in mission-critical IT governance: are we ready yet?
+3C8C2BTA,context,85JVIR9X,False,s3:opus:context,Agentic explainability at scale: between corporate fears and XAI needs
+NVE5885K,context,85JVIR9X,False,s3:opus:context,"Vibe coding: don't kill the vibe, govern it"
+ED5CRW7K,context,85JVIR9X,False,s3:opus:context,An approach to satisfying regulatory compliance of software services in DevOps e
+VGPYSTQT,context,85JVIR9X,False,s3:opus:context,Is vibe coding ready for prime time
+28R6AMDI,context,85JVIR9X,False,s3:opus:context,"Bring your own ai (byoai) in the workplace: patterns, pitfalls, and the byoai-go"
+QSBIJ5ZJ,context,85JVIR9X,False,s3:opus:context,From standards to system:  implementing trust-bounded agentic AI with governance
+5HT7MJV3,context,85JVIR9X,False,s3:opus:context,Agentic workflow drift and agentic workflow subversion: a new risk taxonomy for 
+TTVANKQL,context,85JVIR9X,False,s3:opus:context,Established governance in agentic AI: closing the gap between policy and enforce
+YAJNA2AL,context,85JVIR9X,False,s3:opus:context,AI act high-risk AI compliance challenge and industry impact: a multiple case st
+XLAP67HC,context,85JVIR9X,False,s3:opus:context,"Who audits the auditors? Towards automated, third-party AI model audits with pub"
+LQK5PZ9M,context,85JVIR9X,False,s3:opus:context,Assurance-throughput in layered AI systems: a technical theory of evidence flow 
+EPHPTBA2,context,85JVIR9X,False,s3:opus:context,Protocol-mediated execution governance for LLM agent systems
+RS3CEVLJ,context,85JVIR9X,False,s3:opus:context,Addressing automation bias through verifiability
+HQIXPITB,context,85JVIR9X,False,s3:opus:context,Preposition salad: making sense of human-in/on/over-the-loop control for AI syst
+Y5LGJ7L7,context,85JVIR9X,False,s3:opus:context,Human discernment of algorithmic errors: a case study in child welfare
+L4P3ZFKV,context,85JVIR9X,False,s3:opus:context,Judgment assurance: governing institutional judgment in AI-mediated decision-mak
+INU3M3BG,context,85JVIR9X,False,s3:opus:context,Designing accountable human–AI teaming in industrial production: a governance fr
+6MJW28T3,context,85JVIR9X,False,s3:opus:context,Institutionalised distrust and human oversight of artificial intelligence: towar
+XXRRYDKZ,context,85JVIR9X,False,s3:opus:context,"AI will replace functions, not persons: a function-level framework for AI integr"
+PFC45HM7,context,85JVIR9X,False,s3:opus:context,A blueprint for auditing generative AI
+AH5N3JDT,context,85JVIR9X,False,s3:opus:context,"Short-term gain, long-term fragility: AI labor substitution and the erosion of s"
+Q5RS3ZXV,context,85JVIR9X,False,s3:opus:context,Understanding the effects of AI-assisted critical thinking on human-AI decision 
+JS8VQXPH,context,85JVIR9X,False,s3:opus:context,AI ROI analysis: evidence from 200 B2B deployments(2022-2025)
+IJNY72YE,context,85JVIR9X,False,s3:opus:context,Toward a taxonomy of generative AI use cases in business contexts: integrating c
+RAR7XA8R,context,85JVIR9X,False,s3:opus:context,Challenges and opportunities for artificial intelligence in auditing: evidence f
+QTGLKKZH,context,85JVIR9X,False,s3:opus:context,Accountable AI: it takes two to tango
+3U3EL7YY,context,85JVIR9X,False,s3:opus:context,Make a feint to the east while attacking in the west: blinding LLM-based code au
+7VX3AC43,context,85JVIR9X,False,s3:opus:context,Ethical AI-powered regression test selection
+MDTMMWQY,context,85JVIR9X,False,s3:opus:context,Bugs in AI-generated code - understanding bug patterns and possible fix strategi
+H38TX28S,context,85JVIR9X,False,s3:opus:context,Balancing security and correctness in code generation: an empirical study on com
+ERTUKFH8,context,85JVIR9X,False,s3:opus:context,From law to gherkin: a human-centred quasi-experiment on the quality of LLM-gene
+4D4DBZ3R,context,85JVIR9X,False,s3:opus:context,Guardian angel: a last-mile virtue-ethics guardrail for decentralized agentic AI
+9WMDVVD3,context,85JVIR9X,False,s3:opus:context,Challenges and best practices in corporate AI governance: lessons from the bioph
+M26KA89J,context,85JVIR9X,False,s3:opus:context,"Cyborgs, centaurs and self-automators: the three modes of human-GenAI knowledge "
+WXBMMVX9,context,85JVIR9X,False,s3:opus:context,Agentic AI governance in private equity: a behavioral framework for autonomous d
+2HCPY9LB,context,85JVIR9X,False,s3:opus:context,Taking training seriously: human guidance and management-based regulation of art
+MJQHCCGP,context,85JVIR9X,False,s3:opus:context,Human oversight under article 14 of the EU AI act
+B4JWDAMV,context,85JVIR9X,False,s3:opus:context,"Shadow AI: governance, risk, and organisational resilience"
+2SRQ7Z6N,context,85JVIR9X,False,s3:opus:context,The “code” of ethics: a holistic audit of AI code generators
+HNNBPV7H,context,85JVIR9X,False,s3:opus:context,AI-augmented risk mitigation framework for legacy healthcare applications lackin
+TEZEBSJE,context,85JVIR9X,False,s3:opus:context,LLMs + security = trouble
+VFE9BX2T,context,85JVIR9X,False,s3:opus:context,"Deployability-centric infrastructure-as-code generation: fail, learn, refine, an"
+FQAC4B33,context,85JVIR9X,False,s3:opus:context,Ensuring human agency: a design pathway to human-AI interaction
+C94WKDFM,context,85JVIR9X,False,s3:opus:context,The governance gap: a systematic analysis of architectural deficiencies in AI ag
+68K56AUX,context,85JVIR9X,False,s3:opus:context,Transparent real-time governance of agentic AI systems
+7EWHNZ3N,context,85JVIR9X,False,s3:opus:context,Execution-boundary interlocks: a governance framework for high-autonomy AI syste
+VD3TILL3,context,85JVIR9X,False,s3:opus:context,Defense-in-depth AI governance combining pre-inference and post-inference detect
+SLLGXI2Z,context,85JVIR9X,False,s3:opus:context,Cognitive twins: from digital representation to governed action
+SD744UB3,context,85JVIR9X,False,s3:opus:context,Are organisations ready for ai security compliance: a cross-sector survey
+ADV5GQEV,context,85JVIR9X,False,s3:opus:context,RegOps as an agile response to regulatory pressure
+9FHIK5BN,context,85JVIR9X,False,s3:opus:context,Governing autonomous AI agents with policy-as-code: a multi-layer architecture f
+KUZABXUP,context,85JVIR9X,False,s3:opus:context,Default-No: contract-gated execution as structural governance for autonomous AI 
+8HASIK73,context,85JVIR9X,False,s3:opus:context,Inference-time governance for quiet failure mitigation in large language model s
+9K45FHAG,context,85JVIR9X,False,s3:opus:context,Human-in-command: governing agentic AI in customer service
+LSRZTVZW,context,85JVIR9X,False,s3:opus:context,Runtime policy enforcement for mitigating risks in LLM-generated programs author
+YHXNQBEB,context,85JVIR9X,False,s3:opus:context,AI-driven output checking for official statistics: leveraging LLMs and workflow 
+TS4PHRZN,context,85JVIR9X,False,s3:opus:context,Can AI agents generate microservices? How far are we?
+8C5IVFCD,context,85JVIR9X,False,s3:opus:context,Comment and control: hijacking agentic workflows via context-grounded evolution
+QEH6TN67,context,85JVIR9X,False,s3:opus:context,QASecClaw: a multi-agent LLM approach for false positive reduction in static app
+HRUQ2NGR,context,85JVIR9X,False,s3:opus:context,"AI agentic programming: a survey of techniques, challenges, and opportunities"
+XKEY3YYF,context,85JVIR9X,False,s3:opus:context,Evaluating human-language model interaction
+RX5DWQM9,context,85JVIR9X,False,s3:opus:context,Unveiling the enigma of shadow: ethical difficulties in the field of AI
+466PYXQJ,context,85JVIR9X,False,s3:opus:context,Translating code with large language models and human-in-the-loop feedback
+8EEKFTQL,context,85JVIR9X,False,s3:opus:context,Is your machine better than you? You may never know
+B5LIQ844,context,85JVIR9X,False,s3:opus:context,Generative AI cybersecurity and resilience
+W6UA7CNM,context,85JVIR9X,False,s3:opus:context,"Current AI-based software engineering, strengths and weaknesses - results from a"
+Z2EYJP79,context,85JVIR9X,False,s3:opus:context,AI risk and governance in startups: a study of implementation gaps and founder j
+VLUNYII6,context,85JVIR9X,False,s3:opus:context,Test vs mutant: adversarial LLM agents for robust unit test generation
+HNVJS7HS,context,85JVIR9X,False,s3:opus:context,The role of generative AI in strengthening secure software coding practices: a s
+H4T2XV9V,context,85JVIR9X,False,s3:opus:context,How are we doing with using AI-based programming assistants for privacy-related 
+QVRZ4GP5,context,85JVIR9X,False,s3:opus:context,SecureFixAgent: a hybrid LLM agent for automated python static vulnerability rep
+QYT8RRWL,context,85JVIR9X,False,s3:opus:context,Methods and techniques of agentic software engineering: a systematic literature 
+W8238NKU,context,85JVIR9X,False,s3:opus:context,LLMSecEval: a dataset of natural language prompts for security evaluations
+73ZSD8IX,context,85JVIR9X,False,s3:opus:context,How does ChatGPT make assumptions when creating erroneous programs?
+ZKKBHG9W,context,85JVIR9X,False,s3:opus:context,Evaluating transparency in artificial intelligence systems with the Z-inspection
+FGDURPWN,context,85JVIR9X,False,s3:opus:context,Assessing the performance of AI-generated code: a case study on GitHub copilot
+SWUDMFQ4,context,85JVIR9X,False,s3:opus:context,An insight into the impact of generative artificial intelligence tools on softwa
+QLD7RE8T,context,85JVIR9X,False,s3:opus:context,An empirical evaluation of LLM-based approaches for code vulnerability detection
+3HVIJ28X,context,85JVIR9X,False,s3:opus:context,WebTestBench: evaluating computer-use agents towards end-to-end automated web te
+IEKZGF9W,context,85JVIR9X,False,s3:opus:context,Artificial intelligence-augmented decision-making: examining the interplay betwe
+F2YCSILS,context,85JVIR9X,False,s3:opus:context,Obstacles to human-AI collaboration
+DICCFNNX,context,85JVIR9X,False,s3:opus:context,Digital shadow risk theory (DART): assessing organizational risks of AI in the w
+CJ6UBWCX,context,85JVIR9X,False,s3:opus:context,The authorization boundary: why MCP and AI gateways are necessary—but not suffic
+6APBHHDU,context,85JVIR9X,False,s3:opus:context,From prompt to pipeline: why and how AI-assisted workflows harden into determini
+3SCFGVCX,context,85JVIR9X,False,s3:opus:context,Agentic AI risk-management standards profile
+QZVN4MKK,context,85JVIR9X,False,s3:opus:context,Scalable runtime governance for agentic AI in financial services
+8X8VFCWY,context,85JVIR9X,False,s3:opus:context,"Leashes, not guardrails: a management-based approach to artificial intelligence "
+LL3MSMUB,context,85JVIR9X,False,s3:opus:context,Technical AI assurance for trustworthy systems in the age of regulation: a frame
+YNLTLC5L,context,85JVIR9X,False,s3:opus:context,A unified governance architecture for agentic AI: integrating microsoft azure AI
+62S6DFXY,context,85JVIR9X,False,s3:opus:context,Computable design space exploration via governance frameworks: joint optimisatio
+3DPZK2P7,context,85JVIR9X,False,s3:opus:context,AI governance as safety management: a pre execution control architecture for AI 
+VM2W93QL,context,85JVIR9X,False,s3:opus:context,A CISO’s guide to AI cyber stewardship: where agentic AI meets GRC
+ML88MC4H,context,85JVIR9X,False,s3:opus:context,"A taxonomy of AI governance approaches: distinguishing visibility, alignment, an"
+FWH4AVHN,context,85JVIR9X,False,s3:opus:context,A sector-agnostic contextual validation architecture for AI reliability in high-
+FSFCECQ6,context,85JVIR9X,False,s3:opus:context,GOPEL infrastructure specification and HAIA-RECCLIN operational model for AI pro
+FSEZW5LL,context,85JVIR9X,False,s3:opus:context,The authorization threshold: defining the standard for governance in AI systems
+RMRMXUT4,context,85JVIR9X,False,s3:opus:context,Skill poisoning: attack taxonomies and defense architectures for composable agen
+DIZ9FQTG,context,85JVIR9X,False,s3:opus:context,Moral crumple zones: cautionary tales in human-robot interaction (pre-print)
+VNQ2E7HF,context,85JVIR9X,False,s3:opus:context,Embedding ethical principles into generative AI workflows for project teams
+QULWS3JL,context,85JVIR9X,False,s3:opus:context,Interactive and dynamic internal controls for data security a GenAI-enabled fram
+XBK7KB3E,context,85JVIR9X,False,s3:opus:context,From annotation to oversight: a pipeline approach to generative AI evaluation
+KL8U6H5Z,context,85JVIR9X,False,s3:opus:context,Symbolic governance for probabilistic intelligence: why governable AI requires s
+QIV7DL7L,context,85JVIR9X,False,s3:opus:context,Mitigating mode errors and automation surprise in human-in-the-loop expert syste
+92WHF5PM,context,85JVIR9X,False,s3:opus:context,AI based pentesting of AI systems: recursive security failures (when AI attacks 
+T54432DN,context,85JVIR9X,False,s3:opus:context,Regulation and cyborgs
+E26FSKPQ,context,85JVIR9X,False,s3:opus:context,Runtime legitimacy in autonomous AI systems: a cyber law framework for dynamic a
+THHEU8EI,context,85JVIR9X,False,s3:opus:context,The LLM red team: when AI hallucinates your attack surface
+YL2JD5B6,context,85JVIR9X,False,s3:opus:context,Human oversight of artificial intelligence and technical standardisation
+BN7JHVQU,context,85JVIR9X,False,s3:opus:context,Shadow AI governance failures in regulated industries: a privacy and risk manage
+RWS79ASE,context,85JVIR9X,False,s3:opus:context,The cost of always answering: governance costs of generative AI in operational e
+HLMH49XE,context,85JVIR9X,False,s3:opus:context,Sociotechnical perspectives on balancing human judgment and AI in content modera
+37FEWW5S,context,85JVIR9X,False,s3:opus:context,Securing agentic AI in IoT systems
+Y9RT3GUE,context,85JVIR9X,False,s3:opus:context,Quantifying uncertainty in answers from any language model and enhancing their t
+4LCRC3BZ,context,85JVIR9X,False,s3:opus:context,Designing for meaningful oversight: human and organisational agency in multimoda
+S9PIS4IB,context,85JVIR9X,False,s3:opus:context,ChainBuddy: an AI agent system for generating LLM pipelines
+YFR3REDU,context,85JVIR9X,False,s3:opus:context,"Responsible AI governance roadmap in investment firms from zero AI to scalable, "
+3IH4PUPA,context,85JVIR9X,False,s3:opus:context,Evaluating the impact of explainable artificial intelligence (XAI) techniques on
+AGW96VF5,context,85JVIR9X,False,s3:opus:context,MPAC: a multi-principal agent coordination protocol for interoperable multi-agen
+Q7BTCV3S,context,85JVIR9X,False,s3:opus:context,Ethical considerations in AI-driven software development life cycle
+2HGZLDKC,context,85JVIR9X,False,s3:opus:context,"De-skilling, cognitive offloading, and misplaced responsibilities: potential iro"
+T9RTE66C,context,85JVIR9X,False,s3:opus:context,"A2A routing service with MCP integration: bridging security, auditability, and g"
+V7FNIB6B,context,85JVIR9X,False,s3:opus:context,Secure code generation with open source generative AI models
+UN88XLZ6,context,85JVIR9X,False,s3:opus:context,Look before you leap: an exploratory study of uncertainty analysis for large lan
+4FZBPUWM,context,85JVIR9X,False,s3:opus:context,FPDetection: false positives detection in static code analysis with deep learnin
+AYGMC9Y4,context,85JVIR9X,False,s3:opus:context,"Analyzing the impact of prompt engineering on efficiency, code quality, and secu"
+KPCQUEL2,context,85JVIR9X,False,s3:opus:context,CodeIPPrompt: intellectual property infringement assessment of code language mod
+RNSNBXYH,context,85JVIR9X,False,s3:opus:context,"Institutions, organizations, and the bounded agency imperative; rethinking gover"
+6XZVRIW2,context,85JVIR9X,False,s3:opus:context,The autonomy accountability framework: a governance standard for autonomous AI a
+Z6RB7NDA,context,85JVIR9X,False,s3:opus:context,Secure tool integration patterns for agentic AI systems: a software supply chain
+PKN9D6XZ,context,85JVIR9X,False,s3:opus:context,Dual-use of generative AI in cybersecurity: balancing offensive threats and defe
+LLV7KNM2,context,85JVIR9X,False,s3:opus:context,Designing accountability: ethical frameworks for reintroducing responsibility in
+CRB3MXRC,context,85JVIR9X,False,s3:opus:context,Ternary moral logic (TML) and the EU AI act: a technical backbone for enforceabl
+H7ZEP6FZ,context,85JVIR9X,False,s3:opus:context,"Navigating the AI regulatory labyrinth: a comparative analysis of legal, technic"
+L28YKLVD,context,85JVIR9X,False,s3:opus:context,Artifact authenticity governance
+TW9IB9DE,context,85JVIR9X,False,s3:opus:context,The AI governance gap: quantifying enterprise AI risk through the janus protocol
+4TYKTMN4,context,85JVIR9X,False,s3:opus:context,Governing AI without killing value: KEV - a defensibility-first governance frame
+BC33U2MU,context,85JVIR9X,False,s3:opus:context,AI audit trails and the architecture of accountability
+PQ9JED2I,context,85JVIR9X,False,s3:opus:context,"Risks of AI-driven vulnerability identification, exploitation, and code exposure"
+FYS3UNC6,context,85JVIR9X,False,s3:opus:context,The deskilling dilemma: tacit knowledge erosion in AI-augmented banking supervis
+J3RQGUUD,context,85JVIR9X,False,s3:opus:context,Establishing structural execution boundaries for irreversible AI actions: the WR
+YXKHSW6S,context,85JVIR9X,False,s3:opus:context,Meaningful human control to detect algorithmic errors
+7VIJQWBF,context,85JVIR9X,False,s3:opus:context,Observability is not enforcement: a doctrinal and architectural framework for di
+X4WH2HG2,context,85JVIR9X,False,s3:opus:context,Does agentic AI require new policy frameworks?
+K9A8Z32M,context,85JVIR9X,False,s3:opus:context,Generative AI for requirements engineering: a systematic literature review
+CKAHXH58,context,85JVIR9X,False,s3:opus:context,From hazard identification to controller design: proactive and LLM-supported saf
+VPAPF53G,context,85JVIR9X,False,s3:opus:context,A scientific human-agent reproduction pipeline
+BKK2ICKX,context,85JVIR9X,False,s3:opus:context,Vibe coding: intention instead of implementation
+BATXSK84,context,85JVIR9X,False,s3:opus:context,Shadow user innovation: governing covert generative-AI use for dynamic-capabilit
+3JHLWGV3,context,85JVIR9X,False,s3:opus:context,Justified evidence collection for argument-based AI fairness assurance
+58KUUUE9,context,85JVIR9X,False,s3:opus:context,Conceptualizing responsible adoption of artificial agents in the workplace: a sy
+82N4MFN7,context,85JVIR9X,False,s3:opus:context,A situation awareness perspective on human-agent collaboration: tensions and opp
+9BM7AKRI,context,85JVIR9X,False,s3:opus:context,"SE perspective on LLMs: biases in code generation, code interpretability, and co"
+PA68SM3U,context,85JVIR9X,False,s3:opus:context,A research roadmap for augmenting software engineering processes and software pr
+3XL8EKLJ,context,85JVIR9X,False,s3:opus:context,Research status and analysis of LLM-based methods for code audit
+HMHZ7I89,context,85JVIR9X,False,s3:opus:context,QAID: a comprehensive framework for evaluating AI coding assistants beyond vendo
+TA8IPAW4,context,85JVIR9X,False,s3:opus:context,Finding trojan triggers in code LLMs: an occlusion-based human-in-the-loop appro
+H8NKQ7B8,context,85JVIR9X,False,s3:opus:context,Exploring the potential of large language models in fine-grained review comment 
+NHSTF6EL,context,85JVIR9X,False,s3:opus:context,An empirical study of code smells in transformer-based code generation technique
+KGAV77U3,context,85JVIR9X,False,s3:opus:context,VIBEPASS: can vibe coders really pass the vibe check?
+QKWS7WF4,context,85JVIR9X,False,s3:opus:context,Occlusion-based detection of trojan-triggering inputs in large language models o
+JVBZNVW8,context,85JVIR9X,False,s3:opus:context,AI for software engineering: from probable to provable
+ZJYYPLA7,context,85JVIR9X,False,s3:opus:context,Copilot-in-the-loop: fixing code smells in copilot-generated python code using c
+7ECA3PNE,context,85JVIR9X,False,s3:opus:context,MCP guardian: a security-first layer for safeguarding MCP-based AI system
+JKLSQ57B,context,85JVIR9X,False,s3:opus:context,No skin in the game: why agentic AI requires principal-agent governance
+DDTFFM9K,context,85JVIR9X,False,s3:opus:context,Propagation of ambiguity-bearing outputs across interconnected systems environme
+RQI8NXJL,context,85JVIR9X,False,s3:opus:context,Identity-aware governance for autonomous AI agents: a framework for enterprise a
+KR8RVD9G,context,85JVIR9X,False,s3:opus:context,Policy provenance as a prerequisite for responsible agentic AI
+T5GJ5VZU,context,85JVIR9X,False,s3:opus:context,Governing the agentic enterprise guardrails for autonomous AI agents in B2B
+8NMTYPQY,context,85JVIR9X,False,s3:opus:context,A pragmatic approach to regulating AI agents
+99MDCADU,context,85JVIR9X,False,s3:opus:context,Authority illusion and the architecture of responsibility in AI governance
+25SNDLXV,context,85JVIR9X,False,s3:opus:context,"A risk-based ethical governance framework for retail AI with proportionality, ov"
+WZSG4ZIT,context,85JVIR9X,False,s3:opus:context,Why probabilistic AI resists auditability: from explainability to verifiable res
+YC28956L,context,85JVIR9X,False,s3:opus:context,The runtime governance gap: governing self modifying artificial intelligence thr
+HV9D5URP,context,85JVIR9X,False,s3:opus:context,"Enterprise AI adoption: privacy-driven barriers, risk trade-offs, and a governan"
+7I5YYF7L,context,85JVIR9X,False,s3:opus:context,Systems integration model for AI solutions with explainability requirements
+6E277MF8,context,85JVIR9X,False,s3:opus:context,"The argent framework: a paradigm to compose, orchestrate, and govern enterprise "
+C4DAZEMP,context,85JVIR9X,False,s3:opus:context,Organizational AI workforce coverage and maturity: a framework for responsible A
+ES9ZIMH5,context,85JVIR9X,False,s3:opus:context,The compliance theater of large language models: an exploratory case study using
+77UIKS3A,context,85JVIR9X,False,s3:opus:context,"AI deployment fails at governance, not accuracy: judgment boundary reallocation "
+EB9PFYBS,context,85JVIR9X,False,s3:opus:context,From 'human control' in international law to 'human oversight' in the new EU act
+SI9LR7W3,context,85JVIR9X,False,s3:opus:context,"Why providing humans with interpretable algorithms may, counterintuitively, lead"
+BQDUZWYL,context,85JVIR9X,False,s3:opus:context,Judgment architecture: why innovation and AI expose organiztional decision limit
+RTES3DXX,context,85JVIR9X,False,s3:opus:context,Adaptive model risk management for the AI era: leveraging SR 11-7 and global plu
+8JWA3A6P,context,85JVIR9X,False,s3:opus:context,Cost-sensitive human-in-the-loop decision systems under asymmetric error costs
+884ERQST,context,85JVIR9X,False,s3:opus:context,Responsibility for generative AI services – from aspiration to achievement
+9FSTG2PE,context,85JVIR9X,False,s3:opus:context,SWE-cycle: benchmarking code agents across the complete issue resolution cycle
+56GRVSR7,context,85JVIR9X,False,s3:opus:context,Impact of human-AI interaction on user trust and reliance in AI-assisted qualita
+5IZXVQS6,context,85JVIR9X,False,s3:opus:context,Biased AI improves human decision-making but reduces trust
+P7HEK487,context,85JVIR9X,False,s3:opus:context,A benchmark for vericoding: formally verified program synthesis
+3RU5GGU5,context,85JVIR9X,False,s3:opus:context,Elaboration drift: how human–LLM interaction erodes epistemic traction
+Y7ZWF7GT,context,85JVIR9X,False,s3:opus:context,How regulated financial institutions will tame agentic AI through architectural 
+3EQ6PLAW,context,85JVIR9X,False,s3:opus:context,Comparing socio-technical design principles with guidelines for human-centered A
+D335Y3X4,context,85JVIR9X,False,s3:opus:context,"The agentic AI governance framework: a universal model for risk, accountability,"
+CXL6TN54,context,85JVIR9X,False,s3:opus:context,AI & AI related procurement in 2026: Re-engineering vendor contracts for algorit
+JIG9NY55,context,85JVIR9X,False,s3:opus:context,MPC-coder: a dual-knowledge enhanced multi-agent system with closed-loop verific
+AUP4ADWR,context,85JVIR9X,False,s3:opus:context,Towards human-AI synergy in requirements engineering: a framework and preliminar
+2NRJ4FXR,context,85JVIR9X,False,s3:opus:context,One developer is all you need: a case study of an AI-augmented one-person squad 
+9NNWHDGX,context,85JVIR9X,False,s3:opus:context,BONSAI: a mixed-initiative workspace for human-AI Co-development of visual analy
+PH6P5RNU,context,85JVIR9X,False,s3:opus:context,LLM-based agentic systems for software engineering: challenges and opportunities
+NPW47DN2,context,85JVIR9X,False,s3:opus:context,"Beyond prototyping: autonomous, enterprise-grade frontend development from pixel"
+KYHMWRYN,context,85JVIR9X,False,s3:opus:context,Monitoring AI-modified content at scale: a case study on the impact of ChatGPT o
+X7FVXLCR,context,85JVIR9X,False,s3:opus:context,Regulating ChatGPT and other large generative AI models
+TQS8DMNQ,context,85JVIR9X,False,s3:opus:context,Generative AI meets responsible AI: practical challenges and opportunities
+8BPVBQ2H,context,85JVIR9X,False,s3:opus:context,"Bias-free and auto-evolving generative AI: design principles, architectures, and"
+S2KSQDW4,context,85JVIR9X,False,s3:opus:context,Artificial intelligence and safety a practical guide for programmers and decisio
+W6PFA2XG,context,85JVIR9X,False,s3:opus:context,An abstraction is worth a thousand vibes
+TGZ3AZMF,context,85JVIR9X,False,s3:opus:context,"Human-automation interaction research: past, present, and future"
+AIFSXVU8,context,85JVIR9X,False,s3:opus:context,Responsible AI engineering from a data perspective (keynote)
+MVWFAXDW,context,85JVIR9X,False,s3:opus:context,Securing AI code generation - a prompt rectification approach for mitigating cyb
+TUYBSBZ2,context,85JVIR9X,False,s3:opus:context,On the performance of large language models for code change intent classificatio
+RQVAMSU5,context,85JVIR9X,False,s3:opus:context,Opportunities and challenges of software engineering bots: a forward-looking ana
+VYRFCCU8,context,85JVIR9X,False,s3:opus:context,Large language models for vulnerability detection in static code analysis: a sur
+7VSWYP64,context,85JVIR9X,False,s3:opus:context,Jigsaw: large language models meet program synthesis
+VEEEW3K9,context,85JVIR9X,False,s3:opus:context,Generative AI-assisted framework for secure and autonomous software development 
+8J9PZYEL,context,85JVIR9X,False,s3:opus:context,Dependable code repair with LLMs: AI-driven vulnerability detection and automate
+PAZT6K56,context,85JVIR9X,False,s3:opus:context,"Deploy, but verify: analysing LLM generated code safety"
+CEH5R5W7,context,85JVIR9X,False,s3:opus:context,Cracks in the stack: hidden vulnerabilities and licensing risks in LLM pre-train
+GVGUURW9,context,85JVIR9X,False,s3:opus:context,CWEval: outcome-driven evaluation on functionality and security of LLM code gene
+DERTW8NL,context,85JVIR9X,False,s3:opus:context,"Agentic AI security: threats, defenses, evaluation, and open challenges"
+CG96KVSL,context,85JVIR9X,False,s3:opus:context,A taxonomy of inefficiencies in LLM-generated python code
+UJTEJZCG,context,85JVIR9X,False,s3:opus:context,Code digital twin: a knowledge infrastructure for AI-assisted complex software d
+2KDTRGRP,context,85JVIR9X,False,s3:opus:context,Feedback-based automated verification in vibe coding of CAS adaptation built on 
+RXFJWPGC,context,85JVIR9X,False,s3:opus:context,The 2023 foundation model transparency index
+DG6LWQJU,context,85JVIR9X,False,s3:opus:context,Exploring the effects of urgency and reputation in code review an eye-tracking s
+LBACUG6X,context,85JVIR9X,False,s3:opus:context,Inherent and emergent liability issues in LLM-based agentic systems: a principal
+THJ2PPQW,context,85JVIR9X,False,s3:opus:context,"Evaluating and regulating agentic AI: a study of benchmarks, metrics, and regula"
+3QUL87JY,context,85JVIR9X,False,s3:opus:context,"Responsible AI In the agentic world governance for AI that acts, not just answer"
+A8FT9SZP,context,85JVIR9X,False,s3:opus:context,From autonomy to agency: a 10-level framework for AI's evolution and organisatio
+7NAH36ZU,context,85JVIR9X,False,s3:opus:context,AgentLedger: a causal ledger architecture for auditable AI agent actions
+JZ64WDLQ,context,85JVIR9X,False,s3:opus:context,The fluid triad: a decision-first organizational model for human-agent teams
+G8MG5DZS,context,85JVIR9X,False,s3:opus:context,The semantic deviation index (SDI): a runtime measurement standard for the gover
+FCSXBE4I,context,85JVIR9X,False,s3:opus:context,Agent reliability maturity model (ARMM) a capabiility framework for production-r
+8FYFMN56,context,85JVIR9X,False,s3:opus:context,Control and governance of generative and agentic AI: an AIS lifecycle framework 
+WIFK95JQ,context,85JVIR9X,False,s3:opus:context,A methodological framework for auditing norm-sensitive behaviour in large langua
+IMG5R8EY,context,85JVIR9X,False,s3:opus:context,capAI - a procedure for conducting conformity assessment of AI systems in line w
+JCAQ3AHU,context,85JVIR9X,False,s3:opus:context,AI certification and assessment catalogues: practical use and challenges in the 
+DLQVQZ5K,context,85JVIR9X,False,s3:opus:context,Redefining responsibility: novel paths in ai governance
+AKQXN7W7,context,85JVIR9X,False,s3:opus:context,On leashing (and unleashing) AI innovation
+F4U3MQ7N,context,85JVIR9X,False,s3:opus:context,AI compliance frameworks: a handbook for compliance tools based on AI acts' requ
+9LSVAEIL,context,85JVIR9X,False,s3:opus:context,SAFEARC: a seven-pillar operational architecture for socio-technical AI governan
+RX9I52KT,context,85JVIR9X,False,s3:opus:context,Execution-time authorization for AI agents: a formal framework for deterministic
+CIHI7CTY,context,85JVIR9X,False,s3:opus:context,AGEC and graph-based systemic risk governance: a deterministic governance archit
+UJCXDGJC,context,85JVIR9X,False,s3:opus:context,Continuous governance across enterprise AI and agentic systems: governing what y
+9B5JSNKL,context,85JVIR9X,False,s3:opus:context,Advancing U.S. competitiveness through governance tools and trustworthy framewor
+5C5D8ISW,context,85JVIR9X,False,s3:opus:context,Observability for large language models: SRE and chaos engineering for AI at sca
+L8HA759Z,context,85JVIR9X,False,s3:opus:context,"Litigation paper: when AI-assisted decisions reach litigation, what evidence act"
+VINEK8SU,context,85JVIR9X,False,s3:opus:context,Governed enterprise AI: a three-layer architecture for hallucination-safe BPM wo
+F346EA38,context,85JVIR9X,False,s3:opus:context,Bridging the gap: a scholar-practitioner framework for integrating NIST agentic 
+UZTUXYYX,context,85JVIR9X,False,s3:opus:context,"Toward standards for agentic AI systems conceptual foundations, trust boundaries"
+X7S3ELFB,context,85JVIR9X,False,s3:opus:context,Decision-agent fit in business intelligence: a governance-first framework for ag
+A5B8R864,context,85JVIR9X,False,s3:opus:context,Interpretation attacks: exploiting how AI explains and justifies decisions
+KM7EMIYC,context,85JVIR9X,False,s3:opus:context,The dual loop theory: a decision architecture for human-AI collaborative intelli
+WLAUCLKR,context,85JVIR9X,False,s3:opus:context,MARIA: a multi-agent regulatory intelligence architecture
+MDCUN7RM,context,85JVIR9X,False,s3:opus:context,Prompt provenance: toward traceable LLM interactions
+8PM9IXSU,context,85JVIR9X,False,s3:opus:context,Under what influence: measuring AI influence to fit user profiles in decision-ma
+FNTL6JN9,context,85JVIR9X,False,s3:opus:context,SYNCode: synergistic human–LLM collaboration for enhanced data annotation in sta
+HIG7TK9E,context,85JVIR9X,False,s3:opus:context,Trust-by-design in proactive E-commerce: human-in-the-loop mechanisms to mitigat
+7VEK3RVR,context,85JVIR9X,False,s3:opus:context,Beyond human-in-the-loop: a level 5 autonomous multi-agent framework for master 
+MTYM4L5D,context,85JVIR9X,False,s3:opus:context,AI in software development and its potential influence on accessibility complian
+6RRI9HLZ,context,85JVIR9X,False,s3:opus:context,Code generation with large language models: a survey from neural program synthes
+ZVDJ5J88,context,85JVIR9X,False,s3:opus:context,Towards a responsible AI adoption/adaptation (RAA) ecosystem: vision and model t
+S6DVFFQI,context,85JVIR9X,False,s3:opus:context,Rich data versus quantity of data in code generation AI: a paradigm shift for he
+D5RXSP2P,context,85JVIR9X,False,s3:opus:context,AutoDev: automated AI-driven development
+P54Q3QHZ,context,85JVIR9X,False,s3:opus:context,"Retrieve, refine, or both? Using task-specific guidelines for secure python code"
+LZUI6EY7,context,85JVIR9X,False,s3:opus:context,LLM-based interactive code generation: empirical evaluation
+Y9G3DA92,context,85JVIR9X,False,s3:opus:context,Is GitHub copilot a substitute for human pair-programming? An empirical study
+GRQGVTXF,context,85JVIR9X,False,s3:opus:context,Do generative AI tools change how developers comment and document code?
+2EL3FTRF,context,85JVIR9X,False,s3:opus:context,DDD-enforcer: an AI-powered multi-agent system for real-time domain-driven desig
+GSZ94QNV,context,85JVIR9X,False,s3:opus:context,CORE: automating review recommendation for code changes
+32EX53DG,context,85JVIR9X,False,s3:opus:context,CodeLMSec benchmark: systematically evaluating and finding security vulnerabilit
+DUT3K37G,context,85JVIR9X,False,s3:opus:context,CFCEval: evaluating security aspects in code generated by large language models
+W8PHLINK,context,85JVIR9X,False,s3:opus:context,A quantitative analysis of quality and consistency in AI-generated code
+BXQ64F4K,context,85JVIR9X,False,s3:opus:context,A language-agnostic framework for mining static analysis rules from code changes
+CEP5CTVF,context,85JVIR9X,False,s3:opus:context,(R)evolution of programming: vibe coding as a post-coding paradigm
+54383TI5,context,85JVIR9X,False,s3:opus:context,Code digital twin: empowering LLMs with tacit knowledge for complex software dev
+TXHP4MJF,context,85JVIR9X,False,s3:opus:context,"AI deception: risks, dynamics, and controls"
+REXFW8ZU,context,85JVIR9X,False,s3:opus:context,Agentic ai security: a control framework for autonomous decision-making systems
+MF2DHV5J,context,85JVIR9X,False,s3:opus:context,From explainability to system language: why AI accountability requires a formal 
+7S24HQUN,context,85JVIR9X,False,s3:opus:context,Understanding accountability in algorithmic supply chains
+A8XNV9RR,context,85JVIR9X,False,s3:opus:context,AI auditing: first steps towards the effective regulation of artificial intellig
+RLCF33SM,context,85JVIR9X,False,s3:opus:context,AI deployment authorisation: a global standard for machine-readable governance o
+ABDFJPZZ,context,85JVIR9X,False,s3:opus:context,AI liability in Europe: how does it complement risk regulation and deal with the
+EZQK6GTD,context,85JVIR9X,False,s3:opus:context,Legal challenges in the deployment of large language models: a comparative analy
+KWD6CKFR,context,85JVIR9X,False,s3:opus:context,From monitoring to authorization: the structural shift emerging in agentic AI go
+6SILTI7B,context,85JVIR9X,False,s3:opus:context,Responsible AI: a practitioner playbook for trustworthy AI governance
+M964K4XX,context,85JVIR9X,False,s3:opus:context,"Comparative analysis of AI governance, assurance, and administrative oversight N"
+HY22ES2P,context,85JVIR9X,False,s3:opus:context,Algorithmic incompetence: forgotten diligence and the adolescence of power
+5257HHP3,context,85JVIR9X,False,s3:opus:context,"Intersections between trust, safety, and responsible AI how trust & safety and A"
+I2J69IHM,context,85JVIR9X,False,s3:opus:context,The governance-to-production gap (G2P): a diagnostic model for AI adoption in mi
+I2JL7YLE,context,85JVIR9X,False,s3:opus:context,Agile artificial intelligence governance: a practical approach to responsible co
+86SH995L,context,85JVIR9X,False,s3:opus:context,Meaningful XAI based on user-centric design methodology: combining legal and hum
+SZCY7XGU,context,85JVIR9X,False,s3:opus:context,The principle of final human ratification
+4CR8GVNV,context,85JVIR9X,False,s3:opus:context,Recalibrate: metacognitive monitoring for persistent AI agents
+ZEKUAGN6,context,85JVIR9X,False,s3:opus:context,The human-machine paradox: why a dual skill strategy may not be the safest harbo
+6VDFSHZW,context,85JVIR9X,False,s3:opus:context,Beyond algorithmic disclosure for AI
+KGNWFLVR,context,85JVIR9X,False,s3:opus:context,"Essay: fluent, certain and wrong by design"
+AG7UJKDE,context,85JVIR9X,False,s3:opus:context,Bidirectional empowerment of metamorphic testing and large language models: a sy
+P9F4Z8ND,context,85JVIR9X,False,s3:opus:context,SentinelNet: safeguarding multi-agent collaboration through credit-based dynamic
+524TWMDJ,context,85JVIR9X,False,s3:opus:context,"AI knows best? The paradox of expertise, AI-reliance, and performance in educati"
+WZXSSGRL,context,85JVIR9X,False,s3:opus:context,Exploring the role of generative AI in enhancing cybersecurity in software devel
+D2GT76D8,context,85JVIR9X,False,s3:opus:context,Vibe-driven model-based engineering
+BKSNXFDK,context,85JVIR9X,False,s3:opus:context,Regulatory compliance made easier with AI risk scor the dual imperative in RegTe
+LH5MDR85,context,85JVIR9X,False,s3:opus:context,Reasoning claim tokens (RCTs): an observational construct for inspectable AI rea
+4YKMK4ZI,context,85JVIR9X,False,s3:opus:context,On the impossibility of observability-based authorization: a formal impossibilit
+MJDUMWUX,context,85JVIR9X,False,s3:opus:context,Passporting compliance for AI: operationalising governance via a clause-level cr
+TFZ594LZ,context,85JVIR9X,False,s3:opus:context,"Intention, integration, and the implementation gap: why AI governance frameworks"
+JCIS2QAP,context,85JVIR9X,False,s3:opus:context,Your agents are an autonomous liability the fiduciary fallout of probabilistic t
+YSWB2EB6,context,85JVIR9X,False,s3:opus:context,Verifiable AI governance: the four tests standard (4TS) and proof-carrying decis
+QB7MGVK4,context,85JVIR9X,False,s3:opus:context,ECONOMICS OF AUTHORITY EoA #8 federated authority and inter-organizational AI ex
+XNAXNH9J,context,85JVIR9X,False,s3:opus:context,Explaining decisions made with AI
+MEVLC5DX,context,85JVIR9X,False,s3:opus:context,Quality assessment of python tests generated by large language models
+L65X78ML,context,85JVIR9X,False,s3:opus:context,Reflections on the data protection compliance of AI systems under the EU AI act
+QLMUYYQ3,context,85JVIR9X,False,s3:opus:context,Explaining code risk in OSS: towards LLM-generated fault prediction interpretati
+5ESMAQUS,context,85JVIR9X,False,s3:opus:context,Cloud-based system for source code analysis of microservices with LLM agents
+K7P8LCNZ,context,85JVIR9X,False,s3:opus:context,Assessing syntax accuracy and quality of generative AI-produced ExpressJS and Vu
+MLPA42M7,context,85JVIR9X,False,s3:opus:context,AI-powered vulnerability detection for secure software development
+GA6WDM8B,context,85JVIR9X,False,s3:opus:context,AI-assisted coding: experiments with GPT-4
+YBBKP9QC,context,85JVIR9X,False,s3:opus:context,Guardians of the grid: rethinking AI and data governance in the agentic era
+BA53ZRLJ,context,85JVIR9X,False,s3:opus:context,"Auditing of AI: legal, ethical and technical approaches"
+9NA8TTTH,context,85JVIR9X,False,s3:opus:context,"Responsible by design: ethical AI ecosystems for governance, risk, and delivery"
+ICZFW8I4,context,85JVIR9X,False,s3:opus:context,Security-by-design for multi-agentic AI systems
+C67AT7ZP,context,85JVIR9X,False,s3:opus:context,"The hidden cost of AI compliance: why ""build fast, fix later"" can become a finan"
+XWRDVMR6,context,85JVIR9X,False,s3:opus:context,Custom GPTs vs. Gemini gems: a technical comparison of AI assistant platforms in
+6W887UGH,context,85JVIR9X,False,s3:opus:context,Some simple economics of AGI
+AAK77PJ4,context,85JVIR9X,False,s3:opus:context,One shot: architecture principles for trustworthy legal AI
+N3WU6PFG,context,85JVIR9X,False,s3:opus:context,Investigating the smells of LLM generated Code1
+MDTBNGDC,context,85JVIR9X,False,s3:opus:context,A federated observability architecture pattern for reliable agentic AI software 
+K356ZE43,context,85JVIR9X,False,s3:opus:context,Mitigating bias in generative AI: a comprehensive framework for governance and a
+MG5CGSTX,context,85JVIR9X,False,s3:opus:context,Securing AI code generation through automated pattern-based patching
+3TAIDUKC,context,85JVIR9X,False,s3:opus:context,Large language models in source code static analysis
+QC3ANMVE,context,85JVIR9X,False,s3:opus:context,CISA roadmap for artificial intelligence
+2D5LCIUP,context,85JVIR9X,False,s3:opus:context,Understanding the distinction between technical and governance audits for AI: a 
+JFYZV2MZ,context,85JVIR9X,False,s3:opus:context,SORT-AI: a projection-based structural framework for AI safety alignment stabili
+NKY6T5G9,context,85JVIR9X,False,s3:opus:context,Negligent poisoned environments: how cumulative input negligence undermines ente
+CEQVR92V,context,85JVIR9X,False,s3:opus:context,Requisite variety for ai security
+9SME5D6V,context,85JVIR9X,False,s3:opus:context,The missing control plane in healthcare AI: a framework for deterministic govern
+EZ7SAJ2A,context,85JVIR9X,False,s3:opus:context,Enterprise AI adoption decisioning
+ZFMEWNXZ,context,85JVIR9X,False,s3:opus:context,Responsible ai: a governance framework for enterprises
+2SDBF78T,context,85JVIR9X,False,s3:opus:context,The emergence of agentic artificial intelligence: a paradigm shift for operation
+GPPK8TWP,context,85JVIR9X,False,s3:opus:context,"Agency without liability: rule-evading optimization, the deterrence gap, and the"
+P8CUB84H,context,85JVIR9X,False,s3:opus:context,The procedural imperative: standardizing artificial intelligence in legal practi
+DMEX7GE7,context,85JVIR9X,False,s3:opus:context,AI agent traps
+MP2N9CY2,context,85JVIR9X,False,s3:opus:context,Everyone is hallucinating: how explainability masks the epistemic failure of pro
+HKQX9RLH,context,85JVIR9X,False,s3:opus:context,Limitations and loopholes in the EU AI act and AI liability directives: what thi
+KDVYPBWW,context,85JVIR9X,False,s3:opus:context,Transforming software architecture design with intelligent assistants-a comparat
+WZUDD7XJ,context,85JVIR9X,False,s3:opus:context,Agentic code reasoning
+LBSPQLKT,context,85JVIR9X,False,s3:opus:context,"Toward agentic software engineering beyond code: framing vision, values, and voc"
+TNLQ857W,context,85JVIR9X,False,s3:opus:context,Toward agentic IAM: a probabilistic authorization framework for least privilege 
+Z3QHPR8T,context,85JVIR9X,False,s3:opus:context,Re-opening open-source science through AI assisted development
+KPLHA4MH,context,85JVIR9X,False,s3:opus:context,Multi-modal machine learning for automated CVSS severity prediction for conserva
+N3SPZGKS,context,85JVIR9X,False,s3:opus:context,APILOT: improving the security and usability of LLM code suggestions via outdate
+XW8EQM3M,context,85JVIR9X,False,s3:opus:context,Vibe code bench: evaluating AI models on end-to-end web application development
+SGJU94AS,context,85JVIR9X,False,s3:opus:context,Academic vibe coding: opportunities for accelerating research in an era of resou
+BST4K2D9,context,85JVIR9X,False,s3:opus:context,Carbon-aware governance gates: an architecture for sustainable GenAI development
+3DNJWRNP,context,85JVIR9X,False,s3:opus:context,INSYTE: a classification framework for traditional to agentic AI systems
+79JAXRME,context,85JVIR9X,False,s3:opus:context,Self-suppressing correction in agentic AI platforms: a conceptual framework for 
+YBRAX8GU,context,85JVIR9X,False,s3:opus:context,The ADMT compliance audit framework: a methodology for measuring foundation mode
+3LJCSWBK,context,85JVIR9X,False,s3:opus:context,Beyond due diligence: rethinking third-party risk management for artificial inte
+TCAMZEQE,context,85JVIR9X,False,s3:opus:context,Regulating AI agents
+3KRIF7AJ,context,85JVIR9X,False,s3:opus:context,The enterprise AI governance buyer's guide
+F72TIGMC,context,85JVIR9X,False,s3:opus:context,Bounded agency: an ethical and institutional limit for autonomous AI systems
+NZXY7X7U,context,85JVIR9X,False,s3:opus:context,Construction safety management and AI governance: a structural correlation and t
+8YPFT25U,context,85JVIR9X,False,s3:opus:context,Developer perspectives on licensing and copyright issues arising from generative
+PW7MYU5I,context,85JVIR9X,False,s3:opus:context,Minimum viable ethics (MVE) for military AI: the traffic light protocol and acco
+XMZC398F,context,85JVIR9X,False,s3:opus:context,Prompts blend requirements and solutions: from intent to implementation
+FXC7NC65,context,85JVIR9X,False,s3:opus:context,Do prompt patterns affect code quality? A first empirical assessment of ChatGPT-
+SVPFXI3P,context,85JVIR9X,False,s3:opus:context,From replication to redesign: exploring pairwise comparisons for LLM-based peer 
+2TTGSYDS,context,85JVIR9X,False,s3:opus:context,Reasonable ai and other creatures. What role for ai standards in liability litig
+VYKP32I7,context,85JVIR9X,False,s3:opus:context,LLMLOOP: improving LLM-generated code and tests through automated iterative feed
+9NBPCDWR,context,85JVIR9X,False,s3:opus:context,Generalizable secure code generation framework for robust software development p
+JZ2QYGEG,context,85JVIR9X,False,s3:opus:context,Fielding faster: removing time and cost barriers to software certification using
+36TAMTAX,context,85JVIR9X,False,s3:opus:context,Explainable AI for software engineering
+YN3JDZQA,context,85JVIR9X,False,s3:opus:context,Distinguishing governance from compliance evidence: a framework for post-inciden
+NS3L4YKR,context,85JVIR9X,False,s3:opus:context,"SOC 2.0: less triage, more treachery"
+3TUJG87T,context,85JVIR9X,False,s3:opus:context,CAP: a cryptographically verifiable provenance framework for creative and genera
+B8CIYLXF,context,85JVIR9X,False,s3:opus:context,Platform constitutions and algorithmic rule of law in generative AI: translating
+IXX69K6D,context,85JVIR9X,False,s3:opus:context,MCP + SKILL: a deterministic architecture for enterprise AI automation with sele
+TN4358E5,context,85JVIR9X,False,s3:opus:context,Verifiable AI
+NC5V86NI,context,85JVIR9X,False,s3:opus:context,Procurement pathways and the institutionalization of AI operating systems: gover
+L5V2845I,context,85JVIR9X,False,s3:opus:context,The AI-augmented internal audit: an operational framework for a self-learning
+TQGFG8YC,context,85JVIR9X,False,s3:opus:context,AutoDFBench 1.0: a benchmarking framework for digital forensic tool testing and 
+D4KYZAMX,context,85JVIR9X,False,s3:opus:context,SCodeGen: a real-time trustworthy constrained decoding framework for secure code
+8I9VS22E,context,85JVIR9X,False,s3:opus:context,An institutional view of algorithmic impact assessments
+X6TZFLVJ,context,85JVIR9X,False,s3:opus:context,Safeguarding intelligence: a comprehensive analysis of AI security and privacy i
+SLDGQI5F,context,85JVIR9X,False,s3:opus:context,AIAIRS & ARM: a rights architecture and governance framework for AI agents as or
+RUZCP22J,context,85JVIR9X,False,s3:opus:context,Liability by design: treating risk-controlling AI layers as the product under mo
+Q6SVKUCU,context,85JVIR9X,False,s3:opus:context,Nondeterministic torts: a technical approach to AI liability
+427J7PFG,context,85JVIR9X,False,s3:opus:context,Data governance and compliance for GenAI in azure cloud platforms
+NNZGRC4G,context,85JVIR9X,False,s3:opus:context,Vibe coding for UX design: understanding UX professionals' perceptions of AI-ass
+RCRQT2RZ,context,85JVIR9X,False,s3:opus:context,From RegTech to RegCode
+DY2Y5QE3,context,85JVIR9X,False,s3:opus:context,"Rogue AI agents won't be testifying-you will: agentic AI, IP and liability risks"
+3ZVMBGPB,core,539H8RBQ,True,s3:opus:core|s3:human:core,Rethinking code review in the age of AI: a vision for agentic code review
+8MXATG38,core,539H8RBQ,True,s3:opus:core|s3:human:core,AI-augmented software engineering for rapid feature delivery and operations auto
+XZEHQYNZ,core,539H8RBQ,True,s3:opus:core|s3:human:core,Architecting trust: designing human oversight and accountability for AI-driven s
+RPHK78A9,core,539H8RBQ,True,s3:opus:core|s3:human:core,"Vibe Coding: Building Production-Grade Software with GenAI, Chat, Agents, and Be"
+T72TU8B5,core,539H8RBQ,True,s3:opus:core|s3:human:core,Hedwig: dynamic autonomy for coding agents under local oversight
+WH2PIBNQ,core,539H8RBQ,True,s3:opus:core|s3:human:core,"Responsible vibe coding: architecture, opportunities, and research agenda"
+XJAXB98T,core,539H8RBQ,True,s3:opus:core|s3:human:core,Beyond banning AI: a first look at GenAI governance in open source software comm
+TF56EPIP,core,539H8RBQ,True,s3:opus:core|s3:human:core,Rethinking autonomy: preventing failures in AI-driven software engineering
+LCPH3THV,core,539H8RBQ,True,s3:opus:core|s3:human:core|lit-review,"LLM-as-a-judge for software engineering: literature review, vision, and the road"
+CI93QRUH,core,539H8RBQ,True,s3:opus:core|s3:human:core,HiLDE: intentional code generation via human-in-the-loop decoding
+3SU9QZ6F,core,539H8RBQ,True,s3:opus:core|s3:human:core,AIRA: AI-induced risk audit: a structured inspection framework for AI-generated 
+27YULT5I,core,539H8RBQ,True,s3:opus:core|s3:human:core,The ethics of AI-assisted code migration in regulated financial systems: account
+WBS9U5N7,core,539H8RBQ,True,s3:opus:core|s3:human:core,Cognitive camouflage: specification gaming in LLM-generated code evades holistic
+RG4A4D6K,core,539H8RBQ,True,s3:opus:core|s3:human:core,From black box to open book: an emerging transparency imperative in generative A
+A6ZE2A26,core,539H8RBQ,True,s3:opus:core|s3:human:core,Vibe coding on trial: operating characteristics of unanimous LLM juries
+LB84WJKI,core,539H8RBQ,True,s3:opus:core|s3:human:core,Human-In-the-loop software development agents
+7SH86C2W,core,539H8RBQ,True,s3:opus:core|s3:human:core,Shift-up: a framework for software engineering guardrails in AI-native software 
+PD297DUM,core,539H8RBQ,True,s3:opus:core|s3:human:core,My code is less secure with gen AI: surveying developers' perceptions of the imp
+R9CDT9KB,core,539H8RBQ,True,s3:opus:core|s3:human:core,Trust-calibrated multi-stage large language model pipeline for vulnerability ass
+T8E8SCCG,core,539H8RBQ,True,s3:opus:core|s3:human:core,VibeGuard: a security gate framework for AI-generated code
+XRTVITVP,core,539H8RBQ,True,s3:opus:core|s3:human:core,Steering LLMs via scalable interactive oversight
+VFNJSZD9,core,539H8RBQ,True,s3:opus:core|s3:human:core,Beyond SAST and DAST: a unified security testing architecture for autonomous cod
+FWKYVQPD,core,539H8RBQ,True,s3:opus:core|s3:human:core,Vibe coding and AI-led conversational programming: emerging trends in software d
+6NTZ85CW,core,539H8RBQ,True,s3:opus:core|s3:human:core,Multi-agent penetration testing AI for the web
+4AXDVW7J,core,539H8RBQ,True,s3:opus:core|s3:human:core,Ethical prompt engineering for AI-driven SE: evidence-informed interaction-time 
+E3E5YA2E,core,539H8RBQ,True,s3:opus:core|s3:human:core,"Redefining the programmer: human-AI collaboration, LLMs, and security in modern "
+YBHHYR4P,core,539H8RBQ,True,s3:opus:core|s3:human:core,Do users write more insecure code with AI assistants?
+QUXRX9ZL,core,539H8RBQ,True,s3:opus:core|s3:human:core,The prompt–refactor–verify (PRV) cycle: a human-centered framework for AI-assist
+B4TVIG5Y,core,539H8RBQ,True,s3:opus:core|s3:human:core,Toward a maturity model for AI-assisted software development: conceptual framewo
+JCTP8VXP,core,539H8RBQ,True,s3:opus:core|s3:human:core,ZORO: active rules for reliable vibe coding
+C88VGWMI,core,539H8RBQ,True,s3:opus:core|s3:human:core,Constitutional spec-driven development: enforcing security by construction in AI
+SHK6KAX6,core,539H8RBQ,True,s3:opus:core|s3:human:core,"AI builds, we analyze: an empirical study of AI-generated build code quality"
+34ELRWJH,core,539H8RBQ,True,s3:opus:core|s3:human:core,"The hidden legal minefield: how AI-assisted ""vibe coding"" amplifies software dev"
+95CPB7CF,core,539H8RBQ,True,s3:opus:core|s3:human:core,Beyond the 'diff': addressing agentic entropy in agentic software development
+X7EN6DXZ,core,539H8RBQ,True,s3:opus:core|s3:human:core,Measuring and exploiting contextual bias in LLM-assisted security code review
+BAWCBT9R,core,539H8RBQ,True,s3:opus:core|s3:human:core,Bias in the loop: auditing LLM-as-a-judge for software engineering
+UIXCRBQX,core,539H8RBQ,True,s3:opus:core|s3:human:core,"Safer builders, risky maintainers: a comparative study of breaking changes in hu"
+5Q4G4CQB,core,539H8RBQ,True,s3:opus:core|s3:human:core,AI-driven continuous integration: automating code review and deployment with LLM
+5BAZZWHG,core,539H8RBQ,True,s3:opus:core|s3:human:core,"""I'm not reading all of that"": understanding software engineers' level of cognit"
+NGIH5T4C,core,539H8RBQ,True,s3:opus:core|s3:human:core,The evolving landscape of code review: leveraging artificial intelligence for en
+R2QMVNXI,core,539H8RBQ,True,s3:opus:core|s3:human:core,Coding with AI: from a reflection on industrial practices to future computer sci
+UDVHQ5HR,core,539H8RBQ,True,s3:opus:core|s3:human:core,Uncovering systematic failures of LLMs in verifying code against natural languag
+ID7IN65K,core,539H8RBQ,True,s3:opus:core|s3:human:core,To copilot and beyond: 22 AI systems developers want built
+6ZW9QNQH,core,539H8RBQ,True,s3:opus:core|s3:human:core,Position: vibe coding needs vibe reasoning: improving vibe coding with formal ve
+BLR3XE3I,core,539H8RBQ,True,s3:opus:core|s3:human:core,"Vibe Coding in Product Teams: Reconfiguring AI-Assisted Workflows, Prototyping, "
+GAD5Z8PV,core,539H8RBQ,True,s3:opus:core|s3:human:core,SLEAN: simple lightweight ensemble analysis network for multi-provider LLM coord
+4T5QFWZE,core,539H8RBQ,True,s3:opus:core|s3:human:core,"More code, less reuse: investigating code quality and reviewer sentiment towards"
+P837LJWE,core,539H8RBQ,True,s3:opus:core|s3:human:core,Modernization of enterprise payment infrastructure: a case study on LLM-assisted
+6DXZGHD9,core,539H8RBQ,True,s3:opus:core|s3:human:core,A generative AI cybersecurity risks mitigation model for code generation: using 
+WRXR2VTP,core,539H8RBQ,True,s3:opus:core|s3:human:core,VibeContract: the missing quality assurance piece in vibe coding
+4PSM6ZCD,core,539H8RBQ,True,s3:opus:core|s3:human:core,Is vibe coding safe? Benchmarking vulnerability of agent-generated code in real-
+QI8246A3,core,539H8RBQ,True,s3:opus:core|s3:human:core,The rise of AI teammates in software engineering (SE) 3.0: how autonomous coding
+E9RAWBDT,core,539H8RBQ,True,s3:opus:core|s3:human:core|framing,"Good vibrations? A qualitative study of Co-creation, communication, flow, and tr"
+8AW26GFK,core,539H8RBQ,True,s3:opus:core|s3:human:core,Architecture without architects: how AI coding agents shape software architectur
+YA7XNWYE,core,539H8RBQ,True,s3:opus:core|s3:human:core,Cybersecurity risks of AI-generated code
+F9JM9CI6,core,539H8RBQ,True,s3:opus:core|s3:human:core,"Support, not automation: towards AI-supported code review for code quality and b"
+6F3S8IB7,core,539H8RBQ,True,s3:opus:core|s3:human:core,HAIF: a human-AI integration framework for hybrid team operations
+RX9SICP9,core,539H8RBQ,True,s3:opus:core|s3:human:core,IACDM: interactive adversarial convergence development methodology -- a structur
+8KJEKBGT,core,539H8RBQ,True,s3:opus:core|s3:human:core,Software vulnerability and functionality assessment using LLMs
+E689ZAXC,core,539H8RBQ,True,s3:opus:core|s3:human:core,Review makes workers less likely to revise AI output
+LGZXFLSJ,core,539H8RBQ,True,s3:opus:core|s3:human:core,Causal mapping of the risks of using generative ai in software development
+HJGKKX9S,core,539H8RBQ,True,s3:opus:core|s3:human:core,Human-In-the-loop software development agents: challenges and future directions
+E95T8E88,core,539H8RBQ,True,s3:opus:core|s3:human:core,What to cut? Predicting unnecessary methods in agentic code generation
+7V7SRG43,core,539H8RBQ,True,s3:opus:core|s3:human:core,CodeAgent: autonomous communicative agents for code review
+399HN438,core,539H8RBQ,True,s3:opus:core|s3:human:core,Turbocharging pull request reviews: exploring generative AI for code review
+PDYJGF2R,core,539H8RBQ,True,s3:opus:core|s3:human:core,The hidden risks of LLM-generated web application code: a security-centric evalu
+4FGIVVTG,core,539H8RBQ,True,s3:opus:core|s3:human:core,Evaluating human-AI partnership for LLM-based code migration
+Y4TIF9KW,core,539H8RBQ,True,s3:opus:core|s3:human:core,"Code prism: a multi-agent, multi-LLM, semantic indexing artifact for regulatory "
+5RKMGRNA,core,539H8RBQ,True,s3:opus:core|s3:human:core,An agentic-AI solution for intelligent code review
+T2EG4BE2,core,539H8RBQ,True,s3:opus:core|s3:human:core,"Vibe coding in practice: flow, technical debt, and guidelines for sustainable us"
+9R6TGN82,core,539H8RBQ,True,s3:opus:core|s3:human:core,Training language models to generate quality code with program analysis feedback
+MFSZPSPU,core,539H8RBQ,True,s3:opus:core|s3:human:core,Towards a human-in-the-loop framework for reliable patch evaluation using an LLM
+DJMBHHZN,core,539H8RBQ,True,s3:opus:core|s3:human:core,"MOSAICO: management, orchestration and supervision of AI-agent COmmunities for r"
+2CKL96B8,core,539H8RBQ,True,s3:opus:core|s3:human:core,The effect of AI tools on modern software development for frontend engineering: 
+QTJPLBYR,core,539H8RBQ,True,s3:opus:core|s3:human:core,Evaluating security and inclusivity in LLM-generated code: a controlled experime
+ZSB2S59N,core,539H8RBQ,True,s3:opus:core|s3:human:core,Designing guardrails: ensuring responsible AI behavior
+72W6R4JG,core,539H8RBQ,True,s3:opus:core|s3:human:core,Vibe-coding: feedback-based automated verification with no human code inspection
+QWHE9EXH,core,539H8RBQ,True,s3:opus:core|s3:human:core,STELP: secure transpilation and execution of LLM-generated programs
+VG6CIDQW,core,539H8RBQ,True,s3:opus:core|s3:human:core,Lumen: developer agency through transparent context control in AI-assisted progr
+VCI88UZD,core,539H8RBQ,True,s3:opus:core|s3:human:core,Human-certified module repositories for the AI age
+TA6GIUK2,core,539H8RBQ,True,s3:opus:core|s3:human:core,The specification as quality gate: three hypotheses on AI-assisted code review
+T3XTXIXW,core,539H8RBQ,True,s3:opus:core|s3:human:core,CoTDeceptor:adversarial code obfuscation against CoT-enhanced LLM code agents
+DJHG9BBS,core,539H8RBQ,True,s3:opus:core|s3:human:core,AI-powered code review with LLMs: early results
+GCZQTNBD,core,539H8RBQ,True,s3:opus:core|s3:human:core,LLM4VV: exploring LLM-as-a-judge for validation and verification testsuites
+D87A4CAS,core,539H8RBQ,True,s3:opus:core|s3:human:core,Enhancing software development with large language models: a case study of kolay
+VG8PSMM7,core,539H8RBQ,True,s3:opus:core|s3:human:core,Benchmarking and validation of prompting techniques for AI-assisted industrial P
+5I2W8IC6,core,539H8RBQ,True,s3:opus:core|s3:human:core,Mapping the trust terrain: LLMs in software engineering - insights and perspecti
+22JBEZNK,core,539H8RBQ,True,s3:opus:core|s3:human:core,Non-programmers assessing AI-generated code: a case study of business users anal
+VZ27QUPQ,core,539H8RBQ,True,s3:opus:core|s3:human:core,Identifying and mitigating API misuse in large language models
+HJMKADKU,core,539H8RBQ,True,s3:opus:core|s3:human:core,Bugdar: AI-augmented secure code review for GitHub pull requests
+R4WJZBSF,core,539H8RBQ,True,s3:opus:core|s3:human:core,A framework for quantifying ethical and regulatory risks in big data analytics a
+UB2EVUFU,core,539H8RBQ,True,s3:opus:core|s3:human:core,Self-organizing multi-agent systems for continuous software development
+2KPHQ5IV,core,539H8RBQ,True,s3:opus:core|s3:human:core,Scaling human-AI coding collaboration requires a governable consensus layer
+WPWF7A32,core,539H8RBQ,True,s3:opus:core|s3:human:core,DevLicOps: a framework for mitigating licensing risks in AI-generated code
+ZUM76CCG,core,539H8RBQ,True,s3:opus:core|s3:human:core,Generative AI in systems engineering: a framework for risk assessment of large l
+TJH7QFAX,core,539H8RBQ,True,s3:opus:core|s3:human:core,"Code for machines, not just humans: quantifying AI-friendliness with code health"
+PPMTM4DG,core,539H8RBQ,True,s3:opus:core|s3:human:core,Fight fire with fire: how much can we trust ChatGPT on source code-related tasks
+5DI9B43K,core,539H8RBQ,True,s3:opus:core|s3:human:core,Towards verified code reasoning by LLMs
+WZCULPXN,core,539H8RBQ,True,s3:opus:core|s3:human:core,Artificial intelligence tools in web application development – advantages and ch
+96XE669R,core,539H8RBQ,True,s3:opus:core|s3:human:core,Vibe checker: aligning code evaluation with human preference
+I6FZ5GD2,core,539H8RBQ,True,s3:opus:core|s3:human:core,Illuminating LLM coding agents: visual analytics for deeper understanding and en
+84D2AMVM,core,539H8RBQ,True,s3:opus:context|s3:human:core,Realizing the promise of AI governance involving humans-in-the-loop
+5DCQDB4C,core,539H8RBQ,True,s3:opus:context|s3:human:core,Effective human oversight of AI-based systems: a signal detection perspective on
+ZGST9CY6,core,539H8RBQ,True,s3:opus:context|s3:human:core,Designing meaningful human oversight in AI
+JVWUYDME,core,539H8RBQ,True,s3:opus:context|s3:human:core,"Scapegoat-as-a-service: moving from ""human-in-the-loop"" to ""human-in-command"" in"
+9MV2IVNU,core,539H8RBQ,True,s3:opus:context|s3:human:core,Human-in-the-loop isn't a checkbox: designing meaningful intervention in automat
+5RLPIA3K,core,539H8RBQ,True,s3:opus:context|s3:human:core,Adversarial verification as reference architecture for EU AI act article 14 comp
+EB49Q8QM,core,539H8RBQ,True,s3:opus:context|s3:human:core,The rationality of automation bias in security operation centers
+N7E3MR2V,core,539H8RBQ,True,s3:opus:context|s3:human:core,SDLC AutoPilot AI: agentic automation of software development life cycle
+6TZHUCMD,core,539H8RBQ,True,s3:opus:context|s3:human:core,Source code guardrail: AI driven solution to distinguish critical vs. Generic co
+WUUDHL8R,core,539H8RBQ,True,s3:opus:context|s3:human:core,AI-driven refactoring: a pipeline for identifying and correcting data clumps in 
+UW2R6BBJ,core,539H8RBQ,True,s3:opus:context|s3:human:core,Secure AI-SDLC for critical infrastructure: operationalizing the NIST AI RMF wit
+M74M3RFJ,core,539H8RBQ,True,s3:opus:context|s3:human:core,Developing assurance cases for adversarial robustness and regulatory compliance 
+HBR7QZ2C,core,539H8RBQ,True,s3:opus:context|s3:human:core,Designing a policy engine for agentic AI systems: from governance requirements t
+Z4SZM266,discard,JIMGLVAL,False,s3:opus:discard,The AI-driven vendor: impact of AI on offshore software outsourcing
+SKJGWPTP,discard,JIMGLVAL,False,s3:opus:discard,Generative model-driven code creation and vulnerability analysis for development
+U86MEP3N,discard,JIMGLVAL,False,s3:opus:discard,Code vulnerability repair with large language model using context-aware prompt t
+2ZPXU9NG,discard,JIMGLVAL,False,s3:opus:discard,"Screen reader programmers in the vibe coding era: adaptation, empowerment, and n"
+PMPV54J9,discard,JIMGLVAL,False,s3:opus:discard,From tools to teammates: a framework for integrating AI agents into organization
+Z4A98575,discard,JIMGLVAL,False,s3:opus:discard,The regulation of fine-tuning: federated compliance for modified general-purpose
+I8R2LX86,discard,JIMGLVAL,False,s3:opus:discard,The geometry of human participation: the structural conditions of legitimacy in 
+HCRVJ6VH,discard,JIMGLVAL,False,s3:opus:discard,Toward hybrid LLM-assisted vulnerability detection for continuous integration: a
+VJ5ETQTG,discard,JIMGLVAL,False,s3:opus:discard,How software development professionals perceive the use of code reviewer recomme
+WJ3F3AKV,discard,JIMGLVAL,False,s3:opus:discard,Heterogeneous graph learning for code reviewers recommendation with LLM's unders
+YJLK5FPA,discard,JIMGLVAL,False,s3:opus:discard,Ethics for oversight and protection the constitutional case for AI governance in
+PCWV493W,discard,JIMGLVAL,False,s3:opus:discard,Toward agentic software project management: a vision and roadmap
+KV8KC9RL,discard,JIMGLVAL,False,s3:opus:discard,Enhancing human-IDE interaction in the SDLC using LLM-based mediator agents
+KKSWIRKC,discard,JIMGLVAL,False,s3:opus:discard,Perfecting AI agent frameworks through unified design principles
+7FEBKCIR,discard,JIMGLVAL,False,s3:opus:discard,Balancing autonomy and ethics in AI-empowered software engineering by addressing
+LMDPGZ8H,discard,JIMGLVAL,False,s3:opus:discard,No need to lift a finger anymore? Assessing the quality of code generation by Ch
+NLU442CT,discard,JIMGLVAL,False,s3:opus:discard,Harnessing large language models for curated code reviews
+7B87ZZY9,discard,JIMGLVAL,False,s3:opus:discard,Evaluating the effectiveness of LLMs in fixing maintainability issues in real-wo
+94RE6GF2,discard,JIMGLVAL,False,s3:opus:discard,Evaluating LLM performance on CWE identification and CVSS estimation
+5TACTETI,discard,JIMGLVAL,False,s3:opus:discard,Automated code diagnostics with AI
+5VAMCJ92,discard,JIMGLVAL,False,s3:opus:discard,A policy-aware framework for data masking: secure integration of applications an
+2IVJJNA5,discard,JIMGLVAL,False,s3:opus:discard,A comparative study of vibe coding with ChatGPT and gemini in front-end web deve
+ENWUSVIU,discard,JIMGLVAL,False,s3:opus:discard,Your code agent can grow alongside you with structured memory
+F22XIG4P,discard,JIMGLVAL,False,s3:opus:discard,User-centered design with AI in the loop: a case study of rapid user interface p
+CUQ7TTY4,discard,JIMGLVAL,False,s3:opus:discard,The moral crumple zone in agentic AI workflows
+DQYFMUG9,discard,JIMGLVAL,False,s3:opus:discard,AI agents' shadow principals
+RXGCTGDW,discard,JIMGLVAL,False,s3:opus:discard,Vibe coding authorship
+TEQBXMCZ,discard,JIMGLVAL,False,s3:opus:discard,VWAB: vibe write app build a framework for domain-expert-driven application deve
+E89ASTEW,discard,JIMGLVAL,False,s3:opus:discard,Aeros(CASP): advancing certification and safety through commonsense reasoning-ba
+ZGUIZ7AP,discard,JIMGLVAL,False,s3:opus:discard,"Artificial intelligence in future conflicts: strategic, ethical, and governance "
+QBZTPWQR,discard,JIMGLVAL,False,s3:opus:discard,Everything is context: agentic file system abstraction for context engineering
+HCQSZWZR,discard,JIMGLVAL,False,s3:opus:discard,Toward robust security orchestration and automated response in security operatio
+ZG9B7UN2,discard,JIMGLVAL,False,s3:opus:discard,Impact of LLMs on team collaboration in software development
+8X5X263U,discard,JIMGLVAL,False,s3:opus:discard,"Shadow AI: cyber security implications, opportunities and challenges in the unse"
+5AX597S3,discard,JIMGLVAL,False,s3:opus:discard,Determining the capabilities of generative artificial intelligence tools to incr
+CA5E5GWT,discard,JIMGLVAL,False,s3:opus:discard,From throw-away to takeaway: how GenAI and vibe coding accelerate prototyping ac
+Y9EKDJY8,discard,JIMGLVAL,False,s3:opus:discard,Software trustworthiness assessment via large language models (LLMs)
+ZYWHNXIT,discard,JIMGLVAL,False,s3:opus:discard,Prompting for security: a cross-model evaluation of code generation in LLMs
+XKJAWAJ5,discard,JIMGLVAL,False,s3:opus:discard,Integrating visual aids to enhance the code reviewer selection process
+I3GEJ4AR,discard,JIMGLVAL,False,s3:opus:discard,Detecting AI memory poisoning from observable behavior: behavioral shadow infere
+LVFMBVDU,discard,JIMGLVAL,False,s3:opus:discard,AI maturity matters
+2YE6KBRB,discard,JIMGLVAL,False,s3:opus:discard,AI governance and the containment problem: why observation and advisory roles mu
+7GDFZE98,discard,JIMGLVAL,False,s3:opus:discard,AI for code synthesis: can LLMs generate secure code?
+BZD4TI55,discard,JIMGLVAL,False,s3:opus:discard,The effects of AI-assisted programming in software engineering: a study on GitHu
+MVN658DU,discard,JIMGLVAL,False,s3:opus:discard,Invisible orchestrators suppress protective behavior and dissociate power-holder
+MPU6HLPS,discard,JIMGLVAL,False,s3:opus:discard,ENCO: deploying production-scale engineering copilots
+HN3UG2JE,discard,JIMGLVAL,False,s3:opus:discard,Understanding code quality: a qualitative evaluation of LLM-generated vs. Human-
+Z3P3I6A9,discard,JIMGLVAL,False,s3:opus:discard,"Open source, hidden costs: a systematic literature review on OSS license managem"
+SHAIEC8U,discard,JIMGLVAL,False,s3:opus:discard,Transformer models for code review comment generation: a performance comparison 
+QCWKJCUC,discard,JIMGLVAL,False,s3:opus:discard,Harnessing large language models for software vulnerability detection: a compreh
+EBA5MX7G,discard,JIMGLVAL,False,s3:opus:discard,Deep learning-driven vulnerability detection models for software security
+B336P7EX,discard,JIMGLVAL,False,s3:opus:discard,Automated code review and quality assurance system using static analysis and com
+TCMF6P4P,discard,JIMGLVAL,False,s3:opus:discard,TENET: leveraging tests beyond validation for code generation
+Q8F6WBGU,discard,JIMGLVAL,False,s3:opus:discard,AI audit washing and accountability
+BPL78SWJ,discard,JIMGLVAL,False,s3:opus:discard,Deterministic bias detection for NYC local law 144: why reproducibility matters 
+DQM82F3L,discard,JIMGLVAL,False,s3:opus:discard,Research vision for Co-designing responsible AI
+HTZUBZN3,discard,JIMGLVAL,False,s3:opus:discard,Towards a vendor-agnostic AI adoption framework for small and medium-sized busin
+KV98BNHC,discard,JIMGLVAL,False,s3:opus:discard,Trust infrastructure for the AI economy: reducing financial risk and fraud in re
+W9NG99CY,discard,JIMGLVAL,False,s3:opus:discard,Software development and modeling in the age of artificial intelligence manifest
+N5RK5TBY,discard,JIMGLVAL,False,s3:opus:discard,The self-healing enterprise: a control-theoretic framework and the proactivity r
+GUE428AU,discard,JIMGLVAL,False,s3:opus:discard,Ethics becomes enforceable governance when harm is foreseeable and preventable; 
+HQS9QQC3,discard,JIMGLVAL,False,s3:opus:discard,Are prompt engineering and TODO comments friends or foes? An evaluation on GitHu
+6EKVYBCD,discard,JIMGLVAL,False,s3:opus:discard,Generative AI in responsible conversational agent integration: guidelines for se
+PMSYQJQQ,discard,JIMGLVAL,False,s3:opus:discard,"Towards just-In-time, inclusive clone refactoring"
+KQKP3BMR,discard,JIMGLVAL,False,s3:opus:discard,SOEN-101: code generation by emulating software process models using large langu
+BVHNZ5ZK,discard,JIMGLVAL,False,s3:opus:discard,Exploring the relationship between code metrics and the ability of large languag
+TSFK8UQJ,discard,JIMGLVAL,False,s3:opus:discard,Enhancing software vulnerability analysis via large language models: a systemati
+MABPHXLK,discard,JIMGLVAL,False,s3:opus:discard,Disrupting test development with AI assistants
+THUAX4U7,discard,JIMGLVAL,False,s3:opus:discard,Rise of the AI bureaucrats
+EQQ4DQZW,discard,JIMGLVAL,False,s3:opus:discard,How does your AI model make decisions? Behavioral fingerprinting of foundation A
+8PPIW9Q5,discard,JIMGLVAL,False,s3:opus:discard,Unlocking the potential of the prompt engineering paradigm in software engineeri
+STYN9TZV,discard,JIMGLVAL,False,s3:opus:discard,Explainable retrieval and graph augmented code vulnerability repair recommendati
+8WXH638R,discard,JIMGLVAL,False,s3:opus:discard,Evaluating retrieval-augmented generation for LLM-based vulnerability detection:
+FJH62WDM,discard,JIMGLVAL,False,s3:opus:discard,Assessing AI-based code assistants in method generation tasks
+SDIMSRMI,discard,JIMGLVAL,False,s3:opus:discard,An evaluation framework for software unit tests generated by large language mode
+7FKUWHP3,discard,JIMGLVAL,False,s3:opus:discard,Are prompt engineering and TODO comments friends or foes? An evaluation on GitHu
+FEJLI262,discard,JIMGLVAL,False,s3:opus:discard,A decontextualized LLM-based safeguard technique for automated jailbreak mitigat
+N9825KAC,discard,JIMGLVAL,False,s3:opus:discard,The reconstructability gap: how AI-generated narratives acquire authority withou
+ID5GDTG3,discard,JIMGLVAL,False,s3:opus:discard,Anumati: proof of adherence as a formal consent model for autonomous agent proto
+PSB68H9E,discard,JIMGLVAL,False,s3:opus:discard,Deterministic engines and deterministic governance: why correctness is not permi
+RHGX3UJE,discard,JIMGLVAL,False,s3:opus:discard,LLM-based frameworks for power engineering from routine to novel tasks
+Z54RZZ2U,discard,JIMGLVAL,False,s3:opus:discard,Chat Ts&Cs: a survey of 20 standard contracts for generative AI services
+PSNKQLI7,discard,JIMGLVAL,False,s3:opus:discard,Semantic patch learning for vulnerability repair in LLM-generated code authors
+SPBS7N3Q,discard,JIMGLVAL,False,s3:opus:discard,AutoPatch: multi-agent framework for patching real-world CVEs generated by outda
+7ER2FAUE,discard,JIMGLVAL,False,s3:opus:discard,Beyond semantic models: dual-stream semantic and structural learning for vulnera
+5XSGMMPB,discard,JIMGLVAL,False,s3:opus:discard,Prompt hygiene guide: practical workplace rules for safe AI use
+ZPDCIE7J,discard,JIMGLVAL,False,s3:opus:discard,REprompt: prompt generation for intelligent software development guided by requi
+LBBJ3LGD,discard,JIMGLVAL,False,s3:opus:discard,LLM as a code generator in agile model driven development
+YQEIKBDK,discard,JIMGLVAL,False,s3:opus:discard,EDA-in-the-loop: automated HDL code generation and verification using multi-agen
+8MDVQP3F,discard,JIMGLVAL,False,s3:opus:discard,Unlocking code simplicity: the role of prompt patterns in managing LLM code comp
+HUVIWYNF,discard,JIMGLVAL,False,s3:opus:discard,Poisoning programs by un-repairing code: security concerns of AI-generated code
+LAKYKVTB,discard,JIMGLVAL,False,s3:opus:discard,Malicious and unintentional disclosure risks in large language models for code g
+XSTAPT9Y,discard,JIMGLVAL,False,s3:opus:discard,Examining zero-shot vulnerability repair with large language models
+SNPQ9KQ8,discard,JIMGLVAL,False,s3:opus:discard,Enhancing automated vulnerability repair through dependency embedding and patter
+LJA5AH6N,discard,JIMGLVAL,False,s3:opus:discard,Comparative evaluation of large language models for test-skeleton generation
+8FFCMYBL,discard,JIMGLVAL,False,s3:opus:discard,A meta agentic AI sparked a security incident by acting without permission
+VRRAIN5C,discard,JIMGLVAL,False,s3:opus:discard,CodexLeaks: privacy leaks from code generation language models in GitHub copilot
+6UQMFSB8,discard,JIMGLVAL,False,s3:opus:discard,Contract-coding: towards repo-level generation via structured symbolic paradigm
+58FAJ59D,discard,JIMGLVAL,False,s3:opus:discard,The infrastructure gap: why platform security cannot protect against agentic att
+FWE8KERE,discard,JIMGLVAL,False,s3:opus:discard,Axiomatic governance for agentic AI: a five-layer constitutional framework deriv
+M6SUF8M6,discard,JIMGLVAL,False,s3:opus:discard,From firewall to membrane: why agentic AI requires a new class of governance arc
+S57GJ9VD,discard,JIMGLVAL,False,s3:opus:discard,Simplifying software compliance: AI technologies in drafting technical documenta
+D5S6J3FF,discard,JIMGLVAL,False,s3:opus:discard,The principle of governance relativity: frame-invariant AI governance across dom
+MZ898VR3,discard,JIMGLVAL,False,s3:opus:discard,Cross-language transfer learning for detecting vulnerabilities in LLM-generated 
+HVRYIRUX,discard,JIMGLVAL,False,s3:opus:discard,Vibe coding in practice: building a driving simulator without expert programming
+3859ACST,discard,JIMGLVAL,False,s3:opus:discard,Hit the bullseye on the first shot: improving LLMs using multi-sample self-rewar
+82JCG2LM,discard,JIMGLVAL,False,s3:opus:discard,Evaluating large language models for graphical PLC programming: a temperature co
+ZBQ65FKI,discard,JIMGLVAL,False,s3:opus:discard,Reinforcement learning from automatic feedback for high-quality unit test genera
+NWQP7G88,discard,JIMGLVAL,False,s3:opus:discard,"Quality In, quality out: investigating training data's role in AI code generatio"
+DBA6R6A3,discard,JIMGLVAL,False,s3:opus:discard,Leveraging machine learning for enhanced bug triaging in open-source software pr
+2ATF53D2,discard,JIMGLVAL,False,s3:opus:discard,Can LLMs generate higher quality code than humans? An empirical study
+5VC8UKYC,discard,JIMGLVAL,False,s3:opus:discard,Compilation of feature models by expert vibing
+325KSXT7,discard,JIMGLVAL,False,s3:opus:discard,Analyzing prompt influence on automated method generation: an empirical study wi
+XQ2858YZ,discard,JIMGLVAL,False,s3:opus:discard,Algorithmic transparency and decision-making accountability: thoughts for buying
+MJ9IKA9C,discard,JIMGLVAL,False,s3:opus:discard,Law informs code: a legal informatics approach to aligning artificial intelligen
+4KB7X3A7,discard,JIMGLVAL,False,s3:opus:discard,Technical appendix: a proposed attested-verifiable inference architecture for th
+PIYZKWWA,discard,JIMGLVAL,False,s3:opus:discard,Randomized controlled trials for Microsoft copilot for security
+8B46YAHW,discard,JIMGLVAL,False,s3:opus:discard,Deep-learning-empowered detection of large-language-model-based generative conte
+ZTC5ZMK7,discard,JIMGLVAL,False,s3:opus:discard,Real-time cognitive bias detection and mitigation: the BiasConstraint engine™ pl
+QK577S3K,discard,JIMGLVAL,False,s3:opus:discard,Verifiable AI: the strategic imperative for trustworthy artificial intelligence 
+B9SCIW2Y,discard,JIMGLVAL,False,s3:opus:discard,Preconditions and postconditions as design constraints for LLM code generation
+Y7X3I96U,discard,JIMGLVAL,False,s3:opus:discard,PALM: synergizing program analysis and LLMs to enhance rust unit test coverage
+GQ5E7RPF,discard,JIMGLVAL,False,s3:opus:discard,"Blockchain and AI framework for provenance, semantics, and compliance"
+LKCDAMLF,discard,JIMGLVAL,False,s3:opus:discard,"Legal, policy, and compliance issues in using AI for security: using taiwan's cy"
+SY3EG4BR,discard,JIMGLVAL,False,s3:opus:discard,Exploring typo squatting threats in the hugging face ecosystem
+PV989YFX,discard,JIMGLVAL,False,s3:opus:discard,Protect your secrets: understanding and measuring data exposure in VSCode extens
+7UASJDLI,discard,JIMGLVAL,False,s3:opus:discard,Leveraging pre-trained large language models (LLMs) for on-premises comprehensiv
+HYCHNXIV,discard,JIMGLVAL,False,s3:opus:discard,Leveraging long method decomposition to improve large language model-based test 
+TK57I7DU,discard,JIMGLVAL,False,s3:opus:discard,Don't complete it! Preventing unhelpful code completion for productive and susta
+DCXPJEDE,discard,JIMGLVAL,False,s3:opus:discard,AI-powered unit test generation via multi-LLM chaining: a case study with GPT-4o
+KGTN866U,discard,JIMGLVAL,False,s3:opus:discard,The matthew effect of AI programming assistants: a hidden bias in software evolu
+PH6HQ5XG,discard,JIMGLVAL,False,s3:opus:discard,Algorithms acting badly: a solution from corporate law
+L7E3YTUT,discard,JIMGLVAL,False,s3:opus:discard,Generative artificial intelligence under german copyright law (part 1)
+7VXQ4CPI,discard,JIMGLVAL,False,s3:opus:discard,Towards a catalog of prompt patterns to enhance the discipline of prompt enginee
+J3KCV65D,discard,JIMGLVAL,False,s3:opus:discard,Analysis of ChatGPT-generated codes across multiple programming languages
+GMU2V4QQ,discard,JIMGLVAL,False,s3:opus:discard,An empirical analysis of ESLint information components and their interactions in
+9EKRHLXQ,discard,JIMGLVAL,False,s3:opus:discard,AI guarded code editor: verifying authentic human input
+S8TWHKKL,discard,JIMGLVAL,False,s3:opus:discard,A rusty link in the AI supply chain: detecting evil configurations in model repo
+HDVEI6LK,discard,JIMGLVAL,False,s3:opus:discard,Are large language models memorizing bug benchmarks?

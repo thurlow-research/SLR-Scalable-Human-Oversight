@@ -1,0 +1,68 @@
+{
+  "item_key": "DJMBHHZN",
+  "citation": "Tisi 2025",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model",
+    "system-tool"
+  ],
+  "problem_statement": "LLM-based agents applied to software engineering are unreliable and biased, with single-agent hallucinations considered essentially inevitable; the project addresses how to make AI-generated SE artefacts reliable through supervised, orchestrated collaboration among many agents with human intervention.",
+  "magnitude_evidence": "\"more than 40 independent LLMs are available at present\"",
+  "risk_types": [
+    "hallucination",
+    "bias",
+    "reliability",
+    "quality",
+    "security-vulnerabilities",
+    "safety-critical"
+  ],
+  "insufficiency_evidence": "\"phenomena like hallucinations of a single agent are substantially inevitable, since they are linked to the fundamental inference mechanism in generative models\"",
+  "solution_mechanisms": [
+    "multi-agent collaboration and debate",
+    "specialised solution/supervision/consensus/collaboration agents",
+    "governance policy language (consensus, majority voting, human-driven)",
+    "decision engine moderating agent consensus",
+    "voting and sampling for accuracy",
+    "agent repository with quality KPIs",
+    "AI-agent server protocol (AISP)",
+    "BDI-based coordination language",
+    "expert user intervention in AI decisions",
+    "explainable decision trace"
+  ],
+  "mechanism_keywords": [
+    "multi-agent-debate",
+    "adversarial-verification",
+    "supervision-agent",
+    "consensus",
+    "majority-voting",
+    "governance",
+    "policy-as-code",
+    "orchestration",
+    "llm-as-judge",
+    "ensemble",
+    "hitl",
+    "escalation",
+    "observability",
+    "provenance",
+    "agent-repository",
+    "protocol"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "CI",
+    "post-deployment"
+  ],
+  "human_role": "escalation-target",
+  "key_constructs": [
+    "Community of AIs / AI-agent community",
+    "AISP (AI Agent Server Protocol)",
+    "MOSAICO Decision Engine",
+    "Solution/Supervision/Consensus/Collaboration Agents",
+    "governance language"
+  ],
+  "governance_refs": [],
+  "scope_fit": "solution",
+  "notes": "Project-exhibition paper describing an in-progress EU project (first 3 months); mechanisms are proposed/planned rather than empirically evaluated.",
+  "_truncated": false
+}

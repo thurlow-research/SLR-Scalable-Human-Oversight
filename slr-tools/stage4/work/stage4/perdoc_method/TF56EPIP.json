@@ -1,0 +1,16 @@
+{
+  "item_key": "TF56EPIP",
+  "methods": [
+    "conceptual/position/framework",
+    "benchmark-evaluation",
+    "dataset-contribution",
+    "simulation",
+    "design-science/prototype/tool-build",
+    "literature-review/mapping"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position/framework",
+  "notes": "Hybrid paper: dominant content is a narrative survey plus the proposed SAFE-AI governance framework and a novel taxonomy of AI behaviors (conceptual). It also carries out a real empirical evaluation pipeline (Sec IX-X): benchmarking six code-LLMs for vulnerabilities/hallucinations and simulating autonomous agents (failure/deception/recovery metrics, ANOVA), and claims a 30K synthetic-prompt dataset (Re-Auto-30K). Empirical=true rests on this benchmark/simulation. No human participants (models and synthetic prompts only). Reference list appears largely mismatched/unreliable, but this does not change the method classification.",
+  "citation": "Navneet 2025"
+}

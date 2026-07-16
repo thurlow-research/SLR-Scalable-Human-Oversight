@@ -1,0 +1,82 @@
+{
+  "item_key": "9MV2IVNU",
+  "citation": "Eze 2026",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model"
+  ],
+  "problem_statement": "When organizations automate decision-making with ML, 'human-in-the-loop' often becomes a compliance label where reviewers approve outputs without the authority, information, time, or confidence to challenge them, creating a false sense of oversight while outcomes remain effectively automated.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "rubber-stamping",
+    "automation-bias",
+    "false-accountability",
+    "governance-failure",
+    "fairness",
+    "legal",
+    "reputational",
+    "model-drift",
+    "bias",
+    "data-quality"
+  ],
+  "insufficiency_evidence": "many AI workflows involve human reviewers who formally approve model outputs without the authority, information, time, or confidence to challenge them meaningfully; 'review' effectively becomes approval by default, especially for borderline declines; near-zero override rate in high-stakes decisions",
+  "solution_mechanisms": [
+    "Override control (decision rights to change outcomes)",
+    "Escalate (risk-based routing to human review)",
+    "Explain (decision-ready reasoning + uncertainty signals)",
+    "Execution Boundary Control (intervene before irreversible action)",
+    "Evidence Chain (traceable audit record)",
+    "KPI measurement framework (override rate, escalation precision, latency, disagreement, harm signals)",
+    "tiered review roles",
+    "reviewer training as a control",
+    "governance cadence and thresholds"
+  ],
+  "mechanism_keywords": [
+    "override",
+    "escalation",
+    "risk-routing",
+    "explainability",
+    "uncertainty-signals",
+    "execution-boundary",
+    "provenance",
+    "evidence-chain",
+    "audit-trail",
+    "kpi-monitoring",
+    "calibration",
+    "hitl",
+    "tiered-review",
+    "counterfactual",
+    "drift-detection",
+    "policy-as-code",
+    "contestability",
+    "human-in-command"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-decision",
+    "decision-approval",
+    "execution-boundary",
+    "post-decision",
+    "code-review"
+  ],
+  "human_role": "in-command",
+  "key_constructs": [
+    "Rubber-Stamp Risk",
+    "Execution Boundary Control",
+    "Intervention Architecture (Override/Escalate/Explain)",
+    "Override Chilling",
+    "Intervention Drift Index",
+    "Escalation Precision / Right-Case Escalation",
+    "Evidence Chain Requirements",
+    "Meaningful Human Intervention"
+  ],
+  "governance_refs": [
+    "EU AI Act",
+    "GDPR",
+    "ISO/IEC 42001",
+    "NIST AI RMF"
+  ],
+  "scope_fit": "both",
+  "notes": "Document addresses automated decision-making broadly (credit, hiring, healthcare) rather than AI-generated code specifically; oversight framework is domain-general but transferable.",
+  "_truncated": false
+}

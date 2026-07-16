@@ -1,0 +1,57 @@
+{
+  "item_key": "F9JM9CI6",
+  "citation": "Heander 2025",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model"
+  ],
+  "problem_statement": "Fully automating code review to save developer time risks losing the interpersonal and team benefits of the practice; the paper argues AI should support (keep humans in the loop on) code review rather than replace it.",
+  "magnitude_evidence": "developers spending 10\u201320% of their working time doing code reviews; with ~28 million developers in 2024 this corresponds to 22-44 million hours every work day",
+  "risk_types": [
+    "loss of interpersonal benefits",
+    "loss of knowledge transfer",
+    "loss of shared code ownership",
+    "loss of team awareness",
+    "blame culture",
+    "code quality",
+    "defects",
+    "review time cost"
+  ],
+  "insufficiency_evidence": "while automated tools might succeed in maintaining the code quality, we risk losing interpersonal and team benefits such as knowledge transfer, shared code ownership, and team awareness",
+  "solution_mechanisms": [
+    "AI agent-based code review platform",
+    "AI-OS architecture with central LLM kernel",
+    "specialized small agents for tool/data integration",
+    "adaptive pipeline customized to user needs",
+    "defect-marking with suggested review comments",
+    "AI code-change summarization",
+    "rationale/context aggregation across systems",
+    "reviewer recommendation support"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "multi-agent",
+    "llm-orchestration",
+    "human-support",
+    "adaptive-workflow",
+    "context-aggregation",
+    "summarization",
+    "defect-suggestion",
+    "reviewer-recommendation",
+    "tool-integration"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "pre-commit"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "AI-OS architecture",
+    "support-not-automation",
+    "Code Review Contextualizer"
+  ],
+  "governance_refs": [],
+  "scope_fit": "solution",
+  "notes": null,
+  "_truncated": false
+}

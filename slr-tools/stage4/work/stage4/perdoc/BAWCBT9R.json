@@ -1,0 +1,71 @@
+{
+  "item_key": "BAWCBT9R",
+  "citation": "Zhao 2026",
+  "evidence_type": [
+    "empirical",
+    "controlled-experiment",
+    "benchmark"
+  ],
+  "problem_statement": "LLM-as-a-Judge is increasingly used to evaluate and rank AI-generated code artifacts (generation, repair, test generation) when human review or executable tests are unavailable, but its verdicts are unreliable and prompt-sensitive, threatening the validity of automated oversight in agentic SE pipelines.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "prompt-sensitivity",
+    "position-bias",
+    "verbosity-bias",
+    "reliability",
+    "reproducibility",
+    "validity",
+    "self-enhancement",
+    "manipulation",
+    "quality-misjudgment",
+    "formatting-failure"
+  ],
+  "insufficiency_evidence": "On TestGen the largest swing under GPT saw distraction drop accuracy from 77.46% to 62.51%; generic Qwen3-4B only returns a valid A/B verdict ~44% of inputs (44.37% overall) vs ~99% for Qwen2.5-Coder-3B, frequently generating free-form text until the context limit.",
+  "solution_mechanisms": [
+    "report bias sensitivity alongside accuracy",
+    "A/B order swapping control",
+    "controlled prompt perturbations / stress tests",
+    "test-retest consistency measurement",
+    "answer-rate monitoring",
+    "difficulty-conditioned reliance/triage",
+    "escalate unstable cases to executable evidence or human review",
+    "multi-run aggregation",
+    "multi-judge ensembles",
+    "calibration subset for stability profiling"
+  ],
+  "mechanism_keywords": [
+    "llm-as-judge",
+    "bias-audit",
+    "ab-swapping",
+    "adversarial-verification",
+    "consistency-rate",
+    "robustness-rate",
+    "calibration",
+    "escalation",
+    "abstention",
+    "ensemble",
+    "executable-verification",
+    "risk-routing"
+  ],
+  "oversight_locus": [
+    "evaluation-time",
+    "patch-selection",
+    "candidate-ranking",
+    "pre-merge",
+    "code-review",
+    "CI"
+  ],
+  "human_role": "escalation-target",
+  "key_constructs": [
+    "Robustness Rate",
+    "Consistency Rate (test-retest reliability)",
+    "fixed evidence protocol",
+    "bias suite (twelve prompt-injected biases)",
+    "answer rate",
+    "positional prior"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Some OCR/typographic garbling (e.g. 'summaris', 'proviguidance', broken math notation); preprint with placeholder ACM metadata.",
+  "_truncated": false
+}

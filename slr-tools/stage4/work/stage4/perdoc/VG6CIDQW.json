@@ -1,0 +1,60 @@
+{
+  "item_key": "VG6CIDQW",
+  "citation": "N. Goel 2025",
+  "evidence_type": [
+    "system-tool",
+    "conceptual-position"
+  ],
+  "problem_statement": "AI coding assistants operate as black boxes\u2014developers cannot see or control what context (dependencies, security configs, test files) drives AI code suggestions, undermining their ability to verify and trust AI-generated code for production.",
+  "magnitude_evidence": "experienced developers taking 19% longer to complete tasks when using AI tools compared to working without them (METR study, cited as [1])",
+  "risk_types": [
+    "security",
+    "quality",
+    "hidden-dependencies",
+    "trust-deficit",
+    "maintainability",
+    "workflow-disruption",
+    "productivity-loss"
+  ],
+  "insufficiency_evidence": "In the security-compliance scenario, AI 'generates clean, working code' but 'During code review, security team flags three issues: No rate limiting applied, Audit logging missing, Password complexity validation inconsistent'\u2014opaque automatic context assembly misses critical dependencies",
+  "solution_mechanisms": [
+    "transparent context assembly",
+    "double-copy interaction trigger",
+    "dependency graph visualization",
+    "AI-generated file summaries",
+    "developer-controlled context selection",
+    "context preview before submission",
+    "explicit context boundaries",
+    "query refinement input",
+    "configurable AI backends"
+  ],
+  "mechanism_keywords": [
+    "transparency",
+    "hitl",
+    "context-control",
+    "dependency-visualization",
+    "human-in-command",
+    "provenance",
+    "developer-agency",
+    "preview",
+    "explainability",
+    "augment-not-automate"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-query",
+    "code-review"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Lumen",
+    "double-copy interaction paradigm",
+    "transparent context assembly",
+    "augment-not-automate design philosophy",
+    "developer agency"
+  ],
+  "governance_refs": [],
+  "scope_fit": "solution",
+  "notes": "Evaluation is a design-oriented cognitive walkthrough; authors note absence of empirical user study as a limitation.",
+  "_truncated": false
+}

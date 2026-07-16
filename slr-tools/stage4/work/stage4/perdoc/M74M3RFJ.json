@@ -1,0 +1,84 @@
+{
+  "item_key": "M74M3RFJ",
+  "citation": "Momcilovic 2024",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model"
+  ],
+  "problem_statement": "LLMs used for code and natural-language tasks are vulnerable to adversarial attacks that bypass guardrails and produce harmful or vulnerable code, and developers lack a structured way to reason about and demonstrate compliant adversarial robustness under regulations like the EU AI Act.",
+  "magnitude_evidence": "At least 20 identifiable duties concern the (cyber)security, safety and robustness of AI systems under the EU AI Act (ref [16]); Article 15 Paragraph 5 explicitly demands protection from adversarial attacks",
+  "risk_types": [
+    "security",
+    "adversarial-attacks",
+    "jailbreaking",
+    "vulnerable-code",
+    "hallucination",
+    "toxic-content",
+    "legal-compliance",
+    "systemic-risk",
+    "information-hazard",
+    "code-injection"
+  ],
+  "insufficiency_evidence": "\"the success rate of simple variations of known attack patterns shows that relying purely on LLMs is not enough to claim robustness\"; also \"we posit that successful attacks will occur\" and guardrail coverage \"is not easily known beforehand\"",
+  "solution_mechanisms": [
+    "assurance cases (Goal Structuring Notation)",
+    "layered guardrail framework (five layers)",
+    "meta-layer for dynamic risk management and reasoning/reporting",
+    "input/output detection filters",
+    "perplexity filters",
+    "paraphrasing filters",
+    "LLM-as-a-Judge classifiers",
+    "adversarial training / RLHF / unlearning",
+    "human-in-the-loop output review",
+    "sandbox verification and confidence signals for users",
+    "software tests for code coverage",
+    "defeasible/updateable assurance claims",
+    "factsheets and incident reporting"
+  ],
+  "mechanism_keywords": [
+    "assurance-case",
+    "guardrail",
+    "layered-defense",
+    "meta-layer",
+    "llm-as-judge",
+    "hitl",
+    "perplexity-filter",
+    "adversarial-training",
+    "rlhf",
+    "policy-as-code",
+    "anomaly-detection",
+    "provenance",
+    "observability",
+    "sandbox",
+    "defeasible-reasoning",
+    "goal-structuring-notation",
+    "swiss-cheese-model"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-processing-input",
+    "runtime",
+    "code-review",
+    "post-deployment",
+    "downstream-consumption",
+    "continuous-monitoring"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "assurance case for compliant adversarial robustness",
+    "meta-layer (reasoning and reporting)",
+    "five-layer guardrail framework",
+    "Swiss cheese diagram of LLM layers",
+    "de facto incident vs. serious incident",
+    "defeaters (technical/legal)",
+    "compliant adversarial robustness"
+  ],
+  "governance_refs": [
+    "EU AI Act",
+    "AMLAS",
+    "Goal Structuring Notation (GSN) Community Standard"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

@@ -1,0 +1,78 @@
+{
+  "item_key": "YA7XNWYE",
+  "citation": "Ji 2024",
+  "evidence_type": [
+    "empirical",
+    "benchmark",
+    "conceptual-position",
+    "secondary-review"
+  ],
+  "problem_statement": "AI code generation models frequently produce insecure code that may enter the software supply chain without adequate security review, and current practices for evaluating and overseeing the security of AI-generated code are inconsistent and inadequate.",
+  "magnitude_evidence": "92% of surveyed U.S.-based developers report using AI coding tools (GitHub June 2023 survey); another Nov 2023 survey reported 96% of developers using AI coding tools; authors' own evaluation found ~48% of code snippets from five LLMs contained bugs potentially exploitable",
+  "risk_types": [
+    "security",
+    "insecure-code",
+    "supply-chain",
+    "hallucinated-packages",
+    "data-poisoning",
+    "backdoor",
+    "prompt-injection",
+    "automation-bias",
+    "technical-debt",
+    "training-feedback-loop",
+    "workforce-displacement",
+    "attack-surface"
+  ],
+  "insufficiency_evidence": "burden of verifying AI-generated code is secure falls mainly on users whose willingness to expend costs is not constant; evaluation benchmarks focus on functionality not security; 76% of surveyed workers believe AI code is more secure than human code (automation bias); Perry et al. found users with AI assistants wrote significantly less secure code while believing it was secure",
+  "solution_mechanisms": [
+    "security-focused code review before production",
+    "evaluate all code regardless of authorship via secure SDLC",
+    "distribute responsibility across stakeholders (AI developers, orgs, policymakers)",
+    "remove vulnerable code from training datasets",
+    "assess models on security benchmarks not just functionality",
+    "built-in output security checks in tools",
+    "expand secure-by-design principles to LLMs",
+    "security-ranked leaderboards",
+    "formal-verification / model checking (ESBMC) as vulnerability proxy",
+    "existing risk management frameworks (NIST C-SCRM, CSF)"
+  ],
+  "mechanism_keywords": [
+    "security-gate",
+    "code-review",
+    "secure-by-design",
+    "training-data-sanitization",
+    "security-benchmark",
+    "formal-verification",
+    "static-analysis",
+    "provenance",
+    "risk-management-framework",
+    "shift-responsibility",
+    "hitl",
+    "observability"
+  ],
+  "oversight_locus": [
+    "pre-production",
+    "code-review",
+    "CI",
+    "generation-time",
+    "model-training",
+    "benchmark-evaluation"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "automation bias",
+    "unsuccessful verification rate",
+    "negative feedback loop (AI code retraining)",
+    "human-out-of-the-loop pipelines"
+  ],
+  "governance_refs": [
+    "NIST Cybersecurity Framework",
+    "NIST C-SCRM (SP 800-161)",
+    "White House National Cybersecurity Strategy 2023",
+    "secure-by-design (CISA)",
+    "MITRE CWE Top 25"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

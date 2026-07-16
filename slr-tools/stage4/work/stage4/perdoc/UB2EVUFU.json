@@ -1,0 +1,75 @@
+{
+  "item_key": "UB2EVUFU",
+  "citation": "Lyu 2026",
+  "evidence_type": [
+    "system-tool",
+    "empirical",
+    "benchmark",
+    "case-study"
+  ],
+  "problem_statement": "How to sustain quality oversight of AI-generated code across long-horizon, continuous multi-agent software development, where agents both produce and judge their own output and human review must scale asynchronously over days of unattended operation.",
+  "magnitude_evidence": "Evaluated over four long-running projects completing 164 milestones and 616 agent cycles spanning 137 wall-clock hours without human intervention beyond initial configuration; RustLaTex alone required 392 cycles and 95 milestones",
+  "risk_types": [
+    "quality",
+    "defect-regression",
+    "self-review-conflict",
+    "cost-overrun",
+    "runaway-cycling",
+    "context-window-limits",
+    "specification-ambiguity"
+  ],
+  "insufficiency_evidence": "\"Apollo's unit-test gate can miss CI-level regressions, making Athena's planning cycle a necessary second quality layer\"; also \"Athena misclassified M92's heading-level variant as safe because the prior anti-pattern was documented as 'per-paragraph,' a distinction that a bounded context cannot reliably track over 90+ milestones\"",
+  "solution_mechanisms": [
+    "independent adversarial verification phase demanding concrete evidence",
+    "three-phase Strategy-Execution-Verification state machine",
+    "separation of producer and judge roles",
+    "self-organizing manager-hired worker teams",
+    "asynchronous human oversight via issue filing",
+    "anti-pattern accumulation constraining future planning",
+    "budget-halving fix rounds with exponential decay",
+    "budget-aware scheduling with rolling spend limit",
+    "persistent project state and knowledge base",
+    "self-aware termination on exhausted hypothesis space"
+  ],
+  "mechanism_keywords": [
+    "adversarial-verification",
+    "independent-verification",
+    "producer-judge-separation",
+    "hitl",
+    "async-oversight",
+    "escalation",
+    "observability",
+    "self-organizing-agents",
+    "risk-routing",
+    "phase-separation",
+    "policy-as-code",
+    "provenance",
+    "budget-control",
+    "milestone-driven"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "verification-phase",
+    "CI",
+    "code-review",
+    "post-milestone",
+    "runtime-monitoring"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "TheBotCompany",
+    "self-organizing agent teams",
+    "three-phase milestone lifecycle (Strategy-Execution-Verification)",
+    "asynchronous human oversight",
+    "adversarial verification manager (Apollo)",
+    "anti-pattern accumulation",
+    "self-aware termination",
+    "sequential phase separation",
+    "confirmatory vs corrective verification gate",
+    "tiered oversight granularity model"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

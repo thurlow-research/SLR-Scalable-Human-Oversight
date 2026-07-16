@@ -1,0 +1,196 @@
+{
+  "count": 11,
+  "total": "611",
+  "page": "13",
+  "records": [
+    {
+      "abstractId": "3941300",
+      "title": "AI certification: advancing ethical practice by reducing information asymmetries",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3941300",
+      "authors": [
+        "Peter Cihon",
+        "Moritz J. Kleinaltenkamp",
+        "Jonas Schuett",
+        "Seth Baum"
+      ],
+      "affiliations": [
+        "Center for the Governance of AI, Future of Humanity Institute, University of Oxford",
+        "Hertie School - Centre for Digital Governance",
+        "Centre for the Governance of AI",
+        "Global Catastrophic Risk Institute"
+      ],
+      "pages": 27,
+      "posted": "12 Oct 2021",
+      "snippet": "Certification offers a method to both incentivize adoption of these principles and substantiate that they have been implemented in practice. / Overall, certification can play a valuable mix in the portfolio of AI governance tools.",
+      "downloads": 224
+    },
+    {
+      "abstractId": "3939769",
+      "title": "NATO's Role in Responsible AI Governance in Military Affairs",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3939769",
+      "authors": [
+        "Lena Trabucco",
+        "Zoe Stanley-Lockman"
+      ],
+      "affiliations": [
+        "Government of the United States of America - U.S. Naval War College",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 32,
+      "posted": "11 Oct 2021",
+      "snippet": "In this chapter, we explore a role for the North Atlantic Treaty Organization (NATO) in the emerging military artificial intelligence (AI) governance architecture / We operationalise these governance tools by examining of three pillars particularly challenging for AI governance: ethics and values, legal norms, and / International Security, Military Technology, Global Governance, International Relations, International Law, International Organisations, North Atlantic Treaty Organization",
+      "downloads": 517
+    },
+    {
+      "abstractId": "3931469",
+      "title": "Governance of Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3931469",
+      "authors": [
+        "Araz Taeihagh"
+      ],
+      "affiliations": [
+        "National University of Singapore (NUS) - Lee Kuan Yew School of Public Policy"
+      ],
+      "pages": 22,
+      "posted": "28 Sep 2021",
+      "snippet": "While there is considerable literature emerging on various aspects of AI, governance of AI is a significantly underdeveloped area. / governance and highlight future avenues for exploration.",
+      "downloads": 350
+    },
+    {
+      "abstractId": "3873768",
+      "title": "Financial Risk Management and Explainable Trustworthy Responsible AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3873768",
+      "authors": [
+        "Sebastian Fritz-Morgenthal",
+        "Bernhard Hein",
+        "Jochen Papenbrock"
+      ],
+      "affiliations": [
+        "Bain & Company",
+        "Ernst & Young",
+        "NVIDIA GmbH"
+      ],
+      "pages": 23,
+      "posted": "08 Jul 2021",
+      "snippet": "This perspective paper is based on several sessions by the members of the Round Table AI at FIRM , with input from a number of external and international / Many aspects of AI governance, algorithmic auditing and risk management of AI systems can be addressed with technology and computing platforms.",
+      "downloads": 812
+    },
+    {
+      "abstractId": "3874279",
+      "title": "Analyzing Dilemmas Posed by Artificial Intelligence and 4IR Technologies Requires Using All Available Models, Including the Existing International Human Rights Framework and Principles of AI Ethics",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3874279",
+      "authors": [
+        "Susan von Struensee"
+      ],
+      "affiliations": [
+        "Global Research Initiative"
+      ],
+      "pages": 57,
+      "posted": "06 Jul 2021",
+      "snippet": "biological spheres (ex. cyberspace, virtual and augmented reality, body-machine interface and robotics)\n\nCertain is the guaranteed ubiquitous adoption / In May 2019, 42 countries adopted the Organization for Economic Co-operation and Development (OECD) AI Principles, a legal recommendation that / Artificial Intelligence, AI Ethics, Project Maven, COVID-19, Project Dragonfly, Human-Centric AI, International Human Rights, Responsible AI, Trustworthy",
+      "downloads": 290
+    },
+    {
+      "abstractId": "3853208",
+      "title": "Contracting for Algorithmic Accountability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3853208",
+      "authors": [
+        "Cary Coglianese",
+        "Erik Lampmann"
+      ],
+      "affiliations": [
+        "University of Pennsylvania Carey Law School",
+        "University of Pennsylvania Law School"
+      ],
+      "pages": 27,
+      "posted": "26 May 2021",
+      "snippet": "Furthermore, unlike with the adoption of legislation, a contracting approach to AI governance can be tailored to meet the needs of specific agencies and / AI practices with their private sector clients.",
+      "downloads": 420
+    },
+    {
+      "abstractId": "3830579",
+      "title": "Innovating with Confidence - Embedding AI Governance and Fairness in a Financial Services Risk Management Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3830579",
+      "authors": [
+        "Michelle Seng Ah Lee",
+        "Luciano Floridi",
+        "Alexander Denev"
+      ],
+      "affiliations": [
+        "University of Cambridge",
+        "Yale University - Digital Ethics Center",
+        "University of Oxford"
+      ],
+      "pages": 19,
+      "posted": "29 Apr 2021",
+      "snippet": "However, the rate of adoption has been low, in part due to the apprehension around its complexity and self-learning capability, which makes auditability / AI auditing cannot be performed in a vacuum; the risks are not confined to the algorithm itself, but rather permeates the entire organization.",
+      "downloads": 407
+    },
+    {
+      "abstractId": "3795427",
+      "title": "Artificial Intelligence and The Struggle Between Good and Evil",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3795427",
+      "authors": [
+        "Kimberly Houser"
+      ],
+      "affiliations": [
+        "Ostrom Workshop on Data Management and Information Governance, Indiana University"
+      ],
+      "pages": 23,
+      "posted": "02 Mar 2021",
+      "snippet": "Numerous reports have described—in great detail—the real and potential harms of the widespread development and adoption of artificial intelligence by both / artificial intelligence, facial recognition, deep fakes, mass surveillance, responsible AI,",
+      "downloads": 521
+    },
+    {
+      "abstractId": "3675505",
+      "title": "Artificial Intelligence and Global Trade Governance: A Pluralist Agenda",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3675505",
+      "authors": [
+        "Han-Wei Liu",
+        "Ching-Fu Lin"
+      ],
+      "affiliations": [
+        "Singapore Management University - Yong Pung How School of Law",
+        "National Tsing Hua University"
+      ],
+      "pages": 44,
+      "posted": "21 Sep 2020",
+      "snippet": "This Article is the first of its kind to map out imminent challenges facing the World Trade Organization (WTO) against the emergence of artificial intelligence / Second, while we acknowledge that the human rights-based approach to AI governance offers a promising baseline for many, it is crucial to point out that",
+      "downloads": 530
+    },
+    {
+      "abstractId": "3477217",
+      "title": "Managing Artificial Intelligence within a Digital Density Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3477217",
+      "authors": [
+        "Javier Zamora"
+      ],
+      "affiliations": [
+        "University of Navarra, IESE Business School"
+      ],
+      "pages": 26,
+      "posted": "31 Oct 2019",
+      "snippet": "At the same time, the introduction of AI into the organization translates into new challenges, since the data-both as input and as output of AI models-require / This chapter outlines the holistic guidelines that general management should follow to achieve good AI governance within a digital density framework.",
+      "downloads": 187
+    },
+    {
+      "abstractId": "3346149",
+      "title": "Does AI Need Governance? – The Potential Roles of a ‘Responsible Innovation Organisation’ in Australia (Submission to the Australian Human Rights Commissioner on the White Paper Artificial Intelligence: Governance and Leadership)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3346149",
+      "authors": [
+        "Graham Greenleaf",
+        "Roger Clarke",
+        "David F. Lindsay"
+      ],
+      "affiliations": [
+        "Macquarie University - Macquarie Law School (Sydney, Australia)",
+        "Xamax Consultancy Pty Ltd",
+        "UTS: Law"
+      ],
+      "pages": 8,
+      "posted": "27 Mar 2019",
+      "snippet": "Australian organisations would find it valuable to have an Australian policy-oriented organisation recommending international standards for Australian adoption / artificial intelligence, AI, governance, Australia, regulation",
+      "downloads": 257
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "item_key": "9R6TGN82",
+  "methods": [
+    "design-science/prototype/tool-build",
+    "benchmark-evaluation",
+    "dataset-contribution",
+    "ablation-study",
+    "controlled-experiment"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science/prototype/tool-build",
+  "notes": "Builds REAL, an RL framework with a program-analysis vulnerability detector, and evaluates it on three curated benchmarks (SecCodePLT+, SafeSQL, APPS+) against SOTA baselines across model scales; includes controlled ablations isolating reward components and a qualitative case study. No human participants.",
+  "citation": "Yao 2025"
+}

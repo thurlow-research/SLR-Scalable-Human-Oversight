@@ -1,0 +1,21 @@
+# secrets
+.envrc
+*.env
+# OS / tooling
+.DS_Store
+**/.DS_Store
+.claude/
+# heavy / binary / re-derivable
+Backups/
+Downloads/
+*.pdf
+*.zip
+*.sqlite
+*.sqlite-*
+*.xpi
+# copyrighted full-texts (re-derivable from Zotero)
+slr-phase4/txt/
+
+# redundant binary spreadsheets (csv kept)
+*.xls
+*.xlsx

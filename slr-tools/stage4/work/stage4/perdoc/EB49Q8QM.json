@@ -1,0 +1,69 @@
+{
+  "item_key": "EB49Q8QM",
+  "citation": "Tilbury 2024",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model",
+    "secondary-review"
+  ],
+  "problem_statement": "The paper addresses how increasing automation and automated decision aids (ADAs) in Security Operation Centers induce automation bias, complacency, and over-reliance among analysts, degrading their oversight of automated outputs. It proposes how to balance automation with human oversight so analysts remain the final decision maker.",
+  "magnitude_evidence": "Alahmadi et al. (2022) '99% False Positives' study of SOC analysts; WannaCry estimated to affect 'up to 70 000 devices' in NHS hospitals",
+  "risk_types": [
+    "automation-bias",
+    "complacency",
+    "over-reliance",
+    "cognitive-skill-degradation",
+    "loss-of-situation-awareness",
+    "alert-fatigue",
+    "false-positives",
+    "analyst-burnout",
+    "missed-critical-alerts"
+  ],
+  "insufficiency_evidence": "\"automated systems can miss critical alerts\" (Alahmadi et al., 2022); participants operating with incorrect automated decision aids perform worse than those not using automation (Metzger and Parasuraman, 2005); high-profile breaches (Target, WannaCry, Colonial Pipeline) where alerts were ignored due to complacency",
+  "solution_mechanisms": [
+    "task-based automation (calibrate LOA per task)",
+    "process-based automation (limit LOA in decision/action phases)",
+    "automation performance appraisal",
+    "SOC analyst training on automated systems",
+    "level-of-automation (LOA) framework calibration by complexity/criticality/cost-of-error",
+    "decision trees with contextual reasoning",
+    "human-in-the-loop veto/approval gating"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "calibration",
+    "risk-routing",
+    "level-of-automation",
+    "human-approval",
+    "training",
+    "performance-appraisal",
+    "explainability",
+    "vigilance",
+    "trust-calibration",
+    "escalation"
+  ],
+  "oversight_locus": [
+    "alert-triage",
+    "incident-response",
+    "detection",
+    "decision-and-action-selection",
+    "action-implementation"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "automation bias",
+    "automation complacency",
+    "errors of omission",
+    "errors of commission",
+    "Influence, Impact, and Mitigation of Automation Bias Model",
+    "four Critical Success Factors (CSFs)",
+    "cyber situational awareness",
+    "force multiplier"
+  ],
+  "governance_refs": [
+    "NIST SP 800-61r2"
+  ],
+  "scope_fit": "both",
+  "notes": "Domain is SOC alert triage/automation, not AI-generated code specifically; oversight-of-automation framing is analogous. Not empirically tested (author-acknowledged limitation).",
+  "_truncated": false
+}

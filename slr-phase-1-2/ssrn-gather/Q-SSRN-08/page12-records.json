@@ -1,0 +1,842 @@
+{
+  "count": 50,
+  "total": "615",
+  "page": "12",
+  "records": [
+    {
+      "abstractId": "4054640",
+      "title": "Algorithmic Governance from the Bottom Up",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4054640",
+      "authors": [
+        "Hannah Bloch-Wehba"
+      ],
+      "affiliations": [
+        "Texas A&M University School of Law"
+      ],
+      "pages": 69,
+      "posted": "12 Mar 2022",
+      "snippet": "In response, a nascent body of law proposes technocratic policy changes to foster algorithmic accountability, ethics, and transparency. / This Article sketches a new vision for algorithmic accountability, with a more vibrant role for workers and for the public in determining how firms and / artificial intelligence, privatization, law enforcement, algorithmic accountability, social movements",
+      "downloads": 993
+    },
+    {
+      "abstractId": "3964900",
+      "title": "Governing Algorithmic Decisions: The role of decision importance and governance on perceived legitimacy of algorithmic decisions",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3964900",
+      "authors": [
+        "Ari Ezra Waldman",
+        "Kirsten Martin"
+      ],
+      "affiliations": [
+        "University of California, Irvine School of Law"
+      ],
+      "pages": 16,
+      "posted": "31 Jan 2022",
+      "snippet": "The algorithmic accountability literature to date has primarily focused on procedural tools to govern automated decision-making systems.",
+      "downloads": 280
+    },
+    {
+      "abstractId": "3965041",
+      "title": "The Right to Contest AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3965041",
+      "authors": [
+        "Margot E. Kaminski",
+        "Jennifer M. Urban"
+      ],
+      "affiliations": [
+        "University of Colorado Law School, Yale University - Yale Information Society Project",
+        "University of California, Berkeley - School of Law"
+      ],
+      "pages": 92,
+      "posted": "18 Nov 2021",
+      "snippet": "AI, algorithms, algorithmic accountability, due process, privacy, big data",
+      "downloads": 1733
+    },
+    {
+      "abstractId": "3959746",
+      "title": "Conformity Assessments and Post-market Monitoring: A Guide to the Role of Auditing in the Proposed European AI Regulation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3959746",
+      "authors": [
+        "Jakob Mökander",
+        "maria axente",
+        "Federico Casolari",
+        "Luciano Floridi"
+      ],
+      "affiliations": [
+        "University of Oxford - Oxford Internet Institute",
+        "affiliation not provided to SSRN",
+        "Alma Mater Studiorum - University of Bologna",
+        "Yale University - Digital Ethics Center"
+      ],
+      "pages": 32,
+      "posted": "10 Nov 2021",
+      "snippet": "We argue that AIA can be interpreted as a proposal to establish a Europe-wide ecosystem for conducting AI auditing, albeit in other words. / First, by describing the enforcement mechanisms included in the AIA in terminology borrowed from existing literature on AI auditing, we help providers",
+      "downloads": 319
+    },
+    {
+      "abstractId": "3868392",
+      "title": "Suspect Development Systems: Databasing Marginality and Enforcing Discipline",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3868392",
+      "authors": [
+        "Rashida Richardson",
+        "Amba Kak"
+      ],
+      "affiliations": [
+        "Northeastern University School of Law",
+        "New York University (NYU) - AI Now Institute"
+      ],
+      "pages": 77,
+      "posted": "29 Jun 2021",
+      "snippet": "Algorithmic accountability law — focused on the regulation of data-driven systems like artificial intelligence (AI) or automated decision-making (ADM) / accountability.",
+      "downloads": 445
+    },
+    {
+      "abstractId": "3867634",
+      "title": "An Institutional View Of Algorithmic Impact Assessments",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3867634",
+      "authors": [
+        "Andrew D. Selbst"
+      ],
+      "affiliations": [
+        "UCLA School of Law"
+      ],
+      "pages": 75,
+      "posted": "24 Jun 2021",
+      "snippet": "This Article demonstrates how emerging research within the field of algorithmic accountability can also inform the shape of AIA regulation.",
+      "downloads": 1782
+    },
+    {
+      "abstractId": "3872948",
+      "title": "Perception of Fairness in Algorithmic Decisions: Future Developers' Perspective",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3872948",
+      "authors": [
+        "Styliani Kleanthous",
+        "Maria Kasinidou",
+        "Pinar Barlas",
+        "Jahna Otterbacher"
+      ],
+      "affiliations": [
+        "Open University of Cyprus - Cyprus Center for Algorithmic Transparency",
+        "Open University of Cyprus - Cyprus Center for Algorithmic Transparency",
+        "CYENS Centre of Excellence",
+        "Open University of Cyprus - Cyprus Center for Algorithmic Transparency"
+      ],
+      "pages": 17,
+      "posted": "23 Jun 2021",
+      "snippet": "algorithmic fairness, algorithmic transparency, algorithmic accountability, algorithmic decision-making",
+      "downloads": 19
+    },
+    {
+      "abstractId": "3853208",
+      "title": "Contracting for Algorithmic Accountability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3853208",
+      "authors": [
+        "Cary Coglianese",
+        "Erik Lampmann"
+      ],
+      "affiliations": [
+        "University of Pennsylvania Carey Law School",
+        "University of Pennsylvania Law School"
+      ],
+      "pages": 27,
+      "posted": "26 May 2021",
+      "snippet": "By contracting for algorithmic accountability, government agencies can act immediately, without any need for new legislation, to reassure the public that",
+      "downloads": 420
+    },
+    {
+      "abstractId": "3830579",
+      "title": "Innovating with Confidence - Embedding AI Governance and Fairness in a Financial Services Risk Management Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3830579",
+      "authors": [
+        "Michelle Seng Ah Lee",
+        "Luciano Floridi",
+        "Alexander Denev"
+      ],
+      "affiliations": [
+        "University of Cambridge",
+        "Yale University - Digital Ethics Center",
+        "University of Oxford"
+      ],
+      "pages": 19,
+      "posted": "29 Apr 2021",
+      "snippet": "AI auditing cannot be performed in a vacuum; the risks are not confined to the algorithm itself, but rather permeates the entire organization.",
+      "downloads": 407
+    },
+    {
+      "abstractId": "3814133",
+      "title": "Governance Mechanisms for Fourth Industrial Revolution Artifacts in Higher Education Institutions: A Systems Perspective",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3814133",
+      "authors": [
+        "Nixon Muganda Ochara"
+      ],
+      "affiliations": [
+        "Wits Business School, University of the Witwatersrand"
+      ],
+      "pages": 19,
+      "posted": "12 Apr 2021",
+      "snippet": "We offer a conceptualization of digital governance mechanisms that call for algorithmic accountability of 4IR technologies.",
+      "downloads": 288
+    },
+    {
+      "abstractId": "3736261",
+      "title": "Algorithmic Impact Assessments and Accountability: The Co-construction of Impacts",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3736261",
+      "authors": [
+        "Jacob Metcalf",
+        "Emanuel Moss",
+        "Elizabeth Anne Watkins",
+        "Ranjit Singh",
+        "Madeleine Clare Elish"
+      ],
+      "affiliations": [
+        "Data & Society Research Institute",
+        "Princeton University Center for Information Technology Policy, Data & Society Research Institute",
+        "Data & Society Research Institute",
+        "Google Inc."
+      ],
+      "pages": 19,
+      "posted": "12 Feb 2021",
+      "snippet": "To address this challenge of algorithmic accountability, and as impact assessments become a commonplace process for evaluating harms, the FAccT community",
+      "downloads": 971
+    },
+    {
+      "abstractId": "3747737",
+      "title": "Artificial Intelligence and Discrimination in Health Care",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3747737",
+      "authors": [
+        "Sharona Hoffman",
+        "Andy Podgurski"
+      ],
+      "affiliations": [
+        "Case Western Reserve University School of Law",
+        "Case Western Reserve University"
+      ],
+      "pages": 50,
+      "posted": "16 Dec 2020",
+      "snippet": "that end, we call for the reintroduction of the disparate impact theory as a robust litigation tool in the health-care arena and for the passage of an algorithmic / accountability act.",
+      "downloads": 1234
+    },
+    {
+      "abstractId": "3694846",
+      "title": "Living with the Algorithm - Toward a New Social Contract in the Age of AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3694846",
+      "authors": [
+        "Aurora Dell'Elce",
+        "Jimena López-Navarro Hochschild",
+        "Aleksandra Smajević",
+        "Argyri Panezi",
+        "Pablo Garcia Mexia"
+      ],
+      "affiliations": [
+        "IE University - IE Law School",
+        "IE University, IE Law School",
+        "IE Law school",
+        "University of New Brunswick Faculty of Law",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 50,
+      "posted": "07 Nov 2020",
+      "snippet": "Algorithms, Algorithmic Accountability, Transparency, AI, Good Data",
+      "downloads": 387
+    },
+    {
+      "abstractId": "3689412",
+      "title": "International Trade Law Meets Data Ethics: A Brave New World",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3689412",
+      "authors": [
+        "Neha Mishra"
+      ],
+      "affiliations": [
+        "Graduate Institute of International and Development Studies (IHEID) - Department of International Law"
+      ],
+      "pages": 79,
+      "posted": "29 Oct 2020",
+      "snippet": "These frameworks integrate certain core principles such as human rights protection, ethical design, algorithmic accountability, and data privacy and security / accountability and ethical design in data-driven technologies.",
+      "downloads": 376
+    },
+    {
+      "abstractId": "3674665",
+      "title": "Algorithmic Discrimination and Input Accountability under the Civil Rights Acts",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3674665",
+      "authors": [
+        "Robert Bartlett",
+        "Adair Morse",
+        "Nancy Wallace",
+        "Richard Stanton"
+      ],
+      "affiliations": [
+        "Stanford Law School",
+        "University of California, Berkeley - Haas School of Business",
+        "University of California, Berkeley - Real Estate Group"
+      ],
+      "pages": 62,
+      "posted": "16 Aug 2020",
+      "snippet": "These concerns are being expressed through Congressional subpoenas, regulatory investigations, and an increasing number of algorithmic accountability bills / We provide a workable definition of algorithmic accountability that is rooted in case law addressing statistical discrimination in the context",
+      "downloads": 587
+    },
+    {
+      "abstractId": "3658630",
+      "title": "AI, on the Algorithmic State of the Nation: Artificial Intelligence Unleashed and Civil Rights",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3658630",
+      "authors": [
+        "Emile Loza de Siles"
+      ],
+      "affiliations": [
+        "William S. Richardson School of Law | University of Hawai'i at Manoa"
+      ],
+      "pages": 6,
+      "posted": "30 Jul 2020",
+      "snippet": "racial discrimination, law, artificial intelligence, machine learning, Algorithm, Big Data, Technology Regulation, Legislation, Algorithmic Accountability",
+      "downloads": 224
+    },
+    {
+      "abstractId": "3622657",
+      "title": "Understanding Transparency in Algorithmic Accountability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3622657",
+      "authors": [
+        "Margot E. Kaminski"
+      ],
+      "affiliations": [
+        "University of Colorado Law School, Yale University - Yale Information Society Project"
+      ],
+      "pages": 28,
+      "posted": "01 Jul 2020",
+      "snippet": "AI, Algorithmic Accountability, GDPR",
+      "downloads": 1417
+    },
+    {
+      "abstractId": "3615731",
+      "title": "An Examination of the Algorithmic Accountability Act of 2019",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3615731",
+      "authors": [
+        "Mark MacCarthy"
+      ],
+      "affiliations": [
+        "Georgetown University"
+      ],
+      "pages": 10,
+      "posted": "25 Jun 2020",
+      "snippet": "The Algorithmic Accountability Act of 2019, sponsored by Senators Cory Booker (D-NJ) and Ron Wyden (D-OR), with a House equivalent sponsored by Rep. / algorithmic accountability, fairness, transparency, artificial intelligence, regulation",
+      "downloads": 837
+    },
+    {
+      "abstractId": "3599226",
+      "title": "A Review of the ICO’s Draft Guidance on the AI Auditing Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3599226",
+      "authors": [
+        "Emre Kazim",
+        "Adriano Koshiyama"
+      ],
+      "affiliations": [
+        "Holistic AI",
+        "Department of Computer Science, University College London"
+      ],
+      "pages": 15,
+      "posted": "25 Jun 2020",
+      "snippet": "The Information Commissioner's Office (ICO) timely call for consultation regarding their ‘Guidance on the AI auditing framework: Draft guidance for consultation",
+      "downloads": 449
+    },
+    {
+      "abstractId": "3584818",
+      "title": "Governing with Algorithmic Impact Assessments: Six Observations",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3584818",
+      "authors": [
+        "Emanuel Moss",
+        "Elizabeth Anne Watkins",
+        "Jacob Metcalf",
+        "Madeleine Clare Elish"
+      ],
+      "affiliations": [
+        "Princeton University Center for Information Technology Policy, Data & Society Research Institute",
+        "Data & Society Research Institute",
+        "Google Inc."
+      ],
+      "pages": 13,
+      "posted": "28 May 2020",
+      "snippet": "Algorithmic impact assessments (AIA) are increasingly being proposed as a mechanism for algorithmic accountability. / These considerations remain open, and will determine whether and how AIAs can function as a viable governance mechanism in the broader algorithmic accountability / algorithmic impact assessment, algorithmic accountability, impact assessment, data ethics, algorithmic accountability, corporate governance",
+      "downloads": 910
+    },
+    {
+      "abstractId": "3535107",
+      "title": "Algorithmic Content Moderation on Social Media in EU Law: Illusion of Perfect Enforcement",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3535107",
+      "authors": [
+        "Céline Castets-Renard"
+      ],
+      "affiliations": [
+        "Civil Law Faculty"
+      ],
+      "pages": 32,
+      "posted": "06 May 2020",
+      "snippet": "To address this multi-faceted issue, I offer solutions to improve algorithmic accountability and to increase the transparency around automated",
+      "downloads": 676
+    },
+    {
+      "abstractId": "3565025",
+      "title": "The Oversight of Content Moderation by AI: Impact Assessments and Their Limitations",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3565025",
+      "authors": [
+        "Yifat Nahmias",
+        "Maayan Perel"
+      ],
+      "affiliations": [
+        "University of Haifa - Faculty of Law",
+        "Netanya Academic College - School of Law"
+      ],
+      "pages": 54,
+      "posted": "24 Apr 2020",
+      "snippet": "Recently, in an attempt to increase oversight and accountability for AI systems, the proposed US Algorithmic Accountability Act introduced a mandatory / AI, Impact Assessment, Content Moderation, oversight, Algorithmic Accountability, GDPR",
+      "downloads": 1091
+    },
+    {
+      "abstractId": "3551505",
+      "title": "Government by Algorithm: Artificial Intelligence in Federal Administrative Agencies",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3551505",
+      "authors": [
+        "David Freeman Engstrom",
+        "Daniel E. Ho",
+        "Catherine M. Sharkey",
+        "Mariano-Florentino Cuéllar"
+      ],
+      "affiliations": [
+        "Stanford Law School",
+        "Stanford Law School",
+        "New York University School of Law",
+        "Carnegie Endowment for International Peace"
+      ],
+      "pages": 122,
+      "posted": "02 Apr 2020",
+      "snippet": "artificial intelligence, machine learning, administrative agencies, administrative law, algorithmic governance, ACUS report, algorithmic accountability",
+      "downloads": 6714
+    },
+    {
+      "abstractId": "3551544",
+      "title": "Algorithmic Accountability in the Administrative State",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3551544",
+      "authors": [
+        "David Freeman Engstrom",
+        "Daniel E. Ho"
+      ],
+      "affiliations": [
+        "Stanford Law School",
+        "Stanford Law School"
+      ],
+      "pages": 51,
+      "posted": "02 Apr 2020",
+      "snippet": "Moving past the abstract mappings of transparency measures and regulatory mechanisms that pervade the current algorithmic accountability literature, our / artificial intelligence, machine learning, algorithmic governance, algorithmic accountability, administrative law, reinventing government, public administration",
+      "downloads": 625
+    },
+    {
+      "abstractId": "3551549",
+      "title": "Artificially Intelligent Government: A Review and Agenda",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3551549",
+      "authors": [
+        "David Freeman Engstrom",
+        "Daniel E. Ho"
+      ],
+      "affiliations": [
+        "Stanford Law School",
+        "Stanford Law School"
+      ],
+      "pages": 20,
+      "posted": "02 Apr 2020",
+      "snippet": "Because existing work has fixated on a small set of uses, it reflects the tendency in the wider algorithmic accountability literature to focus on constitutional / artificial intelligence, machine learning, algorithmic governance, administrative law, algorithmic accountability, public administration",
+      "downloads": 812
+    },
+    {
+      "abstractId": "3545436",
+      "title": "Algorithms Acting Badly: A Solution from Corporate Law",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3545436",
+      "authors": [
+        "Mihailis Diamantis"
+      ],
+      "affiliations": [
+        "University of Iowa - College of Law"
+      ],
+      "pages": 56,
+      "posted": "28 Feb 2020",
+      "snippet": "Artificial Intelligence, Corporate Law, Algorithmic Misconduct, Algorithmic Accountability Gap, Respondeat Superior, Uber, Philosophy of Law, Legal Theory",
+      "downloads": 727
+    },
+    {
+      "abstractId": "3523456",
+      "title": "Explaining Algorithmic Decisions",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3523456",
+      "authors": [
+        "Gabriel Nicholas"
+      ],
+      "affiliations": [
+        "New York University School of Law"
+      ],
+      "pages": 20,
+      "posted": "26 Feb 2020",
+      "snippet": "algorithmic decision-making, algorithmic transparency, algorithmic secrecy, algorithmic opacity, algorithmic accountability, algorithm, automated decision-making",
+      "downloads": 262
+    },
+    {
+      "abstractId": "3521619",
+      "title": "Automation in Moderation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3521619",
+      "authors": [
+        "Hannah Bloch-Wehba"
+      ],
+      "affiliations": [
+        "Texas A&M University School of Law"
+      ],
+      "pages": 57,
+      "posted": "29 Jan 2020",
+      "snippet": "Carefully drawn transparency obligations, algorithmic accountability mechanisms, and procedural safeguards can help to ameliorate the effects of these",
+      "downloads": 1012
+    },
+    {
+      "abstractId": "3309244",
+      "title": "Machine Learning, Big Data and the Regulation of Consumer Credit Markets: The Case of Algorithmic Credit Scoring",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3309244",
+      "authors": [
+        "Nikita Aggarwal"
+      ],
+      "affiliations": [
+        "University of Miami, School of Law"
+      ],
+      "pages": 6,
+      "posted": "08 Jan 2020",
+      "snippet": "Machine Learning, Artificial Intelligence, Big Data, Consumer Finance, Credit Scoring, Algorithmic Accountability, Financial Regulation, Data Protection",
+      "downloads": 926
+    },
+    {
+      "abstractId": "3503823",
+      "title": "Algorithmic Regulation and (Im)perfect Enforcement in the Personalized Economy",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3503823",
+      "authors": [
+        "Christoph Busch"
+      ],
+      "affiliations": [
+        "University of Osnabrück - European Legal Studies Institute"
+      ],
+      "pages": 0,
+      "posted": "06 Jan 2020",
+      "snippet": "Therefore, the implementation of personalized law requires setting up a regulatory framework for ensuring algorithmic accountability. / Personalized Law, Granular Law, Algorithmic Regulation, Algorithmic Accountability, Big Data",
+      "downloads": 0
+    },
+    {
+      "abstractId": "3456224",
+      "title": "Algorithmic Impact Assessments under the GDPR: Producing Multi-layered Explanations",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3456224",
+      "authors": [
+        "Margot E. Kaminski",
+        "Gianclaudio Malgieri"
+      ],
+      "affiliations": [
+        "University of Colorado Law School, Yale University - Yale Information Society Project",
+        "Universiteit Leiden, eLaw"
+      ],
+      "pages": 29,
+      "posted": "06 Oct 2019",
+      "snippet": "As one of us has argued, the GDPR combines individual rights with systemic governance, towards algorithmic accountability. / The aim of this paper is to address how a Data Protection Impact Assessment (DPIA) links the two faces of the GDPR’s approach to algorithmic accountability",
+      "downloads": 2777
+    },
+    {
+      "abstractId": "3445873",
+      "title": "Algorithmic Transparency and Decision-Making Accountability: Thoughts for Buying Machine Learning Algorithms",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3445873",
+      "authors": [
+        "Jake Goldenfein"
+      ],
+      "affiliations": [
+        "Melbourne Law School - University of Melbourne"
+      ],
+      "pages": 25,
+      "posted": "09 Sep 2019",
+      "snippet": "There has been a great deal of research on how to achieve algorithmic accountability and transparency in automated decision-making systems - especially / algorithmic accountability, machine learning, procurement, automated decision-making",
+      "downloads": 2167
+    },
+    {
+      "abstractId": "3440878",
+      "title": "Strategic Games and Algorithmic Secrecy",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3440878",
+      "authors": [
+        "Ignacio Cofone",
+        "Katherine J. Strandburg"
+      ],
+      "affiliations": [
+        "New York University School of Law"
+      ],
+      "pages": 41,
+      "posted": "24 Aug 2019",
+      "snippet": "algorithmic decision-making, gaming, algorithmic transparency, algorithmic secrecy, algorithmic opacity, algorithmic accountability, automated decision-making",
+      "downloads": 575
+    },
+    {
+      "abstractId": "3429872",
+      "title": "Municipal Surveillance Regulation and Algorithmic Accountability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3429872",
+      "authors": [
+        "Meg Young",
+        "Michael Katell",
+        "P. M. Krafft"
+      ],
+      "affiliations": [
+        "University of Washington Information School",
+        "The Alan Turing Institute Public Policy Programme",
+        "University of Oxford - Oxford Internet Institute"
+      ],
+      "pages": 33,
+      "posted": "05 Aug 2019",
+      "snippet": "A wave of recent scholarship has warned about the potential for discriminatory harms of algorithmic systems, spurring an interest in algorithmic accountability / Although these surveillance-focused laws were not intended to address algorithmic accountability, we find these considerations to be relevant to the law",
+      "downloads": 114
+    },
+    {
+      "abstractId": "3356631",
+      "title": "Automated Decisions Based on Profiling: Information, Explanation or Justification – That Is The Question!",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3356631",
+      "authors": [
+        "Lokke Moerel",
+        "Marijn Storm"
+      ],
+      "affiliations": [
+        "Tilburg University - Tilburg Institute for Law, Technology, and Society",
+        "Morrison & Foerster LLP"
+      ],
+      "pages": 11,
+      "posted": "19 Apr 2019",
+      "snippet": "General Data Protection Regulation, Automated decision making, profiling, algorithms, algorithmic accountability, privacy, data protection",
+      "downloads": 461
+    },
+    {
+      "abstractId": "3355444",
+      "title": "Data Protection in the Age of Big Data",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3355444",
+      "authors": [
+        "Sandra Wachter"
+      ],
+      "affiliations": [
+        "University of Oxford - Oxford Internet Institute"
+      ],
+      "pages": 4,
+      "posted": "12 Apr 2019",
+      "snippet": "algorithmic accountability, AI, data protection,GDPR, a right to reasonable inferences",
+      "downloads": 1927
+    },
+    {
+      "abstractId": "3355776",
+      "title": "Access to Algorithms",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3355776",
+      "authors": [
+        "Hannah Bloch-Wehba"
+      ],
+      "affiliations": [
+        "Texas A&M University School of Law"
+      ],
+      "pages": 51,
+      "posted": "11 Apr 2019",
+      "snippet": "The law of access performs three critical functions in promoting algorithmic accountability and transparency. / algorithmic accountability, law and technology, transparency, automation",
+      "downloads": 812
+    },
+    {
+      "abstractId": "3351404",
+      "title": "Binary Governance: Lessons from the GDPR's Approach to Algorithmic Accountability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3351404",
+      "authors": [
+        "Margot E. Kaminski"
+      ],
+      "affiliations": [
+        "University of Colorado Law School, Yale University - Yale Information Society Project"
+      ],
+      "pages": 88,
+      "posted": "03 Apr 2019",
+      "snippet": "algorithmic accountability, AI, privacy, GDPR, comparative privacy law, data privacy",
+      "downloads": 2242
+    },
+    {
+      "abstractId": "3309397",
+      "title": "Private Accountability in the Age of Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3309397",
+      "authors": [
+        "Sonia Katyal"
+      ],
+      "affiliations": [
+        "University of California, Berkeley - School of Law"
+      ],
+      "pages": 88,
+      "posted": "12 Jan 2019",
+      "snippet": "This Article argues that the issues surrounding algorithmic accountability demonstrate a deeper, more structural tension within a new generation of disputes / For this reason, I argue that we are looking in the wrong place if we look only to the state to address issues of algorithmic accountability. / Algorithmic Accountability, Artificial Intelligence, Whistleblowing",
+      "downloads": 1668
+    },
+    {
+      "abstractId": "3243326",
+      "title": "A Risk-Based Approach Towards Infringement Prevention on the Internet: Adopting the Anti-Money Laundering Framework to Online Platforms",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3243326",
+      "authors": [
+        "Carsten Ullrich"
+      ],
+      "affiliations": [
+        "Universite du Luxembourg, Faculty of Law, Economics and Finance"
+      ],
+      "pages": 35,
+      "posted": "28 Oct 2018",
+      "snippet": "Intermediary Liability, Duty of Care, Risk Regulation, Co-Regulation, Anti-Money Laundering, Compliance Technologies, Algorithmic Accountability, Regulatory",
+      "downloads": 54
+    },
+    {
+      "abstractId": "3213355",
+      "title": "Algorithmic Governance by Online Intermediaries",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3213355",
+      "authors": [
+        "Niva Elkin-Koren",
+        "Maayan Perel"
+      ],
+      "affiliations": [
+        "Netanya Academic College - School of Law"
+      ],
+      "pages": 25,
+      "posted": "21 Aug 2018",
+      "snippet": "enforcement by online intermediaries, this chapter demonstrates the accountability deficiencies in algorithmic copyright enforcement; maps the barriers for algorithmic / accountability and discusses various strategies for enhancing accountability in algorithmic governance.",
+      "downloads": 511
+    },
+    {
+      "abstractId": "3212755",
+      "title": "Algorithms that Remember: Model Inversion Attacks and Data Protection Law",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3212755",
+      "authors": [
+        "Michael Veale",
+        "Reuben Binns",
+        "Lilian Edwards"
+      ],
+      "affiliations": [
+        "University of Oxford",
+        "University of Newcastle - Law School"
+      ],
+      "pages": 15,
+      "posted": "06 Aug 2018",
+      "snippet": "data protection, gdpr, machine learning, model inversion, membership inference, algorithmic accountability",
+      "downloads": 841
+    },
+    {
+      "abstractId": "3196985",
+      "title": "The Right to Explanation, Explained",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3196985",
+      "authors": [
+        "Margot E. Kaminski"
+      ],
+      "affiliations": [
+        "University of Colorado Law School, Yale University - Yale Information Society Project"
+      ],
+      "pages": 30,
+      "posted": "19 Jun 2018",
+      "snippet": "Many have called for algorithmic accountability: laws governing decision-making by complex algorithms, or AI. / The GDPR’s provisions on algorithmic accountability, which include a right to explanation, have the potential to be broader, stronger, and deeper than / Algorithmic Decision-Making, Algorithmic Accountability, GDPR, Privacy, Machine Learning, AI",
+      "downloads": 5389
+    },
+    {
+      "abstractId": "3188080",
+      "title": "Against the Dehumanisation of Decision-Making – Algorithmic Decisions at the Crossroads of Intellectual Property, Data Protection, and Freedom of Information",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3188080",
+      "authors": [
+        "Guido Noto La Diega"
+      ],
+      "affiliations": [],
+      "pages": 32,
+      "posted": "17 Jun 2018",
+      "snippet": "Algorithmic decision-making, Data Protection Act 2018, GDPR, algorithmic accountability, algorithmic bias, algorithmic governance, algorithmic transparency",
+      "downloads": 1282
+    },
+    {
+      "abstractId": "3175424",
+      "title": "Fairness and Accountability Design Needs for Algorithmic Support in High-Stakes Public Sector Decision-Making",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3175424",
+      "authors": [
+        "Michael Veale",
+        "Max Van Kleek",
+        "Reuben Binns"
+      ],
+      "affiliations": [
+        "University of Oxford - Computing Laboratory",
+        "University of Oxford"
+      ],
+      "pages": 14,
+      "posted": "23 May 2018",
+      "snippet": "machine learning, algorithmic accountability, accountability, fairness, public sector, decision-support, policing, child welfare, taxation",
+      "downloads": 233
+    },
+    {
+      "abstractId": "3161962",
+      "title": "Liability for (Semi)Autonomous Systems: Robots and Algorithms",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3161962",
+      "authors": [
+        "Eric Tjong Tjin Tai"
+      ],
+      "affiliations": [
+        "Tilburg Law School"
+      ],
+      "pages": 22,
+      "posted": "02 May 2018",
+      "snippet": "liability law, algorithmic accountability, robot liability, liability for algorithms, tort law, autonomous systems, strict liability, product liability",
+      "downloads": 773
+    },
+    {
+      "abstractId": "3165793",
+      "title": "Incomplete Contracting and AI Alignment",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3165793",
+      "authors": [
+        "Dylan Hadfield-Menell",
+        "Gillian K. Hadfield"
+      ],
+      "affiliations": [
+        "University of California, Berkeley - Department of Electrical Engineering & Computer Sciences (EECS)",
+        "University of Toronto"
+      ],
+      "pages": 17,
+      "posted": "19 Apr 2018",
+      "snippet": "We first provide an overview of the incomplete contracting literature and explore parallels between this work and the problem of AI alignment. / We highlight some technical results from the economics literature on incomplete contracts that may provide insights for AI alignment researchers.",
+      "downloads": 280
+    },
+    {
+      "abstractId": "3143705",
+      "title": "Some HCI Priorities for GDPR-Compliant Machine Learning",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3143705",
+      "authors": [
+        "Michael Veale",
+        "Reuben Binns",
+        "Max Van Kleek"
+      ],
+      "affiliations": [
+        "University of Oxford",
+        "University of Oxford - Computing Laboratory"
+      ],
+      "pages": 8,
+      "posted": "22 Mar 2018",
+      "snippet": "GDPR, data protection, machine learning, artificial intelligence, human-computer interaction, user interfaces, discrimination, anti-discrimination, algorithmic / accountability",
+      "downloads": 208
+    },
+    {
+      "abstractId": "3131522",
+      "title": "Ethics, Algorithms and Self-Driving Cars – A CSI of the ‘Trolley Problem’",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3131522",
+      "authors": [
+        "Andrea Renda"
+      ],
+      "affiliations": [
+        "Centre for European Policy Studies (CEPS)"
+      ],
+      "pages": 17,
+      "posted": "07 Mar 2018",
+      "snippet": "These include the need to preserve human control over machines; the need to take data governance and ownership seriously; algorithmic accountability and",
+      "downloads": 1545
+    },
+    {
+      "abstractId": "3126971",
+      "title": "The Intuitive Appeal of Explainable Machines",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3126971",
+      "authors": [
+        "Andrew D. Selbst",
+        "Solon Barocas"
+      ],
+      "affiliations": [
+        "UCLA School of Law",
+        "Microsoft Research, Cornell University"
+      ],
+      "pages": 55,
+      "posted": "02 Mar 2018",
+      "snippet": "algorithmic accountability, explanations, law and technology, machine learning, big data, privacy, discrimination",
+      "downloads": 5032
+    }
+  ]
+}

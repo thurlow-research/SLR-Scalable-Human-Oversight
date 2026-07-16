@@ -1,0 +1,60 @@
+{
+  "item_key": "WRXR2VTP",
+  "citation": "Wang 2026",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model",
+    "case-study"
+  ],
+  "problem_statement": "Vibe coding lets developers generate code via natural-language prompts, but AI-generated code often looks correct while harboring hidden logical errors, and current quality assurance is post-hoc, reactive, human-dependent, and does not scale.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "hidden logical errors",
+    "quality",
+    "reliability",
+    "security",
+    "domain-constraint violations",
+    "maintainability",
+    "traceability"
+  ],
+  "insufficiency_evidence": "Existing strategies for ensuring correctness in AI-generated code are largely post-hoc, reactive, and often rely heavily on human inspection... Such practices are not scalable",
+  "solution_mechanisms": [
+    "decompose intent into task sequence",
+    "LLM-generated task-level contracts",
+    "developer-validated contracts",
+    "contract-guided code generation",
+    "contract-guided testing and verification",
+    "traceability tasks-contracts-code",
+    "runtime contract checking",
+    "feedback loop for iterative refinement"
+  ],
+  "mechanism_keywords": [
+    "design-by-contract",
+    "spec-driven",
+    "contract-as-spec",
+    "hitl",
+    "runtime-verification",
+    "precondition-postcondition-invariant",
+    "closed-loop",
+    "traceability",
+    "escalation",
+    "test-generation"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-generation",
+    "testing",
+    "runtime"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "VibeContract",
+    "illusion of correctness",
+    "contract-guided code generation",
+    "Design by Contract (applied to vibe coding)"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

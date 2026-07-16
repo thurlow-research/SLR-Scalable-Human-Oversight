@@ -1,0 +1,833 @@
+{
+  "count": 50,
+  "total": "754",
+  "page": "12",
+  "records": [
+    {
+      "abstractId": "4901458",
+      "title": "Prometheus' Digital Fire: The Civic Responsibilities of Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4901458",
+      "authors": [
+        "Jon Garon"
+      ],
+      "affiliations": [
+        "Shepard Broad College of Law"
+      ],
+      "pages": 92,
+      "posted": "02 Aug 2024",
+      "snippet": "Generative AI enables apps to create new documents, music, images, and designs. / AI, the consequences of inaccurate generative AI content, and the implications of adoption of generative AI if the systems prove effective. / Artificial intelligence, algorithm, predictive AI, generative AI, extractive AI, large language models, AI-generated content, ChatGPT, Stable Diffusion / OpenAI, Stability AI, Dall-E, synthetic media, training, deepfakes, bias, digital redlining, civil rights, defamation, publicity rights, libel, products liability",
+      "downloads": 146
+    },
+    {
+      "abstractId": "4900823",
+      "title": "Response to the U.S. Department of Commerce Request to Information on AI and Open Government Data Assets",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4900823",
+      "authors": [
+        "Jess Reia",
+        "Rachel Leach"
+      ],
+      "affiliations": [
+        "University of Virginia",
+        "University of Virginia"
+      ],
+      "pages": 12,
+      "posted": "31 Jul 2024",
+      "snippet": "Open data is a key tool for government transparency and accountability. / AI that use deep learning models.",
+      "downloads": 91
+    },
+    {
+      "abstractId": "4883326",
+      "title": "AI in the Courtroom: The Boundaries of RoboLawyers and RoboJudges",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4883326",
+      "authors": [
+        "Hadar Yoana Jabotinsky",
+        "Michal Lavi"
+      ],
+      "affiliations": [
+        "The Hadar Jabotinsky Center for Interdisciplinary Research of Financial Markets, Crises and Technology (HJC)",
+        "The Hadar Jabotinsky Center for Interdisciplinary Research of Financial Markets, Crises and Technology (HJC)"
+      ],
+      "pages": 108,
+      "posted": "31 Jul 2024",
+      "snippet": "The emergence of generative AI and platforms like ChatGPT, which can draft human-like writing, has the potential / it addresses the primary challenges and concerns recognized in legal literature concerning the use of AI systems: safety and accuracy, transparency, accountability",
+      "downloads": 828
+    },
+    {
+      "abstractId": "4909592",
+      "title": "Copyright and the Training of Human Authors and Generative Machines",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4909592",
+      "authors": [
+        "Robert Brauneis"
+      ],
+      "affiliations": [
+        "George Washington University - Law School"
+      ],
+      "pages": 59,
+      "posted": "31 Jul 2024",
+      "snippet": "Should it be different when human beings use copyrighted works to train generative AI models? / Under the only definition of that term that distinguishes generative AI training from human learning, a “nonexpressive use” is one that does not result / copyright, artificial intelligence, generative artificial intelligence, expression, non-expressive use, exclusive rights, ChatGPT, generative AI, intellectual / property, art law",
+      "downloads": 930
+    },
+    {
+      "abstractId": "4909907",
+      "title": "Regulating Hidden AI Authorship",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4909907",
+      "authors": [
+        "Jacob Noti-Victor"
+      ],
+      "affiliations": [
+        "Yeshiva University - Benjamin N. Cardozo School of Law"
+      ],
+      "pages": 72,
+      "posted": "30 Jul 2024",
+      "snippet": "But the precise harms posed by nontransparent uses of generative AI have not been fully explored. / Intellectual property law could also help incentivize disclosure. / artificial intelligence, generative AI, copyright, intellectual property, consumer protection, trademark, law and technology, art law, AI",
+      "downloads": 533
+    },
+    {
+      "abstractId": "4901032",
+      "title": "Intellectual Property and Creative Machines",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4901032",
+      "authors": [
+        "Gaétan de Rassenfosse",
+        "Adam B. Jaffe",
+        "Joel Waldfogel"
+      ],
+      "affiliations": [
+        "École Polytechnique Fédérale de Lausanne (EPFL)",
+        "Brandeis University",
+        "University of Minnesota - Twin Cities - Carlson School of Management"
+      ],
+      "pages": 28,
+      "posted": "22 Jul 2024",
+      "snippet": "property. / Policymakers are already tasked with creating regulations for a post-generative AI creative industry.",
+      "downloads": 16
+    },
+    {
+      "abstractId": "4803118",
+      "title": "The Files are in the Computer: On Copyright, Memorization, and Generative AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4803118",
+      "authors": [
+        "A. Feder Cooper",
+        "James Grimmelmann"
+      ],
+      "affiliations": [
+        "Yale University",
+        "Cornell Law School"
+      ],
+      "pages": 79,
+      "posted": "22 Jul 2024",
+      "snippet": "The New York Times’s copyright lawsuit against OpenAI and Microsoft alleges that OpenAI’s GPT models have “memorized” Times articles. / First, not all learning is memorization: much of what generative-AI models do involves generalizing from large amounts of training data, not just memorizing / copyright, generative AI, memorization",
+      "downloads": 678
+    },
+    {
+      "abstractId": "4894432",
+      "title": "Fall 2024 Supplement to Brauneis & Schechter, Copyright: A Contemporary Approach",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4894432",
+      "authors": [
+        "Robert Brauneis"
+      ],
+      "affiliations": [
+        "George Washington University - Law School"
+      ],
+      "pages": 120,
+      "posted": "17 Jul 2024",
+      "snippet": "Copyright: A Contemporary Approach. / infringement and fair use in training generative AI models (see the new feature on p. 21). / Copyright, Warhol, Goldsmith, Google, Oracle, Public.Resources.org, Artificial Intelligence",
+      "downloads": 125
+    },
+    {
+      "abstractId": "4892973",
+      "title": "Creativity, Artificial Intelligence, and the Requirement of Human Authors and Inventors in Copyright and Patent Law",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4892973",
+      "authors": [
+        "Christian Mammen",
+        "Michael Collyer",
+        "Ron A. Dolin",
+        "Dev Saif Gangjee",
+        "Tom Melham",
+        "Maggie Mustaklem",
+        "Pireeni Sundaralingam",
+        "Vincent Wang"
+      ],
+      "affiliations": [
+        "University of Oxford - University College",
+        "affiliation not provided to SSRN",
+        "Harvard Law School, Center on the Legal Profession",
+        "Faculty of Law, University of Oxford",
+        "University of Oxford - Balliol College",
+        "Oxford Internet Institute",
+        "University of Oxford - University College",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 42,
+      "posted": "17 Jul 2024",
+      "snippet": "Copyright and patent law require the identification of an author or inventor, and further require the author or inventor to be human. / As AI, particularly generative AI, becomes more capable of producing outputs that look like they could have been human-created, arguments have increasingly / ai, artificial intelligence, patent, copyright, human author, human inventor, creativity",
+      "downloads": 1229
+    },
+    {
+      "abstractId": "4887834",
+      "title": "Critical Analysis of American and European Private Equity Firms regarding Environmental, Social and Governance Reporting utilizing Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4887834",
+      "authors": [
+        "Hendrick Meyer",
+        "Alexander Maximilian Röser",
+        "Alexander Zureck"
+      ],
+      "affiliations": [
+        "FOM University of Applied Sciences - ESSEN",
+        "FOM University of Applied Sciences for Economics and Management",
+        "FOM University of Applied Sciences - ESSEN"
+      ],
+      "pages": 131,
+      "posted": "12 Jul 2024",
+      "snippet": "AI in research. / The chosen companies' 2022 annual and latest sustainability reports were subjected to generative AI analysis using FinChat, a tool specialized in the financial",
+      "downloads": 282
+    },
+    {
+      "abstractId": "4887768",
+      "title": "A Blueprint for Auditing Generative AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4887768",
+      "authors": [
+        "Jakob Mökander",
+        "Justin Curl",
+        "Mihir Kshirsagar"
+      ],
+      "affiliations": [
+        "University of Oxford - Oxford Internet Institute",
+        "Harvard University, Harvard Law School",
+        "Princeton University"
+      ],
+      "pages": 26,
+      "posted": "12 Jul 2024",
+      "snippet": "The widespread use of generative AI systems is coupled with significant ethical and social challenges. / ), model audits (of generative AI systems after pre-training but prior to their release), and application audits (of applications based on top of generative / Auditing, Generative AI, Artificial Intelligence, Governance, Regulation, Accountability, Large language models, Ethics",
+      "downloads": 116
+    },
+    {
+      "abstractId": "4887438",
+      "title": "Addressing the Risks of Generative AI for the Judiciary: The Accountability Framework(s) Under the EU AI Act (Preprint)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4887438",
+      "authors": [
+        "Irina Carnat"
+      ],
+      "affiliations": [
+        "Sant’Anna School of Advanced Studies"
+      ],
+      "pages": 27,
+      "posted": "06 Jul 2024",
+      "snippet": "It identifies the persistent factors that contributed to an accountability gap when AI systems were previously used for judicial decision-making. / To address these risks, the paper analyses the relevant provisions of the EU Artificial Intelligence Act, outlining a comprehensive accountability framework / Large Language Models, Generative Artificial Intelligence, accountability, Automation Bias, Judicial decision-making",
+      "downloads": 495
+    },
+    {
+      "abstractId": "4883478",
+      "title": "Fairness and Bias in Artificial Intelligence: A Brief Survey of Sources, Impacts, and Mitigation Strategies",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4883478",
+      "authors": [
+        "Emilio Ferrara"
+      ],
+      "affiliations": [
+        "University of Southern California"
+      ],
+      "pages": 15,
+      "posted": "05 Jul 2024",
+      "snippet": "This is particularly critical in areas like healthcare, employment, criminal justice, credit scoring, and increasingly, in generative AI models (GenAI) / AI.",
+      "downloads": 254
+    },
+    {
+      "abstractId": "4879849",
+      "title": "Keeping ChatGPT a Trade Secret While Selling It Too",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4879849",
+      "authors": [
+        "Camilla Alexandra Hrdy"
+      ],
+      "affiliations": [
+        "Rutgers, The State University of New Jersey - Rutgers Law School"
+      ],
+      "pages": 90,
+      "posted": "02 Jul 2024",
+      "snippet": "However, based on decades of precedents established for software, generative AI companies will be able to rely on trade secret law instead-maintaining / This is what many companies did with closed-source software, and this is what developers of some generative AI models-including ChatGPT-are doing today / trade secrets, AI, ChatGPT, generative AI, intellectual property, patents, secrecy, contracts, noncompetes, non-compete agreements, confidentiality agreements",
+      "downloads": 884
+    },
+    {
+      "abstractId": "4877492",
+      "title": "Artificial Intelligence, Copyright and the Public Interest",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4877492",
+      "authors": [
+        "Artha Dermawan"
+      ],
+      "affiliations": [
+        "University of Lapland"
+      ],
+      "pages": 0,
+      "posted": "29 Jun 2024",
+      "snippet": "To achieve a balance between rightsholders and the public in the age of generative AI (GenAI), it is necessary to redefine the concept of public / interest in copyright law. / Artificial Intelligence, Innovation, Creativity, Copyright, Public Interest",
+      "downloads": 0
+    },
+    {
+      "abstractId": "4877447",
+      "title": "Towards Artificial Intelligence Copyright Equilibrium",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4877447",
+      "authors": [
+        "Artha Dermawan"
+      ],
+      "affiliations": [
+        "University of Lapland"
+      ],
+      "pages": 0,
+      "posted": "29 Jun 2024",
+      "snippet": "To balance generative AI (GenAI) innovation with the protection of copyright for authors and performers, it is necessary to recalibrate the concept / While various theoretical frameworks could be used to conceptualize public interest, the article proposes an approach that explicitly defines copyright / Artificial Intelligence, Copyright, Innovation, Text and Data Mining, Public Interest Theory, Arts",
+      "downloads": 0
+    },
+    {
+      "abstractId": "4877172",
+      "title": "Intellectual Property and Creative Machines",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4877172",
+      "authors": [
+        "Gaétan de Rassenfosse",
+        "Adam B. Jaffe",
+        "Joel Waldfogel"
+      ],
+      "affiliations": [
+        "École Polytechnique Fédérale de Lausanne (EPFL)",
+        "Brandeis University",
+        "University of Minnesota - Twin Cities - Carlson School of Management"
+      ],
+      "pages": 27,
+      "posted": "28 Jun 2024",
+      "snippet": "property. / Policymakers are already tasked with creating regulations for a post-generative AI creative industry. / generative AI, machine learning, copyright, fair use",
+      "downloads": 175
+    },
+    {
+      "abstractId": "4878339",
+      "title": "Generative AI as Digital Media",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4878339",
+      "authors": [
+        "Gilad Abiri"
+      ],
+      "affiliations": [
+        "Peking University School of Transnational Law"
+      ],
+      "pages": 55,
+      "posted": "28 Jun 2024",
+      "snippet": "The hype surrounding Generative AI paints it as revolutionary and potentially apocalyptic and calls for equally novel regulation. / Regulation must foster accountability, transparency, and environments that inspire public confidence towards generative AI platforms. / Generative AI Regulation, AI Regulation, Digital Platforms, AI and Trust, Algorithmic Media, AI governance approaches, AI Act",
+      "downloads": 414
+    },
+    {
+      "abstractId": "4873053",
+      "title": "Comparative Analysis of Artificial Intelligence Regulatory Approaches: The United States, European Union, Canada, China, Kazakhstan, Russia.",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4873053",
+      "authors": [
+        "Maulen Alimkhanov"
+      ],
+      "affiliations": [
+        "UC Berkeley School of Law"
+      ],
+      "pages": 12,
+      "posted": "27 Jun 2024",
+      "snippet": "Recommendations for harmonizing global AI regulations include establishing international standards for risk assessment, promoting transparency and accountability / Artificial intelligence, European Union, AI Systems, Generative AI, EU AI Act, comparative analysis, AI regulation, innovation, liability, privacy, intellectual / property, cybersecurity, Maulen Alimkhanov",
+      "downloads": 608
+    },
+    {
+      "abstractId": "4872366",
+      "title": "Generative AI and Creative Commons Licences:\nThe Application of Share Alike Obligations to Trained Models, Curated Datasets and AI Output",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4872366",
+      "authors": [
+        "Kacper Szkalej",
+        "Martin Senftleben"
+      ],
+      "affiliations": [
+        "Institute for Information Law (IViR), University of Amsterdam"
+      ],
+      "pages": 28,
+      "posted": "26 Jun 2024",
+      "snippet": "These include tracing and establishing copyright-relevant uses during the development phase (training), the interplay of licensing conditions with copyright / Seeking to transpose Share Alike and copyleft approaches to the world of generative AI, the CC community has basically the choice between two policy approaches / Copyright, AI, machine learning, licensing, Creative Commons, Share Alike",
+      "downloads": 873
+    },
+    {
+      "abstractId": "4865510",
+      "title": "Engineering Semiotic Democracy",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4865510",
+      "authors": [
+        "Katrina Geddes"
+      ],
+      "affiliations": [],
+      "pages": 71,
+      "posted": "21 Jun 2024",
+      "snippet": "These technological muzzles have profound implications for intellectual property law. / infringement liability. / generative AI, artificial intelligence, synthetic media, AI-generated art, diffusion transformer models, diffusion models, image synthesis, copyright,",
+      "downloads": 591
+    },
+    {
+      "abstractId": "4867762",
+      "title": "Beyond Algorithmic Disclosure For AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4867762",
+      "authors": [
+        "Christopher S. Yoo"
+      ],
+      "affiliations": [],
+      "pages": 18,
+      "posted": "18 Jun 2024",
+      "snippet": "emergent phenomena, such as proxy discrimination, interactions among multiple agents, the impact of adverse environments, and the well-known tendency of generative / AI to hallucinate, makes ongoing post-release evaluation a critical component of any system of AI transparency.",
+      "downloads": 315
+    },
+    {
+      "abstractId": "4860853",
+      "title": "AI at the Bench: Legal and Ethical Challenges of Informing - or Misinforming - Judicial Decision-Making Through Generative AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4860853",
+      "authors": [
+        "Nydia Remolina",
+        "David Socol de la Osa"
+      ],
+      "affiliations": [
+        "Singapore Management University - Yong Pung How School of Law",
+        "Hitotsubashi University - Faculty of Law"
+      ],
+      "pages": 32,
+      "posted": "17 Jun 2024",
+      "snippet": "Generative AI (GenAI) has gained significant popularity in recent years. / the promise of increased efficiency in the courtroom and expanded access to justice, it also introduces concerns regarding bias, interpretability, and accountability / artificial intelligence, generative AI, access to justice, AI regulation, judicial decision-making, AI ethical principles, fairness, accountability, transparency",
+      "downloads": 608
+    },
+    {
+      "abstractId": "4821645",
+      "title": "Kristelia García’s Response to Question for the Record, House Subcommittee on the Courts, Intellectual Property and the Internet, Committee on the Judiciary, Artificial Intelligence and Intellectual Property: Part III – IP Protection for AI-Assisted Inventions and Creative Works",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4821645",
+      "authors": [
+        "Kristelia García"
+      ],
+      "affiliations": [
+        "Georgetown University Law Center"
+      ],
+      "pages": 3,
+      "posted": "10 Jun 2024",
+      "snippet": "You asked me the following: “Has the development of generative AI, and works created with generative AI, had any impact on the value of human-created works / copyright, artificial intelligence, Congress, regulation",
+      "downloads": 75
+    },
+    {
+      "abstractId": "4843670",
+      "title": "Libel via Language Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4843670",
+      "authors": [
+        "Peter Wills"
+      ],
+      "affiliations": [],
+      "pages": 42,
+      "posted": "06 Jun 2024",
+      "snippet": "LMs could be economically significant, and the liability environment they exist in will affect where they are developed, who accumulates wealth from their / Understanding the existing liability environment allows both developers and policy-makers to make informed decisions — about which jurisdiction to offer / Generative AI, Large Language Models, Defamation, Libel, Tort Law",
+      "downloads": 201
+    },
+    {
+      "abstractId": "4814999",
+      "title": "Generative AI and Data Protection",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4814999",
+      "authors": [
+        "Hannah Ruschemeier"
+      ],
+      "affiliations": [
+        "Universität Osnabrück - Faculty of Law"
+      ],
+      "pages": 18,
+      "posted": "05 Jun 2024",
+      "snippet": "Generative AI has catapulted into the legal debate through the popular applications ChatGPT, Bard, Dall-E and others. / Act, it is imperative to acknowledge that generative AI also engenders substantial tension with data protection laws. / AI, Generative AI, Data Protection, AI Act, GDPR, privacy, right to data protection, LLMs, regulation, EU Data Protection, privacy rights",
+      "downloads": 1197
+    },
+    {
+      "abstractId": "4811811",
+      "title": "A Comprehensive Study on Generative AI Risks in the Financial Sector: Challenges and Solutions",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4811811",
+      "authors": [
+        "Danish Kapoor",
+        "Anmol Bhatia"
+      ],
+      "affiliations": [
+        "The NorthCap University",
+        "The NorthCap University"
+      ],
+      "pages": 9,
+      "posted": "05 Jun 2024",
+      "snippet": "Generative AI systems have revolutionized content creation but also pose ethical, societal, and security risks. / The findings suggest prioritizing fairness, transparency, and accountability in AI deployment, implementing robust security measures, staying / Generative AI, Risk Assessment, Finance Sector, Mitigation Strategies, Ethical Deployment",
+      "downloads": 8
+    },
+    {
+      "abstractId": "4851228",
+      "title": "The world’s first effective judgment on copyright infringement by Generative AI Service Providers: Translation of the original Guangzhou Internet Court decision",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4851228",
+      "authors": [
+        "Yanzhao Zhen"
+      ],
+      "affiliations": [
+        "Durham University, Law School, Students"
+      ],
+      "pages": 20,
+      "posted": "04 Jun 2024",
+      "snippet": "Secondly, Generative AI service providers that infringe copyright should bear the responsibility to cease the infringement and should take technical measures / Finally, Generative AI service providers who fail to fulfil their duty of care are subjectively at fault and should bear the corresponding liability for",
+      "downloads": 148
+    },
+    {
+      "abstractId": "4850866",
+      "title": "Voice Cloning in an Age of Generative AI: Mapping the Limits of the Law & Principles for a New Social Contract with Technology",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4850866",
+      "authors": [
+        "Mark Fenwick",
+        "Paul Jurcys",
+        "Aidas Liaudanskas",
+        "Brian D. Earp",
+        "Sebastian Porsdam Mann",
+        "Souichirou Kozuka"
+      ],
+      "affiliations": [
+        "Kyushu University - Graduate School of Law",
+        "University of California, Berkeley Law School",
+        "affiliation not provided to SSRN",
+        "University of Oxford",
+        "University of Oxford",
+        "Gakushuin University"
+      ],
+      "pages": 36,
+      "posted": "01 Jun 2024",
+      "snippet": "The rise of generative AI technologies has enabled the development of sophisticated voice cloning capabilities, / The paper critiques existing laws related to copyright, privacy, and publicity rights, highlighting their limitations in protecting individuals from unauthorized / Voice cloning, voice AI, digital twin, AI twin, personal AI, identity, privacy, right of publicity, copyright, unfair competition, generative AI, artificial",
+      "downloads": 782
+    },
+    {
+      "abstractId": "4844108",
+      "title": "Incentives, Remuneration & Copyright in a New World of AI Agents",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4844108",
+      "authors": [
+        "Mark Fenwick",
+        "Paul Jurcys",
+        "Valto Loikkanen"
+      ],
+      "affiliations": [
+        "Kyushu University - Graduate School of Law",
+        "University of California, Berkeley Law School",
+        "Prifina"
+      ],
+      "pages": 12,
+      "posted": "30 May 2024",
+      "snippet": "This development raises questions about the incentives to create original content and the implications for copyright law. / AI knowledge twin, AI agents, AI twin, digital twin, copyright, ChatGPT, Generative AI, AI, innovation, remuneration, compensation, the Internet",
+      "downloads": 170
+    },
+    {
+      "abstractId": "4795277",
+      "title": "Discit Ergo Est: Training Data Provenance and Fair Use",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4795277",
+      "authors": [
+        "Robert Mahari",
+        "Shayne Longpre"
+      ],
+      "affiliations": [
+        "Stanford University - Stanford Codex Center"
+      ],
+      "pages": 14,
+      "posted": "23 May 2024",
+      "snippet": "While pretraining data has received significant attention, curated datasets have been responsible for many recent breakthroughs in generative AI. / advancements, explore the application of the fair use doctrine to pretraining and curated datasets, and highlight the importance of data provenance for both copyright / Data Provenance, Fair Use, Copyright, Large Language Models, generative AI, AI Regulation, Computational Law, Regulation by Design",
+      "downloads": 124
+    },
+    {
+      "abstractId": "4834410",
+      "title": "Facilitative Fair Use",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4834410",
+      "authors": [
+        "Michael Mattioli"
+      ],
+      "affiliations": [
+        "Indiana University Maurer School of Law (Bloomington)"
+      ],
+      "pages": 1,
+      "posted": "22 May 2024",
+      "snippet": "Recent generative AI copyright lawsuits have ignited a crucial debate about the future of intellectual property. / Both production and dissemination are important goals of copyright law. / Copyright, Fair Use, AI Policy, AI Law, AI and Fair Use, Generative AI, Intellectual Property",
+      "downloads": 198
+    },
+    {
+      "abstractId": "4832872",
+      "title": "Elements of Style: Copyright, Similarity, and Generative AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4832872",
+      "authors": [
+        "Benjamin Sobel"
+      ],
+      "affiliations": [
+        "University of Wisconsin Law School"
+      ],
+      "pages": 59,
+      "posted": "22 May 2024",
+      "snippet": "“You can’t copyright style” is a shibboleth in today’s debate over generative AI. This slogan is, at best, meaningless. More likely, it’s wrong. / Generative AI models’ replication of style is a hard problem for copyright law because the models are purpose-built to identify and reproduce precisely / AI, generative AI, copyright, style, image-generating AI, art, visual art, similarity, intellectual property, cyberlaw, copyright law",
+      "downloads": 1586
+    },
+    {
+      "abstractId": "4833030",
+      "title": "A Systematic Review and Analysis of Ethical Challenges of Generative Ai: An Interdisciplinary Perspective",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4833030",
+      "authors": [
+        "Mousa Al-kfairy",
+        "Dheya Mustafa",
+        "Nir Kshetri",
+        "Mazen Insiew",
+        "Omar Alfandi"
+      ],
+      "affiliations": [
+        "Zayed University",
+        "The Hashemite University",
+        "University of North Carolina (UNC) at Greensboro - Bryan School of Business & Economics",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 31,
+      "posted": "18 May 2024",
+      "snippet": "AI. / This urgent analysis advocates for thoughtful responses to the ethical concerns raised by generative AI.",
+      "downloads": 565
+    },
+    {
+      "abstractId": "4830265",
+      "title": "Generative AI, Work and Risks in Cultural and Creative Industries",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4830265",
+      "authors": [
+        "Emmanuelle Walkowiak",
+        "Jason Potts"
+      ],
+      "affiliations": [
+        "RMIT"
+      ],
+      "pages": 27,
+      "posted": "16 May 2024",
+      "snippet": "and intellectual property. / These risks have always been present, but prior to generative AI adoption, they were tightly bundled and managed in specific people, jobs and organisations / Generative AI, AI risk, Synthetic Data, Technology exposure, ChatGPT, LLM, Work, Jobs, Technological change, Cultural and Creative Industries, technological",
+      "downloads": 2052
+    },
+    {
+      "abstractId": "4824463",
+      "title": "The Aegis of AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4824463",
+      "authors": [
+        "Timothy T. Hsieh"
+      ],
+      "affiliations": [
+        "Oklahoma City University - School of Law"
+      ],
+      "pages": 1,
+      "posted": "15 May 2024",
+      "snippet": "This paper proposes the beginnings of a legislative liability framework to regulate Artificial Intelligence (“AI”), particularly in the space of Generative / AI.",
+      "downloads": 38
+    },
+    {
+      "abstractId": "4782875",
+      "title": "Knowledge Management Perspective of Generative Artificial Intelligence (GenAI)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4782875",
+      "authors": [
+        "Maryam Alavi",
+        "Dorothy Leidner",
+        "Reza Mousavi"
+      ],
+      "affiliations": [
+        "Baylor University",
+        "University of Virginia"
+      ],
+      "pages": 25,
+      "posted": "14 May 2024",
+      "snippet": "In terms of knowledge application, GenAI is seen as a tool to boost productivity and innovation, but issues like knowledge misapplication, intellectual / property, and ethical considerations are critical. / Generative AI (GenAI), knowledge management (KM), large language models (LLMs), knowledge workers",
+      "downloads": 5791
+    },
+    {
+      "abstractId": "4826142",
+      "title": "AI and Artworks: Legal and Technical Issues",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4826142",
+      "authors": [
+        "Francesco Mittica"
+      ],
+      "affiliations": [
+        "Universita degli Studi di Torino"
+      ],
+      "pages": 62,
+      "posted": "14 May 2024",
+      "snippet": "The issue of intellectual property rights protection connected to AI development is a new and difficult road for the law to tread. / This paper seeks to provide an overview on the roots of these two connected fields: generative AI and intellectual property. / Generative AI, intellectual property, copyright, AI copyright, generative AI",
+      "downloads": 299
+    },
+    {
+      "abstractId": "4826695",
+      "title": "Consent and Compensation: Resolving Generative AI’s Copyright Crisis",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4826695",
+      "authors": [
+        "Frank Pasquale",
+        "Haochen Sun"
+      ],
+      "affiliations": [
+        "Cornell University - Law School",
+        "The University of Hong Kong - Faculty of Law"
+      ],
+      "pages": 42,
+      "posted": "14 May 2024",
+      "snippet": "Generative AI may unfairly compete with creatives, displacing them in the market. / Alarmed by these developments, many copyright owners have objected to the use of their works by AI providers. / generative AI, copyright, consent, compensation, fair use, levy, compulsory license, license, infringement, adaptation, derivative work, political economy",
+      "downloads": 2910
+    },
+    {
+      "abstractId": "4781692",
+      "title": "Comment — Re: Notice of Inquiry on Copyright and Artificial Intelligence Docket No. 2023–6, 88 Fed. Reg. 167",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4781692",
+      "authors": [
+        "Michael D. Murray"
+      ],
+      "affiliations": [
+        "University of Kentucky - J. David Rosenberg College of Law"
+      ],
+      "pages": 36,
+      "posted": "13 May 2024",
+      "snippet": "This comment to the United States Copyright Office argues that the developers of AI training datasets and the developers and creators of generative AI / required steps of the infringement analysis in order to focus on the most intriguing question, “Could a visual generative AI generate a work that potentially / Artificial Intelligence, Generative AI, Copyright, training, Large Language Model, copyrighted works, LAION, dataset, infringement. fair use, copying,",
+      "downloads": 103
+    },
+    {
+      "abstractId": "4811683",
+      "title": "Are Generative AI Models Infringing Imported ‘Articles’ Under Copyright Law?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4811683",
+      "authors": [
+        "Jani McCutcheon"
+      ],
+      "affiliations": [
+        "The University of Western Australia Law School"
+      ],
+      "pages": 31,
+      "posted": "10 May 2024",
+      "snippet": "This article considers the novel question of whether a generative AI model could be an infringing imported article under the secondary infringement / Australian copyright owners have joined the global challenge to the widespread scraping of copyright works in the development and training of generative / copyright, imported article, artificial intelligence, copyright infringement, intellectual property, generative AI, large language models",
+      "downloads": 192
+    },
+    {
+      "abstractId": "4817726",
+      "title": "AI Governance: A Framework for Responsible AI Development",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4817726",
+      "authors": [
+        "Dominic Vincent Ligot"
+      ],
+      "affiliations": [
+        "CirroLytix Research Services"
+      ],
+      "pages": 6,
+      "posted": "08 May 2024",
+      "snippet": "Ethical considerations surrounding generative AI are examined, emphasizing accuracy, human oversight, transparency, accountability, and fairness. / The paper lists the current risks and fears of generative AI in the media. / Artificial Intelligence, AI Governance, Ethical AI, Responsible AI, AI Frameworks, AI Roles, Generative AI, Discriminative AI, Transformer Models, Diffusion / Models, Prompt Engineering, AI Ethics, AI Accountability, AI Transparency, AI Fairness",
+      "downloads": 561
+    },
+    {
+      "abstractId": "4819491",
+      "title": "Incorporating Generative Ai into Human Resource Practices",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4819491",
+      "authors": [
+        "Rishabh Jha"
+      ],
+      "affiliations": [
+        "Amity University Lucknow Campus"
+      ],
+      "pages": 6,
+      "posted": "07 May 2024",
+      "snippet": "The incorporation of generative AI into human resources (HR) practices presents a groundbreaking approach to talent management. / Overall, the integration of generative AI holds immense promise for reshaping talent management strategies, enhancing operational efficiencies, and fostering",
+      "downloads": 183
+    },
+    {
+      "abstractId": "4817796",
+      "title": "Copyright Data Improvement for AI Licensing – The Role of Content Moderation and Text and Data Mining Rules",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4817796",
+      "authors": [
+        "Martin Senftleben"
+      ],
+      "affiliations": [
+        "Institute for Information Law (IViR), University of Amsterdam"
+      ],
+      "pages": 19,
+      "posted": "07 May 2024",
+      "snippet": "If information stemming from these metadata engines is pooled in a central European copyright data repository, the accumulation of copyright data could / to foster copyright data improvement projects. / copyright metatdata, generative AI, training data, harmonization, interoperability, standardization, transparency, TDM, content moderation, prohibition",
+      "downloads": 802
+    },
+    {
+      "abstractId": "4817180",
+      "title": "Custom Gpt for Consistent and Emotionally Resonant Storytelling with Transparency",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4817180",
+      "authors": [
+        "Shinichi Sato"
+      ],
+      "affiliations": [
+        "Circular In-finity"
+      ],
+      "pages": 17,
+      "posted": "07 May 2024",
+      "snippet": "Generative AI has transformed storytelling, offering new methods to enhance narrative structure and emotional depth. / However, ethical and copyright concerns are also discussed, emphasizing the need for a balanced integration of AI with human creativity.",
+      "downloads": 51
+    },
+    {
+      "abstractId": "4809363",
+      "title": "A Survey of Large Language Models for Healthcare: From Data, Technology, and Applications to Accountability and Ethics",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4809363",
+      "authors": [
+        "Kai He",
+        "Rui Mao",
+        "Qika Lin",
+        "Yucheng Ruan",
+        "Xiang Lan",
+        "Mengling Feng",
+        "Erik Cambria"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "National University of Singapore (NUS) - Saw Swee Hock School of Public Health",
+        "Soochow University"
+      ],
+      "pages": 48,
+      "posted": "27 Apr 2024",
+      "snippet": "Finally, the unique concerns associated with deploying LLMs in Healthcare settings are investigated, particularly regarding fairness, accountability, transparency / This shift encompasses a move from discriminative AI approaches to generative AI approaches, as well as a shift from model-centered methodologies to data-centered",
+      "downloads": 59
+    },
+    {
+      "abstractId": "4799240",
+      "title": "The Rise of Generative Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4799240",
+      "authors": [
+        "Guy Rub"
+      ],
+      "affiliations": [
+        "Temple University - James E. Beasley School of Law"
+      ],
+      "pages": 34,
+      "posted": "25 Apr 2024",
+      "snippet": "I prepared these reading materials on copyright and generative AI for my copyright and disruptive technologies course. / Copyright Office’s guidelines, and its decisions regarding Zarya of the Dawn and Théâtre D’opéra Spatial.The second part deals with the copyright liability / Copyright, AI",
+      "downloads": 323
+    },
+    {
+      "abstractId": "4793661",
+      "title": "Generating Derivatives: AI and Copyright's Most Troublesome Right",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4793661",
+      "authors": [
+        "Oren Bracha"
+      ],
+      "affiliations": [
+        "University of Texas at Austin - School of Law"
+      ],
+      "pages": 54,
+      "posted": "24 Apr 2024",
+      "snippet": "This Article examines broad arguments of infringing copyright’s entitlement of the right of derivatives in the context of Generative AI (“GenAI”) systems / Copyright owners make derivatives arguments against various activities in the GenAI supply chain even in the absence of substantially similar output. / AI, copyright, derivative works",
+      "downloads": 212
+    },
+    {
+      "abstractId": "4793782",
+      "title": "Hiding From Generative AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4793782",
+      "authors": [
+        "Sijie Lin"
+      ],
+      "affiliations": [
+        "University of Toronto, Toronto, Canada"
+      ],
+      "pages": 67,
+      "posted": "22 Apr 2024",
+      "snippet": "On November 11 2022, DeviantArt introduced a generative AI image generator into the platform and artworks on this platform entered training data by default / GenAI, Copyright, knowledge spillover, artificial intelligence",
+      "downloads": 561
+    },
+    {
+      "abstractId": "4784412",
+      "title": "Data Disquiet: Concerns about the Governance of Data for Generative AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4784412",
+      "authors": [
+        "Susan Ariel Aaronson"
+      ],
+      "affiliations": [
+        "George Washington University - Elliott School of International Affairs"
+      ],
+      "pages": 33,
+      "posted": "22 Apr 2024",
+      "snippet": "The author concludes that if policy makers want to effectively address the data underpinning LLMs, they need to incentivize greater transparency and accountability / AI, LLM, Chat0-bot, data governance , privacy, copyright",
+      "downloads": 127
+    }
+  ]
+}

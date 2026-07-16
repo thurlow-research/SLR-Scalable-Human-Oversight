@@ -1,0 +1,15 @@
+{
+  "item_key": "3SU9QZ6F",
+  "methods": [
+    "design-science / prototype / tool-build",
+    "conceptual/position/framework",
+    "repository-mining/MSR",
+    "measurement-study",
+    "case-study"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science / prototype / tool-build",
+  "notes": "Builds AIRA (a 15-check deterministic static-analysis tool grounded in a proposed 'Reward-Shaped Failure Hypothesis' framework), then empirically validates it via three studies: a bounded enterprise environment audit (case-study flavor, Study 1) and two matched-control corpus comparisons mining AI-attributed vs. human-authored public repo files from the AIDev dataset and GitHub PRs (repository-mining/MSR + measurement-study, Studies 2-3), plus a secondary LLM-vs-static evaluator comparison. No human participants; human-written code is used only as a comparison baseline. Not a controlled experiment (observational, no manipulation) and not a curated-task benchmark.",
+  "citation": "Parris 2026"
+}

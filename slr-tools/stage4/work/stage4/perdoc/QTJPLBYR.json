@@ -1,0 +1,68 @@
+{
+  "item_key": "QTJPLBYR",
+  "citation": "Bilal Naqvi 2026",
+  "evidence_type": [
+    "controlled-experiment",
+    "empirical"
+  ],
+  "problem_statement": "The paper addresses how well LLM-generated code satisfies both security and inclusivity (neurodiversity) requirements, and whether human versus LLM reviewers differ in catching security vulnerabilities and inclusivity gaps in that code.",
+  "magnitude_evidence": "\"the recent literature suggests that over 75% of LLM-generated applications contain security vulnerabilities [17]\"",
+  "risk_types": [
+    "security",
+    "vulnerable-APIs",
+    "social-bias",
+    "accessibility",
+    "inclusivity",
+    "quality",
+    "ethical",
+    "consistency",
+    "regulatory-compliance",
+    "cognitive-overload"
+  ],
+  "insufficiency_evidence": "LLM evaluators consistently assigned higher security scores than humans (H2b not supported); \"human experts demonstrated greater sensitivity in identifying security vulnerabilities and inclusivity challenges, highlighting limitations in automated LLM assessments\"; LLMs are not inclusive by default and complied with insecure console.log logging when prompted",
+  "solution_mechanisms": [
+    "specification-detail escalation (no/moderate/detailed inclusivity specs)",
+    "modular LLM code-generation pipeline (Tasker, Coder, Completeness Validator, Quality Evaluator)",
+    "functional-completeness feedback loop",
+    "dual human+LLM code evaluation",
+    "five-LLM evaluator panel against shared rubric",
+    "explicit anti-requirements / must-not statements in prompts",
+    "OWASP-based security rubric scoring",
+    "cognitive-dimension inclusivity rubric"
+  ],
+  "mechanism_keywords": [
+    "spec-driven",
+    "hitl",
+    "llm-as-judge",
+    "ensemble",
+    "hybrid-evaluation",
+    "rubric-scoring",
+    "feedback-loop",
+    "anti-requirements",
+    "human-in-the-loop",
+    "security-evaluation",
+    "prompt-engineering"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "post-generation-evaluation"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "inclusivity (IEEE/IStd 25010:2023)",
+    "neurodiversity/neurodivergent cognitive dimensions",
+    "hybrid evaluation strategy",
+    "specification granularity",
+    "anti-requirements",
+    "cognitive dimensions (Attention, Memory, Comprehension, Decision-Making, Learning)"
+  ],
+  "governance_refs": [
+    "ISO/IEC 25010:2023",
+    "OWASP Top 10 (2025)",
+    "ACM SIGSOFT guidelines"
+  ],
+  "scope_fit": "both",
+  "notes": "SSRN preprint, not peer reviewed; text has garbled OCR fragments (e.g., 'reveals the of specifications'); rubric appendix uses OWASP 2021 labels while body cites 2025.",
+  "_truncated": false
+}

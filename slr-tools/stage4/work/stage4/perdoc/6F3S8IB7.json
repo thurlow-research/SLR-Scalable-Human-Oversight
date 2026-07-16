@@ -1,0 +1,89 @@
+{
+  "item_key": "6F3S8IB7",
+  "citation": "Bara 2026",
+  "evidence_type": [
+    "framework-model",
+    "conceptual-position"
+  ],
+  "problem_statement": "The document addresses the operational gap in overseeing AI-generated outputs (including code) within hybrid human-AI teams: how to govern delegation, assign accountability, validate machine outputs, and estimate effort when generation is near-instant but validation is expensive.",
+  "magnitude_evidence": "'senior developers experiencing \u223c19% performance decreases on complex AI-assisted tasks due to verification overhead' (attributed to Jocham & Sutherland, 2026)",
+  "risk_types": [
+    "quality",
+    "accountability",
+    "validation-overhead",
+    "hallucination",
+    "security",
+    "skill-erosion",
+    "cognitive-dependency",
+    "specification-mismatch",
+    "estimation-distortion"
+  ],
+  "insufficiency_evidence": "'the two-speed IT problem (AI-accelerated generation outpacing organizational validation capacity)'; 'Since AI output looks polished, it receives less scrutiny\u2014the opposite of what is needed'; over months of reduced practice, reviewers' 'detection rate declines silently'",
+  "solution_mechanisms": [
+    "named human owner per AI output",
+    "governed reversible delegation with registry",
+    "four-tier autonomy model",
+    "delegation decision matrix (S/V/C/D inputs)",
+    "evidence-based tier promotion, fast demotion",
+    "proportional planned validation budgeting",
+    "domain-specific validation checklists",
+    "periodic human-only competence cycles",
+    "integration into Scrum/Kanban ceremonies",
+    "extended Definition of Done with provenance",
+    "re-grounding checkpoints for co-production",
+    "adversarial self-check",
+    "error-injection testing of validators"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "accountability-anchor",
+    "governed-delegation",
+    "tiered-autonomy",
+    "risk-routing",
+    "escalation",
+    "sampling",
+    "validation-budget",
+    "checklist",
+    "provenance",
+    "competence-maintenance",
+    "decision-matrix",
+    "demotion",
+    "adversarial-self-check",
+    "spec-driven",
+    "observability"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-commit",
+    "code-review",
+    "pre-publish",
+    "CI",
+    "post-deployment",
+    "sprint-planning",
+    "retrospective"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "HAIF (Human-AI Integration Framework)",
+    "Hybrid Work Owner (HWO)",
+    "adoption paradox",
+    "validation paradox",
+    "effort asymmetry",
+    "dependency trap",
+    "AI-restricted classification",
+    "autonomy tiers (Assisted/Supervised/Autonomous-Monitored/Autonomous-Bounded)",
+    "plausibility trap",
+    "continuous co-production",
+    "AI-critical literacy",
+    "hierarchical accountability graph"
+  ],
+  "governance_refs": [
+    "EU AI Act",
+    "NIST AI RMF",
+    "Microsoft Responsible AI Standard",
+    "Google Responsible AI"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

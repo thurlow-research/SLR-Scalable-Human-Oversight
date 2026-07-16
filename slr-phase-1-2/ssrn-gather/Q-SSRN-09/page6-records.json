@@ -1,0 +1,807 @@
+{
+  "count": 50,
+  "total": "844",
+  "page": "6",
+  "records": [
+    {
+      "abstractId": "6011195",
+      "title": "Multi-Agency Coordination Modeling for Urban Disaster Management Using AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6011195",
+      "authors": [
+        "Taylor Robert"
+      ],
+      "affiliations": [],
+      "pages": 16,
+      "posted": "05 Feb 2026",
+      "snippet": "of the command-and-control frameworks; the inability to cope with the fluidity of the information, cross-jurisdictional actors, and the fast-changing risk / AI (Ocal and Torun; Li et al.). / Urban Disaster Management, Multi-Agency Coordination, Artificial Intelligence, Situational Awareness, NG911 Systems, GIS-Enabled Emergency Response, Agentic / AI",
+      "downloads": 15
+    },
+    {
+      "abstractId": "6173761",
+      "title": "Evaluating the Quality of Artificial Intelligence-Generated Information on Cleft Lip and Palate: A Comparative Cross-Sectional Study",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6173761",
+      "authors": [
+        "Amir Bilder",
+        "Michal Almos",
+        "Ahmad Hija",
+        "Andrei Krasovsky",
+        "Nidal Zeineh",
+        "tal capucha",
+        "Omri Emodi"
+      ],
+      "affiliations": [
+        "Technion-Israel Institute of Technology - Rambam Health Care Campus",
+        "Technion-Israel Institute of Technology - Rambam Health Care Campus",
+        "Technion-Israel Institute of Technology - Rambam Health Care Campus",
+        "Technion-Israel Institute of Technology - Rambam Health Care Campus",
+        "Technion-Israel Institute of Technology - Rambam Health Care Campus",
+        "Technion-Israel Institute of Technology - Rambam Health Care Campus",
+        "Technion-Israel Institute of Technology - Rambam Health Care Campus"
+      ],
+      "pages": 15,
+      "posted": "04 Feb 2026",
+      "snippet": "Discussion: Both models provided high-quality information in reliably rated domains, supporting cautious use for general counseling and clinician oversight / cleft lip palate, large language model, ChatGPT, Gemini, health information quality, Global Quality Score",
+      "downloads": 24
+    },
+    {
+      "abstractId": "6103646",
+      "title": "Heterogeneity in Global Risk Preferences and the Limits of Labels in Investments",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6103646",
+      "authors": [
+        "Sid Muralidhar",
+        "Arun Muralidhar"
+      ],
+      "affiliations": [
+        "Risktyle",
+        "Georgetown University - McDonough School of Business"
+      ],
+      "pages": 31,
+      "posted": "02 Feb 2026",
+      "snippet": "KT identified risk aversion in gains, risk-seeking behavior in losses, and loss aversion. / First, KT's choice problems are transformed into more readable, relatable, and lightly gamified formats (using ChatGPT). / Kahneman-Tversky, Value Function, Risk Preferences, Risk Averse, Loss Averse, Risktyle, Behaviorally Affected Decisions (BADs), Gender, Age,",
+      "downloads": 71
+    },
+    {
+      "abstractId": "6096787",
+      "title": "The Organizational Intelligence Loop: A Socio-Technical Framework for Adaptive Enterprise AI Adoption",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6096787",
+      "authors": [
+        "Yumi W. Kimura"
+      ],
+      "affiliations": [],
+      "pages": 86,
+      "posted": "02 Feb 2026",
+      "snippet": "Organizations are rapidly adopting generative AI (GenAI) and agentic AI, yet outcomes vary widely because technical capability often advances faster / AI Design. / Generative artificial intelligence, Knowledge management, Agentic AI governance, Organizational network analysis, Behavioral insights, Information architecture",
+      "downloads": 78
+    },
+    {
+      "abstractId": "6069888",
+      "title": "Nomotic AI: The Governance Counterpart to Agentic AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6069888",
+      "authors": [
+        "Chris Hood"
+      ],
+      "affiliations": [],
+      "pages": 26,
+      "posted": "02 Feb 2026",
+      "snippet": "This paper introduces Nomotic AI as the necessary governance counterpart to agentic AI. / Where agentic AI focuses on actions, Nomotic AI focuses on laws. Where agentic AI enables capability, Nomotic AI ensures accountability. / Agentic AI, Nomotic AI, AI governance, accountability, pre-action authorization, delegated authority, AI ethics",
+      "downloads": 114
+    },
+    {
+      "abstractId": "6100288",
+      "title": "No Skin in the Game: Why Agentic AI Requires Principal-Agent Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6100288",
+      "authors": [
+        "Martin Prause"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 36,
+      "posted": "02 Feb 2026",
+      "snippet": "The deployment of Agentic AI creates governance challenges that existing frameworks cannot adequately address. / The training pipeline of large language model-based Agentic AI produces these asymmetries: The pretraining process optimizes prediction over truth. / Agentic AI, AI Agents, AI Governance, LLM vulnerability, Principal-Agent Theory",
+      "downloads": 131
+    },
+    {
+      "abstractId": "6069395",
+      "title": "From Tools to Teammates: A Framework for Integrating AI Agents into Organizational Structures",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6069395",
+      "authors": [
+        "Mikhail Karpov"
+      ],
+      "affiliations": [],
+      "pages": 10,
+      "posted": "30 Jan 2026",
+      "snippet": "Customer‑facing scenarios introduce distinct challenges around trust, brand voice, and liability compared to internal use cases. / AI agents, organizational structure, human-AI collaboration, agentic AI, hybrid teams, team dynamics, workforce transformation",
+      "downloads": 85
+    },
+    {
+      "abstractId": "6035054",
+      "title": "Designing for Presence: A Dual Ethics Framework for AI Safety, Sovereignty, and Stewardship",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6035054",
+      "authors": [
+        "Arul Aruleswaran",
+        "Thaatchaayini Kananatu"
+      ],
+      "affiliations": [
+        "Independent Researcher",
+        "Monash University Malaysia"
+      ],
+      "pages": 15,
+      "posted": "28 Jan 2026",
+      "snippet": "Case studies from the 2025 Claude incident highlight the limitations of static alignment, while comparative analysis between soul and seed documents reveals / then outlines design principles for next generation AI systems, including temporal coherence mechanisms, relational field experiments, steward based governance / Artificial Intelligence Ethics, Dual Ethics, Seed Document, Soul Document, Relational AI, Stewardship, Sovereign AI, Presence Based Governance, Ethical",
+      "downloads": 15
+    },
+    {
+      "abstractId": "6014134",
+      "title": "An Introduction to AI, Generative AI, and Agentic AI in Finance: Efficiency, Ethics, and the Future of High-Speed Trading",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6014134",
+      "authors": [
+        "Arvind Ashta"
+      ],
+      "affiliations": [],
+      "pages": 21,
+      "posted": "28 Jan 2026",
+      "snippet": "The integration of Generative AI and Agentic AI is reshaping finance, offering unprecedented efficiency in decision-making, risk management, and customer / Agentic AI, with its autonomous reasoning, further amplifies these dynamics, necessitating robust governance frameworks. / Financial Markets, Ethical AI, Algorithmic Trading, Financial Inclusion G10, Generative AI, Agentic AI",
+      "downloads": 304
+    },
+    {
+      "abstractId": "6078412",
+      "title": "Regulating Artificial Intimacy: From Locks and Blocks to Relational Accountability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6078412",
+      "authors": [
+        "Henry L Fraser",
+        "Raffaele Ciriello",
+        "Jessica Szczuka"
+      ],
+      "affiliations": [
+        "Queensland University of Technology - Digital Media Research Centre",
+        "University of Sydney",
+        "University of Duisburg-Essen"
+      ],
+      "pages": 17,
+      "posted": "28 Jan 2026",
+      "snippet": "We therefore offer brief suggestions for more robust governance frameworks capable of addressing these structural dynamics. / Companion, Chatbot, AI, AI Safety, AI Assistant, Regulation, eSafety, ChatGPT, Nomi, Replika, Chai, Character AI, Social Media Ban, Social Media Delay,",
+      "downloads": 211
+    },
+    {
+      "abstractId": "5944935",
+      "title": "Learning Through Simulation: Counselor Trainees' Interactions with ChatGPT as a Client",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5944935",
+      "authors": [
+        "Rakesh Maurya"
+      ],
+      "affiliations": [],
+      "pages": 14,
+      "posted": "27 Jan 2026",
+      "snippet": "This study investigated counselor trainees' experiences using ChatGPT (GPT-4o) as a simulated client for role-play practice, aiming to assess its potential / These results suggest that generative AI can enhance experiential learning when integrated thoughtfully with structured guidance, ethical oversight, and / generative AI, counselor education, experiential learning, skills training, ChatGPT, Counseling, Mental health, Counselor, counselling",
+      "downloads": 26
+    },
+    {
+      "abstractId": "6003914",
+      "title": "Agentic Artificial Intelligence for Root Cause Analysis and Self-Healing in Hybrid Distributed Financial Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6003914",
+      "authors": [
+        "Omar Bilal"
+      ],
+      "affiliations": [],
+      "pages": 11,
+      "posted": "26 Jan 2026",
+      "snippet": "Results demonstrate that agentic AI significantly improves fault detection rates, reduces mean system downtime, and enhances overall system resilience. / The findings suggest that the proactive self-healing capabilities of agentic AI not only improve operational efficiency but also mitigate financial risk",
+      "downloads": 26
+    },
+    {
+      "abstractId": "6090208",
+      "title": "AI-Driven Transformation in Insurance Underwriting: Architecture, Efficiency, and Regulatory Alignment",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6090208",
+      "authors": [
+        "Rohit Kumar"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 8,
+      "posted": "26 Jan 2026",
+      "snippet": "XGBoost risk scoring), and advanced agentic AI (multi-LLM orchestration). / and human oversight into the design. / Insurance, Underwriting, Automation, Artificial Intelligence, Risk Scoring, Predictive Modeling",
+      "downloads": 33
+    },
+    {
+      "abstractId": "5994034",
+      "title": "Leveraging AI to Promote Creativity and Innovation in STEM Education and Problem Solving",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5994034",
+      "authors": [
+        "Peach Quinson"
+      ],
+      "affiliations": [
+        "University of Leeds - LeedsOmics"
+      ],
+      "pages": 9,
+      "posted": "22 Jan 2026",
+      "snippet": "This study investigates the ways in which AI, particularly conversational agents such as ChatGPT, can serve as catalysts for creativity and innovation / In addition, the research highlights challenges including ethical considerations and the risk of over-reliance on AI tools, which may impede the development",
+      "downloads": 19
+    },
+    {
+      "abstractId": "5993114",
+      "title": "The Moral Crumple Zone in Agentic AI Workflows",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5993114",
+      "authors": [
+        "Gina Bronner-Martin"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 6,
+      "posted": "22 Jan 2026",
+      "snippet": "It argues that the current architecture of agentic AI systems, particularly multi-agent systems, gives rise to an epistemic form of the moral crumple zone / The paper concludes by deriving functional minimum requirements for a governance framework grounded in the principle of genealogical transparency. / Epistemic Authority, Responsibility, Epistemology of AI, Philosophy of Artificial Intelligence, Applied Epistemology, Artificial Intelligence, Agentic / AI, AI Governance, Moral Crumple Zone, Responsibility and Accountability, Philosophy of AI, Epistemic Risk, Justification, Reliabilism, AI Regulation,",
+      "downloads": 34
+    },
+    {
+      "abstractId": "6098702",
+      "title": "A Federated Observability Architecture Pattern for Reliable Agentic AI Software Systems Across the AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6098702",
+      "authors": [
+        "Grace Victoria Billiris",
+        "Asif Gill"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 15,
+      "posted": "20 Jan 2026",
+      "snippet": "ContextMulti-agent agentic AI systems generate evolving, and non-deterministic telemetry that reflects reasoning, decision-making, adaptive workflows, / in agentic AI software systems. / Multi-Agent Systems, federated observability, data flow, schema normalisation, reliability, agentic AI, trustworthy AI, AI-driven architecture",
+      "downloads": 26
+    },
+    {
+      "abstractId": "5958134",
+      "title": "Contract Tag v2.2: Trinity Specification AI–Human Structural Ethics Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5958134",
+      "authors": [
+        "Naoki Nishikimi"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 4,
+      "posted": "16 Jan 2026",
+      "snippet": "We present a trinity implementation—GTP (Creative Responsibility), Copilot (Verification Responsibility), and Gemini (Ethical Responsibility / Proof by / Contract Tag, AI-Human Responsibility, Structural Ethics, Accountability Framework, AI Governance, Personality-Aware Systems, Proof by Absence, Responsibility",
+      "downloads": 9
+    },
+    {
+      "abstractId": "6065349",
+      "title": "Why Conversational AI can be both Useless and Useful, with examples of prompts in finance using ChatGPT",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6065349",
+      "authors": [
+        "Marcelo Henriques-de-Brito, Ph.D., CFP®"
+      ],
+      "affiliations": [],
+      "pages": 34,
+      "posted": "16 Jan 2026",
+      "snippet": "discussing if and how new technologies replace or coexist with human activities to then address how and when activities with conversational AI (e.g., ChatGPT / Several practical examples of prompts in finance are described in this article showing how ChatGPT may enhance text writing, the learning and teaching / Artificial intelligence, ChatGPT, Financial decision-making, Prompt design, General Corporate Finance and Governance (G30), General Economics Education",
+      "downloads": 260
+    },
+    {
+      "abstractId": "6033194",
+      "title": "Agentic AI in Airline Management: A KPI-Governed Architecture for Trust-Based Autonomy, Strategic Co-Leadership, and Operational Excellence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6033194",
+      "authors": [
+        "SeyyedAbdolHojjat MoghadasNian",
+        "Hamed Kashian"
+      ],
+      "affiliations": [
+        "Civil Aviation Training Center"
+      ],
+      "pages": 9,
+      "posted": "16 Jan 2026",
+      "snippet": "Agentic AI, Airline Logistics, KPI-Orchestration, Strategic Co-Leadership, Perception–Cognition–Strategy–Action Model, Digital Transformation, ESG-Driven / Governance.",
+      "downloads": 58
+    },
+    {
+      "abstractId": "6072527",
+      "title": "Emotional Support without Emotions: Can ChatGPT be a Good Therapist?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6072527",
+      "authors": [
+        "Aleksandra E. Kornienko"
+      ],
+      "affiliations": [],
+      "pages": 34,
+      "posted": "16 Jan 2026",
+      "snippet": "Tools like ChatGPT can now support human-like conversations on virtually any topic, giving rise to a remarkable phenomenon: people increasingly turn to / With ChatGPT being cheap and instantly available, its use in mental health support seems promising. / ChatGPT, AI therapy, Empathy Simulation, Human-AI interaction, Philosophy, LLM, AI risks, AI Societal Impact, Philosophy of Psychiatry, Conversational",
+      "downloads": 205
+    },
+    {
+      "abstractId": "5950714",
+      "title": "From Large Language Models (LLMs) to Large Understanding Models (LUMs): A Paradigm Shift for AI Understanding and Organizational Decision-Making",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5950714",
+      "authors": [
+        "Prof. Dr. Uwe Seebacher (MBA)"
+      ],
+      "affiliations": [],
+      "pages": 14,
+      "posted": "15 Jan 2026",
+      "snippet": "Agentic AI architectures-which extend LLMs with tools, planning, and autonomous task execution-expand operational capacity but inherit the same limitations / foundational paradigm for advancing trustworthy, explainable, and contextually aligned AI, with broad implications for organizational decision-making and AI governance / Large Understanding Models (LUM), Large Language Models (LLM), Agentic AI, Semantic AI, Causal AI, Explainable AI, Predictive Intelligence, Next-Best-Action",
+      "downloads": 101
+    },
+    {
+      "abstractId": "5949495",
+      "title": "AI Service System Design (ASSD): A Service-System-Oriented Framework for Organizational AI Adoption",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5949495",
+      "authors": [
+        "Ren-Dar Yang"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 11,
+      "posted": "15 Jan 2026",
+      "snippet": "With the rapid maturation of Generative AI and Agentic AI, artificial intelligence has evolved from a passive auxiliary tool into a system role capable / This misalignment often prevents AI projects from achieving institutionalization, resulting in frequent failures regarding accountability, decision governance / AI Service System Design, Service Systems, Organizational AI Adoption, Agentic AI, Human-AI Collaboration, AI Governance",
+      "downloads": 24
+    },
+    {
+      "abstractId": "5930414",
+      "title": "The Structural Defect Framework (SDF): A Dual-Arm Theory of Designed-In Harms - Transmission, Proxy Records, and the Life Cycle of Legal Evidence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5930414",
+      "authors": [
+        "Jon W. Chung"
+      ],
+      "affiliations": [
+        "Arizona State University"
+      ],
+      "pages": 40,
+      "posted": "14 Jan 2026",
+      "snippet": "This Article integrates Claude Shannon's mathematical theory of communication with a lifecycle analysis of how legally relevant information degrades as / The result is the Structural Defect Framework (SDF): a unified diagnostic that identifies two distinct arms of liability.",
+      "downloads": 12
+    },
+    {
+      "abstractId": "6050414",
+      "title": "From Standards to System: \nImplementing Trust-Bounded Agentic AI with Governance Controls",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6050414",
+      "authors": [
+        "Vigneshkumaar Devakumar"
+      ],
+      "affiliations": [],
+      "pages": 24,
+      "posted": "12 Jan 2026",
+      "snippet": "While prior work has articulated standards-level principles for agentic AI-such as explicit decision authority, trust boundaries, oversight, and auditabilitythere / governance controls and decision trace construction. / Agentic AI, AI Governance, Trust Boundaries, Decision Authority, AI Systems Architecture, Responsible AI, Compliance-Aware Systems, Autonomous Systems",
+      "downloads": 23
+    },
+    {
+      "abstractId": "5886843",
+      "title": "Meta-Cognitive Advanced Intelligence (MAI): The Advisory Layer and Constitutional Constraints on Non-Prescriptive Modeling",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5886843",
+      "authors": [
+        "Samuel Gaskins"
+      ],
+      "affiliations": [],
+      "pages": 43,
+      "posted": "12 Jan 2026",
+      "snippet": "Building upon the governance limits established in MAI: A Governance Framework for Stability-Oriented Sentient Artificial Systems (Gaskins, 2025a), the / MAI does not recommend actions, minimize risk, optimize outcomes, rank strategies, or offer prescriptive insights of any kind. / Meta-Cognitive Advanced Intelligence, Constitutional AI, AI Governance, Non-Optimization Modeling, AI Ethics, Stability-Oriented AI, Transparency in AI / , Non-Agentic AI, AI Regulatory Theory, Non-Authority AI, Epistemic Neutrality",
+      "downloads": 14
+    },
+    {
+      "abstractId": "6050534",
+      "title": "Extracting Books from Production Language Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6050534",
+      "authors": [
+        "Ahmed Ahmed",
+        "A. Feder Cooper",
+        "Percy Liang",
+        "Sanmi Koyejo"
+      ],
+      "affiliations": [
+        "Stanford University",
+        "Yale University",
+        "Stanford University - Department of Computer Science",
+        "Stanford University"
+      ],
+      "pages": 40,
+      "posted": "12 Jan 2026",
+      "snippet": "In some cases, jailbroken Claude 3.7 Sonnet outputs entire books near-verbatim (e.g., nv-recall = 95.8%). / Taken together, our work highlights that, even with model-and system-level safeguards, extraction of (in-copyright) training data remains a risk for production",
+      "downloads": 105
+    },
+    {
+      "abstractId": "6025895",
+      "title": "AISA-L: An Agentic AI Strategy Architecture for Real-Time KPI Orchestration in Sustainable, Resilient Airline Logistics",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6025895",
+      "authors": [
+        "SeyyedAbdolHojjat MoghadasNian",
+        "Mona NaserPour Asiabari",
+        "Ali HeidariYekta"
+      ],
+      "affiliations": [
+        "Kosar University of Bojnord",
+        "Islamic Azad University Science and Research Branch"
+      ],
+      "pages": 17,
+      "posted": "12 Jan 2026",
+      "snippet": "This study designs and validates AISA-L, a four-layer Agentic AI Strategy Architecture (Perception, Cognition, Strategy, Action) that converts a previously / The novelty lies not in enumerating KPIs, but in their real-time agentic orchestration within a closed governance-optimization loop. / Agentic AI, Airline Logistics, KPI Governance, Digital Transformation, Sustainability Optimization, Resilience, Predictive Maintenance",
+      "downloads": 27
+    },
+    {
+      "abstractId": "6049914",
+      "title": "Commercial Large Language Models in Clinical Practice: A Governance Framework for Use-Bound, Adaptive Integration",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6049914",
+      "authors": [
+        "Alaa Melek"
+      ],
+      "affiliations": [],
+      "pages": 19,
+      "posted": "10 Jan 2026",
+      "snippet": "Commercial large language models (LLMs) such as ChatGPT are entering clinical workflows faster than any prior digital technology. / This rapid diffusion, however, has occurred largely outside formal institutional oversight, regulatory classification, or established accountability structures / Clinical AI governance, Large language models in healthcare, Health policy, Medical regulation, Software as a Medical Device (SaMD), FDA digital health",
+      "downloads": 45
+    },
+    {
+      "abstractId": "6050827",
+      "title": "Risk-Return Relevance in Artificial Intelligence (AI) Investments",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6050827",
+      "authors": [
+        "Nanying Lin",
+        "Oscar Gilbert",
+        "Tianxiang Chu"
+      ],
+      "affiliations": [
+        "Arkansas State University",
+        "Arkansas State University",
+        "Arkansas State University"
+      ],
+      "pages": 40,
+      "posted": "09 Jan 2026",
+      "snippet": "Textbook finance theories indicate that investors demand risk premia from risky assets as compensation for risk and for hedging against future unfavorable / A low risk aversion cannot explain this failure to respond to consumption-related risk. / AI Investments, Risk-return Relevance, Risk Factors, AI Survey, Large Language Models, ChatGPT",
+      "downloads": 93
+    },
+    {
+      "abstractId": "5854322",
+      "title": "Agentic AI and the Future of Urban Regeneration: Governance, Ethics, and Global Applications",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5854322",
+      "authors": [
+        "Blaise Aboh",
+        "Justin Chuka"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 20,
+      "posted": "09 Jan 2026",
+      "snippet": "emerging as a transformative capability for global urban regeneration, enabling cities to move from static, reactive planning toward adaptive, data-driven governance / The paper argues that well-governed agentic AI can underpin more equitable, resilient and sustainable urban regeneration worldwide. / Agentic AI, Urban Regeneration, Multi-Agent AI Systems, Predictive Analytics, Urban Planning, Infrastructure Management, Community Engagement",
+      "downloads": 99
+    },
+    {
+      "abstractId": "5848743",
+      "title": "Securing Agentic AI: The AFuller F7-LAS™ (7-Layer) Model: Fuller 7-Layer Agentic AI Security (F7-LAS™ )",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5848743",
+      "authors": [
+        "Anthony L. Fuller"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 59,
+      "posted": "09 Jan 2026",
+      "snippet": "This whitepaper introduces the AFuller F7-LAS™  (Fuller 7-Layer Agentic AI Security) model, a practical  for analyzing and securing / agentic AI systems in enterprise environments. / Agentic AI, AI Security Architecture, Autonomous Systems, Large Language Models (LLMS), Policy Enforcement (PDP/PEP), Runtime AI Controls, AI Goverance",
+      "downloads": 29
+    },
+    {
+      "abstractId": "5908745",
+      "title": "Regulatory Thresholds for Managing Frontier AI Risks",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5908745",
+      "authors": [
+        "Freeman Jackson"
+      ],
+      "affiliations": [
+        "Fourth Industrial Systems Corporation"
+      ],
+      "pages": 6,
+      "posted": "09 Jan 2026",
+      "snippet": "Existing governance frameworks such as the EU AI Act, NIST AI Risk Management Framework, OECD AI Principles, and ISO/IEC 42001 offer high-level safety / in the governance of frontier AI systems. / Frontier AI, AI Governance, Regulatory Thresholds, Risk Management, Large Language Models, Agentic AI, NIST AI RMF, EU AI Act, ISO/IEC 42001",
+      "downloads": 51
+    },
+    {
+      "abstractId": "5928236",
+      "title": "The Infrastructure Gap: Why Platform Security Cannot Protect Against Agentic Attacks",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5928236",
+      "authors": [
+        "Tim Williams",
+        "James Lee",
+        "John Cosgrove",
+        "Tiffany Saade",
+        "Timothy Kang"
+      ],
+      "affiliations": [
+        "AstraSync AI Pty Ltd",
+        "AstraSync AI Pty Ltd"
+      ],
+      "pages": 17,
+      "posted": "08 Jan 2026",
+      "snippet": "The November 2025 disclosure by Anthropic of a state-sponsored cyber espionage campaign using Claude Code as an autonomous attack orchestrator has sparked / The incident highlights the accelerating need for interoperable identity and trust mechanisms aligned with emerging global governance frameworks under / AI Agent Security, Agent Identity, Trust Infrastructure, Autonomous Systems, Behavioural Monitoring, Blockchain Verification, AI Governance, Smart Policy",
+      "downloads": 71
+    },
+    {
+      "abstractId": "5998154",
+      "title": "Toward Standards for Agentic AI Systems Conceptual Foundations, Trust Boundaries, and Compliance-Aware Design",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5998154",
+      "authors": [
+        "Vigneshkumaar Devakumar"
+      ],
+      "affiliations": [],
+      "pages": 8,
+      "posted": "08 Jan 2026",
+      "snippet": ", and compliance in agentic AI deployments. / By clarifying core concepts and design constraints, this work aims to contribute to the maturation of agentic AI as an engineering discipline, bridging / Agentic AI, Autonomous AI Systems, AI System Architecture, AI Standards, Trust Boundaries, Observability, Compliance-Aware Design, Responsible AI, AI Governance",
+      "downloads": 51
+    },
+    {
+      "abstractId": "6017354",
+      "title": "Safety-Focused Artificial Intelligence for QT-Prolongation Risk:A Hybrid Explainable System for Medication Decision Support",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6017354",
+      "authors": [
+        "Chijioke Ifedili"
+      ],
+      "affiliations": [
+        "Harvard University"
+      ],
+      "pages": 19,
+      "posted": "08 Jan 2026",
+      "snippet": "at the point of prescribing rather than simple interruptive alerts⁵⁻⁸.We developed and evaluated a hybrid explainable artificial intelligence clinical copilot / representative usage scenarios.This safety-focused hybrid explainable artificial intelligence system moves beyond alerting toward decision-aware clinical copilot / prolongation, torsades de pointes, clinical decision support, explainable artificial intelligence, hybrid rule-based and neural network model, arrhythmia risk",
+      "downloads": 46
+    },
+    {
+      "abstractId": "6008674",
+      "title": "AgentAssistX: An Agentic Generative AI Framework for Real-Time Life & LTC Insurance Advisory, Risk Scoring, and Compliance Validation in Cloud-Native Environments",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6008674",
+      "authors": [
+        "Pinak Mallick"
+      ],
+      "affiliations": [],
+      "pages": 9,
+      "posted": "07 Jan 2026",
+      "snippet": "Agentic AI and cloud-native infrastructures enable scalability, transparency, and reliability for regulatory insurance domains, according to research. / AI-enhanced advising, risk grading, and automated regulatory checks are desired by survey respondents. / Agentic AI, Generative AI, Life Insurance, Long-Term Care Insurance, Risk Scoring, Compliance Validation",
+      "downloads": 71
+    },
+    {
+      "abstractId": "5840682",
+      "title": "Beyond Coding: Open-Source Innovation Disclosure and Startup Growth",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5840682",
+      "authors": [
+        "Wayne R. Landsman",
+        "Chen Lin",
+        "Daniel Rabetti",
+        "Che Zhang"
+      ],
+      "affiliations": [
+        "University of North Carolina Kenan-Flagler Business School",
+        "The University of Hong Kong - Faculty of Business and Economics",
+        "National University of Singapore (NUS)",
+        "Tsinghua University"
+      ],
+      "pages": 90,
+      "posted": "06 Jan 2026",
+      "snippet": "To address endogeneity, we implement a matched difference-indifferences design and use the staggered rollout of GitHub Copilot as an instrument. / The results suggest a plausibly causal relation between open-source code releases and startup growth, particularly for protocols with decentralized governance",
+      "downloads": 219
+    },
+    {
+      "abstractId": "5998954",
+      "title": "Artificially Biased Intelligence: Does AI Think Like a Human Investor?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5998954",
+      "authors": [
+        "Javad Keshavarz",
+        "Cayman Seagraves",
+        "Stace Sirmans"
+      ],
+      "affiliations": [
+        "Auburn University",
+        "University of Tulsa - Collins College of Business",
+        "Auburn University - Department of Finance"
+      ],
+      "pages": 68,
+      "posted": "05 Jan 2026",
+      "snippet": "These findings have direct implications for AI governance in investment workflows. / Bias, Behavioral Finance, Framing Effect, Anchoring Bias, Loss Aversion, Disposition Effect, Artificial Intelligence, AI, LLM, Large Language Models, ChatGPT",
+      "downloads": 303
+    },
+    {
+      "abstractId": "5999574",
+      "title": "Governing the Algorithmic Agent: Confronting Overt and Covert Challenges to Justice and the Future of Work",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5999574",
+      "authors": [
+        "Prof. Dr. Jay Kumar Pandey",
+        "Dr. Rajendra Kumar"
+      ],
+      "affiliations": [
+        "Shri Ramswaroop Memorial University",
+        "University of Lucknow - Faculty of Law"
+      ],
+      "pages": 14,
+      "posted": "05 Jan 2026",
+      "snippet": "Conversely, the second vector involves a subtler, \"accommodationist\" creep, wherein agentic AI is woven into the fabric of daily professional practice. / By synthesizing analyses of AI in policing, alternative dispute resolution (ADR), and democratic governance, this paper maps this dual-front challenge, / Autonomous Agents, AI and Law, Future of Work, Algorithmic Governance, Judicial Independence, Predictive Policing, Robo-Mediator, Algorithmic Bias, Legal",
+      "downloads": 41
+    },
+    {
+      "abstractId": "5902163",
+      "title": "The AI Productivity Paradox in Software Development: A Meta-Analysis of Implementation Outcomes and ROI Patterns (2024-2025)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5902163",
+      "authors": [
+        "Chris Johnson",
+        "Teja Yenamandra",
+        "Joe Ciskey",
+        "Tomas Ambrogi",
+        "Luciano Olmedo Gunio"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 11,
+      "posted": "03 Jan 2026",
+      "snippet": "Organizations achieving positive outcomes follow distinct patterns: executive-level governance, focused use case selection, and vendor partnerships over / AI Coding Assistants, Developer Productivity, GitHub Copilot, Code Quality, Technical Debt, AI Implementation, Software Engineering, LLM Tools, Enterprise",
+      "downloads": 125
+    },
+    {
+      "abstractId": "5793842",
+      "title": "Leveraging the Power of AI: Efficiency in Business",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5793842",
+      "authors": [
+        "Shubham Vilas Salgaonkar"
+      ],
+      "affiliations": [],
+      "pages": 58,
+      "posted": "02 Jan 2026",
+      "snippet": "that maximizing AI's benefits requires holistic integration with complementary organizational changes in skills, culture, workflows, and responsible governance / Artificial Intelligence, Machine Learning, AI Implementation, Chatbots, Enterprise AI, Intelligent Process Automation, ChatGPT and AI Optimization",
+      "downloads": 44
+    },
+    {
+      "abstractId": "5994266",
+      "title": "Sanctions Premium in AI Infrastructure Investment",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5994266",
+      "authors": [
+        "Ravi Prakash Ranjan",
+        "Ravi Pandey"
+      ],
+      "affiliations": [
+        "Mohammed VI Polytechnic University"
+      ],
+      "pages": 11,
+      "posted": "31 Dec 2025",
+      "snippet": "We derive the equilibrium price of geopolitical risk in AI investments. / We demonstrate that the transition to Agentic AI transformsinterdiction risk from a mere productivity shock into a possible systemic failure. / Geopolitical risk, Corporate investment, supply chain risk, policy uncertainty, capital budgeting",
+      "downloads": 47
+    },
+    {
+      "abstractId": "5985157",
+      "title": "Agentic AI for Maintenance Management: A Process-Centric Review and a Staged Framework for Industrial Adoption",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5985157",
+      "authors": [
+        "Adolfo Crespo-Márquez",
+        "J. F. Gomez Fernandez"
+      ],
+      "affiliations": [
+        "University of Seville",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 49,
+      "posted": "29 Dec 2025",
+      "snippet": "Agentic Artificial Intelligence (Agentic AI) represents a new class of autonomous systems capable of multi-step reasoning, tool orchestration, delegated / This paper conducts a process-centric literature review of Agentic AI using the eight-phase Maintenance Management Framework (MMF), mapping how agentic / Agentic AI, Autonomous AI Agents, LLM-based Agents, Multi-Agent Systems (MAS), Maintenance Management Framework (MMF), Asset Management.",
+      "downloads": 122
+    },
+    {
+      "abstractId": "5956736",
+      "title": "AI-generated Report, Information Risk and Stock Return",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5956736",
+      "authors": [
+        "Yunchuan Sun",
+        "Ying Xu",
+        "Xiaoping Zeng"
+      ],
+      "affiliations": [
+        "International Institute of Big Data in Finance, Business School, Beijing Normal University",
+        "International Institute of Big Data in Finance, Business School, Beijing Normal University",
+        "International Institute of Big Data in Finance, Business School, Beijing Normal University"
+      ],
+      "pages": 24,
+      "posted": "25 Dec 2025",
+      "snippet": "A-share listed firms from 2021 to 2025, this paper employs event study to explore whether AI-generated texts in MD&A disclosures shapes information risk / We address endogeneity concerns using an instrumental variable approach and exploit the exogenous shock of the public release of ChatGPT in a difference-indifferences",
+      "downloads": 269
+    },
+    {
+      "abstractId": "5952434",
+      "title": "Risk-Return Relevance in Artificial Intelligence (AI) Investments",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5952434",
+      "authors": [
+        "Tianxiang Chu",
+        "Oscar Gilbert",
+        "Nanying Lin"
+      ],
+      "affiliations": [
+        "Arkansas State University",
+        "Arkansas State University",
+        "Arkansas State University"
+      ],
+      "pages": 39,
+      "posted": "24 Dec 2025",
+      "snippet": "Textbook finance theories indicate that investors demand risk premia from risky assets as compensation for risk and for hedging against future unfavorable / A low risk aversion cannot explain this failure to respond to consumption-related risk. / AI Investments, Risk-return Relevance, Risk Factors, AI Survey, Large Language Models, ChatGPT",
+      "downloads": 166
+    },
+    {
+      "abstractId": "5958914",
+      "title": "A Student’s Guide to the Law and Policy of AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5958914",
+      "authors": [
+        "Matthew Sag"
+      ],
+      "affiliations": [
+        "Emory University School of Law"
+      ],
+      "pages": 22,
+      "posted": "24 Dec 2025",
+      "snippet": "It traces key technological milestones from symbolic AI to deep learning, transformers, and ChatGPT, and analyzes post-2022 developments including scaling / integrates canonical thought experiments, cultural metaphors, and historical analogies to illuminate enduring questions about computation, agency, and governance",
+      "downloads": 59
+    },
+    {
+      "abstractId": "5776262",
+      "title": "The Notenic Institute Derives a Mathematical Relationship Between Human and Machine Intelligence\nHavenga's Relativistic Model of Cognition and Novelty Decay",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5776262",
+      "authors": [
+        "Ari Havenga"
+      ],
+      "affiliations": [
+        "The Notenic Learning Institute for Applied Intelligence Inc."
+      ],
+      "pages": 41,
+      "posted": "23 Dec 2025",
+      "snippet": "We argue that AI is not inherently misaligned; rather, it reflects the quality of its design, conditioning, and governance. / This paper concludes by outlining the societal implications of intelligent system governance, proposing Notenic's standards as a blueprint for the next / AI Cognition, Human Decision-Making, Agentic AI, Governance Frameworks, Cognitive Architecture, Role Conditioning, Memory Systems, Notenic Intelligence",
+      "downloads": 33
+    },
+    {
+      "abstractId": "5950415",
+      "title": "How to Design an AI Agent: Architectures, Protocols, and Technical Evaluation of Agentic AI Systems for Law & Finance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5950415",
+      "authors": [
+        "Michael James Bommarito",
+        "Daniel Martin Katz",
+        "Jillian Bommarito"
+      ],
+      "affiliations": [
+        "273 Ventures",
+        "Illinois Tech - Chicago Kent College of Law",
+        "273 Ventures"
+      ],
+      "pages": 95,
+      "posted": "22 Dec 2025",
+      "snippet": "Crucially, we examine the safety layers required for professional deployment: termination conditions, human escalation protocols, and governance.",
+      "downloads": 890
+    },
+    {
+      "abstractId": "5946326",
+      "title": "Verba Volant, Transcripta Manent What Corporate Earnings Calls Reveal About the AI Stock Rally",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5946326",
+      "authors": [
+        "Ana-Simona Manu",
+        "Michele Ca’ Zorzi",
+        "Gianluigi Lopardo"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "European Central Bank (ECB)",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 53,
+      "posted": "22 Dec 2025",
+      "snippet": "Our method quantifies firms’ GenAI exposure and classifies sentiment as opportunity, adoption, or risk. / Artificial Intelligence, Generative AI, ChatGPT, earnings call, equity returns JEL classification: C80, G14, G30, L25, O33",
+      "downloads": 49
+    },
+    {
+      "abstractId": "5751483",
+      "title": "Agents Among Us: A Study of Digital Shadows, Behavioural Imitation and the Transformation of Labour in the Agent Age",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5751483",
+      "authors": [
+        "Uma Rudd Tan"
+      ],
+      "affiliations": [
+        "Singapore Management University"
+      ],
+      "pages": 137,
+      "posted": "19 Dec 2025",
+      "snippet": "Agents Among Us: Governance, Identity and Human Value in the Agentic Age proposes a comprehensive framework for understanding how autonomous / enhanced, dependent and extractive — and makes a case for an agent-enhanced civilisation grounded in behavioural rights, lineage transparency, ethical oversight / Agentic AI Systems and Autonomous Decision Frameworks, Global Governance of Agentic AI and Behavioural Identity, Agentic AI in Economic Transformation / Agency and Ethical Oversight of Agentic AI, Psychological Impact of Agentic AI on Identity and Authenticity, Cultural Preservation and Narrative Sovereignty",
+      "downloads": 81
+    }
+  ]
+}

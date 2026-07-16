@@ -1,0 +1,12 @@
+{
+  "item_key": "RX9SICP9",
+  "methods": [
+    "conceptual/position/framework",
+    "design-science/prototype/tool-build"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position/framework",
+  "notes": "Methodology/framework paper proposing IACDM (8-phase process). No original empirical study: the '20+ projects' are non-public internal anecdotal records, and all quantitative evidence (METR, Palmer, GitClear) is cited from others. Author explicitly defers validation to future work and frames limitations as testable hypotheses. A tool-build signal exists (two VSCode extensions / Versus repo), but no empirical evaluation of it is reported.",
+  "citation": "Moreira 2026"
+}

@@ -1,0 +1,696 @@
+{
+  "count": 41,
+  "total": "441",
+  "page": "9",
+  "records": [
+    {
+      "abstractId": "4285645",
+      "title": "Putting a Human in the Loop: Increasing Uptake, but Decreasing Accuracy of Automated Decision-Making",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4285645",
+      "authors": [
+        "Daniela Sele",
+        "Marina Chugunova"
+      ],
+      "affiliations": [
+        "Center for Law & Economics, ETH Zurich",
+        "Max Planck Institute for Innovation and Competition"
+      ],
+      "pages": 27,
+      "posted": "28 Nov 2022",
+      "snippet": "If so, can the retention of human oversight increase the uptake of algorithmic recommendations, and does keeping a human in the loop improve accuracy? / less likely to intervene with the least accurate recommendations and adjust them by less, raising concerns about the monitoring ability of a human in a Human-in-the-Loop / automated decision-making, algorithm aversion, algorithm appreciation, automation bias",
+      "downloads": 314
+    },
+    {
+      "abstractId": "4281936",
+      "title": "Using AI to Read Contracts",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4281936",
+      "authors": [
+        "Daniel E. O'Leary"
+      ],
+      "affiliations": [
+        "University of Southern California - Marshall School of Business"
+      ],
+      "pages": 21,
+      "posted": "22 Nov 2022",
+      "snippet": "The system also uses a \"human-in-the-loop\" to help the system choose which snippets of information correspond to parts of the ontology. / Finally, the paper investigates the impact of AI on key organizational issues such as responsible and trusted AI, the impact of AI on organizations and / Artificial Intelligence, AI, Ontology, Human-in-the-Loop, Reading Contracts",
+      "downloads": 345
+    },
+    {
+      "abstractId": "4258313",
+      "title": "The Legal Challenges of AI in Outer Space and the Realignment of Terrestrial Standards",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4258313",
+      "authors": [
+        "Ugo Pagallo",
+        "Eleonora Bassi",
+        "Massimo Durante"
+      ],
+      "affiliations": [
+        "University of Turin, Department of Law",
+        "Nexa Center for Internet & Society, Polytechnic University of Turin",
+        "Independent"
+      ],
+      "pages": 17,
+      "posted": "21 Nov 2022",
+      "snippet": "Some AI challenges depend on its unique features, e.g., autonomy and opacity, and how they affect pillars of the law, whether on earth or in space missions / The paper insists on a further class of legal issues that AI systems raise, however, only in outer space. / Artificial Intelligence (AI); Human-Robot Interaction (HRI); Meaningful Human Control (MHC); Space Law;",
+      "downloads": 313
+    },
+    {
+      "abstractId": "4258362",
+      "title": "DataUnions - A Privacy-by-DECENTRAL-design",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4258362",
+      "authors": [
+        "Robin Lehmann",
+        "Dr. Mark Siebert"
+      ],
+      "affiliations": [
+        "DataUnion Foundation",
+        "Quriosity Studio"
+      ],
+      "pages": 7,
+      "posted": "09 Nov 2022",
+      "snippet": "Privacy by design suggests seven principles to embed privacy into systems, but AI and data practice shows a “privacy paradox” in the behaviour of users / Keeping the human in the loop for re-consenting brings huge efforts and is disproportional to agile development.",
+      "downloads": 83
+    },
+    {
+      "abstractId": "4254940",
+      "title": "Exploring Article 14 of the EU AI proposal: accountability challenges of the human in the loop when supervising high-risk AI systems in public administration",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4254940",
+      "authors": [
+        "Jorge Constantino"
+      ],
+      "affiliations": [
+        "TU Delft"
+      ],
+      "pages": 57,
+      "posted": "21 Oct 2022",
+      "snippet": "However, there is little debate about the effectiveness of other safeguards, such as the human in the loop, to promote safe or trustworthy AI. / Therefore, this paper explores the accountability challenges in public administration when adopting the human in the loop as a safeguard to oversee the / Accountability, public service, human oversight, decision-making, street-level bureaucracies, high-risk AI systems, Article 14 EU AI Act Proposal.",
+      "downloads": 352
+    },
+    {
+      "abstractId": "4246077",
+      "title": "Why Providing Humans with Interpretable Algorithms May, Counterintuitively, Lead to Lower Decision-making Performance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4246077",
+      "authors": [
+        "Timothy DeStefano",
+        "Katherine Kellogg",
+        "Michael Menietti",
+        "Luca Vendraminelli"
+      ],
+      "affiliations": [
+        "Harvard University - Business School (HBS)",
+        "Massachusetts Institute of Technology (MIT) - Sloan School of Management",
+        "Harvard University - Business School (HBS)",
+        "Polytechnic University of Milan"
+      ],
+      "pages": 39,
+      "posted": "13 Oct 2022",
+      "snippet": "Interpretable AI, Artificial Intelligence, Machine Learning, Algorithm Aversion, AI Adoption, Firm Productivity, AI and Strategy, Human-in-the-loop Decision",
+      "downloads": 1084
+    },
+    {
+      "abstractId": "4243532",
+      "title": "Interconnectedness and Financial Stability in the Era of Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4243532",
+      "authors": [
+        "Nydia Remolina"
+      ],
+      "affiliations": [
+        "Singapore Management University - Yong Pung How School of Law"
+      ],
+      "pages": 19,
+      "posted": "12 Oct 2022",
+      "snippet": "It argues that lack of a consistent approach to AI Governance by financial regulators and limited oversight on some AI models in terms of systemic risks / human in the loop, and accountability, but also the mitigation of systemic risks, particularly in the financial sector - where trust is key to promote / systemic risk, financial stability, AI governance, AI auditing, suptech, AI in finance",
+      "downloads": 321
+    },
+    {
+      "abstractId": "4236554",
+      "title": "From 'Human Control' in International Law to 'Human Oversight' in the New EU Act on Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4236554",
+      "authors": [
+        "Juliane Beck",
+        "Thomas Burri"
+      ],
+      "affiliations": [
+        "University of St. Gallen",
+        "University of St. Gallen"
+      ],
+      "pages": 31,
+      "posted": "06 Oct 2022",
+      "snippet": "autonomous systems and \"human oversight\" of artificial intelligence in the light of the international legal discussions and the EU’s recent proposal for an AI / It also identifies some weaknesses of the draft EU AI Act and proposes ways of improving it. / Autonomous systems, Autonomous weapons, CCW, Artificial Intelligence, Machine Learning, EU Commission, Meaningful Human Control, Human Oversight, International",
+      "downloads": 655
+    },
+    {
+      "abstractId": "4159762",
+      "title": "Are Programmers In or 'Out of' Control? The Individual Criminal Responsibility of Programmers of Autonomous Weapons and Self-driving Cars",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4159762",
+      "authors": [
+        "Marta Bo"
+      ],
+      "affiliations": [],
+      "pages": 21,
+      "posted": "11 Jul 2022",
+      "snippet": "Based on criminal responsibility requirements and causation theories, this chapter develops a notion of meaningful human control (MHC) that may function / International criminal law, autonomous weapons, criminal law, self-driving cars, criminal responsibility, programmers, AI, causation, artificial intelligence",
+      "downloads": 561
+    },
+    {
+      "abstractId": "4149638",
+      "title": "Too Much Control: From War to Health (and Sex?)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4149638",
+      "authors": [
+        "Ezio Di Nucci"
+      ],
+      "affiliations": [
+        "University of Copenhagen"
+      ],
+      "pages": 18,
+      "posted": "30 Jun 2022",
+      "snippet": "control; responsibility; artificial intelligence; meaningful human control; autonomous weapons; medical AI; control paradox",
+      "downloads": 48
+    },
+    {
+      "abstractId": "4130757",
+      "title": "Human in the Loop Automation: Ride-Hailing With Remote (Tele-) Drivers",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4130757",
+      "authors": [
+        "Saif Benjaafar",
+        "Zicheng Wang",
+        "Xiaotang Yang"
+      ],
+      "affiliations": [
+        "University of Michigan at Ann Arbor",
+        "The Chinese University of Hong Kong, Shenzhen",
+        "University of Toronto - Rotman School of Management"
+      ],
+      "pages": 69,
+      "posted": "14 Jun 2022",
+      "snippet": "",
+      "downloads": 764
+    },
+    {
+      "abstractId": "4100035",
+      "title": "A Foundry of Artificial Intelligence? The Case of UK National Security",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4100035",
+      "authors": [
+        "Andrew Dwyer"
+      ],
+      "affiliations": [
+        "Durham University"
+      ],
+      "pages": 21,
+      "posted": "17 May 2022",
+      "snippet": "addressing the implications of AI for national security. / However, the distinction and outputs of these, especially with notions of control through the ‘human in the loop’ are hotly debated (Schwarz, 2021).",
+      "downloads": 144
+    },
+    {
+      "abstractId": "4108171",
+      "title": "On the purpose of meaningful human control of AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4108171",
+      "authors": [
+        "Jovana Davidovic"
+      ],
+      "affiliations": [
+        "University of Iowa"
+      ],
+      "pages": 6,
+      "posted": "13 May 2022",
+      "snippet": "Meaningful human control over AI is exalted as a key tool for assuring safety, dignity, and responsibility for AI and automated decision-systems. / This paper argues that discussions regarding meaningful human control commonly fail to identify the purpose behind the call for meaningful human control / meaningful human control, AI, AI weapons systems,",
+      "downloads": 209
+    },
+    {
+      "abstractId": "4109202",
+      "title": "Aspects of Realizing (Meaningful) Human Control: A Legal Perspective",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4109202",
+      "authors": [
+        "Berenice Boutin",
+        "Taylor Kate Woodcock"
+      ],
+      "affiliations": [
+        "T.M.C. Asser Instituut",
+        "T.M.C. Asser Institute"
+      ],
+      "pages": 21,
+      "posted": "13 May 2022",
+      "snippet": "The concept of ‘meaningful human control’ (MHC) has progressively emerged as a key frame of reference to conceptualize the difficulties posed by military / of AI broadly construed, not limited to ‘autonomous weapons systems’ (AWS). / autonomous weapons systems, meaningful human control, artificial intelligence, human agency, human-machine interaction, compliance by design",
+      "downloads": 594
+    },
+    {
+      "abstractId": "4066781",
+      "title": "Humans in the Loop",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4066781",
+      "authors": [
+        "Rebecca Crootof",
+        "Margot E. Kaminski",
+        "W. Nicholson Price II"
+      ],
+      "affiliations": [
+        "University of Richmond School of Law, Yale University - Yale Information Society Project",
+        "University of Colorado Law School, Yale University - Yale Information Society Project",
+        "University of Michigan Law School"
+      ],
+      "pages": 82,
+      "posted": "27 Mar 2022",
+      "snippet": "in the loop” systems. / Namely, rather than carelessly placing a human in the loop, policymakers should regulate the human-in-the-loop system. / AI, regulation, hybrid systems, MABA-MABA, humans in the loop, artificial intelligence",
+      "downloads": 3051
+    },
+    {
+      "abstractId": "4033308",
+      "title": "Explaining Decisions Made with AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4033308",
+      "authors": [
+        "David Leslie"
+      ],
+      "affiliations": [
+        "The Alan Turing Institute"
+      ],
+      "pages": 136,
+      "posted": "18 Feb 2022",
+      "snippet": "AI and machine learning technologies are helping people do remarkable things. / system, and who to contact for a human review of a decision. (3) Data explanation has to do with which data has been used and how. (4) Fairness explanation / AI explainability, AI interpretability, XAI, AI ethics, AI governance, AI assurance",
+      "downloads": 374
+    },
+    {
+      "abstractId": "3761637",
+      "title": "Innovation-Proof Governance for Military AI? How I Learned to Stop Worrying and Love the Bot",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3761637",
+      "authors": [
+        "Matthijs M. Maas"
+      ],
+      "affiliations": [
+        "Institute for Law & AI"
+      ],
+      "pages": 29,
+      "posted": "10 Feb 2022",
+      "snippet": "Yet ‘killer robots’ hardly exhaust the potentially problematic capabilities that innovation in military AI (MAI) is set to unlock. / Governance initiatives narrowly focused on preserving ‘meaningful human control’ over laws therefore risk being bypassed by the technological state-of-the-art / Artificial Intelligence, AI, military AI, arms control, governance, governance-disruption",
+      "downloads": 4
+    },
+    {
+      "abstractId": "3929894",
+      "title": "Human Factors Considerations in Satellite Operations Human-Computer Interaction Technologies: A Review of Current Applications and Theory",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3929894",
+      "authors": [
+        "David G. I. Heinrich"
+      ],
+      "affiliations": [
+        "Capitol Technology University"
+      ],
+      "pages": 21,
+      "posted": "17 Nov 2021",
+      "snippet": "Circadian rhythms, crew resource management, and shift work dynamics may exacerbate complacency-driven automation bias and social loafing errors in satellite / The human-in-the-loop commonality enables human factors lessons to be passed to satellite operations from unrelated sectors to mitigate catastrophic human / Complacency, Human-in-the-Loop, Remotely Piloted Aircraft, Satellite Operations, Shift Work",
+      "downloads": 81
+    },
+    {
+      "abstractId": "3938195",
+      "title": "Ethical Principles for Artificial Intelligence in National Defence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3938195",
+      "authors": [
+        "Mariarosaria Taddeo",
+        "Alexander Blanchard"
+      ],
+      "affiliations": [
+        "University of Oxford - Oxford Internet Institute",
+        "Stockholm International Peace Research Institute (SIPRI)"
+      ],
+      "pages": 32,
+      "posted": "11 Oct 2021",
+      "snippet": "It identifies five principles -- justified and overridable uses; just and transparent systems and processes; human moral responsibility; meaningful human / control; reliable AI systems – and related recommendations to foster ethically sound uses of AI for national defence purposes.",
+      "downloads": 207
+    },
+    {
+      "abstractId": "3927987",
+      "title": "AI for Retrospective Review",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3927987",
+      "authors": [
+        "Catherine M. Sharkey"
+      ],
+      "affiliations": [
+        "New York University School of Law"
+      ],
+      "pages": 36,
+      "posted": "24 Sep 2021",
+      "snippet": "Against the backdrop of a detailed examination of HHS’s “AI for Deregulation” pilot and the very first use of AI-driven technologies in a published federal / In so doing, it takes aim at the talismanic significance of “human in the loop” that shields AI uses from disclosure and review by casting them in a merely / AI, artificial intelligence, human in the loop, retrospective",
+      "downloads": 204
+    },
+    {
+      "abstractId": "3921216",
+      "title": "The Flaws of Policies Requiring Human Oversight of Government Algorithms",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3921216",
+      "authors": [
+        "Ben Green"
+      ],
+      "affiliations": [
+        "University of Michigan at Ann Arbor - Society of Fellows"
+      ],
+      "pages": 22,
+      "posted": "13 Sep 2021",
+      "snippet": "Human oversight; Human in the loop; Algorithmic governance; Automated decision-making; Artificial intelligence; AI regulation&",
+      "downloads": 2896
+    },
+    {
+      "abstractId": "3861809",
+      "title": "Improving MR Visualization of Digital Twins using HoloLens 2",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3861809",
+      "authors": [
+        "Andreas Kuenz",
+        "Sabrina Rosmann",
+        "Gabdelgaziz Sayfutdinov",
+        "Katrin Paldán"
+      ],
+      "affiliations": [
+        "University of Applied Sciences Vorarlberg",
+        "University of Applied Sciences Vorarlberg",
+        "University of Applied Sciences Vorarlberg",
+        "University of Applied Sciences Vorarlberg"
+      ],
+      "pages": 6,
+      "posted": "09 Jun 2021",
+      "snippet": "One of the challenges is the level of abstraction and specific use of shaders (program code defining material attributes) to help the user differentiating / Mixed Reality, Visualization, Digital Twin, Human-in-the-loop",
+      "downloads": 207
+    },
+    {
+      "abstractId": "3831758",
+      "title": "Regulating Artificial Intelligence in Finance: Putting the Human in the Loop",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3831758",
+      "authors": [
+        "Ross P. Buckley",
+        "Dirk A. Zetzsche",
+        "Douglas W. Arner",
+        "Brian Tang"
+      ],
+      "affiliations": [
+        "University of New South Wales (UNSW) - UNSW Law & Justice",
+        "Universite du Luxembourg - Faculty of Law, Economics and Finance",
+        "The University of Hong Kong",
+        "The University of Hong Kong - Faculty of Law"
+      ],
+      "pages": 41,
+      "posted": "22 Apr 2021",
+      "snippet": "It focuses on human responsibility as central to addressing the AI ‘black box’ problem — that is, the risk of an AI producing undesirable results that / concerning financial services AI and the tools available to address them.",
+      "downloads": 2093
+    },
+    {
+      "abstractId": "3824826",
+      "title": "Artificial Intelligence and IPR: The Quest or Plea for Ai as a Legal Subject",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3824826",
+      "authors": [
+        "Rosa Ballardini"
+      ],
+      "affiliations": [
+        "University of Lapland"
+      ],
+      "pages": 0,
+      "posted": "13 Apr 2021",
+      "snippet": "In turn, these automated activities have vast financial and legal consequences, which points to the fact that the less meaningful human control is, the / greater the need will be to regulate AI entities.",
+      "downloads": 0
+    },
+    {
+      "abstractId": "3715529",
+      "title": "Decision-Making with Human-in-the-Loop: A Field Experiment of Explained AI in Public Administration",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3715529",
+      "authors": [
+        "Leid Zejnilovic",
+        "Susana Lavado",
+        "Carlos Soares",
+        "Íñigo Martínez de Rituerto de Troya",
+        "Andrew Bell",
+        "Rayid Ghani"
+      ],
+      "affiliations": [
+        "Nova School of Business and Economics",
+        "Nova School of Business and Economics",
+        "Universidade do Porto - Faculty of Engineering",
+        "Delft University of Technology - Faculty of Technology, Policy and Management, Nova School of Business and Economics",
+        "Nova School of Business and Economics",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 0,
+      "posted": "04 Dec 2020",
+      "snippet": "In public administration, humans usually vet Artificial Intelligence (AI) outputs that impact high-stakes, consequential decisions. / Yet, adding humans to the decision-making process results in complexities and nuances that arise from the interaction of humans and AI. / human-computer decision-making, explainable AI, frontline employees, situational automation bias",
+      "downloads": 0
+    },
+    {
+      "abstractId": "3718008",
+      "title": "Concept of a Voice-Enabled Digital Assistant for Predictive Maintenance in Manufacturing",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3718008",
+      "authors": [
+        "Stefan Wellsandt",
+        "Zoltan Rusak",
+        "Santiago Ruiz Arenas",
+        "Doris Aschenbrenner",
+        "Karl A. Hribernik",
+        "Klaus-Dieter Thoben"
+      ],
+      "affiliations": [
+        "Bremer Institut für Produktion und Logistik GmbH",
+        "Delft University of Technology",
+        "Delft University of Technology",
+        "Delft University of Technology",
+        "Bremer Institut für Produktion und Logistik GmbH",
+        "Bremer Institut für Produktion und Logistik GmbH"
+      ],
+      "pages": 8,
+      "posted": "26 Oct 2020",
+      "snippet": "Furthermore, the accountability of AI systems is a cost factor for the assistant’s service providers and the client companies in manufacturing – AI insurance / services, human-in-the-loop functions, user training, and professional education are actions to address this issue.",
+      "downloads": 573
+    },
+    {
+      "abstractId": "3676379",
+      "title": "Beyond Data Protection Concerns – The European Passenger Name Record System",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3676379",
+      "authors": [
+        "Henrik Palmer Olsen",
+        "Cornelius Wiesener"
+      ],
+      "affiliations": [
+        "University of Copenhagen - iCourts - Centre of Excellence for International Courts",
+        "University of Copenhagen - iCourts - Centre of Excellence for International Courts"
+      ],
+      "pages": 27,
+      "posted": "06 Oct 2020",
+      "snippet": "the popular claim that PNR analysis in and of itself entails the risk of algorithmic discrimination of certain groups, which is often associated with AI-driven / Moreover, it provides useful insights into the specific legal safeguards vis-à-vis automated profiling through human review.",
+      "downloads": 217
+    },
+    {
+      "abstractId": "3692792",
+      "title": ": The Impact of Automation on the Discretionary Power of Public Officers",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3692792",
+      "authors": [
+        "doaa Abu Elyounes"
+      ],
+      "affiliations": [
+        "Harvard Law School, Berkman Klein Center for Internet & Society at Harvard University"
+      ],
+      "pages": 59,
+      "posted": "22 Sep 2020",
+      "snippet": "The goal of this paper is to unpack the “human in the loop” requirement in the process of automation. / The discretion is also more meaningful, as it is clearer what the role of the human in the loop is.",
+      "downloads": 393
+    },
+    {
+      "abstractId": "3531711",
+      "title": "Artificial Intelligence in Finance: Putting the Human in the Loop",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3531711",
+      "authors": [
+        "Dirk A. Zetzsche",
+        "Douglas W. Arner",
+        "Ross P. Buckley",
+        "Brian Tang"
+      ],
+      "affiliations": [
+        "Universite du Luxembourg - Faculty of Law, Economics and Finance",
+        "The University of Hong Kong",
+        "University of New South Wales (UNSW) - UNSW Law & Justice",
+        "The University of Hong Kong - Faculty of Law"
+      ],
+      "pages": 50,
+      "posted": "03 Mar 2020",
+      "snippet": ": the idea of “putting the human in the loop” in order in particular to address “black box” issues. / , by putting a human in the loop through regulatory responsibility, augmented in some cases with AI review panels. / fintech, regtech, artificial intelligence, human in the loop, financial regulation",
+      "downloads": 4456
+    },
+    {
+      "abstractId": "3476399",
+      "title": "Artificial Intelligence's Societal Impacts, Governance, and Ethics",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3476399",
+      "authors": [
+        "Edward (Ted) A. Parson",
+        "Alona Fyshe",
+        "Dan Lizotte"
+      ],
+      "affiliations": [
+        "University of California, Los Angeles (UCLA) - School of Law",
+        "University of Alberta",
+        "University of Western Ontario"
+      ],
+      "pages": 13,
+      "posted": "29 Oct 2019",
+      "snippet": "The workgroups that emerged from this process examined a wide range of questions: embedded values in automated mobility systems; the concept of meaningful / human control in complex human-machine decision systems; the prospect of AI systems replacing policy analysis in government decision-making; how AI challenges / artificial Intelligence, technology assessment, AI and society, 2019 summer institute, medium-term impacts",
+      "downloads": 290
+    },
+    {
+      "abstractId": "3314680",
+      "title": "Should Robots Prosecute and Defend?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3314680",
+      "authors": [
+        "Stephen E. Henderson"
+      ],
+      "affiliations": [
+        "University of Oklahoma - College of Law"
+      ],
+      "pages": 19,
+      "posted": "28 Jan 2019",
+      "snippet": "is at least as smart as a human being in every area of thought—there may be classes of decisions for which it is intrinsically important to retain a human / in the loop. / artificial intelligence, automation, criminal justice, adjudication, prosecution, defense",
+      "downloads": 148
+    },
+    {
+      "abstractId": "3298719",
+      "title": "The EU Code of Conduct on Hate Speech, Related Initiatives and Beyond",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3298719",
+      "authors": [
+        "Teresa Quintel",
+        "Carsten Ullrich"
+      ],
+      "affiliations": [
+        "European Centre on Privacy and Cybersecurity",
+        "Universite du Luxembourg, Faculty of Law, Economics and Finance"
+      ],
+      "pages": 21,
+      "posted": "15 Dec 2018",
+      "snippet": "Although the use of algorithms to monitor content online still happens based on the “human-in-the-loop principle”, the diligence and efficiency with which",
+      "downloads": 787
+    },
+    {
+      "abstractId": "3217839",
+      "title": "Fair Use by Design",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3217839",
+      "authors": [
+        "Niva Elkin-Koren"
+      ],
+      "affiliations": [],
+      "pages": 19,
+      "posted": "08 Aug 2018",
+      "snippet": "The system will flag instances where fair use is highly probable, and may transfer inconclusive cases to human review, or subsequently to courts. / fair use, algorithmic, by design, code as law, copyright, user rights, artificial intelligence, machine learning",
+      "downloads": 677
+    },
+    {
+      "abstractId": "3006230",
+      "title": "Fully Autonomous Weapons Systems and the Principles of International Humanitarian Law",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3006230",
+      "authors": [
+        "Mateusz Piątkowski"
+      ],
+      "affiliations": [
+        "University of Lodz, Faculty of Law and Administration"
+      ],
+      "pages": 19,
+      "posted": "01 Aug 2017",
+      "snippet": "Part II will present historical experiences arsing from the existence of automation in context of maritime warfare. / Finally, the paper will present the emerging idea of meaningful human control as a contrary response to the 'dehumanization' of autonomous weapons.",
+      "downloads": 487
+    },
+    {
+      "abstractId": "2978359",
+      "title": "Debating Autonomous Weapon Systems, Their Ethics, and Their Regulation Under International Law",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2978359",
+      "authors": [
+        "Kenneth Anderson",
+        "Matthew C. Waxman"
+      ],
+      "affiliations": [
+        "American University - Washington College of Law",
+        "Columbia University - Law School"
+      ],
+      "pages": 22,
+      "posted": "20 Jun 2017",
+      "snippet": "autonomous weapon systems, AWS, robotic weapons, Killer Robot, law of armed conflict, international humanitarian law, IHL, targeting, meaningful human / control, technology, regulation, emerging technologies, robotics, artificial intelligence, AI",
+      "downloads": 2761
+    },
+    {
+      "abstractId": "2927702",
+      "title": "Toward Meaningful Human Control of Autonomous Weapons Systems Through Function Allocation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2927702",
+      "authors": [
+        "Marc Canellas",
+        "Rachel Haga"
+      ],
+      "affiliations": [
+        "Georgia Institute of Technology, School of Aerospace Engineering, Cognitive Engineering Center"
+      ],
+      "pages": 7,
+      "posted": "15 Mar 2017",
+      "snippet": "themes during the first two United Nations Meeting of Experts on autonomous weapons systems (AWS) in 2014 and 2015 was the requirement that there be meaningful / human control (MHC) of AWS. / autonomous weapon systems, meaningful human control, cognitive engineering, function allocation, human-automation interaction, military computing, law,",
+      "downloads": 461
+    },
+    {
+      "abstractId": "2927663",
+      "title": "Lost in Translation: Building a Common Language for Regulating Autonomous Weapons",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2927663",
+      "authors": [
+        "Marc Canellas",
+        "Rachel Haga"
+      ],
+      "affiliations": [
+        "Georgia Institute of Technology, School of Aerospace Engineering, Cognitive Engineering Center"
+      ],
+      "pages": 14,
+      "posted": "15 Mar 2017",
+      "snippet": "Use the requirements for effective function allocation to develop standards for human-AWS interaction and meaningful human control. (2) What amount or / Use function allocation’s models and metrics to evaluate human-AWS interaction and enforce meaningful human control standards. (3) What would an accountability / autonomous weapons systems, cognitive engineering, meaningful human control, function allocation, human-automation interaction, technical regulations and",
+      "downloads": 44
+    },
+    {
+      "abstractId": "2758160",
+      "title": "Right to a Human in the Loop: Political Constructions of Computer Automation & Personhood from Data Banks to Algorithms",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2758160",
+      "authors": [
+        "Meg Leta Jones"
+      ],
+      "affiliations": [
+        "Georgetown University - Communication, Culture, and Technology Program"
+      ],
+      "pages": 42,
+      "posted": "04 Apr 2016",
+      "snippet": "which they emerged, the article uncovers and examines two different legal constructions of automated data processing, one that has furnished a right to a human / in the loop that is intended to protect the dignity of the data subject and the other that promotes and fosters the fully automated to establish and celebrate / technology policy, privacy, algorithms, comparative history, data protection, information technology, computing, automation",
+      "downloads": 765
+    },
+    {
+      "abstractId": "2757236",
+      "title": "Moral Crumple Zones: Cautionary Tales in Human-Robot Interaction (pre-print)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2757236",
+      "authors": [
+        "Madeleine Clare Elish"
+      ],
+      "affiliations": [
+        "Google Inc."
+      ],
+      "pages": 29,
+      "posted": "03 Apr 2016",
+      "snippet": "As debates about the policy and ethical implications of AI systems grow, it will be increasingly important to accurately locate who is responsible when / HRI, ethics, driverless cars, human factors, automation, autonomy, human in the loop, HCI,autonomous vehicles, responsibility, machine learning, human / factors, accidents, social perceptions of technology, self-driving cars, robots, human-in-the-loop, human-robot interaction",
+      "downloads": 9458
+    },
+    {
+      "abstractId": "2754995",
+      "title": "Defining the Emerging Notion of ‘Meaningful Human Control’ in Autonomous Weapon Systems (AWS) 2016",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2754995",
+      "authors": [
+        "Thompson Chengeta"
+      ],
+      "affiliations": [
+        "Harvard Law School"
+      ],
+      "pages": 50,
+      "posted": "27 Mar 2016",
+      "snippet": "The emerging notion of ‘Meaningful Human Control’ (MHC) was suggested by NGO Article 36 as a possible solution to the challenges that are posed by Autonomous / With the invention of technology, there has been considerable automation of control that was previously exercised by humans. / Autonomous Weapon Systems, Killer robots, meaningful human control",
+      "downloads": 421
+    },
+    {
+      "abstractId": "2358693",
+      "title": "Regulation by Software",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2358693",
+      "authors": [
+        "James Grimmelmann"
+      ],
+      "affiliations": [
+        "Cornell Law School"
+      ],
+      "pages": 40,
+      "posted": "24 Nov 2013",
+      "snippet": "In Code, he postulates four such modalities: law, social norms, markets, and physical architecture. / Hackers can turn its plasticity against it, and its automated operation means that unintended consequences are shielded from human review. / software, regulation, regulation by software, code is law",
+      "downloads": 431
+    }
+  ]
+}

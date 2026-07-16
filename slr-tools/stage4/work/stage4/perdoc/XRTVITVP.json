@@ -1,0 +1,65 @@
+{
+  "item_key": "XRTVITVP",
+  "citation": "Zhou 2026",
+  "evidence_type": [
+    "framework-model",
+    "system-tool",
+    "empirical",
+    "controlled-experiment"
+  ],
+  "problem_statement": "As LLMs automate long-horizon vibe-coding tasks, a supervision gap emerges: non-expert users cannot precisely specify their intent or reliably verify complex AI-generated outputs, making them weak supervisors of strong executor models.",
+  "magnitude_evidence": "\"Quantitative research shows that collaborating with code agents unexpectedly increases the task-completion time for 19% (Becker et al., 2025).\"",
+  "risk_types": [
+    "misalignment",
+    "specification-gap",
+    "verification-gap",
+    "underspecification",
+    "ambiguity-amplification",
+    "preference-bias-amplification",
+    "quality"
+  ],
+  "insufficiency_evidence": "\"existing methods lack a pre-execution interaction layer ... They fail to help users elicit and structure their intent before the model acts\"; AI critique and debate \"largely rely on post-hoc evaluation. This is inefficient for long-horizon generation\"",
+  "solution_mechanisms": [
+    "recursive intent decomposition into a requirement tree",
+    "node-level low-burden feedback (selection/ranking)",
+    "closed-form questions to reduce cognitive load",
+    "cumulative preference propagation/accumulation",
+    "adaptive DontCare/DontKnow handling and clarification cycles",
+    "pre-execution interactive requirement elicitation agent",
+    "RL optimization from online weak-supervisor feedback",
+    "user reward + progressive reward + outcome reward",
+    "sandwich-protocol alignment evaluation"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "task-decomposition",
+    "recursive-amplification",
+    "preference-propagation",
+    "intent-elicitation",
+    "closed-form-feedback",
+    "spec-driven",
+    "clarification",
+    "escalation",
+    "rl-from-feedback",
+    "weak-to-strong",
+    "llm-as-judge"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-execution",
+    "requirement-elicitation"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Scalable Interactive Oversight",
+    "specification gap",
+    "verification gap",
+    "ambiguity amplification",
+    "requirement tree",
+    "progressive reward"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Table/figure regions are OCR-garbled (Tables 1-3, Figures 2-9) but body text and key claims are legible; requirement-level oversight only, code-level supervision left to future work.",
+  "_truncated": false
+}

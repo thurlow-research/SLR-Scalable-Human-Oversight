@@ -1,0 +1,62 @@
+{
+  "item_key": "TJH7QFAX",
+  "citation": "Borg 2026",
+  "evidence_type": [
+    "empirical",
+    "controlled-experiment",
+    "benchmark",
+    "dataset"
+  ],
+  "problem_statement": "As AI coding agents increasingly edit shared codebases, organizations need a way to know where AI interventions are lower-risk versus where they require additional human oversight; the paper investigates whether code quality (CodeHealth) predicts how reliably LLMs can safely refactor code.",
+  "magnitude_evidence": "About 80% of developers already use AI tools (Stack Overflow 2025); Gartner predicts growth from 14% in early 2024 to 90% by 2028; less than 10% of organizations methodically track technical debt; developers waste up to 42% of their time due to poor code quality (Stripe 2018)",
+  "risk_types": [
+    "quality",
+    "maintainability",
+    "hallucination",
+    "behavior-breaking refactoring",
+    "technical-debt",
+    "expensive rework"
+  ],
+  "insufficiency_evidence": "Medium-sized LLMs break test suites at high rates on Unhealthy code (e.g., Gemma passes only 40.58% Unhealthy); Claude's statements about 'zero functionality changes' are overconfident \u2013 'sometimes the agent indeed breaks behavior'; PPL fails as a file-level AI-friendliness metric (no meaningful association with CH)",
+  "solution_mechanisms": [
+    "CodeHealth as risk-routing signal for AI deployment",
+    "CH-aware deployment policies",
+    "high CH as soft gate for AI deployment",
+    "focus early AI on Healthy code",
+    "raise CH before scaling LLM refactoring",
+    "expect more human oversight on low-CH code",
+    "decision-tree/logistic-regression prediction of break rate from CH",
+    "code-quality agent or CH tool in agent toolbox"
+  ],
+  "mechanism_keywords": [
+    "risk-routing",
+    "soft-gate",
+    "code-quality-metric",
+    "maintainability",
+    "hitl",
+    "guardrail",
+    "deployment-policy",
+    "refactoring",
+    "predictive-signal",
+    "policy-as-code"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-commit",
+    "code-review",
+    "deployment-decision"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "AI-friendly code",
+    "AI-friendliness",
+    "CodeHealth",
+    "AI-Friendly Code Design",
+    "atoms of confusion",
+    "break rate"
+  ],
+  "governance_refs": [],
+  "scope_fit": "solution",
+  "notes": null,
+  "_truncated": false
+}

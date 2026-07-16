@@ -1,0 +1,298 @@
+[2026-05-25 21:28:28] === Stage 1 Tag + Overlap Run ===
+[2026-05-25 21:28:28] Mode: APPLY (writes tags)
+[2026-05-25 21:28:28] Scanning all collections in library...
+[2026-05-25 21:28:31]   Found 201 collections total
+[2026-05-25 21:28:31] Superseded collections found: 6
+[2026-05-25 21:28:31]   VKXVUJ3M  04-Superseded
+[2026-05-25 21:28:31]   W8DVC5IP  04-Superseded
+[2026-05-25 21:28:31]   FS9JZXTM  04-Superseded
+[2026-05-25 21:28:31]   N9CUQHGV  04-Superseded
+[2026-05-25 21:28:31]   JFBM4V9H  04-Superseded
+[2026-05-25 21:28:31]   GNH698CP  04-Superseded
+[2026-05-25 21:28:31] 
+Resolving 02-Screening child buckets per source...
+[2026-05-25 21:28:31]   IEEE Xplore (ieee): 02-Maybe=MADSB4LC, 01-Keep=RP3EIYC7, 03-Discard=HQG7W2WQ
+[2026-05-25 21:28:31]     + 00-Queue=NBPY27EG
+[2026-05-25 21:28:31]   SCOPUS (scopus): 03-Discard=3Z8GV954, 02-Maybe=8WKIYV69, 01-Keep=CZQJI2GN
+[2026-05-25 21:28:31]     + 00-Queue=TIAEWDST
+[2026-05-25 21:28:31]   Web of Science (wos): 03-Discard=2WQ769F9, 02-Maybe=RSC2IQ8J, 01-Keep=93S4AYHB
+[2026-05-25 21:28:31]     + 00-Queue=ETKLEWCS
+[2026-05-25 21:28:31]   arXiv (arxiv): 03-Discard=NX5XJ7AY, 02-Maybe=YN7Z55HK, 01-Keep=DKHBFB45
+[2026-05-25 21:28:31]     + 00-Queue=F642UI8H
+[2026-05-25 21:28:31]   ACM (acm): 03-Discard=VKU6I8PB, 02-Maybe=3NC6VDQJ, 01-Keep=K5QW2C8B
+[2026-05-25 21:28:31]     + 00-Queue=I2BECJXE
+[2026-05-25 21:28:31]   Practitioner Network (practitioner): 03-Discard=7B8TP5TF, 02-Maybe=X4N8EYJD, 01-Keep=5XM4VKNG
+[2026-05-25 21:28:31]     + 00-Queue=XRHIYLVY
+[2026-05-25 21:28:31]   Coursework (coursework): 03-Discard=PL69BHRR, 02-Maybe=S2EMZ2NE, 01-Keep=WFX59PN6
+[2026-05-25 21:28:31]     + 00-Queue=EGWTNIWW
+[2026-05-25 21:28:31]   Hancheng Cao (cao): 03-Discard=HTMU2IAH, 02-Maybe=RIVDUK6E, 01-Keep=FSSPQ3PX
+[2026-05-25 21:28:31]     + 00-Queue=QCGLSTIW
+[2026-05-25 21:28:31]   Linda Naimi Book - References (naimi-references): 03-Discard=VU56STHT, 02-Maybe=CWIVJ7RT, 01-Keep=EN2F8W4D
+[2026-05-25 21:28:31]     + 00-Queue=K55DCPPI
+[2026-05-25 21:28:31]   Linda Naimi Book - Chapters (naimi-chapters): 03-Discard=DRFDM4R6, 02-Maybe=WW4CN8GT, 01-Keep=C2W3ECMZ
+[2026-05-25 21:28:31]     + 00-Queue=TXPQMPMM
+[2026-05-25 21:28:31]   SSRN (ssrn): 03-Discard=S7V4VUDB, 02-Maybe=3QZJEDKF, 01-Keep=CP5FPT68
+[2026-05-25 21:28:31]     + 00-Queue=DXPF25DB
+[2026-05-25 21:28:31] Fetching IEEE Xplore / 02-Maybe...
+[2026-05-25 21:28:31]   7 items
+[2026-05-25 21:28:32] Fetching IEEE Xplore / 01-Keep...
+[2026-05-25 21:28:39]   234 items
+[2026-05-25 21:28:39] Fetching IEEE Xplore / 03-Discard...
+[2026-05-25 21:29:00]   678 items
+[2026-05-25 21:29:00] Fetching IEEE Xplore / 00-Queue...
+[2026-05-25 21:29:02]   24 items
+[2026-05-25 21:29:02] Fetching SCOPUS / 03-Discard...
+[2026-05-25 21:29:17]   432 items
+[2026-05-25 21:29:18] Fetching SCOPUS / 02-Maybe...
+[2026-05-25 21:29:18]   1 items
+[2026-05-25 21:29:18] Fetching SCOPUS / 01-Keep...
+[2026-05-25 21:29:19]   24 items
+[2026-05-25 21:29:19] Fetching SCOPUS / 00-Queue...
+[2026-05-25 21:29:24]   77 items
+[2026-05-25 21:29:24] Fetching Web of Science / 03-Discard...
+[2026-05-25 21:29:26]   76 items
+[2026-05-25 21:29:26] Fetching Web of Science / 02-Maybe...
+[2026-05-25 21:29:26]   1 items
+[2026-05-25 21:29:27] Fetching Web of Science / 01-Keep...
+[2026-05-25 21:29:28]   21 items
+[2026-05-25 21:29:28] Fetching Web of Science / 00-Queue...
+[2026-05-25 21:29:38]   241 items
+[2026-05-25 21:29:39] Fetching arXiv / 03-Discard...
+[2026-05-25 21:29:40]   23 items
+[2026-05-25 21:29:40] Fetching arXiv / 02-Maybe...
+[2026-05-25 21:29:40]   1 items
+[2026-05-25 21:29:40] Fetching arXiv / 01-Keep...
+[2026-05-25 21:29:41]   5 items
+[2026-05-25 21:29:41] Fetching arXiv / 00-Queue...
+[2026-05-25 21:29:56]   365 items
+[2026-05-25 21:29:56] Fetching ACM / 03-Discard...
+[2026-05-25 21:30:01]   152 items
+[2026-05-25 21:30:01] Fetching ACM / 02-Maybe...
+[2026-05-25 21:30:01]   7 items
+[2026-05-25 21:30:02] Fetching ACM / 01-Keep...
+[2026-05-25 21:30:03]   25 items
+[2026-05-25 21:30:03] Fetching ACM / 00-Queue...
+[2026-05-25 21:30:13]   180 items
+[2026-05-25 21:30:13] Fetching Practitioner Network / 03-Discard...
+[2026-05-25 21:30:13]   0 items
+[2026-05-25 21:30:13] Fetching Practitioner Network / 02-Maybe...
+[2026-05-25 21:30:14]   0 items
+[2026-05-25 21:30:14] Fetching Practitioner Network / 01-Keep...
+[2026-05-25 21:30:14]   2 items
+[2026-05-25 21:30:15] Fetching Practitioner Network / 00-Queue...
+[2026-05-25 21:30:16]   6 items
+[2026-05-25 21:30:16] Fetching Coursework / 03-Discard...
+[2026-05-25 21:30:18]   55 items
+[2026-05-25 21:30:19] Fetching Coursework / 02-Maybe...
+[2026-05-25 21:30:19]   1 items
+[2026-05-25 21:30:19] Fetching Coursework / 01-Keep...
+[2026-05-25 21:30:21]   42 items
+[2026-05-25 21:30:21] Fetching Coursework / 00-Queue...
+[2026-05-25 21:30:22]   0 items
+[2026-05-25 21:30:22] Fetching Hancheng Cao / 03-Discard...
+[2026-05-25 21:30:23]   32 items
+[2026-05-25 21:30:23] Fetching Hancheng Cao / 02-Maybe...
+[2026-05-25 21:30:24]   8 items
+[2026-05-25 21:30:24] Fetching Hancheng Cao / 01-Keep...
+[2026-05-25 21:30:25]   9 items
+[2026-05-25 21:30:25] Fetching Hancheng Cao / 00-Queue...
+[2026-05-25 21:30:25]   0 items
+[2026-05-25 21:30:26] Fetching Linda Naimi Book - References / 03-Discard...
+[2026-05-25 21:30:26]   4 items
+[2026-05-25 21:30:27] Fetching Linda Naimi Book - References / 02-Maybe...
+[2026-05-25 21:30:27]   5 items
+[2026-05-25 21:30:27] Fetching Linda Naimi Book - References / 01-Keep...
+[2026-05-25 21:30:28]   3 items
+[2026-05-25 21:30:28] Fetching Linda Naimi Book - References / 00-Queue...
+[2026-05-25 21:30:30]   67 items
+[2026-05-25 21:30:30] Fetching Linda Naimi Book - Chapters / 03-Discard...
+[2026-05-25 21:30:31]   17 items
+[2026-05-25 21:30:31] Fetching Linda Naimi Book - Chapters / 02-Maybe...
+[2026-05-25 21:30:32]   3 items
+[2026-05-25 21:30:32] Fetching Linda Naimi Book - Chapters / 01-Keep...
+[2026-05-25 21:30:32]   6 items
+[2026-05-25 21:30:33] Fetching Linda Naimi Book - Chapters / 00-Queue...
+[2026-05-25 21:30:33]   0 items
+[2026-05-25 21:30:33] Fetching SSRN / 03-Discard...
+[2026-05-25 21:30:33]   0 items
+[2026-05-25 21:30:34] Fetching SSRN / 02-Maybe...
+[2026-05-25 21:30:34]   0 items
+[2026-05-25 21:30:34] Fetching SSRN / 01-Keep...
+[2026-05-25 21:30:34]   0 items
+[2026-05-25 21:30:35] Fetching SSRN / 00-Queue...
+[2026-05-25 21:32:35]   3785 items
+[2026-05-25 21:32:35] 
+Checking superseded membership...
+[2026-05-25 21:32:35] Fetching superseded collection 04-Superseded...
+[2026-05-25 21:32:36]   0 items
+[2026-05-25 21:32:36] Fetching superseded collection 04-Superseded...
+[2026-05-25 21:32:37]   36 items
+[2026-05-25 21:32:38] Fetching superseded collection 04-Superseded...
+[2026-05-25 21:32:38]   1 items
+[2026-05-25 21:32:38] Fetching superseded collection 04-Superseded...
+[2026-05-25 21:32:39]   11 items
+[2026-05-25 21:32:39] Fetching superseded collection 04-Superseded...
+[2026-05-25 21:32:41]   13 items
+[2026-05-25 21:32:41] Fetching superseded collection 04-Superseded...
+[2026-05-25 21:32:41]   4 items
+[2026-05-25 21:32:42]   Items linked to superseded collections: 50
+[2026-05-25 21:32:42] 
+Total tracked items: 6382
+[2026-05-25 21:32:42] 
+Generating overlap report: overlap_report.xlsx
+[2026-05-25 21:32:42]   Wrote overlap_report.xlsx
+[2026-05-25 21:32:42]   Cross-DB overlaps: 202
+[2026-05-25 21:32:42]   Superseded items: 50
+[2026-05-25 21:32:42]   All overlaps (any 2+ memberships): 214
+[2026-05-25 21:32:42] 
+Tag plan written to tag_plan.csv
+[2026-05-25 21:32:42]   Items needing new tags: 6352 of 6352
+[2026-05-25 21:32:42]   Total new tags to add:  8326
+[2026-05-25 21:32:42] 
+Sample of planned changes (first 10 items with changes):
+[2026-05-25 21:32:42]   KDVYPBWW: + ['s1:human:maybe', 'source:ieee']
+[2026-05-25 21:32:42]   Y4F6UMNC: + ['s1:human:maybe', 'source:ieee']
+[2026-05-25 21:32:42]   HN2SE9PL: + ['s1:human:maybe', 'source:ieee']
+[2026-05-25 21:32:42]   2VJTDVL3: + ['s1:human:maybe', 'source:ieee']
+[2026-05-25 21:32:42]   FQZWY343: + ['s1:human:maybe', 'source:ieee']
+[2026-05-25 21:32:42]   TN2MR8S8: + ['s1:human:maybe', 'source:ieee']
+[2026-05-25 21:32:42]   5GJUE79U: + ['s1:human:maybe', 'source:ieee']
+[2026-05-25 21:32:42]   FHUGCNKY: + ['s1:human:keep', 'source:arxiv', 'source:coursework', 'source:ieee']
+[2026-05-25 21:32:42]   VG6CIDQW: + ['s1:human:keep', 'source:arxiv', 'source:ieee', 'source:scopus']
+[2026-05-25 21:32:42]   C4DWC33F: + ['s1:human:keep', 'source:ieee']
+[2026-05-25 21:32:42] 
+--apply specified. Writing tags via read/write API key...
+[2026-05-25 21:32:42] 
+Applying tags to 6352 items...
+[2026-05-25 21:33:11]   [50/6352] applied (success=50, fail=0)
+[2026-05-25 21:33:40]   [100/6352] applied (success=100, fail=0)
+[2026-05-25 21:34:09]   [150/6352] applied (success=150, fail=0)
+[2026-05-25 21:34:38]   [200/6352] applied (success=200, fail=0)
+[2026-05-25 21:35:08]   [250/6352] applied (success=250, fail=0)
+[2026-05-25 21:35:38]   [300/6352] applied (success=300, fail=0)
+[2026-05-25 21:36:06]   [350/6352] applied (success=350, fail=0)
+[2026-05-25 21:36:36]   [400/6352] applied (success=400, fail=0)
+[2026-05-25 21:37:05]   [450/6352] applied (success=450, fail=0)
+[2026-05-25 21:37:35]   [500/6352] applied (success=500, fail=0)
+[2026-05-25 21:38:04]   [550/6352] applied (success=550, fail=0)
+[2026-05-25 21:38:33]   [600/6352] applied (success=600, fail=0)
+[2026-05-25 21:39:03]   [650/6352] applied (success=650, fail=0)
+[2026-05-25 21:39:32]   [700/6352] applied (success=700, fail=0)
+[2026-05-25 21:40:01]   [750/6352] applied (success=750, fail=0)
+[2026-05-25 21:40:31]   [800/6352] applied (success=800, fail=0)
+[2026-05-25 21:41:00]   [850/6352] applied (success=850, fail=0)
+[2026-05-25 21:41:30]   [900/6352] applied (success=900, fail=0)
+[2026-05-25 21:41:59]   [950/6352] applied (success=950, fail=0)
+[2026-05-25 21:42:29]   [1000/6352] applied (success=1000, fail=0)
+[2026-05-25 21:42:58]   [1050/6352] applied (success=1050, fail=0)
+[2026-05-25 21:43:28]   [1100/6352] applied (success=1100, fail=0)
+[2026-05-25 21:43:57]   [1150/6352] applied (success=1150, fail=0)
+[2026-05-25 21:44:26]   [1200/6352] applied (success=1200, fail=0)
+[2026-05-25 21:44:56]   [1250/6352] applied (success=1250, fail=0)
+[2026-05-25 21:45:25]   [1300/6352] applied (success=1300, fail=0)
+[2026-05-25 21:45:55]   [1350/6352] applied (success=1350, fail=0)
+[2026-05-25 21:46:24]   [1400/6352] applied (success=1400, fail=0)
+[2026-05-25 21:46:53]   [1450/6352] applied (success=1450, fail=0)
+[2026-05-25 21:47:22]   [1500/6352] applied (success=1500, fail=0)
+[2026-05-25 21:47:51]   [1550/6352] applied (success=1550, fail=0)
+[2026-05-25 21:48:19]   [1600/6352] applied (success=1600, fail=0)
+[2026-05-25 21:48:48]   [1650/6352] applied (success=1650, fail=0)
+[2026-05-25 21:49:17]   [1700/6352] applied (success=1700, fail=0)
+[2026-05-25 21:49:45]   [1750/6352] applied (success=1750, fail=0)
+[2026-05-25 21:50:14]   [1800/6352] applied (success=1800, fail=0)
+[2026-05-25 21:50:42]   [1850/6352] applied (success=1850, fail=0)
+[2026-05-25 21:51:10]   [1900/6352] applied (success=1900, fail=0)
+[2026-05-25 21:51:39]   [1950/6352] applied (success=1950, fail=0)
+[2026-05-25 21:52:07]   [2000/6352] applied (success=2000, fail=0)
+[2026-05-25 21:52:36]   [2050/6352] applied (success=2050, fail=0)
+[2026-05-25 21:53:05]   [2100/6352] applied (success=2100, fail=0)
+[2026-05-25 21:53:34]   [2150/6352] applied (success=2150, fail=0)
+[2026-05-25 21:54:02]   [2200/6352] applied (success=2200, fail=0)
+[2026-05-25 21:54:30]   [2250/6352] applied (success=2250, fail=0)
+[2026-05-25 21:54:59]   [2300/6352] applied (success=2300, fail=0)
+[2026-05-25 21:55:28]   [2350/6352] applied (success=2350, fail=0)
+[2026-05-25 21:55:58]   [2400/6352] applied (success=2400, fail=0)
+[2026-05-25 21:56:30]   [2450/6352] applied (success=2450, fail=0)
+[2026-05-25 21:56:58]   [2500/6352] applied (success=2500, fail=0)
+[2026-05-25 21:57:27]   [2550/6352] applied (success=2550, fail=0)
+[2026-05-25 21:57:55]   [2600/6352] applied (success=2600, fail=0)
+[2026-05-25 21:58:24]   [2650/6352] applied (success=2650, fail=0)
+[2026-05-25 21:58:52]   [2700/6352] applied (success=2700, fail=0)
+[2026-05-25 21:59:20]   [2750/6352] applied (success=2750, fail=0)
+[2026-05-25 21:59:48]   [2800/6352] applied (success=2800, fail=0)
+[2026-05-25 22:00:17]   [2850/6352] applied (success=2850, fail=0)
+[2026-05-25 22:00:45]   [2900/6352] applied (success=2900, fail=0)
+[2026-05-25 22:01:14]   [2950/6352] applied (success=2950, fail=0)
+[2026-05-25 22:01:42]   [3000/6352] applied (success=3000, fail=0)
+[2026-05-25 22:02:10]   [3050/6352] applied (success=3050, fail=0)
+[2026-05-25 22:02:38]   [3100/6352] applied (success=3100, fail=0)
+[2026-05-25 22:03:06]   [3150/6352] applied (success=3150, fail=0)
+[2026-05-25 22:03:35]   [3200/6352] applied (success=3200, fail=0)
+[2026-05-25 22:04:03]   [3250/6352] applied (success=3250, fail=0)
+[2026-05-25 22:04:32]   [3300/6352] applied (success=3300, fail=0)
+[2026-05-25 22:05:00]   [3350/6352] applied (success=3350, fail=0)
+[2026-05-25 22:05:28]   [3400/6352] applied (success=3400, fail=0)
+[2026-05-25 22:05:57]   [3450/6352] applied (success=3450, fail=0)
+[2026-05-25 22:06:25]   [3500/6352] applied (success=3500, fail=0)
+[2026-05-25 22:06:54]   [3550/6352] applied (success=3550, fail=0)
+[2026-05-25 22:07:22]   [3600/6352] applied (success=3600, fail=0)
+[2026-05-25 22:07:50]   [3650/6352] applied (success=3650, fail=0)
+[2026-05-25 22:08:19]   [3700/6352] applied (success=3700, fail=0)
+[2026-05-25 22:08:47]   [3750/6352] applied (success=3750, fail=0)
+[2026-05-25 22:09:16]   [3800/6352] applied (success=3800, fail=0)
+[2026-05-25 22:09:44]   [3850/6352] applied (success=3850, fail=0)
+[2026-05-25 22:10:12]   [3900/6352] applied (success=3900, fail=0)
+[2026-05-25 22:10:41]   [3950/6352] applied (success=3950, fail=0)
+[2026-05-25 22:11:10]   [4000/6352] applied (success=4000, fail=0)
+[2026-05-25 22:11:38]   [4050/6352] applied (success=4050, fail=0)
+[2026-05-25 22:12:07]   [4100/6352] applied (success=4100, fail=0)
+[2026-05-25 22:12:35]   [4150/6352] applied (success=4150, fail=0)
+[2026-05-25 22:13:04]   [4200/6352] applied (success=4200, fail=0)
+[2026-05-25 22:13:33]   [4250/6352] applied (success=4250, fail=0)
+[2026-05-25 22:14:01]   [4300/6352] applied (success=4300, fail=0)
+[2026-05-25 22:14:29]   [4350/6352] applied (success=4350, fail=0)
+[2026-05-25 22:14:58]   [4400/6352] applied (success=4400, fail=0)
+[2026-05-25 22:15:26]   [4450/6352] applied (success=4450, fail=0)
+[2026-05-25 22:15:55]   [4500/6352] applied (success=4500, fail=0)
+[2026-05-25 22:16:24]   [4550/6352] applied (success=4550, fail=0)
+[2026-05-25 22:16:52]   [4600/6352] applied (success=4600, fail=0)
+[2026-05-25 22:17:21]   [4650/6352] applied (success=4650, fail=0)
+[2026-05-25 22:17:49]   [4700/6352] applied (success=4700, fail=0)
+[2026-05-25 22:18:18]   [4750/6352] applied (success=4750, fail=0)
+[2026-05-25 22:18:46]   [4800/6352] applied (success=4800, fail=0)
+[2026-05-25 22:19:15]   [4850/6352] applied (success=4850, fail=0)
+[2026-05-25 22:19:43]   [4900/6352] applied (success=4900, fail=0)
+[2026-05-25 22:20:12]   [4950/6352] applied (success=4950, fail=0)
+[2026-05-25 22:20:41]   [5000/6352] applied (success=5000, fail=0)
+[2026-05-25 22:21:09]   [5050/6352] applied (success=5050, fail=0)
+[2026-05-25 22:21:38]   [5100/6352] applied (success=5100, fail=0)
+[2026-05-25 22:22:06]   [5150/6352] applied (success=5150, fail=0)
+[2026-05-25 22:22:35]   [5200/6352] applied (success=5200, fail=0)
+[2026-05-25 22:23:04]   [5250/6352] applied (success=5250, fail=0)
+[2026-05-25 22:23:33]   [5300/6352] applied (success=5300, fail=0)
+[2026-05-25 22:24:02]   [5350/6352] applied (success=5350, fail=0)
+[2026-05-25 22:24:31]   [5400/6352] applied (success=5400, fail=0)
+[2026-05-25 22:24:59]   [5450/6352] applied (success=5450, fail=0)
+[2026-05-25 22:25:28]   [5500/6352] applied (success=5500, fail=0)
+[2026-05-25 22:25:57]   [5550/6352] applied (success=5550, fail=0)
+[2026-05-25 22:26:26]   [5600/6352] applied (success=5600, fail=0)
+[2026-05-25 22:26:56]   [5650/6352] applied (success=5650, fail=0)
+[2026-05-25 22:27:25]   [5700/6352] applied (success=5700, fail=0)
+[2026-05-25 22:27:54]   [5750/6352] applied (success=5750, fail=0)
+[2026-05-25 22:28:23]   [5800/6352] applied (success=5800, fail=0)
+[2026-05-25 22:28:51]   [5850/6352] applied (success=5850, fail=0)
+[2026-05-25 22:29:21]   [5900/6352] applied (success=5900, fail=0)
+[2026-05-25 22:29:49]   [5950/6352] applied (success=5950, fail=0)
+[2026-05-25 22:30:18]   [6000/6352] applied (success=6000, fail=0)
+[2026-05-25 22:30:47]   [6050/6352] applied (success=6050, fail=0)
+[2026-05-25 22:31:16]   [6100/6352] applied (success=6100, fail=0)
+[2026-05-25 22:31:44]   [6150/6352] applied (success=6150, fail=0)
+[2026-05-25 22:32:13]   [6200/6352] applied (success=6200, fail=0)
+[2026-05-25 22:32:42]   [6250/6352] applied (success=6250, fail=0)
+[2026-05-25 22:33:12]   [6300/6352] applied (success=6300, fail=0)
+[2026-05-25 22:33:40]   [6350/6352] applied (success=6350, fail=0)
+[2026-05-25 22:33:41]   [6352/6352] applied (success=6352, fail=0)
+[2026-05-25 22:33:42] 
+Apply complete. Success: 6352, Failures: 0
+[2026-05-25 22:33:42] 
+Final: 6352 items updated, 0 failures

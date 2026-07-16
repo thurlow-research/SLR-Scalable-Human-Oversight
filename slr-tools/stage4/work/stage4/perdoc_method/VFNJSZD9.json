@@ -1,0 +1,13 @@
+{
+  "item_key": "VFNJSZD9",
+  "methods": [
+    "conceptual/position",
+    "framework-model",
+    "taxonomy-development"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/framework",
+  "notes": "Argument-driven position paper proposing a vulnerability taxonomy (AVT), a CVSS-extending risk-scoring formula (ARSM), and an unimplemented reference architecture (UAST). Explicitly states UAST is 'a logical architecture, not an implemented system' and ARSM weights are 'expert judgment, not empirical validation.' The single 'worked example' is an illustrative hypothetical, not collected data; no experiment, repo-mining, benchmark, or human-subjects study is conducted.",
+  "citation": "Michel Hjazeen 2026"
+}

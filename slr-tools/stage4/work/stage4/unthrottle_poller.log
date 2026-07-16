@@ -1,0 +1,5 @@
+19:23:05 poller: waiting for OpenAlex 200 (probing every 90s, IPv4)...
+19:23:05 probe 1 -> HTTP 429
+19:24:35 probe 2 -> HTTP 429
+19:26:05 probe 3 -> HTTP 429
+19:27:35 probe 4 -> HTTP 429

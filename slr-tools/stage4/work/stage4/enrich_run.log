@@ -1,0 +1,13 @@
+2857 refs; 2104 have s2_id, 753 do not
+  enriched 400/2104
+  enriched 800/2104
+  enriched 1200/2104
+  enriched 1600/2104
+  enriched 2000/2104
+  enriched 2104/2104
+
+Wrote 2857 enriched -> /Users/scott/Library/CloudStorage/OneDrive-purdue.edu/Systemic Literature Review/slr-tools/stage4/work/stage4/core_snowball_enriched.json
+  with abstract: 1497/2857  (rest = title-only screen)
+  cocite>=5 not-in-corpus: 16  (16 w/ abstract)
+  cocite>=3 not-in-corpus: 75  (54 w/ abstract)
+  cocite>=2 not-in-corpus: 271  (197 w/ abstract)

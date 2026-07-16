@@ -1,0 +1,14 @@
+{
+  "item_key": "7SH86C2W",
+  "methods": [
+    "design-science / prototype / tool-build",
+    "case-study",
+    "qualitative-analysis",
+    "conceptual/position/framework"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science / prototype / tool-build",
+  "notes": "DSR-framed exploratory comparative evaluation: authors themselves acted as developers building the same web app three ways (vibe coding, structured prompt engineering, Shift-Up), recording prompts, time, and journal notes, then inductively coding 176 prompts. No external human participants (developers are the authors), so human_subjects=false. The comparative build resembles a multi-condition case study/demonstration rather than a controlled experiment (n=1 project, no controls, iteratively modified protocol).",
+  "citation": "Lipsanen 2026"
+}

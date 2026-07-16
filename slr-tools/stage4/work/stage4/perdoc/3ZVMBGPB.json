@@ -1,0 +1,80 @@
+{
+  "item_key": "3ZVMBGPB",
+  "citation": "Kamal\u0131 2026",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model",
+    "secondary-review"
+  ],
+  "problem_statement": "AI coding assistants increase code production velocity, expanding the volume of code requiring review and turning code review into a growing bottleneck, while current AI review support is fragmented across isolated tasks rather than the end-to-end PR workflow.",
+  "magnitude_evidence": "AI coding assistants accelerate individual coding tasks by more than 50% [13], but coordination time for integration grows faster than individual output and AI-generated contributions require more review iterations than human-written ones",
+  "risk_types": [
+    "quality",
+    "security",
+    "maintainability",
+    "hallucination",
+    "automation-bias",
+    "over-reliance",
+    "bias",
+    "privacy",
+    "toxicity",
+    "technical-debt",
+    "specification-misalignment"
+  ],
+  "insufficiency_evidence": "Kononenko et al. reported that 54% of code reviews on the Mozilla project failed to identify bugs present in approved commits [89]; Czerwonka et al. found only 15% of reviewer comments pointed to potential defects; and when AI assists review reviewers surface more low-severity issues but not additional high-severity defects [16]",
+  "solution_mechanisms": [
+    "five-stage AI-powered code review framework",
+    "specialized LLM agents with human-controlled quality gates",
+    "PR detail/issue-link generation agents",
+    "PR-issue alignment analysis agent",
+    "bug proneness risk scoring agent",
+    "change impact analysis agent",
+    "sandboxed runtime analysis agent",
+    "summary generation with claim-evidence pairs",
+    "semantic diff map with provenance anchors",
+    "reviewer recommendation tool",
+    "fix suggestion agent",
+    "toxicity and usefulness measurement agents",
+    "PR retrospective knowledge capture"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "multi-agent",
+    "orchestration",
+    "quality-gate",
+    "risk-routing",
+    "spec-alignment",
+    "provenance",
+    "diff-map",
+    "sandbox-execution",
+    "calibration",
+    "uncertainty-reporting",
+    "llm-as-judge",
+    "reviewer-recommendation",
+    "fix-suggestion",
+    "observability"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-commit",
+    "code-review",
+    "pre-merge",
+    "CI",
+    "post-review"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "agentic code review",
+    "AI-powered code review framework (five coordinated stages)",
+    "PR Augmentation",
+    "human-controlled quality gates",
+    "semantic diff map",
+    "code review process lifecycle"
+  ],
+  "governance_refs": [
+    "GDPR"
+  ],
+  "scope_fit": "both",
+  "notes": "Vision/position paper; full text truncated mid-Section 4.5 (reference list retained). Draws heavily on secondary literature for problem quantification.",
+  "_truncated": true
+}

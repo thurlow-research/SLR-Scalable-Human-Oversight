@@ -1,0 +1,13 @@
+{
+  "item_key": "DJMBHHZN",
+  "methods": [
+    "conceptual/position",
+    "framework",
+    "design-science/prototype/tool-build"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position",
+  "notes": "Research-project exhibition/vision paper describing the MOSAICO EU project's proposed framework and platform architecture (AISP protocol, agent repository, orchestrator, decision engine). Only early prototypes are mentioned ('we built early prototypes to experiment ideas') with no evaluation, data, or results reported; the four use-case validations are planned future work, not conducted.",
+  "citation": "Tisi 2025"
+}

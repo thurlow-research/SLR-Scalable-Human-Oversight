@@ -1,0 +1,68 @@
+{
+  "item_key": "T3XTXIXW",
+  "citation": "Li 2025",
+  "evidence_type": [
+    "system-tool",
+    "empirical",
+    "controlled-experiment"
+  ],
+  "problem_statement": "The document addresses whether CoT-enhanced LLM vulnerability detectors and code-auditing agents used for automated code review can reliably oversee AI-generated/upstream code, showing their reasoning chains expose exploitable weaknesses that let obfuscated malicious code bypass review.",
+  "magnitude_evidence": "Malicious code 'is frequently integrated into production systems without rigorous human review or security vetting'; CoTDeceptor 'bypasses 14 out of 15 vulnerability categories, compared to only 2 bypassed by prior methods'",
+  "risk_types": [
+    "security",
+    "supply-chain",
+    "code-poisoning",
+    "backdoor",
+    "hallucination",
+    "adversarial-evasion",
+    "reasoning-manipulation"
+  ],
+  "insufficiency_evidence": "'Manual auditing is costly, expert-dependent, and fundamentally unable to keep pace with the growing volume of code'; static analysis is 'easily evaded by minor obfuscations'; and CoT detectors show 'even the strongest LLM detectors are susceptible to reflective, multi-stage adversarial obfuscation' (e.g., Codex failed to flag the obfuscated CSRF vulnerability)",
+  "solution_mechanisms": [
+    "multi-agent obfuscation framework",
+    "CoT-enabled verifier admission control",
+    "multi-round self-consistency checking",
+    "mixture-of-experts ensemble voting",
+    "reflection-driven strategy correction",
+    "lineage-based strategy tree search",
+    "adversarial data generation for fine-tuning detectors",
+    "reasoning-aware defenses"
+  ],
+  "mechanism_keywords": [
+    "adversarial-verification",
+    "llm-as-judge",
+    "ensemble",
+    "self-consistency",
+    "hallucination-detection",
+    "reflection",
+    "reinforcement-learning",
+    "strategy-tree",
+    "thompson-sampling",
+    "transferability",
+    "data-augmentation",
+    "cot-detection",
+    "static-analysis-gate",
+    "semantic-preservation"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "pre-commit",
+    "CI",
+    "pre-publish",
+    "generation-time"
+  ],
+  "human_role": "none",
+  "key_constructs": [
+    "CoTDeceptor",
+    "CoT evading potential (\u03c6)",
+    "Clade-Level CoT Potential",
+    "lineage-based potential-guided strategy tree",
+    "CoT instability",
+    "dual-evasion",
+    "cognitive camouflage of reasoning"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Paper is primarily an offensive/attack framework; its oversight relevance is documenting failure of automated LLM code-review oversight and calling for robust/reasoning-aware auditing pipelines. Some OCR garbling in tables and code listings.",
+  "_truncated": false
+}

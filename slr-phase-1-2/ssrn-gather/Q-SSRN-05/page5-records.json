@@ -1,0 +1,895 @@
+{
+  "count": 50,
+  "total": "441",
+  "page": "5",
+  "records": [
+    {
+      "abstractId": "5947897",
+      "title": "From Text to Vision: A Mixed-Methods Study on Visual Prompt Engineering as a New Literacy in Human-AI Creative Collaboration",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5947897",
+      "authors": [
+        "NASHWA ALI"
+      ],
+      "affiliations": [
+        "University of Khorfakkan"
+      ],
+      "pages": 13,
+      "posted": "22 Dec 2025",
+      "snippet": "We conclude that VPE constitutes an essential multimodal literacy, transforming the designer into a strategic director-curator in human-AI co-creation. / Visual Prompt Engineering, Human-AI Collaboration, Creative Direction, Meaningful Human Control, Digital Literacy, Prompting",
+      "downloads": 21
+    },
+    {
+      "abstractId": "5954590",
+      "title": "Proactive Computer Aided Design: A Multi-Model Artificial Intelligence Framework for Intelligent Design Generation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5954590",
+      "authors": [
+        "Samir LAHOUAR"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 27,
+      "posted": "22 Dec 2025",
+      "snippet": "A centralized workflow manager ensures traceability and human-in-the-loop control throughout the process. / The framework establishes a foundation for next-generation AI-driven CAD systems that combine engineering rigor, automation, and interpretability to support / AI-driven Computer-Aided Design, Design Automation and Planning, Multimodal Validation (VLM-based), Proactive Multi-Stage Framework for Engineering Design",
+      "downloads": 60
+    },
+    {
+      "abstractId": "5941905",
+      "title": "Investigating Automated Change Analysis in FinTech Regulations",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5941905",
+      "authors": [
+        "Parisa Elahidoost",
+        "Hugo Villamizar",
+        "Florian Angermeir",
+        "Jonathan Streit",
+        "Daniel Mendez",
+        "Michael Unterkalmsteiner",
+        "Tony Gorschek"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 48,
+      "posted": "19 Dec 2025",
+      "snippet": "Recent advances in LLMs prompt the question of how automation can reliably assist this process.Objectives:We aim to (1) characterize the nature of regulatory / future work on human-in-the-loop compliance tooling across broader regulatory ecosystems.",
+      "downloads": 36
+    },
+    {
+      "abstractId": "5932177",
+      "title": "Anticipating Trustworthy GenAI in the Public Healthcare System: Co-Producing Human-AI Governance between Patients and GPs in the Basque Country through Living Lab Assemblages",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5932177",
+      "authors": [
+        "Igor Calzada"
+      ],
+      "affiliations": [
+        "Ikerbasque Foundation UPV/EHU"
+      ],
+      "pages": 34,
+      "posted": "19 Dec 2025",
+      "snippet": "Background: Public healthcare systems face complex challenges in integrating Generative AI (GenAI) while ensuring trust, accountability, and equity. / Aim: This chapter examines how Human-AI Governance (HAIG) frameworks can support the democratic and anticipatory integration of GenAI into the Basque public / Human-centric AI, Human-in-the-loop, GenAI, Human-AI Governance (HAIG), Trustworthy AI, Anticipatory Governance, Healthcare, Patients, GPs, Action Research",
+      "downloads": 77
+    },
+    {
+      "abstractId": "5742806",
+      "title": "Autonomy, Authority, Asymmetry: Who Really Controls the Future of the Autonomous Weapons?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5742806",
+      "authors": [
+        "Meghna Jain",
+        "Arundhati Kuradkar"
+      ],
+      "affiliations": [
+        "Independent",
+        "Maharashtra National Law University Mumbai"
+      ],
+      "pages": 14,
+      "posted": "18 Dec 2025",
+      "snippet": "These systems, which leverage rapid advances in Artificial Intelligence (AI) and robotics, threaten to fundamentally reshape the character of warfare, / Central to these protracted debates is the ambiguous concept of \"meaningful human control\" (MHC), which has been proposed as the essential benchmark for",
+      "downloads": 23
+    },
+    {
+      "abstractId": "5726242",
+      "title": "Ethical AI in Fraud Surveillance: Balancing Automation, Privacy, and Consumer Trust in Financial Institutions",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5726242",
+      "authors": [
+        "Oluwagboyega Emmanuel"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 8,
+      "posted": "17 Dec 2025",
+      "snippet": "Financial institutions increasingly rely on artificial intelligence (AI) to detect and prevent fraud at scale. / proportionality, transparency, accountability, and contestability, and evaluate how specific design choices feature selection, model explainability, human-in-the-loop",
+      "downloads": 19
+    },
+    {
+      "abstractId": "5723382",
+      "title": "Artificial Intelligence, Unemployment and Mental Health: A Legal Framework for Brazilian Labor and Data Protection Law",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5723382",
+      "authors": [
+        "Delfino Lagrotta Advocacia"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 5,
+      "posted": "16 Dec 2025",
+      "snippet": "This article examines, from a constitutional and statutory perspective, the tensions raised by the diffusion of artificial intelligence (AI) in employment / It concludes that sound algorithmic governance-supported by prior impact assessments and meaningful human review-is a legal condition for AI to promote",
+      "downloads": 23
+    },
+    {
+      "abstractId": "5860785",
+      "title": "Toward a Clinically Integrated AI Framework for Personalized Spine Care",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5860785",
+      "authors": [
+        "Alemu Sisay Nigru",
+        "Sergio Benini",
+        "Yao Wang",
+        "Federico Maffezzoni",
+        "Matteo Bonetti",
+        "Michele Frigerio",
+        "Graziella Bragaglio",
+        "Serena Miglio",
+        "R. Leonardi"
+      ],
+      "affiliations": [
+        "University of Brescia",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "University of Brescia - Department of Information Engineering"
+      ],
+      "pages": 24,
+      "posted": "16 Dec 2025",
+      "snippet": "Results:To explore the feasibility of integrating patient-reported outcome measures (PROMs) with AI-assisted imaging assessment for personalized / Conclusions:The proposed framework outlines a clear pathway toward a comprehensive, multimodal AI decision-support ecosystem for spine care. / Spine AI, AI framework, human-in-the-loop, explainable AI, clinical decision support, FUTURE-AI, AI in healthcare",
+      "downloads": 66
+    },
+    {
+      "abstractId": "5722482",
+      "title": "Event-Driven Demand Model: Semantic Mapping of Non-Transactional Intent Signals to Product SKUs in Proactive E-Commerce Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5722482",
+      "authors": [
+        "Illia Kostenko"
+      ],
+      "affiliations": [],
+      "pages": 21,
+      "posted": "16 Dec 2025",
+      "snippet": "Theoretically, the model reframes procurement as symbiotic human-AI coordination, extending event-driven architectures by emphasizing external signal fusion / Event-Driven Demand Model, Semantic Mapping, Proactive E-Commerce, Intent Signals, Machine Learning Fusion, Human-In-The-Loop, Multi-Tenant Saas, Cognitive / Coordination, B2B Automation, SME Resilience, Demand Forecasting, AI-Driven Inventory, Cross-Border E-Commerce, Anomaly Detection, Multimodal Prediction",
+      "downloads": 59
+    },
+    {
+      "abstractId": "5719442",
+      "title": "A Method for Proactive E-commerce: Synthesizing Consumption Data and External API-Driven Events for Predictive Order Generation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5719442",
+      "authors": [
+        "Illia Kostenko"
+      ],
+      "affiliations": [],
+      "pages": 39,
+      "posted": "16 Dec 2025",
+      "snippet": "Practically, it offers a deployable blueprint for multi-tenant SaaS ecosystems seeking to balance automation efficiency with human trust and autonomy / Proactive Commerce, Predictive E-Commerce, Machine Learning, Intent Signals, Event-Driven Demand, Cognitive Load, Trustby-Design, Human-In-The-Loop, Fusion / Model, Multi-Tenant Saas, B2B Automation, Customer Retention",
+      "downloads": 55
+    },
+    {
+      "abstractId": "5911464",
+      "title": "Governing AI Agents: Risk, Compliance, and Accountability in Law and Finance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5911464",
+      "authors": [
+        "Jillian Bommarito",
+        "Daniel Martin Katz",
+        "Michael James Bommarito"
+      ],
+      "affiliations": [
+        "273 Ventures",
+        "Illinois Tech - Chicago Kent College of Law",
+        "273 Ventures"
+      ],
+      "pages": 69,
+      "posted": "15 Dec 2025",
+      "snippet": "emerging AI-specific rules (including the EU AI Act), and voluntary assurance standards such as NIST and SOC 2. / The chapter argues that in law and finance—industries built on trust and non-delegable professional duties—human-in-the-loop and human-in-command",
+      "downloads": 637
+    },
+    {
+      "abstractId": "5842004",
+      "title": "Beyond Human-in-the-Loop: A Level 5 Autonomous Multi-Agent Framework for Master Data Management and Governance using Graph States and Epistemic Uncertainty Estimation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5842004",
+      "authors": [
+        "Sukant Pandey"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 5,
+      "posted": "13 Dec 2025",
+      "snippet": "By leveraging a Graph-Based Multi-Agent System rooted in a Neo4j graph state, this framework utilizes Generative AI Agents to perform semantic data cleaning / This research validates that the transition from Human-in-the-Loop to Human-Exception governance is not only technically feasible but economically imperative / Master Data Management, Data Governance, Data Quality, Autonomous Agents, Graph Database, Generative AI, Entity Resolution, Data Stewardship, AI, MDM",
+      "downloads": 40
+    },
+    {
+      "abstractId": "5848582",
+      "title": "Why AI Misleads Leaders: Failure Modes in Conflict and Power-Asymmetric Communication",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5848582",
+      "authors": [
+        "Daniel Houston"
+      ],
+      "affiliations": [],
+      "pages": 12,
+      "posted": "12 Dec 2025",
+      "snippet": "The solution is not qualitative human review but mechanistic rule systems: codified decision frameworks that constrain AI output through explicit diagnostic / Organizations should deploy mechanistic frameworks-not qualitative review-to constrain AI output in conflict and power-asymmetric contexts. / Artificial Intelligence, AI, Large Language Models, LLMs, Organizational Behavior, Leadership Communication, Strategic Management, Crisis Communication / , Human-AI Interaction, HAI, Corporate Governance",
+      "downloads": 33
+    },
+    {
+      "abstractId": "5894983",
+      "title": "Federated Edge Intelligence for Community Microgrids: Human-AI Collaboration for Energy Resilience in Low-Resource Settings",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5894983",
+      "authors": [
+        "Freeman Jackson"
+      ],
+      "affiliations": [
+        "Fourth Industrial Systems Corporation"
+      ],
+      "pages": 33,
+      "posted": "12 Dec 2025",
+      "snippet": "The proposed framework deploys lightweight AI agents at the grid edge that collaborate with human stakeholders to support decisions / Federated optimization across multiple microgrids without centralized data sharing, and\n\nHuman-in-the-loop / microgrids, edge intelligence, federated learning, human-AI collaboration, explainable AI, sustainable development, energy resilience, low-resource settings",
+      "downloads": 37
+    },
+    {
+      "abstractId": "5795362",
+      "title": "Balancing AI And Human Collaboration",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5795362",
+      "authors": [
+        "Sateesh Kumar Rongali",
+        "Manikanta Rajendra Kumar Kakarala"
+      ],
+      "affiliations": [
+        "Judson University",
+        "Judson University"
+      ],
+      "pages": 6,
+      "posted": "12 Dec 2025",
+      "snippet": "unparalleled opportunities for efficiency and innovation, critical challenges remain in striking a delicate balance between artificial intelligence-driven automation / Key strategies entail human-in-the-loop systems, ethics AI training, hybrid team models, and continuous monitoring. / Accountability, Algorithmic Bias, Artificial Intelligence, Collaboration, Customer Engagement, Data Fairness, Diversity, Emotional Intelligence, Ethical AI / , Fairness, Human-In-The-Loop Systems, Hybrid Models, Machine Learning, Oversight, Regulation, Societal Values, Symbiosis, Transparency, Trust, User Experience",
+      "downloads": 17
+    },
+    {
+      "abstractId": "5792442",
+      "title": "Responsible AI Governance Roadmap in Investment Firms From Zero AI to Scalable, Regulated, Real-World Adoption",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5792442",
+      "authors": [
+        "Nikolaos Akkizidis"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 162,
+      "posted": "12 Dec 2025",
+      "snippet": "This framework enables investment firms to transition from fragmented, opaque automation practices to a transparent, supervised, and regulator-compliant / The framework integrates governance architecture, human-in-the-loop supervision, data lineage standards, model-risk management, ethical oversight mechanisms / Responsible AI, EU AI Act, MiFID II, Investment Management, Model Risk, Explainability (XAI), Human-in-the-Loop, Governance, Financial Regulation / , K·A·B Framework, Portfolio Risk, Data Lineage, Institutional AI, Ethical AI, Supervisory Technology",
+      "downloads": 85
+    },
+    {
+      "abstractId": "5843649",
+      "title": "Human-Centered AI for Real-Time Self-Checkout Assistance: An Event-Driven Architecture with Human-in-the-Loop Decision Support for Enhanced Customer Experience and Shrink Reduction",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5843649",
+      "authors": [
+        "Sri Harsha Konda"
+      ],
+      "affiliations": [],
+      "pages": 33,
+      "posted": "09 Dec 2025",
+      "snippet": "This paper proposes a human-centered artificial intelligence (AI) architecture grounded in explainable AI (XAI) and human-in-the-loop / (HITL) principles, treating AI as decision support rather than autonomous enforcement. / Human-In-The-Loop, Retail Self-Checkout, Shrink Reduction, Event-Driven Architecture, Customer Experience, Computer Vision, Responsible AI",
+      "downloads": 64
+    },
+    {
+      "abstractId": "5878822",
+      "title": "AI as a Bridge to Strasbourg: Monitoring, Implementation, and Accessibility in Civil Law Practice",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5878822",
+      "authors": [
+        "Thorbjørn Lundsgaard"
+      ],
+      "affiliations": [
+        "University of Copenhagen - iCourts - Centre of Excellence for International Courts"
+      ],
+      "pages": 30,
+      "posted": "08 Dec 2025",
+      "snippet": "“misalignment zones” for human review and timely updates. / It hypothesizes that AI systems using retrieval-based architectures, citation graph navigation, and human in the loop summarization can reduce the transaction",
+      "downloads": 34
+    },
+    {
+      "abstractId": "5823082",
+      "title": "Federated Edge Intelligence for Community Microgrids: Human-AI Collaboration for Energy Resilience in Low-Resource Settings",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5823082",
+      "authors": [
+        "Freeman Jackson"
+      ],
+      "affiliations": [
+        "Fourth Industrial Systems Corporation"
+      ],
+      "pages": 33,
+      "posted": "08 Dec 2025",
+      "snippet": "This paper proposes a Federated Edge Intelligence framework in which lightweight AI agents deployed at the grid edge collaborate with human stakeholders / The framework combines (i) local learning and prediction on edge devices, (ii) federated optimization across multiple microgrids, and (iii) human-in-the-loop / Microgrids, Edge Intelligence, Federated Learning, Human–AI Collaboration, Explainable AI, Sustainable Development, Energy Resilience, Low-Resource Settings",
+      "downloads": 39
+    },
+    {
+      "abstractId": "5850444",
+      "title": "Human-in-the-Loop Semantic Middleware For Construction Compliance Checking and Safe Product Reuse",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5850444",
+      "authors": [
+        "Kwabena Adu-Duodu",
+        "Stanly Wilson",
+        "Yinhao Li",
+        "Omer Rana",
+        "Yingli Wang",
+        "Rajiv Ranjan",
+        "Tejal Shah",
+        "Ellis Solaiman"
+      ],
+      "affiliations": [
+        "Newcastle University",
+        "affiliation not provided to SSRN",
+        "Newcastle University",
+        "Cardiff University",
+        "Cardiff University",
+        "Newcastle University",
+        "Newcastle University",
+        "Newcastle University"
+      ],
+      "pages": 21,
+      "posted": "03 Dec 2025",
+      "snippet": "This paper presents the Human-in-the-Loop Semantic Middleware (HiLSeM). / This work contributes a novel computational formalism by bridging semantic legal knowledge representation, automated reasoning and human in the loop verification / compliance checking, Ontology, RASE, human-in-the-loop, construction informatics, SPARQL",
+      "downloads": 45
+    },
+    {
+      "abstractId": "5664034",
+      "title": ": AI and the Rule of Law, Separation of Powers, and Individual Rights",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5664034",
+      "authors": [
+        "DeBrae Kennedy-Mayo",
+        "Jake Gord"
+      ],
+      "affiliations": [
+        "Georgia Institute of Technology"
+      ],
+      "pages": 1,
+      "posted": "01 Dec 2025",
+      "snippet": "This thought experiment examines a potential post-democratic period when AI overtakes the decision-making roles once held by government / The exercise is meant to raise issues that are likely solvable by adding a human in the loop as it relates to government activities.",
+      "downloads": 41
+    },
+    {
+      "abstractId": "5840564",
+      "title": "Exploring Humans and LLMs Collaboration in the Data Science Pipeline",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5840564",
+      "authors": [
+        "Sohrab Namazi Nia",
+        "Senjuti Basu Roy"
+      ],
+      "affiliations": [
+        "New Jersey Institute of Technology",
+        "New Jersey Institute of Technology"
+      ],
+      "pages": 47,
+      "posted": "01 Dec 2025",
+      "snippet": "tasks requiring reasoning and contextual understanding, has outpaced the scalability of human-driven workflows, necessitating new forms of intelligent automation / Large Language Models, Human-in-the-Loop Data Science, Human-LLM teaming, optimization",
+      "downloads": 30
+    },
+    {
+      "abstractId": "5840563",
+      "title": "Exploring Humans and LLMs Collaboration in the Data Science Pipeline",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5840563",
+      "authors": [
+        "Sohrab Namazi Nia",
+        "Senjuti Basu Roy"
+      ],
+      "affiliations": [
+        "New Jersey Institute of Technology",
+        "New Jersey Institute of Technology"
+      ],
+      "pages": 47,
+      "posted": "01 Dec 2025",
+      "snippet": "tasks requiring reasoning and contextual understanding, has outpaced the scalability of human-driven workflows, necessitating new forms of intelligent automation / Large Language Models, Human-in-the-Loop Data Science, Human-LLM teaming, optimization",
+      "downloads": 22
+    },
+    {
+      "abstractId": "5781526",
+      "title": "Recruiting with AI: Does the Degree Still Matter?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5781526",
+      "authors": [
+        "Siyi Yang",
+        "Yifan Dou",
+        "Rongyu Zhong"
+      ],
+      "affiliations": [
+        "Fudan University - School of Management",
+        "Fudan University - School of Management",
+        "Fudan University - School of Management"
+      ],
+      "pages": 19,
+      "posted": "26 Nov 2025",
+      "snippet": "automated systems to filter and prioritize applicants before human review. / moderate AI costs they may strategically drop human oversight to balance automation cost against hiring risk. / Analytical Modeling, AI Interviews, Screening, AI System Design",
+      "downloads": 102
+    },
+    {
+      "abstractId": "5807583",
+      "title": "An Ontological Framework for Cognitive Digital Twins in Human-Centered Aviation Safety",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5807583",
+      "authors": [
+        "Raymond HOUE NGOUNA",
+        "Justin Moskolaï Ngossaha",
+        "Cédrick Béler",
+        "Laurent Geneste"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 34,
+      "posted": "26 Nov 2025",
+      "snippet": "OntoFLYNET enables explainable, context-aware reasoning through OWL and SWRL rules and supports human-in-the-loop analysis via SPARQL-based queries. / This work contributes to Industry 5.0 by bridging empirical data, formal semantics, and human cognition toward trustworthy and explainable AI. / Cognitive Digital Twin, Aviation Safety, Ontology Engineering, Explainable AI, Human-in-the-Loop Reasoning, Industry 5.0",
+      "downloads": 63
+    },
+    {
+      "abstractId": "5812520",
+      "title": "LogiFusion: A Semantic-Kinetic-Dynamic Expert System for Closed-Loop Intralogistics Decision Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5812520",
+      "authors": [
+        "Xiaoming Zhao",
+        "Jun He",
+        "Yong Yang",
+        "Jing Yu",
+        "Sunyan Hong"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "Kunming University",
+        "affiliation not provided to SSRN",
+        "Kunming University",
+        "Kunming University"
+      ],
+      "pages": 29,
+      "posted": "26 Nov 2025",
+      "snippet": "Second, the  Kinetic Layer  deploys a team of collaborative AI agents powered by Large Language Models (LLMs). / Crucially, in a human-in-the-loop evaluation, 92\\% of the system’s decisions were rated as operationally actionable by domain experts. / intralogistics, Neuro-Symbolic AI, Knowledge Graph, Human-in-the-Loop, Decision Intelligence, Large language models",
+      "downloads": 52
+    },
+    {
+      "abstractId": "5800063",
+      "title": "Designing Inclusive GenAI Adoption: A Practice-Oriented, Multi-Level HR Matrix to Empower Equity-Seeking Groups in the Workplace",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5800063",
+      "authors": [
+        "Valeria Sánchez",
+        "Araceli De los Rios-Berjillos",
+        "Ana M. Lucia-Casademunt"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 30,
+      "posted": "25 Nov 2025",
+      "snippet": "This study advances inclusive Generative AI (GenAI) by reframing adoption as a multi-level socio-technical transformation in which generation functions / guardrails (e.g., disclosure, human-in-the-loop, bias checks) for GenAI workflows. / Generative AI, intergenerational equity, socio-technical transformation, human-centred HR, Digital inclusion, Spain.",
+      "downloads": 54
+    },
+    {
+      "abstractId": "5802731",
+      "title": "Designing Human-in-the-Loop Automated School Bus Systems: Multi-Stakeholder Insights from Adolescents, Parents, and School Bus Drivers",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5802731",
+      "authors": [
+        "Yutong Zhang",
+        "Bowen Ye",
+        "Qiaoning Carol Zhang",
+        "Bo Zeng",
+        "Na Du"
+      ],
+      "affiliations": [
+        "University of Pittsburgh",
+        "University of Pittsburgh",
+        "affiliation not provided to SSRN",
+        "University of Pittsburgh - Department of Industrial Engineering",
+        "University of Pittsburgh"
+      ],
+      "pages": 46,
+      "posted": "25 Nov 2025",
+      "snippet": "Based on concerns about current school buses and acceptance of automation revealed in the interview, we co-designed human-in-the-loop systems reflecting / the participants’ view that high automation is acceptable only under human supervision.",
+      "downloads": 31
+    },
+    {
+      "abstractId": "5800206",
+      "title": "Keeping Pace with a Changing Planet: A Human-in-the-Loop Frame work for Refining Delineations of Dynamic Earth Features with the Segment Anything Model",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5800206",
+      "authors": [
+        "Yili Yang",
+        "Arav Agarwal",
+        "Marlena Bartkus",
+        "Heidi Rodenhizer",
+        "Wenwen Li",
+        "Hyunho Lee",
+        "Chia-Yu Hsu",
+        "Greg Fiske",
+        "Stefano Potter",
+        "Anna Liljedahl",
+        "Brendan M. Rogers",
+        "Susan Natali"
+      ],
+      "affiliations": [
+        "Woodwell Climate Research Center",
+        "Woodwell Climate Research Center",
+        "Woodwell Climate Research Center",
+        "Woodwell Climate Research Center",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "Woodwell Climate Research Center",
+        "Woodwell Climate Research Center",
+        "Woodwell Climate Research Center",
+        "Woodwell Climate Research Center",
+        "Woodwell Climate Research Center"
+      ],
+      "pages": 35,
+      "posted": "24 Nov 2025",
+      "snippet": "Using the challenging case study of retrogressive thaw slumps, we demonstrate that this human-AI partnership achieves accuracy comparable to manual expert / transferable solution for generating the dense, time-series data required to monitor landscape changes, transforming a laborious mapping task into an AI-assisted / Segment Anything Model (SAM), Geospatial AI, Zero-shot Segmentation, Interactive Image Segmentation, Promptable ImageSegmentation, Retrogressive Thaw",
+      "downloads": 42
+    },
+    {
+      "abstractId": "5784424",
+      "title": "The Emergence of Agentic Artificial Intelligence: A Paradigm Shift for Operational Efficiency and Risk Management in Digital Banking",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5784424",
+      "authors": [
+        "Mallikarjun Kallappa Chougala"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 10,
+      "posted": "23 Nov 2025",
+      "snippet": "The digital banking sector is entering a new phase of transformation with the integration of Agentic Artificial Intelligence (AI). / To address these, a multi-layered governance framework is proposed, incorporating human-in-the-loop escalation, immutable audit trails, and ethically aligned / * Agentic AI",
+      "downloads": 101
+    },
+    {
+      "abstractId": "5749802",
+      "title": "Between Judge and Algorithm: Key Risks of Automated Decision-Making in the Digital Rule of Law",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5749802",
+      "authors": [
+        "Antonio Lopo Martinez"
+      ],
+      "affiliations": [
+        "University of Coimbra Institute for Legal Research"
+      ],
+      "pages": 25,
+      "posted": "21 Nov 2025",
+      "snippet": "It then proposes a framework centred on decision architectures (human-in-the-loop, human-on-the-loop, human-out-of-the-loop) and articulates minimum safeguards / design and strict limits on generative AI. / Algorithmic Adjudication, Artificial Intelligence, Judicial Decision-Making, Rule of Law, Human-In-The-Loop",
+      "downloads": 97
+    },
+    {
+      "abstractId": "5649710",
+      "title": "Artificial Intelligence and Modern Warfare: Strategic Stability and the Changing Global Balance of Power",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5649710",
+      "authors": [
+        "Rishik Dev"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 16,
+      "posted": "20 Nov 2025",
+      "snippet": "Critically, it highlights the risks of automation bias, algorithmic opacity, and compressed decision timelines, which threaten strategic stability and / and renewed efforts to ensure meaningful human control over decisions of life and death. / Artificial Intelligence (AI), Modern Warfare, Balance of Power, Strategic Stability, Great Power Competition, Automation Bias, Lethal Autonomous Weapons",
+      "downloads": 101
+    },
+    {
+      "abstractId": "5649410",
+      "title": "AI Slop and Data Pollution in the Age of Generative AI: Strategic Risks, Economic Consequences, and Governance Pathways for Business, Management, and the Creative Industries",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5649410",
+      "authors": [
+        "Mohammad Samar Ansari"
+      ],
+      "affiliations": [],
+      "pages": 26,
+      "posted": "20 Nov 2025",
+      "snippet": "The rapid proliferation of generative artificial intelligence (AI) has introduced a new form of digital waste commonly termed AI slop: a deluge of low-originality / The analysis further explores mitigation pathways-ranging from human-in-the-loop oversight and hybrid data curation to provenance tagging, auditing, and / AI Slop, Data Pollution, Workslop, Model Collapse, AI Slop Business and Management Implications, AI Slop Governance and Regulation, AI Slop in Creative",
+      "downloads": 452
+    },
+    {
+      "abstractId": "5651771",
+      "title": "Intrinsic Participatory Governance of Autonomous Agents: Runtime Oversight and Orientation through Embedded Steward Agents",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5651771",
+      "authors": [
+        "Luciana Ledesma"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 33,
+      "posted": "17 Nov 2025",
+      "snippet": "As AI systems become increasingly autonomous-reformulating subgoals, reprioritizing steps, and expanding task boundaries in pursuit of declared objectives-they / Cognitive Governance Stack, composed of three interacting layers: Governance Artifacts (GAs)-versioned, machine-readable carriers of human intent; the Human-in-the-Loop / Agentic AI, AI Governance, AI compliance, AI Safety, Multi-agent environments",
+      "downloads": 78
+    },
+    {
+      "abstractId": "5731424",
+      "title": "Agentic AI: An EU AI Act Paradigm Shift?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5731424",
+      "authors": [
+        "Yasaman Yousefi",
+        "Marco Billi",
+        "Antonino Rotolo"
+      ],
+      "affiliations": [
+        "University of Bologna",
+        "University of Bologna - Department of Legal Sciences"
+      ],
+      "pages": 14,
+      "posted": "16 Nov 2025",
+      "snippet": "logging to mandating explicit, technical intervention mechanisms, such as the guaranteed capability to pause, redirect, or shut down the agent, to maintain meaningful / human control over highly autonomous systems.",
+      "downloads": 1050
+    },
+    {
+      "abstractId": "5726623",
+      "title": "Trust-by-Design in Proactive E-Commerce: Human-in-the-Loop Mechanisms to Mitigate Automation Distrust",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5726623",
+      "authors": [
+        "Illia Kostenko"
+      ],
+      "affiliations": [],
+      "pages": 15,
+      "posted": "15 Nov 2025",
+      "snippet": "This study advances Trust-by-Design as a core architecture within proactive e-commerce systems, embedding human-in-the-loop (HITL) mechanisms to mitigate / automation distrust through UX protocols like draft-state management, explainable interfaces, and undo/rollback functions. / Trust-By-Design, Automation Distrust, Human-In-The-Loop, UX Protocols, Proactive E-Commerce, Explainable AI, Undo/Rollback, Draft-State Management, Trust / , Multi-Tenant Saas, Digital Transformation, Ethical AI, High-Risk Economies, User Agency, Interpretability, Adoption Metrics, Patent Novelty",
+      "downloads": 60
+    },
+    {
+      "abstractId": "5607354",
+      "title": "Artificial Intelligence and Road Safety",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5607354",
+      "authors": [
+        "Abdallah Kredy"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 13,
+      "posted": "14 Nov 2025",
+      "snippet": "Recent advances in artificial intelligence (AI) including machine learning (ML), deep learning (DL), and computer vision (CV) offer new capabilities for / The paper concludes with a roadmap for evidence-based deployment, emphasizing standards-aligned validation, human-in-the-loop safeguards, and transparency / AI, Road Safety",
+      "downloads": 26
+    },
+    {
+      "abstractId": "5749790",
+      "title": "Keeping Pace with a Changing Planet: A Human-in-the-Loop Framework for Refining Delineations of Dynamic Earth Features with theSegment Anything Model",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5749790",
+      "authors": [
+        "Yili Yang",
+        "Arav Agarwal",
+        "Marlena Bartkus",
+        "Heidi Rodenhizer",
+        "Wenwen Li",
+        "Hyunho Lee",
+        "Chia-Yu Hsu",
+        "Greg Fiske",
+        "Stefano Potter",
+        "Anna Liljedahl",
+        "Brendan M. Rogers",
+        "Susan Natali"
+      ],
+      "affiliations": [
+        "Woodwell Climate Research Center",
+        "Woodwell Climate Research Center",
+        "Woodwell Climate Research Center",
+        "Woodwell Climate Research Center",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "Woodwell Climate Research Center",
+        "Woodwell Climate Research Center",
+        "Woodwell Climate Research Center",
+        "Woodwell Climate Research Center",
+        "Woodwell Climate Research Center"
+      ],
+      "pages": 35,
+      "posted": "14 Nov 2025",
+      "snippet": "Using the challenging case study of retrogressive thaw slumps, we demonstrate that this human-AI partnership achieves accuracy comparable to manual expert / transferable solution for generating the dense, time-series data required to monitor landscape changes, transforming a laboriousmapping task into an AI-assisted / Segment Anything Model (SAM), Geospatial AI, Zero-shot Segmentation, Interactive Image Segmentation, Promptable ImageSegmentation, Retrogressive Thaw",
+      "downloads": 55
+    },
+    {
+      "abstractId": "5595591",
+      "title": "Simpliflow: A Lightweight Open-Source Framework for Rapid Creation and Deployment of Generative Agentic AI Workflows",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5595591",
+      "authors": [
+        "Deven Panchal"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 17,
+      "posted": "12 Nov 2025",
+      "snippet": "Generative Agentic AI systems are emerging as a powerful paradigm for automating complex, multi-step tasks. / However, many existing frameworks for building these systems introduce significant complexity, a steep learning curve, and substantial boilerplate code / Agentic AI, Workflow Orchestration, Generative AI, LLM, Open-Source, Rapid Prototyping, JSON, Deterministic Systems, Human-in-the-loop (HITL)",
+      "downloads": 23
+    },
+    {
+      "abstractId": "5731489",
+      "title": "Sketch2BIM: A Multi-Agent Human-AI Collaborative Pipeline to Convert Hand-Drawn Floor Plans to 3D BIM",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5731489",
+      "authors": [
+        "Abir Khan Ratul",
+        "Sanjay Acharjee",
+        "Somin Park",
+        "Md Nazmus Sakib"
+      ],
+      "affiliations": [
+        "University of Texas at Arlington",
+        "Bangladesh University of Engineering and Technology (BUET)",
+        "University of Texas at Arlington",
+        "University of Texas at Arlington"
+      ],
+      "pages": 42,
+      "posted": "10 Nov 2025",
+      "snippet": "This study introduces a human-in-the-loop pipeline that converts unscaled, hand-drawn floor plan sketches into semantically consistent 3D BIM models. / Sketch-to-BIM, MLLMs, Human-in-the-loop, Multi-agent systems, GPT-5, Human-AI collaboration, Automation in AEC",
+      "downloads": 42
+    },
+    {
+      "abstractId": "5681803",
+      "title": "From Annotation to Oversight: A Pipeline Approach to Generative AI Evaluation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5681803",
+      "authors": [
+        "Hyein Ko",
+        "Yuehong Cassandra Tai",
+        "Nora Webb Williams"
+      ],
+      "affiliations": [
+        "Pennsylvania State University",
+        "University of Illinois at Urbana-Champaign"
+      ],
+      "pages": 28,
+      "posted": "03 Nov 2025",
+      "snippet": "Evaluation-testing whether performance holds across different prompts, models, and contexts; (4) Rationale and Oversight-auditing model explanations and requiring human-in-the-loop / We emphasize transparency throughout: researchers should report multiple validation metrics and incorporate human review against gold-standard data. / Generative AI, Evaluation Metrics, Large Language Models, Data Generation",
+      "downloads": 39
+    },
+    {
+      "abstractId": "5601397",
+      "title": "From text to code – Leveraging machine learning for neurology outpatient clinical coding",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5601397",
+      "authors": [
+        "Elena Purcaru",
+        "Michael George",
+        "Matthew Stammers",
+        "Christopher Kipps"
+      ],
+      "affiliations": [
+        "University of Southampton",
+        "University of Southampton - University Hospital Southampton NHS Foundation Trust",
+        "NHS Foundation Trust - Southampton NHS Foundation Trust, NIHR Southampton Biomedical Research Centre",
+        "University of Southampton - School of Clinical and Experimental Sciences"
+      ],
+      "pages": 27,
+      "posted": "31 Oct 2025",
+      "snippet": "categories, BERT-based NLP models can classify neurology outpatient notes with high accuracy and may substantially reduce manual coding workload in a human-in-the-loop",
+      "downloads": 47
+    },
+    {
+      "abstractId": "5562478",
+      "title": "A Factor-Based AI Approach for Developing Economies",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5562478",
+      "authors": [
+        "Sophie Zhu-Yun Pitt",
+        "TaylorW. Reynolds"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 15,
+      "posted": "31 Oct 2025",
+      "snippet": "The rapid revolution of Artificial Intelligence (AI) presents both unprecedented opportunities for economic growth and a significant risk of widening the / These include access to unique, context-rich local datasets (redefined as \"Digital Land\"), a large and adaptable workforce ideal for data annotation and human-in-the-loop / Artificial Intelligence, Developing Countries, Economic Development, Factors of Production, AI Strategy, Global Divide, Inclusive Growth, Digital Transformation / , Leapfrogging, Data, Entrepreneurship, Open-Source AI, Cloud Computing, Technology Adoption, Innovation",
+      "downloads": 30
+    },
+    {
+      "abstractId": "5658330",
+      "title": "AI as the New Jurist: Can Generative Artificial Intelligence Master Islamic Inheritance Law?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5658330",
+      "authors": [
+        "Zubair Abbasi"
+      ],
+      "affiliations": [
+        "University of Oxford - Faculty of Law"
+      ],
+      "pages": 22,
+      "posted": "29 Oct 2025",
+      "snippet": "Despite these shortcomings, the study highlights the potential of ChatGPT and similar AI models to assist jurists and scholars by efficiently processing / To mitigate errors and ensure accuracy, AI tools should serve as complements to, not replacements for, traditional Islamic legal scholarship. / Generative AI, Islamic law and jurisprudence, human in the loop, Sunni and Shia inheirtance law, ijtihād",
+      "downloads": 97
+    },
+    {
+      "abstractId": "5659170",
+      "title": "Deterministic Governance as Epistemic Commitment: Why Reproducibility Matters for AI Accountability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5659170",
+      "authors": [
+        "Edward Meyman"
+      ],
+      "affiliations": [],
+      "pages": 31,
+      "posted": "29 Oct 2025",
+      "snippet": "We propose that meaningful AI accountability requires reproducibility, not merely explainability. / This distinguishes deterministic governance from probabilistic confidence scoring and conventional \"human-in-the-loop\" approaches. / Epistemic Commitment, Deterministic Governance, Reproducibility, Democratic Accountability, AI Regulation, DAGS-CVCA, AI Governance, Algorithmic Accountability / , AI Auditing, Verification, AI Safety, Regulatory Compliance",
+      "downloads": 57
+    },
+    {
+      "abstractId": "5670290",
+      "title": "When LLMs Hurt More than Help: Understanding Decision Failures Under AI Assistance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5670290",
+      "authors": [
+        "Jessica Shi",
+        "Divya Singhvi",
+        "Somya Singhvi"
+      ],
+      "affiliations": [
+        "NYU Stern School of Business",
+        "New York University (NYU) - Leonard N. Stern School of Business",
+        "USC Marshall School of Business"
+      ],
+      "pages": 69,
+      "posted": "28 Oct 2025",
+      "snippet": "Many of these organizations now rely on hybrid workflows where machine learning models flag uncertain cases for human review. / These findings offer new behavioral insights into human–AI collaboration and underscore the need for decision support systems designed for calibration, / LLMs, AI Assisted Decision Making, Human-AI Interactions",
+      "downloads": 27
+    },
+    {
+      "abstractId": "5542179",
+      "title": "The Awareness of Ignorance for Conscious & Effective Decision Making in Humans & Machines to Deal with AI Hallucinations & Human Ignorance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5542179",
+      "authors": [
+        "Kiran Vadagam"
+      ],
+      "affiliations": [],
+      "pages": 16,
+      "posted": "24 Oct 2025",
+      "snippet": "The convergence of human and machine ignorance-rooted in unacknowledged uncertainty-poses existential risks as AI systems transition from digital to physical / Human-in-the-Loop Protocols: Enforcing human oversight in high-stakes decisions, informed by Vedic traditions of self-inquiry (Atma-Vidya) and modern \"",
+      "downloads": 59
+    },
+    {
+      "abstractId": "5645063",
+      "title": "Type of the Paper: Full Length Article",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5645063",
+      "authors": [
+        "Jean-Luc Maire",
+        "Jose-Fernando Jimenez",
+        "Sara Himmiche"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 29,
+      "posted": "24 Oct 2025",
+      "snippet": "The proposed framework consists of three sequential modules: (1) a real-time posture acquisition module based on an open-source vision tool; (2) an AI-driven / ErgoTwin supports automated and human-in-the-loop decision making, bridging traditional ergonomics with the paradigms of Industry 4.0 and 5.0.",
+      "downloads": 37
+    },
+    {
+      "abstractId": "5537541",
+      "title": "Mapping Outcome-Bias Constructs in AI Recruitment: A Scoping Review of Linguistic and Managerial Perspectives",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5537541",
+      "authors": [
+        "Roya Samad-Zada"
+      ],
+      "affiliations": [],
+      "pages": 14,
+      "posted": "23 Oct 2025",
+      "snippet": "The integration of Artificial Intelligence (AI) into recruitment processes promises to enhance efficiency and objectivity, yet it simultaneously introduces / biases translate into significant discriminatory outcomes, how these biases are encoded and amplified through Natural Language Processing (NLP), and how human-in-the-loop / Algorithmic Bias, AI Recruitment, Outcome-Bias, Natural Language Processing, Human-Computer Interaction, Organizational Justice, Scoping Review, Socio-Technical",
+      "downloads": 81
+    },
+    {
+      "abstractId": "5641715",
+      "title": "Scaling Sustainability Analysis: An Expert-Seeded AI Framework for Evaluating Disclosure Quality in CSRD Reports",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5641715",
+      "authors": [
+        "Madhavan N",
+        "Mohit Kumar"
+      ],
+      "affiliations": [
+        "Indian Institute of Technology (IIT), Madras - Department of Management Studies",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 47,
+      "posted": "22 Oct 2025",
+      "snippet": "This paper introduces an AI-driven framework that makes this task tractable. / 592 inaugural CSRD reports, the framework processes in hours what manual analysis would require months, supported by systematic validation including human-in-the-loop",
+      "downloads": 79
+    }
+  ]
+}

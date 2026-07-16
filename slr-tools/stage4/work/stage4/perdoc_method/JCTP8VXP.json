@@ -1,0 +1,15 @@
+{
+  "item_key": "JCTP8VXP",
+  "methods": [
+    "design-science / prototype / tool-build",
+    "controlled-experiment",
+    "user-study",
+    "interviews",
+    "qualitative-analysis"
+  ],
+  "empirical": true,
+  "human_subjects": true,
+  "primary_hint": "design-science / prototype / tool-build",
+  "notes": "Builds the Zoro system, then evaluates it two ways: (1) a controlled technical evaluation of 36 vibe-coding sessions across 4 conditions with rubric-scored, inter-rater-checked outcomes and ANOVA/t-tests, and (2) a qualitative user study (N=12, think-aloud + semi-structured interviews). Also includes formative interviews with 10 programmers to derive design goals. Human code is used as artifacts under test but human_subjects is true due to the participant study and interviews.",
+  "citation": "Ma 2026"
+}

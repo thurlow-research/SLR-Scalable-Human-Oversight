@@ -1,0 +1,13 @@
+{
+  "item_key": "UDVHQ5HR",
+  "methods": [
+    "benchmark-evaluation",
+    "controlled-experiment",
+    "qualitative-analysis"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "benchmark-evaluation",
+  "notes": "Empirical study running three LLMs over HumanEval/MBPP/QuixBugs (~700 samples) under systematically varied prompting conditions (Direct, Direct+Explain, Full three-step, plus two proposed mitigation prompts), measuring RCRR; the controlled variation of prompt complexity gives it a controlled-experiment flavor, and the root-cause 'over-correction' error analysis adds qualitative analysis. No human participants.",
+  "citation": "Jin 2025"
+}

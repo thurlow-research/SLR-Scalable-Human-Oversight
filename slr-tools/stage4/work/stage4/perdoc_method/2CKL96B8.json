@@ -1,0 +1,12 @@
+{
+  "item_key": "2CKL96B8",
+  "methods": [
+    "literature-review/mapping",
+    "multivocal/grey-literature-review"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "multivocal/grey-literature-review",
+  "notes": "Despite the 'empirical analysis' framing, the paper collects no primary data; it narratively synthesizes secondary findings from academic papers plus industry reports, vendor blogs, and developer surveys (grey literature). All quantitative figures are reproduced from cited sources.",
+  "citation": "Sarkar 2025"
+}

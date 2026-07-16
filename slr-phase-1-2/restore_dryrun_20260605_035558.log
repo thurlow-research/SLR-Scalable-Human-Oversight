@@ -1,0 +1,54 @@
+nohup: ignoring input
+Ground-truth items: 6815
+union dist: Counter({'discard': 2765, 'maybe': 2065, 'keep': 1985})
+  ...processed 200/6815  (changed=58 skip_sup=3)
+  ...processed 400/6815  (changed=120 skip_sup=12)
+  ...processed 600/6815  (changed=215 skip_sup=13)
+  ...processed 800/6815  (changed=277 skip_sup=15)
+  ...processed 1000/6815  (changed=330 skip_sup=15)
+  ...processed 1200/6815  (changed=378 skip_sup=18)
+  ...processed 1400/6815  (changed=437 skip_sup=21)
+  ...processed 1600/6815  (changed=486 skip_sup=26)
+  ...processed 1800/6815  (changed=535 skip_sup=26)
+  ...processed 2000/6815  (changed=586 skip_sup=26)
+  ...processed 2200/6815  (changed=614 skip_sup=26)
+  ...processed 2400/6815  (changed=684 skip_sup=27)
+  ...processed 2600/6815  (changed=794 skip_sup=29)
+  ...processed 2800/6815  (changed=884 skip_sup=30)
+  ...processed 3000/6815  (changed=946 skip_sup=30)
+  ...processed 3200/6815  (changed=1059 skip_sup=30)
+  ...processed 3400/6815  (changed=1171 skip_sup=30)
+  ...processed 3600/6815  (changed=1286 skip_sup=30)
+  ...processed 3800/6815  (changed=1435 skip_sup=30)
+  ...processed 4000/6815  (changed=1590 skip_sup=30)
+  ...processed 4200/6815  (changed=1755 skip_sup=30)
+  ...processed 4400/6815  (changed=1946 skip_sup=30)
+  ...processed 4600/6815  (changed=2125 skip_sup=30)
+  ...processed 4800/6815  (changed=2290 skip_sup=30)
+  ...processed 5000/6815  (changed=2463 skip_sup=30)
+  ...processed 5200/6815  (changed=2614 skip_sup=30)
+  ...processed 5400/6815  (changed=2758 skip_sup=30)
+  ...processed 5600/6815  (changed=2895 skip_sup=30)
+  ...processed 5800/6815  (changed=3025 skip_sup=30)
+  ...processed 6000/6815  (changed=3182 skip_sup=30)
+  ...processed 6200/6815  (changed=3343 skip_sup=30)
+  ...processed 6400/6815  (changed=3514 skip_sup=30)
+  ...processed 6600/6815  (changed=3670 skip_sup=30)
+  ...processed 6800/6815  (changed=3823 skip_sup=30)
+
+Wrote proposed_pass1_restore.csv (3941 rows)
+
+=== SUMMARY ===
+  items_changed         3832
+  coll_changed          1
+  tags_changed          3832
+  already_correct       2461
+  skipped_superseded    30
+  no_restore_source     413
+  fetch_failed          79
+  applied               0
+  apply_errors          0
+  apply_unexpected      0
+
+DRY RUN — nothing written. Review proposed_pass1_restore.csv, then
+re-run with --apply (and ZOTERO_WRITE_KEY set) after a Zotero backup.

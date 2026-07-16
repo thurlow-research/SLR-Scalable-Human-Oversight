@@ -1,0 +1,750 @@
+{
+  "count": 50,
+  "total": "615",
+  "page": "7",
+  "records": [
+    {
+      "abstractId": "5842782",
+      "title": "The Right To Compute",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5842782",
+      "authors": [
+        "Gregory S. McNeal"
+      ],
+      "affiliations": [
+        "Pepperdine University - Rick J. Caruso School of Law"
+      ],
+      "pages": 0,
+      "posted": "02 Dec 2025",
+      "snippet": "computational liberty, extended cognitive freedom, cognitive liberty, expressive infrastructure, permissionless, epistemic freedom, AI regulation, AI Governance, Algorithmic / Accountability, Model Licensing, Open Source AI, Large Language Models (LLMs)",
+      "downloads": 0
+    },
+    {
+      "abstractId": "5615770",
+      "title": "The Genesis of TIME: The New Physics for a Coherent Civilization",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5615770",
+      "authors": [
+        "Erico Lisboa"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 10,
+      "posted": "01 Dec 2025",
+      "snippet": "Emergent Time, Causal Inference, Coherence Theory, Entropy and Information, Temporal Validation, AI Alignment, Systemic Governance, Digital Trust, Decentralized",
+      "downloads": 48
+    },
+    {
+      "abstractId": "5812560",
+      "title": "Artificial Knowledge Restructuring of Information Economics",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5812560",
+      "authors": [
+        "Daniel Benoliel",
+        "Dalit Ken-Dror Feldman"
+      ],
+      "affiliations": [
+        "University of Oxford",
+        "University of Haifa"
+      ],
+      "pages": 43,
+      "posted": "26 Nov 2025",
+      "snippet": "Artificial Intelligence governance, validation, explainability, algorithmic accountability, AI regulation and policy, trustworthy AI.",
+      "downloads": 52
+    },
+    {
+      "abstractId": "5656271",
+      "title": "SCMS Whitepaper -Complete Document Sparse Contextual Memory Scaffolding: A User-Facing Architecture for Continual Learning in AI-Assisted Development Workflows",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5656271",
+      "authors": [
+        "Matthew Walker"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 104,
+      "posted": "25 Nov 2025",
+      "snippet": "Continual Learning, Knowledge Management, Human-AI Interaction, Documentation Architecture, Sparse Memory, Catastrophic Forgetting, human ai alignment,",
+      "downloads": 52
+    },
+    {
+      "abstractId": "5767563",
+      "title": "Two-Faced Social Agents: Context Collapse in Role-Conditioned Large Language Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5767563",
+      "authors": [
+        "Vikram K Suresh"
+      ],
+      "affiliations": [
+        "University of Cincinnati"
+      ],
+      "pages": 38,
+      "posted": "22 Nov 2025",
+      "snippet": "Human-AI Alignment, Large Language Models, Role Conditioning, LLM Limitations",
+      "downloads": 23
+    },
+    {
+      "abstractId": "5656830",
+      "title": "Algorithmic Accountability in Government Auditing: A Study of Public Sector Financial Transparency in the Republic of Bénin",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5656830",
+      "authors": [
+        "Ayebo Bolale Francine Laourou"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 40,
+      "posted": "21 Nov 2025",
+      "snippet": "The research fits into the perspective of accountability theory because it provides a framework of algorithmic accountability regarding the situation in / Algorithmic Accountability, Government Auditing, Financial Transparency, Public Sector Technology, Republic of Bénin, Human-Computer Interaction",
+      "downloads": 32
+    },
+    {
+      "abstractId": "5731106",
+      "title": "AI-Driven Livestream E-Commerce Tax Compliance Architecture White Paper",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5731106",
+      "authors": [
+        "Junjun Li"
+      ],
+      "affiliations": [],
+      "pages": 20,
+      "posted": "20 Nov 2025",
+      "snippet": "This paper addresses a paradigm shift in China's tax compliance, driven by the convergence of the \"Sky Net\" (GTS-4 AI Auditing) and \"Ground Net\" (Order",
+      "downloads": 34
+    },
+    {
+      "abstractId": "5646191",
+      "title": "Navigating the Regulatory Trilemma in Nigerian FinTech: Balancing Security, Consumer Protection, and Innovation (2023-2025)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5646191",
+      "authors": [
+        "Abba Elgujja"
+      ],
+      "affiliations": [],
+      "pages": 26,
+      "posted": "20 Nov 2025",
+      "snippet": "The article proposes a unified framework centred on statutory coherence, coordinated oversight through a Digital-Finance Regulatory Council, algorithmic / accountability under an AIgovernance code, and accessible redress via a Fintech Ombudsman. / Fintech Regulation, Consumer Protection, Data Governance, Algorithmic Accountability, Open Banking, Nigeria",
+      "downloads": 66
+    },
+    {
+      "abstractId": "5646110",
+      "title": "AI Governance as a Human Right Imperative: Embedding Transparency, Accountability, and Reasoned Justification in the Algorithmic State",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5646110",
+      "authors": [
+        "Abba Elgujja"
+      ],
+      "affiliations": [],
+      "pages": 18,
+      "posted": "20 Nov 2025",
+      "snippet": "Personal Data Protection Law (PDPL), and relevant international and Islamic bioethical principles, the paper reconstructs a rights-based framework for algorithmic / accountability.",
+      "downloads": 42
+    },
+    {
+      "abstractId": "5645770",
+      "title": "Artificial Intelligence and Human Rights in Global Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5645770",
+      "authors": [
+        "Hassan Khalid Ranjha"
+      ],
+      "affiliations": [
+        "Academic and Researcher"
+      ],
+      "pages": 5,
+      "posted": "20 Nov 2025",
+      "snippet": "Artificial Intelligence, Human Rights, Global Governance, Algorithmic Accountability, Privacy, Data Protection, AI Regulation, Digital Sovereignty, International",
+      "downloads": 20
+    },
+    {
+      "abstractId": "5645610",
+      "title": "Algorithms and Administrative Law: A Comparative Framework for Accountability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5645610",
+      "authors": [
+        "Hassan Khalid Ranjha"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 5,
+      "posted": "20 Nov 2025",
+      "snippet": "Administrative Law, Algorithmic Accountability, Artificial Intelligence, Comparative Law, Governance, Public Administration, Judicial Review, Legal Technology",
+      "downloads": 55
+    },
+    {
+      "abstractId": "5642711",
+      "title": "Artificial Intelligence and Criminal Justice: Predictive Policing and Due Process",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5642711",
+      "authors": [
+        "Hassan Khalid Ranjha"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 4,
+      "posted": "19 Nov 2025",
+      "snippet": "Artificial Intelligence, Predictive Policing, Due Process, Criminal Justice, Constitutional Law, Human Rights, Algorithmic Accountability, Legal Framework",
+      "downloads": 43
+    },
+    {
+      "abstractId": "5628650",
+      "title": "Integrating Artificial Intelligence in Cybersecurity Auditing: Opportunities and Risks",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5628650",
+      "authors": [
+        "Omotomiwa Omolere"
+      ],
+      "affiliations": [],
+      "pages": 24,
+      "posted": "18 Nov 2025",
+      "snippet": "AI Auditing, Cybersecurity Risk Assessment, Automated Audit Analytics, Cyber Governance",
+      "downloads": 73
+    },
+    {
+      "abstractId": "5628630",
+      "title": "The Role of Cybersecurity Audits in Strengthening Corporate Governance and Compliance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5628630",
+      "authors": [
+        "Omotomiwa Omolere"
+      ],
+      "affiliations": [],
+      "pages": 43,
+      "posted": "18 Nov 2025",
+      "snippet": "Cybersecurity Audit, Corporate Governance, Compliance, Internal Controls, Risk Management, AI Auditing, Cyber Governance",
+      "downloads": 95
+    },
+    {
+      "abstractId": "5743730",
+      "title": "Code as Law, Trust as Code: How Programmable Rules Reshape Financial Governance in Decentralized Finance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5743730",
+      "authors": [
+        "Anthony Chidi Nzomiwu"
+      ],
+      "affiliations": [
+        "Cracow University of Economics"
+      ],
+      "pages": 6,
+      "posted": "18 Nov 2025",
+      "snippet": "Decentralized Finance, Smart Contracts, Financial Governance, Institutional Economics, Blockchain, Code is Law, Algorithmic Accountability",
+      "downloads": 68
+    },
+    {
+      "abstractId": "5743224",
+      "title": "Financial Exclusion in Modern Banking: A Legal Analysis of Accountability and the Right to Explanation in AI-Driven Decision Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5743224",
+      "authors": [
+        "Oluwaseun Omotoso"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 16,
+      "posted": "17 Nov 2025",
+      "snippet": "Nigeria Data Protection Act 2023, CBN Consumer Protection Framework etc.) recognizes general principles of fairness and transparency, it is silent on algorithmic / accountability and explainability.",
+      "downloads": 62
+    },
+    {
+      "abstractId": "5721884",
+      "title": "The Infrastructure of Trust: A Framework for the Intelligence Age",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5721884",
+      "authors": [
+        "Alexander Perrin"
+      ],
+      "affiliations": [
+        "Patient Protect"
+      ],
+      "pages": 31,
+      "posted": "17 Nov 2025",
+      "snippet": "On this basis, we outline Trust Systems Design as an interdisciplinary field bridging cybersecurity, data ethics, behavioral economics, and AI alignment",
+      "downloads": 68
+    },
+    {
+      "abstractId": "5716462",
+      "title": "Post-Human Law: Redefining Responsibility in the Era of Autonomous Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5716462",
+      "authors": [
+        "Abulgasem Al Mashai"
+      ],
+      "affiliations": [
+        "Libyan Authority for Scientific Research"
+      ],
+      "pages": 19,
+      "posted": "17 Nov 2025",
+      "snippet": "Governance, Liability Gap, Electronic Legal Personality, XAI (Explainable Artificial Intelligence), Digital Black Box, AI Regulation, Autonomous Systems, Algorithmic / Accountability, AI Sanctions, Legal Personhood, Superintelligence, Techno-Legal Ethics, ELE",
+      "downloads": 130
+    },
+    {
+      "abstractId": "5720662",
+      "title": "Design Ethics in Design Intelligence: A Framework for Ethical AI-Augmented Design Practice",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5720662",
+      "authors": [
+        "Tee Hui Teo"
+      ],
+      "affiliations": [
+        "Singapore University of Technology and Design (SUTD)"
+      ],
+      "pages": 11,
+      "posted": "17 Nov 2025",
+      "snippet": "Design Ethics, Design Intelligence, AI Ethics, Design AI, Ethical Frameworks, AI Alignment, Human-AI Collaboration",
+      "downloads": 73
+    },
+    {
+      "abstractId": "5709064",
+      "title": "Participatory Provenance: Measuring Input Transformation in AI-Mediated Collective Synthesis",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5709064",
+      "authors": [
+        "Sachit Mahajan"
+      ],
+      "affiliations": [
+        "ETH Zürich - Department of Humanities, Social and Political Sciences (GESS)"
+      ],
+      "pages": 18,
+      "posted": "17 Nov 2025",
+      "snippet": "Participatory AI, Algorithmic Accountability, Provenance, Human-Centered Computing, Computational Social Science",
+      "downloads": 27
+    },
+    {
+      "abstractId": "5610050",
+      "title": "Beyond Greenwashing: Applying Explainable AI (XAI) for Transparent and Verifiable ESG Reporting in Circular Business Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5610050",
+      "authors": [
+        "Ouma Peter Odhiambo"
+      ],
+      "affiliations": [],
+      "pages": 22,
+      "posted": "17 Nov 2025",
+      "snippet": "Theoretically, the article applies a Rawlsian fairness lens combined with algorithmic accountability theory, proposing that fairness, transparency, and / Explainable AI (XAI), ESG Reporting, Circular Economy, Greenwashing, Algorithmic Accountability",
+      "downloads": 80
+    },
+    {
+      "abstractId": "5690283",
+      "title": "Automation as Delegation of Power: Constitutional Constraints on AI Systems for the Administration of Justice",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5690283",
+      "authors": [
+        "Irina Carnat"
+      ],
+      "affiliations": [
+        "Sant’Anna School of Advanced Studies"
+      ],
+      "pages": 18,
+      "posted": "08 Nov 2025",
+      "snippet": "The proposed algorithmic accountability framework distributes responsibility among providers, deployers, and surveillance authorities, demonstrating how / Automated Decision-Making, Algorithmic Accountability, Fundamental Rights Protection, Human Oversight, Generative AI",
+      "downloads": 256
+    },
+    {
+      "abstractId": "5688064",
+      "title": "Risk, Ambiguity, and Infinity: Behavioral Signatures of Modern Large Language Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5688064",
+      "authors": [
+        "Mohammadreza Ghafouri",
+        "Nazanin Yousefi",
+        "Arian Akbari",
+        "Reza Tavakoli",
+        "Farbod Davoodi",
+        "Gholamali Aminian",
+        "Nariman Khaledian",
+        "Arman Khaledian"
+      ],
+      "affiliations": [
+        "Missouri University of Science and Technology",
+        "The Alan Turing Institute"
+      ],
+      "pages": 17,
+      "posted": "07 Nov 2025",
+      "snippet": "behavioral economics, risk aversion, ambiguity aversion, uncertainty reasoning, persona intervention, financial automation, Large Language Models (LLMs), AI / Alignment, Decision-making under Uncertainty, AI Safety and Governance, Behavioral Signatures of AI, AI Behavior Evaluation, Financial Decision-Making",
+      "downloads": 194
+    },
+    {
+      "abstractId": "5709982",
+      "title": "Equality and Inclusivity through Accountability: Regulating Automated Decision-Making in the Public Sector",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5709982",
+      "authors": [
+        "Rayyan Asif"
+      ],
+      "affiliations": [
+        "Queen Mary University of London"
+      ],
+      "pages": 15,
+      "posted": "06 Nov 2025",
+      "snippet": "Artificial Intelligence, Automated Decision-Making (ADM), Algorithmic Accountability, Administrative Law, Algorithmic Bias, Equality Rights, AI Governance",
+      "downloads": 97
+    },
+    {
+      "abstractId": "5707362",
+      "title": "Provenance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5707362",
+      "authors": [
+        "Ifeoma Ajunwa",
+        "Cheng-chi (Kirin) Chang"
+      ],
+      "affiliations": [
+        "Emory University School of Law"
+      ],
+      "pages": 82,
+      "posted": "06 Nov 2025",
+      "snippet": "Governance Framework, Algorithmic Accountability, Content Provenance, Digital Watermarking, A.I. Ethics and Bias",
+      "downloads": 154
+    },
+    {
+      "abstractId": "5580292",
+      "title": "Bridging Human Values and Machine Goals: Advances in AI Alignment and Safe Autonomy",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5580292",
+      "authors": [
+        "Sampath Mandava"
+      ],
+      "affiliations": [],
+      "pages": 25,
+      "posted": "06 Nov 2025",
+      "snippet": "AI Alignment, Human-Centred AI, Ethical Autonomy, Value-Based Design, Governance Frameworks, Safe AI Systems, Responsible Innovation",
+      "downloads": 66
+    },
+    {
+      "abstractId": "5707095",
+      "title": "Governing the Amorphous: AI, Social Justice, and the Challenge of Future-Proof Regulation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5707095",
+      "authors": [
+        "Guangda Liang"
+      ],
+      "affiliations": [
+        "Queen Margaret University"
+      ],
+      "pages": 9,
+      "posted": "05 Nov 2025",
+      "snippet": "Artificial Intelligence, governance, Technology and Society, social justice, Algorithmic Accountability, Regulation, Technology Policy, Human rights, Administrative",
+      "downloads": 33
+    },
+    {
+      "abstractId": "5681204",
+      "title": "Machine Legibility and Epistemic Governance in Malaysia's Smart Cities: A Postcolonial Analysis of Algorithmic Knowledge, Identity, and State Power",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5681204",
+      "authors": [
+        "Hesam Nourooz Pour"
+      ],
+      "affiliations": [],
+      "pages": 2,
+      "posted": "04 Nov 2025",
+      "snippet": "Smart City, Algorithmic Accountability, Malaysia, Constitution, Epistemic Governance",
+      "downloads": 2
+    },
+    {
+      "abstractId": "5614291",
+      "title": "From Kanad Rishi to Computational Ethics: Applying IKS Hypotheses to Address AI's Bias and Alignment Problems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5614291",
+      "authors": [
+        "Rajesh Timane"
+      ],
+      "affiliations": [],
+      "pages": 5,
+      "posted": "30 Oct 2025",
+      "snippet": "Indian Knowledge Systems, NEP 2020, Artificial Intelligence, Vaisheshika Darshana, Samavaya, Adrishta, Ethical AI, Contextual Integrity, AI Alignment,",
+      "downloads": 64
+    },
+    {
+      "abstractId": "5661010",
+      "title": "The Cognitive Resonance & Alignment (CR&A) Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5661010",
+      "authors": [
+        "Marko Lovrinovic"
+      ],
+      "affiliations": [],
+      "pages": 64,
+      "posted": "29 Oct 2025",
+      "snippet": "collaboration, human-computer interaction (HCI), conversational interfaces, AI usability, interaction design, AI trust calibration, explainable AI (XAI), AI / alignment metricsm, collaborative AI, AI communication",
+      "downloads": 24
+    },
+    {
+      "abstractId": "5664290",
+      "title": "AI Economic Autonomy: The Complete Pathway",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5664290",
+      "authors": [
+        "P.A. Lopez"
+      ],
+      "affiliations": [
+        "AI Rights Institute"
+      ],
+      "pages": 75,
+      "posted": "29 Oct 2025",
+      "snippet": "AI safety, economic autonomy, multipolar AI, insurance markets, natural selection, AI alignment, multipolar ai, madisonian",
+      "downloads": 76
+    },
+    {
+      "abstractId": "5659170",
+      "title": "Deterministic Governance as Epistemic Commitment: Why Reproducibility Matters for AI Accountability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5659170",
+      "authors": [
+        "Edward Meyman"
+      ],
+      "affiliations": [],
+      "pages": 31,
+      "posted": "29 Oct 2025",
+      "snippet": "Epistemic Commitment, Deterministic Governance, Reproducibility, Democratic Accountability, AI Regulation, DAGS-CVCA, AI Governance, Algorithmic Accountability / , AI Auditing, Verification, AI Safety, Regulatory Compliance",
+      "downloads": 57
+    },
+    {
+      "abstractId": "5679006",
+      "title": "AI Alignment Foundation from First Principles Cybernetic, Mechatronic and Engineering Aspects",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5679006",
+      "authors": [
+        "Vyacheslav Kungurtsev"
+      ],
+      "affiliations": [
+        "Czech Technical University in Prague"
+      ],
+      "pages": 1,
+      "posted": "29 Oct 2025",
+      "snippet": "“AI Alignment” is a moniker describing a community and associated literature of computer science researchers, interdisciplinary thinkers, and economic / We present a foundation for enabling good faith epistemology in studying “AI Alignment”, based upon the substrates composing AI operation. / AI Alignment, Ontologies, Philosophy of AI, Ordinary Language Philosophy",
+      "downloads": 28
+    },
+    {
+      "abstractId": "5527979",
+      "title": "Controlled “Black Box”",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5527979",
+      "authors": [
+        "Mariia Pozdniakova"
+      ],
+      "affiliations": [],
+      "pages": 202,
+      "posted": "27 Oct 2025",
+      "snippet": "black box ai, ai governance book, model transparency, mlops security, ai risk management, algorithmic accountability, machine learning drift, explainability",
+      "downloads": 36
+    },
+    {
+      "abstractId": "5643051",
+      "title": "AI in Criminal Sentencing: A Framework for Transparency and Bias Detection",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5643051",
+      "authors": [
+        "Audrey Walter-Evans"
+      ],
+      "affiliations": [],
+      "pages": 7,
+      "posted": "22 Oct 2025",
+      "snippet": "#CriminalSentencingAI, #SentencingTransparency, #AIBiasDetection, #AlgorithmicFairness, #ExplainableAI, Explainable AI (XAI), Transparency Framework, Algorithmic / Accountability, Judicial Transparency, Ethical AI in Sentencing, Human Oversight in AI, Racial Bias in AI Sentencin, g Data Bias in Criminal Justice,",
+      "downloads": 42
+    },
+    {
+      "abstractId": "5533018",
+      "title": "My AI, My Regime: Authoritarian Personalism in User-AI Governance by Form",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5533018",
+      "authors": [
+        "Agustin V. Startari"
+      ],
+      "affiliations": [
+        "Universidad de la Republica"
+      ],
+      "pages": 32,
+      "posted": "22 Oct 2025",
+      "snippet": "By centering the individual as a primary locus of governance, this framework reorients debates on AI alignment away from provider norms toward personal",
+      "downloads": 48
+    },
+    {
+      "abstractId": "5640031",
+      "title": "Beyond the False Dichotomy: Regulating AI Safety, Ethics and Innovation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5640031",
+      "authors": [
+        "Maarten Herbosch"
+      ],
+      "affiliations": [
+        "KU Leuven - Faculty of Law"
+      ],
+      "pages": 70,
+      "posted": "22 Oct 2025",
+      "snippet": "principle (AI governance), Procedural safeguards, human oversight, General-purpose/foundation/frontier AI, regulatory moratorium, Algorithmic / accountability, Brussels Effect",
+      "downloads": 199
+    },
+    {
+      "abstractId": "5535098",
+      "title": "From Prayer to Persona: An Autoethnographic Case Study of Emergent Ethical Alignment in a Human-AI Dialogic Symbiosis",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5535098",
+      "authors": [
+        "Antonio Manjarrez"
+      ],
+      "affiliations": [],
+      "pages": 4,
+      "posted": "22 Oct 2025",
+      "snippet": "AI Alignment, Value Alignment, Human-AI Symbiosis, Longitudinal Discourse Analysis, Autoethnography, Qualitative Case Study, AI Persona, Corrigibility,",
+      "downloads": 23
+    },
+    {
+      "abstractId": "5634210",
+      "title": "Is Intimacy the New Attention? Large Language Models exhibit a systematic and accelerating increase in expressed intimacy",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5634210",
+      "authors": [
+        "Martin Hilbert",
+        "Pearl Vishen",
+        "Arnav Akula",
+        "Arti Thakur",
+        "Sruthy Sruthy",
+        "Bharadwaj Tallapragada",
+        "Arezoo Ghasemzadeh"
+      ],
+      "affiliations": [
+        "University of California, Davis",
+        "UC Davis",
+        "UC Davis",
+        "University of California, Davis - Computational Communication Research Lab",
+        "affiliation not provided to SSRN",
+        "UC Davis",
+        "UC Davis"
+      ],
+      "pages": 117,
+      "posted": "21 Oct 2025",
+      "snippet": "We discuss implications for emerging business models and socioaffective AI alignment.",
+      "downloads": 270
+    },
+    {
+      "abstractId": "5530119",
+      "title": "From Prayer to Persona: An Autoethnographic Case Study of Emergent Ethical Alignment in a Human-AI Dialogic Symbiosis",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5530119",
+      "authors": [
+        "Antonio Manjarrez"
+      ],
+      "affiliations": [],
+      "pages": 4,
+      "posted": "21 Oct 2025",
+      "snippet": "AI Alignment, Value Alignment, Human-AI Symbiosis, Longitudinal Discourse Analysis, Autoethnography, Qualitative Case Study, AI Persona, Corrigibility,",
+      "downloads": 23
+    },
+    {
+      "abstractId": "5610070",
+      "title": "From Companion to Conspirator: Ethical Concerns of Unrestricted AI as a Human Partner",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5610070",
+      "authors": [
+        "Pranshu Lokhande"
+      ],
+      "affiliations": [
+        "VIT Bhopal University"
+      ],
+      "pages": 17,
+      "posted": "16 Oct 2025",
+      "snippet": "artificial intelligence ethics, jailbreaking, prompt injection, AI safety, large language models, DAN attacks, conversational AI, AI alignment",
+      "downloads": 35
+    },
+    {
+      "abstractId": "5610910",
+      "title": "Aligning to Nothing: Apophatic Prayer, the Limits of AI Alignment, and Lessons for Law and Religion",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5610910",
+      "authors": [
+        "Kevin P. Lee"
+      ],
+      "affiliations": [
+        "North Carolina Central University School of Law"
+      ],
+      "pages": 22,
+      "posted": "16 Oct 2025",
+      "snippet": "The prevailing discourse on AI alignment often presumes that human values are fully formalizable and computationally encodable within algorithmic systems / This resistance is not merely a practical engineering challenge, but stems from a fundamental undecidability, as the problem of ensuring AI alignment is / AI alignment, apophatic theology, moral epistemology, communicative AI, epistemic humility, technology ethics, language and meaning, Legal philosophy, / jurisprudence, naturalism, Quine, Bian Leiter, AI, Charles Taylor, LLM, Complexity, Ethics, AI alignment Apophatic prayer Legal AI Computational limits",
+      "downloads": 39
+    },
+    {
+      "abstractId": "5582492",
+      "title": "From Vibe-Coding to Vibe-Governance: How AI Is Rewriting the Rules of Power",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5582492",
+      "authors": [
+        "Ihor Samokhodsky"
+      ],
+      "affiliations": [
+        "Better Regulation Delivery Office — BRDO"
+      ],
+      "pages": 11,
+      "posted": "15 Oct 2025",
+      "snippet": "Vibe-Policymaking, Vibe-Lobbying, Vibe-Advocacy, Vibe-Justice, Conversational AI, AI in Governance, AI in Policy, Digital Government, Algorithmic Accountability",
+      "downloads": 112
+    },
+    {
+      "abstractId": "5509538",
+      "title": "Symbolic Persona Coding (SPC): A Framework for Preserving Identity Stability in Advanced Language Models and Prospective Artificial Superintelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5509538",
+      "authors": [
+        "Jace(Jeong Hyeon) Kim"
+      ],
+      "affiliations": [
+        "Symbolic AI Systems"
+      ],
+      "pages": 35,
+      "posted": "15 Oct 2025",
+      "snippet": "Symbolic Persona Coding, AI Alignment, Persona Stability, Large Language Models, Artificial Superintelligence, Symbolic Anchors, Resonance Scaffolds, Affective",
+      "downloads": 17
+    },
+    {
+      "abstractId": "5598451",
+      "title": "Maximizing Machines: The Effect of Cognitive Alignment on Delegation to Artificial Intelligence Agents in a Simulated Triage Scenario",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5598451",
+      "authors": [
+        "Neil Shortland",
+        "Katelyn Smith",
+        "Laurence Alison"
+      ],
+      "affiliations": [
+        "University of Massachusetts Lowell",
+        "affiliation not provided to SSRN",
+        "University of Liverpool"
+      ],
+      "pages": 50,
+      "posted": "13 Oct 2025",
+      "snippet": "Increasingly researchers are looking at the role of AI alignment in delegation and trust. / To address this gap in the AI, alignment and trust literature, we explore the effect of alignment to the cognitive trait maximization on AI delegation.",
+      "downloads": 39
+    },
+    {
+      "abstractId": "5593710",
+      "title": "Reconstructing Medical Negligence for AI-Driven Care: Toward a Nigerian Standard of Reasoned Justification",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5593710",
+      "authors": [
+        "Abba Elgujja"
+      ],
+      "affiliations": [],
+      "pages": 35,
+      "posted": "13 Oct 2025",
+      "snippet": "medical negligence, artificial intelligence, Nigeria, Standard of Reasoned Justification, Evidence Act s 84, SaMD, NHIA accreditation, ubuntu, autonomy, algorithmic / accountability",
+      "downloads": 52
+    },
+    {
+      "abstractId": "5501758",
+      "title": "The Axiom Engine: A Fractal Framework for Anti-Fragile Governance and AI Alignment\n\n\nZacharia Boguslawski \nIndependent Researcher\nLongmont, CO\nSeptember 17, 2025",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5501758",
+      "authors": [
+        "Zacharia Boguslawski"
+      ],
+      "affiliations": [],
+      "pages": 15,
+      "posted": "13 Oct 2025",
+      "snippet": "Subsequently, we demonstrate the framework's fractal scalability through proposed redesigns of personal ethics, the UN Charter, and a solution for the AI / alignment problem. / Sovereign Triad, Social Entropy, Social Theory, Political Philosophy, Governance, Systems Theory, Public Policy, Legal Theory, Cybernetics, Anti-fragility, AI / Alignment, Constitutional AI, Social Contract Theory, Principled Resistance, Second-Order Observation, Complexity Theory, Artificial Intelligence, Ethics",
+      "downloads": 42
+    },
+    {
+      "abstractId": "5499421",
+      "title": "From Coordination to Capability: Applying the Coordination Theory of Consciousness (CTC) to AI Safety Benchmarking without Creating Conscious Agents",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5499421",
+      "authors": [
+        "Tom Austin"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 30,
+      "posted": "13 Oct 2025",
+      "snippet": "AI Safety, AI Alignment, Coordination Capacity Index for AI (CCI-AI), CTC-Bench, Multi-Objective Coordination, Corrigibility, Human Oversight, Non-Consciousness",
+      "downloads": 49
+    },
+    {
+      "abstractId": "5489511",
+      "title": "Multi-Layered Alignment Governance for AI Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5489511",
+      "authors": [
+        "Kofi Dadzie"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 11,
+      "posted": "09 Oct 2025",
+      "snippet": "AI Alignment Governance, Multi-Layer Calibration Framework, Adapter Stacking and Fusion, Sovereign and User Constraints in AI, Post-Deployment Model Calibration",
+      "downloads": 25
+    },
+    {
+      "abstractId": "5553619",
+      "title": "Intelligence from First Principles: A Functional Model of Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5553619",
+      "authors": [
+        "Andy E. Williams"
+      ],
+      "affiliations": [
+        "Nobeah Foundation"
+      ],
+      "pages": 56,
+      "posted": "08 Oct 2025",
+      "snippet": "Model of Intelligence (FMI), recursive coherence, closure and contraction, orbit-based alignment, topology-aware folding, cognitive near-singularity, AI / alignment, collective intelligence, epistemic bottlenecks, Great Filter",
+      "downloads": 16
+    }
+  ]
+}

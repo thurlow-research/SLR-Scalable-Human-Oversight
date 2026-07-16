@@ -1,0 +1,81 @@
+{
+  "item_key": "WZCULPXN",
+  "citation": "Sulova 2025",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model"
+  ],
+  "problem_statement": "The paper addresses how to systematically assess and manage the risks of AI-generated content and code in web application development, since AI outputs are not infallible and require oversight to ensure quality, security, and compliance.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "security",
+    "quality",
+    "legal",
+    "ethical",
+    "hallucination",
+    "bias",
+    "copyright",
+    "data-leakage",
+    "vulnerable-code",
+    "maintainability"
+  ],
+  "insufficiency_evidence": "AI code generators \"often overlook critical syntactic details, propose incorrect or inefficient implementations, and may rely on outdated or incompatible libraries\"; \"AI-generated code cannot be considered ready for immediate use and requires careful review, testing, and optimization by a qualified developer.\"",
+  "solution_mechanisms": [
+    "conceptual risk-assessment framework",
+    "code review of AI code",
+    "AI consistency testing for hallucinations",
+    "benchmark testing vs reference code",
+    "unit and integration tests",
+    "model validation and verification",
+    "threat modeling",
+    "penetration testing",
+    "vendor risk assessment",
+    "data leakage analysis",
+    "human-in-the-loop review",
+    "bias detection",
+    "ethical impact assessment",
+    "AI transparency assessment",
+    "legal compliance check",
+    "dataset audit",
+    "UX/UI heuristic evaluation",
+    "content quality audit"
+  ],
+  "mechanism_keywords": [
+    "framework",
+    "risk-categorization",
+    "static-code-analysis",
+    "hallucination-detection",
+    "consistency-testing",
+    "benchmark",
+    "threat-modeling",
+    "pentest",
+    "vendor-risk",
+    "data-leakage",
+    "hitl",
+    "bias-testing",
+    "transparency",
+    "compliance-check",
+    "provenance-audit"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "testing",
+    "pre-deployment"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "conceptual framework for AI-based tools in web development",
+    "AI hallucinations",
+    "AI as powerful first drafts"
+  ],
+  "governance_refs": [
+    "NIST AI RMF",
+    "GDPR",
+    "AI-TMM (AI Trust Framework and Maturity Model)",
+    "WCAG"
+  ],
+  "scope_fit": "solution",
+  "notes": null,
+  "_truncated": false
+}

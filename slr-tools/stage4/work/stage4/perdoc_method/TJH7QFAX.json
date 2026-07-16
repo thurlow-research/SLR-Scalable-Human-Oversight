@@ -1,0 +1,16 @@
+{
+  "item_key": "TJH7QFAX",
+  "methods": [
+    "controlled-experiment",
+    "benchmark-evaluation",
+    "measurement-study",
+    "dataset-contribution",
+    "statistical-analysis",
+    "machine-learning-modeling"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "controlled-experiment",
+  "notes": "Large-scale empirical study on a curated 5,000-file Python dataset from CodeContests: runs six LLMs to refactor code, uses passing unit tests as an oracle, and compares break rates by CodeHealth group with statistical tests (Mann-Whitney, chi-square, Holm correction) plus decision-tree/logistic-regression predictive modeling. It is a controlled comparison over a constructed benchmark dataset, not repository-mining or a human-subjects study; no human participants are involved.",
+  "citation": "Borg 2026"
+}

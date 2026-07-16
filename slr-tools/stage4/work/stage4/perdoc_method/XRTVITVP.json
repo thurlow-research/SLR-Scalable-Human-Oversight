@@ -1,0 +1,16 @@
+{
+  "item_key": "XRTVITVP",
+  "methods": [
+    "design-science/prototype/tool-build",
+    "controlled-experiment",
+    "ablation-study",
+    "simulation",
+    "user-study",
+    "reinforcement-learning-training"
+  ],
+  "empirical": true,
+  "human_subjects": true,
+  "primary_hint": "design-science/prototype/tool-build",
+  "notes": "Builds an interactive oversight framework and validates it via the 'sandwich' protocol: controlled comparisons against vibe-coding and vanilla-interaction baselines using LLM-based simulated users, plus a small real-user study (10 cases, hired non-expert) and human annotators for LLM-judge/simulator validation (human_subjects=true). Includes an ablation study and RL training of the interaction agent from online user feedback. Evaluation is largely LLM-simulated rather than large-scale human participants.",
+  "citation": "Zhou 2026"
+}

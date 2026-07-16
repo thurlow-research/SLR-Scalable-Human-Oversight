@@ -1,0 +1,15 @@
+{
+  "item_key": "UB2EVUFU",
+  "methods": [
+    "design-science / prototype / tool-build",
+    "benchmark-evaluation",
+    "field-study",
+    "case-study",
+    "qualitative-analysis"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science / prototype / tool-build",
+  "notes": "Builds TheBotCompany orchestration framework and evaluates it via (a) ProjDevBench benchmark against single-agent baselines and (b) four multi-day real-world deployments (field-study) with log-based qualitative analysis and an embedded case study of Project C. No human-subjects data; humans appear only as system operators, not study participants.",
+  "citation": "Lyu 2026"
+}

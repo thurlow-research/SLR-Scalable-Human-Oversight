@@ -1,0 +1,14 @@
+{
+  "item_key": "P837LJWE",
+  "methods": [
+    "case-study",
+    "measurement-study",
+    "design-science/prototype/tool-build",
+    "conceptual/framework"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "case-study",
+  "notes": "Single industrial case study (Runeson & H\u00f6st) of one author-led legacy-to-cloud migration; includes a quantitative performance measurement/benchmark evaluation (JMeter load tests, Welch's t-test, N=100) and builds a four-pillar HITL framework/tooling. No human-participant data\u2014'human validation time' and rollback telemetry come from the author's own workflow, not a user study.",
+  "citation": "Bhatnagar 2026"
+}

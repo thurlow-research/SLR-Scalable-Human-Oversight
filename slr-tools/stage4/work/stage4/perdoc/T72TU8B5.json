@@ -1,0 +1,77 @@
+{
+  "item_key": "T72TU8B5",
+  "citation": "Shukla 2026",
+  "evidence_type": [
+    "system-tool",
+    "empirical",
+    "case-study"
+  ],
+  "problem_statement": "Coding agents introduce unintended edits, subtle bugs, and scope drift that slip past code review, forcing developers to decide how much autonomy to grant; static permission settings and instruction files cannot track developers' shifting, context-dependent autonomy preferences over time.",
+  "magnitude_evidence": "81% of users preferred intermediate checkpoints in a recent 48-participant study [12]; formative survey found subtle bugs that pass review (13/21), erosion of codebase understanding (12/21), security vulnerabilities (10/21) as leading concerns",
+  "risk_types": [
+    "subtle bugs",
+    "quality",
+    "security",
+    "scope-drift",
+    "unintended-edits",
+    "loss-of-understanding",
+    "outdated-context"
+  ],
+  "insufficiency_evidence": "Claude Code with CLAUDE.md 'ask before API-shape changes' caught only 2 of 4 required check-ins (recall 0.50), silently skipping two signature-change operations despite explicit instruction; without a rule (CC-B) recall 0.00; 'Auto Memory stores preferences as prose but does not produce a quantitative check-in threshold'",
+  "solution_mechanisms": [
+    "dynamic autonomy calibration from interaction traces",
+    "online logistic-regression policy engine over 13-dim action features",
+    "two-tier governance: hard constraints vs behavioral guidance",
+    "three-tier approval cascade with proceed/flag/check-in thresholds",
+    "per-action authority (not global permission)",
+    "retrieval of past corrections into prompt context",
+    "workflow-phase gating (research/plan/implement/review)",
+    "revocable trust preferences (hw preferences-revoke)",
+    "legible session summary separating policy- vs agent-initiated check-ins",
+    "test-suite verification of approved changes",
+    "LLM-judge oracle for evaluation"
+  ],
+  "mechanism_keywords": [
+    "dynamic-autonomy",
+    "hitl",
+    "on-the-loop",
+    "policy-as-code",
+    "risk-routing",
+    "escalation",
+    "calibration",
+    "online-learning",
+    "logistic-regression",
+    "guardrail",
+    "hard-constraint",
+    "retrieval-memory",
+    "observability",
+    "provenance",
+    "risk-threshold",
+    "revocable-trust",
+    "llm-as-judge",
+    "spec-driven",
+    "personalization"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-commit",
+    "code-review",
+    "runtime",
+    "plan-time"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "Hedwig",
+    "dynamic autonomy",
+    "hard constraints vs behavioral guidance",
+    "policy path vs retrieval path",
+    "three-tier approval cascade",
+    "policy-initiated vs agent-initiated check-ins",
+    "autonomy preferences (prefer_fewer_checkins)",
+    "local oversight"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

@@ -1,0 +1,926 @@
+{
+  "count": 50,
+  "total": "844",
+  "page": "15",
+  "records": [
+    {
+      "abstractId": "4781724",
+      "title": "The New AI: The Legal and Ethical Implications of ChatGPT and Other Emerging Technologies (Symposium Foreword)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4781724",
+      "authors": [
+        "Deborah W. Denno",
+        "Erica Valencia-Graham"
+      ],
+      "affiliations": [
+        "Fordham University School of Law",
+        "Fordham University School of Law"
+      ],
+      "pages": 13,
+      "posted": "03 Apr 2024",
+      "snippet": "This Foreword overviews an unprecedented Symposium on wide-ranging topics titled The New AI: The Legal and Ethical Implications of ChatGPT and Other Emerging / Symposium brought together attorneys, judges, professors, and scientists to explore the opportunities and risks presented by AI, especially GenAI like ChatGPT",
+      "downloads": 289
+    },
+    {
+      "abstractId": "4744202",
+      "title": "Who Owns Generative Ai Training Data? Mapping the Issue and a Way Forward",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4744202",
+      "authors": [
+        "Beatriz Botero Arcila"
+      ],
+      "affiliations": [
+        "Institut d'Etudes Politiques de Paris (Sciences Po) - Sciences Po Law School - Ecole de Droit de Sciences Po"
+      ],
+      "pages": 13,
+      "posted": "01 Apr 2024",
+      "snippet": "With the rise of generative artificial intelligence (GAI) - the type of AI that powers popular applications like ChatGPT, DALL-E or Stable Diffusion - / This Article maps the key legal and governance questions regarding the training data of GAI.",
+      "downloads": 124
+    },
+    {
+      "abstractId": "4766881",
+      "title": "ChatGPT as the Marketplace of Ideas: Should Truth-Seeking Be the Goal of AI Content Governance?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4766881",
+      "authors": [
+        "Jiawei Zhang"
+      ],
+      "affiliations": [],
+      "pages": 27,
+      "posted": "28 Mar 2024",
+      "snippet": "Here, a pivotal issue is: should truth-seeking be set as the goal of AI content governance? / Given the unattainability of the absolute truth-seeking goal, I argue against adopting zero-risk policies. / Marketplace of Ideas, ChatGPT, AI Policy, Bias, Knowledge-Based Approach, AI content risks, Truth-Seeking Obligations, Large Language Models, Generative",
+      "downloads": 202
+    },
+    {
+      "abstractId": "4764290",
+      "title": "Sticky Charters? The Surprisingly Tepid Embrace of Officer-Protecting Waivers in Delaware",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4764290",
+      "authors": [
+        "Jens Frankenreiter",
+        "Eric L. Talley"
+      ],
+      "affiliations": [
+        "Washington University in St. Louis - School of Law",
+        "Columbia University - Law School"
+      ],
+      "pages": 65,
+      "posted": "25 Mar 2024",
+      "snippet": "Notably, and in a significant departure from previous machine learning tools, ChatGPT accomplishes this set of tasks without the need for training data / Our results seem more consistent with alternative explanations, ranging from the plausible irrelevance of Delaware’s reform, to a risk-averse reticence / corporate governance, fiduciary duties, officer liability, natural language processing, large language models",
+      "downloads": 449
+    },
+    {
+      "abstractId": "4756038",
+      "title": "Assisting Recommendations Formulation of Practice Guideline with Large Language Models: A Feasibility Study",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4756038",
+      "authors": [
+        "Ziying Ye",
+        "Honghao Lai",
+        "Mingyao Sun",
+        "Jiajie Huang",
+        "Jiayi Liu",
+        "Danni Xia",
+        "Weilong Zhao",
+        "Jianing Liu",
+        "Long Ge"
+      ],
+      "affiliations": [
+        "Lanzhou University - Evidence-Based Social Science Research Center",
+        "Lanzhou University - Evidence-Based Social Science Research Center",
+        "Lanzhou University - Department of Intensive Care Unit",
+        "Gansu University of Chinese Medicine",
+        "Lanzhou University - Evidence-Based Social Science Research Center",
+        "Lanzhou University - Evidence-Based Social Science Research Center",
+        "Lanzhou University - Evidence-Based Social Science Research Center",
+        "Gansu University of Chinese Medicine",
+        "Lanzhou University - Evidence-Based Social Science Research Center"
+      ],
+      "pages": 28,
+      "posted": "20 Mar 2024",
+      "snippet": "This study aims to assess the feasibility of three large language models (ChatGPT-3.5, Claude, and Bard) in generating guideline recommendations, evaluate / Conversely, Claude tended to generate fewer topics, focusing on evidence analysis and mitigating the risk of extraneous and irrelevant information.",
+      "downloads": 62
+    },
+    {
+      "abstractId": "4764706",
+      "title": "Constructing AI Speech",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4764706",
+      "authors": [
+        "Margot E. Kaminski",
+        "Meg Leta Jones"
+      ],
+      "affiliations": [
+        "University of Colorado Law School, Yale University - Yale Information Society Project",
+        "Georgetown University - Communication, Culture, and Technology Program"
+      ],
+      "pages": 55,
+      "posted": "19 Mar 2024",
+      "snippet": "Artificial Intelligence (AI) systems such as ChatGPT can now produce convincingly human speech, at scale. / Content-moderation law regulates communications platforms and networks toward the goals of balancing harms against free speech and innovation; risk regulation / AI, Artificial Intelligence, First Amendment, Data Privacy, Privacy, FTC, Risk Regulation, Content Moderation",
+      "downloads": 424
+    },
+    {
+      "abstractId": "4750197",
+      "title": "OpenAI’s Transformation: From a Non-profit to a 100 Billion Valuation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4750197",
+      "authors": [
+        "Alexandra Andhov"
+      ],
+      "affiliations": [
+        "University of Auckland - Faculty of Law"
+      ],
+      "pages": 17,
+      "posted": "19 Mar 2024",
+      "snippet": "A pivotal moment in OpenAI's trajectory was the launch of ChatGPT in November 2022, which rapidly acquired 100 million users, surpassing the adoption rates / OpenAI, corporate structure, corporate governance, NGO",
+      "downloads": 1300
+    },
+    {
+      "abstractId": "4745277",
+      "title": "The Automation Paradox",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4745277",
+      "authors": [
+        "Mbilike M. Mwafulirwa"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 54,
+      "posted": "18 Mar 2024",
+      "snippet": "Generative AI, ChatGPT, Autonomous Vehicles, Self-driving Cars, First Amendment, Originalism, Common law, Arizona, Texas, Oklahoma, liability, Who should",
+      "downloads": 167
+    },
+    {
+      "abstractId": "4752930",
+      "title": "Government-Enterprise Green Collaborative Governance and Urban Carbon Emission Reduction: Empirical Evidence from Green PPP Programs",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4752930",
+      "authors": [
+        "Shixiang Wang",
+        "Chang Liu",
+        "Zheng Zhou"
+      ],
+      "affiliations": [
+        "Jilin University of Finance and Economics",
+        "Jilin University of Finance and Economics",
+        "Hunan University"
+      ],
+      "pages": 34,
+      "posted": "08 Mar 2024",
+      "snippet": "regulatory bodies' efficiency in governance. / By crawling data on public-private partnerships (PPP) , employing the frontier artificial intelligence big language model ChatGPT to identify green PPP / government-enterprise, green collaborative governance, carbon emission, green PPP, ChatGPT",
+      "downloads": 97
+    },
+    {
+      "abstractId": "4749193",
+      "title": "Geosystems Risk and Uncertainty: The Application of Chatgpt with Targeted Prompting",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4749193",
+      "authors": [
+        "Seyed Kourosh Mahjour",
+        "Ramin Soltanmohammadi",
+        "Ehsan Heidaryan",
+        "Salah A. Faroughi"
+      ],
+      "affiliations": [
+        "Texas State University",
+        "Texas State University",
+        "University of Wyoming",
+        "Texas State University"
+      ],
+      "pages": 16,
+      "posted": "05 Mar 2024",
+      "snippet": "ChatGPT, a prominent large language model (LLM), is being increasingly used across a wide range of scientific fields. / on risk and uncertainty (R&U) in both the Greenfield and Brownfield domains as an important area of interest. / ChatGPT, Prompting, Geosystems, Risk & Uncertainty, Greenfield & Brownfield",
+      "downloads": 99
+    },
+    {
+      "abstractId": "4746840",
+      "title": "The EU Artificial Intelligence (AI) Act: An Introduction",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4746840",
+      "authors": [
+        "Ceyhun Necati Pehlivan"
+      ],
+      "affiliations": [
+        "IE Law School"
+      ],
+      "pages": 13,
+      "posted": "04 Mar 2024",
+      "snippet": "The AI Act follows a risk-based approach and aims to ensure that AI systems placed on or used in the EU market are safe and respect fundamental rights. / The AI Act is expected to become a model for AI governance worldwide in a similar way that the General Data Protection Regulation (GDPR) has influenced / AI Act, EU, Artificial Intelligence, AI, AI Systems, High-Risk, General Purpose, GPAI, Generative AI, Foundation Models, ChatGPT",
+      "downloads": 91
+    },
+    {
+      "abstractId": "4705933",
+      "title": "ChatGPT And Academia on Accounting Assessments",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4705933",
+      "authors": [
+        "Indra Abeysekera"
+      ],
+      "affiliations": [
+        "Ton Duc Thang University"
+      ],
+      "pages": 10,
+      "posted": "22 Feb 2024",
+      "snippet": "ChatGPT is considered a risk and an opportunity for academia. / ChatGPT received one question at a time requesting a solution. / academia, accounting, assessments, ChatGPT, multiple choice questions, Sustainable Development Goals of the United Nations",
+      "downloads": 103
+    },
+    {
+      "abstractId": "4720591",
+      "title": "Artificial Intelligence-driven corporate finance: enhancing efficiency and decision-making through machine learning, natural language processing, and robotic process automation in corporate governance and sustainability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4720591",
+      "authors": [
+        "Nitin Rane",
+        "Saurabh Choudhary",
+        "Jayesh Rane"
+      ],
+      "affiliations": [
+        "Vivekanand Education Society's College of Architecture (VESCOA)",
+        "University of Mumbai",
+        "K. J. Somaiya College of Engineering"
+      ],
+      "pages": 22,
+      "posted": "21 Feb 2024",
+      "snippet": "of machine learning, natural language processing (NLP), and robotic process automation (RPA), AI introduces innovative methods for enhancing corporate governance / Machine learning algorithms play a pivotal role in detecting patterns and correlations within financial data, facilitating proactive risk management and / Finance, Corporate Finance, Corporate Governance, Corporate Social Responsibility, Artificial Intelligence, ChatGPT",
+      "downloads": 1547
+    },
+    {
+      "abstractId": "4722780",
+      "title": "Can ChatGPT Plan Your Retirement?: Generative AI and Financial Advice",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4722780",
+      "authors": [
+        "Andrew W. Lo",
+        "Jillian Ross"
+      ],
+      "affiliations": [
+        "Massachusetts Institute of Technology (MIT) - Laboratory for Financial Engineering",
+        "MIT CSAIL"
+      ],
+      "pages": 47,
+      "posted": "19 Feb 2024",
+      "snippet": "expertise to a user’s unique situation, trustworthiness and adherence to the user’s moral and ethical standards, and conformity to regulatory guidelines and oversight / Financial Advisors; Robo Advisors; Financial Technology; Generative AI; Large Language Models; ChatGPT",
+      "downloads": 1841
+    },
+    {
+      "abstractId": "4687558",
+      "title": "AI Outputs Are Not Protected Speech",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4687558",
+      "authors": [
+        "Peter Salib"
+      ],
+      "affiliations": [
+        "University of Houston Law Center"
+      ],
+      "pages": 71,
+      "posted": "16 Feb 2024",
+      "snippet": "When a generative AI system—like ChatGPT—outputs some text, image, or sound, no one thereby communicates. / Systems like ChatGPT are designed to be able to “say” essentially anything, producing innumerable ideas and opinions that neither creators nor users have / AI, ChatGPT, Large Language Models, First Amendment, Free Speech, AI Safety, AI Risk, AI Catastrophe",
+      "downloads": 930
+    },
+    {
+      "abstractId": "4725206",
+      "title": "Generative Ai as (Un)Welcome Agents in Medical Crowdfunding: The Trust Dilemma and Moral Hazard",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4725206",
+      "authors": [
+        "Caroline Arnold",
+        "Larry Zhiming Xu",
+        "Kambiz Saffarizadeh",
+        "Praveen Madiraju"
+      ],
+      "affiliations": [
+        "Mount Holyoke College",
+        "Marquette University",
+        "University of Texas at Arlington - Department of Information Systems & Operations Management",
+        "Marquette University"
+      ],
+      "pages": 46,
+      "posted": "13 Feb 2024",
+      "snippet": "It calls for the development of regulatory frameworks for enhanced and conscientious governance. / medical crowdfunding, Generative AI, trust, sentiment analysis, agency theory, ChatGPT",
+      "downloads": 346
+    },
+    {
+      "abstractId": "4683700",
+      "title": "Super-Intelligent Machines - Analysis of Developmental Challenges and Predicted Negative Consequences",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4683700",
+      "authors": [
+        "P. S. Aithal"
+      ],
+      "affiliations": [],
+      "pages": 32,
+      "posted": "30 Jan 2024",
+      "snippet": "artificial intelligence technology and its adverse effect on society initially started both academia and industries which is now percolating to society and governance / relevant & published information using Google search engine, Google Scholar search engine, and Various Artificial Intelligence generating engines like ChatGPT",
+      "downloads": 445
+    },
+    {
+      "abstractId": "4708115",
+      "title": "Large Language Models and the Treaty Interpretation Game",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4708115",
+      "authors": [
+        "Jack Wright Nelson"
+      ],
+      "affiliations": [
+        "Thompson Rivers University - Faculty of Law"
+      ],
+      "pages": 0,
+      "posted": "29 Jan 2024",
+      "snippet": "In line with the existing research on ChatGPT’s legal abilities, the author concludes that ChatGPT competently plays the treaty interpretation game. / As such, this paper concludes with a cautionary note: the potential gains derived from LLMs risk being offset by disciplinary stagnation.",
+      "downloads": 0
+    },
+    {
+      "abstractId": "4681747",
+      "title": "Intelligent Manufacturing through Generative Artificial Intelligence, Such as ChatGPT or Bard",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4681747",
+      "authors": [
+        "Nitin Rane",
+        "Saurabh Choudhary",
+        "Jayesh Rane"
+      ],
+      "affiliations": [
+        "Vivekanand Education Society's College of Architecture (VESCOA)",
+        "University of Mumbai",
+        "K. J. Somaiya College of Engineering"
+      ],
+      "pages": 19,
+      "posted": "12 Jan 2024",
+      "snippet": "The research also explores the application of ChatGPT in supply chain management. / The model's capacity to process vast amounts of textual data contributes to improved demand forecasting, inventory optimization, and supply chain risk / ChatGPT, Bard, Artificial Intelligence, Manufacture, Industry 4.0, Industrial Research, Decision Support Systems.",
+      "downloads": 1165
+    },
+    {
+      "abstractId": "4681720",
+      "title": "Contribution of ChatGPT and Similar Generative Artificial Intelligence for Enhanced Climate Change Mitigation Strategies",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4681720",
+      "authors": [
+        "Nitin Rane",
+        "Saurabh Choudhary",
+        "Jayesh Rane"
+      ],
+      "affiliations": [
+        "Vivekanand Education Society's College of Architecture (VESCOA)",
+        "University of Mumbai",
+        "K. J. Somaiya College of Engineering"
+      ],
+      "pages": 16,
+      "posted": "12 Jan 2024",
+      "snippet": "The study also explores ChatGPT's role in enhancing climate resilience through advanced risk assessment and adaptation planning. / Furthermore, the paper discusses the potential of ChatGPT in fostering global collaboration. / Climate Change, ChatGPT, Bard, Artificial Intelligence, greenhouse gas, Sustainable Development, Forecasting, Decision Making.",
+      "downloads": 1193
+    },
+    {
+      "abstractId": "4679613",
+      "title": "Sam Altman, OpenAI, and the Importance of Corporate Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4679613",
+      "authors": [
+        "Lawrence J. Trautman",
+        "Larry D. Foster, II"
+      ],
+      "affiliations": [
+        "University of Houston - Downtown - College of Business"
+      ],
+      "pages": 67,
+      "posted": "04 Jan 2024",
+      "snippet": "In a short period of time, artificial intelligence (AI)-enabled ChatGPT has proven to be “the fastest growing consumer application in history / Fourth, the importance of professional, experienced, corporate governance is discussed. And last, I conclude. / 501(C)3, AI, artificial intelligence, board of directors, China, ChatGPT, GPT-3, GPT-4, corporate governance, Dall-E, effective altruism, Elon",
+      "downloads": 1209
+    },
+    {
+      "abstractId": "4271604",
+      "title": "The Complex Ethics of ChatGPT Jailbreaking",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4271604",
+      "authors": [
+        "Anja Boxleitner"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 0,
+      "posted": "29 Dec 2023",
+      "snippet": "The analysis advocates implementing prudent safeguards and oversight to ensure jailbreaking promotes societal welfare without harm. / By balancing wisdom and progress through governance reflecting diverse societal values, ChatGPT’s transformative potential can be harnessed to ethically / ChatGPT, jailbreaking, safety restrictions, capabilities, innovation, creativity, risks, misuse, privacy breaches, disinformation, unfair bias, safeguards / , independent auditing, ethical practices, responsible development, societal values, governance",
+      "downloads": 0
+    },
+    {
+      "abstractId": "4670512",
+      "title": "Proteomic Aging Clock (PAC) Predicts Age-Related Outcomes in Middle-Aged and Older Adults",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4670512",
+      "authors": [
+        "Chia-Ling Kuo",
+        "Zhiduo Chen",
+        "Peiran Liu",
+        "Luke C. Pilling",
+        "Janice L. Atkins",
+        "Richard Fortinsky",
+        "George A. Kuchel",
+        "Breno S. Diniz"
+      ],
+      "affiliations": [
+        "University of Connecticut",
+        "University of Connecticut",
+        "University of Connecticut",
+        "University of Exeter - Epidemiology & Public Health Group",
+        "University of Exeter - Epidemiology & Public Health Group",
+        "University of Connecticut",
+        "University of Connecticut",
+        "University of Connecticut"
+      ],
+      "pages": 26,
+      "posted": "22 Dec 2023",
+      "snippet": "Using a large proteomic cohort in the UK Biobank (UKB), we aimed to develop a proteomic aging clock for all-cause mortality risk as a proxy of biological / Fortinsky), funded by the Claude D. Pepper Older American Independence Centers (OAIC) program: P30AG067988 (MPIs: George A. Kuchel and Richard H.",
+      "downloads": 106
+    },
+    {
+      "abstractId": "4671511",
+      "title": "Gpt-Lgbm: A Chatgpt-Based Integrated Framework for Credit Scoring with Textual and Structured Data",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4671511",
+      "authors": [
+        "Li Yu",
+        "Xuefei Bai",
+        "Zhiwei Chen"
+      ],
+      "affiliations": [
+        "Shanghai University of Finance and Economics",
+        "Shanghai University of Finance and Economics",
+        "Shanghai University of Finance and Economics"
+      ],
+      "pages": 29,
+      "posted": "21 Dec 2023",
+      "snippet": "The proposed framework can be divided into two stages: the initial stage involves psychological feature extraction with ChatGPT, followed by credit risk / The other denoted as Path-K adopts the idea of knowledge distillation to combine ChatGPT and the deep learning model RoBERTa, which can mitigate the risk / Credit scoring, ChatGPT, Knowledge distillation, Big Five personality traits, LightGBM",
+      "downloads": 345
+    },
+    {
+      "abstractId": "4655935",
+      "title": "What hopes and fears does the Artificial Intelligence imply for mankind? What Albert Einstein would have said if he were alive and attended the Senate meeting on Artificial Intelligence.",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4655935",
+      "authors": [
+        "Marionito Marquez"
+      ],
+      "affiliations": [
+        "MTCS"
+      ],
+      "pages": 5,
+      "posted": "20 Dec 2023",
+      "snippet": "And with regard to the risk of nuclear bomb and the promise of nuclear energy, we know the view of Albert Einstein on this subject when he was / Artificial Intelligence, ai, ChatGPT, OpenAI, AI goals, Generative AI",
+      "downloads": 66
+    },
+    {
+      "abstractId": "4660148",
+      "title": "ChatGPT and Deepseek: Can They Predict the Stock Market and Macroeconomy?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4660148",
+      "authors": [
+        "Jian Chen",
+        "Guohao Tang",
+        "Guofu Zhou",
+        "Wu Zhu"
+      ],
+      "affiliations": [
+        "Xiamen University - School of Economics",
+        "Hunan University - College of Finance and Statistics",
+        "Washington University in St. Louis - John M. Olin Business School",
+        "Tsinghua University - School of Economics & Management"
+      ],
+      "pages": 97,
+      "posted": "20 Dec 2023",
+      "snippet": "We find that ChatGPT has predictive power. / At present, ChatGPT appears to be the only model capable of capturing economic news that links to the market risk premium. / LLMs, ChatGPT, DeepSeek, Textual Analysis, Return Predictability",
+      "downloads": 3575
+    },
+    {
+      "abstractId": "4665582",
+      "title": "“This Time It's Different” Generative Artificial Intelligence and Occupational Choice",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4665582",
+      "authors": [
+        "Daniel Goller",
+        "Christian Gschwendt",
+        "Stefan C. Wolter"
+      ],
+      "affiliations": [
+        "University of Bern",
+        "University of Bern"
+      ],
+      "pages": 26,
+      "posted": "15 Dec 2023",
+      "snippet": "In this paper, we show the causal influence of the launch of generative AI in the form of ChatGPT on the search behavior of young people for apprenticeship / Analyses based on the classification of occupations according to tasks, type of cognitive requirements, and the expected risk of automation to date show",
+      "downloads": 300
+    },
+    {
+      "abstractId": "4654788",
+      "title": "Characteristics of the Sexual Networks of Gay, Bisexual, and Other Men Who Have Sex with Men in Montreal, Toronto, and Vancouver: Implications for the Transmission and Control of Mpox in Canada",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4654788",
+      "authors": [
+        "Fanyu Xiu",
+        "Jorge Luis Flores Anato",
+        "Joseph Cox",
+        "Daniel Grace",
+        "Trevor Hart",
+        "Shayna Skakoon-Sparling",
+        "Milada Dvorakova",
+        "Jesse Knight",
+        "Linwei Wang",
+        "Oliver Gatalo",
+        "Evan Campbell",
+        "Terri Zhang",
+        "Hind Sbihi",
+        "Michael Irvine",
+        "Sharmistha Mishra",
+        "Mathieu Maheu-Giroux"
+      ],
+      "affiliations": [
+        "McGill University - Epidemiology, Biostatistics, & Occupational Health",
+        "McGill University - Epidemiology, Biostatistics, & Occupational Health",
+        "Simon Fraser University (SFU)",
+        "Simon Fraser University (SFU)",
+        "Simon Fraser University (SFU)",
+        "Simon Fraser University (SFU)",
+        "Simon Fraser University (SFU)",
+        "University of Toronto - Unity Health Toronto",
+        "Unity Health Toronto",
+        "University of Toronto - Epidemiology Division",
+        "Ryerson University",
+        "Ryerson University",
+        "British Columbia Centre for Disease Control",
+        "British Columbia Centre for Disease Control",
+        "University of Toronto - Department of Medicine",
+        "McGill University - Epidemiology, Biostatistics, & Occupational Health"
+      ],
+      "pages": 0,
+      "posted": "05 Dec 2023",
+      "snippet": "We estimated mpox’s basic reproduction number (ℛ0) and per-partnership transmission probability using a risk-stratified compartmental model. / cec675fd132a955c15d1793bdd630a602afb139b\" style=\"padding-right: 1px; padding-left: 1px; font-style: normal; font-variant-caps: normal; font-size: 14px; font-family: sans-serif; cursor",
+      "downloads": 0
+    },
+    {
+      "abstractId": "4645601",
+      "title": "Integrating Building Information Modelling (BIM) With ChatGPT, Bard, and Similar Generative Artificial Intelligence in the Architecture, Engineering, and Construction Industry: Applications, a Novel Framework, Challenges, and Future Scope",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4645601",
+      "authors": [
+        "Nitin Rane",
+        "Saurabh Choudhary",
+        "Jayesh Rane"
+      ],
+      "affiliations": [
+        "Vivekanand Education Society's College of Architecture (VESCOA)",
+        "University of Mumbai",
+        "K. J. Somaiya College of Engineering"
+      ],
+      "pages": 22,
+      "posted": "04 Dec 2023",
+      "snippet": "BIM's collaborative ethos is extended through natural language interfaces from ChatGPT, fostering seamless communication and idea exchange among project / This ensures heightened project efficiency, cost-effectiveness, and risk management. / ChatGPT, Bard, Building Information Modelling, Construction industry, Generative artificial intelligence, Large language models, BIM.",
+      "downloads": 2214
+    },
+    {
+      "abstractId": "4645597",
+      "title": "Integrating ChatGPT, Bard, and Leading-edge Generative Artificial Intelligence in Building and Construction Industry: Applications, Framework, Challenges, and Future Scope",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4645597",
+      "authors": [
+        "Nitin Rane",
+        "Saurabh Choudhary",
+        "Jayesh Rane"
+      ],
+      "affiliations": [
+        "Vivekanand Education Society's College of Architecture (VESCOA)",
+        "University of Mumbai",
+        "K. J. Somaiya College of Engineering"
+      ],
+      "pages": 34,
+      "posted": "04 Dec 2023",
+      "snippet": "The predictive prowess of generative AI fortifies risk management, furnishing stakeholders with insights into potential project risks and effective mitigation / Real-time data analysis strengthens site monitoring and safety protocols, enabling proactive risk mitigation and ensuring a secure working environment. / ChatGPT, Bard, Generative artificial intelligence, Construction industry, Large language models, Project management, Artificial intelligence.",
+      "downloads": 1484
+    },
+    {
+      "abstractId": "4651059",
+      "title": "'This Time it's Different' - Generative Artificial Intelligence and Occupational Choice",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4651059",
+      "authors": [
+        "Daniel Goller",
+        "Christian Gschwendt",
+        "Stefan C. Wolter"
+      ],
+      "affiliations": [
+        "University of Bern",
+        "University of Bern"
+      ],
+      "pages": 26,
+      "posted": "04 Dec 2023",
+      "snippet": "In this paper, we show the causal influence of the launch of generative AI in the form of ChatGPT on the search behavior of young people for apprenticeship / Analyses based on the classification of occupations according to tasks, type of cognitive requirements, and the expected risk of automation to date show",
+      "downloads": 243
+    },
+    {
+      "abstractId": "4637354",
+      "title": "A Turing Test: Are AI Chatbots Behaviorally Similar to Humans?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4637354",
+      "authors": [
+        "Qiaozhu Mei",
+        "Yutong Xie",
+        "Walter Yuan",
+        "Matthew O. Jackson"
+      ],
+      "affiliations": [
+        "University of Michigan at Ann Arbor",
+        "University of Michigan at Ann Arbor - School of Information",
+        "MobLab",
+        "Stanford University - Department of Economics"
+      ],
+      "pages": 42,
+      "posted": "30 Nov 2023",
+      "snippet": "We examine how Chatbots behave in a suite of classic behavioral games that are designed to elicit characteristics such as trust, fairness, risk-aversion / ChatGPT-4 exhibits behavioral and personality traits that are statistically indistinguishable from a random human from tens of thousands of human subjects / Turing Test, AI, Chatbots, ChatGPT, Behavioral Games",
+      "downloads": 1093
+    },
+    {
+      "abstractId": "4624575",
+      "title": "Laughing to Keep From [User Input Undefined]: ChatGPT, Jewish Humor, and Cultural Erasure",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4624575",
+      "authors": [
+        "Nathaniel Laywine",
+        "Victoria Simon",
+        "Aram Sinnreich"
+      ],
+      "affiliations": [
+        "York University",
+        "Felician University",
+        "American University - School of Communication"
+      ],
+      "pages": 21,
+      "posted": "29 Nov 2023",
+      "snippet": "LLMs) and their\nassociated chatbots with the context-based logics of Jewish joke craft and storytelling, the\narticle goes on to demonstrate the risk / AI, humor, Jewish studies, LLM, ChatGPT, algorithmic bias, epistemology",
+      "downloads": 102
+    },
+    {
+      "abstractId": "4604736",
+      "title": "The Complex Ethics of ChatGPT Jailbreaking",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4604736",
+      "authors": [
+        "Anja Boxleitner"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 11,
+      "posted": "15 Nov 2023",
+      "snippet": "The analysis advocates implementing prudent safeguards and oversight to ensure jailbreaking promotes societal welfare without harm. / By balancing wisdom and progress through governance reflecting diverse societal values, ChatGPT’s transformative potential can be harnessed to ethically / ChatGPT, jailbreaking, safety restrictions, capabilities, innovation, creativity, risks, misuse, privacy breaches, disinformation, unfair bias, safeguards / , independent auditing, ethical practices, responsible development, societal values, governance,",
+      "downloads": 151
+    },
+    {
+      "abstractId": "4628235",
+      "title": "Generative AI in Finance: Risks and Potential Solutions",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4628235",
+      "authors": [
+        "Nydia Remolina"
+      ],
+      "affiliations": [
+        "Singapore Management University - Yong Pung How School of Law"
+      ],
+      "pages": 15,
+      "posted": "09 Nov 2023",
+      "snippet": "Accordingly, OpenAI, the company behind the launch of ChatGPT, received multibillion dollar investments from Microsoft. / Hence, in the current debate about AI governance, and specifically in the generative AI space, it is important to analyse the risks of generative AI in / Generative AI, financial sector, AI governance, artificial intelligence, predictive AI, finance, AI regulation, financial regulation.",
+      "downloads": 1726
+    },
+    {
+      "abstractId": "4622769",
+      "title": "Artificial Intelligence Cannibalism and the Law",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4622769",
+      "authors": [
+        "Amy Cyphert",
+        "Sam Perl",
+        "S. Sean Tu"
+      ],
+      "affiliations": [
+        "West Virginia University - College of Law",
+        "Carnegie Mellon University",
+        "The University of Alabama School of Law"
+      ],
+      "pages": 12,
+      "posted": "09 Nov 2023",
+      "snippet": "Lawyers are already using - and misusing - large language models like ChatGPT in their daily lives as they practice law. / Further, if lawyers are overly reliant on generative AI in their practice, they risk undermining their own creative processes and further stunting the",
+      "downloads": 275
+    },
+    {
+      "abstractId": "4597080",
+      "title": "An Antimonopoly Approach to Governing Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4597080",
+      "authors": [
+        "Ganesh Sitaraman",
+        "Tejas N. Narechania"
+      ],
+      "affiliations": [
+        "Vanderbilt Law School",
+        "University of California, Berkeley, School of Law"
+      ],
+      "pages": 76,
+      "posted": "07 Nov 2023",
+      "snippet": "Since OpenAI released ChatGPT, debates over the regulation of artificial intelligence (AI) have intensified. / Since OpenAI released ChatGPT, debates over the regulation of artificial intelligence (AI) have intensified. / conclusions, we show how antimonopoly market shaping tools—the law of networks, platforms, and utilities; industrial policy; public options; and cooperative governance—can",
+      "downloads": 2080
+    },
+    {
+      "abstractId": "4603206",
+      "title": "Role and Challenges of ChatGPT and Similar Generative Artificial Intelligence in Finance and Accounting",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4603206",
+      "authors": [
+        "Nitin Rane"
+      ],
+      "affiliations": [
+        "Vivekanand Education Society's College of Architecture (VESCOA)"
+      ],
+      "pages": 8,
+      "posted": "02 Nov 2023",
+      "snippet": "It handles voluminous data swiftly, enhancing algorithmic trading, risk management, and fraud detection. / However, the integration of ChatGPT and similar AI in finance and accounting is not without challenges. / ChatGPT, Generative Artificial Intelligence, Artificial Intelligence, Accounting, Finance, Education",
+      "downloads": 5776
+    },
+    {
+      "abstractId": "4598258",
+      "title": "Role of ChatGPT and Similar Generative Artificial Intelligence (AI) in Construction Industry",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4598258",
+      "authors": [
+        "Nitin Rane"
+      ],
+      "affiliations": [
+        "Vivekanand Education Society's College of Architecture (VESCOA)"
+      ],
+      "pages": 28,
+      "posted": "02 Nov 2023",
+      "snippet": "Generative AI, including ChatGPT is reshaping the construction industry across a multitude of domains. / Furthermore, they enhance safety and risk management by analyzing historical data, generating safety protocols, and reducing workplace accidents. / ChatGPT, Generative AI, Artificial Intelligence, Large Language Models (LLM), Construction industry, Construction engineering and management.",
+      "downloads": 5480
+    },
+    {
+      "abstractId": "4589571",
+      "title": "The Impact of AI Chatbots like ChatGPT on Sarbanes-Oxley (SOX) Compliance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4589571",
+      "authors": [
+        "Faraz Akhtar"
+      ],
+      "affiliations": [
+        "Georgia Institute of Technology - School of Public Policy"
+      ],
+      "pages": 6,
+      "posted": "30 Oct 2023",
+      "snippet": "The emergence of chatbots, notably advanced models like ChatGPT, has ushered in a paradigm shift across an array of industries, encompassing finance, customer / Chatbots, ChatGPT, Sarbanes-Oxley (SOX) compliance, regulatory reforms, financial disclosures, artificial intelligence, corporate governance,",
+      "downloads": 441
+    },
+    {
+      "abstractId": "4574016",
+      "title": "The Impact of ChatGPT on Privacy and Data Protection Laws",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4574016",
+      "authors": [
+        "Ekenobi ThankGod Chinonso"
+      ],
+      "affiliations": [],
+      "pages": 10,
+      "posted": "13 Oct 2023",
+      "snippet": "irresistible conclusion that the protection of data lies majorly in the hands of users and that sharing of personal data with the chatbot is at user’s risk / vital informations while using ChatGPT. / CHATGPT, TECHNOLOGY LAW, DATA PROTECTION, DATA PRIVACY",
+      "downloads": 696
+    },
+    {
+      "abstractId": "4590006",
+      "title": "Good Models Borrow, Great Models Steal: Intellectual Property Rights and Generative AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4590006",
+      "authors": [
+        "Simon Chesterman"
+      ],
+      "affiliations": [
+        "National University of Singapore (NUS) - Faculty of Law"
+      ],
+      "pages": 24,
+      "posted": "11 Oct 2023",
+      "snippet": "implications of these policy choices, weighing the advantages of reducing the cost of content creation and the value of expertise against the potential risk / Artificial Intelligence, Generative AI, Large Language Models, ChatGPT, GPT-4, Copyright, Intellectual Property",
+      "downloads": 2180
+    },
+    {
+      "abstractId": "4597652",
+      "title": "How will AI text generation and processing impact sustainability reporting? Critical analysis, a conceptual framework and avenues for future research",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4597652",
+      "authors": [
+        "Charl de Villiers",
+        "Ruth Dimes",
+        "Matteo Molinari"
+      ],
+      "affiliations": [
+        "University of Auckland Business School",
+        "University of Auckland Business School",
+        "University of Bergamo - University of Bergamo,"
+      ],
+      "pages": 0,
+      "posted": "10 Oct 2023",
+      "snippet": "Purpose\nThe ability of generative artificial intelligence (AI) tools such as ChatGPT to produce convincing, human-like text has major implications for / Findings\nThis study highlights the implications of generative AI for sustainability accounting, reporting, assurance and report usage, including the risk",
+      "downloads": 0
+    },
+    {
+      "abstractId": "4583995",
+      "title": "Evaluation Of GPT-4 for 10-Year Cardiovascular Risk Prediction: Insights from the UK Biobank and KoGES Data",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4583995",
+      "authors": [
+        "Changho Han",
+        "Dong Won Kim",
+        "Songsoo Kim",
+        "Seng Chan You",
+        "Jin Young Park",
+        "SungA Bae",
+        "Dukyong Yoon"
+      ],
+      "affiliations": [
+        "Yonsei University",
+        "Yonsei University",
+        "Yonsei University",
+        "Yonsei University",
+        "Yonsei University - Department of Psychiatry",
+        "Yonsei University",
+        "Yonsei University"
+      ],
+      "pages": 23,
+      "posted": "28 Sep 2023",
+      "snippet": "Accurate risk prediction is vital for prevention. Traditional models like the Framingham and ACC/AHA risk scores have been clinical mainstays. / We used conventional cardiovascular risk scores and GPT models for our cardiovascular risk predictions. / Cardiovascular Risk, GPT-4, ChatGPT, Large Language Model",
+      "downloads": 701
+    },
+    {
+      "abstractId": "4553787",
+      "title": "Competition in Generative AI Foundation Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4553787",
+      "authors": [
+        "Christophe Carugati"
+      ],
+      "affiliations": [
+        "digital competition"
+      ],
+      "pages": 26,
+      "posted": "18 Sep 2023",
+      "snippet": "Foundation models (FMs) are the origin of breakthrough innovations in generative artificial intelligence (AI) applications, such as ChatGPT. / Only responsible developments in competitive markets can help ensure that FMs deliver their full benefits at minimum risk.",
+      "downloads": 626
+    },
+    {
+      "abstractId": "4571725",
+      "title": "ChatENT: Augmented Large Language Model for Expert Knowledge Retrieval in Otolaryngology - Head and Neck Surgery",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4571725",
+      "authors": [
+        "Cai Long",
+        "Deepak Subburam",
+        "Kayle Lowe",
+        "André dos Santos",
+        "Jessica Zhang",
+        "Sang Hwang",
+        "Neil Saduka",
+        "Yoav Horev",
+        "Tao Su",
+        "Erin Wright"
+      ],
+      "affiliations": [
+        "University of Alberta",
+        "Copula AI",
+        "University of Alberta",
+        "Alberta Machine Intelligence Institute (Amii)",
+        "University of Alberta",
+        "St. Vincent's Hospital",
+        "Aderoo AI",
+        "University of Alberta",
+        "University of Alberta",
+        "University of Alberta"
+      ],
+      "pages": 23,
+      "posted": "18 Sep 2023",
+      "snippet": "Background: The recent surge in popularity of Large Language Models (LLMs), such as ChatGPT, has showcased their proficiency in medical examinations and / However, LLMs possess inherent limitations, including inconsistent accuracy, specific prompting requirements, and the risk of generating harmful hallucinations",
+      "downloads": 81
+    },
+    {
+      "abstractId": "4567428",
+      "title": "Artificial Intelligence and Political Behavior - Experience with Chatgpt",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4567428",
+      "authors": [
+        "Siegfried Manschein"
+      ],
+      "affiliations": [
+        "European University Institute - Department of Political and Social Sciences (SPS)"
+      ],
+      "pages": 42,
+      "posted": "14 Sep 2023",
+      "snippet": "pre-registered online survey experiment was conducted, involving 752 participants who were split into three groups: those who had a free interaction with ChatGPT / Furthermore, heterogeneity analysis provides evidence concerning different characteristics such as personality, age, and occupational risk.",
+      "downloads": 321
+    },
+    {
+      "abstractId": "4569698",
+      "title": "Decoding US Tort Liability in Healthcare’s Black-Box AI Era: Lessons From the EU",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4569698",
+      "authors": [
+        "Mindy Duffourc",
+        "Sara Gerke"
+      ],
+      "affiliations": [
+        "Maastricht University",
+        "University of Illinois College of Law"
+      ],
+      "pages": 70,
+      "posted": "14 Sep 2023",
+      "snippet": "perform a wide range of health-related tasks, from specialized autonomous systems that diagnose diabetic retinopathy to general-use generative models like ChatGPT / face similar liability challenges. / Artificial Intelligence, Medical Liability, Product Liability, Black-Box AI, Comparative Law, US Law, EU Law, Law and Technology, AI Liability, Health / Law, ChatGPT",
+      "downloads": 347
+    },
+    {
+      "abstractId": "4567157",
+      "title": "Can AI Solve Newsvendor Problem Without Making Biased Decisions? A Behavioral Experimental Study",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4567157",
+      "authors": [
+        "Jingjie Su",
+        "Yan Lang",
+        "Kay-Yut Chen"
+      ],
+      "affiliations": [
+        "Cameron University",
+        "SUNY Oneonta",
+        "University of Texas at Arlington"
+      ],
+      "pages": 26,
+      "posted": "14 Sep 2023",
+      "snippet": "Our results showed that ChatGPT exhibits some of the same biases as human decision-makers, such as demand chasing, risk aversion, and loss aversion. / ChatGPT is also responsive to incentives and demonstrates a degree of rationality.",
+      "downloads": 320
+    },
+    {
+      "abstractId": "4556181",
+      "title": "The Impact of ChatGPT on Privacy and Data Protection Laws",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4556181",
+      "authors": [
+        "Ekenobi ThankGod Chinonso"
+      ],
+      "affiliations": [],
+      "pages": 0,
+      "posted": "12 Sep 2023",
+      "snippet": "irresistible conclusion that the protection of data lies majorly in the hands of users and that sharing of personal data with the chatbot is at user’s risk / vital informations while using ChatGPT. / Artificial Intelligence, Technology Law, ChatGPT, Data Protection, Data Protection.",
+      "downloads": 0
+    }
+  ]
+}

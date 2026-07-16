@@ -1,0 +1,15 @@
+{
+  "item_key": "MFSZPSPU",
+  "methods": [
+    "design-science/framework/tool-build",
+    "benchmark-evaluation",
+    "ablation-study",
+    "inter-rater-reliability/human-annotation-study",
+    "qualitative-analysis/thematic-analysis"
+  ],
+  "empirical": true,
+  "human_subjects": true,
+  "primary_hint": "design-science/framework (human-in-the-loop LLM-as-a-judge) with empirical evaluation",
+  "notes": "Builds a two-stage HITL rubric-generation + LLM-judge framework and evaluates it empirically on 115 patches for 48 sanitizer bugs. Human-subjects signal is a rater-agreement/annotation study (authors act as raters; measures Fleiss/Cohen's kappa, inter-rater reliability, consensus labeling) rather than a recruited user study \u2014 a formal user study is explicitly deferred to future work. Includes ablations (golden vs draft vs free-form rubric vs GT patch) and thematic/qualitative analysis of rubric edits and judge/rater disagreements.",
+  "citation": "Shi 2025"
+}

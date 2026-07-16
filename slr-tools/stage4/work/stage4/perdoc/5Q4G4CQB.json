@@ -1,0 +1,66 @@
+{
+  "item_key": "5Q4G4CQB",
+  "citation": "D. O. Salem 2025",
+  "evidence_type": [
+    "empirical",
+    "case-study"
+  ],
+  "problem_statement": "The document examines how LLMs automate code review and deployment in CI/CD pipelines, and argues that AI-driven CI introduces security vulnerabilities, model bias, and errors that still require human supervision to catch.",
+  "magnitude_evidence": "AI-based static analysis tools find 50% more security issues than conventional approaches but lack contextual awareness; 60% of survey respondents raised false-positive/security-risk concerns",
+  "risk_types": [
+    "security",
+    "vulnerabilities",
+    "model-bias",
+    "false-positives",
+    "false-negatives",
+    "hallucination",
+    "technical-debt",
+    "maintainability",
+    "over-reliance",
+    "SQL-injection",
+    "input-validation",
+    "edge-case-omission"
+  ],
+  "insufficiency_evidence": "AI-powered static analysis tools miss subtle vulnerabilities and come with false positives; AI suggestions are not project-specific and require human intervention; overreliance on AI-driven testing results in omission of edge cases only human testers can identify",
+  "solution_mechanisms": [
+    "human-in-the-loop code review",
+    "combine AI static analysis with human review",
+    "confidence scores",
+    "bias detection audits and fine-tuning",
+    "automated cross-validation across multiple AI models",
+    "regression tests on flagged fixes",
+    "Explainable AI (XAI) for transparency/fairness",
+    "parallel checks and smart triggers",
+    "fairness boundaries and bias audits of training data"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "human-review",
+    "confidence-scores",
+    "bias-audit",
+    "fine-tuning",
+    "cross-validation",
+    "ensemble",
+    "regression-test",
+    "explainability",
+    "xai",
+    "static-analysis",
+    "governance"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "CI",
+    "pre-commit",
+    "deployment"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Explainable AI (XAI)",
+    "AI-driven CI/CD",
+    "human-AI partnership"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Text is garbled/machine-extracted in places with grammatical errors; some cited statistics (30%/40%/50%) are loosely attributed to unnamed literature.",
+  "_truncated": false
+}

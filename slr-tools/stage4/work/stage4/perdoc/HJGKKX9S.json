@@ -1,0 +1,52 @@
+{
+  "item_key": "HJGKKX9S",
+  "citation": "Pasuksmit 2025",
+  "evidence_type": [
+    "system-tool",
+    "empirical",
+    "case-study",
+    "benchmark"
+  ],
+  "problem_statement": "How to reliably evaluate the quality of code produced by human-in-the-loop LLM software development agents (HULA) deployed at Atlassian, given that functional-correctness unit testing is costly and LLM-based scoring is variable.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "quality",
+    "functional-correctness",
+    "evaluation-reliability",
+    "evaluation-variability",
+    "computational-cost"
+  ],
+  "insufficiency_evidence": "\"LLM-based evaluations often produce fluctuating outcomes, limiting the ability to reliably assess small (e.g., 1\u20132%) incremental improvements in HULA's capabilities.\"",
+  "solution_mechanisms": [
+    "human-in-the-loop agent with review/refine at each step",
+    "functional-correctness unit testing as guardrail (SWE-bench)",
+    "LLM-judge similarity scoring (GPT-4/GPT-4o, 1-4 scale)",
+    "score aggregation to mitigate LLM fluctuation",
+    "call for stable deterministic evaluation framework for HITL agents"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "llm-as-judge",
+    "guardrail",
+    "unit-testing",
+    "benchmark",
+    "similarity-scoring",
+    "human-review",
+    "evaluation-framework"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "pre-publish"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "HULA (Human-In-the-Loop Software Development Agents Framework)",
+    "LLM-judge metric",
+    "guardrail metric"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

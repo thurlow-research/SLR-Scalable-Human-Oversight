@@ -1,0 +1,78 @@
+{
+  "item_key": "E9RAWBDT",
+  "citation": "Pimenova 2025",
+  "evidence_type": [
+    "empirical",
+    "framework-model",
+    "case-study"
+  ],
+  "problem_statement": "Vibe coding pushes developers to accept AI-generated code with little to no code reading, delegating high-level design decisions to AI; the paper examines how developers oversee, verify, and regulate trust in this AI-generated code and where that oversight breaks down.",
+  "magnitude_evidence": "r/vibecoding, created six days after the term was coined, 'has already grown to 156,000 members, ranking in the top 1% of Reddit communities'; analysis of over 5,000 comments across 134 posts plus 11 interviews",
+  "risk_types": [
+    "security",
+    "quality",
+    "maintainability",
+    "technical-debt",
+    "reliability",
+    "hallucination",
+    "legal",
+    "data-protection",
+    "supply-chain",
+    "trustworthy-oss",
+    "collaboration",
+    "review-fatigue",
+    "skill-atrophy",
+    "over-reliance",
+    "mental-health",
+    "environmental"
+  ],
+  "insufficiency_evidence": "'Teams need processes for this and cannot outsource verification to the same models that generate code'; delegating review to AI self-audit 'signals high trust in model ability; it is unclear how effective these strategies are compared to traditional code review'; 'My 400-line code is now 3000 lines and neither of us can read it anymore' (R63)",
+  "solution_mechanisms": [
+    "manual line-by-line code review",
+    "test what the code does",
+    "delegate review to AI self-audit",
+    "plan before vibe coding",
+    "break tasks into smaller steps",
+    "writing/generating tests",
+    "external version control + change logging",
+    "quality-focused prompt instructions",
+    "best-practice rules/docs in context window",
+    "maintain mental model of codebase",
+    "trust calibration by project risk level",
+    "reserve vibe coding for low-stakes/personal projects"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "code-review",
+    "self-review",
+    "llm-as-judge",
+    "test-generation",
+    "spec-driven",
+    "planning",
+    "version-control",
+    "provenance",
+    "trust-calibration",
+    "risk-routing",
+    "context-rules",
+    "prompt-engineering",
+    "task-decomposition"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "pre-commit",
+    "pre-deployment"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "four-component theory of vibe coding (interaction, co-creation, flow, trust)",
+    "trust as mediating factor",
+    "delegation-to-co-creation spectrum/continuum",
+    "flow-code",
+    "vibe debugging"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Qualitative study of social-media posts and interviews; oversight/governance is descriptive from practitioner discourse, not formal policy; no named regulatory frameworks despite mentions of data-protection laws and regulators.",
+  "_truncated": false
+}

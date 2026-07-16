@@ -1,0 +1,801 @@
+{
+  "count": 50,
+  "total": "611",
+  "page": "9",
+  "records": [
+    {
+      "abstractId": "5469446",
+      "title": "Framework for Government Policy on Agentic and Generative AI in Healthcare: Governance, Regulation, and Risk Management of Open-Source and Proprietary Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5469446",
+      "authors": [
+        "Satyadhar Joshi"
+      ],
+      "affiliations": [
+        "Bar-Ilan University"
+      ],
+      "pages": 24,
+      "posted": "01 Oct 2025",
+      "snippet": "Our recommendations include the adoption of international certification protocols aligned with global explainability standards, federated learning architectures / The framework provides healthcare organizations with practical strategies for AI adoption while recommending policy directions for responsible deployment / Artificial Intelligence, Healthcare, Open-Source AI, Proprietary AI, Medical Diagnostics, Data Privacy, Clinical Decision Support, Agentic AI, Generative AI / , Risk Management, AI Governance, Health Policy, AI Ethics, Healthcare Implementation",
+      "downloads": 169
+    },
+    {
+      "abstractId": "5460815",
+      "title": "AI and Post-Purchase Behavior: Personalization, Behavioral Insights, and Ethical Challenges",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5460815",
+      "authors": [
+        "Masoud Naeimi",
+        "Qazale Family"
+      ],
+      "affiliations": [
+        "Islamic Azad University",
+        "Payame Noor University"
+      ],
+      "pages": 14,
+      "posted": "29 Sep 2025",
+      "snippet": "The study encourages the adoption of responsible AI practices.",
+      "downloads": 135
+    },
+    {
+      "abstractId": "5534292",
+      "title": "Navigating Publicness in Digital Innovation: Big Data and AI Adoption in European Public Sector Organisations",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5534292",
+      "authors": [
+        "Niklas Tilly",
+        "Aline Seepma",
+        "Sajani Senadheera",
+        "Tan Yigitcanlar"
+      ],
+      "affiliations": [
+        "Queensland University of Technology",
+        "University of Groningen",
+        "Queensland University of Technology",
+        "Queensland University of Technology"
+      ],
+      "pages": 31,
+      "posted": "26 Sep 2025",
+      "snippet": "widely adopted in statistical, law enforcement, and infrastructure sectors due to established legal frameworks and inter-agency collaboration, whereas AI adoption / Key recommendations include enhancing data governance, cultivating a responsible AI culture, and improving coordination and standardisation across agencies / big data, Artificial Intelligence, Public sector innovation, government technology adoption, Digital transformation, publicness theory",
+      "downloads": 45
+    },
+    {
+      "abstractId": "5509861",
+      "title": "Responsible AI in Marketing: AI Booing and AI Washing Cycle of AI Mistrust",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5509861",
+      "authors": [
+        "Selcen Ozturkcan",
+        "Ayse Asli Bozdag"
+      ],
+      "affiliations": [
+        "Sabanci Business School, Sabanci University",
+        "Bahcesehir University"
+      ],
+      "pages": 27,
+      "posted": "25 Sep 2025",
+      "snippet": "By analyzing the interplay between these opposing forces, we explore the cyclical nature of AI mistrust and its implications for responsible AI adoption / Our findings call attention to the need for transparency, human agency, stakeholder collaboration, and ethical data management to foster responsible AI / cycle of AI mistrust, responsible AI in marketing, ethical AI adoption, consumer trust in AI, AI in marketing ethics, AI misrepresentation",
+      "downloads": 150
+    },
+    {
+      "abstractId": "5511481",
+      "title": "Artificial Intelligence (AI) Governance: A Foundation for Nigeria's AI Future",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5511481",
+      "authors": [
+        "Bestman Chidiebere Nwaokocha"
+      ],
+      "affiliations": [],
+      "pages": 13,
+      "posted": "23 Sep 2025",
+      "snippet": "The paper argues that effective AI governance forms the essential foundation for guiding the development and deployment of responsible / The paper examines global trends in AI governance and identifies keys lessons for Nigeria, while also highlighting the challenges",
+      "downloads": 109
+    },
+    {
+      "abstractId": "5508490",
+      "title": "Building Trust in AI-Driven Venture Capital Decisions: A Comparative Study of SHAP and GPT Explanations",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5508490",
+      "authors": [
+        "Ronald Setty",
+        "Yuval Elovici",
+        "Dafna Schwartz"
+      ],
+      "affiliations": [
+        "Ben-Gurion University of the Negev",
+        "Ben-Gurion University of the Negev",
+        "Peres Academic Center"
+      ],
+      "pages": 53,
+      "posted": "19 Sep 2025",
+      "snippet": "Artificial intelligence is widely used in financial services, yet adoption in VC lags because models are opaque, eroding trust. / Findings offer guidance for practitioners, developers, and regulators pursuing responsible AI adoption in investment decisions.",
+      "downloads": 52
+    },
+    {
+      "abstractId": "5427574",
+      "title": "AI Actionability Over Interpretability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5427574",
+      "authors": [
+        "Mike Hsu"
+      ],
+      "affiliations": [],
+      "pages": 14,
+      "posted": "18 Sep 2025",
+      "snippet": "Moreover, enterprise AI deployments increasingly involve multiple systems including retrieval-augmented generation, guardrails, and agents that further / Actionability through observability offers financial institutions and regulators a viable path for responsible AI deployment at scale, potentially warranting",
+      "downloads": 239
+    },
+    {
+      "abstractId": "5489206",
+      "title": "How Using AI Suppresses Consumer Disclosure and Word of Mouth",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5489206",
+      "authors": [
+        "David Finken",
+        "Youjung Jun",
+        "Jennifer Sun"
+      ],
+      "affiliations": [
+        "Yonsei University - School of Business"
+      ],
+      "pages": 57,
+      "posted": "17 Sep 2025",
+      "snippet": "implications for companies that seek customer acquisition and competitive differentiation in the marketplace as well as policymakers who aim to foster responsible / AI practices. / AI Disclosure, Communication, Post-Adoption Behavior, Social Judgment, Word of Mouth",
+      "downloads": 232
+    },
+    {
+      "abstractId": "5473726",
+      "title": "Deep Learning Models for Time Series Forecasting: Toward Accurate, Interpretable, and Responsible AI in Socio-Technical Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5473726",
+      "authors": [
+        "Irfan Samsyudin"
+      ],
+      "affiliations": [
+        "Technological Institute of the Philippines"
+      ],
+      "pages": 8,
+      "posted": "17 Sep 2025",
+      "snippet": "This paper proposes a framework for responsible adoption, emphasizing hybrid modeling, explainable AI, and contextsensitive deployment.",
+      "downloads": 27
+    },
+    {
+      "abstractId": "5469367",
+      "title": "Vibe Coding and AI-Led Conversational Programming: Emerging Trends in Software Development",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5469367",
+      "authors": [
+        "Irfan Samsyudin"
+      ],
+      "affiliations": [
+        "Technological Institute of the Philippines"
+      ],
+      "pages": 8,
+      "posted": "17 Sep 2025",
+      "snippet": "AI-assisted programming, evaluates its performance, investigates cognitive, trust, and security implications, and proposes a framework for responsible adoption / A three-pillar framework is proposed-hybrid integration, human oversight, and context-aware deployment-to guide responsible adoption. / Vibe Coding, Conversational Programming, Artificial Intelligence, Software Development Paradigms, Human-AI Collaboration, Code Quality, Responsible AI",
+      "downloads": 354
+    },
+    {
+      "abstractId": "5418794",
+      "title": "AI-Driven Anomaly Detection in Cybersecurity, Finance, and Smart Cities: Data Governance as a Foundational Pillar",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5418794",
+      "authors": [
+        "Christianah Okunola",
+        "Femi Ayeola"
+      ],
+      "affiliations": [
+        "Independent",
+        "Independent"
+      ],
+      "pages": 6,
+      "posted": "17 Sep 2025",
+      "snippet": "With the growing adoption of artificial intelligence (AI) and machine learning (ML), anomaly detection has advanced from rule-based detection systems to / AI practices.",
+      "downloads": 36
+    },
+    {
+      "abstractId": "5425118",
+      "title": "Retaining Strategic Knowledge: Safeguarding Public Reasoning in the Age of AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5425118",
+      "authors": [
+        "Corsino San Miguel"
+      ],
+      "affiliations": [],
+      "pages": 12,
+      "posted": "17 Sep 2025",
+      "snippet": "As outlined in the UK Government AI Playbook, public sector adoption of artificial intelligence (AI) must ensure lawful, ethical, and effective / AI, AI Risk Management, AI Public Sector, AI Procurement",
+      "downloads": 38
+    },
+    {
+      "abstractId": "5496313",
+      "title": "A Hybrid Expert–LLM Framework for End-to-End Explainable AI Decisions",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5496313",
+      "authors": [
+        "Yi Wang",
+        "Chengliang Wang",
+        "Xueqing Zhang",
+        "li zeng"
+      ],
+      "affiliations": [
+        "Sichuan International Studies University",
+        "Chongqing University",
+        "Sichuan International Studies University",
+        "National University of Defense Technology"
+      ],
+      "pages": 41,
+      "posted": "16 Sep 2025",
+      "snippet": "The increasing adoption of artificial intelligence (AI) in high-stakes domains such as healthcare, finance, and autonomous driving has intensified concerns / governance.",
+      "downloads": 72
+    },
+    {
+      "abstractId": "5486746",
+      "title": "Taking Standards Seriously: The Case for a Private Standards-Based Approach to AI Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5486746",
+      "authors": [
+        "Alex Mueller",
+        "Christopher S. Yoo"
+      ],
+      "affiliations": [
+        "University of Pennsylvania Carey Law School"
+      ],
+      "pages": 41,
+      "posted": "16 Sep 2025",
+      "snippet": "This Article argues that private standards-based governance--the adoption of voluntary consensus standards developed through open, multistakeholder processes / governance ecosystem-provided that stakeholders approach their development with the urgency and intentionality the moment demands. / AI Governance, AI Regulation, Private Ordering, Institutional Design, Multistakeholder Governance, Digital Technology Standards, AI Policy",
+      "downloads": 251
+    },
+    {
+      "abstractId": "5415775",
+      "title": "Ethics Maturity Models for AI -Creating Structures for Assessment of Organizational Maturity in Ethics, Governance, Training, Tools, and Culture",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5415775",
+      "authors": [
+        "Adekola Kamaldeen"
+      ],
+      "affiliations": [],
+      "pages": 7,
+      "posted": "15 Sep 2025",
+      "snippet": "The focus of this research is to explore the concepts of ethics maturity models in the context of artificial intelligence (AI) adoption, particularly on / AI adoption often accelerates AI system and application implementation outpacing the integration of ethical safeguards and cultural behavior norms (Gupta / AI Ethics, Maturity Model, Data Governance, Organizational Culture, AI Governance, Ethical AI Development",
+      "downloads": 57
+    },
+    {
+      "abstractId": "5414954",
+      "title": "Bridging the Human-AI Alignment Gap: Frameworks for Digital Transformation, Governance, and ROI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5414954",
+      "authors": [
+        "Deepika Chopra"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 10,
+      "posted": "15 Sep 2025",
+      "snippet": "Despite rapid advances in artificial intelligence capabilities, 70% of enterprise digital transformations continue to fail—less from technical limitations / The Strategic Human–AI Alignment Framework (SHAAF) provides enterprise-level architecture, the Human–AI Alignment Score (HAAS™) offers a diagnostic metric / AI Governance, Human–AI Alignment, Fiduciary Risk, AI Adoption Metrics, Strategic Human–AI Alignment Framework, Organizational Readiness, AI Strategy, / Enterprise AI, Change Management, ACT+M, Leadership, Digital Transformation",
+      "downloads": 112
+    },
+    {
+      "abstractId": "5407826",
+      "title": "AI Safety Governance, The Southeast Asian Way",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5407826",
+      "authors": [
+        "Lyantoniette Chua",
+        "Philip Tham",
+        "Chinasa T. Okolo"
+      ],
+      "affiliations": [
+        "Michael Dukakis Institute for Leadership and Innovation - Center for AI and Digital Policy",
+        "Cornell University - Cornell Tech NYC",
+        "Brookings Institution - Governance Studies"
+      ],
+      "pages": 137,
+      "posted": "11 Sep 2025",
+      "snippet": "With its digitally connected populations, rapid technological adoption, and strategic geopolitical positioning, the region has much / AI Safety, AI, AI Governance, Artificial Intelligence, Southeast Asia, Global Majority, AI Policy Frameworks",
+      "downloads": 219
+    },
+    {
+      "abstractId": "5403530",
+      "title": "Economic Impacts of Artificial Intelligence Integration in Industry 4.0 Manufacturing Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5403530",
+      "authors": [
+        "Nima Taheri Hosseinkhani"
+      ],
+      "affiliations": [
+        "Rutgers Business School - Rutgers University"
+      ],
+      "pages": 174,
+      "posted": "09 Sep 2025",
+      "snippet": "Ethical considerations, regulatory compliance, and public acceptance are explored to ensure responsible AI deployment. / Strategic roadmaps for phased AI adoption are proposed to guide manufacturing organizations in achieving competitive advantage while aligning with sustainability",
+      "downloads": 45
+    },
+    {
+      "abstractId": "5403934",
+      "title": "The Argent Framework: A Paradigm to Compose, Orchestrate, and Govern Enterprise AI Agents",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5403934",
+      "authors": [
+        "Anantha Sharma",
+        "Swetha Devabhaktuni",
+        "Eklove Mohan"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 23,
+      "posted": "09 Sep 2025",
+      "snippet": "Modern LLM-based agents excel at flexible tool use and opportunistic planning but struggle to meet enterprise requirements for governance, auditability / proposing a new, analogous notational standard tailored for agents and can deliver governed flexibility, reproducibility, and human-agent teaming at enterprise / Multi-Agent Systems, Automated Planning, LLM Agents, BPMN, Governance, Knowledge Graphs, Human-Agent Teaming, AI Governance, LLM Framework, Agentic Framework",
+      "downloads": 82
+    },
+    {
+      "abstractId": "5403524",
+      "title": "Economic and Social Implications of AI-Driven Automation and Workforce Transformation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5403524",
+      "authors": [
+        "Nima Taheri Hosseinkhani"
+      ],
+      "affiliations": [
+        "Rutgers Business School - Rutgers University"
+      ],
+      "pages": 180,
+      "posted": "09 Sep 2025",
+      "snippet": "Ethical considerations, transparency, accountability, and regulatory frameworks are examined as essential components for responsible AI deployment. / Sector-specific case studies in manufacturing, healthcare, finance, and sports illustrate diverse adoption patterns and labor market transformations. / Workforce Transformation, AI Governance, Job Displacement, Algorithmic Fairness, Skill-Biased Technological Change, Human-AI Collaboration, Income Inequality",
+      "downloads": 54
+    },
+    {
+      "abstractId": "5403675",
+      "title": "Strategy and Innovation in AI Oversight: Fiduciary Duties of Banking Boards",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5403675",
+      "authors": [
+        "Toronata Tambun",
+        "Gatot Yudoko",
+        "Leo Aldianto"
+      ],
+      "affiliations": [
+        "Bandung Institute of Technology - School of Business and Management",
+        "Bandung Institute of Technology - School of Business and Management",
+        "Bandung Institute of Technology - School of Business and Management"
+      ],
+      "pages": 31,
+      "posted": "09 Sep 2025",
+      "snippet": "Artificial intelligence is transforming Indonesian banking, yet rapid adoption without mature oversight exposes boards to fiduciary and strategic / This question is particularly important now, with the EU Artificial Intelligence Act (2024) and the Otoritas Jasa Keuangan AI Governance Roadmap / AI Governance, Fiduciary Duty, Board Oversight, Indonesian Banking, Accountability, Fairness, Trust",
+      "downloads": 107
+    },
+    {
+      "abstractId": "5423996",
+      "title": "Out of Control DAOs, AI, and the Question of Autonomy",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5423996",
+      "authors": [
+        "Kevin Werbach"
+      ],
+      "affiliations": [
+        "University of Pennsylvania, The Wharton School, Legal Studies & Business Ethics Department"
+      ],
+      "pages": 27,
+      "posted": "08 Sep 2025",
+      "snippet": "The Organization for Economic Cooperation and Development defines artificial intelligence (AI) as “a machine-based system that, for explicit or implicit / For this reason, AI risk management and governance frameworks emphasize the importance of “humans in the loop” or other means to mitigate dangers of out-of-control",
+      "downloads": 106
+    },
+    {
+      "abstractId": "5402054",
+      "title": "Evaluating Agentic AI Systems: A Balanced Framework for Performance, Robustness, Safety and Beyond",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5402054",
+      "authors": [
+        "Manish Shukla"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 9,
+      "posted": "08 Sep 2025",
+      "snippet": "argue that multidimensional evaluation-combining automated metrics with human-in-the-loop scoring and economic analysis-is essential for responsible adoption / Agentic AI, Multi-Agent Systems, Evaluation Framework, Goal-Drift, Ethical AI, AI Governance",
+      "downloads": 181
+    },
+    {
+      "abstractId": "5457774",
+      "title": "AI Needs Knowledgeable, Critical Minds: Why Over-50s are a Strategic Asset and how the AI Era can Help us Rethink Value",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5457774",
+      "authors": [
+        "Wioletta Nawrot",
+        "Tomasz Walkowicz"
+      ],
+      "affiliations": [
+        "ESCP Business School",
+        "ESCP Business School"
+      ],
+      "pages": 10,
+      "posted": "08 Sep 2025",
+      "snippet": "Despite this alignment, many organisational and policy approaches still fail to recognise the full contribution experienced professionals can make to AI adoption / Artificial intelligence (AI), workforce transformation, responsible AI deployment, social bonds",
+      "downloads": 31
+    },
+    {
+      "abstractId": "5437154",
+      "title": "Aligning AI Decision-Making with Organizational Values: Synthetic Experiments in a Multi-Stakeholder Utility Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5437154",
+      "authors": [
+        "Joshua Foster",
+        "Shannon Rawski"
+      ],
+      "affiliations": [
+        "Ivey Business School, Western University",
+        "University of Western Ontario - Ivey Business School"
+      ],
+      "pages": 52,
+      "posted": "04 Sep 2025",
+      "snippet": "synthetic data generated within a stylized economic environment, we examine the alignment of AI preferences with organizational objectives modeled through a firm-specific / We discuss implications for strategic management, AI governance, and organizational theory, highlighting practical strategies for embedding ethical and / AI governance, Multi-stakeholder decision-making, Agency alignment, Synthetic agents, Organizational values, Strategic management Aligning AI Decision-Making",
+      "downloads": 56
+    },
+    {
+      "abstractId": "5400024",
+      "title": "Chat GPT and Super Intelligence: Revolutionizing Human-Computer Interaction for the Future of Work in the AI Era",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5400024",
+      "authors": [
+        "Dr. A. Narasima Venkatesh"
+      ],
+      "affiliations": [
+        "ISBR BUSINESS SCHOOL"
+      ],
+      "pages": 0,
+      "posted": "03 Sep 2025",
+      "snippet": "Understanding gender-specific concerns-especially in sensitive areas such as data privacy-can help tailor strategies for responsible AI adoption and ensure",
+      "downloads": 0
+    },
+    {
+      "abstractId": "5400075",
+      "title": "Three-Engine AI Framework for Financial Services: Prediction, Personalization, and Prevention",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5400075",
+      "authors": [
+        "Sriranjan Chenoori"
+      ],
+      "affiliations": [
+        "Ally Financial (Ally Financial Inc.)"
+      ],
+      "pages": 6,
+      "posted": "03 Sep 2025",
+      "snippet": "In financial services, AI adoption has\naccelerated in areas such as credit scoring, fraud detection, robo-advisory, and customer support. / Finance, Financial Technology (FinTech), Credit Risk Modeling, Personalization in Banking, Data Privacy and Compliance, Graph Neural Networks, Responsible / AI / Ethical AI, Fraud Detection and Prevention",
+      "downloads": 63
+    },
+    {
+      "abstractId": "5395086",
+      "title": "The Ragsdale Framework for Autonomous Organizations: An Overview",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5395086",
+      "authors": [
+        "Marc Ragsdale"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 48,
+      "posted": "27 Aug 2025",
+      "snippet": "It introduces a five phase Evolution Model that begins with Aspiration, where intent to evolve is formed, and Awareness, where the organization becomes / Autonomous Organizations, AI Governance, Decision Flow, Organizational Work Theory, Maturity Models, Artificial Intelligence, Information Systems, Organizational",
+      "downloads": 71
+    },
+    {
+      "abstractId": "5394920",
+      "title": "Bring Your Own AI (BYOAI) in Indian B-Schools: A Behavior-Aware Policy Framework and Readiness Index for Responsible Integration",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5394920",
+      "authors": [
+        "Thamburaj Anthuvan",
+        "Sayli Uday Wankhade",
+        "Kajal Maheshwari",
+        "Sunitha Prabhuram"
+      ],
+      "affiliations": [
+        "S.B.Patil Institute of Management",
+        "Indira College of Commerce and Science, Pune",
+        "S.B.Patil Institute of Management",
+        "Associate Professor, School of Business, PO BOX: 345050, MAHE, Dubai, DIAC, UAE"
+      ],
+      "pages": 9,
+      "posted": "25 Aug 2025",
+      "snippet": "The study presents a validated readiness index and a policy toolkit suited to diverse institutional contexts, offering clear pathways for responsible adoption / AI Integration in Higher Education, BYOAI, B-Schools, AI Governance, Digital Adoption, Student Readiness, Academic Integrity",
+      "downloads": 67
+    },
+    {
+      "abstractId": "5393113",
+      "title": "OntoMotoOS Field Deployment and Ethical Standardization Framework: From Simulation to Real-World Governance (Part 4 of the OntoMotoOS Conceptual Framework Series)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5393113",
+      "authors": [
+        "Yoochul Kim"
+      ],
+      "affiliations": [
+        "Independent Researcher, South Korea"
+      ],
+      "pages": 30,
+      "posted": "23 Aug 2025",
+      "snippet": "Phased Deployment Strategy — A progressive rollout plan starting with controlled pilot environments and gradually expanding to broader societal adoption / AI Governance, Ethical AI Standardization, Socio-Technical Systems, Human–AI Cooperation, Multi-Cultural AI Adaptation, AI Ethics Protocols, Value Alignment",
+      "downloads": 41
+    },
+    {
+      "abstractId": "5392599",
+      "title": "Agentic Financial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5392599",
+      "authors": [
+        "Giovanni Arroyo",
+        "Lawrence Millen"
+      ],
+      "affiliations": [
+        "Independent Research",
+        "Independent Research"
+      ],
+      "pages": 28,
+      "posted": "21 Aug 2025",
+      "snippet": "Agentic Financial Intelligence (AFI) Protocol-an open-source, validator-scored (independent software agents), DAO-governed (decentralized autonomous organization / Agentic AI, Financial Infrastructure, Open Auditability, Validators, Explainable AI, Governance, Replay, AFI",
+      "downloads": 113
+    },
+    {
+      "abstractId": "5393034",
+      "title": "AI-Driven Transaction Monitoring Systems for AML in Digital Banking",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5393034",
+      "authors": [
+        "Olusola Babatunde-Faustino"
+      ],
+      "affiliations": [
+        "SOLA CONSULTING LIMITED"
+      ],
+      "pages": 5,
+      "posted": "20 Aug 2025",
+      "snippet": "This research paper raises concern with a framework for responsible AI adoption, considering regulatory expectations, data quality challenges, and ethical",
+      "downloads": 119
+    },
+    {
+      "abstractId": "5392471",
+      "title": "VECTARA(f): A Comprehensive Framework for Verifiable AGI Governance: Deterministic Action Governance with Cross-Domain Emergency Coordination and Cultural Knowledge Integration",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5392471",
+      "authors": [
+        "Edward Meyman"
+      ],
+      "affiliations": [],
+      "pages": 19,
+      "posted": "19 Aug 2025",
+      "snippet": "This work establishes foundational intellectual property across the emerging AGI governance market while demonstrating commercial viability for enterprise / Artificial General Intelligence, AI Governance, Emergency Response, Indigenous Knowledge Systems, Quantum-Resistant Democracy, Multi-Agent Coordination",
+      "downloads": 43
+    },
+    {
+      "abstractId": "5386752",
+      "title": "The Impact of AI on Investment and Venture Capital in the Kingdom of Saudi Arabia",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5386752",
+      "authors": [
+        "Faqir Taj",
+        "Shabeer Khan"
+      ],
+      "affiliations": [
+        "Al Yamamah University",
+        "Al Yamamah University"
+      ],
+      "pages": 0,
+      "posted": "18 Aug 2025",
+      "snippet": "Furthermore, policymakers should establish regulatory frameworks that encourage responsible AI adoption, while academic institutions ensure that financial",
+      "downloads": 0
+    },
+    {
+      "abstractId": "5386240",
+      "title": "Balancing Responsible AI with Digital Acceleration",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5386240",
+      "authors": [
+        "Ilze Balodis"
+      ],
+      "affiliations": [
+        "Association of Latvian Young Scientists"
+      ],
+      "pages": 5,
+      "posted": "18 Aug 2025",
+      "snippet": "The rapid pace of digital transformation has amplified the adoption of artificial intelligence (AI) across sectors. / We argue that balancing responsible AI with digital acceleration requires governance models that integrate ethical principles into innovation processes / Responsible AI, Digital Acceleration, AI Ethics, Governance, Innovation Management, Trust, Transparency",
+      "downloads": 20
+    },
+    {
+      "abstractId": "5385897",
+      "title": "Governance of Central Bank Digital Currencies Using the Dynamic Prescriptive Economics Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5385897",
+      "authors": [
+        "Tariqullah Khan"
+      ],
+      "affiliations": [],
+      "pages": 38,
+      "posted": "12 Aug 2025",
+      "snippet": "By diagnosing these imbalances, we identify governance blind spots-such as surveillance risks in the e-CNY and adoption hurdles in the Digital Euro-that / Central Bank Digital Currencies (CBDCs), Dynamic Prescriptive Economics (DPE), Monetary Sovereignty, Digital Currency Governance, AI Governance in Digital",
+      "downloads": 90
+    },
+    {
+      "abstractId": "5384985",
+      "title": "Model Denial Cascade -Dual Breach Relay",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5384985",
+      "authors": [
+        "Rommel Wong"
+      ],
+      "affiliations": [],
+      "pages": 2,
+      "posted": "12 Aug 2025",
+      "snippet": "Adoption of TRACE citation protocol for future references and derivatives. / AI Governance, TRACE Epoch, Artificial Intelligence Ethics, Arbitration, Schema Enforcement",
+      "downloads": 23
+    },
+    {
+      "abstractId": "5379979",
+      "title": "Artificial Intelligence: Current Landscape, Emerging Trends, and Future Implications (2025–2030)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5379979",
+      "authors": [
+        "Debashree Dey"
+      ],
+      "affiliations": [
+        "Next Move Strategy Consulting"
+      ],
+      "pages": 25,
+      "posted": "12 Aug 2025",
+      "snippet": "We analyse the primary drivers of adoption, sectoral applications, technical challenges, and regulatory landscapes. / The paper concludes with strategic recommendations for policymakers and industry leaders to foster inclusive and responsible AI development.",
+      "downloads": 195
+    },
+    {
+      "abstractId": "5367094",
+      "title": "Rebuilding the Foundations of Management in the AI Era: A Proposal for the \"Quartet Model\" through a Symphony of ISO, Process Mining, IMS, and Blockchain",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5367094",
+      "authors": [
+        "Atsushi Funaishi"
+      ],
+      "affiliations": [
+        "Mirai Quality Research Institute"
+      ],
+      "pages": 9,
+      "posted": "12 Aug 2025",
+      "snippet": "Framework as an \"AI- readable API,\" (2) Process Mining as an \"X-ray machine for business reality,\" (3) the Integrated Management System (IMS) as an \"enterprise-wide / Integrated Management System (IMS), Process Mining, Blockchain, ISO 9001, AI Governance, AI Agent",
+      "downloads": 36
+    },
+    {
+      "abstractId": "5375619",
+      "title": "Pioneering Ethical AI Integration in Enterprise Workflows: A Framework for Scalable Team Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5375619",
+      "authors": [
+        "Venkatraman Viswanathan"
+      ],
+      "affiliations": [],
+      "pages": 11,
+      "posted": "12 Aug 2025",
+      "snippet": "Generative AI is transforming enterprise workflows at a rapid pace. / Implementation strategies and governance mechanisms are illustrated through enterprise-level scenarios, ensuring trustworthy and sustainable AI adoption / Generative AI, AI Ethics, Responsible AI, Project Management, Ethical Frameworks, Explainability, Bias Mitigation, AI Governance",
+      "downloads": 69
+    },
+    {
+      "abstractId": "5366068",
+      "title": "Organizational Readiness Assessment Models for AI Integration in Financial Fraud Detection Units",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5366068",
+      "authors": [
+        "Itunuoluwa Adegbola"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 5,
+      "posted": "11 Aug 2025",
+      "snippet": "theoretical models and industry practices to formulate a holistic diagnostic tool that financial institutions can adopt to benchmark their readiness for AI adoption / Organizational Readiness, Artificial Intelligence Integration, Financial Fraud Detection, Change Management, Socio-Technical Framework, AI Governance,",
+      "downloads": 80
+    },
+    {
+      "abstractId": "5382688",
+      "title": "Contextualizing AI Policy: How Nationally Tailored Strategies Drive Automation and Trade Competitiveness in ASEAN",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5382688",
+      "authors": [
+        "Moinul Zaber",
+        "Ibrahim Rohman"
+      ],
+      "affiliations": [
+        "Institute of Development Studies (IDS), Brighton",
+        "University of Indonesia"
+      ],
+      "pages": 58,
+      "posted": "07 Aug 2025",
+      "snippet": "governance and economic transformation. / The findings suggest that policy presence alone is insufficient—AI governance must be embedded within sector-specific strategies, institutional ecosystems",
+      "downloads": 158
+    },
+    {
+      "abstractId": "5360444",
+      "title": "AI Governance for Risk Modelling in European Banks: A Compliance-First Approach",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5360444",
+      "authors": [
+        "Annie Goswami"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 29,
+      "posted": "07 Aug 2025",
+      "snippet": "The rapid acceleration of Artificial Intelligence (AI) and machine learning (ML) adoption in European banking risk models—particularly in credit scoring / that 75% of large euro area firms are actively using AI in daily business operations, yet only 17% of European banks consider themselves ahead in AI adoption / Model Governance, Regulatory Compliance, EU Artificial Intelligence Act, AI Risk Management, Explainability and Fairness, Bias Mitigation, AI Governance",
+      "downloads": 207
+    },
+    {
+      "abstractId": "5373878",
+      "title": "AI in FinTech: Balancing Efficiency with Ethical Concerns",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5373878",
+      "authors": [
+        "Santhosh Chitraju"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 15,
+      "posted": "01 Aug 2025",
+      "snippet": "The paper concludes by proposing a framework for the responsible adoption of AI in financial services, emphasizing the need for interdisciplinary collaboration / Artificial Intelligence, FinTech, Efficiency, Ethics, Algorithmic Bias, Data Privacy, Regulatory Compliance, Responsible Innovation, Financial Technology, AI / Governance",
+      "downloads": 84
+    },
+    {
+      "abstractId": "5372870",
+      "title": "The AI Integration Framework - An Original Blueprint for Responsible AI Adoption and Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5372870",
+      "authors": [
+        "Ilana Sprongl"
+      ],
+      "affiliations": [
+        "Helptext Consulting"
+      ],
+      "pages": 14,
+      "posted": "01 Aug 2025",
+      "snippet": "While international standards such as ISO/IEC 42001:2023 for AI Management Systems and the NIST AI Risk Management Framework (AI RMF) provide essential / AI Integration Framework, AI Governance, AI Risk Management, Ethical AI, Responsile AI, ISO 42001, NIST AI RMF",
+      "downloads": 66
+    },
+    {
+      "abstractId": "5374321",
+      "title": "Privatization and the Evolution of Social Norms Regarding Large Language Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5374321",
+      "authors": [
+        "Kyra M Abrams",
+        "Eryclis Rodrigues Bezerra Silva",
+        "Madelyn Rose Sanfilippo"
+      ],
+      "affiliations": [
+        "The University of Illinois at Urbana-Champaign",
+        "The University of Illinois at Urbana-Champaign",
+        "University of Illinois at Urbana-Champaign"
+      ],
+      "pages": 16,
+      "posted": "01 Aug 2025",
+      "snippet": "restrictions on training data (e.g., Nordberg, 2020), openness of AI models (e.g., Ghorishi et al., 2023), econometrics of AI (e.g., Zekos, 2021), and AI / governance (e.g., Hacker, 2021), to address the following research questions: What governance conflicts exist between trade secrets and open or creative",
+      "downloads": 50
+    },
+    {
+      "abstractId": "5355403",
+      "title": "The Role of Artificial Intelligence in Shaping Next-Generation IT Strategies",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5355403",
+      "authors": [
+        "Favour Kolawole"
+      ],
+      "affiliations": [
+        "City University of New York (CUNY) - Borough of Manhattan Community College (BMCC)"
+      ],
+      "pages": 10,
+      "posted": "30 Jul 2025",
+      "snippet": "Furthermore, the role of AI in enabling hyperautomation, driving edge computing, supporting DevOps acceleration, and facilitating intelligent cloud adoption / Artificial Intelligence, IT Strategy, Automation, Digital Transformation, AI Governance",
+      "downloads": 63
+    },
+    {
+      "abstractId": "5370884",
+      "title": "On the Need for Digital Regulators",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5370884",
+      "authors": [
+        "Cary Coglianese"
+      ],
+      "affiliations": [
+        "University of Pennsylvania Carey Law School"
+      ],
+      "pages": 22,
+      "posted": "30 Jul 2025",
+      "snippet": "considers two senses of the term “digital regulators”: one of these refers to regulators of digital technology; the other refers to how any regulatory organization / regulation, digital technology, telecommunications, artificial intelligence, machine learning, regulatory performance, AI governance",
+      "downloads": 350
+    },
+    {
+      "abstractId": "5372200",
+      "title": "Three Lessons from Spotify's Personalization Paradox",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5372200",
+      "authors": [
+        "Anirban Mukherjee",
+        "Hannah Hanwen Chang",
+        "Jonathan Wibowo"
+      ],
+      "affiliations": [
+        "Avyayam Holdings",
+        "Singapore Management University - Lee Kong Chian School of Business",
+        "University of California Berkeley"
+      ],
+      "pages": 15,
+      "posted": "30 Jul 2025",
+      "snippet": "Generative AI, Personalization, Customer Experience (CX), Recommender Systems, AI Adoption, User Autonomy, Responsible AI",
+      "downloads": 148
+    },
+    {
+      "abstractId": "5344858",
+      "title": "Artificial Intelligence in the Digital Economy: Multilateral and Regional Legal Challenges from the Perspective of the Indo-Pacific",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5344858",
+      "authors": [
+        "Rostam J. Neuwirth"
+      ],
+      "affiliations": [
+        "University of Macau - Faculty of Law"
+      ],
+      "pages": 37,
+      "posted": "29 Jul 2025",
+      "snippet": "If successful, the Indo-Pacific region can also make an important legal contribution to the future global AI governance framework, as the present multilateral / framework at the global level established by the United Nations and World Trade Organization (WTO) system was created before the digital era, is fragmented",
+      "downloads": 19
+    }
+  ]
+}

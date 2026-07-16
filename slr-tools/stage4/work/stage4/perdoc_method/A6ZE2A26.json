@@ -1,0 +1,13 @@
+{
+  "item_key": "A6ZE2A26",
+  "methods": [
+    "benchmark-evaluation",
+    "measurement-study",
+    "controlled-experiment"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "benchmark-evaluation",
+  "notes": "Benchmarks 15 open LLMs on 82 text-to-SQL tasks via execution-grounded labeling, then systematically varies unanimous LLM-jury committee size/composition and measures operating characteristics (TPR/FPR/Youden J). The systematic sweep over committee size and self-judging inclusion is experiment-like manipulation; human-authored ground-truth queries are a reference baseline, not human-subjects data.",
+  "citation": "Ullah 2026"
+}

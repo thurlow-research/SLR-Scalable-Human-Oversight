@@ -1,0 +1,77 @@
+{
+  "item_key": "2KPHQ5IV",
+  "citation": "Wang 2026",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model"
+  ],
+  "problem_statement": "Vibe coding produces correct executable code but records none of the structural commitments, dependencies, or evidence behind it, so reviewers cannot audit AI-generated changes and are demoted to rubber-stamping opacity as agent throughput scales.",
+  "magnitude_evidence": "AIDev's large-scale dataset of 456,000 agent-produced PRs reveals that agent changes are accepted significantly less often than human ones [17]",
+  "risk_types": [
+    "opacity",
+    "silent-regression",
+    "auditability",
+    "maintainability",
+    "traceability-loss",
+    "control-failure",
+    "feature-leakage",
+    "causal-invalidity",
+    "coordination-failure"
+  ],
+  "insufficiency_evidence": "reviewers are not empowered by better interfaces or more capable models. They are progressively demoted to rubber-stamping opacity; also 'a more capable model would have produced the same wrong answer' on structurally invalid inputs",
+  "solution_mechanisms": [
+    "consensus layer as primary artifact",
+    "typed property graph world model",
+    "bidirectional sync operators (realize/rehydrate)",
+    "evidence-linked structural claims",
+    "consensus entropy as under-specification signal",
+    "human-gated structural review",
+    "multi-agent roles over shared consensus",
+    "feature-parity contract validity gate",
+    "context-aware view projection",
+    "round-trip drift monitoring"
+  ],
+  "mechanism_keywords": [
+    "consensus-layer",
+    "knowledge-graph",
+    "world-model",
+    "bidirectional-sync",
+    "provenance",
+    "evidence-linkage",
+    "hitl",
+    "human-gating",
+    "entropy-signal",
+    "escalation",
+    "multi-agent",
+    "auditor-gate",
+    "contract-check",
+    "drift-detection",
+    "spec-driven",
+    "observability"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "pre-commit",
+    "pre-publish",
+    "pre-inference-gate"
+  ],
+  "human_role": "in-command",
+  "key_constructs": [
+    "Agentic Consensus",
+    "consensus layer C",
+    "dimension collapse",
+    "representation gap",
+    "consensus entropy",
+    "alignment fidelity",
+    "intervention distance",
+    "realize operator \u03a6",
+    "rehydrate operator \u03a8",
+    "round-trip integrity",
+    "governable consensus layer"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

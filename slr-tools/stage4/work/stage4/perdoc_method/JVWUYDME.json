@@ -1,0 +1,12 @@
+{
+  "item_key": "JVWUYDME",
+  "methods": [
+    "conceptual/position",
+    "framework-model"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position",
+  "notes": "Explicitly self-describes as a working paper that 'is conceptual and operational in intent; it does not present new empirical results.' Proposes the MV-HIC governance framework (Intent/Inputs/Constraints/Action Preview) with illustrative composite scenarios ('Dave'), a reference architecture diagram, adoption phases, and checklists. Grounded in prior literature (moral crumple zone, automation bias, EU AI Act, NIST) but conducts no systematic literature review, no data collection, and no artifact evaluation; a reference implementation is only 'planned.'",
+  "citation": "Jessee 2026"
+}

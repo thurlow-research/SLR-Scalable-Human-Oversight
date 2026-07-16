@@ -1,0 +1,612 @@
+[
+  {
+    "abstractId": "6437844",
+    "title": "VWAB: Vibe Write App Build A Framework for Domain-Expert-Driven Application Development in the Age of Generative AI",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6437844",
+    "authors": [
+      "Raghu Kundurthi"
+    ],
+    "affiliations": [],
+    "pages": 14,
+    "posted": "25 Apr 2026",
+    "snippet": "Distinct from Vibe Coding, which describes LLM-assisted acceleration of developer workflows, VWAB addresses the emergent phenomenon wherein practitioners / large language models, human-AI collaboration, low-code development, domain expertise, Builder Era, Vibe Coding, enterprise AI, knowledge worker productivity",
+    "downloads": 2
+  },
+  {
+    "abstractId": "6409098",
+    "title": "AI-Assisted Development and the Reshaping of Junior Developer Roles: Risks, Opportunities, and Market Implications",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6409098",
+    "authors": [
+      "Zachary Adam"
+    ],
+    "affiliations": [
+      "Aethex Web Solutions, San Antonio, Texas, United States"
+    ],
+    "pages": 11,
+    "posted": "24 Apr 2026",
+    "snippet": "coding\"the practice of building functional software through natural language prompts with minimal understanding of the underlying code. / entry-level job postings, interviews with engineering hiring managers reported in industry publications, and a systematic review of 47 empirical studies on AI-assisted / AI-assisted development, GitHub Copilot, junior developers, software engineering education, vibe coding, labor market, developer productivity, large language",
+    "downloads": 1
+  },
+  {
+    "abstractId": "6577818",
+    "title": "Short-Term Gain, Long-Term Fragility: AI Labor Substitution and the Erosion of Sustainable Capability",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6577818",
+    "authors": [
+      ""
+    ],
+    "affiliations": [],
+    "pages": 19,
+    "posted": "20 Apr 2026",
+    "snippet": "Empirical studies of AI-assisted coding show that generated output still requires substantial human verification and remains uneven in correctness, maintainability",
+    "downloads": 4
+  },
+  {
+    "abstractId": "6520140",
+    "title": "ALRIGHT, ALRIGHT, ALRIGHT: THE USPTO'S MATTHEW SYSTEM, BRIAN, AND WHAT SATIRE REVEALS ABOUT THE PATENT ELIGIBILITY CRISIS",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6520140",
+    "authors": [
+      "John Goodhue"
+    ],
+    "affiliations": [
+      "Goodhue, Coleman & Owens, P.C."
+    ],
+    "pages": 26,
+    "posted": "20 Apr 2026",
+    "snippet": "memos; the earnest deployment of AI tools in patent examination; right of publicity and trademark considerations raised by the McConaughey conceit; and vibe / coding as a mode of rapid legal-tool development. / eligibility, patent prosecution, patent examination, artificial intelligence, AI patent, software patent, machine learning, USPTO, right of publicity, vibe / coding, legal technology Goodhue USPTO's MATTHEW System, BRIAN, and Patent Eligibility",
+    "downloads": 1
+  },
+  {
+    "abstractId": "6460159",
+    "title": "ThreatPrism: Multi-Framework Threat Intelligence for AI-Assisted Software Development via Model Context Protocol",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6460159",
+    "authors": [
+      "Manam Bharadwaj"
+    ],
+    "affiliations": [
+      "Independent"
+    ],
+    "pages": 5,
+    "posted": "07 Apr 2026",
+    "snippet": "The rapid adoption of AI coding assistants has introduced \"vibe coding\"-a development paradigm where developers describe intent in natural language and / threat modeling, security frameworks, model context protocol, AI-assisted development, STRIDE, DREAD, LINDDUN, PASTA, vibe coding",
+    "downloads": 16
+  },
+  {
+    "abstractId": "6489379",
+    "title": "Vibe Coding Authorship",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6489379",
+    "authors": [
+      "Edward Lee"
+    ],
+    "affiliations": [
+      "Santa Clara University - School of Law"
+    ],
+    "pages": 16,
+    "posted": "31 Mar 2026",
+    "snippet": "\"Vibe coding\"-or a person's use of natural-language prompts to an AI generator for it to write the actual lines of computer code-has led to a copyright / Copyright Office, both the availability and the scope of copyright for computer programs have dramatically narrowed with the greater adoption of vibe coding",
+    "downloads": 326
+  },
+  {
+    "abstractId": "6213039",
+    "title": "From Syntax to Semantics: The Rise of the Taste-Based Economy and Viral Creation Loops in Intent-Driven Software Generation",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6213039",
+    "authors": [
+      "Jiekun Liu"
+    ],
+    "affiliations": [
+      "Independent Scholar"
+    ],
+    "pages": 28,
+    "posted": "30 Mar 2026",
+    "snippet": "The emergence of \"Vibe Coding\"-a paradigm where developers guide AI systems through natural language intent rather than explicit syntax-represents a fundamental / Taste-Based Economy, Generative AI, Go-to-Market Strategy, Viral Creation Loops, SaaS Growth, Vibe Coding, Platform Economics, AI-Native Development",
+    "downloads": 15
+  },
+  {
+    "abstractId": "6193422",
+    "title": "The ARU Framework: Decomposing Investment Returns into Currency-Neutral and Real Purchasing Power Components",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6193422",
+    "authors": [
+      "Daan Krijnen"
+    ],
+    "affiliations": [],
+    "pages": 24,
+    "posted": "24 Mar 2026",
+    "snippet": "Built in nine working days using AI-assisted coding without finance expertise, ARU received professional validation as \"MSc Finance-level work\" while revealing",
+    "downloads": 11
+  },
+  {
+    "abstractId": "6113466",
+    "title": "From Coding to Directing: Vibe Coding, Machine Creativity, and the Reconfiguration of Authorship and Creative Labour in Software as a Creative Industry",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6113466",
+    "authors": [
+      "Krishna Reddy Kovvuri",
+      "Sushil Kumar"
+    ],
+    "affiliations": [
+      "Indian Institute of Management Visakhapatnam"
+    ],
+    "pages": 22,
+    "posted": "02 Mar 2026",
+    "snippet": "Generative artificial intelligence (GenAI) is increasingly embedded in software development through practices commonly referred to as vibe coding, in which / This paper presents a conceptual framework that theorizes vibe coding as AI-mediated creative direction, a mode of innovation in which creative / This paper presents a conceptual framework that theorizes vibe coding as AI-mediated creative direction, a mode of innovation in which creative / Generative Artificial Intelligence, Vibe Coding, AI-Mediated Creative Direction, Machine Creativity, Creative Agency, Software Development as Creative",
+    "downloads": 10
+  },
+  {
+    "abstractId": "6091526",
+    "title": "From Syntax to Semantics: The Rise of the Taste-based Economy and Viral Creation Loops in Intent-Driven Software Generation",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6091526",
+    "authors": [
+      "Jiekun Liu"
+    ],
+    "affiliations": [
+      "Independent Scholar"
+    ],
+    "pages": 28,
+    "posted": "19 Feb 2026",
+    "snippet": "The emergence of \"Vibe Coding\"-a paradigm where developers guide AI systems through natural language intent rather than explicit syntax-represents a fundamental / Vibe Coding, Taste-based Economy, Generative AI, Go-to-Market Strategy, Viral Creation Loops, SaaS Growth",
+    "downloads": 12
+  },
+  {
+    "abstractId": "6164367",
+    "title": "The Evolution of Programming",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6164367",
+    "authors": [
+      "Kelvin Leong",
+      "Anna Sung"
+    ],
+    "affiliations": [
+      "University of Chester",
+      "University of Chester"
+    ],
+    "pages": 7,
+    "posted": "02 Feb 2026",
+    "snippet": "Special attention is given to recent advances in large language models and AI-assisted coding, which enable users to generate software through natural / language descriptions, a practice often referred to as \"vibe coding.\" / Programming, Coding, Vibe Coding, AI",
+    "downloads": 153
+  },
+  {
+    "abstractId": "6003055",
+    "title": "Navigating Skill Development and Ethical Challenges in Coding Education with Generative AI",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6003055",
+    "authors": [
+      "Hanh Le"
+    ],
+    "affiliations": [],
+    "pages": 30,
+    "posted": "29 Jan 2026",
+    "snippet": "Coding Education, Software Engineering Education, Skill Development, AI-Assisted Programming, AI-Enhanced Learning",
+    "downloads": 24
+  },
+  {
+    "abstractId": "5931597",
+    "title": "AI-Assisted Coding (Vibe Coding): The Paradox of Productivity as Aesthetic Homogenization",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5931597",
+    "authors": [
+      "Ramon Christian Bustamante"
+    ],
+    "affiliations": [],
+    "pages": 57,
+    "posted": "14 Jan 2026",
+    "snippet": "",
+    "downloads": 59
+  },
+  {
+    "abstractId": "5742364",
+    "title": "The Effects of AI-Assisted Programming in Software Engineering: A Study on GitHub Copilot",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5742364",
+    "authors": [
+      "Pradnya Niwas Suryavanshi",
+      "RameshD Jadhav"
+    ],
+    "affiliations": [
+      "Sinhgad Institute of Management, Pune",
+      "Sinhgad Institute of Management, Pune"
+    ],
+    "pages": 6,
+    "posted": "18 Dec 2025",
+    "snippet": "This study investigates the transformative impact of AI-assisted programming through tools like GitHub Copilot on the field of software engineering.",
+    "downloads": 91
+  },
+  {
+    "abstractId": "5894202",
+    "title": "AI-Native Software Engineering and Vibe Coding: A Strategic Technical Survey for Modern Engineering Leadership(2025-2035)",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5894202",
+    "authors": [
+      "Freeman Jackson"
+    ],
+    "affiliations": [
+      "Fourth Industrial Systems Corporation"
+    ],
+    "pages": 49,
+    "posted": "12 Dec 2025",
+    "snippet": "This academic survey synthesizes the emerging discipline of AI-native software engineering, focusing on the evolution of vibe coding, agentic programming / AI-native, AI-native engineering, vibe coding, multi-agent systems, software engineering 3.0, trust-native governance, Agentic DevSecOps, autonomous systems",
+    "downloads": 115
+  },
+  {
+    "abstractId": "5903642",
+    "title": "Gemini Gems: A Technical Comparison of AI Assistant Platforms Including an Analysis of Vibe Coding for Agentic AI Development",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5903642",
+    "authors": [
+      "Freeman Jackson"
+    ],
+    "affiliations": [
+      "Fourth Industrial Systems Corporation"
+    ],
+    "pages": 15,
+    "posted": "12 Dec 2025",
+    "snippet": "Two TikZ diagrams illustrate the layered architecture of Custom GPTs and the Vibe Coding loop, and a comprehensive comparison table highlights / The analysis positions Vibe Coding as a foundational methodological bridge between customizable AI assistants and agentic, multi-tool AI ecosystems. / Custom GPTs, Gemini Gems, Agentic AI, Vibe Coding, Retrieval-Augmented Generation (RAG), AI assistant platforms, Multimodal AI, Enterprise AI governance",
+    "downloads": 106
+  },
+  {
+    "abstractId": "5881104",
+    "title": "Software Development and Modeling in the Age of Artificial Intelligence Manifesto",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5881104",
+    "authors": [
+      "Roman Lukyanenko",
+      "Binny M. Samuel",
+      "David P. Tegarden",
+      "Kai R. Larsen",
+      "Araz Jabbari",
+      "Rasha Abdel Aziz",
+      "Jo\u00e3o Paulo Almeida",
+      "Alireza Amrollahi",
+      "Jon W. Beard",
+      "Ladjel Bellatreche",
+      "Dominik Bork",
+      "Jan vom Brocke",
+      "Jordi Cabot",
+      "Arturo Castellanos",
+      "Aurona Gerber",
+      "Peter Green",
+      "Andrea Grover",
+      "Giancarlo Guizzardi",
+      "Attila Hertelendy",
+      "Yuval Kahlon",
+      "Kamalakar Karlapalem",
+      "Vijay Khatri",
+      "Wolfgang Maass",
+      "Chris Maurer",
+      "Roland M. Mueller",
+      "John Mylopoulos",
+      "Rohit Nishant",
+      "Shawn Ogunseye",
+      "Guy Pare",
+      "Jeffrey Parsons",
+      "Oscar Pastor",
+      "Julian Prester",
+      "Henderik A. Proper",
+      "Jolita Ralyt\u00e9",
+      "Shazia Sadiq",
+      "David Schuff",
+      "Keng Leng Siau",
+      "Monique Snoeck",
+      "Veda C Storey",
+      "Monica Chiarini Tremblay",
+      "Juan Trujillo",
+      "Debra VanderMeer",
+      "Ramesh Venkataraman",
+      "Gerit Wagner",
+      "Anna Wiedemann",
+      "Carson Woo",
+      "Eric Yu",
+      "Wei Thoo Yue",
+      "J. Leon Zhao"
+    ],
+    "affiliations": [
+      "University of Virginia",
+      "Independent",
+      "Leeds School of Business",
+      "Information Systems Group",
+      "University of the West of England (UWE)",
+      "Federal University of Esp\u00edrito Santo",
+      "Macquarie University",
+      "Iowa State University",
+      "Universit\u00e9 de Poitiers",
+      "University of Muenster",
+      "Luxembourg Institute of Science and Technology (LIST)",
+      "William & Mary",
+      "Stellenbosch University",
+      "Independent",
+      "University of Nebraska at Omaha",
+      "University of Twente",
+      "Florida International University",
+      "Tokyo Institute of Technology",
+      "Indian Institute of Technology (IIT), Gandhinagar",
+      "University of Colorado Boulder",
+      "Saarland University",
+      "University of Virginia",
+      "Berlin School of Economics and Law",
+      "University of Toronto - Department of Computer Science",
+      "Queen's University Belfast",
+      "Bentley University",
+      "HEC Montreal",
+      "Polytechnic University of Valencia",
+      "The University of Sydney - Business School",
+      "University of Geneva",
+      "University of Queensland",
+      "Independent",
+      "Singapore Management University",
+      "KU Leuven - Faculty of Economics & Business",
+      "Georgia State University",
+      "Mason School of Business",
+      "Universidad de Alicante",
+      "Florida International University",
+      "Indiana University",
+      "Bern University of Applied Sciences (BFH)",
+      "University of British Columbia (UBC) - Sauder School of Business",
+      "University of Toronto",
+      "City University of Hong Kong (CityU)"
+    ],
+    "pages": 35,
+    "posted": "08 Dec 2025",
+    "snippet": "At the same time, approaches that align with the intellectual tradition of agile, including code-first methods, rapid prototyping, and vibe coding, have / Artificial intelligence, software development, agile development, conceptual modeling, SAFE-AI, MADE with AI, model-driven development, vibe coding",
+    "downloads": 411
+  },
+  {
+    "abstractId": "5842302",
+    "title": "Beyond Productivity: Evaluating the Hidden Costs of Generative AI in Software Development",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5842302",
+    "authors": [
+      "Edward Anderson",
+      "Geoffrey Parker",
+      "Burcu Tan"
+    ],
+    "affiliations": [
+      "Dartmouth College",
+      "University of New Mexico"
+    ],
+    "pages": 42,
+    "posted": "02 Dec 2025",
+    "snippet": "AI-assisted programming tools are increasingly adopted to enhance developer productivity by automating routine tasks and accelerating software development / Drawing on interviews with software engineers and insights from the literature, we build a dynamic simulation model to examine the long-term impacts of AI-assisted / Human-AI Interaction, AI-Assisted Coding, Software Development, Technical Debt, System Atrophy, Dynamics, Software Supply Chains",
+    "downloads": 204
+  },
+  {
+    "abstractId": "5716282",
+    "title": "(Vibe) Coding a Simulated Client Using Generative AI",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5716282",
+    "authors": [
+      "Stuart Hargreaves"
+    ],
+    "affiliations": [
+      "The Chinese University of Hong Kong (CUHK) - Faculty of Law"
+    ],
+    "pages": 21,
+    "posted": "07 Nov 2025",
+    "snippet": "",
+    "downloads": 176
+  },
+  {
+    "abstractId": "5713646",
+    "title": "AI Agents and Higher-Order Work",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5713646",
+    "authors": [
+      "Suproteem K. Sarkar"
+    ],
+    "affiliations": [],
+    "pages": 75,
+    "posted": "07 Nov 2025",
+    "snippet": "This paper studies the effects of agents on software development by analyzing the impacts of an AI-assisted programming platform.",
+    "downloads": 5302
+  },
+  {
+    "abstractId": "5582492",
+    "title": "From Vibe-Coding to Vibe-Governance: How AI Is Rewriting the Rules of Power",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5582492",
+    "authors": [
+      "Ihor Samokhodsky"
+    ],
+    "affiliations": [
+      "Better Regulation Delivery Office \u2014 BRDO"
+    ],
+    "pages": 11,
+    "posted": "15 Oct 2025",
+    "snippet": "Just as \"vibe-coding\" made software creation accessible through natural-language interfaces, Vibe-Governance applies the same translation layer to policymaking",
+    "downloads": 112
+  },
+  {
+    "abstractId": "5521379",
+    "title": "AI-Assisted Programming Decreases the Productivity of\u00a0Experienced Developers by Increasing the Technical Debt\u00a0and Maintenance Burden",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5521379",
+    "authors": [
+      "Feiyang Xu",
+      "Poonacha K. Medappa",
+      "Murat M Tunc",
+      "Martijn Vroegindeweij",
+      "Jan C. Fransoo"
+    ],
+    "affiliations": [
+      "Tilburg University",
+      "Tilburg University",
+      "Tilburg University - Tilburg University School of Economics and Management"
+    ],
+    "pages": 29,
+    "posted": "13 Oct 2025",
+    "snippet": "",
+    "downloads": 148
+  },
+  {
+    "abstractId": "5497800",
+    "title": "AICa (AI Cadence) and CodaAI: AI-First Software Development Principles and Methodology",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5497800",
+    "authors": [
+      "Prashant Preetam"
+    ],
+    "affiliations": [
+      "Independent"
+    ],
+    "pages": 45,
+    "posted": "13 Oct 2025",
+    "snippet": "The rapid rise of AI-assisted coding is transforming how software is built.",
+    "downloads": 21
+  },
+  {
+    "abstractId": "5469367",
+    "title": "Vibe Coding and AI-Led Conversational Programming: Emerging Trends in Software Development",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5469367",
+    "authors": [
+      "Irfan Samsyudin"
+    ],
+    "affiliations": [
+      "Technological Institute of the Philippines"
+    ],
+    "pages": 8,
+    "posted": "17 Sep 2025",
+    "snippet": "Using a mixed-methods approach, the research characterizes vibe coding in relation to traditional and AI-assisted programming, evaluates its performance / While it reduces entry barriers and fosters rapid prototyping, vibe coding is not yet a replacement for conventional practices. / Vibe Coding, Conversational Programming, Artificial Intelligence, Software Development Paradigms, Human-AI Collaboration, Code Quality, Responsible AI",
+    "downloads": 354
+  },
+  {
+    "abstractId": "5470927",
+    "title": "Large Language Model Developments",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5470927",
+    "authors": [
+      "Ed Sharkey",
+      "Philip Treleaven"
+    ],
+    "affiliations": [
+      "University College London",
+      "University College London"
+    ],
+    "pages": 25,
+    "posted": "12 Sep 2025",
+    "snippet": "This also includes \"Vibe Coding\" [Kumar, 2025]. 5.",
+    "downloads": 865
+  },
+  {
+    "abstractId": "5455842",
+    "title": "AI Agents for Economic Research",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5455842",
+    "authors": [
+      "Anton Korinek"
+    ],
+    "affiliations": [],
+    "pages": 62,
+    "posted": "08 Sep 2025",
+    "snippet": "The paper demonstrates that by \"vibe coding\" (programming through natural language) and building on modern agentic frameworks like LangGraph, any economist",
+    "downloads": 49
+  },
+  {
+    "abstractId": "5403926",
+    "title": "The Hidden Legal Minefield: How AI-Assisted \"Vibe Coding\" Amplifies Software Development Risks and How Technology can Provide Solutions",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5403926",
+    "authors": [
+      "John Goodhue"
+    ],
+    "affiliations": [
+      "Goodhue, Coleman & Owens, P.C."
+    ],
+    "pages": 10,
+    "posted": "08 Sep 2025",
+    "snippet": "coding.\" / This paper argues that vibe coding generates a new category of risk-where technical capacity dramatically outpaces legal infrastructure-and proposes embedded / Vibe Coding, AI-Assisted Software Development, Regulatory Compliance, Entrepreneurship and AI, AI and Law, Technology Law and Policy, Legal Compliance",
+    "downloads": 173
+  },
+  {
+    "abstractId": "5378201",
+    "title": "Vibe Coding as a Reconfiguration of Intent Mediation in Software Development: Definition, Implications, and Research Agenda",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5378201",
+    "authors": [
+      "Christian Meske",
+      "Tobias Hermanns",
+      "Esther von der Weiden",
+      "Kai-Uwe Loser",
+      "Thorsten Berger"
+    ],
+    "affiliations": [
+      "Ruhr University of Bochum",
+      "Ruhr University Bochum",
+      "Ruhr University Bochum",
+      "Ruhr University Bochum",
+      "Ruhr University Bochum"
+    ],
+    "pages": 18,
+    "posted": "14 Aug 2025",
+    "snippet": "Software development is undergoing a fundamental transformation as vibe coding becomes widespread, with large portions of contemporary codebases now being / Drawing on an intent perspective and historical analysis, we define vibe coding as a software development paradigm where humans and generative AI engage / Artificial Intelligence, Large Language Models (LLM), History of Software Development, Human-Computer Interaction, Intent Mediation, Cognitive Work, Vibe / Coding",
+    "downloads": 66
+  },
+  {
+    "abstractId": "5363301",
+    "title": "Reclaiming Human Learning in the Age of Generative AI: Reflections from Technology Entrepreneurship and Higher Education in the Philippines",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5363301",
+    "authors": [
+      "Joseph Benjamin Ilagan"
+    ],
+    "affiliations": [
+      "Ateneo de Manila University"
+    ],
+    "pages": 11,
+    "posted": "24 Jul 2025",
+    "snippet": "Generative AI in education, ChatGPT, LLM, vibe coding, Claude, student agency, education reform, institutional resistance, Philippines, Entrepreneurship",
+    "downloads": 115
+  },
+  {
+    "abstractId": "5157837",
+    "title": "AI for Code Synthesis: Can LLMs Generate Secure Code?",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5157837",
+    "authors": [
+      "Kaushik Bar"
+    ],
+    "affiliations": [
+      "Inxite Out Pvt Ltd"
+    ],
+    "pages": 14,
+    "posted": "12 Mar 2025",
+    "snippet": "The results highlight key challenges in AI-driven software development and propose guidelines for integrating AI-assisted programming safely in real-world",
+    "downloads": 380
+  },
+  {
+    "abstractId": "5142423",
+    "title": "Coding-Free Virtual Flowmeter for Building Chilled Water Using Pump Vfd Data and Llm",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5142423",
+    "authors": [
+      "Shunian Qiu",
+      "Fan Feng",
+      "Xuanzhe Zhang",
+      "Siyuan Xu",
+      "Qian Wu"
+    ],
+    "affiliations": [
+      "Zhejiang University of Science and Technology",
+      "affiliation not provided to SSRN",
+      "Zhejiang University of Science and Technology",
+      "Zhejiang University of Science and Technology",
+      "Zhejiang University of Science and Technology"
+    ],
+    "pages": 22,
+    "posted": "18 Feb 2025",
+    "snippet": "Large language model, HVAC system, Chilled water pump modelling, AI-assisted coding, Virtual flowmeter",
+    "downloads": 65
+  },
+  {
+    "abstractId": "5013411",
+    "title": "Vulnerability Webs: Systemic Risk in Software Networks",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5013411",
+    "authors": [
+      "Cornelius Fritz",
+      "Co-Pierre Georg",
+      "Angelo Mele",
+      "Michael Schweinberger"
+    ],
+    "affiliations": [
+      "Pennsylvania State University",
+      "Johns Hopkins University - Carey Business School",
+      "Pennsylvania State University"
+    ],
+    "pages": 59,
+    "posted": "13 Dec 2024",
+    "snippet": "By contrast, AI-assisted coding enables developers to replace dependencies with in-house code and reduces systemic risk.",
+    "downloads": 116
+  },
+  {
+    "abstractId": "4529345",
+    "title": "Addressing Compiler Errors: Stack Overflow or Large Language Models?",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4529345",
+    "authors": [
+      "Patricia Widjojo",
+      "Christoph Treude"
+    ],
+    "affiliations": [
+      "University of Melbourne",
+      "University of Melbourne"
+    ],
+    "pages": 34,
+    "posted": "02 Aug 2023",
+    "snippet": "underscoring the transformative potential of advanced large language models like GPT-4 in debugging and opening new avenues of exploration for researchers in AI-assisted / programming.",
+    "downloads": 34
+  }
+]

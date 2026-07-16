@@ -1,0 +1,61 @@
+{
+  "item_key": "HJMKADKU",
+  "citation": "J. E. Naulty 2025",
+  "evidence_type": [
+    "system-tool",
+    "empirical",
+    "benchmark",
+    "case-study"
+  ],
+  "problem_statement": "As software systems grow complex, ensuring security is hard: manual audits are slow and expensive while automated tools have high false-positive rates. Bugdar addresses how to provide near real-time, context-aware secure code review of GitHub pull requests using LLMs.",
+  "magnitude_evidence": "In the DeFi sector, manual audits often take weeks and cost 'tens of thousands of dollars per project'; internally a 10,000-line Move contract took two security engineers 10 days (0.11 lines/sec) and not all vulnerabilities were found.",
+  "risk_types": [
+    "security",
+    "smart-contract-vulnerability",
+    "reentrancy",
+    "insecure-deserialization",
+    "false-positives",
+    "alert-fatigue",
+    "dataset-bias"
+  ],
+  "insufficiency_evidence": "GPT-4o classification reached only 35% precision / 60% recall (F1 0.44) with high false-positive rate; o1-preview 24% precision; and static tools 'overlooked' a reentrancy bug \u2014 while Bugdar itself missed a logic flaw and misflagged a safe Rust 'unsafe' block.",
+  "solution_mechanisms": [
+    "AI-augmented PR code review",
+    "fine-tunable LLMs for vuln detection",
+    "RAG for project-specific context",
+    "judge-LLM selects best analysis",
+    "code-diff chunking to context window",
+    "structured vulnerability reports",
+    "GitHub CI/CD app integration",
+    "prompt engineering and fine-tuning",
+    "shift-left security feedback"
+  ],
+  "mechanism_keywords": [
+    "security-gate",
+    "llm-as-judge",
+    "rag",
+    "shift-left",
+    "ci-integration",
+    "fine-tuning",
+    "code-review",
+    "guardrail",
+    "ensemble",
+    "active-learning",
+    "context-aware"
+  ],
+  "oversight_locus": [
+    "pre-commit",
+    "code-review",
+    "CI",
+    "generation-time"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "Bugdar",
+    "Specialization-as-a-Service"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

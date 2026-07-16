@@ -1,0 +1,64 @@
+{
+  "item_key": "PDYJGF2R",
+  "citation": "Dora 2026",
+  "evidence_type": [
+    "empirical",
+    "benchmark",
+    "case-study"
+  ],
+  "problem_statement": "LLM-generated web application code (authentication, session management, input validation, HTTP security headers) is frequently insecure, and this paper evaluates the security compliance of code produced by multiple LLMs to expose oversight gaps before deployment.",
+  "magnitude_evidence": "Fu et al. found GitHub Copilot introduced security vulnerabilities in 32.8% of Python code and 24.5% of JavaScript code; the CVE Program documented over 34,000 vulnerabilities in 2024; 92% of US developers use generative models (Shani et al.)",
+  "risk_types": [
+    "security",
+    "authentication-weakness",
+    "session-management",
+    "SQL-injection",
+    "XSS",
+    "CSRF",
+    "missing-security-headers",
+    "information-disclosure",
+    "clickjacking",
+    "MITM"
+  ],
+  "insufficiency_evidence": "\"none fully align with industry best practices\"; all five models scored 0/12 on HTTP Security Headers; OWASP ZAP flagged the HttpOnly attribute as missing despite it being implemented, and \"ZAP has not covered all the security requirements\"; developers using AI assistants produced more insecure code yet had greater confidence in it (Perry et al.)",
+  "solution_mechanisms": [
+    "security compliance checklist for LLM-generated web apps",
+    "six-domain security evaluation parameters",
+    "Likelihood x Impact risk assessment model",
+    "automated scanning via OWASP ZAP",
+    "comparative multi-model security benchmarking",
+    "prompt improvement with explicit security requirements",
+    "human security expert review and testing",
+    "robust security assessment framework"
+  ],
+  "mechanism_keywords": [
+    "checklist",
+    "security-gate",
+    "benchmark",
+    "risk-scoring",
+    "automated-scanning",
+    "sast",
+    "hitl",
+    "prompt-engineering",
+    "compliance-evaluation"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-deployment",
+    "security-testing",
+    "code-review"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "security compliance checklist for LLM-generated web applications",
+    "six security evaluation domains",
+    "Impact Measurement scale (Severe/Major/Significant/Minor/Insignificant)"
+  ],
+  "governance_refs": [
+    "NIST cybersecurity guidelines",
+    "OWASP"
+  ],
+  "scope_fit": "both",
+  "notes": "Minor PDF-extraction ligature garbling (e.g., '\ufb01', '\ufb02'), but content is intact and on-topic.",
+  "_truncated": false
+}

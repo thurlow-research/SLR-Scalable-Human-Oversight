@@ -1,0 +1,51 @@
+{
+  "item_key": "E95T8E88",
+  "citation": "Watanabe 2026",
+  "evidence_type": [
+    "empirical",
+    "system-tool",
+    "benchmark"
+  ],
+  "problem_statement": "Agentic coding produces larger volumes of code per pull request, shifting the burden to human reviewers who must examine AI-generated methods\u2014many of which are eventually deleted during review\u2014thereby increasing reviewer cognitive load.",
+  "magnitude_evidence": "Of 12,343 methods added at PR creation, 9.9% of methods are deleted in PRs that require revisions (6.0% at method level, 3.9% at file level); Mozannar et al. reported 'verifying suggestions' accounts for 22.4% of total session time, and Becker et al. found AI tool use increased development time by 19%",
+  "risk_types": [
+    "redundancy",
+    "quality",
+    "maintainability",
+    "reviewer-burden",
+    "unnecessary-code",
+    "code-smells"
+  ],
+  "insufficiency_evidence": "GPT-4o's Recall was extremely low (2.6%), misclassifying deleted code as 'Survived' by conflating local code quality with system-level necessity; also Becker et al. found AI use increased development time by 19% due to review/correction",
+  "solution_mechanisms": [
+    "Random Forest classifier predicting methods likely to be deleted during review",
+    "23 code-metric features (size, method type, contents) extracted at PR creation",
+    "prioritizing reviewer attention on essential code",
+    "AST + refactoring detection (ActRef) to label survived vs deleted methods"
+  ],
+  "mechanism_keywords": [
+    "deletion-prediction",
+    "random-forest",
+    "code-metrics",
+    "reviewer-prioritization",
+    "llm-as-judge",
+    "feature-importance",
+    "risk-routing",
+    "pre-merge-triage"
+  ],
+  "oversight_locus": [
+    "pre-commit",
+    "code-review",
+    "generation-time"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Deleted Methods vs Survived Methods",
+    "Agentic-PRs",
+    "conflating local code quality with system-level necessity"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

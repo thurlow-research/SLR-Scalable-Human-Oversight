@@ -1,0 +1,62 @@
+{
+  "item_key": "A6ZE2A26",
+  "citation": "Ullah 2026",
+  "evidence_type": [
+    "empirical",
+    "benchmark",
+    "controlled-experiment",
+    "system-tool"
+  ],
+  "problem_statement": "With LLM 'vibe coding' producing first-draft code (here text-to-SQL) at scale, teams lack a reliable, automated way to decide which model-written queries are safe to accept without routing everything to a human reviewer.",
+  "magnitude_evidence": "Modern teams ship large volumes of small changes across many services and time zones; expert reviewers are scarce and expensive, review queues create latency (qualitative, no stat)",
+  "risk_types": [
+    "quality",
+    "correctness",
+    "silent-failure",
+    "judge-bias",
+    "false-accepts",
+    "downstream-corruption"
+  ],
+  "insufficiency_evidence": "single-model judges are uneven; 'use one LLM as the reviewer does not give a stable or uniformly safe operating point'; some single judges reach TPR near 1.0 but FPR above 0.6, passing many incorrect queries; 'Human review helps, but it does not scale.'",
+  "solution_mechanisms": [
+    "unanimous LLM jury/committee",
+    "top-six strong-model judge pool",
+    "unanimous (AND) acceptance rule",
+    "execution-grounded correctness labeling",
+    "per-generator committee validation",
+    "inclusive vs exclusive self-judging analysis",
+    "exhaustive committee-size sweep k=1..6"
+  ],
+  "mechanism_keywords": [
+    "llm-as-judge",
+    "committee",
+    "ensemble",
+    "unanimous-voting",
+    "jury",
+    "safety-first",
+    "execution-grounded",
+    "self-judging",
+    "risk-routing",
+    "escalation",
+    "n-version",
+    "auditable",
+    "decorrelation"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "pre-commit",
+    "pre-publish"
+  ],
+  "human_role": "escalation-target",
+  "key_constructs": [
+    "unanimous LLM jury",
+    "operating characteristics (TPR/FPR/Youden J) of committees",
+    "committee\u00d7generator slices",
+    "inclusive vs exclusive self-judging"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

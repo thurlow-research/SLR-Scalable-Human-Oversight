@@ -1,0 +1,101 @@
+item_key,decision,confidence,rationale
+VBR9G2GL,discard,high,"Political philosophy analysis of big tech corporate sovereignty with no software development, code generation, or SE governance mechanism."
+EHCPZI63,discard,high,Literature review on AI in strategic organizational decision-making without software engineering specificity or operational code governance mechanisms.
+V9WFH3BY,discard,high,"Copyright remedies analysis for generative AI focused on text, images, and video — no code governance angle."
+VD97NQEF,discard,high,Argues EU AI Act neglects demand-side risk and concludes humanistic education is governance infrastructure — no software engineering or code governance angle
+48UA8D9A,discard,high,Legal analysis of AI in institutional judicial processes with no software engineering angle.
+VG8PSMM7,keep,high,BLEU/LITL/HITL layered validation pipeline (lexical triage → semantic verification → human compliance review) is a directly transferable mechanism for AI code oversight regardless of PLC domain specificity.
+YXT6T84L,discard,high,Multi-agent legal reasoning framework applied to statutory tax calculation — domain-specific enough that re-derivation to software engineering code review context would be substantial.
+XLH3PMV3,discard,high,Facial recognition algorithmic accountability in law enforcement — domain-specific with no abstract and no transferable connection to software code governance.
+YBI4K3YX,discard,high,Game-theoretic model of US-EU AI regulatory competition addresses macroeconomic policy with no software engineering governance angle.
+6Y83JT5F,discard,high,LLM adoption challenge prioritization in supply chain operations using SCOR model — supply chain domain with no software engineering governance angle.
+D2YMP782,discard,high,Private law framework for AI digital replicas covering right of publicity and IP; no software engineering or code governance angle.
+FBKKEN3M,discard,medium,"Policy comment on AI governance mentioning measurement of large deployed systems, but no operationalizable methodology for SE teams managing AI-generated code"
+FXZJ49PN,discard,high,"Overview of US AI regulatory approach (sector-specific, decentralized) — regulatory landscape analysis with no software engineering or code governance angle"
+EVIRWHTD,keep,high,"Formalizes vibe coding definition and reference architecture with explicit identification of security, maintainability, and alignment challenges, providing a foundational operationalizable framework directly on the SLR topic."
+NRJL4AXV,discard,high,Philosophical dialogue on AI alignment and epistemic constraints without an operational governance mechanism.
+94AR25CT,discard,medium,Expert-in-the-loop architecture for scientific document synthesis — the HITL mechanism is specialized for knowledge synthesis tasks and does not transfer directly to software code review governance.
+LNJVL85B,discard,high,Indian labor market AI disruption and statutory voids; no software engineering governance or code oversight angle.
+MYQ8RJAQ,discard,high,Smart city legal governance framework — GDPR/data governance focus with no software engineering or code governance angle.
+TBE3RF5Z,discard,medium,Public policy AI governance framework for employment and healthcare consequential decisions without explicit software engineering or code generation angle
+XZEHQYNZ,keep,high,"Directly proposes HITL architecture guidelines and accountability frameworks for agentic AI in software engineering under EU AI Act, with explicit identification of implementation gaps and a concrete research roadmap."
+54L4L2SQ,discard,high,UK AI regulation extraterritoriality and copyright policy analysis — regulatory policy debate without operational mechanism for software engineering orgs.
+PW8KI9VA,discard,high,AI governance in M&A deal lifecycle — corporate finance/due diligence domain without software engineering or code governance angle
+X48WHCT3,maybe,medium,"LLM-powered decompiler empirically reduces smart contract auditing workload, operationalizing AI-assisted code transparency and auditability in a live developer study"
+FWH4AVHN,keep,medium,Explicitly sector-agnostic multi-layer validation architecture aligned with NIST AI RMF is designed for cross-domain transfer; software deployment in high-stakes environments fits the stated scope.
+I6YUVIWC,discard,medium,Entity-sovereign AI cognition infrastructure concept appears to address AI personalization and persistent organizational context rather than governance oversight mechanisms operationalizable by software engineering teams
+89YLID37,discard,high,Legal theory critique that AI Act misapplies engineering logic to human rights protection; provides no operational framework for software organizations — it diagnoses a regulatory design flaw rather than offering mechanisms teams can adopt
+VIMQT5CK,discard,high,Generative AI governance in digital finance (Singapore/Vietnam) is domain-specific to financial compliance without software engineering or code angle
+5T4I8VCK,discard,medium,"Whitepaper argues organizational challenge thesis but lacks empirical grounding or specific operational framework; 'explains why initiatives stall' is analysis, not actionable mechanism for software teams"
+73D4FZKV,discard,high,Policy commentary on AI infrastructure investment and transparency without operationalizable contribution for software engineering governance
+U3IQJ4VK,keep,high,Empirical study quantifying security weaknesses in Copilot-generated real-world code across 43 CWE categories with reproducible methodology — directly operationalizable for software org risk scoring of AI-generated code
+K43RHTPE,discard,high,AI risk management framework applied exclusively to tax authority domain without software engineering or code governance angle
+8DLWSSCX,discard,high,Copyright law analysis of AI training data without software or code angle
+N4P48NBN,maybe,high,Multi-vocal literature review synthesizing 114 studies on LLM multi-agent code generation into six challenge categories with solutions and future directions — directly operationalizable for software orgs governing AI code generation at scale
+D4LYI95N,discard,high,"Domain-specific to financial sector AI regulation in Canada without software development, code engineering, or transferable governance mechanism."
+682TULAK,discard,medium,Legal liability framework for AI malfunction via evidentiary presumptions — focused on civil pleading mechanisms rather than operationalizable governance for software engineering teams.
+PFG2Q8PG,discard,high,2019 broad AI societal impacts paper examining governance questions conceptually without operationalizable mechanism for software engineering code governance
+FPNZZ2P6,discard,high,AI in marketing and advertising governance — domain-specific (consumer protection/advertising) transparency framework without software engineering angle.
+6237UYZI,keep,high,Controlled user study (n=25) quantifying security impact of GitHub Copilot across problem difficulty levels — directly operationalizable for risk-scoring AI code generation tool adoption
+V5E7DGN3,discard,high,EU governance framework for facial recognition in public physical spaces — non-software AI system domain with no code governance parallel
+3L6TEMBD,discard,high,AI prompting guidance in legal practice and dispute resolution — domain-specific without software engineering code governance connection
+5Q7AIRTT,discard,high,General AI ethics governance framework for Malaysian businesses — no software engineering angle and descriptive rather than operationalizable.
+FJJZVMKD,discard,high,Tutorial for EU AI Act and MyHealth@EU compliance in clinical AI interoperability — healthcare domain with no software engineering or code governance angle.
+5MW43EHW,discard,medium,Legal structural analysis of EU AI Act as a hybrid governance project without application to software code development or engineering organizations.
+MKN4GGA7,discard,high,Healthcare AI policy review for higher education institutions with no software engineering or code governance angle
+CQ3BWC8B,discard,high,EU AI Act and copyright analysis focused on GPAI model training data rights — creative content IP framework with no software code governance angle.
+ZH9WG8XR,discard,high,"Platform content moderation governance failures and algorithmic accountability are domain-specific to social media platforms, not SE code governance."
+WZHCDNMM,discard,high,Legal pluralism argument for fragmented US generative AI regulation focused on copyright and privacy law with no software engineering or code governance angle.
+8D8HXT6V,discard,high,Human-centric AI governance conceptual framework for digital HRM applies exclusively to HR management without software engineering or code generation governance angle.
+TEKJFMFV,discard,high,Copyright fixation and volitional-control analysis of AI training data has no code governance or liability-for-AI-generated-software angle.
+MAPLMLLL,discard,high,"Philosophical paper invoking Vedic traditions alongside human-in-the-loop protocols, providing no operationalizable governance mechanism for software engineering contexts."
+UVV8HVVG,discard,high,Legal analysis of AI training data access under competition law — data governance framing with no SE/code-specific angle
+DMFQGBHD,discard,high,"Speculative philosophical paper combining AI, privacy, and Jungian synchronicity — no operational mechanism; matches general AI ethics/philosophy discard pattern."
+2T9EMKWQ,discard,high,GenAI governance frameworks in finance — domain-specific to financial applications with no software engineering connection
+C5JRYCCM,discard,high,Focuses on environmental AI regulation and carbon footprint governance with no connection to software engineering oversight or AI-generated code risk management.
+P2VU4W9J,discard,medium,Constitutional AI governance framework grounded in administrative law and tax administration as paradigmatic domain requires substantial re-derivation to apply to software engineering code governance.
+449TYEGG,discard,medium,AI-in-the-Loop architecture for facility management — domain-specific HITL requiring substantial re-derivation for software code review contexts
+S975LMQ9,discard,high,"AI in predictive policing and criminal justice due process — domain-specific, non-transferable to SE code governance"
+G9QRERTM,discard,medium,General AI innovation governance validated at org level; compliance measurement targets AIA generally not code review practices or AI code quality specifically
+58D5MAZF,discard,high,AI regulation paradox analysis (centralization vs. adaptive governance) without operational mechanism for software engineering governance
+GMKAC37M,keep,high,Systematic review of watermarking and attribution techniques specifically for AI-generated code provides directly operational detection signals for software provenance and supply chain security.
+VKTGI97H,discard,high,Practitioner book on enterprise LLM deployment — not peer-reviewed research and provides no operationalizable methodology for code governance assessment.
+M9RPA7DW,discard,high,Health AI interoperability and cognitive silo analysis — healthcare domain specific with no code governance angle.
+6PJJRCW8,discard,medium,"Psychological risk categories (emotional reliance, mental health framing) in AI safety evaluation address user well-being rather than code quality, governance, or oversight of AI-generated code."
+3TL98CSA,keep,medium,Investigates enterprise GenAI risks including HITL and manipulation risks with experimental analysis; enterprise LLM risk management is directly relevant to software organizations deploying coding assistants — they are the enterprise context
+XJ2QUKQS,discard,high,Predictive policing and cyber threat forecasting domain analysis has no software engineering code governance angle despite EU AI Act references.
+TI4RF68X,keep,high,"SLR synthesizes LLM integration risk mitigation strategies across SDLC phases including code generation, testing, and CI/CD, directly operationalizable for software engineering teams governing AI adoption at scale."
+WLRYLVX4,discard,high,EU AI Act applied to commercial arbitration and legal tech compliance — legal dispute resolution domain without software engineering or code governance angle
+SFU4WQBP,discard,high,"Domain-specific to criminal justice AI forensic evidence without software, code, or transferable governance mechanism for engineering organizations."
+ZS3F6ZS7,maybe,high,Neuro-symbolic framework for autonomous vulnerability discovery in DevSecOps pipelines validated on real CVEs — operationalizable as a scalable complement to manually curated SAST rule sets.
+KAVVCW42,discard,high,Economic analysis of AI regulation effects on startup financing and talent allocation — no operationalizable software engineering governance mechanism.
+ZYJHHM6I,discard,high,"Digital transformation failure study in public-sector IT — governance focus is on leadership and infrastructure investment, not AI code risk or oversight scaling"
+3C4TMHYK,discard,high,Nigerian copyright act fair dealing analysis for AI-generated creative content has no code or software governance angle
+X73CHPN8,discard,medium,"Liability decomposition framework is domain-locked to financial instruments (flash crashes, DeFi, DORA); the risk quantification methods don't transfer to code accountability without substantial re-derivation."
+Y3FIWH34,discard,high,"RECOVER automates software requirements elicitation — improves a software task but addresses no governance, oversight, or risk angle for AI-generated code"
+MZF9GATE,discard,high,"LLM code generation capability paper for niche hardware description languages without governance, oversight, or risk measurement dimension"
+BZCJDAW2,discard,high,Copyright policy analysis for generative AI focused on creative works with no code or software development governance angle
+XXRRYDKZ,keep,medium,"Function-level AI integration framework explicitly covering developer roles with technology-agnostic human oversight principles — operationalizable for software teams managing AI delegation, though lacks empirical validation."
+7UASJDLI,keep,medium,Empirical study with accuracy metrics on LLM-based test case generation from user stories with security-conscious on-premises deployment — operationalizable methodology for SE teams adopting AI-assisted testing under security constraints
+ZIRHZQLH,discard,medium,Abstract is pure keyword tags with no methodology or findings visible — paper appears to address conversational LLM stance control without a software engineering or code governance angle.
+LAET9YBA,discard,high,EU AI Act and copyright framework analysis focused on TDM exceptions for training data; no software or code governance angle.
+SN8B7PN8,discard,high,EU AI Act/GDPR analysis focuses on extraterritorial privacy and corporate governance scope without any software development or code angle
+P8CUB84H,keep,medium,"HITL supervision, immutable audit trails, source verification to prevent hallucinations, and mandatory disclosure are domain-agnostic governance mechanisms directly transferable to code review pipelines"
+8MXATG38,keep,high,Enterprise case study deploying a governance-first AI blueprint across the SDLC with quantified DORA-metric outcomes is directly operationalizable for software engineering organizations managing AI-assisted development at scale
+ERTUKFH8,keep,high,"Empirical human-subject study quantifying LLM-generated Gherkin specification quality (relevance, completeness, hallucination rates) with human oversight identified as required for software compliance validation, directly operationalizable."
+GHK4R78L,discard,high,HITL framework for AI in judicial/legal context is domain-specific and non-transferable to code review.
+QMKQC7SC,keep,high,"Benchmarks LLM document corruption rates in delegated workflows (explicitly including vibe coding) across 19 models with quantified error rates, providing actionable thresholds for organizational oversight design."
+4F266FJT,discard,high,Copyright equilibrium framework for GenAI creative outputs addresses artistic and performative rights with no software code governance angle.
+BAWCBT9R,keep,high,"Measurement-first empirical study quantifying how prompt-induced biases systematically corrupt LLM judge verdicts across code generation, repair, and test tasks — directly operationalizable for validating AI code review pipelines."
+WX4WQDZ5,discard,high,DAO governance and democracy paper — AI oversight mention is peripheral and limited to blockchain/decentralized governance contexts.
+Y3VAMHSR,discard,high,Attorney professional responsibility for AI-assisted legal drafting — legal ethics domain with no software engineering or code governance angle.
+4VM5FRXQ,keep,high,"Vision paper conceptualizing trustworthy AI software engineers with explicit governance, accountability, and oversight dimensions for human-AI SE teams, directly addressing the oversight problem for AI-generated code at scale"
+T9RPVMRV,maybe,medium,"Systematic review of factors influencing algorithm aversion provides actionable framework for software engineering teams designing human oversight of AI-generated code, addressing individual, task, and system-level trust calibration."
+CI9BRU7M,keep,high,Empirical study of GPT-4-assisted SonarQube warning triage at scale directly operationalizes AI-assisted code review prioritization to address developer fatigue.
+466NYT4F,discard,high,AI-mediated pre-cognitive manipulation theory is psychological and legal theory with no connection to software engineering or code governance.
+SDIMSRMI,keep,high,"Introduces a reproducible multi-dimensional evaluation framework with specific metrics for LLM-generated unit test quality, directly operationalizable for software organizations assessing and governing AI-generated code."
+2WHHEPAA,discard,high,Philosophical moral naturalist account of AI alignment without operationalizable mechanisms or connection to software engineering governance contexts.
+MFSG8J76,keep,high,ISO/IEC 42001 is the international AI management system standard; foundational operational governance framework for SE organizations despite empty abstract (standards documents lack traditional abstracts)
+GCZQTNBD,keep,high,Develops and validates an LLM-as-judge pipeline with agent-based prompting for automatically evaluating LLM-generated compiler tests — operationalizable as an automated quality oversight mechanism for AI-generated code
+LDVXFBJP,discard,high,Speculative neurosymbolic cybernetic framework targets healthcare and critical infrastructure compliance with no software development connection.
+9RIC3VMC,discard,medium,"Agentic AI governance framed around empirical finance research integrity (replication crisis, p-hacking) with no connection to software engineering code governance."

@@ -1,0 +1,72 @@
+{
+  "item_key": "8AW26GFK",
+  "citation": "Konrad 2026",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model",
+    "case-study"
+  ],
+  "problem_statement": "AI coding agents make implicit architectural decisions (framework, database, auth, deployment, tool orchestration) at scale, speed, and opacity, yet almost no one reviews these as architectural choices, leaving them ungoverned and undocumented.",
+  "magnitude_evidence": "\"The 5.9\u00d7 code growth (141\u2192827 LoC) and 3\u00d7 file increase in the case study\" produced by prompt wording alone; agents can \"scaffold entire projects from a single prompt\" while decisions \"take seconds, arrive bundled, and leave no record\"",
+  "risk_types": [
+    "security",
+    "attack-surface",
+    "prompt-injection",
+    "technical-debt",
+    "maintainability",
+    "hidden-coupling",
+    "supply-chain",
+    "vulnerability-concentration",
+    "governance-gap",
+    "review-scalability",
+    "opacity"
+  ],
+  "insufficiency_evidence": "\"Agents scaffold systems in minutes; teams need hours or days to audit them\"; existing guardrails (hooks, .cursorrules, AGENTS.md) \"constrain reactively\" and \"Proactive guidance that flags consequences before generation is still missing\"",
+  "solution_mechanisms": [
+    "treat prompt specs as architectural artifacts in review",
+    "pre-generation impact statement flagging added components/LoC/failure modes",
+    "record prompt/agent decisions in ADRs",
+    "complexity thresholds that trigger review when exceeded",
+    "three-layer framework: constraints, conformance, knowledge",
+    "conformance checks comparing dependency graph to declared constraints",
+    "automated ADR extraction from agent reasoning traces",
+    "architectural footprint metrics"
+  ],
+  "mechanism_keywords": [
+    "decision-records",
+    "adr",
+    "policy-as-code",
+    "guardrail",
+    "conformance-check",
+    "fitness-function",
+    "complexity-threshold",
+    "impact-preview",
+    "provenance",
+    "spec-driven",
+    "hitl",
+    "observability"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-generation",
+    "code-review",
+    "pre-commit",
+    "CI"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "vibe architecting",
+    "agent-driven architecture",
+    "prompt-architecture coupling",
+    "contingent vs fundamental couplings",
+    "speed-review gap",
+    "three-layer framework (constraints/conformance/knowledge)"
+  ],
+  "governance_refs": [
+    "MCP (Model Context Protocol)",
+    "AGENTS.md convention"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

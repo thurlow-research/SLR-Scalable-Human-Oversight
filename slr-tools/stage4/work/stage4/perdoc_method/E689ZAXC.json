@@ -1,0 +1,11 @@
+{
+  "item_key": "E689ZAXC",
+  "methods": [
+    "controlled-experiment"
+  ],
+  "empirical": true,
+  "human_subjects": true,
+  "primary_hint": "controlled-experiment",
+  "notes": "Seven preregistered between-subjects randomized behavioral experiments (N=2,895) with human participants; outcome measured via TF-IDF cosine similarity between participants' submissions and AI output. Some computational text analysis for the dependent measure, but design is experimental.",
+  "citation": "Zhou 2026"
+}

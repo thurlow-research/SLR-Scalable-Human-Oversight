@@ -1,0 +1,64 @@
+{
+  "item_key": "VZ27QUPQ",
+  "citation": "Zhuo 2026",
+  "evidence_type": [
+    "empirical",
+    "system-tool",
+    "framework-model",
+    "benchmark",
+    "dataset"
+  ],
+  "problem_statement": "LLMs frequently misuse library APIs in generated/completed code (wrong method selection, invalid parameters, hallucinated or intent-mismatched calls), and existing detection and program-repair techniques fail to reliably catch or fix these misuses at the scale of millions of APIs.",
+  "magnitude_evidence": "GPT-4 generated code with API misuses in 62% of cases when tested on 18 widely used Java APIs [Zhong & Wang]; another study found LLMs misused APIs in approximately half of security-related Java tasks [Mousavi et al.]",
+  "risk_types": [
+    "hallucination",
+    "intent-misalignment",
+    "security",
+    "quality",
+    "runtime-errors",
+    "inefficiency",
+    "maintainability",
+    "specification-violation"
+  ],
+  "insufficiency_evidence": "\"Even when misuse is detected correctly, rule- and program-analysis-based automatic program repair (APR) techniques often fail to fix misused APIs due to their limited semantic understanding\"; hallucination accounts for up to 43.3% of parameter misuses (StarCoder, Java), and naive prompting baselines had a refusal rate of 0% (GPT-4o)",
+  "solution_mechanisms": [
+    "taxonomy-guided LLM-based repair (Dr.Fix)",
+    "staged detect-classify-reason-fix prompting",
+    "self-verification reasoning stage",
+    "refusal/rejection of non-misuse cases",
+    "API misuse taxonomy (intent, hallucination, missing, redundant)",
+    "static analysis to localize API positions",
+    "manual annotation with closed coding"
+  ],
+  "mechanism_keywords": [
+    "llm-based-apr",
+    "taxonomy-guided",
+    "detect-reason-fix",
+    "self-verification",
+    "refusal-rate",
+    "prompt-engineering",
+    "few-shot",
+    "static-analysis",
+    "human-annotation",
+    "closed-coding",
+    "classification"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-completion",
+    "post-generation-repair"
+  ],
+  "human_role": "none",
+  "key_constructs": [
+    "intent misuse",
+    "hallucination misuse",
+    "Dr.Fix (Detect-reason-Fix)",
+    "refusal rate",
+    "API method infilling",
+    "API parameter completion"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

@@ -1,0 +1,13 @@
+{
+  "item_key": "C88VGWMI",
+  "methods": [
+    "design-science / prototype / tool-build",
+    "case-study",
+    "conceptual/position/framework"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "case-study",
+  "notes": "Single-project (n=1) case study building and evaluating a methodology/reference implementation; authors self-report metrics comparing constitutional vs. unconstrained AI generation. No human-subjects study; 'developer' is the author, not participant data.",
+  "citation": "Marri 2026"
+}

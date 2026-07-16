@@ -1,0 +1,21 @@
+item_key,decision,confidence,rationale,prior_decision,prior_confidence
+TL59BYKT,discard,high,"Keywords-only litigation data overview provides no operationalizable framework or methodology — descriptive market survey without actionable contribution",maybe,medium
+36NC2GK8,discard,high,"Financial sector MRM framework with banking regulation context requires substantial domain re-derivation; stress testing methodology is finance-specific",maybe,medium
+N5RK5TBY,keep,medium,"Control-theoretic Proactivity Ratio metric for measuring governance capacity is domain-agnostic and transfers to code review pipeline oversight without re-derivation",maybe,medium
+HIG7TK9E,keep,medium,"HITL UX mechanisms (draft-state management, undo/rollback, explainability) are design patterns that transfer trivially to AI code review interface design",maybe,medium
+Q6SVKUCU,keep,medium,"Technical liability framework for nondeterministic LLM outputs directly applies to AI-generated code liability without domain translation required",maybe,medium
+VCQF8J5T,discard,high,"Keywords-only abstract provides zero evaluable methodology or contribution; cannot confirm any operationalizable content",maybe,low
+HKK5KQXB,keep,medium,"DFA-based trust dynamics model evaluated in software engineering domain with quantitative overtrust/distrust detection directly applicable to calibrating developer oversight of AI code",maybe,medium
+DXIJWSLA,discard,high,"Keywords-only abstract prevents assessment of operationalizability; cannot confirm methodology or whether framework is actionable",maybe,low
+T5GJ5VZU,keep,medium,"Formal governance function G(A)={C,V,R,M,L} with explicit constraint/validation/risk/monitoring components transfers to AI code agent governance with minimal re-derivation",maybe,medium
+4B2BGBL6,discard,high,"Thin abstract presents assertion without methodology; cannot confirm operationalizable gap analysis or framework beyond SOC 2 insufficiency claim",maybe,low
+NG9SITNU,discard,medium,"Sparse abstract cannot confirm whether contribution is operationalizable governance framework versus descriptive security overview",maybe,medium
+4J2KY56A,keep,low,"Over-reliance and trust calibration dynamics in human-GAI collaboration provide transferable behavioral mechanisms for oversight design though code review translation requires interpretation",maybe,medium
+69LKIAPV,discard,medium,"Sparse abstract leaves SE applicability unresolved; benchmark appears domain-general cognitive augmentation without SE-specific operationalization",maybe,low
+BGV78XUB,discard,medium,"Primary focus on cybersecurity defense systems rather than software code governance; governance manipulation attack surface concept doesn't trivially transfer to code review contexts",maybe,medium
+5DMEXMK5,discard,high,"Section 230 analysis focuses on content platform liability and legislative activity; descriptive legal overview without code-specific operationalization",maybe,medium
+ZH8F3UC8,discard,medium,"Enterprise data architecture focus mentions governance frameworks (DORA, EU AI Act) but does not operationalize them for software/code development contexts",maybe,low
+ML88MC4H,keep,medium,"Governance taxonomy distinguishing visibility/alignment/authorization layers provides structured vocabulary applicable to AI code governance decisions without domain re-derivation",maybe,medium
+UIPQFFDH,keep,high,"Practitioner-derived agent governance recommendations (HITL collaboration, risk management, fallback integration, performance metrics) from empirical study are domain-agnostic and directly applicable to software agent governance",maybe,medium
+S9PIS4IB,keep,medium,"User study quantifying Dunning-Kruger calibration mismatch in AI-assisted work provides directly transferable behavioral finding for designing AI code oversight to counter overreliance",maybe,medium
+CJNMEJ9L,discard,medium,"Blockchain audit trail mechanism requires substantial infrastructure adaptation for code provenance; general AI trust framework without SE-specific application or trivial transfer path",maybe,medium

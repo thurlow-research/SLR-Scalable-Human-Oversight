@@ -1,0 +1,69 @@
+{
+  "item_key": "T8E8SCCG",
+  "citation": "Xie 2026",
+  "evidence_type": [
+    "system-tool",
+    "controlled-experiment",
+    "empirical"
+  ],
+  "problem_statement": "Vibe-coded projects where developers accept AI-generated code without review introduce operational/packaging security failures (like source-map leaks) that current static-analysis and secret-scanning tools do not detect, leaving the build-to-publish artifact boundary unguarded.",
+  "magnitude_evidence": "Claude Code npm package shipped a 59.8 MB source map exposing ~1,900 files and 512,000 lines of proprietary TypeScript; CodeRabbit found AI code produces ~1.7x more issues (2.74x for XSS); Veracode reported 45% of LLM code across 80 tasks contained security flaws",
+  "risk_types": [
+    "source-code-exposure",
+    "packaging-misconfiguration",
+    "configuration-drift",
+    "hardcoded-secrets",
+    "supply-chain",
+    "artifact-hygiene",
+    "security",
+    "quality"
+  ],
+  "insufficiency_evidence": "Existing static-analysis and secret-scanning tools did not cover this failure mode; SAST (Semgrep, CodeQL) ignore packaging/artifact content, secret scanners have no model of what appears in a published package, dependency auditors do not inspect the artifact itself; a pre-commit hook would not have caught it because the source map was a legitimate build output",
+  "solution_mechanisms": [
+    "pre-publish security gate",
+    "five-category vulnerability scanners",
+    "policy engine with pass/fail decision",
+    "source-map sourcesContent parsing",
+    "config invariant checks",
+    "secret regex + placeholder filtering",
+    "dependency pinning/lockfile checks",
+    "AI-assistant-registered tool call before publish",
+    "CI/CD blocking check",
+    "prepublishOnly hook"
+  ],
+  "mechanism_keywords": [
+    "security-gate",
+    "pre-publish",
+    "static-analysis",
+    "policy-as-code",
+    "artifact-scanning",
+    "source-map-detection",
+    "secret-scanning",
+    "supply-chain-check",
+    "negative-checks",
+    "defense-in-depth",
+    "hard-block",
+    "remediation-hints",
+    "provenance"
+  ],
+  "oversight_locus": [
+    "pre-publish",
+    "publish-time",
+    "CI",
+    "pre-deployment",
+    "generation-time"
+  ],
+  "human_role": "none",
+  "key_constructs": [
+    "VibeGuard",
+    "artifact boundary / publish boundary",
+    "five-category operational vulnerability taxonomy (V1-V5)",
+    "configuration drift",
+    "negative checks (verifying absence)",
+    "undercover mode"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

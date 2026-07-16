@@ -1,0 +1,49 @@
+{
+  "item_key": "6TZHUCMD",
+  "citation": "Sharma 2026",
+  "evidence_type": [
+    "system-tool",
+    "empirical"
+  ],
+  "problem_statement": "Enterprise use of public LLMs risks inadvertent leakage of sensitive/IP source code, and existing security systems cannot distinguish business-critical code from generic code that share structural similarities; the paper builds a classifier to filter outgoing code before it reaches LLMs.",
+  "magnitude_evidence": "On 10 days of real organizational traffic there were 'around 3442 incidents, out of which only 434 were the real incidents to check'",
+  "risk_types": [
+    "ip-leakage",
+    "secret/credential-exposure",
+    "data-privacy",
+    "confidentiality",
+    "business-logic-disclosure"
+  ],
+  "insufficiency_evidence": "Existing security systems (DLP, access restrictions, monitoring) 'are not able to handle these variations'; and the model itself leaves 'There are 60 false negative incidents that could lead to data leaks without being noticed.'",
+  "solution_mechanisms": [
+    "AI code-sensitivity classifier",
+    "UniXcoder embeddings + FCNN jointly fine-tuned",
+    "real-time outgoing code filtering",
+    "integration with SIEM/API-proxy/DLP",
+    "rule-based annotation of critical code"
+  ],
+  "mechanism_keywords": [
+    "guardrail",
+    "egress-filtering",
+    "data-leak-prevention",
+    "code-embedding",
+    "sensitivity-classifier",
+    "dlp-integration",
+    "siem-integration",
+    "risk-routing"
+  ],
+  "oversight_locus": [
+    "outgoing-traffic",
+    "pre-publish",
+    "egress"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "Source Code Guardrail (SCG)",
+    "critical vs. generic code"
+  ],
+  "governance_refs": [],
+  "scope_fit": "solution",
+  "notes": "Tangential to the review's core: the mechanism prevents sensitive human-written code from being sent to LLMs (data-loss prevention), rather than overseeing AI-generated code output. Some references to unlabeled figures/tables (language distribution, confusion matrix).",
+  "_truncated": false
+}

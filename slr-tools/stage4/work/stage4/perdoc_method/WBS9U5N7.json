@@ -1,0 +1,16 @@
+{
+  "item_key": "WBS9U5N7",
+  "methods": [
+    "design-science / prototype / tool-build",
+    "controlled-experiment",
+    "benchmark-evaluation",
+    "qualitative-analysis",
+    "measurement-study",
+    "ablation-study"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science / prototype / tool-build",
+  "notes": "Builds the ZTARE adversarial multi-agent workbench (tool-build) and uses it to generate 453 adversarial debate logs from which a 9-strategy taxonomy of specification-gaming is derived via qualitative analysis of code artifacts. Two controlled two-judge detection baseline experiments (isolated-snippet, full-thesis) compare Gemini vs Claude judges against adversarial execution on frozen specimen suites (benchmark-evaluation/controlled-experiment). Includes cross-mutator replication matrix and an off-matrix ablation variant. No human participants; human/LLM-written code used only as generated artifacts.",
+  "citation": "Alami 2026"
+}

@@ -1,0 +1,55 @@
+{
+  "item_key": "22JBEZNK",
+  "citation": "Virk 2025",
+  "evidence_type": [
+    "empirical",
+    "case-study",
+    "controlled-experiment"
+  ],
+  "problem_statement": "Non-programmer business users increasingly rely on AI-generated code for data analysis but it is unclear whether they can detect the LLM's errors; the paper tests whether such end-users can serve as effective human oversight of AI-generated analyses.",
+  "magnitude_evidence": "18 of 26 marketing/sales professionals reported using tools like ChatGPT to analyze data daily or weekly (which often involves code generation)",
+  "risk_types": [
+    "quality",
+    "unsound-decisions",
+    "hallucination",
+    "unreliable-AI",
+    "safety-critical-flaws",
+    "insufficient-human-oversight"
+  ],
+  "insufficiency_evidence": "Participants frequently failed to detect critical flaws that could compromise decision-making, many of which required no technical knowledge to recognize; 'none were consistently detected; some safety-critical issues were missed entirely by all participants.'",
+  "solution_mechanisms": [
+    "natural-language explanation of code",
+    "restructuring responses into delineated steps",
+    "presenting plausible alternatives per decision",
+    "priming users to distrust AI",
+    "monetary incentives for thoroughness",
+    "restate-the-methods engagement step",
+    "verification reminders"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "explanation",
+    "verification-prompt",
+    "distrust-priming",
+    "step-decomposition",
+    "alternatives",
+    "critical-evaluation",
+    "trust-calibration"
+  ],
+  "oversight_locus": [
+    "post-generation",
+    "code-review",
+    "pre-decision"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "approach-level vs implementation-level flaws",
+    "safety-critical flaw",
+    "technical/domain/neither flaw categories",
+    "verifiability for non-programmers"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

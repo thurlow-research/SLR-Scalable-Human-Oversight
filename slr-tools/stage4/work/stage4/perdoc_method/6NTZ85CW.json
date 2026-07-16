@@ -1,0 +1,15 @@
+{
+  "item_key": "6NTZ85CW",
+  "methods": [
+    "design-science/prototype/tool-build",
+    "benchmark-evaluation",
+    "measurement-study",
+    "case-study",
+    "dataset-contribution"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science/prototype/tool-build",
+  "notes": "Builds MAPTA (multi-agent pentesting system), evaluates it on the 104-challenge XBOW benchmark with detailed cost/resource measurement and correlation analysis, then applies it to 10 real-world open-source apps (case-study-style real-world validation). Also contributes code and fixes for 43 XBOW Docker images (dataset/artifact contribution). No human participants.",
+  "citation": "David 2025"
+}

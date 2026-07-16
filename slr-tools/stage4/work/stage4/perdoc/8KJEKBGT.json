@@ -1,0 +1,56 @@
+{
+  "item_key": "8KJEKBGT",
+  "citation": "Jensen 2024",
+  "evidence_type": [
+    "empirical",
+    "benchmark",
+    "controlled-experiment"
+  ],
+  "problem_statement": "Code review is central but tedious and expensive to carry out, and automated code review methods have had only modest success; the paper investigates whether LLMs can aid reviews by flagging security vulnerabilities and validating that code meets its intended functionality.",
+  "magnitude_evidence": "Code reviews 'can be costly and tedious to carry out'; automated code review methods proposed 'so far, though, with modest success'; empirical studies suggest 'security vulnerabilities are rare in real codebases' (~5% dirty observations)",
+  "risk_types": [
+    "security",
+    "vulnerability",
+    "functional-incorrectness",
+    "quality"
+  ],
+  "insufficiency_evidence": "Only 36.7% of LLM-generated descriptions can be associated with true CWE vulnerabilities; best RQ1 F1 score only 37.9%; all open-source models 'perform on par with random or dummy classifiers'",
+  "solution_mechanisms": [
+    "LLM flagging of security vulnerabilities",
+    "LLM software functional validation without execution",
+    "combined approve/reject recommendation",
+    "LLM-generated vulnerability descriptions",
+    "zero-shot prompting",
+    "chain-of-thought prompting",
+    "embedding-based CWE matching of descriptions",
+    "code perturbation for robustness"
+  ],
+  "mechanism_keywords": [
+    "llm-as-judge",
+    "security-gate",
+    "zero-shot",
+    "chain-of-thought",
+    "code-review",
+    "vulnerability-detection",
+    "functional-validation",
+    "embedding-similarity",
+    "ensemble-prompting",
+    "robustness-perturbation"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "pre-commit"
+  ],
+  "human_role": "none",
+  "key_constructs": [
+    "software functional validation (without execution)",
+    "clean vs dirty observations"
+  ],
+  "governance_refs": [
+    "CWE",
+    "Common Weakness Enumeration"
+  ],
+  "scope_fit": "solution",
+  "notes": null,
+  "_truncated": false
+}

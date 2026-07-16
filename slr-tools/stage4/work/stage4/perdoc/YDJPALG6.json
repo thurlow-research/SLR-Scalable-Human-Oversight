@@ -1,0 +1,75 @@
+{
+  "item_key": "YDJPALG6",
+  "citation": "Casserini 2026",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model",
+    "system-tool"
+  ],
+  "problem_statement": "Autonomous coding agents operate at high velocity and their planning, tool-call sequences, and cross-file decisions stay hidden from human supervisors, so oversight based on code diffs captures only local outputs while global architectural intent silently drifts ('agentic entropy'). The paper addresses how to give humans process-level visibility to keep oversight substantive.",
+  "magnitude_evidence": "Industry reports show that nearly 45% of AI-generated code fails basic security checks when users rely on prompt-driven workflows without guardrails (Veracode GenAI Code Security Report)",
+  "risk_types": [
+    "architectural-drift",
+    "security",
+    "maintainability",
+    "technical-debt",
+    "cognitive-debt",
+    "verification-fatigue",
+    "structural-fragility",
+    "duplicated-logic",
+    "loss-of-mental-model"
+  ],
+  "insufficiency_evidence": "Traditional code diff-based review 'reveals only the outcome of agentic activity'; the caching example produces code that 'compiles, passes existing unit tests... and appear benign in a standard code diff' while violating architectural invariants; reviewers experience 'cognitive overload or verification fatigue' and move 'from strategic supervision to passive rubber-stamping' (reviewer's paradox)",
+  "solution_mechanisms": [
+    "process-oriented explainability (PoE)",
+    "architectural seeding / conformity structure",
+    "reasoning monitoring of tool calls and plans",
+    "causal reasoning graph (DAG) interface",
+    "deviation detector comparing intent vs seed",
+    "cognitive debt index tracking reviewer engagement",
+    "reasoning-action loop instrumented proxy",
+    "standardized agentic traces"
+  ],
+  "mechanism_keywords": [
+    "observability",
+    "process-explainability",
+    "reasoning-traces",
+    "policy-as-code",
+    "architectural-invariants",
+    "deviation-detection",
+    "causal-graph",
+    "intent-telemetry",
+    "hitl",
+    "cognitive-debt-index",
+    "transparency-by-design",
+    "guardrail",
+    "provenance"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-commit",
+    "code-review",
+    "planning-time"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "agentic entropy",
+    "agentic technical debt",
+    "cognitive debt",
+    "process-oriented explainability (PoE)",
+    "conformity seeding",
+    "reasoning monitoring",
+    "causal reasoning graph",
+    "reviewer's paradox",
+    "capability-comprehension gap",
+    "Cognitive Integrity Threshold (CIT)",
+    "cognitive debt index",
+    "understanding requirement",
+    "standardized agentic traces",
+    "stability gap"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

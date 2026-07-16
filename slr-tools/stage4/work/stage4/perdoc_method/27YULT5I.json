@@ -1,0 +1,13 @@
+{
+  "item_key": "27YULT5I",
+  "methods": [
+    "conceptual/position",
+    "practitioner-experience-report",
+    "framework-proposal"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position",
+  "notes": "Argument/position paper drawing on the author's firsthand practitioner experience at a single financial institution to identify three ethical tensions and propose a governance framework (human review checkpoints, provenance documentation, differential testing). No systematic data collection, no user study; the paper itself acknowledges it presents no empirical data. Prior 'case-study' signal is weak\u2014the anecdotal single-institution experience is illustrative, not a structured empirical case study.",
+  "citation": "Sharma 2026"
+}

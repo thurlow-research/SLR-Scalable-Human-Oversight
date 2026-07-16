@@ -1,0 +1,89 @@
+{
+  "item_key": "T2EG4BE2",
+  "citation": "Waseem 2025",
+  "evidence_type": [
+    "conceptual-position",
+    "case-study",
+    "empirical",
+    "framework-model"
+  ],
+  "problem_statement": "Vibe Coding (natural-language-prompt-driven, AI-generated software development) accelerates prototyping but accumulates technical debt\u2014architectural inconsistency, security vulnerabilities, testing gaps, and maintenance burden\u2014because rapid regeneration outpaces human review and design rationale. The paper addresses how to keep oversight over AI-generated code so short-term flow does not undermine long-term sustainability.",
+  "magnitude_evidence": "In an agentic scan of seven early-stage vibe-coded MVPs, 970 security issues were detected (801 high-severity, 113 medium); Veracode found nearly half of AI-generated code contained vulnerabilities, with failure rates above 70% for Java; Palmer et al. identified misconfigurations in more than 170 applications created with the Lovable platform.",
+  "risk_types": [
+    "security",
+    "maintainability",
+    "architectural-inconsistency",
+    "technical-debt",
+    "requirements-ambiguity",
+    "testing-gaps",
+    "deployment-fragility",
+    "hallucination",
+    "knowledge-erosion",
+    "compliance",
+    "supply-chain"
+  ],
+  "insufficiency_evidence": "AI-generated test suite for an authentication workflow passed consistently even though login was broken in practice\u2014tests relied on mocked responses so invalid tokens were accepted; 'Regeneration speed routinely outpaces human review: a single \"fix this\" prompt can rewrite large parts of the codebase before architects or testers have seen the previous version.'",
+  "solution_mechanisms": [
+    "constrained/structured prompt templates",
+    "capture ASRs/NFRs as quality-attribute scenarios linked to tests",
+    "prompt-code-model provenance traceability",
+    "integrated automated security scanning (SAST/DAST/SBOM)",
+    "GenAI-based evaluation/white-hat-hacker agents as extra defense line",
+    "human review for high-impact regenerations",
+    "refactoring/migration agents for cleanup",
+    "CI/CD hardening with policy-as-code gates and rollback",
+    "semantic differencing of regenerated code",
+    "BDD/ATDD scenarios as canonical specs updated on change",
+    "observability (structured logging, health probes, dashboards)",
+    "cross-layer sustainable-VC guideline matrix and checklist",
+    "DDD/Hexagonal Architecture for clearer boundaries"
+  ],
+  "mechanism_keywords": [
+    "prompt-templates",
+    "spec-driven",
+    "policy-as-code",
+    "security-gate",
+    "sast-dast-sbom",
+    "provenance",
+    "traceability",
+    "adversarial-verification",
+    "white-hat-agent",
+    "llm-as-judge",
+    "hitl",
+    "escalation",
+    "ci-gate",
+    "semantic-diff",
+    "observability",
+    "rollback",
+    "refactoring-agent",
+    "guardrail",
+    "bdd-atdd",
+    "compliance-agent"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-commit",
+    "CI",
+    "code-review",
+    "post-deployment",
+    "runtime"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "flow\u2013debt tradeoff",
+    "AI-generated technical debt",
+    "structural entropy",
+    "Fast Starts, Harder Finishes",
+    "cross-layer sustainable VC guideline matrix",
+    "Sustainable Vibe Coding Checklist",
+    "illusion of completeness"
+  ],
+  "governance_refs": [
+    "GDPR",
+    "ISO/IEC 25010",
+    "ISO"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

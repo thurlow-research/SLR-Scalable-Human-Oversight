@@ -1,0 +1,82 @@
+{
+  "item_key": "6NTZ85CW",
+  "citation": "David 2025",
+  "evidence_type": [
+    "system-tool",
+    "benchmark",
+    "empirical",
+    "case-study"
+  ],
+  "problem_statement": "AI-powered development platforms accelerate creation of web applications by developers lacking security expertise, but security assessment cannot keep pace, and pattern-based tools miss contextually exploitable and business-logic vulnerabilities. The paper presents an autonomous multi-agent system to scale web application security assessment with validated exploits.",
+  "magnitude_evidence": "\"studies showing that up to 40% of AI-generated code contains vulnerabilities [21]\"; \"GitHub Copilot generates code containing vulnerabilities in 40% of CWE-targeted scenarios [21]\"",
+  "risk_types": [
+    "security",
+    "injection",
+    "business-logic",
+    "access-control",
+    "authentication",
+    "RCE",
+    "command-injection",
+    "SSRF",
+    "secret-exposure",
+    "arbitrary-file-write",
+    "misconfiguration",
+    "supply-chain",
+    "hallucination",
+    "false-positives"
+  ],
+  "insufficiency_evidence": "\"a study of seven Java SAST tools found only 12.7% of real-world vulnerabilities were detected, with the union of all tools missing 71% [16]\"; scanners miss business logic vulnerabilities and produce high false positives; manual review \"remains constrained by manual processes\"",
+  "solution_mechanisms": [
+    "multi-agent coordinator/sandbox/validation roles",
+    "tool-grounded LLM orchestration",
+    "end-to-end proof-of-concept exploit validation",
+    "sandboxed concrete execution as oracle",
+    "per-job Docker isolation",
+    "resource tracking with budget caps",
+    "early-stopping thresholds",
+    "evidence-gated branching",
+    "context isolation per agent"
+  ],
+  "mechanism_keywords": [
+    "multi-agent",
+    "hitl",
+    "oracle-validation",
+    "exploit-validation",
+    "sandbox",
+    "tool-grounding",
+    "orchestration",
+    "coordinator-agent",
+    "validation-agent",
+    "early-stopping",
+    "budget-caps",
+    "observability",
+    "cost-accounting",
+    "verify-by-execution",
+    "decorrelation",
+    "escalation"
+  ],
+  "oversight_locus": [
+    "pre-publish",
+    "runtime",
+    "post-deployment",
+    "code-review",
+    "CI"
+  ],
+  "human_role": "none",
+  "key_constructs": [
+    "MAPTA",
+    "verify-by-execution",
+    "evidence-gated branching",
+    "single-pass controller",
+    "PoC-by-execution oracle",
+    "measure-first engineering",
+    "cost-performance framework for autonomous pentesting"
+  ],
+  "governance_refs": [
+    "OWASP Top 10 (2021)",
+    "OWASP API Security Top 10 (2023)"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

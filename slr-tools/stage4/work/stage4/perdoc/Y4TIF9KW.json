@@ -1,0 +1,65 @@
+{
+  "item_key": "Y4TIF9KW",
+  "citation": "A. N. A. Hadee 2025",
+  "evidence_type": [
+    "system-tool",
+    "case-study",
+    "design-science"
+  ],
+  "problem_statement": "Static/SAST tools detect vulnerabilities in code but their developer-centric outputs lack regulatory alignment and require extensive manual interpretation, so they fail to produce auditor-ready, standards-mapped evidence; single-LLM approaches add reliability and transparency risks.",
+  "magnitude_evidence": "Traditional SAST tools identified between 25 and 35 issues on the DVNA repository whereas Code Prism identified 42 issues with audit-ready OWASP/NIST references",
+  "risk_types": [
+    "security",
+    "vulnerability-detection",
+    "regulatory-noncompliance",
+    "hallucination",
+    "inconsistency",
+    "lack-of-auditability",
+    "audit-inefficiency"
+  ],
+  "insufficiency_evidence": "single-LLM approaches tempered by persistent issues of hallucination, inconsistency, and a lack of inherent auditability; SAST outputs 'typically require hours of manual interpretation and formatting into audit-ready evidence'",
+  "solution_mechanisms": [
+    "multi-agent multi-LLM orchestration",
+    "specialized agents (detection, regulatory mapping, report synthesis, UX)",
+    "retrieval-augmented generation with semantic indexing",
+    "grounding outputs in OWASP/NIST standards",
+    "cross-validation across diverse LLMs",
+    "human-in-the-loop model selection at checkpoints",
+    "configurable audit-ready reporting flows",
+    "model selection to validate ambiguous findings"
+  ],
+  "mechanism_keywords": [
+    "multi-agent",
+    "multi-llm",
+    "rag",
+    "semantic-indexing",
+    "cross-validation",
+    "ensemble",
+    "hitl",
+    "standards-mapping",
+    "policy-grounding",
+    "auditability",
+    "report-synthesis",
+    "risk-routing"
+  ],
+  "oversight_locus": [
+    "static-code-review",
+    "pre-deployment",
+    "audit",
+    "reporting"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Code Prism",
+    "audit-oriented static code review",
+    "compliance-first outputs"
+  ],
+  "governance_refs": [
+    "OWASP Top 10",
+    "NIST Cybersecurity Framework",
+    "NIST SP 800-53"
+  ],
+  "scope_fit": "both",
+  "notes": "Some garbled OCR ('DICUSSION', 'Figure I.t'); evaluation limited to a single vulnerable repository (DVNA) with mainly qualitative feedback.",
+  "_truncated": false
+}

@@ -1,0 +1,71 @@
+{
+  "item_key": "5I2W8IC6",
+  "citation": "Khati 2025",
+  "evidence_type": [
+    "secondary-review",
+    "empirical"
+  ],
+  "problem_statement": "Addresses the lack of clear definitions, influencing factors, and metrics for trust/distrust/trustworthiness in LLMs for software engineering, where misaligned trust (overtrust or undertrust) in AI-generated code undermines effective and safe human oversight.",
+  "magnitude_evidence": "up to 7% of automatic refactorings broke functionality or introduced syntax errors [67] (ChatGPT/Gemini Java study, demonstrating risks of overtrust)",
+  "risk_types": [
+    "security",
+    "quality",
+    "hallucination",
+    "maintainability",
+    "data-leak",
+    "bias",
+    "skill-degradation",
+    "overtrust",
+    "undertrust",
+    "legal-liability"
+  ],
+  "insufficiency_evidence": "when LLM-generated suggestions contained subtle security vulnerabilities, developers were more likely to trust and use them without adequate scrutiny, leading to increased security risks [86]",
+  "solution_mechanisms": [
+    "trust calibration to actual reliability",
+    "trustworthiness models justifying user trust",
+    "XAI/explainability features",
+    "normative/standardized performance metrics",
+    "uncertainty expressions to reduce overreliance",
+    "multidimensional multi-item trust metrics",
+    "transparency affordances (provenance, traceability)",
+    "community-driven trust signals with moderation",
+    "manual code review of LLM-generated code",
+    "longitudinal/temporal trust assessment"
+  ],
+  "mechanism_keywords": [
+    "trust-calibration",
+    "explainability",
+    "xai",
+    "transparency",
+    "uncertainty-expression",
+    "provenance",
+    "normative-metrics",
+    "multidimensional-metrics",
+    "code-review",
+    "hitl",
+    "benchmark",
+    "governance"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "generation-time",
+    "pre-commit"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "appropriate trust",
+    "trust calibration",
+    "distrust as active expectation of failure",
+    "model-specific vs user-centric trust antecedents",
+    "MATCH model (adopted)",
+    "ABI framework (adopted)",
+    "trust affordance"
+  ],
+  "governance_refs": [
+    "EU AI Act",
+    "Ethics Guidelines for Trustworthy AI"
+  ],
+  "scope_fit": "both",
+  "notes": "Body partially truncated ('[...TRUNCATED FOR LENGTH...]') before conclusion.",
+  "_truncated": true
+}

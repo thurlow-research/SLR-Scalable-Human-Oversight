@@ -1,0 +1,15 @@
+{
+  "item_key": "X7EN6DXZ",
+  "methods": [
+    "controlled-experiment",
+    "benchmark-evaluation",
+    "security-attack-evaluation",
+    "qualitative-analysis",
+    "dataset-contribution"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "controlled-experiment",
+  "notes": "Two studies: (1) a large-scale controlled framing experiment over 6 LLMs x 5 conditions x 497 CVE/patch files (14,910 queries) using the CrossVul dataset with quantitative detection-rate analysis plus manual justification/failure-mode categorization; (2) a controlled adversarial-attack evaluation of template-based vs. LLM-assisted iterative bias-injection attacks against 17 CVEs across 10 real-world ACR pipelines in an isolated environment, with a debiasing defense evaluation. 'Human subjects' refers to authors manually validating model outputs, not participant data, so human_subjects=false. Authors release a replication package (artifact/dataset contribution).",
+  "citation": "Mitropoulos 2026"
+}

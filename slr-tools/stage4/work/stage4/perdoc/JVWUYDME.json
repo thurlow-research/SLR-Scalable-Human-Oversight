@@ -1,0 +1,92 @@
+{
+  "item_key": "JVWUYDME",
+  "citation": "Jessee 2026",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model"
+  ],
+  "problem_statement": "In regulated workflows, Human-in-the-Loop is treated as the primary safety control but in production it becomes liability transfer: reviewers must approve high-volume probabilistic AI-driven actions they cannot independently verify at operational speed, decoupling accountability from control.",
+  "magnitude_evidence": "Dave opens a queue of 200 items each morning with approximately 90 seconds per item; cryptographic retention windows of 5-30+ years",
+  "risk_types": [
+    "liability-transfer",
+    "automation-bias",
+    "rubber-stamping",
+    "hallucination",
+    "provenance-fabrication",
+    "non-determinism",
+    "cryptographic-obsolescence",
+    "unattributable-failure",
+    "erosion-of-human-competence"
+  ],
+  "insufficiency_evidence": "HITL frequently collapses under operational pressure: humans are asked to review probabilistic outputs that lack verifiable provenance at volumes incompatible with careful scrutiny; without meaningful human agency, oversight becomes rubber-stamping; humans under time pressure over-rely on automated suggestions, effectively negating the safety value of the loop (Parasuraman & Manzey, 2010)",
+  "solution_mechanisms": [
+    "Human-in-Command governance",
+    "Minimum Viable HIC evidence record (Intent/Inputs/Constraints/Action Preview)",
+    "operating-envelope enforcement at control plane",
+    "externalized deterministic policy engine (e.g. Open Policy Agent)",
+    "verifiable provenance receipts",
+    "plan-execute separation / frozen approved payload",
+    "signing algorithm independence",
+    "shadow execution / calibration",
+    "synthetic review packs",
+    "tiered semantic circuit breakers",
+    "identity maturity spectrum",
+    "procurement guardrails",
+    "escalation queue as diagnostic signal",
+    "fail-obvious halt states"
+  ],
+  "mechanism_keywords": [
+    "human-in-command",
+    "operating-envelope",
+    "policy-as-code",
+    "provenance",
+    "deterministic-preview",
+    "escalation",
+    "hitl",
+    "on-the-loop",
+    "observability",
+    "immutable-audit-log",
+    "circuit-breaker",
+    "calibration",
+    "shadow-execution",
+    "risk-tiering",
+    "plan-execute-separation",
+    "signing",
+    "control-plane",
+    "procurement-gate",
+    "fail-safe"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-execution",
+    "control-plane",
+    "runtime",
+    "escalation",
+    "post-execution-audit"
+  ],
+  "human_role": "in-command",
+  "key_constructs": [
+    "Scapegoat-as-a-Service",
+    "Human-in-Command (HIC)",
+    "Minimum Viable Human-in-Command (MV-HIC)",
+    "operating envelope",
+    "the Dave Problem",
+    "moral crumple zone",
+    "Competence Floor",
+    "policy checkbox theater",
+    "provenance laundering",
+    "preview drift",
+    "Incapable of Command",
+    "governable action"
+  ],
+  "governance_refs": [
+    "EU AI Act (Article 14)",
+    "NIST AI RMF",
+    "Meaningful Human Control (MHC)",
+    "SOX dual controls",
+    "ATO (Authorization to Operate)"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

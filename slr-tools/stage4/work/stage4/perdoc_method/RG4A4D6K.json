@@ -1,0 +1,12 @@
+{
+  "item_key": "RG4A4D6K",
+  "methods": [
+    "conceptual/position",
+    "conceptual/framework"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position",
+  "notes": "Self-described 'analytical research paper' that synthesizes third-party industry reports and statistics (McKinsey, GitHub, Deloitte, Sourcegraph) and proposes a transparency framework, detection/classification approach, and tiered organizational recommendations. Despite abstract claims of 'empirical evidence,' it conducts no original data collection, experiment, or systematic review \u2014 all figures are cited secondary sources. No participants involved.",
+  "citation": "N. Watson 2025"
+}

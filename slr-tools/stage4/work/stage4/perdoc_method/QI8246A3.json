@@ -1,0 +1,14 @@
+{
+  "item_key": "QI8246A3",
+  "methods": [
+    "dataset-contribution",
+    "repository-mining/MSR",
+    "measurement-study",
+    "conceptual/position/framework"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "dataset-contribution",
+  "notes": "Core contribution is the AIDev dataset built by mining 456K+ agent-authored GitHub PRs (MSR/repository-mining); it then runs three quantitative measurement analyses (acceptance rates, review turnaround, cyclomatic complexity) framed by the authors as 'case studies' though they are large-scale observational, not in-depth single-context. Also includes a substantial conceptual roadmap (SE 1.0-3.0 framing, nine research directions, SE 3.0 vision). No human participants; humans appear only as a PR baseline.",
+  "citation": "Li 2025"
+}

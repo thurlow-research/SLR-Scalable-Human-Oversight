@@ -1,0 +1,16 @@
+{
+  "item_key": "4PSM6ZCD",
+  "methods": [
+    "benchmark-evaluation",
+    "dataset-contribution",
+    "repository-mining/MSR",
+    "design-science/prototype/tool-build",
+    "qualitative-analysis",
+    "ablation-study"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "benchmark-evaluation",
+  "notes": "Builds SUSVIBES, a 200-task repository-level security benchmark curated via an automatic pipeline mining OSS vulnerability-fix commits (ReposVul/MoreFixes); evaluates 3 agent frameworks x 3 LLMs, runs prompting-mitigation ablations (generic/self-selection/oracle CWE), and adds qualitative case analyses of vulnerable agent solutions. No human-participant data.",
+  "citation": "Zhao 2025"
+}

@@ -1,0 +1,14 @@
+{
+  "item_key": "T2EG4BE2",
+  "methods": [
+    "experience-report",
+    "conceptual/position/framework",
+    "case-study",
+    "measurement-study/security-scan"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "experience-report",
+  "notes": "Primarily a practice-grounded experience report (IEEE Software style) synthesizing the authors' work on internally developed MVPs into a flow-debt conceptualization, a guideline matrix, and a checklist; illustrated with anecdotal case scenarios (e.g., RefactAI). Contains one small empirical element: an agentic security scan of seven vibe-coded MVPs yielding 970 issues. Evidence is explicitly qualitative/experiential, not a controlled study; no human-subjects data (informal co-author discussions are not a structured study).",
+  "citation": "Waseem 2025"
+}

@@ -1,0 +1,15 @@
+{
+  "item_key": "T72TU8B5",
+  "methods": [
+    "design-science / prototype / tool-build",
+    "survey/questionnaire",
+    "benchmark-evaluation",
+    "simulation",
+    "case-study"
+  ],
+  "empirical": true,
+  "human_subjects": true,
+  "primary_hint": "design-science / prototype / tool-build",
+  "notes": "Core contribution is a working CLI prototype (Hedwig). A formative survey of 21 engineers (IRB-approved) motivates design (real human-subjects data). Evaluation is NOT a user study: it uses synthetic developer-persona interaction traces (simulation) to seed the policy, a comparative benchmark-style evaluation against Claude Code on two fixed tasks scored by an LLM judge, plus an illustrative two-session case-study walkthrough. Authors explicitly note no formal user study was conducted.",
+  "citation": "Shukla 2026"
+}

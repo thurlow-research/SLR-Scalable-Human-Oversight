@@ -1,0 +1,23 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/home/scott/slr/restore_pass1_from_csv.py", line 298, in <module>
+    main()
+  File "/home/scott/slr/restore_pass1_from_csv.py", line 178, in main
+    gt=load_nonssrn(args.nonssrn); gt.update(load_ssrn_xlsx(args.ssrn))
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/scott/slr/restore_pass1_from_csv.py", line 121, in load_ssrn_xlsx
+    wb=openpyxl.load_workbook(path, read_only=True, data_only=True)
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/scott/.local/lib/python3.12/site-packages/openpyxl/reader/excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/scott/.local/lib/python3.12/site-packages/openpyxl/reader/excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/scott/.local/lib/python3.12/site-packages/openpyxl/reader/excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/zipfile/__init__.py", line 1347, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/scott/slr/ssrn-decisions.xlsx'

@@ -1,0 +1,73 @@
+{
+  "item_key": "ZUM76CCG",
+  "citation": "Otten 2026",
+  "evidence_type": [
+    "framework-model",
+    "conceptual-position"
+  ],
+  "problem_statement": "Organizations struggle to assess the risks of using LLMs across the systems engineering lifecycle, leading to inconsistent integration, unknown failure modes, and unclear levels of human oversight required for AI-generated engineering artifacts.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "hallucination",
+    "reliability",
+    "traceability",
+    "compliance",
+    "safety",
+    "quality",
+    "security",
+    "privacy",
+    "overreliance",
+    "loss-of-domain-knowledge",
+    "data-disclosure",
+    "prompt-brittleness",
+    "bias",
+    "explainability"
+  ],
+  "insufficiency_evidence": "\"Current benchmarks are often brittle and static, with results that can vary widely depending on the prompt formulation or evaluation protocol\"; and \"LLMs provide limited transparency regarding their internal reasoning, reference sources, or decision paths\"",
+  "solution_mechanisms": [
+    "risk classification matrix (autonomy x impact)",
+    "four autonomy levels (Assisted/Guided/Supervised/Fully-Automated)",
+    "impact severity tiers (Low/Medium/High)",
+    "risk-tiered oversight/validation requirements",
+    "human-in-the-loop for higher-risk tiers",
+    "fallback mechanisms and explainable-AI for high-risk",
+    "mapping to safety-standard constructs (severity/controllability/exposure)"
+  ],
+  "mechanism_keywords": [
+    "risk-routing",
+    "risk-tiering",
+    "autonomy-levels",
+    "impact-classification",
+    "hitl",
+    "human-oversight",
+    "explainability",
+    "fallback",
+    "assurance-process",
+    "validation-gate",
+    "governance"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "requirements-engineering",
+    "design",
+    "verification-validation",
+    "release",
+    "post-deployment"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "LLM Risk Assessment Framework (LRF)",
+    "LLM Autonomy Levels",
+    "Impact Level",
+    "Risk Classification matrix",
+    "human-in-charge vs AI-in-charge"
+  ],
+  "governance_refs": [
+    "IEC 61508",
+    "ISO 26262",
+    "SAE J3016"
+  ],
+  "scope_fit": "solution",
+  "notes": null,
+  "_truncated": false
+}

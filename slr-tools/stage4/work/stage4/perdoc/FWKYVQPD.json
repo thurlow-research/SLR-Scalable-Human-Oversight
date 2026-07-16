@@ -1,0 +1,58 @@
+{
+  "item_key": "FWKYVQPD",
+  "citation": "Irfan Samsyudin 2025",
+  "evidence_type": [
+    "empirical",
+    "controlled-experiment",
+    "framework-model"
+  ],
+  "problem_statement": "AI-led conversational ('vibe') coding lets developers generate software via natural language, but the AI-generated code raises maintainability, security, and trust concerns that require human oversight before it can be safely adopted in professional practice.",
+  "magnitude_evidence": "Security scans revealed that vibe coding outputs contained '22% more potential vulnerabilities than manually written code'; also '15% more duplicated logic and 18% higher complexity scores'",
+  "risk_types": [
+    "security",
+    "maintainability",
+    "quality",
+    "trust",
+    "cognitive-load",
+    "code-duplication",
+    "complexity",
+    "reliability"
+  ],
+  "insufficiency_evidence": "Only 37% of participants felt full confidence in vibe coding outputs without manual review; vibe coding 'should not yet be deployed in mission-critical environments without rigorous oversight'",
+  "solution_mechanisms": [
+    "three-pillar responsible adoption framework",
+    "hybrid integration with traditional coding",
+    "human validation of AI outputs",
+    "static analysis and security testing of outputs",
+    "peer/code review",
+    "context-aware deployment limited to non-critical apps"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "human-oversight",
+    "hybrid-workflow",
+    "static-analysis",
+    "security-testing",
+    "code-review",
+    "context-aware-deployment",
+    "validation"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "pre-production"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "vibe coding",
+    "AI-led conversational programming",
+    "outcome-centric development",
+    "three-pillar framework (hybrid integration, human oversight, context-aware deployment)"
+  ],
+  "governance_refs": [
+    "ISO/IEC 25010:2023"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

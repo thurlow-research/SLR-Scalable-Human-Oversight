@@ -1,0 +1,47 @@
+[2026-05-25 23:58:59] === Superseded relationship tag cleanup ===
+[2026-05-25 23:58:59] Mode: APPLY (writes)
+[2026-05-25 23:58:59] Title threshold: 0.9
+[2026-05-25 23:58:59] Looking up live collection '00-Dups'...
+[2026-05-25 23:59:03]   Found: BIRBU25N
+[2026-05-25 23:59:03] 
+Fetching items from 00-Dups...
+[2026-05-25 23:59:05]   93 items
+[2026-05-25 23:59:05] Building collection→source map...
+[2026-05-25 23:59:08]   Mapped 11 collections to sources
+[2026-05-25 23:59:08] 
+Clustering by title similarity (threshold=0.9)...
+[2026-05-25 23:59:08]   Clustering: 93 items, 89 matched pairs
+[2026-05-25 23:59:08]   Multi-item clusters: 35
+[2026-05-25 23:59:08]   Singletons (skipped): 0
+[2026-05-25 23:59:08] 
+Building tag plan...
+[2026-05-25 23:59:08] 
+=== PLAN SUMMARY ===
+[2026-05-25 23:59:08] Canonical items:              35
+[2026-05-25 23:59:08] Superseded items:             58
+[2026-05-25 23:59:08] Items needing new tags:       58
+[2026-05-25 23:59:08] Total new tags to add:        68
+[2026-05-25 23:59:08] Flagged (superseded+decision):10
+[2026-05-25 23:59:08] 
+Wrote superseded_tag_plan.csv
+[2026-05-25 23:59:08] Wrote flagged_superseded.csv (10 items)
+[2026-05-25 23:59:08] 
+⚠️  10 superseded items have existing s1:human:* tags — review flagged_superseded.csv
+[2026-05-25 23:59:08]   EYB6CT6R: s1:human:discard | Benchmarking AI models in software engineering: a review, se
+[2026-05-25 23:59:08]   S8GHSDJM: s1:human:keep | Position: vibe coding needs vibe reasoning: improving vibe c
+[2026-05-25 23:59:08]   CKAHXH58: s1:human:keep | From hazard identification to controller design: proactive a
+[2026-05-25 23:59:08]   25RCNRY9: s1:human:keep | Human-AI collaboration in software engineering: lessons lear
+[2026-05-25 23:59:08]   FHUGCNKY: s1:human:keep | Vibe coding as a reconfiguration of intent mediation in soft
+[2026-05-25 23:59:08]   ... and 5 more
+[2026-05-25 23:59:08] 
+Applying tags to 58 items...
+[2026-05-25 23:59:32]   [25/58] success=25 fail=0
+[2026-05-25 23:59:56]   [50/58] success=50 fail=0
+[2026-05-26 00:00:04]   [58/58] success=58 fail=0
+[2026-05-26 00:00:04] 
+Apply complete. Successes: 58, Failures: 0
+[2026-05-26 00:00:04] 
+=== DONE ===
+[2026-05-26 00:00:04] Tagged: 58 items
+[2026-05-26 00:00:04] Failures: 0
+[2026-05-26 00:00:04] ⚠️  Review flagged_superseded.csv — 10 superseded items had human decision tags

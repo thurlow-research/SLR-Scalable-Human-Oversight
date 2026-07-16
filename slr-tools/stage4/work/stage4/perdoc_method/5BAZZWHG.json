@@ -1,0 +1,15 @@
+{
+  "item_key": "5BAZZWHG",
+  "methods": [
+    "user-study",
+    "survey/questionnaire",
+    "qualitative-analysis",
+    "thematic-analysis",
+    "conceptual/framework"
+  ],
+  "empirical": true,
+  "human_subjects": true,
+  "primary_hint": "user-study",
+  "notes": "Formative/exploratory user study with only 4 participants performing a single code-generation task with Cline (an agentic coding assistant), followed by a Bloom's-Taxonomy-based self-report survey; data analyzed via thematic analysis of short-answer responses and observational notes, plus cross-referencing recall answers with the working directory. Also proposes design opportunities (conceptual framing). Prior 'case-study' signal is a loose fit \u2014 this is better characterized as a small observational lab user study.",
+  "citation": "Catalan 2026"
+}

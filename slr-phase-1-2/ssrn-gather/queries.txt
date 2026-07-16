@@ -1,0 +1,9 @@
+Q-SSRN-01	"vibe coding" OR "AI-assisted programming" OR "AI-assisted coding" OR "generative AI coding"
+Q-SSRN-02	("AI-generated code" OR "LLM-generated code" OR "Copilot") AND (risk OR vulnerability OR security OR "code quality")
+Q-SSRN-03	("AI-generated code" OR "generative AI") AND (liability OR copyright OR "intellectual property" OR accountability)
+Q-SSRN-04	"human oversight" AND ("artificial intelligence" OR "generative AI" OR "AI systems")
+Q-SSRN-05	("human-in-the-loop" OR "meaningful human control" OR "human review") AND ("AI" OR "automation" OR "code")
+Q-SSRN-06	("AI governance" OR "AI risk management" OR "responsible AI") AND (organization OR enterprise OR firm OR adoption)
+Q-SSRN-07	("EU AI Act" OR "AI Act" OR "NIST AI RMF" OR "AI regulation") AND (compliance OR oversight OR governance)
+Q-SSRN-08	"scalable oversight" OR "AI alignment" OR "AI auditing" OR "algorithmic accountability"
+Q-SSRN-09	("Copilot" OR "ChatGPT" OR "Claude" OR "Cursor" OR "agentic AI") AND (governance OR oversight OR risk OR liability)

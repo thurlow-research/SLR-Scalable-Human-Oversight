@@ -1,0 +1,83 @@
+{
+  "item_key": "TA6GIUK2",
+  "citation": "Zietsman 2026",
+  "evidence_type": [
+    "conceptual-position",
+    "controlled-experiment",
+    "framework-model",
+    "empirical"
+  ],
+  "problem_statement": "The industry response to AI-generated code quality problems is to deploy AI reviewers, but without external executable specifications the generating and reviewing agents share the same training distribution and blind spots, so review checks code against itself rather than against intent.",
+  "magnitude_evidence": "DORA 2026 report, based on 1,110 open-ended survey responses from Google engineers, found higher AI adoption correlates with higher throughput and higher instability simultaneously; time saved generating code is re-spent auditing it.",
+  "risk_types": [
+    "correlated-errors",
+    "quality",
+    "domain-convention violations",
+    "confident hallucination",
+    "specification-gaming",
+    "consensus-seeking bias",
+    "overcorrection bias",
+    "architectural drift",
+    "silent regression during refactoring"
+  ],
+  "insufficiency_evidence": "AI review ranged from 0% to 100% detection depending on domain opacity; the ICD-10-CM external cause code rule was missed by all four models at 0/5; on the ICAO fuel reserve case, in all five runs Claude confidently asserted the swapped values as correct ICAO rules and declared the implementation correct.",
+  "solution_mechanisms": [
+    "executable specifications as deterministic quality gate",
+    "BDD scenarios verified via behave",
+    "specification-first then deterministic verification pipeline then AI review",
+    "cross-family reviewer diversity plus external grounding",
+    "architectural tooling (ArchUnit, Dependency Cruiser) and contract testing (Pact) for structural rules",
+    "runtime verification / observability for timing/concurrency defects",
+    "AI review scoped to unarticulated architectural residual",
+    "user testing/design thinking for specification defects"
+  ],
+  "mechanism_keywords": [
+    "spec-driven",
+    "executable-specification",
+    "bdd",
+    "deterministic-gate",
+    "decorrelation",
+    "adversarial-diversity",
+    "cross-family-panel",
+    "policy-as-code",
+    "contract-testing",
+    "architecture-as-code",
+    "runtime-verification",
+    "observability",
+    "property-based-testing",
+    "hitl",
+    "ensemble",
+    "llm-as-judge",
+    "risk-routing"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-commit",
+    "CI",
+    "code-review",
+    "runtime",
+    "post-deployment"
+  ],
+  "human_role": "in-command",
+  "key_constructs": [
+    "specification as quality gate",
+    "correlated error hypothesis",
+    "popularity trap",
+    "homogenisation trap",
+    "Cynefin domain transition (enabling to governing constraints)",
+    "constraint transformation",
+    "residual defect taxonomy (Categories A-E)",
+    "specifiability-based defect taxonomy",
+    "intuition_misleads case",
+    "the residual for AI review"
+  ],
+  "governance_refs": [
+    "ICAO",
+    "NAESB",
+    "ICD-10-CM",
+    "IMO"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

@@ -1,0 +1,252 @@
+{
+  "count": 15,
+  "total": "615",
+  "page": "13",
+  "records": [
+    {
+      "abstractId": "3114133",
+      "title": "'It's Reducing a Human Being to a Percentage': Perceptions of Justice in Algorithmic Decisions",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3114133",
+      "authors": [
+        "Reuben Binns",
+        "Max Van Kleek",
+        "Michael Veale",
+        "Ulrik Lyngs",
+        "Jun Zhao",
+        "Nigel Shadbolt"
+      ],
+      "affiliations": [
+        "University of Oxford",
+        "University of Oxford - Computing Laboratory",
+        "University of Oxford - Computing Laboratory",
+        "University of Oxford - Computing Laboratory",
+        "University of Oxford - Computing Laboratory"
+      ],
+      "pages": 14,
+      "posted": "16 Feb 2018",
+      "snippet": "GDPR, article 22, automated decision-making, algorithmic accountability, right to an explanation, right to explanation, explanation facilities, procedural",
+      "downloads": 750
+    },
+    {
+      "abstractId": "3087278",
+      "title": "Gov2Vec: Learning Distributed Representations of Institutions and Their Legal Text",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3087278",
+      "authors": [
+        "John Nay"
+      ],
+      "affiliations": [
+        "Stanford University - CodeX - Center for Legal Informatics"
+      ],
+      "pages": 6,
+      "posted": "21 Dec 2017",
+      "snippet": "artificial intelligence, machine learning, natural language processing, legal, policy, computational law, AI alignment",
+      "downloads": 124
+    },
+    {
+      "abstractId": "3088118",
+      "title": "Artificial Intelligence as a Digital Privacy Protector",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3088118",
+      "authors": [
+        "Andrea Scripa"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 19,
+      "posted": "15 Dec 2017",
+      "snippet": "The area of digital privacy has been of particular concern, as AI has led to ubiquitous data gathering, re-identification issues, and a lack of algorithmic / accountability.",
+      "downloads": 176
+    },
+    {
+      "abstractId": "3071679",
+      "title": "Clarity, Surprises, and Further Questions in the Article 29 Working Party Draft Guidance on Automated Decision-Making and Profiling",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3071679",
+      "authors": [
+        "Michael Veale",
+        "Lilian Edwards"
+      ],
+      "affiliations": [
+        "University of Newcastle - Law School"
+      ],
+      "pages": 7,
+      "posted": "17 Nov 2017",
+      "snippet": "GDPR, Article 22, Profiling, Machine Learning, AI Governance, Data Governance, Right to an Explanation, Right to Explanation, Access Rights, Algorithmic / Accountability, Algorithmic Bias, FATML, Article 29 Working Party, A29WP, Article 29",
+      "downloads": 1171
+    },
+    {
+      "abstractId": "3067552",
+      "title": "The Automated Public Sphere",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3067552",
+      "authors": [
+        "Frank Pasquale"
+      ],
+      "affiliations": [
+        "Cornell University - Law School"
+      ],
+      "pages": 28,
+      "posted": "10 Nov 2017",
+      "snippet": "Megaplatforms, Consumer Protection, Media Regulation, Facebook, Google, Black Box Society, Information Privacy, Propaganda, Fake Content Generators, Algorithmic / Accountability",
+      "downloads": 1589
+    },
+    {
+      "abstractId": "3060763",
+      "title": "Fairer Machine Learning in the Real World: Mitigating Discrimination Without Collecting Sensitive Data",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3060763",
+      "authors": [
+        "Michael Veale",
+        "Reuben Binns"
+      ],
+      "affiliations": [
+        "University of Oxford"
+      ],
+      "pages": 17,
+      "posted": "30 Oct 2017",
+      "snippet": "machine learning, algorithmic accountability, discrimination-aware data mining, fairness-aware machine learning, protected characteristics, anti-discrimination",
+      "downloads": 650
+    },
+    {
+      "abstractId": "3052831",
+      "title": "Enslaving the Algorithm: From a ‘Right to an Explanation’ to a ‘Right to Better Decisions’?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3052831",
+      "authors": [
+        "Lilian Edwards",
+        "Michael Veale"
+      ],
+      "affiliations": [
+        "University of Newcastle - Law School"
+      ],
+      "pages": 14,
+      "posted": "16 Oct 2017",
+      "snippet": "GDPR, Data Protection, Right to an Explanation, Right to Explanation, Algorithmic Accountability, Automated Decision-Making, Automated Decisions, General",
+      "downloads": 2972
+    },
+    {
+      "abstractId": "3002546",
+      "title": "Toward a Fourth Law of Robotics: Preserving Attribution, Responsibility, and Explainability in an Algorithmic Society",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3002546",
+      "authors": [
+        "Frank Pasquale"
+      ],
+      "affiliations": [
+        "Cornell University - Law School"
+      ],
+      "pages": 13,
+      "posted": "19 Jul 2017",
+      "snippet": "Algorithmic Society, Online Platforms, Internet Regulation, Algorithmic Discrimination, Nuisance Law, Balkin, Social Network Data, Algorithmic Accountability",
+      "downloads": 1431
+    },
+    {
+      "abstractId": "2970767",
+      "title": "Unpacking Student Privacy",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2970767",
+      "authors": [
+        "Elana Zeide"
+      ],
+      "affiliations": [
+        "University of Nebraska Schools of Law and Engineering"
+      ],
+      "pages": 9,
+      "posted": "27 Jun 2017",
+      "snippet": "includes explicitly considering broader consequences and ethics, putting explicit review protocols in place, providing meaningful transparency, and ensuring algorithmic / accountability.",
+      "downloads": 234
+    },
+    {
+      "abstractId": "2986440",
+      "title": "Competition by Design",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2986440",
+      "authors": [
+        "Simonetta Vezzoso"
+      ],
+      "affiliations": [
+        "University of Trento"
+      ],
+      "pages": 31,
+      "posted": "15 Jun 2017",
+      "snippet": "Competition by Design, Algorithm, Repricing Software, Algorithmic Transparency, Algorithmic Accountability, Competition Compliance, Big Data",
+      "downloads": 693
+    },
+    {
+      "abstractId": "2962662",
+      "title": "Technology, Democracy, and Institutional Change",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2962662",
+      "authors": [
+        "Peter L. Lindseth"
+      ],
+      "affiliations": [
+        "University of Connecticut School of Law"
+      ],
+      "pages": 15,
+      "posted": "05 May 2017",
+      "snippet": "digital democracy, information and communication technology, globalization, technocracy, multistakerholderism, participation, transparency, algorithmic / accountability, institutional change, hysteresis, networks, governance, representative government",
+      "downloads": 215
+    },
+    {
+      "abstractId": "2880662",
+      "title": "Opening the Black Box: Petri Nets and Privacy by Design",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2880662",
+      "authors": [
+        "Laurence Diver",
+        "Burkhard Schafer"
+      ],
+      "affiliations": [
+        "Independent",
+        "University of Edinburgh - School of Law"
+      ],
+      "pages": 40,
+      "posted": "07 Dec 2016",
+      "snippet": "Building on the growing literature in algorithmic accountability, this paper investigates the use of a process visualisation technique known as the Petri / Opening up the ‘black box’ in this way could be a step towards achieving better algorithmic accountability. / Privacy by Design; Regulatory Theory; Petri Nets; Formalisation; Transparency, Algorithmic Accountability",
+      "downloads": 204
+    },
+    {
+      "abstractId": "2758121",
+      "title": "Privacy and Accountability in Black-Box Medicine",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2758121",
+      "authors": [
+        "Roger Allan Ford",
+        "W. Nicholson Price II"
+      ],
+      "affiliations": [
+        "University of New Hampshire Franklin Pierce School of Law",
+        "University of Michigan Law School"
+      ],
+      "pages": 43,
+      "posted": "04 Apr 2016",
+      "snippet": "But to succeed, it must overcome two separate, but related, problems: patient privacy and algorithmic accountability.",
+      "downloads": 531
+    },
+    {
+      "abstractId": "2747701",
+      "title": "Algorithmic Contracts",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2747701",
+      "authors": [
+        "Lauren Henry Scholz"
+      ],
+      "affiliations": [
+        "Florida State University - College of Law"
+      ],
+      "pages": 42,
+      "posted": "21 Mar 2016",
+      "snippet": "Unintended consequences of this approach include opportunities for fraud, market manipulation, and a general lack of algorithmic accountability. / accountability.",
+      "downloads": 2575
+    },
+    {
+      "abstractId": "2535540",
+      "title": "Algorithmic Accountability",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2535540",
+      "authors": [
+        "Alex Rosenblat",
+        "Tamara Kneese",
+        "Danah Boyd"
+      ],
+      "affiliations": [
+        "Data & Society Research Institute",
+        "Data & Society Research Institute",
+        "Microsoft Research"
+      ],
+      "pages": 6,
+      "posted": "16 Dec 2014",
+      "snippet": "",
+      "downloads": 793
+    }
+  ]
+}

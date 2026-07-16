@@ -1,0 +1,71 @@
+{
+  "item_key": "27YULT5I",
+  "citation": "Sharma 2026",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model",
+    "case-study"
+  ],
+  "problem_statement": "The document addresses how to responsibly oversee LLM-driven large-scale code migration in regulated financial systems, where AI rewrites legacy code and human review struggles to verify functional equivalence and preserve accountability.",
+  "magnitude_evidence": "\"A 2025 industry survey found that over 97% of software companies have adopted AI tools in their engineering processes, with code generation representing the dominant use case (Techreviewer, 2025).\"",
+  "risk_types": [
+    "accountability-gap",
+    "transparency",
+    "compliance",
+    "automation-bias",
+    "quality",
+    "functional-equivalence",
+    "rounding/edge-case errors",
+    "auditability",
+    "legal-regulatory",
+    "maintainability"
+  ],
+  "insufficiency_evidence": "\"Developers may scan the converted code for obvious errors but lack the time or institutional mandate to perform the deep, line-by-line comparison against the original that would be necessary to catch subtle semantic differences\"; standard testing tests converted code in isolation and does not compare behavior against the original across full input range.",
+  "solution_mechanisms": [
+    "mandatory human review checkpoints (pre-migration scoping, mid-migration validation, post-migration certification)",
+    "provenance documentation for AI-generated components",
+    "differential testing verifying functional equivalence against original system",
+    "engineer certification/sign-off of converted code",
+    "risk-commensurate verification standard"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "review-checkpoints",
+    "provenance",
+    "differential-testing",
+    "functional-equivalence",
+    "sign-off",
+    "certification",
+    "human-review",
+    "risk-routing",
+    "audit-trail",
+    "spec-driven"
+  ],
+  "oversight_locus": [
+    "pre-migration",
+    "mid-migration",
+    "post-migration",
+    "code-review",
+    "testing",
+    "pre-deployment"
+  ],
+  "human_role": "in-command",
+  "key_constructs": [
+    "accountability gap",
+    "transparency deficit",
+    "automation bias",
+    "practitioner-grounded ethical framework",
+    "mandatory human review checkpoints",
+    "provenance documentation",
+    "differential testing protocols"
+  ],
+  "governance_refs": [
+    "Sarbanes-Oxley Act",
+    "MiFID II",
+    "ACM Code of Ethics",
+    "banking supervisory guidelines"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

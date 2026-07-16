@@ -1,0 +1,71 @@
+{
+  "item_key": "E3E5YA2E",
+  "citation": "De La Cruz 2025",
+  "evidence_type": [
+    "empirical",
+    "case-study"
+  ],
+  "problem_statement": "The document examines how the role of software developers is shifting toward overseeing, auditing, and validating AI/LLM-generated code, and the security and reliability risks that make rigorous human oversight of that code necessary.",
+  "magnitude_evidence": "GitHub Copilot code evaluated by Pearce et al. found 'up to 40% depending on the prompt\u2014contained security flaws'; also a systematic review found AI-generated code includes security vulnerabilities more frequently than human-written code.",
+  "risk_types": [
+    "security",
+    "quality",
+    "reliability",
+    "insecure-patterns",
+    "flawed-logic",
+    "automation-bias",
+    "over-reliance",
+    "deskilling",
+    "hallucination",
+    "accountability",
+    "job-displacement",
+    "supply-chain"
+  ],
+  "insufficiency_evidence": "'syntactically correct but logically flawed or insecure code' that developers over-trust via the 'false confidence trap', discovering 'subtle security issues later'; models 'replicate patterns seen in their training data without fully understanding the context' propagating poor practices.",
+  "solution_mechanisms": [
+    "human-in-the-loop validation",
+    "static analysis tools",
+    "multi-tiered testing frameworks",
+    "peer/code review in AI pipelines",
+    "trust calibration",
+    "prompt engineering upskilling",
+    "AI governance structures and organizational policies",
+    "developer AI-validation training",
+    "transparency and explainability guidelines",
+    "continuous auditing of AI-generated code"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "static-analysis",
+    "code-review",
+    "testing",
+    "calibration",
+    "governance",
+    "policy",
+    "training",
+    "explainability",
+    "auditing",
+    "trust-calibration"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "generation-time",
+    "CI",
+    "post-deployment"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "false confidence trap",
+    "AI orchestrator",
+    "human-AI co-creation",
+    "hybrid intelligence",
+    "VIRTSI trust model",
+    "Deskilling of Jobs Theory",
+    "Technology Threat Avoidance Theory",
+    "Job Characteristics Theory"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

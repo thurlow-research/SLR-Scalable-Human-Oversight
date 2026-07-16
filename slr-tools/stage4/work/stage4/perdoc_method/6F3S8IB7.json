@@ -1,0 +1,13 @@
+{
+  "item_key": "6F3S8IB7",
+  "methods": [
+    "design-science",
+    "conceptual/framework",
+    "narrative-related-work-review"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "design-science",
+  "notes": "Design Science Research paper proposing the HAIF framework; completes DSR activities 1-4 plus partial analytical evaluation (framework comparison and an illustrative/hypothetical scenario). No data collection, no artifact evaluation, and no human participants \u2014 empirical validation via field studies and controlled experiments is explicitly deferred to future work. The illustrative scenario is a constructed demonstration, not an empirical case study.",
+  "citation": "Bara 2026"
+}

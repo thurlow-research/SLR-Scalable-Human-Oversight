@@ -1,0 +1,14 @@
+{
+  "item_key": "E95T8E88",
+  "methods": [
+    "repository-mining/MSR",
+    "predictive-modeling/machine-learning-classification",
+    "benchmark-evaluation",
+    "statistical-analysis"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "repository-mining/MSR",
+  "notes": "Mines the AIDev dataset (1,664 merged agent-generated PRs from 197 OSS projects) to characterize deleted methods via AST diffing and refactoring detection, applies Mann-Whitney U / Cliff's delta statistical tests, then trains and evaluates a Random Forest deletion-prediction model against random and GPT-4o baselines. No human participants; GPT-4o is an automated baseline, not human-subjects data.",
+  "citation": "Watanabe 2026"
+}

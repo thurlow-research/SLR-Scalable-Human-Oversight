@@ -1,0 +1,116 @@
+114 mapped docs; 112 pending this run (model=claude-opus-4-8, cap=140000 chars)
+  ok   [1/112] GAD5Z8PV Vargas 2025  scope=both mech_kw=15
+  ok   [2/112] TA6GIUK2 Zietsman 2026  scope=both mech_kw=17
+  ok   [3/112] 3SU9QZ6F Parris 2026  scope=both mech_kw=14
+  ok   [4/112] 96XE669R Zhong 2025  scope=both mech_kw=11
+  ok   [5/112] BAWCBT9R Zhao 2026  scope=both mech_kw=12
+  ok   [6/112] MFSZPSPU Shi 2025  scope=both mech_kw=10
+  ok   [7/112] T8E8SCCG Xie 2026  scope=both mech_kw=13
+  ok   [8/112] UIXCRBQX Ferdous 2026  scope=both mech_kw=9
+  ok   [9/112] 5DI9B43K Sistla 2025  scope=both mech_kw=9
+  ok   [10/112] T72TU8B5 Shukla 2026  scope=both mech_kw=19
+  ok   [11/112] 72W6R4JG Töpfer 2026  scope=solution mech_kw=11
+  ok   [12/112] UDVHQ5HR Jin 2025  scope=both mech_kw=8
+  ok   [13/112] TF56EPIP Navneet 2025  scope=both mech_kw=24
+  ok   [14/112] 6NTZ85CW David 2025  scope=both mech_kw=16
+  ok   [15/112] C88VGWMI Marri 2026  scope=both mech_kw=14
+  ok   [16/112] E95T8E88 Watanabe 2026  scope=both mech_kw=8
+  ok   [17/112] 7V7SRG43 Tang 2024  scope=solution mech_kw=12
+  ok   [18/112] QWHE9EXH Shinde 2026  scope=both mech_kw=16
+  ok   [19/112] ZUM76CCG Otten 2026  scope=solution mech_kw=11
+  ok   [20/112] TJH7QFAX Borg 2026  scope=solution mech_kw=10
+  ok   [21/112] 3ZVMBGPB Kamalı 2026 (trunc)  scope=both mech_kw=15
+  ok   [22/112] JCTP8VXP Ma 2026  scope=both mech_kw=15
+  ok   [23/112] X7EN6DXZ Mitropoulos 2026  scope=both mech_kw=10
+  ok   [24/112] RX9SICP9 Moreira 2026  scope=both mech_kw=17
+  ok   [25/112] I6FZ5GD2 Wang 2025  scope=solution mech_kw=12
+  ok   [26/112] UB2EVUFU Lyu 2026  scope=both mech_kw=14
+  ok   [27/112] 5RLPIA3K Eric Swidey 2026  scope=both mech_kw=16
+  ok   [28/112] 4PSM6ZCD Zhao 2025  scope=problem mech_kw=10
+  ok   [29/112] XRTVITVP Zhou 2026  scope=both mech_kw=12
+  ok   [30/112] VFNJSZD9 Michel Hjazeen 2026  scope=both mech_kw=19
+  ok   [31/112] 4T5QFWZE Huang 2026  scope=both mech_kw=7
+  ok   [32/112] 6F3S8IB7 Bara 2026  scope=both mech_kw=16
+  ok   [33/112] 9R6TGN82 Yao 2025  scope=both mech_kw=13
+  ok   [34/112] T3XTXIXW Li 2025  scope=both mech_kw=14
+  ok   [35/112] RPHK78A9 Kim 2025 (trunc)  scope=both mech_kw=13
+  ok   [36/112] XJAXB98T Yang 2026  scope=both mech_kw=20
+  ok   [37/112] 2KPHQ5IV Wang 2026  scope=both mech_kw=16
+  ok   [38/112] 5BAZZWHG Catalan 2026  scope=both mech_kw=11
+  ok   [39/112] QTJPLBYR Bilal Naqvi 2026  scope=both mech_kw=11
+  ok   [40/112] VCI88UZD Enyedi 2026  scope=both mech_kw=18
+  ok   [41/112] ID7IN65K Choudhuri 2026  scope=both mech_kw=19
+  ok   [42/112] 8AW26GFK Konrad 2026  scope=both mech_kw=12
+  ok   [43/112] QI8246A3 Li 2025  scope=both mech_kw=15
+  ok   [44/112] DJHG9BBS Rasheed 2024  scope=solution mech_kw=10
+  ok   [45/112] SHK6KAX6 Ghammam 2026  scope=problem mech_kw=10
+  ok   [46/112] T2EG4BE2 Waseem 2025  scope=both mech_kw=20
+  ok   [47/112] WPWF7A32 Sharma 2025  scope=both mech_kw=22
+  ok   [48/112] FWKYVQPD Irfan Samsyudin 2025  scope=both mech_kw=8
+  ok   [49/112] ZGST9CY6 Liming Zhu 2025  scope=solution mech_kw=19
+  ok   [50/112] E9RAWBDT Pimenova 2025  scope=both mech_kw=14
+  ok   [51/112] 7SH86C2W Lipsanen 2026  scope=both mech_kw=15
+  ok   [52/112] LGZXFLSJ Hein 2025  scope=both mech_kw=10
+  ok   [53/112] NGIH5T4C Batte 2025  scope=both mech_kw=8
+  ok   [54/112] WBS9U5N7 Alami 2026  scope=both mech_kw=12
+  ok   [55/112] HBR7QZ2C Jackson 2025  scope=solution mech_kw=29
+  ok   [56/112] RG4A4D6K N. Watson 2025  scope=both mech_kw=16
+  ok   [57/112] E689ZAXC Zhou 2026  scope=both mech_kw=9
+  ok   [58/112] 8KJEKBGT Jensen 2024  scope=solution mech_kw=10
+  ok   [59/112] 34ELRWJH Goodhue 2025  scope=both mech_kw=11
+  ok   [60/112] 27YULT5I Sharma 2026  scope=both mech_kw=11
+  ok   [61/112] JVWUYDME Jessee 2026  scope=both mech_kw=19
+  ok   [62/112] 2CKL96B8 Sarkar 2025  scope=both mech_kw=12
+  ok   [63/112] 9MV2IVNU Eze 2026  scope=both mech_kw=18
+  ok   [64/112] EB49Q8QM Tilbury 2024  scope=both mech_kw=11
+  ok   [65/112] DJMBHHZN Tisi 2025  scope=solution mech_kw=16
+  ok   [66/112] R9CDT9KB A. Mahmud 2025  scope=both mech_kw=13
+  ok   [67/112] Y4TIF9KW A. N. A. Hadee 2025  scope=both mech_kw=12
+  ok   [68/112] 6DXZGHD9 Al-Hashimi 2026 (trunc)  scope=both mech_kw=22
+  ok   [69/112] VG8PSMM7 Adnyana 2026 (trunc)  scope=solution mech_kw=15
+  ok   [70/112] WUUDHL8R Baumgartner 2024  scope=both mech_kw=13
+  ok   [71/112] P837LJWE Bhatnagar 2026  scope=both mech_kw=17
+  ok   [72/112] YDJPALG6 Casserini 2026  scope=both mech_kw=13
+  ok   [73/112] 5Q4G4CQB D. O. Salem 2025  scope=both mech_kw=12
+  ok   [74/112] E3E5YA2E De La Cruz 2025  scope=both mech_kw=11
+  ok   [75/112] PDYJGF2R Dora 2026  scope=both mech_kw=9
+  ok   [76/112] CI93QRUH E. A. González 2025  scope=both mech_kw=11
+  ok   [77/112] 399HN438 Dutta 2025  scope=solution mech_kw=13
+  ok   [78/112] WH2PIBNQ Elgendy 2026  scope=both mech_kw=20
+  ok   [79/112] LCPH3THV He 2026  scope=both mech_kw=22
+  ok   [80/112] F9JM9CI6 Heander 2025  scope=solution mech_kw=10
+  ok   [81/112] HJMKADKU J. E. Naulty 2025  scope=both mech_kw=11
+  ok   [82/112] YA7XNWYE Ji 2024  scope=both mech_kw=12
+  ok   [83/112] 8MXATG38 Karuppuchamy 2026  scope=both mech_kw=21
+  ok   [84/112] 5I2W8IC6 Khati 2025 (trunc)  scope=both mech_kw=12
+  ok   [85/112] PD297DUM Kudriavtseva 2025  scope=both mech_kw=9
+  ok   [86/112] R4WJZBSF L. Vanam 2025  scope=both mech_kw=14
+  ok   [87/112] ZSB2S59N Kumar 2026  scope=solution mech_kw=22
+  ok   [88/112] 5DCQDB4C Langer 2024  scope=both mech_kw=13
+  ok   [89/112] BLR3XE3I Li 2026  scope=both mech_kw=13
+  ok   [90/112] XZEHQYNZ M. Tuape 2025  scope=both mech_kw=16
+  ok   [91/112] 84D2AMVM McKay 2024  scope=both mech_kw=12
+  ok   [92/112] 6ZW9QNQH Mitchell 2025  scope=both mech_kw=14
+  ok   [93/112] 4AXDVW7J Migliarini 2026 (trunc)  scope=both mech_kw=22
+  ok   [94/112] M74M3RFJ Momcilovic 2024  scope=both mech_kw=17
+  ok   [95/112] VG6CIDQW N. Goel 2025  scope=solution mech_kw=10
+  ok   [96/112] QUXRX9ZL N. Yanev 2025  scope=both mech_kw=11
+  ok   [97/112] 5RKMGRNA Nimraka 2025  scope=solution mech_kw=12
+  ok   [98/112] 4FGIVVTG Omidvar-Tehrani 2024  scope=both mech_kw=11
+  ok   [99/112] N7E3MR2V P. R. P 2025  scope=solution mech_kw=17
+  ok   [100/112] HJGKKX9S Pasuksmit 2025  scope=both mech_kw=8
+  ok   [101/112] YBHHYR4P Perry 2023  scope=both mech_kw=12
+  ok   [102/112] D87A4CAS Şeker 2026  scope=both mech_kw=13
+  ok   [103/112] 6TZHUCMD Sharma 2026  scope=solution mech_kw=8
+  ok   [104/112] UW2R6BBJ Sudarsan 2025  scope=solution mech_kw=15
+  ok   [105/112] GCZQTNBD Sollenberger 2025  scope=both mech_kw=10
+  ok   [106/112] LB84WJKI Takerngsaksiri 2025  scope=solution mech_kw=11
+  ok   [107/112] WZCULPXN Sulova 2025  scope=solution mech_kw=15
+  ok   [108/112] B4TVIG5Y Tereci 2026  scope=solution mech_kw=10
+  ok   [109/112] WRXR2VTP Wang 2026  scope=both mech_kw=10
+  ok   [110/112] PPMTM4DG X. Yu 2024  scope=both mech_kw=12
+  ok   [111/112] VZ27QUPQ Zhuo 2026  scope=both mech_kw=11
+  ok   [112/112] 22JBEZNK Virk 2025  scope=both mech_kw=8
+
+Done. 114 total records -> /Users/scott/Library/CloudStorage/OneDrive-purdue.edu/Systemic Literature Review/slr-tools/stage4/work/stage4/core_theme_signals.csv
+This run: 112 ok, 0 failed, 1944s

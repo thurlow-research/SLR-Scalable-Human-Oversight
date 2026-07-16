@@ -1,0 +1,12 @@
+{
+  "item_key": "ZGST9CY6",
+  "methods": [
+    "conceptual/position/framework",
+    "design-science/pattern-catalogue"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position/framework",
+  "notes": "Proposes a design framework for human oversight of AI, distinguishing operative vs. evaluative agency, and offers a catalogue of oversight mechanisms plus four illustrative end-to-end design patterns. The 'Known Uses' are cited third-party commercial tools used as illustrative examples, not empirically evaluated by the authors; there is no data collection, experiment, or user study.",
+  "citation": "Liming Zhu 2025"
+}

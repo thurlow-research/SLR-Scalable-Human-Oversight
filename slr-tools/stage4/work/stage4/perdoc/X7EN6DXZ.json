@@ -1,0 +1,65 @@
+{
+  "item_key": "X7EN6DXZ",
+  "citation": "Mitropoulos 2026",
+  "evidence_type": [
+    "empirical",
+    "controlled-experiment",
+    "case-study"
+  ],
+  "problem_statement": "LLM-based Automated Code Review (ACR) systems used for security vulnerability detection can be manipulated via adversarially framed PR metadata, undermining human oversight of AI-generated/reviewed code and enabling supply-chain vulnerability re-introduction.",
+  "magnitude_evidence": "PullFlow's 2025 'State of AI Code Review' reports that 14% of 40.3 million PRs involve AI-based review",
+  "risk_types": [
+    "security",
+    "supply-chain",
+    "vulnerability-reintroduction",
+    "framing-bias",
+    "false-negative",
+    "false-positive",
+    "over-reliance",
+    "social-engineering",
+    "prompt-manipulation"
+  ],
+  "insufficiency_evidence": "LLM-assisted iterative refinement achieves a 100% attack success rate (17/17) against Claude Code review pipelines; GPT-4o-mini detection falls from 97.2% to 3.6% under strong bug-free framing (\u221293.5pp)",
+  "solution_mechanisms": [
+    "metadata redaction before review",
+    "explicit instructions to ignore commit metadata",
+    "identifier normalization/obfuscation (CScout-style)",
+    "human review for untrusted contributors",
+    "remove ACR for untrusted PRs",
+    "comparison against known vulnerability patterns",
+    "training/fine-tuning to reduce framing effect",
+    "limiting outsider patch submission",
+    "cross-referencing revert commits against linked CVEs"
+  ],
+  "mechanism_keywords": [
+    "debiasing",
+    "metadata-redaction",
+    "guardrail",
+    "hitl",
+    "provenance",
+    "identifier-normalization",
+    "contributor-trust",
+    "security-gate",
+    "framing-mitigation",
+    "vulnerability-pattern-matching"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "pre-commit",
+    "CI",
+    "pull-request"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "contextual-bias injection",
+    "framing effect in vulnerability detection",
+    "vulnerability re-introduction attack",
+    "LLM-assisted iterative refinement attack",
+    "attacker-defender asymmetry",
+    "bug-free framing"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Some figures/tables rendered as garbled ASCII art (e.g. Figure 1 proof diagram), but core text is intact.",
+  "_truncated": false
+}

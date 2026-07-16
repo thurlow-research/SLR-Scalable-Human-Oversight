@@ -1,0 +1,13 @@
+{
+  "item_key": "T8E8SCCG",
+  "methods": [
+    "design-science/prototype/tool-build",
+    "benchmark-evaluation",
+    "conceptual/framework"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science/prototype/tool-build",
+  "notes": "Builds VibeGuard (pre-publish security scanner) and evaluates it on 8 curated synthetic projects with ground-truth annotations under three policies (precision/recall/F1, gate accuracy) \u2014 the paper calls this 'controlled experiments' but it is a benchmark-style evaluation on a curated synthetic task set, not human-subject or repo-mining work. Also contributes a five-category vulnerability taxonomy (conceptual/framework).",
+  "citation": "Xie 2026"
+}

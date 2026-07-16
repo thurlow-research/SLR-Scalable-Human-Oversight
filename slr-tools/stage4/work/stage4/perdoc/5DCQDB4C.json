@@ -1,0 +1,69 @@
+{
+  "item_key": "5DCQDB4C",
+  "citation": "Langer 2024",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model"
+  ],
+  "problem_statement": "The paper addresses how to make human oversight of AI-based systems in high-risk contexts effective, arguing that reliable detection of errors (inaccurate and unfair outputs) is the foundational precondition for overseers to intervene and mitigate risk.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "inaccuracy",
+    "unfairness",
+    "discrimination",
+    "safety",
+    "health",
+    "fundamental-rights",
+    "specification-of-fairness-standard"
+  ],
+  "insufficiency_evidence": "\"research has cast doubt on whether humans can actually be effective in overseeing systems\"; \"distinguishing accurate from inaccurate system outputs is challenging even for experts\"; people \"overwrite accurate system outputs\" and \"underestimate that systems may produce unfair outputs\"",
+  "solution_mechanisms": [
+    "Signal Detection Theory framework for error detection",
+    "disentangling sensitivity (d') and response bias (c)",
+    "choosing an explicit standard for (un)fairness as ground truth",
+    "technology-based oversight aids / fairness monitor",
+    "operator training on error exposure",
+    "transparency and XAI explanations",
+    "cognitive forcing functions to reduce time pressure",
+    "deliberately less-reliable systems to keep overseers vigilant"
+  ],
+  "mechanism_keywords": [
+    "signal-detection",
+    "sensitivity",
+    "response-bias",
+    "calibration",
+    "fairness-monitor",
+    "oversight-aid",
+    "xai",
+    "training",
+    "hitl",
+    "observability",
+    "ground-truth-standard",
+    "cognitive-forcing",
+    "vigilance"
+  ],
+  "oversight_locus": [
+    "runtime",
+    "inspection-time",
+    "post-deployment",
+    "post-hoc-review"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "signal detection perspective on error detection",
+    "sensitivity (d')",
+    "response bias (c)",
+    "standard for (un)fairness as ground truth",
+    "detection-explanation-correction-integration error management",
+    "irony of automation"
+  ],
+  "governance_refs": [
+    "EU AI Act (Article 14)",
+    "EU AI Act (Article 13)",
+    "NIST SP 1270",
+    "EEOC Uniform Guidelines on Employee Selection (80% rule)"
+  ],
+  "scope_fit": "both",
+  "notes": "Concerns human oversight of AI-based decision systems (hiring, medical, judicial) generally, not AI-generated code specifically; oversight target is inaccurate/unfair decision outputs rather than code.",
+  "_truncated": false
+}

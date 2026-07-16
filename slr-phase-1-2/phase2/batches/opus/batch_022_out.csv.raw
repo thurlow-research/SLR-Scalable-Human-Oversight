@@ -1,0 +1,28 @@
+Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.
+I'll work through each paper systematically, applying the operationalizability test and tier criteria.
+
+```csv
+item_key,decision,confidence,rationale,prior_decision,prior_confidence
+87LUCHIQ,discard,high,"Abstract contains only keywords with no methodology or findings; cannot assess operationalizability from keyword list alone.",discard,low
+M964K4XX,keep,low,"Comparative analysis includes SOC 2 and NIST AI RMF which are directly used by software organizations for compliance; framework comparison could yield actionable guidance but abstract thinness warrants human verification.",maybe,medium
+9IPQ7228,keep,medium,"Quantifies LLM code generation success rates and human repair effort (1-8 hours); key finding that human evaluation outperforms AI evaluation for behavioral correctness directly informs code review oversight design.",maybe,medium
+GYIRPY4W,discard,medium,"Keywords reference CI/CD and DORA metrics but the paper analyzes productivity divergence economics rather than providing actionable governance mechanisms; fails operationalizability test.",maybe,medium
+YZU9U92X,discard,high,"Keyword-only abstract ('Centaurs, Generative AI, Human-AI Algorithms') provides no basis for assessing whether framework is operationalizable or relevant to code review.",maybe,low
+8RIXPFX3,discard,medium,"Ontological framework for AI agency classification is theoretical; translating from 'agency misattribution' theory to actionable software engineering mechanisms requires substantial re-derivation.",maybe,medium
+VG8PSMM7,keep,high,"BLEU/LITL/HITL layered validation pipeline (lexical triage → semantic verification → human compliance review) is a directly transferable mechanism for AI code oversight regardless of PLC domain specificity.",maybe,medium
+J2MN69PK,discard,medium,"'Exploring challenges' framing indicates descriptive orientation; no specific mechanism or measurement identified — fails operationalizability test.",maybe,medium
+LUA6VMXR,keep,low,"Termination conditions and human escalation protocols for AI agents are structural safety mechanisms transferable to code review pipelines; law/finance domain requires translation but mechanisms are architectural.",maybe,medium
+BZXVW89V,discard,medium,"Government contracting approach to AI accountability requires substantial derivation to apply to software engineering team governance; no direct software/code connection in the mechanism.",maybe,medium
+LGGPYHB2,discard,medium,"RAG multi-tenant governance addresses infrastructure compliance not code generation oversight; adjacent but not directly applicable without substantial domain bridging.",maybe,medium
+AAK77PJ4,keep,medium,"Paper explicitly extracts 'six portable design principles for trustworthy AI pipelines in high-stakes domains' — transferability work already done by authors; code review is a high-stakes pipeline.",maybe,medium
+I9RP82ZF,keep,low,"Automation bias and automation complacency are well-documented cognitive failure modes directly applicable to code review oversight; mechanisms transfer without domain re-derivation despite legal framing.",maybe,medium
+Q2M4782N,discard,medium,"ICO AI auditing framework focuses on data protection compliance rather than software development governance; requires substantial translation to code review context.",maybe,medium
+TYM8CJ86,discard,high,"Keyword-only abstract with no discernible methodology or finding; cannot evaluate operationalizability.",discard,low
+VCKYAYDX,discard,high,"Abstract too sparse to evaluate — no methodology, mechanism, or software engineering connection discernible from fragments.",discard,low
+R9HHU7L5,discard,medium,"Focus is on AI provider disclosure obligations under EU AI Act, not on software development team governance mechanisms; provider-side compliance doesn't directly inform developer oversight.",maybe,medium
+KMY7ADDS,discard,medium,"Multi-agent project delivery coordination protocol addresses project management maturity not code governance; bridging argument to code review requires substantial re-derivation.",maybe,medium
+9WLXUS82,discard,high,"Abstract is abstract philosophy ('energy dualism of digital systems') with no identifiable relevance to software engineering governance or operationalizable contribution.",discard,low
+4UQ2LF3J,keep,low,"'Operationalising' in title with 'formal metrics' for AI-mediated enterprise decision accountability suggests actionable framework structurally relevant to code review governance accountability.",maybe,medium
+```
+
+**Summary**: 8 papers kept, 12 discarded. Three papers received low confidence ratings warranting human verification: M964K4XX (thin abstract), LUA6VMXR (domain translation), I9RP82ZF (legal domain but transferable concepts), and 4UQ2LF3J (needs full paper review). The keyword-only abstracts (87LUCHIQ, YZU9U92X, TYM8CJ86, VCKYAYDX, 9WLXUS82) were confidently discarded as unevaluable.

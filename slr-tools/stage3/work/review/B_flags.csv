@@ -1,0 +1,24 @@
+flag,item_key,centrality,current_decision,detail,title
+DUP-CONFLICT,6UKF6TT2,71,duplicate,"dup group: AGMUZP58(context), 6UKF6TT2(duplicate)",Self-admitted GenAI usage in open-source software
+DUP-CONFLICT,AGMUZP58,74,context,"dup group: AGMUZP58(context), 6UKF6TT2(duplicate)",Self-admitted GenAI usage in open-source software
+DUP-CONFLICT,BZDX5Z8B,73,core-kept,"dup group: BZDX5Z8B(core-kept), NB795DM8(context)",Between policy and practice: GenAI adoption in agile software development teams
+DUP-CONFLICT,EB9D98W5,72,context,"dup group: EB9D98W5(context), VG8PSMM7(core-kept)",Benchmarking and validation of prompting techniques for AI-assisted industrial PLC programming
+DUP-CONFLICT,NB795DM8,71,context,"dup group: BZDX5Z8B(core-kept), NB795DM8(context)",Between policy and practice: GenAI adoption in agile software development teams
+DUP-CONFLICT,VG8PSMM7,70,core-kept,"dup group: EB9D98W5(context), VG8PSMM7(core-kept)",Benchmarking and validation of prompting techniques for AI-assisted industrial PLC programming
+DUP,B7APR28B,70,core-kept,"dup group: HJGKKX9S(core-kept), B7APR28B(core-kept)",Human-In-the-loop software development agents: challenges and future directions
+DUP,HJGKKX9S,72,core-kept,"dup group: HJGKKX9S(core-kept), B7APR28B(core-kept)",Human-In-the-loop software development agents: challenges and future directions
+DUP,P837LJWE,74,core-kept,"dup group: P837LJWE(core-kept), XVWJ5J6J(core-kept)",Modernization of enterprise payment infrastructure: a case study on LLM-assisted migration of legacy distributed systems
+DUP,XVWJ5J6J,74,core-kept,"dup group: P837LJWE(core-kept), XVWJ5J6J(core-kept)",Modernization of enterprise payment infrastructure: a case study on LLM-assisted migration of legacy distributed systems
+BAD-VALUE,V6E7B93A,70,contet,'contet' not a valid bin,CR-bench: evaluating the real-world utility of AI code review agents
+SCOPE-RECHECK,2KPHQ5IV,70,core-kept,theme 'benchmark/eval' — you demoted 1 like this (e.g. SMJR57VX),Scaling human-AI coding collaboration requires a governable consensus layer
+SCOPE-RECHECK,2KPHQ5IV,70,core-kept,"theme 'perception/experience' — you demoted 4 like this (e.g. MQ5KZQTX, BISE8375, S7BJA4RD)",Scaling human-AI coding collaboration requires a governable consensus layer
+SCOPE-RECHECK,735ZR4IY,71,core-kept,"theme 'adoption/productivity' — you demoted 15 like this (e.g. AGMUZP58, WNGESYPT, CLHB8SRT)",LLMs in coding and their impact on the commercial software engineering landscape
+SCOPE-RECHECK,8CQRCPW2,73,core-kept,theme 'benchmark/eval' — you demoted 1 like this (e.g. SMJR57VX),SWE-PRBench: benchmarking AI code review quality against pull request feedback
+SCOPE-RECHECK,BLR3XE3I,74,core-kept,"theme 'perception/experience' — you demoted 4 like this (e.g. MQ5KZQTX, BISE8375, S7BJA4RD)","Vibe Coding in Product Teams: Reconfiguring AI-Assisted Workflows, Prototyping, and Collaboration"
+SCOPE-RECHECK,BZDX5Z8B,73,core-kept,"theme 'adoption/productivity' — you demoted 15 like this (e.g. AGMUZP58, WNGESYPT, CLHB8SRT)",Between policy and practice: GenAI adoption in agile software development teams
+SCOPE-RECHECK,DZYEZVFE,73,core-kept,"theme 'perception/experience' — you demoted 4 like this (e.g. MQ5KZQTX, BISE8375, S7BJA4RD)",Human-AI experience in integrated development environments: a systematic literature review
+SCOPE-RECHECK,E9RAWBDT,74,core-kept,"theme 'perception/experience' — you demoted 4 like this (e.g. MQ5KZQTX, BISE8375, S7BJA4RD)","Good vibrations? A qualitative study of Co-creation, communication, flow, and trust in vibe coding"
+SCOPE-RECHECK,ETHYCZEC,72,core-kept,"theme 'perception/experience' — you demoted 4 like this (e.g. MQ5KZQTX, BISE8375, S7BJA4RD)",Different by design: understanding human-AI collaboration through GitHub pull requests
+SCOPE-RECHECK,F4G9XXBR,72,core-kept,theme 'benchmark/eval' — you demoted 1 like this (e.g. SMJR57VX),SysTradeBench: an iterative build-test-patch benchmark for strategy-to-code trading systems with drift-aware diagnostics
+SCOPE-RECHECK,TPAAIV8D,72,core-kept,"theme 'adoption/productivity' — you demoted 15 like this (e.g. AGMUZP58, WNGESYPT, CLHB8SRT)",Security degradation in iterative AI code generation: a systematic analysis of the paradox
+SCOPE-RECHECK,UDT3AA4A,74,core-kept,"theme 'perception/experience' — you demoted 4 like this (e.g. MQ5KZQTX, BISE8375, S7BJA4RD)",A survey on the role of LLMs in AI-based software development: augmentation and latent risks

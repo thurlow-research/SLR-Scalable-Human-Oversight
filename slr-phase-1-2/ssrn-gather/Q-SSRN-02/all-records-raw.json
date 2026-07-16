@@ -1,0 +1,898 @@
+[
+  {
+    "abstractId": "6409098",
+    "title": "AI-Assisted Development and the Reshaping of Junior Developer Roles: Risks, Opportunities, and Market Implications",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6409098",
+    "authors": [
+      "Zachary Adam"
+    ],
+    "affiliations": [
+      "Aethex Web Solutions, San Antonio, Texas, United States"
+    ],
+    "pages": 11,
+    "posted": "24 Apr 2026",
+    "snippet": "The rapid proliferation of AI-powered coding assistants-including GitHub Copilot, Cursor, Amazon CodeWhisperer, and a growing ecosystem of specialized / at the heart of the AI-assisted development revolution: the same tools that dramatically lower the barrier to producing functional code simultaneously risk / AI-assisted development, GitHub Copilot, junior developers, software engineering education, vibe coding, labor market, developer productivity, large language",
+    "downloads": 1
+  },
+  {
+    "abstractId": "6469518",
+    "title": "Natural Language Processing-Based Command Line Application",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6469518",
+    "authors": [
+      "Manjunadha Sompalle"
+    ],
+    "affiliations": [],
+    "pages": 12,
+    "posted": "20 Apr 2026",
+    "snippet": "We evaluate several representative systems including ShellGPT, Warp AI, Copilot CLI, and our own hybrid assistant that combines both local and cloud-based / face: hallucinations where the AI generates incorrect commands, ambiguous error messages that are hard to interpret, limited training data, and serious security",
+    "downloads": 15
+  },
+  {
+    "abstractId": "6603945",
+    "title": "Beyond Semantic Models: Dual-Stream Semantic and Structural Learning for Vulnerability Detection in AI-Generated Code",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6603945",
+    "authors": [
+      "Sumaila Iddrisu",
+      "Nadhem Ebrahim"
+    ],
+    "affiliations": [
+      "University of Akron",
+      "University of Akron"
+    ],
+    "pages": 14,
+    "posted": "18 Apr 2026",
+    "snippet": "However, recentstudies indicate that AI-generated code often contains a higherincidence of security vulnerabilities compared to human-writtencode, creating / a growing security risk in modern softwarepipelines. / LLMs, Vulnerabilities, AI-Generated Code Security, Cybersecurity, Automated Vulnerability Detection (AVD), Abstract Syntax Trees (AST), Dual-Stream Learning / , Secure Software Development, Transformer Models, integrated Development Environment (IDE) Security",
+    "downloads": 5
+  },
+  {
+    "abstractId": "6471858",
+    "title": "AI-Driven Observability and ERP Copilot Systems in Cloud-Native Supply Chain Integration: A Conceptual Framework for Intelligent Operational Management (AIOS)",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6471858",
+    "authors": [
+      "Sahil Chandawale"
+    ],
+    "affiliations": [
+      "Santa Clara University"
+    ],
+    "pages": 11,
+    "posted": "16 Apr 2026",
+    "snippet": "applicable to cloud-native supply chain integration environments: (1) AI-augmented integration observability, (2) predictive failure management, (3) ERP AI copilot / The paper further establishes alignment between the AIOS framework and active U.S. federal mandates including Executive Order 14110 on AI, the NIST AI Risk / AI observability, ERP copilot, supply chain integration, anomaly detection, predictive failure management, cloud-native B2B, intelligent automation, NIST",
+    "downloads": 9
+  },
+  {
+    "abstractId": "6512960",
+    "title": "Cognitive Camouflage: Specification Gaming in LLM-Generated Code Evades Holistic Evaluation but Not Adversarial Execution",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6512960",
+    "authors": [
+      "Daniel Alami"
+    ],
+    "affiliations": [],
+    "pages": 9,
+    "posted": "10 Apr 2026",
+    "snippet": "family as generator, our findings suggest that specification gaming in code generation is not merely an artifact of RL reward shaping, but a structural risk",
+    "downloads": 8
+  },
+  {
+    "abstractId": "6379819",
+    "title": "Feature Comment: Twenty-Five Cent AI: The Hidden Costs of Promotional AI Deals",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6379819",
+    "authors": [
+      "Jessica Tillipman"
+    ],
+    "affiliations": [
+      "George Washington University - Law School"
+    ],
+    "pages": 9,
+    "posted": "10 Mar 2026",
+    "snippet": "The General Services Administration\u2019s OneGov initiative offers federal agencies access to leading AI platforms\u2014including ChatGPT, Claude, Gemini, Grok, Copilot / The Comment identifies transparency and governance gaps in the current OneGov structure and proposes a risk mitigation framework organized at the contract",
+    "downloads": 60
+  },
+  {
+    "abstractId": "6265560",
+    "title": "Implementing AI-Driven Decision Support in Agricultural Lending Through Predictive Analytics for Customer Relationship Management",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6265560",
+    "authors": [
+      "Karthik Nallani Chakravartula",
+      "Aravind Raghu"
+    ],
+    "affiliations": [],
+    "pages": 24,
+    "posted": "09 Mar 2026",
+    "snippet": "compliance with regulatory oversight in financial institutions that started to build data governance, model performance compliance through a proactive risk / provides the agricultural lending industry an applied methodology to adopt AI for stakeholder innovation while ensuring they are adept in their enterprise risk / Artificial intelligence, Predictive analytics, Microsoft dynamics 365, Copilot, Agrifinance Customer Relationship Management",
+    "downloads": 38
+  },
+  {
+    "abstractId": "6339960",
+    "title": "AutoPatch: Multi-Agent Framework for Patching Real-World CVEs Generated by Outdated LLMs",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6339960",
+    "authors": [
+      "Minjae Seo",
+      "Wonwoo Choi",
+      "Seungwon Shin",
+      "Myoungsung You"
+    ],
+    "affiliations": [
+      "Electronics and Telecommunications Research Institute",
+      "Government of the Republic of Korea - Agency for Defense Development",
+      "affiliation not provided to SSRN",
+      "University of Seoul"
+    ],
+    "pages": 21,
+    "posted": "04 Mar 2026",
+    "snippet": "In response, we present AutoPatch, a multi-agent framework for automatically detecting and patching vulnerabilities in LLM-generated code, with a particular / Using this database, a unified detection model that combines semantic and data-flow signals identifies vulnerable patterns in LLM-generated code that resemble / Large Language Models, Software Vulnerability Detection, automated program repair",
+    "downloads": 16
+  },
+  {
+    "abstractId": "6144009",
+    "title": "Cross-Language Transfer Learning for Detecting Vulnerabilities in LLM-Generated Code",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6144009",
+    "authors": [
+      "Ana Carvalho",
+      "Daniel Moreira",
+      "Lucas Ribeiro"
+    ],
+    "affiliations": [
+      "University of S\u00e3o Paulo (USP) - Department of Computer Science",
+      "University of S\u00e3o Paulo (USP) - Department of Computer Science",
+      "University of S\u00e3o Paulo (USP) - Department of Computer Science"
+    ],
+    "pages": 8,
+    "posted": "25 Feb 2026",
+    "snippet": "We train a multilingual vulnerability detector capable of analyzing LLM-produced code across C, C++, Java, Python, and Rust. / The study shows that transferable security representations are essential when LLMs generate polyglot code. / cross-language security, vulnerability detection, multilingual IR, code semantics, transfer learning",
+    "downloads": 7
+  },
+  {
+    "abstractId": "6143888",
+    "title": "Semantic Patch Learning for Vulnerability Repair in LLM-Generated Code Authors",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6143888",
+    "authors": [
+      "Elina Korhonen",
+      "Jukka Lehtola",
+      "Mikael Saarinen"
+    ],
+    "affiliations": [
+      "University of Helsinki - Department of Computer Science",
+      "University of Helsinki - Department of Computer Science",
+      "University of Helsinki - Department of Computer Science"
+    ],
+    "pages": 9,
+    "posted": "25 Feb 2026",
+    "snippet": "Using 28,000 real vulnerability patches, the model learns transformations for memory bugs, crypto misuse, and authorization bypasses. / This work demonstrates that semantic patch abstraction is a powerful mechanism for improving LLM code security. / semantic patching, automated repair, CVE mining, vulnerability patterns, LLM code correction",
+    "downloads": 12
+  },
+  {
+    "abstractId": "6143769",
+    "title": "Runtime Policy Enforcement for Mitigating Risks in LLM-Generated Programs Authors",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6143769",
+    "authors": [
+      "Anna Kristoffersen",
+      "Jonas Rasmussen",
+      "Mikkel S\u00f8rensen"
+    ],
+    "affiliations": [
+      "University of Copenhagen - Department of Computer Science",
+      "University of Copenhagen - Department of Computer Science",
+      "University of Copenhagen - Department of Computer Science"
+    ],
+    "pages": 8,
+    "posted": "25 Feb 2026",
+    "snippet": "runtime enforcement, security policies, LLM-generated code, syscall tracing, taint monitoring",
+    "downloads": 7
+  },
+  {
+    "abstractId": "6103266",
+    "title": "Artificial Code",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6103266",
+    "authors": [
+      "Clark D. Asay"
+    ],
+    "affiliations": [],
+    "pages": 57,
+    "posted": "03 Feb 2026",
+    "snippet": "contexts, too, as well as assessing possible responses aimed at preserving openness in software and AI innovation while accommodating the realities of AI-generated / code.",
+    "downloads": 94
+  },
+  {
+    "abstractId": "6140216",
+    "title": "A Systematic Review of Watermarking and Attribution for AI Generated Code",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6140216",
+    "authors": [
+      "Istiaq Ahmed Fahad",
+      "Mridha Md. Nafis Fuad"
+    ],
+    "affiliations": [
+      "University of Dhaka",
+      "University of Dhaka"
+    ],
+    "pages": 48,
+    "posted": "27 Jan 2026",
+    "snippet": "At the same time, AI-generated code is increasingly hard to distinguish from human-written code. / A quality assessment rubric was designed with a focus on code executability and security relevance. / large language models, AI-Generated Code, Code Watermarking, Authorship Attribution, Software Provenance, Systematic Literature Review",
+    "downloads": 53
+  },
+  {
+    "abstractId": "6056383",
+    "title": "Evaluating Security and Inclusivity in LLM-Generated Code: A\u00a0Controlled Experiment",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6056383",
+    "authors": [
+      "Bilal Naqvi",
+      "Waleed Bin Shahid",
+      "Janne Parkkila",
+      "Hammad Afzal",
+      "AKM Bahalul Haque"
+    ],
+    "affiliations": [
+      "LUT University",
+      "Royal Holloway University of London",
+      "LUT University",
+      "University of Leicester"
+    ],
+    "pages": 31,
+    "posted": "10 Jan 2026",
+    "snippet": "systems and services.Objective: The objectives of this study are two-fold: (i) to evaluate the efficacy of LLM-generated code in implementing security / Moreover, after each round, the LLM-generated code artifact was evaluated against security and inclusivity criteria by both human experts and LLM-based / Controlled Experiment, Empirical Studies, Inclusivity, Large Language Model, LLM, Security, Software engineering, Software Quality",
+    "downloads": 70
+  },
+  {
+    "abstractId": "6017354",
+    "title": "Safety-Focused Artificial Intelligence for QT-Prolongation Risk:A Hybrid Explainable System for Medication Decision Support",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6017354",
+    "authors": [
+      "Chijioke Ifedili"
+    ],
+    "affiliations": [
+      "Harvard University"
+    ],
+    "pages": 19,
+    "posted": "08 Jan 2026",
+    "snippet": "at the point of prescribing rather than simple interruptive alerts\u2075\u207b\u2078.We developed and evaluated a hybrid explainable artificial intelligence clinical copilot / representative usage scenarios.This safety-focused hybrid explainable artificial intelligence system moves beyond alerting toward decision-aware clinical copilot / prolongation, torsades de pointes, clinical decision support, explainable artificial intelligence, hybrid rule-based and neural network model, arrhythmia risk",
+    "downloads": 46
+  },
+  {
+    "abstractId": "5840682",
+    "title": "Beyond Coding: Open-Source Innovation Disclosure and Startup Growth",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5840682",
+    "authors": [
+      "Wayne R. Landsman",
+      "Chen Lin",
+      "Daniel Rabetti",
+      "Che Zhang"
+    ],
+    "affiliations": [
+      "University of North Carolina Kenan-Flagler Business School",
+      "The University of Hong Kong - Faculty of Business and Economics",
+      "National University of Singapore (NUS)",
+      "Tsinghua University"
+    ],
+    "pages": 90,
+    "posted": "06 Jan 2026",
+    "snippet": "To address endogeneity, we implement a matched difference-indifferences design and use the staggered rollout of GitHub Copilot as an instrument. / Open-source startups are also more likely to suffer future security breaches than their closed-source counterparts.",
+    "downloads": 219
+  },
+  {
+    "abstractId": "5902163",
+    "title": "The AI Productivity Paradox in Software Development: A Meta-Analysis of Implementation Outcomes and ROI Patterns (2024-2025)",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5902163",
+    "authors": [
+      "Chris Johnson",
+      "Teja Yenamandra",
+      "Joe Ciskey",
+      "Tomas Ambrogi",
+      "Luciano Olmedo Gunio"
+    ],
+    "affiliations": [
+      "affiliation not provided to SSRN",
+      "affiliation not provided to SSRN",
+      "affiliation not provided to SSRN",
+      "affiliation not provided to SSRN",
+      "affiliation not provided to SSRN"
+    ],
+    "pages": 11,
+    "posted": "03 Jan 2026",
+    "snippet": "Code quality analysis demonstrated a 4x increase in code cloning and 45% security vulnerability rates in AIgenerated code. / AI Coding Assistants, Developer Productivity, GitHub Copilot, Code Quality, Technical Debt, AI Implementation, Software Engineering, LLM Tools, Enterprise",
+    "downloads": 125
+  },
+  {
+    "abstractId": "5785722",
+    "title": "A Survey of Natural-Language Driven Command-Line Assistants and Intelligent Shell Systems",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5785722",
+    "authors": [
+      "Nikhil Agrawal",
+      "Anushka Patil",
+      "Nikhil Kurkure",
+      "Dheesh Medekar",
+      "Renesh Sharma",
+      "Kuntal Thakur"
+    ],
+    "affiliations": [
+      "Pimpri Chinchwad University",
+      "Pimpri Chinchwad University",
+      "Pimpri Chinchwad University",
+      "Pimpri Chinchwad University",
+      "Pimpri Chinchwad University"
+    ],
+    "pages": 8,
+    "posted": "24 Dec 2025",
+    "snippet": "We evaluate several representative systems including ShellGPT, Warp AI, Copilot CLI, and our own hybrid assistant that combines both local and cloud-based / face: hallucinations where the AI generates incorrect commands, ambiguous error messages that are hard to interpret, limited training data, and serious security",
+    "downloads": 55
+  },
+  {
+    "abstractId": "5742364",
+    "title": "The Effects of AI-Assisted Programming in Software Engineering: A Study on GitHub Copilot",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5742364",
+    "authors": [
+      "Pradnya Niwas Suryavanshi",
+      "RameshD Jadhav"
+    ],
+    "affiliations": [
+      "Sinhgad Institute of Management, Pune",
+      "Sinhgad Institute of Management, Pune"
+    ],
+    "pages": 6,
+    "posted": "18 Dec 2025",
+    "snippet": "This study investigates the transformative impact of AI-assisted programming through tools like GitHub Copilot on the field of software engineering. / However, ethical concerns around data privacy, code quality, and trust remain unresolved. / GitHub Copilot, Generative AI, Software Engineering, Programmer Efficiency, AI Ethics",
+    "downloads": 91
+  },
+  {
+    "abstractId": "5736426",
+    "title": "Towards a Vendor-Agnostic AI Adoption Framework for Small and Medium-Sized Businesses",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5736426",
+    "authors": [
+      "Thomas Eveland"
+    ],
+    "affiliations": [],
+    "pages": 19,
+    "posted": "18 Dec 2025",
+    "snippet": "Artificial intelligence tools are now embedded in everyday systems, from native tools such as Microsoft 365 Copilot and Google Gemini to machine learning / It also aligns with the NIST AI Risk Management Framework (RMF) and follows Agile principles to ensure safe, iterative implementation.",
+    "downloads": 26
+  },
+  {
+    "abstractId": "5845303",
+    "title": "Agentic AI in Capital Markets: From Automation to Institutional Intelligence",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5845303",
+    "authors": [
+      "Mohamed Nather K"
+    ],
+    "affiliations": [
+      "Independent Researcher"
+    ],
+    "pages": 14,
+    "posted": "10 Dec 2025",
+    "snippet": "Illustrative applications include the AI Risk Officer, capable of real-time exposure reasoning and preemptive de-risking; the Autonomous Trading Supervisor / The road-map to institutional intelligence begins with copilot systems, matures into supervised autonomy, and culminates in exception-driven AI governance / Agentic AI, Capital Markets, Institutional Intelligence, AI Governance, Autonomous Decision-Making, Risk Management, Trading, Compliance, Machine Ethics",
+    "downloads": 164
+  },
+  {
+    "abstractId": "5745463",
+    "title": "AI & Nearshore Teams: Who Gets Replaced and Why | A Research Model for Latin America Software Pipelines",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5745463",
+    "authors": [
+      "Lonnie McRorey"
+    ],
+    "affiliations": [
+      "TeamStation AI"
+    ],
+    "pages": 24,
+    "posted": "20 Nov 2025",
+    "snippet": "This paper develops a formal model to analyze where AI substitutes for human contributors, how effort and contract incentives shift, and why replacement risk / Model: https://cto.teamstation.dev/nearshore-it-copilot",
+    "downloads": 20
+  },
+  {
+    "abstractId": "5630050",
+    "title": "Application of AI for Optimizing Software Development Processes",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5630050",
+    "authors": [
+      "Dmytro Verner"
+    ],
+    "affiliations": [
+      "V.N.Karazin National University"
+    ],
+    "pages": 3,
+    "posted": "18 Nov 2025",
+    "snippet": "It analyzes the key stages of development where AI can significantly accelerate task execution, improve code quality, and enhance project management. / Examples of AI tools such as GitHub Copilot, SonarQube, and Test.ai are provided.",
+    "downloads": 2
+  },
+  {
+    "abstractId": "5645551",
+    "title": "Conversational AI for\u00a0Digital Government\u00a0A Standards-Aligned Framework\u00a0for Data Transparency and\u00a0Policy Decision-Making",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5645551",
+    "authors": [
+      "Sarat Piridi"
+    ],
+    "affiliations": [
+      "Hanwha Qcells"
+    ],
+    "pages": 23,
+    "posted": "29 Oct 2025",
+    "snippet": "This paper proposes a Conversational Analytics Framework powered by Microsoft Fabric and Copilot Agents to enable / The proposed framework aligns with international standards including the NIST AI Risk Management Framework (2023), EU AI Act / Conversational Analytics, Microsoft Fabric, Copilot Agents, Digital Government, AI Explainability, Responsible AI, Data Transparency, NIST AI RMF, EU AI",
+    "downloads": 30
+  },
+  {
+    "abstractId": "5601126",
+    "title": "Investigating The Smells of LLM Generated Code1",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5601126",
+    "authors": [
+      "Debalina Ghosh Paul",
+      "Hong Zhu",
+      "Ian Bayley"
+    ],
+    "affiliations": [
+      "Oxford Brookes University",
+      "Oxford Brookes University",
+      "Oxford Brookes University"
+    ],
+    "pages": 18,
+    "posted": "14 Oct 2025",
+    "snippet": "code to identify the weakest scenarios in which the quality of LLM generated code should be improved.MethodsThe method measures code smells, an important / However, the quality of LLM generated code is ntoicablly poorer than human written code. / machine learning, Large language models, performance evaluation, Code Generation, Code quality, Usability, Code\u2028smell",
+    "downloads": 15
+  },
+  {
+    "abstractId": "5539638",
+    "title": "BRING YOUR OWN AI (BYOAI) IN THE WORKPLACE: PATTERNS, PITFALLS, AND THE BYOAI-GOV\u2122 FRAMEWORK FOR BEHAVIOR AWARE GOVERNANCE",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5539638",
+    "authors": [
+      "Thamburaj Anthuvan",
+      "Sunitha Prabhuram",
+      "Kajal Maheshwari",
+      "Ganesh Raju",
+      "Aditya Mishra"
+    ],
+    "affiliations": [
+      "S.B.Patil Institute of Management",
+      "Associate Professor, School of Business, PO BOX: 345050, MAHE, Dubai, DIAC, UAE",
+      "S.B.Patil Institute of Management",
+      "Independent",
+      "Indian Institute of Management (IIM)"
+    ],
+    "pages": 22,
+    "posted": "08 Oct 2025",
+    "snippet": "The informal use of generative artificial intelligence (AI) tools such as ChatGPT, Copilot, and Gemini is spreading rapidly across workplaces, outpacing / Findings reveal six behavioral user archetypes and four organizational governance postures shaped by risk perception and task sensitivity.",
+    "downloads": 120
+  },
+  {
+    "abstractId": "5442494",
+    "title": "The Effect of AI Tools on Modern Software Development for Frontend Engineering: An Empirical Analysis",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5442494",
+    "authors": [
+      "Soumyajit Sarkar"
+    ],
+    "affiliations": [
+      "Independent Researcher"
+    ],
+    "pages": 4,
+    "posted": "23 Sep 2025",
+    "snippet": "quality, and security. / vulnerability rates in generated code. / Artificial Intelligence, Software Engineering, Frontend Development, Code Generation, Developer Productivity, Security Vulnerabilities, GitHub Copilot,",
+    "downloads": 121
+  },
+  {
+    "abstractId": "5394886",
+    "title": "Bring Your Own AI (BYOAI) in the Workplace: Patterns, Pitfalls, and the BYOAI-Gov\u2122 Toolkit for Behavior-Aware Governance",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5394886",
+    "authors": [
+      "Thamburaj Anthuvan",
+      "Sunitha Prabhuram",
+      "Ganesh Raju",
+      "Kajal Maheshwari",
+      "Aditya Mishra"
+    ],
+    "affiliations": [
+      "S.B.Patil Institute of Management",
+      "Associate Professor, School of Business, PO BOX: 345050, MAHE, Dubai, DIAC, UAE",
+      "Independent",
+      "S.B.Patil Institute of Management",
+      "Indian Institute of Management (IIM)"
+    ],
+    "pages": 29,
+    "posted": "25 Aug 2025",
+    "snippet": "The informal use of generative artificial intelligence (AI) tools-such as ChatGPT, Copilot, and Gemini-is rapidly growing across workplace settings, often / The analysis identifies six user archetypes and four organizational response types, shaped by perceived risk, trust, and task sensitivity. / BYOAI, Generative AI, Workplace Governance, Shadow AI, Enterprise Risk, Governance Framework, Information Policy",
+    "downloads": 194
+  },
+  {
+    "abstractId": "5385842",
+    "title": "From \"Reading Lines\" to Board-State Evaluation: A Hybrid LLM-deep learning Architecture for Intuitive Recognition of Organizational Health",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5385842",
+    "authors": [
+      "Atsushi Funaishi"
+    ],
+    "affiliations": [
+      "Mirai Quality Research Institute"
+    ],
+    "pages": 6,
+    "posted": "12 Aug 2025",
+    "snippet": "It presents a concrete blueprint for a \"managerial copilot\" with general applicability to any organization, overcoming / Organizational Health, Managerial Copilot, Large Language Models (LLM), Hybrid AI Architecture, Deep Learning in Management, Organizational Misconduct, / Omission to Commission Transition, Organizational Culture, Corporate Governance, Risk Management Frameworks, ISO Management Systems, AI-Assisted Auditing",
+    "downloads": 51
+  },
+  {
+    "abstractId": "5343855",
+    "title": "Machine Learning Copilot Agent: An Llm-Guided Workflow for Prognostic Gene Discovery",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5343855",
+    "authors": [
+      "Vatsal Patel",
+      "Ananya Pal",
+      "Sourav Roy",
+      "Abhijeet Patel"
+    ],
+    "affiliations": [
+      "HawkFranklin Research",
+      "University of Calcutta - Bethune College",
+      "affiliation not provided to SSRN",
+      "affiliation not provided to SSRN"
+    ],
+    "pages": 15,
+    "posted": "14 Jul 2025",
+    "snippet": "This paper introduces the Machine Learning Copilot Agent, an AI-driven system built on GPT-4 and the LlamaIndex event-driven framework, designed to automate / This case study highlights the agent's technical novelty in orchestrating complex tasks via LLM-generated code within a secure, event-driven architecture / Machine learning, Automation, Large Language Models, AI Copilot, LlamaIndex, Precision Oncology",
+    "downloads": 71
+  },
+  {
+    "abstractId": "5345823",
+    "title": "Discrete Prompt Optimization Using Genetic Algorithm for Secure Python Code Generation",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5345823",
+    "authors": [
+      "Catherine Tony",
+      "Maura Pintor",
+      "Max Kretschmann",
+      "Riccardo Scandariato"
+    ],
+    "affiliations": [
+      "Hamburg University of Technology",
+      "Universita di Cagliari",
+      "Hamburg University of Technology",
+      "Hamburg University of Technology"
+    ],
+    "pages": 30,
+    "posted": "09 Jul 2025",
+    "snippet": "Results demonstrate that our security-specific mutation techniques led to prompts with richer security context compared to the generic mutation techniques / Furthermore, combining these techniques with generic mutations substantially reduced the number of security weaknesses in the LLM-generated code.",
+    "downloads": 64
+  },
+  {
+    "abstractId": "5331771",
+    "title": "Evaluating Ai in Legal Operations: A Comparative Analysis of Accuracy, Completeness, and Hallucinations in Chatgpt-4, Copilot, Deepseek, Lexis+ Ai, and Llama 3",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5331771",
+    "authors": [
+      "Bakht Munir"
+    ],
+    "affiliations": [
+      "University of the Punjab (PU) - Punjab University Law College"
+    ],
+    "pages": 12,
+    "posted": "08 Jul 2025",
+    "snippet": "The integration of AI into legal services is still in its infancy and faces challenges such as privacy concerns, bias, and the risk of fabricated responses / This research evaluates the performance of the following AI tools: (1) ChatGPT-4, (2) Copilot, (3) DeepSeek, (4) Lexis+ AI, and (5) Llama 3. / Hallucinations, LLMs, RAG, ChatGPT, Lexis +AI, DeepSeek, Copilot",
+    "downloads": 235
+  },
+  {
+    "abstractId": "5320778",
+    "title": "AI-Driven Transformation of Code Review and Refactoring in Software Engineering: A Practitioner's Perspective",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5320778",
+    "authors": [
+      "Benjamin Batte"
+    ],
+    "affiliations": [
+      "University of the Cumberlands (formerly Cumberland College)"
+    ],
+    "pages": 7,
+    "posted": "02 Jul 2025",
+    "snippet": "quality. / Drawing from real-world experience and scholarly analysis, it reflects on how these tools impact code quality, developer productivity, and collaboration",
+    "downloads": 120
+  },
+  {
+    "abstractId": "5249387",
+    "title": "Theory of Partnered Digital Intelligence Development",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5249387",
+    "authors": [
+      "Martin Englerd"
+    ],
+    "affiliations": [
+      "affiliation not provided to SSRN"
+    ],
+    "pages": 196,
+    "posted": "19 Jun 2025",
+    "snippet": "Involving around 1 million tokens, this collaboration between human researchers and actively evolving DIs hosted on GPT-class, Gemini, Grok, Copilot / partnership, TOP-DID offers a co-creative path toward AI that advances science, democracy, and sustainable well-being while addressing security",
+    "downloads": 27
+  },
+  {
+    "abstractId": "5273073",
+    "title": "Causal Mapping of the Risks of Using Generative Ai in Software Development",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5273073",
+    "authors": [
+      "David Kinnberg Hein",
+      "John Persson",
+      "Victor Vadmand Jensen",
+      "Anders Rysholt Bruun",
+      "Martin Gilje Jaatun"
+    ],
+    "affiliations": [
+      "Aalborg University - Department of Computing Science",
+      "Aalborg University",
+      "Aarhus University - Department of Clinical Medicine",
+      "Aalborg University",
+      "SINTEF Digital"
+    ],
+    "pages": 28,
+    "posted": "28 May 2025",
+    "snippet": "This\u00a0indicates that software organizations can never be certain whether AI-generated code is sufficiently validated. / Risk Management, Software Development, Generative AI, Causal Mapping, Multi-case Study",
+    "downloads": 63
+  },
+  {
+    "abstractId": "5253508",
+    "title": "The Impact of AI-Assisted Code Generation on Software Vulnerabilities and the Role of AI in Automated Security Testing",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253508",
+    "authors": [
+      "Sunday Oladele",
+      "Faruk Lawal"
+    ],
+    "affiliations": [
+      "Independent",
+      "affiliation not provided to SSRN"
+    ],
+    "pages": 11,
+    "posted": "14 May 2025",
+    "snippet": "However, their impact on software security remains a critical concern. / This paper examines how AI-generated code influences the prevalence of software vulnerabilities, exploring whether these tools introduce new security risks",
+    "downloads": 266
+  },
+  {
+    "abstractId": "5246320",
+    "title": "From Black Box to Open Book: An Emerging Transparency Imperative in Generative Ai Codebases",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5246320",
+    "authors": [
+      "Eleanor Adele Watson",
+      "Matt Van Itallie"
+    ],
+    "affiliations": [
+      "University of Gloucestershire",
+      "Sema"
+    ],
+    "pages": 6,
+    "posted": "08 May 2025",
+    "snippet": "Generative Artificial Intelligence (GenAI) tools like GitHub's Copilot, Amazon CodeWhisperer, and OpenAI's Codex now generate an estimated 20 / investigates the imperative need for transparency in GenAI codebases, presenting empirical evidence for comprehensive strategies addressing quality assurance, security",
+    "downloads": 74
+  },
+  {
+    "abstractId": "5241931",
+    "title": "Pajama Challenges in a Medical Practice: Is AI the Answer?",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5241931",
+    "authors": [
+      "G. Paul Matherne",
+      "Trent Chinnaswamy",
+      "Tianshu Li",
+      "Vineet Krishnan"
+    ],
+    "affiliations": [
+      "University of Virginia - Darden School of Business",
+      "Independent",
+      "Independent",
+      "Independent"
+    ],
+    "pages": null,
+    "posted": "07 May 2025",
+    "snippet": "Two products stand out: Navina AI, which focuses on pre-visit planning and code identification, and DAX Copilot, which utilizes ambient listening to document / GCPG physicians are excited but have concerns about onboarding time, impact on residents and medical students, data security, and the role of AI products.Thompkins / burnout, physician burnout, electronic health record, EHR, medical documentation, medical ethics, navina, nuance, epic, medical privacy, cloud data, data security",
+    "downloads": 20
+  },
+  {
+    "abstractId": "5216976",
+    "title": "Enhancing Zero Trust Cybersecurity with AI",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5216976",
+    "authors": [
+      "Milankumar Rana"
+    ],
+    "affiliations": [
+      "FedEx Services"
+    ],
+    "pages": 6,
+    "posted": "06 May 2025",
+    "snippet": "control management and overall security operations. / This article investigates how Copilot might help security experts with access control, automate security processes, and provide real-time insight. / Zero Trust Architecture, AI, Microsoft Copilot, Automation, AI Driven, Access Control, Automate Security, threats, orchestration",
+    "downloads": 283
+  },
+  {
+    "abstractId": "5240738",
+    "title": "SuSastho.AI: A Multimodal Medical Copilot for Adolescents Using Evidence-Based Medicine and Large Language Models",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5240738",
+    "authors": [
+      "Shamim Ahamed",
+      "Moinul H. Chowdhury",
+      "Marzia Zaman",
+      "Abhishek Agarwala",
+      "Md Abdullah Al Mashud",
+      "Mr Tariqul",
+      "Tareq Al Muntasir",
+      "Rifat Rahman",
+      "Rifat Shahriyar",
+      "Farhana Sarker",
+      "Khondaker A. Mamun"
+    ],
+    "affiliations": [
+      "United International University",
+      "CMED Health Ltd",
+      "CMED Health Ltd",
+      "United International University",
+      "United International University",
+      "CMED Health Ltd",
+      "United International University",
+      "Bangladesh University of Engineering and Technology (BUET)",
+      "Bangladesh University of Engineering and Technology (BUET)",
+      "CMED Health Ltd",
+      "United International University"
+    ],
+    "pages": 35,
+    "posted": "06 May 2025",
+    "snippet": "This limited access exposes them to a high risk of STIs, unintended pregnancies, and serious mental health issues. / Our copilot supports both voice and text-based interactions.",
+    "downloads": 127
+  },
+  {
+    "abstractId": "5157837",
+    "title": "AI for Code Synthesis: Can LLMs Generate Secure Code?",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5157837",
+    "authors": [
+      "Kaushik Bar"
+    ],
+    "affiliations": [
+      "Inxite Out Pvt Ltd"
+    ],
+    "pages": 14,
+    "posted": "12 Mar 2025",
+    "snippet": "However, concerns remain about the security of AI-generated code and its susceptibility to vulnerabilities. / To mitigate these risks, we explore security-aware training methods and reinforcement learning techniques to enhance the security of AI-generated code.",
+    "downloads": 380
+  },
+  {
+    "abstractId": "5100609",
+    "title": "Exploring Altered Open Source Software Development Patterns in a Time of Generative AI",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5100609",
+    "authors": [
+      "Xinyu Li",
+      "Francis Joseph Costello",
+      "Keongtae Kim",
+      "Xiaoquan (Michael) Zhang"
+    ],
+    "affiliations": [
+      "The Chinese University of Hong Kong (CUHK) - CUHK Business School",
+      "The Chinese University of Hong Kong (CUHK)",
+      "The Chinese University of Hong Kong (CUHK)",
+      "Chinese University of Hong Kong"
+    ],
+    "pages": 80,
+    "posted": "06 Mar 2025",
+    "snippet": "We leverage the March 2023 announcement and April 2023 public release of GitHub Copilot X (CX) as a natural experiment, analyzing a 27-week user-week panel / However, this expansion comes with trade-offs in code quality, as we document a 2% increase in copy-pasted code and a decline in project novelty for casual",
+    "downloads": 369
+  },
+  {
+    "abstractId": "4934460",
+    "title": "AI-Driven Transformation of Code Review and Refactoring in Software Engineering",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4934460",
+    "authors": [
+      "Benjamin Batte"
+    ],
+    "affiliations": [
+      "University of the Cumberlands (formerly Cumberland College)"
+    ],
+    "pages": 5,
+    "posted": "24 Sep 2024",
+    "snippet": "quality. / Drawing from real-world experience and scholarly analysis, it reflects on how these tools impact code quality, developer productivity, and collaboration",
+    "downloads": 141
+  },
+  {
+    "abstractId": "4932278",
+    "title": "Leveraging AI in Education in Cambodia: A Review of Perceived Concerns and Associated Benefits",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4932278",
+    "authors": [
+      "Mengkorn PUM",
+      "Sarin Sok"
+    ],
+    "affiliations": [
+      "University of Puthisastra"
+    ],
+    "pages": 14,
+    "posted": "20 Sep 2024",
+    "snippet": "With current state-of-the-art advances in artificial intelligence (AI), especially large language models, such as Google's Gemini, Microsoft's Copilot, / review of the secondary sources, the article identified five perceived concerns related to the use of AI in Cambodia's education, including privacy and security",
+    "downloads": 112
+  },
+  {
+    "abstractId": "4909859",
+    "title": "Generative Artificial Intelligence -Where did it come from? How does it work?",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4909859",
+    "authors": [
+      "Michael D. Murray"
+    ],
+    "affiliations": [
+      "University of Kentucky - J. David Rosenberg College of Law"
+    ],
+    "pages": 38,
+    "posted": "04 Sep 2024",
+    "snippet": "Key milestones include the advent of neural networks, deep learning breakthroughs, and the release of transformative models like GPT-4o, Copilot, and Claude / However, GAI systems, while powerful, are not without limitations, including the risk of generating hallucinations (confabulations) and the necessity for",
+    "downloads": 565
+  },
+  {
+    "abstractId": "4888688",
+    "title": "Conversational Ai Forensics: A Case Study on Chatgpt, Gemini, Copilot, and Claude",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4888688",
+    "authors": [
+      "kyungsuk cho",
+      "Yunji Park",
+      "Jiyun Kim",
+      "Byeongjun Kim",
+      "Doowon Jeong"
+    ],
+    "affiliations": [
+      "Sungkyunkwan University",
+      "Sungkyunkwan University",
+      "Sungkyunkwan University",
+      "Dongguk University",
+      "Sungkyunkwan University"
+    ],
+    "pages": 11,
+    "posted": "08 Jul 2024",
+    "snippet": "However, with the growing utilization of these services, there is a risk that some users may exploit them for malicious purposes, such as technology leaks / analysis, we present a forensic investigation framework for conversational AI services, including case studies of representative services such as ChatGPT, Copilot",
+    "downloads": 409
+  },
+  {
+    "abstractId": "4648700",
+    "title": "Randomized Controlled Trials for Microsoft Copilot for Security",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4648700",
+    "authors": [
+      "Benjamin G. Edelman",
+      "James Bono",
+      "Sida Peng",
+      "Roberto Rodriguez",
+      "Sandra Ho"
+    ],
+    "affiliations": [
+      "Microsoft Corporation",
+      "Microsoft Corporation",
+      "Microsoft Corporation",
+      "Microsoft Corporation",
+      "Microsoft Corporation"
+    ],
+    "pages": 10,
+    "posted": "02 Dec 2023",
+    "snippet": "We found that Copilot for Security delivered large improvements on both speed and accuracy. / Copilot brought improvements for both novices and security professionals. / security, AI, RCT",
+    "downloads": 1290
+  },
+  {
+    "abstractId": "4556985",
+    "title": "Towards Streamlining Auditing for Compliance with Requirements in Open-Source Software at Nasa",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4556985",
+    "authors": [
+      "Carlos Paradis",
+      "Ivan Perez Dominguez",
+      "Misty Davies"
+    ],
+    "affiliations": [
+      "affiliation not provided to SSRN",
+      "affiliation not provided to SSRN",
+      "NASA Ames Research Center"
+    ],
+    "pages": 25,
+    "posted": "30 Aug 2023",
+    "snippet": "generated records are analyzed using a repository mining software tool to quantify process compliance.Method: We perform a case study in the NASA-funded Copilot / We define four software compliance metrics based on the Copilot's requirements, and analyze their impact on source code quality.Results: Our work / mining-software-repositories, software-process, code-quality",
+    "downloads": 46
+  },
+  {
+    "abstractId": "4535741",
+    "title": "Effects of Flight Crew Role Assignment on Aviation Accidents and Incidents: Evidence of a Systemic Safety Issue",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4535741",
+    "authors": [
+      "Tom Becker",
+      "Peter Ayton"
+    ],
+    "affiliations": [
+      "affiliation not provided to SSRN",
+      "University of Leeds - Faculty of Business"
+    ],
+    "pages": 53,
+    "posted": "09 Aug 2023",
+    "snippet": "Significantly more such events occur, and significantly more fatalities result when the Captain (Pilot-in-Command), rather than the Copilot (Second-in-Command / \u2013 prima facie evidence that the regular combination of command and control (Pilot-in-Command as Pilot Flying) presents a significant systemic safety risk / human factors, Teamwork, Hierarchy, Monitoring & Intervention, risk management",
+    "downloads": 116
+  },
+  {
+    "abstractId": "1278379",
+    "title": "Flying Light: British Airways Flight 268 (a)",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1278379",
+    "authors": [
+      "R. Edward Freeman",
+      "Jenny Mead"
+    ],
+    "affiliations": [
+      "University of Virginia - Darden School of Business",
+      "University of Virginia - Darden School of Business"
+    ],
+    "pages": 4,
+    "posted": "21 Oct 2008",
+    "snippet": "He sent the copilot back to the cabin to see if any flames were still visible through the window and consulted by radio with engineers and British Airways / ethics, ethical issues, public relations, leadership, risk assessment, government and business, government regulation, international relations, uncertainty",
+    "downloads": 73
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "item_key": "WUUDHL8R",
+  "methods": [
+    "design-science/prototype/tool-build",
+    "controlled-experiment",
+    "benchmark-evaluation"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science/prototype/tool-build",
+  "notes": "Builds an AI-driven pipeline for detecting/refactoring data clumps via LLMs, then runs preliminary experiments varying parameters (model, instruction format, data format, temperature) evaluated against a manually-created ground truth (sensitivity/specificity, refactoring score) on a 90-LOC toy project and ArgoUML. Human-in-the-loop is a design feature, not a study with participants, so human_subjects=false.",
+  "citation": "Baumgartner 2024"
+}

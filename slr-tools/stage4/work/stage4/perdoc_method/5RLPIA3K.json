@@ -1,0 +1,13 @@
+{
+  "item_key": "5RLPIA3K",
+  "methods": [
+    "conceptual/position/framework",
+    "design-science/prototype/tool-build",
+    "case-study"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position/framework",
+  "notes": "Vendor technical white paper presenting VARI reference architecture and mapping its design to EU AI Act Article 14 requirements. Describes a multi-agent adversarial-verification system (tool-build/design-science framing) and uses the Mobley v. Workday litigation as an illustrative case study, but provides no empirical evaluation, no data collection, and no human-subjects study. Fundamentally a position/framework advocacy document.",
+  "citation": "Eric Swidey 2026"
+}

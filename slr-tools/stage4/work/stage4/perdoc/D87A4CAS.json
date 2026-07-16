@@ -1,0 +1,66 @@
+{
+  "item_key": "D87A4CAS",
+  "citation": "\u015eeker 2026",
+  "evidence_type": [
+    "case-study",
+    "empirical"
+  ],
+  "problem_statement": "LLM-based coding tools produce hallucinated, contextually inconsistent, and integration-fragile code, so the study examines how human-in-the-loop oversight can ensure the quality, consistency, and security of AI-generated code in a real project (Kolay.ai).",
+  "magnitude_evidence": "LLMs accelerate development cycles by 30\u201340%, reduce errors by 30%, and improve onboarding efficiency by 20% (Kolay.ai case study)",
+  "risk_types": [
+    "hallucination",
+    "security",
+    "quality",
+    "context-inconsistency",
+    "integration-complexity",
+    "dependency-management",
+    "maintainability",
+    "bias",
+    "privacy"
+  ],
+  "insufficiency_evidence": "\"certain vulnerabilities persist in LLM-generated code, underscoring the necessity of manual testing and code audits\"; hallucinated outputs \"necessitated manual intervention\" and LLMs \"struggle with long-term context, requiring frequent redirection\"",
+  "solution_mechanisms": [
+    "human-in-the-loop review workflow",
+    "structured/categorized prompt library",
+    "modular architecture isolating errors",
+    "automated rollback mechanisms",
+    "iterative sprint reviews with feedback loops",
+    "automated + manual testing combination",
+    "CI checkpoints with automated alerts for human intervention",
+    "context files for architectural decisions",
+    "memory-augmented LLMs (RAG, Transformer-XL)",
+    "LLM-assisted vulnerability scanners"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "prompt-library",
+    "modularization",
+    "rollback",
+    "sprint-review",
+    "escalation",
+    "continuous-monitoring",
+    "spec-driven",
+    "security-scan",
+    "memory-augmentation",
+    "rag",
+    "context-file",
+    "human-review"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "CI",
+    "pre-commit",
+    "testing"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "iterative modular sprint-based development model",
+    "structured prompt engineering within modular architecture",
+    "HITL workflow"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

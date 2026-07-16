@@ -1,0 +1,14 @@
+{
+  "item_key": "4T5QFWZE",
+  "methods": [
+    "repository-mining/MSR",
+    "measurement-study",
+    "case-study",
+    "design-science/prototype/tool-build"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "repository-mining/MSR",
+  "notes": "Mines the AIDev dataset of real GitHub PRs (Python repos >500 stars) to compare AI-agent vs human PRs on code metrics, a novel semantic-redundancy pipeline (CodeSage embeddings + PyRef), and DistilRoBERTa sentiment analysis of reviewer comments. Includes a single-repo (crewAI) case study for the computationally intensive redundancy analysis and proposes/builds the MRS metric and detection pipeline (tool-build). Reviewer sentiment is inferred from archival comments, not solicited participants, so human_subjects=false.",
+  "citation": "Huang 2026"
+}

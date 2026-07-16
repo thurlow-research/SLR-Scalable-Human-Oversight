@@ -1,0 +1,63 @@
+{
+  "item_key": "CI93QRUH",
+  "citation": "E. A. Gonz\u00e1lez 2025",
+  "evidence_type": [
+    "empirical",
+    "controlled-experiment",
+    "system-tool"
+  ],
+  "problem_statement": "AI programming tools exclude users from decision-making, causing over-reliance on and blind trust in a single 'best' completion, which leads programmers to unwittingly accept insecure code; the paper addresses how to keep humans meaningfully in the loop during LLM code generation.",
+  "magnitude_evidence": "studies have found that programmers write less secure code with AI assistants than without [5]-[7]; in the study, BASELINE participants generated 31% more vulnerabilities (MHiLDe=2.67, MBASELINE=3.89, p=0.01)",
+  "risk_types": [
+    "security",
+    "insecure-cryptography",
+    "over-reliance",
+    "blind-trust",
+    "buffer-overflow",
+    "path-traversal",
+    "arbitrary-code-execution",
+    "loss-of-agency",
+    "insecure-training-data-patterns"
+  ],
+  "insufficiency_evidence": "Vasconcelos et al. found that decoding uncertainty highlighting alone offered no advantage over a baseline without it; 'Every solution written with BASELINE used insecure password hashing practices' and BASELINE only suggested SHA256 without salting",
+  "solution_mechanisms": [
+    "human-in-the-loop decoding",
+    "critical decision point highlighting",
+    "local token-level alternatives preview",
+    "natural language explanations of alternative differences",
+    "corrected-entropy uncertainty highlighting using semantic importance",
+    "completion regeneration preserving similarity to base",
+    "analysis LLM scoring alternatives (Significant/Minor/Incorrect + importance score)"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "decoding-intervention",
+    "uncertainty-highlighting",
+    "local-alternatives",
+    "explanation",
+    "token-level-steering",
+    "llm-as-analyzer",
+    "calibration",
+    "importance-scoring",
+    "code-completion",
+    "intent-alignment"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "pre-commit"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Human-in-the-Loop Decoding",
+    "HiLDE",
+    "critical decision highlighting",
+    "local alternatives",
+    "corrected entropy",
+    "Discover-Interpret-Act pattern"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

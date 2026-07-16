@@ -1,0 +1,62 @@
+{
+  "item_key": "399HN438",
+  "citation": "Dutta 2025",
+  "evidence_type": [
+    "system-tool",
+    "empirical",
+    "benchmark"
+  ],
+  "problem_statement": "Traditional pull request reviews are manual, time-intensive, and inconsistent; the paper addresses how generative AI / LLM-based agents can automate PR review while balancing accuracy against required human oversight.",
+  "magnitude_evidence": "Over 50 million lines of code and 1 million reviews were collected across 9 programming languages (from GitHub repositories with 1000+ stars)",
+  "risk_types": [
+    "quality",
+    "security",
+    "maintainability",
+    "bugs",
+    "code-smells",
+    "AI-content-accuracy",
+    "reliability"
+  ],
+  "insufficiency_evidence": "traditional code review tools, which typically exhibit lower precision and recall rates; existing platforms (Gerrit, Code Flow, Phabricator) generally lack automation for code review tasks",
+  "solution_mechanisms": [
+    "multi-agent LLM code review system (CodeEvaluator)",
+    "code review agent for diffs",
+    "bug report agent",
+    "code smell detection agent",
+    "code optimization agent (RL-based)",
+    "security vulnerability detection agent",
+    "style/convention enforcement agent",
+    "automated reviewer recommendation",
+    "NLP feedback summarization"
+  ],
+  "mechanism_keywords": [
+    "multi-agent",
+    "llm-review",
+    "security-gate",
+    "code-review",
+    "static-analysis-augmentation",
+    "reviewer-routing",
+    "bug-detection",
+    "code-smell",
+    "optimization",
+    "style-enforcement",
+    "transformer-encoder",
+    "fine-tuning",
+    "reinforcement-learning"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "pre-commit",
+    "generation-time",
+    "CI"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "CodeEvaluator",
+    "multi-agent code review framework"
+  ],
+  "governance_refs": [],
+  "scope_fit": "solution",
+  "notes": null,
+  "_truncated": false
+}

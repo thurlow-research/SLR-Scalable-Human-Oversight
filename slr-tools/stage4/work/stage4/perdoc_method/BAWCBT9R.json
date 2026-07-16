@@ -1,0 +1,13 @@
+{
+  "item_key": "BAWCBT9R",
+  "methods": [
+    "measurement-study",
+    "controlled-experiment",
+    "benchmark-evaluation"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "measurement-study",
+  "notes": "Measurement-first audit of LLM-as-a-judge for code: controlled prompt-bias interventions (isolating one presentation cue at a time, A/B swaps, test-retest consistency) run over the existing CodeJudgeBench benchmark across three judge models. Uses human-labeled good/bad code pairs but no human participants.",
+  "citation": "Zhao 2026"
+}

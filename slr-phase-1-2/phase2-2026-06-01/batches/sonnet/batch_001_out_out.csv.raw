@@ -1,0 +1,8 @@
+Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.
+It looks like the `[PASTE BATCH CSV HERE]` placeholder in the INPUT section was never replaced with actual paper data — what follows is already-screened output (with `decision`, `confidence`, `rationale` columns), not a new batch to screen.
+
+What would you like me to do?
+
+1. **Screen a new batch** — paste the input CSV (columns: `item_key`, `title`, `abstract`) and I'll run the screening
+2. **Review/validate these decisions** — check the 52 existing decisions for consistency against the rubric
+3. **Something else** — import into Zotero, generate summary stats, etc.

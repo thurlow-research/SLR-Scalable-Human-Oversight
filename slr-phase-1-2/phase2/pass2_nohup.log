@@ -1,0 +1,620 @@
+nohup: ignoring input
+[2026-05-27 04:49:43] === Pass 2 Orchestration ===
+[2026-05-27 04:49:43] Workdir: /home/scott/slr/phase2
+[2026-05-27 04:49:43] Checkpoint: /home/scott/slr/phase2/checkpoint.json
+[2026-05-27 04:49:43] STEP 1: Exporting Phase 2 Queue items from Zotero...
+Fetching Phase 2 Keep Queue (JFHGBVLY)...
+  1959 items
+Fetching Phase 2 Maybe Queue (JUDYQCPU)...
+  2034 items
+Total unique items: 3993
+Written to /home/scott/slr/phase2/queue_export.csv
+[2026-05-27 04:51:35]   Exported 4061 items to /home/scott/slr/phase2/queue_export.csv
+[2026-05-27 04:51:35] STEP 2: Randomizing item order...
+Randomized 3993 items
+[2026-05-27 04:51:35] STEP 3: Splitting into 50-row Sonnet batches...
+Input:      /home/scott/slr/phase2/queue_randomized.csv
+Output dir: /home/scott/slr/phase2/batches/sonnet
+Rows:       3993
+Batches:    80 (size 50)
+
+  /home/scott/slr/phase2/batches/sonnet/batch_001.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_002.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_003.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_004.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_005.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_006.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_007.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_008.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_009.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_010.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_011.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_012.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_013.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_014.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_015.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_016.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_017.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_018.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_019.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_020.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_021.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_022.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_023.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_024.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_025.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_026.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_027.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_028.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_029.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_030.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_031.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_032.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_033.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_034.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_035.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_036.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_037.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_038.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_039.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_040.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_041.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_042.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_043.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_044.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_045.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_046.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_047.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_048.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_049.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_050.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_051.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_052.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_053.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_054.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_055.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_056.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_057.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_058.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_059.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_060.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_061.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_062.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_063.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_064.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_065.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_066.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_067.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_068.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_069.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_070.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_071.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_072.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_073.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_074.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_075.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_076.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_077.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_078.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_079.csv  (50 rows)
+  /home/scott/slr/phase2/batches/sonnet/batch_080.csv  (43 rows)
+
+Done. 80 files written.
+[2026-05-27 04:51:35]   Created 80 Sonnet batches
+[2026-05-27 04:51:35] STEP 4: Running Sonnet screening...
+[2026-05-27 04:51:35]   Sonnet batch_001: screening...
+Extracted 50 rows
+[2026-05-27 04:56:22]   OK batch_001: 50 rows
+[2026-05-27 04:56:52]   Sonnet batch_002: screening...
+Extracted 50 rows
+[2026-05-27 05:00:31]   OK batch_002: 50 rows
+[2026-05-27 05:01:01]   Sonnet batch_003: screening...
+Extracted 50 rows
+[2026-05-27 05:06:49]   WARNING batch_003: input=51 output=50 — rows missing
+[2026-05-27 05:07:19]   Sonnet batch_004: screening...
+Extracted 50 rows
+[2026-05-27 05:11:34]   OK batch_004: 50 rows
+[2026-05-27 05:12:04]   Sonnet batch_005: screening...
+Extracted 51 rows
+[2026-05-27 05:20:45]   OK batch_005: 51 rows
+[2026-05-27 05:21:15]   Sonnet batch_006: screening...
+Extracted 50 rows
+[2026-05-27 05:26:03]   WARNING batch_006: input=51 output=50 — rows missing
+[2026-05-27 05:26:33]   Sonnet batch_007: screening...
+Extracted 50 rows
+[2026-05-27 05:30:39]   OK batch_007: 50 rows
+[2026-05-27 05:31:09]   Sonnet batch_008: screening...
+Extracted 50 rows
+[2026-05-27 05:36:25]   OK batch_008: 50 rows
+[2026-05-27 05:36:55]   Sonnet batch_009: screening...
+Extracted 50 rows
+[2026-05-27 05:46:22]   OK batch_009: 50 rows
+[2026-05-27 05:46:52]   Sonnet batch_010: screening...
+Extracted 50 rows
+[2026-05-27 05:51:51]   OK batch_010: 50 rows
+[2026-05-27 05:52:21]   Sonnet batch_011: screening...
+Extracted 50 rows
+[2026-05-27 05:56:51]   OK batch_011: 50 rows
+[2026-05-27 05:57:21]   Sonnet batch_012: screening...
+Extracted 50 rows
+[2026-05-27 06:03:32]   OK batch_012: 50 rows
+[2026-05-27 06:04:02]   Sonnet batch_013: screening...
+Extracted 50 rows
+[2026-05-27 06:09:49]   OK batch_013: 50 rows
+[2026-05-27 06:10:19]   Sonnet batch_014: screening...
+Extracted 50 rows
+[2026-05-27 06:16:33]   OK batch_014: 50 rows
+[2026-05-27 06:17:03]   Sonnet batch_015: screening...
+Extracted 50 rows
+[2026-05-27 06:21:57]   OK batch_015: 50 rows
+[2026-05-27 06:22:27]   Sonnet batch_016: screening...
+Extracted 50 rows
+[2026-05-27 06:26:52]   OK batch_016: 50 rows
+[2026-05-27 06:27:22]   Sonnet batch_017: screening...
+Extracted 50 rows
+[2026-05-27 06:32:31]   OK batch_017: 50 rows
+[2026-05-27 06:33:01]   Sonnet batch_018: screening...
+Extracted 50 rows
+[2026-05-27 06:36:51]   OK batch_018: 50 rows
+[2026-05-27 06:37:21]   Sonnet batch_019: screening...
+Extracted 50 rows
+[2026-05-27 06:43:52]   OK batch_019: 50 rows
+[2026-05-27 06:44:22]   Sonnet batch_020: screening...
+Extracted 50 rows
+[2026-05-27 06:49:35]   OK batch_020: 50 rows
+[2026-05-27 06:50:05]   Sonnet batch_021: screening...
+Extracted 50 rows
+[2026-05-27 06:54:41]   WARNING batch_021: input=54 output=50 — rows missing
+[2026-05-27 06:55:11]   Sonnet batch_022: screening...
+Extracted 50 rows
+[2026-05-27 07:01:23]   OK batch_022: 50 rows
+[2026-05-27 07:01:53]   Sonnet batch_023: screening...
+Extracted 50 rows
+[2026-05-27 07:07:16]   OK batch_023: 50 rows
+[2026-05-27 07:07:46]   Sonnet batch_024: screening...
+Extracted 50 rows
+[2026-05-27 07:14:30]   OK batch_024: 50 rows
+[2026-05-27 07:15:00]   Sonnet batch_025: screening...
+Extracted 50 rows
+[2026-05-27 07:19:56]   WARNING batch_025: input=52 output=50 — rows missing
+[2026-05-27 07:20:26]   Sonnet batch_026: screening...
+Extracted 50 rows
+[2026-05-27 07:25:04]   WARNING batch_026: input=53 output=50 — rows missing
+[2026-05-27 07:25:34]   Sonnet batch_027: screening...
+Extracted 50 rows
+[2026-05-27 07:44:43]   OK batch_027: 50 rows
+[2026-05-27 07:45:13]   Sonnet batch_028: screening...
+Extracted 50 rows
+[2026-05-27 07:49:50]   WARNING batch_028: input=52 output=50 — rows missing
+[2026-05-27 07:50:20]   Sonnet batch_029: screening...
+Extracted 50 rows
+[2026-05-27 07:55:13]   OK batch_029: 50 rows
+[2026-05-27 07:55:43]   Sonnet batch_030: screening...
+Extracted 50 rows
+[2026-05-27 08:01:51]   OK batch_030: 50 rows
+[2026-05-27 08:02:21]   Sonnet batch_031: screening...
+Extracted 50 rows
+[2026-05-27 08:09:53]   WARNING batch_031: input=52 output=50 — rows missing
+[2026-05-27 08:10:23]   Sonnet batch_032: screening...
+Extracted 50 rows
+[2026-05-27 08:13:41]   OK batch_032: 50 rows
+[2026-05-27 08:14:11]   Sonnet batch_033: screening...
+Extracted 50 rows
+[2026-05-27 08:21:10]   OK batch_033: 50 rows
+[2026-05-27 08:21:40]   Sonnet batch_034: screening...
+Extracted 50 rows
+[2026-05-27 08:27:25]   WARNING batch_034: input=52 output=50 — rows missing
+[2026-05-27 08:27:55]   Sonnet batch_035: screening...
+Extracted 50 rows
+[2026-05-27 08:33:04]   WARNING batch_035: input=51 output=50 — rows missing
+[2026-05-27 08:33:34]   Sonnet batch_036: screening...
+Extracted 50 rows
+[2026-05-27 08:38:18]   OK batch_036: 50 rows
+[2026-05-27 08:38:48]   Sonnet batch_037: screening...
+Extracted 50 rows
+[2026-05-27 08:42:59]   OK batch_037: 50 rows
+[2026-05-27 08:43:29]   Sonnet batch_038: screening...
+Extracted 50 rows
+[2026-05-27 08:47:52]   WARNING batch_038: input=54 output=50 — rows missing
+[2026-05-27 08:48:22]   Sonnet batch_039: screening...
+Extracted 50 rows
+[2026-05-27 08:51:53]   WARNING batch_039: input=52 output=50 — rows missing
+[2026-05-27 08:52:23]   Sonnet batch_040: screening...
+Extracted 50 rows
+[2026-05-27 08:58:42]   WARNING batch_040: input=52 output=50 — rows missing
+[2026-05-27 08:59:12]   Sonnet batch_041: screening...
+Extracted 50 rows
+[2026-05-27 09:03:52]   OK batch_041: 50 rows
+[2026-05-27 09:04:22]   Sonnet batch_042: screening...
+Extracted 50 rows
+[2026-05-27 09:08:26]   WARNING batch_042: input=52 output=50 — rows missing
+[2026-05-27 09:08:56]   Sonnet batch_043: screening...
+Extracted 50 rows
+[2026-05-27 09:14:43]   OK batch_043: 50 rows
+[2026-05-27 09:15:13]   Sonnet batch_044: screening...
+Extracted 50 rows
+[2026-05-27 09:20:19]   OK batch_044: 50 rows
+[2026-05-27 09:20:49]   Sonnet batch_045: screening...
+Extracted 50 rows
+[2026-05-27 09:26:15]   OK batch_045: 50 rows
+[2026-05-27 09:26:45]   Sonnet batch_046: screening...
+Extracted 50 rows
+[2026-05-27 09:31:14]   OK batch_046: 50 rows
+[2026-05-27 09:31:44]   Sonnet batch_047: screening...
+Extracted 50 rows
+[2026-05-27 09:35:41]   WARNING batch_047: input=52 output=50 — rows missing
+[2026-05-27 09:36:11]   Sonnet batch_048: screening...
+Extracted 50 rows
+[2026-05-27 09:40:42]   WARNING batch_048: input=51 output=50 — rows missing
+[2026-05-27 09:41:12]   Sonnet batch_049: screening...
+Extracted 50 rows
+[2026-05-27 09:45:31]   OK batch_049: 50 rows
+[2026-05-27 09:46:01]   Sonnet batch_050: screening...
+Extracted 50 rows
+[2026-05-27 09:52:08]   WARNING batch_050: input=54 output=50 — rows missing
+[2026-05-27 09:52:38]   Sonnet batch_051: screening...
+Extracted 50 rows
+[2026-05-27 09:58:12]   OK batch_051: 50 rows
+[2026-05-27 09:58:42]   Sonnet batch_052: screening...
+Extracted 50 rows
+[2026-05-27 10:06:19]   WARNING batch_052: input=53 output=50 — rows missing
+[2026-05-27 10:06:49]   Sonnet batch_053: screening...
+Extracted 50 rows
+[2026-05-27 10:13:58]   OK batch_053: 50 rows
+[2026-05-27 10:14:28]   Sonnet batch_054: screening...
+Extracted 50 rows
+[2026-05-27 10:20:25]   WARNING batch_054: input=51 output=50 — rows missing
+[2026-05-27 10:20:55]   Sonnet batch_055: screening...
+Extracted 50 rows
+[2026-05-27 10:25:05]   OK batch_055: 50 rows
+[2026-05-27 10:25:35]   Sonnet batch_056: screening...
+Extracted 50 rows
+[2026-05-27 10:29:53]   OK batch_056: 50 rows
+[2026-05-27 10:30:23]   Sonnet batch_057: screening...
+Extracted 50 rows
+[2026-05-27 10:34:31]   OK batch_057: 50 rows
+[2026-05-27 10:35:01]   Sonnet batch_058: screening...
+Extracted 50 rows
+[2026-05-27 10:40:07]   OK batch_058: 50 rows
+[2026-05-27 10:40:37]   Sonnet batch_059: screening...
+Extracted 50 rows
+[2026-05-27 10:45:56]   OK batch_059: 50 rows
+[2026-05-27 10:46:26]   Sonnet batch_060: screening...
+Extracted 50 rows
+[2026-05-27 10:52:33]   WARNING batch_060: input=54 output=50 — rows missing
+[2026-05-27 10:53:03]   Sonnet batch_061: screening...
+Extracted 50 rows
+[2026-05-27 10:56:38]   OK batch_061: 50 rows
+[2026-05-27 10:57:08]   Sonnet batch_062: screening...
+Extracted 50 rows
+[2026-05-27 11:03:13]   OK batch_062: 50 rows
+[2026-05-27 11:03:43]   Sonnet batch_063: screening...
+Extracted 50 rows
+[2026-05-27 11:09:01]   OK batch_063: 50 rows
+[2026-05-27 11:09:31]   Sonnet batch_064: screening...
+Extracted 51 rows
+[2026-05-27 11:13:18]   OK batch_064: 51 rows
+[2026-05-27 11:13:48]   Sonnet batch_065: screening...
+Extracted 50 rows
+[2026-05-27 11:19:23]   OK batch_065: 50 rows
+[2026-05-27 11:19:53]   Sonnet batch_066: screening...
+Extracted 50 rows
+[2026-05-27 11:25:11]   OK batch_066: 50 rows
+[2026-05-27 11:25:41]   Sonnet batch_067: screening...
+Extracted 50 rows
+[2026-05-27 11:33:49]   OK batch_067: 50 rows
+[2026-05-27 11:34:19]   Sonnet batch_068: screening...
+[2026-05-27 11:39:23]   FAILED batch_068: exit code 1
+[2026-05-27 11:39:53]   Sonnet batch_069: screening...
+Extracted 50 rows
+[2026-05-27 11:45:48]   OK batch_069: 50 rows
+[2026-05-27 11:46:18]   Sonnet batch_070: screening...
+Extracted 50 rows
+[2026-05-27 11:53:01]   WARNING batch_070: input=53 output=50 — rows missing
+[2026-05-27 11:53:31]   Sonnet batch_071: screening...
+Extracted 50 rows
+[2026-05-27 11:59:04]   OK batch_071: 50 rows
+[2026-05-27 11:59:34]   Sonnet batch_072: screening...
+Extracted 50 rows
+[2026-05-27 12:03:55]   OK batch_072: 50 rows
+[2026-05-27 12:04:25]   Sonnet batch_073: screening...
+Extracted 50 rows
+[2026-05-27 12:09:24]   WARNING batch_073: input=52 output=50 — rows missing
+[2026-05-27 12:09:54]   Sonnet batch_074: screening...
+Extracted 50 rows
+[2026-05-27 12:15:30]   OK batch_074: 50 rows
+[2026-05-27 12:16:00]   Sonnet batch_075: screening...
+Extracted 50 rows
+[2026-05-27 12:20:35]   OK batch_075: 50 rows
+[2026-05-27 12:21:05]   Sonnet batch_076: screening...
+Extracted 50 rows
+[2026-05-27 12:26:43]   OK batch_076: 50 rows
+[2026-05-27 12:27:13]   Sonnet batch_077: screening...
+Extracted 50 rows
+[2026-05-27 12:31:35]   OK batch_077: 50 rows
+[2026-05-27 12:32:05]   Sonnet batch_078: screening...
+Extracted 50 rows
+[2026-05-27 12:38:21]   WARNING batch_078: input=52 output=50 — rows missing
+[2026-05-27 12:38:51]   Sonnet batch_079: screening...
+Extracted 50 rows
+[2026-05-27 12:43:46]   OK batch_079: 50 rows
+[2026-05-27 12:44:16]   Sonnet batch_080: screening...
+Extracted 43 rows
+[2026-05-27 12:48:01]   OK batch_080: 43 rows
+[2026-05-27 12:48:31] STEP 5: Consolidating Sonnet results...
+Traceback (most recent call last):
+  File "<string>", line 27, in <module>
+  File "/usr/lib/python3.12/collections/__init__.py", line 607, in __init__
+    self.update(iterable, **kwds)
+  File "/usr/lib/python3.12/collections/__init__.py", line 699, in update
+    _count_elements(self, iterable)
+  File "<string>", line 27, in <genexpr>
+AttributeError: 'NoneType' object has no attribute 'lower'
+Consolidated 3945 Sonnet decisions
+nohup: ignoring input
+[2026-05-27 20:22:48] === Pass 2 Orchestration ===
+[2026-05-27 20:22:48] Workdir: /home/scott/slr/phase2
+[2026-05-27 20:22:48] Checkpoint: /home/scott/slr/phase2/checkpoint.json
+[2026-05-27 20:22:48] STEP 1: Export already done — skipping
+[2026-05-27 20:22:48] STEP 2: Randomization already done — skipping
+[2026-05-27 20:22:48] STEP 3: Sonnet batch split already done — skipping
+[2026-05-27 20:22:48] STEP 4: Running Sonnet screening...
+[2026-05-27 20:22:48]   Sonnet batch_001: already done — skipping
+[2026-05-27 20:22:48]   Sonnet batch_001_out: screening...
+ERROR: no CSV header found
+nohup: ignoring input
+[2026-05-27 20:31:52] === Pass 2 Orchestration ===
+[2026-05-27 20:31:52] Workdir: /home/scott/slr/phase2
+[2026-05-27 20:31:52] Checkpoint: /home/scott/slr/phase2/checkpoint.json
+[2026-05-27 20:31:52] STEP 1: Export already done — skipping
+[2026-05-27 20:31:52] STEP 2: Randomization already done — skipping
+[2026-05-27 20:31:52] STEP 3: Sonnet batch split already done — skipping
+[2026-05-27 20:31:52] STEP 4: Running Sonnet screening...
+[2026-05-27 20:31:52]   Sonnet batch_001: already done — skipping
+[2026-05-27 20:31:52]   Sonnet batch_001_out: screening...
+ERROR: no CSV header found
+nohup: ignoring input
+[2026-05-27 20:32:43] === Pass 2 Orchestration ===
+[2026-05-27 20:32:43] Workdir: /home/scott/slr/phase2
+[2026-05-27 20:32:43] Checkpoint: /home/scott/slr/phase2/checkpoint.json
+[2026-05-27 20:32:43] STEP 1: Export already done — skipping
+[2026-05-27 20:32:43] STEP 2: Randomization already done — skipping
+[2026-05-27 20:32:43] STEP 3: Sonnet batch split already done — skipping
+[2026-05-27 20:32:43] STEP 4: Running Sonnet screening...
+[2026-05-27 20:32:43]   Sonnet batch_001: already done — skipping
+[2026-05-27 20:32:43]   Sonnet batch_001_out: screening...
+nohup: ignoring input
+[2026-05-27 20:32:55] === Pass 2 Orchestration ===
+[2026-05-27 20:32:55] Workdir: /home/scott/slr/phase2
+[2026-05-27 20:32:55] Checkpoint: /home/scott/slr/phase2/checkpoint.json
+[2026-05-27 20:32:55] STEP 1: Export already done — skipping
+[2026-05-27 20:32:55] STEP 2: Randomization already done — skipping
+[2026-05-27 20:32:55] STEP 3: Sonnet batch split already done — skipping
+[2026-05-27 20:32:55] STEP 4: Running Sonnet screening...
+[2026-05-27 20:32:55]   Sonnet batch_001: already done — skipping
+[2026-05-27 20:32:55]   Sonnet batch_001_out: screening...
+ERROR: no CSV header found
+ERROR: no CSV header found
+nohup: ignoring input
+[2026-05-27 20:33:30] === Pass 2 Orchestration ===
+[2026-05-27 20:33:30] Workdir: /home/scott/slr/phase2
+[2026-05-27 20:33:30] Checkpoint: /home/scott/slr/phase2/checkpoint.json
+[2026-05-27 20:33:30] STEP 1: Export already done — skipping
+[2026-05-27 20:33:30] STEP 2: Randomization already done — skipping
+[2026-05-27 20:33:30] STEP 3: Sonnet batch split already done — skipping
+[2026-05-27 20:33:30] STEP 4: Running Sonnet screening...
+[2026-05-27 20:33:30]   Sonnet batch_001: already done — skipping
+[2026-05-27 20:33:30]   Sonnet batch_002: already done — skipping
+[2026-05-27 20:33:30]   Sonnet batch_003: already done — skipping
+[2026-05-27 20:33:30]   Sonnet batch_004: already done — skipping
+[2026-05-27 20:33:30]   Sonnet batch_005: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_006: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_007: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_008: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_009: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_010: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_011: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_012: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_013: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_014: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_015: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_016: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_017: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_018: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_019: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_020: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_021: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_022: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_023: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_024: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_025: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_026: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_027: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_028: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_029: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_030: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_031: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_032: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_033: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_034: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_035: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_036: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_037: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_038: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_039: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_040: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_041: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_042: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_043: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_044: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_045: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_046: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_047: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_048: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_049: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_050: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_051: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_052: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_053: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_054: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_055: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_056: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_057: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_058: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_059: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_060: already done — skipping
+[2026-05-27 20:33:31]   Sonnet batch_061: already done — skipping
+[2026-05-27 20:33:32]   Sonnet batch_062: already done — skipping
+[2026-05-27 20:33:32]   Sonnet batch_063: already done — skipping
+[2026-05-27 20:33:32]   Sonnet batch_064: already done — skipping
+[2026-05-27 20:33:32]   Sonnet batch_065: already done — skipping
+[2026-05-27 20:33:32]   Sonnet batch_066: already done — skipping
+[2026-05-27 20:33:32]   Sonnet batch_067: already done — skipping
+[2026-05-27 20:33:32]   Sonnet batch_068: screening...
+Extracted 50 rows
+[2026-05-27 20:37:43]   WARNING batch_068: input=68 output=50 — rows missing
+[2026-05-27 20:38:13]   Sonnet batch_069: already done — skipping
+[2026-05-27 20:38:13]   Sonnet batch_070: already done — skipping
+[2026-05-27 20:38:13]   Sonnet batch_071: already done — skipping
+[2026-05-27 20:38:13]   Sonnet batch_072: already done — skipping
+[2026-05-27 20:38:13]   Sonnet batch_073: already done — skipping
+[2026-05-27 20:38:13]   Sonnet batch_074: already done — skipping
+[2026-05-27 20:38:13]   Sonnet batch_075: already done — skipping
+[2026-05-27 20:38:13]   Sonnet batch_076: already done — skipping
+[2026-05-27 20:38:13]   Sonnet batch_077: already done — skipping
+[2026-05-27 20:38:14]   Sonnet batch_078: already done — skipping
+[2026-05-27 20:38:14]   Sonnet batch_079: already done — skipping
+[2026-05-27 20:38:14]   Sonnet batch_080: already done — skipping
+[2026-05-27 20:38:14] STEP 5: Consolidating Sonnet results...
+Consolidated 3995 Sonnet decisions
+Decisions: {'discard': 2698, 'keep': 884, 'maybe': 411, '': 2}
+Confidence: {'high': 2768, 'medium': 1127, 'low': 98, '': 2}
+[2026-05-27 20:38:14] STEP 6: Routing Sonnet results...
+Source queue breakdown: {'keep_queue': 1959, 'maybe_queue': 2034, '?': 2}
+Routed to Opus:         456
+Direct apply:           3466
+Promoted maybe (phase1-maybe + sonnet-keep): 73
+[2026-05-27 20:38:14] STEP 7: Splitting 466 items into 20-row Opus batches...
+Input:      /home/scott/slr/phase2/opus_input.csv
+Output dir: /home/scott/slr/phase2/batches/opus
+Rows:       456
+Batches:    23 (size 20)
+
+  /home/scott/slr/phase2/batches/opus/batch_001.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_002.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_003.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_004.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_005.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_006.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_007.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_008.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_009.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_010.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_011.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_012.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_013.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_014.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_015.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_016.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_017.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_018.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_019.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_020.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_021.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_022.csv  (20 rows)
+  /home/scott/slr/phase2/batches/opus/batch_023.csv  (16 rows)
+
+Done. 23 files written.
+[2026-05-27 20:38:14]   Created 23 Opus batches
+[2026-05-27 20:38:14] STEP 8: Running Opus review...
+[2026-05-27 20:38:14]   Opus batch_001: reviewing...
+Extracted 21 rows
+[2026-05-27 20:39:24]   OK batch_001: 21 rows
+[2026-05-27 20:40:24]   Opus batch_002: reviewing...
+Extracted 21 rows
+[2026-05-27 20:41:34]   OK batch_002: 21 rows
+[2026-05-27 20:42:34]   Opus batch_003: reviewing...
+Extracted 21 rows
+[2026-05-27 20:43:59]   OK batch_003: 21 rows
+[2026-05-27 20:44:59]   Opus batch_004: reviewing...
+Extracted 21 rows
+[2026-05-27 20:46:41]   OK batch_004: 21 rows
+[2026-05-27 20:47:41]   Opus batch_005: reviewing...
+Extracted 21 rows
+[2026-05-27 20:49:14]   OK batch_005: 21 rows
+[2026-05-27 20:50:14]   Opus batch_006: reviewing...
+Extracted 21 rows
+[2026-05-27 20:51:39]   OK batch_006: 21 rows
+[2026-05-27 20:52:39]   Opus batch_007: reviewing...
+Extracted 21 rows
+[2026-05-27 20:53:54]   WARNING batch_007: input=22 output=21
+[2026-05-27 20:54:54]   Opus batch_008: reviewing...
+Extracted 21 rows
+[2026-05-27 20:56:31]   OK batch_008: 21 rows
+[2026-05-27 20:57:31]   Opus batch_009: reviewing...
+Extracted 19 rows
+[2026-05-27 20:58:56]   WARNING batch_009: input=20 output=19
+[2026-05-27 20:59:56]   Opus batch_010: reviewing...
+Extracted 21 rows
+[2026-05-27 21:01:12]   OK batch_010: 21 rows
+[2026-05-27 21:02:12]   Opus batch_011: reviewing...
+Extracted 21 rows
+[2026-05-27 21:03:41]   OK batch_011: 21 rows
+[2026-05-27 21:04:41]   Opus batch_012: reviewing...
+Extracted 21 rows
+[2026-05-27 21:07:37]   OK batch_012: 21 rows
+[2026-05-27 21:08:37]   Opus batch_013: reviewing...
+Extracted 21 rows
+[2026-05-27 21:09:52]   OK batch_013: 21 rows
+[2026-05-27 21:10:52]   Opus batch_014: reviewing...
+Extracted 21 rows
+[2026-05-27 21:11:56]   WARNING batch_014: input=22 output=21
+[2026-05-27 21:12:56]   Opus batch_015: reviewing...
+Extracted 21 rows
+[2026-05-27 21:14:49]   WARNING batch_015: input=23 output=21
+[2026-05-27 21:15:49]   Opus batch_016: reviewing...
+Extracted 21 rows
+[2026-05-27 21:17:18]   OK batch_016: 21 rows
+[2026-05-27 21:18:18]   Opus batch_017: reviewing...
+Extracted 21 rows
+[2026-05-27 21:19:28]   OK batch_017: 21 rows
+[2026-05-27 21:20:28]   Opus batch_018: reviewing...
+Extracted 21 rows
+[2026-05-27 21:22:07]   OK batch_018: 21 rows
+[2026-05-27 21:23:07]   Opus batch_019: reviewing...
+Extracted 21 rows
+[2026-05-27 21:24:51]   OK batch_019: 21 rows
+[2026-05-27 21:25:51]   Opus batch_020: reviewing...
+Extracted 21 rows
+[2026-05-27 21:27:43]   OK batch_020: 21 rows
+[2026-05-27 21:28:43]   Opus batch_021: reviewing...
+Extracted 21 rows
+[2026-05-27 21:30:00]   OK batch_021: 21 rows
+[2026-05-27 21:31:00]   Opus batch_022: reviewing...
+Extracted 21 rows
+[2026-05-27 21:32:22]   WARNING batch_022: input=22 output=21
+[2026-05-27 21:33:22]   Opus batch_023: reviewing...
+Extracted 17 rows
+[2026-05-27 21:35:20]   OK batch_023: 17 rows
+[2026-05-27 21:36:20] STEP 9: Consolidating Opus results...
+Traceback (most recent call last):
+  File "<string>", line 24, in <module>
+  File "/usr/lib/python3.12/collections/__init__.py", line 607, in __init__
+    self.update(iterable, **kwds)
+  File "/usr/lib/python3.12/collections/__init__.py", line 699, in update
+    _count_elements(self, iterable)
+  File "<string>", line 24, in <genexpr>
+AttributeError: 'NoneType' object has no attribute 'lower'
+Consolidated 477 Opus decisions
+Decisions: {'keep': 191, 'discard': 263, '': 23}
+nohup: ignoring input
+[2026-05-28 00:34:10] === Pass 2 Orchestration ===
+[2026-05-28 00:34:10] Workdir: /home/scott/slr/phase2
+[2026-05-28 00:34:10] Checkpoint: /home/scott/slr/phase2/checkpoint.json
+[2026-05-28 00:34:10] STEP 1: Export already done — skipping
+[2026-05-28 00:34:10] STEP 2: Randomization already done — skipping
+[2026-05-28 00:34:10] STEP 3: Sonnet batch split already done — skipping
+[2026-05-28 00:34:10] STEP 4: Running Sonnet screening...
+[2026-05-28 00:34:10]   Sonnet batch_001: already done — skipping
+[2026-05-28 00:34:10]   Sonnet batch_001_out: screening...
+ERROR: no CSV header found

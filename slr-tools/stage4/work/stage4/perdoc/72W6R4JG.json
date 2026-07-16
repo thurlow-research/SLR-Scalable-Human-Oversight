@@ -1,0 +1,62 @@
+{
+  "item_key": "72W6R4JG",
+  "citation": "T\u00f6pfer 2026",
+  "evidence_type": [
+    "empirical",
+    "system-tool",
+    "case-study",
+    "framework-model"
+  ],
+  "problem_statement": "How to reliably verify LLM-generated code (adaptation managers in Collective Adaptive Systems) via automated feedback loops when the code is never manually inspected because the specifier is a domain expert who cannot read code.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "functional-misbehavior",
+    "quality",
+    "correctness",
+    "runtime-failure",
+    "architectural-invariant-violation",
+    "specification-mismatch"
+  ],
+  "insufficiency_evidence": "Metrics-only feedback often stalls: it indicates failure but does not specify which part of the multi-step strategy is broken; a vibe-coded AM 'might compile, run, and still systematically fail'",
+  "solution_mechanisms": [
+    "automated feedback-loop verification without human inspection",
+    "runtime constraint verifier as automated reviewer",
+    "layered constraints (generic + functional)",
+    "temporal-logic constraints (FCL) yielding diagnostic counterexamples",
+    "counterexample-to-feedback report for LLM repair",
+    "multi-run test suite over varied seeds/initial states"
+  ],
+  "mechanism_keywords": [
+    "automated-verification",
+    "runtime-monitoring",
+    "temporal-logic",
+    "constraint-verification",
+    "counterexample-feedback",
+    "layered-constraints",
+    "requirements-as-tests",
+    "feedback-loop",
+    "spec-driven",
+    "automated-reviewer",
+    "test-suite-coverage"
+  ],
+  "oversight_locus": [
+    "runtime",
+    "generation-time",
+    "code-review"
+  ],
+  "human_role": "none",
+  "key_constructs": [
+    "Functional Constraints Logic (FCL)",
+    "vibe coding",
+    "adaptation manager",
+    "ensemble resolution",
+    "combined adaptation+feedback architecture",
+    "strategy-shaped oracle",
+    "windowed temporal operator",
+    "Dragon Hunt CAS case study"
+  ],
+  "governance_refs": [],
+  "scope_fit": "solution",
+  "notes": null,
+  "_truncated": false
+}

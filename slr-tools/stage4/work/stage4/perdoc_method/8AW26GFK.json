@@ -1,0 +1,15 @@
+{
+  "item_key": "8AW26GFK",
+  "methods": [
+    "conceptual/position",
+    "conceptual/framework",
+    "tool-survey",
+    "illustrative-case-study/demonstration",
+    "prototype/tool-build"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position",
+  "notes": "Primarily a position paper: proposes five mechanisms, six prompt-architecture coupling patterns, and a three-layer governance framework, grounded in a survey of six agentic coding tools and framework/provider documentation. It includes a small empirical demonstration (three independently-generated chatbot variants built with Claude Code, with LoC/file/component counts recorded in Table I), but the authors explicitly frame this as 'illustration, not experimental proof' (each prompt run once, one tool, one LLM). No human participants.",
+  "citation": "Konrad 2026"
+}

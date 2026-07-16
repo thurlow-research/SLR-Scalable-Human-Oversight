@@ -1,0 +1,51 @@
+{
+  "item_key": "UDVHQ5HR",
+  "citation": "Jin 2025",
+  "evidence_type": [
+    "empirical",
+    "benchmark",
+    "controlled-experiment"
+  ],
+  "problem_statement": "The paper examines whether LLMs can reliably verify that code satisfies its natural-language requirements when used as automated code-review assistants or LLM judges, and shows they systematically misjudge correct code as non-conforming.",
+  "magnitude_evidence": "On HumanEval, GPT-4o's RCRR declined from 52.4% with a direct prompt to merely 11.0% with the full three-step prompt (a 41.4 percentage-point drop); overall RCRR across models ranged only from 52% to 78%.",
+  "risk_types": [
+    "false-negatives",
+    "over-correction bias",
+    "unreliable LLM-as-judge",
+    "hallucinated defects",
+    "self-evaluation bias",
+    "prompt sensitivity"
+  ],
+  "insufficiency_evidence": "\"LLMs frequently misclassify correct code implementations as either 'not satisfying requirements' or containing potential defects\"; more complex prompting (explanations + proposed corrections) \"leads to higher misjudgment rate\", with GPT-4o dropping to 11.0% RCRR.",
+  "solution_mechanisms": [
+    "Two-Phase Reflective Prompt (extract functional obligations, then audit code against each)",
+    "Behavioral Comparison Prompt (summarize spec behavior and code behavior separately, then compare point-by-point)",
+    "eliminate mandatory fix step / separate requirement comprehension from code auditing"
+  ],
+  "mechanism_keywords": [
+    "llm-as-judge",
+    "prompt-engineering",
+    "conformance-check",
+    "contract-based-review",
+    "behavioral-comparison",
+    "requirement-decomposition",
+    "chain-of-thought",
+    "bias-mitigation"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "generation-time",
+    "verification"
+  ],
+  "human_role": "none",
+  "key_constructs": [
+    "over-correction bias",
+    "Requirement-Conformance Recognition Rate (RCRR)",
+    "Two-Phase Reflective Prompt",
+    "Behavioral Comparison Prompt"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

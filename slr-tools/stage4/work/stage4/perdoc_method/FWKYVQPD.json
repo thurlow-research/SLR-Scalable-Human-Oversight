@@ -1,0 +1,15 @@
+{
+  "item_key": "FWKYVQPD",
+  "methods": [
+    "controlled-experiment",
+    "survey/questionnaire",
+    "interviews",
+    "qualitative-analysis",
+    "conceptual/position/framework"
+  ],
+  "empirical": true,
+  "human_subjects": true,
+  "primary_hint": "controlled-experiment",
+  "notes": "Self-described mixed-methods quasi-experiment: within-subjects comparison of 30 participants across three coding conditions with logged performance/static-analysis/security metrics, plus SUS surveys and semi-structured interviews analyzed via thematic coding; also proposes a three-pillar framework. Reported results are thin and possibly illustrative, but the stated design is an empirical human-subjects experiment.",
+  "citation": "Irfan Samsyudin 2025"
+}

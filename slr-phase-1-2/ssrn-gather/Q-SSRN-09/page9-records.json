@@ -1,0 +1,841 @@
+{
+  "count": 50,
+  "total": "844",
+  "page": "9",
+  "records": [
+    {
+      "abstractId": "5474690",
+      "title": "Why Boards Are Asking for AI Visibility Audits: From Marketing Risk to Governance Imperative",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5474690",
+      "authors": [
+        "Timothy de Rosen"
+      ],
+      "affiliations": [],
+      "pages": 4,
+      "posted": "03 Oct 2025",
+      "snippet": "Generative AI assistants such as ChatGPT, Gemini, Claude, and Perplexity have become the new front door to information and commerce. / Boards are beginning to treat AI visibility as a strategic risk category on par with cybersecurity, compliance, and ESG. / Search, Large Language Models, Digital Visibility, Generative Engine Optimization, AI Visibility Optimization, AIVO Standard, SEO, Information Retrieval, Governance",
+      "downloads": 48
+    },
+    {
+      "abstractId": "5471186",
+      "title": "How Enterprises can Audit Their AI Visibility: A PSOS™-Based Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5471186",
+      "authors": [
+        "Timothy de Rosen"
+      ],
+      "affiliations": [],
+      "pages": 4,
+      "posted": "02 Oct 2025",
+      "snippet": "As generative AI systems such as ChatGPT, Gemini, and Perplexity become the first point of discovery for consumers, enterprise visibility within these / models is emerging as a critical determinant of brand equity, market share, and governance readiness.",
+      "downloads": 34
+    },
+    {
+      "abstractId": "5469446",
+      "title": "Framework for Government Policy on Agentic and Generative AI in Healthcare: Governance, Regulation, and Risk Management of Open-Source and Proprietary Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5469446",
+      "authors": [
+        "Satyadhar Joshi"
+      ],
+      "affiliations": [
+        "Bar-Ilan University"
+      ],
+      "pages": 24,
+      "posted": "01 Oct 2025",
+      "snippet": "We analyze the technical capabilities, implementation challenges, and governance requirements of both AI paradigms through a systematic examination of / To address these challenges, we propose a tiered riskmanagement and governance framework that synthesizes the strengths of both open and closed-source / Artificial Intelligence, Healthcare, Open-Source AI, Proprietary AI, Medical Diagnostics, Data Privacy, Clinical Decision Support, Agentic AI, Generative / AI, Risk Management, AI Governance, Health Policy, AI Ethics, Healthcare Implementation",
+      "downloads": 169
+    },
+    {
+      "abstractId": "5465334",
+      "title": "Risk Reduction at Scale: Economic Impacts of Automated Identity Governance in Cloud Enterprises Amid Agentic AI Advancements",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5465334",
+      "authors": [
+        "Samarth Rao"
+      ],
+      "affiliations": [],
+      "pages": 0,
+      "posted": "30 Sep 2025",
+      "snippet": "This article explores the economic and risk-reduction benefits of automated identity governance in complex, cloud-first environments. / automation in identity lifecycle management—using technologies like SailPoint, Okta, and Azure Active Directory—enhances security posture, reduces compliance risk",
+      "downloads": 0
+    },
+    {
+      "abstractId": "5468227",
+      "title": "A Leading Large Language Model Confessed: Twice!”. The Core Flaw of All LLMs and Our Folly in Blindly Trusting Them",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5468227",
+      "authors": [
+        "William C. Houze"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 44,
+      "posted": "30 Sep 2025",
+      "snippet": "The demonstration begins with a first “confession” from the LLM Claude after an inconsistent evaluation, unfolding through meta-analytical layers and an / In a spontaneous exchange, Claude offers a second, more damning confession, identifying its own critical reasoning as \"pure confabulation\" driven by user / Literacy, AI Reliability, AI Trust, Algorithmic Chameleon, Artificial General Intelligence (AGI), Business Model, Confabulation, Core Flaw, Corporate Liability",
+      "downloads": 46
+    },
+    {
+      "abstractId": "5547514",
+      "title": "COTVD: A Function-Level Vulnerability Detection Framework Using Chain-of-Thought Reasoning with Large Language Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5547514",
+      "authors": [
+        "Yinan Chen",
+        "Xiangping Chen",
+        "Yuan Huang",
+        "Changlin Yang",
+        "Lei Yun"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 31,
+      "posted": "30 Sep 2025",
+      "snippet": "CoTVD was evaluated on multiple LLMs, including GPT-4o-128K, GPT-3.5-Turbo, Gemini-1.5-Pro, Claude-3.5-Sonnet, Llama-3.1-405B, Qwen2-72B-Instruct-T, and / Vulnerability Detection, Large language models, Chain of Thought, Security Risk Analysis",
+      "downloads": 48
+    },
+    {
+      "abstractId": "5541138",
+      "title": "Between Prohibition and Practice: Institutional AI Policy Contradictions",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5541138",
+      "authors": [
+        "Russell Bell"
+      ],
+      "affiliations": [
+        "Independent Scholar"
+      ],
+      "pages": 6,
+      "posted": "29 Sep 2025",
+      "snippet": "We argue that current governance frameworks may create professional preparation challenges for graduates entering AI-integrated career environments. / The study concludes that effective AI governance requires institutional alignment between educational practices, assessment validity, and professional / Institutional Analysis, Educational Technology, Professional Preparation, mixed methods research, policy implementation, educational assessment, generative AI, ChatGPT",
+      "downloads": 77
+    },
+    {
+      "abstractId": "5533921",
+      "title": "Is ChatGPT a Boon or a Bane for Learning? Experimental Evidence Across Task Formats and Chatbot Designs",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5533921",
+      "authors": [
+        "Andy Tao Li",
+        "De Liu",
+        "Teng Ye"
+      ],
+      "affiliations": [
+        "School of Management, University of Science and Technology of China",
+        "University of Minnesota - Twin Cities - Carlson School of Management",
+        "University of Minnesota - Twin Cities"
+      ],
+      "pages": 46,
+      "posted": "27 Sep 2025",
+      "snippet": "In contrast, students provided with the guided-discovery ChatGPT scored 9.23% higher on exams and outperformed the standard ChatGPT on both selected-response / recognizing the advantages of the guideddiscovery ChatGPT, highlighting the risk of overreliance on standard LLM chatbots.",
+      "downloads": 228
+    },
+    {
+      "abstractId": "5453614",
+      "title": "The Visibility Gap in AI: From Mentions to Occupancy",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5453614",
+      "authors": [
+        "Timothy de Rosen"
+      ],
+      "affiliations": [],
+      "pages": 6,
+      "posted": "24 Sep 2025",
+      "snippet": "AI assistants such as ChatGPT, Gemini, Claude, Perplexity, and Grok are fast becoming the primary interface for discovery and decision-making. / This paper introduces the Prompt-Space Occupancy Score (PSOS™): a governance-ready KPI that quantifies brand visibility across three dimensions—occupancy",
+      "downloads": 37
+    },
+    {
+      "abstractId": "5524419",
+      "title": "Words That Mean Change: Paradoxical Thinking and Eco-Efficiency in the Automotive Sector",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5524419",
+      "authors": [
+        "Mauricio Marrone",
+        "Frank Figge"
+      ],
+      "affiliations": [
+        "Macquarie University, Macquarie Business School",
+        "ESCP Business School"
+      ],
+      "pages": 16,
+      "posted": "24 Sep 2025",
+      "snippet": "Using ChatGPT to generate a lexicon of paradoxical terms, we analyzed sustainability reports from the automotive industry spanning 2002 to 2022, testing / Specifically, we find that cautious, conditional, and risk-aware language correlates with higher eco-efficiency, while growth-focused and innovationoriented",
+      "downloads": 10
+    },
+    {
+      "abstractId": "5442494",
+      "title": "The Effect of AI Tools on Modern Software Development for Frontend Engineering: An Empirical Analysis",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5442494",
+      "authors": [
+        "Soumyajit Sarkar"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 4,
+      "posted": "23 Sep 2025",
+      "snippet": "Our findings indicate that successful AI tool adoption requires robust governance frameworks, enhanced security practices, and fundamental shifts in developer / Artificial Intelligence, Software Engineering, Frontend Development, Code Generation, Developer Productivity, Security Vulnerabilities, GitHub Copilot,",
+      "downloads": 121
+    },
+    {
+      "abstractId": "5451254",
+      "title": "Agentic AI vs. Generative AI: A Combined Approach for Financial Compliance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5451254",
+      "authors": [
+        "Vineet Jain"
+      ],
+      "affiliations": [],
+      "pages": 6,
+      "posted": "23 Sep 2025",
+      "snippet": "This article evaluates the combined use of Agentic AI and Generative AI in managing financial compliance. / The introduction of Agentic AI works with goalorientation and autonomous systems to empower the financial compliance needs. / Agentic AI, Generative AI, Regulatory Technology, Anti-Money laundering, Auditability, AI in Finance, Explainability, Know your Customer, Autonomous Systems",
+      "downloads": 2
+    },
+    {
+      "abstractId": "5520874",
+      "title": "Local Externalities of Generative AI Infrastructure: Evidence from Power Outages",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5520874",
+      "authors": [
+        "Sen Li",
+        "Chunyu Guo"
+      ],
+      "affiliations": [
+        "Bentley University",
+        "Arthur D. Little Inc. - Hult International Business School"
+      ],
+      "pages": 28,
+      "posted": "23 Sep 2025",
+      "snippet": "Using county-level data from the United States and a Difference-in-Differences design around the release of ChatGPT, we compare counties that host data / Policy should extend beyond algorithmic governance to incorporate infrastructure planning, resilience investments, and equitable cost-sharing mechanisms / Generative AI, data center, AI governance, infrastructure externalities, electricity reliability, difference-in-differences",
+      "downloads": 117
+    },
+    {
+      "abstractId": "5511060",
+      "title": "Framework for Government Policy on Agentic and Generative AI: Governance, Regulation, and Risk Management",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5511060",
+      "authors": [
+        "Satyadhar Joshi"
+      ],
+      "affiliations": [
+        "Bar-Ilan University"
+      ],
+      "pages": 22,
+      "posted": "23 Sep 2025",
+      "snippet": "Key pillars include Governance by Design, automated risk detection, and human oversight to mitigate both technical and societal risks. / Key pillars include Governance by Design, automated risk detection, and human oversight to mitigate both technical and societal risks. / Agentic AI, AI Governance, AI Risk Management, Autonomous Systems, AI Ethics, AI Safety, Regulatory Compliance, Multi-Agent Systems",
+      "downloads": 384
+    },
+    {
+      "abstractId": "5437198",
+      "title": "Bitcoin - Quo Vadis",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5437198",
+      "authors": [
+        "Ludo Bourguignon"
+      ],
+      "affiliations": [],
+      "pages": 51,
+      "posted": "22 Sep 2025",
+      "snippet": "I was intrigued with the increase in the value of Bitcoin between January 2024 and August 2025 and started to look for reasons with the help of ChatGPT / It explains Bitcoin's core principles, transaction mechanisms, and governance model.",
+      "downloads": 48
+    },
+    {
+      "abstractId": "5510560",
+      "title": "Algorithmic Ethics in an Era of Agentic AI Advocacy: An Analysis of AI's Impact on the Model Rules of Professional Conduct and the Model Code of Judicial Conduct",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5510560",
+      "authors": [
+        "Michael D. Murray"
+      ],
+      "affiliations": [
+        "University of Kentucky - J. David Rosenberg College of Law"
+      ],
+      "pages": 63,
+      "posted": "22 Sep 2025",
+      "snippet": "AI, which performs tasks autonomously and challenges professional judgment and autonomy. / Agentic AI introduces even deeper questions, pushing the boundaries of delegation, unauthorized practice of law, and the very structure of the / Artificial Intelligence (AI) Generative AI (GenAI) Agentic AI Ethics Competence Confidentiality Candor Supervision Impartiality Bias / Autonomy Delegation Observability Traceability Professional Judgment Transparency Self-Regulation, AI, Generative AI, GenAI, Agentic AI, Ethics, Professional",
+      "downloads": 171
+    },
+    {
+      "abstractId": "5490048",
+      "title": "Agentic Artificial Intelligence as a New Frontier in Information Systems: Promise, Peril, and Research Opportunities",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5490048",
+      "authors": [
+        "Naveen Kumar",
+        "Xiahua Wei",
+        "Han Zhang"
+      ],
+      "affiliations": [
+        "University of Washington, Bothell School of Business"
+      ],
+      "pages": 0,
+      "posted": "17 Sep 2025",
+      "snippet": "This research note contributes in three ways: (1) clarifying the architectural and operational foundations of agentic AI and highlighting application domains / AI integration. / agentic AI, autonomous agents, socio-technical systems, strategic tradeoffs framework",
+      "downloads": 0
+    },
+    {
+      "abstractId": "5460214",
+      "title": "AI as Flesh, OM as Bone: Semiparametric Regression with Deep Neural Networks",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5460214",
+      "authors": [
+        "Ming Hu",
+        "Xiaotian Liu",
+        "Guohao Shen"
+      ],
+      "affiliations": [
+        "University of Toronto - Rotman School of Management",
+        "Georgia Institute of Technology",
+        "Hong Kong Polytechnic University - Department of Applied Mathematics"
+      ],
+      "pages": 53,
+      "posted": "17 Sep 2025",
+      "snippet": "In particular, we prove upper bounds on the expected excess risk and high-probability bounds on the excess risk that decrease with the sample size and / Our semiparametric framework provides a modeling foundation for OM agentic AI by supplying learned, interpretable semiparametric forms for downstream optimization",
+      "downloads": 150
+    },
+    {
+      "abstractId": "5486407",
+      "title": "AI Governance: A Necessity and Imperative",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5486407",
+      "authors": [
+        "Alex Wodi"
+      ],
+      "affiliations": [
+        "Alpha Sol LLC"
+      ],
+      "pages": 64,
+      "posted": "17 Sep 2025",
+      "snippet": "This is an excerpt from Alex Wodi’s book, AI GOVERNANCE: A NECESSITY AND IMPERATIVE (AMZ, and BN 2025). / salient issues arising from the explosion of interest and the proliferation of Artificial Intelligence (AI) products and services post the release of ChatGPT",
+      "downloads": 79
+    },
+    {
+      "abstractId": "5470126",
+      "title": "Understanding the Impacts of Generative AI Use on Children: WP2 School based Engagements",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5470126",
+      "authors": [
+        "Mhairi Aitken",
+        "Morgan Briggs",
+        "Sabeehah Mahomed"
+      ],
+      "affiliations": [
+        "The Alan Turing Institute",
+        "The Alan Turing Institute",
+        "The Alan Turing Institute"
+      ],
+      "pages": 58,
+      "posted": "17 Sep 2025",
+      "snippet": "of generative AI, they are simultaneously the group least represented in decision-making processes relating to the design, development, deployment or governance / AI, Artificial Intelligence, AI, Responsible AI, Public Engagement, Child participation, Child-centred AI, HCI, Children, Youth, Qualitative Research, ChatGPT",
+      "downloads": 121
+    },
+    {
+      "abstractId": "5474029",
+      "title": "ChatGPT-Assisted Data Analysis in Mathematics Education Research (CADAMER): A Scoping Review in the Post-Modern Scholarly Milieu",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5474029",
+      "authors": [
+        "Jay Fie Luzano"
+      ],
+      "affiliations": [
+        "Bukidnon State University"
+      ],
+      "pages": 14,
+      "posted": "17 Sep 2025",
+      "snippet": "Coding; (3) ChatGPT and Research Ethics; (4) ChatGPT in Literature Reviews; and (5) ChatGPT on the Future of Research. / Although ChatGPT streamlines data analysis, human oversight and ethical safeguards remain crucial to ensuring accuracy and academic integrity. / Chatgpt-Assisted Data, Analysis, Mathematics Education, Research, Post-Modern Scholarly, Milieu, Scoping Review",
+      "downloads": 15
+    },
+    {
+      "abstractId": "5493376",
+      "title": "Tasting with AI: A Conceptual Study on Designing Sensory Analysis and Predicting Attributes",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5493376",
+      "authors": [
+        "Abdul Hannan Bin Zulkarnain",
+        "Balázs Boncsarovszki",
+        "Dalma Radványi",
+        "Attila Gere"
+      ],
+      "affiliations": [
+        "Hungarian University of Agriculture and Life Sciences",
+        "Hungarian University of Agriculture and Life Sciences",
+        "Budapest University of Economics and Business",
+        "Hungarian University of Agriculture and Life Sciences"
+      ],
+      "pages": 17,
+      "posted": "16 Sep 2025",
+      "snippet": "Despite its advantages, human oversight remains essential to ensure accuracy and contextual relevance in AI-generated outputs. / ChatGPT efficiency and adaptability position it as a transformative tool in sensory science and gastronomy.",
+      "downloads": 84
+    },
+    {
+      "abstractId": "5493410",
+      "title": "Tasting with AI: A Conceptual Study on Designing Sensory Analysis and Predicting Attributes",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5493410",
+      "authors": [
+        "Abdul Hannan Bin Zulkarnain",
+        "Balázs Boncsarovszki",
+        "Dalma Radványi",
+        "Attila Gere"
+      ],
+      "affiliations": [
+        "Hungarian University of Agriculture and Life Sciences",
+        "Hungarian University of Agriculture and Life Sciences",
+        "Budapest University of Economics and Business",
+        "Hungarian University of Agriculture and Life Sciences"
+      ],
+      "pages": 17,
+      "posted": "16 Sep 2025",
+      "snippet": "Despite its advantages, human oversight remains essential to ensure accuracy and contextual relevance in AI-generated outputs. / ChatGPT efficiency and adaptability position it as a transformative tool in sensory science and gastronomy.",
+      "downloads": 45
+    },
+    {
+      "abstractId": "5404854",
+      "title": "AI & the Future of Finance: A Framework for the Intelligent Financial Enterprise",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5404854",
+      "authors": [
+        "Anshuman Yadav"
+      ],
+      "affiliations": [],
+      "pages": 23,
+      "posted": "16 Sep 2025",
+      "snippet": "At its core is agentic AI with persistent memory-a step change from transactional algorithms that operate in isolation. / Instead of producing one-off outputs, agentic AI absorbs an organization's financial history, decisions, and external context, using that cumulative understanding",
+      "downloads": 130
+    },
+    {
+      "abstractId": "5412536",
+      "title": "Agentic AI and Hallucinations",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5412536",
+      "authors": [
+        "Engin Iyidogan",
+        "Ali I. Ozkes"
+      ],
+      "affiliations": [
+        "SKEMA Business School - Univ Cote d'Azur",
+        "Vienna University of Economics and Business"
+      ],
+      "pages": 10,
+      "posted": "13 Sep 2025",
+      "snippet": "accuracy concerns, implying that hallucination-sensitive sectors, such as law and medicine, endogenously lead to more serious verification efforts in agentic / AI markets. / Artificial Intelligence, Hallucination Risk, Large Language Models, Agentic AI",
+      "downloads": 101
+    },
+    {
+      "abstractId": "5470726",
+      "title": "From Narratives to Action: Leveraging AI to Decode and Advance Sustainability Commitments",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5470726",
+      "authors": [
+        "Ivan Savin"
+      ],
+      "affiliations": [
+        "ESCP Business School, Madrid campus"
+      ],
+      "pages": 8,
+      "posted": "11 Sep 2025",
+      "snippet": "pledges (Nationally Determined Contributions, or NDCs) submitted under the Paris Agreement, and another examining almost 1,500 Environmental, Social, and Governance / highlight gaps between discourse and action, and proposes ways in which NLP techniques, including topic modelling and large language models (LLMs) such as ChatGPT",
+      "downloads": 60
+    },
+    {
+      "abstractId": "5435335",
+      "title": "Epistemic and Emotional Harms of Generative AI: Towards Human-Centered First Amendment",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5435335",
+      "authors": [
+        "Inyoung Cheong"
+      ],
+      "affiliations": [
+        "University of Washington - School of Law"
+      ],
+      "pages": 71,
+      "posted": "11 Sep 2025",
+      "snippet": "To mitigate these harms, regulations should mandate GenAI system designers to render opaque systems more comprehensible and accountable through risk detection / Freedom of Thought, Generative AI, Artificial Intelligence, ChatGPT, First Amendment, Large Language Models, Transparency, Compelled Speech, Cognitive",
+      "downloads": 290
+    },
+    {
+      "abstractId": "5467412",
+      "title": "Agentic AI: The Next Frontier in Autonomous Enterprise Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5467412",
+      "authors": [
+        "Daniel Völker",
+        "Marc Oberhauser"
+      ],
+      "affiliations": [
+        "ESCP Business School"
+      ],
+      "pages": 9,
+      "posted": "10 Sep 2025",
+      "snippet": "Agentic AI refers to artificial intelligence systems capable of autonomous decision-making, contextual understanding, and long-term planning. / This ESCP Impact Paper explores the technical foundations and practical applications of agentic AI, offering a clear contrast with generative models and / agentic AI, human-AI collaboration, AI architecture",
+      "downloads": 317
+    },
+    {
+      "abstractId": "5461254",
+      "title": "The AIVO 100™ -2025 Global Index of Brand Visibility Across AI Assistants Benchmarking the Decision Layer with PSOS™ (Prompt-Space Occupancy Score)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5461254",
+      "authors": [
+        "Timothy de Rosen"
+      ],
+      "affiliations": [],
+      "pages": 5,
+      "posted": "09 Sep 2025",
+      "snippet": "Anchored in the AIVO Standard™ v3.0, it introduces PSOS™ (Prompt-Space Occupancy Score)-the first governance-ready KPI designed to measure how brands surface / The AIVO 100™ quantifies visibility across six leading assistants-ChatGPT, Gemini, Claude, Perplexity, Grok, and DeepSeekcovering more than 100,000 prompts",
+      "downloads": 64
+    },
+    {
+      "abstractId": "5403661",
+      "title": "When AI Meets the Workplace: An Exploratory Investigation of Job Displacement Patterns Across Chinese and International Organizations",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5403661",
+      "authors": [
+        "Zhongyi Peng"
+      ],
+      "affiliations": [],
+      "pages": 26,
+      "posted": "09 Sep 2025",
+      "snippet": "Background: Ever since I stumbled upon ChatGPT in November 2022 and experienced its powerful capabilities, I've been curious about how AI technology will / Routine jobs involving moderate difficulty face the highest immediate risk.",
+      "downloads": 45
+    },
+    {
+      "abstractId": "5419314",
+      "title": "Human Consciousness is Not an Algorithm: A Critique of Comparing Mind and Machine",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5419314",
+      "authors": [
+        "Osama S. Qatrani"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 21,
+      "posted": "08 Sep 2025",
+      "snippet": "Since 2023, the public release of large language models such as ChatGPT, Claude, and Gemini has further reignited debates on machine awareness. / Consciousness, International Relations, Philosophy of Mind, AI Governance, Political Philosophy, Human Consciousness, Technology Policy, Digital Sovereignty",
+      "downloads": 47
+    },
+    {
+      "abstractId": "5402054",
+      "title": "Evaluating Agentic AI Systems: A Balanced Framework for Performance, Robustness, Safety and Beyond",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5402054",
+      "authors": [
+        "Manish Shukla"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 9,
+      "posted": "08 Sep 2025",
+      "snippet": "Case studies from recent industry deployments illustrate that agentic AI can yield 20-60 % productivity gains yet often omit assessments of fairness, trust / AI. / Agentic AI, Multi-Agent Systems, Evaluation Framework, Goal-Drift, Ethical AI, AI Governance",
+      "downloads": 181
+    },
+    {
+      "abstractId": "5403441",
+      "title": "Agentic AI - The Rise of Autonomous Intelligent Agents in the Era of LLMs",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5403441",
+      "authors": [
+        "Sai Teja Erukude",
+        "Suhasnadh Reddy Veluru",
+        "Viswa Chaitanya Marella"
+      ],
+      "affiliations": [
+        "Kansas State University",
+        "Kansas State University",
+        "Kansas State University"
+      ],
+      "pages": 8,
+      "posted": "08 Sep 2025",
+      "snippet": "Agentic AI refers to AI systems that autonomously set and act towards these goals over time. / This survey reviews the state of the agentic AI research area.",
+      "downloads": 169
+    },
+    {
+      "abstractId": "5445926",
+      "title": "Chatbot for Fatigued Drivers: Exploring the Use of LLM-Based Voice Assistants in Alleviating Driving Fatigue and Enhancing Performance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5445926",
+      "authors": [
+        "SHAOSHUAI HUANG",
+        "Shijun Ge",
+        "Tram Thi Minh Tran",
+        "Xinheng Song",
+        "Dapeng Wei",
+        "Sun Yuanbo",
+        "Yiwen Zhang"
+      ],
+      "affiliations": [
+        "Beijing Institute of Technology",
+        "Beijing Institute of Technology",
+        "The University of Sydney",
+        "Beijing Institute of Technology",
+        "Beijing Institute of Technology",
+        "Beijing Institute of Technology",
+        "Wuhan University of Technology"
+      ],
+      "pages": 23,
+      "posted": "05 Sep 2025",
+      "snippet": "LLM)-based voice assistants in alleviating passive driving fatigue and improving driving performance, with a focus on the \"Driver Mate\" system based on ChatGPT / -4.BackgroundDriving fatigue is recognized as a significant risk factor for road safety, particularly passive fatigue in monotonous driving scenarios.",
+      "downloads": 87
+    },
+    {
+      "abstractId": "5445933",
+      "title": "Integrating Lightweight and Large-scale Models for State Analysis of Air Traffic Controllers",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5445933",
+      "authors": [
+        "Bo Liu",
+        "Weilin Cao",
+        "Yu Sun",
+        "Jingjin Dong",
+        "Feng Lu"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "Civil Aviation Management Institute of China",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 25,
+      "posted": "05 Sep 2025",
+      "snippet": "VLM evaluation reveals Gemini 2.5 Pro excels in micro-motion sensitivity (4.8/5.0) while Claude 4 Sonnet demonstrates superior consistency (4.8/5.0). / LLM assessment shows GPT-4.1 and Claude 4 Sonnet achieve highest performance in evidence use and risk calibration respectively.",
+      "downloads": 33
+    },
+    {
+      "abstractId": "5437296",
+      "title": "Novel Corporate Governance Structures",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5437296",
+      "authors": [
+        "Jennifer S. Fan",
+        "Xuan-Thao Nguyen"
+      ],
+      "affiliations": [
+        "Loyola Law School Los Angeles",
+        "University of Washington School of Law"
+      ],
+      "pages": 76,
+      "posted": "03 Sep 2025",
+      "snippet": "The spotlight has recently fallen on OpenAI, the creator of ChatGPT, which weathered a tumultuous period marked by the ouster and subsequent& / Concerns over AI safety were offered as the rationale for the tandem corporate governance structure of nonprofit and for-profit at OpenAI which led / startup, AI, artificial intelligence, corporate governance, public benefit corporation",
+      "downloads": 138
+    },
+    {
+      "abstractId": "5431877",
+      "title": "Methodology for AI Visibility Optimization Version 3.0",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5431877",
+      "authors": [
+        "Timothy de Rosen"
+      ],
+      "affiliations": [
+        "London School of Economics"
+      ],
+      "pages": 61,
+      "posted": "02 Sep 2025",
+      "snippet": "The rise of large language models (LLMs) such as ChatGPT, Claude, Gemini, and Grok has redefined digital discovery, shifting user behavior away from / PSOS functions as the first governance-ready KPI for AI visibility, translating prompt-level performance into a board-ready score with two complementary",
+      "downloads": 182
+    },
+    {
+      "abstractId": "5401993",
+      "title": "AI Guardrails - Spotting & Fixing Common LLM Failure Modes",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5401993",
+      "authors": [
+        "Gayanthi Gunawardhana"
+      ],
+      "affiliations": [
+        "Libra Sentinel - Data Privacy & AI Governance"
+      ],
+      "pages": 6,
+      "posted": "01 Sep 2025",
+      "snippet": "Large Language Models (LLMs) such as ChatGPT are increasingly deployed in professional and compliance-sensitive environments. / risk control. / AI Guardrails, Large Language Models, AI Failure Modes, Hallucination, Truncation, Lost in the Middle, Responsible AI, AI Governance, AI Risk Management",
+      "downloads": 101
+    },
+    {
+      "abstractId": "5412645",
+      "title": "Feedback-Guided Prompt Injection Defense in Retrieval-Augmented Text-to-Cypher Generation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5412645",
+      "authors": [
+        "Gergely Szlobodnyik"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 31,
+      "posted": "28 Aug 2025",
+      "snippet": "The proposed RAG architecture can efficiently support data access control and governance. / In addition, we propose a feedback-loop based, self-adaptive agentic AI architecture employing Large Language Models (LLMs) for real-time validation and",
+      "downloads": 77
+    },
+    {
+      "abstractId": "5394898",
+      "title": "Bring Your Own AI (BYOAI) in Indian B-Schools: A PLS-SEM-Validated Diagnostic and Governance Framework for Readiness and Responsible Integration",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5394898",
+      "authors": [
+        "Thamburaj Anthuvan",
+        "Sunitha Prabhuram",
+        "Sayli Uday Wankhade",
+        "Kajal Maheshwari"
+      ],
+      "affiliations": [
+        "S.B.Patil Institute of Management",
+        "Associate Professor, School of Business, PO BOX: 345050, MAHE, Dubai, DIAC, UAE",
+        "Indira College of Commerce and Science, Pune",
+        "S.B.Patil Institute of Management"
+      ],
+      "pages": 34,
+      "posted": "27 Aug 2025",
+      "snippet": "Generative AI tools such as ChatGPT, Gemini, and Copilot are increasingly embedded in students' independent learning practices, creating what we term Bring / Based on these findings, we propose the CARE-BYOAI™ Index for benchmarking readiness and a tiered governance roadmap to guide policy, faculty development / Generative AI, BYOAI, Higher Education, AI Readiness, Ethical Governance, Business Schools, Technology Integration",
+      "downloads": 56
+    },
+    {
+      "abstractId": "5404966",
+      "title": "When AI Sets Wages: Biases and Labor Discrimination in Generative Pricing",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5404966",
+      "authors": [
+        "Maxime C. Cohen",
+        "Eddy Hage-Youssef",
+        "Warut Khern-am-nuai"
+      ],
+      "affiliations": [
+        "Desautels Faculty of Management, McGill University",
+        "McGill University",
+        "McGill University - Desautels Faculty of Management"
+      ],
+      "pages": 29,
+      "posted": "27 Aug 2025",
+      "snippet": "profiles from the top six categories in one of the leading online platforms, we prompt eight LLMs (GPT-4o, GPT o4-mini, Gemini 1.5 Flash, Gemini 2.5 Flash, Claude / discussing the implications of these findings for labor markets, emphasizing that prompt design has clear implications for fairness and that regulatory oversight",
+      "downloads": 344
+    },
+    {
+      "abstractId": "5394893",
+      "title": "Human-AI Collaboration with ChatGPT: A Systematic Review of Implications for Finance, Law, and Healthcare",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5394893",
+      "authors": [
+        "Pristly Turjo Mazumder"
+      ],
+      "affiliations": [
+        "Georgia State University"
+      ],
+      "pages": 23,
+      "posted": "27 Aug 2025",
+      "snippet": "To address these issues, we propose a human-AI collaboration framework built on domain-specific fine-tuning, expert oversight, and policy safeguards. / requires clear guidelines, rigorous validation, and continuous governance. / ChatGPT, AI, Human-AI Collaboration, Finance, Law, Healthcare, Explainable AI, XAI, Healthcare AI, Financial Crime Detection, Regulatory Challenges in",
+      "downloads": 111
+    },
+    {
+      "abstractId": "5394886",
+      "title": "Bring Your Own AI (BYOAI) in the Workplace: Patterns, Pitfalls, and the BYOAI-Gov™ Toolkit for Behavior-Aware Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5394886",
+      "authors": [
+        "Thamburaj Anthuvan",
+        "Sunitha Prabhuram",
+        "Ganesh Raju",
+        "Kajal Maheshwari",
+        "Aditya Mishra"
+      ],
+      "affiliations": [
+        "S.B.Patil Institute of Management",
+        "Associate Professor, School of Business, PO BOX: 345050, MAHE, Dubai, DIAC, UAE",
+        "Independent",
+        "S.B.Patil Institute of Management",
+        "Indian Institute of Management (IIM)"
+      ],
+      "pages": 29,
+      "posted": "25 Aug 2025",
+      "snippet": "The informal use of generative artificial intelligence (AI) tools-such as ChatGPT, Copilot, and Gemini-is rapidly growing across workplace settings, often / Based on these findings, we introduce the BYOAI-Gov™ Framework-a behavior-informed governance model integrating task-risk zoning (Enable, Regulate, Restrict / BYOAI, Generative AI, Workplace Governance, Shadow AI, Enterprise Risk, Governance Framework, Information Policy",
+      "downloads": 194
+    },
+    {
+      "abstractId": "5392281",
+      "title": "A Roadmap for Agentic AI in Financial Services Industry",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5392281",
+      "authors": [
+        "Selvamani Jagannathan",
+        "Sunaina Sridhar",
+        "Nagesh Gulkotwar",
+        "Praveen Baskar",
+        "Ashwin Tambe"
+      ],
+      "affiliations": [
+        "Independent",
+        "Google LLC",
+        "Google LLC",
+        "Google LLC"
+      ],
+      "pages": 11,
+      "posted": "22 Aug 2025",
+      "snippet": "While AI has long been used for tasks like fraud detection and risk assessment, the arrival of Agentic AI marks a new era. / By following this roadmap, our framework helps ensure that the adoption of Agentic AI is not only innovative but also responsible, secure, and compliant / Agentic AI, Financial Services",
+      "downloads": 210
+    },
+    {
+      "abstractId": "5392599",
+      "title": "Agentic Financial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5392599",
+      "authors": [
+        "Giovanni Arroyo",
+        "Lawrence Millen"
+      ],
+      "affiliations": [
+        "Independent Research",
+        "Independent Research"
+      ],
+      "pages": 28,
+      "posted": "21 Aug 2025",
+      "snippet": ", obscure accountability, and concentrate systemic risk. / This approach preserves low-latency insight while shifting deliberative oversight to a governance layer-a balance regulators demand between speed and accountability / Agentic AI, Financial Infrastructure, Open Auditability, Validators, Explainable AI, Governance, Replay, AFI",
+      "downloads": 113
+    },
+    {
+      "abstractId": "5398158",
+      "title": "Multi-Model Large-Scale Ai Framework for Avian Influenza Surveillance and Preparedness: Harnessing Large Language Models to Enhance Risk Communication, Real-Time Decision Support, and Public Health Response Strategies",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5398158",
+      "authors": [
+        "Jude Dzevela Kong",
+        "Murray Gillies",
+        "Emma Gardner",
+        "Nicola Luigi Bragazzi"
+      ],
+      "affiliations": [
+        "University of Toronto",
+        "Animal Health Canada",
+        "Animal Health Canada",
+        "York University"
+      ],
+      "pages": 21,
+      "posted": "20 Aug 2025",
+      "snippet": "Employing a multi-model, stakeholder-stratified evaluation framework, we tested four advanced generative AI models, namely, ChatGPT-4o (OpenAI), Grok ( / Collectively, our findings highlight the promise and limitations of current LLMs as tools for biosurveillance, risk communication, and cross-sectoral pandemic",
+      "downloads": 48
+    },
+    {
+      "abstractId": "5390339",
+      "title": "The Decline of Governance: When Political Survival takes Precedence Above Child Protection",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5390339",
+      "authors": [
+        "Virginia Henry"
+      ],
+      "affiliations": [
+        "Independent Scholar"
+      ],
+      "pages": 16,
+      "posted": "19 Aug 2025",
+      "snippet": "At the center of the scandal stands the enigmatic Chancellor, a political figure accused of cultivating close ties with known predator Claude Jetter and / paper explores the mechanisms of elite protection, the suppression of investigative journalism (“The Jetter MP4 video files”), and the moral collapse of governance",
+      "downloads": 15
+    },
+    {
+      "abstractId": "5394867",
+      "title": "Beyond Infringement: Rethinking DMCA § 1202 For Generative AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5394867",
+      "authors": [
+        "Larissa Bersh"
+      ],
+      "affiliations": [
+        "Stanford University"
+      ],
+      "pages": 51,
+      "posted": "18 Aug 2025",
+      "snippet": "With the emergence of large language models (LLMs) like ChatGPT, scholars and courts have fervently debated whether LLMs' training on and reproduction / This Note argues that § 1202 is broader than traditional copyright infringement in three critical respects: It allows liability without any showing",
+      "downloads": 86
+    },
+    {
+      "abstractId": "5386238",
+      "title": "The Rise of Agentic AI: Autonomous Systems in a Digitalized World",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5386238",
+      "authors": [
+        "Ilze Balodis"
+      ],
+      "affiliations": [
+        "Association of Latvian Young Scientists"
+      ],
+      "pages": 5,
+      "posted": "18 Aug 2025",
+      "snippet": "Drawing on literature from AI ethics, robotics, platform economics, and governance studies, we identify key patterns in the rise of agentic AI, including / We propose a framework linking autonomy, adaptability, and accountability as the core pillars for sustainable agentic AI deployment. / Agentic AI, Autonomous Systems, Digitalization, Governance, Ethics, Platform Ecosystems, Automation",
+      "downloads": 106
+    },
+    {
+      "abstractId": "5392712",
+      "title": "Generative AI in Higher Education: Evidence from an Elite College",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5392712",
+      "authors": [
+        "Zara Contractor",
+        "Germán Reyes"
+      ],
+      "affiliations": [
+        "Middlebury College",
+        "Middlebury College"
+      ],
+      "pages": 83,
+      "posted": "18 Aug 2025",
+      "snippet": "Using novel survey data from a selective U.S. college, we document over 80 percent of students using AI academically within two years of ChatGPT's / Institutional policies can influence usage patterns but risk creating unintended disparate impacts across student groups due to uneven compliance. / technology adoption, higher education, Generative AI, ChatGPT, student learning",
+      "downloads": 121
+    }
+  ]
+}

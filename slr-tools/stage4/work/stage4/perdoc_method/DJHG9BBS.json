@@ -1,0 +1,12 @@
+{
+  "item_key": "DJHG9BBS",
+  "methods": [
+    "design-science/prototype/tool-build",
+    "proof-of-concept demonstration"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science/prototype/tool-build",
+  "notes": "Early-results paper: builds a four-agent GPT-4 code-review system and reports only informal, anecdotal preliminary tests ('in initial tests...') with no metrics, benchmark, or controlled comparison. Rigorous empirical study (developer evaluation, comparison to manual methods) is described only as future work, so the 'empirical' flag is weak/qualitative-demonstration at best.",
+  "citation": "Rasheed 2024"
+}

@@ -1,0 +1,85 @@
+{
+  "item_key": "XZEHQYNZ",
+  "citation": "M. Tuape 2025",
+  "evidence_type": [
+    "conceptual-position",
+    "secondary-review",
+    "framework-model"
+  ],
+  "problem_statement": "The paper addresses the practical implementation gaps and 'loopholes' in designing human oversight and accountability mechanisms for Agentic AI in software engineering, where the EU AI Act's oversight/transparency mandates collide with the unpredictability and non-determinism of autonomous AI code generation.",
+  "magnitude_evidence": "\"after its release to a wide public audience in 2022, it took just two months for ChatGPT to reach 100 million users [6]\"",
+  "risk_types": [
+    "non-determinism",
+    "emergent-behavior",
+    "unpredictability",
+    "accountability",
+    "automation-bias",
+    "deskilling",
+    "cognitive-overload",
+    "bias",
+    "test-oracle-problem",
+    "legal-compliance",
+    "explainability",
+    "traceability",
+    "security",
+    "maintainability"
+  ],
+  "insufficiency_evidence": "\"While the Act strongly emphasizes 'effective oversight' for high-risk AI systems, its practical implementation for Agentic AI, characterized by emergent and non-deterministic behaviors, lacks concrete guidance [16]\"; current SE paradigms \"lack the inherent design principles and mechanisms to seamlessly integrate deep human oversight into autonomous and adaptive AI development processes\"",
+  "solution_mechanisms": [
+    "HITL architecture framework",
+    "governance-by-design",
+    "auditable logging and traceability",
+    "scalable oversight via factored evaluation",
+    "continuous monitoring frameworks",
+    "dynamic control shifting (HITL/AI-in-the-loop)",
+    "co-design workshops with stakeholders",
+    "value-sensitive design for bias mitigation",
+    "adaptive explanation/interpretability systems",
+    "risk-based intervention level tuning",
+    "agile governance frameworks",
+    "research roadmap (Design Science Research)"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "governance-by-design",
+    "policy-as-code",
+    "auditability",
+    "provenance",
+    "observability",
+    "scalable-oversight",
+    "factored-evaluation",
+    "continuous-monitoring",
+    "risk-routing",
+    "trust-calibration",
+    "explainability",
+    "co-design",
+    "escalation",
+    "human-on-the-loop",
+    "human-in-command"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "CI",
+    "runtime",
+    "post-deployment",
+    "lifecycle-wide"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Human Oversight and Accountability for AI4SE",
+    "paradox of automation",
+    "reinforcing cycle",
+    "two-tiered adoption scenario",
+    "governance-by-design",
+    "AI-in-the-Loop vs Human-in-the-Loop",
+    "adaptable accountability architectures"
+  ],
+  "governance_refs": [
+    "EU AI Act",
+    "EU AI Act Article 14 (Human Oversight)"
+  ],
+  "scope_fit": "both",
+  "notes": "Position/roadmap paper with a preliminary multivocal literature review; text has OCR artifacts (e.g. 'surver', 'categoris', truncated keywords) and reports inconsistent paper counts (states '2 papers met the criteria' yet '15 selected papers'). Proposed HITL framework is conceptual/not yet built or evaluated.",
+  "_truncated": false
+}

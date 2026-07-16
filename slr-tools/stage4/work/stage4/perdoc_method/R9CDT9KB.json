@@ -1,0 +1,14 @@
+{
+  "item_key": "R9CDT9KB",
+  "methods": [
+    "design-science / prototype / tool-build",
+    "benchmark-evaluation",
+    "dataset-contribution",
+    "ablation-study"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science / prototype / tool-build",
+  "notes": "Builds a multi-stage multi-LLM vulnerability-assessment pipeline and evaluates Stage 1 classification on a curated 1,979-example corpus (validation fold) with accuracy/F1/calibration metrics, an ablation over model combinations, and a comparison against Bandit/Semgrep SAST tools. Stages 2-3 lack ground truth and are only demonstrated. Human-in-the-loop routing is proposed but no user study conducted; human_subjects=false.",
+  "citation": "A. Mahmud 2025"
+}

@@ -1,0 +1,40 @@
+item_key,human_decision,rationale
+8GRSSX8L,discard,overly specific for hardward
+PB7TLUBD,discard,Too generic and abstract truncated so hard to tell
+ZGUIZ7AP,keep,Human oversight and governance in related domain
+M87789CG,maybe,"Framework, seems too general"
+4J2KY56A,discard,Unrelated.
+2D5LCIUP,keep,"Abstract truncated, but seems relevant for goverance framewokrs."
+JCAQ3AHU,keep,Framework might be applicable.
+JUYPVSIW,discard,Governance / oversight able missing.
+K8PJIPQJ,discard,Seems specific to model development
+ZC86LTPH,discard,Focus on adoption.
+JFYZV2MZ,keep,Scalable oversight keyword
+4LCRC3BZ,keep,Oversight keyword
+DC7AUEZU,discard,About AI being sneaky. Not a topic.
+S5ZBQ5QW,maybe,Seems like a summary article in related area
+RN7NR3UM,maybe,Mapping of governance frameworks might be useful
+9NY6ZFHY,discard,Not relavent for the question.
+555NUHVA,discard,AI Systems not vibe coding
+EZVVZMPM,discard,Not relavent for the question.
+9E8E27L7,maybe,arbitrar / triage might need this.
+9NFBWNGF,discard,AI Systems not vibe coding
+BZD4TI55,keep,Quantifies risks we are trying to address
+PJ7WAG66,maybe,Basics for accountability definition
+TPV2AGCB,discard,Not relavent for the question.
+Y4YHMRYE,maybe,Risk quantification
+3XJHPV3K,discard,AI Systems not vibe coding
+HQIXPITB,keep,Oversight angle.
+FTICIPDY,maybe,Oversight / alignment as background
+7QVX75AV,discard,Separate domain
+9SWGI2RY,discard,AI Systems not vibe coding
+FWE8KERE,keep,Model for framework
+24ZVGAAA,keep,Potential model for framework
+BT4UHCN5,maybe,"About inner loop, understand requiremetns. Adjacent domain"
+ZZLFGHQX,discard,Unclear what it is
+M964K4XX,keep,Grounding in the regulatory frameworks
+LUA6VMXR,maybe,Potential model for framework
+I9RP82ZF,maybe,Related to triage and oversight in legal area.
+4UQ2LF3J,maybe,observability angle might be interesting
+EVZAIJTY,discard,AI Systems not vibe coding
+MI86B4XX,maybe,"About how to generate code that meets requirements, different than the oversight question"

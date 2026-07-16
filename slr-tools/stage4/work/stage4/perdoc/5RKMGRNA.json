@@ -1,0 +1,60 @@
+{
+  "item_key": "5RKMGRNA",
+  "citation": "Nimraka 2025",
+  "evidence_type": [
+    "system-tool"
+  ],
+  "problem_statement": "Manual pull request reviews are time-consuming, inconsistent, and error-prone, creating development bottlenecks while still missing latent defects; the paper builds an agentic AI system to automate and enhance code review of PRs.",
+  "magnitude_evidence": "Modern software teams often spend a significant amount of their development time on manual pull request reviews, yet still miss latent defects that lead to post deployment failures",
+  "risk_types": [
+    "security",
+    "quality",
+    "maintainability",
+    "performance",
+    "bugs",
+    "code-duplication",
+    "hallucination",
+    "framework-dependency"
+  ],
+  "insufficiency_evidence": "static analysis tools (SAST) like SonarQube ... fundamentally lack contextual understanding. They operate on fixed rules, resulting in high false-positive rates and an inability to detect complex logical flaws",
+  "solution_mechanisms": [
+    "multi-agent specialist LLM review",
+    "parallel per-issue-class agents",
+    "aggregator agent consolidation",
+    "GNN semantic duplicate detection",
+    "graph-based dependency impact analysis",
+    "RAG PR-title validation against company rules",
+    "tree-sitter chunking for large PRs",
+    "MCP git repository chatbot",
+    "IDE/GitHub workflow integration"
+  ],
+  "mechanism_keywords": [
+    "multi-agent",
+    "llm-as-reviewer",
+    "ensemble",
+    "security-gate",
+    "rag",
+    "policy-as-code",
+    "dependency-analysis",
+    "gnn",
+    "provenance",
+    "code-review",
+    "aggregation",
+    "self-correction-loop"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "pre-commit",
+    "generation-time"
+  ],
+  "human_role": "unspecified",
+  "key_constructs": [
+    "Intelligent Code Reviewer (ICR)",
+    "five specialized LLM agents",
+    "Aggregator Agent"
+  ],
+  "governance_refs": [],
+  "scope_fit": "solution",
+  "notes": null,
+  "_truncated": false
+}

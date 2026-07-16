@@ -1,0 +1,65 @@
+{
+  "item_key": "5BAZZWHG",
+  "citation": "Catalan 2026",
+  "evidence_type": [
+    "empirical",
+    "case-study"
+  ],
+  "problem_statement": "The document examines how software engineers cognitively disengage from agentic coding assistants (ACAs) during code generation, showing that their oversight of AI-generated code declines as tasks progress and focuses only on output correctness rather than the underlying process.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "over-reliance",
+    "complacency",
+    "reduced-critical-thinking",
+    "hallucination",
+    "algorithmic-bias",
+    "security",
+    "poisoning",
+    "backdoor-attacks",
+    "undetected-malicious-code",
+    "information-overload",
+    "shallow-review"
+  ],
+  "insufficiency_evidence": "\"cognitive engagement consistently declines as tasks progress\"; participants \"allocated minimal cognitive resources to verifying the output and largely neglected reviewing the underlying process\"; P4: \"I'm not reading all of that\"; \"none of the participants were able to correctly answer how many functions the generated script had\"",
+  "solution_mechanisms": [
+    "multimodal communication (visualizations, voice)",
+    "flowcharts/graphs/mind maps for reasoning",
+    "cognitive-forcing designs",
+    "slowing down AI decisions to prompt System 2 thinking",
+    "delaying AI suggestions until after user analysis",
+    "framing ACA as multimodal pair programmer"
+  ],
+  "mechanism_keywords": [
+    "cognitive-forcing",
+    "hitl",
+    "reflection-prompts",
+    "multimodal",
+    "visualization",
+    "voice-interface",
+    "slow-algorithm",
+    "system-2-thinking",
+    "verification-tool",
+    "engagement-sustaining",
+    "pair-programming"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "planning",
+    "evaluation"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Tools for Thought",
+    "cognitive engagement",
+    "greedy allocation strategy for cognitive resources",
+    "happy path evaluation",
+    "cognitive forcing functions",
+    "agentic coding assistants (ACAs)",
+    "output vs process evaluation"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Short CHI workshop formative study with only four participants; primarily HCI/cognition-focused rather than governance-focused.",
+  "_truncated": false
+}

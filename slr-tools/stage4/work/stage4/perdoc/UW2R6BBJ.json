@@ -1,0 +1,85 @@
+{
+  "item_key": "UW2R6BBJ",
+  "citation": "Sudarsan 2025",
+  "evidence_type": [
+    "framework-model",
+    "case-study",
+    "empirical"
+  ],
+  "problem_statement": "Current development practices inadequately address security risks unique to AI systems in critical infrastructure, and high-level AI governance frameworks (e.g., NIST AI RMF) lack the concrete implementation roadmaps engineering teams need in regulated environments.",
+  "magnitude_evidence": "Recent comprehensive analysis consolidates '43 AI security frameworks and 777 identified risks'; catalog development analyzed '127 documented AI security incidents from critical infrastructure sectors'",
+  "risk_types": [
+    "security",
+    "data-poisoning",
+    "model-extraction",
+    "adversarial-examples",
+    "concept-drift",
+    "supply-chain",
+    "model-tampering",
+    "evasion",
+    "fairness",
+    "membership-inference"
+  ],
+  "insufficiency_evidence": "Frameworks like NIST AI RMF, IEC 62443 and NERC CIP 'were developed before widespread AI adoption and lack specific controls for AI-related threats'; baseline audit-artifact completeness was only 62% manual coverage vs 100% automated with the framework",
+  "solution_mechanisms": [
+    "Secure AI-SDLC five-phase lifecycle framework",
+    "AI-specific threat-to-control catalog",
+    "evidence-driven auditable artifacts",
+    "MITRE ATLAS threat modeling",
+    "SBOM and model card generation",
+    "secure model registry with signing",
+    "adversarial robustness / red-team testing",
+    "staged deployment with automated rollback",
+    "runtime anomaly & drift monitoring",
+    "quantified risk register",
+    "RACI accountability roles",
+    "quarterly Model Risk Review checkpoints"
+  ],
+  "mechanism_keywords": [
+    "governance-framework",
+    "threat-modeling",
+    "control-catalog",
+    "evidence-artifacts",
+    "provenance",
+    "sbom",
+    "security-gate",
+    "adversarial-testing",
+    "red-team",
+    "staged-rollout",
+    "observability",
+    "drift-monitoring",
+    "risk-register",
+    "compliance-automation",
+    "raci"
+  ],
+  "oversight_locus": [
+    "govern",
+    "design",
+    "build",
+    "test",
+    "CI",
+    "runtime",
+    "post-deployment"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "Secure AI-SDLC",
+    "Evidence-Driven Controls",
+    "Threat-to-Control Mapping",
+    "AI-Specific Control Catalog"
+  ],
+  "governance_refs": [
+    "NIST AI RMF",
+    "NIST SSDF",
+    "ISO/IEC 42001",
+    "IEC 62443",
+    "NERC CIP",
+    "MITRE ATLAS",
+    "OWASP ML Security Top 10",
+    "OWASP Top 10 for LLM Applications",
+    "NTIA SBOM"
+  ],
+  "scope_fit": "solution",
+  "notes": "Off-topic drift: the paper concerns securing AI/ML systems (models) in critical infrastructure, not human oversight of AI-generated code; 'oversight' here refers to governance of AI model risk/security rather than review of AI-authored code.",
+  "_truncated": false
+}

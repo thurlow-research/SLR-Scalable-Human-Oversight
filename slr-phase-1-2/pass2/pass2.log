@@ -1,0 +1,4 @@
+[2026-05-27 04:42:51] === Pass 2 Orchestration ===
+[2026-05-27 04:42:51] Workdir: /home/scott/slr/pass2
+[2026-05-27 04:42:51] Checkpoint: /home/scott/slr/pass2/checkpoint.json
+[2026-05-27 04:42:51] STEP 1: Exporting Phase 2 Queue items from Zotero...

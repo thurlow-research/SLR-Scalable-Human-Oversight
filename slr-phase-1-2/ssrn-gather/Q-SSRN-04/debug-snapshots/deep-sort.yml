@@ -1,0 +1,2141 @@
+- generic [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#maincontent"
+  - banner [ref=e5]:
+    - link "SSRN Homepage" [ref=e6] [cursor=pointer]:
+      - /url: https://www.ssrn.com
+      - img [ref=e8]
+    - navigation [ref=e9]:
+      - list [ref=e10]:
+        - listitem [ref=e11]:
+          - generic "Product & Services" [ref=e14] [cursor=pointer]:
+            - generic [ref=e16]: Product & Services
+        - listitem [ref=e19]:
+          - link "Subscribe" [ref=e20] [cursor=pointer]:
+            - /url: https://www.ssrn.com/index.cfm/en/subscribe/
+            - generic [ref=e22]: Subscribe
+        - listitem [ref=e23]:
+          - link "Submit a paper" [ref=e24] [cursor=pointer]:
+            - /url: https://hq.ssrn.com/submission.cfm
+            - generic [ref=e26]: Submit a paper
+        - listitem [ref=e27]:
+          - link "Browse" [ref=e28] [cursor=pointer]:
+            - /url: https://papers.ssrn.com/sol3/DisplayJournalBrowse.cfm
+            - generic [ref=e30]: Browse
+        - listitem [ref=e31]:
+          - link "Blog" [ref=e32] [cursor=pointer]:
+            - /url: https://blog.ssrn.com/
+            - generic [ref=e34]: Blog
+        - listitem [ref=e37]:
+          - button "More" [ref=e39]:
+            - generic [ref=e41]: More
+    - button "Search" [ref=e46]
+    - link "Shopping Cart" [ref=e48] [cursor=pointer]:
+      - /url: https://papers.ssrn.com/sol3/ShoppingCart.cfm
+    - img "Avatar" [ref=e51]: ST
+  - main [ref=e52]:
+    - generic [ref=e54]:
+      - heading "Advanced Search" [level=1] [ref=e55]
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e62]: "Search term(s):"
+            - textbox "Search term(s)" [ref=e69]: "\"human oversight\" AND (\"artificial intelligence\" OR \"generative AI\" OR \"AI systems\")"
+            - button "Search" [ref=e72]
+          - group [ref=e78]:
+            - generic [ref=e80]:
+              - generic [ref=e81] [cursor=pointer]:
+                - radio "Title Only" [ref=e82]
+                - generic [ref=e86]: Title Only
+              - generic [ref=e87] [cursor=pointer]:
+                - radio "Title, Abstract & Keywords" [checked] [ref=e88]
+                - generic [ref=e92]: Title, Abstract & Keywords
+              - generic [ref=e93] [cursor=pointer]:
+                - radio "Title, Abstract, Keywords & Full Text" [ref=e94]
+                - generic [ref=e98]: Title, Abstract, Keywords & Full Text
+          - generic [ref=e99]:
+            - generic [ref=e102]: "Author(s):"
+            - textbox "Author(s)" [ref=e109]
+          - generic [ref=e110]:
+            - generic [ref=e113]: "Date:"
+            - combobox "All Time" [ref=e121] [cursor=pointer]
+        - generic [ref=e123]:
+          - group [ref=e125]:
+            - generic [ref=e127]:
+              - generic [ref=e128] [cursor=pointer]:
+                - radio "Fuzzy Search" [ref=e129]
+                - generic [ref=e133]: Fuzzy Search
+              - generic [ref=e134] [cursor=pointer]:
+                - radio "Boolean Search" [checked] [active] [ref=e135]
+                - generic [ref=e139]: Boolean Search
+          - button "Help" [ref=e141]
+      - generic [ref=e144]:
+        - generic [ref=e145]:
+          - generic [ref=e148]:
+            - generic "Sort by" [ref=e153]:
+              - generic [ref=e154]: Sort by
+            - combobox "Sort by" [ref=e157] [cursor=pointer]: Relevancy
+          - navigation [ref=e159]:
+            - list [ref=e164]:
+              - listitem [ref=e165]:
+                - generic [ref=e168] [cursor=pointer]: "1"
+              - listitem [ref=e169]:
+                - generic "Go to page 2" [ref=e170] [cursor=pointer]:
+                  - generic [ref=e172]: "2"
+              - listitem [ref=e173]:
+                - generic "Go to page 3" [ref=e174] [cursor=pointer]:
+                  - generic [ref=e176]: "3"
+              - listitem [ref=e177]:
+                - generic "Go to page 4" [ref=e178] [cursor=pointer]:
+                  - generic [ref=e180]: "4"
+              - listitem [ref=e181]:
+                - generic "Go to page 5" [ref=e182] [cursor=pointer]:
+                  - generic [ref=e184]: "5"
+              - listitem [ref=e185]:
+                - generic "Go to page 6" [ref=e186] [cursor=pointer]:
+                  - generic [ref=e188]: ...
+              - listitem [ref=e189]:
+                - generic "Go to page 9" [ref=e2029] [cursor=pointer]:
+                  - generic [ref=e192]: "9"
+            - generic "Next page" [ref=e193] [cursor=pointer]
+            - generic "Last page" [ref=e195] [cursor=pointer]
+        - heading "Displaying results 1 to 50 of 433" [level=3] [ref=e2030]
+        - generic [ref=e198]:
+          - generic [ref=e200]:
+            - heading "Human Oversight of Artificial Intelligence and Technical Standardisation" [level=3] [ref=e2031]:
+              - link "Human Oversight of Artificial Intelligence and Technical Standardisation" [ref=e2032] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5228774
+                - emphasis [ref=e2033]: Human
+                - emphasis [ref=e2034]: Oversight
+                - text: of
+                - emphasis [ref=e2035]: Artificial
+                - emphasis [ref=e2036]: Intelligence
+                - text: and Technical Standardisation
+            - paragraph
+            - paragraph [ref=e207]: "Number of pages: 16 • Posted: 06 May 2025"
+            - paragraph [ref=e208]:
+              - generic [ref=e209]:
+                - link "Marion Ho-Dac" [ref=e2037] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4786532
+                - text: and
+              - link "Baptiste Martinez" [ref=e2039] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7585596
+            - paragraph [ref=e211]: Artois University; Artois University
+            - generic [ref=e212]:
+              - generic [ref=e213]:
+                - emphasis [ref=e2040]: Intelligence
+                - text: (
+                - emphasis [ref=e2041]: AI
+                - text: )
+                - emphasis [ref=e2042]: systems
+                - text: ", for example by placing a human being in charge of supervising the system and, upstream, by developing the AI system to enable"
+              - generic [ref=e220]:
+                - text: These include the development of
+                - emphasis [ref=e2043]: human
+                - emphasis [ref=e2044]: oversight
+                - text: "-by-design"
+                - emphasis [ref=e2045]: AI
+                - emphasis [ref=e2046]: systems
+                - text: and their implementation by deployers.
+          - generic [ref=e229]:
+            - paragraph [ref=e230]: Downloads
+            - paragraph [ref=e231]: "161"
+        - generic [ref=e232]:
+          - generic [ref=e234]:
+            - heading "Agentic AI has a Human Oversight Problem" [level=3] [ref=e2047]:
+              - link "Agentic AI has a Human Oversight Problem" [ref=e2048] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5529058
+                - text: Agentic AI has a
+                - emphasis [ref=e2049]: Human
+                - emphasis [ref=e2050]: Oversight
+                - text: Problem
+            - paragraph
+            - paragraph [ref=e241]: "Number of pages: 30 • Posted: 09 Oct 2025"
+            - paragraph [ref=e242]:
+              - link "Samir Passi" [ref=e2051] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=8327788
+            - paragraph
+            - generic [ref=e247]:
+              - generic [ref=e248]:
+                - text: Effective
+                - emphasis [ref=e2052]: human
+                - emphasis [ref=e2053]: oversight
+                - text: of agentic systems is currently impossible.
+              - generic [ref=e256]:
+                - text: However, such "knowing" and "observing" are challenging because of transparency issues with
+                - emphasis [ref=e2054]: Artificial
+                - emphasis [ref=e2055]: Intelligence
+                - text: (
+                - emphasis [ref=e2056]: AI
+                - text: )
+                - emphasis [ref=e2057]: systems
+                - text: more broadly and
+                - emphasis [ref=e2058]: generative
+              - generic [ref=e260]:
+                - text: Agentic AI,
+                - emphasis [ref=e2059]: Human
+                - emphasis [ref=e2060]: Oversight
+                - text: ","
+                - emphasis [ref=e2061]: Artificial
+                - emphasis [ref=e2062]: Intelligence
+                - text: ", Transparency, Human-Agent Interaction, Sociotechnical Challenge"
+          - generic [ref=e262]:
+            - paragraph [ref=e263]: Downloads
+            - paragraph [ref=e264]: "369"
+        - generic [ref=e265]:
+          - generic [ref=e267]:
+            - 'heading "Requirements of high-risk AI systems: AI Act. Article 14. Human oversight" [level=3] [ref=e2063]':
+              - 'link "Requirements of high-risk AI systems: AI Act. Article 14. Human oversight" [ref=e2064] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5131229
+                - text: Requirements of high-risk
+                - emphasis [ref=e2065]: AI
+                - emphasis [ref=e2066]: systems
+                - text: ": AI Act. Article 14."
+                - emphasis [ref=e2067]: Human
+                - emphasis [ref=e2068]: oversight
+            - paragraph
+            - paragraph [ref=e277]: "Number of pages: 19 • Posted: 09 Apr 2025"
+            - paragraph [ref=e278]:
+              - link "Argyri Panezi" [ref=e2069] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2051710
+            - paragraph [ref=e281]: University of New Brunswick Faculty of Law
+            - generic [ref=e282]:
+              - generic [ref=e2070]:
+                - text: Requiring
+                - emphasis [ref=e2071]: human
+                - emphasis [ref=e2072]: oversight
+                - text: during the use of a high-risk AI system, Article 14 of the AI Act highlights the need for trustworthiness and advances
+              - generic [ref=e289]:
+                - emphasis [ref=e2073]: artificial
+                - emphasis [ref=e2074]: intelligence
+                - text: ", AI Act, High-risk"
+                - emphasis [ref=e2075]: AI
+                - emphasis [ref=e2076]: systems
+                - text: ","
+                - emphasis [ref=e2077]: Human
+                - emphasis [ref=e2078]: oversight
+                - text: ", Human-in-the-loop, AI regulation"
+          - generic [ref=e302]:
+            - paragraph [ref=e303]: Downloads
+            - paragraph [ref=e304]: "397"
+        - generic [ref=e305]:
+          - generic [ref=e307]:
+            - 'heading "Regulating Generative AI: Legal Accountability in the Age of Algorithms" [level=3] [ref=e2080]':
+              - 'link "Regulating Generative AI: Legal Accountability in the Age of Algorithms" [ref=e2081] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5690363
+                - text: Regulating
+                - emphasis [ref=e2082]: Generative
+                - emphasis [ref=e2083]: AI
+                - text: ": Legal Accountability in the Age of Algorithms"
+            - paragraph
+            - paragraph [ref=e311]: "Number of pages: 0 • Posted: 20 Nov 2025"
+            - paragraph [ref=e312]:
+              - link "Anam Siddiqui" [ref=e2084] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7274240
+            - paragraph [ref=e321]: ABES Engineering College (ABESEC)
+            - generic [ref=e323]:
+              - generic [ref=e324]:
+                - text: Generative
+                - emphasis [ref=e2085]: Artificial
+                - emphasis [ref=e2086]: Intelligence
+                - text: (
+                - emphasis [ref=e2087]: AI
+                - text: )
+                - emphasis [ref=e2088]: systems
+                - text: — such as ChatGPT, DALL·E, and Bard — are reshaping communication, creativity, and commerce.
+              - generic [ref=e328]:
+                - text: Through case studies and comparative analysis, the paper proposes a layered accountability framework emphasizing
+                - emphasis [ref=e2089]: human
+                - emphasis [ref=e2090]: oversight
+                - text: ", algorithmic transparency"
+          - generic [ref=e338]:
+            - paragraph [ref=e339]: Downloads
+            - paragraph [ref=e340]: "0"
+        - generic [ref=e341]:
+          - generic [ref=e343]:
+            - heading "Legal AI Systems in the EU’s proposed Artificial Intelligence Act" [level=3] [ref=e2091]:
+              - link "Legal AI Systems in the EU’s proposed Artificial Intelligence Act" [ref=e2092] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3871099
+                - text: Legal
+                - emphasis [ref=e2093]: AI
+                - emphasis [ref=e2094]: Systems
+                - text: in the EU’s proposed
+                - emphasis [ref=e2095]: Artificial
+                - emphasis [ref=e2096]: Intelligence
+                - text: Act
+            - paragraph [ref=e348]: Proceedings of the Second International Workshop on AI and Intelligent Assistance for Legal Professionals in the Digital Workplace (LegalAIIA 2021), held in conjunction with ICAIL 2021, June 21, 2021, Sao Paulo, Brazil
+            - paragraph [ref=e352]: "Number of pages: 8 • Posted: 08 Jul 2021"
+            - paragraph [ref=e353]:
+              - generic [ref=e354]:
+                - link "Sebastian Felix Schwemer" [ref=e2097] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1762436
+                - text: ","
+              - generic [ref=e2098]:
+                - link "Letizia Tomada" [ref=e2099] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4746917
+                - text: and
+              - link "Tommaso Pasini" [ref=e2101] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4746924
+            - paragraph [ref=e356]: BI Norwegian Business School; University of Copenhagen, Centre for Information and Innovation Law (CIIR); University of Copenhagen - Department of Computer Science
+            - generic [ref=e357]:
+              - generic [ref=e358]:
+                - text: In this paper we examine how human-machine interaction in the legal sector is suggested to be regulated in the EU’s recently proposed
+                - emphasis [ref=e2102]: Artificial
+                - emphasis [ref=e2103]: Intelligence
+              - generic [ref=e364]:
+                - text: Then we turn towards the assessment of high-risk
+                - emphasis [ref=e2104]: AI
+                - emphasis [ref=e2105]: systems
+                - text: for the legal tasks as well as the obligations for such
+                - emphasis [ref=e2106]: AI
+                - emphasis [ref=e2107]: systems
+                - text: in terms of human-machine
+              - generic [ref=e369]:
+                - text: European Union,
+                - emphasis [ref=e2108]: Artificial
+                - emphasis [ref=e2109]: Intelligence
+                - text: Act, AI regulation, high-risk
+                - emphasis [ref=e2110]: AI
+                - emphasis [ref=e2111]: systems
+                - text: ", legal sector, intelligent assistance,"
+                - emphasis [ref=e2112]: human
+                - emphasis [ref=e2113]: oversight
+                - text: ", data governance"
+          - generic [ref=e373]:
+            - paragraph [ref=e374]: Downloads
+            - paragraph [ref=e375]: "1498"
+        - generic [ref=e376]:
+          - generic [ref=e378]:
+            - 'heading "Regulating Generative AI: Legal Accountability in the Age of Algorithms" [level=3] [ref=e2114]':
+              - 'link "Regulating Generative AI: Legal Accountability in the Age of Algorithms" [ref=e2115] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5682403
+                - text: Regulating
+                - emphasis [ref=e2116]: Generative
+                - emphasis [ref=e2117]: AI
+                - text: ": Legal Accountability in the Age of Algorithms"
+            - paragraph
+            - paragraph [ref=e383]: "Number of pages: 3 • Posted: 05 Dec 2025"
+            - paragraph [ref=e384]:
+              - link "Anam Siddiqui" [ref=e2118] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=8854712
+            - paragraph
+            - generic [ref=e418]:
+              - generic [ref=e419]:
+                - text: Generative
+                - emphasis [ref=e2119]: Artificial
+                - emphasis [ref=e2120]: Intelligence
+                - text: (
+                - emphasis [ref=e2121]: AI
+                - text: )
+                - emphasis [ref=e2122]: systems
+                - text: — such as ChatGPT, DALL·E, and Bard — are reshaping communication, creativity, and commerce.
+              - generic [ref=e426]:
+                - text: Through case studies and comparative analysis, the paper proposes a layered accountability framework emphasizing
+                - emphasis [ref=e2123]: human
+                - emphasis [ref=e2124]: oversight
+                - text: ", algorithmic transparency"
+              - generic [ref=e432]:
+                - text: Law & Technology Legal Theory, Regulation & Governance,
+                - emphasis [ref=e2125]: Generative
+                - emphasis [ref=e2126]: AI
+                - text: ", Legal Accountability, EU AI Act,"
+                - emphasis [ref=e2127]: Artificial
+                - emphasis [ref=e2128]: Intelligence
+                - text: Regulation, Data
+          - generic [ref=e437]:
+            - paragraph [ref=e438]: Downloads
+            - paragraph [ref=e439]: "44"
+        - generic [ref=e440]:
+          - generic [ref=e442]:
+            - heading "Assessing the Impact of Artificial Intelligence Systems on Fundamental Rights" [level=3] [ref=e2129]:
+              - link "Assessing the Impact of Artificial Intelligence Systems on Fundamental Rights" [ref=e2130] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5168579
+                - text: Assessing the Impact of
+                - emphasis [ref=e2131]: Artificial
+                - emphasis [ref=e2132]: Intelligence
+                - text: Systems on Fundamental Rights
+            - paragraph
+            - paragraph [ref=e447]: "Number of pages: 88 • Posted: 21 Mar 2025"
+            - paragraph [ref=e448]:
+              - generic [ref=e449]:
+                - link "Andrea Cosentini" [ref=e2133] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3921627
+                - text: ","
+              - generic [ref=e2134]:
+                - link "Oreste Pollicino" [ref=e2135] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=519959
+                - text: ","
+              - generic [ref=e2136]:
+                - link "Giovanni De Gregorio" [ref=e2137] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3025316
+                - text: ","
+              - generic [ref=e2138]:
+                - link "Andrea Ermellino" [ref=e2139] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7465070
+                - text: ","
+              - generic [ref=e2140]:
+                - link "Dario Fontanella" [ref=e2141] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6439079
+                - text: ","
+              - generic [ref=e2142]:
+                - link "Nicole Inverardi" [ref=e2143] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6439080
+                - text: ","
+              - generic [ref=e2144]:
+                - link "Federica Paolucci" [ref=e2145] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5649105
+                - text: ","
+              - generic [ref=e2146]:
+                - link "Ilaria Giuseppina Penco" [ref=e2147] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6439081
+                - text: ","
+              - generic [ref=e2148]:
+                - link "Daniele Regoli" [ref=e2149] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2273289
+                - text: and
+              - link "Silvia Tessaro Trapani" [ref=e2151] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7465071
+            - paragraph [ref=e2152]: Intesa Sanpaolo SpA; Bocconi University - Department of Law; Católica Global School of Law, Lisbon; Intesa SanPaolo SpA; Intesa SanPaolo SpA; Intesa SanPaolo SpA; Bocconi University, Angelo Sraffa Department of Legal Studies; Intesa SanPaolo SpA; Intesa Sanpaolo SpA; Intesa SanPaolo SpA
+            - generic [ref=e451]:
+              - generic [ref=e452]:
+                - emphasis [ref=e2153]: AI
+                - text: )
+                - emphasis [ref=e2154]: systems
+                - text: ", including"
+                - emphasis [ref=e2155]: Generative
+                - emphasis [ref=e2156]: AI
+                - text: .
+              - generic [ref=e460]:
+                - text: The effectiveness of the framework in assessing transparency, fairness, privacy, and
+                - emphasis [ref=e2157]: human
+                - emphasis [ref=e2158]: oversight
+                - text: is then demonstrated by applying it to a fictitious
+              - generic [ref=e463]:
+                - text: Fundamental Rights,
+                - emphasis [ref=e2159]: Artificial
+                - emphasis [ref=e2160]: Intelligence
+                - text: ","
+                - emphasis [ref=e2161]: Artificial
+                - emphasis [ref=e2162]: Intelligence
+                - text: Act, Risk Assessment, AI Ethics, Responsible AI
+          - generic [ref=e469]:
+            - paragraph [ref=e470]: Downloads
+            - paragraph [ref=e471]: "614"
+        - generic [ref=e472]:
+          - generic [ref=e474]:
+            - 'heading "Teaching Mathematical Concepts in Management with Generative Artificial Intelligence: The Power of Human Oversight in AI-Driven Learning" [level=3] [ref=e2164]':
+              - 'link "Teaching Mathematical Concepts in Management with Generative Artificial Intelligence: The Power of Human Oversight in AI-Driven Learning" [ref=e2165] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4918354
+                - generic [ref=e2166]:
+                  - text: Teaching Mathematical Concepts in Management with Generative
+                  - emphasis [ref=e2167]: Artificial
+                  - emphasis [ref=e2168]: Intelligence
+                  - text: ":"
+                - generic [ref=e2169]:
+                  - text: The Power of
+                  - emphasis [ref=e2170]: Human
+                  - emphasis [ref=e2171]: Oversight
+                  - text: in AI-Driven Learning
+            - paragraph
+            - paragraph [ref=e479]: "Number of pages: 42 • Posted: 26 Aug 2024"
+            - paragraph [ref=e480]:
+              - generic [ref=e481]:
+                - link "Maria A. M. Trindade" [ref=e2173] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4670144
+                - text: ","
+              - generic [ref=e2174]:
+                - link "Gihan Edirisinghe" [ref=e2175] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5197467
+                - text: and
+              - link "Vicky (Lan) Luo" [ref=e2177] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3701044
+            - paragraph [ref=e483]: Universidade do Porto; Western Kentucky University; University of Hartford
+            - generic [ref=e484]:
+              - paragraph [ref=e2178]:
+                - generic [ref=e2179]:
+                  - text: This study demonstrates a successful use of Generative
+                  - emphasis [ref=e2180]: Artificial
+                  - emphasis [ref=e2181]: Intelligence
+                  - text: (AI) in teaching mathematical material to management students.
+              - generic [ref=e493]:
+                - text: The game addresses challenges in integrating
+                - emphasis [ref=e2182]: Generative
+                - emphasis [ref=e2183]: AI
+                - text: into mathematics in management education by combining
+                - emphasis [ref=e2184]: human
+                - emphasis [ref=e2185]: oversight
+                - text: and instructor control
+              - generic [ref=e2186]:
+                - emphasis [ref=e2187]: generative
+                - emphasis [ref=e2188]: AI
+                - text: in education, innovative teaching, ChatGPT,
+                - emphasis [ref=e2189]: generative
+                - emphasis [ref=e2190]: AI
+                - text: "-driven learning, mathematics in management education, Operations Management, educational"
+              - generic [ref=e2191]:
+                - text: games, Economic Order Quantity,
+                - emphasis [ref=e2192]: generative
+                - emphasis [ref=e2193]: AI
+                - text: in management education
+          - generic [ref=e496]:
+            - paragraph [ref=e497]: Downloads
+            - paragraph [ref=e498]: "170"
+        - generic [ref=e499]:
+          - generic [ref=e501]:
+            - heading "Generative Artificial Intelligence -Where did it come from? How does it work?" [level=3] [ref=e2194]:
+              - link "Generative Artificial Intelligence -Where did it come from? How does it work?" [ref=e2195] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4909859
+                - text: Generative
+                - emphasis [ref=e2196]: Artificial
+                - emphasis [ref=e2197]: Intelligence
+                - text: "-Where did it come from? How does it work?"
+            - paragraph
+            - paragraph [ref=e508]: "Number of pages: 38 • Posted: 04 Sep 2024"
+            - paragraph [ref=e509]:
+              - link "Michael D. Murray" [ref=e2198] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=349387
+            - paragraph [ref=e2199]: University of Kentucky - J. David Rosenberg College of Law
+            - generic [ref=e512]:
+              - paragraph [ref=e2200]:
+                - generic [ref=e2201]:
+                  - text: Generative
+                  - emphasis [ref=e2202]: Artificial
+                  - emphasis [ref=e2203]: Intelligence
+                  - text: (GAI) platforms, particularly those specializing in textual and verbal content, are transforming business and
+              - generic [ref=e519]:
+                - text: These
+                - emphasis [ref=e2204]: AI
+                - emphasis [ref=e2205]: systems
+                - text: act as collaborative partners that enhance human capabilities, drive efficiency, and open new possibilities, including in legal practice
+              - generic [ref=e523]:
+                - emphasis [ref=e2206]: Artificial
+                - emphasis [ref=e2207]: Intelligence
+                - text: ", AI,"
+                - emphasis [ref=e2208]: generative
+                - emphasis [ref=e2209]: AI
+                - text: ", GAI, law, legal practice, legal method"
+          - generic [ref=e533]:
+            - paragraph [ref=e534]: Downloads
+            - paragraph [ref=e535]: "565"
+        - generic [ref=e536]:
+          - generic [ref=e538]:
+            - heading "Generative AI as a Manager of Copyrights Revolutionizing Copyright Management in the Digital Era" [level=3] [ref=e2210]:
+              - link "Generative AI as a Manager of Copyrights Revolutionizing Copyright Management in the Digital Era" [ref=e2211] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5053217
+                - emphasis [ref=e2212]: Generative
+                - emphasis [ref=e2213]: AI
+                - text: as a Manager of Copyrights Revolutionizing Copyright Management in the Digital Era
+            - paragraph
+            - paragraph [ref=e545]: "Number of pages: 15 • Posted: 04 Feb 2025"
+            - paragraph [ref=e546]:
+              - link "Jeemyung Hong" [ref=e2214] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7255712
+            - paragraph [ref=e549]: Peking University School of Transnational Law
+            - generic [ref=e551]:
+              - generic [ref=e552]:
+                - text: In the digital era, the intersection of generative
+                - emphasis [ref=e2215]: artificial
+                - emphasis [ref=e2216]: intelligence
+                - text: (AI) and intellectual property (IP) law presents transformative opportunities
+              - generic [ref=e557]:
+                - text: with clear
+                - emphasis [ref=e2217]: human
+                - emphasis [ref=e2218]: oversight
+                - text: .
+              - generic [ref=e562]:
+                - text: copyright,
+                - emphasis [ref=e2219]: Generative
+                - emphasis [ref=e2220]: AI
+                - text: ", GAI, IP,"
+                - emphasis [ref=e2221]: Artificial
+                - emphasis [ref=e2222]: Intelligence
+                - text: ", AI governance"
+          - generic [ref=e573]:
+            - paragraph [ref=e574]: Downloads
+            - paragraph [ref=e575]: "92"
+        - generic [ref=e576]:
+          - generic [ref=e578]:
+            - 'heading "Gen(X)AI: Boosting Explainable Artificial Intelligence for All" [level=3] [ref=e2223]':
+              - 'link "Gen(X)AI: Boosting Explainable Artificial Intelligence for All" [ref=e2224] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6457178
+                - text: "Gen(X)AI: Boosting Explainable"
+                - emphasis [ref=e2225]: Artificial
+                - emphasis [ref=e2226]: Intelligence
+                - text: for All
+            - paragraph
+            - paragraph [ref=e585]: "Number of pages: 70 • Posted: 13 Apr 2026"
+            - paragraph [ref=e586]:
+              - generic [ref=e587]:
+                - link "Francis Joseph Costello" [ref=e2227] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4571315
+                - text: ","
+              - generic [ref=e2228]:
+                - link "Jooyoung Park" [ref=e2229] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2672275
+                - text: ","
+              - generic [ref=e2230]:
+                - link "Keongtae Kim" [ref=e2231] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1477984
+                - text: and
+              - link "Jason Bennett Thatcher" [ref=e2233] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6685188
+            - paragraph [ref=e589]: The Chinese University of Hong Kong (CUHK); Peking University - HSBC School of Business; The Chinese University of Hong Kong (CUHK); University of Colorado Denver
+            - generic [ref=e590]:
+              - generic [ref=e591]:
+                - text: More broadly, the study highlights linguistic explanation design as a critical lever in conversational
+                - emphasis [ref=e2234]: AI
+                - emphasis [ref=e2235]: systems
+                - text: .
+              - generic [ref=e598]:
+                - text: For practice, organizations can improve
+                - emphasis [ref=e2236]: human
+                - emphasis [ref=e2237]: oversight
+                - text: of AI by complementing static transparency dashboards with conversational explanations that enable
+              - generic [ref=e603]:
+                - text: Explainable
+                - emphasis [ref=e2238]: Artificial
+                - emphasis [ref=e2239]: Intelligence
+                - text: (XAI),
+                - emphasis [ref=e2240]: Generative
+                - emphasis [ref=e2241]: AI
+                - text: ", Cognitive Fit Theory, Human-AI Interaction, Algorithmic Decision-Making, Conversational Interfaces"
+          - generic [ref=e605]:
+            - paragraph [ref=e606]: Downloads
+            - paragraph [ref=e607]: "21"
+        - generic [ref=e608]:
+          - generic [ref=e610]:
+            - heading "The Role of Generative Artificial Intelligence in Judicial Decision-Making Process" [level=3] [ref=e2242]:
+              - link "The Role of Generative Artificial Intelligence in Judicial Decision-Making Process" [ref=e2243] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5267928
+                - text: The Role of Generative
+                - emphasis [ref=e2244]: Artificial
+                - emphasis [ref=e2245]: Intelligence
+                - text: in Judicial Decision-Making Process
+            - paragraph
+            - paragraph [ref=e615]: "Number of pages: 26 • Posted: 20 Jun 2025"
+            - paragraph [ref=e616]:
+              - generic [ref=e617]:
+                - link "Syed Shaharyar Ahmed" [ref=e2246] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6493554
+                - text: and
+              - link "Johar Imam" [ref=e2248] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6837557
+            - paragraph [ref=e619]: Ibrar Law Associates; Bhutta & Saeed Barristers and Legal Consultants
+            - generic [ref=e620]:
+              - generic [ref=e621]:
+                - emphasis [ref=e2249]: Artificial
+                - emphasis [ref=e2250]: Intelligence
+                - text: (AI) has permeated all sectors of society, and the legal profession is no exception to such a development.
+              - generic [ref=e628]:
+                - text: By examining these aspects, this study advocates for a hybrid judicial model, where
+                - emphasis [ref=e2251]: generative
+                - emphasis [ref=e2252]: AI
+                - text: serves as an assistive tool under
+                - emphasis [ref=e2253]: human
+                - emphasis [ref=e2254]: oversight
+                - text: ", ensuring"
+              - generic [ref=e634]:
+                - emphasis [ref=e2255]: Generative
+                - emphasis [ref=e2256]: AI
+                - text: ", Judicial Decision-Making, Potential, Prospects and Role"
+          - generic [ref=e642]:
+            - paragraph [ref=e643]: Downloads
+            - paragraph [ref=e644]: "131"
+        - generic [ref=e645]:
+          - generic [ref=e647]:
+            - 'heading "Accountants and Generative AI: Hype or Help?" [level=3] [ref=e2257]':
+              - 'link "Accountants and Generative AI: Hype or Help?" [ref=e2258] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5361839
+                - text: Accountants and
+                - emphasis [ref=e2259]: Generative
+                - emphasis [ref=e2260]: AI
+                - text: ": Hype or Help?"
+            - paragraph
+            - paragraph [ref=e655]: "Number of pages: 37 • Posted: 24 Jul 2025"
+            - paragraph [ref=e656]:
+              - link "Jude Edeigba" [ref=e2261] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6436850
+            - paragraph [ref=e661]: Colorado Mesa University
+            - generic [ref=e662]:
+              - generic [ref=e663]:
+                - text: Purpose-This study examines generative
+                - emphasis [ref=e2262]: Artificial
+                - emphasis [ref=e2263]: Intelligence
+                - text: (AI) application in accounting to identify perceived benefits and risks in accounting.
+              - generic [ref=e672]:
+                - text: Thus, a cautious approach, with
+                - emphasis [ref=e2264]: human
+                - emphasis [ref=e2265]: oversight
+                - text: ", is recommended for its use in accounting to ensure accuracy and accounting information reliability, confidentiality"
+              - generic [ref=e2266]:
+                - emphasis [ref=e2267]: Artificial
+                - emphasis [ref=e2268]: Intelligence
+                - text: ", ChatGPT Benefits and Risks, Accounting Information Risk, AI Adoption in Accounting Practice"
+          - generic [ref=e678]:
+            - paragraph [ref=e679]: Downloads
+            - paragraph [ref=e680]: "213"
+        - generic [ref=e681]:
+          - generic [ref=e683]:
+            - 'heading "ChatGPT and Generative AI: The New Barbarians at the Gate" [level=3] [ref=e2269]':
+              - 'link "ChatGPT and Generative AI: The New Barbarians at the Gate" [ref=e2270] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4447526
+                - text: ChatGPT and
+                - emphasis [ref=e2271]: Generative
+                - emphasis [ref=e2272]: AI
+                - text: ": The New Barbarians at the Gate"
+            - paragraph
+            - paragraph [ref=e689]: "Number of pages: 16 • Posted: 15 May 2023"
+            - paragraph [ref=e690]:
+              - link "David Krause" [ref=e2273] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1285149
+            - paragraph [ref=e693]: Marquette University
+            - generic [ref=e695]:
+              - generic [ref=e696]:
+                - text: The integration of
+                - emphasis [ref=e2274]: artificial
+                - emphasis [ref=e2275]: intelligence
+                - text: (AI) in financial analysis is transforming the industry, enabling advanced data analysis, risk assessment, portfolio
+              - generic [ref=e700]:
+                - emphasis [ref=e2276]: oversight
+                - text: in critical financial judgments.
+              - generic [ref=e703]:
+                - emphasis [ref=e2277]: artificial
+                - emphasis [ref=e2278]: intelligence
+                - text: ", financial analysis, transformation, ethics"
+          - generic [ref=e716]:
+            - paragraph [ref=e717]: Downloads
+            - paragraph [ref=e718]: "580"
+        - generic [ref=e719]:
+          - generic [ref=e721]:
+            - 'heading "Scaling Artificial Intelligence for Augmented Learning: Developing a Generative AI Evaluation Scale through a Case Study in Islamic Inheritance Law" [level=3] [ref=e2279]':
+              - 'link "Scaling Artificial Intelligence for Augmented Learning: Developing a Generative AI Evaluation Scale through a Case Study in Islamic Inheritance Law" [ref=e2280] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5563458
+                - text: Scaling
+                - emphasis [ref=e2281]: Artificial
+                - emphasis [ref=e2282]: Intelligence
+                - text: "for Augmented Learning: Developing a"
+                - emphasis [ref=e2283]: Generative
+                - emphasis [ref=e2284]: AI
+                - text: Evaluation Scale through a Case Study in Islamic Inheritance Law
+            - paragraph
+            - paragraph [ref=e726]: "Number of pages: 28 • Posted: 08 Oct 2025"
+            - paragraph [ref=e727]:
+              - link "Zubair Abbasi" [ref=e2285] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=920517
+            - paragraph [ref=e732]: University of Oxford - Faculty of Law
+            - generic [ref=e733]:
+              - generic [ref=e734]:
+                - text: This study evaluates the potential of four Generative
+                - emphasis [ref=e2286]: Artificial
+                - emphasis [ref=e2287]: Intelligence
+                - text: (GenAI) models-ChatGPT-4, DeepSeek, Gemini, and Co-Pilot-to apply the principles
+              - generic [ref=e739]:
+                - text: The research highlights potential risks related to AI-generated "hallucinations," fabrications, and opaque sources, emphasizing the need for
+                - emphasis [ref=e2288]: human
+                - emphasis [ref=e2289]: oversight
+          - generic [ref=e752]:
+            - paragraph [ref=e753]: Downloads
+            - paragraph [ref=e754]: "22"
+        - generic [ref=e755]:
+          - generic [ref=e757]:
+            - 'heading "Artificial Intelligence Act: A Policy Prototyping Experiment: Operationalizing the Requirements for AI Systems – Part I" [level=3] [ref=e2290]':
+              - 'link "Artificial Intelligence Act: A Policy Prototyping Experiment: Operationalizing the Requirements for AI Systems – Part I" [ref=e2291] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4365515
+                - emphasis [ref=e2292]: Artificial
+                - emphasis [ref=e2293]: Intelligence
+                - text: "Act: A Policy Prototyping Experiment: Operationalizing the Requirements for"
+                - emphasis [ref=e2294]: AI
+                - emphasis [ref=e2295]: Systems
+                - text: – Part I
+            - paragraph [ref=e2296]: "Andrade, Norberto Nuno Gomes de, and Antonella Zarra. 'Artificial Intelligence Act: A Policy Prototyping Experiment: Operationalizing the Requirements for AI Systems – Part I' (2022), at https://openloop.org/reports/2022/11/Artificial_Intelligence_Act_A_Policy_Prototyping_Experiment_Operationalizing"
+            - paragraph [ref=e761]: "Number of pages: 76 • Posted: 27 Feb 2023"
+            - paragraph [ref=e762]:
+              - generic [ref=e763]:
+                - link "Norberto Nuno Gomes de Andrade" [ref=e2297] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=715910
+                - text: and
+              - link "Antonella Zarra" [ref=e2299] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2473321
+            - paragraph [ref=e765]: IE Law School; University of Hamburg, Institute of Law and Economics
+            - generic [ref=e766]:
+              - generic [ref=e767]:
+                - text: This report presents the findings and recommendations of the first part of the Open Loop’s policy prototyping program on the European
+                - emphasis [ref=e2300]: Artificial
+                - emphasis [ref=e2301]: Intelligence
+              - generic [ref=e772]:
+                - text: Therefore, it is important to ensure that the future workforce contains enough qualified workers, in particular when it comes to
+                - emphasis [ref=e2302]: human
+                - emphasis [ref=e2303]: oversight
+                - text: of AI
+              - generic [ref=e779]:
+                - emphasis [ref=e2304]: Artificial
+                - emphasis [ref=e2305]: Intelligence
+                - text: ", European Union, AI companies,"
+                - emphasis [ref=e2306]: Artificial
+                - emphasis [ref=e2307]: Intelligence
+                - text: Act, AI Act, AI governance, AI regulation, policy prototyping, regulatory
+              - generic [ref=e2308]:
+                - text: sandboxes, risk assessment, AI transparency, AI risk management,
+                - emphasis [ref=e2309]: human
+                - emphasis [ref=e2310]: oversight
+                - text: ", AI standards, experimental regulation, data quality"
+          - generic [ref=e781]:
+            - paragraph [ref=e782]: Downloads
+            - paragraph [ref=e783]: "334"
+        - generic [ref=e784]:
+          - generic [ref=e786]:
+            - 'heading "Artificial Intelligence and the Practice of Law Part 1: Lawyers Must be Professional and Responsible Supervisors of AI" [level=3] [ref=e2311]':
+              - 'link "Artificial Intelligence and the Practice of Law Part 1: Lawyers Must be Professional and Responsible Supervisors of AI" [ref=e2312] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4478588
+                - emphasis [ref=e2313]: Artificial
+                - emphasis [ref=e2314]: Intelligence
+                - text: "and the Practice of Law Part 1: Lawyers Must be Professional and Responsible Supervisors of AI"
+            - paragraph
+            - paragraph [ref=e792]: "Number of pages: 6 • Posted: 19 Jul 2023"
+            - paragraph [ref=e793]:
+              - link "Michael D. Murray" [ref=e2315] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=349387
+            - paragraph [ref=e796]: University of Kentucky - J. David Rosenberg College of Law
+            - generic [ref=e797]:
+              - generic [ref=e798]:
+                - text: This article discusses the benefits and challenges of using
+                - emphasis [ref=e2316]: artificial
+                - emphasis [ref=e2317]: intelligence
+                - text: (
+                - emphasis [ref=e2318]: AI
+                - text: )
+                - emphasis [ref=e2319]: systems
+                - text: to assist lawyers in legal practice.
+              - generic [ref=e803]:
+                - text: also remember the importance of
+                - emphasis [ref=e2320]: human
+                - emphasis [ref=e2321]: oversight
+                - text: and judgment in the use of AI for law.
+              - generic [ref=e2322]:
+                - emphasis [ref=e2323]: artificial
+                - emphasis [ref=e2324]: intelligence
+                - text: ", AI, machine learning, verbal"
+                - emphasis [ref=e2325]: generative
+                - emphasis [ref=e2326]: AI
+                - text: ", hallucination, legal research, legal drafting, professional responsibility, human"
+              - generic [ref=e2327]:
+                - text: supervision, best practices, ethics,
+                - emphasis [ref=e2328]: human
+                - emphasis [ref=e2329]: oversight
+                - text: ", document review, value judgments, confidentiality"
+          - generic [ref=e808]:
+            - paragraph [ref=e809]: Downloads
+            - paragraph [ref=e810]: "1850"
+        - generic [ref=e811]:
+          - generic [ref=e813]:
+            - heading "Human Oversight under Article 14 of the EU AI Act" [level=3] [ref=e2330]:
+              - link "Human Oversight under Article 14 of the EU AI Act" [ref=e2331] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5147196
+                - emphasis [ref=e2332]: Human
+                - emphasis [ref=e2333]: Oversight
+                - text: under Article 14 of the EU AI Act
+            - paragraph
+            - paragraph [ref=e819]: "Number of pages: 15 • Posted: 22 Apr 2025"
+            - paragraph [ref=e820]:
+              - link "Melanie Fink" [ref=e2334] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1890578
+            - paragraph
+            - generic [ref=e842]:
+              - generic [ref=e2335]:
+                - text: This chapter analyses the
+                - emphasis [ref=e2336]: human
+                - emphasis [ref=e2337]: oversight
+                - text: requirement for high-risk
+                - emphasis [ref=e2338]: AI
+                - emphasis [ref=e2339]: systems
+                - text: under Article 14 AI Act, a provision that marks a significant development
+              - generic [ref=e848]:
+                - emphasis [ref=e2340]: Human
+                - emphasis [ref=e2341]: oversight
+                - text: in the AI Act serves a number of purposes.
+              - generic [ref=e852]:
+                - emphasis [ref=e2342]: Human
+                - emphasis [ref=e2343]: oversight
+                - text: ", EU AI Act, Human-in-the-loop,"
+                - emphasis [ref=e2344]: artificial
+                - emphasis [ref=e2345]: intelligence
+                - text: regulation, algorithmic governance, algorithmic accountability, algorithmic decision-making
+              - generic [ref=e2346]:
+                - text: ", automation bias, risk management, effective"
+                - emphasis [ref=e2347]: human
+                - emphasis [ref=e2348]: oversight
+                - text: ", meaningful"
+                - emphasis [ref=e2349]: human
+                - emphasis [ref=e2350]: oversight
+          - generic [ref=e859]:
+            - paragraph [ref=e860]: Downloads
+            - paragraph [ref=e861]: "1542"
+        - generic [ref=e862]:
+          - generic [ref=e864]:
+            - 'heading "Framework for Government Policy on Agentic and Generative AI: Governance, Regulation, and Risk Management" [level=3] [ref=e2351]':
+              - 'link "Framework for Government Policy on Agentic and Generative AI: Governance, Regulation, and Risk Management" [ref=e2352] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5511060
+                - text: Framework for Government Policy on Agentic and
+                - emphasis [ref=e2353]: Generative
+                - emphasis [ref=e2354]: AI
+                - text: ": Governance, Regulation, and Risk Management"
+            - paragraph
+            - paragraph [ref=e868]: "Number of pages: 22 • Posted: 23 Sep 2025"
+            - paragraph [ref=e869]:
+              - link "Satyadhar Joshi" [ref=e2355] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7372430
+            - paragraph [ref=e872]: Bar-Ilan University
+            - generic [ref=e873]:
+              - generic [ref=e874]:
+                - text: The transition from
+                - emphasis [ref=e2356]: Generative
+                - emphasis [ref=e2357]: AI
+                - text: to Agentic
+                - emphasis [ref=e2358]: Artificial
+                - emphasis [ref=e2359]: Intelligence
+                - text: "(AI) represents a fundamental shift in autonomous systems: from generating content"
+              - generic [ref=e879]:
+                - text: By bridging technical, ethical, and regulatory dimensions, this work provides actionable guidance for stakeholders aiming to deploy autonomous
+                - emphasis [ref=e2360]: AI
+                - emphasis [ref=e2361]: systems
+          - generic [ref=e890]:
+            - paragraph [ref=e891]: Downloads
+            - paragraph [ref=e892]: "384"
+        - generic [ref=e893]:
+          - generic [ref=e895]:
+            - 'heading "The Illusion of Human Oversight: A Structural Gap in the EU AI Act" [level=3] [ref=e2362]':
+              - 'link "The Illusion of Human Oversight: A Structural Gap in the EU AI Act" [ref=e2363] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6518643
+                - text: The Illusion of
+                - emphasis [ref=e2364]: Human
+                - emphasis [ref=e2365]: Oversight
+                - text: ": A Structural Gap in the EU AI Act"
+            - paragraph
+            - paragraph [ref=e902]: "Number of pages: 11 • Posted: 20 Apr 2026"
+            - paragraph [ref=e903]:
+              - link "Hyunkeun Shin" [ref=e2366] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=11012010
+            - paragraph
+            - generic [ref=e909]:
+              - generic [ref=e910]:
+                - emphasis [ref=e2367]: Artificial
+                - emphasis [ref=e2368]: Intelligence
+                - text: is rapidly being integrated into high-risk domains, including defense, critical infrastructure, and autonomous systems.
+              - generic [ref=e916]:
+                - text: Among its provisions, Article 14 plays a central role by mandating "appropriate
+                - emphasis [ref=e2369]: human
+                - emphasis [ref=e2370]: oversight
+                - text: "\" for high-risk"
+                - emphasis [ref=e2371]: AI
+                - emphasis [ref=e2372]: systems
+                - text: .
+          - generic [ref=e923]:
+            - paragraph [ref=e924]: Downloads
+            - paragraph [ref=e925]: "2"
+        - generic [ref=e926]:
+          - generic [ref=e928]:
+            - 'heading "Institutionalised Distrust and Human Oversight of Artificial Intelligence: Toward a Democratic Design of AI Governance under the European Union AI Act" [level=3] [ref=e2373]':
+              - 'link "Institutionalised Distrust and Human Oversight of Artificial Intelligence: Toward a Democratic Design of AI Governance under the European Union AI Act" [ref=e2374] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4377481
+                - text: Institutionalised Distrust and
+                - emphasis [ref=e2375]: Human
+                - emphasis [ref=e2376]: Oversight
+                - text: of
+                - emphasis [ref=e2377]: Artificial
+                - emphasis [ref=e2378]: Intelligence
+                - text: ": Toward a Democratic Design of AI Governance under the European Union AI Act"
+            - paragraph
+            - paragraph [ref=e933]: "Number of pages: 25 • Posted: 07 Mar 2023"
+            - paragraph [ref=e934]:
+              - link "Johann Laux" [ref=e2379] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3183182
+            - paragraph [ref=e937]: University of Oxford - Oxford Internet Institute
+            - generic [ref=e938]:
+              - generic [ref=e939]:
+                - emphasis [ref=e2380]: Human
+                - emphasis [ref=e2381]: oversight
+                - text: has become a key mechanism for the governance of
+                - emphasis [ref=e2382]: artificial
+                - emphasis [ref=e2383]: intelligence
+                - text: (“AI”).
+              - generic [ref=e944]:
+                - text: Human overseers are supposed to increase the accuracy and safety of
+                - emphasis [ref=e2384]: AI
+                - emphasis [ref=e2385]: systems
+                - text: ", uphold human values, and build trust in the technology."
+              - generic [ref=e950]:
+                - emphasis [ref=e2386]: Artificial
+                - emphasis [ref=e2387]: Intelligence
+                - text: ","
+                - emphasis [ref=e2388]: Human
+                - emphasis [ref=e2389]: Oversight
+                - text: ", AI Act, Trust, Distrust, Institutional Design"
+          - generic [ref=e952]:
+            - paragraph [ref=e953]: Downloads
+            - paragraph [ref=e954]: "900"
+        - generic [ref=e955]:
+          - generic [ref=e957]:
+            - heading "EU Artificial Intelligence Act for Fintech and Finance" [level=3] [ref=e2390]:
+              - link "EU Artificial Intelligence Act for Fintech and Finance" [ref=e2391] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5599932
+                - text: EU
+                - emphasis [ref=e2392]: Artificial
+                - emphasis [ref=e2393]: Intelligence
+                - text: Act for Fintech and Finance
+            - paragraph
+            - paragraph [ref=e963]: "Number of pages: 85 • Posted: 14 Oct 2025"
+            - paragraph [ref=e964]:
+              - generic [ref=e965]:
+                - link "Alexandra Andhov" [ref=e2394] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1289404
+                - text: and
+              - link "Thiago Amparo" [ref=e2396] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2401284
+            - paragraph [ref=e2397]: University of Auckland - Faculty of Law; Central European University (CEU)
+            - generic [ref=e967]:
+              - generic [ref=e968]:
+                - paragraph
+                - paragraph [ref=e2398]:
+                  - generic [ref=e2399]:
+                    - text: Key concerns among startups include the classification of
+                    - emphasis [ref=e2400]: AI
+                    - emphasis [ref=e2401]: systems
+                    - text: as "high-risk," which triggers stringent compliance requirements
+              - generic [ref=e973]:
+                - text: It outlines the obligations for high-risk
+                - emphasis [ref=e2402]: AI
+                - emphasis [ref=e2403]: systems
+                - text: ", encompassing risk management, data governance, technical documentation, and"
+                - emphasis [ref=e2404]: human
+                - emphasis [ref=e2405]: oversight
+                - text: .
+          - generic [ref=e978]:
+            - paragraph [ref=e979]: Downloads
+            - paragraph [ref=e980]: "47"
+        - generic [ref=e981]:
+          - generic [ref=e983]:
+            - 'heading "Transforming Marketing Research with Generative AI: Opportunities, Limitations, and Ethical Implications" [level=3] [ref=e2406]':
+              - 'link "Transforming Marketing Research with Generative AI: Opportunities, Limitations, and Ethical Implications" [ref=e2407] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5386443
+                - text: Transforming Marketing Research with
+                - emphasis [ref=e2408]: Generative
+                - emphasis [ref=e2409]: AI
+                - text: ": Opportunities, Limitations, and Ethical Implications"
+            - paragraph
+            - paragraph [ref=e990]: "Number of pages: 22 • Posted: 12 Aug 2025"
+            - paragraph [ref=e991]:
+              - generic [ref=e992]:
+                - link "Amirhossein Pezeshgi" [ref=e2410] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7840854
+                - text: and
+              - link "Pankhuri Malhotra" [ref=e2412] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3643755
+            - paragraph [ref=e994]: University of Oklahoma; University of Oklahoma - Michael F. Price College of Business
+            - generic [ref=e995]:
+              - generic [ref=e996]:
+                - text: The rapid advancement of Generative
+                - emphasis [ref=e2413]: Artificial
+                - emphasis [ref=e2414]: Intelligence
+                - text: (GenAI) is transforming marketing research by automating and enhancing routine marketing tasks
+              - generic [ref=e1003]:
+                - text: Based on our analysis, we recommend best practices such as validating synthetic data with real-world samples, ensuring
+                - emphasis [ref=e2415]: human
+                - emphasis [ref=e2416]: oversight
+                - text: in content creation
+              - generic [ref=e1009]:
+                - emphasis [ref=e2417]: Generative
+                - emphasis [ref=e2418]: AI
+                - text: ", Marketing Research, Synthetic Respondents, Content Creation, Customer Service, B2B Marketing, AI Ethics,"
+                - emphasis [ref=e2419]: Artificial
+                - emphasis [ref=e2420]: Intelligence
+                - text: ", Digital"
+          - generic [ref=e1015]:
+            - paragraph [ref=e1016]: Downloads
+            - paragraph [ref=e1017]: "351"
+        - generic [ref=e1018]:
+          - generic [ref=e1020]:
+            - 'heading "From Policy to Practice: Prototyping the EU AI Act''s Human Oversight Requirements" [level=3] [ref=e2421]':
+              - 'link "From Policy to Practice: Prototyping the EU AI Act''s Human Oversight Requirements" [ref=e2422] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5196091
+                - text: "From Policy to Practice: Prototyping the EU AI Act's"
+                - emphasis [ref=e2423]: Human
+                - emphasis [ref=e2424]: Oversight
+                - text: Requirements
+            - paragraph
+            - paragraph [ref=e1026]: "Number of pages: 40 • Posted: 30 Apr 2025"
+            - paragraph [ref=e1027]:
+              - generic [ref=e1028]:
+                - link "Wannes Ooms" [ref=e2425] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2849690
+                - text: ","
+              - generic [ref=e2426]:
+                - link "Lotte Cools" [ref=e2427] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2723505
+                - text: ","
+              - generic [ref=e2428]:
+                - link "Thomas Gils" [ref=e2429] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2210225
+                - text: and
+              - link "Frederic Heymans" [ref=e2431] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6464817
+            - paragraph [ref=e1030]:
+              - generic [ref=e2432]: KU Leuven - Centre for IT & IP Law (CiTiP); affiliation not provided to SSRN; KU Leuven - Centre for IT & IP Law (CiTiP); Interuniversity MicroElectronics Center - IMEC - SMIT, Vrije Universiteit Brussel
+            - generic [ref=e1031]:
+              - generic [ref=e1032]:
+                - text: Article 14 AI Act mandates that high-risk
+                - emphasis [ref=e2433]: AI
+                - emphasis [ref=e2434]: systems
+                - text: are designed and developed in such a way that they enable effective
+                - emphasis [ref=e2435]: human
+                - emphasis [ref=e2436]: oversight
+                - text: .
+              - generic [ref=e1038]:
+                - text: This project intended to test the
+                - emphasis [ref=e2437]: human
+                - emphasis [ref=e2438]: oversight
+                - text: requirements for high-risk
+                - emphasis [ref=e2439]: AI
+                - emphasis [ref=e2440]: systems
+                - text: in the AI Act by gathering stakeholders to implement
+              - generic [ref=e1043]:
+                - text: AI Act,
+                - emphasis [ref=e2441]: Human
+                - emphasis [ref=e2442]: oversight
+                - text: ", high-risk"
+                - emphasis [ref=e2443]: AI
+                - emphasis [ref=e2444]: systems
+                - text: ", policy prototyping, product safety, law enforcement, AI in education, AI in healthcare,"
+                - emphasis [ref=e2445]: Artificial
+                - emphasis [ref=e2446]: Intelligence
+          - generic [ref=e1052]:
+            - paragraph [ref=e1053]: Downloads
+            - paragraph [ref=e1054]: "98"
+        - generic [ref=e1055]:
+          - generic [ref=e1057]:
+            - heading "Understanding How Super-Intelligent AI Systems Pose Risks and Raise Complex Ethical Dilemmas" [level=3] [ref=e2447]:
+              - link "Understanding How Super-Intelligent AI Systems Pose Risks and Raise Complex Ethical Dilemmas" [ref=e2448] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5248710
+                - text: Understanding How Super-Intelligent
+                - emphasis [ref=e2449]: AI
+                - emphasis [ref=e2450]: Systems
+                - text: Pose Risks and Raise Complex Ethical Dilemmas
+            - paragraph
+            - paragraph [ref=e1063]: "Number of pages: 6 • Posted: 12 May 2025"
+            - paragraph [ref=e1064]:
+              - link "Benjamin Batte" [ref=e2451] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6065626
+            - paragraph [ref=e1069]: University of the Cumberlands (formerly Cumberland College)
+            - generic [ref=e1070]:
+              - generic [ref=e1071]:
+                - text: This paper explores the multifaceted ethical and legal concerns of super-intelligent
+                - emphasis [ref=e2452]: artificial
+                - emphasis [ref=e2453]: intelligence
+                - text: (
+                - emphasis [ref=e2454]: AI
+                - text: )
+                - emphasis [ref=e2455]: systems
+                - text: ", emphasizing emerging risks and"
+              - generic [ref=e1077]:
+                - text: It begins by analyzing the 2021 EU
+                - emphasis [ref=e2456]: Artificial
+                - emphasis [ref=e2457]: Intelligence
+                - text: Act and its classification of AI into four risk categories, highlighting the restrictions imposed
+          - generic [ref=e1088]:
+            - paragraph [ref=e1089]: Downloads
+            - paragraph [ref=e1090]: "99"
+        - generic [ref=e1091]:
+          - generic [ref=e1093]:
+            - heading "From 'Human Control' in International Law to 'Human Oversight' in the New EU Act on Artificial Intelligence" [level=3] [ref=e2458]:
+              - link "From 'Human Control' in International Law to 'Human Oversight' in the New EU Act on Artificial Intelligence" [ref=e2459] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4236554
+                - text: From 'Human Control' in International Law to '
+                - emphasis [ref=e2460]: Human
+                - emphasis [ref=e2461]: Oversight
+                - text: "' in the New EU Act on"
+                - emphasis [ref=e2462]: Artificial
+                - emphasis [ref=e2463]: Intelligence
+            - paragraph [ref=e2464]:
+              - generic [ref=e2466]: in Julio Mecacci, Daniele Amoroso, Luciano Cavalcante Siebert, David Abbink, Jeroen van den Hoven, and Filippo Santoni de Sio (eds), Research Handbook on Meaningful Human Control of Artificial Intelligence Systems, Elgar, 2024, p. 105-132
+            - paragraph [ref=e1098]: "Number of pages: 31 • Posted: 06 Oct 2022"
+            - paragraph [ref=e1099]:
+              - generic [ref=e1100]:
+                - link "Juliane Beck" [ref=e2467] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5496898
+                - text: and
+              - link "Thomas Burri" [ref=e2469] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1310040
+            - paragraph [ref=e1102]: University of St. Gallen; University of St. Gallen
+            - generic [ref=e1103]:
+              - generic [ref=e1104]:
+                - text: This book section examines "human control" of autonomous systems and "
+                - emphasis [ref=e2470]: human
+                - emphasis [ref=e2471]: oversight
+                - text: "\" of"
+                - emphasis [ref=e2472]: artificial
+                - emphasis [ref=e2473]: intelligence
+                - text: in the light of the international legal
+              - generic [ref=e1111]:
+                - text: Autonomous systems, Autonomous weapons, CCW,
+                - emphasis [ref=e2474]: Artificial
+                - emphasis [ref=e2475]: Intelligence
+                - text: ", Machine Learning, EU Commission, Meaningful Human Control,"
+                - emphasis [ref=e2476]: Human
+                - emphasis [ref=e2477]: Oversight
+                - text: ", International"
+          - generic [ref=e1128]:
+            - paragraph [ref=e1129]: Downloads
+            - paragraph [ref=e1130]: "655"
+        - generic [ref=e1131]:
+          - generic [ref=e1133]:
+            - 'heading "THE REASONED RATIFICATION REPORT (IRR): DOCUMENTED HUMAN OVERSIGHT, INTEGRATED TRACEABILITY AND CONTROL OF AI-ASSISTED JUDICIAL DECISIONS" [level=3] [ref=e2478]':
+              - 'link "THE REASONED RATIFICATION REPORT (IRR): DOCUMENTED HUMAN OVERSIGHT, INTEGRATED TRACEABILITY AND CONTROL OF AI-ASSISTED JUDICIAL DECISIONS" [ref=e2479] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6574019
+                - text: "THE REASONED RATIFICATION REPORT (IRR): DOCUMENTED"
+                - emphasis [ref=e2480]: HUMAN
+                - emphasis [ref=e2481]: OVERSIGHT
+                - text: ", INTEGRATED TRACEABILITY AND CONTROL OF AI-ASSISTED JUDICIAL DECISIONS"
+            - paragraph
+            - paragraph [ref=e1139]: "Number of pages: 25 • Posted: 20 Apr 2026"
+            - paragraph:
+              - generic:
+                - link:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=11131008
+            - paragraph
+            - generic [ref=e1150]:
+              - generic [ref=e1151]:
+                - text: This article proposes and systematises the Reasoned Ratification Report (IRR) as a mechanism of documented
+                - emphasis [ref=e2482]: human
+                - emphasis [ref=e2483]: oversight
+                - text: for judicial decisions assisted
+              - generic [ref=e1157]:
+                - text: by
+                - emphasis [ref=e2484]: artificial
+                - emphasis [ref=e2485]: intelligence
+                - text: systems, particularly
+                - emphasis [ref=e2486]: generative
+                - emphasis [ref=e2487]: AI
+                - text: applied to the drafting process.
+              - generic [ref=e1163]:
+                - text: judicial
+                - emphasis [ref=e2488]: artificial
+                - emphasis [ref=e2489]: intelligence
+                - text: ","
+                - emphasis [ref=e2490]: human
+                - emphasis [ref=e2491]: oversight
+                - text: ", integrated traceability, compliance by design, IRR, Inverse IRR, automation bias, AI Act, Instruction"
+          - generic [ref=e1167]:
+            - paragraph [ref=e1168]: Downloads
+            - paragraph [ref=e1169]: "6"
+        - generic [ref=e1170]:
+          - generic [ref=e1172]:
+            - heading "Ethical Challenges of using Artificial Intelligence in the Judiciary" [level=3] [ref=e2492]:
+              - link "Ethical Challenges of using Artificial Intelligence in the Judiciary" [ref=e2493] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5377863
+                - text: Ethical Challenges of using
+                - emphasis [ref=e2494]: Artificial
+                - emphasis [ref=e2495]: Intelligence
+                - text: in the Judiciary
+            - paragraph
+            - paragraph [ref=e1179]: "Number of pages: 11 • Posted: 12 Aug 2025"
+            - paragraph [ref=e1180]:
+              - link "Desmond Offiong" [ref=e2496] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7790327
+            - paragraph [ref=e1183]: University of Calabar (UNICAL)
+            - generic [ref=e1184]:
+              - generic [ref=e1185]:
+                - text: This article explores the ethical challenges posed by the growing use of
+                - emphasis [ref=e2497]: Artificial
+                - emphasis [ref=e2498]: Intelligence
+                - text: (AI) in judicial systems worldwide.
+              - generic [ref=e1193]:
+                - text: The article concludes with policy recommendations, urging courts to adopt transparent, auditable, and human-centered
+                - emphasis [ref=e2499]: AI
+                - emphasis [ref=e2500]: systems
+                - text: ", supported by strong oversight"
+          - generic [ref=e1205]:
+            - paragraph [ref=e1206]: Downloads
+            - paragraph [ref=e1207]: "114"
+        - generic [ref=e1208]:
+          - generic [ref=e1210]:
+            - 'heading "AI-Assisted Legal Drafting: Prompt Engineering, Human Oversight, and the Limits of Existing Professional Conduct Rules" [level=3] [ref=e2501]':
+              - 'link "AI-Assisted Legal Drafting: Prompt Engineering, Human Oversight, and the Limits of Existing Professional Conduct Rules" [ref=e2502] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6565498
+                - text: "AI-Assisted Legal Drafting: Prompt Engineering,"
+                - emphasis [ref=e2503]: Human
+                - emphasis [ref=e2504]: Oversight
+                - text: ", and the Limits of Existing Professional Conduct Rules"
+            - paragraph
+            - paragraph [ref=e1215]: "Number of pages: 22 • Posted: 20 Apr 2026"
+            - paragraph [ref=e1216]:
+              - link "Iretemi Ogunode" [ref=e2505] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7313920
+            - paragraph
+            - generic [ref=e1231]:
+              - generic [ref=e1232]:
+                - text: While the use of
+                - emphasis [ref=e2506]: Artificial
+                - emphasis [ref=e2507]: Intelligence
+                - text: (AI) tools in legal research and drafting is becoming more prevalent, most of the literature discusses the issue
+              - generic [ref=e1238]:
+                - text: This article examines the practical use of
+                - emphasis [ref=e2508]: generative
+                - emphasis [ref=e2509]: AI
+                - text: tools in legal drafting and argues that the current professional conduct rules are not structurally
+              - generic [ref=e2510]:
+                - text: legal drafting, prompt engineering, professional conduct,
+                - emphasis [ref=e2511]: generative
+                - emphasis [ref=e2512]: AI
+                - text: ", legal ethics,"
+                - emphasis [ref=e2513]: human
+                - emphasis [ref=e2514]: oversight
+                - text: ", computational law"
+          - generic [ref=e1243]:
+            - paragraph [ref=e1244]: Downloads
+            - paragraph [ref=e1245]: "6"
+        - generic [ref=e1246]:
+          - generic [ref=e1248]:
+            - 'heading "The Transformative Role of Generative AI in Recruitment and Talent Acquisition: Opportunities, Challenges, and Ethical Considerations" [level=3] [ref=e2515]':
+              - 'link "The Transformative Role of Generative AI in Recruitment and Talent Acquisition: Opportunities, Challenges, and Ethical Considerations" [ref=e2516] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6462663
+                - text: The Transformative Role of
+                - emphasis [ref=e2517]: Generative
+                - emphasis [ref=e2518]: AI
+                - text: "in Recruitment and Talent Acquisition: Opportunities, Challenges, and Ethical Considerations"
+            - paragraph
+            - paragraph [ref=e1252]: "Number of pages: 11 • Posted: 20 Apr 2026"
+            - paragraph [ref=e1253]:
+              - link "Abhishek Samuel Guntur" [ref=e2519] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=10861108
+            - paragraph [ref=e1256]:
+              - generic [ref=e2520]: affiliation not provided to SSRN
+            - generic [ref=e1257]:
+              - generic [ref=e1258]:
+                - text: Generative
+                - emphasis [ref=e2521]: Artificial
+                - emphasis [ref=e2522]: Intelligence
+                - text: (GenAI) is rapidly transforming recruitment and talent acquisition by automating processes, enhancing decision-making
+              - generic [ref=e1263]:
+                - text: This paper explores the integration of
+                - emphasis [ref=e2523]: generative
+                - emphasis [ref=e2524]: AI
+                - text: across the recruitment lifecycle, including sourcing, screening, interviewing, onboarding, and retention
+              - generic [ref=e1267]:
+                - emphasis [ref=e2525]: Generative
+                - emphasis [ref=e2526]: AI
+                - text: ", Recruitment, Talent Acquisition, AI Ethics, Hiring Automation, HR Technology"
+          - generic [ref=e1273]:
+            - paragraph [ref=e1274]: Downloads
+            - paragraph [ref=e1275]: "9"
+        - generic [ref=e1276]:
+          - generic [ref=e1278]:
+            - 'heading "Automation as Delegation of Power: Constitutional Constraints on AI Systems for the Administration of Justice" [level=3] [ref=e2527]':
+              - 'link "Automation as Delegation of Power: Constitutional Constraints on AI Systems for the Administration of Justice" [ref=e2528] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5690283
+                - text: "Automation as Delegation of Power: Constitutional Constraints on"
+                - emphasis [ref=e2529]: AI
+                - emphasis [ref=e2530]: Systems
+                - text: for the Administration of Justice
+            - paragraph
+            - paragraph [ref=e1282]: "Number of pages: 18 • Posted: 08 Nov 2025"
+            - paragraph [ref=e1283]:
+              - link "Irina Carnat" [ref=e2531] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6331558
+            - paragraph [ref=e1286]: Sant’Anna School of Advanced Studies
+            - generic [ref=e1288]:
+              - generic [ref=e1289]:
+                - text: The deployment of
+                - emphasis [ref=e2532]: generative
+                - emphasis [ref=e2533]: AI
+                - emphasis [ref=e2534]: systems
+                - text: in judicial decision-making constitutes a de facto delegation of power that threatens constitutional principles
+              - generic [ref=e1294]:
+                - emphasis [ref=e2535]: oversight
+                - text: ", and the right to an explanation."
+              - generic [ref=e1298]:
+                - text: Automated Decision-Making, Algorithmic Accountability, Fundamental Rights Protection,
+                - emphasis [ref=e2536]: Human
+                - emphasis [ref=e2537]: Oversight
+                - text: ","
+                - emphasis [ref=e2538]: Generative
+                - emphasis [ref=e2539]: AI
+          - generic [ref=e1306]:
+            - paragraph [ref=e1307]: Downloads
+            - paragraph [ref=e1308]: "256"
+        - generic [ref=e1309]:
+          - generic [ref=e1311]:
+            - 'heading "Governing Advanced Artificial Intelligence: A Synthetic and Adaptive Ethical Framework" [level=3] [ref=e2540]':
+              - 'link "Governing Advanced Artificial Intelligence: A Synthetic and Adaptive Ethical Framework" [ref=e2541] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6102368
+                - text: Governing Advanced
+                - emphasis [ref=e2542]: Artificial
+                - emphasis [ref=e2543]: Intelligence
+                - text: ": A Synthetic and Adaptive Ethical Framework"
+            - paragraph
+            - paragraph [ref=e1315]: "Number of pages: 17 • Posted: 09 Feb 2026"
+            - paragraph [ref=e1316]:
+              - link "Sujana Islam Khan" [ref=e2544] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=10012118
+            - paragraph [ref=e1319]:
+              - generic [ref=e2545]: affiliation not provided to SSRN
+            - generic [ref=e1320]:
+              - generic [ref=e1321]:
+                - text: Rapid advances in
+                - emphasis [ref=e2546]: artificial
+                - emphasis [ref=e2547]: intelligence
+                - text: have renewed debates concerning the governance of increasingly autonomous and general-purpose
+                - emphasis [ref=e2548]: AI
+                - emphasis [ref=e2549]: systems
+                - text: .
+              - generic [ref=e1328]:
+                - emphasis [ref=e2550]: oversight
+                - text: .
+          - generic [ref=e1341]:
+            - paragraph [ref=e1342]: Downloads
+            - paragraph [ref=e1343]: "13"
+        - generic [ref=e1344]:
+          - generic [ref=e1346]:
+            - 'heading "Agentic Artificial Intelligence in Public Administration: Foundations, Applications, and Governance" [level=3] [ref=e2551]':
+              - 'link "Agentic Artificial Intelligence in Public Administration: Foundations, Applications, and Governance" [ref=e2552] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5249100
+                - text: Agentic
+                - emphasis [ref=e2553]: Artificial
+                - emphasis [ref=e2554]: Intelligence
+                - text: "in Public Administration: Foundations, Applications, and Governance"
+            - paragraph
+            - paragraph [ref=e1356]: "Number of pages: 24 • Posted: 12 May 2025"
+            - paragraph [ref=e1357]:
+              - generic [ref=e1358]:
+                - link "Mohammed Salah" [ref=e2555] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5794328
+                - text: ","
+              - generic [ref=e2556]:
+                - link "Alhamzah Alnoor" [ref=e2557] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3676992
+                - text: ","
+              - generic [ref=e2558]:
+                - link "Fadi Abdelfattah" [ref=e2559] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6667948
+                - text: and
+              - link "Hussam Al Halbusi" [ref=e2561] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6201553
+            - paragraph [ref=e2562]: A'sharqiyah University; Universiti Sains Malaysia (USM); Modern College of Business and Science; Qatar University
+            - generic [ref=e1360]:
+              - generic [ref=e1361]:
+                - text: Agentic
+                - emphasis [ref=e2563]: artificial
+                - emphasis [ref=e2564]: intelligence
+                - text: (AI) represents a new generation of autonomous systems integrating large foundation models with diverse sensors, actuators
+              - generic [ref=e1367]:
+                - text: Unlike traditional rule-based or
+                - emphasis [ref=e2565]: generative
+                - emphasis [ref=e2566]: AI
+                - text: ", agentic AI continuously uses reinforcement learning and iterative planning to refine its behavior."
+              - generic [ref=e1374]:
+                - text: agentic
+                - emphasis [ref=e2567]: artificial
+                - emphasis [ref=e2568]: intelligence
+                - text: ", public administration, autonomous decisionmaking, governance frameworks, multi-agent systems"
+          - generic [ref=e1387]:
+            - paragraph [ref=e1388]: Downloads
+            - paragraph [ref=e1389]: "891"
+        - generic [ref=e1390]:
+          - generic [ref=e1392]:
+            - heading "Generative AI-assisted Teaching Strategies for Designing Cost Structures With Rigor and Scalability" [level=3] [ref=e2569]:
+              - link "Generative AI-assisted Teaching Strategies for Designing Cost Structures With Rigor and Scalability" [ref=e2570] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6244380
+                - emphasis [ref=e2571]: Generative
+                - emphasis [ref=e2572]: AI
+                - text: "-assisted Teaching Strategies for Designing Cost Structures With Rigor and Scalability"
+            - paragraph [ref=e2573]: "New literacies in the age of AI: Ethics, teaching, and writing (English Version)"
+            - paragraph [ref=e1396]: "Number of pages: 17 • Posted: 09 Mar 2026"
+            - paragraph [ref=e1397]:
+              - generic [ref=e1398]:
+                - link "Carluys Suescum Coelho" [ref=e2574] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7651035
+                - text: ","
+              - generic [ref=e1400]:
+                - link "Car-Emyr Suescum Coelho" [ref=e2575] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7651051
+                - text: and
+              - link "Carlysmar Suescum Coelho" [ref=e2577] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7651052
+            - paragraph [ref=e1402]: ; Universidad Metropolitana; Centro de Investigación y de Estudios Avanzados
+            - generic [ref=e1403]:
+              - generic [ref=e1404]:
+                - text: This chapter examines how to rigorously and scalably integrate generative
+                - emphasis [ref=e2578]: artificial
+                - emphasis [ref=e2579]: intelligence
+                - text: into the teaching of cost structures in higher education
+              - generic [ref=e1409]:
+                - text: It is also noted that quality depends on data curation, critical literacy, and meaningful
+                - emphasis [ref=e2580]: human
+                - emphasis [ref=e2581]: oversight
+                - text: .
+              - generic [ref=e1415]:
+                - text: Generative
+                - emphasis [ref=e2582]: Artificial
+                - emphasis [ref=e2583]: Intelligence
+                - text: ", Cost Accounting, Prompt Engineering, ActivityBased Costing, Formative Assessment"
+          - generic [ref=e1421]:
+            - paragraph [ref=e1422]: Downloads
+            - paragraph [ref=e1423]: "25"
+        - generic [ref=e1424]:
+          - generic [ref=e1426]:
+            - 'heading "When to Delegate to Artificial Intelligence: A Constrained Resource Optimization Framework" [level=3] [ref=e2584]':
+              - 'link "When to Delegate to Artificial Intelligence: A Constrained Resource Optimization Framework" [ref=e2585] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5077974
+                - text: When to Delegate to
+                - emphasis [ref=e2586]: Artificial
+                - emphasis [ref=e2587]: Intelligence
+                - text: ": A Constrained Resource Optimization Framework"
+            - paragraph
+            - paragraph [ref=e1434]: "Number of pages: 18 • Posted: 24 Feb 2025"
+            - paragraph [ref=e1435]:
+              - generic [ref=e1436]:
+                - link "Brian Toney" [ref=e2588] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6291408
+                - text: and
+              - link "Gregory Lubiani" [ref=e2590] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6976881
+            - paragraph [ref=e1438]: East Texas A&M University; East Texas A&M University
+            - generic [ref=e1440]:
+              - generic [ref=e1441]:
+                - text: As
+                - emphasis [ref=e2591]: Artificial
+                - emphasis [ref=e2592]: Intelligence
+                - text: (
+                - emphasis [ref=e2593]: AI
+                - text: )
+                - emphasis [ref=e2594]: systems
+                - text: reshape industries, organizations must decide how best to deploy finite human cognition while enhancing
+              - generic [ref=e1446]:
+                - text: This paper develops a unified framework for allocating limited cognitive resources between direct human tasks and the refinement of
+                - emphasis [ref=e2595]: AI
+                - emphasis [ref=e2596]: systems
+                - text: .
+              - generic [ref=e1450]:
+                - emphasis [ref=e2597]: Artificial
+                - emphasis [ref=e2598]: Intelligence
+                - text: ", Resource Allocation, Constrained Optimization, Diminishing Returns, Strict Concavity, Bounded Rationality AMS subject classifications"
+          - generic [ref=e1456]:
+            - paragraph [ref=e1457]: Downloads
+            - paragraph [ref=e1458]: "128"
+        - generic [ref=e1459]:
+          - generic [ref=e1461]:
+            - heading "Artificial Intelligence in Clinical Practice" [level=3] [ref=e2599]:
+              - link "Artificial Intelligence in Clinical Practice" [ref=e2600] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5182885
+                - emphasis [ref=e2601]: Artificial
+                - emphasis [ref=e2602]: Intelligence
+                - text: in Clinical Practice
+            - paragraph
+            - paragraph [ref=e1469]: "Number of pages: 11 • Posted: 20 Mar 2025"
+            - paragraph [ref=e1470]:
+              - generic [ref=e1471]:
+                - link "Lauren M. Blanchette" [ref=e2603] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7492318
+                - text: and
+              - link "Jane Carrington" [ref=e2605] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5391522
+            - paragraph [ref=e1473]: University of Florida; University of Florida
+            - generic [ref=e1474]:
+              - generic [ref=e1475]:
+                - text: Findings indicate a lack of standardized guidelines,
+                - emphasis [ref=e2606]: human
+                - emphasis [ref=e2607]: oversight
+                - text: protocols, and provider training.
+              - generic [ref=e1481]:
+                - emphasis [ref=e2608]: Artificial
+                - emphasis [ref=e2609]: Intelligence
+                - text: ", Nursing Informatics, Clinical Practice, Policy"
+          - generic [ref=e1487]:
+            - paragraph [ref=e1488]: Downloads
+            - paragraph [ref=e1489]: "43"
+        - generic [ref=e1490]:
+          - generic [ref=e1492]:
+            - 'heading "Apprenticeship after Artificial Intelligence (AI): Bridging Gaps in Early-Career Business Roles" [level=3] [ref=e2610]':
+              - 'link "Apprenticeship after Artificial Intelligence (AI): Bridging Gaps in Early-Career Business Roles" [ref=e2611] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6243341
+                - text: Apprenticeship after
+                - emphasis [ref=e2612]: Artificial
+                - emphasis [ref=e2613]: Intelligence
+                - text: "(AI): Bridging Gaps in Early-Career Business Roles"
+            - paragraph
+            - paragraph [ref=e1498]: "Number of pages: 20 • Posted: 06 Mar 2026"
+            - paragraph [ref=e1499]:
+              - link "Biff Baker" [ref=e2614] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6142949
+            - paragraph [ref=e1506]: Metropolitan State University of Denver
+            - generic [ref=e1508]:
+              - generic [ref=e1509]:
+                - emphasis [ref=e2615]: Artificial
+                - emphasis [ref=e2616]: intelligence
+                - text: (AI) is fundamentally restructuring early-career business roles by automating routine cognitive tasks that historically served
+              - generic [ref=e1516]:
+                - emphasis [ref=e2617]: systems
+                - text: .
+          - generic [ref=e1528]:
+            - paragraph [ref=e1529]: Downloads
+            - paragraph [ref=e1530]: "39"
+        - generic [ref=e1531]:
+          - generic [ref=e1533]:
+            - 'heading "Artificial Intelligence in Industry 4.0: Implications for Occupational Safety and Health" [level=3] [ref=e2618]':
+              - 'link "Artificial Intelligence in Industry 4.0: Implications for Occupational Safety and Health" [ref=e2619] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4867719
+                - emphasis [ref=e2620]: Artificial
+                - emphasis [ref=e2621]: Intelligence
+                - text: "in Industry 4.0: Implications for Occupational Safety and Health"
+            - paragraph [ref=e1539]: ETUI Research Paper Report No. 2024.01
+            - paragraph [ref=e1542]: "Number of pages: 55 • Posted: 18 Jun 2024"
+            - paragraph [ref=e1543]:
+              - link "Pierre Bérastégui" [ref=e2622] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4554019
+            - paragraph [ref=e1546]: ETUI
+            - generic [ref=e1547]:
+              - generic [ref=e1548]:
+                - emphasis [ref=e2623]: Artificial
+                - emphasis [ref=e2624]: intelligence
+                - text: (AI) has long been hailed as a transformative force set to revolutionise various aspects of our lives, including the way we work
+              - generic [ref=e1552]:
+                - text: Section 4 provides a critical assessment of the various principles put forward to ensure proper
+                - emphasis [ref=e2625]: human
+                - emphasis [ref=e2626]: oversight
+                - text: .
+              - generic [ref=e1556]:
+                - text: occupational safety and health,
+                - emphasis [ref=e2627]: artificial
+                - emphasis [ref=e2628]: intelligence
+                - text: ", industry, digital economy, automation, EU countries"
+          - generic [ref=e1560]:
+            - paragraph [ref=e1561]: Downloads
+            - paragraph [ref=e1562]: "95"
+        - generic [ref=e1563]:
+          - generic [ref=e1565]:
+            - heading "Bridging the governance and innovation gap in the generative AI market" [level=3] [ref=e2629]:
+              - link "Bridging the governance and innovation gap in the generative AI market" [ref=e2630] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6561586
+                - text: Bridging the governance and innovation gap in the
+                - emphasis [ref=e2631]: generative
+                - emphasis [ref=e2632]: AI
+                - text: market
+            - paragraph
+            - paragraph [ref=e1571]: "Number of pages: 21 • Posted: 11 Apr 2026"
+            - paragraph [ref=e1572]:
+              - generic [ref=e1573]:
+                - link "Marina Markarian" [ref=e2633] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=11115031
+                - text: ","
+              - generic [ref=e1575]:
+                - link "Charalampos Konstantinou" [ref=e2634] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6465086
+                - text: and
+              - link "Alain Daou" [ref=e2635] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6510940
+            - paragraph [ref=e1581]:
+              - generic [ref=e2636]: affiliation not provided to SSRN; University of Cyprus; American University of Beirut
+            - generic [ref=e1582]:
+              - generic [ref=e1583]:
+                - text: The rapid diffusion of generative
+                - emphasis [ref=e2637]: artificial
+                - emphasis [ref=e2638]: intelligence
+                - text: (GenAI) systems, including large language and multimodal models, is increasingly outpacing existing
+              - generic [ref=e1586]:
+                - text: While these frameworks collectively emphasize principles such as transparency, fairness, accountability, and
+                - emphasis [ref=e2639]: human
+                - emphasis [ref=e2640]: oversight
+                - text: ", they vary significantly in"
+              - generic [ref=e1591]:
+                - emphasis [ref=e2641]: Generative
+                - emphasis [ref=e2642]: AI
+                - text: ", AI governance, AI innovation, LLM, Human Security, AI Frameworks"
+          - generic [ref=e1594]:
+            - paragraph [ref=e1595]: Downloads
+            - paragraph [ref=e1596]: "16"
+        - generic [ref=e1597]:
+          - generic [ref=e1599]:
+            - heading "Artificial Intelligence In Law" [level=3] [ref=e2643]:
+              - link "Artificial Intelligence In Law" [ref=e2644] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6456058
+                - emphasis [ref=e2645]: Artificial
+                - emphasis [ref=e2646]: Intelligence
+                - text: In Law
+            - paragraph
+            - paragraph [ref=e1606]: "Number of pages: 3 • Posted: 20 Apr 2026"
+            - paragraph [ref=e1607]:
+              - link "Noah Shoman" [ref=e2647] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=10833316
+            - paragraph
+            - generic [ref=e1611]:
+              - blockquote [ref=e2648]:
+                - paragraph [ref=e2649]:
+                  - emphasis [ref=e2650]: Artificial
+                  - emphasis [ref=e2651]: Intelligence
+                  - text: (AI) is rapidly transforming legal practice, raising complex ethical questions regarding accountability, fairness
+              - generic [ref=e1618]:
+                - text: Avianca Airlines illustrate the consequences of relying on AI-generated legal content without thorough
+                - emphasis [ref=e2652]: human
+                - emphasis [ref=e2653]: oversight
+                - text: .
+              - generic [ref=e1623]:
+                - text: AI in Law, Law & Ethics, AI Ethics,
+                - emphasis [ref=e2654]: Artificial
+                - emphasis [ref=e2655]: Intelligence
+          - generic [ref=e1630]:
+            - paragraph [ref=e1631]: Downloads
+            - paragraph [ref=e1632]: "9"
+        - generic [ref=e1633]:
+          - generic [ref=e1635]:
+            - 'heading "Impact of Generative AI on Business Analysis Practices in Agile Digital Transformation Projects: A Pakistan Industry Perspective" [level=3] [ref=e2656]':
+              - 'link "Impact of Generative AI on Business Analysis Practices in Agile Digital Transformation Projects: A Pakistan Industry Perspective" [ref=e2657] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5994414
+                - text: Impact of
+                - emphasis [ref=e2658]: Generative
+                - emphasis [ref=e2659]: AI
+                - text: "on Business Analysis Practices in Agile Digital Transformation Projects: A Pakistan Industry Perspective"
+            - paragraph
+            - paragraph [ref=e1639]: "Number of pages: 5 • Posted: 22 Jan 2026"
+            - paragraph [ref=e1640]:
+              - link "Hassan K" [ref=e2660] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=9757693
+            - paragraph [ref=e1643]: Independent Researcher
+            - generic [ref=e1645]:
+              - generic [ref=e1646]:
+                - text: The rapid emergence of Generative
+                - emphasis [ref=e2661]: Artificial
+                - emphasis [ref=e2662]: Intelligence
+                - text: (AI) tools is transforming the practices of Business Analysts (BAs) within Agile software development
+              - generic [ref=e1653]:
+                - text: The findings suggest that while
+                - emphasis [ref=e2663]: Generative
+                - emphasis [ref=e2664]: AI
+                - text: offers significant efficiency and quality improvements, its successful adoption depends on
+                - emphasis [ref=e2665]: human
+                - emphasis [ref=e2666]: oversight
+              - generic [ref=e2667]:
+                - text: Business Analysis,
+                - emphasis [ref=e2668]: Generative
+                - emphasis [ref=e2669]: AI
+                - text: ", Agile, Digital Transformation, Requirements Engineering, Enterprise Systems"
+          - generic [ref=e1659]:
+            - paragraph [ref=e1660]: Downloads
+            - paragraph [ref=e1661]: "20"
+        - generic [ref=e1662]:
+          - generic [ref=e1664]:
+            - 'heading "Generative Ai, Chatbots, and Programming Skills: Examining Code Suggestion Features in Enhancing Self-Learning Capabilities" [level=3] [ref=e2670]':
+              - 'link "Generative Ai, Chatbots, and Programming Skills: Examining Code Suggestion Features in Enhancing Self-Learning Capabilities" [ref=e2671] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4776408
+                - emphasis [ref=e2672]: Generative
+                - emphasis [ref=e2673]: Ai
+                - text: ", Chatbots, and Programming Skills: Examining Code Suggestion Features in Enhancing Self-Learning Capabilities"
+            - paragraph
+            - paragraph [ref=e1669]: "Number of pages: 22 • Posted: 28 Mar 2024"
+            - paragraph [ref=e1670]:
+              - generic [ref=e1671]:
+                - link "Arum Park" [ref=e2674] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6620381
+                - text: and
+              - link "Taekyung Kim" [ref=e2676] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6620382
+            - paragraph [ref=e1673]: Seoul Cyber University; Kyung Hee University
+            - generic [ref=e1674]:
+              - generic [ref=e1675]:
+                - text: This study investigates the role of generative
+                - emphasis [ref=e2677]: artificial
+                - emphasis [ref=e2678]: intelligence
+                - text: (AI) chatbots, specifically their code suggestion features, in enhancing the self-learning
+              - generic [ref=e1680]:
+                - text: the challenges of AI-generated content and the importance of
+                - emphasis [ref=e2679]: human
+                - emphasis [ref=e2680]: oversight
+                - text: in educational settings.
+              - generic [ref=e1684]:
+                - emphasis [ref=e2681]: generative
+                - emphasis [ref=e2682]: AI
+                - text: ", programming education, self-learning, AI chatbots"
+          - generic [ref=e1686]:
+            - paragraph [ref=e1687]: Downloads
+            - paragraph [ref=e1688]: "182"
+        - generic [ref=e1689]:
+          - generic [ref=e1691]:
+            - 'heading "AI as the New Jurist: Can Generative Artificial Intelligence Master Islamic Inheritance Law?" [level=3] [ref=e2683]':
+              - 'link "AI as the New Jurist: Can Generative Artificial Intelligence Master Islamic Inheritance Law?" [ref=e2684] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5658330
+                - text: "AI as the New Jurist: Can Generative"
+                - emphasis [ref=e2685]: Artificial
+                - emphasis [ref=e2686]: Intelligence
+                - text: Master Islamic Inheritance Law?
+            - paragraph
+            - paragraph [ref=e1698]: "Number of pages: 22 • Posted: 29 Oct 2025"
+            - paragraph [ref=e1699]:
+              - link "Zubair Abbasi" [ref=e2687] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=920517
+            - paragraph [ref=e1704]: University of Oxford - Faculty of Law
+            - generic [ref=e1706]:
+              - generic [ref=e1707]:
+                - text: This study explores the impact of generative
+                - emphasis [ref=e2688]: artificial
+                - emphasis [ref=e2689]: intelligence
+                - text: (GenAI) on Islamic legal scholarship, with a focus on inheritance law.
+              - generic [ref=e1714]:
+                - text: Nevertheless,
+                - emphasis [ref=e2690]: human
+                - emphasis [ref=e2691]: oversight
+                - text: remains essential.
+              - generic [ref=e1719]:
+                - emphasis [ref=e2692]: Generative
+                - emphasis [ref=e2693]: AI
+                - text: ", Islamic law and jurisprudence, human in the loop, Sunni and Shia inheirtance law, ijtihād"
+          - generic [ref=e1723]:
+            - paragraph [ref=e1724]: Downloads
+            - paragraph [ref=e1725]: "97"
+        - generic [ref=e1726]:
+          - generic [ref=e1728]:
+            - 'heading "Post-Human Law: Redefining Responsibility in the Era of Autonomous Artificial Intelligence" [level=3] [ref=e2694]':
+              - 'link "Post-Human Law: Redefining Responsibility in the Era of Autonomous Artificial Intelligence" [ref=e2695] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5716462
+                - text: "Post-Human Law: Redefining Responsibility in the Era of Autonomous"
+                - emphasis [ref=e2696]: Artificial
+                - emphasis [ref=e2697]: Intelligence
+            - paragraph
+            - paragraph [ref=e1735]: "Number of pages: 19 • Posted: 17 Nov 2025"
+            - paragraph [ref=e2698]:
+              - link "Abulgasem Al Mashai" [ref=e2700] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7638371
+            - paragraph [ref=e2701]: Libyan Authority for Scientific Research
+            - generic [ref=e1736]:
+              - generic [ref=e1737]:
+                - text: The emergence of highly autonomous
+                - emphasis [ref=e2702]: artificial
+                - emphasis [ref=e2703]: intelligence
+                - text: (
+                - emphasis [ref=e2704]: AI
+                - text: )
+                - emphasis [ref=e2705]: systems
+                - text: "-ranging from humanoid robots to potential forms of artificial superintelligence-poses"
+              - generic [ref=e1743]:
+                - emphasis [ref=e2706]: oversight
+                - text: .
+              - generic [ref=e1746]:
+                - emphasis [ref=e2707]: Artificial
+                - emphasis [ref=e2708]: Intelligence
+                - text: Governance, Liability Gap, Electronic Legal Personality, XAI (Explainable
+                - emphasis [ref=e2709]: Artificial
+                - emphasis [ref=e2710]: Intelligence
+                - text: ), Digital Black Box, AI Regulation
+          - generic [ref=e1752]:
+            - paragraph [ref=e1753]: Downloads
+            - paragraph [ref=e1754]: "130"
+        - generic [ref=e1755]:
+          - generic [ref=e1757]:
+            - 'heading "From Ethification to Juridification: Human Oversight and the Potential Crowding Out of Ethicists by Lawyers in AI Governance" [level=3] [ref=e2711]':
+              - 'link "From Ethification to Juridification: Human Oversight and the Potential Crowding Out of Ethicists by Lawyers in AI Governance" [ref=e2712] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5391601
+                - text: "From Ethification to Juridification:"
+                - emphasis [ref=e2713]: Human
+                - emphasis [ref=e2714]: Oversight
+                - text: and the Potential Crowding Out of Ethicists by Lawyers in AI Governance
+            - paragraph
+            - paragraph [ref=e1768]: "Number of pages: 21 • Posted: 14 Aug 2025"
+            - paragraph [ref=e1769]:
+              - link "Johann Laux" [ref=e2715] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3183182
+            - paragraph [ref=e2716]: University of Oxford - Oxford Internet Institute
+            - generic [ref=e1772]:
+              - generic [ref=e1773]:
+                - emphasis [ref=e2717]: Artificial
+                - emphasis [ref=e2718]: Intelligence
+                - text: (
+                - emphasis [ref=e2719]: AI
+                - text: )
+                - emphasis [ref=e2720]: systems
+                - text: can pose harms to humans and societies.
+              - generic [ref=e1776]:
+                - text: embedding of
+                - emphasis [ref=e2721]: human
+                - emphasis [ref=e2722]: oversight
+                - text: is only emerging.
+              - generic [ref=e2723]:
+                - emphasis [ref=e2724]: Artificial
+                - emphasis [ref=e2725]: Intelligence
+                - text: ","
+                - emphasis [ref=e2726]: Human
+                - emphasis [ref=e2727]: Oversight
+                - text: ", AI Act, AI Ethics, Regulation"
+          - generic [ref=e1781]:
+            - paragraph [ref=e1782]: Downloads
+            - paragraph [ref=e1783]: "125"
+        - generic [ref=e1784]:
+          - generic [ref=e1786]:
+            - 'heading "The EU Artificial Intelligence Act: Legal and Compliance Challenges for Multinational Banks" [level=3] [ref=e2728]':
+              - 'link "The EU Artificial Intelligence Act: Legal and Compliance Challenges for Multinational Banks" [ref=e2729] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5619470
+                - text: The EU
+                - emphasis [ref=e2730]: Artificial
+                - emphasis [ref=e2731]: Intelligence
+                - text: "Act: Legal and Compliance Challenges for Multinational Banks"
+            - paragraph
+            - paragraph [ref=e1791]: "Number of pages: 11 • Posted: 17 Nov 2025"
+            - paragraph [ref=e1792]:
+              - link "Alexios Aivatoglou" [ref=e2732] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=8632021
+            - paragraph [ref=e1795]: National & Kapodistrian University of Athens
+            - generic [ref=e1797]:
+              - generic [ref=e2733]:
+                - text: This paper examines the legal and practical challenges of implementing the European Union
+                - emphasis [ref=e2734]: Artificial
+                - emphasis [ref=e2735]: Intelligence
+                - text: Act, focusing on multinational
+              - generic [ref=e1805]:
+                - emphasis [ref=e2736]: human
+                - emphasis [ref=e2737]: oversight
+                - text: ", and accountability."
+              - generic [ref=e1810]:
+                - emphasis [ref=e2738]: Artificial
+                - emphasis [ref=e2739]: Intelligence
+                - text: ", EU Law, Technology Regulation, AI Compliance, Corporate Governance, Banking Sector, Comparative Law, Data Protection, Ethics,"
+          - generic [ref=e1816]:
+            - paragraph [ref=e1817]: Downloads
+            - paragraph [ref=e1818]: "62"
+        - generic [ref=e1819]:
+          - generic [ref=e1821]:
+            - heading "Regulation of Artificial Intelligence" [level=3] [ref=e2740]:
+              - link "Regulation of Artificial Intelligence" [ref=e2741] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4821161
+                - text: Regulation of
+                - emphasis [ref=e2742]: Artificial
+                - emphasis [ref=e2743]: Intelligence
+            - paragraph
+            - paragraph [ref=e1828]: "Number of pages: 6 • Posted: 09 May 2024"
+            - paragraph [ref=e1829]:
+              - link "Praise Adelowo" [ref=e2744] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6702379
+            - paragraph [ref=e1832]: Independent
+            - generic [ref=e1833]:
+              - generic [ref=e1834]:
+                - text: This review found that the use of
+                - emphasis [ref=e2745]: Artificial
+                - emphasis [ref=e2746]: Intelligence
+                - text: in the European Union is regulated by the Adopted
+                - emphasis [ref=e2747]: Artificial
+                - emphasis [ref=e2748]: Intelligence
+                - text: Act, 2024.
+              - generic [ref=e1840]:
+                - text: Deployers ensure
+                - emphasis [ref=e2749]: human
+                - emphasis [ref=e2750]: oversight
+                - text: and monitoring and providers have a post market monitoring system in place.
+              - generic [ref=e1845]:
+                - emphasis [ref=e2751]: Artificial
+                - emphasis [ref=e2752]: Intelligence
+                - text: Act, 2024,
+                - emphasis [ref=e2753]: Artificial
+                - emphasis [ref=e2754]: intelligence
+                - text: ","
+                - emphasis [ref=e2755]: Artificial
+                - emphasis [ref=e2756]: intelligence
+                - text: systems, Regulation
+          - generic [ref=e1850]:
+            - paragraph [ref=e1851]: Downloads
+            - paragraph [ref=e1852]: "167"
+        - generic [ref=e1853]:
+          - generic [ref=e1855]:
+            - heading "COMMENTS ON THE EU PROPOSAL FOR THE ARTIFICIAL INTELLIGENCE ACT" [level=3] [ref=e2757]:
+              - link "COMMENTS ON THE EU PROPOSAL FOR THE ARTIFICIAL INTELLIGENCE ACT" [ref=e2758] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3949585
+                - text: COMMENTS ON THE EU PROPOSAL FOR THE
+                - emphasis [ref=e2759]: ARTIFICIAL
+                - emphasis [ref=e2760]: INTELLIGENCE
+                - text: ACT
+            - paragraph
+            - paragraph [ref=e1860]: "Number of pages: 8 • Posted: 18 Nov 2021"
+            - paragraph [ref=e1861]:
+              - link "Anastasiya Kiseleva" [ref=e2761] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3891953
+            - paragraph [ref=e2762]: Vrije Universiteit Brussel (VUB)
+            - generic [ref=e1864]:
+              - generic [ref=e1865]:
+                - text: Highly welcome things are the risk-based and data-focusing approaches, level of specifications for the core requirements (transparency,
+                - emphasis [ref=e2763]: human
+                - text: "-"
+                - emphasis [ref=e2764]: oversight
+              - generic [ref=e1872]:
+                - text: "Yet, I have discovered some areas of improval:"
+                - text: "- the roles of the subjects who are affected by the decision made with the use of"
+                - emphasis [ref=e2765]: AI
+                - emphasis [ref=e2766]: Systems
+          - generic [ref=e1876]:
+            - paragraph [ref=e1877]: Downloads
+            - paragraph [ref=e1878]: "412"
+        - generic [ref=e1879]:
+          - generic [ref=e1881]:
+            - heading "Use of Artificial Intelligence by Multinational Companies for Advanced Transparency in Cross-Jurisdictional ESG Reporting." [level=3] [ref=e2767]:
+              - link "Use of Artificial Intelligence by Multinational Companies for Advanced Transparency in Cross-Jurisdictional ESG Reporting." [ref=e2768] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5206744
+                - text: Use of
+                - emphasis [ref=e2769]: Artificial
+                - emphasis [ref=e2770]: Intelligence
+                - text: by Multinational Companies for Advanced Transparency in Cross-Jurisdictional ESG Reporting.
+            - paragraph [ref=e2771]: "No"
+            - paragraph [ref=e1887]: "Number of pages: 25 • Posted: 09 Jun 2025"
+            - paragraph [ref=e1888]:
+              - link "Vallari Joshi" [ref=e2772] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7540788
+            - paragraph [ref=e1891]:
+              - generic [ref=e2773]: affiliation not provided to SSRN
+            - generic [ref=e1892]:
+              - generic [ref=e1893]:
+                - paragraph
+                - paragraph [ref=e2774]:
+                  - text: Amid this growing regulatory complexity, companies are increasingly turning to
+                  - emphasis [ref=e2775]: artificial
+                  - emphasis [ref=e2776]: intelligence
+                  - text: (AI)—specifically
+                  - emphasis [ref=e2777]: generative
+                  - emphasis [ref=e2778]: AI
+                  - text: powered
+              - generic [ref=e1898]:
+                - text: Companies must implement strong governance frameworks around AI use, including
+                - emphasis [ref=e2779]: human
+                - emphasis [ref=e2780]: oversight
+                - text: ", regular audits, and sector-specific customization to avoid"
+              - generic [ref=e1904]:
+                - emphasis [ref=e2781]: Artificial
+                - emphasis [ref=e2782]: Intelligence
+                - text: ", ESG Reporting"
+          - generic [ref=e1911]:
+            - paragraph [ref=e1912]: Downloads
+            - paragraph [ref=e1913]: "84"
+        - generic [ref=e1914]:
+          - generic [ref=e1916]:
+            - 'heading "Automation Bias in the AI Act: On the Legal Implications of Attempting to De-Bias Human Oversight of AI" [level=3] [ref=e2783]':
+              - 'link "Automation Bias in the AI Act: On the Legal Implications of Attempting to De-Bias Human Oversight of AI" [ref=e2784] [cursor=pointer]':
+                - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5117560
+                - text: "Automation Bias in the AI Act: On the Legal Implications of Attempting to De-Bias"
+                - emphasis [ref=e2785]: Human
+                - emphasis [ref=e2786]: Oversight
+                - text: of AI
+            - paragraph
+            - paragraph [ref=e1924]: "Number of pages: 18 • Posted: 31 Mar 2025"
+            - paragraph [ref=e1925]:
+              - generic [ref=e1926]:
+                - link "Johann Laux" [ref=e2787] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3183182
+                - text: and
+              - link "Hannah Ruschemeier" [ref=e2789] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5454319
+            - paragraph [ref=e2790]: University of Oxford - Oxford Internet Institute; Universität Osnabrück - Faculty of Law
+            - generic [ref=e1928]:
+              - paragraph [ref=e2791]:
+                - generic [ref=e2792]:
+                  - text: This paper examines the legal implications of the explicit mentioning of automation bias (AB) in the
+                  - emphasis [ref=e2793]: Artificial
+                  - emphasis [ref=e2794]: Intelligence
+                  - text: Act (AIA).
+              - generic [ref=e1935]:
+                - text: The AIA mandates
+                - emphasis [ref=e2795]: human
+                - emphasis [ref=e2796]: oversight
+                - text: for high-risk
+                - emphasis [ref=e2797]: AI
+                - emphasis [ref=e2798]: systems
+                - text: and requires providers to enable awareness of AB, i.e., the human tendency to over-rely on AI
+              - generic [ref=e1939]:
+                - text: AI Act, AI Regulation,
+                - emphasis [ref=e2799]: Human
+                - emphasis [ref=e2800]: Oversight
+                - text: ", Automation Bias, AI Governance, Human-AI Interaction"
+          - generic [ref=e1957]:
+            - paragraph [ref=e1958]: Downloads
+            - paragraph [ref=e1959]: "554"
+  - navigation "footer-navigation" [ref=e1960]:
+    - generic [ref=e1961]:
+      - generic [ref=e1962]:
+        - generic [ref=e1963]:
+          - link "Submit a Paper " [ref=e1965] [cursor=pointer]:
+            - /url: https://hq.ssrn.com/submission.cfm
+            - text: Submit a Paper
+            - generic [ref=e1966]: 
+          - link "Section 508 Text Only Pages" [ref=e1967] [cursor=pointer]:
+            - /url: https://www.ssrn.com/index.cfm/en/section-508/
+        - generic [ref=e1968]:
+          - heading "SSRN Quick Links" [level=4] [ref=e1969]: SSRN Quick Links 
+          - list [ref=e1970]:
+            - listitem [ref=e1971]:
+              - link "SSRN Solutions" [ref=e1972] [cursor=pointer]:
+                - /url: https://www.elsevier.com/solutions/ssrn
+            - listitem [ref=e1973]:
+              - link "Research Paper Series" [ref=e1974] [cursor=pointer]:
+                - /url: https://www.ssrn.com/index.cfm/en/rps/
+            - listitem [ref=e1975]:
+              - link "Conference Papers" [ref=e1976] [cursor=pointer]:
+                - /url: https://www.ssrn.com/index.cfm/en/conferences/
+            - listitem [ref=e1977]:
+              - link "Partners in Publishing" [ref=e1978] [cursor=pointer]:
+                - /url: https://papers.ssrn.com/sol3/DisplayPipPublishers.cfm
+            - listitem [ref=e1979]:
+              - link "Jobs & Announcements" [ref=e1980] [cursor=pointer]:
+                - /url: https://www.ssrn.com/index.cfm/en/Announcements-Jobs/
+            - listitem [ref=e1981]:
+              - link "Special Topic Hubs" [ref=e1982] [cursor=pointer]:
+                - /url: https://www.ssrn.com/index.cfm/en/special-topic-hubs/
+        - generic [ref=e1983]:
+          - heading "SSRN Rankings" [level=4] [ref=e1984]: SSRN Rankings 
+          - list [ref=e1985]:
+            - listitem [ref=e1986]:
+              - link "Top Papers" [ref=e1987] [cursor=pointer]:
+                - /url: https://hq.ssrn.com/rankings/Ranking_display.cfm?TRN_gID=10
+            - listitem [ref=e1988]:
+              - link "Top Authors" [ref=e1989] [cursor=pointer]:
+                - /url: https://www.ssrn.com/index.cfm/en/top-authors/
+            - listitem [ref=e1990]:
+              - link "Top Organizations" [ref=e1991] [cursor=pointer]:
+                - /url: https://www.ssrn.com/index.cfm/en/top-organizations/
+        - generic [ref=e1992]:
+          - heading "About SSRN" [level=4] [ref=e1993]: About SSRN 
+          - list [ref=e1994]:
+            - listitem [ref=e1995]:
+              - link "Network Directors" [ref=e1996] [cursor=pointer]:
+                - /url: https://www.ssrn.com/index.cfm/en/network-directors/
+            - listitem [ref=e1997]:
+              - link "Announcements" [ref=e1998] [cursor=pointer]:
+                - /url: https://www.ssrn.com/index.cfm/en/recent-announcements/
+            - listitem [ref=e1999]:
+              - link "Contact us" [ref=e2000] [cursor=pointer]:
+                - /url: https://www.ssrn.com/index.cfm/en/contactus/
+            - listitem [ref=e2001]:
+              - link "FAQs" [ref=e2002] [cursor=pointer]:
+                - /url: https://service.elsevier.com/app/home/supporthub/ssrn/
+      - list [ref=e2003]:
+        - listitem [ref=e2004]:
+          - link "Facebook" [ref=e2005] [cursor=pointer]:
+            - /url: https://www.facebook.com/SSRNcommunity/
+            - generic [ref=e2006]: 
+        - listitem [ref=e2007]:
+          - link "Linkedin" [ref=e2008] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/493409?trk=tyah&trkInfo=clickedVertical%3Acompany%2CentityType%3AentityHistoryName%2CclickedEntityId%3Acompany_493409%2Cidx%3A0
+            - generic [ref=e2009]: 
+        - listitem [ref=e2010]:
+          - link "Twitter" [ref=e2011] [cursor=pointer]:
+            - /url: https://twitter.com/SSRN
+            - generic [ref=e2012]: 
+      - generic [ref=e2013]:
+        - link "Elsevier" [ref=e2015] [cursor=pointer]:
+          - /url: http://www.elsevier.com/
+        - generic [ref=e2016]:
+          - generic [ref=e2017]:
+            - link "Copyright" [ref=e2018] [cursor=pointer]:
+              - /url: https://www.ssrn.com/index.cfm/en/dmca-notice-policy/
+            - link "Terms and Conditions" [ref=e2019] [cursor=pointer]:
+              - /url: https://www.ssrn.com/index.cfm/en/terms-of-use/
+            - link "Privacy Policy" [ref=e2020] [cursor=pointer]:
+              - /url: https://www.elsevier.com/legal/privacy-policy
+          - generic [ref=e2021]:
+            - paragraph [ref=e2022]: "All content on this site: Copyright © 2026 Elsevier Inc., its licensors, and contributors. All rights are reserved, including those for text and data mining, AI training, and similar technologies. For all open access content, the relevant licensing terms apply."
+            - paragraph [ref=e2023]: We use cookies to help provide and enhance our service and tailor content.
+            - paragraph [ref=e2024]:
+              - text: To learn more, visit
+              - button "Cookie settings" [ref=e2025] [cursor=pointer]
+              - text: .
+              - generic [ref=e2026]: 
+        - link "RELX" [ref=e2028] [cursor=pointer]:
+          - /url: http://www.relx.com/

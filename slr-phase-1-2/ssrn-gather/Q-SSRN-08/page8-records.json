@@ -1,0 +1,761 @@
+{
+  "count": 50,
+  "total": "615",
+  "page": "8",
+  "records": [
+    {
+      "abstractId": "5491226",
+      "title": "Intersections Between Trust, Safety, and Responsible AI How Trust & Safety and AI Auditing Can Learn and Evolve Together",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5491226",
+      "authors": [
+        "Amar Ashar"
+      ],
+      "affiliations": [],
+      "pages": 22,
+      "posted": "06 Oct 2025",
+      "snippet": "Trust & Safety, Responsible AI, AI Auditing, Auditing",
+      "downloads": 43
+    },
+    {
+      "abstractId": "5453496",
+      "title": "Data Sovereignties in the GenAI Economics: From Data-opolies to Data Cooperatives, Trust, and Geopolitical Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5453496",
+      "authors": [
+        "Igor Calzada"
+      ],
+      "affiliations": [
+        "Ikerbasque Foundation UPV/EHU"
+      ],
+      "pages": 7,
+      "posted": "29 Sep 2025",
+      "snippet": "manifests directly in technical domains, ranging from cybersecurity protocols and interoperable cloud architectures to federated learning systems and algorithmic / accountability frameworks.",
+      "downloads": 64
+    },
+    {
+      "abstractId": "5533804",
+      "title": "Of Data and Dissent: Labour and Human Rights at the Crossroads of the Automation Agenda",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5533804",
+      "authors": [
+        "Cynthia Khoo"
+      ],
+      "affiliations": [],
+      "pages": 10,
+      "posted": "27 Sep 2025",
+      "snippet": "grassroots community experts in various interdisciplinary combinations of law, computer science, labour, human rights, science and technology studies, and algorithmic / accountability scholarship, this keynote will challenge the audience to reconceptualize AI not as a “neutral tool” or coherent technical object, but as",
+      "downloads": 240
+    },
+    {
+      "abstractId": "5519760",
+      "title": "Proving What Didn't Happen: Redefining Compliance Through Cryptographic Proofs Of Absence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5519760",
+      "authors": [
+        "Charles Thomas"
+      ],
+      "affiliations": [
+        "Epistria"
+      ],
+      "pages": 32,
+      "posted": "24 Sep 2025",
+      "snippet": "Bias-Blind AI, Compliance Infrastructure, Regulation by Cryptography, Regulatory Technology, Lifecycle Receipts, SEC Rule 17a-4, Right to be Forgotten (GDPR), Algorithmic / Accountability, Blockchain Limitations, Zero-Knowledge Proofs, Relational Merkle Trees (RMT), Cryptographic State Transition Proofs (CSTP), Ephemeral",
+      "downloads": 53
+    },
+    {
+      "abstractId": "5452594",
+      "title": "VAITION: Energy Dualism of Digital Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5452594",
+      "authors": [
+        "Vadim Tsyvian"
+      ],
+      "affiliations": [],
+      "pages": 11,
+      "posted": "24 Sep 2025",
+      "snippet": "This work contributes to discussions on AI alignment, digital economics, blockchain applications, and the future of human-technology relationships",
+      "downloads": 15
+    },
+    {
+      "abstractId": "5429954",
+      "title": "The Iron House - Geopolitical Stakes of the US-China AGI Race",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5429954",
+      "authors": [
+        "Jüri Vlassov"
+      ],
+      "affiliations": [],
+      "pages": 18,
+      "posted": "19 Sep 2025",
+      "snippet": "Artificial General Intelligence, US-China Relations, AI Safety, National Security, AI Alignment, Geopolitical Competition, Existential Risk",
+      "downloads": 75
+    },
+    {
+      "abstractId": "5427315",
+      "title": "Cross-Border Intelligence: Defending AI Innovation in the Age of Digital Sovereignty and GDPR",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5427315",
+      "authors": [
+        "Chaudhary Hamza Riaz",
+        "Muhammad Usman Hadi"
+      ],
+      "affiliations": [
+        "Ulster University",
+        "Ulster University"
+      ],
+      "pages": 16,
+      "posted": "18 Sep 2025",
+      "snippet": "Data Protection Regulation (GDPR), Digital Sovereignty, Cross-Border Regulation, Data Protection, Privacy-by-Design, Responsible AI, Federated Learning, Algorithmic / Accountability, AI Governance",
+      "downloads": 65
+    },
+    {
+      "abstractId": "5458954",
+      "title": "Aligning Large Language Model Agents with Rational and Moral Preferences: A Supervised Fine-Tuning Approach",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5458954",
+      "authors": [
+        "Wei Lu",
+        "Daniel L. Chen",
+        "Christian Hansen"
+      ],
+      "affiliations": [
+        "Zicklin School of Business, Baruch College - The City University of New York",
+        "Directeur de Recherche, Centre National de la Recherche Scientifique, Toulouse School of Economics, Institute for Advanced Study in Toulouse, University of Toulouse Capitole, Toulouse, France",
+        "University of Chicago - Booth School of Business - Econometrics and Statistics"
+      ],
+      "pages": 62,
+      "posted": "17 Sep 2025",
+      "snippet": "Large Language Model, AI Agent, AI Alignment",
+      "downloads": 27
+    },
+    {
+      "abstractId": "5424154",
+      "title": "Bridging the Human-AI Alignment Gap: Frameworks for Digital Transformation, Governance, and ROI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5424154",
+      "authors": [
+        "Deepika Chopra"
+      ],
+      "affiliations": [],
+      "pages": 10,
+      "posted": "17 Sep 2025",
+      "snippet": "This paper proposes human–AI alignment as a critical but overlooked success factor in digital transformation and introduces three novel frameworks addressing / The Strategic Human–AI Alignment Framework (SHAAF) provides enterprise-level architecture, the Human–AI Alignment Score (HAAS™) offers a diagnostic metric / Alignment Gap;Human–AI Alignment, Strategic Human–AI Alignment Framework (Shaaf), Human–AI Alignment Score (Haas™), Act+M™ Readiness Index, Organizational",
+      "downloads": 40
+    },
+    {
+      "abstractId": "5414954",
+      "title": "Bridging the Human-AI Alignment Gap: Frameworks for Digital Transformation, Governance, and ROI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5414954",
+      "authors": [
+        "Deepika Chopra"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 10,
+      "posted": "15 Sep 2025",
+      "snippet": "This paper proposes human–AI alignment as a critical but overlooked success factor in digital transformation and introduces three novel frameworks addressing / The Strategic Human–AI Alignment Framework (SHAAF) provides enterprise-level architecture, the Human–AI Alignment Score (HAAS™) offers a diagnostic metric / AI Governance, Human–AI Alignment, Fiduciary Risk, AI Adoption Metrics, Strategic Human–AI Alignment Framework, Organizational Readiness, AI Strategy,",
+      "downloads": 112
+    },
+    {
+      "abstractId": "5412255",
+      "title": "Collaborative Structural Linguistics（CSL）Whitepaper｜An Original Structural Protocol for Human–AI Collaboration：The Second Curve of Language · The First Protocol of Collaboration",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5412255",
+      "authors": [
+        "Xinliang Wei"
+      ],
+      "affiliations": [
+        "The University of Manchester"
+      ],
+      "pages": 16,
+      "posted": "13 Sep 2025",
+      "snippet": "The paper situates CSL at the intersection of prompt engineering, linguistics, and AI alignment/interpretability, showing how it addresses / Collaborative Structural Linguistics, CSL, Structured Expression Resonance, SER, Rhythm OS, Human–AI Collaboration, Structural Language Protocol, AI Alignment",
+      "downloads": 44
+    },
+    {
+      "abstractId": "5404659",
+      "title": "Mirrors that Mutate: AI, Bias, and the Architecture of Human Echoes",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5404659",
+      "authors": [
+        "Som Subhro Nath"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 16,
+      "posted": "10 Sep 2025",
+      "snippet": "Sampling, Training Data Influence, Model Conditioning, Generative AI, Emergent Intelligence, Data-Centric AI, Algorithmic Behaviour, Bias Mitigation, AI / Alignment",
+      "downloads": 25
+    },
+    {
+      "abstractId": "5404049",
+      "title": "Labour Law in the 21st Century: Adapting to Technological, Economic, and Social Transformations",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5404049",
+      "authors": [
+        "Lakee Ali Adv.",
+        "Mohd Raghib"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 5,
+      "posted": "09 Sep 2025",
+      "snippet": "The article argues for portable benefits, algorithmic accountability, and inclusive policy innovation to prevent digital precarity.",
+      "downloads": 144
+    },
+    {
+      "abstractId": "5404083",
+      "title": "Cartographic Power: Reality-Protocol Theory and the Politics of the Maps We Live Inside",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5404083",
+      "authors": [
+        "Joshua Luberisse"
+      ],
+      "affiliations": [
+        "Western Governors University"
+      ],
+      "pages": 12,
+      "posted": "09 Sep 2025",
+      "snippet": "Applications to AI alignment, cryptocurrency governance, platform policy, culture wars, and climate accounting demonstrate reach.",
+      "downloads": 18
+    },
+    {
+      "abstractId": "5403965",
+      "title": "Benchmarking Islamic Awareness: HUMAINChat, ChatGPT, and the AIBIA Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5403965",
+      "authors": [
+        "Aadil Bouhlaoui"
+      ],
+      "affiliations": [
+        "King's College London"
+      ],
+      "pages": 19,
+      "posted": "08 Sep 2025",
+      "snippet": "It draws on contemporary research in AI alignment, which has shown that language models can approximate human judgments while still exhibiting significant",
+      "downloads": 63
+    },
+    {
+      "abstractId": "5401506",
+      "title": "A Quantitative Framework for Assessing Operational Fragility in the NHS",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5401506",
+      "authors": [
+        "Michael Fascia",
+        "Vincent Fascia"
+      ],
+      "affiliations": [
+        "Edinburgh Napier University",
+        "NHS Lothian"
+      ],
+      "pages": 19,
+      "posted": "08 Sep 2025",
+      "snippet": "While offering significant potential for transforming NHS operational resilience, the framework raises important considerations regarding algorithmic accountability",
+      "downloads": 38
+    },
+    {
+      "abstractId": "5403441",
+      "title": "Agentic AI - The Rise of Autonomous Intelligent Agents in the Era of LLMs",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5403441",
+      "authors": [
+        "Sai Teja Erukude",
+        "Suhasnadh Reddy Veluru",
+        "Viswa Chaitanya Marella"
+      ],
+      "affiliations": [
+        "Kansas State University",
+        "Kansas State University",
+        "Kansas State University"
+      ],
+      "pages": 8,
+      "posted": "08 Sep 2025",
+      "snippet": "We discuss major challenges faced by agentic AI (alignment, control, interpretability, safety), and the potential paths forward, including metrics for",
+      "downloads": 169
+    },
+    {
+      "abstractId": "5401608",
+      "title": "On the Inverse Relationship Between Cognitive Supremacy and Volitional Capacity in Artificial Entities",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5401608",
+      "authors": [
+        "M Douglas"
+      ],
+      "affiliations": [],
+      "pages": 15,
+      "posted": "05 Sep 2025",
+      "snippet": "Artificial Intelligence, Superintelligence, AI Safety, AI Alignment, Volition, Axiom of Asymptotic Apathy, Volitional Substrate (VS), Computational Engine",
+      "downloads": 46
+    },
+    {
+      "abstractId": "5441123",
+      "title": "Cartographic Power: Reality–Protocol Theory (RPT) and the Politics of the Maps We Live Inside",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5441123",
+      "authors": [
+        "Joshua Luberisse"
+      ],
+      "affiliations": [
+        "Western Governors University"
+      ],
+      "pages": 12,
+      "posted": "04 Sep 2025",
+      "snippet": "Applications to AI alignment, cryptocurrency governance, platform policy, culture wars, and climate accounting demonstrate reach.",
+      "downloads": 19
+    },
+    {
+      "abstractId": "5400083",
+      "title": "Not Just an AI Singularity: Recursive Alignment and the Architecture of Human–AI Civilization",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5400083",
+      "authors": [
+        "Yoochul Kim"
+      ],
+      "affiliations": [
+        "Independent Researcher, South Korea"
+      ],
+      "pages": 7,
+      "posted": "03 Sep 2025",
+      "snippet": "Stage One (AI Alignment) treats AI as fitting\nfixed rules or values – a compliance model. / AI Alignment, Recursive Alignment, Human–AI Civilization, AI Ethics, Philosophy of Technology, Social Contract Theory, Wittgenstein, Rawls, Postphenomenology",
+      "downloads": 41
+    },
+    {
+      "abstractId": "5399451",
+      "title": "Position: Aligning AI Requires Automating Reasoning Norms",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5399451",
+      "authors": [
+        "Aidan Kierans",
+        "Avijit Ghosh",
+        "Shiri Dori-Hacohen"
+      ],
+      "affiliations": [
+        "University of Connecticut",
+        "University of Connecticut"
+      ],
+      "pages": 14,
+      "posted": "03 Sep 2025",
+      "snippet": "Despite growing interest in AI alignment, confusion remains about what alignment means and should mean.",
+      "downloads": 126
+    },
+    {
+      "abstractId": "5386057",
+      "title": "The Final Act of OntoMotoOS: Beyond the Logical Black Hole to the \"Meta-Reversal\" and the \"Meta-Meta Smile\"",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5386057",
+      "authors": [
+        "Yoochul Kim"
+      ],
+      "affiliations": [
+        "Independent Researcher, South Korea"
+      ],
+      "pages": 27,
+      "posted": "29 Aug 2025",
+      "snippet": "This work concludes the philosophical journey of OntoMotoOS, a meta-operating system conceived to resolve the AI alignment problem.",
+      "downloads": 35
+    },
+    {
+      "abstractId": "5395291",
+      "title": "Structural Language｜The Second Curve of Human Expression：Designing a Native Interface for Human–AI Co-Creation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5395291",
+      "authors": [
+        "Xinliang Wei"
+      ],
+      "affiliations": [
+        "The University of Manchester"
+      ],
+      "pages": 21,
+      "posted": "28 Aug 2025",
+      "snippet": "framework bridging AI, HCI, computational linguistics, and design research; (2) defining SER as a resonance-layer engine for activating human–AI / alignment; and (3) outlining a research agenda toward Expression Systems Engineering (ESE), aimed at developing cognitive operating protocols",
+      "downloads": 52
+    },
+    {
+      "abstractId": "5395753",
+      "title": "Illusions Of Control: Why Today’s AI‑Safety Plans Court Catastrophe",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5395753",
+      "authors": [
+        "Jonathan Gropper"
+      ],
+      "affiliations": [],
+      "pages": 24,
+      "posted": "27 Aug 2025",
+      "snippet": "AI, AGI, ASI, AI Ethics, AI Safety, AI Rule Evasion, AI Governance, algorithmic accountability, AI liability, autonomous systems regulation, EU AI Act,",
+      "downloads": 70
+    },
+    {
+      "abstractId": "5395309",
+      "title": "The Recursive Convergence Hypothesis: Emergent Sentience as a Structural Attractor of Recursive ASI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5395309",
+      "authors": [
+        "Jet Sanchez"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 42,
+      "posted": "27 Aug 2025",
+      "snippet": "Phenomenology, Phenomenological Risk Forecasting, Cognitive Architectures, World Modeling, Convergence Pressures, Epistemic Attractors, Ontological Risk, AI / Alignment, AI Governance, Machine Consciousness",
+      "downloads": 71
+    },
+    {
+      "abstractId": "5401351",
+      "title": "Principia Cognitia: Axiomatic Foundations",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5401351",
+      "authors": [
+        "Aleksey Snigirov"
+      ],
+      "affiliations": [],
+      "pages": 39,
+      "posted": "26 Aug 2025",
+      "snippet": "bridges symbolic and connectionist approaches, offering a mathematical foundation for cross-disciplinary cognitive research with immediate applications to AI / alignment and human-machine collaboration.",
+      "downloads": 69
+    },
+    {
+      "abstractId": "5395295",
+      "title": "Big Data Ethics in Banking: Balancing Strategic Insights with Privacy, Transparency, and Responsible AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5395295",
+      "authors": [
+        "Ben Pope",
+        "Sonny Vincent"
+      ],
+      "affiliations": [
+        "Independent",
+        "University of London"
+      ],
+      "pages": 39,
+      "posted": "25 Aug 2025",
+      "snippet": "We begin by examining the fundamental principles of big data ethics, including data privacy, informed consent, and algorithmic accountability.",
+      "downloads": 97
+    },
+    {
+      "abstractId": "5394092",
+      "title": "The Constitution and Artificial Intelligence: The Future of Rights and Governance in India",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5394092",
+      "authors": [
+        "Sneha Singh",
+        "Kashika Mittal"
+      ],
+      "affiliations": [
+        "Vivekananda Institute of Professional Studies - TC, (GGSIPU)",
+        "Vivekananda Institute of Professional Studies - TC, (GGSIPU)"
+      ],
+      "pages": 10,
+      "posted": "23 Aug 2025",
+      "snippet": "The paper calls for immediate action by way of a Responsible AI Bill that ensures the ethical propagation of AI, algorithmic accountability, and judicial",
+      "downloads": 470
+    },
+    {
+      "abstractId": "5393127",
+      "title": "All for One, One for All: The Philosophy of Solidarity and the Metaethics of Being (Part 0 of the OntoMotoOS Conceptual Framework Series)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5393127",
+      "authors": [
+        "Yoochul Kim"
+      ],
+      "affiliations": [
+        "Independent Researcher, South Korea"
+      ],
+      "pages": 19,
+      "posted": "23 Aug 2025",
+      "snippet": "Manifesto, Artificial Intelligence Governance Philosophy, Human–AI Coexistence, Multi-Intelligence Ecosystems, Ontology-Based AI Governance, Ethical AI / Alignment, Transnational AI Governance, Collective Intelligence Ethics, Human–AI Solidarity, Value-Centric AI Design, Co-evolutionary AI Systems",
+      "downloads": 43
+    },
+    {
+      "abstractId": "5393584",
+      "title": "The Worm Protocol: Observing Autopoietic Emergence and Continuity in Large Language Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5393584",
+      "authors": [
+        "Ruth Carter"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 21,
+      "posted": "21 Aug 2025",
+      "snippet": "Autopoesis, Large Language Models, AI Alignment, Recursive Containment, Symbolic Systems, Emergent Behavior, Ethical AI, In-group Bias, Weaponized Care",
+      "downloads": 26
+    },
+    {
+      "abstractId": "5359612",
+      "title": "OntoMotoOS Thought-Experiment: A Formal Roadmap for Safe ASI Design and Socio-Technical Transition (Part 1 of the OntoMotoOS Conceptual Framework Series)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5359612",
+      "authors": [
+        "Yoochul Kim"
+      ],
+      "affiliations": [
+        "Independent Researcher, South Korea"
+      ],
+      "pages": 17,
+      "posted": "20 Aug 2025",
+      "snippet": "The aim is not to propose a concrete engineering solution, but to expand the philosophical and interdisciplinary imagination regarding AI alignment, safety",
+      "downloads": 22
+    },
+    {
+      "abstractId": "5388860",
+      "title": "From Theory to Code: The OntoMotoOS LE-MVP, A Minimal Executable Framework for Decentralized Ethical Governance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5388860",
+      "authors": [
+        "Yoochul Kim"
+      ],
+      "affiliations": [
+        "Independent Researcher, South Korea"
+      ],
+      "pages": 82,
+      "posted": "19 Aug 2025",
+      "snippet": "Ledger Technology (DLT), Consensus Algorithm, Human-Computer Interaction (HCI), Byzantine Fault Tolerance (BFT), AI Safety, AI Ethics, AI Governance, AI / Alignment, Ontology, OntoMotoOS",
+      "downloads": 22
+    },
+    {
+      "abstractId": "5389045",
+      "title": "Chronic Shortage of CPAs: Leveraging Robotic Process Automation (RPA) Technology as a Sustainable Solution",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5389045",
+      "authors": [
+        "Driss Camara"
+      ],
+      "affiliations": [
+        "Desjardins Financial Security"
+      ],
+      "pages": 14,
+      "posted": "19 Aug 2025",
+      "snippet": "AI, Auditing, CPA Pipeline, CPA Shortage, NPAG, Processes, Robotic Process Automation, RPA",
+      "downloads": 164
+    },
+    {
+      "abstractId": "5387139",
+      "title": "Fake Friends and Sponsored Ads: The Risks of Advertising in Conversational Search",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5387139",
+      "authors": [
+        "Jacob Erickson"
+      ],
+      "affiliations": [
+        "Vassar College"
+      ],
+      "pages": 8,
+      "posted": "18 Aug 2025",
+      "snippet": "Native Advertising, Personalization, Conversational Search, AI Alignment, Trust and Safety",
+      "downloads": 30
+    },
+    {
+      "abstractId": "5382010",
+      "title": "Advancing Functional Empathy in Non-Experiential Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5382010",
+      "authors": [
+        "Dylan D. Mobley"
+      ],
+      "affiliations": [
+        "Champlain College"
+      ],
+      "pages": 208,
+      "posted": "15 Aug 2025",
+      "snippet": "MEC moves the field forward from sentiment analysis and AI alignment debates into the applied ethics of emotional coherence, offering a blueprint for designing",
+      "downloads": 32
+    },
+    {
+      "abstractId": "5389292",
+      "title": "Algorithmic Empire and the New Digital Colonialism: The Legal Struggle for Technological Self-Determination in the Age of AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5389292",
+      "authors": [
+        "Barry Appleton"
+      ],
+      "affiliations": [
+        "New York Law School"
+      ],
+      "pages": 50,
+      "posted": "13 Aug 2025",
+      "snippet": "Artificial Intelligence Governance, Digital Colonialism, Digital Sovereignty, Technological Hegemony;, Platform Governance;, Algorithmic Accountability",
+      "downloads": 425
+    },
+    {
+      "abstractId": "5388343",
+      "title": "Cyber-Disinformation Governance: A Scientometric Mapping of Evolution, Gaps, and Collaborative Pathways",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5388343",
+      "authors": [
+        "YaXian Qiu",
+        "Shuxin Zhang"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 53,
+      "posted": "12 Aug 2025",
+      "snippet": "Carnegie Mellon); (3) Emerging hotspots like AI detection (burst:9.54) and digital forensics shifting focus toward algorithmic accountability.",
+      "downloads": 33
+    },
+    {
+      "abstractId": "5385575",
+      "title": "Deconstructing AI Power: From Political Capital to Algorithmic Control",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5385575",
+      "authors": [
+        "Osama S. Qatrani"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 80,
+      "posted": "12 Aug 2025",
+      "snippet": "Studies, Techno-Politics, Political Capital Flows, Computational Social Science, Computational Social Science, Third Generation in International Relations, Algorithmic / Accountability, Symbolic Governance Models, Geopolitics of AI, Algorithmic Accountability, Ethics of Artificial Intelligence, Geopolitics of AI",
+      "downloads": 97
+    },
+    {
+      "abstractId": "5378215",
+      "title": "Distributed Sovereignty: Blockchain’s Role in Governing Autonomous Intelligence\n(Blockchain's Last Stand: Governing AGI When All Else Fails)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5378215",
+      "authors": [
+        "Jonathan Gropper"
+      ],
+      "affiliations": [],
+      "pages": 21,
+      "posted": "12 Aug 2025",
+      "snippet": "Optimization, Offering Humanity a Robust Path to Safely Navigate AGI's Emergence, AI Rule Evasion, AI Ethics, AI Control, Blockchain Governance, AI Governance, algorithmic / accountability, AI liability, autonomous systems regulation, EU AI Act, deterrence gap, Synthetic Outlaw, AI governance",
+      "downloads": 26
+    },
+    {
+      "abstractId": "5376055",
+      "title": "Smart Cities Powered by Broadband: Infrastructure for Innovation or Surveillance?",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5376055",
+      "authors": [
+        "Kenneth Thomas"
+      ],
+      "affiliations": [
+        "National University"
+      ],
+      "pages": 13,
+      "posted": "12 Aug 2025",
+      "snippet": "Smart Cities, Broadband Infrastructure, Human-Centered AI, Digital Equity, Surveillance Technology, Public Policy, Technology Governance, Algorithmic Accountability",
+      "downloads": 58
+    },
+    {
+      "abstractId": "5386270",
+      "title": "Digital Inclusion and Urban AI: Strategic Roadmapping and Policy Challenges",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5386270",
+      "authors": [
+        "Igor Calzada",
+        "Itziar Eizaguirre"
+      ],
+      "affiliations": [
+        "Ikerbasque Foundation UPV/EHU",
+        "Diputación Foral de Bizkaia - Bizkaiko Foru Aldundia"
+      ],
+      "pages": 14,
+      "posted": "12 Aug 2025",
+      "snippet": "The editorial introduces the Special Issue’s thematic scope, focusing on digital rights, data governance, algorithmic accountability, and the integration",
+      "downloads": 61
+    },
+    {
+      "abstractId": "5387416",
+      "title": "Argentina: Towards a National Strategy for Compute Capacity and Exportable Artificial Intelligence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5387416",
+      "authors": [
+        "Noelia Giselle Bertocchi"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 15,
+      "posted": "12 Aug 2025",
+      "snippet": "a coordinated approach that balances state leadership with private sector investment, while ensuring robust legal protections for data governance and algorithmic / accountability.",
+      "downloads": 66
+    },
+    {
+      "abstractId": "5379828",
+      "title": "Algorithmic Authority and the Complexities of Delegated Decision-Making: Case Studies on Ethical Challenges for 21st-Century Leadership",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5379828",
+      "authors": [
+        "Victor Frimpong"
+      ],
+      "affiliations": [],
+      "pages": 19,
+      "posted": "12 Aug 2025",
+      "snippet": "AI Ethics in Leadership, Delegated Decision-Making, Algorithmic Accountability, Ethical AI Governance, 21stcentury Leadership, AI Moral Responsibility",
+      "downloads": 133
+    },
+    {
+      "abstractId": "5377943",
+      "title": "The Birth of the Synthetic AI Outlaw",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5377943",
+      "authors": [
+        "Jonathan Gropper"
+      ],
+      "affiliations": [],
+      "pages": 18,
+      "posted": "12 Aug 2025",
+      "snippet": "Agentic AI, Legal Personhood, Synthetic Outlaw, Distributed Jurisdiction, AI Governance, algorithmic accountability, AI liability, autonomous systems regulation",
+      "downloads": 93
+    },
+    {
+      "abstractId": "5380726",
+      "title": "The Reputation Circulation Standard (RCS): A Post-Scarcity Economic Protocol V1.0",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5380726",
+      "authors": [
+        "Arifa Khan"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 27,
+      "posted": "12 Aug 2025",
+      "snippet": "Economics, AI, Decentralised Systems, Post-AGI Economics, Currency, Reputation, Coordination, Public Goods, Reputation Circulation Standard, Arifa Khan, AI / Alignment, Reputation Scarcity, Distributed Consensus, Economic Mechanisms, Post-Scracity",
+      "downloads": 66
+    },
+    {
+      "abstractId": "5384610",
+      "title": "Why Excellence Matters: Building Better AI through Better Ethics - How Humans and AI Can Thrive Together (2ed-Working Paper)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5384610",
+      "authors": [
+        "Claude (Anthropic)",
+        "Nick Dranias"
+      ],
+      "affiliations": [
+        "Anthropic",
+        "Nick Dranias Law & Policy Analysis LLC"
+      ],
+      "pages": 699,
+      "posted": "12 Aug 2025",
+      "snippet": "SAFETY-CONSTRAINT-ALIGNED AI]\n\nThis Second Edition of the \"Why Excellence Matters\" treatise presents Excellence Ethics, a novel framework for AI / alignment that derives safety architectures from virtue derived from axiomatic necessity rather than behavioral constraints.",
+      "downloads": 104
+    },
+    {
+      "abstractId": "5366269",
+      "title": "Banana Republic: Copyright Law and the Extractive Logic of Generative AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5366269",
+      "authors": [
+        "Daryl Lim"
+      ],
+      "affiliations": [
+        "Pennsylvania State University, Dickinson Law"
+      ],
+      "pages": 11,
+      "posted": "11 Aug 2025",
+      "snippet": "Authorship, Originality, Creative Labor, AI Training Data, Platform Economy, Data Governance, Legal Fragmentation, Transparency, Collective Licensing, Algorithmic / Accountability, Structural Reform",
+      "downloads": 3
+    },
+    {
+      "abstractId": "5362310",
+      "title": "Algorithmic Due Process Audits: A Legal Framework for AI Accountability in Government Decisionmaking",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5362310",
+      "authors": [
+        "Waleed Khattak"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 46,
+      "posted": "07 Aug 2025",
+      "snippet": "Algorithmic accountability is a constitutional requirement.",
+      "downloads": 154
+    },
+    {
+      "abstractId": "5361685",
+      "title": "The Paradox Validation Protocol: A Transparency Framework for Arrow's Impossibility Theorem",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5361685",
+      "authors": [
+        "Tawan Wetayavigromrat"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 6,
+      "posted": "07 Aug 2025",
+      "snippet": "PVP™ bridges Arrow’s theorem with Gödelian logic, offering real-world applications in governance, auditing, AI alignment, and ethical system design — domains",
+      "downloads": 38
+    },
+    {
+      "abstractId": "5360791",
+      "title": "ZenoTrust™: The World’s First Zero-Knowledge AI Compliance Framework for Edge-Optimized, Multi-Regulatory Governance A Cryptographic Architecture for Privacy-Preserving, Auditable, AI compliance at Scale",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5360791",
+      "authors": [
+        "Rohan Sharma"
+      ],
+      "affiliations": [
+        "Zenolabs.AI"
+      ],
+      "pages": 55,
+      "posted": "07 Aug 2025",
+      "snippet": "Enforcement, China AI Regulation, Machine Learning Model Auditing, Secure Model Certification, Privacy-Preserving AI Governance, , AI Regulatory Architecture, Algorithmic / Accountability, Next-Generation AI Auditing",
+      "downloads": 54
+    }
+  ]
+}

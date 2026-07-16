@@ -1,0 +1,22 @@
+item_key,decision,confidence,rationale,prior_decision,prior_confidence
+MBS5C7LD,discard,medium,"Four-factor oversight framework is meta-level (what shapes oversight) not mechanism-level; a software team would need to re-derive all factors for code review context which is substantial domain work not trivial translation",maybe,medium
+8B46YAHW,keep,medium,"Dataset explicitly includes code generation task; HITL deployment framework with 85% detection accuracy provides methodology directly applicable to AI code provenance detection in software orgs",maybe,medium
+JXJQGBN8,discard,medium,"High-level policy/standards analysis of NIST AI RMF and ISO/IEC 42001 without software engineering specificity; no DevSecOps or code-level operationalization present",maybe,medium
+HNQT56FM,discard,medium,"No abstract prevents operationalizability assessment; title indicates AI alignment moral philosophy without apparent engineering mechanism",discard,low
+BE8U3QRR,discard,medium,"Sparse abstract shows standards analysis focus; no software/code-specific implementation guidance despite 'technical' framing",maybe,medium
+MJKFY8UC,keep,medium,"Policy-as-code and heterogeneity scoring to avoid monoculture are explicitly software engineering patterns; fail-close is a standard engineering practice — these transfer trivially despite financial framing",maybe,medium
+EVCJBNEU,discard,medium,"AI failure detection and accountability records serve workforce preservation goal not code quality governance; mechanisms designed for different purpose than SLR scope",maybe,medium
+G9QRERTM,discard,medium,"General AI innovation governance validated at org level; compliance measurement targets AIA generally not code review practices or AI code quality specifically",maybe,medium
+DYXBGHXH,discard,medium,"Methodological note about thesis generation process rather than empirical research; lacks operationalizable methodology for measuring or addressing the HITL liability gap identified",maybe,low
+CXEL968T,discard,medium,"Near-empty abstract prevents assessment; legislative liability framework is policy not engineering practice",discard,low
+RBKZILQD,discard,medium,"Insurance-as-governance requires organizational/legal mediation; software teams cannot directly adopt insurance frameworks as engineering practice",maybe,medium
+XLZVTNUC,discard,high,"Legal scholarship analyzing judicial interpretation of AI liability; despite mentioning human oversight the contribution is for litigation not engineering practice",maybe,medium
+7CPZ358P,discard,high,"Philosophical analysis of purposes behind human control rather than operational mechanisms; weapons systems domain has no structural parallel to code review",maybe,medium
+Z6I9JDFX,discard,medium,"Cross-framework legal audit analysis identifies regulatory gaps but provides no engineering methodology; software teams don't directly adopt legal audit frameworks",maybe,medium
+FTICIPDY,discard,medium,"Keyword-only abstract prevents assessment of whether 'interpretive sovereignty failure' concept is operationalizable or merely conceptual",keep,low
+SVPFXI3P,keep,medium,"Pairwise comparison mechanism for LLM-assisted review scaling is domain-agnostic and transfers trivially to code review prioritization; empirically validated to outperform rating-based methods",maybe,medium
+7QVX75AV,keep,low,"Multi-agent HITL architecture for scaling research with explicit 'vibe research' framing suggests structural parallel; transfer to code review plausible but domain-specific mechanisms unclear",maybe,medium
+J998BUDB,keep,medium,"Metrics for measuring HITL scaling thresholds empirically validated on 100K decisions; data governance and code review are both high-volume decision processes with structural parallel",maybe,medium
+DUBFF52U,keep,medium,"Tiered liability model with measurable indices (developer culpability, oversight, explainability) and ready-to-use procurement scorecard; developer/tool/operator allocation transfers to software contexts",maybe,medium
+V4EEV4PB,keep,medium,"Structured prompt governance frameworks for reducing LLM hallucination transfer directly to AI code generation quality management; evaluation methodology (LLM-as-Judge) is domain-agnostic",maybe,medium
+```

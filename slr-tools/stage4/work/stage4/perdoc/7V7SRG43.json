@@ -1,0 +1,62 @@
+{
+  "item_key": "7V7SRG43",
+  "citation": "Tang 2024",
+  "evidence_type": [
+    "system-tool",
+    "empirical",
+    "benchmark",
+    "dataset"
+  ],
+  "problem_statement": "Code review is labor-intensive and existing automated review tools rely on single input-output generative models that struggle to emulate the collaborative, multi-role nature of real code review, limiting their ability to catch vulnerabilities, inconsistencies, and style issues.",
+  "magnitude_evidence": "manual verification of identified vulnerabilities 'extending beyond 120 working hours', each sample validated by at least 2 people (a researcher and an engineer)",
+  "risk_types": [
+    "security",
+    "vulnerability",
+    "code-quality",
+    "consistency",
+    "maintainability",
+    "formatting",
+    "prompt-drift",
+    "hallucination"
+  ],
+  "insufficiency_evidence": "confirmation rates (Ratecr) of 19.94% for CodeBERT, 36.69% for GPT-3.5, and 51.42% for GPT-4.0 \u2014 automated models flag many items but a low proportion are confirmed true vulnerabilities (high false positives)",
+  "solution_mechanisms": [
+    "multi-agent LLM code review team",
+    "role-based agents (CEO/CTO/CPO/Reviewer/Coder)",
+    "phased waterfall review pipeline",
+    "QA-Checker supervisory agent for prompt-drift",
+    "self-improving CoT question-answer refinement",
+    "vulnerability/consistency/format analysis and code revision"
+  ],
+  "mechanism_keywords": [
+    "multi-agent",
+    "llm-agents",
+    "supervisory-agent",
+    "qa-checker",
+    "prompt-drift-control",
+    "chain-of-thought",
+    "role-playing",
+    "self-improvement",
+    "code-review-automation",
+    "vulnerability-detection",
+    "ensemble",
+    "collaborative-agents"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "pre-commit",
+    "pre-publish"
+  ],
+  "human_role": "none",
+  "key_constructs": [
+    "CodeAgent",
+    "QA-Checker",
+    "prompt drifting",
+    "Edit Progress (EP)",
+    "self-improving CoT"
+  ],
+  "governance_refs": [],
+  "scope_fit": "solution",
+  "notes": "Automates code review with LLM agents rather than human oversight of AI-generated code; humans appear only in ground-truth verification. Some figure/table text is garbled from PDF extraction.",
+  "_truncated": false
+}

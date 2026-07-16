@@ -1,0 +1,55 @@
+{
+  "item_key": "4T5QFWZE",
+  "citation": "Huang 2026",
+  "evidence_type": [
+    "empirical",
+    "system-tool"
+  ],
+  "problem_statement": "AI coding agents accelerate code generation but introduce redundancy (Type-4 semantic clones) that traditional metrics and human reviewers fail to catch, and existing benchmarks only measure pass rates rather than long-term maintainability. It examines whether reviewer sentiment detects these quality issues in AI-generated pull requests.",
+  "magnitude_evidence": "Average Max Redundancy (AMR) for AI agents is 0.2867, compared to only 0.1532 for humans, representing a nearly 1.87x increase (Mann-Whitney p < 0.001)",
+  "risk_types": [
+    "redundancy",
+    "code-clone",
+    "maintainability",
+    "technical-debt",
+    "quality",
+    "reviewer-blind-spot",
+    "sycophancy"
+  ],
+  "insufficiency_evidence": "reviewers express fewer negative emotions towards Agentic-PRs than Human-PRs despite higher redundancy; 'reviewers may lower their vigilance'; 'existing tools are not effective at detecting these Type-4 semantic clones'",
+  "solution_mechanisms": [
+    "Max Redundancy Score (MRS) metric",
+    "snapshot-based semantic differential analysis pipeline",
+    "code-embedding Type-4 clone detection",
+    "refactoring-aware filtering via PyRef",
+    "reviewer sentiment analysis of review comments",
+    "reuse-metric evaluation beyond pass rates"
+  ],
+  "mechanism_keywords": [
+    "redundancy-metric",
+    "semantic-clone-detection",
+    "code-embedding",
+    "sentiment-analysis",
+    "reuse-evaluation",
+    "code-review",
+    "static-metrics"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "pre-merge"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Max Redundancy Score (MRS)",
+    "Average Max Redundancy (AMR)",
+    "Snapshot-based Semantic Differential Analysis",
+    "silent technical debt",
+    "reviewer's blind spot",
+    "Type-4 semantic clone",
+    "Agentic-PR"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

@@ -1,0 +1,71 @@
+{
+  "item_key": "7SH86C2W",
+  "citation": "Lipsanen 2026",
+  "evidence_type": [
+    "case-study",
+    "framework-model",
+    "empirical"
+  ],
+  "problem_statement": "Vibe coding / unstructured agent-driven development of AI-generated code suffers from architectural drift, limited traceability, and reduced maintainability/controllability, creating a conflict between development acceleration and end-product quality that needs structural oversight.",
+  "magnitude_evidence": "In the Shift-Up run, 68 user stories and 175 executable acceptance test cases were generated; 176 prompts were categorized across the structured vibe coding and Shift-Up approaches. Prior study (Pattyn & Goetz) reports vibe coding's promises come 'at the cost of quality of prototypes, maintainability and rework iterations'.",
+  "risk_types": [
+    "architectural-drift",
+    "traceability",
+    "maintainability",
+    "controllability",
+    "quality",
+    "rework",
+    "vendor-lock-in"
+  ],
+  "insufficiency_evidence": "In structured vibe coding, more than half of all prompts (52%) were dedicated to addressing issues identified manually in GUI or IDE; developer role reduced to reactive debugging and manual verification; RQ2 on drift reduction could only be partially answered because the small common-domain project prevented observing drift.",
+  "solution_mechanisms": [
+    "executable requirements as guardrails (BDD/Robot Framework acceptance tests)",
+    "machine-readable SRS refined for ambiguity/contradiction",
+    "user story mapping",
+    "C4 architectural modeling artifacts",
+    "architecture decision records (ADR)",
+    "implementation roadmap divided into dependency-ordered phases",
+    "GitHub issues with test-pass close constraints",
+    "self-validating agent loop: run tests, feed failures back until pass",
+    "shift-up: humans focus on high-level design and acceptance in V-model"
+  ],
+  "mechanism_keywords": [
+    "guardrail",
+    "spec-driven",
+    "executable-requirements",
+    "bdd",
+    "tdd",
+    "acceptance-tests",
+    "self-validation",
+    "policy-as-code",
+    "provenance",
+    "architecture-as-context",
+    "adr",
+    "c4",
+    "test-gate",
+    "human-on-the-loop",
+    "orchestration"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "requirements-time",
+    "design-time",
+    "CI",
+    "code-review",
+    "pre-commit",
+    "acceptance-testing"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "Shift-Up",
+    "structural guardrails",
+    "behavioral guardrails",
+    "GenAI-native SDLC",
+    "shared responsibility working model",
+    "prescriptive design knowledge"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

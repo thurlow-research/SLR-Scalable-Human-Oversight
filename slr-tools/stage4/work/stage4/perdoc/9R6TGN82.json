@@ -1,0 +1,67 @@
+{
+  "item_key": "9R6TGN82",
+  "citation": "Yao 2025",
+  "evidence_type": [
+    "system-tool",
+    "empirical",
+    "controlled-experiment",
+    "benchmark",
+    "dataset"
+  ],
+  "problem_statement": "LLM code generation ('vibe coding') is increasingly adopted in production but fails to ensure code quality\u2014especially security (e.g., SQL injection) and maintainability (e.g., missing type annotations)\u2014and existing oversight via supervised fine-tuning or rule-based post-processing does not scale.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "security",
+    "maintainability",
+    "sql-injection",
+    "vulnerabilities",
+    "reward-hacking",
+    "specification-gaming"
+  ],
+  "insufficiency_evidence": "Static analyzers like CodeQL, 'which we found unexpectedly ineffective for SecCodePLT+'; handcrafted unit tests 'inherently have limited coverage and do not support maintainability issues'; training-free methods 'perform poorly across most metrics'; and quality-only reward leads to reward hacking where 'the model learned to produce trivial outputs\u2014such as empty code or comments\u2014that maximize quality scores while lacking functionality'",
+  "solution_mechanisms": [
+    "RL with program-analysis feedback",
+    "automated vulnerability detector",
+    "taint/information-flow analysis (SSA/CFG)",
+    "unit-test functionality reward",
+    "hybrid quality+functionality reward",
+    "MyPy static maintainability check",
+    "PPO policy optimization",
+    "reference-free reward signals"
+  ],
+  "mechanism_keywords": [
+    "reinforcement-learning",
+    "program-analysis",
+    "static-analysis",
+    "taint-analysis",
+    "security-gate",
+    "guardrail",
+    "verifiable-reward",
+    "unit-tests",
+    "hybrid-reward",
+    "reward-shaping",
+    "ppo",
+    "reference-free",
+    "automated-feedback"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "training-time"
+  ],
+  "human_role": "none",
+  "key_constructs": [
+    "REAL (Reinforcement rEwards from Automated program anaLysis)",
+    "SecCodePLT+",
+    "SafeSQL",
+    "APPS+",
+    "hybrid reward",
+    "vulnerability-aware leakage"
+  ],
+  "governance_refs": [
+    "CWE",
+    "MITRE"
+  ],
+  "scope_fit": "both",
+  "notes": "Mathematical notation and figure text partially garbled by PDF extraction; abstract states 18 CWEs in body but 17/18 vary across text.",
+  "_truncated": false
+}

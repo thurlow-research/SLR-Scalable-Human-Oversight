@@ -1,0 +1,15 @@
+[22:51:46] Fetching Queue items from Zotero...
+[22:54:06]   Queue size: 3864
+[22:59:50]   [10/3864] discard=9 maybe=1 keep=0 err=0 rate=0.03/s eta=2213min
+[23:05:37]   [20/3864] discard=18 maybe=2 keep=0 err=0 rate=0.03/s eta=2214min
+[23:11:22]   [30/3864] discard=23 maybe=5 keep=2 err=0 rate=0.03/s eta=2207min
+[23:17:08]   [40/3864] discard=30 maybe=8 keep=2 err=0 rate=0.03/s eta=2203min
+[23:23:03]   [50/3864] discard=33 maybe=12 keep=5 err=0 rate=0.03/s eta=2209min
+[23:28:57]   [60/3864] discard=38 maybe=17 keep=5 err=0 rate=0.03/s eta=2210min
+[23:34:51]   [70/3864] discard=43 maybe=21 keep=6 err=0 rate=0.03/s eta=2208min
+[23:40:38]   [80/3864] discard=49 maybe=23 keep=8 err=0 rate=0.03/s eta=2201min
+[23:46:27]   [90/3864] discard=53 maybe=29 keep=8 err=0 rate=0.03/s eta=2195min
+[23:52:26]   [100/3864] discard=57 maybe=34 keep=9 err=0 rate=0.03/s eta=2196min
+[23:58:19]   [110/3864] discard=65 maybe=36 keep=9 err=0 rate=0.03/s eta=2192min
+[00:04:11]   [120/3864] discard=71 maybe=39 keep=10 err=0 rate=0.03/s eta=2187min
+[00:10:02]   [130/3864] discard=76 maybe=44 keep=10 err=0 rate=0.03/s eta=2181min

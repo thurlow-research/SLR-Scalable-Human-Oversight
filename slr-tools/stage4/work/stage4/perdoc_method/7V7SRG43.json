@@ -1,0 +1,15 @@
+{
+  "item_key": "7V7SRG43",
+  "methods": [
+    "design-science / prototype / tool-build",
+    "benchmark-evaluation",
+    "dataset-contribution",
+    "ablation-study",
+    "formal-analysis/proof"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science / prototype / tool-build",
+  "notes": "Builds CodeAgent (multi-agent LLM system) and evaluates it against baselines (CodeBERT, GPT-3.5/4, COT, ReAct, SOTA code-review tools) on curated datasets across 4 tasks and 9 languages; contributes a new 3,545-item dataset; includes a QA-Checker ablation and a theoretical convergence lemma/proof. Manual vulnerability verification by researchers is ground-truth labeling, not a human-subjects study.",
+  "citation": "Tang 2024"
+}

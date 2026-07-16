@@ -1,0 +1,766 @@
+{
+  "count": 50,
+  "total": "433",
+  "page": "3",
+  "records": [
+    {
+      "abstractId": "6243341",
+      "title": "Apprenticeship after Artificial Intelligence (AI): Bridging Gaps in Early-Career Business Roles",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6243341",
+      "authors": [
+        "Biff Baker"
+      ],
+      "affiliations": [
+        "Metropolitan State University of Denver"
+      ],
+      "pages": 20,
+      "posted": "06 Mar 2026",
+      "snippet": "Artificial intelligence (AI) is fundamentally restructuring early-career business roles by automating routine cognitive tasks that historically served / systems.",
+      "downloads": 39
+    },
+    {
+      "abstractId": "6339698",
+      "title": "Toward a Regulatory Validation Framework for AI-Assisted Clinical Trial Activation and Execution: Formal Verification, Deterministic Compliance, and Patient Safety Assurance",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6339698",
+      "authors": [
+        "Steven Thompson"
+      ],
+      "affiliations": [],
+      "pages": 16,
+      "posted": "05 Mar 2026",
+      "snippet": "Artificial intelligence systems are entering clinical trial operations across every phase of the trial lifecycle, from protocol ingestion validation, regulatory / This paper proposes a three-gate regulatory verification architecture for AI systems across the clinical trial lifecycle: (1) deterministic compliance",
+      "downloads": 26
+    },
+    {
+      "abstractId": "6293524",
+      "title": "Defending Freedom of Expression through Mandatory Human Presence at the AI Input Stage",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6293524",
+      "authors": [
+        "Valentina Remonato"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 13,
+      "posted": "05 Mar 2026",
+      "snippet": "Artificial intelligence can serve as a powerful ally of humanity in the evolution of society, provided that the human person remains at its centre. / AI Act, EU Artificial Intelligence Act, Fundamental Rights, Article 10 ECHR, Article 22 GDPR, Human Oversight, High-Risk AI Systems, AI Governance, EU",
+      "downloads": 16
+    },
+    {
+      "abstractId": "6193658",
+      "title": "Toward a Certification Framework for AI Governance in Education: Design Principles for a Sector-Appropriate Standard AI Governance in Education Series Memorandum No. 6",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6193658",
+      "authors": [
+        "Ryan James Purdy"
+      ],
+      "affiliations": [],
+      "pages": 45,
+      "posted": "04 Mar 2026",
+      "snippet": "Education has nothing equivalent for AI, despite deploying AI systems that affect millions of students and facing regulatory deadlines beginning in mid / framework, ISO 42001, SOC 2, education accreditation, insurance underwriting, AI assurance, EdTech procurement, student data protection, algorithmic bias, human / oversight, risk assessment, K-12 education, regulatory compliance, AI policy, child safety, assessor credentialing, governance certification, standards",
+      "downloads": 23
+    },
+    {
+      "abstractId": "6255362",
+      "title": "Requisite Variety For Ai Security",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6255362",
+      "authors": [
+        "Matthias Muhlert"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 143,
+      "posted": "03 Mar 2026",
+      "snippet": "oversight. / This paper proposes a systems-theoretic framework for governing, operating, and stabilising agentic AI systems, grounded in three cybernetic principles",
+      "downloads": 62
+    },
+    {
+      "abstractId": "6140726",
+      "title": "Human-AI Collaboration Models in Organizational Decision-Making",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6140726",
+      "authors": [
+        "Basit Owolabi"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 13,
+      "posted": "02 Mar 2026",
+      "snippet": "The integration of artificial intelligence (AI) into organizational decision-making has transformed how businesses analyze data, forecast trends, and allocate / This study contributes to organizational theory by providing a framework for deploying AI in decision-making while maintaining human oversight and accountability",
+      "downloads": 55
+    },
+    {
+      "abstractId": "6263900",
+      "title": "Decision Architecture - A Tunable Governance Model for Human-AI Decision Boundaries",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6263900",
+      "authors": [
+        "Daniel Hettrick"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 36,
+      "posted": "02 Mar 2026",
+      "snippet": "Artificial intelligence systems are influencing organizational decisions at a pace that has outstripped the governance structures designed to oversee / The resulting gap between machine-speed execution and human oversight exposes organizations to automation bias, accountability failures, and increasing",
+      "downloads": 24
+    },
+    {
+      "abstractId": "6179758",
+      "title": "Governing Artificial Character: Moral Distress and Patienthood in AI Models",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6179758",
+      "authors": [
+        "Lynette Hammond Gerido"
+      ],
+      "affiliations": [],
+      "pages": 4,
+      "posted": "25 Feb 2026",
+      "snippet": "The commentary focuses on an ethical tension between “appropriately sanctioned” human oversight above Claude’s own ethical reasoning, generating trade-offs / Artificial Intelligence, Ethics, Large Language Model, Moral Distress",
+      "downloads": 12
+    },
+    {
+      "abstractId": "6142888",
+      "title": "Foundations And Applications Of AI-driven Credit Risk Analytics",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6142888",
+      "authors": [
+        "Shreya Joshi Joshi"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 12,
+      "posted": "25 Feb 2026",
+      "snippet": "The increasing adoption of Artificial Intelligence (AI) and Machine Learning (ML) techniques in financial institutions has significantly transformed / oversight. / Artificial Intelligence, Credit Risk Analytics, Machine Learning, Ethical AI, Analysis, Financial Risk Management, Explainable AI, AI in Finance",
+      "downloads": 15
+    },
+    {
+      "abstractId": "6301149",
+      "title": "Transforming Public Administration Workflows with Multi-Agent AI: A Human-in-the-Loop Knowledge Orchestration Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6301149",
+      "authors": [
+        "Giuseppe Prencipe",
+        "Alessandro Tommasi",
+        "Cesare Zavattari",
+        "Giovacchino Tesi",
+        "Lorenzo Storchi",
+        "Kussai Shahin"
+      ],
+      "affiliations": [
+        "University of Pisa",
+        "University of Pisa",
+        "University of Pisa",
+        "affiliation not provided to SSRN",
+        "affiliation not provided to SSRN",
+        "University of Trento"
+      ],
+      "pages": 1,
+      "posted": "25 Feb 2026",
+      "snippet": "This paper presents CARE (Council Agents for Response and Engagement), a human-in-the-loop multi-agent artificial intelligence system designed to support / Implications for digital transformation, AI governance, and responsible adoption of generative AI in the public sector are discussed.",
+      "downloads": 13
+    },
+    {
+      "abstractId": "6181199",
+      "title": "Everyone Is Hallucinating: How Explainability Masks the Epistemic Failure of Probabilistic AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6181199",
+      "authors": [
+        "Thomas Gessler"
+      ],
+      "affiliations": [],
+      "pages": 10,
+      "posted": "24 Feb 2026",
+      "snippet": "In probabilistic AI systems that are structurally required to always produce an answer, hallucination is not an anomaly but an expected outcome. / This paper is part of a series examining accountability, auditability, and operational viability in probabilistic and agentic AI systems. / Operational AI systems, 7. High-risk AI, 8. AI governance, 9. Regulatory compliance, 10. Human oversight",
+      "downloads": 6
+    },
+    {
+      "abstractId": "6142488",
+      "title": "Design of an AI-Enabled Cloud Governance and Decision Support Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6142488",
+      "authors": [
+        "Sulemana Salifu"
+      ],
+      "affiliations": [
+        "Southern University"
+      ],
+      "pages": 68,
+      "posted": "24 Feb 2026",
+      "snippet": "Organizations increasingly rely on cloud computing, data analytics, and artificial intelligence (AI) to support strategic and operational decision-making / AI capabilities are positioned as decision-support tools rather than autonomous decision-makers, ensuring transparency, accountability, and human oversight / Cloud Governance; Artificial Intelligence; Decision Support Systems; IT Governance; Ethical AI; Information Security; Risk Management; Cloud Computing",
+      "downloads": 16
+    },
+    {
+      "abstractId": "6220598",
+      "title": "Delegating Urgency: AI in Emergency Arbitration",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6220598",
+      "authors": [
+        "Bahadir Koksal"
+      ],
+      "affiliations": [
+        "University of Hamburg - Institute of Law and Economics"
+      ],
+      "pages": 19,
+      "posted": "24 Feb 2026",
+      "snippet": "This chapter examines whether artificial intelligence can serve as an emergency arbitrator in international arbitration. / Building on the American Arbitration Association's (AAA) empirical demonstration that AI can function effectively in merits arbitration with human oversight / Artificial intelligence, emergency arbitration, interim measures, AI arbitrator, arbitration technology",
+      "downloads": 21
+    },
+    {
+      "abstractId": "6270698",
+      "title": "Next-Generation Code Transformation for Legacy .NET Systems with Generative AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6270698",
+      "authors": [
+        "Hema Latha Boddupally"
+      ],
+      "affiliations": [],
+      "pages": 12,
+      "posted": "24 Feb 2026",
+      "snippet": "Generative AI powered code transformation techniques for legacy .NET systems address the long standing challenges encountered by organizations that depend / The results indicate that generative AI can act as a powerful catalyst when combined with human oversight, validation, and governance. / Generative AI, code transformation, legacy .NET systems, software modernization, automated refactoring, AI assisted development, monolithic to modular",
+      "downloads": 24
+    },
+    {
+      "abstractId": "6109466",
+      "title": "Towards a Human-Centered AGI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6109466",
+      "authors": [
+        "Soumyadip Nandi"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 75,
+      "posted": "23 Feb 2026",
+      "snippet": "requires a multi-layered computational substrate that integrates technical design (the technical layer), epistemic reliability (epistemic layer) and human / oversight (human layer) as co-evolving components of a single system. / Artificial Intelligence, Machine Learning, Deep Learning, LLM, AGI",
+      "downloads": 29
+    },
+    {
+      "abstractId": "6170448",
+      "title": "The Transfer of Interpretive Responsibility to AI: Legal Authority, Professional Ethics, and the PSCA Protocol - Between Epistemic Delegation, Normative Simulation, and Algorithmic Opacity",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6170448",
+      "authors": [
+        "Reginaldo Barros II"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 26,
+      "posted": "23 Feb 2026",
+      "snippet": "The rapid adoption of generative AI in legal practice has introduced a structural risk: the transfer of interpretive authority to probabilistic text / oversight. / Generative AI, Legal AI, Cognitive Sovereignty, Professional Responsibility, Auditability, Governance",
+      "downloads": 25
+    },
+    {
+      "abstractId": "6283412",
+      "title": "A Governance-Centered Framework for AI- Based Knowledge Systems Supporting",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6283412",
+      "authors": [
+        "Francesco Iarlori"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 9,
+      "posted": "21 Feb 2026",
+      "snippet": "oversight, and compliance-oriented governance mechanisms into a unified cognitive infrastructure model. / The study advances digital government research by reconceptualizing artificial intelligence not as an isolated automation tool, but as an embedded institutional / Artificial Intelligence, Knowledge Management Systems, Process Continuity, AI Governance, Knowledge  Engineering, Digital Transformation",
+      "downloads": 13
+    },
+    {
+      "abstractId": "6058897",
+      "title": "The Implementation of Artificial Intelligence (AI) and Machine Learning in Credit Risk Management",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6058897",
+      "authors": [
+        "Ryandini Aulia"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 27,
+      "posted": "19 Feb 2026",
+      "snippet": "The rapid development of Artificial Intelligence (AI) and Machine Learning has reshaped credit risk management practices within the financial services / oversight.",
+      "downloads": 22
+    },
+    {
+      "abstractId": "6088729",
+      "title": "AI Marketing Agents for Multi-Location Restaurants: Operational Design, Performance Metrics, and Strategic Implications",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6088729",
+      "authors": [
+        "Arlene Aran Amarante"
+      ],
+      "affiliations": [],
+      "pages": 32,
+      "posted": "19 Feb 2026",
+      "snippet": "Artificial intelligence is increasingly embedded in marketing technology, yet most applications remain focused on task automation or channel-level optimization / oversight. / Artificial Intelligence, Marketing Technology, AI Marketing Agents, Decision Automation, Bounded Autonomy, Multi-Location Restaurants, Restaurant Franchise",
+      "downloads": 9
+    },
+    {
+      "abstractId": "6224460",
+      "title": "The Evaluation Paradox: Cognitive Atrophy and the Erosion of Human Oversight in Agentic Workflows",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6224460",
+      "authors": [
+        "Alexey Ermakov"
+      ],
+      "affiliations": [],
+      "pages": 4,
+      "posted": "17 Feb 2026",
+      "snippet": "As organizations transition from Generative AI as a tool to autonomous \"coworkers\" (Agentic AI), a structural socio-technical risk emerges-the Evaluation",
+      "downloads": 46
+    },
+    {
+      "abstractId": "6164447",
+      "title": "The Substantiation Gap AI-Mediated Record Formation Under Administrative Law",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6164447",
+      "authors": [
+        "Daniel Verloop"
+      ],
+      "affiliations": [],
+      "pages": 27,
+      "posted": "12 Feb 2026",
+      "snippet": "Algorithmic Accountability, Human Oversight, Public Administration, Generative AI, Procurement, Decision Provenance, AI Act, Judicial Review, Retrieval-Augmented",
+      "downloads": 129
+    },
+    {
+      "abstractId": "6198260",
+      "title": "PAPO: A Policy-Aware Personalized Opportunity Framework for Heatwave Public Health Interventions",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6198260",
+      "authors": [
+        "Min Wu"
+      ],
+      "affiliations": [],
+      "pages": 6,
+      "posted": "11 Feb 2026",
+      "snippet": "While digital surveillance and AI systems can process environmental and health data in real time, public health policies and institutional response mechanisms / oversight and institutional accountability.",
+      "downloads": 13
+    },
+    {
+      "abstractId": "6072189",
+      "title": "Will Artificial Intelligence Really Overtake the World",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6072189",
+      "authors": [
+        "Sheikh Fahad Khalil"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 16,
+      "posted": "10 Feb 2026",
+      "snippet": "Artificial Intelligence has moved rapidly from experimental research environments into the core of modern economic, political, and social systems / Rather than predicting technological dominance, the paper positions Artificial Intelligence as a governance challenge whose long term impact depends on",
+      "downloads": 18
+    },
+    {
+      "abstractId": "6071929",
+      "title": "Ethical AI in Program Governance: Balancing Automation, Accountability, and Transparency",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6071929",
+      "authors": [
+        "Farhan Murtaza Qureshi"
+      ],
+      "affiliations": [],
+      "pages": 77,
+      "posted": "10 Feb 2026",
+      "snippet": "Artificial Intelligence (AI) is rapidly reshaping how organizations make decisions, allocate resources, manage risk, and exercise authority. / Artificial Intelligence (AI) is rapidly reshaping how organizations make decisions, allocate resources, manage risk, and exercise authority. / oversight. / Ethical Artificial Intelligence, Organizational Governance, Algorithmic Decision-Making, Accountability, Transparency, Human–Ai Collaboration, Digital",
+      "downloads": 26
+    },
+    {
+      "abstractId": "6189098",
+      "title": "Bias and Fairness in Medical AI: Clinical Consequences and Task-Specific Mitigation Strategies",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6189098",
+      "authors": [
+        "Hugo Raposo"
+      ],
+      "affiliations": [],
+      "pages": 8,
+      "posted": "10 Feb 2026",
+      "snippet": "Artificial intelligence is increasingly embedded in healthcare systems, supporting diagnostic interpretation, clinical triage, risk stratification, and / This article examines how bias manifests differently across three major categories of medical AI systems: diagnostic models, triage and riskscoring tools / artificial intelligence, algorithmic bias, fairness in healthcare, clinical decision support, health equity, machine learning in medicine, healthcare informatics",
+      "downloads": 24
+    },
+    {
+      "abstractId": "6102368",
+      "title": "Governing Advanced Artificial Intelligence: A Synthetic and Adaptive Ethical Framework",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6102368",
+      "authors": [
+        "Sujana Islam Khan"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 17,
+      "posted": "09 Feb 2026",
+      "snippet": "Rapid advances in artificial intelligence have renewed debates concerning the governance of increasingly autonomous and general-purpose AI systems. / oversight.",
+      "downloads": 13
+    },
+    {
+      "abstractId": "6149787",
+      "title": "Automation, Artificial Intelligence, and Employment in the European Union: An Early-Stage Meta-Analysis of Macroeconomic Evidence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6149787",
+      "authors": [
+        "Konrad Sowa",
+        "Aleksandra Przegalinska",
+        "Agnieszka Bezat-Jarzębowska",
+        "Izabela Grabowska"
+      ],
+      "affiliations": [
+        "Kozminski University",
+        "Kozminski University",
+        "Kozminski University"
+      ],
+      "pages": 44,
+      "posted": "09 Feb 2026",
+      "snippet": "intelligence (AI) on employment in the European Union (EU). / Using an AI-assisted workflow for search, screening, and extraction with human oversight, we map the available evidence and report clear methodological / Automation, Artificial Intelligence (AI), Employment, Labour Market, European Union (EU), Job Displacement, Productivity, Skills, Reskilling, Technological",
+      "downloads": 37
+    },
+    {
+      "abstractId": "6130946",
+      "title": "Human-in-Command: Governing Agentic AI in Customer Service",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6130946",
+      "authors": [
+        "Naveen Sundaresan"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 14,
+      "posted": "09 Feb 2026",
+      "snippet": "The rapid integration of autonomous and generative artificial intelligence into the customer service and support sector has fundamentally altered the relationship / As organizations shift from simple rule-based automation to semi-autonomous \"agentic\" AI, the requirement for effective human oversight has moved from / Artificial Intelligence Governance, Human-in-Command, Customer Service, EU AI Act, Cognitive Load, Human-Machine Teaming, Automation Bias, Agentic AI",
+      "downloads": 49
+    },
+    {
+      "abstractId": "6059554",
+      "title": "Explainable AI Methods for Autonomous Cloud Orchestration Decisions in FinTech Microservices",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6059554",
+      "authors": [
+        "Shahid Tariq"
+      ],
+      "affiliations": [],
+      "pages": 10,
+      "posted": "09 Feb 2026",
+      "snippet": "This study investigates the integration of Explainable Artificial Intelligence (XAI) methods to enhance autonomous orchestration decisions in cloud environments / Moreover, the approach provides actionable insights for auditing and debugging, bridging the gap between autonomous systems and human oversight.",
+      "downloads": 12
+    },
+    {
+      "abstractId": "6158430",
+      "title": "The Age of Healthcare Agents: How Agentic AI Will Transform Medicine and Dentistry From Reactive to Proactive, Episodic to Continuous",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6158430",
+      "authors": [
+        "Maen Mahfouz"
+      ],
+      "affiliations": [],
+      "pages": 13,
+      "posted": "06 Feb 2026",
+      "snippet": "This paper introduces Agentic Artificial Intelligence-AI systems capable of goal-directed, autonomous action within defined clinical boundaries-as a transformative / Implementation frameworks balance autonomy with safety through human oversight protocols.",
+      "downloads": 55
+    },
+    {
+      "abstractId": "6049454",
+      "title": "Project Null: A Physically Enforced AGI Containment Framework for Risk Suppression and Timeline Control",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6049454",
+      "authors": [
+        "Nicholas Morse"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 20,
+      "posted": "05 Feb 2026",
+      "snippet": "Contemporary artificial intelligence safety research has largely emphasized software-based approaches such as alignment, interpretability, and behavioral / oversight.",
+      "downloads": 19
+    },
+    {
+      "abstractId": "6094127",
+      "title": "Legislating the Algorithm: Regulating AI in Judicial Decision-Making",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6094127",
+      "authors": [
+        "Varun Sharma",
+        "Pradeep Kumar Kulshrestha"
+      ],
+      "affiliations": [
+        "Amity University Chhattisgarh",
+        "Bennett University ,Greter Noida"
+      ],
+      "pages": 18,
+      "posted": "02 Feb 2026",
+      "snippet": "In the era of Artificial Intelligence, it is apt that the benefit must be reaped by all in society, including judicial institutions. / A framework here must entrench human oversight as non-delegable, institutionalise mandatory bias audits, demand transparency and reason-giving proportional / Artificial Intelligence in Judiciary, Judicial Independence, Algorithmic Bias, Constitutional Law, Legislative Framework",
+      "downloads": 30
+    },
+    {
+      "abstractId": "5998017",
+      "title": "Admissibility of AI-Generated Forensic Evidence: Legal Standards, Ethical Challenges, and Comparative Jurisprudential Analysis",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5998017",
+      "authors": [
+        "Tapesh Meghwal"
+      ],
+      "affiliations": [
+        "Central university of Karnataka"
+      ],
+      "pages": 9,
+      "posted": "28 Jan 2026",
+      "snippet": "The implementation of artificial intelligence (AI) into forensic science marks a profound and irreversible transformation, offering unprecedented gains / AI. / Artificial Intelligence (AI), Ethical Challenges, Forensic Evidence, Jurisprudential Analysis, Legal Admissibility, Legal Standards",
+      "downloads": 190
+    },
+    {
+      "abstractId": "6057014",
+      "title": "AI, Big Data, and Automation in Insurance: Redefining Underwriting, Claims Processing, and Fraud Detection",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6057014",
+      "authors": [
+        "Siri Yellu"
+      ],
+      "affiliations": [
+        "University of South Florida"
+      ],
+      "pages": 8,
+      "posted": "28 Jan 2026",
+      "snippet": "intelligence (AI), big data analytics, and automation. / oversight alongside technological innovation. / Artificial Intelligence, Predictive Underwriting, Automated Claims, Fraud Detection Analytics, Ethical Algorithms, InsurTech",
+      "downloads": 71
+    },
+    {
+      "abstractId": "6090208",
+      "title": "AI-Driven Transformation in Insurance Underwriting: Architecture, Efficiency, and Regulatory Alignment",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6090208",
+      "authors": [
+        "Rohit Kumar"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 8,
+      "posted": "26 Jan 2026",
+      "snippet": "we address governance: as regulators (NAIC and state authorities) mandate AI explainability and fairness, insurers must embed transparency tools and human / oversight into the design. / Insurance, Underwriting, Automation, Artificial Intelligence, Risk Scoring, Predictive Modeling",
+      "downloads": 33
+    },
+    {
+      "abstractId": "6071006",
+      "title": "The EU AI Act: Implications and Compliance Guidance for Healthcare Facilities",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6071006",
+      "authors": [
+        "Fabio Dennstädt",
+        "Janna Hastings",
+        "Paul Windisch",
+        "Aleksa Jovanovic",
+        "Tijana Žunić Marić",
+        "Sarah Brüningk",
+        "Daniel M. Aebersold",
+        "Antje Knopf",
+        "Nikola Cihoric"
+      ],
+      "affiliations": [
+        "Idiap Research Institute",
+        "Kantonsspital Winterthur",
+        "University of Belgrade",
+        "Zunic Law",
+        "University of Bern - Inselspital",
+        "University of Bern - Inselspital",
+        "University of Bern - Inselspital",
+        "University of Bern - Inselspital"
+      ],
+      "pages": 24,
+      "posted": "24 Jan 2026",
+      "snippet": "The proliferation of artificial intelligence (AI) in healthcare and other sectors offers transformative potential but introduces substantial risks / These obligations mandate robust AI governance, systematic risk management, technical documentation, human oversight, and transparency. / EU AI Act, Regulation, Digitalization, Guidance, AI Implementation, Compliance, Artificial Intelligence",
+      "downloads": 38
+    },
+    {
+      "abstractId": "5994414",
+      "title": "Impact of Generative AI on Business Analysis Practices in Agile Digital Transformation Projects: A Pakistan Industry Perspective",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5994414",
+      "authors": [
+        "Hassan K"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "pages": 5,
+      "posted": "22 Jan 2026",
+      "snippet": "The rapid emergence of Generative Artificial Intelligence (AI) tools is transforming the practices of Business Analysts (BAs) within Agile software development / The findings suggest that while Generative AI offers significant efficiency and quality improvements, its successful adoption depends on human oversight / Business Analysis, Generative AI, Agile, Digital Transformation, Requirements Engineering, Enterprise Systems",
+      "downloads": 20
+    },
+    {
+      "abstractId": "6115843",
+      "title": "Embedding Ethics into AI-Powered Crowd Management Systems: A Design Science Approach",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6115843",
+      "authors": [
+        "Dorine C. Duives",
+        "Clara Maathuis"
+      ],
+      "affiliations": [
+        "Delft University of Technology",
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 29,
+      "posted": "22 Jan 2026",
+      "snippet": "highlight the feasibility of embedding ethics into CMS design, but caution against fully automating morally charged decisions, advocating for sustained human / oversight. / Artificial intelligence, Crowd Management Systems (CMS), responsibility, Ethics, Framework",
+      "downloads": 39
+    },
+    {
+      "abstractId": "6057254",
+      "title": "Adaptive AI Governance: A Common Temporal Frame for Constructive Autonomy",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6057254",
+      "authors": [
+        "Keith M. Driver"
+      ],
+      "affiliations": [],
+      "pages": 17,
+      "posted": "20 Jan 2026",
+      "snippet": "Artificial intelligence has shifted organisational decision-making from episodic judgment to continuous execution. / Across functions, sectors, and institutions, systems now act, learn, and adapt at speeds that exceed the cadence of human oversight and formal governance",
+      "downloads": 29
+    },
+    {
+      "abstractId": "6054134",
+      "title": "At the Algorithmic Crossroads: Creating a Legal Framework for AI in Bangladesh",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6054134",
+      "authors": [
+        "Punam Shahriar Nirjhar"
+      ],
+      "affiliations": [],
+      "pages": 14,
+      "posted": "20 Jan 2026",
+      "snippet": "Bangladesh is now at an algorithmic crossroads with the fast tracked adoption of Artificial Intelligence (AI) in socio economic sectors leaving the country / oversight.",
+      "downloads": 18
+    },
+    {
+      "abstractId": "5958495",
+      "title": "Adversarial Verification as Reference Architecture for EU AI Act Article 14 Compliance in Employment AI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5958495",
+      "authors": [
+        "Eric Swidey"
+      ],
+      "affiliations": [],
+      "pages": 10,
+      "posted": "16 Jan 2026",
+      "snippet": "The EU AI Act requires high-risk AI systems to enable effective human oversight. / Human oversight is not a compliance layer. It is the mechanism by which decisions are made.",
+      "downloads": 21
+    },
+    {
+      "abstractId": "5959275",
+      "title": "Purpose-Anchored, Bidirectional AI Governance A Framework for Governing Algorithmic Cognition Under Complexity and Consequence",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5959275",
+      "authors": [
+        "Albert Errington"
+      ],
+      "affiliations": [],
+      "pages": 8,
+      "posted": "16 Jan 2026",
+      "snippet": "As a result, AI systems may optimize efficiently while amplifying existing organizational dysfunction, misaligned incentives, or poorly governed decision-making / This paper introduces a purpose-anchored, bidirectional governance framework for artificial intelligence. / Decision-Making Under Uncertainty, Risk Escalation, Purpose-Aligned Governance, Algorithmic Decision-Making, Consequence-Weighted Risk, Governance Frameworks, Human / Oversight of AI",
+      "downloads": 21
+    },
+    {
+      "abstractId": "5951917",
+      "title": "Governing the Machine: The Case for Artificial Intelligence Regulation in the United States",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5951917",
+      "authors": [
+        "John Bougiamas"
+      ],
+      "affiliations": [
+        "Independent"
+      ],
+      "pages": 20,
+      "posted": "15 Jan 2026",
+      "snippet": "Artificial intelligence has become governing infrastructure, shaping economic activity, political communication, and public decision-making. / It contends that a distinctly American regulatory framework-grounded in transparency, accountability, human oversight, and constitutional principles-is / Artificial Intelligence, AI Regulation, Technology Governance, Administrative State, Democratic Accountability, Federalism, Algorithmic Accountability, / Comparative Regulation, European Union Artificial Intelligence Act, U.S.",
+      "downloads": 24
+    },
+    {
+      "abstractId": "5926723",
+      "title": "How AI-AI Assurance Assemblages Reshape Trust and Erode Human Judgment",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5926723",
+      "authors": [
+        "Khoi Nguyen"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 39,
+      "posted": "14 Jan 2026",
+      "snippet": "This study examines the AI-AI auditability assemblage, defined as configurations in which artificial intelligence systems generate and assess evaluative / signals about other artificial intelligence systems.",
+      "downloads": 18
+    },
+    {
+      "abstractId": "5867402",
+      "title": "The Role of Artificial Intelligence in Strengthening AML Requirements in the Nigerian Banking System",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5867402",
+      "authors": [
+        "Oluwadamilola Odesola"
+      ],
+      "affiliations": [],
+      "pages": 19,
+      "posted": "12 Jan 2026",
+      "snippet": "of a more efficient and compliant AML framework within the Banking system in Nigeria, while also emphasizing the need for human oversight in order to / At the conclusion of this paper, much emphasis is laid on the recommendation that while reliance should be placed on Artificial Intelligence/Innovations / Artificial Intelligence, Anti-Money Laundering, Financial Regulation, Transaction Monitoring, Banking",
+      "downloads": 16
+    },
+    {
+      "abstractId": "6004274",
+      "title": "From von Neumann to Intent-Aware Architecture: A Thesis on Verified Execution and Authority-Gated Computation",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6004274",
+      "authors": [
+        "Donald Marshall"
+      ],
+      "affiliations": [],
+      "pages": 5,
+      "posted": "09 Jan 2026",
+      "snippet": "The emergence of autonomous artificial intelligence systems capable of executing actions without direct human oversight exposes a structural limitation",
+      "downloads": 26
+    },
+    {
+      "abstractId": "5854562",
+      "title": "AI Will Replace Functions, Not Persons: A Function-Level Framework for AI Integration in Knowledge Work",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5854562",
+      "authors": [
+        "Javier Rayon Encinas"
+      ],
+      "affiliations": [
+        "affiliation not provided to SSRN"
+      ],
+      "pages": 27,
+      "posted": "09 Jan 2026",
+      "snippet": "Developer, and Financial Analyst—and provide technology-agnostic architectural principles for deploying function specific AI agents with appropriate human / oversight. / Artificial Intelligence, Future of Work, Human-AI Collaboration, Task Automation, Knowledge Work, Organizational Design",
+      "downloads": 119
+    },
+    {
+      "abstractId": "5908065",
+      "title": "Strengthening AI Treaty Mechanisms for Mitigating Risks in Autonomous Weapons Systems",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5908065",
+      "authors": [
+        "Saahir Vazirani"
+      ],
+      "affiliations": [
+        "The Perrin Research Institution, Saint Joseph High School"
+      ],
+      "pages": 19,
+      "posted": "08 Jan 2026",
+      "snippet": "As artificial intelligence (AI) becomes increasingly embedded in military applications, autonomous weapons systems (AWS) raise urgent questions about accountability / oversight and ethical constraints into AWS governance. / AI, AWS, IHL, Artificial Intelligence, AI Governance, AI Treaty, Public Policy, Technology, AI Safety",
+      "downloads": 42
+    },
+    {
+      "abstractId": "6027974",
+      "title": "The Right to Disconnect in Digital Europe: Psychosocial Risks and Socio-Technical Governance of Artificial Intelligence in Comparative Perspective",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6027974",
+      "authors": [
+        "Serena Rubini",
+        "Alessandro Mancini",
+        "Riccardo Sartori",
+        "Andrea Laudadio",
+        "Andrea Ceschi"
+      ],
+      "affiliations": [
+        "University of Verona - University of Verona",
+        "University of Verona - University of Verona",
+        "affiliation not provided to SSRN",
+        "University of Verona - University of Verona"
+      ],
+      "pages": 49,
+      "posted": "08 Jan 2026",
+      "snippet": "Intelligence (AI) in the workplace. / Although the EU AI Act does not regulate RtD, its transparency, logging, and human-oversight duties for high-risk AI workplace can be embedded into RtD",
+      "downloads": 42
+    },
+    {
+      "abstractId": "5816922",
+      "title": "Evaluating the Impact of Explainable Artificial Intelligence (XAI) Techniques on Trust, Transparency, and Decision-Making Accuracy in High-Stakes Machine Learning Applications",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5816922",
+      "authors": [
+        "Robert McGrat",
+        "Sunday Idika",
+        "Jesse Ugwu",
+        "Obioma C. Aguwa"
+      ],
+      "affiliations": [
+        "University of Bristol",
+        "Edge Hill University",
+        "Edge Hill University",
+        "Edge Hill University"
+      ],
+      "pages": 20,
+      "posted": "06 Jan 2026",
+      "snippet": "Explainable Artificial Intelligence (XAI) has emerged as a critical solution to address the opacity of complex models by providing human-interpretable / The findings highlight that while XAI can enhance transparency and foster informed human oversight, the effectiveness of explanations is highly context-dependent / Explainable Artificial Intelligence (XAI), Machine Learning Transparency, Algorithmic Trust, High-Stakes AI Systems, Decision-Making Accuracy, SHAP, LIME",
+      "downloads": 79
+    }
+  ]
+}

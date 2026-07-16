@@ -1,0 +1,12 @@
+{
+  "item_key": "34ELRWJH",
+  "methods": [
+    "conceptual/position",
+    "illustrative-case-study"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position",
+  "notes": "Primarily a legal argument/position piece proposing 'embedded compliance automation.' It includes a brief self-authored 'Case Study Analysis' of a Legal Citation Analyzer app the author built and ran compliance prompts against, but this is an illustrative anecdotal walkthrough (no systematic data, metrics, or evaluation protocol), not a rigorous empirical study; cited empirical figures (e.g., Perry et al.) are secondary literature, not the author's own data.",
+  "citation": "Goodhue 2025"
+}

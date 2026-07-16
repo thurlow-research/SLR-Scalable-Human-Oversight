@@ -1,0 +1,14 @@
+{
+  "item_key": "UIXCRBQX",
+  "methods": [
+    "repository-mining/MSR",
+    "design-science / prototype / tool-build",
+    "comparative-analysis",
+    "qualitative-analysis"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "repository-mining/MSR",
+  "notes": "Mines 8,593 PRs (7,191 agentic + 1,402 human) from the AIDev dataset plus GitHub-API mining; builds a custom AST-based Git-diff breaking-change detector (tool-build) and validates it via manual dual-annotator review of a 94-patch sample (Cohen's Kappa=0.79). Human annotation is author validation of tool output, not human-subjects research.",
+  "citation": "Ferdous 2026"
+}

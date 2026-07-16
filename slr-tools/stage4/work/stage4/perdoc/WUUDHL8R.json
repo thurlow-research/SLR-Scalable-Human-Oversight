@@ -1,0 +1,68 @@
+{
+  "item_key": "WUUDHL8R",
+  "citation": "Baumgartner 2024",
+  "evidence_type": [
+    "system-tool",
+    "empirical"
+  ],
+  "problem_statement": "The paper addresses how to safely automate LLM-driven refactoring of data clumps in Git repositories, where LLMs may produce faulty or unreliable refactorings, requiring human oversight to ensure trustworthiness and regulatory compliance.",
+  "magnitude_evidence": "maintenance costs 'often constitute a significant portion, ranging from 40% to 80% of total expenses'",
+  "risk_types": [
+    "reliability",
+    "quality",
+    "security",
+    "hallucination",
+    "legal",
+    "regulatory-compliance",
+    "non-compilable-code",
+    "explainability",
+    "bias",
+    "privacy",
+    "maintainability"
+  ],
+  "insufficiency_evidence": "'The refactored code by the LLM must be modified by a human-in-the-loop before it could compile'; median combined detect+refactor score of GPT-3.5-Turbo was 7% vs 82% for GPT-4",
+  "solution_mechanisms": [
+    "human-in-the-loop refactoring pipeline",
+    "human accept/reject of pull request",
+    "feedback loop of rejected refactorings into next iteration",
+    "deterministic detection with LLM-assisted naming",
+    "validation via build tool / CI test execution",
+    "AI-assistance transparency disclosure to repo owners",
+    "ground-truth accuracy evaluation"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "pipeline",
+    "escalation",
+    "validation-gate",
+    "ci",
+    "pull-request-gate",
+    "feedback-loop",
+    "deterministic-detection",
+    "ast-parsing",
+    "prompt-engineering",
+    "transparency-disclosure",
+    "policy-compliance",
+    "ground-truth-benchmark"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-commit",
+    "code-review",
+    "CI"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "human-in-the-loop refactoring pipeline",
+    "AI-driven refactoring pipeline",
+    "data clumps"
+  ],
+  "governance_refs": [
+    "EU AI Act",
+    "EU Ethics Guidelines for Trustworthy AI",
+    "GDPR"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

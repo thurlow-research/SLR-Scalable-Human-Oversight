@@ -1,0 +1,84 @@
+{
+  "item_key": "RG4A4D6K",
+  "citation": "N. Watson 2025",
+  "evidence_type": [
+    "conceptual-position",
+    "secondary-review"
+  ],
+  "problem_statement": "As GenAI tools generate an estimated 20-30% of enterprise code, organizations lack transparency about which code is AI-generated, creating challenges for quality assurance, security, IP management, and regulatory compliance oversight.",
+  "magnitude_evidence": "GenAI tools now generate 'an estimated 20-30% of code in many enterprise codebases'; 'Almost all developers (95%) report the use of generative AI in their workflow [24]'",
+  "risk_types": [
+    "quality",
+    "security",
+    "maintainability",
+    "legal",
+    "intellectual-property",
+    "licensing",
+    "regulatory-compliance",
+    "model-collapse",
+    "bias/discrimination",
+    "supply-chain",
+    "reward-hacking",
+    "value-misalignment",
+    "agentic-safety",
+    "skill-erosion",
+    "technical-debt"
+  ],
+  "insufficiency_evidence": "'without proper transparency measures, development teams spend an average of 30% more time on debugging and maintenance of AI-generated code components'; deep learning detection models 'achieve accuracy rates of 85-95%... though performance varies based on code complexity and the specific AI models involved'",
+  "solution_mechanisms": [
+    "AI-generated code provenance tracking",
+    "deep learning detection models",
+    "code chunking for detection",
+    "hybrid model-rule detection systems",
+    "pure vs. blended AI code classification",
+    "metadata tracking (timestamps, source models)",
+    "IDE plugins auto-tagging AI code",
+    "version control metadata tracking (Git)",
+    "Software Composition Analysis adapted for AI code",
+    "governance framework/policy development",
+    "tiered organizational transparency strategy",
+    "education and training"
+  ],
+  "mechanism_keywords": [
+    "provenance",
+    "detection-model",
+    "labeling",
+    "metadata-tracking",
+    "sca",
+    "sbom-analog",
+    "code-chunking",
+    "hybrid-model-rule",
+    "classification",
+    "ide-tagging",
+    "vcs-metadata",
+    "policy",
+    "governance",
+    "observability",
+    "auditability",
+    "diversity-preservation"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "pre-commit",
+    "code-review",
+    "CI",
+    "post-deployment",
+    "acquisition-due-diligence"
+  ],
+  "human_role": "on-the-loop",
+  "key_constructs": [
+    "GenAI Code Transparency",
+    "Pure vs. Blended AI Code",
+    "blending calculator",
+    "outside-in detection approach",
+    "model collapse",
+    "transparency imperative"
+  ],
+  "governance_refs": [
+    "EU AI Act",
+    "GDPR"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

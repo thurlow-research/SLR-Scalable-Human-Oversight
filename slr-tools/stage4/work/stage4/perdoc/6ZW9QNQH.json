@@ -1,0 +1,70 @@
+{
+  "item_key": "6ZW9QNQH",
+  "citation": "Mitchell 2025",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model",
+    "system-tool"
+  ],
+  "problem_statement": "Vibe coding (iteratively developing software by conversing with an LLM) accumulates technical debt, security issues, and code churn because LLMs cannot reconcile accumulating human-imposed constraints over long horizons, leaving code inconsistent and buggy without effective oversight.",
+  "magnitude_evidence": "a recent repository-level evaluation of 318 benchmark programs shows that the strongest model generates secure and correct code at a rate of only 28% [SecRepoBench, Dilgren et al. 2025]",
+  "risk_types": [
+    "security",
+    "technical-debt",
+    "code-churn",
+    "quality",
+    "maintainability",
+    "constraint-inconsistency",
+    "state-machine-divergence",
+    "partial-propagation-bugs",
+    "duplication-debt"
+  ],
+  "insufficiency_evidence": "Multi-turn coding benchmarks show that performance steeply declines compared to single-turn tasks, dominated by failures to globalize changes; long-term recall is unreliable and degrades under complexity; and 'even a high pass rate cannot guarantee the absence of important classes of bugs'",
+  "solution_mechanisms": [
+    "Vibe Reasoning side-car system",
+    "autoformalization of specifications",
+    "continuous lightweight verification",
+    "actionable verifier feedback to LLM",
+    "human approval of specifications",
+    "Type III developer-first formal-methods integration",
+    "compile-time checks (assertNever exhaustive guards)",
+    "soft vs hard constraints"
+  ],
+  "mechanism_keywords": [
+    "autoformalization",
+    "formal-verification",
+    "side-car",
+    "continuous-verification",
+    "spec-driven",
+    "hitl",
+    "static-analysis",
+    "policy-as-code",
+    "escalation",
+    "soft-constraints",
+    "risk-routing",
+    "ensemble",
+    "compile-time-check",
+    "guardrail"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "compile-time",
+    "CI",
+    "build",
+    "code-review"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Vibe Reasoning",
+    "constraint-reconciliation decay",
+    "Type I / Type II / Type III systems",
+    "side-car architecture",
+    "Type III Vibe Reasoning Trifecta",
+    "pit of despair",
+    "Exhaustive Switch / Discriminated Union / Union Alias / satisfies Guard"
+  ],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

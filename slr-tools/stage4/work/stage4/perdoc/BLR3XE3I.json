@@ -1,0 +1,82 @@
+{
+  "item_key": "BLR3XE3I",
+  "citation": "Li 2026",
+  "evidence_type": [
+    "empirical",
+    "case-study"
+  ],
+  "problem_statement": "How vibe coding reconfigures product-team workflows and raises oversight challenges, as AI-generated code is unreliable and prone to over-reliance yet still requires human debugging, verification, and accountability before reaching production.",
+  "magnitude_evidence": "recent studies show accepting <44% of AI-generated code [Becker et al. 2025]; based on interviews with 22 product team members",
+  "risk_types": [
+    "code-unreliability",
+    "quality",
+    "maintainability",
+    "code-bloat",
+    "integration-failure",
+    "security",
+    "privacy",
+    "data-leakage",
+    "legal",
+    "copyright-IP",
+    "over-reliance",
+    "deskilling",
+    "hallucination",
+    "traceability",
+    "homogenization",
+    "responsibility-gap"
+  ],
+  "insufficiency_evidence": "\"There's no firewall, nothing to stop bad AI code before it hits the system.\"[P17]; the Replit case where AI-generated changes reached production with minimal review; \"I can see the UI is all right...it hasn't been through any real security checks or code reviews.\"[P15]",
+  "solution_mechanisms": [
+    "four-stage human-in-loop workflow (ideation, generation, debugging, review)",
+    "expert oversight to remove harmful/redundant code",
+    "treat AI output as provisional and verify",
+    "manual debugging and correction",
+    "testing beyond surface quality",
+    "calibrated situational trust",
+    "AI disclosure and co-author crediting",
+    "prompt/edit-history documentation and design logs",
+    "attribution frameworks",
+    "version control / traceable AI action histories",
+    "automatic verification layers ('firewall') for AI code"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "human-review",
+    "expert-oversight",
+    "verification-layer",
+    "calibration",
+    "trust-calibration",
+    "provenance",
+    "disclosure",
+    "attribution",
+    "traceability",
+    "version-control",
+    "spec-driven-prompting",
+    "escalation"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "debugging",
+    "code-review",
+    "testing",
+    "pre-deployment",
+    "production"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "vibe coding",
+    "intending the right design",
+    "designing the right intention",
+    "intention-to-UX ecosystem",
+    "productivity paradox / pseudo-productivity",
+    "responsibility gap",
+    "meta-coding",
+    "agentic coding vs vibe coding"
+  ],
+  "governance_refs": [
+    "GDPR"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

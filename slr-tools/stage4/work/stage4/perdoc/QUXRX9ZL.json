@@ -1,0 +1,66 @@
+{
+  "item_key": "QUXRX9ZL",
+  "citation": "N. Yanev 2025",
+  "evidence_type": [
+    "conceptual-position",
+    "framework-model"
+  ],
+  "problem_statement": "Vibe coding\u2014generating code via conversational prompts to LLMs\u2014accelerates development but introduces frequent unstable code changes, reduced readability, verification gaps, and a lack of accountability/traceability; the paper addresses how to add lightweight human oversight to keep AI-assisted programming reliable and auditable.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "quality",
+    "maintainability",
+    "readability",
+    "verification-gap",
+    "traceability",
+    "accountability",
+    "technical-debt",
+    "over-reliance",
+    "governance",
+    "ambiguous-authorship"
+  ],
+  "insufficiency_evidence": "Agentic systems 'require well-formed test suites to verify correctness' and 'risk human detachment'; self-refinement 'AI self-criticism can be shallow, repeating the same mistakes'; 'verification is fragile when test suites are weak' (UTBoost/SWE-Gym); Copilot studies 'reveal trade-offs: increased code churn, lower readability, and a need for vigilant oversight'",
+  "solution_mechanisms": [
+    "Prompt-Refactor-Verify micro-cycle",
+    "prompt naming/tagging conventions (init-, refactor-, verify-, polish-, doc-)",
+    "human-guided refactor step",
+    "verification before trust (manual, linting, or lightweight testing)",
+    "prompt logs and tagged commits as metadata layer",
+    "human as ultimate arbiter of quality"
+  ],
+  "mechanism_keywords": [
+    "hitl",
+    "prompt-convention",
+    "verification-before-trust",
+    "traceability",
+    "provenance",
+    "refactor-loop",
+    "human-oversight",
+    "lightweight-testing",
+    "accountability",
+    "spec-driven",
+    "reflective-practice"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "code-review",
+    "pre-commit",
+    "CI"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Prompt\u2013Refactor\u2013Verify (PRV) cycle",
+    "vibe coding",
+    "prompt chaos",
+    "maintainability debt",
+    "verification gaps",
+    "verification before trust",
+    "micro-methodology"
+  ],
+  "governance_refs": [
+    "EU AI Act"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

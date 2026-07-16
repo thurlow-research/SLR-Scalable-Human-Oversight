@@ -1,0 +1,15 @@
+{
+  "item_key": "T3XTXIXW",
+  "methods": [
+    "design-science / prototype / tool-build",
+    "benchmark-evaluation",
+    "controlled-experiment",
+    "case-study",
+    "dataset-contribution"
+  ],
+  "empirical": true,
+  "human_subjects": false,
+  "primary_hint": "design-science / prototype / tool-build",
+  "notes": "Builds CoTDeceptor (a multi-agent RL-style adversarial obfuscation framework) and evaluates it: benchmark-style evasion over 500 vulnerable samples against multiple LLM detectors and static tools, a small-vs-large model transfer experiment (ablation-like), a fine-tuned-detector dataset-augmentation experiment, and an end-to-end case study on real code agents. No human participants.",
+  "citation": "Li 2025"
+}

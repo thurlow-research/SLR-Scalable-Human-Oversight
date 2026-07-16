@@ -1,0 +1,26 @@
+Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.
+I'll work through each paper systematically, applying the operationalizability test and tier criteria to make final binary decisions.
+
+```
+item_key,decision,confidence,rationale,prior_decision,prior_confidence
+E26FSKPQ,keep,medium,"Dynamic authority decay and runtime legitimacy mechanisms for agentic AI are structurally transferable to AI coding agent permission management; legal framing wraps an operational pattern (time-limited authorizations requiring re-validation).",maybe,medium
+Z4A98575,keep,medium,"Clarifies the compliance trigger point (when fine-tuning makes you a GPAI provider) that software orgs deploying modified coding models must operationally plan around; knowing WHEN obligations attach is itself actionable.",maybe,medium
+3PBQ3P2V,discard,high,"Regulatory strategy analysis arguing what approaches 'are unlikely to be strong candidates' — this is policy evaluation for regulators, not an operationalizable mechanism for software engineering organizations.",maybe,medium
+VCI7FSVP,keep,high,"Technical transpilation of EU AI Act logging and human oversight duties into computable clauses is inherently software-oriented and directly operationalizable in compliance automation pipelines.",maybe,medium
+F4U3MQ7N,keep,medium,"Compliance framework explicitly structured around development and deployment lifecycle phases is directly applicable to software engineering organizations building AI systems.",maybe,medium
+9SWGI2RY,keep,low,"Names operationalizable backdoor detection tools (Neural Cleanse, STRIP) for model validation audits, but one-sentence abstract prevents confirming methodological depth beyond tool enumeration.",keep,low
+RGNB3BEL,discard,medium,"Gap analysis identifies what ISO/IEC 42001 and EU AI Act lack for agentic AI but provides no operational mechanisms to fill those gaps — diagnostic for policymakers, not prescriptive for engineering orgs.",maybe,medium
+TZFN9PMG,discard,high,"Paper explicitly states it is 'descriptive, not normative' and defers governance framework to a companion paper; evidence layer documentation without actionable guidance.",maybe,medium
+56GRVSR7,keep,medium,"Under/over-reliance patterns and trust calibration findings in AI-assisted coding transfer to AI code review; the human-AI collaboration dynamic (review suggestions, accept/reject/modify) is structurally parallel.",maybe,medium
+J692UWE5,discard,high,"Macro regulatory economics arguing automated compliance loosens innovation-regulation trade-offs 'under plausible assumptions' — theoretical argument, no implementation mechanism.",maybe,medium
+WAYM37U6,discard,high,"Critical analysis of HITL as rhetorical shield in federal rulemaking; meta-commentary on policy discourse provides no operational mechanism for meaningful oversight.",maybe,low
+FWH4AVHN,keep,medium,"Explicitly sector-agnostic multi-layer validation architecture aligned with NIST AI RMF is designed for cross-domain transfer; software deployment in high-stakes environments fits the stated scope.",maybe,medium
+FWE8KERE,keep,low,"Five-layer governance framework claims production validation for agentic AI, but 'survival maximization' objective function and axiomatic derivation raise questions about practical operationalizability vs theoretical contribution.",maybe,medium
+J8FP9HT5,discard,high,"Research proposal ('This research aims to...') describing intended methodology for wearable cognitive load measurement; no completed findings or framework yet available to operationalize.",maybe,medium
+7AWJFRQ6,discard,medium,"Legal copyright analysis establishing that code memorization creates IP risk; characterizes the problem but provides no detection methodology or governance mechanism software orgs can implement.",maybe,medium
+48A4LRHQ,keep,medium,"Policy prototyping program explicitly addresses operationalizing EU AI Act human oversight requirements through experimental implementation with companies; practical compliance insights for regulatory planning.",maybe,medium
+9V2RFB2U,discard,high,"No abstract available; title indicates general ethics guideline development without apparent operational mechanism for software engineering code governance.",discard,low
+Y7ZWF7GT,keep,medium,"Architectural patterns (tamper-evident decision ledgers, hallucination anchoring, attribute-based agent access control) are technical mechanisms transferable to software AI governance; financial domain is application context not the contribution.",maybe,medium
+PQK3T4XZ,discard,medium,"Editorial synthesizing existing literature on oversight feasibility (XAI, HITL, regulatory approaches) and their limitations; life sciences anchor and survey format yield no new operational methodology.",maybe,medium
+YFR3REDU,keep,medium,"HITL supervision, data lineage, and model-risk management patterns are governance mechanisms that transfer without substantial re-derivation; investment domain specificity is in examples not framework structure.",maybe,medium
+```

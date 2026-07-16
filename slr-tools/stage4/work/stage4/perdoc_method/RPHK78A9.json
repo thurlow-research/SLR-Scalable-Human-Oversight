@@ -1,0 +1,14 @@
+{
+  "item_key": "RPHK78A9",
+  "methods": [
+    "conceptual/position",
+    "conceptual/framework",
+    "case-study",
+    "experience-report/practitioner-anecdote"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position",
+  "notes": "Trade/practitioner book advocating 'vibe coding' as a way of working. Builds a conceptual framework (FAAFO; kitchen-brigade metaphor; inner/middle/outer developer loops) and presents illustrative case studies (Adidas, Booking.com, individual developers) plus authors' own anecdotes. It cites external studies and industry reports but conducts no systematic data collection, controlled evaluation, or structured human-subjects research of its own; the case studies and productivity claims are narrative/experiential, not rigorous empirical method.",
+  "citation": "Kim 2025"
+}

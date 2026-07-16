@@ -1,0 +1,51 @@
+{
+  "item_key": "NGIH5T4C",
+  "citation": "Batte 2025",
+  "evidence_type": [
+    "conceptual-position",
+    "secondary-review"
+  ],
+  "problem_statement": "The document addresses how AI can enhance code review of increasingly complex software while managing the risks AI-assisted/AI-generated code introduces, arguing traditional manual review is time-consuming and inconsistent yet human oversight remains necessary.",
+  "magnitude_evidence": null,
+  "risk_types": [
+    "over-reliance",
+    "algorithmic-bias",
+    "contextual-misjudgment",
+    "false-positives",
+    "security",
+    "quality",
+    "loss-of-critical-thinking",
+    "ethical"
+  ],
+  "insufficiency_evidence": "\"traditional manual code review methods are time-consuming and prone to inconsistency\"; AI tools \"may generate technically correct recommendations that fail to consider the broader application or project context\" and \"false positives can disrupt workflow and erode trust\"",
+  "solution_mechanisms": [
+    "AI automated error/vulnerability detection",
+    "AI style/standard enforcement",
+    "real-time code-review feedback",
+    "AI in CI/CD quality gates",
+    "AI as collaborative partner augmenting human review",
+    "human oversight of AI suggestions"
+  ],
+  "mechanism_keywords": [
+    "ai-code-review",
+    "quality-gate",
+    "hitl",
+    "real-time-feedback",
+    "vulnerability-detection",
+    "standard-enforcement",
+    "human-oversight",
+    "collaborative-ai"
+  ],
+  "oversight_locus": [
+    "code-review",
+    "CI",
+    "generation-time",
+    "pre-commit"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [],
+  "governance_refs": [],
+  "scope_fit": "both",
+  "notes": "Short position/synthesis paper (essay-style, University of the Cumberlands); light on empirical detail and heavily self-cites (Batte 2024).",
+  "_truncated": false
+}

@@ -1,0 +1,17 @@
+{
+  "item_key": "6DXZGHD9",
+  "methods": [
+    "design-science/framework-build",
+    "multivocal/grey-literature-review",
+    "survey/questionnaire",
+    "expert-panel/Delphi",
+    "ANN-predictive-modeling",
+    "interpretive-structural-modeling/ISM",
+    "case-study"
+  ],
+  "empirical": true,
+  "human_subjects": true,
+  "primary_hint": "design-science/framework-build (Hybrid ANN-ISM)",
+  "notes": "Six-phase mixed-methods design: MLR + questionnaire survey (n=70) + expert panel (Delphi, ~19-20 experts) feeding an ANN risk-prediction model and ISM structural analysis, validated via a single-organization case study. Human subjects = survey respondents and expert panel. Reported ANN metrics are internally inconsistent across sections.",
+  "citation": "Al-Hashimi 2026"
+}

@@ -1,0 +1,26 @@
+Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.
+I'll analyze each paper systematically, applying the operationalizability test and working through the strongest arguments for and against keeping each one.
+
+```
+item_key,decision,confidence,rationale,prior_decision,prior_confidence
+3HHHN3FE,discard,high,"No abstract available and title indicates theoretical AI alignment philosophy; cannot assess operationalizability and no evident mechanism for software engineering governance",discard,low
+R6JISKKW,keep,medium,"Governance architecture with decision-state logging, suppression transparency, and embedded human oversight checkpoints transfers to AI code review pipelines; mechanisms are domain-agnostic patterns despite energy sector context",maybe,medium
+Q5RS3ZXV,keep,medium,"AACT framework for reducing AI over-reliance through counterfactual analysis of human reasoning transfers to code review trust calibration; cognitive mechanism is domain-agnostic and translation from prediction to review is trivial",maybe,medium
+BS4B2728,discard,medium,"Abstract is predominantly keywords with no assessable methodology; human intervention prerequisites framing is descriptive rather than providing operationalizable mechanisms",maybe,medium
+2G7XY3PU,discard,medium,"XAI for cloud orchestration decisions is infrastructure automation rather than code quality governance; explanation mechanisms for orchestration vs code review require substantial re-derivation of what constitutes meaningful explanation",maybe,medium
+FNTL6JN9,keep,medium,"Human-LLM iterative refinement workflow with validation mechanisms in software engineering context (Stack Overflow) transfers structurally to code review oversight; synergistic collaboration pattern directly operationalizable",maybe,medium
+HCPRUGB6,discard,high,"One-sentence abstract provides no assessable content despite relevant title; cannot confirm any operationalizable contribution to AI-first software development methodology",discard,low
+NBDTTWLH,discard,medium,"Democratic accountability framing and DAGS-CVCA context indicate public-sector AI governance focus; transferability to software engineering teams requires substantial re-derivation beyond what abstract supports",maybe,medium
+695YSSVC,discard,high,"Historical-legal analysis of right-to-human-review constructions provides regulatory context but no operational mechanisms; informational rather than operationalizable for software teams",maybe,medium
+KV98BNHC,keep,medium,"Semantic governance layer addressing prompt injection and LLM security for enterprise AI assistants directly applies to AI coding tool governance; mechanisms transfer without domain re-derivation",maybe,medium
+DD55YWWF,discard,medium,"Abstract mentions advertising alongside civil liability suggesting creative content focus; no confirmation of code-specific liability treatment prevents operationalizability assessment",maybe,medium
+LLMIKPLX,discard,high,"Single-sentence abstract provides no assessable methodology or mechanism; braking-device inversion concept uninterpretable without content",discard,low
+VMIN7FX9,discard,medium,"Keywords-only abstract prevents assessment of law-following AI framework methodology; cannot confirm software engineering applicability or operationalizability",maybe,medium
+JFYZV2MZ,discard,low,"Despite highly relevant title (scalable oversight, drift detection), keywords-only abstract prevents methodology assessment; human verification recommended given title relevance",maybe,low
+W5UFVCR9,discard,medium,"Panel discussion format lacks empirical methodology; aspirational framework contribution without delivered operationalizable mechanisms for software validation or risk assessment",maybe,medium
+P8CUB84H,keep,medium,"HITL supervision, immutable audit trails, source verification to prevent hallucinations, and mandatory disclosure are domain-agnostic governance mechanisms directly transferable to code review pipelines",maybe,medium
+QULWS3JL,keep,medium,"Design-science evaluated framework with privacy gateway, RAG, continuous control monitoring, and HITL provides technical governance architecture transferable to AI coding tool governance",maybe,medium
+TLCN4EKE,discard,medium,"Keywords-only abstract prevents assessment of cognitive decompression attack framework; theoretical LLM security contribution unassessable for software engineering operationalizability",maybe,medium
+N3PMUPGK,discard,high,"Vision-specific methodology (OOD detection, open-set recognition, category discovery) has no structural parallel to code review; compliance framing is generic but mechanisms are non-transferable",maybe,medium
+6NR73DTR,discard,high,"Qualitative perception study of UX designers provides descriptive observations about skill degradation but no operational governance mechanisms; substantial domain re-derivation required",maybe,low
+```

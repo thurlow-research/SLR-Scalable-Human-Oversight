@@ -1,0 +1,11 @@
+{
+  "item_key": "ZUM76CCG",
+  "methods": [
+    "conceptual/position/framework"
+  ],
+  "empirical": false,
+  "human_subjects": false,
+  "primary_hint": "conceptual/position/framework",
+  "notes": "Proposes the LLM Risk Assessment Framework (LRF) classifying LLM use by autonomy and impact; the two 'example applications' are illustrative hypothetical walkthroughs, not empirical evaluation. Authors explicitly note the framework is not yet validated.",
+  "citation": "Otten 2026"
+}

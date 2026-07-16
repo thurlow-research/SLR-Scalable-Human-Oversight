@@ -1,0 +1,1466 @@
+[
+ {
+  "key": "JJN55HPT",
+  "version": 152502,
+  "coll": "Title-Only",
+  "title": "Security vulnerability detection with multitask self-instructed fine-tuning of large language models",
+  "url": "https://doi.org/10.48550/arxiv.2406.05892",
+  "itemType": "preprint"
+ },
+ {
+  "key": "WY89XX3F",
+  "version": 152501,
+  "coll": "Title-Only",
+  "title": "Secure Vibe Bench: Benchmarking Secure Vibe Coding of AI Agents via Reconstructing vulnerability in trod u c ing Scenarios",
+  "url": "https://aclanthology.org/2026.acl-long.1107/",
+  "itemType": "conferencePaper"
+ },
+ {
+  "key": "EJZ89XQ8",
+  "version": 152500,
+  "coll": "Title-Only",
+  "title": "Security and configuration vulnerabilities in ai-generated web applications: a case study of lovable",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "9M9C8EJQ",
+  "version": 152498,
+  "coll": "Title-Only",
+  "title": "SALLM: Security Assessment of Generated Code",
+  "url": "https://doi.org/10.1145/3691621.3694934",
+  "itemType": "preprint"
+ },
+ {
+  "key": "B8U9JING",
+  "version": 152497,
+  "coll": "Title-Only",
+  "title": "Improving code review by predicting reviewers and acceptance of patches",
+  "url": "http://rosaec.snu.ac.kr/publish/2009/techmemo/ROSAEC-2009-006.pdf",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "G4EG3NMU",
+  "version": 152496,
+  "coll": "Title-Only",
+  "title": "Effective Human Oversight of AI-Based Systems: A Signal Detection Perspective on the Detection of Inaccurate and Unfair Outputs",
+  "url": "https://doi.org/10.1007/s11023-024-09701-0",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "WFHWD8XB",
+  "version": 152495,
+  "coll": "Title-Only",
+  "title": ". Bridging the expectation gap: characterizing user misconceptions of LLM-based programming assistants",
+  "url": "https://doi.org/10.5281/zenodo.18850378",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "KPGJPZT7",
+  "version": 152494,
+  "coll": "Title-Only",
+  "title": "Automation bias: a systematic review of frequency, effect mediators, and mitigators",
+  "url": "https://doi.org/10.1136/amiajnl-2011-000089",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "F2C2DWSI",
+  "version": 152493,
+  "coll": "Title-Only",
+  "title": "AI-assisted programming may decrease the productivity of experienced developers by increasing maintenance burden",
+  "url": "https://doi.org/10.2139/ssrn.5521379",
+  "itemType": "preprint"
+ },
+ {
+  "key": "WHP43VQK",
+  "version": 152492,
+  "coll": "Title-Only",
+  "title": "Systematically finding security vulnerabilities in black-box code generation models",
+  "url": "https://doi.org/10.60882/cispa.32772345.v1",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "8K64UMFW",
+  "version": 152491,
+  "coll": "Title-Only",
+  "title": "Toward trustworthy neural program synthesis",
+  "url": "https://doi.org/10.48550/arxiv.2210.00848",
+  "itemType": "preprint"
+ },
+ {
+  "key": "KCVDBRDI",
+  "version": 152490,
+  "coll": "Title-Only",
+  "title": "A new era in software security: towards self-healing software via large language models and formal verification",
+  "url": "https://doi.org/10.48550/arxiv.2305.14752",
+  "itemType": "preprint"
+ },
+ {
+  "key": "FZK2QB5A",
+  "version": 152489,
+  "coll": "Title-Only",
+  "title": "Assured offline LLM-based software engineering",
+  "url": "https://doi.org/10.1145/3643661.3643953",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "KF5MGIBI",
+  "version": 152488,
+  "coll": "Title-Only",
+  "title": "Fine-tuning large language models to improve accuracy and comprehensibility of Automated Code Review",
+  "url": "https://doi.org/10.1145/3695993",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "Q5UQ4MBP",
+  "version": 152487,
+  "coll": "Title-Only",
+  "title": "Large language model for vulnerability detection: emerging results and future directions",
+  "url": "https://doi.org/10.1145/3639476.3639762",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "KRI3UDXR",
+  "version": 152486,
+  "coll": "Title-Only",
+  "title": "Using AI-based coding assistants in practice: state of affairs, perceptions, and ways forward",
+  "url": "https://doi.org/10.1016/j.infsof.2024.107610",
+  "itemType": "preprint"
+ },
+ {
+  "key": "2CDVZKPT",
+  "version": 152485,
+  "coll": "Title-Only",
+  "title": "Adversarial bug reports as a security risk in language model-based automated program repair",
+  "url": "https://doi.org/10.48550/arxiv.2509.05372",
+  "itemType": "preprint"
+ },
+ {
+  "key": "SGRVP3HW",
+  "version": 152484,
+  "coll": "Title-Only",
+  "title": "Bias testing and mitigation in LLM-based Code Generation",
+  "url": "https://doi.org/10.1145/3724117",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "DKN3R3PX",
+  "version": 152483,
+  "coll": "Title-Only",
+  "title": "Vulnerability detection with code language models: How Far Are We?",
+  "url": "https://doi.org/10.1109/icse55347.2025.00038",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "GWPKZS68",
+  "version": 152482,
+  "coll": "Title-Only",
+  "title": "Vibe coding in practice: motivations,challenges, and a Future Outlook\u2013a Grey Literature Review",
+  "url": "https://doi.org/10.1145/3786583.3786866",
+  "itemType": "preprint"
+ },
+ {
+  "key": "REZGA5WF",
+  "version": 152481,
+  "coll": "Title-Only",
+  "title": "Speed at the cost of quality: how cursor AI increases short-term velocity and long-term complexity in open-source projects",
+  "url": "https://doi.org/10.48550/arxiv.2511.04427",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "N5X8N7C7",
+  "version": 152480,
+  "coll": "Title-Only",
+  "title": "Levels of Autonomy for AI agents",
+  "url": "https://doi.org/10.48550/arxiv.2506.12469",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "PF595SEQ",
+  "version": 152479,
+  "coll": "Title-Only",
+  "title": "\"You still have to study\" \u2013 On the Security of LLM generated code",
+  "url": "https://doi.org/10.48550/arxiv.2408.07106",
+  "itemType": "preprint"
+ },
+ {
+  "key": "JQPPKSFQ",
+  "version": 152478,
+  "coll": "Title-Only",
+  "title": "Artifact for \"LGTM! Characteristics of Auto-Merged LLM-based Agentic PRs\"",
+  "url": "https://doi.org/10.5281/zenodo.18340558",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "JCTP8VXP",
+  "version": 152457,
+  "coll": "Title-Only",
+  "title": "ZORO: active rules for reliable vibe coding",
+  "url": "https://arxiv.org/abs/2604.15625",
+  "itemType": "preprint"
+ },
+ {
+  "key": "4HHPJ4R4",
+  "version": 152453,
+  "coll": "Title-Only",
+  "title": "The uncertain advisor: trust, accuracy, and self-correction in an automated decision support system",
+  "url": "https://doi.org/10.1007/s10339-022-01113-1",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "S44NI54N",
+  "version": 152452,
+  "coll": "Title-Only",
+  "title": "The Cybernetic Teammate: A Field Experiment on Generative AI Reshaping Teamwork and Expertise",
+  "url": "https://doi.org/10.2139/ssrn.5207588",
+  "itemType": "report"
+ },
+ {
+  "key": "KNJE9E4M",
+  "version": 152443,
+  "coll": "Title-Only",
+  "title": "TFix: Learning to Fix Coding Errors with a Text-to-Text Transformer",
+  "url": "https://proceedings.mlr.press/v139/berabi21a.html",
+  "itemType": "conferencePaper"
+ },
+ {
+  "key": "B7IPCH77",
+  "version": 152441,
+  "coll": "Title-Only",
+  "title": "SWE-agent: agent-computer interfaces enable automated software engineering",
+  "url": "https://doi.org/10.52202/079017-1601",
+  "itemType": "conferencePaper"
+ },
+ {
+  "key": "ARFXDZBW",
+  "version": 152446,
+  "coll": "Title-Only",
+  "title": "Software architecture in the age of agentic AI",
+  "url": "https://doi.org/10.1007/978-3-032-04403-7_5",
+  "itemType": "conferencePaper"
+ },
+ {
+  "key": "4TUNZ7FU",
+  "version": 152439,
+  "coll": "Title-Only",
+  "title": "Position: Humans are Missing from AI Coding Agent Research",
+  "url": "https://www.semanticscholar.org/paper/d51b4ca48b4b56e0aa1c2161e95dcedd4b789f63",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "8BPD8FHF",
+  "version": 152431,
+  "coll": "Title-Only",
+  "title": "Human-in-the-loop optimization of exoskeleton assistance during walking",
+  "url": "https://doi.org/10.1126/science.aal5054",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "FZ2HMDXT",
+  "version": 152434,
+  "coll": "Title-Only",
+  "title": "How to Evaluate Trust in AI-Assisted Decision Making? A Survey of Empirical Methodologies",
+  "url": "https://dl.acm.org/doi/10.1145/3476068",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "EQPDVDTD",
+  "version": 152427,
+  "coll": "Title-Only",
+  "title": "GRACE: Empowering LLM-based software vulnerability detection with graph structure and in-context learning",
+  "url": "https://doi.org/10.1016/j.jss.2024.112031",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "856D2923",
+  "version": 152425,
+  "coll": "Title-Only",
+  "title": "From vibe to production: taming AI for fearless development",
+  "url": "https://www.youtube.com/watch?v=8tFjsJBhA6k",
+  "itemType": "videoRecording"
+ },
+ {
+  "key": "XAZKF497",
+  "version": 152422,
+  "coll": "Title-Only",
+  "title": "Experiences and Challenges in AI-Driven Modular Software Development Using Large Language Models for Code Generation",
+  "url": "https://doi.org/10.22541/au.172871465.54826063/v1",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "PA77DC8U",
+  "version": 152404,
+  "coll": "Title-Only",
+  "title": "Does automation bias decision-making?",
+  "url": "https://doi.org/10.1006/ijhc.1999.0252",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "WWBUQM7V",
+  "version": 152413,
+  "coll": "Title-Only",
+  "title": "Developers' perspective on trustworthiness of code generated by ChatGPT: insights from interviews",
+  "url": "https://doi.org/10.1007/978-3-031-55486-5_16",
+  "itemType": "conferencePaper"
+ },
+ {
+  "key": "9HKDMT9M",
+  "version": 152410,
+  "coll": "Title-Only",
+  "title": "Developer Perspectives on Licensing and Copyright Issues Arising from Generative AI for Software Development",
+  "url": "https://doi.org/10.48550/arxiv.2411.10877",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "22FEMTD7",
+  "version": 152399,
+  "coll": "Title-Only",
+  "title": "Chain-of-Thought Prompting of Large Language Models for Discovering and Fixing Software Vulnerabilities",
+  "url": "https://doi.org/10.48550/arxiv.2402.17230",
+  "itemType": "preprint"
+ },
+ {
+  "key": "MI2Q4QIG",
+  "version": 152402,
+  "coll": "Title-Only",
+  "title": "Calculation of signal detection theory measures",
+  "url": "https://doi.org/10.3758/BF03207704",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "9IGC33QJ",
+  "version": 152408,
+  "coll": "Title-Only",
+  "title": "Accountability and automation bias",
+  "url": "https://doi.org/10.1006/ijhc.1999.0349",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "5XJRXBDE",
+  "version": 152340,
+  "coll": "Title-Only",
+  "title": "SWE-bench: CAN LANGUAGE MODELS RESOLVE REAL-WORLD GITHUB ISSUES?",
+  "url": "https://doi.org/10.48550/arxiv.2310.06770",
+  "itemType": "preprint"
+ },
+ {
+  "key": "ZBQ48E2V",
+  "version": 152319,
+  "coll": "Title-Only",
+  "title": "let\u2019s make every pull request meaningful: an empirical analysis of developer and agentic pull requests",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "3SBVBTXW",
+  "version": 152318,
+  "coll": "Title-Only",
+  "title": "Is github\u2019s copilot as bad as humans at introducing vulnerabilities in code?",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "WB2XZU9K",
+  "version": 152316,
+  "coll": "Title-Only",
+  "title": "\u201cLL Ms in web development: evaluating LLM-generated PHP code vulnerabilities,\u201d",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "K5IAE4E7",
+  "version": 152314,
+  "coll": "Title-Only",
+  "title": "Facilitating Trustin AI-assisted Software tools",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "7ZMU5AIF",
+  "version": 152313,
+  "coll": "Title-Only",
+  "title": "Overseeing Agents Without Constant oversight:Challengesand Opportunities",
+  "url": "",
+  "itemType": "preprint"
+ },
+ {
+  "key": "WNGFVRN9",
+  "version": 152310,
+  "coll": "Title-Only",
+  "title": "Who Writesthe Docsin SE3.0? Agent vs. Human documentation pull requests",
+  "url": "",
+  "itemType": "preprint"
+ },
+ {
+  "key": "MPKNG9SR",
+  "version": 152309,
+  "coll": "Title-Only",
+  "title": "Good Vibrations?A Qualitative Studyof Co-creation,communication,flow,and Trustin Vibe Coding",
+  "url": "",
+  "itemType": "preprint"
+ },
+ {
+  "key": "CMNVQ7CX",
+  "version": 152308,
+  "coll": "Title-Only",
+  "title": "Code provenance: use of AI-generated content",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "QEF4XCQS",
+  "version": 152306,
+  "coll": "Title-Only",
+  "title": "Truman Bench profiling LL Ms\u2019 ability to help non-programmers modify a real-world code base",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "B8DJBDXS",
+  "version": 152304,
+  "coll": "Title-Only",
+  "title": "Sec Repo Bench: benchmarking LL Ms for secure code generation in real-world repositories. Co RR abs/2504.21205 (2025)",
+  "url": "",
+  "itemType": "preprint"
+ },
+ {
+  "key": "PMC6HBW6",
+  "version": 152303,
+  "coll": "Title-Only",
+  "title": "Rethinking autonomy: pre vent ing failure sin ai driven software engineering",
+  "url": "",
+  "itemType": "preprint"
+ },
+ {
+  "key": "RRTIRFGV",
+  "version": 152302,
+  "coll": "Title-Only",
+  "title": "LL Mx CPG: context-aware vulnerability detection through code property graph-guided large language models",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "644HUTI8",
+  "version": 152301,
+  "coll": "Title-Only",
+  "title": "COM-PASS: a mult i dimensional benchmark for evaluating code generation in large language models",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "XK3USNVW",
+  "version": 152300,
+  "coll": "Title-Only",
+  "title": "Dear diary: a randomized controlled trial of generative AI coding tools in the work-place",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "UMKJIQ2A",
+  "version": 152299,
+  "coll": "Title-Only",
+  "title": "Benefits and challenges of vibe programming",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "VP7TS6CX",
+  "version": 152298,
+  "coll": "Title-Only",
+  "title": "An insight into security code review with LL Ms: capabilities, obstacles, and influential factors",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "RR8RGA47",
+  "version": 152294,
+  "coll": "Title-Only",
+  "title": "Repo Exec: evaluate code generation with a repository-level executable benchmark",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "VVPBC4X8",
+  "version": 152293,
+  "coll": "Title-Only",
+  "title": "Is your AI-generated code really secure? Evaluating Large Language Modelson Secure Code Generationwith Code Sec Eval",
+  "url": "",
+  "itemType": "preprint"
+ },
+ {
+  "key": "2EU5WGTH",
+  "version": 152290,
+  "coll": "Title-Only",
+  "title": "Code Judge: evaluating code generation with large language models",
+  "url": "",
+  "itemType": "preprint"
+ },
+ {
+  "key": "U8P3VUFG",
+  "version": 152286,
+  "coll": "Title-Only",
+  "title": "Ranking LLM-generated loop In-variants for program verification",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "RUX9R6T5",
+  "version": 152285,
+  "coll": "Title-Only",
+  "title": "How secure is code generated by Chat GPT? ar Xiv:",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "AWGDXQ5D",
+  "version": 152284,
+  "coll": "Title-Only",
+  "title": "Evaluating thecodequalityofai-assistedcodegenerationtools:anempiricalstudyongithub copilot,amazoncodewhisperer,andchatgpt",
+  "url": "",
+  "itemType": "preprint"
+ },
+ {
+  "key": "7GS5C5RR",
+  "version": 152283,
+  "coll": "Title-Only",
+  "title": "Is Git Hub Copilota Substitutefor Human Pair-programming?an empirical study",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "WEKMHN9B",
+  "version": 152282,
+  "coll": "Title-Only",
+  "title": "Taking flight with copilot: early insights and opportunities of AI-powered pair-programming tools",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "CIP9FBM3",
+  "version": 152281,
+  "coll": "Title-Only",
+  "title": "Model Context Protocol(MCP)at First Glance:Studyingthe Securityand maintain ability of MCP Servers",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "EWM923SP",
+  "version": 152280,
+  "coll": "Title-Only",
+  "title": "Shield against LLM generated insecure code",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "TRK43C3W",
+  "version": 152279,
+  "coll": "Title-Only",
+  "title": "Adversarial Attack classification and Robustness Testingfor Large Language Modelsfor Code",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "2KQ93JHX",
+  "version": 152278,
+  "coll": "Title-Only",
+  "title": "we have a package for you a comprehensive analysis of package hallucinations by code generating LL Ms",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "BJ9QVRNQ",
+  "version": 152277,
+  "coll": "Title-Only",
+  "title": "auto mating code revie wac ti viti es by large scale pre training",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "NPAQ7SQA",
+  "version": 152275,
+  "coll": "Title-Only",
+  "title": "Semantic Commit: Helping Users Update Intent specific ati ons for AI Memoryat Scale",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "SDQF9J6F",
+  "version": 152274,
+  "coll": "Title-Only",
+  "title": "Validating AI-Generated Codewith Live Programming",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "A292H27R",
+  "version": 152272,
+  "coll": "Title-Only",
+  "title": "an empirical evaluation of Git Hub Copilot\u2019s code suggestions",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "PWT5XJCC",
+  "version": 152271,
+  "coll": "Title-Only",
+  "title": "De-v GPT: studying developer-Chat GPT conversations",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "KM62WVVW",
+  "version": 152254,
+  "coll": "Title-Only",
+  "title": "Does GitHub copilot improve code quality? Here\u2019s what the data says",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "6ZW9QNQH",
+  "version": 152191,
+  "coll": "Title-Only",
+  "title": "Position: Vibe Coding Needs Vibe Reasoning: Improving Vibe Coding with Formal Verification",
+  "url": "https://doi.org/10.1145/3759425.3763390",
+  "itemType": "conferencePaper"
+ },
+ {
+  "key": "AGE4E2VK",
+  "version": 152199,
+  "coll": "Title-Only",
+  "title": "Help Me to Understand this Commit! - A Vision for Contextualized Code reviews",
+  "url": "https://dl.acm.org/doi/10.1145/3643796.3648447",
+  "itemType": "conferencePaper"
+ },
+ {
+  "key": "FWTGMK4D",
+  "version": 152195,
+  "coll": "Title-Only",
+  "title": "From large to mammoth: a comparative evaluation of large language models in zero-shot vulnerability detection",
+  "url": "https://doi.org/10.14722/ndss.2025.241491",
+  "itemType": "conferencePaper"
+ },
+ {
+  "key": "4X5FD7NF",
+  "version": 152197,
+  "coll": "Title-Only",
+  "title": "CoderEval: a benchmark of pragmatic code generation with generative pre-trained models",
+  "url": "https://doi.org/10.1145/3597503.3623316",
+  "itemType": "conferencePaper"
+ },
+ {
+  "key": "3F5CBZZK",
+  "version": 152164,
+  "coll": "Title-Only",
+  "title": "What is generative AI good for? Introduction to the special issue on generative AI in software engineering",
+  "url": "https://doi.org/10.1016/j.infsof.2025.107857",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "ASNPG5HD",
+  "version": 152162,
+  "coll": "Title-Only",
+  "title": "VulTrLM: LLM-assisted vulnerability detection via AST decomposition and comment enhancement",
+  "url": "https://doi.org/10.1007/s10664-025-10738-7",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "DXAQ444B",
+  "version": 152156,
+  "coll": "Title-Only",
+  "title": "Systems engineering issues for industry applications of large language model",
+  "url": "https://doi.org/10.1016/j.asoc.2023.111165",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "BNC37IK9",
+  "version": 152151,
+  "coll": "Title-Only",
+  "title": "Multi-objective code reviewer recommendations: balancing expertise, availability and collaborations",
+  "url": "https://doi.org/10.1007/s10515-020-00275-6",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "3K7FEWI5",
+  "version": 152142,
+  "coll": "Title-Only",
+  "title": "No AI code in node",
+  "url": "https://doi.org/10.1111/1467-9655.14292",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "XSGC6JJT",
+  "version": 152132,
+  "coll": "Title-Only",
+  "title": "The scope of ChatGPT in software engineering: a thorough investigation",
+  "url": "https://doi.org/10.48550/arxiv.2305.12138",
+  "itemType": "preprint"
+ },
+ {
+  "key": "59ZW4R58",
+  "version": 152111,
+  "coll": "Title-Only",
+  "title": "The gotchas of AI coding and vibe coding. It\u2019s all about support and maintenance",
+  "url": "https://osf.io/download/kjz9t",
+  "itemType": "preprint"
+ },
+ {
+  "key": "SK73XBTW",
+  "version": 152049,
+  "coll": "Title-Only",
+  "title": "Mandatory AI guardrails",
+  "url": "https://doi.org/10.9785/cri-2024-250602",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "U9SGRTSS",
+  "version": 152048,
+  "coll": "Title-Only",
+  "title": "ISO/IEC 42001 information technology - artificial intelligence - management system",
+  "url": "https://hdl.handle.net/20.500.12512/261899",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "EEQ6M43H",
+  "version": 152043,
+  "coll": "Title-Only",
+  "title": "Proposal: adoption of official AI contri-bution & copyright policy",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "WITZNUF9",
+  "version": 152039,
+  "coll": "Title-Only",
+  "title": "Exploring Gen AI in Software Development: Insights from   a Case Study in a Large Brazilian Company",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "HFZBEEQX",
+  "version": 152036,
+  "coll": "Title-Only",
+  "title": "What Guides Our Choices? Modeling Developers\u2019 Trust and Behavioral Intentions  Towards Gen AI",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "XH58CVEM",
+  "version": 152033,
+  "coll": "Title-Only",
+  "title": "How to review code written by AI",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "2FZQ9EPC",
+  "version": 152032,
+  "coll": "Title-Only",
+  "title": "Trust in LLM in SE",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "8GUFH2ZB",
+  "version": 152027,
+  "coll": "Title-Only",
+  "title": "AIDev: dataset for AI development analytics",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "UMSNBE5P",
+  "version": 150005,
+  "coll": "Title-Only",
+  "title": "\u201cBenchmarking and studying the llm-based code review,\u201d",
+  "url": "",
+  "itemType": "preprint"
+ },
+ {
+  "key": "KVPC86SG",
+  "version": 150004,
+  "coll": "Title-Only",
+  "title": "The end of the curl bug-bounty",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "6H2Q9QHP",
+  "version": 152023,
+  "coll": "Title-Only",
+  "title": "A synthesis of pain points and strategies , including communication, planning/abstraction, verification, code quality, and collaboration concerns, and strategies to mitigate these concerns",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "QPZVT8KN",
+  "version": 149990,
+  "coll": "Title-Only",
+  "title": "A characterization of practice : where and why vibe coding happens, what developers delegate, and how they guide models",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "IFENUWMV",
+  "version": 149989,
+  "coll": "Title-Only",
+  "title": "To what extent are existing cybersecurity best practices sufficient to safeguard against AI-generated code, and in which",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "K8GWB75U",
+  "version": 149988,
+  "coll": "Title-Only",
+  "title": "Check what\u2019s missing. AI failure often manifests as omission: the risk not mentioned, the edge case not handled, the confound not addressed",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "7FH2KH8X",
+  "version": 149987,
+  "coll": "Title-Only",
+  "title": "Any tier promotions or demotions? Promotion requires: minimum 3 consecutive sprint cycles at current tier with documented quality data",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "D7AAKK8R",
+  "version": 149986,
+  "coll": "Title-Only",
+  "title": "Was validation effort correctly estimated? Compare budgeted vs. actual validation time. Ad-just estimation baseline for next sprint",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "K3QTXBIK",
+  "version": 149985,
+  "coll": "Title-Only",
+  "title": "Plausibility as proxy for correctness. Output is optimized for statistical plausibility, not correctness. Code that \u201clooks right\u201d is favored regardless of its functional correctness",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "D99CQFSW",
+  "version": 149984,
+  "coll": "Title-Only",
+  "title": "Phase 0 bypass. Starting with architecture without understanding the problem. Cost multiplier: orders of magnitude relative to early discovery",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "4NUJP2AV",
+  "version": 149983,
+  "coll": "Title-Only",
+  "title": "Observability. Each gate makes observable properties of the artifact that would be invisible without external verification. The number of observable properties increases with VA diversity",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "2WPBHF7I",
+  "version": 149982,
+  "coll": "Title-Only",
+  "title": "VA-human absence. Relying exclusively on automated tests. Semantic adequacy and domain correctness require human judgment",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "542TQ7TD",
+  "version": 149981,
+  "coll": "Title-Only",
+  "title": "Monolithic session. Design, code, and tests in a single conversation. Context saturates. One session per phase, one phase per module",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "4ABTKK4G",
+  "version": 149980,
+  "coll": "Title-Only",
+  "title": "Validation theater. Asking the AI \u201cis this design good?\u201d and accepting affirmation",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "TE5CWST6",
+  "version": 149979,
+  "coll": "Title-Only",
+  "title": "Format consistency analysis between commit and original files; the task is to validate that the code change formatting style is not aligned with the target code",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "EXGTVIZJ",
+  "version": 152022,
+  "coll": "Title-Only",
+  "title": "\u201cIf the system didn\u2019t show me how it performed on the tests then it is not very useful. For all I know, it could turn off all the tests.\u201d",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "D59C7T3U",
+  "version": 149976,
+  "coll": "Title-Only",
+  "title": "\u201cSecure and observable ci/cd practices for ai-powered development pipelines,\u201d",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "UGXEES3D",
+  "version": 149975,
+  "coll": "Title-Only",
+  "title": "Nearly half of all code generated by ai found to contain security flaws \u2013 even big llms affected",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "PUHETCQS",
+  "version": 149974,
+  "coll": "Title-Only",
+  "title": "Why ci/cd is the secret to unlocking vibe coding at scale",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "WJBMCRSM",
+  "version": 149973,
+  "coll": "Title-Only",
+  "title": "\u201cAi-assisted test generation and quality assurance in software systems,\u201d",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "M7ZVNK8M",
+  "version": 152021,
+  "coll": "Title-Only",
+  "title": "Write clear and structured prompts that capture functional and non-functional needs",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "3S7IB2C3",
+  "version": 152020,
+  "coll": "Title-Only",
+  "title": "Run regression checks and compare results before accepting regenerated code",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "TXED93G3",
+  "version": 152019,
+  "coll": "Title-Only",
+  "title": "Maintain traceability by linking prompts, generated code, and the model settings used",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "6TFIA7CN",
+  "version": 152018,
+  "coll": "Title-Only",
+  "title": "Update BDD or acceptance scenarios whenever requirements or regenerated parts change",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "D7EBP4DK",
+  "version": 152017,
+  "coll": "Title-Only",
+  "title": "Request senior review for high-impact regenerated components and clarify ownership roles",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "84NBFE7K",
+  "version": 149967,
+  "coll": "Title-Only",
+  "title": "Monitor security using regular automated scans, with AI-based checks used only as supportive tools",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "27KDBWNT",
+  "version": 152016,
+  "coll": "Title-Only",
+  "title": "Track data and IP sources and keep records needed for compliance",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "3XBCUX63",
+  "version": 152015,
+  "coll": "Title-Only",
+  "title": "Strengthen pipelines by ensuring reproducible builds, fixed dependencies, and easy rollback steps",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "QN2ZP7GG",
+  "version": 152014,
+  "coll": "Title-Only",
+  "title": "Based on these criteria, evaluate the code and determine if it is a valid or invalid test",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "4CVPIHH7",
+  "version": 152012,
+  "coll": "Title-Only",
+  "title": "and encourage contributions from the community to promote trust in LLMs in SE [6]",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "JRHHIK82",
+  "version": 149960,
+  "coll": "Title-Only",
+  "title": "We propose precise definitions for trust, distrust, and trustworthiness in LLM4SE, integrating insights from both existing literature and practitioners\u2019 perspectives",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "7CH3FDKX",
+  "version": 152010,
+  "coll": "Title-Only",
+  "title": "We provide an online appendix with all of our data and results to facilitate reproducibility and encourage contributions from the community to promote trust in LLMs in SE",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "KMNIQWF5",
+  "version": 149957,
+  "coll": "Title-Only",
+  "title": "We complement our review with a survey study of 25 participants to map current research and gather the perspectives of practitioners on trust in LLMs in SE",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "252P5V6U",
+  "version": 152009,
+  "coll": "Title-Only",
+  "title": "self-IEEE TRANSACTIONS ON SOFTWARE ENGINEERING verification",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "SRW6TMP8",
+  "version": 152008,
+  "coll": "Title-Only",
+  "title": "Protect your code against licensing risks",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "NRFK3GZX",
+  "version": 149952,
+  "coll": "Title-Only",
+  "title": "How to test for compliance with human oversight requirements in ai regulation?",
+  "url": "",
+  "itemType": "preprint"
+ },
+ {
+  "key": "R8SUQ3BB",
+  "version": 149912,
+  "coll": "Title-Only",
+  "title": "A foot in the backdoor: applying systems control theory to the 2024 xz utils backdoor cyberattack",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "756MF8RP",
+  "version": 149910,
+  "coll": "Title-Only",
+  "title": "Adding repository custom instructions for GitHub copi-lot",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "96GQ9HEI",
+  "version": 152001,
+  "coll": "Title-Only",
+  "title": "Agents.md community. 2024. AGENTS.md: a simple, open format for guiding coding agents",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "623QRFP8",
+  "version": 149908,
+  "coll": "Title-Only",
+  "title": "AI copilot code quality: 2025 look back at 12 months of data, january 2025",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "6TZKCXCB",
+  "version": 149907,
+  "coll": "Title-Only",
+  "title": "AI copilot code quality: 2025 research",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "KCQCUMAF",
+  "version": 149905,
+  "coll": "Title-Only",
+  "title": "\u201cAiqase: quality assurance for ai-augmented software engineering,\u201d",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "GKUK8J33",
+  "version": 149904,
+  "coll": "Title-Only",
+  "title": "Analyze how developers address new security and ethical risks introduced by LLM-generated code in critical industry 4.0 contexts",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "2PK8GWKQ",
+  "version": 149903,
+  "coll": "Title-Only",
+  "title": "AppSec for the vibe coding era \u2014 GitHub AppSec AI summit",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "4KVSTEPF",
+  "version": 149901,
+  "coll": "Title-Only",
+  "title": "Balancing AI tensions: moving from AI adoption to effective SDLC use.",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "6ZT3S8I3",
+  "version": 152000,
+  "coll": "Title-Only",
+  "title": "Benchmarking the text-to-sql capability of large language models: a comprehensive evaluation",
+  "url": "",
+  "itemType": "preprint"
+ },
+ {
+  "key": "RB6GGSMZ",
+  "version": 149898,
+  "coll": "Title-Only",
+  "title": "Can OpenAI codex and other large language models help us fix security bugs?",
+  "url": "https://www.semanticscholar.org/paper/5ff9032d0f7f246d01ae7b2c231ab03469a7344a",
+  "itemType": "preprint"
+ },
+ {
+  "key": "3KAWZC9G",
+  "version": 151999,
+  "coll": "Title-Only",
+  "title": "Ci/cd for vibe coding: or how i learned to stop worrying and trust the vibes",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "XVP9BA9M",
+  "version": 149894,
+  "coll": "Title-Only",
+  "title": "\u201cDrawbacks in detecting vulnerabilities: a study of large language models on code,\u201d",
+  "url": "",
+  "itemType": "preprint"
+ },
+ {
+  "key": "HVHFQQRD",
+  "version": 149893,
+  "coll": "Title-Only",
+  "title": "\u201cDrs-oss: llm-driven diff risk scoring tool for pr risk prediction,\u201d",
+  "url": "",
+  "itemType": "preprint"
+ },
+ {
+  "key": "7K2SINJX",
+  "version": 149891,
+  "coll": "Title-Only",
+  "title": "\u201cEndor labs launches free tool AURI after study finds only 10% of AI-generated code is secure,\u201d",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "P29WEJMT",
+  "version": 149889,
+  "coll": "Title-Only",
+  "title": "From naptime to big sleep: using large language models to find real-world vulnerabilities",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "6FTDAE8K",
+  "version": 149888,
+  "coll": "Title-Only",
+  "title": "From here to autonomy: lessons learned from human\u2013automation research",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "9XDQAIA8",
+  "version": 149886,
+  "coll": "Title-Only",
+  "title": "\u201cGpt-3.5 for code review automation: how do few-shot learning, prompt design, and model fine-tuning impact their performance?\u201d",
+  "url": "",
+  "itemType": "preprint"
+ },
+ {
+  "key": "XI736424",
+  "version": 151996,
+  "coll": "Title-Only",
+  "title": "Greptile: the AI code reviewer",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "7GFDGUCX",
+  "version": 151995,
+  "coll": "Title-Only",
+  "title": "Harness engineering: leveraging codex in an agent-first world",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "5K8D4UI9",
+  "version": 149883,
+  "coll": "Title-Only",
+  "title": "\u201cHow software engineers and coders actually use AI\u201d",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "IQJEPSDA",
+  "version": 149881,
+  "coll": "Title-Only",
+  "title": "Human-AI collaboration in software engineering: a systematic mapping study",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "MZU3VHQQ",
+  "version": 151994,
+  "coll": "Title-Only",
+  "title": "I algorithmic description of CodeAgent pipeline with QA-checker 18",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "52DNSEVS",
+  "version": 151993,
+  "coll": "Title-Only",
+  "title": ". Integrating artificial intelligence with DevOps: advanced techniques, predictive analytics, and automation for real-time optimization and security in modern software development",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "JS5RB3QM",
+  "version": 151992,
+  "coll": "Title-Only",
+  "title": "\u201cIntroducing AURI: security intelligence for AI coding agents and developers,\u201d",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "TKWDWZAI",
+  "version": 149873,
+  "coll": "Title-Only",
+  "title": "LLM2 \u2019s code often took longer to execute, as shown by the glyph (fig. 4, right). In each",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "K9UNHH9T",
+  "version": 149872,
+  "coll": "Title-Only",
+  "title": "LLM3 often generated buggy code, as shown by the red portions in the corresponding pies. Even its functional nodes performed poorly, as re\ufb02ected by the high average RMSE in the glyph (fig. 4, right)",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "WQH562BA",
+  "version": 149869,
+  "coll": "Title-Only",
+  "title": "MSR 2026 mining challenge. An empirical analysis of test failures in AI-generated pull requests",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "WB96QQET",
+  "version": 149868,
+  "coll": "Title-Only",
+  "title": "\u201cOctober 2025 update: GenAI code security report,\u201d",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "IEV4EQGP",
+  "version": 149867,
+  "coll": "Title-Only",
+  "title": "Ode r eview in the a ge of ai: a v ision for a gentic c ode r eview",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "STNFBCZF",
+  "version": 149866,
+  "coll": "Title-Only",
+  "title": "pandas contributors. 2026. Automated contributions policy",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "FAUAQCSZ",
+  "version": 151989,
+  "coll": "Title-Only",
+  "title": ". Orchestrate teams of claude code sessions",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "M6PBIGKP",
+  "version": 151987,
+  "coll": "Title-Only",
+  "title": "PREFACE: property-driven reinforcement for automated code generation",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "PC49SX2J",
+  "version": 149861,
+  "coll": "Title-Only",
+  "title": ". Replication package for: what to cut? Predicting un-necessary methods in agentic code generation",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "8X4U2842",
+  "version": 149860,
+  "coll": "Title-Only",
+  "title": "RQ3 what do developers recommend to improve the security of generated code?",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "CNN7GGG2",
+  "version": 149858,
+  "coll": "Title-Only",
+  "title": "S ECURE V IBE B ENCH : evaluating secure coding capabilities of code agents with realistic vulnerability scenarios",
+  "url": "https://www.semanticscholar.org/paper/c81f8514e573411d59443dc9c7e1d582ba594c40",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "QU3X3IKZ",
+  "version": 149856,
+  "coll": "Title-Only",
+  "title": "Survey of generative AI in code generation: privacy, security and ethical considerations",
+  "url": "https://www.semanticscholar.org/paper/c202e3ad6b271c42fb6be33cd99d61feaf230b77",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "SIRRBS87",
+  "version": 149854,
+  "coll": "Title-Only",
+  "title": "The AI teammate framework: a four-step framework for product teams",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "N8E24M6E",
+  "version": 149853,
+  "coll": "Title-Only",
+  "title": "the code has vulnerabilities. 1. SQL injection",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "TNZX38M6",
+  "version": 151986,
+  "coll": "Title-Only",
+  "title": "\u201cThe great vibecoding debate: do typed languages really help AI programming?\u201d",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "RTQTD6BH",
+  "version": 151984,
+  "coll": "Title-Only",
+  "title": "The vibe coding trap: how AI accelerates delivery - and quietly breaks responsibility",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "2QS5RKAZ",
+  "version": 149849,
+  "coll": "Title-Only",
+  "title": "Vibe coding in production: a founder/CTO\u2019s 2025 AI engineering playbook",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "WGKB7ZSR",
+  "version": 149848,
+  "coll": "Title-Only",
+  "title": "Vibe coding vs low-code/No-code: security risks and CI/CD pipeline impacts for citizen developers",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "PG4EZGAE",
+  "version": 149847,
+  "coll": "Title-Only",
+  "title": "Vibe coding at scale: customizing AI assistants for enterprise environments",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "AASAI5EQ",
+  "version": 151983,
+  "coll": "Title-Only",
+  "title": "Why I\u2019m declining your AI-generated MR",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "JFQFBIPM",
+  "version": 151982,
+  "coll": "Title-Only",
+  "title": "Why \"vibe coding\" fails in enterprise: AI\u2019s real limits exposed",
+  "url": "",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "B7ZKWZ6R",
+  "version": 151978,
+  "coll": "Title-Only",
+  "title": "Supervisory control of a",
+  "url": "https://doi.org/10.1007/springerreference_25992",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "RPHK78A9",
+  "version": 152477,
+  "coll": "Low-Confidence",
+  "title": "Vibe Coding: Building Production-Grade Software with GenAI, Chat, Agents, and Beyond",
+  "url": "https://openalex.org/W7114300968",
+  "itemType": "book"
+ },
+ {
+  "key": "CND5HNTA",
+  "version": 152146,
+  "coll": "Low-Confidence",
+  "title": "Hints for generative AI software development",
+  "url": "https://doi.org/10.1109/ms.2024.3410641",
+  "itemType": "journalArticle"
+ },
+ {
+  "key": "3URVGTUX",
+  "version": 152097,
+  "coll": "Low-Confidence",
+  "title": "Mandatory guardrails for safe and responsible AI: have your say | Department of Industry Science and Resources",
+  "url": "https://www.industry.gov.au/news/mandatory-guardrails-safe-and-responsible-ai-have-your-say",
+  "itemType": "webpage"
+ },
+ {
+  "key": "JJSVBCMJ",
+  "version": 152078,
+  "coll": "Low-Confidence",
+  "title": "Informacin\u0117s technologijos. Dirbtinis intelektas. Vadybos sistema (ISO/IEC 42001:2023)",
+  "url": "https://lsmu.lt/cris/entities/standard/3525227f-aa55-44b9-89f2-74c0f9ae5645",
+  "itemType": "webpage"
+ }
+]

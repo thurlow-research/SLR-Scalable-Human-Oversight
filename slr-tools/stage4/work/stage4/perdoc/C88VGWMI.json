@@ -1,0 +1,86 @@
+{
+  "item_key": "C88VGWMI",
+  "citation": "Marri 2026",
+  "evidence_type": [
+    "case-study",
+    "framework-model",
+    "system-tool",
+    "empirical"
+  ],
+  "problem_statement": "AI-assisted 'vibe coding' generates code that prioritizes functional correctness over security, systematically introducing vulnerabilities that reactive, post-hoc oversight (code review, static analysis) cannot keep pace with as AI accelerates code volume.",
+  "magnitude_evidence": "Pearce et al. found GitHub Copilot produces vulnerable code in approximately 40% of security-relevant scenarios; Liu et al. [2026] studied 31,132 AI agent skills and found 26.1% contain at least one security vulnerability",
+  "risk_types": [
+    "security",
+    "sql-injection",
+    "xss",
+    "csrf",
+    "authentication-bypass",
+    "authorization-idor",
+    "hardcoded-credentials",
+    "input-validation",
+    "integer-overflow",
+    "cleartext-storage",
+    "log-injection",
+    "prompt-injection",
+    "specification-poisoning",
+    "regulatory-compliance",
+    "over-reliance",
+    "cognitive-offloading"
+  ],
+  "insufficiency_evidence": "Traditional security practices (code reviews, penetration testing, static analysis) operate as post-hoc verification, detecting vulnerabilities after introduction rather than preventing creation; when AI accelerates code generation by orders of magnitude, reactive security processes become inadequate; Perry et al. showed developers using AI assistance write less secure code",
+  "solution_mechanisms": [
+    "constitutional security constraints in spec layer",
+    "versioned machine-readable constitution with CWE mappings",
+    "MUST/SHOULD/MAY enforcement levels",
+    "spec-driven workflow (spec/plan/tasks)",
+    "compliance traceability matrix (principle to file:line)",
+    "constitutional validation with regeneration",
+    "security-native technology selection",
+    "context-window principle selection (3-5 per request)",
+    "secure-by-construction generation"
+  ],
+  "mechanism_keywords": [
+    "spec-driven",
+    "policy-as-code",
+    "guardrail",
+    "security-gate",
+    "constitutional-constraints",
+    "shift-left",
+    "secure-by-construction",
+    "traceability",
+    "provenance",
+    "cwe-mapping",
+    "design-by-contract",
+    "regeneration",
+    "governance",
+    "versioning"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "specification",
+    "pre-commit",
+    "code-review"
+  ],
+  "human_role": "in-command",
+  "key_constructs": [
+    "Constitutional Spec-Driven Development (CSDD)",
+    "software constitution",
+    "constitutional constraints",
+    "compliance traceability matrix",
+    "security by construction",
+    "specification-layer attack surface"
+  ],
+  "governance_refs": [
+    "CWE/MITRE Top 25",
+    "PCI-DSS",
+    "SOC 2",
+    "GDPR",
+    "OWASP Top Ten",
+    "RFC 2119",
+    "RFC 7519",
+    "HIPAA"
+  ],
+  "scope_fit": "both",
+  "notes": null,
+  "_truncated": false
+}

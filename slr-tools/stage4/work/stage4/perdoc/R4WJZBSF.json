@@ -1,0 +1,72 @@
+{
+  "item_key": "R4WJZBSF",
+  "citation": "L. Vanam 2025",
+  "evidence_type": [
+    "framework-model",
+    "system-tool"
+  ],
+  "problem_statement": "AI-assisted (GPT/Codex) code generation in banking software introduces ethical and regulatory risks \u2014 IP infringement, bias, opacity, and over-reliance on automation \u2014 that lack measurable, real-time oversight aligned with AML/KYC/ECOA rules.",
+  "magnitude_evidence": "Automation Dependency Score of 60% and Composite Ethical Risk Score of 22.60% (computed on synthetic data)",
+  "risk_types": [
+    "intellectual-property/plagiarism",
+    "bias",
+    "explainability/opacity",
+    "automation-overreliance",
+    "regulatory-compliance",
+    "legal",
+    "security",
+    "fraud"
+  ],
+  "insufficiency_evidence": "Academic approaches to ethical risk quantification remain largely qualitative or generic; existing quantitative models are too general or not aligned with banking rules",
+  "solution_mechanisms": [
+    "four risk metrics PRS/BPI/EG/ADS",
+    "MCDA composite Ethical Risk Score",
+    "CodeBERT/BERT semantic similarity scoring",
+    "Apache Superset real-time dashboards",
+    "CI/CD-integrated risk monitoring",
+    "human expert (compliance officer) rating of explainability",
+    "governance & feedback layer triggering retraining on threshold breach"
+  ],
+  "mechanism_keywords": [
+    "risk-scoring",
+    "composite-metric",
+    "mcda",
+    "observability",
+    "dashboard",
+    "ci-cd-gate",
+    "llm-embeddings",
+    "plagiarism-detection",
+    "bias-detection",
+    "explainability-scoring",
+    "hitl",
+    "calibration",
+    "policy-alignment",
+    "retraining-trigger"
+  ],
+  "oversight_locus": [
+    "generation-time",
+    "CI",
+    "code-review",
+    "runtime"
+  ],
+  "human_role": "in-the-loop",
+  "key_constructs": [
+    "Plagiarism Risk Score (PRS)",
+    "Bias Propagation Index (BPI)",
+    "Explainability Gap (EG)",
+    "Automation Dependency Score (ADS)",
+    "Composite Ethical Risk Score (ERS)",
+    "Ethical and Regulatory Risk Taxonomy"
+  ],
+  "governance_refs": [
+    "IEEE 7000",
+    "AML",
+    "KYC",
+    "ECOA",
+    "fair lending laws",
+    "EU AI Act"
+  ],
+  "scope_fit": "both",
+  "notes": "Findings based on synthetic data only (authors note limitation); OCR text is garbled in places and EG formula is duplicated from BPI.",
+  "_truncated": false
+}
