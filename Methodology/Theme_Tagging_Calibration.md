@@ -55,10 +55,11 @@ per tag. Output = strict JSON.
   core looks like it belongs in another disposition; batch-reviewed then moved + flag removed.
 - (human will be `cal:human:*`). After adjudication, the agreed set lands as plain `theme:<slug>`.
 
-**Tooling** (in the session scratchpad; scripts are resumable/idempotent): `run_setA_cli.sh`
+**Tooling** (now under `slr-phase4/tools/`; scripts are resumable/idempotent): `run_cli.sh`
 (codex+gemini loop with per-call `timeout 300` + JSON salvage), Opus subagents, `write_tags.py`
-(additive PATCH with `If-Unmodified-Since-Version`). Model outputs kept as per-tagger JSON files
-(`tags/<model>/<key>.json`) → comparison; no plain `theme:` writes during calibration.
+(additive/replace-mode PATCH with `If-Unmodified-Since-Version`; reads `ZOTERO_API_KEY_RW` for writes,
+falls back to `ZOTERO_API_KEY`). Model outputs kept as per-tagger JSON files (`data/tags/<model>/<key>.json`)
+→ comparison; no plain `theme:` writes during calibration.
 
 **Process notes / lessons (for the full run):** (1) don't double-background (`nohup … &` inside a
 background call spawned racing runners); run one tracked process. (2) Concurrent writers can
@@ -189,3 +190,28 @@ Ran Claude **Fable 5** on Set A (same instrument, full text). It produced the ru
 4. **Iterate the instrument once** (breadth rule in the prompt calibrated to the human; sharpen the 3
    fuzzy boundaries; add/trim insufficiency-layer cues per the human result).
 5. Run the **full 149** under the finalized instrument; human-confirm the long tail per the agreed policy.
+
+---
+
+## 6. Reproducibility, versioning & write-safety (2026-07-15)
+
+Infrastructure hardening done this date so the phase is reproducible and the instrument's evolution
+is auditable (relevant for the course assignment and the dissertation methods chapter):
+
+- **The whole SLR is now version-controlled.** Private GitHub repo **`thurlow-research/SLR`** (repo
+  root = the OneDrive `Systemic Literature Review` dir; branch `main`). Phase-4 working materials live
+  under `slr-phase4/` (prompt, cheat-sheet, calibration sets, per-tagger tag JSON, tools). Copyrighted
+  full-texts (`slr-phase4/txt/`) and secrets are gitignored; `.gitignore` also excludes editor
+  swap/backup files (`*.swp`, `.envrc.*`) so no credential-bearing temp file can be staged.
+- **Instrument provenance captured as v0-vs-current.** `Tag_Prompt_v0.md` / `Tag_Cheatsheet_v0.md`
+  (16 themes + 4 facets, original defs) preserved alongside the current `Tag_Prompt.md` /
+  `Tag_Cheatsheet.md`; `Taxonomy_Changelog.md` logs each disparity → diagnosis → change → measured
+  outcome, and flags the confound that *both* the definitions and the prompt's task block changed
+  between versions (so the v0→current delta is not attributable to definitions alone).
+- **Zotero write-safety tightened after a key leak.** The single Zotero API key was found hard-coded in
+  older scripts/skills; **all keys were revoked and rotated**, then **split least-privilege**:
+  `ZOTERO_API_KEY_RO` (reads) / `ZOTERO_API_KEY_RW` (writes), with fallback to a single
+  `ZOTERO_API_KEY`. Calibration/tagging tooling reads RO for GETs and RW only for the tag PATCH.
+  The custom Zotero skills now **default to dry-run** and require an explicit `--commit` to write, and
+  were re-released secret-free (`ResearchClaudeCodeSkills` v0.1.1). A standing global rule now scans
+  staged content for key-shaped literals before any commit.
