@@ -45,6 +45,11 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 - `adopted` — used **outside research** (commercial / production / real org use), beyond a lab prototype/benchmark. Scarce, high-signal; absence = prototype/proposal
 - `general-ai` — [scope flag] governance/oversight is **general AI/LLM, not coding-specific** (model robustness, general RAI frameworks). Default (untagged) = coding-specific. Flags candidates for context.
 
+**Generation-mode scope pair** (which *setting* the paper studies; cut on **who initiates + the reviewable unit**, NOT tool location — agents live in IDEs too):
+- `assistive` — **human-initiated, suggestion-granularity** generation (inline completion, chat-paste): the human authors in the flow, accepts piece-by-piece. Oversight surface = the *acceptance moment*.
+- `agentic` — **AI-initiated / AI-planned multi-step work** delivered at **artifact/PR granularity** for review. Oversight surface = the *gate*.
+- Apply either or **both** (paper compares/spans modes); **neither** = mode unspecified / irrelevant to the paper's claim.
+
 ## WORKFLOW
 - **PRIMARY** (one per paper; not in the menu — type it): `cal:human:primary:theme:<slug>` (same tail as the membership tag, `primary:` prepended).
   - **Tie-breaker** when a paper spans adjacent themes (route↔control-surface, AI-check↔human-gate): primary = the theme carrying its **distinctive novelty**, not the standard scaffolding.

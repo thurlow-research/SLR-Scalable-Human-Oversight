@@ -6,13 +6,16 @@ Read the **document contents** (each paper is in Zotero → **02-Human Calibrati
 **How to record:** fill the template at the bottom (or tag in Zotero — your call). For each paper:
 - **Primary** = the one home theme.
 - **Themes** = all `theme:` slugs that fit (membership, not mention).
-- **Facets** = any of the 4 facet tags that apply.
+- **Facets** = any facet tags that apply.
 - (optional) a few words of *why* for the primary.
 
 ---
 
 ## Vocabulary cheat-sheet
 
+*(Refreshed 2026-07-18 to match `Tag_Cheatsheet.md` — the earlier packet embedded a stale v0-vintage
+copy. The Zotero Actions menu was already current. **Backfill note:** TF56EPIP was tagged before the
+`assistive`/`agentic` pair existed — revisit it for the mode facet.)*
 
 Tag on the **document contents**. **Multi-tag freely** — a paper can carry several themes.
 Tag on **membership** (the paper *contributes to* that theme's argument), **not mention**.
@@ -31,15 +34,16 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 
 **Solution — the Detect → Triage → Fix → Escalate pipeline**
 - `ai-review` — [DETECT] AI *judges* the artifact (probabilistic, can hallucinate); incl. multi-agent / cross-model review **and its reliability limits**
-- `rules-based-checks` — [DETECT] deterministic **grounded** checks: tests, static analysis/lint, formal methods, symbolic exec, sandbox
-- `risk-routing` — [TRIAGE] score / prioritize / route / tier: *which* items get human attention & *how much*; escalation logic
+- `rules-based-checks` — [DETECT] deterministic **grounded** checks: tests, static analysis/lint, symbolic exec, sandbox, classical formal-methods engines
+- `formal-methods` — [technique, COMPOSABLE] theorem proving / model checking / symbolic exec / autoformalization. Pair with the performer: AI does it → `ai-review`+`formal-methods`; classical engine → `rules-based-checks`+`formal-methods`
+- `risk-routing` — [TRIAGE] the **allocation decision** — *which/whether/when* AI items reach a human & at what tier; the **smarts of surfacing** (signal + selection/tiering logic). NOT the human's control mechanism. **(= WHAT gets surfaced)**
 - `remediation-gating` — [FIX] oversight of autonomous **fixes** (gate / filter / escalate the fix) — not the repair technique itself
-- `hitl-workflow` — [ESCALATE] the human's **control surface**: checkpoints, action guards, approval gates, bounded delegation
+- `hitl-workflow` — [ESCALATE] the human's **control surface** — *how the human acts* once engaged: checkpoints, action guards, approval gates, bounded delegation. NOT what to surface. **(= HOW + WHEN the human acts)**
 - `oversight-explanation` — [ESCALATE] make the handoff **comprehensible/actionable**: background + options + recommendation + risks
 - `agent-scope-drift` — [cross-cutting] agents wander off-mandate / make unreviewed decisions; keeping them in scope
 
 **Governance & policy**
-- `governance-frameworks` — *internal* org governance: maturity models, policy engines, policy-as-code, responsible-adoption
+- `org-governance` — the *org-level governance apparatus* applied broadly: policy, **audit logging**, accountability, roles, maturity models, policy-as-code (internal; ≠ a single pipeline framework)
 - `regulatory-compliance` — *external* law/standards: EU AI Act Art.14, NIST AI RMF, ISO 42001, liability, audit evidence
 
 **Supply chain & provenance**
@@ -51,6 +55,17 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 - `survey-input` — adoption / preference / RAI-priority finding useful for the org survey design
 - `intro-framing` — position / agenda / definitional paper that *names the gap*
 - `lit-review` — secondary literature (survey / review / meta-analysis)
+
+**Artifact / evidence cluster** (composable; form → maturity):
+- `framework` — a **technical framework / reference architecture integratable into a build pipeline** (whether or not built). ≠ `theme:org-governance` (the org apparatus). A bare taxonomy/decision-model gets neither. Composes: `framework`+`built-system`+`adopted`.
+- `built-system` — the authors *implemented* it as a working system/tool/prototype ("and they built it")
+- `adopted` — used **outside research** (commercial / production / real org use), beyond a lab prototype/benchmark. Scarce, high-signal; absence = prototype/proposal
+- `general-ai` — [scope flag] governance/oversight is **general AI/LLM, not coding-specific** (model robustness, general RAI frameworks). Default (untagged) = coding-specific. Flags candidates for context.
+
+**Generation-mode scope pair** (which *setting* the paper studies; cut on **who initiates + the reviewable unit**, NOT tool location — agents live in IDEs too):
+- `assistive` — **human-initiated, suggestion-granularity** generation (inline completion, chat-paste): the human authors in the flow, accepts piece-by-piece. Oversight surface = the *acceptance moment*.
+- `agentic` — **AI-initiated / AI-planned multi-step work** delivered at **artifact/PR granularity** for review. Oversight surface = the *gate*.
+- Apply either or **both** (paper compares/spans modes); **neither** = mode unspecified / irrelevant to the paper's claim.
 
 
 ---

@@ -179,6 +179,13 @@ Ran Claude **Fable 5** on Set A (same instrument, full text). It produced the ru
 - Source-encode all calibration tags (`cal:<model>:…`); keep disposition-independent; reversible.
 - Primary theme is reliable enough to model-assign with a light human check; secondary breadth is the
   open policy question Set B resolves.
+- **2026-07-18 — `assistive`/`agentic` generation-mode facet pair added mid-Set-B** (additive, per the
+  `formal-methods` precedent: no theme redefined, no Set A re-run needed). Human Set B tagging from this
+  date can apply it; **TF56EPIP was human-tagged before the pair existed → backfill**; all 20
+  calibration papers get it backfilled in the post-Set-B iteration. In the same pass the Set B human
+  packet's embedded cheat-sheet was found stale (v0-vintage) and refreshed to the current instrument
+  (the Zotero Actions menu was already current; TF56EPIP's tags used current slugs, so nothing recorded
+  was affected). See `Taxonomy_Changelog.md` §10.
 
 ---
 

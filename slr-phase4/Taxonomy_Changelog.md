@@ -100,6 +100,24 @@ the split"* — **not** "the definitions alone did it." A clean **isolation test
 tie-breaker-only, factorial on one paper) would separate the two effects.
 - v0 prompt preserved verbatim in `Tag_Prompt_v0.md`; current in `Tag_Prompt.md`.
 
+## 10. Generation-mode axis missing (`assistive` vs `agentic`)
+- **Gap (2026-07-18):** the corpus mixes two oversight settings — human-initiated,
+  suggestion-granularity generation (Copilot-style: oversight = the acceptance moment) vs AI-initiated
+  multi-step work at artifact/PR granularity (oversight = the gate) — and no tag separated them. The
+  automation-bias evidence lives mostly in the first; the scaling inversion and the
+  Detect→Triage→Fix→Escalate solution pipeline mostly presuppose the second. Not recoverable from
+  existing tags (`agent-scope-drift` only catches it where drift is the topic).
+- **Change:** added the **`assistive` / `agentic` scope-facet pair**, cut on *who initiates + the
+  reviewable unit* — explicitly NOT "IDE vs not" (agents live in IDEs). Either / both / neither
+  (= unspecified or mode-irrelevant). Additive (no theme redefined), so added **mid-Set-B** under the
+  `formal-methods` precedent; Set A model outputs unaffected; calibration papers to be backfilled.
+  At the same time the Set B human packet's embedded cheat-sheet was found **stale (v0-vintage:
+  `governance-frameworks`, no `formal-methods`, 4 facets)** and refreshed to the current instrument —
+  the Zotero Actions menu was already current, and the one paper tagged so far (TF56EPIP) used
+  current slugs, so no human tags were affected.
+- **Outcome:** pending — pilot on the 20 calibration papers in the post-Set-B iteration. Expected
+  high agreement: near-factual property of the study, like `built-system` (10/10 in Set A).
+
 ---
 
 ### Headline for the writeup

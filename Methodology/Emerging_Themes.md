@@ -104,6 +104,24 @@ distinct from coding-specific governance. Object-of-governance = the *model*, no
   **demoted core → context** 2026-07-15). The models all tagged it `regulatory-compliance` (theme-level,
   in-scope-looking); the human scoped it out — the flag is the tripwire for that.
 
+**`assistive` / `agentic`** (generation-mode scope pair, added 2026-07-18) — which *generation setting*
+the paper studies. The cut is **who initiates + the reviewable unit**, NOT tool location — "in the IDE"
+is the wrong axis, since agents live in IDEs too (Cursor, Copilot agent mode):
+- **`assistive`** — human-initiated, **suggestion-granularity** generation (inline completion,
+  chat-paste): the human authors in the flow and accepts piece-by-piece. Oversight surface = the
+  *acceptance moment* (`automation-bias` territory).
+- **`agentic`** — **AI-initiated / AI-planned multi-step work** delivered at **artifact/PR granularity**
+  for review. Oversight surface = the *gate* (`oversight-scaling-inversion` territory; the setting the
+  Detect→Triage→Fix→Escalate pipeline mostly presupposes).
+
+Apply either or **both** (a paper that compares or spans modes); **neither** = the paper doesn't
+specify, or mode is irrelevant to its claim (same absence convention as `adopted`). Two jobs:
+(a) **synthesis separation** — which oversight evidence/mechanisms belong to which mode; (b) **survey
+stratification** — mode-specific items in the org survey.
+- Illustrative: `3Z45M3V3` / `YBHHYR4P` — assistive (Copilot-snippet CWEs / users trust insecure code
+  more); `SHK6KAX6` / `UIXCRBQX` — agentic (agentic-PR merge & maintenance studies); `T72TU8B5`
+  (Hedwig autonomy tiers) — agentic.
+
 ---
 
 ### THEME TAGS
@@ -357,6 +375,13 @@ Cross-cutting: `agent-scope-drift`.
   methods, so it doesn't disturb the frozen calibration.
 - **Open pruning question:** Family 1's three problem themes could collapse toward one
   `theme:problem-evidence` if the problem side should be smaller. Left expanded pending review.
+- **`assistive` / `agentic` generation-mode facet pair — ADDED (Scott, 2026-07-18).** The oversight
+  problem differs qualitatively by mode — acceptance-moment micro-decisions (automation-bias evidence)
+  vs artifact-level gating (the scaling inversion + the solution pipeline) — and the axis is not
+  recoverable from existing tags. Added **mid-Set-B** under the `formal-methods` precedent: purely
+  *additive* scope facets (no theme redefined), so Set A model outputs are undisturbed; the 20
+  calibration papers get backfilled in the post-Set-B iteration; TF56EPIP's human tags predate the
+  pair. Logged as `Taxonomy_Changelog.md` §10.
 
 ⚠️ **Namespace note:** a *legacy* topical `theme:*` set already exists at scale (`theme:governance` 170,
 `theme:oversight` 163, `theme:risk` 104, `theme:orgs` 105, …) from an earlier bulk pass. Exact-slug
