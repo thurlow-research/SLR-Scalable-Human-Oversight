@@ -139,8 +139,10 @@ the solution*. Three jobs: (a) **audit trail** for the steering exclusion — do
 component earned no solution theme; (b) explains sparse theme rosters on hybrid steer-and-check
 systems in the sweep; (c) **tripwire**: a *steering-only* solution is a demote-to-context candidate
 (the `spec-driven-guardrails` resolution, now enforceable — parallel to `general-ai` for object
-scope). Illustrative: `DPKKMXSA` (prompt-enhancement as the fix); the spec-driven cluster
-(`C88VGWMI` `7SH86C2W` `JCTP8VXP`, context-tier).
+scope). Illustrative: `VG6CIDQW` (Lumen — context control over the assistant's inputs, confirmed
+steering 2026-07-18, a big part of the system; its oversight remainder is `oversight-explanation`
+pull); `DPKKMXSA` (prompt-enhancement as the fix); the spec-driven cluster (`C88VGWMI` `7SH86C2W`
+`JCTP8VXP`, context-tier).
 
 **`non-developer`** (scope flag, population axis, added 2026-07-18) — the generating/overseeing
 human studied is **not a professional developer**: end-user, business user, citizen developer —

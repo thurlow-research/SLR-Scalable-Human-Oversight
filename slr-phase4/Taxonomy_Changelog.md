@@ -161,9 +161,12 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
   population (`non-developer`). The *argument* (oversight-competence gap) is staged in
   `HOS_Seeded_Theme_Candidates.md`, NOT made a theme (n=1; `non-developer` is its tripwire —
   promote if flagged papers accumulate making the argument). Facets 10 → 12; menu 28 → 30 actions.
-- **Open:** whether Lumen `VG6CIDQW` carries `steering` is disputed (Scott: the human curating the
-  assistant's context may be agency/comprehension, not generation-shaping) — under discussion; Lumen
-  deliberately NOT cited as a `steering` example pending resolution.
+- **Resolved (same day):** after weighing the ground-of-the-act test (quality knob = steering vs
+  trust/risk input-gating = supply-chain-kin vs incidental control), Scott confirmed **controlling
+  the input is steering, and it's a big part of Lumen** — Lumen is now the facet's worked example;
+  the §11 "input-side steering" diagnosis stands unchanged. The ground-of-the-act test itself is the
+  reusable rule: input *curation for output quality* = steering; input *vetting on trust/provenance
+  grounds* = `tooling-supply-chain` territory.
 - **Outcome:** pending the sweep (facet counts + whether the competence-gap candidate promotes).
 
 ---
