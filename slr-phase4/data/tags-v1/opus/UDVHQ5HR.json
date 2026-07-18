@@ -1,0 +1,1 @@
+{"key": "UDVHQ5HR", "primary_theme": "ai-review", "themes": ["ai-review"], "facets": ["problem-statement-anchor"], "rationale": {"ai-review": "Empirically exposes LLM-as-reviewer false-negative over-correction bias; core reliability-limit contribution", "problem-statement-anchor": "RCRR 52-78%, GPT-4o collapses to 11% under fuller prompts"}}

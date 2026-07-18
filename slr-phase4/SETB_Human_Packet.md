@@ -20,6 +20,7 @@ copy. The Zotero Actions menu was already current. **Backfill note:** TF56EPIP w
 Tag on the **document contents**. **Multi-tag freely** — a paper can carry several themes.
 Tag on **membership** (the paper *contributes to* that theme's argument), **not mention**.
 Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth).
+**Steering exclusion:** shaping what gets *generated* — prompts, specs, fine-tuning, **controlling the AI's inputs/context** — is steering, NOT oversight; tag only the paper's inspection/comprehension/gating contribution.
 
 ## THEME TAGS (`theme:<slug>`)
 
@@ -38,8 +39,8 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 - `formal-methods` — [technique, COMPOSABLE] theorem proving / model checking / symbolic exec / autoformalization. Pair with the performer: AI does it → `ai-review`+`formal-methods`; classical engine → `rules-based-checks`+`formal-methods`
 - `risk-routing` — [TRIAGE] the **allocation decision** — *which/whether/when* AI items reach a human & at what tier; the **smarts of surfacing** (signal + selection/tiering logic). NOT the human's control mechanism. **(= WHAT gets surfaced)**
 - `remediation-gating` — [FIX] oversight of autonomous **fixes** (gate / filter / escalate the fix) — not the repair technique itself
-- `hitl-workflow` — [ESCALATE] the human's **control surface** — *how the human acts* once engaged: checkpoints, action guards, approval gates, bounded delegation. NOT what to surface. **(= HOW + WHEN the human acts)**
-- `oversight-explanation` — [ESCALATE] make the handoff **comprehensible/actionable**: background + options + recommendation + risks
+- `hitl-workflow` — [ESCALATE] the human's **control surface** — *how the human acts* once engaged: checkpoints, action guards, approval gates, bounded delegation. NOT what to surface. **Levers, not lenses** (comprehension/visibility tools → `oversight-explanation`; a lever over the AI's *inputs* is steering). **(= HOW + WHEN the human acts)**
+- `oversight-explanation` — [ESCALATE·info side] **help the human understand what the AI is doing** — *push*: decision-ready escalation handoff (background + options + recommendation + risks) OR *pull*: human-invoked visibility into what the AI is doing/using (context/dependency views). Lens, not lever (lever → `hitl-workflow`)
 - `agent-scope-drift` — [cross-cutting] agents wander off-mandate / make unreviewed decisions; keeping them in scope
 
 **Governance & policy**
@@ -48,7 +49,7 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 
 **Supply chain & provenance**
 - `tooling-supply-chain` — provenance/vetting of the AI **tools** (skills/MCP/agents); **+ attacks on the reviewer**
-- `provenance-auditability` — traceability of AI **changes** so a human *can* review; auditable record; IP/licensing
+- `provenance-auditability` — traceability of AI **changes** so a human *can* review; auditable record; IP/licensing. Requires a **persistent record** — a point-in-time "what's in use now" view → `oversight-explanation`
 
 ## FACET TAGS (functional role; orthogonal — optional, apply if they fit)
 - `problem-statement-anchor` — a single committee-sit-up empirical stat

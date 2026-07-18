@@ -189,14 +189,32 @@ Ran Claude **Fable 5** on Set A (same instrument, full text). It produced the ru
 
 ---
 
-## 5. Open / next steps
-1. **Scott tags Set B blind** (packet delivered).
-2. Run the 3 models on Set B; write `cal:human:*` + `cal:<model>:*`; compute **human-vs-model** agreement.
-3. **Decisive test:** does the human tag `automation-bias` / `oversight-theater` / `provenance-
-   auditability` where only Opus did? → settles whether Opus's breadth is correct or over-reaching.
-4. **Iterate the instrument once** (breadth rule in the prompt calibrated to the human; sharpen the 3
-   fuzzy boundaries; add/trim insufficiency-layer cues per the human result).
-5. Run the **full 149** under the finalized instrument; human-confirm the long tail per the agreed policy.
+## 5. Open / next steps — REVISED 2026-07-18 (freeze lifted; two-stage sequence)
+
+**Design change (2026-07-18):** the freeze-then-iterate-once plan is replaced by a two-stage
+sequence. **Stage 1 — human vocabulary-vetting pass:** Scott human-tags the calibration papers;
+gaps and *unanticipated uses* drive definition changes as they surface, each logged in
+`Taxonomy_Changelog.md` (first product: §11 — `oversight-explanation` broadened to push/pull
+"helping the human understand what the AI is doing"; steering exclusion extended to input-side
+context control; "context transparency" relocated out of `hitl-workflow`; record-vs-live-view test
+on `provenance-auditability`; the Lumen unanimity overturn that motivated all of it). **Stage 2 —
+the summative human-vs-model experiment on the vetted instrument.** Rationale: tuning toward the
+*human* was always the plan; doing it before the comparison means the experiment tests the final
+instrument, so disagreement is attributable to the models, not to known-fuzzy definitions.
+
+1. Scott completes the vetting pass over the 20 calibration papers (+ types the
+   `cal:human:primary:theme:<slug>` tag per paper — the menu can't). **Comparability note:** Set A
+   human tags are *model-informed* (model tags visible while vetting); **Set B is the clean blind
+   comparison** (no model tags exist there — do not run models on Set B until the vetting pass is done).
+2. Freeze the *vetted* instrument; **archive check:** v1-instrument model outputs preserved in
+   `slr-phase4/data/tags-v1/` (done 2026-07-18) before any re-run overwrites `data/tags/`.
+3. Re-run all 5 models on Sets A+B in fresh contexts under the vetted instrument; write `cal:<model>:*`.
+4. Compute human-vs-model agreement (primary match; theme-set Jaccard; per-theme confusion) —
+   **headline on Set B**; Set A reported as model-informed.
+5. Decisive tests: (a) the insufficiency-layer breadth question (§3.4 — does the human tag
+   `automation-bias`/`oversight-theater` where only Opus did?); (b) does the broadened
+   `oversight-explanation` + steering cue fix the Lumen class of error?
+6. Set the breadth policy; run the **full 148** under the final instrument; human-confirm the long tail.
 
 ---
 

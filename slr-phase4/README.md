@@ -50,5 +50,10 @@ Model panel: `opus` (Claude Opus) · `fable` (Claude Fable 5) · `codex` (gpt-5.
   boundary sharpening, `demote:` flag.
 - Set A re-tagged by all 4 models under the refined vocab; primary 8/10 unanimous; def-sharpening
   collapsed the Hedwig split to 5/5 (see calibration doc §).
-- **Next:** blind Set B human tags → human-vs-model comparison → finalize instrument → full sweep of
-  the 148 cores, then extend survey-input/lit-review over the 892 contexts.
+- **2026-07-18 — design revised (freeze lifted):** Stage 1 = Scott human-tags the calibration papers
+  as a **vocabulary-vetting pass** (changes logged in `Taxonomy_Changelog.md` — §10 `assistive`/`agentic`
+  mode facets; §11 `oversight-explanation` broadened to push/pull, steering exclusion, Lumen unanimity
+  overturn). Stage 2 = human-vs-model experiment on the **vetted** instrument: models re-run Sets A+B
+  fresh (Set A human tags model-informed; **Set B = clean comparison** — no model runs there until
+  vetting is done). v1-instrument model outputs archived in `data/tags-v1/`. Then the full 148-core
+  sweep, then extend survey-input/lit-review over the 892 contexts.

@@ -1,0 +1,1 @@
+{"key": "UDVHQ5HR", "primary_theme": "ai-review", "themes": ["ai-review"], "facets": ["problem-statement-anchor"], "rationale": {"ai-review": "LLM code-review judges systematically misjudge correct code; mitigation prompts proposed", "problem-statement-anchor": "GPT-4o RCRR collapses 52.4% to 11% under richer prompting"}}

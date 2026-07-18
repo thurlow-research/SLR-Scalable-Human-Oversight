@@ -98,6 +98,14 @@ oversight layer).
   allow an accept disposition").
 - **Interactive vs autonomous = one role, two modes** (governance boundary, not code boundary);
   specify the post-action handoff or the agent bypasses the review loop.
+- **(Corpus-seeded, 2026-07-18) Authority-allocation spectrum — "human in absolute control."** A
+  recurring *stance*, not yet a tag: not human-in-the-loop of an AI-driven flow but AI-as-tool inside
+  a human-commanded flow; the spectrum runs absolute control → bounded delegation → tiered autonomy →
+  autonomous+gates. Corpus cluster: Lumen `VG6CIDQW` (developer agency), `JVWUYDME` (Human-in-Command),
+  `Z8TPRNEU` (devs deliberately retain control), `ID7IN65K` (authority scoping), Hedwig `T72TU8B5`
+  (earned-trust tiers). HOS kin: interactive-vs-autonomous above; ratchet-principle. Likely a
+  Discussion *axis* reconstructed from `hitl-workflow` + `oversight-theater` + the `assistive`/`agentic`
+  facets rather than a new tag — decide after the sweep.
 
 ## Grafting checklist (do before classifying cores)
 1. Cross-check pass-through corpus papers (Mitropoulos, Ferdous, Charoenwet, Parris, Kumar,

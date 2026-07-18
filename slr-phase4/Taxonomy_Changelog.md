@@ -118,6 +118,35 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
 - **Outcome:** pending — pilot on the 20 calibration papers in the post-Set-B iteration. Expected
   high agreement: near-factual property of the study, like `built-system` (10/10 in Set A).
 
+## 11. The Lumen episode — unanimous-model category error; `oversight-explanation` broadened
+- **Disparity (2026-07-18):** on Lumen (`VG6CIDQW`, Set A — "developer agency through transparent
+  context control"), **all four models chose primary `hitl-workflow` unanimously, and the human
+  overturned it.** First unanimity overturn in the calibration — it qualifies the "primary theme is
+  essentially solved" finding: unanimity survived a boundary the oversight-vs-steering discriminator
+  already covers.
+- **Diagnosis:** (a) "context control" pattern-matched to *control surface*, but a lever over the
+  AI's **inputs** is **input-side steering**, not oversight of an artifact — none of the four applied
+  the steering exclusion there. (b) The human also rejected `provenance-auditability`: a point-in-time
+  "what's in use now" view records nothing, so nothing is auditable after the fact. (c) The paper's
+  real oversight contribution — human-invoked comprehension — had no sanctioned home:
+  `oversight-explanation` was handoff-framed, and the lens-ish "context transparency" clause sat
+  inside the otherwise lever-themed `hitl-workflow`.
+- **Change:** `oversight-explanation` **broadened to "helping the human understand what the AI is
+  doing"** with two manifestations — **push** (system escalates; decision-ready handoff:
+  background + options + recommendation + risks) and **pull** (human-invoked visibility into what the
+  AI is doing/using). "Context transparency" relocated out of `hitl-workflow` (now levers-only, with
+  an explicit lens→`oversight-explanation` boundary); `provenance-auditability` gains the
+  record-vs-live-view test; the **input-side steering cue** and a **transparency routing rule** added
+  to the preamble and cheat-sheet. Human tags on Lumen: `oversight-explanation` (primary) +
+  `assistive` + `built-system` — the day-old `assistive` facet did real work (it explains why no
+  handoff exists for the old definition to bite on).
+- **Process change:** the **freeze is lifted**. Scott human-tags the calibration papers as a
+  *vocabulary-vetting pass*; the summative human-vs-model experiment then runs on the vetted
+  instrument (models re-run Sets A+B in fresh contexts; Set A human tags are model-informed, Set B is
+  the clean blind comparison). v1-instrument model outputs archived to `data/tags-v1/`.
+- **Outcome:** pending the re-run — the decisive check is whether the broadened definition + steering
+  cue flips the models' Lumen primary to `oversight-explanation`.
+
 ---
 
 ### Headline for the writeup

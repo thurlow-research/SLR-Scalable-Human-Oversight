@@ -1,0 +1,16 @@
+{
+  "key": "T72TU8B5",
+  "primary_theme": "risk-routing",
+  "themes": [
+    "risk-routing",
+    "hitl-workflow"
+  ],
+  "facets": [
+    "built-system",
+    "survey-input"
+  ],
+  "rationale": {
+    "risk-routing": "Learns when to bypass or require human check-ins based on history.",
+    "hitl-workflow": "Provides an approval cascade with CLI-enforced hard constraints and checkpoints."
+  }
+}

@@ -38,6 +38,15 @@ Tags live in **three independent layers**; a paper normally carries several acro
 - **Membership, not mention.** Tag a theme only where the paper *contributes to that theme's argument*
   (with a one-line rationale), never because the abstract name-drops the topic. Keeps a `theme:` filter
   returning a real roster, not keyword noise.
+- **Steering exclusion (apply before any solution theme).** Contributions that shape *what gets
+  generated* — better prompts, specs, fine-tuning, and **controlling the AI's inputs/context** — are
+  *steering*, not oversight; only a paper's inspection/comprehension/gating remainder earns solution
+  themes. (Calibration: all four models missed the input-side case on Lumen `VG6CIDQW`, whose
+  "context control" lever is steering — see decision log 2026-07-18.)
+- **"Transparency" is never tagged as such — route it by object:** artifact/provenance *record* →
+  `provenance-auditability` · reviewer comprehension (live view or handoff) → `oversight-explanation`
+  · agent-behavior monitoring → `agent-scope-drift` · institutional evidence/audit trails →
+  `org-governance` / `regulatory-compliance`.
 - **Primary theme (one per paper) — tie-breaker.** The paper's *home*, where it'd be written up in
   depth. When a paper spans **adjacent** themes (`risk-routing`↔`hitl-workflow` = route vs. control-surface;
   `ai-review`↔`hitl-workflow` = the AI check vs. the human's gate), the primary is the theme carrying the
@@ -260,24 +269,33 @@ Cross-cutting: `agent-scope-drift`.
 **`theme:hitl-workflow`** · ~9
 - **Captures:** the human's **control surface** — the mechanism an *already-engaged* human acts through:
   confirmation checkpoints, action guards, approval gates, human-as-director/orchestrator, bounded
-  delegation, context transparency. The contribution is the **design of the control point**, not the
+  delegation. The contribution is the **design of the control point**, not the
   logic deciding what to surface. **Mnemonic: hitl-workflow = HOW + WHEN** the human acts (control
   mechanism + checkpoint placement/frequency) vs. `risk-routing` = *what* to surface.
-- **Boundary:** *how the human exercises control*. Deciding *whether/what* to escalate → `risk-routing`;
-  making the handoff *comprehensible* → `oversight-explanation`.
+- **Boundary:** *how the human exercises control* — **levers, not lenses**: comprehension/visibility
+  tooling (the former "context transparency", relocated 2026-07-18) → `oversight-explanation`.
+  Deciding *whether/what* to escalate → `risk-routing`. NB the steering exclusion: a lever over the
+  AI's *inputs/context* is steering, not a control point over the artifact (the Lumen error).
 - **Examples:** `XK3P9C96` — optimal placement of confirmation checkpoints; `U9VZQXGI` — HITL agent UI
   with action guards; `N7E3MR2V` — full-SDLC agent with human-approval guardrails + audit trails;
   `ID7IN65K` — 860-dev survey: demand for bounded delegation with authority scoping.
 
 **`theme:oversight-explanation`** (T2) · ~5 — *full write-up below*
-- **Captures:** making the escalation/handoff **comprehensible and decision-ready** to a reviewer not
-  embedded in the code — background + options + recommendation + risks; uplevel from code detail to
-  decision framing.
-- **Boundary:** the *content/comprehensibility* of the handoff. *Where* to look → `risk-routing`;
-  *the interface* to act → `hitl-workflow`.
+- **Captures (broadened 2026-07-18): helping the human understand what the AI is doing** — the
+  *information* side of oversight, in either direction:
+  - **push** — the system escalates and makes the handoff **comprehensible and decision-ready** to a
+    reviewer not embedded in the code: background + options + recommendation + risks; uplevel from
+    code detail to decision framing (the agentic-mode manifestation);
+  - **pull** — tools the human *invokes* to understand what the AI is doing/using: context and
+    dependency visibility, live "what is it drawing on" views (the assistive-mode manifestation;
+    absorbs "context transparency", relocated here from `hitl-workflow`).
+- **Boundary:** information/lens, never the lever — *acting* on the understanding (gates, checkpoints,
+  approvals) → `hitl-workflow`; *where* to look → `risk-routing`; a **persistent auditable record**
+  (vs a point-in-time view) → `provenance-auditability`.
 - **Examples:** `7UB2MD8Z` — explanations improve human patch-correctness judgment (5/6 bugs);
   `KF5MGIBI` — fine-tuned LLM improves review-comment comprehensibility (localization/explanation/fix);
-  `IM6DJDEE` — "Consultation Request / Merge-Readiness Packs" as structured handoff artifacts.
+  `IM6DJDEE` — "Consultation Request / Merge-Readiness Packs" as structured handoff artifacts;
+  `VG6CIDQW` (Lumen) — human-invoked context/dependency visibility in assistive mode (pull).
 
 **— CROSS-CUTTING (keep the agent on-mandate) —**
 
@@ -326,7 +344,10 @@ Cross-cutting: `agent-scope-drift`.
 **`theme:provenance-auditability`** · ~7
 - **Captures:** traceability/provenance of AI *changes* so a human **can** review them — an auditable
   record of what changed and why; IP/licensing vetting; certified components.
-- **Boundary:** restoring *reviewability/auditability of the output*. Vetting the *tools* → `tooling-supply-chain`.
+- **Boundary:** restoring *reviewability/auditability of the output*, and it **requires a persistent
+  record/trace** — a *point-in-time* "what is it using right now" view that captures nothing is
+  `oversight-explanation` (pull), not provenance (sharpened 2026-07-18, Lumen). Vetting the *tools* →
+  `tooling-supply-chain`.
 - **Examples:** `2KPHQ5IV` — AI code leaves no auditable record; typed-graph consensus layer restores it;
   `RG4A4D6K` — provenance-tracking given 20–30% enterprise code is GenAI; `VCI88UZD` — human-certified
   module repositories with provenance + interface contracts.
@@ -375,6 +396,18 @@ Cross-cutting: `agent-scope-drift`.
   methods, so it doesn't disturb the frozen calibration.
 - **Open pruning question:** Family 1's three problem themes could collapse toward one
   `theme:problem-evidence` if the problem side should be smaller. Left expanded pending review.
+- **`oversight-explanation` BROADENED + freeze lifted → human vetting pass (Scott, 2026-07-18).**
+  Reading Lumen `VG6CIDQW` (Set A), the human overturned all four models' **unanimous** primary
+  `hitl-workflow` — a category error, not a ranking call: Lumen's "context control" lever is
+  *input-side steering*, and its oversight contribution is comprehension. `provenance-auditability`
+  was also rejected (point-in-time view, no persistent record). Resolution: `oversight-explanation`
+  = **helping the human understand what the AI is doing** — *push* (decision-ready escalation
+  handoff) or *pull* (human-invoked visibility); "context transparency" relocated out of
+  `hitl-workflow` (now levers-only); steering exclusion extended to input-side control; transparency
+  routing rule added to the preamble. **Process change:** the instrument freeze is lifted — Scott is
+  human-tagging the calibration papers as a *vocabulary-vetting pass*; the human-vs-model experiment
+  then runs on the vetted instrument (models re-run both sets; Set A human tags are model-informed,
+  Set B is the clean comparison). See `Taxonomy_Changelog.md` §11.
 - **`assistive` / `agentic` generation-mode facet pair — ADDED (Scott, 2026-07-18).** The oversight
   problem differs qualitatively by mode — acceptance-moment micro-decisions (automation-bias evidence)
   vs artifact-level gating (the scaling inversion + the solution pipeline) — and the axis is not
@@ -448,6 +481,12 @@ decision-ready to a reviewer who is **not already embedded in the code** — whi
 **upleveling** from code-level detail to a decision framing: *context → the problem →
 options/tradeoffs*. Routing the human's attention (see `VTDG995V`) is only half the job; the
 handoff explanation is the other half, and it is where oversight silently fails.
+
+**Scope broadened (2026-07-18):** the theme now covers the *information side of oversight*
+generally — not only the **push** handoff this write-up describes, but **pull** comprehension
+tooling the human invokes to see what the AI is doing/using (Lumen `VG6CIDQW`: context/dependency
+visibility in assistive mode). The write-up below is the push/agentic manifestation; the Tag
+reference above is the operative definition.
 
 **Anchor — `7UB2MD8Z`** (Explainable automated debugging / AutoSD): empirical — participants
 *with* explanations judged AI-generated patch correctness **more accurately in 5 of 6 bugs**, and

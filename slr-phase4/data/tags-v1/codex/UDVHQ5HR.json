@@ -1,0 +1,1 @@
+{"key": "UDVHQ5HR", "primary_theme": "ai-review", "themes": ["ai-review"], "facets": ["problem-statement-anchor"], "rationale": {"ai-review": "Empirically exposes systematic false negatives and prompt-sensitive unreliability in LLM code review.", "problem-statement-anchor": "GPT-4o recognition fell from 52.4% to 11.0% with complex prompting."}}
