@@ -169,6 +169,27 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
   grounds* = `tooling-supply-chain` territory.
 - **Outcome:** pending the sweep (facet counts + whether the competence-gap candidate promotes).
 
+## 13. The Z8TPRNEU probe — object-of-mechanism rule; drift boundary; steering amendment
+- **Disparities (2026-07-18):** on "Professional Software Developers Don't Vibe, They Control":
+  (a) 3 of 4 models tagged `agent-scope-drift`; the human rejected it — the paper documents *control
+  practices*, with drift only the tangential *motivation*; the Tag reference itself was citing
+  Z8TPRNEU as a drift **example**, encoding the over-broad reading. (b) The human applied `steering`
+  to a *descriptive* practices paper, an unanticipated use (the facet was defined on *proposed*
+  solutions). (c) The human initially read `ai-review` as "AI code review" — slug connotation
+  narrower than the written scope (which covers agent-checks-agent by the locked §T3-dissolution
+  decision); watch whether models repeat this in the re-run before adding a clarifier.
+- **Change:** the **object-of-mechanism rule** — *tag by the object of the mechanism, not the
+  motivation of the actor* — added to `agent-scope-drift`'s Boundary with a worked pair: positive
+  (multi-agent panel checking code scope vs spec scope → drift + `ai-review`, the object+performer
+  composition grammar) and negative (Z8TPRNEU's retained control → `hitl-workflow` only; removed from
+  the drift example roster, converted to counter-example). Captures tail tightened: "keep them in
+  scope" → "detect or bound departure from intent" (the old wording could absorb any control
+  mechanism). `steering` facet amended: "proposed solution **or documented practice** operates on
+  generation."
+- **Outcome:** human tags on Z8TPRNEU: primary `hitl-workflow` (matches 4/4 models) + `ai-review`
+  (sides with codex alone — breadth data point) + `agentic`/`steering`/`survey-input`. Re-run check:
+  do fable/gemini/codex drop `agent-scope-drift` under the counter-example?
+
 ---
 
 ### Headline for the writeup

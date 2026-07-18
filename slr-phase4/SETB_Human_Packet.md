@@ -41,7 +41,7 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 - `remediation-gating` — [FIX] oversight of autonomous **fixes** (gate / filter / escalate the fix) — not the repair technique itself
 - `hitl-workflow` — [ESCALATE] the human's **control surface** — *how the human acts* once engaged: checkpoints, action guards, approval gates, bounded delegation. NOT what to surface. **Levers, not lenses** (comprehension/visibility tools → `oversight-explanation`; a lever over the AI's *inputs* is steering). **(= HOW + WHEN the human acts)**
 - `oversight-explanation` — [ESCALATE·info side] **help the human understand what the AI is doing** — *push*: decision-ready escalation handoff (background + options + recommendation + risks) OR *pull*: human-invoked visibility into what the AI is doing/using (context/dependency views). Lens, not lever (lever → `hitl-workflow`)
-- `agent-scope-drift` — [cross-cutting] agents wander off-mandate / make unreviewed decisions; keeping them in scope
+- `agent-scope-drift` — [cross-cutting] agents wander off-mandate / make unreviewed decisions; mechanisms that **detect/bound departure from intent**. Tag by the mechanism's **object**, not the actor's motivation: a panel checking code scope vs spec scope → here + `ai-review`; retained control merely *motivated* by drift-worry → `hitl-workflow` only
 
 **Governance & policy**
 - `org-governance` — the *org-level governance apparatus* applied broadly: policy, **audit logging**, accountability, roles, maturity models, policy-as-code (internal; ≠ a single pipeline framework)
@@ -69,7 +69,7 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 - Apply either or **both** (paper compares/spans modes); **neither** = mode unspecified / irrelevant to the paper's claim.
 
 **Contribution / population flags:**
-- `steering` — [contribution flag] the paper's proposed solution (wholly/partly) operates on **generation** (prompts, specs, fine-tuning, shaping model inputs) rather than inspecting/gating the artifact. **Contribution, not topic.** Steering-**only** solution → demote candidate
+- `steering` — [contribution flag] the paper's proposed solution **or documented practice** (wholly/partly) operates on **generation** (prompts, specs, fine-tuning, shaping model inputs) rather than inspecting/gating the artifact. **Contribution, not topic.** Steering-**only** solution → demote candidate
 - `non-developer` — [scope flag] the generating/overseeing human is **not a professional developer** (end-user / business user / citizen developer). Default (untagged) = professional devs
 
 

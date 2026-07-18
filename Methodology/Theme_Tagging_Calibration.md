@@ -295,5 +295,6 @@ measures the models against a vetted instrument and disagreement becomes attribu
 |---|---|---|---|---|
 | 1 | `TF56EPIP` | B | 6 themes incl. `automation-bias`, `provenance-auditability`; no primary/facets yet | pre-dates mode pair → backfill primary + mode facet |
 | 2 | `VG6CIDQW` (Lumen) | A | **COMPLETE & verified 2026-07-18:** primary `oversight-explanation` + `assistive` + `built-system` + `steering`; overturned 4-model unanimous `hitl-workflow` | changelog §11: `oversight-explanation` broadened (push/pull); steering exclusion → input side (confirmed, §12); `hitl-workflow` levers-only; `provenance-auditability` record test; transparency routing rule |
+| 3 | `Z8TPRNEU` | A | **COMPLETE & verified 2026-07-18:** primary `hitl-workflow` (= 4/4 models) + `ai-review` (sides with codex alone) + `agentic`/`steering`/`survey-input`; rejected 3-model `agent-scope-drift` | changelog §13: object-of-mechanism rule; drift Captures tightened + Z8TPRNEU → counter-example; `steering` amended to cover documented practice; `ai-review` slug-connotation noted (watch in re-run) |
 | — | `22JBEZNK` | A | in progress | probe yielded `steering` + `non-developer` facets (§12) + oversight-competence-gap candidate staged |
 

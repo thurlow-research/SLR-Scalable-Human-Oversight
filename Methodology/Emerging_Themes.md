@@ -131,11 +131,13 @@ stratification** — mode-specific items in the org survey.
   more); `SHK6KAX6` / `UIXCRBQX` — agentic (agentic-PR merge & maintenance studies); `T72TU8B5`
   (Hedwig autonomy tiers) — agentic.
 
-**`steering`** (contribution-type flag, added 2026-07-18) — the paper's proposed solution (wholly or
-in part) operates on **generation** — better prompts, specs/executable requirements, fine-tuning,
-shaping model inputs — rather than inspecting/gating the produced artifact. **Contribution, not
-topic**: every AI-coding paper touches generation; the flag applies only when steering is *offered as
-the solution*. Three jobs: (a) **audit trail** for the steering exclusion — documents why a solution
+**`steering`** (contribution-type flag, added 2026-07-18; amended same day) — the paper's proposed
+solution **or the practice it documents** (wholly or in part) operates on **generation** — better
+prompts, specs/executable requirements, fine-tuning, shaping model inputs — rather than
+inspecting/gating the produced artifact. **Contribution, not topic**: every AI-coding paper touches
+generation; the flag applies only when steering is *offered as the solution* or is *the documented
+practice under study* (empirical amendment from `Z8TPRNEU`: the "control" professional devs exercise
+is largely generation-directing — the facet explains the thin solution-theme roster). Three jobs: (a) **audit trail** for the steering exclusion — documents why a solution
 component earned no solution theme; (b) explains sparse theme rosters on hybrid steer-and-check
 systems in the sweep; (c) **tripwire**: a *steering-only* solution is a demote-to-context candidate
 (the `spec-driven-guardrails` resolution, now enforceable — parallel to `general-ai` for object
@@ -323,12 +325,18 @@ Cross-cutting: `agent-scope-drift`.
 
 **`theme:agent-scope-drift`** (HOS-A) · ~5
 - **Captures:** agents range **beyond mandate** / make unreviewed architectural decisions / drift from
-  intent; mechanisms to keep them in scope — intent telemetry, guardrails, earned-trust autonomy.
-- **Boundary:** about *the agent departing from what was asked* (a distinct failure mode from producing
-  buggy code). Human-directed control → `hitl-workflow`.
+  intent; mechanisms that **detect or bound departure from intent** — intent telemetry, guardrails,
+  earned-trust autonomy. (Tightened 2026-07-18 from "keep them in scope," which read as absorbing
+  *any* control mechanism.)
+- **Boundary — tag by the object of the mechanism, not the motivation of the actor (2026-07-18):**
+  about *the agent departing from what was asked* (a distinct failure mode from producing buggy code).
+  Applies when drift is the mechanism's **operand** — e.g., a multi-agent panel checking the code's
+  scope against the spec's scope → `agent-scope-drift` + `ai-review` (object + performer, same
+  composition grammar as `formal-methods`). Does NOT apply to generic retained control merely
+  *motivated* by drift-worry — counter-example: `Z8TPRNEU` (devs deliberately retain control) →
+  `hitl-workflow`, not here. Human-directed control → `hitl-workflow`.
 - **Examples:** `95CPB7CF` — intent-level telemetry exposes drift from architectural intent; `8AW26GFK`
-  — agents make unreviewed architectural decisions ("vibe architecting"); `Z8TPRNEU` — experienced devs
-  deliberately retain control rather than passively vibing.
+  — agents make unreviewed architectural decisions ("vibe architecting").
 
 #### Family 4 — GOVERNANCE & POLICY LANDSCAPE
 
