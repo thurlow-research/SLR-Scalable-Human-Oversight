@@ -304,7 +304,7 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
   floor; survey-input substantiveness; competence-gap keep-core note); scope flags regrouped.
 - **Arbiter rulings encoded:** **D1 plan-gate rule** (designed lifecycle checkpoint = hitl-workflow;
   conversational guide-then-go = steering). **D2 who-checks-what decomposition** with the HOS release
-  cycle as worked example (producer self-checks = no theme; independent evaluation = detector by
+  cycle as worked example (HOS: Thurlow, S. (2026). HumanOversightSystem (Version 0.5.0) [Computer software]. Purdue University. https://doi.org/10.5281/zenodo.21347272) (producer self-checks = no theme; independent evaluation = detector by
   epistemics; severity + cross-model agreement = risk-routing on a computed producer-independent
   signal; fix approval/escalation + refix-loop governance = remediation-gating). **D4 (arbiter final, superseding the
   proposed split): dependency risk in generated code → ai-code-insecurity**; tooling-supply-chain

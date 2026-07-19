@@ -1,5 +1,6 @@
 # HOS-Seeded Theme Candidates (staging — graft before classifying cores)
 
+**Canonical citation:** Thurlow, S. (2026). HumanOversightSystem (Version 0.5.0) [Computer software]. Purdue University. https://doi.org/10.5281/zenodo.21347272
 **Status:** staging / not yet grafted. Source: synthesis of ~76 HOS research findings
 (`~/Code/HumanOversightSystem/Human/research/`) against the SLR themes, 2026-07-13.
 **Do not treat as finalized themes.** Graft the corpus-grounded ones into
