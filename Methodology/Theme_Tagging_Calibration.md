@@ -296,6 +296,16 @@ measures the models against a vetted instrument and disagreement becomes attribu
   must be updated in the same commit as the Tag reference.
 - **Tooling gap:** the Actions menu cannot set primaries → primaries are typed; early-tagged papers
   need backfill when the vocabulary moves under them (TF56EPIP: mode facet + primary pending).
+- **Coder fatigue is a reliability factor of the human instrument** (UB2EVUFU, self-diagnosed
+  "dinner fatigue"): the first-pass tag set had several oversights (facets missed, one theme
+  mis-filed), all caught on a second look. With 29 tags/paper, recall-based tagging degrades when
+  tired. Mitigations now in the instrument/process: the **five-question facet checklist** (mechanical
+  coverage, not recall) and a **second-look verification** of each paper's tags before moving on —
+  worth reporting in the methods chapter as an honest human-reliability observation alongside the
+  model biases.
+- **Self-correction is evidence the boundaries work:** the human's own `risk-routing` retraction on
+  UB2EVUFU (error-condition handback ≠ triage decision) shows the sharpened definitions catch the
+  arbiter too — the instrument is doing work independent of who holds it.
 
 **Running log** *(update at the end of the current 10)*:
 
@@ -304,5 +314,6 @@ measures the models against a vetted instrument and disagreement becomes attribu
 | 1 | `TF56EPIP` | B | 6 themes incl. `automation-bias`, `provenance-auditability`; no primary/facets yet | pre-dates mode pair → backfill primary + mode facet |
 | 2 | `VG6CIDQW` (Lumen) | A | **COMPLETE & verified 2026-07-18:** primary `oversight-explanation` + `assistive` + `built-system` + `steering`; overturned 4-model unanimous `hitl-workflow` | changelog §11: `oversight-explanation` broadened (push/pull); steering exclusion → input side (confirmed, §12); `hitl-workflow` levers-only; `provenance-auditability` record test; transparency routing rule |
 | 3 | `Z8TPRNEU` | A | **COMPLETE & verified 2026-07-18:** primary `hitl-workflow` (= 4/4 models) + `ai-review` (sides with codex alone) + `agentic`/`steering`/`survey-input`; rejected 3-model `agent-scope-drift` | changelog §13: object-of-mechanism rule; drift Captures tightened + Z8TPRNEU → counter-example; `steering` amended to cover documented practice; `ai-review` slug-connotation noted (watch in re-run) |
+| 4 | `UB2EVUFU` | A | **COMPLETE & verified 2026-07-18** (after self-corrected second pass — "dinner fatigue"): primary `ai-review` (resolves v1 split: 3 models + human vs Opus) + `hitl-workflow`/`provenance-auditability`/`remediation-gating`; facets `agentic`/`built-system`/`framework`/`steering`; rejected `rules-based-checks` (plumbing — confirmed by full-text scan) and self-retracted `risk-routing` | changelog §14: error-condition-handback boundary on `risk-routing`; `remediation-gating` process gates; plumbing ≠ membership rule; five-question facet checklist |
 | — | `22JBEZNK` | A | in progress | probe yielded `steering` + `non-developer` facets (§12) + oversight-competence-gap candidate staged |
 

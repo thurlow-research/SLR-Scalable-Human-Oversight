@@ -190,6 +190,29 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
   (sides with codex alone — breadth data point) + `agentic`/`steering`/`survey-input`. Re-run check:
   do fable/gemini/codex drop `agent-scope-drift` under the counter-example?
 
+## 14. The UB2EVUFU probe — error-condition handback; process gates; plumbing rule; coder fatigue
+- **Disparities (2026-07-18):** on "Self-organizing multi-agent systems for continuous software
+  development": (a) the human's primary `ai-review` resolved Set A's original v1 split **3 models +
+  human vs Opus** (`hitl-workflow`) — the tie-breaker's "distinctive novelty, not scaffolding" applied
+  by the arbiter. (b) The human initially tagged `risk-routing` for "agent fails → escalates to
+  human," then **self-corrected**: an error-condition handback is an exception path, not a
+  discretionary triage decision. (c) Three models tagged `rules-based-checks`; a full-text scan
+  confirmed tests appear only as the agents' *instruments* — pattern-matched plumbing. (d) The
+  human's first-pass tag set had several oversights (facets missed), corrected on a second look —
+  self-diagnosed **"dinner fatigue."** With 29 tags per paper, recall-based tagging degrades with
+  coder fatigue; this is a *reliability factor of the human instrument*, not just an anecdote.
+- **Change:** `risk-routing` boundary — **error-condition handback is NOT routing** (mechanism →
+  `hitl-workflow`; failed-fix loop → `remediation-gating`). `remediation-gating` Captures — **two
+  gate kinds**: content (filter fix candidates) and **process** (bounded retries / budget-decay /
+  stop-progression, fail-closed; UB2EVUFU's budget-halving cycles = worked example). Preamble +
+  cheat-sheet — **"plumbing ≠ membership"** rule for systems papers (UB2EVUFU's test-running agents
+  as counter-example). Workflow — **five-question facet checklist** (role · form · scope · mode ·
+  contribution) so facet coverage is mechanical, not recall-dependent; packet gains the same
+  checklist + a second-look verification habit.
+- **Outcome:** human final set: primary `ai-review` + `hitl-workflow`/`provenance-auditability`/
+  `remediation-gating` + `agentic`/`built-system`/`framework`/`steering`. Re-run checks: do models
+  stop tagging `rules-based-checks` here, and does Opus's primary move to `ai-review`?
+
 ---
 
 ### Headline for the writeup

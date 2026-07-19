@@ -38,6 +38,11 @@ Tags live in **three independent layers**; a paper normally carries several acro
 - **Membership, not mention.** Tag a theme only where the paper *contributes to that theme's argument*
   (with a one-line rationale), never because the abstract name-drops the topic. Keeps a `theme:` filter
   returning a real roster, not keyword noise.
+- **Plumbing ≠ membership (systems papers, 2026-07-18).** A built system *uses* many mechanisms —
+  its agents run tests, sandbox code, retry fixes — but tag only the mechanisms the paper
+  *contributes an argument about*. (Calibration: three models tagged `rules-based-checks` on
+  `UB2EVUFU` because its agents run test suites — instrumental plumbing; the paper's contribution is
+  the agentic verification architecture → `ai-review`.)
 - **Steering exclusion (apply before any solution theme).** Contributions that shape *what gets
   generated* — better prompts, specs, fine-tuning, and **controlling the AI's inputs/context** — are
   *steering*, not oversight; only a paper's inspection/comprehension/gating remainder earns solution
@@ -268,7 +273,10 @@ Cross-cutting: `agent-scope-drift`.
   (what gets surfaced, at what priority) vs. `hitl-workflow` = *how & when* the human then acts.
 - **Boundary:** the contribution is the *selection/prioritization/escalation logic* (which/whether/when
   a human is engaged). The review that *produced* the finding → `ai-review`/`rules-based-checks`; the
-  interface the human then uses → `hitl-workflow`.
+  interface the human then uses → `hitl-workflow`. **Error-condition handback is NOT risk-routing
+  (2026-07-18, UB2EVUFU):** "agent stuck / can't converge → hand back to the human" is an *exception
+  path*, not a discretionary triage decision — no computed signal selects among items. The handback
+  mechanism, if contributed, → `hitl-workflow`; oversight of the failed-fix loop → `remediation-gating`.
 - **Examples:** `BU73N7PC` — Meta diff-risk-score gates risky diffs; `74GE3TF7` — creation-time
   circuit-breaker predicts high-maintenance PRs for gated triage; `VTDG995V` — calibration → *computed*
   review intensity; `T72TU8B5` — autonomy tier adjusts by earned developer trust.
@@ -277,7 +285,10 @@ Cross-cutting: `agent-scope-drift`.
 
 **`theme:remediation-gating`** · ~3 (thin — populate in sweep)
 - **Captures:** oversight *over the fix* — how autonomous fixes / auto-repair are filtered, gated, or
-  escalated before they land. The *acting* step brought under control.
+  escalated before they land. The *acting* step brought under control. **Two gate kinds qualify
+  (2026-07-18):** **content** gates (filter/arbitrate *which* fix candidates are acceptable) and
+  **process** gates (bounded retries, budget-decay, stop-progression policies over autonomous repair
+  loops — fail-closed termination + handback when the fix won't converge).
 - **Boundary:** the *gating/oversight of the fix*, **not** the repair technique itself (generating a
   fix is generation, outside the oversight frame). **Requires an autonomous fix/repair action being
   overseen** — a pure *detection or publish/quality gate* that blocks bad code with **no auto-fix** is
@@ -286,7 +297,9 @@ Cross-cutting: `agent-scope-drift`.
   `risk-routing`. *(Calibration note: both a human and Opus over-tagged VibeGuard `T8E8SCCG` here — a
   publish gate, no auto-fix — which is why this exclusion is now explicit.)*
 - **Examples:** `GAD5Z8PV` — multi-LLM ensemble filters harmful AI fix suggestions with minimal-edit
-  arbitration before deployment; (sweep to add auto-repair-with-approval systems).
+  arbitration before deployment (content gate); `UB2EVUFU` — budget-halving retry cycles with
+  stop-progression when verification keeps failing (process gate); (sweep to add
+  auto-repair-with-approval systems).
 
 **— ESCALATE (human enters on disagreement / low-confidence / high-stakes) —**
 

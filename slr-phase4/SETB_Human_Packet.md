@@ -6,7 +6,10 @@ Read the **document contents** (each paper is in Zotero → **02-Human Calibrati
 **How to record:** fill the template at the bottom (or tag in Zotero — your call). For each paper:
 - **Primary** = the one home theme.
 - **Themes** = all `theme:` slugs that fit (membership, not mention).
-- **Facets** = any facet tags that apply.
+- **Facets** = any facet tags that apply. **Run the five-question facet checklist on every paper**
+  (misses cluster here): **role** (anchor / survey-input / intro-framing / lit-review)? · **form**
+  (framework → built-system → adopted)? · **scope** (general-ai? non-developer?)? · **mode**
+  (assistive / agentic)? · **contribution** (steering)?
 - (optional) a few words of *why* for the primary.
 
 ---
@@ -21,6 +24,7 @@ Tag on the **document contents**. **Multi-tag freely** — a paper can carry sev
 Tag on **membership** (the paper *contributes to* that theme's argument), **not mention**.
 Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth).
 **Steering exclusion:** shaping what gets *generated* — prompts, specs, fine-tuning, **controlling the AI's inputs/context** — is steering, NOT oversight; tag only the paper's inspection/comprehension/gating contribution.
+**Plumbing ≠ membership** (systems papers): tag only mechanisms the paper *argues about*, not everything its system happens to use (agents running test suites ≠ `rules-based-checks`).
 
 ## THEME TAGS (`theme:<slug>`)
 
@@ -37,8 +41,8 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 - `ai-review` — [DETECT] AI *judges* the artifact (probabilistic, can hallucinate); incl. multi-agent / cross-model review **and its reliability limits**
 - `rules-based-checks` — [DETECT] deterministic **grounded** checks: tests, static analysis/lint, symbolic exec, sandbox, classical formal-methods engines
 - `formal-methods` — [technique, COMPOSABLE] theorem proving / model checking / symbolic exec / autoformalization. Pair with the performer: AI does it → `ai-review`+`formal-methods`; classical engine → `rules-based-checks`+`formal-methods`
-- `risk-routing` — [TRIAGE] the **allocation decision** — *which/whether/when* AI items reach a human & at what tier; the **smarts of surfacing** (signal + selection/tiering logic). NOT the human's control mechanism. **(= WHAT gets surfaced)**
-- `remediation-gating` — [FIX] oversight of autonomous **fixes** (gate / filter / escalate the fix) — not the repair technique itself
+- `risk-routing` — [TRIAGE] the **allocation decision** — *which/whether/when* AI items reach a human & at what tier; the **smarts of surfacing** (signal + selection/tiering logic). NOT the human's control mechanism. **(= WHAT gets surfaced)** Error-condition handback ("agent stuck → human") is NOT routing — no triage decision → `hitl-workflow` / `remediation-gating`
+- `remediation-gating` — [FIX] oversight of autonomous **fixes** (gate / filter / escalate the fix) — not the repair technique itself. Both **content** gates (filter fix candidates) and **process** gates (bounded retries / budget-decay / stop-progression, fail-closed) qualify
 - `hitl-workflow` — [ESCALATE] the human's **control surface** — *how the human acts* once engaged: checkpoints, action guards, approval gates, bounded delegation. NOT what to surface. **Levers, not lenses** (comprehension/visibility tools → `oversight-explanation`; a lever over the AI's *inputs* is steering). **(= HOW + WHEN the human acts)**
 - `oversight-explanation` — [ESCALATE·info side] **help the human understand what the AI is doing** — *push*: decision-ready escalation handoff (background + options + recommendation + risks) OR *pull*: human-invoked visibility into what the AI is doing/using (context/dependency views). Lens, not lever (lever → `hitl-workflow`)
 - `agent-scope-drift` — [cross-cutting] agents wander off-mandate / make unreviewed decisions; mechanisms that **detect/bound departure from intent**. Tag by the mechanism's **object**, not the actor's motivation: a panel checking code scope vs spec scope → here + `ai-review`; retained control merely *motivated* by drift-worry → `hitl-workflow` only
