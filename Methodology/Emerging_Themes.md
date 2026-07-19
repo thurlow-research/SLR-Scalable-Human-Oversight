@@ -64,6 +64,11 @@ Tags live in **three independent layers**; a paper normally carries several acro
 
 **`problem-statement-anchor`** — a single "committee-sit-up" empirical statistic strong enough to anchor
 the problem statement. Feeds `Problem_Statement_Evidence.md`; also gets a child note. *Selective — few papers.*
+**Bar (sharpened 2026-07-18):** the stat must anchor the **overall** problem statement (the
+oversight-scaling inversion / two-part frame) — not a sub-argument's headline number (e.g. LLM-judge
+unreliability) or a population-specific finding, however vivid. Models over-apply this facet by
+*salience* (any impressive number); the calibration human applied it zero times in 10 papers on this
+bar. **Never on a `lit-review` paper** — its stats are secondhand; chase and anchor the primaries.
 - `59KP8GTP` — ~80% of AI-co-authored PRs merged with no explicit review.
 - `3Z45M3V3` — 29.5% of Python / 24.2% of JS Copilot snippets carry security weaknesses.
 
@@ -76,7 +81,11 @@ a mechanism; cite in the Introduction. Usually context-tier (+ often `lit-review
 - `4TUNZ7FU` — position/agenda paper establishing the need.
 
 **`lit-review`** — secondary literature (survey / review / meta-analysis); default context + reference-
-snowball source.
+snowball source. **Structure not required (2026-07-18):** systematic *or* narrative — the test is
+whether the evidence is *synthesized from other papers rather than produced*. A casual stat-assembly
+needs this facet *most* (marks the evidence derivative → cite the underlying primaries, don't
+double-count). **Primary convention for lit-review papers:** the "biggest-tent" theme covering the
+synthesis *overall* — not the most vivid/quantified section (the models' salience bias on `2CKL96B8`).
 - `5I2W8IC6` — systematic review mapping trust/distrust concepts for LLMs in SE.
 
 **`counterpoint`** (role facet, added 2026-07-18) — the paper **argues against a prevailing position**
@@ -141,7 +150,11 @@ Apply either or **both** (a paper that compares or spans modes); **neither** = t
 specify, or mode is irrelevant to its claim (same absence convention as `adopted`).
 **Clarifier (2026-07-18, F9JM9CI6):** the pair describes the **generation** studied — "uses agents"
 ≠ `agentic`, and "AI assists the human" ≠ `assistive`. A paper whose AI sits only on the
-*review/oversight* side studies no AI generation → tag **neither**, and consider `general-code`. Two jobs:
+*review/oversight* side studies no AI generation → tag **neither**, and consider `general-code`.
+**Tie-rule (2026-07-18, 22JBEZNK):** when the two criteria disagree — e.g. a *human-initiated* chat
+task returning a *complete artifact* — **the reviewable unit dominates**: the facet's job is to
+identify the oversight surface, and a wholesale-delivered artifact puts the human at the gate
+(→ `agentic`) regardless of who initiated. Two jobs:
 (a) **synthesis separation** — which oversight evidence/mechanisms belong to which mode; (b) **survey
 stratification** — mode-specific items in the org survey.
 - Illustrative: `3Z45M3V3` / `YBHHYR4P` — assistive (Copilot-snippet CWEs / users trust insecure code
@@ -220,11 +233,18 @@ Each entry: **Captures** (what earns the tag) · **Boundary** (include/exclude, 
 **`theme:automation-bias`** · ~7
 - **Captures:** the *human* fails at oversight — over-reliance, complacency, skill erosion, cognitive
   disengagement; people miss flaws even when warned/prompted.
-- **Boundary:** the failure is in the *human's* attention/trust. If the failure is the review *process*
-  being hollow/unenforced → `oversight-theater`.
-- **Examples:** `22JBEZNK` — business users can't detect flaws in AI analyses even when warned;
-  `E689ZAXC` — adding a review step makes workers *less* likely to revise; `5BAZZWHG` — cognitive
-  engagement declines with agentic assistants.
+- **Boundary — the failing human must be CAPABLE (2026-07-18):** automation-bias is an attention/trust
+  failure by someone who *could have caught it* (over-reliance, complacency). If the failure persists
+  despite priming, distrust instructions, and incentives — or the human *lacks the ability/support to
+  evaluate at all* (typically `non-developer` settings) — that is the **oversight-competence gap**
+  (staged candidate, `HOS_Seeded_Theme_Candidates.md`), NOT bias. Counter-example: `22JBEZNK` — the
+  study *controls for* over-reliance (primed distrust, prompts, pay) and its Discussion explicitly
+  rejects overconfidence: "the difficulty is rooted in applying domain expertise or critical thinking
+  to unfamiliar technical contexts." All four models mis-tagged it automation-bias primary on the
+  surface phrase "missed flaws even when warned" — the warning was the *control*, not the finding.
+  Process failure (hollow/unenforced review) → `oversight-theater`.
+- **Examples:** `E689ZAXC` — adding a review step makes workers *less* likely to revise; `5BAZZWHG` —
+  cognitive engagement declines with agentic assistants.
 
 **`theme:oversight-theater`** · ~5
 - **Captures:** oversight that exists on paper but lacks authority/time/information to change the
@@ -319,7 +339,10 @@ Cross-cutting: `agent-scope-drift`.
   NOT remediation-gating; that's the enforcement side of the detector (`rules-based-checks`/`ai-review`).
   Re-checking a landed fix → `rules-based-checks` / `ai-review`; deciding *which* fixes need sign-off →
   `risk-routing`. *(Calibration note: both a human and Opus over-tagged VibeGuard `T8E8SCCG` here — a
-  publish gate, no auto-fix — which is why this exclusion is now explicit.)*
+  publish gate, no auto-fix — which is why this exclusion is now explicit. **The same human repeated
+  the same error on the same paper 2026-07-18** — root cause: this exclusion lived only in this doc,
+  never in the compressed cheat-sheet the tagger works from. Now carried in every copy. Principle:
+  every boundary that has ever caught a human must appear in the compressed instrument.)*
 - **Examples:** `GAD5Z8PV` — multi-LLM ensemble filters harmful AI fix suggestions with minimal-edit
   arbitration before deployment (content gate); `UB2EVUFU` — budget-halving retry cycles with
   stop-progression when verification keeps failing (process gate); (sweep to add

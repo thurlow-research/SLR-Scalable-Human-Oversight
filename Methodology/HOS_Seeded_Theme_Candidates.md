@@ -98,15 +98,20 @@ oversight layer).
   allow an accept disposition").
 - **Interactive vs autonomous = one role, two modes** (governance boundary, not code boundary);
   specify the post-action handoff or the agent bypasses the review loop.
-- **(Corpus-seeded, 2026-07-18) Oversight-competence gap — escalation without a competent receiver.**
-  The Escalate stage presupposes a human *capable* of judging what's escalated; the democratization
-  endgame (non-programmers generating code) removes that presupposition. Distinct from
-  `automation-bias` (attention/trust failure of a *capable* human), `oversight-theater` (hollow
-  authority), and the scaling inversion (volume vs. inspection): here the gap is **capability
-  absence**. Seed: `22JBEZNK` (business users can't detect flaws even when warned). Tripwire: the
-  `non-developer` facet — promote to a theme iff flagged papers accumulate *making this argument*;
-  otherwise it's a Discussion point. Don't name it "democratization" (phenomenon-name; would
-  keyword-attract adoption papers that belong in `survey-input`).
+- **(Corpus-seeded, 2026-07-18; ARBITER-VALIDATED same day) Oversight-competence gap — escalation
+  without a competent receiver.** The Escalate stage presupposes a human *capable* of judging what's
+  escalated; the democratization endgame (non-programmers generating code) removes that
+  presupposition. Distinct from `automation-bias` (attention/trust failure of a *capable* human),
+  `oversight-theater` (hollow authority), and the scaling inversion (volume vs. inspection): here the
+  gap is **capability absence**. **Anchor: `22JBEZNK`** — and the distinction is now
+  author-corroborated: the study *controls for* over-reliance (primed distrust, prompts, incentives)
+  and its Discussion explicitly rejects overconfidence ("difficulty is rooted in applying domain
+  expertise or critical thinking to unfamiliar technical contexts"). All four calibration models
+  conflated the two failure modes (unanimous automation-bias primary — Taxonomy_Changelog §16); the
+  human separated them. Tripwire: the `non-developer` facet — promote to a theme iff flagged papers
+  accumulate *making this argument*; otherwise it's a Discussion point. Don't name it
+  "democratization" (phenomenon-name; would keyword-attract adoption papers that belong in
+  `survey-input`).
 - **(Corpus-seeded, 2026-07-18) Authority-allocation spectrum — "human in absolute control."** A
   recurring *stance*, not yet a tag: not human-in-the-loop of an AI-driven flow but AI-as-tool inside
   a human-commanded flow; the spectrum runs absolute control → bounded delegation → tiered autonomy →

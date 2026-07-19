@@ -237,6 +237,49 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
   `risk-routing`; facets `intro-framing` + `counterpoint` + `general-code`, **no mode facet**
   (`agentic` removed). Re-run check: do models apply `general-code` instead of a mode facet here?
 
+## 16. The 22JBEZNK overturn — capability vs bias; the second unanimous-model error
+- **Disparity (2026-07-18):** all four models tagged `automation-bias` as unanimous primary on the
+  paper the Tag reference itself cited as the theme's example. The human tagged no automation-bias at
+  all. Full-text read vindicated the human decisively: the study **controls for over-reliance**
+  (primed distrust, explicit error-hunting prompts, monetary incentives) and its Discussion
+  **explicitly rejects overconfidence** — "the difficulty is rooted in applying domain expertise or
+  critical thinking to unfamiliar technical contexts." The models pattern-matched "missed flaws even
+  when warned" — but the warning was the experimental *control*, not the finding.
+- **Change:** `automation-bias` Boundary gains the **capability discriminator** (the failing human
+  must be *capable*; can't-evaluate → the oversight-competence gap); 22JBEZNK moves from example to
+  boundary counter-example; the **oversight-competence-gap candidate upgrades** to arbiter-validated
+  + author-corroborated, 22JBEZNK its anchor. Mode-pair gains the **tie-rule** (initiator vs
+  reviewable unit disagree → the reviewable unit dominates; human-prompted complete-artifact = the
+  gate = `agentic`). Human also self-corrected `risk-routing` off ("how humans respond to raised
+  risks," not triage).
+- **Outcome:** second unanimity overturn (after Lumen), and the more damning: the models tagged the
+  mechanism the paper explicitly rules out. Re-run check: does the discriminator flip them?
+
+## 17. Set A audit — VibeGuard recurrence, demote signature, salience bias, anchor bar
+- **VibeGuard (`T8E8SCCG`) recurrence — the compression-gap proof.** The human re-applied
+  `remediation-gating` to VibeGuard — the *same documented error* (§4) whose exclusion was written
+  from his own earlier mistake. Root cause is mechanical, not cognitive: the exclusion lived only in
+  `Emerging_Themes.md`; the compressed cheat-sheet (what the tagger actually works from) never
+  carried it, and the §14 process-gate broadening made the line *more* inclusive. **Principle now
+  enforced: every boundary that has ever caught a human must appear in the compressed instrument.**
+  Tag removed; exclusion added to all copies.
+- **The demote signature, validated twice.** `2CKL96B8` (narrative stat-assembly; primary struggle)
+  and `UDVHQ5HR` (LLM-judge capability benchmark; definition-stretching to `quality-debt`) both
+  flagged `demote:context` — matching the `VP7TS6CX` worked call (tool-capability benchmark →
+  context) and the secondary-lit rule. **Workflow cue added:** struggle to pick a primary /
+  stretching a definition = check the core bar, don't force tags. With M74M3RFJ, the calibration
+  sample has produced **3 demotes / 10 papers** — the sweep should expect a substantial demote tail
+  (the tagging pass doubles as a scope audit).
+- **Salience bias (models).** Models anchor on a paper's most vivid section: `2CKL96B8` primary
+  ai-code-insecurity from its security-stats section (secondary-lit primary = **biggest-tent** theme
+  now conventioned); 4 `problem-statement-anchor` applications by impressiveness rather than bar.
+- **`problem-statement-anchor` bar set:** must anchor the OVERALL problem statement — not a
+  sub-argument or population-specific stat, however vivid; never on `lit-review` (secondhand — chase
+  primaries). Human's zero-anchors-in-10 recorded as the considered bar. `lit-review` clarified:
+  structure not required (systematic OR narrative; test = synthesized-not-produced).
+- **Outcome:** Set A human pass complete — all 10 papers tagged, verified, and adjudicated; ~20
+  instrument products across §10–§17 from six probe papers + this audit.
+
 ---
 
 ### Headline for the writeup

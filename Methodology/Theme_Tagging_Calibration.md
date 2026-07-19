@@ -306,6 +306,19 @@ measures the models against a vetted instrument and disagreement becomes attribu
 - **Self-correction is evidence the boundaries work:** the human's own `risk-routing` retraction on
   UB2EVUFU (error-condition handback ≠ triage decision) shows the sharpened definitions catch the
   arbiter too — the instrument is doing work independent of who holds it.
+- **A boundary only protects taggers if it's in the copy they tag from** (VibeGuard recurrence, §17):
+  the same human repeated the same documented error on the same paper because the exclusion lived in
+  the reference doc but not the compressed cheat-sheet. Compression gaps are instrument bugs.
+- **The struggle signal is a disposition tripwire:** difficulty picking a primary, or stretching a
+  definition to fill a tag set, reliably indicated the paper didn't belong at core (2CKL96B8,
+  UDVHQ5HR — both demote-flagged; 3 demotes / 10 calibration papers → expect a demote tail in the
+  full sweep; the tagging pass doubles as a scope audit).
+- **Model salience bias:** models anchor primaries and `problem-statement-anchor` on a paper's most
+  vivid/quantified section rather than its overall shape or the facet's bar — a distinct failure mode
+  from plumbing over-tagging and boundary pattern-matching.
+- **Unanimity overturned twice:** Lumen (§11) and 22JBEZNK (§16) — in both, 4-model unanimous
+  primaries encoded a shared category error the human caught. Model consensus ≠ correctness holds
+  even at n-of-4 unanimity; the human vetting pass is what caught it.
 
 **Running log** *(update at the end of the current 10)*:
 
@@ -317,5 +330,9 @@ measures the models against a vetted instrument and disagreement becomes attribu
 | 4 | `UB2EVUFU` | A | **COMPLETE & verified 2026-07-18** (after self-corrected second pass — "dinner fatigue"): primary `ai-review` (resolves v1 split: 3 models + human vs Opus) + `hitl-workflow`/`provenance-auditability`/`remediation-gating`; facets `agentic`/`built-system`/`framework`/`steering`; rejected `rules-based-checks` (plumbing — confirmed by full-text scan) and self-retracted `risk-routing` | changelog §14: error-condition-handback boundary on `risk-routing`; `remediation-gating` process gates; plumbing ≠ membership rule; five-question facet checklist |
 | 5 | `T72TU8B5` (Hedwig) | A | **COMPLETE & verified 2026-07-18:** primary `risk-routing` — **human confirms the 5/5 post-fix model unanimity** (the tie-breaker sharpening's flagship result now human-validated); themes exact-match opus/fable v1 (`risk-routing`+`hitl-workflow`+`oversight-explanation`); facets `agentic`/`built-system`/`framework`/`survey-input` (resolves the framework 1/4 split against gemini); rejected codex's 4 plumbing extras + drift (object-of-mechanism applied consistently) | **none — first no-change probe**; instrument held on its previously hardest case |
 | 6 | `F9JM9CI6` | A | **COMPLETE & verified 2026-07-18** (facets written via API, item v156604): primary `ai-review` + `oversight-explanation`/`risk-routing`; facets `intro-framing`/`counterpoint`/`general-code`; **no mode facet** (AI on review side only — human reversed twice before the clarifier settled it) | changelog §15: `counterpoint` role facet (stance polarity, direction-agnostic); `general-code` scope flag (object-of-oversight); mode-pair clarifier ("uses agents" ≠ agentic); narrowness ruled extent-not-tagged |
-| — | `22JBEZNK` | A | in progress | probe yielded `steering` + `non-developer` facets (§12) + oversight-competence-gap candidate staged |
+| 7 | `22JBEZNK` | A | **COMPLETE & verified 2026-07-18:** primary `oversight-explanation` + `agentic`/`non-developer`/`survey-input`; **overturned 4-model unanimous `automation-bias`** (paper controls for + rejects overconfidence — capability gap, not bias); self-corrected `risk-routing` off | changelog §16: capability discriminator on `automation-bias` (22JBEZNK → counter-example); competence-gap candidate upgraded to arbiter-validated; mode tie-rule (reviewable unit dominates) |
+| 8 | `T8E8SCCG` (VibeGuard) | A | **COMPLETE & verified:** primary `rules-based-checks` (= 4/4 models) + `ai-code-insecurity` + `framework`/`built-system`; `remediation-gating` re-applied then removed — **the documented §4 error recurred** | changelog §17: root cause = exclusion absent from the compressed cheat-sheet (the day-1 compression gap); exclusion now in all copies; "every human-catching boundary goes in the compressed instrument" |
+| 9 | `2CKL96B8` | A | **COMPLETE & verified:** `demote:context` flagged (narrative stat-assembly, no produced contribution); primary `ai-review` ("biggest-tent" convention) + `ai-code-insecurity`/`quality-debt` + `lit-review`/`intro-framing`/`assistive` | changelog §17: lit-review structure-not-required clarifier; biggest-tent primary convention; struggle-signal workflow cue |
+| 10 | `UDVHQ5HR` | A | **COMPLETE & verified:** `demote:context` flagged (LLM-judge capability benchmark, `VP7TS6CX` precedent); `ai-review` primary + sole theme (= all 4 models after removing stretched `quality-debt`/`intro-framing`) | changelog §17: demote-signature validation; anchor bar set (overall problem statement only; never on lit-review) |
+| — | `M74M3RFJ` | A | verified (pre-pass tags stand): primary `regulatory-compliance` + `general-ai`/`framework`/`intro-framing`; demoted core→context 2026-07-15 | none — the `general-ai` tripwire case, already §6 |
 
