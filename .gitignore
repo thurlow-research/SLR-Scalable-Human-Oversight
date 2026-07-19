@@ -28,3 +28,4 @@ slr-phase4/txt/
 slr-phase4/data/critique/critique_input.md
 slr-phase4/data/critique/*.raw
 slr-phase4/data/critique/*.err
+slr-phase4/data/critique/gemini_ka*.md
