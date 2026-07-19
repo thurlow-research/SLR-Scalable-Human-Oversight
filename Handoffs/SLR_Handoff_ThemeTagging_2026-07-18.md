@@ -1,8 +1,9 @@
 # SLR Handoff — Theme Tagging (Instrument Validated → Set B)
 
 **Vibe Coding Governance SLR · Zotero group 6505702 · 2026-07-18 (supersedes the 2026-07-15 handoff)**
-**Next thing to do:** Scott's pending decisions (§2) → **Scott tags Set B blind** under the frozen
-instrument → models tag Set B fresh → human-vs-model comparison → full 148-core sweep.
+**Next thing to do: Scott tags Set B blind** under the frozen instrument → models tag Set B fresh
+→ human-vs-model comparison → breadth policy → full 148-core sweep. (Gate, backfills, and menu are
+DONE — §2.)
 **At the start of the new chat: invoke `slr-conventions`**, read this file, then
 `slr-phase4/Taxonomy_Changelog.md` (§10–§18 = today's full audit trail) and
 `Methodology/Theme_Tagging_Calibration.md` §5 (revised design) + §7 (vetting log).
@@ -38,24 +39,26 @@ is now **frozen at v2.1 + altitude rule** (repo `thurlow-research/SLR`, main @ `
 DISPOSITION.md. Instrument copies (`Tag_Cheatsheet.md`, `Tag_Prompt.md` = cheatsheet + task block,
 `SETB_Human_Packet.md`) are **kept in lockstep** — copy drift is a named instrument bug.
 
-## 2. PENDING — Scott's queue at handoff
+## 2. Status of the queue (closed out 2026-07-18 EOD) + what remains
 
-*(Update, same day: items 1–3 DONE — gate = PASS; Set A backfills written & all 10 items verified;
-Actions menu re-imported. Remaining: items 4–5 — Scott tags Set B, then the comparison.)*
+**DONE (2026-07-18):**
+- **Gate = PASS** (Scott) — fable 10/10 / codex 9/10 / gemini 9/10 primaries, facet agreement
+  doubled, altitude regression 8/9. Recorded in calibration doc §5·1b + status header.
+- **Set A fully reconciled in Zotero** — backfills written (`counterpoint` → Z8TPRNEU + VG6CIDQW ·
+  `agentic` → T8E8SCCG · `general-code` → UDVHQ5HR) and **all 10 items verified** consistent with
+  every adjudication, ruling, and re-adjudicated primary (verification table in calibration doc).
+- **Actions menu re-imported** by Scott (32 toggles).
 
-1. **Formal gate call** (recommendation on record: PASS — every metric improved, residuals are
-   model signatures not wording gaps).
-2. **Zotero backfill batch** (validation runs surfaced these; one API batch, authorized wording
-   pending): `counterpoint` on `Z8TPRNEU` + `VG6CIDQW` · `agentic` on `T8E8SCCG` · `general-code`
-   on `UDVHQ5HR` · `TF56EPIP` mode facet (tagged pre-mode-pair; its 6 themes + primary present).
-3. **Re-import the Actions menu** (`slr-phase4/slr_human_tags_actions.yml`, now **32 toggles**).
-4. **Scott tags Set B blind** (`IURU9UTA`: B644HQFS 6DXZGHD9 E95T8E88 7V7SRG43 UW2R6BBJ BAWCBT9R
+**REMAINING:**
+1. **Scott tags Set B blind** (`IURU9UTA`: B644HQFS 6DXZGHD9 E95T8E88 7V7SRG43 UW2R6BBJ BAWCBT9R
    E3E5YA2E 5VTAJISY TF56EPIP R4WJZBSF). **Set B is still 100% model-free — keep it that way until
    the human tags are in.** Use the packet's five-question facet checklist + second-look habit
-   (the "dinner fatigue" mitigation, §7).
-5. Then: 3 models tag Set B fresh → human-vs-model comparison (**Set B = clean headline; Set A =
+   (the "dinner fatigue" mitigation, §7). While in there: `TF56EPIP` needs its mode facet + a
+   primary check (it was tagged pre-mode-pair; 6 themes recorded).
+2. Then: 3 models tag Set B fresh → human-vs-model comparison (**Set B = clean headline; Set A =
    model-informed**, state this in writeups) → breadth policy → **full 148-core sweep** → extend
-   `survey-input`/`lit-review` over ~890 contexts → batch-review `demote:` flags.
+   `survey-input`/`lit-review` over ~890 contexts → batch-review `demote:` flags
+   (2CKL96B8, UDVHQ5HR pending; M74M3RFJ already moved).
 
 ## 3. Adjudicated rulings (all encoded in the instrument — do not re-litigate)
 
