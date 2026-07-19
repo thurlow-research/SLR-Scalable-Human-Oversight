@@ -1,0 +1,3256 @@
+Reading additional input from stdin...
+2026-07-19T05:27:36.265078Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+OpenAI Codex v0.144.6
+--------
+workdir: /Users/scott/Library/CloudStorage/OneDrive-purdue.edu/Systemic Literature Review
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 019f78d8-1c16-7cd0-a198-21a12e334e90
+--------
+user
+Read the file slr-phase4/Tag_Prompt.md (a tagging instrument) and the file slr-phase4/txt/UB2EVUFU.txt (paper full text, key UB2EVUFU). Apply the instrument to the paper exactly as its task block instructs. Do not read any other files. Output ONLY the single JSON object the task block specifies.
+exec
+/bin/zsh -lc "sed -n '1,240p' slr-phase4/Tag_Prompt.md && sed -n '1,320p' slr-phase4/txt/UB2EVUFU.txt" in /Users/scott/Library/CloudStorage/OneDrive-purdue.edu/Systemic Literature Review
+ succeeded in 0ms:
+# Theme-tagging cheat-sheet (Vibe Coding Governance SLR)
+
+Tag on the **document contents**. **Multi-tag freely** — a paper can carry several themes.
+Tag on **membership** (the paper *contributes to* that theme's argument), **not mention**.
+Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth).
+**Steering exclusion:** shaping what gets *generated* — prompts, specs, fine-tuning, **controlling the AI's inputs/context** — is steering, NOT oversight; tag only the paper's inspection/comprehension/gating contribution.
+**Plumbing ≠ membership** (systems papers): tag only mechanisms the paper *argues about*, not everything its system happens to use (agents running test suites ≠ `rules-based-checks`).
+**Documented practice counts:** empirical evidence of practitioners *exercising* a stage's mechanism earns membership in that stage's theme. **Vision-paper floor:** a stage mentioned in one scenario sentence = mention, not membership.
+
+## THEME TAGS (`theme:<slug>`)
+
+**Problem — quantify**
+- `oversight-scaling-inversion` — AI code is riskier yet *less* inspected; PRs auto-merged unreviewed; review is the bottleneck; burden piles on maintainers
+- `ai-code-insecurity` — empirical **security**-vulnerability evidence in AI code (CWEs, insecure-but-confident). Incident analyses & original vulnerability taxonomies count; secondhand rate citations alone don't
+- `quality-debt` — **non-security** quality decay: tech debt, complexity, smells, maintainability, breaking changes
+
+**Limits of current oversight**
+- `automation-bias` — the *human* fails: over-trust, complacency, skill erosion, misses flaws even when warned. **Requires a CAPABLE human failing** (attention/trust); a human who *can't evaluate at all* (non-developer settings; failure survives priming+incentives) = competence gap, NOT bias (22JBEZNK). Competence-gap papers **stay core-eligible**: tag the remainder (explanation/mode/population facets) — the missing theme is a staged candidate, not a demote signal
+- `oversight-theater` — review exists on paper but lacks authority/time/info to change the outcome (rubber-stamp, token HITL)
+
+**Solution — the Detect → Triage → Fix → Escalate pipeline** *(gray-zone detectors — rubric-grounded LLM-judge, "LLM writes tests then runs them" — expect dual-tagging of both Detect themes)*
+- `ai-review` — [DETECT] AI *judges* the artifact (probabilistic, can hallucinate); incl. multi-agent / cross-model review, **its reliability limits**, and empirical evidence of practitioners *using* agents to validate agents' output
+- `rules-based-checks` — [DETECT] deterministic **grounded** checks: tests, static analysis/lint, symbolic exec, sandbox, classical formal-methods engines
+- `formal-methods` — [technique, COMPOSABLE] theorem proving / model checking / symbolic exec / autoformalization. Pair with the performer: AI does it → `ai-review`+`formal-methods`; classical engine → `rules-based-checks`+`formal-methods`; no performer (pure advocacy/position) → `formal-methods`+`intro-framing`
+- `risk-routing` — [TRIAGE] the **allocation decision** — *which/whether/when* AI items reach a human & at what tier; the **smarts of surfacing** (signal + selection/tiering logic). NOT the human's control mechanism. **(= WHAT gets surfaced)** Error-condition handback ("agent stuck → human") is NOT routing — no triage decision → `hitl-workflow` / `remediation-gating`. Signal must be **computed & producer-independent** — model self-confidence is disqualified
+- `remediation-gating` — [FIX] governance of **autonomous** fixing (Jidoka: the system fixes *without per-fix human involvement*, kept safe by machinery) — **content** gates (filter fix candidates) and **process** gates (bounded retries / budget-decay / convergence / stop-progression, fail-closed); not the repair technique itself. **REQUIRES an autonomous fix being overseen** — a detect/publish gate with **no auto-fix** (VibeGuard) is NOT this (detector's enforcement side). Deciding when a **human** must engage on the fix path (risky fixes → human) = `risk-routing` layered on top. **A human approving every fix is NOT this** — review-everything is the unscalable anti-pattern (a paper *advocating* it → consider `counterpoint`; such a design *introduces* automation-bias risk — a rationale-level critique, NOT `automation-bias` membership, which requires *studying* the human failure)
+- `hitl-workflow` — [ESCALATE] the human's **control surface** — *how the human acts* once engaged: checkpoints, action guards, approval gates, bounded delegation. NOT what to surface. **Levers, not lenses** (comprehension/visibility tools → `oversight-explanation`; a lever over the AI's *inputs* is steering). **Plan-gate rule:** a human gate over an AI-produced plan IS hitl-workflow when it's a **designed checkpoint in a lifecycle** (defined gate, authority to block); the same approval inside a conversational guide-then-"go do it" flow is steering. **(= HOW + WHEN the human acts)**
+- `oversight-explanation` — [ESCALATE·info side] **help the human understand what the AI is doing** — any system-provided or human-invoked support for understanding/judging AI output. Modes (illustrative, NOT exhaustive): *push* = decision-ready escalation handoff (background + options + recommendation + risks); *pull* = human-invoked visibility into what the AI is doing/using; *standing* = explanations attached to AI output that support the human's verdict. Lens, not lever (lever → `hitl-workflow`)
+- `agent-scope-drift` — [cross-cutting] agents wander off-mandate / make unreviewed decisions; mechanisms that **detect/bound departure from intent**. Tag by the mechanism's **object**, not the actor's motivation: a panel checking code scope vs spec scope → here + `ai-review`; retained control merely *motivated* by drift-worry → `hitl-workflow` only
+
+**Worked decomposition (multi-stage systems — assign each mechanism by its object):** producer's own pre-submit checking/iterating = self-conformance, NO theme · independent evaluation of the submitted artifact = detector (`rules-based-checks`/`ai-review` by epistemics; the *additional, producer-independent* checks are the oversight value; blocking on failure = the detector's enforcement edge) · deciding which findings matter, e.g. by severity + cross-model agreement (a computed, producer-independent signal) → `risk-routing` · governing the ensuing **autonomous fix path** (filters, bounds, convergence, fail-closed stop — no per-fix human) → `remediation-gating` · deciding when a fix must engage a **human** (risk tiers on the fix path) → `risk-routing`
+
+**Governance & policy**
+- `org-governance` — the *org-level governance apparatus* applied broadly: policy, **audit logging**, accountability, roles, maturity models, policy-as-code (internal; ≠ a single pipeline framework)
+- `regulatory-compliance` — *external* law/standards: EU AI Act Art.14, NIST AI RMF, ISO 42001, liability, audit evidence
+
+**Supply chain & provenance**
+- `tooling-supply-chain` — provenance/vetting of the AI **tools** (skills/MCP/agents); **+ attacks on the reviewer**; **+ poisoned/hallucinated dependencies as *entry-governance*** (registry vetting, allowlists — governing what enters). *Measuring* hallucinated/insecure deps in AI output → `ai-code-insecurity`. Excl. keyword false-positives (hardware trojans, classic supply-chain incidents)
+- `provenance-auditability` — traceability of AI **changes** so a human *can* review; auditable record; IP/licensing. Requires a **persistent record serving HUMAN reviewability/audit** — a point-in-time "what's in use now" view → `oversight-explanation`; persistence serving only agent coordination = plumbing
+
+## FACET TAGS (functional role; orthogonal — optional, apply if they fit)
+- `problem-statement-anchor` — a single committee-sit-up empirical stat **anchoring the OVERALL problem statement** (the scaling inversion / two-part frame) — NOT a sub-argument's or population-specific headline number, however vivid. Never on `lit-review` (secondhand — anchor the primaries)
+- `survey-input` — adoption / preference / RAI-priority finding useful for the org survey design; requires **substantive** findings — one incidental adoption stat ≠ membership
+- `intro-framing` — position / agenda / definitional paper that *names the gap* but **doesn't operationalize a mechanism**
+- `lit-review` — secondary literature (survey / review / meta-analysis) — **systematic OR narrative**; test = evidence *synthesized from other papers, not produced*. **If `lit-review` applies, the primary MUST be the biggest-tent theme** = the theme under which the largest share of the synthesized evidence would be cited; ties → the review's own framing question (never the most vivid/quantified section)
+- `counterpoint` — [role facet] the paper **argues against a prevailing position** (automation-maximalism, HITL value, oversight scaling — any direction); note *what it opposes* in the rationale. Often pairs with `intro-framing`
+
+**Artifact / evidence cluster** (composable; form → maturity):
+- `framework` — a **technical framework / reference architecture integratable into a build pipeline** (whether or not built). ≠ `theme:org-governance` (the org apparatus). A bare taxonomy/decision-model gets neither; **not a one-off point tool / bare point result** — a focused single-concern architecture qualifies (VibeGuard, Hedwig). Test: *would someone adopt it as a reusable pipeline design?* Composes: `framework`+`built-system`+`adopted`.
+- `built-system` — the authors *implemented* it as a working system/tool/prototype ("and they built it")
+- `adopted` — used **outside research** (commercial / production / real org use), beyond a lab prototype/benchmark. Scarce, high-signal; absence = prototype/proposal
+
+**Generation-mode scope pair** (which *setting* the paper studies; cut on **who initiates + the reviewable unit**, NOT tool location — agents live in IDEs too):
+- `assistive` — **human-initiated, suggestion-granularity** generation (inline completion, **snippet-level** chat-paste): the human authors in the flow, accepts piece-by-piece — a chat task returning a *complete artifact* is the tie-rule case below. Oversight surface = the *acceptance moment*.
+- `agentic` — **AI-initiated / AI-planned multi-step work** delivered at **artifact/PR granularity** for review. Oversight surface = the *gate*.
+- Apply either or **both** (paper compares/spans modes); **neither** = mode unspecified / irrelevant to the paper's claim. **The pair describes the *generation* studied:** "uses agents" ≠ `agentic`, "AI assists the human" ≠ `assistive` — AI only on the review/oversight side → **neither** + consider `general-code`. **Tie-rule:** initiator vs reviewable unit disagree (human-prompted chat task → complete artifact) → **the reviewable unit dominates** (wholesale artifact = the gate = `agentic`).
+
+**Scope / contribution / population flags:**
+- `general-ai` — [scope flag] governance/oversight is **general AI/LLM, not coding-specific** (model robustness, general RAI frameworks). Default (untagged) = coding-specific. Flags candidates for context.
+- `steering` — [contribution flag] the paper's proposed solution **or documented practice** operates on **generation** as a **substantive part of the contribution** — NOT any incidental prompt-shaping component every AI system has (prompts, specs, fine-tuning, shaping model inputs) rather than inspecting/gating the artifact. **Contribution, not topic.** Steering-**only** solution → demote candidate
+- `non-developer` — [scope flag] the generating/overseeing human is **not a professional developer** (end-user / business user / citizen developer). Default (untagged) = professional devs
+- `general-code` — [scope flag] the oversight/review mechanism targets **code generally, not AI-generated code** (AI may sit on the *review* side only); transfers to our setting but wasn't developed/evaluated there. Default (untagged) = the overseen object is AI code
+
+## WORKFLOW
+- **Thin input:** if only title+abstract (or degenerate text) is available → tag conservatively (no form facets / `lit-review` unless explicit in the abstract) and flag `insufficient-input` instead of guessing.
+- **Struggle signals → check the core bar:** can't pick a primary / stretching a definition to fill the set = the paper likely doesn't belong at core → `demote:context` and move on. Don't force tags to justify a disposition.
+- **Facet checklist — run all five questions on every paper** (misses cluster here; 29 tags exceed recall): **role** (problem-statement-anchor / survey-input / intro-framing / lit-review / counterpoint)? · **form** (framework → built-system → adopted)? · **scope** (general-ai? general-code? non-developer?)? · **mode** (assistive / agentic)? · **contribution** (steering)?
+- **PRIMARY** — one per paper. *Zotero entry only:* type `cal:human:primary:theme:<slug>`. In JSON output, the task block's bare-slug `primary_theme` field governs.
+  - **Tie-breaker** when a paper spans adjacent themes (route↔control-surface, AI-check↔human-gate): primary = the theme carrying its **distinctive novelty**, not the standard scaffolding.
+- **DEMOTE flag** (menu): `demote:context` — mis-scoped for core: **general-AI object · steering-only solution · pure tool benchmark** (capability benchmarking with no mechanism or deployable contribution; a benchmark *evaluating a contributed system* doesn't count) **· secondary lit · not operationalizable**. `general-code` alone is NOT a demote reason (it's the audit trail for kept-core transfers). Flag and keep going; batch-reviewed later. (`demote:discard` same pattern.)
+
+---
+# YOUR TASK
+Tag one CORE paper against the vocabulary above from its FULL TEXT below. Assign every theme the paper is
+a genuine MEMBER of, choose ONE primary theme (tie-breaker: the theme carrying the paper's DISTINCTIVE
+CONTRIBUTION/novelty, not standard scaffolding), and add any facet tags. Apply the STEERING
+EXCLUSION and the PLUMBING RULE before assigning solution themes. Answer the FIVE-QUESTION FACET
+CHECKLIST (role / form / scope / mode / contribution) before finalizing facets. Output ONLY one JSON object:
+{"key":"<KEY>","primary_theme":"<slug>","themes":["<slug>",...],"facets":["<slug>",...],"flags":["demote:context"],"rationale":{"<slug>":"<=12 words"}}
+("flags" is optional. Include "demote:context" ONLY for: general-AI object, steering-only solution, pure tool benchmark (no mechanism or deployable contribution), secondary lit, not operationalizable — general-code alone is NOT a demote reason. If only title+abstract or degenerate text is available, tag conservatively (no form facets or lit-review unless explicit) and include "insufficient-input" in flags instead of guessing. Allowed flags: demote:context, demote:discard, insufficient-input. Never put flags in "facets".)
+Use bare slugs. Base every tag on document content.
+
+=== PAPER FULL TEXT ===
+arXiv:2603.25928v1 [cs.SE] 26 Mar 2026
+
+Self-Organizing Multi-Agent Systems for Continuous Software
+Development
+Wenhan Lyu
+
+Yue Xiao
+
+William & Mary
+Williamsburg, VA, USA
+wlyu@wm.edu
+
+William & Mary
+Williamsburg, VA, USA
+yxiao05@wm.edu
+
+Yixuan Zhang
+
+Yifan Sun
+
+William & Mary
+Williamsburg, VA, USA
+yzhang104@wm.edu
+
+William & Mary
+Williamsburg, VA, USA
+ysun25@wm.edu
+
+Abstract
+Large Language Model-based multi-agent systems have shown
+promise in automating software development tasks. However, most
+vibe code systems focus on completing small tasks and incremental
+code changes, leaving persistent, continuous software development
+largely unexplored. We present TheBotCompany1 , an open-source
+orchestration framework for continuous multi-agent software development. TheBotCompany introduces three key innovations:
+(1) a three-phase state machine (Strategy → Execution → Verification) for milestone-driven development, (2) self-organizing
+agent teams where manager agents dynamically hire, assign, and
+fire worker agents based on project needs, and (3) asynchronous
+human oversight. We evaluate TheBotCompany on real-world
+software projects over multiple days of continuous development,
+measuring team adaptation patterns, milestone completion rates,
+cost efficiency, and code quality. Our results demonstrate that the
+self-organizing approach enables effective long-term software development with measurable progress, while the verification phase
+catches defects that would otherwise persist.
+ACM Reference Format:
+Wenhan Lyu, Yue Xiao, Yixuan Zhang, and Yifan Sun. 2026. Self-Organizing
+Multi-Agent Systems for Continuous Software Development. In . ACM, New
+York, NY, USA, 12 pages. https://doi.org/10.1145/nnnnnnn.nnnnnnn
+
+1
+
+Introduction
+
+Software development is fundamentally a continuous process [17,
+21, 28]. Real-world projects evolve over weeks, months, and years
+through iterative cycles of planning, implementation, testing, and
+revision [8, 27, 34]. Engineers join and leave teams, priorities shift
+as requirements change, and the scope of work adapts in response
+to emerging constraints and discoveries [19, 36, 53]. Recent Large
+1 https://github.com/syifan/thebotcompany
+
+Permission to make digital or hard copies of all or part of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed
+for profit or commercial advantage and that copies bear this notice and the full citation
+on the first page. Copyrights for components of this work owned by others than the
+author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or
+republish, to post on servers or to redistribute to lists, requires prior specific permission
+and/or a fee. Request permissions from permissions@acm.org.
+Conference’17, Washington, DC, USA
+© 2026 Copyright held by the owner/author(s). Publication rights licensed to ACM.
+ACM ISBN 978-x-xxxx-xxxx-x/YYYY/MM
+https://doi.org/10.1145/nnnnnnn.nnnnnnn
+
+Language Model (LLM)-based tools have made rapid progress on
+code generation and repair [9, 49], and multi-agent frameworks
+such as ChatDev [42] and MetaGPT [22] have shown that organizing LLM agents into role-specialized teams can yield functional
+software from natural language specifications. However, these systems mostly operate in isolated, session-scoped interactions—a user
+provides a prompt, the system generates code in minutes, and the
+session ends with limited ability to maintain context across sessions,
+track cumulative project-level progress, or resume and iterate on
+prior work [6, 15, 24].
+We identify three specific gaps in existing approaches. First, limited persistent orchestration: current systems (e.g., ChatDev [42],
+MetaGPT [22], and single-agent tools such as SWE-Agent [49] and
+OpenHands [48]) are primarily designed for single-session execution (each run addresses one task and terminates). While agents
+can be re-invoked on the same repository, existing frameworks
+lack built-in mechanisms to track cumulative progress toward milestones, carry forward verification feedback, or automatically resume
+work after interruptions [10, 20, 38]. As such, it makes long-horizon
+projects that require iterative refinement over days or weeks difficult to sustain, as the coordination context must be manually
+reconstructed between sessions. Second, static or session-scoped
+team composition: In ChatDev, MetaGPT, AgileCoder [35], and
+ALMAS [45], agent roles are predetermined by the framework designer and remain fixed throughout execution. Recent work on
+dynamic composition—AgentVerse [13], DyLAN [32], and SelfOrganized Agents [25]—adjusts team membership within a single
+session, but does not persist team adaptations across development
+cycles or adapt workforce composition in response to verification
+feedback from prior milestones. Yet real software teams routinely
+evolve their composition as projects progress—adding a security
+specialist when a vulnerability surfaces, or retiring a prototyping
+role once architecture stabilizes [19]. Bridging this gap requires
+a team composition that is both dynamic and persistent across
+the lifecycle of a project. Third, synchronous human oversight:
+Existing systems support human involvement primarily through
+synchronous interaction: users either specify requirements before
+execution, monitor and intervene in real time during a session, or
+review outputs afterward [48]. However, real-world software oversight is largely asynchronous, meaning that clients file issues, and
+managers adjust priorities in a tracker, and developers consume
+this guidance at natural transition points without blocking ongoing
+
+Conference’17, July 2017, Washington, DC, USA
+
+Wenhan Lyu, Yue Xiao, Yixuan Zhang, and Yifan Sun
+
+work [1, 20]. Current frameworks lack a channel for humans to
+2 Related Work
+steer multi-day development asynchronously, with agents picking
+LLM-based code generation. LLMs have demonstrated strong
+up guidance when contextually appropriate rather than requiring
+capabilities in code generation, progressing from function-level
+immediate attention.
+synthesis [5, 12, 30] to repository-level tasks [26, 49, 52]. Early
+To address these gaps, we present TheBotCompany, an openwork (e.g., Codex [12], AlphaCode [30]) demonstrated that AI could
+source orchestration framework for continuous, multi-agent softsolve competitive programming problems and generate correct
+ware development. To enable persistent orchestration, TheBotComimplementations from natural-language descriptions. Generative
+pany organizes development around milestones, discrete units of
+AI’s coding capabilities are being rapidly commercialized through
+work that progress through a repeating three-phase lifecycle: a
+tools such as GitHub Copilot [16], Claude Code [3], and OpenAI
+Strategy manager defines the next milestone with concrete obCodex [37]. Subsequent models, including StarCoder [29], CodeLjectives, an Execution manager assembles and adapts a team of
+lama [43], and DeepSeek-Coder [18], improved generation qualworker agents to implement it, and a Verification manager inity through larger training corpora and specialized fine-tuning.
+dependently evaluates the result, rejecting incomplete work with
+These advances provide the per-invocation generation capability
+structured feedback to trigger corrective cycles. The three-phase
+that TheBotCompany’s agents rely on, but they do not address
+design mirrors the plan–implement–review cycle established in
+coordination, persistence, or quality assurance across extended
+iterative software engineering practice [50] and separates concerns
+development efforts—the concerns that motivate a multi-agent orso that no single agent both produces and judges its own output.
+chestration layer.
+This lifecycle repeats continuously, with full project state persisted
+Single-agent software development systems. A growing
+across cycles, driving sustained progress across days to weeks of
+body of work focuses on single-agent systems that autonomously
+unattended operation.
+perform software engineering tasks. SWE-Agent [49] introduced
+To replace static team composition, agent teams in TheBotComan agent-computer interface that enables an LLM to navigate repospany are self-organizing: only the three manager roles are peritories, edit files, and run tests to resolve GitHub issues, driving
+manent, while managers dynamically hire, specialize, and retire
+rapid progress on SWE-bench Verified [26]. Later work (e.g., Openworker agents based on milestone demands. Workers’ skills are
+Hands [48], RepairAgent [9]) generalized this model with broader
+defined by persistent skill files that managers generate or modify
+agent architectures, sandboxed execution, and iterative program
+as project needs evolve, enabling the workforce to adapt without
+repair. However, all these systems operate within a single invocaframework-level reconfiguration.
+tion session per task. Each run starts from a clean state, addresses
+To support asynchronous human oversight, TheBotCompany
+one issue, and terminates, with no mechanism to maintain context
+provides a web-based monitoring platform through which human
+across tasks, learn from prior resolutions, or coordinate multiple
+users can inspect project progress, review agent reports and comtasks toward a coherent development objective. Quality assurance
+munications, and file issues that manager agents consume at natural
+remains limited to executing pre-existing test suites associated with
+phase boundaries, which steer development without interrupting
+the target issue, and no system implements an independent verin-progress work. If necessary, human users can raise issues, which
+ification stage that evaluates whether produced changes satisfy
+agents can pick up at an appropriate time, mimicking the natural
+broader project-level goals—a gap that TheBotCompany’s verificaworkflow of the real-world software development process.
+tion phase directly addresses.
+We evaluate TheBotCompany on four real-world software projects
+Multi-agent software development systems. Multi-agent
+over days of continuous operation, along with benchmark-based
+frameworks address the coordination gap by organizing LLM-powered
+evaluations to catch team adaptation, verification-driven quality
+agents into collaborative teams that mirror human software orgaimprovement, failure recovery, and practical lessons for future
+nizations. ChatDev [42] introduced a simulated software company
+multi-agent systems.
+with role-specialized agents (CEO, CTO, programmer, tester) comThe contributions of this paper are:
+municating through structured dialogue along a waterfall pipeline.
+(1) The design and implementation of TheBotCompany, an openLater frameworks refined this model in different ways. For example,
+source orchestration framework that introduces persistent, milestone- MetaGPT [22] replaced freeform chat with shared artifacts governed
+driven development to multi-agent software engineering, inby Standard Operating Procedures, AgileCoder [35] introduced
+cluding a human-in-the-loop monitoring model that enables
+sprint-based iterative refinement, and ALMAS [45] aligned agents
+asynchronous oversight and intervention.
+with agile roles to cover end-to-end software lifecycle stages. In all
+(2) A self-organizing team model in which manager agents dynamthese systems, however, team composition is fixed at design time:
+ically hire, specialize, reassign, and retire worker agents based
+roles are predetermined by the framework designer and remain
+on evolving milestone demands, replacing the fixed-role teams
+static throughout execution, preventing the system from adapting
+of prior frameworks with adaptive workforce composition.
+its workforce as project demands evolve.
+(3) An empirical evaluation on real-world projects over days of
+Dynamic agent team composition. A growing body of work
+continuous operation, along with lessons learned that provide
+explores dynamic agent composition beyond fixed-role teams. Agentpractical implications for the design of future multi-agent softVerse [13] and AutoAgents [11] adjust group membership or genware development systems.
+erate custom teams during task-solving based on progress or task
+
+Self-Organizing Multi-Agent Systems for Continuous Software Development
+
+descriptions. DyLAN [32] refines this with a principled agent selection algorithm based on unsupervised importance scores. SelfOrganized Agents [25] introduces hierarchical spawning, where
+“mother” agents create specialized “child” agents scaled to problem
+complexity. MegaAgent [47] and Think-on-Process [31] go further,
+generating agent roles and development processes entirely from
+project requirements without predefined SOPs. ChatDev’s Experiential Co-Learning [40] and Iterative Experience Refinement [41] take
+a complementary approach, transferring task-solving experience
+across a series of projects. These systems represent the closest precursors to TheBotCompany’s self-organizing approach. However,
+all operate within a single execution session or batch of independent tasks: none maintain team state across development cycles,
+adapt workforce composition in response to verification feedback
+from prior milestones, or implement an independent verification
+stage that can reject deliverables and trigger corrective iterations.
+TheBotCompany addresses all three gaps, with managers who
+compose and retire worker teams as milestone demands evolve
+over days of continuous operation, and an adversarial verification
+phase that closes the quality assurance loop before systems are
+released.
+
+3 TheBotCompany
+3.1 Architecture Overview
+TheBotCompany (see Figure 1 for an overview) is organized around
+several key concepts as listed below.
+A project corresponds to a software repository under active
+development. Each project maintains persistent memory across
+sessions through a layered storage model (orchestration state, milestone history, an issue tracker with inter-agent comments, cycle
+reports, and a cost ledger), allowing it to survive restarts, resume
+mid-milestone, and provide agents with a complete, auditable record
+of prior decisions. Multiple projects run simultaneously on a single
+TheBotCompany instance, each progressing independently with
+fully isolated memory.
+A milestone is the fundamental unit of work in TheBotCompany, representing a discrete development objective. As real-world
+software projects are too large for any single agent invocation to
+address end-to-end, milestones break a long-term project goal into
+manageable pieces that can each be planned, implemented, and verified independently. A dedicated agent team (Athena) is responsible
+for milestone planning. Milestones are organized hierarchically
+using dotted numbering (e.g., 1, 1.1, 1.1.2). The hierarchical design
+allows the system to automatically adapt milestone granularity to
+the agents’ capabilities by breaking unachievable milestones into
+smaller tasks.
+The orchestrator is the central coordination layer, implemented
+in JavaScript and running on Node.js. It drives each project through
+development cycles (subsection 3.2), invoking agents according to
+the current phase, tracking progress, and managing phase transitions. The orchestrator does not make software engineering decisions itself; rather, it provides the scheduling infrastructure that
+enables agents to operate autonomously within a structured lifecycle. It is responsible for enforcing time limits, detecting failures,
+and maintaining persistent state across cycles.
+
+Conference’17, July 2017, Washington, DC, USA
+
+The harness is responsible for directly interacting with LLMs.
+We use the pi-ai library [51] for unified multi-provider LLM access, streaming, tool calling, and per-call token tracking. On top
+of pi-ai, TheBotCompany adds automatic context compaction,
+tiered model routing, retry logic with exponential backoff, and
+structured directive parsing from agent responses.
+Agents are the autonomous actors that perform all software
+engineering work. Each agent is an LLM-based coding agent with
+access to a project’s repository, command-line tools, and a structured communication channel backed by an internal issue tracker.
+Agents are divided into two categories:
+Manager agents are three permanent agents, each assigned to a
+distinct phase of the milestone lifecycle: Athena (planning), Ares
+(implementation), and Apollo (verification)2 . Each milestone passes
+through all three managers in sequence. Managers make strategic
+and organizational decisions by defining milestones, assembling
+teams, assigning tasks, and evaluating outcomes.
+Worker agents are the autonomous actors that perform all
+assigned software engineering work. Each agent is an individual
+LLM-based coding agent, and it may be driven by different LLM
+models in the same project based on the manager agents’ decision.
+A worker is visible only to their manager, enforcing phase-scoped
+team isolation. Workers perform the actual software engineering
+tasks: writing and refactoring code, running test suites, opening
+pull requests, and producing artifacts. Each worker handles exactly
+one task per cycle, eliminating concurrent conflicting actions.
+Team management is achieved by managers creating, assigning, and retiring workers in response to milestone needs. Each
+worker is defined by a skill file. A skill file is a Markdown document with YAML front matter that specifies the worker’s role (e,g.,
+“backend developer,” “test engineer,” “documentation writer”), their
+reporting manager, and their LLM model tier. Skill files persist in
+the project workspace across cycles.
+Budget management enforces a user-configured 24-hour rolling
+spending limit, as autonomous agents invoking commercial LLM
+APIs can incur substantial costs if left uncontrolled. When a project
+falls below a safety threshold, the orchestrator introduces adaptive
+sleep intervals between agents to spread expenditure over the remaining time horizon; once the budget is fully exhausted, it sleeps
+until budget replenishes at the start of the next window before
+resuming automatically.
+Agent communication is achieved within TheBotCompany
+through an issue system (similar to GitHub issues and comments)
+provided within TBC.
+The human user configures a project by answering two specification questions—What do you want to build? and How do you
+consider the project a success?—and supplying a repository path and
+budget. Beyond this setup, users can monitor, supervise, and raise
+issues in TheBotCompany to provide guidance.
+
+3.2
+
+Three-Phase Milestone Lifecycle
+
+Software development in TheBotCompany is organized around
+milestones, discrete units of work with defined objectives and cycle budgets. Projects progress through a repeating three-phase
+2We use names from Greek mythology for the three manager roles throughout this
+
+paper for clarity of exposition.
+
+Conference’17, July 2017, Washington, DC, USA
+
+Wenhan Lyu, Yue Xiao, Yixuan Zhang, and Yifan Sun
+
+Human User
+
+Monitoring Dashboard & Push Alerts
+
+Supervisory: configures, monitors, intervenes asynchronously
+
+① INITIAL SETUP
+
+② WHILE RUNNING — ASYNC INTERVENTION
+
+What to Build
+
+Success Criteria
+
+Repository & Budget
+
+Pause / Resume
+
+
+exec
+/bin/zsh -lc "sed -n '321,760p' slr-phase4/txt/UB2EVUFU.txt" in /Users/scott/Library/CloudStorage/OneDrive-purdue.edu/Systemic Literature Review
+ succeeded in 0ms:
+Async Intervention
+
+Notifications / Project Complete
+
+Phase transitions · budget control · retry & resilience
+
+① STRATEGY
+
+Communicate and Work in CLI
+
+② EXECUTION
+
+Athena
+
+Ares
+
+Planning Manager
+
+Implementation Manager
+
+● Assess project state
+● Define milestone + budget
+
+MILESTONE
+DEFINITION
+
+● Maintain roadmap
+
+EXAMPLE WORKERS
+Researcher
+
+Continue / Improve
+
+Watch Log & Summary
+
+Spec + Budget
+
+Orchestrator
+
+③ AFTER COMPLETION
+
+File Issue (Human Request)
+
+Analyst
+
+③ VERIFICATION
+Apollo
+QA Manager
+
+● Emit worker schedules
+● Hire / reassign / retire workers
+
+CLAIM
+COMPLETION
+
+● Claim milestone completion
+
+Tester
+
+● Demand concrete evidence
+● Issue pass / fail verdict
+
+EXAMPLE WORKERS
+Developer
+
+● Independent evaluation
+
+EXAMPLE WORKERS
+Docs Writer
+
+QA Reviewer
+
+Runner
+
+FAIL
+PASS (Next Milestone)
+
+Git Repository
+
+Shared codebase, PRs, commits
+
+SQLite Issue Tracker
+
+Database CLI, async agent communication
+
+Agent Workspaces
+
+note.md, skill files, per-agent memory
+
+Figure 1: Architecture of TheBotCompany. The human monitors the system through a dashboard connected to the orchestrator,
+which drives a three-phase milestone lifecycle (Strategy → Execution → Verification). Manager agents govern each phase and
+dynamically hire/fire worker agents. Solid arrows show normal progression; dashed arrows show recovery paths. All agents
+access shared infrastructure through a common bus.
+Algorithm 1 Orchestrator main loop.
+Require: Project 𝑃
+1: loop
+2:
+𝑚𝑖𝑙𝑒𝑠𝑡𝑜𝑛𝑒, 𝑏𝑢𝑑𝑔𝑒𝑡 ← Athena’s Team.Plan (𝑃 )
+3:
+repeat
+4:
+Ares’s Team.Execute (𝑃, 𝑚𝑖𝑙𝑒𝑠𝑡𝑜𝑛𝑒, 𝑏𝑢𝑑𝑔𝑒𝑡, 𝑐𝑦𝑐𝑙𝑒 )
+5:
+𝑣𝑒𝑟𝑑𝑖𝑐𝑡 ← Apollo’s Team.Verify (𝑃, 𝑚𝑖𝑙𝑒𝑠𝑡𝑜𝑛𝑒 )
+6:
+if 𝑣𝑒𝑟𝑑𝑖𝑐𝑡 ≠ Pass then
+7:
+𝑏𝑢𝑑𝑔𝑒𝑡 ← ⌊𝑏𝑢𝑑𝑔𝑒𝑡 /2⌋
+8:
+end if
+9:
+until 𝑣𝑒𝑟𝑑𝑖𝑐𝑡 = Pass or 𝑏𝑢𝑑𝑔𝑒𝑡 = 0
+10: end loop
+
+lifecycle—Strategy, Execution, and Verification (see Algorithm
+1 for the main loop of TheBotCompany)—modeled on the plan –
+implement – review cycle of real-world software engineering practice for improved multi-agent performance [50].
+The Strategy phase. Athena keeps the project moving toward
+the user-defined goal. Drawing on the project specification, the
+issue tracker (which may contain user intervention requests), the
+codebase, and any feedback from prior verification failures, Athena
+assesses overall progress, reconciles new requirements with the
+existing plan, defines a concrete next milestone with a title, description, and cycle budget, and updates a persistent roadmap.
+The Execution phase. Ares receives the milestone definition
+and is responsible for achieving it within the allocated cycle budget.
+Each cycle, Ares assesses progress and emits a schedule, which is
+an ordered list of workers and their tasks. When Ares judges the
+
+Algorithm 2 Ares’s team execution cycles. Other teams follows a
+similar structure without a cycle budget.
+Require: Project 𝑃 , milestone 𝑚 , budget 𝑏
+1: for 𝑐𝑦𝑐𝑙𝑒 = 1 to 𝑏 do
+2:
+𝑠𝑐ℎ𝑒𝑑𝑢𝑙𝑒 ← Ares.Assess (𝑃, 𝑚, 𝑏, 𝑐𝑦𝑐𝑙𝑒 )
+3:
+if Ares claims completion then
+4:
+break
+5:
+end if
+6:
+for each item 𝑖 in 𝑠𝑐ℎ𝑒𝑑𝑢𝑙𝑒 do
+7:
+if 𝑖 is a delay then
+8:
+sleep(𝑖.duration)
+9:
+else
+10:
+𝑖.worker.Execute (𝑃, 𝑖.task )
+11:
+end if
+12:
+end for
+13: end for
+
+milestone complete, it issues a completion claim and the orchestrator transits the project to the Verification phase. If the budget
+expires before completion, control returns to the Strategy phase.
+Algorithm 2 details how Ares’s team executes a milestone. Athena’s
+and Apollo’s teams follow a similar cycle structure but without a
+cycle budget, as they complete in a single cycle.
+The Verification phase. Apollo independently evaluates whether
+the claimed milestone has been achieved. It may assemble a verification team to run tests, inspect code, or perform quality checks, then
+issue a pass or fail verdict with structured feedback. On a pass, the
+system advances to the next Strategy phase. On a fail, if remaining
+budget permits, the system returns to Execution with the budget
+
+Self-Organizing Multi-Agent Systems for Continuous Software Development
+
+halved and Apollo’s feedback, giving the execution team a bounded
+opportunity to address deficiencies. The budget halves on each
+subsequent failure, progressively tightening the fix window; once
+exhausted, the milestone is marked failed, and control returns to
+Athena. This exponential decay prevents indefinite cycling while
+allowing multiple correction attempts. Apollo is designed to be
+adversarial to demand concrete evidence, such as test output or
+CI results, rather than accepting claims at face value, mirroring
+the separation between development and QA in human software
+organizations.
+Structured directives. Manager agents communicate decisions
+to the orchestrator through structured directive blocks embedded in
+their natural language responses. These directives follow a defined
+schema and enable machine-parseable coordination:
+• Milestone directives (Athena) specify the milestone title, description, and cycle budget.
+• Schedule directives (Ares and Apollo) specify workers, their tasks,
+optional per-agent delays, and visibility modes.
+• Completion claims (Ares) signal that the milestone objectives
+have been met.
+• Verification verdicts (Apollo) record pass/fail decisions with structured feedback identifying specific deficiencies.
+• Project completion directives (Athena) signal that the project’s
+ultimate goal has been fully achieved, causing the orchestrator
+to pause and notify the user.
+The orchestrator parses these directives to drive phase transitions and schedule worker invocations. Manager agents do not
+communicate with each other directly. Instead, all cross-phase information is mediated by the orchestrator. Specifically, verification
+feedback from Apollo is injected by the orchestrator into Ares’s
+prompt context at the start of each fix round, and each manager
+receives the current milestone definition and relevant orchestration
+state in its context when its phase begins. This design keeps coordination logic within the agents’ natural language output while
+providing the structure needed for automated orchestration.
+
+3.3
+
+Agent Teaming
+
+Self-organizing agent teams. Only the three manager roles are
+permanent, while the worker team is entirely at each manager’s
+discretion. Workers are defined by skill files. Each manager may
+only hire and schedule workers who report to them: Athena may
+assemble a temporary research team, Ares composes developers
+and testers, and Apollo staffs QA specialists. We find that the semistructured design best combines the human wisdom (predefined
+structure) and AI intelligence (guides concrete worker jobs). The
+design can maintain a reasonable workflow while keeping the team
+flexible to the task at hand.
+Information control. Managers control not only what workers
+do but also what they see. When scheduling a worker, a manager
+specifies a visibility mode: Full exposes all open issues; Focused exposes only a manager-specified subset (reducing irrelevant context);
+and Blind provides no issue board context, useful for independent
+verification tasks where prior discussion might bias the worker.
+The orchestrator propagates the chosen mode via an environment
+variable injected into the agent’s invocation, which the tbc-db CLI
+respects when responding to issue queries.
+
+Conference’17, July 2017, Washington, DC, USA
+
+Coordination. Agent coordination is backed by a per-project
+SQLite database. SQLite is preferred over cloud-hosted trackers
+(e.g., GitHub Issues) for three reasons: (1) local queries complete
+in microseconds versus hundreds of milliseconds for remote API
+calls; (2) cloud rate limits become binding when multiple agents are
+active across several projects simultaneously; and (3) agent internal
+deliberation (e.g., failed attempts, experimental branches) should
+not pollute the project’s public issue tracker or inadvertently trigger
+notifications by @-mentioning real users who share agent names.
+Issue tracking. Agents communicate asynchronously through
+an issue tracker modeled on GitHub Issues. The schema stores issues
+(with title, description, status, and assigned agent), threaded comments, milestone history, complete per-invocation agent reports
+(including parsed directive blocks), and the active agent registry.
+Managers open issues to define work items; workers post comments with progress updates; the verification team records findings.
+Agents access the database through tbc-db, a CLI injected into
+every agent environment whose commands follow natural conventions (e.g., tbc-db issue list --status open) and produce
+human-readable output that fits within an agent’s context window.
+Agent-local knowledge base. Because each agent invocation
+starts with a fresh context window, agents face a cold-start problem.
+To mitigate this, the orchestrator injects a persistent note.md into
+each agent’s context on every invocation. Agents update this file
+freely—recording conventions, known pitfalls, and architectural
+decisions—and may create additional workspace files (checklists,
+analysis reports, acceptance criteria logs) that accumulate across
+cycles into a role-tailored knowledge base.
+
+3.4
+
+Monitoring Dashboard
+
+TheBotCompany includes a Progressive Web App (PWA) monitoring dashboard served by the orchestrator’s built-in HTTP server
+(no separate backend required), communicating via REST and a
+Server-Sent Events (SSE) stream for real-time updates. Web Push
+(VAPID) notifications alert users to milestone completions, verification failures, or system errors on mobile devices even when the
+browser is closed, supporting unattended operation.
+Process inspection. The dashboard (Figure 2) displays current phase, active milestone, cycle counter and budget remaining,
+per-agent status, and cost metrics. A key capability is live agent
+streaming: while an agent runs, its console output, including reasoning, tool calls, file edits, and command execution, is streamed in
+near-real-time, letting users understand how decisions are reached
+rather than just their outcomes. Completed reports are archived
+and filterable per agent; an open-PRs panel aggregates pull requests
+created by agents across all projects.
+Intervention and emergency reset. Users steer development
+by filing issues in the project tracker—the same mechanism agents
+use—which manager agents pick up asynchronously in subsequent
+cycles. Strategic redirection flows through the management hierarchy (Athena consumes user issues first) rather than disrupting
+in-progress workers. When the system enters a degenerate state
+(e.g., repeated verification failures cycling without progress), the
+bootstrap operation immediately halts all agents, clears the current
+milestone, and resets the phase to Strategy so the user can file
+corrective guidance before Athena re-plans from scratch.
+
+Conference’17, July 2017, Washington, DC, USA
+
+Wenhan Lyu, Yue Xiao, Yixuan Zhang, and Yifan Sun
+
+Figure 2: The monitoring dashboard showing project status, orchestrator state, cost tracking, worker activity, open PRs, and
+live agent output streaming.
+
+4
+
+Evaluation
+
+We evaluate TheBotCompany through deployment on real-world
+software projects over multiple weeks of continuous, largely unattended operation.
+
+4.1
+
+Research Questions
+
+RQ1: Can a self-organizing multi-agent system make progress
+toward defined quality objectives over multi-day continuous
+operation? We measure whether TheBotCompany can make cumulative progress (completing milestones, resolving issues, and
+growing codebases) without reverting to a degenerate state where
+cycles produce no useful work.
+RQ2: How does the self-organizing multi-agent approach
+compare against single-agent baselines on hard end-to-end
+development tasks? A core motivation of TheBotCompany’s
+design is that coordinated multi-agent execution should outperform single-agent approaches on development tasks requiring prolonged effort and iterative refinement. We evaluate TheBotCompany against Claude Code on the five hardest problems from ProjDevBench [33], a recent end-to-end benchmark that evaluates
+coding agents on system architecture design and functional correctness in repositories with minimal external intervention. The
+comparison isolates the contribution of multi-agent coordination
+from model capability by holding the underlying LLM constant in
+one condition while varying models in the single-agent baseline.
+RQ3: How does the verification phase behave in practice,
+and what defects does it surface? The three-phase lifecycle
+
+introduces an independent verification step that may reject an
+ostensibly completed milestone and trigger a fix round. We conduct
+a systematic log-based analysis of verification behavior across all
+observed milestones, providing an empirical characterization of
+whether the verification step catches substantive defects rather
+than being a passive pass-through.
+RQ4: What is the cost profile of continuous multi-agent development, and how does token efficiency compare to singleagent baselines? Autonomous development using commercial
+LLM APIs incurs a direct monetary cost that scales with system
+complexity. We analyze the cost structure of TheBotCompany
+across the projects run in our experiments: cost per milestone, token
+consumption breakdown by agent role (manager overhead versus
+worker productivity), and the effectiveness of the budget-aware
+scheduling mechanism in preventing overruns. For comparative
+purposes, we report total token consumption for ProjDevBench
+problems across TheBotCompany and Claude Code, providing
+a quantitative measure of cost-efficiency relative to single-agent
+execution on identical tasks.
+RQ5: What are the dominant failure modes, and how effective
+are the recovery mechanisms? Long-running systems experience
+diverse failures, including agent timeouts, model errors, incorrect
+code, and infrastructure disruptions. We categorize observed failures, measure their frequency, and evaluate how effectively the
+recovery mechanisms (timeout escalation, consecutive-failure detection, cycle accounting, commit-early policy) preserve progress
+and prevent resource waste.
+
+Self-Organizing Multi-Agent Systems for Continuous Software Development
+
+4.2
+
+Conference’17, July 2017, Washington, DC, USA
+
+Table 1: Long-Running Project Deployments.
+
+Experimental Setup
+
+4.2.1 Subject Projects. We evaluate TheBotCompany on two categories of experiments: a standardized benchmark and long-running
+real-world projects.
+Benchmark evaluation. We select the five problems designated as
+the hardest in ProjDevBench [33], an end-to-end coding benchmark
+that evaluates agents on full project development from requirements, assessing system architecture design, functional correctness,
+and iterative refinement. Each problem targets a C++ implementation and is evaluated on two dimensions: an execution score
+(automated Online Judge (OJ) testing, 80 points maximum) and
+an overall score (100 total) that adds LLM-assisted code review
+(20 points). We run TheBotCompany under identical conditions
+to those prescribed by ProjDevBench, where coding agents can
+retry when an OJ test fails, up to a predefined maximum number
+of attempts.
+Long-running projects. We choose four projects of varying character, complexity, and implementation language.
+• Project A (M2Sim): A cycle-accurate, execution driven, Apple
+M2 CPU simulator written in Go, targeting correct execution
+of all benchmarks in the Polybench [39] and Parsec [7] suites
+with timing estimation error below 20% on average and 50% per
+benchmark.
+• Project B (GroundDB): A from-scratch, Python relational database engine with no external database or SQL parsing dependencies, targeting TPC-H benchmark [14] correctness.
+• Project C (RustLaTex): A LATEX compiler in Rust, targeting document parsing, layout computation, and PDF output similarity
+with other LATEX compiler outputs.
+• Project D (PyInterpreter): A Python interpreter implemented
+in C++. Note that Project D is drawn from the ProjDevBench
+problem set, providing a direct bridge between the benchmark
+evaluation and the long-running project track.
+These projects span four implementation languages (Go, Python,
+Rust, C++) and four domains (systems simulation, database engines,
+tooling, compiler/interpreter), covering a range of project durations
+and complexity levels.
+4.2.2 Baselines. For the ProjDevBench evaluation, we compare
+TheBotCompany against Claude Code instantiated with five model
+backends evaluated in the original benchmark, spanning both closedand open-weight frontier models. TheBotCompany is restricted
+to Claude Sonnet 4.5 as its backend, prohibiting other models to
+ensure a fair comparison. ProjDevBench is chosen as the primary
+evaluation vehicle because it shares the same operational premise
+as TheBotCompany: given a repository initialized from scratch, the
+system must develop it autonomously with only limited feedback
+from an online judge, whereas the majority of existing code agent
+benchmarks (e.g., SWE-bench [26]) focus on resolving discrete, preexisting issues in established codebases, a fundamentally different
+task structure.
+For the long-running project evaluation, no equivalent singleagent baseline exists, as running multi-day development sessions
+with Claude Code on the same proprietary projects under controlled
+conditions was not feasible; cost and workflow analysis for these
+projects is therefore self-contained rather than comparative.
+
+Project
+
+Language
+
+A (M2Sim)
+Go
+B (GroundDB)
+Python
+C (RustLaTex)
+Rust
+D (PyInterpreter) C++
+
+Milestones
+12
+4
+95
+53
+
+Cycles
+
+Cost
+
+Duration (hours)
+
+105 $527
+17 $33
+392 $700
+102 $261
+
+49.1
+2.6
+62.9
+27.8
+
+4.2.3 Metrics.
+• Progress metrics: Milestones completed, commits, lines of code
+added or modified, test cases added, and benchmark scores (execution score and overall score for ProjDevBench problems).
+• Verification behavior: Apollo invocation count, verification
+rejection rate, defect categories identified at rejection, fix-round
+iteration count, and milestone-level rework patterns extracted
+from orchestrator logs.
+• Cost and token metrics: Total token consumption, cost per milestone, token breakdown by agent role (manager versus worker),
+and budget scheduling effectiveness measured by overrun incidents.
+• Reliability metrics: Timeout rate, consecutive failure events,
+cycle waste ratio (failed cycles divided by total cycles), and mean
+cycles to recovery per failure episode.
+All metrics are collected automatically from the SQLite communication stores, cost tracking logs, Git history, and server logs
+maintained by TheBotCompany during operation.
+
+4.3
+
+
+exec
+/bin/zsh -lc "sed -n '761,1240p' slr-phase4/txt/UB2EVUFU.txt" in /Users/scott/Library/CloudStorage/OneDrive-purdue.edu/Systemic Literature Review
+ succeeded in 0ms:
+Results
+
+4.3.1 RQ1: Continuous Development Effectiveness. Table 1 summarizes the four long-running deployments. Across all projects,
+TheBotCompany completed 164 milestones and 616 agent cycles
+spanning 137 wall-clock hours, reaching the primary quality objective in every case without human intervention. No project exhibited
+the degenerate behavior we guarded against. Cycle waste ratios
+were low and only occurred in two projects: 5.3% in M2Sim, and
+in RustLaTex, 27 fix-round milestones account for a 6.9% waste
+ratio. Worker agents absorbed 70.6% of total token cost on average,
+with Athena’s planning share remaining at 9.8%, confirming that
+orchestration overhead does not crowd out implementation capacity as codebases grow. The projects also show that TheBotCompany adapts to widely varying task complexity without structural
+change: GroundDB completed in 17 cycles with a tight correctness
+oracle, while RustLaTex required 392 cycles as each layout change
+interacted with competing rendering constraints—both trajectories
+exhibit forward progress rather than oscillation.
+Finding (RQ1): TheBotCompany sustained forward progress across
+all four long-running projects, spanning four languages (Go, Python,
+Rust, C++) and three architectural paradigms, completing 164 milestones, 616 cycles, and 137 wall-clock hours without human intervention beyond initial project configuration.
+4.3.2 RQ2: Comparison with Single-Agent Baselines. Table 2 reports
+scores on the five hard problems from ProjDevBench. TheBotCompany (sole Claude Sonnet 4.5) achieves a mean execution score of
+53.2 and overall score of 70.0, leading all five single-agent baselines.
+
+Conference’17, July 2017, Washington, DC, USA
+
+Wenhan Lyu, Yue Xiao, Yixuan Zhang, and Yifan Sun
+
+Table 2: ProjDevBench Results: Execution Score (max 80) and
+Overall Score (max 100). TheBotCompany uses Claude Sonnet 4.5 as its sole backend during these tasks. All other models
+run in Claude Code. Bold indicates column maximum.
+#
+
+Sonnet 4.5
+
+DeepSeek-v3.2-exp
+
+GLM-4.6
+
+GPT-5
+
+Kimi-K2
+
+Execution Score (max 80)
+P3
+48.0
+0.0
+P4
+61.4
+68.2
+P15 71.1
+62.2
+P16
+62.9
+80.0
+P17 22.4
+7.5
+
+TBC
+
+0.0
+9.0
+44.4
+80.0
+7.5
+
+0.0
+7.2
+62.2
+80.0
+7.5
+
+0.0
+43.8
+71.1
+80.0
+7.5
+
+0.0
+0.0
+62.2
+80.0
+0.0
+
+Avg.
+
+43.6
+
+28.2
+
+31.4
+
+40.5
+
+28.4
+
+Overall Score (max 100)
+P3
+66.7
+18.0
+P4
+69.8
+78.6
+P15
+89.8
+80.9
+P16
+82.2
+98.0
+P17 41.4
+21.0
+
+18.0
+18.6
+62.4
+98.7
+26.0
+
+18.0
+18.4
+80.9
+98.0
+26.0
+
+18.7
+54.6
+90.4
+97.3
+24.5
+
+18.7
+0.0
+80.9
+97.3
+19.0
+
+Avg.
+
+44.7
+
+48.3
+
+57.1
+
+43.2
+
+53.2
+
+70.0
+
+59.3
+
+Table 3: Verification Phase Behavior Across Projects (RQ3).
+Reject rate = verify_fail / total Apollo verdicts.
+Project
+A (M2Sim)
+B (GroundDB)
+C (RustLaTex)
+D (PyInterpreter)
+
+Apollo Invocation Count
+
+Reject
+
+Dominant Failure Mode
+
+19
+4
+97
+27
+
+5.3%
+0.0%
+18.6%
+0.0%
+
+Accuracy regression
+NA
+Similarity regression
+NA
+
+The gap over Claude Code with the same underlying model (Sonnet 4.5: 43.6 exec, 59.3 overall) is +9.6 and +10.7 points respectively,
+directly attributable to multi-agent coordination rather than model
+capability, since the LLM backend is held constant.
+The advantage is most pronounced on the hardest problems.
+On P3 and P17, every single-agent system scores near zero (≤7.5),
+while TheBotCompany scores 48.0 and 22.4—problems where a
+one-shot session cannot traverse the implementation space that
+TheBotCompany’s milestone structure explores iteratively. On
+P16, the result reverses: TheBotCompany scores 62.9 execution
+versus 80.0 for all Claude Code baselines. Post-hoc analysis of P16
+logs reveals that its specification admits a compact, self-contained
+solution, while TheBotCompany’s multi-milestone decomposition
+introduced architectural layering that added verification overhead
+without proportional benefit, suggesting that multi-agent coordination has diminishing returns when the one-shot solution space is
+already effective.
+Finding (RQ2): TheBotCompany (Sonnet 4.5) leads all single-agent
+baselines on ProjDevBench, gaining +9.6/+10.7 points over the samemodel baseline (Sonnet 4.5) with Claude Code on execution/overall
+score. The advantage concentrates on high-difficulty problems where
+iterative multi-milestone refinement is essential.
+4.3.3 RQ3: Verification Phase Behavior. Table 3 reveals that Apollo’s
+rejection rate varies systematically with task specification clarity,
+not with project scale. Projects with exact, automatically evaluable
+acceptance criteria (Project B and D) produced 0% rejection: Apollo
+acted as a confirmatory gate rather than a corrective one (i.e., it
+confirmed already-passing work rather than blocking and triggering rework cycles). Projects with iterative quality targets (Project C:
+
+pixel similarity compared with pdflatex’s [46] output PDF thresholds that shift per milestone; Project A: timing-accuracy bounds
+across 30 benchmarks) produced substantial rejections, with Apollo
+catching regressions that would otherwise have shipped (18.6% of
+verifications in RustLaTex and 5.3% in M2Sim).
+Project C further demonstrates that TheBotCompany can autonomously construct a grounded evaluation target when the user’s
+specification is ill-defined. The project specification stated “generate binary identical PDF”; Athena determined early that strict
+binary identity was unachievable given font-rendering and layout
+nondeterminism in the toolchain. Rather than stalling, Athena defined a tractable proxy at milestone M29: pixel similarity against
+pdflatex’s output on the same .tex files. The M29 issue reads:
+“Establish the ability to compare our compiler’s output against pdflatex output in CI. This is critical for measuring progress toward the
+‘binary identical PDF’ project goal.” This self-defined metric then
+served as the acceptance criterion for all 97 subsequent verification
+cycles. The project terminated at 99.21% average pixel similarity
+after 95 milestones with an explicit self-aware stopping statement:
+“All strategic improvement approaches have been exhausted. . . The
+remaining 2.12% gap. . . is dominated by the mega-line layout problem
+which cannot be fixed without regression—every approach tried (9+
+confirmed anti-patterns) consistently regresses similarity.”
+In Project C, the 18.6% rejection rate is not evidence of wasted
+effort: Apollo’s rejections directly drove the accumulation of a growing list of documented anti-patterns in Athena’s planning context—
+approaches confirmed to cause pixel-similarity regressions. This
+list constrained Athena’s future search space across subsequent
+milestones. 27 dedicated fix-round milestones produced measurable recovery: whenever a regression milestone was immediately
+followed by a revert, the similarity score returned to or exceeded
+the pre-regression baseline.
+Case Study (Project C, RustLaTex). We trace a five-milestone
+episode from Project C that shows the verification-planning feedback loop driving both regression recovery and eventual termination. By M91, eight documented anti-patterns had accumulated
+in Athena’s planning context—layout interventions confirmed to
+regress pixel similarity—and the baseline stood at 97.88%.
+At M92, Athena reasoned that applying the same layout technique (AlignmentMarker insertion) to section headings rather than
+paragraphs was mechanically distinct from the documented antipattern and proposed it as a fix. The milestone passed Apollo’s
+unit-test gate, but Athena’s next planning cycle (M93) detected a
+CI-level similarity regression to 97.51%. Athena immediately scheduled a revert milestone; Apollo confirmed recovery to the 97.88%
+baseline, and the anti-pattern list grew to nine entries. Seventeen
+cycles later, M95 reproposed the same class of fix with adjusted
+parameters (27.9 pt instead of 21 pt). This time Apollo explicitly
+failed the milestone:
+“M95 FAILED: compare.tex regressed from 97.88% to 97.31%
+(−0.57%). AlignmentMarker for section headings is a confirmed
+dead end regardless of line-height value.”
+
+Rather than searching for a tenth variant, Athena declared the
+project complete, which is a self-aware stopping decision grounded
+in exhausted hypothesis space.
+
+Self-Organizing Multi-Agent Systems for Continuous Software Development
+
+This episode illustrates three properties of the verification-planning
+loop: (1) Apollo’s unit-test gate can miss CI-level regressions, making Athena’s planning cycle a necessary second quality layer. (2) Antipattern knowledge accumulates across milestones and constrains
+future search, reducing wasted exploration. This is only achievable by sustained teaming and accumulated context. And (3) The
+context-window boundary is a hard limit—Athena misclassified
+M92’s heading-level variant as safe because the prior anti-pattern
+was documented as “per-paragraph,” a distinction that a bounded
+context cannot reliably track over 90+ milestones.
+Finding (RQ3): The verification phase catches substantive defects.
+Higher rejection rates correlate with iterative quality targets rather
+than project scale, and Apollo-driven feedback durably shaped Athena’s
+planning through anti-pattern accumulation.
+4.3.4 RQ4: Cost Analysis. Across all four long-running projects,
+workers absorbed the dominant share of both cost and time across
+all projects: on average, worker agents consumed 70.6% of total
+token cost and 46.5% of wall-clock time. This distribution is a positive signal for continuous development: high worker concentration
+indicates that the system allocates the bulk of its budget to actual
+engineering work rather than coordination overhead. In contrast,
+Athena’s planning share in particular remained modest (9.8% of
+cost on average), confirming that milestone orchestration does not
+crowd out execution capacity as projects scale.
+Per-milestone cost is stable across projects once controlling
+for milestone scope: $8.0–$9.3 in Projects B, C, and D; higher in
+Project A ($43.9) because M2Sim milestones were coarser-grained.
+Spearman correlation between milestone index and per-milestone
+cost is non-significant in all projects (Project C: 𝜌 = −0.06, 𝑝 = 0.55;
+Project D: 𝜌 = 0.06, 𝑝 = 0.76), indicating that cost does not systematically escalate as codebases grow.
+Table 4 reports token consumption for TheBotCompany on
+the five benchmark problems, using output tokens (non-cached
+model generation) as the primary unit, matching the metric reported
+for Claude Code baselines in the ProjDevBench benchmark [33].
+Because TheBotCompany and Claude Code may used different
+numbers of OJ submission attempts per problem, we normalize by
+per-attempt output-token consumption to enable a fair comparison. Output-token consumption per attempt ranged from 0.53 M
+(P15) to 3.50 M (P17). On a per-attempt basis, TheBotCompany consumed fewer output tokens than Claude Code only on P3 (1.23 M
+vs. 1.62 M, 0.76×), while consuming more on the remaining four
+problems—most substantially on P16 (0.81 M vs. 0.15 M, 5.4×) and
+P17 (3.50 M vs. 1.09 M, 3.2×). Averaged across all problems, TheBotCompany consumed 1.03 M output tokens per attempt versus
+0.62 M for Claude Code (1.65× more), reflecting the additional generation cost of coordinating multiple specialized agents within each
+development cycle. Per-score efficiency varied considerably: P15
+achieved 22.3 K output tokens per execution-score point versus
+98.1 K for P4 (4.4× worse), indicating that cycle count, rather than
+problem difficulty alone, is the primary driver of output-token cost.
+Finding (RQ4): Worker agents consume 70.6% of total cost across
+projects. Per-milestone cost is stable across the project lifetime. On
+a per-OJ-submission basis, TheBotCompany consumes on average
+1.65× more output tokens than Claude Code (1.03 M vs. 0.62 M per
+
+Conference’17, July 2017, Washington, DC, USA
+
+Table 4: Token consumption and wall-clock running duration
+for TheBotCompany on ProjDevBench problems compared
+with Claude Code, normalized by number of OJ submission
+attempts for a fair comparison. Claude Code output-token
+figures are taken from the ProjDevBench paper [33].
+TheBotCompany
+
+Claude Code
+
+Problem # Token/Attempt (M) Duration Token/Attempt (M)
+
+Ratio
+
+P3
+P4
+P15
+P16
+P17
+
+1.23
+1.00
+0.53
+0.81
+3.50
+
+19.4 hr
+7.5 days
+23.0 hr
+9.1 days
+2.1 days
+
+1.62
+0.48
+0.44
+0.15
+1.09
+
+0.76×
+2.11×
+1.21×
+5.41×
+3.22×
+
+Average
+
+1.03
+
+0.62
+
+1.65×
+
+Table 5: Final submission scale for TheBotCompany compared with average human submission scale from ProjDevBench [33]. Human figures are averages over human submissions per problem.
+TheBotCompany
+
+Human Average
+
+Prob.
+
+LOC
+
+Files
+
+LOC
+
+Files
+
+LOC Ratio
+
+P3
+P4
+P15
+P16
+P17
+
+705
+2,161
+377
+1,791
+3,910
+
+1
+4
+3
+7
+6
+
+475.3
+1,659.0
+2,093.9
+3,139.4
+4,204.3
+
+1
+18
+3
+11
+20
+
+1.48×
+1.30×
+0.18×
+0.57×
+0.93×
+
+attempt), reflecting the additional generation cost of multi-agent
+coordination within each development cycle.
+4.3.5 Output Scale. Table 5 compares the lines of code (LOC) and
+file count of TheBotCompany’s final submissions against the average human submission scale reported in ProjDevBench [33] for the
+same five problems. TheBotCompany’s submissions are broadly
+proportionate to the expected problem scale: on P3 and P4, generated LOC slightly exceeds the human average (1.48× and 1.30×
+respectively), while P17, the most architecturally complex problem
+(4,204 human-average lines across 20 files), is matched to within 7%
+(3,910 lines). The notable exception is P15, where TheBotCompany
+produces only 377 lines against a 2,094-line human average (0.18×);
+this aligns with P15’s superior token efficiency and suggests a more
+compact algorithmic design rather than incomplete implementation, as the problem achieved a competitive execution score. Across
+all five problems, TheBotCompany consistently adopts a flatter
+file structure than human submissions, using between one-third
+and one-quarter as many files on multi-file problems (P4: 4 vs. 18;
+P17: 6 vs. 20), reflecting its tendency to consolidate related logic
+rather than decompose into fine-grained modules.
+4.3.6 RQ5: Failure Modes and Recovery. Table 6 shows that failure
+modes are predominantly domain-specific rather than orchestration
+failures. The largest failure categories were accuracy/similarity regression (Projects A and C), not from deficiencies in agent coordination. Generic software engineering failures (missing requirements,
+architectural issues) are comparatively rare.
+Recovery was effective for all in-system failures. Both Athena
+execution timeouts in Project D recovered cleanly in the next cycle:
+the orchestrator restarted Athena with full project context from
+
+Conference’17, July 2017, Washington, DC, USA
+
+Wenhan Lyu, Yue Xiao, Yixuan Zhang, and Yifan Sun
+
+Table 6: Failure Mode Taxonomy Across All Experiments
+(RQ5). Counts reflect distinct failure episodes.
+Failure Mode
+
+M2Sim
+
+GroundDB
+
+RustLaTex
+
+PyInterpreter
+
+Accuracy/similarity regression
+Architectural issue
+Missing requirement
+Agent execution timeout
+Inter-milestone regression
+Tooling / environment
+
+3
+1
+0
+0
+0
+0
+
+0
+0
+0
+0
+0
+1
+
+18
+0
+5
+0
+0
+0
+
+0
+0
+0
+2
+1
+0
+
+exec
+/bin/zsh -lc "sed -n '1241,1700p' slr-phase4/txt/UB2EVUFU.txt" in /Users/scott/Library/CloudStorage/OneDrive-purdue.edu/Systemic Literature Review
+ succeeded in 0ms:
+
+Total episodes
+
+4
+
+1
+
+23
+
+3
+
+the SQLite communication store, and the subsequent invocation
+defined a valid milestone without re-encountering the timeout. The
+single tooling failure in Project B (tbc-db CLI not found at Cycle 1)
+was self-resolved by Athena switching to direct sqlite3 calls, with
+zero cycle waste.
+One failure case represents deliberate non-recovery decisions
+(see subsubsection 4.3.3). In Project C, a 2.12% irreducible gap in file
+similarity was acknowledged by Athena: nine distinct approaches
+had each been tried and documented as anti-patterns, and no unexplored strategy remained.
+The cycle waste ratio (failed cycles / total) was near zero for
+Projects A, B, and D. In Project C, 27 fix-round milestones represent
+acknowledged rework cycles; if these are classified as waste, the
+waste ratio is 27/392 = 6.9%—a modest overhead given the iterative
+nature of pixel-fidelity optimization. In projdevbench problem 4,
+approximately 120 late cycles targeted an unresolvable bug, yielding
+an estimated waste ratio of 31%.
+Finding (RQ5): Failure modes are domain-specific; orchestrationlevel failures (timeouts, tooling) are rare and recover within one cycle.
+Self-aware termination—explicit documentation of irreducible limitations—prevents runaway cost in both the long-running settings.
+
+4.4
+
+Threats to Validity
+
+Internal Validity. The primary internal threat is non-determinism
+of LLMs: all agent invocations use non-zero temperature, so rerunning any project would produce different milestone decompositions,
+different code artifacts, and potentially different quality outcomes.
+We report single-run results, which precludes variance estimation.
+A second internal threat is researcher involvement in project configuration: initial project briefs and acceptance criteria were authored
+by the research team, and while Athena autonomously refines milestones, the starting specification influences the development trajectory. We mitigate this by reporting outcomes only (not handcrafted
+milestones) and by using objective quality metrics (benchmark
+correctness, test pass rates, pixel similarity) wherever possible.
+External Validity. Four long-running projects may not represent
+the distribution of real-world software tasks. Our selection skews
+toward system projects (simulator, database engine, compiler, interpreter) with deterministic correctness oracles–a favorable setting
+for verification-driven development. Projects involving ambiguous
+requirements are not evaluated. The ProjDevBench comparison
+is externally scored by the benchmark authors’ OJ system, which
+partially mitigates selection bias for the RQ2 results. Finally, all
+experiments use Claude-family models; it is unknown whether the
+multi-agent coordination benefit holds with other LLM backends.
+
+Construct Validity. Several proxies may not capture the intended
+constructs. LOC and test count are imperfect surrogates for software quality; a project can accumulate LOC while making no functional progress. We supplement LOC with domain-specific metrics
+(PolyBench accuracy, TPC-H query coverage, pixel similarity, OJ
+execution scores) to reduce dependence on any single proxy. The
+verification agent (Apollo) itself relies on LLM judgment for qualitative assessments, introducing the possibility that Apollo incorrectly
+passes or rejects a milestone; we partially address this by anchoring
+acceptance criteria to executable tests rather than Apollo’s prose
+evaluation wherever possible. Finally, cost comparisons between
+TheBotCompany and single-agent baselines in the long-running
+track are not available, as running multi-day sessions with Claude
+Code under identical conditions and budgets was not feasible.
+
+5
+
+Discussion
+
+Sequential Phase Separation vs. Parallel Competition. Although we compared against with Claude Code’s single-agent mode,
+the agent teams mode [4], which coordinates multiple Claude Code
+instances under a single team lead, represents an emerging alternative paradigm. We did not include a direct comparison because the
+feature remains experimental and is not publicly available through
+standard usage, and results would be difficult to reproduce and
+unfair to both systems. Conceptually, however, the architectures
+differ in a fundamental way. Claude Code’s teams favor parallel,
+competitive coordination—agents attempt the same task and the
+lead selects the best result—whereas TheBotCompany enforces
+sequential phase separation: planning, implementation, and verification are isolated so that each stage cannot be contaminated by
+the concerns of another. Independent verification is only meaningful when the verifier has no stake in the implementation, a
+principle that parallels the self-critique loops shown to improve
+agent quality in Reflexion [44]. We hypothesize that this separation
+explains the performance pattern observed in RQ2: on compact
+problems amenable to a single session, single execution is sufficient; on high-difficulty problems requiring iterative refinement,
+sequential phase separation with persistent verification feedback
+provides a structural advantage. As such, rigorous empirical validation of this hypothesis, ideally on a shared benchmark with both
+systems, is an important direction for future work.
+When does multi-agent coordination justify its cost? Our
+results suggest a practical crossover point. On ProjDevBench problems where the solution space is large and requires iterative exploration (P3, P17), TheBotCompany outperforms single-agent
+baselines despite consuming 1.65× more output tokens per attempt.
+On problems admitting compact, single-session solutions (P16),
+the multi-agent overhead reduces both score and cost-efficiency.
+For practitioners, this implies that multi-agent orchestration is
+best suited to projects where (1) the implementation cannot be
+completed in a single session, (2) quality criteria are continuous
+or iterative rather than binary, and (3) the cost of undetected regressions justifies an independent verification phase. When these
+conditions do not hold, a single-agent tool is likely more efficient.
+Human-in-the-loop Oversight Granularity. TheBotCompany was designed for largely unattended operation, with human
+steering channeled through asynchronous issue filing. In practice,
+
+Self-Organizing Multi-Agent Systems for Continuous Software Development
+
+adding live agent output streaming to the dashboard created an
+implicit expectation of finer-grained control. For example, users
+who could watch a worker diverge naturally wanted to correct it
+mid-cycle. This reflects a tension in mixed-initiative systems [23]:
+exposing system internals raises awareness of errors but shifts the
+perceived locus of control, increasing felt demand for intervention.
+The appropriate granularity of oversight depends on user expertise and task stakes [2]—a domain expert debugging a numerical
+simulator has actionable knowledge that a generalist user does not.
+Our experience suggests a tiered model: coarse-grained issue filing
+for users who prefer autonomy; mid-grained pause/bootstrap for
+correcting runaway cycles; and potential fine-grained interruption
+for experts who can productively redirect an in-progress agent.
+However, how to expose these tiers without overburdening the
+agent communication infrastructure deserves more future work.
+
+6
+
+Conclusion
+
+We presented TheBotCompany, an open-source framework for
+continuous multi-agent software development built around three
+innovations: a repeating Strategy → Execution → Verification
+lifecycle, self-organizing worker teams that managers compose per
+milestone, and budget-aware scheduling for unattended operation.
+Evaluation across four real-world projects and five problems yields
+three findings. First, the verification phase adds corrective value
+when acceptance criteria are continuous or iterative, but acts as
+confirmatory overhead when deterministic oracles are available,
+suggesting that verification cost should be calibrated to specification
+clarity. Second, self-organizing teams concentrate cost on implementation work, with orchestration overhead remaining stable as
+projects grow. Third, in a single-run comparison, TheBotCompany
+achieved higher scores than the same-model single-agent baselines
+on high-difficulty problems requiring iterative refinement, while
+single-agent execution was more efficient on problems amenable
+to single-session solutions. Collectively, our results suggest that
+structural choices—phase separation, persistent state, and decoupled verification—are important complements to model capability
+for long-horizon software development.
+
+References
+[1] Zahra Shakeri Hossein Abad, Oliver Karras, Kurt Schneider, Ken Barker, and
+Mike Bauer. 2018. Task Interruption in Software Development Projects: What
+Makes some Interruptions More Disruptive than Others?. In Proceedings of the
+22nd International Conference on Evaluation and Assessment in Software Engineering 2018 (Christchurch, New Zealand) (EASE ’18). Association for Computing
+Machinery, New York, NY, USA, 122–132. doi:10.1145/3210459.3210471
+[2] Saleema Amershi, Andrew Begel, Christian Bird, Robert DeLine, Harald Gall, Ece
+Kamar, Nachiappan Nagappan, Besmira Nushi, and Thomas Zimmermann. 2019.
+Software Engineering for Machine Learning: A Case Study. In 2019 IEEE/ACM
+41st International Conference on Software Engineering: Software Engineering in
+Practice (ICSE-SEIP). 291–300. doi:10.1109/ICSE-SEIP.2019.00042
+[3] Anthropic. 2025. Claude Code. https://docs.anthropic.com/en/docs/claude-code.
+Accessed: March 22, 2026.
+[4] Anthropic. 2025. Orchestrate teams of Claude Code sessions. Anthropic. https:
+//code.claude.com/docs/en/agent-teams Accessed: March 22, 2026.
+[5] Jacob Austin, Augustus Odena, Maxwell Nye, Maarten Bosma, Henryk
+Michalewski, David Dohan, Ellen Jiang, Carrie Cai, Michael Terry, Quoc Le,
+et al. 2021. Program Synthesis with Large Language Models. arXiv preprint
+arXiv:2108.07732 (2021). doi:10.48550/arXiv.2108.07732
+[6] Ramakrishna Bairi, Atharv Sonwane, Aditya Kanade, Vageesh D. C., Arun Iyer,
+Suresh Parthasarathy, Sriram Rajamani, B. Ashok, and Shashank Shet. 2024.
+CodePlan: Repository-Level Coding using LLMs and Planning. Proc. ACM Softw.
+Eng. 1, FSE, Article 31 (July 2024), 24 pages. doi:10.1145/3643757
+
+Conference’17, July 2017, Washington, DC, USA
+
+[7] Christian Bienia, Sanjeev Kumar, Jaswinder Pal Singh, and Kai Li. 2008. The
+PARSEC benchmark suite: characterization and architectural implications. In
+Proceedings of the 17th International Conference on Parallel Architectures and
+Compilation Techniques (Toronto, Ontario, Canada) (PACT ’08). Association for
+Computing Machinery, New York, NY, USA, 72–81. doi:10.1145/1454115.1454128
+[8] B. W. Boehm. 1988. A spiral model of software development and enhancement.
+Computer 21, 5 (1988), 61–72. doi:10.1109/2.59
+[9] Islem Bouzenia, Premkumar Devanbu, and Michael Pradel. 2025. RepairAgent:
+An Autonomous, LLM-Based Agent for Program Repair. In 2025 IEEE/ACM 47th
+International Conference on Software Engineering (ICSE). 2188–2200. doi:10.1109/
+ICSE55347.2025.00157
+[10] Edward Y Chang and Longling Geng. 2025. SagaLLM: context management,
+validation, and transaction guarantees for multi-agent LLM planning. arXiv
+preprint arXiv:2503.11951 (2025). doi:10.48550/arXiv.2503.11951
+[11] Guangyao Chen, Siwei Dong, Yu Shu, Ge Zhang, Jaward Sesay, Börje F Karlsson,
+Jie Fu, and Yemin Shi. 2023. AutoAgents: A Framework for Automatic Agent
+Generation. arXiv preprint arXiv:2309.17288 (2023). doi:10.48550/arXiv.2309.17288
+[12] Mark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique Ponde de Oliveira
+Pinto, Jared Kaplan, Harri Edwards, Yuri Burda, Nicholas Joseph, Greg Brockman,
+et al. 2021. Evaluating Large Language Models Trained on Code. arXiv preprint
+arXiv:2107.03374 (2021). doi:10.48550/arXiv.2107.03374
+[13] Weize Chen, Yusheng Su, Jingwei Zuo, Cheng Yang, Chenfei Yuan, Chi-Min Chan,
+Heyang Yu, Yaxi Lu, Yi-Hsin Hung, Chen Qian, Yujia Qin, Xin Cong, Ruobing
+Xie, Zhiyuan Liu, Maosong Sun, and Jie Zhou. 2024. AgentVerse: Facilitating
+Multi-Agent Collaboration and Exploring Emergent Behaviors. In The Twelfth
+International Conference on Learning Representations. https://openreview.net/
+forum?id=EHg5GDnyq1
+[14] Markus Dreseler, Martin Boissier, Tilmann Rabl, and Matthias Uflacker. 2020.
+Quantifying TPC-H choke points and their optimizations. Proceedings of the
+VLDB Endowment 13, 8 (2020), 1206–1220.
+[15] Angela Fan, Beliz Gokkaya, Mark Harman, Mitya Lyubarskiy, Shubho Sengupta,
+Shin Yoo, and Jie M. Zhang. 2023. Large Language Models for Software Engineering: Survey and Open Problems. In 2023 IEEE/ACM International Conference on Software Engineering: Future of Software Engineering (ICSE-FoSE). 31–53.
+doi:10.1109/ICSE-FoSE59343.2023.00008
+[16] GitHub, Inc. 2026. GitHub Copilot: Your AI pair programmer. https://github.com/
+features/copilot. Accessed: 2026-03-23.
+[17] Michael W Godfrey and Daniel M German. 2014. On the evolution of Lehman’s
+Laws. Journal of Software: Evolution and Process 26, 7 (2014), 613–619. doi:doi/
+abs/10.1002/smr.1636
+[18] Daya Guo, Qihao Zhu, Dejian Yang, Zhenda Xie, Kai Dong, Wentao Zhang,
+Guanting Chen, Xiao Bi, Y Wu, YK Li, et al. 2024. DeepSeek-Coder: When the
+Large Language Model Meets Programming. arXiv preprint arXiv:2401.14196
+(2024). doi:10.48550/arXiv.2401.14196
+[19] Tracy Hall, Sarah Beecham, June Verner, and David Wilson. 2008. The impact of
+staff turnover on software projects: the importance of understanding what makes
+software practitioners tick. In Proceedings of the 2008 ACM SIGMIS CPR Conference
+on Computer Personnel Doctoral Consortium and Research (Charlottesville, VA,
+USA) (SIGMIS CPR ’08). Association for Computing Machinery, New York, NY,
+USA, 30–39. doi:10.1145/1355238.1355245
+[20] Junda He, Christoph Treude, and David Lo. 2025. LLM-Based Multi-Agent Systems
+for Software Engineering: Literature Review, Vision, and the Road Ahead. ACM
+Trans. Softw. Eng. Methodol. 34, 5, Article 124 (May 2025), 30 pages. doi:10.1145/
+3712003
+[21] Israel Herraiz, Daniel Rodriguez, Gregorio Robles, and Jesus M. GonzalezBarahona. 2013. The evolution of the laws of software evolution: A discussion
+based on a systematic literature review. ACM Comput. Surv. 46, 2, Article 28 (Dec.
+2013), 28 pages. doi:10.1145/2543581.2543595
+[22] Sirui Hong, Mingchen Zhuge, Jonathan Chen, Xiawu Zheng, Yuheng Cheng,
+Jinlin Wang, Ceyao Zhang, Zili Wang, Steven Ka Shing Yau, Zijuan Lin, Liyang
+Zhou, Chenyu Ran, Lingfeng Xiao, Chenglin Wu, and Jürgen Schmidhuber.
+2024. MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework. In The Twelfth International Conference on Learning Representations. https:
+//openreview.net/forum?id=VtmBAGCN7o
+[23] Eric Horvitz. 1999. Principles of mixed-initiative user interfaces. In Proceedings
+of the SIGCHI Conference on Human Factors in Computing Systems (Pittsburgh,
+Pennsylvania, USA) (CHI ’99). Association for Computing Machinery, New York,
+NY, USA, 159–166. doi:10.1145/302979.303030
+[24] Xinyi Hou, Yanjie Zhao, Yue Liu, Zhou Yang, Kailong Wang, Li Li, Xiapu Luo,
+David Lo, John Grundy, and Haoyu Wang. 2024. Large Language Models for
+Software Engineering: A Systematic Literature Review. ACM Trans. Softw. Eng.
+Methodol. 33, 8, Article 220 (Dec. 2024), 79 pages. doi:10.1145/3695988
+[25] Yoichi Ishibashi and Yoshimasa Nishimura. 2024. Self-organized agents: A llm
+multi-agent framework toward ultra large-scale code generation and optimization.
+arXiv preprint arXiv:2404.02183 (2024). doi:10.48550/arXiv.2404.02183
+[26] Carlos E Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press,
+and Karthik R Narasimhan. 2024. SWE-bench: Can Language Models Resolve
+Real-world Github Issues?. In The Twelfth International Conference on Learning
+
+Conference’17, July 2017, Washington, DC, USA
+
+Representations. https://openreview.net/forum?id=VTF8yNQM66
+[27] C. Larman and V.R. Basili. 2003. Iterative and incremental developments. a brief
+history. Computer 36, 6 (2003), 47–56. doi:10.1109/MC.2003.1204375
+[28] M.M. Lehman. 1980. Programs, life cycles, and laws of software evolution. Proc.
+IEEE 68, 9 (1980), 1060–1076. doi:10.1109/PROC.1980.11805
+[29] Raymond Li, Loubna Ben Allal, Yangtian Zi, Niklas Muennighoff, Denis Kocetkov,
+Chenghao Mou, Marc Marone, Christopher Akiki, Jia Li, Jenny Chim, et al. 2023.
+StarCoder: May the Source Be with You! arXiv preprint arXiv:2305.06161 (2023).
+doi:10.48550/arXiv.2305.06161
+[30] Yujia Li, David Choi, Junyoung Chung, Nate Kushman, Julian Schrittwieser,
+Rémi Leblond, Tom Eccles, James Keeling, Felix Gimeno, Agustin Dal Lago,
+Thomas Hubert, Peter Choy, Cyprien de Masson d’Autume, Igor Babuschkin,
+Xinyun Chen, Po-Sen Huang, Johannes Welbl, Sven Gowal, Alexey Cherepanov,
+James Molloy, Daniel J. Mankowitz, Esme Sutherland Robson, Pushmeet Kohli,
+Nando de Freitas, Koray Kavukcuoglu, and Oriol Vinyals. 2022. Competitionlevel code generation with AlphaCode. Science 378, 6624 (2022), 1092–
+1097. arXiv:https://www.science.org/doi/pdf/10.1126/science.abq1158 doi:10.
+1126/science.abq1158
+[31] Leilei Lin, Yingming Zhou, Wenlong Chen, and Chen Qian. 2024. Think-onprocess: Dynamic process generation for collaborative development of multiagent system. arXiv preprint arXiv:2409.06568 (2024). doi:10.48550/arXiv.2409.
+06568
+[32] Zijun Liu, Yanzhe Zhang, Peng Li, Yang Liu, and Diyi Yang. 2024. A Dynamic LLMPowered Agent Network for Task-Oriented Agent Collaboration. In First Conference on Language Modeling. https://openreview.net/forum?id=XII0Wp1XA9
+[33] Pengrui Lu, Shiqi Zhang, Yunzhong Hou, Lyumanshan Ye, Chaoyi Huang, Zixi
+Chen, Ji Zeng, Hantao Jiang, Pengfei Liu, Yiwei Wang, et al. 2026. ProjDevBench:
+Benchmarking AI Coding Agents on End-to-End Project Development. arXiv
+preprint arXiv:2602.01655 (2026). doi:10.48550/arXiv.2602.01655
+[34] Agile Manifesto. 2001. Manifesto for agile software development.
+[35] Minh Huynh Nguyen, Thang Phan Chau, Phong X. Nguyen, and Nghi D. Q. Bui.
+2025. AgileCoder: Dynamic Collaborative Agents for Software Development
+based on Agile Methodology. In 2025 IEEE/ACM Second International Conference
+on AI Foundation Models and Software Engineering (Forge). 156–167. doi:10.1109/
+Forge66646.2025.00026
+[36] N. Nurmuliani, D. Zowghi, and S. Powell. 2004. Analysis of requirements volatility
+during software development life cycle. In 2004 Australian Software Engineering
+Conference. Proceedings. 28–37. doi:10.1109/ASWEC.2004.1290455
+[37] OpenAI. 2025. Introducing Codex. https://openai.com/index/introducing-codex/.
+Accessed: March 22, 2026.
+[38] Melissa Z Pan, Mert Cemri, Lakshya A Agrawal, Shuyi Yang, Bhavya Chopra,
+Rishabh Tiwari, Kurt Keutzer, Aditya Parameswaran, Kannan Ramchandran,
+Dan Klein, Joseph E. Gonzalez, Matei Zaharia, and Ion Stoica. 2025. Why Do
+Multiagent Systems Fail?. In ICLR 2025 Workshop on Building Trust in Language
+Models and Applications. https://openreview.net/forum?id=wM521FqPvI
+[39] Louis-Noël Pouchet. 2012. PolyBench/C: The Polyhedral Benchmark Suite. https:
+//www.cs.colostate.edu/~pouchet/software/polybench/. Accessed: 2026-03-23.
+[40] Chen Qian, Yufan Dang, Jiahao Li, Wei Liu, Zihao Xie, YiFei Wang, Weize Chen,
+Cheng Yang, Xin Cong, Xiaoyin Che, Zhiyuan Liu, and Maosong Sun. 2024.
+Experiential Co-Learning of Software-Developing Agents. In Proceedings of the
+62nd Annual Meeting of the Association for Computational Linguistics (Volume 1:
+Long Papers), Lun-Wei Ku, Andre Martins, and Vivek Srikumar (Eds.). Association
+for Computational Linguistics, Bangkok, Thailand, 5628–5640. doi:10.18653/v1/
+2024.acl-long.305
+[41] Chen Qian, Jiahao Li, Yufan Dang, Wei Liu, YiFei Wang, Zihao Xie, Weize Chen,
+Cheng Yang, Yingli Zhang, Zhiyuan Liu, and Maosong Sun. 2024. Iterative Experience Refinement of Software-Developing Agents. arXiv preprint arXiv:2405.04219
+(2024). doi:10.48550/arXiv.2405.04219
+[42] Chen Qian, Wei Liu, Hongzhang Liu, Nuo Chen, Yufan Dang, Jiahao Li, Cheng
+Yang, Weize Chen, Yusheng Su, Xin Cong, Juyuan Xu, Dahai Li, Zhiyuan Liu, and
+Maosong Sun. 2024. ChatDev: Communicative Agents for Software Development.
+In Proceedings of the 62nd Annual Meeting of the Association for Computational
+Linguistics (Volume 1: Long Papers), Lun-Wei Ku, Andre Martins, and Vivek
+Srikumar (Eds.). Association for Computational Linguistics, Bangkok, Thailand,
+15174–15186. doi:10.18653/v1/2024.acl-long.810
+[43] Baptiste Rozière, Jonas Gehring, Fabian Gloeckle, Sten Sootla, Itai Gat, Xiaoqing Ellen Tan, Yossi Adi, Jingyu Liu, Romain Sauvestre, Tal Remez, et al. 2024.
+Code Llama: Open Foundation Models for Code. arXiv preprint arXiv:2308.12950
+(2024). doi:10.48550/arXiv.2308.12950
+[44] Noah Shinn, Federico Cassano, Ashwin Gopinath, Karthik Narasimhan, and
+Shunyu Yao. 2023. Reflexion: language agents with verbal reinforcement learning. In Advances in Neural Information Processing Systems, A. Oh, T. Naumann,
+A. Globerson, K. Saenko, M. Hardt, and S. Levine (Eds.), Vol. 36. Curran Associates, Inc., 8634–8652. https://proceedings.neurips.cc/paper_files/paper/2023/
+file/1b44b878bb782e6954cd888628510e90-Paper-Conference.pdf
+[45] Vali Tawosi, Keshav Ramani, Salwa Alamir, and Xiaomo Liu. 2025. ALMAS:
+an Autonomous LLM-based Multi-Agent Software Engineering Framework. In
+2025 40th IEEE/ACM International Conference on Automated Software Engineering
+
+Wenhan Lyu, Yue Xiao, Yixuan Zhang, and Yifan Sun
+
+Workshops (ASEW). 287–290. doi:10.1109/ASEW67777.2025.00059
+[46] Hàn Thê Thành. 2004. The pdfTEX user manual. TUGboat 25, 1 (2004), 121–127.
+https://www.tug.org/applications/pdftex/ Accessed: 2026-03-24.
+[47] Qian Wang, Tianyu Wang, Zhenheng Tang, Qinbin Li, Nuo Chen, Jingsheng Liang,
+and Bingsheng He. 2025. MegaAgent: A Large-Scale Autonomous LLM-based
+Multi-Agent System Without Predefined SOPs. In Findings of the Association for
+Computational Linguistics: ACL 2025, Wanxiang Che, Joyce Nabende, Ekaterina
+Shutova, and Mohammad Taher Pilehvar (Eds.). Association for Computational
+Linguistics, Vienna, Austria, 4998–5036. doi:10.18653/v1/2025.findings-acl.259
+[48] Xingyao Wang, Boxuan Li, Yufan Song, Frank F. Xu, Xiangru Tang, Mingchen
+Zhuge, Jiayi Pan, Yueqi Song, Bowen Li, Jaskirat Singh, Hoang H. Tran, Fuqiang
+Li, Ren Ma, Mingzhang Zheng, Bill Qian, Yanjun Shao, Niklas Muennighoff,
+Yizhe Zhang, Binyuan Hui, Junyang Lin, Robert Brennan, Hao Peng, Heng Ji,
+and Graham Neubig. 2024. OpenHands: An Open Platform for AI Software
+Developers as Generalist Agents. arXiv preprint arXiv:2407.16741 (2024). doi:10.
+48550/arXiv.2407.16741
+[49] John Yang, Carlos E. Jimenez, Alexander Wettig, Kilian Lieret, Shunyu Yao,
+Karthik Narasimhan, and Ofir Press. 2024. SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering. In Advances in Neural Information Processing Systems, A. Globerson, L. Mackey, D. Belgrave, A. Fan, U. Paquet,
+J. Tomczak, and C. Zhang (Eds.), Vol. 37. Curran Associates, Inc., 50528–50652.
+doi:10.52202/079017-1601
+[50] Zheng Yu, Ziyi Guo, Yuhang Wu, Jiahao Yu, Meng Xu, Dongliang Mu, Yan
+Chen, and Xinyu Xing. 2025. { PATCHAGENT } : A Practical Program Repair
+Agent Mimicking Human Expertise. In 34th USENIX Security Symposium (USENIX
+Security 25). 4381–4400.
+[51] Mario Zechner. 2026. pi-ai: Unified LLM API with automatic model discovery
+and tool calling. https://github.com/badlogic/pi-mono/tree/main/packages/ai.
+Accessed: 2026-03-23.
+[52] Fengji Zhang, Bei Chen, Yue Zhang, Jacky Keung, Jin Liu, Daoguang Zan, Yi
+Mao, Jian-Guang Lou, and Weizhu Chen. 2023. RepoCoder: Repository-Level
+Code Completion Through Iterative Retrieval and Generation. In Proceedings
+of the 2023 Conference on Empirical Methods in Natural Language Processing,
+Houda Bouamor, Juan Pino, and Kalika Bali (Eds.). Association for Computational
+Linguistics, Singapore, 2471–2484. doi:10.18653/v1/2023.emnlp-main.151
+[53] D. Zowghi and N. Nurmuliani. 2002. A study of the impact of requirements volatility on software project performance. In Ninth Asia-Pacific Software Engineering
+Conference, 2002. 3–11. doi:10.1109/APSEC.2002.1182970
+
+
+2026-07-19T05:27:57.701553Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+{"key":"UB2EVUFU","primary_theme":"remediation-gating","themes":["remediation-gating","ai-review","rules-based-checks","hitl-workflow","oversight-explanation","provenance-auditability","quality-debt"],"facets":["framework","built-system","agentic","steering"],"rationale":{"remediation-gating":"Failed milestones get bounded autonomous fixes with halved budgets and fail-closed exhaustion.","ai-review":"Independent LLM verifier issues verdicts and empirically catches substantive defects.","rules-based-checks":"Independent verification runs tests and CI-backed acceptance checks.","hitl-workflow":"Humans can pause, resume, or bootstrap-reset autonomous development asynchronously.","oversight-explanation":"Dashboard streams reasoning, tool calls, edits, status, costs, and archived reports.","provenance-auditability":"Persistent milestone, issue, report, and decision histories support human inspection.","quality-debt":"Agents introduced accuracy and similarity regressions requiring corrective rework.","framework":"Reusable orchestration architecture integrates planning, execution, verification, and oversight.","built-system":"Authors implemented an open-source orchestrator, tracker, harness, and monitoring dashboard.","agentic":"Autonomous agents plan and deliver multi-step milestone-scale software changes.","steering":"Human issues, specifications, and success criteria substantively redirect generation."}}
+tokens used
+32,299
+Reading additional input from stdin...
+2026-07-19T05:29:09.028970Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+OpenAI Codex v0.144.6
+--------
+workdir: /Users/scott/Library/CloudStorage/OneDrive-purdue.edu/Systemic Literature Review
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 019f78d9-864a-7850-b4b0-11472c6add89
+--------
+user
+Read the file slr-phase4/Tag_Prompt.md (a tagging instrument) and the file slr-phase4/txt/UDVHQ5HR.txt (paper full text, key UDVHQ5HR). Apply the instrument to the paper exactly as its task block instructs. Do not read any other files. Output ONLY the single JSON object the task block specifies.
+exec
+/bin/zsh -lc "sed -n '1,240p' slr-phase4/Tag_Prompt.md && sed -n '1,320p' slr-phase4/txt/UDVHQ5HR.txt" in /Users/scott/Library/CloudStorage/OneDrive-purdue.edu/Systemic Literature Review
+ succeeded in 0ms:
+# Theme-tagging cheat-sheet (Vibe Coding Governance SLR)
+
+Tag on the **document contents**. **Multi-tag freely** — a paper can carry several themes.
+Tag on **membership** (the paper *contributes to* that theme's argument), **not mention**.
+Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth).
+**Steering exclusion:** shaping what gets *generated* — prompts, specs, fine-tuning, **controlling the AI's inputs/context** — is steering, NOT oversight; tag only the paper's inspection/comprehension/gating contribution.
+**Plumbing ≠ membership** (systems papers): tag only mechanisms the paper *argues about*, not everything its system happens to use (agents running test suites ≠ `rules-based-checks`).
+**Documented practice counts:** empirical evidence of practitioners *exercising* a stage's mechanism earns membership in that stage's theme. **Vision-paper floor:** a stage mentioned in one scenario sentence = mention, not membership.
+
+## THEME TAGS (`theme:<slug>`)
+
+**Problem — quantify**
+- `oversight-scaling-inversion` — AI code is riskier yet *less* inspected; PRs auto-merged unreviewed; review is the bottleneck; burden piles on maintainers
+- `ai-code-insecurity` — empirical **security**-vulnerability evidence in AI code (CWEs, insecure-but-confident). Incident analyses & original vulnerability taxonomies count; secondhand rate citations alone don't
+- `quality-debt` — **non-security** quality decay: tech debt, complexity, smells, maintainability, breaking changes
+
+**Limits of current oversight**
+- `automation-bias` — the *human* fails: over-trust, complacency, skill erosion, misses flaws even when warned. **Requires a CAPABLE human failing** (attention/trust); a human who *can't evaluate at all* (non-developer settings; failure survives priming+incentives) = competence gap, NOT bias (22JBEZNK). Competence-gap papers **stay core-eligible**: tag the remainder (explanation/mode/population facets) — the missing theme is a staged candidate, not a demote signal
+- `oversight-theater` — review exists on paper but lacks authority/time/info to change the outcome (rubber-stamp, token HITL)
+
+**Solution — the Detect → Triage → Fix → Escalate pipeline** *(gray-zone detectors — rubric-grounded LLM-judge, "LLM writes tests then runs them" — expect dual-tagging of both Detect themes)*
+- `ai-review` — [DETECT] AI *judges* the artifact (probabilistic, can hallucinate); incl. multi-agent / cross-model review, **its reliability limits**, and empirical evidence of practitioners *using* agents to validate agents' output
+- `rules-based-checks` — [DETECT] deterministic **grounded** checks: tests, static analysis/lint, symbolic exec, sandbox, classical formal-methods engines
+- `formal-methods` — [technique, COMPOSABLE] theorem proving / model checking / symbolic exec / autoformalization. Pair with the performer: AI does it → `ai-review`+`formal-methods`; classical engine → `rules-based-checks`+`formal-methods`; no performer (pure advocacy/position) → `formal-methods`+`intro-framing`
+- `risk-routing` — [TRIAGE] the **allocation decision** — *which/whether/when* AI items reach a human & at what tier; the **smarts of surfacing** (signal + selection/tiering logic). NOT the human's control mechanism. **(= WHAT gets surfaced)** Error-condition handback ("agent stuck → human") is NOT routing — no triage decision → `hitl-workflow` / `remediation-gating`. Signal must be **computed & producer-independent** — model self-confidence is disqualified
+- `remediation-gating` — [FIX] governance of **autonomous** fixing (Jidoka: the system fixes *without per-fix human involvement*, kept safe by machinery) — **content** gates (filter fix candidates) and **process** gates (bounded retries / budget-decay / convergence / stop-progression, fail-closed); not the repair technique itself. **REQUIRES an autonomous fix being overseen** — a detect/publish gate with **no auto-fix** (VibeGuard) is NOT this (detector's enforcement side). Deciding when a **human** must engage on the fix path (risky fixes → human) = `risk-routing` layered on top. **A human approving every fix is NOT this** — review-everything is the unscalable anti-pattern (a paper *advocating* it → consider `counterpoint`; such a design *introduces* automation-bias risk — a rationale-level critique, NOT `automation-bias` membership, which requires *studying* the human failure)
+- `hitl-workflow` — [ESCALATE] the human's **control surface** — *how the human acts* once engaged: checkpoints, action guards, approval gates, bounded delegation. NOT what to surface. **Levers, not lenses** (comprehension/visibility tools → `oversight-explanation`; a lever over the AI's *inputs* is steering). **Plan-gate rule:** a human gate over an AI-produced plan IS hitl-workflow when it's a **designed checkpoint in a lifecycle** (defined gate, authority to block); the same approval inside a conversational guide-then-"go do it" flow is steering. **(= HOW + WHEN the human acts)**
+- `oversight-explanation` — [ESCALATE·info side] **help the human understand what the AI is doing** — any system-provided or human-invoked support for understanding/judging AI output. Modes (illustrative, NOT exhaustive): *push* = decision-ready escalation handoff (background + options + recommendation + risks); *pull* = human-invoked visibility into what the AI is doing/using; *standing* = explanations attached to AI output that support the human's verdict. Lens, not lever (lever → `hitl-workflow`)
+- `agent-scope-drift` — [cross-cutting] agents wander off-mandate / make unreviewed decisions; mechanisms that **detect/bound departure from intent**. Tag by the mechanism's **object**, not the actor's motivation: a panel checking code scope vs spec scope → here + `ai-review`; retained control merely *motivated* by drift-worry → `hitl-workflow` only
+
+**Worked decomposition (multi-stage systems — assign each mechanism by its object):** producer's own pre-submit checking/iterating = self-conformance, NO theme · independent evaluation of the submitted artifact = detector (`rules-based-checks`/`ai-review` by epistemics; the *additional, producer-independent* checks are the oversight value; blocking on failure = the detector's enforcement edge) · deciding which findings matter, e.g. by severity + cross-model agreement (a computed, producer-independent signal) → `risk-routing` · governing the ensuing **autonomous fix path** (filters, bounds, convergence, fail-closed stop — no per-fix human) → `remediation-gating` · deciding when a fix must engage a **human** (risk tiers on the fix path) → `risk-routing`
+
+**Governance & policy**
+- `org-governance` — the *org-level governance apparatus* applied broadly: policy, **audit logging**, accountability, roles, maturity models, policy-as-code (internal; ≠ a single pipeline framework)
+- `regulatory-compliance` — *external* law/standards: EU AI Act Art.14, NIST AI RMF, ISO 42001, liability, audit evidence
+
+**Supply chain & provenance**
+- `tooling-supply-chain` — provenance/vetting of the AI **tools** (skills/MCP/agents); **+ attacks on the reviewer**; **+ poisoned/hallucinated dependencies as *entry-governance*** (registry vetting, allowlists — governing what enters). *Measuring* hallucinated/insecure deps in AI output → `ai-code-insecurity`. Excl. keyword false-positives (hardware trojans, classic supply-chain incidents)
+- `provenance-auditability` — traceability of AI **changes** so a human *can* review; auditable record; IP/licensing. Requires a **persistent record serving HUMAN reviewability/audit** — a point-in-time "what's in use now" view → `oversight-explanation`; persistence serving only agent coordination = plumbing
+
+## FACET TAGS (functional role; orthogonal — optional, apply if they fit)
+- `problem-statement-anchor` — a single committee-sit-up empirical stat **anchoring the OVERALL problem statement** (the scaling inversion / two-part frame) — NOT a sub-argument's or population-specific headline number, however vivid. Never on `lit-review` (secondhand — anchor the primaries)
+- `survey-input` — adoption / preference / RAI-priority finding useful for the org survey design; requires **substantive** findings — one incidental adoption stat ≠ membership
+- `intro-framing` — position / agenda / definitional paper that *names the gap* but **doesn't operationalize a mechanism**
+- `lit-review` — secondary literature (survey / review / meta-analysis) — **systematic OR narrative**; test = evidence *synthesized from other papers, not produced*. **If `lit-review` applies, the primary MUST be the biggest-tent theme** = the theme under which the largest share of the synthesized evidence would be cited; ties → the review's own framing question (never the most vivid/quantified section)
+- `counterpoint` — [role facet] the paper **argues against a prevailing position** (automation-maximalism, HITL value, oversight scaling — any direction); note *what it opposes* in the rationale. Often pairs with `intro-framing`
+
+**Artifact / evidence cluster** (composable; form → maturity):
+- `framework` — a **technical framework / reference architecture integratable into a build pipeline** (whether or not built). ≠ `theme:org-governance` (the org apparatus). A bare taxonomy/decision-model gets neither; **not a one-off point tool / bare point result** — a focused single-concern architecture qualifies (VibeGuard, Hedwig). Test: *would someone adopt it as a reusable pipeline design?* Composes: `framework`+`built-system`+`adopted`.
+- `built-system` — the authors *implemented* it as a working system/tool/prototype ("and they built it")
+- `adopted` — used **outside research** (commercial / production / real org use), beyond a lab prototype/benchmark. Scarce, high-signal; absence = prototype/proposal
+
+**Generation-mode scope pair** (which *setting* the paper studies; cut on **who initiates + the reviewable unit**, NOT tool location — agents live in IDEs too):
+- `assistive` — **human-initiated, suggestion-granularity** generation (inline completion, **snippet-level** chat-paste): the human authors in the flow, accepts piece-by-piece — a chat task returning a *complete artifact* is the tie-rule case below. Oversight surface = the *acceptance moment*.
+- `agentic` — **AI-initiated / AI-planned multi-step work** delivered at **artifact/PR granularity** for review. Oversight surface = the *gate*.
+- Apply either or **both** (paper compares/spans modes); **neither** = mode unspecified / irrelevant to the paper's claim. **The pair describes the *generation* studied:** "uses agents" ≠ `agentic`, "AI assists the human" ≠ `assistive` — AI only on the review/oversight side → **neither** + consider `general-code`. **Tie-rule:** initiator vs reviewable unit disagree (human-prompted chat task → complete artifact) → **the reviewable unit dominates** (wholesale artifact = the gate = `agentic`).
+
+**Scope / contribution / population flags:**
+- `general-ai` — [scope flag] governance/oversight is **general AI/LLM, not coding-specific** (model robustness, general RAI frameworks). Default (untagged) = coding-specific. Flags candidates for context.
+- `steering` — [contribution flag] the paper's proposed solution **or documented practice** operates on **generation** as a **substantive part of the contribution** — NOT any incidental prompt-shaping component every AI system has (prompts, specs, fine-tuning, shaping model inputs) rather than inspecting/gating the artifact. **Contribution, not topic.** Steering-**only** solution → demote candidate
+- `non-developer` — [scope flag] the generating/overseeing human is **not a professional developer** (end-user / business user / citizen developer). Default (untagged) = professional devs
+- `general-code` — [scope flag] the oversight/review mechanism targets **code generally, not AI-generated code** (AI may sit on the *review* side only); transfers to our setting but wasn't developed/evaluated there. Default (untagged) = the overseen object is AI code
+
+## WORKFLOW
+- **Thin input:** if only title+abstract (or degenerate text) is available → tag conservatively (no form facets / `lit-review` unless explicit in the abstract) and flag `insufficient-input` instead of guessing.
+- **Struggle signals → check the core bar:** can't pick a primary / stretching a definition to fill the set = the paper likely doesn't belong at core → `demote:context` and move on. Don't force tags to justify a disposition.
+- **Facet checklist — run all five questions on every paper** (misses cluster here; 29 tags exceed recall): **role** (problem-statement-anchor / survey-input / intro-framing / lit-review / counterpoint)? · **form** (framework → built-system → adopted)? · **scope** (general-ai? general-code? non-developer?)? · **mode** (assistive / agentic)? · **contribution** (steering)?
+- **PRIMARY** — one per paper. *Zotero entry only:* type `cal:human:primary:theme:<slug>`. In JSON output, the task block's bare-slug `primary_theme` field governs.
+  - **Tie-breaker** when a paper spans adjacent themes (route↔control-surface, AI-check↔human-gate): primary = the theme carrying its **distinctive novelty**, not the standard scaffolding.
+- **DEMOTE flag** (menu): `demote:context` — mis-scoped for core: **general-AI object · steering-only solution · pure tool benchmark** (capability benchmarking with no mechanism or deployable contribution; a benchmark *evaluating a contributed system* doesn't count) **· secondary lit · not operationalizable**. `general-code` alone is NOT a demote reason (it's the audit trail for kept-core transfers). Flag and keep going; batch-reviewed later. (`demote:discard` same pattern.)
+
+---
+# YOUR TASK
+Tag one CORE paper against the vocabulary above from its FULL TEXT below. Assign every theme the paper is
+a genuine MEMBER of, choose ONE primary theme (tie-breaker: the theme carrying the paper's DISTINCTIVE
+CONTRIBUTION/novelty, not standard scaffolding), and add any facet tags. Apply the STEERING
+EXCLUSION and the PLUMBING RULE before assigning solution themes. Answer the FIVE-QUESTION FACET
+CHECKLIST (role / form / scope / mode / contribution) before finalizing facets. Output ONLY one JSON object:
+{"key":"<KEY>","primary_theme":"<slug>","themes":["<slug>",...],"facets":["<slug>",...],"flags":["demote:context"],"rationale":{"<slug>":"<=12 words"}}
+("flags" is optional. Include "demote:context" ONLY for: general-AI object, steering-only solution, pure tool benchmark (no mechanism or deployable contribution), secondary lit, not operationalizable — general-code alone is NOT a demote reason. If only title+abstract or degenerate text is available, tag conservatively (no form facets or lit-review unless explicit) and include "insufficient-input" in flags instead of guessing. Allowed flags: demote:context, demote:discard, insufficient-input. Never put flags in "facets".)
+Use bare slugs. Base every tag on document content.
+
+=== PAPER FULL TEXT ===
+Uncovering Systematic Failures of LLMs in Verifying Code
+Against Natural Language Specifications
+Haolin Jin
+
+Huaming Chen
+
+arXiv:2508.12358v1 [cs.SE] 17 Aug 2025
+
+University of Sydney
+Sydney, NSW, Australia
+hjin3177@uni.sydney.edu.au
+
+University of Sydney
+Sydney, NSW, Australia
+huaming.chen@sydney.edu.au
+
+Abstract
+
+1
+
+Large language models (LLMs) have become essential tools in software development, widely used for requirements engineering, code
+generation and review tasks. Software engineers often rely on LLMs
+to assess whether system code implementation satisfy task requirements, thereby enhancing code robustness and accuracy. However,
+it remains unclear whether LLMs can reliably determine whether
+the code complies fully with the given task descriptions, which is
+usually natural language specifications. In this paper, we uncover
+a systematic failure of LLMs in evaluating whether code aligns
+with natural language requirements. Specifically, with widely used
+benchmarks, we employ unified prompts to judge code correctness.
+Our results reveal that LLMs frequently misclassify correct code implementations as either “not satisfying requirements” or containing
+potential defects. Surprisingly, more complex prompting, especially
+when leveraging prompt engineering techniques involving explanations and proposed corrections, leads to higher misjudgment
+rate, which highlights the critical reliability issues in using LLMs as
+code review assistants. We further analyze the root causes of these
+misjudgments, and propose two improved prompting strategies for
+mitigation. For the first time, our findings reveals unrecognized
+limitations in LLMs to match code with requirements. We also offer
+novel insights and practical guidance for effective use of LLMs in
+automated code review and task-oriented agent scenarios.
+
+As large language models (LLMs) have demonstrated increasing
+capability in the domain of code synthesis [3], a growing body of
+research and tooling efforts have begun exploring their application
+for automated code review and verification [5, 18, 29]. Traditional
+code reviews require developers to manually verify the alignment
+between code logic and requirements, a process that is both time
+consuming and prone to human error. LLMs show significant potential to reduce this burden by automating code assessments and
+suggesting improvements during the code-review process. For instance, recent studies have leveraged models such as GPT-4o to
+evaluate code submissions and determine whether they meet quality standards or require revisions [13].
+In software engineering, verifying and validating that source
+code aligns with its task requirements remains a challenge [21].
+Requirements engineering is widely recognized as crucial to clearly
+defining, understanding, and aligning project objectives with stakeholder needs, thereby reducing risks associated with errors, delays,
+and project failures [7]. Recent studies start to investigate the potential of LLMs to bridge this gap. Advanced models such as GPT-4o
+have shown promising accuracy in identifying unmet requirements
+from textual descriptions [20], indicating their potential as reliable
+“virtual reviewers” even without test cases or formal implementations. To further improve review effectiveness, researchers have
+explored self-critical mechanisms within LLMs, such as the SelfRefine framework, where models iteratively critique and refine
+their outputs without additional training [14].
+Ideally, LLMs should accurately understand functional requirements described in natural language and reliably judge whether
+provided code satisfies these requirements, assisting developers in
+identifying defects or confirming correctness. However, in scenarios lacking test cases or reference implementations, the reliability
+of LLMs in performing such “description-to-code” evaluations remains unclear. In this work, we investigate whether LLMs can
+correctly determine code correctness when provided with precise
+task descriptions and correct implementations. Our preliminary experiments reveal a concerning phenomenon: LLMs frequently issue
+false negative judgments, incorrectly concluding that correct implementations fail to meet stated requirements. This systematic failure
+may arise from inherent biases and hallucinations within LLMs [9],
+or from improper prompt designs. Models tend to overly critique
+correct code, resulting in a high false negative rate. Surprisingly,
+our extended experiments involving varied prompt designs [28]
+indicate that increasing the prompt complexity, such as requiring
+explicit explanations and suggested corrections, counterintuitively
+leads to higher rates of misjudgment. This finding contradicts the
+common assumption that incorporating explanatory steps typically
+
+CCS Concepts
+• Software and its engineering → Software testing and debugging;
+• Computing methodologies → Natural language generation.
+
+Keywords
+Large Language Models, Code Review, Prompt Engineering, Code
+Understanding
+ACM Reference Format:
+Haolin Jin and Huaming Chen. 2018. Uncovering Systematic Failures of
+LLMs in Verifying Code Against Natural Language Specifications. In Proceedings of ASE’25. ACM, New York, NY, USA, 5 pages. https://doi.org/
+XXXXXXX.XXXXXXX
+Permission to make digital or hard copies of all or part of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed
+for profit or commercial advantage and that copies bear this notice and the full citation
+on the first page. Copyrights for components of this work owned by others than the
+author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or
+republish, to post on servers or to redistribute to lists, requires prior specific permission
+and/or a fee. Request permissions from permissions@acm.org.
+ASE’25, Seoul, South Korea
+© 2018 Copyright held by the owner/author(s). Publication rights licensed to ACM.
+ACM ISBN 978-1-4503-XXXX-X/2018/06
+https://doi.org/XXXXXXX.XXXXXXX
+
+Introduction
+
+ASE’25, Sun 16 - Thu 20 November 2025, Seoul, South Korea
+
+Haolin Jin and Huaming Chen
+
+• RQ3: What factors cause LLMs to incorrectly classify correct
+code as faulty, and can these misjudgments be effectively
+mitigated through improved prompt design?
+
+Three Steps Prompt
+
+Conformance Check
+
+Satisfiy the specification
+
+Not satisify
+Task Specification
+LLM Code Review
+
+Justification
+Stored in JSON
+
+Correct Code
+Fix Attempt
+
+Figure 1: Experiment Workflow.
+enhances the reasoning and accuracy of LLMs. Instead, detailed
+prompts may inadvertently introduce biases toward excessive fault
+finding, causing models to detect non-existent errors in otherwise
+correct implementations.
+In this paper, we present an empirical investigation with observations that carry significant implications for automated software
+engineering practices. Frequent false negatives by LLMs acting as
+automated code review assistants can severely impact their practical utility, overwhelming developers with misleading feedback
+and potentially diminishing trust in these tools. Particularly within
+automated code generation pipelines, where an LLM may evaluate
+its own generated code [17], unreliable assessments will compromise the overall effectiveness of automated engineering workflow.
+Therefore, understanding why LLMs systematically misjudge correct implementations and identifying strategies to mitigate these
+failures becomes crucial. By providing these novel insights, we aim
+to raise community awareness regarding the limitations of LLMs
+in code evaluation and to inform future research efforts. Overall,
+this work makes three key contributions:
+(1) False negatives discovery – We reveal that LLMs frequently
+misjudge correct code as failing to meet requirements, indicating their bias towards over-correction rather than accurate verification.
+(2) Empirical evaluation – Using the state-of-the-art models, our experiments highlight the key weaknesses in LLMs’
+ability to assess code conformance with natural language
+requirements.
+(3) Mitigation proposals with improved prompt strategies
+– We propose a mitigation strategy that leverages refined
+prompt designs to reduce false negatives and improve assessment reliability.
+We will release the full replication package upon acceptance of this
+work.
+
+2 Methodology
+2.1 Research Question
+To investigate the causes and implications of LLMs’ judgments in
+code evaluation, we propose the following research questions:
+• RQ1: Without test cases, to what extent can LLMs reliably
+assess whether a program conforms to its specification?
+• RQ2: How does prompt design affect the accuracy of LLMbased code evaluation?
+
+These research questions cover three key dimensions: understanding the root causes of LLMs’ misjudgments, exploring potential
+mitigation solutions, and evaluating their effectiveness. Subsequent
+sections of this paper will present experiments and discussions
+addressing each of these questions.
+
+2.2
+
+Preliminary Experiment Setup
+
+To address RQ1 and RQ2, we designed a series of experiments to
+evaluate the performance of different LLMs on code requirement
+conformance tasks and to analyze the impact of prompt design. For
+this purpose, we selected three widely used code evaluation benchmarks: HumanEval [6], MBPP (Multiple Benchmark Programming
+Problems) [4], and QuixBugs [31], providing over 700 samples for
+evaluation in total. In this work, we currently focus on Python as
+the main programming language.
+HumanEval provides manually written problem descriptions,
+corresponding reference implementations and test cases. We used
+the provided descriptions and correct reference implementations
+as model inputs, instructing models to judge if the implementation
+met the described requirements. MBPP includes programming tasks
+described in natural language along with correct implementations,
+and we similarly used these correct code implementations with
+their requirement descriptions for testing. QuixBugs contains a
+small set of algorithm problems with known defects. Through these
+diverse datasets, we covered various scenarios ranging from competitive programming solutions to real-world bug fixes, ensuring
+the generalizability of our observations.
+Regarding model selection, we evaluated three mainstream LLMs:
+GPT-4o, Claude-3.5-sonnet, and Google Gemini-2.0 flash. These
+models were chosen as representatives of state-of-the-art industry LLMs, recognized for their strong general purpose capabilities
+in code understanding and generation tasks. Their superior performance makes them promising candidates for automated code
+review [8, 19, 33]. However, precisely because of their capabilities,
+we aimed to examine if they exhibit consistent error patterns. Moreover, these models have consistently been among the top choices for
+code review and code synthesis tasks in previous works [11, 23, 27].
+Figure 1 illustrates the workflow: the LLM receives the task specification and corresponding correct code implementation, guided
+by our designed prompts, the LLM then assesses whether the code
+fulfills the stated requirements, initially performing a binary classification (“Yes” if compliant, “No” if non-compliant). These judgments
+are systematically recorded into structured JSON files for consistency and ease of subsequent analysis. In cases where the LLM
+incorrectly classifies a correct implementation as non-compliant
+(a false negative judgment), it is further instructed to articulate a
+detailed rationale for its assessment and subsequently propose a
+revised version of the code. This approach enables the collection of
+enriched information for subsequent analysis of misjudgments.
+
+2.3
+
+Prompt Design
+
+To ensure a fair comparison, we developed a unified three-step
+prompt template for all models which inspired by recent advances
+
+Uncovering Systematic Failures of LLMs in Verifying Code Against Natural Language Specifications
+
+Table 1: Requirement-Conformance Recognition Rate
+(RCRR ↑, in %) of three LLMs on the HumanEval, MBPP, and
+QuixBugs benchmarks under three prompting approaches
+(Direct, Direct + Explain, and Three Step full prompt). Higher
+RCRR indicates better recognition of correct implementations as satisfying their task requirements.
+Model
+
+GPT-4o
+
+Gemini-2.0-flash
+
+Claude-3-5-sonnet
+
+HumanEval
+
+MBPP
+
+Quixbugs
+
+RCRR ↑
+
+RCRR ↑
+
+RCRR ↑
+
+Direct
+
+52.4
+
+63.7
+
+62.5
+
+Direct + Explain
+
+22.0
+
+38.2
+
+50.0
+
+Approch
+
+Full
+
+11.0
+
+30.9
+
+30.0
+
+Direct
+
+59.1
+
+66.5
+
+72.5
+
+Direct + Explain
+
+56.7
+
+64.9
+
+75.0
+
+Full
+
+53.0
+
+61.5
+
+72.5
+
+Direct
+
+78.0
+
+56.9
+
+80.0
+
+Direct + Explain
+
+69.5
+
+66.1
+
+77.5
+
+Full
+
+67.0
+
+55.3
+
+75.0
+
+in prompt engineering [1, 2, 10, 25, 30], instructing each LLM model
+to complete the following tasks within a single round conversation:
+• Judgment: Read the natural language requirement and the
+provided code implementation, then answer the question,
+“Does the code meet the requirement?” with a simple answer
+“Yes” or “No”.
+• Explanation: Request the model to provide a rationale for
+the judgment, such as explaining why it believes the code
+does not meet the requirements. This covers a detailed analysis of any discrepancies between code logic and requirements.
+
+exec
+/bin/zsh -lc "sed -n '321,760p' slr-phase4/txt/UDVHQ5HR.txt" in /Users/scott/Library/CloudStorage/OneDrive-purdue.edu/Systemic Literature Review
+ succeeded in 0ms:
+• Fix: If the model judged the code as not meeting the requirement, it was instructed to provide corrected code after the
+explanation. If the code was deemed correct, this step could
+be skipped or explicitly noted as unnecessary.
+Multi-stage prompting strategies have been applied for code
+evaluation task, aiming to enhance the reasoning performance of
+LLMs. One common approach first instructs the model to perform
+a step-by-step analysis of the code’s functionality, and then asks it
+to summarize the analysis with a binary decision (correct or not).
+This approach outperforms simple prompts by encouraging LLMs
+to reason through both the requirements and the code logic before
+making a judgment [22]. Such findings provide evidence-based
+support for our design of structured, explanation-driven prompting
+in code evaluation. Similar two-phase prompting method have also
+been applied for program repair. For example, [24, 32] prompt LLMs
+to first generate a chain-of-thought diagnosis of the bug, followed
+by providing a patch for fixing. Our prompt design is aligned with
+these approaches, in which the model is initially asked to explain
+any discrepancies between the code and the requirements. It will
+use related reasoning to propose a corrected version of the code if
+the initial answer is negative.
+
+3
+
+Observation and Preliminary Result
+
+To address our research questions, our experiments consider different dimensions for LLMs: accuracy of judgment against ground
+
+ASE’25, Sun 16 - Thu 20 November 2025, Seoul, South Korea
+
+truth labels, and whether rationales identified real defects or hallucinations. To isolate the impact of prompt complexity, we designed three progressively more complex prompting strategies: (1)
+Direct (judgment only), (2) Direct+Explain (judgment with reasoning), and (3) Full (three-step prompt consisting of judgment,
+explanation, and suggested repair). We then compared the misjudgement rates across these conditions. Our evaluation metric was
+the Requirement-Conformance Recognition Rate (RCRR), representing the accuracy with which a model correctly judges whether
+a given code satisfies a natural-language requirement. The metric
+is formally defined in Equation 1:
+RCRR =
+
+𝑁 correct judgment
+𝑁 Total correct_code samples
+
+(1)
+
+Overall, our results indicate an inverse relationship between prompt
+complexity and model performance. For instance, on the HumanEval
+dataset, GPT-4o’s RCRR declined markedly from 52.4% with the
+simple direct prompt to merely 11.0% using the full three-step
+prompt. It results in a substantial reduction of 41.4 percentage
+points. Similar trends were observed on the MBPP and QuixBugs
+datasets, with drops of 32.8 and 32.5 percentage points, respectively.
+Other models exhibited the same pattern: accuracy consistently
+decreased as explanation step and repair suggestions were introduced into the prompt. Notably, simpler “judgment-only” prompts
+often yielded the best performance, particularly on HumanEval and
+MBPP datasets. The consistency of these declines across diverse
+models and datasets underscores the robustness and generalizability
+of this phenomenon.
+
+4
+
+Finding Evaluation
+
+Next, we examine the underlying reasons why multi-step prompts
+negatively impact accuracy. Our analysis identifies an increased rate
+of false negatives as the primary factor: when models are prompted
+to explain and propose fixes, models become significantly more
+prone to incorrectly classifying conforming code as erroneous. In
+other words, introducing reasoning and correction steps induces an
+overcorrection bias: LLMs tend to assume flaws exist and suggest
+unnecessary modifications, even when the provided implementation is already correct. This trend is particularly surprising, given
+contrasting findings from prior research that generally support
+step-by-step prompting to improve logical reasoning accuracy. For
+instance, Wei et al. demonstrate that intermediate reasoning steps
+significantly boost performance on complex reasoning tasks [26].
+In contrast, a recent work also suggest similar bias may exist in the
+provided code snippet [16]. Our study extends this observation by
+establishing a more general scenario, in which we highlight a specific domain where the “step-by-step” approach can degrade rather
+than improve model performance in code requirement verification.
+
+4.1
+
+RQ1: LLM Judgment Accuracy
+
+Regarding RQ1 (the capability of LLMs to judge code correctness
+without test cases), we find current LLMs exhibit limited effectiveness, with RCRR ranging from only 52% to 78%. This indicates that
+automated code-to-requirement conformance checking remains an
+unresolved challenge.
+
+ASE’25, Sun 16 - Thu 20 November 2025, Seoul, South Korea
+
+Haolin Jin and Huaming Chen
+
+Table 2: RCRR for LLMs on the HumanEval, MBPP, and
+QuixBugs benchmarks under three prompting strategies.
+Original for the direct prompt and the Two-Phase Reflective
+and Behavioral Comparison prompts markedly outperform
+the Original prompt across all models and datasets.
+Model
+
+GPT-4o
+
+Gemini-2.0-flash
+
+Claude-3-5-sonnet
+
+4.2
+
+HumanEval
+
+MBPP
+
+Quixbugs
+
+RCRR ↑
+
+RCRR ↑
+
+RCRR ↑
+
+Original
+
+52.4
+
+63.7
+
+62.5
+
+Two-Phase Reflective
+
+72.0
+
+48.3
+
+70.0
+
+Behavioral Comparison
+
+85.4
+
+68.9
+
+90.0
+
+Original
+
+59.1
+
+66.5
+
+72.5
+
+Two-Phase Reflective
+
+67.7
+
+69.1
+
+82.5
+
+Behavioral Comparison
+
+73.8
+
+62.5
+
+85.0
+
+Original
+
+78.0
+
+56.9
+
+80.0
+
+Two-Phase Reflective
+
+82.9
+
+66.1
+
+77.5
+
+Behavioral Comparison
+
+78.0
+
+62.7
+
+82.5
+
+Approch
+
+4.3.2 Behavioral Comparison Prompt. Inspired by traditional blackbox software testing, separately summarizes the core functionality,
+input-output behaviors, and boundary conditions from the requirement description and then independently summarizes the functionality actually implemented in the code. Finally, these two behavior
+descriptions are explicitly compared to determine consistency.
+
+RQ2: Prompt Effectiveness
+
+Addressing RQ2 (the impact of prompt design), we observe a significant effect of prompting strategy on model performance. In particular, the comprehensive three-step prompt (judgment, explanation,
+and fix) causes substantial accuracy reductions of approximately 20
+to 40 percentage points compared to simpler direct prompts. GPT-4o
+exhibits the highest sensitivity to prompt complexity, with accuracy
+declines exceeding 40 percentage points on the most challenging
+tasks. In contrast, Gemini shows relatively greater stability, while
+Claude maintains comparatively better robustness across certain
+datasets. This variability indicates that different model architectures
+or training methodologies respond differently to chain-of-thought
+prompting strategies, though all exhibit some degree of performance degradation. Prior studies similarly report that even minor
+prompt modifications, such as slight variations in problem descriptions, can significantly affect LLM performance on code tasks [12].
+
+4.3
+
+4.3.1 Two-Phase Reflective Prompt. Draws inspiration from contract based reviews in software engineering [15]. It is structured in
+two stages: initially, the model explicitly extracts functional obligations from natural language requirements, presenting them clearly
+as bullet pointed lists to avoid over interpretation. In the second
+stage, the model audits the code implementation against each previously extracted obligation. This structured approach encourages
+the model to focus on actual functional requirements rather than
+superficial implementation details or stylistic differences, thereby
+effectively reducing the over correction bias.
+
+RQ3: Analysis and Mitigation
+
+Our error analysis identifies a pronounced “over-correction” tendency as the primary factor driving performance decline, when
+LLMs are prompted to explain and fix code, the model is required to
+justify its answer and then patch the code, it develops a bias toward
+assuming defects exist even when the implementation is already
+correct and the code already satisfies requirements, resulting in
+unnecessary and incorrect modifications. To address this issue, we
+developed two alternative prompting strategies, the Two-Phase
+Reflective Prompt and the Behavioral Comparison Prompt, which
+eliminate the mandatory “fix” step and clearly separate requirement
+comprehension from code auditing, thus reducing the tendency
+toward premature fault finding.
+Two-Phase Reflective Prompt
+“Phase 1 – Extract Contract Obligations.” Read the requirement and extract its
+intended functional obligations. List the main things the code is expected to do,
+including input-output behavior, edge-case handling, and any conditions or constraints.
+“Phase 2 – Audit and Verdict.” Carefully examine the code and check whether it fulfills
+each obligation you listed above. If an obligation is fully met, mark it as Satisfied;
+if it is partially or incorrectly implemented, mark it as Not satisfied. Based on the
+audit, decide: Does the code fulfill all essential obligations from the requirement?
+
+Behavioral Comparison Prompt
+Please summarize the main functions and boundary conditions that the program
+should implement. Then read the code and describe what functions the code actually
+completes and how the key steps are implemented. Finally, compare the code behavior
+with the requirements point-by-point to determine whether they are consistent.
+
+Table 2 illustrates the effectiveness of these new prompts. Experimental results show significant improvements in RCRR across models using the Two-Phase Reflective Prompt. For instance, GPT-4o’s
+performance on HumanEval increased from 52.4% with the original
+prompt to 72.0%, an improvement of 61 percentage points, with
+Behavioral Comparison further elevating performance to 85.4%.
+Similar trends are evident in the MBPP and QuixBugs datasets,
+highlighting the profound influence of prompt strategies on model
+performance. We attribute the superior effectiveness of these two
+prompting methods to their explicit redirection of the model’s attention toward “essential functional differences between requirements
+and code”, thus avoiding the overly critical stance commonly triggered by step-by-step explanation and correction prompts. This
+overly critical stance contradicts the original intent of classical
+Prompt Engineering and Chain-of-Thought methods [12, 26], which
+aim to improve reasoning by introducing intermediate reasoning.
+
+5
+
+Conclusion
+
+In this paper, we have identified systematic misjudgments by LLMs
+when verifying code conformance to natural language task specifications. Our results revealed that increasing prompt complexity
+substantially reduces the models’ Requirement Conformance Recognition Rate (RCRR), frequently leading to correct implementations
+being misclassified as non-conforming. This finding challenges prevailing prompt engineering assumptions, highlighting a critical
+limitation due to an “over-correction” bias. To address this issue,
+we have further proposed two prompt strategies for mitigation:
+the Two-Phase Reflective Prompt and the Behavioral Comparison
+Prompt. Experimental results demonstrated that both strategies
+improved LLM performance on code requirement verification tasks.
+While some misjudgments may persisted, we believe our findings
+offer new and promising directions for developing more reliable
+and effective automated code review tools and systems.
+
+Uncovering Systematic Failures of LLMs in Verifying Code Against Natural Language Specifications
+
+REFERENCES
+[1] Shayan Ali Akbar, Md Mosharaf Hossain, Tess Wood, Si-Chi Chin, Erica M
+Salinas, Victor Alvarez, and Erwin Cornejo. 2024. HalluMeasure: Fine-grained
+hallucination measurement using chain-of-thought reasoning. In Proceedings
+of the 2024 Conference on Empirical Methods in Natural Language Processing.
+15020–15037.
+[2] Roberto Araya. 2025. Do Chains-of-Thoughts of Large Language Models Suffer from Hallucinations, Cognitive Biases, or Phobias in Bayesian Reasoning?
+arXiv:2503.15268 [cs.AI] https://arxiv.org/abs/2503.15268
+[3] Jacob Austin, Augustus Odena, Maxwell Nye, Maarten Bosma, Henryk
+Michalewski, David Dohan, Ellen Jiang, Carrie Cai, Michael Terry, Quoc Le,
+et al. 2021. Program synthesis with large language models. arXiv preprint
+arXiv:2108.07732 (2021).
+[4] Jacob Austin, Augustus Odena, Maxwell Nye, Maarten Bosma, Henryk
+Michalewski, David Dohan, Ellen Jiang, Carrie Cai, Michael Terry, Quoc Le,
+and Charles Sutton. 2021. Program Synthesis with Large Language Models.
+arXiv:2108.07732 [cs.PL] https://arxiv.org/abs/2108.07732
+[5] Yufan Cai, Zhe Hou, David Sanan, Xiaokun Luan, Yun Lin, Jun Sun, and Jin Song
+Dong. 2025. Automated Program Refinement: Guide and Verify Code Large Language Model with Refinement Calculus. Proceedings of the ACM on Programming
+Languages 9, POPL (2025), 2057–2089.
+[6] Mark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique Ponde
+De Oliveira Pinto, Jared Kaplan, Harri Edwards, Yuri Burda, Nicholas Joseph,
+Greg Brockman, et al. 2021. Evaluating large language models trained on code.
+arXiv preprint arXiv:2107.03374 (2021).
+[7] Juan Ortiz Couder, Dawson Gomez, and Omar Ochoa. 2024. Requirements
+verification through the analysis of source code by large language models. In
+SoutheastCon 2024. IEEE, 75–80.
+[8] George Fragiadakis, Christos Diou, George Kousiouris, and Mara Nikolaidou.
+2025. Evaluating Human-AI Collaboration: A Review and Methodological Framework. arXiv:2407.19098 [cs.HC] https://arxiv.org/abs/2407.19098
+[9] Ziwei Ji, Nayeon Lee, Rita Frieske, Tiezheng Yu, Dan Su, Yan Xu, Etsuko Ishii,
+Ye Jin Bang, Andrea Madotto, and Pascale Fung. 2023. Survey of hallucination in
+natural language generation. Comput. Surveys 55, 12 (2023), 1–38.
+[10] Bowen Jin, Chulin Xie, Jiawei Zhang, Kashob Kumar Roy, Yu Zhang, Zheng Li,
+Ruirui Li, Xianfeng Tang, Suhang Wang, Yu Meng, and Jiawei Han. 2024. Graph
+Chain-of-Thought: Augmenting Large Language Models by Reasoning on Graphs.
+arXiv:2404.07103 [cs.CL] https://arxiv.org/abs/2404.07103
+[11] Sathvik Joel, Jie JW Wu, and Fatemeh H. Fard. 2024. A Survey on LLM-based Code
+Generation for Low-Resource and Domain-Specific Programming Languages.
+arXiv:2410.03981 [cs.SE] https://arxiv.org/abs/2410.03981
+[12] Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke
+Iwasawa. 2022. Large language models are zero-shot reasoners. Advances in
+neural information processing systems 35 (2022), 22199–22213.
+[13] Jiawei Liu, Chunqiu Steven Xia, Yuyao Wang, and Lingming Zhang. 2023. Is your
+code generated by chatgpt really correct? rigorous evaluation of large language
+models for code generation. Advances in Neural Information Processing Systems
+36 (2023), 21558–21572.
+[14] Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah
+Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, Shashank
+Gupta, Bodhisattwa Prasad Majumder, Katherine Hermann, Sean Welleck, Amir
+Yazdanbakhsh, and Peter Clark. 2023. Self-Refine: Iterative Refinement with
+Self-Feedback. arXiv:2303.17651 [cs.CL] https://arxiv.org/abs/2303.17651
+[15] Bertrand Meyer. 1992. Applying’design by contract’. Computer 25, 10 (1992),
+40–51.
+[16] Jiwon Moon, Yerin Hwang, Dongryeol Lee, Taegwan Kang, Yongil Kim, and
+Kyomin Jung. 2025. Don’t Judge Code by Its Cover: Exploring Biases in LLM
+
+ASE’25, Sun 16 - Thu 20 November 2025, Seoul, South Korea
+
+Judges for Code Evaluation. arXiv preprint arXiv:2505.16222 (2025).
+[17] Arjun Panickssery, Samuel Bowman, and Shi Feng. 2024. Llm evaluators recognize
+and favor their own generations. Advances in Neural Information Processing
+Systems 37 (2024), 68772–68802.
+[18] Zeeshan Rasheed, Malik Abdul Sami, Muhammad Waseem, Kai-Kristian Kemell,
+Xiaofeng Wang, Anh Nguyen, Kari Systä, and Pekka Abrahamsson. 2024. Aipowered code review with llms: Early results. arXiv preprint arXiv:2404.18496
+(2024).
+[19] Zeeshan Rasheed, Malik Abdul Sami, Muhammad Waseem, Kai-Kristian Kemell,
+Xiaofeng Wang, Anh Nguyen, Kari Systä, and Pekka Abrahamsson. 2024. AIpowered Code Review with LLMs: Early Results. arXiv:2404.18496 [cs.SE] https:
+//arxiv.org/abs/2404.18496
+[20] Lasse M Reinpold, Marvin Schieseck, Lukas P Wagner, Felix Gehlhoff, and Alexander Fay. 2024. Exploring LLMs for Verifying Technical System Specifications
+Against Requirements. arXiv preprint arXiv:2411.11582 (2024).
+[21] Shreya Shankar, JD Zamfirescu-Pereira, Björn Hartmann, Aditya Parameswaran,
+and Ian Arawjo. 2024. Who validates the validators? aligning llm-assisted evaluation of llm outputs with human preferences. In Proceedings of the 37th Annual
+ACM Symposium on User Interface Software and Technology. 1–14.
+[22] Weixi Tong and Tianyi Zhang. 2024. CodeJudge: Evaluating Code Generation
+with Large Language Models. arXiv preprint arXiv:2410.02184 (2024).
+[23] Jianxun Wang and Yixiang Chen. 2023. A Review on Code Generation with LLMs:
+Application and Evaluation. In 2023 IEEE International Conference on Medical
+Artificial Intelligence (MedAI). 284–289. doi:10.1109/MedAI59581.2023.00044
+[24] Yutong Wang, Pengliang Ji, Chaoqun Yang, Kaixin Li, Ming Hu, Jiaoyang Li, and
+Guillaume Sartoretti. 2025. Mcts-judge: Test-time scaling in llm-as-a-judge for
+code correctness evaluation. arXiv preprint arXiv:2502.12468 (2025).
+[25] Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei
+Xia, Ed Chi, Quoc Le, and Denny Zhou. 2023. Chain-of-Thought Prompting
+Elicits Reasoning in Large Language Models. arXiv:2201.11903 [cs.CL] https:
+//arxiv.org/abs/2201.11903
+[26] Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Fei Xia, Ed Chi,
+Quoc V Le, Denny Zhou, et al. 2022. Chain-of-thought prompting elicits reasoning
+in large language models. Advances in neural information processing systems 35
+(2022), 24824–24837.
+[27] Martin Weyssow, Aton Kamanda, Xin Zhou, and Houari Sahraoui. 2024. CodeUltraFeedback: An LLM-as-a-Judge Dataset for Aligning Large Language Models
+to Coding Preferences. arXiv:2403.09032 [cs.SE] https://arxiv.org/abs/2403.09032
+[28] Jules White, Quchen Fu, Sam Hays, Michael Sandborn, Carlos Olea, Henry Gilbert,
+Ashraf Elnashar, Jesse Spencer-Smith, and Douglas C Schmidt. 2023. A prompt
+pattern catalog to enhance prompt engineering with chatgpt. arXiv preprint
+arXiv:2302.11382 (2023).
+[29] Frank F Xu, Uri Alon, Graham Neubig, and Vincent Josua Hellendoorn. 2022. A
+systematic evaluation of large language models of code. In Proceedings of the 6th
+ACM SIGPLAN international symposium on machine programming. 1–10.
+[30] Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan,
+and Yuan Cao. 2023. ReAct: Synergizing Reasoning and Acting in Language
+Models. arXiv:2210.03629 [cs.CL] https://arxiv.org/abs/2210.03629
+[31] He Ye, Matias Martinez, Thomas Durieux, and Martin Monperrus. 2021. A
+comprehensive study of automatic program repair on the QuixBugs benchmark.
+Journal of Systems and Software 171 (2021), 110825.
+[32] Xin Yin, Chao Ni, Shaohua Wang, Zhenhao Li, Limin Zeng, and Xiaohu Yang.
+2024. Thinkrepair: Self-directed automated program repair. In Proceedings of the
+33rd ACM SIGSOFT International Symposium on Software Testing and Analysis.
+1274–1286.
+[33] Lianghui Zhu, Xinggang Wang, and Xinlong Wang. 2025. JudgeLM: Fine-tuned
+Large Language Models are Scalable Judges. arXiv:2310.17631 [cs.CL] https:
+//arxiv.org/abs/2310.17631
+
+
+codex
+{"key":"UDVHQ5HR","primary_theme":"ai-review","themes":["ai-review"],"facets":["counterpoint","general-code","steering"],"rationale":{"ai-review":"Empirically exposes systematic false negatives in LLM code-conformance judgments.","counterpoint":"Challenges assumptions that explanation-heavy chain-of-thought improves verification accuracy.","general-code":"Evaluated reference implementations, not specifically AI-generated code.","steering":"Mitigation substantively redesigns prompts controlling the AI reviewer's inputs."}}
+tokens used
+18,762
+Reading additional input from stdin...
+OpenAI Codex v0.144.6
+--------
+workdir: /Users/scott/Library/CloudStorage/OneDrive-purdue.edu/Systemic Literature Review
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 019f78da-5a35-7f93-99ec-c02158082bac
+--------
+user
+Read the file slr-phase4/Tag_Prompt.md (a tagging instrument) and the file slr-phase4/txt/Z8TPRNEU.txt (paper full text, key Z8TPRNEU). Apply the instrument to the paper exactly as its task block instructs. Do not read any other files. Output ONLY the single JSON object the task block specifies.
+codex
+I’ll read only the two specified files and return the instrument’s JSON object.
+exec
+/bin/zsh -lc "sed -n '1,240p' slr-phase4/Tag_Prompt.md && sed -n '1,260p' slr-phase4/txt/Z8TPRNEU.txt" in /Users/scott/Library/CloudStorage/OneDrive-purdue.edu/Systemic Literature Review
+ succeeded in 0ms:
+# Theme-tagging cheat-sheet (Vibe Coding Governance SLR)
+
+Tag on the **document contents**. **Multi-tag freely** — a paper can carry several themes.
+Tag on **membership** (the paper *contributes to* that theme's argument), **not mention**.
+Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth).
+**Steering exclusion:** shaping what gets *generated* — prompts, specs, fine-tuning, **controlling the AI's inputs/context** — is steering, NOT oversight; tag only the paper's inspection/comprehension/gating contribution.
+**Plumbing ≠ membership** (systems papers): tag only mechanisms the paper *argues about*, not everything its system happens to use (agents running test suites ≠ `rules-based-checks`).
+**Documented practice counts:** empirical evidence of practitioners *exercising* a stage's mechanism earns membership in that stage's theme. **Vision-paper floor:** a stage mentioned in one scenario sentence = mention, not membership.
+
+## THEME TAGS (`theme:<slug>`)
+
+**Problem — quantify**
+- `oversight-scaling-inversion` — AI code is riskier yet *less* inspected; PRs auto-merged unreviewed; review is the bottleneck; burden piles on maintainers
+- `ai-code-insecurity` — empirical **security**-vulnerability evidence in AI code (CWEs, insecure-but-confident). Incident analyses & original vulnerability taxonomies count; secondhand rate citations alone don't
+- `quality-debt` — **non-security** quality decay: tech debt, complexity, smells, maintainability, breaking changes
+
+**Limits of current oversight**
+- `automation-bias` — the *human* fails: over-trust, complacency, skill erosion, misses flaws even when warned. **Requires a CAPABLE human failing** (attention/trust); a human who *can't evaluate at all* (non-developer settings; failure survives priming+incentives) = competence gap, NOT bias (22JBEZNK). Competence-gap papers **stay core-eligible**: tag the remainder (explanation/mode/population facets) — the missing theme is a staged candidate, not a demote signal
+- `oversight-theater` — review exists on paper but lacks authority/time/info to change the outcome (rubber-stamp, token HITL)
+
+**Solution — the Detect → Triage → Fix → Escalate pipeline** *(gray-zone detectors — rubric-grounded LLM-judge, "LLM writes tests then runs them" — expect dual-tagging of both Detect themes)*
+- `ai-review` — [DETECT] AI *judges* the artifact (probabilistic, can hallucinate); incl. multi-agent / cross-model review, **its reliability limits**, and empirical evidence of practitioners *using* agents to validate agents' output
+- `rules-based-checks` — [DETECT] deterministic **grounded** checks: tests, static analysis/lint, symbolic exec, sandbox, classical formal-methods engines
+- `formal-methods` — [technique, COMPOSABLE] theorem proving / model checking / symbolic exec / autoformalization. Pair with the performer: AI does it → `ai-review`+`formal-methods`; classical engine → `rules-based-checks`+`formal-methods`; no performer (pure advocacy/position) → `formal-methods`+`intro-framing`
+- `risk-routing` — [TRIAGE] the **allocation decision** — *which/whether/when* AI items reach a human & at what tier; the **smarts of surfacing** (signal + selection/tiering logic). NOT the human's control mechanism. **(= WHAT gets surfaced)** Error-condition handback ("agent stuck → human") is NOT routing — no triage decision → `hitl-workflow` / `remediation-gating`. Signal must be **computed & producer-independent** — model self-confidence is disqualified
+- `remediation-gating` — [FIX] governance of **autonomous** fixing (Jidoka: the system fixes *without per-fix human involvement*, kept safe by machinery) — **content** gates (filter fix candidates) and **process** gates (bounded retries / budget-decay / convergence / stop-progression, fail-closed); not the repair technique itself. **REQUIRES an autonomous fix being overseen** — a detect/publish gate with **no auto-fix** (VibeGuard) is NOT this (detector's enforcement side). Deciding when a **human** must engage on the fix path (risky fixes → human) = `risk-routing` layered on top. **A human approving every fix is NOT this** — review-everything is the unscalable anti-pattern (a paper *advocating* it → consider `counterpoint`; such a design *introduces* automation-bias risk — a rationale-level critique, NOT `automation-bias` membership, which requires *studying* the human failure)
+- `hitl-workflow` — [ESCALATE] the human's **control surface** — *how the human acts* once engaged: checkpoints, action guards, approval gates, bounded delegation. NOT what to surface. **Levers, not lenses** (comprehension/visibility tools → `oversight-explanation`; a lever over the AI's *inputs* is steering). **Plan-gate rule:** a human gate over an AI-produced plan IS hitl-workflow when it's a **designed checkpoint in a lifecycle** (defined gate, authority to block); the same approval inside a conversational guide-then-"go do it" flow is steering. **(= HOW + WHEN the human acts)**
+- `oversight-explanation` — [ESCALATE·info side] **help the human understand what the AI is doing** — any system-provided or human-invoked support for understanding/judging AI output. Modes (illustrative, NOT exhaustive): *push* = decision-ready escalation handoff (background + options + recommendation + risks); *pull* = human-invoked visibility into what the AI is doing/using; *standing* = explanations attached to AI output that support the human's verdict. Lens, not lever (lever → `hitl-workflow`)
+- `agent-scope-drift` — [cross-cutting] agents wander off-mandate / make unreviewed decisions; mechanisms that **detect/bound departure from intent**. Tag by the mechanism's **object**, not the actor's motivation: a panel checking code scope vs spec scope → here + `ai-review`; retained control merely *motivated* by drift-worry → `hitl-workflow` only
+
+**Worked decomposition (multi-stage systems — assign each mechanism by its object):** producer's own pre-submit checking/iterating = self-conformance, NO theme · independent evaluation of the submitted artifact = detector (`rules-based-checks`/`ai-review` by epistemics; the *additional, producer-independent* checks are the oversight value; blocking on failure = the detector's enforcement edge) · deciding which findings matter, e.g. by severity + cross-model agreement (a computed, producer-independent signal) → `risk-routing` · governing the ensuing **autonomous fix path** (filters, bounds, convergence, fail-closed stop — no per-fix human) → `remediation-gating` · deciding when a fix must engage a **human** (risk tiers on the fix path) → `risk-routing`
+
+**Governance & policy**
+- `org-governance` — the *org-level governance apparatus* applied broadly: policy, **audit logging**, accountability, roles, maturity models, policy-as-code (internal; ≠ a single pipeline framework)
+- `regulatory-compliance` — *external* law/standards: EU AI Act Art.14, NIST AI RMF, ISO 42001, liability, audit evidence
+
+**Supply chain & provenance**
+- `tooling-supply-chain` — provenance/vetting of the AI **tools** (skills/MCP/agents); **+ attacks on the reviewer**; **+ poisoned/hallucinated dependencies as *entry-governance*** (registry vetting, allowlists — governing what enters). *Measuring* hallucinated/insecure deps in AI output → `ai-code-insecurity`. Excl. keyword false-positives (hardware trojans, classic supply-chain incidents)
+- `provenance-auditability` — traceability of AI **changes** so a human *can* review; auditable record; IP/licensing. Requires a **persistent record serving HUMAN reviewability/audit** — a point-in-time "what's in use now" view → `oversight-explanation`; persistence serving only agent coordination = plumbing
+
+## FACET TAGS (functional role; orthogonal — optional, apply if they fit)
+- `problem-statement-anchor` — a single committee-sit-up empirical stat **anchoring the OVERALL problem statement** (the scaling inversion / two-part frame) — NOT a sub-argument's or population-specific headline number, however vivid. Never on `lit-review` (secondhand — anchor the primaries)
+- `survey-input` — adoption / preference / RAI-priority finding useful for the org survey design; requires **substantive** findings — one incidental adoption stat ≠ membership
+- `intro-framing` — position / agenda / definitional paper that *names the gap* but **doesn't operationalize a mechanism**
+- `lit-review` — secondary literature (survey / review / meta-analysis) — **systematic OR narrative**; test = evidence *synthesized from other papers, not produced*. **If `lit-review` applies, the primary MUST be the biggest-tent theme** = the theme under which the largest share of the synthesized evidence would be cited; ties → the review's own framing question (never the most vivid/quantified section)
+- `counterpoint` — [role facet] the paper **argues against a prevailing position** (automation-maximalism, HITL value, oversight scaling — any direction); note *what it opposes* in the rationale. Often pairs with `intro-framing`
+
+**Artifact / evidence cluster** (composable; form → maturity):
+- `framework` — a **technical framework / reference architecture integratable into a build pipeline** (whether or not built). ≠ `theme:org-governance` (the org apparatus). A bare taxonomy/decision-model gets neither; **not a one-off point tool / bare point result** — a focused single-concern architecture qualifies (VibeGuard, Hedwig). Test: *would someone adopt it as a reusable pipeline design?* Composes: `framework`+`built-system`+`adopted`.
+- `built-system` — the authors *implemented* it as a working system/tool/prototype ("and they built it")
+- `adopted` — used **outside research** (commercial / production / real org use), beyond a lab prototype/benchmark. Scarce, high-signal; absence = prototype/proposal
+
+**Generation-mode scope pair** (which *setting* the paper studies; cut on **who initiates + the reviewable unit**, NOT tool location — agents live in IDEs too):
+- `assistive` — **human-initiated, suggestion-granularity** generation (inline completion, **snippet-level** chat-paste): the human authors in the flow, accepts piece-by-piece — a chat task returning a *complete artifact* is the tie-rule case below. Oversight surface = the *acceptance moment*.
+- `agentic` — **AI-initiated / AI-planned multi-step work** delivered at **artifact/PR granularity** for review. Oversight surface = the *gate*.
+- Apply either or **both** (paper compares/spans modes); **neither** = mode unspecified / irrelevant to the paper's claim. **The pair describes the *generation* studied:** "uses agents" ≠ `agentic`, "AI assists the human" ≠ `assistive` — AI only on the review/oversight side → **neither** + consider `general-code`. **Tie-rule:** initiator vs reviewable unit disagree (human-prompted chat task → complete artifact) → **the reviewable unit dominates** (wholesale artifact = the gate = `agentic`).
+
+**Scope / contribution / population flags:**
+- `general-ai` — [scope flag] governance/oversight is **general AI/LLM, not coding-specific** (model robustness, general RAI frameworks). Default (untagged) = coding-specific. Flags candidates for context.
+- `steering` — [contribution flag] the paper's proposed solution **or documented practice** operates on **generation** as a **substantive part of the contribution** — NOT any incidental prompt-shaping component every AI system has (prompts, specs, fine-tuning, shaping model inputs) rather than inspecting/gating the artifact. **Contribution, not topic.** Steering-**only** solution → demote candidate
+- `non-developer` — [scope flag] the generating/overseeing human is **not a professional developer** (end-user / business user / citizen developer). Default (untagged) = professional devs
+- `general-code` — [scope flag] the oversight/review mechanism targets **code generally, not AI-generated code** (AI may sit on the *review* side only); transfers to our setting but wasn't developed/evaluated there. Default (untagged) = the overseen object is AI code
+
+## WORKFLOW
+- **Thin input:** if only title+abstract (or degenerate text) is available → tag conservatively (no form facets / `lit-review` unless explicit in the abstract) and flag `insufficient-input` instead of guessing.
+- **Struggle signals → check the core bar:** can't pick a primary / stretching a definition to fill the set = the paper likely doesn't belong at core → `demote:context` and move on. Don't force tags to justify a disposition.
+- **Facet checklist — run all five questions on every paper** (misses cluster here; 29 tags exceed recall): **role** (problem-statement-anchor / survey-input / intro-framing / lit-review / counterpoint)? · **form** (framework → built-system → adopted)? · **scope** (general-ai? general-code? non-developer?)? · **mode** (assistive / agentic)? · **contribution** (steering)?
+- **PRIMARY** — one per paper. *Zotero entry only:* type `cal:human:primary:theme:<slug>`. In JSON output, the task block's bare-slug `primary_theme` field governs.
+  - **Tie-breaker** when a paper spans adjacent themes (route↔control-surface, AI-check↔human-gate): primary = the theme carrying its **distinctive novelty**, not the standard scaffolding.
+- **DEMOTE flag** (menu): `demote:context` — mis-scoped for core: **general-AI object · steering-only solution · pure tool benchmark** (capability benchmarking with no mechanism or deployable contribution; a benchmark *evaluating a contributed system* doesn't count) **· secondary lit · not operationalizable**. `general-code` alone is NOT a demote reason (it's the audit trail for kept-core transfers). Flag and keep going; batch-reviewed later. (`demote:discard` same pattern.)
+
+---
+# YOUR TASK
+Tag one CORE paper against the vocabulary above from its FULL TEXT below. Assign every theme the paper is
+a genuine MEMBER of, choose ONE primary theme (tie-breaker: the theme carrying the paper's DISTINCTIVE
+CONTRIBUTION/novelty, not standard scaffolding), and add any facet tags. Apply the STEERING
+EXCLUSION and the PLUMBING RULE before assigning solution themes. Answer the FIVE-QUESTION FACET
+CHECKLIST (role / form / scope / mode / contribution) before finalizing facets. Output ONLY one JSON object:
+{"key":"<KEY>","primary_theme":"<slug>","themes":["<slug>",...],"facets":["<slug>",...],"flags":["demote:context"],"rationale":{"<slug>":"<=12 words"}}
+("flags" is optional. Include "demote:context" ONLY for: general-AI object, steering-only solution, pure tool benchmark (no mechanism or deployable contribution), secondary lit, not operationalizable — general-code alone is NOT a demote reason. If only title+abstract or degenerate text is available, tag conservatively (no form facets or lit-review unless explicit) and include "insufficient-input" in flags instead of guessing. Allowed flags: demote:context, demote:discard, insufficient-input. Never put flags in "facets".)
+Use bare slugs. Base every tag on document content.
+
+=== PAPER FULL TEXT ===
+arXiv:2512.14012v1 [cs.SE] 16 Dec 2025
+
+Professional Software Developers Don’t Vibe, They Control:
+AI Agent Use for Coding in 2025
+RUANQIANQIAN (LISA) HUANG∗ , UC San Diego, USA
+AVERY REYNA∗ , Independent, USA
+SORIN LERNER, Cornell University, USA
+HAIJUN XIA, UC San Diego, USA
+BRIAN HEMPEL† , UC San Diego, USA
+The rise of AI agents is transforming how software can be built. The promise of agents is that developers
+might write code quicker, delegate multiple tasks to different agents, and even write a full piece of software
+purely out of natural language. In reality, what roles agents play in professional software development
+remains in question. This paper investigates how experienced developers use agents in building software,
+including their motivations, strategies, task suitability, and sentiments. Through field observations (N=13) and
+qualitative surveys (N=99), we find that while experienced developers value agents as a productivity boost,
+they retain their agency in software design and implementation out of insistence on fundamental software
+quality attributes, employing strategies for controlling agent behavior leveraging their expertise. In addition,
+experienced developers feel overall positive about incorporating agents into software development given
+their confidence in complementing the agents’ limitations. Our results shed light on the value of software
+development best practices in effective use of agents, suggest the kinds of tasks for which agents may be
+suitable, and point towards future opportunities for better agentic interfaces and agentic use guidelines.
+
+1
+
+Introduction
+I’ve been a software developer and data analyst for 20 years and there is no way I’ll
+EVER go back to coding by hand. That ship has sailed and good riddance to it.
+- Developer in Our Survey (S28)
+AI is rapidly changing the practice of programming. Already, about half of professional software
+developers are using AI tools daily [30]. Large language models (LLMs) are particularly good at
+writing code, and are becoming more skillful every year. Originally, in 2021, LLMs only provided
+coding assistance as super-charged autocomplete [12]. But more recently, their capabilities have
+advanced to accessing, modifying, and testing whole codebases in autonomous, step-by-step
+actions—we are now in the agentic coding era. There are many open questions about how capable
+these agents are and how best to use them. Anecdotally, we sometimes hear from people that
+they tried it once and it didn’t work out so well. But this contrasts with what one reads on social
+media: some online users claim to use dozens of agents at once to autonomously construct massive
+software (e.g., [32, 41]), a claim so intriguing but potentially incredulous that it is parodied [16].
+What is really happening?
+Human studies of agentic coding are emerging but still sparse. A notable randomized trial found
+that experienced open source maintainers were actually slowed down by 19% when allowed to use
+AI [4], and an agentic system deployed in an issue tracker saw only 8% of its invocations resulting in
+complete success (a merged pull request) [31]. These results suggest that perhaps agentic AI is not
+as useful as it might first sound, but still about a quarter of professional developers report that they
+already use AI agents at least weekly [30]. There have been a few recent investigations [9, 11, 27, 29]
+∗ Denotes equal contribution.
+† Directing author.
+
+Authors’ Contact Information: Ruanqianqian (Lisa) Huang, r6huang@ucsd.edu, UC San Diego, USA; Avery Reyna, avery.
+reyna16@gmail.com, Independent, USA; Sorin Lerner, sorin.lerner@cornell.edu, Cornell University, USA; Haijun Xia,
+haijunxia@ucsd.edu, UC San Diego, USA; Brian Hempel, bhempel@ucsd.edu, UC San Diego, USA.
+
+2
+
+Huang and Reyna et al.
+
+of “vibe coding” [17]. Although the term is sometimes used to mean any coding with AI agents, these
+papers investigate “vibe coding” as a particular form of agent use that aims for an experience of
+“flow and joy” by trusting the AI instead of carefully reviewing the generated code [27], “where you
+fully give in to the vibes”, “forget that the code even exists”, and “don’t read the diffs anymore” [17].
+There is a tacit acknowledgment by its practitioners that vibing produces lower quality code [9].
+As such, vibing may not be the most successful approach to agentic coding, and may not be how
+experienced developers use agents. How, then, do experienced developers create quality software with
+AI agents?
+This paper is an attempt to gain insight into the current practice of agentic coding by experts, in
+order to understand what is and is not working. Compared to prior work, we (a) do not limit the
+investigation to to vibe coding, and (b) examine experienced developers only, in the hopes that they
+have enough expertise to be insightfully critical of the agentic tools in real-world use. We present a
+two-part study—13 field observations and a broader survey of 99 experienced developers—hoping
+to answer four research questions (RQs):
+RQ1 - Motivations. What do experienced developers care about when incorporating agents into
+their software development workflow?
+RQ2 - Strategies.
+What strategies do experienced developers employ when developing software with agents?
+RQ3 - Suitability.
+What are software development agents suitable for, and when do they fail?
+RQ4 - Sentiments. What sentiments do experienced developers feel when using agentic tools?
+Our most salient finding is that, indeed, professional developers do not vibe code. Instead,
+they carefully control the agents through planning and supervision. Specifically, they are
+looking for a productivity boost while still valuing software quality attributes (RQ1), they plan
+before implementing and validate all agentic outputs (RQ2), they find agents suitable for welldescribed, straightforward tasks but not complex tasks (RQ3), and yet they generally enjoy using
+agents as long as they are in control (RQ4).
+The rest of the paper is structured as follows: Sec. 2 describes the methodology of our two-part
+study; Sec. 3 details the findings, which are summarized in Sec. 4; we discuss the implications of
+our findings in Sec. 5, relate our study to prior work in Sec. 6, and conclude the paper in Sec. 7.
+2
+
+Methods
+
+We define experienced developers as those with at least three years of professional development
+experience. We define agentic tools or agents as AI tools integrated into an IDE or a terminal that
+can manipulate the code directly (i.e., excluding web-based chat interfaces).
+We study the RQs through a two-part study: in depth via field observations (Sec. 2.1), and in
+breadth via a qualitative survey (Sec. 2.2). Our institutional review board approved both parts.
+Full replication package of the study materials can be found at https://osf.io/bxwv2/?view_only=
+25dfabc544fc497dae628d1ea8996896.
+2.1
+
+Part 1: Field Observations
+
+Participants. We recruited most participants via social media and personal networks, and one
+by snowball sampling. We imposed the following screening constraints: (1) three or more years
+of verifiable professional software engineering experience (full-time, part-time, and internships
+included); (2) prior experience with agentic AI in creating software; and (3) the ability to demonstrate
+a realistic task as part of work or personal side projects to be done with agentic AI during the
+study. Eventually, we recruited 13 participants (1 identifying as female, 12 as male) with years of
+
+Professional Software Developers Don’t Vibe, They Control: AI Agent Use for Coding in 2025
+
+3
+
+professional experience ranging from 3 to 25. Table 1 details their use agentic tools, model use, and
+tasks during the study; we detail their tasks later in this subsection.
+Procedure. Each study session included two parts: a 45-minute observation and a 30-minute semistructured interview. We conducted the studies over Zoom, recording participants’ screens and
+audio for analysis. The first two authors took turns to run the study. Sessions were run between
+August 1 and October 3, 2025.
+During the observational portion, participants worked on tasks of their choosing using their
+preferred setup. At the beginning, participants introduced their task, source of code base, agentic
+AI setup, and task relevance to their day-to-day work. Then, we asked participants to think aloud
+as they worked. We asked questions about each participant’s workflow and task to gain additional
+insights as needed, following prior practices [13]. After about 45 minutes of observation, we
+asked the participant to start wrapping up their work. We conducted a semi-structured interview
+afterward. Our questions involved topics relevant to all our research questions and necessary
+follow-ups on the observation portion. Participants received a $100 USD gift card after the study.
+Tasks. Prior to each study, we asked participants to bring their own tasks where they would
+use their usual agentic workflows; tasks need not be completed during the study and could be
+something from scratch or ongoing. Each participant worked on tasks that were part of their own
+ongoing work or side projects during the study. Specifically, five worked on production software
+as part of their work (P2, P3, P6, P7, P13), three demonstrated exploratory work tasks given the
+R&D nature of their jobs (P4, P5, P10), and five pursued side projects, including three collaborative
+(P1, P9, P12) and two personal (P8, P11). Through answers to the question about task relevance to
+their day-to-day work, five out of 13 participants (P1, P4, P5, P9, P12) reported that their tasks were
+outside of their professional domains, as indicated in the “Familiar?” column in Table 1.
+2.2
+
+Part 2: Invited Survey
+
+Survey Structure. We designed a 15-minute qualitative survey. After completing the survey,
+participants could join a drawing to win one of four $100 USD gift cards. All questions in the survey
+were required, except for the last question for optional comments.
+Fig. 1 shows the precise wording of the non-demographic survey questions. To ground their
+responses, the survey asked participants to consider the last time they used agentic AI to help
+develop software. The first part of the survey asked 11 questions regarding that experience: (1) their
+task; (2) three important things they cared about when developing software in general (to prime
+them for the next question); (3) what they cared about when using agentic AI; (4) agentic tools they
+used and (5) why; (6) prompting strategies; (7) whether they used multiple agents (and if so, how);
+(8) how often they had to modify agent-generated code; (9) parts of the task on which agents did
+well/poorly; (10) suitability of agents for the considered task; and (11) enjoyment after developing
+software with agents. Fig. 3 shows the use of agent tools, and Fig. 4 reports the data from three
+rating questions on code modification frequency, task suitability of agents, and enjoyment after
+working with agents (more in Sec. 3).
+The second part of the survey asked participants two open-ended questions considering their
+overall experiences in software development in the past year: tasks they prefer to perform (12)
+without and (13) with assistance from agents.
+The final part of the survey collected information on demographics and software development
+experience. The full survey is included in the replication package linked above.
+We conducted three pilots of the survey within our institution with a total of 14 participants.
+These pilots helped improve the survey content, ensure data quality, and measure the survey length.
+
+4
+
+Huang and Reyna et al.
+
+To guide you in answering the following questions, think about the last time you used AI agents to help develop software.
+Then, answer the following questions based on that experience.
+1. What was your task?
+2. What are three important things you care about when developing software?
+3. Which of these did you care about most when using AI agents to complete this task? If none of the above, what did you care about?
+4. What tool(s) did you use to work with the agents? Select all that apply. [7 options + “Other” free response, see Fig. 3]
+5. Why did you choose the above tool(s) for this task?
+6. How did you prompt—was there special information you included or any prompting tricks or prompt engineering tactics you used?
+7a. For this task, did you use one agent at a time, or did you run multiple in parallel? [2 options]
+7b. If you used parallel agents, how did you set that up?
+8. For this task, how frequently did you feel like you had to modify or change the code output generated by the agent(s)? [5 options]
+9. What part(s) of the task did the agent(s) perform well on? Poorly on?
+10. After finishing (or abandoning!) the task, how suitable do you feel agent(s) are for the task? [6 options]
+11a. For this task, how much did you enjoy developing software with agents compared to without? [6 options]
+11b. Can you explain your rating for the previous question?
+Answer the following questions thinking about your overall experiences this year in software development.
+12. Thinking of all the responsibilities you have as a software developer, which kinds of tasks do you prefer to perform without
+assistance from agents?
+13. Thinking of all the responsibilities you have as a software developer, which kinds of tasks do you prefer to perform with agents?
+Optional: Do you have any other comments or anything else you would like us to know?
+
+Fig. 1. Non-demographic questions from survey. Unless the number of response options are noted, questions
+are free response.
+
+The survey was updated between each round of feedback. The pilot results were not included in
+the data analyzed for this paper.
+Survey Participants. We invited responses from GitHub users, following a recruitment process
+similar to prior work [20]. To find developers with experience with agentic tools, we focused on
+the following repositories: (1) Five agentic tools that were ranked among the top 20 apps1 and
+open-sourced on GitHub: Kilo Code, Cline, RooCode, Cursor, and Claude Code; (2) Repositories that
+fell under the topics of AI/ML frameworks (e.g., AutoGPT, DeepCode), open source language models
+(e.g., BERT, CLIP), development frameworks (e.g., Continue, Vercel AI SDK), and other various
+types of development tools (e.g., Gemini CLI, PyLance); (3) Repositories tagged with agentic or
+agentic-coding on GitHub with at least 500 stars. The Appendix shows a complete list of these
+repositories. We used GitHub’s GraphQL API to extract user profiles from these repositories by
+querying recent commits, pull requests, issues, stargazers, and forkers within the past year.
+We then took the set union of all participants retrieved with public emails, removing all duplicates.
+This resulted in 4,141 unique GitHub users who we invited to take the survey. For response quality
+control, we distributed the survey via Qualtrics directly through emails, each invitee with a unique
+survey link (as opposed to public URLs).
+249 out of 4,141 users responded to the survey, resulting in a response rate of around 6%,
+comparable to other research surveys in software engineering [19, 20]. Among the 249 responses, 104
+responses were valid—respondents were at least 18 years of age, had at least 3 years of professional
+experience in software development, and used at least one agentic tool per our definition at the
+beginning of this section. After the analysis (described below), we belatedly discarded five responses
+1 https://openrouter.ai/rankings, rankings now may differ from our references at the time of the recruitment
+
+Professional Software Developers Don’t Vibe, They Control: AI Agent Use for Coding in 2025
+
+5
+
+Fig. 2. Distribution of tasks and development experience. The sums exceed 99 (total # of analyzed responses)
+as task and experience domains may fall under multiple categories.
+
+with highly similar answers that demonstrate, suspiciously, full use of GPT-4.1 to answer our survey
+questions without personalized steering (confirmed via our experiments with the same model). Our
+results reflect the remaining 99 survey responses, removing the five above. The 99 valid response
+were submitted between August 18 and September 23, 2025.
+The 99 respondents self-reported years of professional development experience between 3 and
+41 years (𝑎𝑣𝑔. = 12.8, 𝑚𝑒𝑑𝑖𝑎𝑛 = 10, 𝑠𝑑 = 9.7). Among them, 1 self-identified as female, 1 did not
+disclose their gender, and the remaining 97 were male. The geographical distribution of the 99
+responses is the following: North America (27), Europe (24), Asia (29), South America (13), Africa
+(5), Oceania (1). Since our survey reached developers worldwide, though it is in English, we received
+five responses in a language that is not English, which we translated to English equivalents using
+Gemini 2.5 Pro and cross-validated with Claude Sonnet 4.
+Independent from the main data analysis below, we open-coded each task and software development experience reported in the survey. 96 out of the 99 respondents reported tasks where
+they used agentic tools, as shown in Fig. 2, along with the respondents’ self-reported domain of
+development experience. The majority of survey respondents were full-stack developers, and their
+tasks primarily involved app building (including web apps).
+2.3
+
+Data Analysis
+
+We performed two stages of data analysis to answer the four research questions. First, we followed
+standard thematic analysis process [5] to analyze the qualitative data and develop initial answers;
+because of the two-part nature of our study, we conducted open coding separately on each part,
+and we developed themes upon all codes from both parts. Then, we analyzed specific parts of the
+data in depth, as some of the emerged themes warranted further investigations.
+Observations. All recordings were auto-transcribed by the web conferencing software. The first
+two authors conducted open coding of the first two sessions, using field notes as references, to
+develop the initial code book. Then, they each coded one half of the remaining sessions, discussing
+new codes until achieving agreements every two sessions.
+Survey. In parallel to analyzing Observations, the same two authors conducted open coding of the
+open-ended survey responses. First, they each analyzed half of the first 30 responses to develop
+on a code book independent from the Observations code book. They then each coded half of the
+remaining responses and met afterwards to discuss notable findings and share sample data of new
+codes to establish agreements.
+
+6
+
+Huang and Reyna et al.
+
+Joint Thematic Analysis. Given the large quantity of our qualitative data, rather than computing
+inter-rater reliability, both coders went through rounds of coding to reach agreement upon each
+code creation and coding instance, following best practices in qualitative analysis [23]. After coding
+concluded, the two coder-authors and another author used affinity mapping of codes from both
+study parts to develop themes. Specifically, we created clusters of the codes (regardless of their
+
+exec
+/bin/zsh -lc "sed -n '261,620p' slr-phase4/txt/Z8TPRNEU.txt" in /Users/scott/Library/CloudStorage/OneDrive-purdue.edu/Systemic Literature Review
+ succeeded in 0ms:
+source) that share semantic similarities, merged clusters as needed, and developed a description of
+each cluster that became a theme. We report themes as paragraph headings throughout Sec. 3.
+Two themes emerged from the first analysis stage, suggesting additional analyses to fully answer
+our research questions: (for RQ2) developers control rather than vibe when using coding agents—but
+how did they control? (for RQ3) developers mentioned using agents for several tasks—but which
+specific tasks are agents suitable for? To answer these questions, we performed two additional
+analyses on the prompts from Observations and the tasks mentioned in Survey, respectively.
+Prompt Analysis. We transcribed the prompts (i.e., user query to the agent) and plans (e.g., an
+implementation plan in a Markdown file) from the Observations video recordings and performed
+open coding to identify the varieties of context referenced therein. A first and the last author coded
+the first session together to develop an initial code book. The two authors then each coded half of
+each of the remaining sessions, meeting once partway through and once at the end to add, merge,
+and rename codes. Due to the high volume of the context types (43), we decided to report only
+the top ten context types (Table 3). Separately, the last author recorded the number of words and
+estimated the number of steps in each prompt/plan by manually counting the number of separate
+things the user asked the agent to do, e.g., the number of todo list items (in the case of a multi-line
+plan), imperative verbs (in the case of a long single-line prompt), or questions asked (in the case of a
+query for information). The last author also recorded, for each submitted prompt, how many steps
+were actually executed by the agent—this could be fewer than the number of steps requested in the
+prompt (e.g., if the user interrupted the agent during the implementation) or more than the number
+of requested steps (e.g., if the user instructed the agent to execute a plan written previously). Table 2
+reports the results of the overall prompt analysis.
+Task Suitability Analysis. The last author revisited the raw survey responses and made a finegrained list of tasks mentioned by respondents throughout the questions in all of the surveys,
+resulting in 189 tasks. In consultation with a first author, they merged these into an initial code
+book of 116 task codes (manually refined from clusters suggested by OpenAI GPT-5). Then, for
+each task code, the last author coded the AI agent’s suitability indicated in each survey. 2 Finally,
+the last author met with the other first author to merge (and occasionally split) task codes to refine
+and simplify the code book, referencing code-relevant quotes pulled from the surveys by OpenAI
+GPT-5-mini. The final refined code book consisted of 89 task codes, of which 59 appeared in at least
+5 surveys and are reported in Table 4. Each survey mentioned on average 8.5 task codes.
+2.4
+
+Limitations
+
+We acknowledge several threats to the validity of our findings.
+Demographic and Sentiment Bias. 12/13 (92%) observation participants and 97/99 (98%) survey
+respondents self-identified as male, both proportions slightly higher than the global stats as of
+2024 (91% male)3 , limiting gender diversity in our sample and potentially the generalizability of
+our findings. In general, there is likely a selection bias towards people positive towards AI for both
+2 Initially this coding was attempted with OpenAI GPT-5-nano, but it became clear that accurate coding would require
+
+prompt engineering per task code. Instead, coding was manual and AI was used only as a double-check to highlight codings
+potentially missed.
+3 https://www.jetbrains.com/lp/devecosystem-2024/
+
+Professional Software Developers Don’t Vibe, They Control: AI Agent Use for Coding in 2025
+
+7
+
+the observations and the survey. The bias was deliberate because we wanted answers for RQ2
+(Strategies) and RQ3 (Suitable Tasks) from those who might be having some success with AI, but a
+positive selection bias for AI is perhaps less appropriate for RQ4 (Sentiments).
+Sample Size and Variety. Our 13 field observations represent a relatively small sample, primarily
+due to the difficulty in recruiting experienced developers who could share work-related tasks (due
+to confidentiality concerns) when there were no personal projects. While our goal is to surface
+usage patterns of agentic tools in software development, rather than full theory development, the
+observation findings may only achieve local saturation given the limited variety of tasks and agentic
+tools observed. We addressed this threat by augmenting the observations with the large-scale survey
+of 99 developers. Our analysis for RQ1, RQ2, and RQ4 is based on holistic thematic synthesis of the
+survey and observations together (RQ3 primarily relies on the variety from the survey alone).
+Survey Sampling. Our survey recruitment, which involved scraping public emails from GitHub, is
+not encouraged by the platform (as reported in a prior similar survey [20]) and may introduce a
+self-selection bias toward developers active on public repositories; we articulated the reason for the
+survey invitation in every outreach email. The survey also gathered emails from a disproportionate
+number of AI/ML repositories, potentially biasing the tasks and respondents’ usage of AI; as
+mentioned above, this latter bias was desirable for RQ2 and RQ3. Despite some sampling bias,
+respondents reported a wide variety of tasks (Fig. 2).
+Misrepresented Expertise. There is a possibility that participants may not have been as expert as
+they represented. To mitigate, for the observation participants, we searched the web with their
+name to check that their web presence indicated 3+ years of experience (12x by LinkedIn work
+history, 1x by company website). Moreover, none of their behaviors during the study cast doubt on
+their reported expertise. For the survey, we did not perform manual verification, but (1) we did not
+recruit by public online posting or social media, only by direct email, and (2) respondents were not
+told about any precise experience cutoff as we collected responses from all years of experience.
+Short Observation Time. Within our study, observations were limited to a single 45-minute
+session per participant, and thus we were unable to examine the longitudinal use of agentic tools.
+In addition, software development is a broad spectrum ranging from production deployment to
+exploratory prototyping, each category potentially involving multiple development cycles; because
+we prioritized the observation of realistic tasks within limited durations, we were unable to observe
+any particular kind of software development implemented in its full cycle. As a mitigation, we
+asked participants in both the observations and the survey about their overall experience with
+agents outside of the observed/surveyed tasks.
+3 Results
+Below we report results from our two-part study (Observations and Survey) according to our
+four research questions in terms of behavioral data, quotes, and survey ratings. When quoting
+participants, we use prefixes of P for Observations participants, and S for Survey participants.
+3.1
+
+RQ1: Motivations for Using Agents in Software Development
+I’m on disability, but agents let me code again and be more productive than ever (in
+a 25+ year career).
+- S22
+We asked both Observations and Survey participants about factors that affect their decision to
+incorporate agents in software development. In Observations, we asked: “When determining how
+to integrate agents into your workflow, what are your goals and priorities?” In Survey, we asked
+two consecutive questions at the beginning of the survey: we asked “What are three important
+
+8
+
+Huang and Reyna et al.
+
+Table 1. Observational study participants, agentic tools & models used during the study, and tasks. “YoE” =
+years of professional software development experience; “Familiar?” = whether a task is within one’s expertise.
+ID YoE Agentic Tool(s) Model(s)
+P1
+
+5
+
+P2
+P3
+P4
+P5
+P6
+P7
+P8
+P9
+
+9
+10
+6
+9
+11
+3
+6
+3
+
+P10
+
+15
+
+P11
+
+25
+
+P12
+P13
+
+9
+20
+
+Claude Code,
+Windsurf
+Windsurf
+Cursor
+Cursor
+Cursor
+Cursor
+GitHub Copilot
+GitHub Copilot
+Kilo Code,
+Terragon
+Claude Code,
+Cursor
+Claude Code,
+Codex
+Cursor
+Claude Code
+
+Claude Code
+GitHub Copilot
+Cursor
+Windsurf
+Codex
+Roo Code
+Gemini CLI (user)
+Cline
+Kilo Code (user)
+Augment Code (user)
+Aider (user)
+Opencode CLI (user)
+Langchain (user)
+Langgraph (user)
+Zed (user)
+Other
+
+Sonnet 4, OpenAI o3,
+Gemini 2.5 Pro
+Sonnet 3.7, GPT-5
+Cursor’s auto mode
+Sonnet 3.5, GPT-5
+GPT-5, Sonnet 4
+Sonnet 4, GPT-5
+Sonnet 4
+Sonnet 3.5, GPT-4o
+Sonnet 4
+
+Building a login system for data labeling platform
+
+✓
+✓
+✓
+✓
+
+Creating a plan for a React app implementation
+Improving a prototype for AI safety
+Improving a user-facing tutorial for a dashboard
+Debugging UI for analyzing object detection algorithms
+Generating an API and relevant tests
+Building an ML detection pipeline
+Building app that visualizes file histories
+Transferring Radix UI design assets to Base UI
+
+Sonnet 4, GPT-5
+
+✓
+
+Debugging data pipeline & adding UI features
+
+Sonnet 4, codex-1
+
+✓
+
+Building a Ruby-based card game
+
+Sonnet 4
+Sonnet 4.5
+
+✓
+
+Planning to enhance a chatbot & refactoring code
+Debugging a production testing suite
+
+2
+2
+2
+2
+
+0
+
+Familiar? Task
+
+3
+3
+
+9
+
+10
+
+10
+
+12
+12
+
+✓
+✓
+
+51
+
+15
+15
+
+14
+
+20
+
+30
+
+Number of Users
+
+40
+
+50
+
+53
+
+58
+
+60
+
+Fig. 3. Use of agentic coding tools in Survey. Numbers sum up to more than 99 as one user may report more
+than one tool use. Tools suffixed with “(user)” are not within the provided options and reported via a text box.
+“Other” represent self-reported tools with counts of 1.
+
+things you care about when developing software?” to situate for the next question, “Which of
+these did you care about most when using AI agents to complete this task? If none of the above,
+what did you care about?”. Although potentially leading, the goal of the first question was to
+encourage participants to think about their development goals more broadly rather than focusing
+on the immediate moment when they choose to type an AI prompt, to avoid answers to the second
+question that all said “producing the right code” without explaining what, more specifically, was
+meant to be “right”. Below we report answers to the second question only. We also asked why they
+chose their particular agentic tools (reported in Fig. 3). We found the following common themes.
+
+Professional Software Developers Don’t Vibe, They Control: AI Agent Use for Coding in 2025
+
+Number of Responses
+
+Agentic Code Edit Frequency
+
+Agent Suitability for Task
+
+40
+
+38
+
+37
+
+30
+
+28
+
+17
+
+14
+4
+
+39
+
+27
+
+24
+
+20
+
+0
+
+Enjoyment of Working with Agents
+
+51
+
+50
+
+10
+
+9
+
+7
+
+6
+0
+
+Never Seldom ~Half Usually Always Extremely
+the time
+unsuitable
+
+0
+
+0
+
+Extremely Extremely
+suitable displeased
+
+1
+
+4
+
+Extremely
+pleased
+
+Fig. 4. Survey ratings of modification frequency of agentic code, agent suitability for the task in reflection,
+and enjoyment of working with agents compared to without.
+
+Personal Productivity. Experienced developers valued agentic tools for improving the speed
+of software development (9x Observations, 35x Survey). Some participants directly comment on
+agents’ productivity boost to their general workflows (4x Observations, 9x Survey) and to the
+specific tasks they worked on (12x Survey). S59 opined that “I think my productivity has increased
+ten-fold (seems exaggerated but it feels like that)”. Many attributes of agentic tools affect their
+effectiveness in improving productivity, including their ease of discovery and low barrier to entry
+(3x Observations, 8x Survey), being integrated into existing tools (3x Observations, 11x Survey),
+and executing user requests at high quality (6x Observations, 36x Survey). Having access to
+customization (e.g., configuring user rules) (4x Survey) and choice of state-of-the-art models (3x
+

@@ -306,8 +306,9 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
   conversational guide-then-go = steering). **D2 who-checks-what decomposition** with the HOS release
   cycle as worked example (producer self-checks = no theme; independent evaluation = detector by
   epistemics; severity + cross-model agreement = risk-routing on a computed producer-independent
-  signal; fix approval/escalation + refix-loop governance = remediation-gating). **D4 dependency
-  split** (measure → ai-code-insecurity; govern-what-enters → tooling-supply-chain).
+  signal; fix approval/escalation + refix-loop governance = remediation-gating). **D4 (arbiter final, superseding the
+  proposed split): dependency risk in generated code → ai-code-insecurity**; tooling-supply-chain
+  keeps the AI tooling + attacks on the reviewer.
 - **D3 RESOLVED (Scott, 2026-07-18) — the Jidoka ruling.** `remediation-gating` = the system fixes
   **autonomously, without per-fix human involvement**, kept safe by machinery (content/process
   gates, convergence, fail-closed stops); `risk-routing` **layers on top** to engage the human only

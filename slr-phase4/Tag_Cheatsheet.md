@@ -11,7 +11,7 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 
 **Problem — quantify**
 - `oversight-scaling-inversion` — AI code is riskier yet *less* inspected; PRs auto-merged unreviewed; review is the bottleneck; burden piles on maintainers
-- `ai-code-insecurity` — empirical **security**-vulnerability evidence in AI code (CWEs, insecure-but-confident). Incident analyses & original vulnerability taxonomies count; secondhand rate citations alone don't
+- `ai-code-insecurity` — empirical **security**-vulnerability evidence in AI code (CWEs, insecure-but-confident), **incl. hallucinated/poisoned dependencies in the output** (D4 ruling). Incident analyses & original vulnerability taxonomies count; secondhand rate citations alone don't
 - `quality-debt` — **non-security** quality decay: tech debt, complexity, smells, maintainability, breaking changes
 
 **Limits of current oversight**
@@ -35,7 +35,7 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 - `regulatory-compliance` — *external* law/standards: EU AI Act Art.14, NIST AI RMF, ISO 42001, liability, audit evidence
 
 **Supply chain & provenance**
-- `tooling-supply-chain` — provenance/vetting of the AI **tools** (skills/MCP/agents); **+ attacks on the reviewer**; **+ poisoned/hallucinated dependencies as *entry-governance*** (registry vetting, allowlists — governing what enters). *Measuring* hallucinated/insecure deps in AI output → `ai-code-insecurity`. Excl. keyword false-positives (hardware trojans, classic supply-chain incidents)
+- `tooling-supply-chain` — provenance/vetting of the AI **tools** (skills/MCP/agents); **+ attacks on the reviewer**. **Dependency risk *in generated code*** (hallucinated/poisoned packages the AI writes in) → `ai-code-insecurity`, NOT here (D4 ruling). Excl. keyword false-positives (hardware trojans, classic supply-chain incidents)
 - `provenance-auditability` — traceability of AI **changes** so a human *can* review; auditable record; IP/licensing. Requires a **persistent record serving HUMAN reviewability/audit** — a point-in-time "what's in use now" view → `oversight-explanation`; persistence serving only agent coordination = plumbing
 
 ## FACET TAGS (functional role; orthogonal — optional, apply if they fit)

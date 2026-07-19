@@ -444,9 +444,10 @@ Cross-cutting: `agent-scope-drift`.
   **+ attacks on the oversight layer** (framing attacks, evasion, spec-gaming — a supply-chain attack
   on the reviewer, absorbed from the dissolved T3).
 - **Boundary:** governance of *what enters* (tools/deps) and *attacks on the reviewer*, distinct from
-  reviewing the emitted code. **Dependency split (2026-07-18 panel ruling):** *measuring*
-  hallucinated/insecure dependencies in AI output → `ai-code-insecurity`; *governing what enters*
-  (registry vetting, allowlists, provenance gates) → here. Excludes keyword false-positives (hardware
+  reviewing the emitted code. **D4 ruling (Scott, 2026-07-18, final):** dependency risk
+  *in generated code* — hallucinated/poisoned packages the AI writes in — → `ai-code-insecurity`,
+  NOT here; this theme keeps the AI *tooling* (skills/MCP/agents entering the toolchain) and attacks
+  on the reviewer. Excludes keyword false-positives (hardware
   trojans, classic SolarWinds-class incidents).
 - **Examples:** `6ZC3H7AF` — 26% of scanned agent skills carry ≥1 vulnerability, minimal vetting;
   *attacks:* `X7EN6DXZ` — PR-metadata framing biases LLM review, 100% attack success; `T3XTXIXW` —
