@@ -206,6 +206,14 @@ instrument, so disagreement is attributable to the models, not to known-fuzzy de
    `cal:human:primary:theme:<slug>` tag per paper — the menu can't). **Comparability note:** Set A
    human tags are *model-informed* (model tags visible while vetting); **Set B is the clean blind
    comparison** (no model tags exist there — do not run models on Set B until the vetting pass is done).
+1b. **Instrument-critique panel (added 2026-07-18):** after the vetting pass, the high-end models
+   (Fable 5, Gemini Pro, codex-equivalent) **review and critique the tagging instructions** before
+   the retag. **Critique taxonomy — only the first category is directly actionable:** (a) *ambiguity /
+   inconsistency / omission* in the written instrument → fix; (b) *disagreement with an adjudicated
+   boundary decision* (e.g., the drift object-of-mechanism rule, the steering exclusion) → recorded
+   but the human arbiter's call stands — otherwise the critique loop re-tunes the instrument toward
+   model consensus, the known-wrong target. Critique agents run in fresh contexts, separate from the
+   tagger runs.
 2. Freeze the *vetted* instrument; **archive check:** v1-instrument model outputs preserved in
    `slr-phase4/data/tags-v1/` (done 2026-07-18) before any re-run overwrites `data/tags/`.
 3. Re-run all 5 models on Sets A+B in fresh contexts under the vetted instrument; write `cal:<model>:*`.
