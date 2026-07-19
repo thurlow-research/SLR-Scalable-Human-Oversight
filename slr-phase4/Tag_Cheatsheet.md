@@ -18,7 +18,7 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 - `oversight-theater` — review exists on paper but lacks authority/time/info to change the outcome (rubber-stamp, token HITL)
 
 **Solution — the Detect → Triage → Fix → Escalate pipeline**
-- `ai-review` — [DETECT] AI *judges* the artifact (probabilistic, can hallucinate); incl. multi-agent / cross-model review **and its reliability limits**
+- `ai-review` — [DETECT] AI *judges* the artifact (probabilistic, can hallucinate); incl. multi-agent / cross-model review, **its reliability limits**, and empirical evidence of practitioners *using* agents to validate agents' output
 - `rules-based-checks` — [DETECT] deterministic **grounded** checks: tests, static analysis/lint, symbolic exec, sandbox, classical formal-methods engines
 - `formal-methods` — [technique, COMPOSABLE] theorem proving / model checking / symbolic exec / autoformalization. Pair with the performer: AI does it → `ai-review`+`formal-methods`; classical engine → `rules-based-checks`+`formal-methods`
 - `risk-routing` — [TRIAGE] the **allocation decision** — *which/whether/when* AI items reach a human & at what tier; the **smarts of surfacing** (signal + selection/tiering logic). NOT the human's control mechanism. **(= WHAT gets surfaced)** Error-condition handback ("agent stuck → human") is NOT routing — no triage decision → `hitl-workflow` / `remediation-gating`
@@ -39,7 +39,7 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 - `problem-statement-anchor` — a single committee-sit-up empirical stat **anchoring the OVERALL problem statement** (the scaling inversion / two-part frame) — NOT a sub-argument's or population-specific headline number, however vivid. Never on `lit-review` (secondhand — anchor the primaries)
 - `survey-input` — adoption / preference / RAI-priority finding useful for the org survey design
 - `intro-framing` — position / agenda / definitional paper that *names the gap*
-- `lit-review` — secondary literature (survey / review / meta-analysis) — **systematic OR narrative**; test = evidence *synthesized from other papers, not produced*. Primary for lit-review papers = the **biggest-tent** theme (overall coverage, not the most vivid section)
+- `lit-review` — secondary literature (survey / review / meta-analysis) — **systematic OR narrative**; test = evidence *synthesized from other papers, not produced*. **If `lit-review` applies, the primary MUST be the biggest-tent theme** (overall coverage — never the most vivid/quantified section)
 - `counterpoint` — [role facet] the paper **argues against a prevailing position** (automation-maximalism, HITL value, oversight scaling — any direction); note *what it opposes* in the rationale. Often pairs with `intro-framing`
 
 **Artifact / evidence cluster** (composable; form → maturity):
@@ -54,7 +54,7 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 - Apply either or **both** (paper compares/spans modes); **neither** = mode unspecified / irrelevant to the paper's claim. **The pair describes the *generation* studied:** "uses agents" ≠ `agentic`, "AI assists the human" ≠ `assistive` — AI only on the review/oversight side → **neither** + consider `general-code`. **Tie-rule:** initiator vs reviewable unit disagree (human-prompted chat task → complete artifact) → **the reviewable unit dominates** (wholesale artifact = the gate = `agentic`).
 
 **Contribution / population flags:**
-- `steering` — [contribution flag] the paper's proposed solution **or documented practice** (wholly/partly) operates on **generation** (prompts, specs, fine-tuning, shaping model inputs) rather than inspecting/gating the artifact. **Contribution, not topic.** Steering-**only** solution → demote candidate
+- `steering` — [contribution flag] the paper's proposed solution **or documented practice** operates on **generation** as a **substantive part of the contribution** — NOT any incidental prompt-shaping component every AI system has (prompts, specs, fine-tuning, shaping model inputs) rather than inspecting/gating the artifact. **Contribution, not topic.** Steering-**only** solution → demote candidate
 - `non-developer` — [scope flag] the generating/overseeing human is **not a professional developer** (end-user / business user / citizen developer). Default (untagged) = professional devs
 - `general-code` — [scope flag] the oversight/review mechanism targets **code generally, not AI-generated code** (AI may sit on the *review* side only); transfers to our setting but wasn't developed/evaluated there. Default (untagged) = the overseen object is AI code
 

@@ -84,8 +84,9 @@ a mechanism; cite in the Introduction. Usually context-tier (+ often `lit-review
 snowball source. **Structure not required (2026-07-18):** systematic *or* narrative — the test is
 whether the evidence is *synthesized from other papers rather than produced*. A casual stat-assembly
 needs this facet *most* (marks the evidence derivative → cite the underlying primaries, don't
-double-count). **Primary convention for lit-review papers:** the "biggest-tent" theme covering the
-synthesis *overall* — not the most vivid/quantified section (the models' salience bias on `2CKL96B8`).
+double-count). **Primary convention for lit-review papers — binding:** if this facet applies, the primary MUST be
+the "biggest-tent" theme covering the synthesis *overall* — never the most vivid/quantified section
+(the models' salience bias on `2CKL96B8`; the dry-run showed a non-imperative wording gets ignored).
 - `5I2W8IC6` — systematic review mapping trust/distrust concepts for LLMs in SE.
 
 **`counterpoint`** (role facet, added 2026-07-18) — the paper **argues against a prevailing position**
@@ -162,8 +163,10 @@ stratification** — mode-specific items in the org survey.
   more); `SHK6KAX6` / `UIXCRBQX` — agentic (agentic-PR merge & maintenance studies); `T72TU8B5`
   (Hedwig autonomy tiers) — agentic.
 
-**`steering`** (contribution-type flag, added 2026-07-18; amended same day) — the paper's proposed
-solution **or the practice it documents** (wholly or in part) operates on **generation** — better
+**`steering`** (contribution-type flag, added 2026-07-18; amended same day; materiality qualifier added
+after the dry-run) — the paper's proposed solution **or the practice it documents** operates on
+**generation** as a **substantive part of the contribution** (not any incidental prompt-shaping
+component — every AI system shapes a prompt somewhere) — better
 prompts, specs/executable requirements, fine-tuning, shaping model inputs — rather than
 inspecting/gating the produced artifact. **Contribution, not topic**: every AI-coding paper touches
 generation; the flag applies only when steering is *offered as the solution* or is *the documented
