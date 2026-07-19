@@ -1,0 +1,56 @@
+{
+ "critic": "Gemini 2.5 Pro",
+ "findings": [
+  {
+   "id": 1,
+   "type": "ambiguity",
+   "location": "remediation-gating \u2014 [FIX] oversight of autonomous fixes... hitl-workflow \u2014 [ESCALATE] the human's control surface",
+   "issue": "It is unclear whether a human manually approving an autonomous fix via a UI gate should be tagged as remediation-gating (because the object is a fix), hitl-workflow (because it's a human control surface), or both.",
+   "test_case": "A system autonomously generates repairs for CI failures. Before merging, it presents the repair to the developer in a custom IDE dashboard where they can approve, reject, or modify the fix.",
+   "proposed_fix": "Clarify whether `remediation-gating` supersedes `hitl-workflow` when gating a fix, or if they should be co-tagged when a human control surface is used to gate an autonomous fix.",
+   "severity": "medium"
+  },
+  {
+   "id": 2,
+   "type": "ambiguity",
+   "location": "built-system \u2014 the authors implemented it... adopted \u2014 used outside research (commercial / production / real org use), beyond a lab prototype/benchmark.",
+   "issue": "The boundary between 'lab prototype/benchmark' and 'outside research' is ambiguous for user studies involving professional developers.",
+   "test_case": "The authors built an AI review tool and evaluated it in a controlled user study. They recruited 30 professional software engineers who used it to review PRs for 2 hours. The tool is not deployed in their daily workflow and is strictly used for the duration of the lab experiment.",
+   "proposed_fix": "Add: 'Evaluations in controlled user studies do not count as adoption; requires ongoing organic use.'",
+   "severity": "low"
+  },
+  {
+   "id": 3,
+   "type": "ambiguity",
+   "location": "steering exclusion: shaping what gets generated... is steering, NOT oversight... remediation-gating \u2014 [FIX] process gates (bounded retries / budget-decay / stop-progression, fail-closed) qualify.",
+   "issue": "It is ambiguous whether automated execution feedback loops during the generation process count as input-side steering or as detect+fix oversight (remediation-gating).",
+   "test_case": "A system runs agent-generated code in a strict sandbox during generation. If it violates memory safety, the sandbox terminates it and returns the crash log to the agent, which loops until it generates safe code. Once safe, the code is presented to the user.",
+   "proposed_fix": "Clarify whether execution feedback loops *during* the generation process count as steering (shaping inputs) or if they are considered detect+fix oversight.",
+   "severity": "high"
+  },
+  {
+   "id": 4,
+   "type": "compression-gap",
+   "location": "problem-statement-anchor \u2014 a single committee-sit-up empirical stat anchoring the OVERALL problem statement",
+   "issue": "Part 2 explicitly warns that models over-apply this facet by salience and that the human applied it zero times in 10 papers, indicating it should be extremely rare. This critical meta-instruction is missing from Part 1.",
+   "test_case": "A paper includes a vivid, highly salient statistic about LLM hallucinations in code generation, but it does not anchor the overall scaling inversion problem. A tagger influenced by the stat's salience applies the tag.",
+   "proposed_fix": "Add: 'Apply extremely sparingly; do not tag merely for salience (historically over-applied by models).'",
+   "severity": "medium"
+  }
+ ],
+ "known_answer_analysis": [
+  {
+   "key": "VG6CIDQW",
+   "forced": false,
+   "weak_rules": "The mode tie-rule ('chat task returning a complete artifact -> agentic') might misdirect taggers to apply 'agentic' instead of 'assistive', as the user in the paper asks Lumen to 'Create a password reset endpoint' (a complete artifact).",
+   "suggestion": "Clarify whether an endpoint/function generated via an IDE chat pane counts as 'suggestion-granularity' (assistive) or 'wholesale artifact' (agentic)."
+  },
+  {
+   "key": "Z8TPRNEU",
+   "forced": false,
+   "weak_rules": "hitl-workflow requires 'the design of the control point'. A paper merely documenting existing manual developer practices (e.g., using git, manual reading) might not be seen as contributing a 'design' or 'mechanism'.",
+   "suggestion": "Explicitly state that empirical studies documenting how developers manually exercise control count as hitl-workflow, even if they don't propose a novel UI/mechanism."
+  }
+ ],
+ "overall": "The instrument is conceptually strong, though prompt truncation limited my review to only 2 of the 10 papers in Part 3. Based on what I analyzed, clarifying boundaries around execution feedback loops, human-approved autonomous fixes, and the assistive/agentic tie-rule will improve inter-rater reliability. The instrument is nearly ready for the 148-paper sweep."
+}

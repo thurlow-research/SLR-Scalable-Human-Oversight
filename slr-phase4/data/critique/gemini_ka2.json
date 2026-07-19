@@ -1,0 +1,75 @@
+{
+ "critic": "gemini",
+ "known_answer_analysis": [
+  {
+   "key": "T8E8SCCG",
+   "forced": false,
+   "weak_rules": "ai-code-insecurity expects 'empirical security-vulnerability evidence in AI code'. A tagger may reject this because the formal evaluation is on synthetic projects, even though it cites the Claude Code leak. Also, the absence of a mode flag contradicts the tie-breaker rule since 'vibe coding' generates whole artifacts.",
+   "suggestion": "Broaden ai-code-insecurity to explicitly include 'analysis of specific real-world leaks/incidents'. Clarify whether generative workflows like 'vibe coding' should receive the agentic flag or remain blank if no specific agent tool is studied."
+  },
+  {
+   "key": "F9JM9CI6",
+   "forced": false,
+   "weak_rules": "The definitions for risk-routing ('which/whether/when AI items reach a human') and oversight-explanation ('what the AI is doing') explicitly assume the code being reviewed is AI-generated. A tagger applying the general-code flag will correctly read that the paper applies AI to review human code, and thus reject these tags. Furthermore, the human omitted framework despite the paper proposing an 'architectural design'.",
+   "suggestion": "Add a note to general-code stating: 'Interpret references to AI items or AI actions in theme definitions as applying equivalently to human code/actions when this flag is used.' Clarify if purely conceptual architectures require the framework tag."
+  },
+  {
+   "key": "UDVHQ5HR",
+   "forced": true,
+   "weak_rules": "",
+   "suggestion": ""
+  },
+  {
+   "key": "M74M3RFJ",
+   "forced": false,
+   "weak_rules": "The abstract proposes a layered framework and assurance cases, which reads as a standard technical proposal. The instrument defines intro-framing as a 'position / agenda / definitional paper that names the gap'. A tagger would likely not tag intro-framing for a framework proposal unless the definitional/agenda aspect is more explicit.",
+   "suggestion": "Expand intro-framing to include 'proposals of high-level conceptual frameworks or assurance methodologies', or clarify what signals an agenda in technical abstracts."
+  },
+  {
+   "key": "2CKL96B8",
+   "forced": false,
+   "weak_rules": "The abstract is abruptly truncated mid-sentence and lacks any mention of code review, technical debt, or secondary literature synthesis. A tagger cannot deduce the human's tag set (ai-review, quality-debt, lit-review) from this incomplete text.",
+   "suggestion": "Cannot be fixed via instrument wording; requires providing the full abstract or text to the tagger."
+  },
+  {
+   "key": "T72TU8B5",
+   "forced": false,
+   "weak_rules": "The abstract describes a 'CLI coding agent'. The instrument restricts framework to a 'reference architecture integratable into a build pipeline', leading taggers to skip it. Also, oversight-explanation requires helping the human understand (info push/pull), but the abstract only mentions 'tightening oversight' without specifying UI visibility.",
+   "suggestion": "Clarify if standalone agent architectures qualify as a framework even if not pipeline-integrated. Explicitly state whether dynamically adapting autonomy implicitly qualifies for oversight-explanation."
+  }
+ ],
+ "extra_findings": [
+  {
+   "type": "boundary-disagreement",
+   "location": "risk-routing and oversight-explanation definitions vs general-code flag",
+   "issue": "Theme definitions rigidly specify 'AI items' and 'what the AI is doing'. When a paper applies AI oversight to human-written code (general-code), taggers strictly following the theme definitions will reject risk-routing and oversight-explanation because the reviewed artifacts are not AI-generated.",
+   "test_case": "Support, Not Automation (F9JM9CI6) uses AI to route human code and explain human code. Human tags risk-routing and oversight-explanation but a literal reading of the definitions prohibits this.",
+   "proposed_fix": "Add a global note: 'When the general-code flag is applied, interpret references to AI items/actions in theme definitions as applying equivalently to human items/actions.'",
+   "severity": "high"
+  },
+  {
+   "type": "compression-gap",
+   "location": "Paper 2CKL96B8 Abstract",
+   "issue": "The abstract is truncated mid-sentence, completely removing the context needed to justify the human tags (ai-review, quality-debt, lit-review).",
+   "test_case": "2CKL96B8 ends at 'shifts in developer / Artificial Intelligence...'",
+   "proposed_fix": "Ensure the data pipeline supplies complete abstracts.",
+   "severity": "high"
+  },
+  {
+   "type": "ambiguity",
+   "location": "mode flag tie-rule vs 'vibe coding'",
+   "issue": "The instrument tie-rule for mode says 'reviewable unit dominates (wholesale artifact = agentic)'. Vibe coding generates whole artifacts, but relies on a human prompting an assistant. The human arbiter left mode blank for T8E8SCCG. Taggers will likely tag agentic.",
+   "test_case": "T8E8SCCG discusses 'vibe coding'. Taggers will tag agentic; human left blank.",
+   "proposed_fix": "Clarify whether workflows like 'vibe coding' map to agentic or should be left blank if no specific generative agent is studied.",
+   "severity": "medium"
+  },
+  {
+   "type": "inconsistency",
+   "location": "framework definition vs conceptual architecture",
+   "issue": "The definition requires a 'technical framework / reference architecture integratable into a build pipeline'. Paper F9JM9CI6 explicitly presents an 'architectural design' but the human omitted framework.",
+   "test_case": "F9JM9CI6 proposes a conceptual architecture for an AI-OS code review platform but lacks the framework tag.",
+   "proposed_fix": "Clarify if purely conceptual 'architectural designs' in vision papers qualify as a framework, or if the framework must be concrete/implementable.",
+   "severity": "medium"
+  }
+ ]
+}

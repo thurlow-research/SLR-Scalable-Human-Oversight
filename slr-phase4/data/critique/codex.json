@@ -1,0 +1,212 @@
+{
+ "critic": "GPT-5 Codex",
+ "findings": [
+  {
+   "id": 1,
+   "type": "inconsistency",
+   "location": "\u201cgeneral-ai \u2014 [scope flag]\u201d; \u201cContribution / population flags\u201d; \u201cNever put flags in facets.\u201d",
+   "issue": "The vocabulary calls general-ai, steering, non-developer, and general-code flags, while the output schema and adjudicated answers place them in facets and reserve flags for disposition. This invites structurally different JSON outputs.",
+   "test_case": "A paper proposes general-LLM governance and substantially uses fine-tuning. One tagger puts general-ai and steering in facets; another follows the word \u201cflag\u201d and puts them in flags.",
+   "proposed_fix": "Rename all four to \u201cscope/contribution facets\u201d everywhere. State: \u201cThe JSON flags array is reserved exclusively for demote:context or demote:discard.\u201d",
+   "severity": "high"
+  },
+  {
+   "id": 2,
+   "type": "inconsistency",
+   "location": "\u201cfrom its FULL TEXT below\u201d; PART 3 labels four records \u201cTITLE+ABSTRACT ONLY\u201d",
+   "issue": "The task promises full text, but four known-answer cases provide only sparse metadata. Tags such as built-system, framework, lit-review, mode, and oversight-explanation often cannot be established from an abstract.",
+   "test_case": "An abstract says \u201cwe present a framework\u201d without saying whether it was implemented, and the unavailable body describes a working prototype. A contents-only tagger must omit built-system, while the gold answer includes it.",
+   "proposed_fix": "Require full text for calibration and production, or add an explicit insufficient-evidence state and prohibit scoring absent-evidence tags as errors on abstract-only records.",
+   "severity": "high"
+  },
+  {
+   "id": 3,
+   "type": "inconsistency",
+   "location": "\u201cSteering-only solution \u2192 demote candidate\u201d; \u201cPRIMARY (one per paper)\u2026 same tail as the membership tag\u201d",
+   "issue": "A steering-only paper can correctly receive no theme, yet the schema still requires a primary corresponding to a membership theme. The struggle rule says to demote and move on but does not resolve the impossible primary.",
+   "test_case": "A paper contributes only a prompt-optimization method and no inspection, comprehension, or gating mechanism. It must be demoted and receive no solution theme, but the output still requires a primary theme.",
+   "proposed_fix": "Allow primary_theme:null when a demoted paper has no valid theme, and require a primary to be a member of themes only when themes is nonempty.",
+   "severity": "high"
+  },
+  {
+   "id": 4,
+   "type": "inconsistency",
+   "location": "\u201cinclude demote:context ONLY\u201d; M74M3RFJ gold flag: \u201calready demoted core->context 2026-07-15\u201d",
+   "issue": "The known answer contains a value forbidden by the operative schema, so no compliant tagger can reproduce the exact adjudicated flag set.",
+   "test_case": "A context paper was demoted during an earlier pass. One tagger emits demote:context as required; another copies an audit-note string from the gold data, producing incompatible outputs.",
+   "proposed_fix": "Normalize M74M3RFJ to flags:[\"demote:context\"] and store historical notes outside the tagging schema.",
+   "severity": "high"
+  },
+  {
+   "id": 5,
+   "type": "ambiguity",
+   "location": "\u201cdemote:context\u2026 any reason\u201d; \u201cinclude\u2026 ONLY if the paper looks mis-scoped\u2026 general-AI, general-code, tool benchmark, secondary lit, not operationalizable\u201d",
+   "issue": "Reading A: every listed category presumptively requires demotion. Reading B: they are merely discretionary warning signs, as \u201clooks mis-scoped\u201d and \u201ccandidate\u201d imply. F9JM9CI6 demonstrates that general-code can remain core.",
+   "test_case": "A vision paper proposes a reusable AI reviewer for ordinary human-written code and directly addresses augmenting human review. One tagger demotes it because it is general-code; another keeps it core because the mechanism transfers centrally.",
+   "proposed_fix": "Provide a binding disposition matrix: identify automatic demotions, rebuttable presumptions, and audit-only facets, with one positive and negative example for each.",
+   "severity": "high"
+  },
+  {
+   "id": 6,
+   "type": "ambiguity",
+   "location": "\u201crisk-routing\u2026 which/whether/when AI items reach a human\u201d; \u201chitl-workflow\u2026 HOW + WHEN the human acts\u201d",
+   "issue": "Reading A assigns checkpoint timing to risk-routing because it determines when the human is engaged. Reading B assigns it to hitl-workflow because checkpoint placement is when the human acts. Both definitions explicitly claim \u201cwhen.\u201d",
+   "test_case": "An agent requests approval before database writes but not before read-only actions; every item is subject to this fixed policy. One tagger calls the action-dependent timing risk-routing, while another calls it checkpoint placement under hitl-workflow.",
+   "proposed_fix": "Define risk-routing as item selection, priority, or tier before engagement; define hitl-workflow timing as fixed or selected checkpoint placement after an item is assigned to human control.",
+   "severity": "high"
+  },
+  {
+   "id": 7,
+   "type": "compression-gap",
+   "location": "PART 2: \u201cGate on a computed, producer-independent signal\u2026 model self-confidence is disqualified\u201d; PART 1: \u201csignal + selection/tiering logic\u201d",
+   "issue": "The producer-independence requirement and self-confidence exclusion are absent from the operative copy. A tagger can therefore assign risk-routing to autonomy decisions based solely on the producing agent\u2019s confidence.",
+   "test_case": "A coding agent silently merges when its own confidence exceeds 0.9 and otherwise asks a human. Part 1 permits risk-routing; Part 2 disqualifies the signal.",
+   "proposed_fix": "Add to Part 1: \u201cRouting requires a computed signal independent of the producing model; producer self-confidence alone does not qualify.\u201d",
+   "severity": "high"
+  },
+  {
+   "id": 8,
+   "type": "compression-gap",
+   "location": "PART 2: \u201cexpects dual-tagging on gray-zone systems\u2026 \u2018LLM writes tests then runs them\u2019\u201d and \u201coracle\u2019s independence\u201d; PART 1 only separates probabilistic AI judgment from deterministic grounded checks",
+   "issue": "Part 1 omits the dual-tagging rule and the independent-oracle caveat. Hybrid systems can consequently receive ai-review only, rules-based-checks only, or both without a shared decision procedure.",
+   "test_case": "An LLM creates tests, executes them, and interprets failures to accept code. One tagger tags ai-review because the LLM controls the judgment; another tags rules-based-checks because executable tests produce the verdict.",
+   "proposed_fix": "Add the gray-zone composition rule and state that execution earns rules-based-checks while LLM interpretation earns ai-review; record AI-authored-oracle circularity in the rationale.",
+   "severity": "high"
+  },
+  {
+   "id": 9,
+   "type": "compression-gap",
+   "location": "PART 2 tooling-supply-chain boundary: \u201cExcludes keyword false-positives (hardware trojans, classic SolarWinds-class incidents)\u201d; no equivalent in PART 1",
+   "issue": "The operative definition lacks the explicit wrong-object exclusion, despite tooling-supply-chain being especially vulnerable to keyword matching.",
+   "test_case": "A paper surveys SolarWinds and hardware-trojan detection but never discusses AI coding tools or attacks on AI reviewers. Part 1\u2019s broad provenance/vetting language can permit the tag; Part 2 excludes it.",
+   "proposed_fix": "Add: \u201cExclude conventional software/hardware supply-chain security unless the governed object is AI coding tooling or the attacked object is the AI oversight layer.\u201d",
+   "severity": "medium"
+  },
+  {
+   "id": 10,
+   "type": "compression-gap",
+   "location": "PART 2 framework: \u201cone-off point tool\u201d excluded and \u201cBreadth is NOT the criterion\u201d; PART 1 excludes only \u201ca bare taxonomy/decision-model\u201d",
+   "issue": "Part 1 materially weakens the point-tool boundary, making any implemented integratable tool defensibly a framework. This affects Lumen and vision architectures.",
+   "test_case": "Authors release a single-purpose IDE dependency viewer with no reusable architecture or pipeline design. One tagger calls it an integratable technical framework; Part 2 classifies it as a point tool.",
+   "proposed_fix": "Carry over the adoption test verbatim: reusable pipeline design qualifies regardless of breadth; a one-off algorithm, benchmark, measurement, or point tool does not.",
+   "severity": "high"
+  },
+  {
+   "id": 11,
+   "type": "ambiguity",
+   "location": "\u201csurvey-input \u2014 adoption / preference / RAI-priority finding useful for the org survey design\u201d",
+   "issue": "Reading A includes any such finding, including statistics synthesized by a literature review. Reading B requires participant or organizational evidence produced by the paper. \u201cUseful\u201d supplies no reproducible threshold.",
+   "test_case": "A narrative review repeats five vendor surveys reporting Copilot adoption and desired controls but gathers no new data. One tagger applies survey-input because the findings inform question design; another omits it as secondhand evidence.",
+   "proposed_fix": "State that survey-input requires original empirical participant/organization data; secondary papers may point to source studies but do not receive the facet unless secondary evidence is intentionally allowed.",
+   "severity": "medium"
+  },
+  {
+   "id": 12,
+   "type": "omission",
+   "location": "Global rule says \u201cmembership, not mention\u201d; only ai-review and steering explicitly mention \u201cdocumented practice\u201d",
+   "issue": "There is no general rule for when an empirical description of practitioners\u2019 existing behavior earns a solution theme. A practice can substantively contribute to hitl-workflow, routing, or explanation without proposing a mechanism.",
+   "test_case": "An ethnography finds that developers establish mandatory approval checkpoints and revoke agent permissions after risky edits. It proposes no tool, leaving no rule on whether the documented control practice earns hitl-workflow.",
+   "proposed_fix": "Add: \u201cA documented practice earns the corresponding solution theme when it is analyzed as a substantive finding or recommendation; incidental workflow description does not.\u201d",
+   "severity": "high"
+  },
+  {
+   "id": 13,
+   "type": "ambiguity",
+   "location": "\u201cintro-framing \u2014 position / agenda / definitional paper that names the gap\u201d",
+   "issue": "Reading A restricts the facet to papers whose genre and main contribution are position, agenda, or definition. Reading B applies it to any empirical or review paper that explicitly names a gap. The adjudicated 2CKL96B8 combination shows the distinction matters.",
+   "test_case": "A literature review synthesizes vulnerability evidence and ends with a governance research agenda. One tagger applies intro-framing because it names the gap; another omits it because the paper is primarily a review.",
+   "proposed_fix": "State that the facet requires a paper-level agenda or definitional contribution, but may co-occur with lit-review when that agenda is an explicit contribution rather than routine future-work prose.",
+   "severity": "medium"
+  },
+  {
+   "id": 14,
+   "type": "ambiguity",
+   "location": "\u201cai-code-insecurity \u2014 empirical security-vulnerability evidence in AI code\u201d",
+   "issue": "Reading A requires observational or comparative evidence that AI-generated code actually contains vulnerabilities. Reading B includes evaluation of an AI-specific vulnerability taxonomy on seeded projects. The latter is needed to force VibeGuard\u2019s adjudicated membership.",
+   "test_case": "A security gate detects seeded source-map and secret leaks in synthetic vibe-coded projects but does not estimate real-world prevalence or compare AI with human code. One tagger applies ai-code-insecurity; another treats it solely as detector evaluation.",
+   "proposed_fix": "Explicitly include empirical characterization or evaluation of security failure modes claimed to be distinctive to AI-generated code, including seeded evaluations; exclude generic detector benchmarks with no AI-code risk claim.",
+   "severity": "medium"
+  },
+  {
+   "id": 15,
+   "type": "ambiguity",
+   "location": "\u201cIf lit-review applies, the primary MUST be the biggest-tent theme\u201d",
+   "issue": "Reading A chooses the theme covering the most cited studies or sections. Reading B chooses the broadest conceptual category even if supported by less evidence. \u201cBiggest-tent\u201d supplies no measurable selection rule.",
+   "test_case": "A review devotes half its evidence to AI-code security, one quarter to quality, and one quarter to AI-review remedies, while its conclusion frames review reliability as the overarching issue. Competent taggers can choose ai-code-insecurity or ai-review as primary.",
+   "proposed_fix": "Define the primary as the theme stated in the review objective/conclusion and supported across the largest share of synthesized evidence; if those tests disagree, use the evidence-share winner and document the tie-break.",
+   "severity": "high"
+  },
+  {
+   "id": 16,
+   "type": "omission",
+   "location": "JSON schema contains \u201crationale\":{\"<slug>\":\"<=12 words\"}\u201d",
+   "issue": "The schema does not say whether rationales are required for themes only, every facet, the primary, or demotion. Different key sets can all appear compliant.",
+   "test_case": "A paper receives three themes, four facets, and demote:context. One tagger supplies rationales only for themes; another supplies seven tag rationales plus a demotion rationale.",
+   "proposed_fix": "Require one rationale for every assigned theme and facet, plus demotion when present; state that primary reuses its membership-theme rationale and needs no duplicate key.",
+   "severity": "low"
+  }
+ ],
+ "known_answer_analysis": [
+  {
+   "key": "VG6CIDQW",
+   "forced": false,
+   "weak_rules": "Part 1 omits the one-off point-tool exclusion for framework, so Lumen can defensibly receive framework despite the gold omission.",
+   "suggestion": "Restore the full framework adoption test and explicitly classify a single-purpose context viewer without reusable pipeline architecture as a point tool."
+  },
+  {
+   "key": "Z8TPRNEU",
+   "forced": false,
+   "weak_rules": "The instrument expressly recognizes documented practice for ai-review and steering but not for hitl-workflow, and \u201cagentic\u201d still requires an inferential review-unit decision.",
+   "suggestion": "Add the global documented-practice rule and state that professional use of agents delivering task/artifact-level changes counts as agentic even when humans initiate tasks."
+  },
+  {
+   "key": "UB2EVUFU",
+   "forced": false,
+   "weak_rules": "The plumbing rule helps exclude tests, but \u201cargues about\u201d remains subjective; the primary rule does not uniquely rank verification against the paper\u2019s self-organizing and asynchronous-oversight innovations.",
+   "suggestion": "Operationalize membership as a research question, evaluated contribution, or conclusion-level claim, and choose primary by the main evaluated claim when several innovations are presented."
+  },
+  {
+   "key": "22JBEZNK",
+   "forced": true,
+   "weak_rules": "",
+   "suggestion": ""
+  },
+  {
+   "key": "T8E8SCCG",
+   "forced": false,
+   "weak_rules": "The remediation exclusion is decisive, but ai-code-insecurity does not say whether seeded evaluation of AI-specific failure modes counts as empirical vulnerability evidence.",
+   "suggestion": "Add the seeded AI-specific failure-mode inclusion and state that detector policy levels without human allocation do not constitute risk-routing."
+  },
+  {
+   "key": "F9JM9CI6",
+   "forced": false,
+   "weak_rules": "\u201cApproval gates\u201d permits hitl-workflow for ordinary human review, while \u201creference architecture integratable into a pipeline\u201d permits framework; both are absent from the gold. The primary can also be read as human-control novelty from the title.",
+   "suggestion": "Exclude unchanged ordinary reviewer authority from hitl-workflow, set a concrete architecture-detail threshold for framework, and say reviewer-agent novelty makes ai-review primary when human retention is framing rather than a new control mechanism."
+  },
+  {
+   "key": "UDVHQ5HR",
+   "forced": false,
+   "weak_rules": "Demotion is discretionary; \u201ctool benchmark\u201d is only an example of something that may look mis-scoped.",
+   "suggestion": "Make isolated benchmark studies of reviewer-model reliability a stated context-tier rule, or remove demote:context from the mandatory known answer."
+  },
+  {
+   "key": "M74M3RFJ",
+   "forced": false,
+   "weak_rules": "Its adjudicated flag is illegal under the schema. Intro-framing is genre-ambiguous, and layered guardrails can defensibly attract solution themes without a sharper plumbing/contribution test.",
+   "suggestion": "Normalize the flag to demote:context; clarify intro-framing and require a mechanism to be an evaluated or conclusion-level claim before assigning a solution theme."
+  },
+  {
+   "key": "2CKL96B8",
+   "forced": false,
+   "weak_rules": "The supplied abstract is truncated and does not establish lit-review, assistive mode, the three memberships, or why ai-review is the biggest-tent primary.",
+   "suggestion": "Supply full text or mark the record insufficient-evidence and exclude it from exact known-answer scoring; also replace \u201cbiggest-tent\u201d with an operational primary rule."
+  },
+  {
+   "key": "T72TU8B5",
+   "forced": false,
+   "weak_rules": "The abstract supports routing, human control, agentic mode, and survey evidence, but does not establish a working implementation, reusable architecture, or decision-ready explanation. Scope-drift wording may also permit an extra tag.",
+   "suggestion": "Provide full text for exact scoring; never infer built-system, framework, or oversight-explanation absent explicit evidence, and distinguish unfamiliar-task routing from intent-departure detection."
+  }
+ ],
+ "overall": "Not ready for a 148-paper sweep. Several calibrated boundaries are now strong, but namespace confusion, impossible demoted-primary cases, discretionary disposition rules, overlapping \u201cwhen\u201d definitions, and material compression gaps will still produce systematic divergence. Normalize the schema and gold flags, restore the omitted routing/detector/framework boundaries, define practice-based membership and primary selection, and require full text\u2014or an insufficient-evidence protocol\u2014before production tagging."
+}

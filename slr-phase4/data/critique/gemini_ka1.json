@@ -1,0 +1,27 @@
+{
+ "critic": "gemini",
+ "known_answer_analysis": [
+  {
+   "key": "UB2EVUFU",
+   "forced": false,
+   "weak_rules": "The 'remediation-gating' definition requires 'oversight of autonomous fixes' and lists 'process gates (budget-decay)', but does not clarify whether purely AI-to-AI gating (like the Apollo agent bounding Ares's retries) qualifies, which a tagger might exclude assuming the SLR requires *human* gatekeepers. For 'hitl-workflow', its boundary with the 'Steering exclusion' is ambiguous here: a tagger might view the user 'filing issues to steer development' and the 'emergency reset' collectively as out-of-scope steering inputs, missing that the reset/pause capabilities independently qualify as control surfaces. Finally, a tagger might exclude 'provenance-auditability' via the 'Plumbing \u2260 membership' rule because the dashboard's persistent log is an architectural feature not formally evaluated in the RQs.",
+   "suggestion": "Update 'remediation-gating' to explicitly include AI-driven process gates on autonomous fixes. Clarify in 'hitl-workflow' that mechanisms to pause, halt, or emergency-reset the system count as control surfaces even if accompanied by steering guidance. For 'provenance-auditability', specify that systems papers intentionally designing persistent logs/dashboards to enable human review should receive this tag even if the evaluation focuses on other metrics."
+  },
+  {
+   "key": "22JBEZNK",
+   "forced": false,
+   "weak_rules": "The 'survey-input' facet is weakly defined regarding its inclusion threshold. The paper contains an incidental demographic statistic in the introduction ('18 of 26... professionals reported using tools like ChatGPT') that matches 'adoption finding'. However, a tagger who has not seen the answers might skip the tag because it is a minor detail rather than a core finding, and the requirement that it be 'useful for the org survey design' relies on internal project knowledge unavailable to the tagger.",
+   "suggestion": "Specify whether 'survey-input' applies to any incidental adoption/preference statistics (e.g., sample backgrounds in the introduction) or if it requires a formal empirical finding. Remove or operationally define the subjective 'useful for the org survey design' clause."
+  }
+ ],
+ "extra_findings": [
+  {
+   "type": "ambiguity",
+   "location": "Tie-breaker when a paper spans adjacent themes... primary = the theme carrying its distinctive novelty, not the standard scaffolding.",
+   "issue": "When a paper claims multiple equal architectural novelties that span different themes (e.g., UB2EVUFU claims both an AI-verification state machine and an asynchronous HITL oversight dashboard as 'key innovations'), the 'distinctive novelty' tie-breaker is insufficient.",
+   "test_case": "A paper introducing a novel AI-review agent that feeds into a novel HITL-workflow dashboard.",
+   "proposed_fix": "Add a secondary tie-breaker instructing taggers to default to the theme that receives the most empirical evaluation (e.g., is the focus of the Research Questions), aligning with the 'where it'd be written up in depth' rule.",
+   "severity": "medium"
+  }
+ ]
+}
