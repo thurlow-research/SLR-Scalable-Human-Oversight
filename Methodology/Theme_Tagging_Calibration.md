@@ -205,9 +205,17 @@ the summative human-vs-model experiment on the vetted instrument.** Rationale: t
 instrument, so disagreement is attributable to the models, not to known-fuzzy definitions.
 
 1. Scott completes the vetting pass over the 20 calibration papers (+ types the
-   `cal:human:primary:theme:<slug>` tag per paper — the menu can't). **Comparability note:** Set A
-   human tags are *model-informed* (model tags visible while vetting); **Set B is the clean blind
-   comparison** (no model tags exist there — do not run models on Set B until the vetting pass is done).
+   `cal:human:primary:theme:<slug>` tag per paper — the menu can't). **Comparability note (corrected
+   2026-07-18, post-pass):** Set A model tags were *present in Zotero* during the pass, but **Scott
+   reports he never viewed them during his initial reads** — so initial-read human tags were
+   *effectively blind (self-report)*; model outputs entered only through the post-tagging audit
+   dialogue, which drove the documented corrections and the two re-adjudications. Accurate
+   description: **Set A = blind first read + model-aware adjudication.** Notably, the two
+   unanimity overturns (Lumen §11, 22JBEZNK §16) occurred at *blind* first read — the human
+   independently diverged without knowing four models were unanimous against him, and full text
+   vindicated him both times, materially strengthening the "model consensus ≠ correctness" finding.
+   **Set B remains the fully clean comparison** (no model tags will exist there at all — do not run
+   models on Set B until the human tags are in).
 1b. **Instrument-critique panel (added 2026-07-18; design detailed 2026-07-18 EOD):** after the Set A
    vetting pass, validate the instrument itself before spending the retag. Sequence: (i) Fable
    **known-answer dry-run** — fresh-context taggers apply the current instrument to the 10 Set A

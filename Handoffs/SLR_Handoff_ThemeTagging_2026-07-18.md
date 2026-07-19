@@ -56,7 +56,9 @@ DISPOSITION.md. Instrument copies (`Tag_Cheatsheet.md`, `Tag_Prompt.md` = cheats
    (the "dinner fatigue" mitigation, §7). While in there: `TF56EPIP` needs its mode facet + a
    primary check (it was tagged pre-mode-pair; 6 themes recorded).
 2. Then: 3 models tag Set B fresh → human-vs-model comparison (**Set B = clean headline; Set A =
-   model-informed**, state this in writeups) → breadth policy → **full 148-core sweep** → extend
+   blind first read + model-aware adjudication** — Scott never viewed the machine tags during
+   initial reads (disclosed 2026-07-18, calibration doc §5·1 corrected), so the Lumen/22JBEZNK
+   unanimity overturns were made blind; state this precisely in writeups) → breadth policy → **full 148-core sweep** → extend
    `survey-input`/`lit-review` over ~890 contexts → batch-review `demote:` flags
    (2CKL96B8, UDVHQ5HR pending; M74M3RFJ already moved).
 
