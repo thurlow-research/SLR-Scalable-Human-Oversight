@@ -216,6 +216,27 @@ steering 2026-07-18, a big part of the system; its oversight remainder is `overs
 pull); `DPKKMXSA` (prompt-enhancement as the fix); the spec-driven cluster (`C88VGWMI` `7SH86C2W`
 `JCTP8VXP`, context-tier).
 
+**`metrics`** (contribution flag, added 2026-07-20) — the paper **defines metrics / scores / indices**
+(risk, quality, oversight, compliance) **as a deliverable** — not merely *uses* metrics to evaluate
+something (every empirical paper has an evaluation apparatus; that earns nothing). The
+**defines-vs-uses test is the guardrail** — "metrics" is as collision-prone a word as "framework."
+**Contribution, not apparatus.** The metrics' **object comes from the co-tagged themes**
+(+`regulatory-compliance` = compliance-risk metrics · + an oversight theme = oversight metrics ·
++`quality-debt` = quality metrics · +`risk-routing` = metrics that *drive* allocation, VTDG995V-class).
+Composes with `design-only` (metrics defined, never run on real data — R4WJZBSF) or with problem
+themes (defined AND applied → the findings earn theme membership; the facet marks the reusable
+instrument).
+- **Rationale MUST name the measurand** — *what* the metrics measure ("regulatory/ethical risk
+  exposure," "defect likelihood," "review coverage"), not just the domain. The tag layer records the
+  domain via themes; the risk-ness (or other nature) of the measurand lives in the rationale. A
+  saturating `risks` facet was considered and **rejected** (2026-07-20): "talks about risk" is a
+  mention-level criterion in a governance corpus — near-100% base rate, zero discrimination.
+- **Boundary with `risk-routing`:** defining the signal without the allocation decision is NOT
+  routing (see that theme's Boundary); papers that define AND route get theme + facet.
+- Genesis: `R4WJZBSF` — four regulatory-risk indices, no allocation decision; the human's blind
+  `risk-routing` primary was the stretch that exposed the gap (changelog §20). Staged kin:
+  risk-quantification instrument family (`HOS_Seeded_Theme_Candidates.md`, sweep-cluster tripwire).
+
 **`general-code`** (scope flag, object axis, added 2026-07-18) — the paper's oversight/review
 mechanism targets **code generally, not AI-generated code specifically**; the AI (if any) sits on
 the *oversight side* (review support), not the producing side. Such work *transfers* to the AI-code
@@ -361,6 +382,10 @@ Cross-cutting: `agent-scope-drift`.
   (2026-07-18, UB2EVUFU):** "agent stuck / can't converge → hand back to the human" is an *exception
   path*, not a discretionary triage decision — no computed signal selects among items. The handback
   mechanism, if contributed, → `hitl-workflow`; oversight of the failed-fix loop → `remediation-gating`.
+  **Defining a risk metric/score without the allocation decision is NOT routing (2026-07-20,
+  R4WJZBSF):** routing = signal *plus* selection/tiering logic; a paper that contributes only the
+  signal (metrics, scores, composite indices) with no which/whether/when decision built on it gets
+  the `metrics` facet, not this theme. Papers that define AND route get both.
 - **Examples:** `BU73N7PC` — Meta diff-risk-score gates risky diffs; `74GE3TF7` — creation-time
   circuit-breaker predicts high-maintenance PRs for gated triage; `VTDG995V` — calibration → *computed*
   review intensity; `T72TU8B5` — autonomy tier adjusts by earned developer trust.
@@ -586,6 +611,11 @@ Cross-cutting: `agent-scope-drift`.
   intro-framing → design-only → built-system → adopted; design-only solution = demote tripwire
   (unevaluated-framework discriminator). Mid-Set-B under the §10 additive precedent. Facet count
   14 → 15; menu 32 → 33. Changelog §19.
+- **`metrics` contribution facet — ADDED (Scott, 2026-07-20, Set B pass).** Defines-vs-uses
+  guardrail; measurand-rationale rule; object supplied by co-tagged themes (a separate `risks`
+  facet was considered and rejected — mention-saturation). Paired with the `risk-routing` boundary
+  line: signal-without-allocation ≠ routing (the R4WJZBSF stretch). Risk-quantification instrument
+  family staged with a sweep-cluster tripwire. Facet count 15 → 16; menu 33 → 34. Changelog §20.
 
 ⚠️ **Namespace note:** a *legacy* topical `theme:*` set already exists at scale (`theme:governance` 170,
 `theme:oversight` 163, `theme:risk` 104, `theme:orgs` 105, …) from an earlier bulk pass. Exact-slug

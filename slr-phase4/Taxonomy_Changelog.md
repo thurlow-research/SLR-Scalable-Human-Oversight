@@ -379,7 +379,50 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
   Lumen/UB2EVUFU all built; F9JM9CI6 stays intro-framing unless its vision meets the
   buildable-detail bar). Re-run regression pair: R4WJZBSF design-only vs the built systems; watch
   codex for over-fire (breadth signature) and check the facet behaves like the near-factual
-  `built-system` (10/10 in Set A).
+  `built-system` (10/10 in Set A). **2026-07-20 backfill:** `M74M3RFJ` confirmed the second
+  design-only (GSN assurance-case framework, exemplars only, engine = future work) — design-only
+  ON, intro-framing OFF per the contradiction rule; also reconciled: restored to the 01-AI
+  Calibration collection (the calibration roster is frozen experiment infrastructure, orthogonal to
+  disposition) + retroactive `demote:context` (its 2026-07-15 demotion predated the flag mechanism).
+  F9JM9CI6: assessment = **stays intro-framing** (block-diagram vision; the authors' own
+  contribution list defers realization to a research agenda — fails buildable detail); Scott's
+  explicit keep/no ruling still pending. The other seven calibration papers: four built, three
+  propose nothing — facet correctly inapplicable.
+
+## 20. `metrics` facet + risk-routing signal boundary (R4WJZBSF follow-on) → v2.3
+- **Gap (2026-07-20, Set B pass):** R4WJZBSF defines four regulatory/ethical-risk indices with
+  essentially no discussion of what to do with them — no allocation decision. The human's blind
+  primary was `risk-routing`: with no home for a metric-definition contribution, the
+  nearest-sounding theme absorbed it — and model salience bias will replicate that stretch at sweep
+  scale (many papers define scores). Brainstorm considered a composable pair — `risks` ("talks
+  about risks") + `metrics` — mixing to capture essences like "risk metrics" / "oversight metrics."
+  **`risks` REJECTED:** a mention-level criterion in a governance corpus (near-100% base rate, zero
+  discrimination; "risk" is a worse word-collision hazard than "framework"/"transparency," which
+  get routing rules, not tags). The mixing falls out for free from `metrics` × the co-tagged
+  themes: +`regulatory-compliance` = compliance-risk metrics, + an oversight theme = oversight
+  metrics (Scott's own worked example), +`quality-debt` = quality metrics, +`risk-routing` =
+  metrics that drive allocation.
+- **Change:** **`metrics`** contribution flag — defines metrics/scores/indices **as a deliverable**
+  (defines-vs-uses guardrail: an evaluation apparatus earns nothing; contribution, not apparatus);
+  object supplied by co-tagged themes; composes with `design-only` (defined, never run on real
+  data) or problem themes (defined AND applied → findings earn the theme, facet marks the
+  instrument); **rationale must name the measurand** (the residual "measures *prospective risk*"
+  nuance lives there — per the F9JM9CI6 narrowness precedent, below tag altitude).
+  `risk-routing` Boundary += **defining a risk metric/score without the allocation decision is NOT
+  routing** → `metrics` facet; define-AND-route gets both. Staged candidate:
+  **risk-quantification instrument family** (`HOS_Seeded_Theme_Candidates.md`) — promote only if
+  the sweep surfaces a cluster the tags can't reconstruct; tripwire = `metrics` + rationale-measurand
+  = risk accumulating. Facets 15 → 16; menu 33 → 34 (re-import pending); all copies in lockstep.
+  **Instrument = v2.3.**
+- **Adjudication (Scott, 2026-07-20):** R4WJZBSF's measured risks are regulatory/ethical, so
+  `regulatory-compliance` correctly carries the object — expected final set: primary
+  `regulatory-compliance`, facets `metrics`+`framework`+`design-only`; Scott executes the toggles
+  himself; §7 log updates on verification. If `risk-routing` drops there, the blind primary becomes
+  the boundary's first logged catch.
+- **Outcome:** pending — Set C's first member `ZUM76CCG` (LRF: autonomy×impact → oversight levels)
+  exercises this boundary from the AI-first side (it plausibly routes, not just measures — a good
+  contrast case); watch whether models stretch `risk-routing` on metric-definition papers in the
+  Set B run.
 
 ---
 

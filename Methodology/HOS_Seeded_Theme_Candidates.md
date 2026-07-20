@@ -121,6 +121,14 @@ oversight layer).
   (earned-trust tiers). HOS kin: interactive-vs-autonomous above; ratchet-principle. Likely a
   Discussion *axis* reconstructed from `hitl-workflow` + `oversight-theater` + the `assistive`/`agentic`
   facets rather than a new tag — decide after the sweep.
+- **(Corpus-seeded, 2026-07-20) Risk-quantification instrument family.** If the sweep surfaces a
+  *cluster* of `metrics` papers whose measurand is prospective risk (vs compliance status, quality,
+  coverage) and the Discussion needs them as a roster the tags can't reconstruct, promote a
+  dedicated tag then — with the evidence in hand. **Tripwire: `metrics` facet + rationale-measurand
+  = risk accumulating.** Until then the family is retrievable as `metrics` + rationale text; the
+  object is carried by co-tagged themes (Taxonomy_Changelog §20 — same staging logic as the
+  competence gap: tripwire first, tag only on recurrence). Seeds: `R4WJZBSF` (regulatory/ethical
+  risk indices, Set B), `ZUM76CCG` (LRF autonomy×impact risk levels, Set C).
 
 ## Grafting checklist (do before classifying cores)
 1. Cross-check pass-through corpus papers (Mitropoulos, Ferdous, Charoenwet, Parris, Kumar,

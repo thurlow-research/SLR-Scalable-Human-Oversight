@@ -75,3 +75,8 @@ Model panel: `opus` (Claude Opus) · `fable` (Claude Fable 5) · `codex` (gpt-5.
   01-AI Calibration Run (calibration roster is frozen experiment infrastructure, orthogonal to
   disposition), +`demote:context` (predated the flag), +`design-only`, −`intro-framing`
   (contradiction rule).
+- **2026-07-20 — `metrics` contribution facet (v2.3, changelog §20).** Defines-vs-uses guardrail;
+  measurand-rationale rule; object via co-tagged themes (`risks` facet considered & rejected —
+  mention-saturation); risk-routing boundary: signal-without-allocation ≠ routing.
+  Risk-quantification family staged with sweep-cluster tripwire. Facets 16; menu 34
+  (**re-import pending**).
