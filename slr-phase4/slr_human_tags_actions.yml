@@ -268,6 +268,30 @@ actions:
     menu: "[SLR] facet:metrics"
     enabled: true
     name: "[SLR] facet:metrics"
+  slr-facet-risk-security:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:risk-security"
+    shortcut: ""
+    menu: "[SLR] facet:risk-security"
+    enabled: true
+    name: "[SLR] facet:risk-security"
+  slr-facet-risk-quality:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:risk-quality"
+    shortcut: ""
+    menu: "[SLR] facet:risk-quality"
+    enabled: true
+    name: "[SLR] facet:risk-quality"
+  slr-facet-risk-overreliance:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:risk-overreliance"
+    shortcut: ""
+    menu: "[SLR] facet:risk-overreliance"
+    enabled: true
+    name: "[SLR] facet:risk-overreliance"
   slr-facet-risk-ip:
     event: 0
     operation: 3

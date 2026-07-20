@@ -84,3 +84,8 @@ Model panel: `opus` (Claude Opus) · `fable` (Claude Fable 5) · `codex` (gpt-5.
   for the synthesis risk×mitigation matrix; substantive-treatment bar (never intro-lists); homeless
   types only (themed risks are their own columns); checklist now six questions. Facets 18;
   **menu 36 (re-import pending)**.
+- **2026-07-20 — risk family made UNIFORM: + `risk-security`/`risk-quality`/`risk-overreliance`
+  (v2.5, changelog §22).** One bar for all five flags; flag = engagement, theme = lift,
+  co-occurrence expected; matrix = one query per column. Explainability three-way routing;
+  measurand fixed vocabulary; define-only ≠ theme-membership in compressed copies. Facets 21;
+  **menu 39 — re-import THIS version** (supersedes today's earlier counts).

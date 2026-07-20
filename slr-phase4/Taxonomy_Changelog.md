@@ -446,6 +446,39 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
 - **Outcome:** pending — R4WJZBSF earns both flags (PRS/BPI are *defined metrics* for the two
   types — passes the bar via its first clause). Watch model compliance with the substantive bar in
   the Set B run: intro risk-lists are salience bait (codex breadth signature especially).
+  **Superseded same day by §22** — the family went uniform.
+
+## 22. Risk-flag family made uniform; explainability routed by object (→ v2.5)
+- **Disparity (2026-07-20, same-day probe of §21):** the arbiter pressed the homeless-only scoping
+  from three angles and it failed the smell test each time: (a) "measures IP risk" was
+  tag-queryable but "measures quality debt" was not (rationale-text only); (b) matrix columns
+  carried **heterogeneous inclusion bars** (flag columns = define-level; theme columns =
+  study-level) — a methods-validity objection a committee could land; (c) the human's own
+  R4WJZBSF over-tags (`automation-bias`, `oversight-explanation` off its ADS/EG metric definitions)
+  showed taggers *will* reach for the theme when define-level treatment has no tag home. The §21
+  parsimony argument (avoid theme/flag redundancy) lost to uniformity: the real saturation guard
+  was always the substantive-treatment bar, not the scoping.
+- **Change:** **`risk-security` + `risk-quality` + `risk-overreliance` added** → one five-flag
+  family, one bar (metric · mitigation · empirical result · focal analysis; intro-lists never
+  count; rationale cites the fired clause). **Co-occurrence grammar:** flag = substantive
+  engagement, theme = the lift; heavy-lift papers carry both. Matrix = one query per column, one
+  bar; §21's rationale-text reconstruction retired. **Explainability three-way routing** encoded
+  (human-catch: the arbiter almost mapped EG → oversight-explanation): judging-support →
+  `oversight-explanation` · **code comprehensibility → quality** (quality-debt Boundary + flag) ·
+  model-XAI → `general-ai`; "explainability" joins the route-by-object word list. **Measurand
+  vocabulary fixed** (security · quality · comprehensibility · over-reliance · ip-plagiarism ·
+  bias · compliance · privacy). **Define-only ≠ theme-membership** stated explicitly in the
+  compressed copies (compression-gap principle; first catch R4WJZBSF). Facets 18 → 21; menu
+  36 → 39 (re-import pending); all copies in lockstep. **Instrument = v2.5.**
+- **Adjudications encoded (Scott, 2026-07-20):** R4WJZBSF flags = risk-ip + risk-bias +
+  risk-quality + risk-overreliance (all four metrics define-level); themes `automation-bias` and
+  `oversight-explanation` come OFF (define-only; wrong object respectively). **Still pending:**
+  Scott's explicit ruling on the what+how core-bar carve-out (discussed and pressure-tested — the
+  rule "names the elements to track + defines operationalizable metrics = clears bar (2) as
+  measurement" holds up, no back-catalogue precedent flips — but not yet encoded in §3/conventions;
+  R4WJZBSF carries no demote flag meanwhile) and the F9JM9CI6 design-only keep/no.
+- **Outcome:** pending — the Set B model run tests bar compliance on five flags (risk-security =
+  codex salience bait); Set C's ZUM76CCG tests define-vs-route from the AI-first side.
 
 ---
 

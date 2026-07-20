@@ -258,24 +258,34 @@ candidate (escalation presupposes a competent receiver; democratization removes 
 `HOS_Seeded_Theme_Candidates.md`): if flagged papers accumulate making that argument, it promotes.
 Illustrative: `22JBEZNK` — business users can't detect flaws in AI analyses even when warned.
 
-**`risk-ip` / `risk-bias`** (risk-type flags, added 2026-07-20) — **substantive treatment** of a risk
-type with **no theme home**: `risk-ip` = IP / plagiarism / licensing exposure of AI-generated code;
-`risk-bias` = biased content or decisions in generated code. **Substantive = at least one of:**
-defines a metric for it · contributes/evaluates a mitigation for it · reports an empirical result
-about it · devotes focal analysis to it. An intro risk-list sentence = mention, no tag.
+**`risk-security` / `risk-quality` / `risk-overreliance` / `risk-ip` / `risk-bias`** (risk-type flag
+family, added 2026-07-20 §21 as homeless-types-only, **extended to the uniform family same day §22**) —
+**substantive treatment of the harm**, one bar for every flag: defines a metric for it ·
+contributes/evaluates a mitigation for it · reports an empirical result about it · devotes focal
+analysis to it. An intro risk-list sentence = mention, no tag; the rationale cites which clause fired.
+Types: security · quality (incl. **code comprehensibility** — "explainability of the code," see the
+routing note below) · over-reliance · IP/plagiarism/licensing · bias in generated code.
 - **A deliberate, bounded exception to membership-not-mention**, justified by the synthesis
   deliverable it powers: the **risk×mitigation matrix** — which harms the corpus identifies vs which
   have actual mechanisms; the gap cells (identified-but-unmitigated) are Discussion findings.
-- **Themed risks get NO flag** — security (`ai-code-insecurity`), quality (`quality-debt`),
-  over-reliance (`automation-bias`), explainability deficit (`oversight-explanation`) supply their
-  own matrix columns; duplicate flags would saturate (the reason a generic `risks` facet was
-  rejected, §20).
-- **Extensible on the same bar** if the sweep surfaces another homeless type (privacy the likely
-  third). **Promotion path:** a cluster at contribution level converts flag → theme, definition
-  ready-made.
-- Genesis: `R4WJZBSF` (PRS/BPI = defined metrics for both types → earns both flags); informal
-  corpus recurrence of IP risk observed by the arbiter; HOS's IP scanner = experiential
-  corroboration (kin, not driver — the HOS guardrail holds). Changelog §21.
+- **Flag ≠ theme — the co-occurrence grammar:** the flag marks substantive *engagement*
+  (define-level suffices); the matching theme (`ai-code-insecurity` / `quality-debt` /
+  `automation-bias`) still requires the paper to *do the lift* (study/evidence/argue). Heavy-lift
+  papers carry **both** — expected, not double-counting: the matrix reads flags for the
+  identified/measured axis and themes/mechanisms for the evidenced/mitigated axis. **Matrix
+  reconstruction = one query per column, one bar** (the uniform family replaced §21's asymmetric
+  design — themed columns no longer depend on rationale text-matching).
+- **Explainability routes by object** (word-collision list entry): support for the human *judging
+  the AI/its output* → `oversight-explanation`; **comprehensibility of the code itself** (unclear
+  logic, undocumented sections) → quality territory (`risk-quality`, `theme:quality-debt` if the
+  lift is done); model-XAI → `general-ai`.
+- **Extensible on the same bar** if the sweep surfaces a new type (privacy the likely next).
+  **Promotion path** (for the homeless types `risk-ip`/`risk-bias`): a cluster at contribution
+  level converts flag → theme, definition ready-made.
+- Genesis: `R4WJZBSF` (defines PRS/BPI/EG/ADS → earns all four applicable flags: risk-ip,
+  risk-bias, risk-quality, risk-overreliance); informal corpus recurrence of IP risk observed by
+  the arbiter; HOS's IP scanner = experiential corroboration (kin, not driver — the HOS guardrail
+  holds). Changelog §21–§22.
 
 ---
 
@@ -304,7 +314,11 @@ Each entry: **Captures** (what earns the tag) · **Boundary** (include/exclude, 
 **`theme:quality-debt`** · ~7
 - **Captures:** **non-security** quality degradation — technical debt, complexity, code smells,
   maintainability, breaking changes — accumulating from AI code.
-- **Boundary:** maintainability/debt, not vulnerabilities (→ `ai-code-insecurity`).
+- **Boundary:** maintainability/debt, not vulnerabilities (→ `ai-code-insecurity`). **Code
+  comprehensibility ("explainability of the code") lives here** — unclear logic, undocumented
+  sections, code lacking human-understandable rationale is a maintainability/review-burden attribute
+  (2026-07-20; NOT `oversight-explanation`, which is judging-support for the human). Define-only
+  measurement of quality attributes → `metrics` + `risk-quality`, no theme (membership = the lift).
 - **Examples:** `9H6FWJME` — AI commits introduce persistent smells surviving to HEAD; `REZGA5WF` —
   causal ↑ in complexity/warnings (Cursor); `UIXCRBQX` — agentic PRs riskier in *maintenance* (confidence trap).
 
@@ -640,6 +654,14 @@ Cross-cutting: `agent-scope-drift`.
   risk×mitigation matrix; substantive-treatment bar (metric / mitigation / empirical result / focal
   analysis — never intro-lists); themed risks excluded (their themes are the columns). Facet count
   16 → 18; menu 34 → 36; facet checklist five → six questions. Changelog §21.
+- **Risk-flag family made UNIFORM — `risk-security` + `risk-quality` + `risk-overreliance` ADDED
+  (Scott, 2026-07-20, same day).** The §21 homeless-only scoping made matrix columns depend on
+  rationale text-matching for themed risks (heterogeneous inclusion bars — a methods-validity
+  problem the arbiter flagged three ways). Now one bar for all five flags; flag = engagement,
+  theme = lift, co-occurrence expected. Also: explainability three-way routing (judging-support →
+  oversight-explanation · code comprehensibility → quality · model-XAI → general-ai); measurand
+  fixed vocabulary; define-only ≠ theme-membership line (first catch: R4WJZBSF automation-bias +
+  oversight-explanation over-tags). Facet count 18 → 21; menu 36 → 39. Changelog §22.
 
 ⚠️ **Namespace note:** a *legacy* topical `theme:*` set already exists at scale (`theme:governance` 170,
 `theme:oversight` 163, `theme:risk` 104, `theme:orgs` 105, …) from an earlier bulk pass. Exact-slug
