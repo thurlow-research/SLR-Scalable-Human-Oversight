@@ -68,3 +68,10 @@ Model panel: `opus` (Claude Opus) · `fable` (Claude Fable 5) · `codex` (gpt-5.
   own outputs ≠ built), off the R4WJZBSF probe (Set B paper 10, tagged blind; snapshot at Zotero
   v156638 predates the audit). Facets 15; menu 33 (**re-import pending**). Set B papers 1–8 remain
   untagged and model-free.
+- **2026-07-20 — calibration rosters reconciled + Set C defined (calibration doc §5·7).**
+  Set B = the packet's 10 exactly (`calib_sets.json` fixed); TF56EPIP restored to 02-Human (was
+  mis-shelved in 01-AI Calibration Run); ZUM76CCG → new **Set C** [U65X7JNA]: AI-tags-first,
+  human-validates — pilots the sweep's production workflow. M74M3RFJ reconciled same day: back in
+  01-AI Calibration Run (calibration roster is frozen experiment infrastructure, orthogonal to
+  disposition), +`demote:context` (predated the flag), +`design-only`, −`intro-framing`
+  (contradiction rule).

@@ -23,7 +23,10 @@ Read the **document contents** (each paper is in Zotero → **02-Human Calibrati
 copy. The Zotero Actions menu was already current. **Backfill note:** TF56EPIP was tagged before the
 `assistive`/`agentic` pair existed — revisit it for the mode facet. **2026-07-19:** `design-only` form
 facet added mid-Set-B off the R4WJZBSF probe (changelog §19) — menu now 33 toggles, re-import needed;
-papers 1–9 of this set are unaffected unless one proposes an unbuilt mechanism.)*
+papers 1–9 of this set are unaffected unless one proposes an unbuilt mechanism. **2026-07-20:** roster
+reconciled — Set B = exactly the 10 below (calib_sets.json now agrees); ZUM76CCG, which sat in the
+02-Human collection but never in this packet, is NOT Set B — it seeds **Set C** (AI-tag-first,
+human-validate; calibration doc §5·7); TF56EPIP restored to the 02-Human collection.)*
 
 Tag on the **document contents**. **Multi-tag freely** — a paper can carry several themes.
 Tag on **membership** (the paper *contributes to* that theme's argument), **not mention**.

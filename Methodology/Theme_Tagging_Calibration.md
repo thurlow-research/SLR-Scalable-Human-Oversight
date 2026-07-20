@@ -247,6 +247,17 @@ instrument, so disagreement is attributable to the models, not to known-fuzzy de
    `automation-bias`/`oversight-theater` where only Opus did?); (b) does the broadened
    `oversight-explanation` + steering cue fix the Lumen class of error?
 6. Set the breadth policy; run the **full 148** under the final instrument; human-confirm the long tail.
+7. **Set C (defined 2026-07-20) — AI-first validation set.** The inverse protocol of Set B and a
+   pilot of the production sweep workflow: **models tag first** under the frozen instrument, the
+   human **validates/adjudicates** rather than tags blind — measuring validation burden, catch
+   rate, and error profile at review time (the mode the 148-sweep actually runs in; Sets A/B can't
+   measure this). Membership = designated test cases, growing as probes surface. First member:
+   `ZUM76CCG` (surfaced by the 2026-07-20 Set B roster reconciliation — it sat in the 02-Human
+   collection and `calib_sets.json` but never in the human packet; Scott ruled it a Set C test case
+   rather than an 11th Set B paper). Same reconciliation restored `TF56EPIP` to the 02-Human
+   collection (it had been mis-shelved in 01-AI Calibration Run — all docs and its human-only tags
+   confirm it is Set B). Zotero: `03-Set C - AI Tag, Human Validate` [U65X7JNA]; Set B = the
+   packet's 10, matching `calib_sets.json`.
 
 ---
 
