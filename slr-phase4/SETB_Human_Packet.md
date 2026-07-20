@@ -8,7 +8,7 @@ Read the **document contents** (each paper is in Zotero → **02-Human Calibrati
 - **Themes** = all `theme:` slugs that fit (membership, not mention).
 - **Facets** = any facet tags that apply. **Run the five-question facet checklist on every paper**
   (misses cluster here): **role** (anchor / survey-input / intro-framing / lit-review / counterpoint)? · **form**
-  (framework → built-system → adopted)? · **scope** (general-ai? general-code? non-developer?)? · **mode**
+  (design-only | framework → built-system → adopted)? · **scope** (general-ai? general-code? non-developer?)? · **mode**
   (assistive / agentic)? · **contribution** (steering)?
 - **Thin input:** if only title+abstract (or degenerate text) is available → tag conservatively (no form facets / `lit-review` unless explicit in the abstract) and flag `insufficient-input` instead of guessing.
 - **Struggle signals → check the core bar:** can't pick a primary / stretching a definition = likely `demote:context`.
@@ -21,7 +21,9 @@ Read the **document contents** (each paper is in Zotero → **02-Human Calibrati
 
 *(Refreshed 2026-07-18 to match `Tag_Cheatsheet.md` — the earlier packet embedded a stale v0-vintage
 copy. The Zotero Actions menu was already current. **Backfill note:** TF56EPIP was tagged before the
-`assistive`/`agentic` pair existed — revisit it for the mode facet.)*
+`assistive`/`agentic` pair existed — revisit it for the mode facet. **2026-07-19:** `design-only` form
+facet added mid-Set-B off the R4WJZBSF probe (changelog §19) — menu now 33 toggles, re-import needed;
+papers 1–9 of this set are unaffected unless one proposes an unbuilt mechanism.)*
 
 Tag on the **document contents**. **Multi-tag freely** — a paper can carry several themes.
 Tag on **membership** (the paper *contributes to* that theme's argument), **not mention**.
@@ -71,6 +73,7 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 
 **Artifact / evidence cluster** (composable; form → maturity):
 - `framework` — a **technical framework / reference architecture integratable into a build pipeline** (whether or not built). ≠ `theme:org-governance` (the org apparatus). A bare taxonomy/decision-model gets neither; **not a one-off point tool / bare point result** — a focused single-concern architecture qualifies (VibeGuard, Hedwig). Test: *would someone adopt it as a reusable pipeline design?* Composes: `framework`+`built-system`+`adopted`.
+- `design-only` — the paper **specifies a mechanism in buildable detail** (components, formulas, thresholds, architecture) **but never credibly runs it**: no working implementation, no evaluation on the intended object. **A mock demo ≠ built** — a demo that fabricates the mechanism's core outputs (random/synthetic stand-ins for what it's supposed to compute) is still design-only (R4WJZBSF). Only for papers that *propose* something — an empirical study with no proposed mechanism gets nothing. Mutually exclusive with `built-system`/`adopted`; composes with `framework`. ≠ `intro-framing` (which specifies NO mechanism — discriminator = buildable detail). A design-only *solution* paper → check the core bar (unevaluated framework → context)
 - `built-system` — the authors *implemented* it as a working system/tool/prototype ("and they built it")
 - `adopted` — used **outside research** (commercial / production / real org use), beyond a lab prototype/benchmark. Scarce, high-signal; absence = prototype/proposal
 

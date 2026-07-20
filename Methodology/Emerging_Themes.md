@@ -104,9 +104,10 @@ earmarked "contrarian hunt" — the roster accumulates during tagging rather tha
 hunt. Often co-occurs with `intro-framing`; absence = no counter-position staked.
 - `F9JM9CI6` — against review-automation maximalism (note the polarity: *pro*-human-oversight).
 
-**Artifact / evidence cluster** (added 2026-07-15) — three composable facets capturing the *form and
-maturity* of the contribution, powering the **proposed-vs-adopted** adoption story (esp. formal-methods
-aspirational-vs-niche). Ladder: `framework` → `built-system` → `adopted`.
+**Artifact / evidence cluster** (added 2026-07-15; `design-only` added 2026-07-19) — four composable
+facets capturing the *form and maturity* of the contribution, powering the **proposed-vs-adopted**
+adoption story (esp. formal-methods aspirational-vs-niche). Maturity ladder: `design-only` →
+`built-system` → `adopted`; `framework` marks the *form* and composes at any rung.
 
 **`framework`** — a **technical framework / reference architecture / integratable design** — a concrete,
 adoptable structure you could plug into a build/dev pipeline (whether or not yet implemented). **Not** an
@@ -121,6 +122,35 @@ it's captured by its theme. Composes freely (e.g. `lit-review` + `framework`).
   this as a reusable design into their pipeline?"* → framework; *"is it a one-off result?"* → not.
 - `T8E8SCCG` — VibeGuard's security-gate framework (drops into publish/CI). *(A policy-as-code engine is
   the gray zone: `org-governance` topic **and** `framework` form — both.)*
+
+**`design-only`** (form facet, added 2026-07-19 mid-Set-B under the §10 additive precedent) — the paper
+**specifies a mechanism/architecture in buildable detail** (components, formulas, thresholds,
+architecture) **but never credibly runs it**: no working implementation and no evaluation on the
+intended object. The *positive* marker for "proposed, not built" — a missing `built-system` alone is
+ambiguous three ways (facet not applicable vs tagger miss vs genuinely unbuilt); this disambiguates
+and powers the synthesis claim "N of the solution papers exist only on paper."
+- **A mock demo does not count as building.** A demonstration that fabricates the mechanism's core
+  outputs — random/synthetic stand-ins for the very values the mechanism is supposed to compute — is
+  still design-only. Worked example: `R4WJZBSF`, whose "production-ready Google Colab implementation"
+  computes two of its four metrics as literal `np.random` draws, whose results table reproduces the
+  mock's hard-coded probabilities, and whose claimed validation (κ=0.72, 90% precision, three
+  institutions) has no corresponding artifact in the paper.
+- **Applies only to papers that propose something.** An empirical study with no proposed mechanism
+  gets neither this facet nor `built-system` — the facet marks the *presence of an unbuilt design*,
+  not the absence of building.
+- **Boundaries.** ≠ `intro-framing` (which specifies NO mechanism — the discriminator is *buildable
+  detail*; carrying both on one paper is a contradiction). Mutually exclusive with `built-system` and
+  `adopted`; composes with `framework` (a proposed reference architecture = `framework` +
+  `design-only`). Completes the maturity spectrum: `intro-framing` (gap named) → `design-only`
+  (mechanism designed) → `built-system` (running) → `adopted` (in real use).
+- **Disposition tripwire** (parallel to steering-only and `general-ai`): a design-only *solution*
+  paper meets the "proposes an unevaluated methodology/framework → context" discriminator — check
+  the core bar / `demote:context` candidate. Not automatic: a novel central framework can stay core
+  by the promote exception.
+- **Slug rationale:** chosen over `proposal` — every solution paper "proposes" something, so that
+  slug invites over-firing (the `ai-review` slug-connotation lesson, §13); the exclusion lives in
+  the name. Re-run regression pair: `R4WJZBSF` (design-only) vs the built Set A systems
+  (`T8E8SCCG` VibeGuard, `T72TU8B5` Hedwig, `VG6CIDQW` Lumen — `built-system`, never design-only).
 
 **`built-system`** — the authors *implemented* the approach as a working system / tool / prototype
 ("…and they built it"), beyond describing it.
@@ -548,6 +578,14 @@ Cross-cutting: `agent-scope-drift`.
   *additive* scope facets (no theme redefined), so Set A model outputs are undisturbed; the 20
   calibration papers get backfilled in the post-Set-B iteration; TF56EPIP's human tags predate the
   pair. Logged as `Taxonomy_Changelog.md` §10.
+- **`design-only` form facet — ADDED (Scott, 2026-07-19, Set B pass).** Positive marker for
+  "mechanism specified in buildable detail but never credibly run" (mock demos that fabricate their
+  own outputs don't count as building — R4WJZBSF worked example). Motivated by the human stretching
+  `intro-framing` to record proposal-ness on R4WJZBSF — evidence the vocabulary had a hole; absence
+  of `built-system` was the only carrier and absence is ambiguous. Completes the maturity spectrum
+  intro-framing → design-only → built-system → adopted; design-only solution = demote tripwire
+  (unevaluated-framework discriminator). Mid-Set-B under the §10 additive precedent. Facet count
+  14 → 15; menu 32 → 33. Changelog §19.
 
 ⚠️ **Namespace note:** a *legacy* topical `theme:*` set already exists at scale (`theme:governance` 170,
 `theme:oversight` 163, `theme:risk` 104, `theme:orgs` 105, …) from an earlier bulk pass. Exact-slug

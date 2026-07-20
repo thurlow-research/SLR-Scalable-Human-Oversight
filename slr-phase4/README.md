@@ -63,3 +63,8 @@ Model panel: `opus` (Claude Opus) · `fable` (Claude Fable 5) · `codex` (gpt-5.
   compression-gap principle (§17), 2 new `demote:context` flags (3/10 demote rate — expect a demote
   tail in the sweep). Facets now 14; menu 32 actions. **Next:** instrument-critique panel (§5 step
   1b) → freeze vetted instrument → Scott tags Set B → models retag Sets A+B → comparison.
+- **2026-07-19 — `design-only` form facet added mid-Set-B (v2.2, changelog §19).** Positive marker
+  for "mechanism specified in buildable detail but never credibly run" (mock demos fabricating their
+  own outputs ≠ built), off the R4WJZBSF probe (Set B paper 10, tagged blind; snapshot at Zotero
+  v156638 predates the audit). Facets 15; menu 33 (**re-import pending**). Set B papers 1–8 remain
+  untagged and model-free.

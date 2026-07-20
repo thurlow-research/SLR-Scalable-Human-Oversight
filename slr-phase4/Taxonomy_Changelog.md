@@ -347,6 +347,40 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
   coverage specified; primary triple-definition cross-referenced; demote:discard given criteria;
   remediation-gating density split (anti-pattern note → sub-bullet). Cross-references verified clean.
 
+## 19. `design-only` facet — positive marker for proposed-not-built (the R4WJZBSF probe) → v2.2
+- **Gap (2026-07-19, Set B pass, paper 10):** R4WJZBSF proposes a four-metric ethical-risk framework
+  whose "production-ready Google Colab implementation" fabricates its core outputs — EG and ADS are
+  literal `np.random` draws, the results table reproduces the mock's hard-coded probabilities
+  (ADS 60% = `p=[0.6, 0.4]`), BPI is substring matching despite the claimed BERT semantics, and the
+  Methodology's validation claims (κ=0.72, 90% precision, three institutions) have no corresponding
+  artifact. The human's blind read correctly saw "proposing, not building" but **reached for
+  `intro-framing` to record it** — a definition stretch (intro-framing = names the gap, NO mechanism;
+  this paper operationalizes formulas/thresholds/architecture) that also contradicted his own
+  `framework` tag. Classified per §7 method step 2a: uncaptured concept, recurring (the
+  unbuilt-proposal shape shows up repeatedly in the corpus), and no reasonable broadening holds it —
+  broadening `intro-framing` would destroy its no-mechanism boundary, and absence of `built-system`
+  is ambiguous three ways (not applicable vs tagger miss vs genuinely unbuilt).
+- **Change:** added **`design-only`** form facet — mechanism **specified in buildable detail but
+  never credibly run** (no working implementation, no evaluation on the intended object); **a mock
+  demo that fabricates the mechanism's core outputs ≠ building** (R4WJZBSF worked example); applies
+  only to papers that *propose* something; mutually exclusive with `built-system`/`adopted`,
+  composes with `framework`; ≠ `intro-framing` (discriminator = buildable detail). Completes the
+  maturity spectrum intro-framing → design-only → built-system → adopted. Disposition tripwire
+  (parallel to steering-only / `general-ai`): design-only *solution* paper → the
+  unevaluated-framework context discriminator → check the core bar. **Slug chosen over `proposal`**
+  (every solution paper "proposes" — slug-connotation over-fire risk, the `ai-review` lesson §13).
+  Facets 14 → 15; menu 32 → 33 (re-import pending); all four instrument copies updated in this
+  commit (cheat-sheet, prompt, Set B packet, Tag reference). Additive mid-Set-B under the §10
+  precedent — no theme redefined; Set B papers 1–9 untouched. **Instrument = v2.2.**
+- **Comparability note:** R4WJZBSF's blind first-read human tags were snapshotted (Zotero v156638)
+  *before* the audit dialogue that produced this facet — the paper is Set-A-style
+  "blind first read + model-aware adjudication"; Set B papers 1–8 (untagged) remain fully clean.
+- **Outcome:** pending — Set A backfill piloted post-Set-B (expected sparse: VibeGuard/Hedwig/
+  Lumen/UB2EVUFU all built; F9JM9CI6 stays intro-framing unless its vision meets the
+  buildable-detail bar). Re-run regression pair: R4WJZBSF design-only vs the built systems; watch
+  codex for over-fire (breadth signature) and check the facet behaves like the near-factual
+  `built-system` (10/10 in Set A).
+
 ---
 
 ### Headline for the writeup

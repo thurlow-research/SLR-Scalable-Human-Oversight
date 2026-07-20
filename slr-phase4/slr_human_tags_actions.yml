@@ -2,7 +2,7 @@ type: ActionsTagsBackup
 author: scott
 platformVersion: "7.0.15"
 pluginVersion: "2.4.0"
-timestamp: "2026-07-18T00:00:00.000Z"
+timestamp: "2026-07-19T00:00:00.000Z"
 actions:
   slr-oversight-scaling-inversion:
     event: 0
@@ -252,6 +252,14 @@ actions:
     menu: "[SLR] facet:general-code"
     enabled: true
     name: "[SLR] facet:general-code"
+  slr-facet-design-only:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:design-only"
+    shortcut: ""
+    menu: "[SLR] facet:design-only"
+    enabled: true
+    name: "[SLR] facet:design-only"
   slr-demote-context:
     event: 0
     operation: 3
