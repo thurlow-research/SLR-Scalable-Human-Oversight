@@ -129,6 +129,16 @@ oversight layer).
   object is carried by co-tagged themes (Taxonomy_Changelog §20 — same staging logic as the
   competence gap: tripwire first, tag only on recurrence). Seeds: `R4WJZBSF` (regulatory/ethical
   risk indices, Set B), `ZUM76CCG` (LRF autonomy×impact risk levels, Set C).
+- **(Corpus-seeded, 2026-07-20) `expert-validated` form facet — STAGED.** Definition ready-made
+  (Taxonomy_Changelog §24): contribution **evaluated by documented expert judgment** (panel /
+  Delphi / structured practitioner review, process described as method). **Discriminator: the
+  panel judges the *contribution*, not produces the *data*** — experts shaping requirements or
+  filtering lit-review findings (input-side, the 6DXZGHD9-era probe) don't count; experts as study
+  subjects don't count; ≠ peer review; ≠ undocumented collegial feedback. Would slot between
+  `design-only` and `built-system` on the evidence-strength ladder (unvalidated design <
+  expert-validated design < built prototype < adopted). **Tripwire: papers where a documented
+  panel validates the contribution itself accumulate** — the motivating instance dissolved on
+  closer read (its panel was input-side), so the facet waits for a genuine first instance.
 
 ## Grafting checklist (do before classifying cores)
 1. Cross-check pass-through corpus papers (Mitropoulos, Ferdous, Charoenwet, Parris, Kumar,

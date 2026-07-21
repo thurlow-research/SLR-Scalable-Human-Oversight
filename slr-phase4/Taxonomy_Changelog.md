@@ -507,6 +507,37 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
 - **Outcome:** pending the re-run — watch whether models apply design-only to F9JM9CI6-class
   visions (stated-architecture clause) without over-firing on pure position papers.
 
+## 24. Set B papers 2 & 10 closed; three boundary clarifiers; expert-validated staged (→ v2.7)
+- **Set B consultation Q&A (2026-07-20, during blind tagging)** produced three near-catch
+  clarifiers, all landed in every copy: (a) **lit-review framing rule** — a framing related-work
+  section ≠ the facet (the facet is the paper's role; both facet jobs misfire otherwise); (b)
+  **adopted pilot rule** — study-site vs user discriminator ("outside the research context" ≠
+  "outside the research org"); a multi-org case-study *evaluation* is `built-system` evidence, not
+  adoption — **the arbiter applied it correctly on first contact** the same hour; (c) **risk-flag ×
+  lit-review interplay** — arbiter initially leaned "secondhand never fires," then reversed on
+  2CKL96B8: **focal secondhand synthesis CAN fire the flags** (it now carries
+  `risk-security`+`risk-quality`); matrix segments secondhand via `lit-review`; passing enumeration
+  never fires; anchor stays never-on-lit-review.
+- **`expert-validated` STAGED, not landed:** the motivating instance dissolved on closer read (its
+  panel reviewed lit-review findings feeding requirements — input-side, judges-the-data not
+  judges-the-contribution). Definition + tripwire parked in `HOS_Seeded_Theme_Candidates.md`.
+- **Hedwig `T72TU8B5` + `metrics`** (arbiter): `change_pattern_risk` + the policy score are the
+  argued novelty — the defines-AND-routes class (`metrics` + `theme:risk-routing`), the worked
+  example the metrics entry names.
+- **6DXZGHD9 closed (Set B paper 2) — the four-reads paper.** Blind primary `ai-code-insecurity`
+  (sole theme) → final primary **`org-governance`** + `ai-code-insecurity` secondary; facets
+  `built-system` · `metrics` (measurand: org-level security-risk exposure / practice maturity) ·
+  `risk-security` · `risk-quality` (PA-2 consistency catch) · `risk-overreliance` (PA-5) ·
+  `survey-input`; `framework` facet OFF (org apparatus ≠ pipeline framework — the §3-vintage
+  boundary held). The home migrated across four arbiter reads (insecurity-detection → governance
+  assessment); logged as diagnostic data — if models scatter on this primary, the human's
+  difficulty predicted it. Template-family caution noted (ANN-ISM applied by the same author
+  network to other domains).
+- **R4WJZBSF closed (Set B paper 10)** at its §20–§23 adjudicated end-state (verified v156667).
+  Both Set B closures are "blind first read + model-aware adjudication" (snapshots v156638 /
+  v156680 preserve the blind records); Set B papers 1, 3–8 remain fully clean.
+- **Instrument = v2.7** (text-only; menu stays 39). Facets 21 + two staged candidates.
+
 ---
 
 ### Headline for the writeup

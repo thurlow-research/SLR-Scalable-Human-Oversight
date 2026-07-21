@@ -93,6 +93,11 @@ needs this facet *most* (marks the evidence derivative → cite the underlying p
 double-count). **Primary convention for lit-review papers — binding:** if this facet applies, the primary MUST be
 the "biggest-tent" theme covering the synthesis *overall* — never the most vivid/quantified section
 (the models' salience bias on `2CKL96B8`; the dry-run showed a non-imperative wording gets ignored).
+**A framing related-work section ≠ this facet (2026-07-20, Set B consultation):** the facet marks
+the PAPER's role — a paper producing its own results (study/system/design) with a literature review
+as framing/input is primary literature; both facet jobs (derivative-evidence marker, biggest-tent
+convention) would misfire on it. Hybrid edge: tag only if the review component is itself a citable
+contribution ("would you send someone to this paper *for the review*?").
 - `5I2W8IC6` — systematic review mapping trust/distrust concepts for LLMs in SE.
 
 **`counterpoint`** (role facet, added 2026-07-18) — the paper **argues against a prevailing position**
@@ -166,6 +171,14 @@ and powers the synthesis claim "N of the solution papers exist only on paper."
 real organizational use (by the authors' own company or third parties), **beyond a lab prototype or
 benchmark**. The scarce, high-signal adoption bit; absence = prototype / proposal / study. Usually
 co-occurs with `built-system`.
+- **Pilot rule (2026-07-20, Set B consultation — applied same day by the arbiter):** "outside the
+  research *context*" ≠ "outside the research *organization*". The discriminator is **study site vs
+  user**: a pilot/multi-org case study run *as the paper's field evaluation* (authors deploy,
+  instrument, observe — remove the study and the use ends) is the research context extended to a
+  field site → strong `built-system` evidence, NOT adoption. `adopted` = use for the org's **own
+  operational purposes** — integrated, org-initiated, or continuing beyond the study window.
+  Textual cues: "we deployed at X for a 3-month pilot and measured…" → evaluation; "X has
+  integrated it into their CI pipeline" / "in use at X since…" → adopted.
 - `CTGGMIX9`, `V4IRKSFI` — industrially deployed review systems.
 
 **`general-ai`** (scope flag, added 2026-07-15) — the governance/oversight contribution is **general
@@ -285,6 +298,12 @@ routing note below) · over-reliance · IP/plagiarism/licensing · bias in gener
   the AI/its output* → `oversight-explanation`; **comprehensibility of the code itself** (unclear
   logic, undocumented sections) → quality territory (`risk-quality`, `theme:quality-debt` if the
   lift is done); model-XAI → `general-ai`.
+- **Lit-review interplay (arbiter ruling 2026-07-20, reversing an initial lean):** focal secondhand
+  synthesis CAN fire these flags — `2CKL96B8` (narrative review; focal security-stats + quality
+  synthesis) carries `risk-security` + `risk-quality`. The matrix segments secondhand engagement
+  via the `lit-review` facet; passing enumeration ("need quality metrics") still never fires; and
+  `problem-statement-anchor` remains never-on-lit-review (different facet, different bar — the
+  anchor requires a citable headline stat, chase the primaries).
 - **Extensible on the same bar** if the sweep surfaces a new type (privacy the likely next).
   **Promotion path** (for the homeless types `risk-ip`/`risk-bias`): a cluster at contribution
   level converts flag → theme, definition ready-made.
