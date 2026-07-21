@@ -241,6 +241,15 @@ instrument, so disagreement is attributable to the models, not to known-fuzzy de
 2. Freeze the *vetted* instrument; **archive check:** v1-instrument model outputs preserved in
    `slr-phase4/data/tags-v1/` (done 2026-07-18) before any re-run overwrites `data/tags/`.
 3. Re-run all 5 models on Sets A+B in fresh contexts under the vetted instrument; write `cal:<model>:*`.
+   **AMENDED 2026-07-21 (panel economics):** the v2.13 comparison panel = **codex + gemini over
+   both sets (20 papers)** — Set A re-run included because the instrument evolved substantially
+   (v2 → v2.13) since its last model pass. **Fable is $$$$-tier and runs ONLY with Scott's explicit
+   per-run permission**, deployed *targeted* (tie-breaks: contested primaries, schema violations) —
+   the assistant proposes tie-break targets after the codex/gemini comparison and waits for
+   authorization. Opus excluded from this pass (same economics; say the word to add). Outputs:
+   `data/tags-v213/<tagger>/<KEY>.json`; runner `tools/run_setb_panel.sh` (gemini via file-read
+   mode — `agy --add-dir`, no permission-skipping flags; prompt files scratchpad-only so full
+   texts can't be staged).
 4. Compute human-vs-model agreement (primary match; theme-set Jaccard; per-theme confusion) —
    **headline on Set B**; Set A reported as model-informed.
 5. Decisive tests: (a) the insufficiency-layer breadth question (§3.4 — does the human tag
