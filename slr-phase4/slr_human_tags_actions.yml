@@ -276,6 +276,14 @@ actions:
     menu: "[SLR] facet:metrics"
     enabled: true
     name: "[SLR] facet:metrics"
+  slr-facet-routing-signal:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:routing-signal"
+    shortcut: ""
+    menu: "[SLR] facet:routing-signal"
+    enabled: true
+    name: "[SLR] facet:routing-signal"
   slr-facet-risk-security:
     event: 0
     operation: 3

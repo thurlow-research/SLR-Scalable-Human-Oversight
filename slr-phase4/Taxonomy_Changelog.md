@@ -615,6 +615,26 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
 - **Outcome:** pending — UW2R6BBJ's human set records the first application; watch the
   input-side/validation boundary in the model run (6DXZGHD9's panel = the negative example).
 
+## 29. `routing-signal` facet — positive marker for the boundary that catches humans (→ v2.12)
+- **Trigger (2026-07-21, E95T8E88 QA):** the signal-without-allocation boundary caught the arbiter
+  blind for the SECOND time in two days (R4WJZBSF `risk-routing` primary → regulatory-compliance;
+  E95T8E88 `risk-routing` primary → oversight-scaling-inversion). Twice-caught = the instrument's
+  most human-catching line; per the compression-gap philosophy it gets maximum structural support:
+  a positive marker, not just an exclusion.
+- **Change:** **`routing-signal`** contribution flag, on the `steering` grammar (audit trail for a
+  boundary exclusion): computed, producer-independent signal **framed for review-attention
+  allocation** without operationalized selection/gating. Framing test keeps generic defect
+  predictors out (other-purpose signals = `metrics` only, R4WJZBSF). Mutually exclusive with
+  `theme:risk-routing` by construction. Synthesis job: the Triage supply-chain roster — signal
+  suppliers vs operationalized routers is a field-maturity finding. Seed: E95T8E88
+  (deletion-likelihood at PR creation; "allow reviewers to prioritize their attention"; AUC 87.1;
+  no threshold/tier/engagement logic). Facets 26 → 27; menu 44 → **45** (re-import required).
+  **Instrument = v2.12.**
+- **Outcome:** pending — sweep expectation: the defect/PR-risk-prediction literature supplies
+  recurrence fast; watch that models respect the framing test and the mutual exclusion. Sweep-time
+  audit note: roster example 74GE3TF7 ("predicts high-maintenance PRs for gated triage") needs the
+  same signal-vs-selection scrutiny on close read.
+
 ---
 
 ### Headline for the writeup

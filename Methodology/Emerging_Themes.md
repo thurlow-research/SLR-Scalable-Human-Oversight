@@ -269,6 +269,22 @@ instrument).
   `risk-routing` primary was the stretch that exposed the gap (changelog §20). Staged kin:
   risk-quantification instrument family (`HOS_Seeded_Theme_Candidates.md`, sweep-cluster tripwire).
 
+**`routing-signal`** (contribution flag, added 2026-07-21 §29) — the paper contributes a
+**computed, producer-independent signal framed for review-attention allocation** (which artifacts
+deserve human scrutiny) **without operationalizing the selection/gating logic** — no threshold,
+tier, or engagement decision. The `steering`-grammar audit trail for the **signal-without-
+allocation boundary**, which caught the arbiter blind twice in two days (R4WJZBSF `risk-routing`
+primary; E95T8E88 `risk-routing` primary) — the instrument's most human-catching line gets its
+positive marker.
+- **Framing test:** the paper itself must frame the signal as review-attention input (E95T8E88:
+  "allow reviewers to prioritize their attention"). Signals framed for other purposes get
+  `metrics` only (R4WJZBSF's org-risk score) — keeps generic defect predictors out.
+- **Mutually exclusive with `theme:risk-routing`** by construction: operationalized selection →
+  the theme (+`metrics`); signal-only → this flag (+`metrics`, usually).
+- **Synthesis job:** the Triage supply chain — "N papers supply routing signals vs M operationalize
+  routing" is a field-maturity finding the review question predicts. Seed: `E95T8E88`
+  (deletion-likelihood at PR creation, AUC 87.1, selection logic absent).
+
 **`general-code`** (scope flag, object axis, added 2026-07-18) — the paper's oversight/review
 mechanism targets **code generally, not AI-generated code specifically**; the AI (if any) sits on
 the *oversight side* (review support), not the producing side. Such work *transfers* to the AI-code
@@ -733,6 +749,11 @@ Cross-cutting: `agent-scope-drift`.
   risk×mitigation matrix; substantive-treatment bar (metric / mitigation / empirical result / focal
   analysis — never intro-lists); themed risks excluded (their themes are the columns). Facet count
   16 → 18; menu 34 → 36; facet checklist five → six questions. Changelog §21.
+- **`routing-signal` contribution flag — ADDED (Scott, 2026-07-21, E95T8E88 probe; landed
+  same-conversation on two-catch evidence).** Signal-framed-for-review-attention without
+  operationalized selection; audit trail for the signal-without-allocation boundary (steering
+  grammar); mutually exclusive with theme:risk-routing; Triage supply-chain roster. Facet count
+  26 → 27; menu 44 → 45. Changelog §29.
 - **Data-collection method family — ADDED (Scott, 2026-07-20, B644HQFS probe).**
   `method-self-report` / `method-mining` / `method-experiment` / `method-field-study` — the SLR
   study-characteristics axis; own-evidence-only; multi-apply; lit-reviews get none. Facet count

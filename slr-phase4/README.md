@@ -89,6 +89,10 @@ Model panel: `opus` (Claude Opus) · `fable` (Claude Fable 5) · `codex` (gpt-5.
   co-occurrence expected; matrix = one query per column. Explainability three-way routing;
   measurand fixed vocabulary; define-only ≠ theme-membership in compressed copies. Facets 21;
   **menu 39 — re-import THIS version** (supersedes today's earlier counts).
+- **2026-07-21 — `routing-signal` contribution flag (v2.12, changelog §29).** Positive marker for
+  the signal-without-allocation boundary (two blind arbiter catches: R4WJZBSF, E95T8E88); steering
+  grammar; framing test; mutually exclusive with theme:risk-routing; Triage supply-chain roster.
+  Facets 27; **menu 45 — re-import required** (supersedes 44).
 - **2026-07-21 — `expert-validated` PROMOTED from staging (v2.11, changelog §28).** First genuine
   contribution-validation instance (UW2R6BBJ); judges-the-contribution vs produces-the-data
   discriminator; no `method-expert-panel` (surveyed panels = `method-self-report` on the data
