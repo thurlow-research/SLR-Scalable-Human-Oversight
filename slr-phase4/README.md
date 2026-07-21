@@ -89,6 +89,10 @@ Model panel: `opus` (Claude Opus) · `fable` (Claude Fable 5) · `codex` (gpt-5.
   co-occurrence expected; matrix = one query per column. Explainability three-way routing;
   measurand fixed vocabulary; define-only ≠ theme-membership in compressed copies. Facets 21;
   **menu 39 — re-import THIS version** (supersedes today's earlier counts).
+- **2026-07-21 — `expert-validated` PROMOTED from staging (v2.11, changelog §28).** First genuine
+  contribution-validation instance (UW2R6BBJ); judges-the-contribution vs produces-the-data
+  discriminator; no `method-expert-panel` (surveyed panels = `method-self-report` on the data
+  axis; both can co-hold). Facets 26; **menu 44 — re-import required**.
 - **2026-07-20 — co-tagging protocol named & documented (calibration doc §7).** Set B's working
   mode: human tags blind → assistant audits vs instrument + full text → arbiter rules → catches
   land in all copies same-day. Yield: v2.2→v2.10 in two days. Blind layer preserved as pre-audit

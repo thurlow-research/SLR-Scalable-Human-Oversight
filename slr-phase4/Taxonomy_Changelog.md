@@ -601,6 +601,20 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
   +method-experiment, −agentic, −risk-quality). §7 rows written when each closes.
   **Instrument = v2.10** (text-only; menu stays 43).
 
+## 28. `expert-validated` PROMOTED from staging (UW2R6BBJ, first genuine instance → v2.11)
+- **Trigger (2026-07-21):** tagging `UW2R6BBJ` (Set B, clean paper — consultation at rule level
+  only), the arbiter hit a documented expert-panel validation and reached for the facet — the
+  staged candidate's promotion condition. The two-day staging history is itself a validation
+  arc: the facet was drafted 2026-07-20, its motivating instance *dissolved* on closer read
+  (input-side panel), it was parked with the judges-the-contribution/produces-the-data
+  discriminator, and the first genuine instance arrived within a day. Definition moved into the
+  instrument verbatim from staging. Also clarified vs the method family: a surveyed expert panel
+  is `method-self-report` on the *data* axis regardless (no `method-expert-panel` — sampling
+  granularity stays in rationales); the same panel can provide data AND validate → both tags
+  co-hold. Facets 25 → 26; menu 43 → **44** (re-import required). **Instrument = v2.11.**
+- **Outcome:** pending — UW2R6BBJ's human set records the first application; watch the
+  input-side/validation boundary in the model run (6DXZGHD9's panel = the negative example).
+
 ---
 
 ### Headline for the writeup

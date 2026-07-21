@@ -129,7 +129,10 @@ oversight layer).
   object is carried by co-tagged themes (Taxonomy_Changelog §20 — same staging logic as the
   competence gap: tripwire first, tag only on recurrence). Seeds: `R4WJZBSF` (regulatory/ethical
   risk indices, Set B), `ZUM76CCG` (LRF autonomy×impact risk levels, Set C).
-- **(Corpus-seeded, 2026-07-20) `expert-validated` form facet — STAGED.** Definition ready-made
+- **(Corpus-seeded, 2026-07-20) `expert-validated` form facet — PROMOTED 2026-07-21 (changelog
+  §28): first genuine contribution-validation instance found (UW2R6BBJ, Set B — arbiter reached
+  for the facet while tagging). Definition below moved into the instrument verbatim.** Original
+  staging record: Definition ready-made
   (Taxonomy_Changelog §24): contribution **evaluated by documented expert judgment** (panel /
   Delphi / structured practitioner review, process described as method). **Discriminator: the
   panel judges the *contribution*, not produces the *data*** — experts shaping requirements or

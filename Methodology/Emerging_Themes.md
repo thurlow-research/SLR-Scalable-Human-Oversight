@@ -163,6 +163,19 @@ and powers the synthesis claim "N of the solution papers exist only on paper."
   the name. Re-run regression pair: `R4WJZBSF` (design-only) vs the built Set A systems
   (`T8E8SCCG` VibeGuard, `T72TU8B5` Hedwig, `VG6CIDQW` Lumen — `built-system`, never design-only).
 
+**`expert-validated`** (form facet, staged 2026-07-20, **promoted 2026-07-21** on its first genuine
+instance — `UW2R6BBJ`, changelog §28) — the contribution was **evaluated by documented expert
+judgment**: expert panel, Delphi rounds, structured practitioner review, with the process
+described as method (who, how many, what protocol). The middle rung of evidence strength:
+unvalidated design < expert-validated design < built prototype < adopted.
+- **The panel judges the *contribution*, not produces the *data*.** Experts shaping requirements
+  or filtering lit-review inputs (input-side — the dissolved 6DXZGHD9-era probe) don't count;
+  experts as study *subjects* = `method-self-report`, not this; ≠ peer review (every published
+  paper); ≠ undocumented collegial feedback. The same panel can do both jobs — provide data AND
+  validate the design → `method-self-report` + this facet co-hold.
+- Composes with `design-only` (the common case: specified, never run, expert-vetted) or with
+  `built-system` (a running system additionally panel-reviewed).
+
 **`built-system`** — the authors *implemented* the approach as a working system / tool / prototype
 ("…and they built it"), beyond describing it.
 - `T8E8SCCG` — VibeGuard, a built pre-publish security gate.
