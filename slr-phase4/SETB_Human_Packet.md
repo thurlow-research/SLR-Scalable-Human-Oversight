@@ -6,11 +6,11 @@ Read the **document contents** (each paper is in Zotero → **02-Human Calibrati
 **How to record:** fill the template at the bottom (or tag in Zotero — your call). For each paper:
 - **Primary** = the one home theme. Tie-breaker: distinctive novelty, not scaffolding. **Altitude:** prefer the most specific theme that still captures where the paper's main effort lives — but a component mechanism inside a broader contribution does not outrank it.
 - **Themes** = all `theme:` slugs that fit (membership, not mention).
-- **Facets** = any facet tags that apply. **Run the six-question facet checklist on every paper**
+- **Facets** = any facet tags that apply. **Run the seven-question facet checklist on every paper**
   (misses cluster here): **role** (anchor / survey-input / intro-framing / lit-review / counterpoint)? · **form**
   (design-only | framework → built-system → adopted)? · **scope** (general-ai? general-code? non-developer?)? · **mode**
   (assistive / agentic)? · **contribution** (steering? metrics?)? · **risk-types** (security / quality / over-reliance / ip / bias —
-  substantive treatment only, never intro-lists)?
+  substantive treatment only, never intro-lists)? · **method** (self-report / mining / experiment / field-study — own evidence only)?
 - **Thin input:** if only title+abstract (or degenerate text) is available → tag conservatively (no form facets / `lit-review` unless explicit in the abstract) and flag `insufficient-input` instead of guessing.
 - **Struggle signals → check the core bar:** can't pick a primary / stretching a definition = likely `demote:context`.
 - **Thin input:** title+abstract only → tag conservatively (no form facets / `lit-review` unless explicit) + flag `insufficient-input`.
@@ -93,6 +93,9 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 - `non-developer` — [scope flag] the generating/overseeing human is **not a professional developer** (end-user / business user / citizen developer). Default (untagged) = professional devs
 - `general-code` — [scope flag] the oversight/review mechanism targets **code generally, not AI-generated code** (AI may sit on the *review* side only); transfers to our setting but wasn't developed/evaluated there. Default (untagged) = the overseen object is AI code
 - `risk-security` / `risk-quality` / `risk-overreliance` / `risk-ip` / `risk-bias` — [risk-type flags, uniform bar] **substantive treatment of the harm**: defines a metric for it · contributes/evaluates a mitigation for it · reports an empirical result about it · devotes focal analysis. **An intro risk-list sentence = mention, NO tag** — rationale cites which clause fired. Types: security · quality (incl. **code comprehensibility** — "explainability of the code") · over-reliance · IP/plagiarism/licensing · bias in generated code. **Flag ≠ theme:** the flag marks substantive engagement (define-level suffices); the matching theme (`ai-code-insecurity` / `quality-debt` / `automation-bias`) still requires the paper to *do the lift* — heavy-lift papers carry **both** (expected co-occurrence). Matrix: identified/measured axis = these flags, one query, one bar. **Lit-reviews CAN earn these flags via focal secondhand synthesis** (2CKL96B8: security+quality) — the matrix segments secondhand engagement via `lit-review`; passing enumeration still never fires; `problem-statement-anchor` stays never-on-lit-review. `risk-ip`/`risk-bias` have no theme home — a contribution-level cluster promotes flag → theme
+
+**Data-collection method facets** (data-source axis — how the paper's **own evidence** was produced):
+- `method-self-report` (humans tell you: questionnaires, interviews, focus groups, diaries) · `method-mining` (artifacts measured: repos, PRs, commits, posts, logs, telemetry) · `method-experiment` (controlled tasks with manipulation, lab or crowdsourced) · `method-field-study` (deployment / case study observed in a real setting). **Apply all that fit** (mixed methods expected — a survey + observation study gets two). Applies to the paper's **own evidence production**: `lit-review` papers get **none** (evidence synthesized — the methods live in the primaries); absence = no empirical evidence produced (position papers, pure designs). Note `method-self-report` ≠ `survey-input` (method vs the finding's utility to the org survey — a mined study can be survey-input)
 
 
 ---

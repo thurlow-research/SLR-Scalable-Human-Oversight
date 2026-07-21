@@ -89,6 +89,11 @@ Model panel: `opus` (Claude Opus) · `fable` (Claude Fable 5) · `codex` (gpt-5.
   co-occurrence expected; matrix = one query per column. Explainability three-way routing;
   measurand fixed vocabulary; define-only ≠ theme-membership in compressed copies. Facets 21;
   **menu 39 — re-import THIS version** (supersedes today's earlier counts).
+- **2026-07-20 — data-collection method family (v2.8, changelog §25).** `method-self-report` /
+  `method-mining` / `method-experiment` / `method-field-study` — own-evidence-only, multi-apply,
+  lit-reviews get none; the study-designs axis for synthesis evidence-weighting + the methods
+  chapter. Checklist now seven questions. Facets 25; **menu 43 — re-import required** (supersedes
+  the 39-toggle import).
 - **2026-07-20 — two arbiter rulings encoded (v2.6, changelog §23).** (1) **What+how carve-out:**
   names-the-elements + defines-operationalizable-metrics clears core bar (2) as measurement even
   unevaluated (amends the 2026-07-13 trap clause; encoded in slr-conventions + Status_Update §3 +

@@ -312,6 +312,25 @@ routing note below) · over-reliance · IP/plagiarism/licensing · bias in gener
   the arbiter; HOS's IP scanner = experiential corroboration (kin, not driver — the HOS guardrail
   holds). Changelog §21–§22.
 
+**`method-self-report` / `method-mining` / `method-experiment` / `method-field-study`**
+(data-collection method family, added 2026-07-20 §25) — the standard SLR study-characteristics
+axis: **how the paper's own evidence was produced.** `method-self-report` = humans tell you
+(questionnaires, interviews, focus groups, diaries — perception/attitude data); `method-mining` =
+artifacts measured (repos, PRs, commits, forum posts, logs, telemetry — behavior/artifact data);
+`method-experiment` = controlled tasks with manipulation (lab or crowdsourced);
+`method-field-study` = deployment/case study observed in a real setting. **Apply all that fit**
+(mixed methods expected: `Z8TPRNEU` = self-report + field observation).
+- **Own evidence only:** `lit-review` papers get none (their evidence is synthesized — the methods
+  live in the primaries); absence = no empirical evidence produced (position papers, pure designs).
+- **Slug rationale:** `method-self-report`, not `method-survey` — avoids colliding with
+  `survey-input`, whose slug already misled the arbiter once (B644HQFS probe: the facet tests the
+  finding's *utility to the org survey*, method-independent; a mined study can be survey-input).
+- **Jobs:** (a) evidence-weight separation in synthesis — perception vs artifact evidence disagree
+  routinely in this corpus (users *believe* insecure code is more secure, YBHHYR4P); (b) the
+  methods chapter's study-designs table, collected free during the sweep; (c) matrix provenance
+  (identified-by-perception vs identified-by-measurement). Single-home note: if the Stage-4
+  extraction codebook gains a data-collection field, reconcile — these tags are now the home.
+
 ---
 
 ### THEME TAGS
@@ -679,6 +698,10 @@ Cross-cutting: `agent-scope-drift`.
   risk×mitigation matrix; substantive-treatment bar (metric / mitigation / empirical result / focal
   analysis — never intro-lists); themed risks excluded (their themes are the columns). Facet count
   16 → 18; menu 34 → 36; facet checklist five → six questions. Changelog §21.
+- **Data-collection method family — ADDED (Scott, 2026-07-20, B644HQFS probe).**
+  `method-self-report` / `method-mining` / `method-experiment` / `method-field-study` — the SLR
+  study-characteristics axis; own-evidence-only; multi-apply; lit-reviews get none. Facet count
+  21 → 25; menu 39 → 43; checklist six → seven questions. Changelog §25.
 - **Risk-flag family made UNIFORM — `risk-security` + `risk-quality` + `risk-overreliance` ADDED
   (Scott, 2026-07-20, same day).** The §21 homeless-only scoping made matrix columns depend on
   rationale text-matching for themed risks (heterogeneous inclusion bars — a methods-validity

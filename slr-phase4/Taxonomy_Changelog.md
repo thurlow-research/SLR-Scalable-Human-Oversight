@@ -538,6 +538,28 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
   v156680 preserve the blind records); Set B papers 1, 3–8 remain fully clean.
 - **Instrument = v2.7** (text-only; menu stays 39). Facets 21 + two staged candidates.
 
+## 25. Data-collection method family — the study-characteristics axis (B644HQFS probe → v2.8)
+- **Gap (2026-07-20, Set B paper 1):** tagging B644HQFS (1,000 forum posts mined and coded), the
+  arbiter asked whether mining "counts as survey" — exposing two things at once: (a) the
+  `survey-input` slug invites a method reading its definition doesn't have (the facet tests the
+  finding's *utility to the org survey*, method-independent — a mined study can absolutely be
+  survey-input); (b) nothing anywhere tracks **how a paper's evidence was produced**, though
+  perception vs artifact evidence disagree routinely in this corpus (YBHHYR4P: users *believe*
+  insecure code is more secure) and the methods chapter needs a study-designs table regardless.
+- **Change:** four-facet **data-collection method family** — `method-self-report` (humans tell
+  you) · `method-mining` (artifacts measured) · `method-experiment` (controlled manipulation) ·
+  `method-field-study` (real-setting deployment/observation). Own-evidence-only (lit-reviews get
+  none — methods live in the primaries; absence = no empirical evidence); multi-apply for mixed
+  methods. Slug deliberately `method-self-report`, NOT `method-survey` (the collision the probe
+  itself demonstrated). Deliberately four values, no more: the full empirical-SE methods taxonomy
+  is a rabbit hole; these cut exactly the evidence-weight distinctions synthesis uses.
+  Single-home rule: if extraction codebook_v0 gains a data-collection field, reconcile — tags are
+  the home. Facets 21 → 25; menu 39 → 43 (re-import pending); checklist six → seven questions
+  (stale 35-count corrected to 42). **Instrument = v2.8.**
+- **Outcome:** pending — backfill piloted post-Set-B with the other new facets; watch
+  multi-apply compliance and the self-report/field-study boundary (observational studies at
+  companies) in the model run.
+
 ---
 
 ### Headline for the writeup

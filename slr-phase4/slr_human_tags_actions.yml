@@ -308,6 +308,38 @@ actions:
     menu: "[SLR] facet:risk-bias"
     enabled: true
     name: "[SLR] facet:risk-bias"
+  slr-facet-method-self-report:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:method-self-report"
+    shortcut: ""
+    menu: "[SLR] facet:method-self-report"
+    enabled: true
+    name: "[SLR] facet:method-self-report"
+  slr-facet-method-mining:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:method-mining"
+    shortcut: ""
+    menu: "[SLR] facet:method-mining"
+    enabled: true
+    name: "[SLR] facet:method-mining"
+  slr-facet-method-experiment:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:method-experiment"
+    shortcut: ""
+    menu: "[SLR] facet:method-experiment"
+    enabled: true
+    name: "[SLR] facet:method-experiment"
+  slr-facet-method-field-study:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:method-field-study"
+    shortcut: ""
+    menu: "[SLR] facet:method-field-study"
+    enabled: true
+    name: "[SLR] facet:method-field-study"
   slr-demote-context:
     event: 0
     operation: 3
