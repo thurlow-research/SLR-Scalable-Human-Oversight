@@ -245,8 +245,11 @@ instrument, so disagreement is attributable to the models, not to known-fuzzy de
    both sets (20 papers)** — Set A re-run included because the instrument evolved substantially
    (v2 → v2.13) since its last model pass. **Fable is $$$$-tier and runs ONLY with Scott's explicit
    per-run permission**, deployed *targeted* (tie-breaks: contested primaries, schema violations) —
-   the assistant proposes tie-break targets after the codex/gemini comparison and waits for
-   authorization. Opus excluded from this pass (same economics; say the word to add). Outputs:
+   the assistant proposes tie-break targets and waits for authorization. **AMENDED same day
+   (Scott): OPUS is a standing panel member** — the run set going forward is
+   **opus + codex + gemini** over all papers; **Fable is reserved for tie-breaks/input beyond
+   those three** (per-run permission unchanged). Opus ran all 20 blind on 2026-07-21; Fable ran
+   the trimmed contested six. Outputs:
    `data/tags-v213/<tagger>/<KEY>.json`; runner `tools/run_setb_panel.sh` (gemini via file-read
    mode — `agy --add-dir`, no permission-skipping flags; prompt files scratchpad-only so full
    texts can't be staged).

@@ -2,24 +2,33 @@
   "run": "v2.13 panel 2026-07-21",
   "models": [
     "codex",
-    "gemini"
+    "gemini",
+    "opus",
+    "fable(contested-6)"
   ],
   "n": 20,
   "primary_vs_gold": {
-    "codex": "13/20 (A:9/10, B:4/10)",
-    "gemini": "14/20 (A:8/10, B:6/10)"
+    "codex": "13/20",
+    "gemini": "14/20",
+    "opus": "17/20",
+    "fable": "4/6 (contested set only)"
   },
   "theme_jaccard": {
     "codex": 0.6,
-    "gemini": 0.61
+    "gemini": 0.61,
+    "opus": 0.65,
+    "fable_contested6": 0.79
   },
   "facet_jaccard": {
     "codex": 0.64,
-    "gemini": 0.67
+    "gemini": 0.67,
+    "opus": 0.71,
+    "fable_contested6": 0.85
   },
   "demote_agree_raw": {
     "codex": "16/20",
-    "gemini": "14/20"
+    "gemini": "14/20",
+    "opus": "15/20 (16 counting UW2R6BBJ correct-by-design)"
   },
   "note_demote": "UW2R6BBJ model demote flags are CORRECT-BY-DESIGN (general-AI object \u2192 flag proposes; human kept via \u00a730 exception)",
   "contested_primaries_cx_vs_gm": [
@@ -33,5 +42,11 @@
     "TF56EPIP",
     "R4WJZBSF"
   ],
-  "fable_status": "NOT RUN \u2014 explicit per-run permission required"
+  "fable_status": "ran contested-6 ONLY, with explicit authorization",
+  "universal_misses": {
+    "TF56EPIP": "4 models, 4 different primaries, 0 demote flags \u2014 the multi-genre sprawl paper defeats everyone; validates the human demote",
+    "B644HQFS": "all 3 full-panel models chose oversight-scaling-inversion vs human quality-debt \u2014 the documented altitude ruling"
+  },
+  "fable_tiebreak_outcomes": "4/6 resolved to gold (VG6CIDQW, 6DXZGHD9, 7V7SRG43, R4WJZBSF); 2 misses are the two universal-miss papers",
+  "leakage_caveat": "compressed instrument names several calibration keys as worked examples (R4WJZBSF, F9JM9CI6, 2CKL96B8, UB2EVUFU/VibeGuard, 22JBEZNK, CodeAgent) \u2014 scores on named papers are inflated vs sweep generalization; disclose in writeup"
 }
