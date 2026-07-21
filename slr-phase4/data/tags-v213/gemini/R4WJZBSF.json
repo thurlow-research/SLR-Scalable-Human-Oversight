@@ -1,0 +1,23 @@
+{
+  "key": "R4WJZBSF",
+  "primary_theme": "regulatory-compliance",
+  "themes": [
+    "regulatory-compliance"
+  ],
+  "facets": [
+    "design-only",
+    "framework",
+    "metrics",
+    "risk-ip",
+    "risk-bias",
+    "risk-quality",
+    "risk-overreliance"
+  ],
+  "rationale": {
+    "regulatory-compliance": "Framework quantifies AML, KYC, and ECOA compliance risks in banking AI.",
+    "risk-ip": "PRS metric explicitly measures plagiarism risk and IP violations.",
+    "risk-bias": "BPI metric measures bias propagation in generated code comments.",
+    "risk-quality": "EG metric measures code comprehensibility and lack of understandable rationale.",
+    "risk-overreliance": "ADS metric measures over-reliance on AI without manual modification."
+  }
+}

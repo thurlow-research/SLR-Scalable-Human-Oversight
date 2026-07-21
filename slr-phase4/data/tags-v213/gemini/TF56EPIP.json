@@ -1,0 +1,16 @@
+{
+  "key": "TF56EPIP",
+  "primary_theme": "ai-code-insecurity",
+  "themes": [
+    "ai-code-insecurity"
+  ],
+  "facets": [
+    "agentic",
+    "method-experiment",
+    "risk-security"
+  ],
+  "rationale": {
+    "ai-code-insecurity": "Empirically evaluates security vulnerabilities and autonomous failures across six LLMs.",
+    "risk-security": "Reports empirical results on CWEs in AI-generated code."
+  }
+}

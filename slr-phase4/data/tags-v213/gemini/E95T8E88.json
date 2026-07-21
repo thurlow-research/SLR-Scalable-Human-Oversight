@@ -1,0 +1,18 @@
+{
+  "key": "E95T8E88",
+  "primary_theme": "quality-debt",
+  "themes": [
+    "quality-debt"
+  ],
+  "facets": [
+    "built-system",
+    "agentic",
+    "metrics",
+    "routing-signal",
+    "risk-quality",
+    "method-mining"
+  ],
+  "rationale": {
+    "quality-debt": "Quantifies and predicts redundant methods deleted during PR review of agentic code."
+  }
+}

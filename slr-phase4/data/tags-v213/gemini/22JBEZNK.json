@@ -1,0 +1,16 @@
+{
+  "key": "22JBEZNK",
+  "primary_theme": "oversight-explanation",
+  "themes": [
+    "oversight-explanation"
+  ],
+  "facets": [
+    "non-developer",
+    "agentic",
+    "risk-quality",
+    "method-experiment"
+  ],
+  "rationale": {
+    "oversight-explanation": "Evaluates explanation structures to help business users assess AI data analyses."
+  }
+}

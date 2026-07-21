@@ -1,0 +1,21 @@
+{
+  "key": "E3E5YA2E",
+  "primary_theme": "automation-bias",
+  "themes": [
+    "automation-bias"
+  ],
+  "facets": [
+    "assistive",
+    "survey-input",
+    "risk-security",
+    "risk-quality",
+    "risk-overreliance",
+    "method-self-report"
+  ],
+  "rationale": {
+    "automation-bias": "Empirical interview study on developer over-trust and automation bias.",
+    "risk-security": "Reports an empirical result about security vulnerabilities.",
+    "risk-quality": "Reports an empirical result about code quality and flawed logic.",
+    "risk-overreliance": "Reports an empirical result about automation bias."
+  }
+}

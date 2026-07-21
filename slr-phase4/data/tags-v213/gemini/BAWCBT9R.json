@@ -1,0 +1,14 @@
+{
+  "key": "BAWCBT9R",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "agentic",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-review": "Evaluates reliability limits and prompt biases of LLM judges for code."
+  }
+}

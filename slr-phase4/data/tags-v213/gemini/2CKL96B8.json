@@ -1,0 +1,20 @@
+{
+  "key": "2CKL96B8",
+  "primary_theme": "ai-code-insecurity",
+  "themes": [
+    "ai-code-insecurity",
+    "quality-debt"
+  ],
+  "facets": [
+    "lit-review",
+    "risk-security",
+    "risk-quality"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "ai-code-insecurity": "Synthesizes evidence of high security vulnerability rates in AI-generated code.",
+    "quality-debt": "Synthesizes evidence of quality issues and debugging overhead in AI code."
+  }
+}

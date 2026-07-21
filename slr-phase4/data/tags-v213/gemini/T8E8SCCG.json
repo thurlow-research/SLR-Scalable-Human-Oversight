@@ -1,0 +1,19 @@
+{
+  "key": "T8E8SCCG",
+  "primary_theme": "rules-based-checks",
+  "themes": [
+    "rules-based-checks",
+    "ai-code-insecurity"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "agentic",
+    "risk-security"
+  ],
+  "rationale": {
+    "rules-based-checks": "VibeGuard applies deterministic static analysis checks before publishing AI-generated code.",
+    "ai-code-insecurity": "Provides an incident analysis and operational vulnerability taxonomy for AI code.",
+    "risk-security": "Contributes and evaluates a mitigation for operational security vulnerabilities."
+  }
+}

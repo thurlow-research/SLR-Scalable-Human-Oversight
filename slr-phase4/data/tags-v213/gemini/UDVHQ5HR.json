@@ -1,0 +1,16 @@
+{
+  "key": "UDVHQ5HR",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "counterpoint",
+    "general-code",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-review": "Evaluates reliability limits of LLMs as reviewers and proposes prompt mitigations.",
+    "counterpoint": "Opposes the assumption that step-by-step prompting always improves LLM reasoning."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "run": "v2.13 panel 2026-07-21",
+  "models": [
+    "codex",
+    "gemini"
+  ],
+  "n": 20,
+  "primary_vs_gold": {
+    "codex": "13/20 (A:9/10, B:4/10)",
+    "gemini": "14/20 (A:8/10, B:6/10)"
+  },
+  "theme_jaccard": {
+    "codex": 0.6,
+    "gemini": 0.61
+  },
+  "facet_jaccard": {
+    "codex": 0.64,
+    "gemini": 0.67
+  },
+  "demote_agree_raw": {
+    "codex": "16/20",
+    "gemini": "14/20"
+  },
+  "note_demote": "UW2R6BBJ model demote flags are CORRECT-BY-DESIGN (general-AI object \u2192 flag proposes; human kept via \u00a730 exception)",
+  "contested_primaries_cx_vs_gm": [
+    "2CKL96B8",
+    "VG6CIDQW",
+    "F9JM9CI6",
+    "6DXZGHD9",
+    "E95T8E88",
+    "7V7SRG43",
+    "UW2R6BBJ",
+    "TF56EPIP",
+    "R4WJZBSF"
+  ],
+  "fable_status": "NOT RUN \u2014 explicit per-run permission required"
+}

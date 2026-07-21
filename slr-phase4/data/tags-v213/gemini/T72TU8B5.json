@@ -1,0 +1,22 @@
+{
+  "key": "T72TU8B5",
+  "primary_theme": "risk-routing",
+  "themes": [
+    "risk-routing",
+    "hitl-workflow",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "agentic",
+    "method-self-report",
+    "survey-input",
+    "steering"
+  ],
+  "rationale": {
+    "risk-routing": "Classifier dynamically routes decisions to developer based on learned trust",
+    "hitl-workflow": "Provides action approval gates for the human to oversee agents",
+    "oversight-explanation": "Provides explanations detailing why a specific check-in was triggered"
+  }
+}

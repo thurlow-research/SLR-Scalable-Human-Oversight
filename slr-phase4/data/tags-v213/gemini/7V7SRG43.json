@@ -1,0 +1,24 @@
+{
+  "key": "7V7SRG43",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "agent-scope-drift"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "general-code",
+    "risk-security",
+    "risk-quality"
+  ],
+  "rationale": {
+    "ai-review": "Multi-agent LLM system simulating collaborative team for automated code review.",
+    "agent-scope-drift": "QA-Checker prevents agents from prompt drifting away from review intent.",
+    "framework": "Proposes CodeAgent multi-agent reference architecture.",
+    "built-system": "Implemented CodeAgent and evaluated it on a real PR dataset.",
+    "general-code": "System reviews general human-written GitHub pull requests, not AI code.",
+    "risk-security": "Evaluates system's ability to detect vulnerability introductions.",
+    "risk-quality": "Evaluates format alignment, consistency, and revision suggestion capabilities."
+  }
+}

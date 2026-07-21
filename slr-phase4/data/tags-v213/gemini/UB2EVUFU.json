@@ -1,0 +1,26 @@
+{
+  "key": "UB2EVUFU",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "remediation-gating",
+    "hitl-workflow"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "agentic",
+    "steering",
+    "risk-quality"
+  ],
+  "rationale": {
+    "ai-review": "Verification manager independently evaluates milestone outcomes and rejects incomplete work.",
+    "remediation-gating": "Autonomous fix loops governed by budget-decay retries and self-aware convergence stopping.",
+    "hitl-workflow": "Asynchronous human oversight via issue filing consumed at natural phase boundaries.",
+    "framework": "Contributes an open-source orchestration framework for continuous multi-agent development.",
+    "built-system": "Implemented as a working system evaluated on real-world software projects.",
+    "agentic": "Autonomous AI-planned multi-step work delivered by role-specialized agent teams.",
+    "steering": "Strategy phase and dynamic worker generation are substantive generation contributions.",
+    "risk-quality": "Evaluates on bug regressions, correctness, and pixel similarity quality metrics."
+  }
+}

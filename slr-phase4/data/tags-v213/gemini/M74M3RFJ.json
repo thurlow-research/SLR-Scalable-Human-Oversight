@@ -1,0 +1,23 @@
+{
+  "key": "M74M3RFJ",
+  "primary_theme": "regulatory-compliance",
+  "themes": [
+    "regulatory-compliance",
+    "org-governance"
+  ],
+  "facets": [
+    "intro-framing",
+    "general-ai",
+    "risk-security"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "regulatory-compliance": "Proposes assurance cases to demonstrate EU AI Act compliance.",
+    "org-governance": "Assurance cases support structured reporting and stakeholder accountability.",
+    "intro-framing": "Proposes conceptual assurance cases without yet operationalizing an automated mechanism.",
+    "general-ai": "The assurance framework applies to general LLMs, not just coding models.",
+    "risk-security": "Focal analysis of adversarial attacks, jailbreaks, and system guardrails."
+  }
+}

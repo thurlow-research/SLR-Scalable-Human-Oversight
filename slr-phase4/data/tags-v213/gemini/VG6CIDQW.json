@@ -1,0 +1,21 @@
+{
+  "key": "VG6CIDQW",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow"
+  ],
+  "facets": [
+    "built-system",
+    "assistive",
+    "steering"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "hitl-workflow": "Best effort primary for human control surface over AI inputs.",
+    "built-system": "Authors implemented the Lumen tool as a working prototype.",
+    "assistive": "Human-initiated chat-paste assistance via double-copy interaction.",
+    "steering": "Tool exclusively controls AI context assembly before generation."
+  }
+}
