@@ -78,7 +78,22 @@ generic computed-signal-then-select shape that the risk-routing definition itsel
 teaches, and the tie-breaker illustration was deliberately re-polarized toward `hitl-workflow`, so
 any residual bias at the decisive adjacency runs against, not toward, Hedwig's gold answer."
 
-## 6. Authoritative v2.13 gold for T72TU8B5 (score against THIS — 3-facet copies are stale)
+## 6. Mid-process vintage: `Tag_Prompt_ASSIGNMENT_v21_hedwig-free.md`
+
+For evolution/factorial designs needing an intermediate prompt: **instrument v2.1+altitude,
+extracted verbatim from repo commit `8d5c33f`** (2026-07-18 EOD — the *frozen, gate-PASSED*
+instrument under which Set B human tagging began; the published gate metrics — fable 10/10, codex
+9/10, gemini 9/10 primaries — were measured against exactly this text). Chosen as the midpoint of
+the facet-expansion axis: v0 (16 themes + 4 facets) → **v2.1 (17 + 14)** → v2.13 (17 + 27). It
+contained the identical two Hedwig references as the current prompt; the **same two substitutions**
+(§1) were applied, and the result verified Hedwig-free. All §2–§5 findings apply unchanged: the
+v2.1 text carries the same three other routing-resolving micro-examples, the same
+other-calibration-paper names (scope limitation identical), and the same reverse-polarity
+tie-breaker in the variant. Provenance chain for the assignment: `Tag_Prompt_v0.md` (original) →
+`Tag_Prompt_ASSIGNMENT_v21_hedwig-free.md` (mid, de-referenced) →
+`Tag_Prompt_ASSIGNMENT_hedwig-free.md` (current, de-referenced).
+
+## 7. Authoritative v2.13 gold for T72TU8B5 (score against THIS — 3-facet copies are stale)
 
 ```json
 {"primary": "risk-routing",
