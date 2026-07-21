@@ -298,6 +298,11 @@ routing note below) · over-reliance · IP/plagiarism/licensing · bias in gener
   the AI/its output* → `oversight-explanation`; **comprehensibility of the code itself** (unclear
   logic, undocumented sections) → quality territory (`risk-quality`, `theme:quality-debt` if the
   lift is done); model-XAI → `general-ai`.
+- **Source-agnostic (arbiter ruling 2026-07-20, CodeAgent `7V7SRG43`):** the flags track the
+  **harm**, regardless of the overseen code's source — a `general-code` mechanism that mitigates
+  security/quality harms earns the flags plus `general-code`, and the matrix segments transferable
+  mechanisms via that flag (parallel to `lit-review` segmenting secondhand rows). The `general-ai`
+  exclusion stands (M74M3RFJ: object = the *model*, not code).
 - **Lit-review interplay (arbiter ruling 2026-07-20, reversing an initial lean):** focal secondhand
   synthesis CAN fire these flags — `2CKL96B8` (narrative review; focal security-stats + quality
   synthesis) carries `risk-security` + `risk-quality`. The matrix segments secondhand engagement

@@ -581,6 +581,26 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
 - **Outcome:** the method axis survived its first 10-paper backfill with a 70% first-pass hit rate
   by a fatigued arbiter on day one — watch whether models beat that under the encoded rules.
 
+## 27. Two Set B rulings: source-agnostic risk flags; carve-out tool-validation exclusion (→ v2.10)
+- **Source-agnostic flags (Scott, 2026-07-20, CodeAgent `7V7SRG43`):** the risk flags track the
+  **harm regardless of the overseen code's source** — CodeAgent detects security/quality issues in
+  general (human-authored) code, and the arbiter ruled the flags fire ("they capture the risk
+  regardless of the source") with `general-code` as the matrix's transfer-segmenter (parallel to
+  `lit-review` segmenting secondhand rows). `general-ai` exclusion unchanged (M74M3RFJ: object =
+  the model, not code). First instance of the general-code × risk-flag interaction.
+- **Carve-out exclusion (encoding the arbiter's own BAWCBT9R demote):** metrics auditing a
+  measurement tool's/judge's **own reliability** = the "validates which measurement tool"
+  discriminator → context; the what+how carve-out does NOT reach them. Closes the soft edge a
+  model could have walked through (BAWCBT9R names bias elements + defines sensitivity metrics —
+  carve-out-shaped, but the object is the evaluator, not AI-code risk). Encoded in
+  slr-conventions, Status_Update §3, and the compressed design-only lines.
+- **Set B papers in flight:** B644HQFS closed pending one primary altitude ruling
+  (quality-debt vs oversight-scaling-inversion); 7V7SRG43 audit delta pending toggles
+  (+agent-scope-drift — the §13 worked-pair miss, +general-code, −method-experiment — the
+  whose-properties repeat); BAWCBT9R audit delta pending toggles (+ai-review primary/theme,
+  +method-experiment, −agentic, −risk-quality). §7 rows written when each closes.
+  **Instrument = v2.10** (text-only; menu stays 43).
+
 ---
 
 ### Headline for the writeup

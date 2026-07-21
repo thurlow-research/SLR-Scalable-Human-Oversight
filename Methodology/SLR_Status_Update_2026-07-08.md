@@ -49,7 +49,9 @@ Operational discriminators adopted during review (for reproducibility):
   as measurement even when unevaluated** — instrumentation *specification* is solution
   characterization, not mere applicability. Evaluation status is carried by the `design-only`
   facet, not demotion. What-only enumerations and borrowed-metrics papers remain context
-  candidates. First ruled on `R4WJZBSF`.
+  candidates. **Exclusion (2026-07-20):** metrics auditing a measurement tool's/judge's own
+  reliability = "validates which measurement tool" → context, not the carve-out (`BAWCBT9R`).
+  First ruled on `R4WJZBSF`.
 
 ## 4. Quality-assurance findings (finalized)
 
