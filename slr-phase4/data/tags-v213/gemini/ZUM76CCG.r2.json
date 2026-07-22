@@ -1,0 +1,18 @@
+{
+  "key": "ZUM76CCG",
+  "primary_theme": "org-governance",
+  "themes": [
+    "org-governance"
+  ],
+  "facets": [
+    "intro-framing",
+    "assistive",
+    "agentic"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "org-governance": "Org-level risk classification framework based on autonomy and impact levels."
+  }
+}

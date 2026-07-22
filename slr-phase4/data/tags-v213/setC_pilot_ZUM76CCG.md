@@ -36,6 +36,22 @@ Facet voting: **3/3** assistive, agentic · **2/3** general-ai (o+c), intro-fram
    looks correct. Confirm.
 5. Minor: `risk-overreliance` (2/3, focal over-reliance paragraph per opus) — keep/drop.
 
+## Replication addendum (2026-07-22, k=3 under the disagreement-triggered rule)
+
+| | run 1 | run 2 | run 3 | modal |
+|---|---|---|---|---|
+| codex | risk-routing | risk-routing | risk-routing | risk-routing (stable) |
+| gemini | org-governance | org-governance | org-governance | org-governance (stable) |
+| opus | risk-routing | org-governance | org-governance | **org-governance (UNSTABLE)** |
+
+**Modal re-triage: LIGHT-REVIEW → consensus `org-governance` (2/1, codex dissents)** — the
+single-run consensus (risk-routing) was built on opus's one unstable draw and REVERSED under
+replication. Tripwires: `unstable:opus` + demote ×3. Adjudication question #1 stands but the
+panel now leans the other way: both stable models + opus's modal read the LRF as org apparatus;
+codex alone (stably) reads the autonomy×impact allocation as routing. The routing-vs-governance
+altitude call remains the arbiter's — but note the instability itself corroborates that this
+paper sits exactly on the boundary.
+
 ## Pilot-run observations (pipeline mechanics)
 - L0 caught a silent codex empty-output twice; root cause = codex reading stdin in background
   context; fixed in the runner (`< /dev/null`). Retry protocol worked.
