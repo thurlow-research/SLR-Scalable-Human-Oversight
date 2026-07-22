@@ -11,6 +11,14 @@ Live instrument (`slr-phase4/Tag_Prompt.md`) untouched. Deltas vs live prompt: e
 
 Verified: the final variant contains zero occurrences of "Hedwig" or "T72TU8B5".
 
+**Interim variant preserved as its own condition (regenerated 2026-07-21):**
+`Tag_Prompt_ASSIGNMENT_hedwig-free_minimal.md` = the current prompt with ONLY the minimal
+de-referencing — "(VibeGuard, CodeAgent)" and the **routing-leaning** diff-risk example — i.e.,
+Hedwig's name removed but the tie-breaker's polarity unchanged. Useful as the middle condition of
+a polarity ladder on Hedwig: live prompt (names the answer) → minimal variant (same-polarity
+example, no name) → hardened variant (reverse-polarity example). Its known caveats stand: CodeAgent
+is a named Set B calibration paper (§1), and the example shares Hedwig's resolution polarity (§2).
+
 ## 2. Analogy-distance finding (interim draft vs Hedwig's actual mechanism)
 
 Hedwig's distinctive features, from `slr-phase4/txt/T72TU8B5.txt`: a **learned** policy engine
