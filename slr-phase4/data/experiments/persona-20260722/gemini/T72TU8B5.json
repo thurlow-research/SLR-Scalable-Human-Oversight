@@ -1,0 +1,20 @@
+{
+  "key": "T72TU8B5",
+  "primary_theme": "risk-routing",
+  "themes": [
+    "risk-routing",
+    "hitl-workflow",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "survey-input",
+    "built-system",
+    "agentic",
+    "method-self-report"
+  ],
+  "rationale": {
+    "risk-routing": "Learns dynamic check-in thresholds to allocate developer attention across risk tiers.",
+    "hitl-workflow": "Provides interactive approval gates, plan checkpoints, and human control over permissions.",
+    "oversight-explanation": "Surfaces explanations for check-ins, distinguishing policy-initiated from agent-initiated interruptions."
+  }
+}

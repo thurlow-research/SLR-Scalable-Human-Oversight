@@ -1,0 +1,16 @@
+{
+  "key": "UDVHQ5HR",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "counterpoint",
+    "risk-quality",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-review": "Empirically evaluates LLM code review reliability limits and over-correction bias.",
+    "counterpoint": "Opposes assumption that explanatory step-by-step prompting improves code review accuracy."
+  }
+}

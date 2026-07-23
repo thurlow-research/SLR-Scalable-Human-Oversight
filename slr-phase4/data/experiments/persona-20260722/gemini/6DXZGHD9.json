@@ -1,0 +1,28 @@
+{
+  "key": "6DXZGHD9",
+  "primary_theme": "ai-code-insecurity",
+  "themes": [
+    "ai-code-insecurity",
+    "org-governance",
+    "quality-debt",
+    "automation-bias"
+  ],
+  "facets": [
+    "survey-input",
+    "expert-validated",
+    "built-system",
+    "metrics",
+    "risk-security",
+    "risk-quality",
+    "risk-overreliance",
+    "method-self-report",
+    "method-field-study"
+  ],
+  "rationale": {
+    "ai-code-insecurity": "Identifies and empirically evaluates 14 cybersecurity risk vectors in AI code.",
+    "org-governance": "Proposes an ANN-ISM framework to assess org risk and practice maturity.",
+    "quality-debt": "Analyzes non-security quality decay and logic errors in generated code.",
+    "automation-bias": "Examines developer over-reliance and skip of due diligence on AI code.",
+    "metrics": "Defines risk scoring and maturity metrics for security in code generation."
+  }
+}

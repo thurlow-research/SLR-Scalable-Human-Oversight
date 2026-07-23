@@ -448,3 +448,89 @@ adjudicated sets are consistent with the closing instrument. The **fully-clean c
 rests on Set C** (AI-first protocol, untouched). Set B tally: 3 `demote:context` flags in 10
 (BAWCBT9R, TF56EPIP, E3E5YA2E) — matching Set A's 3/10 demote rate exactly.
 
+---
+
+## 8. Prompt-design validation experiments (2026-07-22/23) — persona rejected; no length effect at panel tier
+
+Two candidate prompt refinements, surfaced by course work (GRAD 50300 prompt-optimization
+assignment) and by observed behavior of a cheaper model tier, were evaluated against the
+calibration corpus before the sweep. Both were **rejected for the production instrument** — the
+value of the exercise is that the rejections are now empirical, not argued. v2.13 is unchanged.
+
+### 8.1 Persona framing — evaluated and rejected
+
+**Motivation.** Persona definition is a standard prompt-refinement technique; a Gemini-Flash-tier
+probe on Hedwig (assignment side) suggested a persona block stabilized the
+`hitl-workflow`↔`risk-routing` primary flip. Question: does a persona help the production panel?
+
+**Design.** One-variable variant: a 13-line "WHO YOU ARE" block (doctoral researcher, the review's
+framing, explicit research-interest list, instrument-discipline stance) prepended to the
+hedwig-free assignment vintage of the instrument; otherwise byte-identical. Run:
+gemini-3.1-pro-high (the panel seat), single pass over all 20 calibration papers, scored against
+`human_gold.json` beside the v2.13 gemini baseline. Artifacts:
+`slr-phase4/data/experiments/persona-20260722/` (instrument, per-paper outputs, scorer,
+scored.json).
+
+**Results.** Primaries 13/20 vs baseline 14/20; theme-Jaccard .64 vs .61; facet-Jaccard .68 vs
+.67; demote-flag accuracy 15/20 vs 14/20. Four primaries changed: one gain (F9JM9CI6 →
+`oversight-explanation`, matching gold), two losses (UB2EVUFU → `remediation-gating`; UW2R6BBJ →
+`org-governance`), one wrong→differently-wrong (TF56EPIP). No change on any
+`hitl-workflow`/`risk-routing` paper — Hedwig stayed `risk-routing` in both arms, notably on a
+**hedwig-free** instrument (the baseline had the §9-class self-reference advantage), so
+de-referencing cost nothing at panel tier; the Flash flip is a tier fragility.
+
+**Findings.** (a) **Interest-salience drift is real:** both losses moved *toward* content named in
+the persona's research-interest list (`remediation-gating` appears verbatim; the
+"governance/regulatory landscape" phrase blurs the org/regulatory boundary) — the predicted
+failure mode of persona-with-interests, now observed. Gemini is the panel's most run-stable seat,
+so these are likely prompt effects, not sampling noise. (b) **Disclosed confound:** the variant
+bundles the persona with the assignment vintage's de-referenced worked examples; the course
+vintage's tie-breaker example ends in `remediation-gating`, exactly where UB2EVUFU flipped —
+example-anchoring is the rival explanation for that regression. A persona-free control arm on the
+same vintage would separate them if it ever matters.
+
+**Decision.** v2.13 stays persona-free for the sweep. The methods chapter cites this as a
+*defended* design choice: tagging behavior is driven entirely by the versioned instrument text;
+role-play framing added no accuracy and its one systematic effect was pulling assignments toward
+the persona's declared interests — consistent with the corpus's own findings that non-semantic
+framing cues manipulate LLM judgment (`BAWCBT9R`, `X7EN6DXZ`).
+
+### 8.2 Prompt splitting (themes vs facets) — assessed and declined; the length question tested instead
+
+**Motivation.** Flash-tier runs showed variance increasing with prompt size (a candidate
+lost-in-the-middle effect), prompting the question of whether splitting the instrument into
+separate theme and facet prompts would improve consistency.
+
+**Assessment (not run).** Splitting was declined for the production pipeline on structural
+grounds: the v2.13 rule mass *couples* the axes (define-without-allocation → `metrics` not
+`theme:risk-routing`; `routing-signal` mutually exclusive with the theme; contradiction rules
+feeding demote logic), so a split either breaks cross-references or duplicates them into both
+prompts, while doubling per-paper cost and adding a cross-call consistency failure mode the
+ladder cannot currently detect.
+
+**The testable premise was tested on existing data.** If prompt size drove panel-tier trouble,
+paper length should predict disagreement. Across the calibration 20 (TXT 17KB–210KB): Pearson r
+between TXT size and distinct-primaries **+0.01**, theme-set dispersion **+0.09**, gold-primary
+hits **+0.03** — no length effect. The hard papers are short and boundary-hard (2CKL96B8 17KB,
+E95T8E88 27KB); three of the four longest are unanimous and correct. **At panel tier, difficulty
+is conceptual, not contextual**; the Flash size-sensitivity is a property of that tier.
+
+**Lessons carried forward (staged, not sweep-blocking):** (1) paper length becomes a monitored
+covariate in the sweep — re-run the correlation at n=128 where the instability tripwire supplies
+a per-paper variance signal; (2) a "sandwich recap" (schema + checklist + top boundary rules
+repeated after the paper text) is staged as a v2.14 robustness candidate, to be tested
+Flash-side first under the same graduation bar as the persona; (3) **gauge qualification for
+tier substitution** — before any cheaper model tags the ~890-context extension, it must pass a
+consistency probe (k≈5 on a small set, modal-agreement threshold), because the Flash observations
+demonstrate that tier swaps change the gauge's variance properties, not just its accuracy.
+
+### 8.3 Gauge constancy (same dates, recorded here for the methods chapter)
+
+Panel model identities are now **pinned** in the runner rather than inherited from CLI defaults
+(codex `-c model="gpt-5.6-sol"`, effort high; gemini `--model gemini-3.1-pro-high`; opus = Claude
+Opus 4.8 via the orchestrator), after a session-log audit verified all v2.13 calibration runs had
+in fact used these tiers. Every run now emits a `<KEY>.meta.json` provenance sidecar (model,
+effort, CLI version, timestamp), repo-side only. Caveat for the writeup: "high" effort is a fixed
+operating point per vendor, not a cross-vendor equivalence claim — comparability rests on the
+calibration results themselves.
+

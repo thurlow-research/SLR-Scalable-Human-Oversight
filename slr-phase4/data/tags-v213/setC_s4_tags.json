@@ -1,0 +1,13 @@
+{
+ "ZUM76CCG": [
+  "s4:triage:light-review",
+  "s4:consensus:primary:org-governance",
+  "s4:consensus:theme:org-governance",
+  "s4:consensus:facet:agentic",
+  "s4:consensus:facet:assistive",
+  "s4:consensus:facet:general-ai",
+  "s4:consensus:facet:intro-framing",
+  "s4:flag:demote:context",
+  "s4:flag:unstable:opus"
+ ]
+}

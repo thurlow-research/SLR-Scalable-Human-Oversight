@@ -1,0 +1,21 @@
+{
+  "key": "E3E5YA2E",
+  "primary_theme": "automation-bias",
+  "themes": [
+    "automation-bias",
+    "ai-code-insecurity",
+    "quality-debt"
+  ],
+  "facets": [
+    "assistive",
+    "risk-security",
+    "risk-quality",
+    "risk-overreliance",
+    "method-self-report"
+  ],
+  "rationale": {
+    "automation-bias": "Studies developer over-trust, false confidence trap, complacency, and skill erosion.",
+    "ai-code-insecurity": "Investigates developer reports of insecure patterns and vulnerabilities in LLM output.",
+    "quality-debt": "Examines non-security code quality decay, logical flaws, and inappropriate suggestions."
+  }
+}

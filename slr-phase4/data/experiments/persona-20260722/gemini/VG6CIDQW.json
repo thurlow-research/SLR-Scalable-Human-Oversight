@@ -1,0 +1,20 @@
+{
+  "key": "VG6CIDQW",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "built-system",
+    "assistive",
+    "steering"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "hitl-workflow": "Human control surface for selecting context and triggering AI queries.",
+    "oversight-explanation": "Provides dependency graph and file summaries to explain context to developers."
+  }
+}

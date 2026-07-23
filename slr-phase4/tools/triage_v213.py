@@ -155,6 +155,37 @@ def triage(keys, base, seed, audit_rate, pilot):
     return results, l0_failures, audit
 
 
+def emit_tags(r, papers=None):
+    """Result record -> s4: machine-proposal tag list (lineage grammar, parallel to s1/s2/s3).
+
+    Proposal layer only: plain theme:/facet slugs are written post-adjudication by the
+    human; s4: tags persist as durable lineage of what the panel proposed."""
+    tags = [f"s4:triage:{r['disposition'].lower()}"]
+    if r.get("consensus_primary"):
+        tags.append(f"s4:consensus:primary:{r['consensus_primary']}")
+    theme_counts = {}
+    for m, themes in r.get("themes", {}).items():
+        for t in themes:
+            theme_counts[t] = theme_counts.get(t, 0) + 1
+    tags += [f"s4:consensus:theme:{t}" for t, c in sorted(theme_counts.items()) if c >= 2]
+    facets = r.get("facets", {})
+    tags += [f"s4:consensus:facet:{t}"
+             for t in sorted(facets.get("accept", []) + facets.get("noted", []))]
+    flags = set()
+    for tw in r.get("tripwires", []):
+        if tw.startswith("unstable:"):
+            flags.add(f"s4:flag:{tw}")
+        elif tw.startswith("demote:"):
+            flags.add(f"s4:flag:{tw.rsplit(':', 1)[0]}")  # collapse per-model attribution
+        elif tw.startswith("sprawl:"):
+            flags.add("s4:flag:sprawl")
+    if r.get("note") == "noise-resolved":
+        flags.add("s4:flag:noise-resolved")
+    if r.get("audit_sample"):
+        flags.add("s4:flag:audit")
+    return tags + sorted(flags)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--set", dest="setname", help="key of calib_sets.json list (e.g. setC)")
@@ -164,6 +195,7 @@ def main():
     ap.add_argument("--audit-rate", type=float, default=0.10)
     ap.add_argument("--pilot", action="store_true")
     ap.add_argument("--out", help="write JSON results here")
+    ap.add_argument("--emit-tags", help="write {key: [s4: proposal tags]} JSON here")
     a = ap.parse_args()
     root = pathlib.Path(__file__).resolve().parent.parent
     keys = a.keys or json.load(open(root / "data/calib_sets.json"))[a.setname]
@@ -185,6 +217,11 @@ def main():
     if a.out:
         pathlib.Path(a.out).write_text(json.dumps(results, indent=1))
         print("wrote", a.out)
+    if a.emit_tags:
+        payload = {r["key"]: emit_tags(r) for r in results
+                   if r["disposition"] not in ("L0-INCOMPLETE", "RERUN-NEEDED")}
+        pathlib.Path(a.emit_tags).write_text(json.dumps(payload, indent=1))
+        print("wrote", a.emit_tags)
 
 
 if __name__ == "__main__":

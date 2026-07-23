@@ -1,0 +1,22 @@
+{
+  "key": "F9JM9CI6",
+  "primary_theme": "oversight-explanation",
+  "themes": [
+    "oversight-explanation",
+    "hitl-workflow",
+    "ai-review"
+  ],
+  "facets": [
+    "counterpoint",
+    "design-only",
+    "framework",
+    "general-code",
+    "risk-quality"
+  ],
+  "rationale": {
+    "oversight-explanation": "AI platform synthesizes context, summaries, and rationale to support human reviewer comprehension.",
+    "hitl-workflow": "Preserves human approval gates and decision authority rather than automating code review.",
+    "ai-review": "Uses multi-agent AI system to detect defects and suggest review comments.",
+    "counterpoint": "Opposes full code review automation to preserve interpersonal and team benefits."
+  }
+}

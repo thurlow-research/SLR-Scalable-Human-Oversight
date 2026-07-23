@@ -1,0 +1,21 @@
+{
+  "key": "2CKL96B8",
+  "primary_theme": "ai-code-insecurity",
+  "themes": [
+    "ai-code-insecurity",
+    "quality-debt"
+  ],
+  "facets": [
+    "lit-review",
+    "risk-security",
+    "risk-quality",
+    "assistive"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "ai-code-insecurity": "Synthesizes empirical evidence on 40-50% security vulnerability rates in AI code.",
+    "quality-debt": "Synthesizes evidence on non-security quality decay, correctness degradation, and intervention rates."
+  }
+}

@@ -1,0 +1,715 @@
+[
+ {
+  "key": "UB2EVUFU",
+  "gold": "ai-review",
+  "persona": {
+   "primary": "remediation-gating",
+   "themes": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "remediation-gating"
+   ],
+   "facets": [
+    "agentic",
+    "built-system",
+    "framework",
+    "risk-quality"
+   ],
+   "flags": []
+  },
+  "baseline": {
+   "primary": "ai-review",
+   "themes": [
+    "ai-review",
+    "hitl-workflow",
+    "remediation-gating"
+   ],
+   "facets": [
+    "agentic",
+    "built-system",
+    "framework",
+    "risk-quality",
+    "steering"
+   ],
+   "flags": []
+  }
+ },
+ {
+  "key": "UDVHQ5HR",
+  "gold": "ai-review",
+  "persona": {
+   "primary": "ai-review",
+   "themes": [
+    "ai-review"
+   ],
+   "facets": [
+    "counterpoint",
+    "method-experiment",
+    "risk-quality"
+   ],
+   "flags": []
+  },
+  "baseline": {
+   "primary": "ai-review",
+   "themes": [
+    "ai-review"
+   ],
+   "facets": [
+    "counterpoint",
+    "general-code",
+    "method-experiment"
+   ],
+   "flags": []
+  }
+ },
+ {
+  "key": "Z8TPRNEU",
+  "gold": "hitl-workflow",
+  "persona": {
+   "primary": "hitl-workflow",
+   "themes": [
+    "automation-bias",
+    "hitl-workflow",
+    "quality-debt"
+   ],
+   "facets": [
+    "agentic",
+    "counterpoint",
+    "method-field-study",
+    "method-self-report",
+    "risk-overreliance",
+    "risk-quality",
+    "steering",
+    "survey-input"
+   ],
+   "flags": []
+  },
+  "baseline": {
+   "primary": "hitl-workflow",
+   "themes": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "rules-based-checks"
+   ],
+   "facets": [
+    "agentic",
+    "assistive",
+    "counterpoint",
+    "method-field-study",
+    "method-self-report",
+    "risk-overreliance",
+    "risk-quality",
+    "steering",
+    "survey-input"
+   ],
+   "flags": []
+  }
+ },
+ {
+  "key": "T8E8SCCG",
+  "gold": "rules-based-checks",
+  "persona": {
+   "primary": "rules-based-checks",
+   "themes": [
+    "ai-code-insecurity",
+    "rules-based-checks"
+   ],
+   "facets": [
+    "agentic",
+    "built-system",
+    "framework",
+    "risk-security"
+   ],
+   "flags": []
+  },
+  "baseline": {
+   "primary": "rules-based-checks",
+   "themes": [
+    "ai-code-insecurity",
+    "rules-based-checks"
+   ],
+   "facets": [
+    "agentic",
+    "built-system",
+    "framework",
+    "risk-security"
+   ],
+   "flags": []
+  }
+ },
+ {
+  "key": "M74M3RFJ",
+  "gold": "regulatory-compliance",
+  "persona": {
+   "primary": "regulatory-compliance",
+   "themes": [
+    "org-governance",
+    "regulatory-compliance"
+   ],
+   "facets": [
+    "general-ai",
+    "intro-framing",
+    "risk-security"
+   ],
+   "flags": [
+    "demote:context"
+   ]
+  },
+  "baseline": {
+   "primary": "regulatory-compliance",
+   "themes": [
+    "org-governance",
+    "regulatory-compliance"
+   ],
+   "facets": [
+    "general-ai",
+    "intro-framing",
+    "risk-security"
+   ],
+   "flags": [
+    "demote:context"
+   ]
+  }
+ },
+ {
+  "key": "2CKL96B8",
+  "gold": "ai-code-insecurity",
+  "persona": {
+   "primary": "ai-code-insecurity",
+   "themes": [
+    "ai-code-insecurity",
+    "quality-debt"
+   ],
+   "facets": [
+    "assistive",
+    "lit-review",
+    "risk-quality",
+    "risk-security"
+   ],
+   "flags": [
+    "demote:context"
+   ]
+  },
+  "baseline": {
+   "primary": "ai-code-insecurity",
+   "themes": [
+    "ai-code-insecurity",
+    "quality-debt"
+   ],
+   "facets": [
+    "lit-review",
+    "risk-quality",
+    "risk-security"
+   ],
+   "flags": [
+    "demote:context"
+   ]
+  }
+ },
+ {
+  "key": "T72TU8B5",
+  "gold": "risk-routing",
+  "persona": {
+   "primary": "risk-routing",
+   "themes": [
+    "hitl-workflow",
+    "oversight-explanation",
+    "risk-routing"
+   ],
+   "facets": [
+    "agentic",
+    "built-system",
+    "method-self-report",
+    "survey-input"
+   ],
+   "flags": []
+  },
+  "baseline": {
+   "primary": "risk-routing",
+   "themes": [
+    "hitl-workflow",
+    "oversight-explanation",
+    "risk-routing"
+   ],
+   "facets": [
+    "agentic",
+    "built-system",
+    "framework",
+    "method-self-report",
+    "steering",
+    "survey-input"
+   ],
+   "flags": []
+  }
+ },
+ {
+  "key": "VG6CIDQW",
+  "gold": "oversight-explanation",
+  "persona": {
+   "primary": "hitl-workflow",
+   "themes": [
+    "hitl-workflow",
+    "oversight-explanation"
+   ],
+   "facets": [
+    "assistive",
+    "built-system",
+    "steering"
+   ],
+   "flags": [
+    "demote:context"
+   ]
+  },
+  "baseline": {
+   "primary": "hitl-workflow",
+   "themes": [
+    "hitl-workflow"
+   ],
+   "facets": [
+    "assistive",
+    "built-system",
+    "steering"
+   ],
+   "flags": [
+    "demote:context"
+   ]
+  }
+ },
+ {
+  "key": "22JBEZNK",
+  "gold": "oversight-explanation",
+  "persona": {
+   "primary": "oversight-explanation",
+   "themes": [
+    "oversight-explanation"
+   ],
+   "facets": [
+    "agentic",
+    "method-experiment",
+    "method-self-report",
+    "non-developer",
+    "risk-overreliance",
+    "risk-quality"
+   ],
+   "flags": []
+  },
+  "baseline": {
+   "primary": "oversight-explanation",
+   "themes": [
+    "oversight-explanation"
+   ],
+   "facets": [
+    "agentic",
+    "method-experiment",
+    "non-developer",
+    "risk-quality"
+   ],
+   "flags": []
+  }
+ },
+ {
+  "key": "F9JM9CI6",
+  "gold": "oversight-explanation",
+  "persona": {
+   "primary": "oversight-explanation",
+   "themes": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation"
+   ],
+   "facets": [
+    "counterpoint",
+    "design-only",
+    "framework",
+    "general-code",
+    "risk-quality"
+   ],
+   "flags": []
+  },
+  "baseline": {
+   "primary": "ai-review",
+   "themes": [
+    "ai-review"
+   ],
+   "facets": [
+    "counterpoint",
+    "design-only",
+    "framework",
+    "general-code"
+   ],
+   "flags": []
+  }
+ },
+ {
+  "key": "B644HQFS",
+  "gold": "quality-debt",
+  "persona": {
+   "primary": "oversight-scaling-inversion",
+   "themes": [
+    "hitl-workflow",
+    "org-governance",
+    "oversight-scaling-inversion",
+    "quality-debt"
+   ],
+   "facets": [
+    "agentic",
+    "assistive",
+    "method-mining",
+    "risk-overreliance",
+    "risk-quality",
+    "survey-input"
+   ],
+   "flags": []
+  },
+  "baseline": {
+   "primary": "oversight-scaling-inversion",
+   "themes": [
+    "oversight-scaling-inversion",
+    "quality-debt"
+   ],
+   "facets": [
+    "agentic",
+    "assistive",
+    "method-mining",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security",
+    "survey-input"
+   ],
+   "flags": []
+  }
+ },
+ {
+  "key": "6DXZGHD9",
+  "gold": "org-governance",
+  "persona": {
+   "primary": "ai-code-insecurity",
+   "themes": [
+    "ai-code-insecurity",
+    "automation-bias",
+    "org-governance",
+    "quality-debt"
+   ],
+   "facets": [
+    "built-system",
+    "expert-validated",
+    "method-field-study",
+    "method-self-report",
+    "metrics",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security",
+    "survey-input"
+   ],
+   "flags": []
+  },
+  "baseline": {
+   "primary": "ai-code-insecurity",
+   "themes": [
+    "ai-code-insecurity"
+   ],
+   "facets": [
+    "expert-validated",
+    "method-field-study",
+    "method-self-report",
+    "metrics",
+    "risk-security",
+    "survey-input"
+   ],
+   "flags": []
+  }
+ },
+ {
+  "key": "E95T8E88",
+  "gold": "oversight-scaling-inversion",
+  "persona": {
+   "primary": "quality-debt",
+   "themes": [
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "facets": [
+    "agentic",
+    "built-system",
+    "method-mining",
+    "metrics",
+    "risk-quality",
+    "routing-signal"
+   ],
+   "flags": []
+  },
+  "baseline": {
+   "primary": "quality-debt",
+   "themes": [
+    "quality-debt"
+   ],
+   "facets": [
+    "agentic",
+    "built-system",
+    "method-mining",
+    "metrics",
+    "risk-quality",
+    "routing-signal"
+   ],
+   "flags": []
+  }
+ },
+ {
+  "key": "7V7SRG43",
+  "gold": "ai-review",
+  "persona": {
+   "primary": "ai-review",
+   "themes": [
+    "ai-review"
+   ],
+   "facets": [
+    "built-system",
+    "framework",
+    "general-code",
+    "risk-quality",
+    "risk-security"
+   ],
+   "flags": []
+  },
+  "baseline": {
+   "primary": "ai-review",
+   "themes": [
+    "agent-scope-drift",
+    "ai-review"
+   ],
+   "facets": [
+    "built-system",
+    "framework",
+    "general-code",
+    "risk-quality",
+    "risk-security"
+   ],
+   "flags": []
+  }
+ },
+ {
+  "key": "UW2R6BBJ",
+  "gold": "regulatory-compliance",
+  "persona": {
+   "primary": "org-governance",
+   "themes": [
+    "org-governance",
+    "provenance-auditability",
+    "regulatory-compliance"
+   ],
+   "facets": [
+    "built-system",
+    "expert-validated",
+    "framework",
+    "general-ai",
+    "method-experiment",
+    "method-field-study",
+    "method-self-report",
+    "risk-security"
+   ],
+   "flags": [
+    "demote:context"
+   ]
+  },
+  "baseline": {
+   "primary": "regulatory-compliance",
+   "themes": [
+    "org-governance",
+    "regulatory-compliance"
+   ],
+   "facets": [
+    "built-system",
+    "expert-validated",
+    "framework",
+    "general-ai",
+    "method-field-study",
+    "method-self-report",
+    "risk-security"
+   ],
+   "flags": [
+    "demote:context"
+   ]
+  }
+ },
+ {
+  "key": "BAWCBT9R",
+  "gold": "ai-review",
+  "persona": {
+   "primary": "ai-review",
+   "themes": [
+    "ai-review"
+   ],
+   "facets": [
+    "method-experiment"
+   ],
+   "flags": [
+    "demote:context"
+   ]
+  },
+  "baseline": {
+   "primary": "ai-review",
+   "themes": [
+    "ai-review"
+   ],
+   "facets": [
+    "agentic",
+    "method-experiment"
+   ],
+   "flags": []
+  }
+ },
+ {
+  "key": "E3E5YA2E",
+  "gold": "automation-bias",
+  "persona": {
+   "primary": "automation-bias",
+   "themes": [
+    "ai-code-insecurity",
+    "automation-bias",
+    "quality-debt"
+   ],
+   "facets": [
+    "assistive",
+    "method-self-report",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security"
+   ],
+   "flags": []
+  },
+  "baseline": {
+   "primary": "automation-bias",
+   "themes": [
+    "automation-bias"
+   ],
+   "facets": [
+    "assistive",
+    "method-self-report",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security",
+    "survey-input"
+   ],
+   "flags": []
+  }
+ },
+ {
+  "key": "5VTAJISY",
+  "gold": "hitl-workflow",
+  "persona": {
+   "primary": "hitl-workflow",
+   "themes": [
+    "hitl-workflow"
+   ],
+   "facets": [
+    "agentic",
+    "built-system",
+    "framework",
+    "method-field-study",
+    "method-mining",
+    "method-self-report",
+    "risk-quality",
+    "steering",
+    "survey-input"
+   ],
+   "flags": []
+  },
+  "baseline": {
+   "primary": "hitl-workflow",
+   "themes": [
+    "hitl-workflow"
+   ],
+   "facets": [
+    "adopted",
+    "agentic",
+    "built-system",
+    "framework",
+    "method-field-study",
+    "method-self-report",
+    "risk-quality",
+    "steering",
+    "survey-input"
+   ],
+   "flags": []
+  }
+ },
+ {
+  "key": "TF56EPIP",
+  "gold": "ai-review",
+  "persona": {
+   "primary": "org-governance",
+   "themes": [
+    "agent-scope-drift",
+    "ai-code-insecurity",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "provenance-auditability",
+    "regulatory-compliance"
+   ],
+   "facets": [
+    "agentic",
+    "assistive",
+    "built-system",
+    "framework",
+    "method-experiment",
+    "metrics",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security"
+   ],
+   "flags": []
+  },
+  "baseline": {
+   "primary": "ai-code-insecurity",
+   "themes": [
+    "ai-code-insecurity"
+   ],
+   "facets": [
+    "agentic",
+    "method-experiment",
+    "risk-security"
+   ],
+   "flags": []
+  }
+ },
+ {
+  "key": "R4WJZBSF",
+  "gold": "regulatory-compliance",
+  "persona": {
+   "primary": "regulatory-compliance",
+   "themes": [
+    "regulatory-compliance"
+   ],
+   "facets": [
+    "assistive",
+    "design-only",
+    "framework",
+    "metrics",
+    "risk-bias",
+    "risk-ip",
+    "risk-overreliance",
+    "risk-quality"
+   ],
+   "flags": []
+  },
+  "baseline": {
+   "primary": "regulatory-compliance",
+   "themes": [
+    "regulatory-compliance"
+   ],
+   "facets": [
+    "design-only",
+    "framework",
+    "metrics",
+    "risk-bias",
+    "risk-ip",
+    "risk-overreliance",
+    "risk-quality"
+   ],
+   "flags": []
+  }
+ }
+]

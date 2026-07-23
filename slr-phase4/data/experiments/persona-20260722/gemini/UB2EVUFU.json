@@ -1,0 +1,22 @@
+{
+  "key": "UB2EVUFU",
+  "primary_theme": "remediation-gating",
+  "themes": [
+    "remediation-gating",
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "agentic",
+    "risk-quality"
+  ],
+  "rationale": {
+    "remediation-gating": "Governs autonomous fix cycles using exponential budget decay and failure convergence.",
+    "ai-review": "Apollo manager independently evaluates produced software artifacts with structured verdicts.",
+    "hitl-workflow": "Asynchronous dashboard for human issue filing, pausing, and emergency resets.",
+    "oversight-explanation": "Dashboard streams live agent reasoning, tool calls, and console logs."
+  }
+}

@@ -649,6 +649,25 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
   regulatory-operationalization deep-dive appears in the sweep, the "sole" premise lapses and both
   get re-adjudicated on ordinary criteria. **Instrument = v2.13** (reference-only; menu stays 45).
 
+## 31. Prompt-design refinements evaluated and REJECTED — instrument unchanged (2026-07-22/23)
+- **Persona framing** (assignment-derived technique): one-variable experiment, gemini-3.1-pro-high
+  over the calibration 20 vs the v2.13 baseline and human gold. Primaries 13/20 vs 14/20;
+  Jaccards ±.03; both regressions drifted toward themes named in the persona's research-interest
+  list (interest-salience bias, the predicted failure mode, now observed). **v2.13 stays
+  persona-free** — a defended design choice, consistent with the corpus's own framing-cue findings
+  (BAWCBT9R, X7EN6DXZ). Confound disclosed: bundled with the hedwig-free vintage's worked-example
+  substitutions (UB2EVUFU's flip to remediation-gating = anchoring suspect). Artifacts:
+  `data/experiments/persona-20260722/`. Full writeup: calibration doc §8.1.
+- **Theme/facet prompt split** (motivated by Flash-tier size-variance): declined — the rule mass
+  couples the axes (metrics↔risk-routing, routing-signal exclusion, contradiction→demote logic);
+  the testable premise was tested instead: **no length effect at panel tier** (r ≈ 0.0 between TXT
+  size and disagreement/dispersion/accuracy, n=20). Lessons staged, not adopted: length as sweep
+  covariate; sandwich-recap = v2.14 candidate (Flash-side test first); gauge-qualification probe
+  required before any cheaper tier tags the context extension. Calibration doc §8.2.
+- Gauge constancy hardened the same dates: panel models pinned in the runner (sol-high /
+  3.1-pro-high / opus-4.8) + per-run provenance sidecars, after session-log audit confirmed all
+  v2.13 runs used these tiers. Calibration doc §8.3. **Instrument remains v2.13; menu stays 45.**
+
 ---
 
 ### Headline for the writeup
