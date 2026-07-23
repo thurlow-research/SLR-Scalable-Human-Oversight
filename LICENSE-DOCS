@@ -1,0 +1,24 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+==========================================================
+
+The documentation and data in this repository — including the methodology
+documents (`Methodology/`), the tagging instrument and taxonomy changelog,
+calibration and tag data (`slr-phase4/data/`), handoff and knowledge-transfer
+notes, and all other prose and datasets — are licensed under the Creative
+Commons Attribution 4.0 International License.
+
+You are free to share and adapt this material for any purpose, provided you
+give appropriate credit, link to the license, and indicate if changes were
+made.
+
+Suggested attribution:
+
+  Thurlow, S. (2026). Systematic Literature Review — Human Oversight of
+  AI-Generated Code (methodology and data).
+  https://github.com/thurlow-research/SLR
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Source code in this repository (scripts and tooling) is separately licensed
+under the MIT License — see the LICENSE file. Neither license extends to the
+underlying papers referenced by the review or their publishers' content.
