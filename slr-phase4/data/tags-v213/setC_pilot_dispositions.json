@@ -48,6 +48,30 @@
    ]
   },
   "audit_sample": false,
-  "pilot_full_review": true
+  "pilot_full_review": true,
+  "human_ruling": {
+   "date": "2026-08-15",
+   "primary": "org-governance",
+   "themes": [
+    "hitl-workflow",
+    "org-governance"
+   ],
+   "facets": [
+    "agentic",
+    "assistive",
+    "general-ai",
+    "intro-framing"
+   ],
+   "demote": "context",
+   "notes": {
+    "q1_primary": "org-governance \u2014 use-case/deployment-granularity classification prescribing oversight regimes = org apparatus; risk-routing requires artifact-granularity selection driven by a computed signal (precedent, changelog \u00a732)",
+    "q2_contradiction": "intro-framing survives; design-only fails buildable-detail (no components/formulas/thresholds; metrics deferred to future work by the paper itself)",
+    "q3_demote": "confirmed demote:context \u2014 general-AI object + unevaluated; \u00a730 sole-exemplar exception not invoked (UW2R6BBJ holds the slot); SAE-style autonomy model valuable as background/risk framing = context by definition",
+    "q4_mode": "both \u2014 LRF levels 0-1 = assistive acceptance-moment, levels 2-3 = agentic artifact-granularity",
+    "q5_risk_overreliance": "dropped \u2014 background acknowledgment in the challenges catalog, no substantive treatment",
+    "delta_vs_pipeline": "one delta: human added theme:hitl-workflow (codex-aligned); all other rulings match the post-replication facet-vote state"
+   }
+  },
+  "status": "CLOSED"
  }
 ]

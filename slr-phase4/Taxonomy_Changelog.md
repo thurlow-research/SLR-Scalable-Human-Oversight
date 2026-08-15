@@ -668,6 +668,38 @@ tie-breaker-only, factorial on one paper) would separate the two effects.
   3.1-pro-high / opus-4.8) + per-run provenance sidecars, after session-log audit confirmed all
   v2.13 runs used these tiers. Calibration doc §8.3. **Instrument remains v2.13; menu stays 45.**
 
+## 32. Set C pilot CLOSED — the classification-framework altitude precedent (ZUM76CCG, 2026-08-15)
+Arbiter adjudication of the ZUM76CCG packet (all five questions; full record in
+`data/tags-v213/setC_pilot_dispositions.json`):
+- **Altitude precedent (binding for the sweep): use-case/deployment-granularity classification
+  frameworks that prescribe oversight *regimes* = `org-governance`; `theme:risk-routing` requires
+  artifact-granularity selection driven by a computed, producer-independent signal.** The LRF's
+  autonomy×impact matrix allocates governance regimes to deployments via human design-time
+  judgment — no computed signal, no artifact selection → org apparatus (ASIL-classification-kin,
+  6DXZGHD9-kin). Keeps Hedwig (dynamic per-artifact classifier) cleanly on the routing side.
+  Confirms the replication-stage modal (org-governance 2/1) over the noise-built single-run
+  consensus; codex's stable risk-routing dissent = its known drift-as-primary signature.
+- **Contradiction pair**: `intro-framing` survives; `design-only` fails buildable-detail (no
+  components/formulas/thresholds; the paper itself defers metrics to future work) — the arbiter's
+  test "outlines a framework concept, not a buildable system" restates the discriminator.
+  `metrics` correctly never fired (define-nothing, not define-only).
+- **`risk-overreliance` dropped on arbiter reflection**: a background acknowledgment paragraph in
+  a challenges catalog ≠ substantive treatment — the mention-vs-focal boundary is seductive at
+  paragraph length (opus called it "focal"; the human initially leaned keep). Sweep note: audit
+  eyes on paragraph-length risk-flag calls.
+- **Demote:context confirmed**; §30 sole-exemplar exception not invoked (risk-classification
+  dive, not regulatory operationalization; UW2R6BBJ holds the slot). Arbiter rationale — "useful
+  for background and risk framing" — is the context tier's definition, worked as intended.
+- **Mode = both confirmed** with an interpretation note: `agentic` == autonomy (AI-initiated,
+  artifact-granularity reviewable unit) per the v2.13 definition — LRF levels 0–1 map to the
+  assistive acceptance-moment, levels 2–3 to the agentic gate; assistive-alone would misstate the
+  paper's span.
+- **Pipeline validation**: one human delta vs the post-replication proposal (added
+  `theme:hitl-workflow`, codex-aligned — the autonomy dimension argues human control modes as one
+  of the framework's two axes). Everything else matched the ladder's pre-filled state.
+  Instrument remains v2.13. Zotero gold written (v156854; pre-write snapshot in `Backups/`);
+  the one malformed primary tag (`primary-theme:`) schema-fixed in the same write.
+
 ---
 
 ### Headline for the writeup
