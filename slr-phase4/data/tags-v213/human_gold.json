@@ -307,5 +307,19 @@
    "risk-quality"
   ],
   "demote": false
+ },
+ "ZUM76CCG": {
+  "primary": "org-governance",
+  "themes": [
+   "hitl-workflow",
+   "org-governance"
+  ],
+  "facets": [
+   "agentic",
+   "assistive",
+   "general-ai",
+   "intro-framing"
+  ],
+  "demote": true
  }
 }

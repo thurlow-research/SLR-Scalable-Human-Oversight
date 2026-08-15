@@ -56,3 +56,19 @@ paper sits exactly on the boundary.
 - L0 caught a silent codex empty-output twice; root cause = codex reading stdin in background
   context; fixed in the runner (`< /dev/null`). Retry protocol worked.
 - Wall-clock per paper ≈ 5–10 min model time (parallel); triage instantaneous.
+
+## ADJUDICATED — Scott, 2026-08-15 (packet CLOSED)
+
+1. **Primary = `org-governance`** (with `theme:hitl-workflow` secondary, human-added). Precedent
+   set for the sweep: use-case-granularity classification prescribing oversight regimes = org
+   apparatus; routing requires artifact-granularity, computed-signal selection. Changelog §32.
+2. **`intro-framing`** survives; `design-only` + `metrics` fail buildable-detail (metrics
+   self-deferred to future work, TXT lines 466–470).
+3. **`demote:context` CONFIRMED**; §30 exception not invoked.
+4. **Mode = both** (`assistive` + `agentic`; levels 0–1 vs 2–3).
+5. **`risk-overreliance` DROPPED** — background acknowledgment, not substantive treatment.
+
+Gold: `human_gold.json` · full rationale: `setC_pilot_dispositions.json` · Zotero written
+v156854 (primary-tag schema fixed in the same pass). One delta vs pipeline proposal
+(`theme:hitl-workflow`). **Set C pilot closed — sweep gate is now: TXT availability check for
+the 128 + Scott's explicit go.**
