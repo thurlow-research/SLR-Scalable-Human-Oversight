@@ -1,0 +1,21 @@
+{
+  "key": "4AXDVW7J",
+  "primary_theme": "provenance-auditability",
+  "themes": [
+    "provenance-auditability",
+    "rules-based-checks",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "lit-review",
+    "steering"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "provenance-auditability": "biggest-tent theme covering traceability and auditability of prompts and outputs",
+    "rules-based-checks": "synthesizes evidence on interaction-time tests, linters, and safety filters",
+    "oversight-explanation": "synthesizes evidence on reviewer-facing citations, traces, and evidence formats"
+  }
+}

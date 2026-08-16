@@ -1,0 +1,16 @@
+{
+  "key": "REZGA5WF",
+  "primary_theme": "quality-debt",
+  "themes": [
+    "quality-debt"
+  ],
+  "facets": [
+    "agentic",
+    "risk-quality",
+    "method-mining"
+  ],
+  "rationale": {
+    "quality-debt": "Shows Cursor adoption increases code complexity and static analysis warnings.",
+    "risk-quality": "Reports empirical results about code complexity and technical debt accumulation."
+  }
+}

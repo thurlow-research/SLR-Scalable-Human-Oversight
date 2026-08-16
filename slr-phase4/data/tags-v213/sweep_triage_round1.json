@@ -1,0 +1,6663 @@
+[
+ {
+  "key": "27YULT5I",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "org-governance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "org-governance",
+   "codex": "org-governance",
+   "gemini": "org-governance"
+  },
+  "tripwires": [
+   "sprawl:codex=10"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "risk-overreliance"
+   ],
+   "noted": [
+    "intro-framing",
+    "risk-quality"
+   ],
+   "dropped": [
+    "design-only",
+    "framework",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "automation-bias",
+    "hitl-workflow",
+    "org-governance",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "automation-bias",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "oversight-theater",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "automation-bias",
+    "hitl-workflow",
+    "org-governance",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "2KPHQ5IV",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "provenance-auditability",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "provenance-auditability",
+   "codex": "provenance-auditability",
+   "gemini": "provenance-auditability"
+  },
+  "tripwires": [
+   "sprawl:opus=7",
+   "sprawl:codex=10"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "design-only",
+    "framework",
+    "metrics",
+    "risk-quality"
+   ],
+   "noted": [
+    "counterpoint",
+    "risk-overreliance"
+   ],
+   "dropped": [
+    "intro-framing",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "oversight-theater",
+    "provenance-auditability",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "oversight-theater",
+    "provenance-auditability",
+    "quality-debt",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "hitl-workflow",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "34ELRWJH",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "regulatory-compliance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "regulatory-compliance",
+   "codex": "regulatory-compliance",
+   "gemini": "regulatory-compliance"
+  },
+  "tripwires": [
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "non-developer",
+    "risk-ip",
+    "risk-security"
+   ],
+   "noted": [
+    "intro-framing"
+   ],
+   "dropped": [
+    "risk-overreliance",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "oversight-scaling-inversion",
+    "regulatory-compliance"
+   ],
+   "codex": [
+    "ai-review",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "regulatory-compliance"
+   ],
+   "gemini": [
+    "ai-review",
+    "oversight-scaling-inversion",
+    "regulatory-compliance"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "399HN438",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system",
+    "framework",
+    "general-code",
+    "method-self-report",
+    "risk-quality",
+    "risk-security"
+   ],
+   "noted": [],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "ai-review"
+   ],
+   "codex": [
+    "ai-review",
+    "oversight-explanation"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "3SU9QZ6F",
+  "disposition": "ACCEPT",
+  "consensus_primary": "rules-based-checks",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "rules-based-checks",
+   "codex": "rules-based-checks",
+   "gemini": "rules-based-checks"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "framework",
+    "method-mining",
+    "risk-quality"
+   ],
+   "noted": [
+    "method-field-study",
+    "metrics"
+   ],
+   "dropped": [
+    "assistive",
+    "method-experiment"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "ai-review",
+    "oversight-explanation",
+    "quality-debt",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "quality-debt",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "3Z45M3V3",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-code-insecurity",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-code-insecurity",
+   "codex": "ai-code-insecurity",
+   "gemini": "ai-code-insecurity"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "assistive",
+    "method-mining",
+    "risk-security"
+   ],
+   "noted": [
+    "method-experiment"
+   ],
+   "dropped": [
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-code-insecurity",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-code-insecurity"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "3ZVMBGPB",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [
+   "sprawl:codex=11"
+  ],
+  "facets": {
+   "accept": [
+    "design-only",
+    "framework",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security"
+   ],
+   "noted": [
+    "agentic",
+    "general-code"
+   ],
+   "dropped": [
+    "assistive",
+    "counterpoint",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-review",
+    "automation-bias",
+    "hitl-workflow",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "quality-debt",
+    "risk-routing",
+    "rules-based-checks",
+    "tooling-supply-chain"
+   ],
+   "gemini": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "4AXDVW7J",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "org-governance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "org-governance",
+   "codex": "org-governance",
+   "gemini": "provenance-auditability"
+  },
+  "tripwires": [
+   "sprawl:codex=7",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "lit-review",
+    "steering"
+   ],
+   "noted": [
+    "risk-bias",
+    "risk-ip",
+    "risk-overreliance",
+    "risk-security"
+   ],
+   "dropped": [
+    "counterpoint",
+    "design-only",
+    "framework",
+    "intro-framing",
+    "metrics",
+    "risk-quality"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "org-governance",
+    "oversight-explanation",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "provenance-auditability",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "4FGIVVTG",
+  "disposition": "ACCEPT",
+  "consensus_primary": "oversight-explanation",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-explanation",
+   "codex": "oversight-explanation",
+   "gemini": "oversight-explanation"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-experiment",
+    "method-self-report",
+    "risk-overreliance",
+    "risk-security",
+    "steering"
+   ],
+   "noted": [
+    "risk-quality",
+    "survey-input"
+   ],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "automation-bias",
+    "hitl-workflow",
+    "oversight-explanation",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "automation-bias",
+    "hitl-workflow",
+    "oversight-explanation",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "automation-bias",
+    "hitl-workflow",
+    "oversight-explanation"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "4PSM6ZCD",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "ai-code-insecurity",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-code-insecurity",
+   "codex": "ai-code-insecurity",
+   "gemini": "ai-code-insecurity"
+  },
+  "tripwires": [
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-experiment",
+    "risk-security"
+   ],
+   "noted": [
+    "steering"
+   ],
+   "dropped": [
+    "built-system",
+    "method-mining",
+    "metrics",
+    "problem-statement-anchor",
+    "risk-quality"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-code-insecurity"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-code-insecurity"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "4T5QFWZE",
+  "disposition": "ACCEPT",
+  "consensus_primary": "quality-debt",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "quality-debt",
+   "codex": "quality-debt",
+   "gemini": "quality-debt"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-mining",
+    "metrics",
+    "risk-quality"
+   ],
+   "noted": [],
+   "dropped": [
+    "built-system",
+    "risk-overreliance"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "automation-bias",
+    "quality-debt"
+   ],
+   "codex": [
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "automation-bias",
+    "quality-debt"
+   ]
+  },
+  "audit_sample": true
+ },
+ {
+  "key": "59KP8GTP",
+  "disposition": "ACCEPT",
+  "consensus_primary": "oversight-scaling-inversion",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-scaling-inversion",
+   "codex": "oversight-scaling-inversion",
+   "gemini": "oversight-scaling-inversion"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-mining",
+    "problem-statement-anchor",
+    "survey-input"
+   ],
+   "noted": [],
+   "dropped": [
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "org-governance",
+    "oversight-scaling-inversion"
+   ],
+   "codex": [
+    "org-governance",
+    "oversight-scaling-inversion",
+    "provenance-auditability"
+   ],
+   "gemini": [
+    "org-governance",
+    "oversight-scaling-inversion"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "59ZW4R58",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "quality-debt",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "quality-debt",
+   "codex": "quality-debt",
+   "gemini": "hitl-workflow"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "design-only",
+    "framework",
+    "metrics",
+    "risk-quality",
+    "risk-security"
+   ],
+   "noted": [
+    "assistive",
+    "counterpoint"
+   ],
+   "dropped": [
+    "non-developer",
+    "risk-overreliance",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "hitl-workflow",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "hitl-workflow",
+    "oversight-explanation",
+    "quality-debt",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "5AVZQCVU",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "org-governance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "org-governance",
+   "codex": "org-governance",
+   "gemini": "org-governance"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "sprawl:codex=7",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "general-ai",
+    "risk-security"
+   ],
+   "noted": [
+    "design-only",
+    "risk-quality"
+   ],
+   "dropped": [
+    "agentic",
+    "framework",
+    "metrics",
+    "non-developer",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "org-governance"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "provenance-auditability",
+    "rules-based-checks",
+    "tooling-supply-chain"
+   ],
+   "gemini": [
+    "org-governance"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "5BAZZWHG",
+  "disposition": "ACCEPT",
+  "consensus_primary": "automation-bias",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "automation-bias",
+   "codex": "automation-bias",
+   "gemini": "automation-bias"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-experiment",
+    "method-self-report",
+    "risk-overreliance"
+   ],
+   "noted": [],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "automation-bias",
+    "oversight-explanation"
+   ],
+   "codex": [
+    "automation-bias",
+    "oversight-explanation"
+   ],
+   "gemini": [
+    "automation-bias"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "5DCQDB4C",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "automation-bias",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "automation-bias",
+   "codex": "automation-bias",
+   "gemini": "automation-bias"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "general-ai"
+   ],
+   "noted": [
+    "intro-framing",
+    "risk-bias",
+    "risk-overreliance"
+   ],
+   "dropped": [
+    "counterpoint",
+    "design-only",
+    "lit-review",
+    "metrics",
+    "non-developer",
+    "risk-quality"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "automation-bias"
+   ],
+   "codex": [
+    "automation-bias",
+    "regulatory-compliance"
+   ],
+   "gemini": [
+    "automation-bias"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "5DI9B43K",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "formal-methods",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "rules-based-checks",
+   "codex": "formal-methods",
+   "gemini": "formal-methods"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system"
+   ],
+   "noted": [
+    "framework",
+    "risk-quality",
+    "risk-security"
+   ],
+   "dropped": [
+    "agentic",
+    "general-code",
+    "risk-overreliance"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "formal-methods",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "formal-methods",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "formal-methods",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "5I2W8IC6",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "automation-bias",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "automation-bias",
+   "codex": "automation-bias",
+   "gemini": "automation-bias"
+  },
+  "tripwires": [
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "lit-review",
+    "method-self-report",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security"
+   ],
+   "noted": [
+    "assistive",
+    "survey-input"
+   ],
+   "dropped": [
+    "design-only",
+    "metrics",
+    "risk-bias"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "automation-bias",
+    "oversight-explanation"
+   ],
+   "codex": [
+    "automation-bias",
+    "oversight-explanation",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "automation-bias"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "5NZ2EDEK",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "general-code",
+    "method-experiment",
+    "method-self-report"
+   ],
+   "noted": [
+    "method-mining"
+   ],
+   "dropped": [
+    "routing-signal"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review"
+   ],
+   "codex": [
+    "ai-review",
+    "hitl-workflow"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": true
+ },
+ {
+  "key": "5Q4G4CQB",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "assistive",
+    "method-field-study",
+    "method-self-report",
+    "risk-bias",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security",
+    "survey-input"
+   ],
+   "noted": [
+    "method-mining"
+   ],
+   "dropped": [
+    "agentic",
+    "counterpoint",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "hitl-workflow",
+    "quality-debt"
+   ],
+   "codex": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "5RKMGRNA",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system",
+    "risk-quality",
+    "risk-security"
+   ],
+   "noted": [
+    "general-code"
+   ],
+   "dropped": [
+    "agentic",
+    "framework",
+    "routing-signal"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review"
+   ],
+   "codex": [
+    "ai-review",
+    "oversight-explanation",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "5RLPIA3K",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "regulatory-compliance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "regulatory-compliance",
+   "codex": "ai-review",
+   "gemini": "regulatory-compliance"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "sprawl:codex=7",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "framework",
+    "general-ai"
+   ],
+   "noted": [
+    "built-system",
+    "risk-bias",
+    "risk-overreliance"
+   ],
+   "dropped": [
+    "counterpoint",
+    "design-only"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "regulatory-compliance",
+    "risk-routing"
+   ],
+   "codex": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "oversight-theater",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "risk-routing"
+   ],
+   "gemini": [
+    "hitl-workflow",
+    "oversight-explanation",
+    "regulatory-compliance",
+    "risk-routing"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "6F3S8IB7",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "risk-routing",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "risk-routing",
+   "codex": "risk-routing",
+   "gemini": "hitl-workflow"
+  },
+  "tripwires": [
+   "sprawl:codex=10",
+   "demote:context:codex"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "assistive",
+    "design-only",
+    "risk-overreliance",
+    "risk-quality"
+   ],
+   "noted": [
+    "framework"
+   ],
+   "dropped": [
+    "general-ai",
+    "metrics",
+    "non-developer"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "automation-bias",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "risk-routing"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "automation-bias",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "oversight-theater",
+    "provenance-auditability",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "hitl-workflow"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "6NTZ85CW",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system",
+    "risk-security"
+   ],
+   "noted": [
+    "framework",
+    "general-code",
+    "method-mining"
+   ],
+   "dropped": [
+    "agentic",
+    "problem-statement-anchor"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-review",
+    "oversight-scaling-inversion",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "oversight-scaling-inversion",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "6TZHUCMD",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": null,
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "risk-routing",
+   "codex": "org-governance",
+   "gemini": "ai-review"
+  },
+  "tripwires": [
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "built-system",
+    "risk-ip"
+   ],
+   "noted": [
+    "general-code",
+    "method-field-study",
+    "risk-security",
+    "steering"
+   ],
+   "dropped": [
+    "framework"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "org-governance",
+    "risk-routing"
+   ],
+   "codex": [
+    "org-governance"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "6ZC3H7AF",
+  "disposition": "ACCEPT",
+  "consensus_primary": "tooling-supply-chain",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "tooling-supply-chain",
+   "codex": "tooling-supply-chain",
+   "gemini": "tooling-supply-chain"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system",
+    "framework",
+    "method-mining",
+    "risk-security"
+   ],
+   "noted": [],
+   "dropped": [
+    "method-experiment"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "tooling-supply-chain"
+   ],
+   "codex": [
+    "ai-review",
+    "risk-routing",
+    "rules-based-checks",
+    "tooling-supply-chain"
+   ],
+   "gemini": [
+    "tooling-supply-chain"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "6ZW9QNQH",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "formal-methods",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "formal-methods",
+   "codex": "formal-methods",
+   "gemini": "formal-methods"
+  },
+  "tripwires": [
+   "sprawl:codex=8"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "framework",
+    "risk-quality"
+   ],
+   "noted": [],
+   "dropped": [
+    "risk-security",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "formal-methods",
+    "hitl-workflow",
+    "oversight-explanation",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "formal-methods",
+    "hitl-workflow",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "quality-debt",
+    "remediation-gating",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "formal-methods",
+    "hitl-workflow",
+    "oversight-explanation",
+    "quality-debt",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "72W6R4JG",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "rules-based-checks",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "rules-based-checks",
+   "codex": "formal-methods",
+   "gemini": "rules-based-checks"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "framework",
+    "non-developer"
+   ],
+   "noted": [],
+   "dropped": [
+    "risk-quality",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "formal-methods",
+    "remediation-gating",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "formal-methods",
+    "remediation-gating",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "formal-methods",
+    "remediation-gating",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "74GE3TF7",
+  "disposition": "ACCEPT",
+  "consensus_primary": "risk-routing",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "risk-routing",
+   "codex": "risk-routing",
+   "gemini": "risk-routing"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-mining"
+   ],
+   "noted": [
+    "built-system"
+   ],
+   "dropped": [
+    "problem-statement-anchor"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "oversight-scaling-inversion",
+    "risk-routing"
+   ],
+   "codex": [
+    "oversight-scaling-inversion",
+    "risk-routing"
+   ],
+   "gemini": [
+    "oversight-scaling-inversion",
+    "risk-routing"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "7SH86C2W",
+  "disposition": "ACCEPT",
+  "consensus_primary": "rules-based-checks",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "rules-based-checks",
+   "codex": "rules-based-checks",
+   "gemini": "rules-based-checks"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "framework",
+    "risk-quality",
+    "steering"
+   ],
+   "noted": [
+    "counterpoint",
+    "method-experiment",
+    "method-self-report"
+   ],
+   "dropped": [
+    "method-field-study",
+    "method-mining"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "agent-scope-drift",
+    "hitl-workflow",
+    "remediation-gating",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "hitl-workflow",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "agent-scope-drift",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "7UB2MD8Z",
+  "disposition": "ACCEPT",
+  "consensus_primary": "oversight-explanation",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-explanation",
+   "codex": "oversight-explanation",
+   "gemini": "oversight-explanation"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "method-experiment",
+    "method-self-report"
+   ],
+   "noted": [
+    "risk-overreliance",
+    "survey-input"
+   ],
+   "dropped": [
+    "framework",
+    "risk-quality",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "oversight-explanation"
+   ],
+   "codex": [
+    "automation-bias",
+    "oversight-explanation"
+   ],
+   "gemini": [
+    "oversight-explanation"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "7ZMU5AIF",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "oversight-explanation",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-explanation",
+   "codex": "oversight-explanation",
+   "gemini": "oversight-explanation"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "design-only",
+    "general-ai",
+    "method-experiment",
+    "method-self-report",
+    "risk-overreliance"
+   ],
+   "noted": [],
+   "dropped": [
+    "non-developer"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "automation-bias",
+    "oversight-explanation"
+   ],
+   "codex": [
+    "automation-bias",
+    "hitl-workflow",
+    "oversight-explanation",
+    "oversight-theater"
+   ],
+   "gemini": [
+    "automation-bias",
+    "oversight-explanation"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "84D2AMVM",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "automation-bias",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "automation-bias",
+   "codex": "automation-bias",
+   "gemini": "automation-bias"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "general-ai",
+    "lit-review",
+    "risk-overreliance"
+   ],
+   "noted": [],
+   "dropped": [
+    "counterpoint"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "automation-bias",
+    "org-governance",
+    "oversight-theater",
+    "regulatory-compliance"
+   ],
+   "codex": [
+    "automation-bias",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "oversight-theater",
+    "regulatory-compliance"
+   ],
+   "gemini": [
+    "automation-bias"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "8AW26GFK",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": null,
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-scaling-inversion",
+   "codex": "agent-scope-drift",
+   "gemini": "quality-debt"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "sprawl:codex=7"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "risk-quality"
+   ],
+   "noted": [
+    "intro-framing",
+    "method-experiment"
+   ],
+   "dropped": [
+    "design-only",
+    "framework",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "org-governance",
+    "oversight-scaling-inversion",
+    "quality-debt"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "quality-debt",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "oversight-scaling-inversion",
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "8KJEKBGT",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "general-code",
+    "method-experiment",
+    "risk-security"
+   ],
+   "noted": [
+    "risk-quality"
+   ],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "ai-review"
+   ],
+   "codex": [
+    "ai-review"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "8MXATG38",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "org-governance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "org-governance",
+   "codex": "org-governance",
+   "gemini": "org-governance"
+  },
+  "tripwires": [
+   "sprawl:codex=7"
+  ],
+  "facets": {
+   "accept": [
+    "adopted",
+    "assistive",
+    "built-system",
+    "framework",
+    "method-field-study",
+    "method-mining",
+    "method-self-report",
+    "risk-ip",
+    "risk-quality",
+    "risk-security"
+   ],
+   "noted": [
+    "agentic"
+   ],
+   "dropped": [
+    "steering",
+    "survey-input"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "hitl-workflow",
+    "org-governance",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "ai-review",
+    "hitl-workflow",
+    "org-governance",
+    "provenance-auditability",
+    "quality-debt",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "hitl-workflow",
+    "org-governance",
+    "risk-routing",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "8VBH957K",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system"
+   ],
+   "noted": [
+    "risk-quality"
+   ],
+   "dropped": [
+    "framework",
+    "metrics"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-review",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "95CPB7CF",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "oversight-explanation",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-explanation",
+   "codex": "oversight-explanation",
+   "gemini": "oversight-explanation"
+  },
+  "tripwires": [
+   "sprawl:codex=7"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "design-only",
+    "framework",
+    "non-developer",
+    "risk-overreliance",
+    "risk-quality"
+   ],
+   "noted": [],
+   "dropped": [
+    "metrics",
+    "routing-signal",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "agent-scope-drift",
+    "automation-bias",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "quality-debt"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "automation-bias",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "oversight-theater",
+    "provenance-auditability",
+    "quality-debt"
+   ],
+   "gemini": [
+    "automation-bias",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "96XE669R",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "rules-based-checks",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "rules-based-checks",
+   "codex": "rules-based-checks",
+   "gemini": "quality-debt"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "risk-quality"
+   ],
+   "noted": [
+    "built-system",
+    "metrics"
+   ],
+   "dropped": [
+    "agentic",
+    "assistive",
+    "counterpoint",
+    "framework",
+    "method-experiment",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "rules-based-checks"
+   ],
+   "codex": [
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "quality-debt",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "9H6FWJME",
+  "disposition": "ACCEPT",
+  "consensus_primary": "quality-debt",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "quality-debt",
+   "codex": "quality-debt",
+   "gemini": "quality-debt"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-mining",
+    "risk-quality",
+    "risk-security"
+   ],
+   "noted": [],
+   "dropped": [
+    "assistive",
+    "problem-statement-anchor"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-code-insecurity",
+    "quality-debt"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "quality-debt"
+   ],
+   "gemini": [
+    "ai-code-insecurity",
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "9MV2IVNU",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "oversight-theater",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-theater",
+   "codex": "oversight-theater",
+   "gemini": "hitl-workflow"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "sprawl:codex=8",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "design-only",
+    "general-ai",
+    "metrics",
+    "risk-overreliance"
+   ],
+   "noted": [
+    "counterpoint",
+    "framework",
+    "risk-bias"
+   ],
+   "dropped": [
+    "non-developer"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "oversight-theater",
+    "regulatory-compliance",
+    "risk-routing"
+   ],
+   "codex": [
+    "automation-bias",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "oversight-theater",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "risk-routing"
+   ],
+   "gemini": [
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "oversight-theater",
+    "risk-routing"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "9R6TGN82",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "rules-based-checks",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "rules-based-checks",
+   "codex": "rules-based-checks",
+   "gemini": "rules-based-checks"
+  },
+  "tripwires": [
+   "demote:context:opus"
+  ],
+  "facets": {
+   "accept": [
+    "built-system",
+    "metrics",
+    "risk-quality",
+    "risk-security",
+    "steering"
+   ],
+   "noted": [],
+   "dropped": [
+    "agentic",
+    "framework"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "rules-based-checks"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "A5WDGC7J",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system",
+    "general-code",
+    "method-experiment"
+   ],
+   "noted": [
+    "counterpoint",
+    "framework"
+   ],
+   "dropped": [
+    "metrics",
+    "risk-quality"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "ai-review",
+    "oversight-explanation",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "A6ZE2A26",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "method-experiment"
+   ],
+   "noted": [
+    "risk-quality"
+   ],
+   "dropped": [
+    "framework"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review"
+   ],
+   "codex": [
+    "ai-review",
+    "quality-debt",
+    "risk-routing"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "B4TVIG5Y",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "org-governance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "org-governance",
+   "codex": "org-governance",
+   "gemini": "org-governance"
+  },
+  "tripwires": [
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "intro-framing"
+   ],
+   "noted": [],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "org-governance",
+    "regulatory-compliance"
+   ],
+   "codex": [
+    "org-governance",
+    "regulatory-compliance"
+   ],
+   "gemini": [
+    "org-governance"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "B7APR28B",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "risk-quality"
+   ],
+   "noted": [
+    "built-system"
+   ],
+   "dropped": [
+    "adopted",
+    "framework",
+    "intro-framing",
+    "metrics"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "hitl-workflow",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "ai-review",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "BLR3XE3I",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "automation-bias",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "automation-bias",
+   "codex": "automation-bias",
+   "gemini": "org-governance"
+  },
+  "tripwires": [
+   "sprawl:codex=9"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-self-report",
+    "non-developer",
+    "risk-ip",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security",
+    "steering",
+    "survey-input"
+   ],
+   "noted": [
+    "assistive"
+   ],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "automation-bias",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "quality-debt"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "automation-bias",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "automation-bias",
+    "hitl-workflow",
+    "org-governance",
+    "provenance-auditability",
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "BU73N7PC",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "risk-routing",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system",
+    "general-code",
+    "risk-quality"
+   ],
+   "noted": [
+    "adopted",
+    "framework",
+    "metrics"
+   ],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "risk-routing"
+   ],
+   "codex": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "risk-routing"
+   ],
+   "gemini": [
+    "ai-review",
+    "risk-routing"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "C88VGWMI",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "ai-code-insecurity",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-code-insecurity",
+   "codex": "provenance-auditability",
+   "gemini": "ai-code-insecurity"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "framework",
+    "risk-security",
+    "steering"
+   ],
+   "noted": [],
+   "dropped": [
+    "counterpoint",
+    "method-experiment"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-code-insecurity",
+    "regulatory-compliance"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "provenance-auditability",
+    "regulatory-compliance"
+   ],
+   "gemini": [
+    "ai-code-insecurity",
+    "regulatory-compliance"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "CI93QRUH",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "oversight-explanation",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-explanation",
+   "codex": "risk-routing",
+   "gemini": "oversight-explanation"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "assistive",
+    "built-system",
+    "method-experiment",
+    "risk-security",
+    "steering"
+   ],
+   "noted": [
+    "method-self-report",
+    "risk-overreliance"
+   ],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "automation-bias",
+    "oversight-explanation"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "ai-review",
+    "automation-bias",
+    "oversight-explanation",
+    "risk-routing"
+   ],
+   "gemini": [
+    "ai-review",
+    "automation-bias",
+    "hitl-workflow",
+    "oversight-explanation",
+    "risk-routing"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "CTGGMIX9",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system",
+    "framework",
+    "general-code",
+    "method-field-study",
+    "method-self-report"
+   ],
+   "noted": [
+    "risk-quality"
+   ],
+   "dropped": [
+    "adopted",
+    "method-mining",
+    "survey-input"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "oversight-explanation"
+   ],
+   "codex": [
+    "ai-review",
+    "oversight-explanation",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": true
+ },
+ {
+  "key": "D87A4CAS",
+  "disposition": "ACCEPT",
+  "consensus_primary": "hitl-workflow",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "hitl-workflow",
+   "codex": "hitl-workflow",
+   "gemini": "hitl-workflow"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "assistive",
+    "method-field-study",
+    "method-mining",
+    "method-self-report",
+    "risk-quality",
+    "steering"
+   ],
+   "noted": [
+    "agentic",
+    "built-system",
+    "framework"
+   ],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "hitl-workflow",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "hitl-workflow",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": true
+ },
+ {
+  "key": "DJHG9BBS",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system",
+    "general-code",
+    "risk-quality"
+   ],
+   "noted": [
+    "framework"
+   ],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "ai-review"
+   ],
+   "codex": [
+    "ai-review"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "DJMBHHZN",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [
+   "demote:context:opus"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "framework"
+   ],
+   "noted": [
+    "design-only"
+   ],
+   "dropped": [
+    "built-system",
+    "risk-quality",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "hitl-workflow"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "tooling-supply-chain"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "E5SQKRH7",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "formal-methods",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "rules-based-checks",
+   "codex": "formal-methods",
+   "gemini": "formal-methods"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "metrics",
+    "risk-quality"
+   ],
+   "noted": [],
+   "dropped": [
+    "method-experiment"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "formal-methods",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "formal-methods",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "formal-methods",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "E689ZAXC",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "automation-bias",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-theater",
+   "codex": "automation-bias",
+   "gemini": "automation-bias"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "counterpoint",
+    "general-ai",
+    "method-experiment",
+    "risk-overreliance"
+   ],
+   "noted": [
+    "agentic",
+    "non-developer"
+   ],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "automation-bias",
+    "oversight-theater"
+   ],
+   "codex": [
+    "automation-bias",
+    "oversight-explanation",
+    "oversight-theater",
+    "provenance-auditability"
+   ],
+   "gemini": [
+    "automation-bias",
+    "provenance-auditability"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "E9RAWBDT",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "automation-bias",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-scaling-inversion",
+   "codex": "automation-bias",
+   "gemini": "automation-bias"
+  },
+  "tripwires": [
+   "sprawl:codex=10"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-mining",
+    "method-self-report",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security",
+    "steering",
+    "survey-input"
+   ],
+   "noted": [
+    "assistive"
+   ],
+   "dropped": [
+    "non-developer"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "automation-bias",
+    "hitl-workflow",
+    "oversight-scaling-inversion",
+    "quality-debt"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-code-insecurity",
+    "ai-review",
+    "automation-bias",
+    "hitl-workflow",
+    "oversight-scaling-inversion",
+    "oversight-theater",
+    "provenance-auditability",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "automation-bias",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "quality-debt",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "EB49Q8QM",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "automation-bias",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "automation-bias",
+   "codex": "automation-bias",
+   "gemini": "automation-bias"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "counterpoint",
+    "risk-overreliance"
+   ],
+   "noted": [
+    "general-ai",
+    "intro-framing",
+    "lit-review",
+    "risk-security"
+   ],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "automation-bias",
+    "hitl-workflow"
+   ],
+   "codex": [
+    "automation-bias",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "risk-routing"
+   ],
+   "gemini": [
+    "automation-bias",
+    "org-governance"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "F2C2DWSI",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "oversight-scaling-inversion",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-scaling-inversion",
+   "codex": "quality-debt",
+   "gemini": "oversight-scaling-inversion"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "assistive",
+    "method-mining",
+    "risk-quality"
+   ],
+   "noted": [
+    "counterpoint",
+    "metrics"
+   ],
+   "dropped": [
+    "problem-statement-anchor",
+    "risk-overreliance"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "oversight-scaling-inversion",
+    "quality-debt"
+   ],
+   "codex": [
+    "oversight-scaling-inversion",
+    "quality-debt"
+   ],
+   "gemini": [
+    "oversight-scaling-inversion",
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "FWKYVQPD",
+  "disposition": "ACCEPT",
+  "consensus_primary": "quality-debt",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "quality-debt",
+   "codex": "quality-debt",
+   "gemini": "quality-debt"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "assistive",
+    "method-experiment",
+    "method-self-report",
+    "risk-quality",
+    "risk-security"
+   ],
+   "noted": [
+    "survey-input"
+   ],
+   "dropped": [
+    "risk-overreliance",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-code-insecurity",
+    "quality-debt"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-code-insecurity",
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "FZK2QB5A",
+  "disposition": "ACCEPT",
+  "consensus_primary": "remediation-gating",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "remediation-gating",
+   "codex": "remediation-gating",
+   "gemini": "remediation-gating"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "framework",
+    "risk-quality",
+    "steering"
+   ],
+   "noted": [
+    "design-only"
+   ],
+   "dropped": [
+    "intro-framing"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "formal-methods",
+    "remediation-gating",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "remediation-gating",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "remediation-gating",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "GAD5Z8PV",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "framework",
+    "non-developer",
+    "risk-quality"
+   ],
+   "noted": [],
+   "dropped": [
+    "method-experiment"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "agent-scope-drift",
+    "ai-review",
+    "quality-debt",
+    "remediation-gating"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-review",
+    "oversight-explanation",
+    "provenance-auditability",
+    "quality-debt"
+   ],
+   "gemini": [
+    "ai-review",
+    "provenance-auditability",
+    "remediation-gating"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "GCZQTNBD",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system",
+    "framework"
+   ],
+   "noted": [
+    "agentic"
+   ],
+   "dropped": [
+    "general-code",
+    "method-experiment",
+    "risk-quality"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "ai-review",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "HBR7QZ2C",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "risk-routing",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "org-governance",
+   "codex": "risk-routing",
+   "gemini": "risk-routing"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "sprawl:codex=9",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "built-system",
+    "framework",
+    "general-ai",
+    "metrics",
+    "risk-security"
+   ],
+   "noted": [
+    "agentic"
+   ],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "org-governance",
+    "regulatory-compliance",
+    "risk-routing"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-review",
+    "hitl-workflow",
+    "org-governance",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "remediation-gating",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "provenance-auditability",
+    "regulatory-compliance",
+    "risk-routing"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "HJMKADKU",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system",
+    "general-code",
+    "risk-security"
+   ],
+   "noted": [
+    "framework",
+    "method-self-report"
+   ],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "ai-review"
+   ],
+   "codex": [
+    "ai-review",
+    "oversight-explanation"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "I6FZ5GD2",
+  "disposition": "ACCEPT",
+  "consensus_primary": "oversight-explanation",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-explanation",
+   "codex": "oversight-explanation",
+   "gemini": "oversight-explanation"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "expert-validated"
+   ],
+   "noted": [
+    "method-experiment",
+    "method-self-report"
+   ],
+   "dropped": [
+    "metrics",
+    "risk-quality",
+    "routing-signal"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "oversight-explanation"
+   ],
+   "codex": [
+    "oversight-explanation",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "oversight-explanation"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "ID7IN65K",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "hitl-workflow",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "hitl-workflow",
+   "codex": "hitl-workflow",
+   "gemini": "hitl-workflow"
+  },
+  "tripwires": [
+   "sprawl:opus=8",
+   "sprawl:codex=10",
+   "sprawl:gemini=8"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "counterpoint",
+    "method-self-report",
+    "risk-quality",
+    "risk-security",
+    "survey-input"
+   ],
+   "noted": [
+    "assistive",
+    "risk-overreliance"
+   ],
+   "dropped": [
+    "design-only",
+    "general-code",
+    "intro-framing",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "quality-debt",
+    "regulatory-compliance",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "quality-debt",
+    "regulatory-compliance",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "JCTP8VXP",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "hitl-workflow",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "hitl-workflow",
+   "codex": "agent-scope-drift",
+   "gemini": "hitl-workflow"
+  },
+  "tripwires": [
+   "sprawl:codex=7"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "method-experiment",
+    "method-self-report",
+    "steering"
+   ],
+   "noted": [
+    "framework"
+   ],
+   "dropped": [
+    "method-field-study",
+    "risk-overreliance",
+    "risk-quality",
+    "survey-input"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "oversight-explanation",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "provenance-auditability",
+    "remediation-gating",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "hitl-workflow",
+    "oversight-explanation",
+    "provenance-auditability",
+    "remediation-gating"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "JQPPKSFQ",
+  "disposition": "ACCEPT",
+  "consensus_primary": "oversight-scaling-inversion",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-scaling-inversion",
+   "codex": "oversight-scaling-inversion",
+   "gemini": "oversight-scaling-inversion"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-mining"
+   ],
+   "noted": [],
+   "dropped": [
+    "problem-statement-anchor",
+    "survey-input"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "oversight-scaling-inversion"
+   ],
+   "codex": [
+    "oversight-scaling-inversion",
+    "risk-routing"
+   ],
+   "gemini": [
+    "oversight-scaling-inversion"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "JVWUYDME",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "hitl-workflow",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "org-governance",
+   "codex": "hitl-workflow",
+   "gemini": "hitl-workflow"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "sprawl:codex=10",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "counterpoint",
+    "design-only",
+    "general-ai",
+    "risk-overreliance"
+   ],
+   "noted": [
+    "agentic",
+    "framework"
+   ],
+   "dropped": [
+    "non-developer"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "oversight-theater",
+    "provenance-auditability",
+    "regulatory-compliance"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "oversight-theater",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "hitl-workflow",
+    "oversight-explanation",
+    "oversight-theater",
+    "provenance-auditability",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "KF5MGIBI",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "oversight-explanation",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-explanation",
+   "codex": "oversight-explanation",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system",
+    "general-code",
+    "risk-quality"
+   ],
+   "noted": [],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "oversight-explanation"
+   ],
+   "codex": [
+    "ai-review",
+    "oversight-explanation"
+   ],
+   "gemini": [
+    "ai-review",
+    "oversight-explanation"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "LCPH3THV",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "lit-review"
+   ],
+   "noted": [
+    "intro-framing"
+   ],
+   "dropped": [
+    "agentic",
+    "risk-quality",
+    "risk-security"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review"
+   ],
+   "codex": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-scaling-inversion",
+    "rules-based-checks",
+    "tooling-supply-chain"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "LGZXFLSJ",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "org-governance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "org-governance",
+   "codex": "org-governance",
+   "gemini": "org-governance"
+  },
+  "tripwires": [
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "assistive",
+    "method-self-report",
+    "risk-quality",
+    "risk-security",
+    "survey-input"
+   ],
+   "noted": [
+    "method-field-study",
+    "risk-ip"
+   ],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "org-governance",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "org-governance",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "org-governance"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "MFSZPSPU",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "framework",
+    "method-experiment"
+   ],
+   "noted": [],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "ai-review"
+   ],
+   "codex": [
+    "ai-review",
+    "oversight-explanation",
+    "oversight-scaling-inversion"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "N7E3MR2V",
+  "disposition": "ACCEPT",
+  "consensus_primary": "hitl-workflow",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "hitl-workflow",
+   "codex": "hitl-workflow",
+   "gemini": "hitl-workflow"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "framework"
+   ],
+   "noted": [
+    "design-only",
+    "risk-quality",
+    "steering"
+   ],
+   "dropped": [
+    "built-system",
+    "general-code",
+    "method-experiment",
+    "method-field-study",
+    "risk-security"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "org-governance",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "provenance-auditability",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "hitl-workflow",
+    "provenance-auditability",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "NGIH5T4C",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "general-code",
+    "lit-review",
+    "risk-overreliance"
+   ],
+   "noted": [
+    "assistive",
+    "risk-quality"
+   ],
+   "dropped": [
+    "intro-framing",
+    "risk-security",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review"
+   ],
+   "codex": [
+    "ai-review",
+    "automation-bias"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "NRVQT89E",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "method-experiment"
+   ],
+   "noted": [
+    "risk-quality"
+   ],
+   "dropped": [
+    "problem-statement-anchor",
+    "risk-overreliance"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "oversight-explanation"
+   ],
+   "codex": [
+    "ai-review",
+    "automation-bias",
+    "oversight-explanation",
+    "risk-routing"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "NZJST99D",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "oversight-scaling-inversion",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-scaling-inversion",
+   "codex": "oversight-scaling-inversion",
+   "gemini": "quality-debt"
+  },
+  "tripwires": [
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-mining"
+   ],
+   "noted": [
+    "risk-ip",
+    "risk-quality"
+   ],
+   "dropped": [
+    "survey-input"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "agent-scope-drift",
+    "oversight-scaling-inversion"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "hitl-workflow",
+    "oversight-scaling-inversion",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "oversight-scaling-inversion",
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "P837LJWE",
+  "disposition": "ACCEPT",
+  "consensus_primary": "hitl-workflow",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "hitl-workflow",
+   "codex": "hitl-workflow",
+   "gemini": "hitl-workflow"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "adopted",
+    "built-system",
+    "counterpoint",
+    "framework",
+    "method-field-study",
+    "risk-quality",
+    "risk-security",
+    "steering"
+   ],
+   "noted": [
+    "agentic",
+    "method-mining"
+   ],
+   "dropped": [
+    "assistive"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "hitl-workflow",
+    "quality-debt",
+    "regulatory-compliance",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "ai-review",
+    "hitl-workflow",
+    "quality-debt",
+    "regulatory-compliance",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "hitl-workflow",
+    "regulatory-compliance",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "PD297DUM",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "automation-bias",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "automation-bias",
+   "codex": "automation-bias",
+   "gemini": "oversight-scaling-inversion"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "assistive",
+    "method-self-report",
+    "risk-overreliance",
+    "risk-security",
+    "survey-input"
+   ],
+   "noted": [
+    "risk-quality"
+   ],
+   "dropped": [
+    "non-developer",
+    "problem-statement-anchor",
+    "risk-bias"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "automation-bias"
+   ],
+   "codex": [
+    "automation-bias",
+    "hitl-workflow",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "oversight-scaling-inversion"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "PDYJGF2R",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-code-insecurity",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-code-insecurity",
+   "codex": "ai-code-insecurity",
+   "gemini": "ai-code-insecurity"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-experiment",
+    "metrics",
+    "risk-security"
+   ],
+   "noted": [],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "ai-code-insecurity"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-code-insecurity"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "PPMTM4DG",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "assistive",
+    "method-experiment",
+    "risk-security"
+   ],
+   "noted": [
+    "risk-quality"
+   ],
+   "dropped": [
+    "counterpoint"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "ai-review",
+    "oversight-explanation",
+    "quality-debt"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "PR4GS7SP",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "rules-based-checks",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "rules-based-checks",
+   "codex": "formal-methods",
+   "gemini": "rules-based-checks"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system"
+   ],
+   "noted": [
+    "assistive",
+    "risk-quality"
+   ],
+   "dropped": [
+    "expert-validated",
+    "metrics",
+    "risk-security"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "formal-methods",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "formal-methods",
+    "oversight-scaling-inversion",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "formal-methods",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "QI8246A3",
+  "disposition": "ACCEPT",
+  "consensus_primary": "oversight-scaling-inversion",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-scaling-inversion",
+   "codex": "oversight-scaling-inversion",
+   "gemini": "oversight-scaling-inversion"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-mining",
+    "risk-quality"
+   ],
+   "noted": [
+    "problem-statement-anchor",
+    "survey-input"
+   ],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "oversight-scaling-inversion",
+    "oversight-theater",
+    "provenance-auditability",
+    "quality-debt"
+   ],
+   "codex": [
+    "ai-review",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "quality-debt",
+    "risk-routing"
+   ],
+   "gemini": [
+    "ai-review",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "QTJPLBYR",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-experiment",
+    "risk-security",
+    "steering"
+   ],
+   "noted": [],
+   "dropped": [
+    "method-self-report",
+    "metrics",
+    "risk-bias",
+    "risk-quality"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-code-insecurity",
+    "ai-review"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "ai-review",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-code-insecurity",
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "QUXRX9ZL",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "hitl-workflow",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "provenance-auditability",
+   "codex": "hitl-workflow",
+   "gemini": "hitl-workflow"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "risk-overreliance",
+    "risk-quality"
+   ],
+   "noted": [
+    "agentic",
+    "assistive",
+    "design-only",
+    "steering"
+   ],
+   "dropped": [
+    "counterpoint",
+    "framework",
+    "intro-framing"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "provenance-auditability",
+    "quality-debt"
+   ],
+   "codex": [
+    "hitl-workflow",
+    "provenance-auditability",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "hitl-workflow",
+    "provenance-auditability"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "QWHE9EXH",
+  "disposition": "ACCEPT",
+  "consensus_primary": "rules-based-checks",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "rules-based-checks",
+   "codex": "rules-based-checks",
+   "gemini": "rules-based-checks"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "framework",
+    "risk-security"
+   ],
+   "noted": [],
+   "dropped": [
+    "assistive",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "remediation-gating",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "remediation-gating",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "remediation-gating",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "R2QMVNXI",
+  "disposition": "ACCEPT",
+  "consensus_primary": "oversight-scaling-inversion",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-scaling-inversion",
+   "codex": "oversight-scaling-inversion",
+   "gemini": "oversight-scaling-inversion"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "assistive",
+    "risk-ip",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security",
+    "survey-input"
+   ],
+   "noted": [
+    "method-mining"
+   ],
+   "dropped": [
+    "intro-framing",
+    "lit-review",
+    "method-self-report",
+    "non-developer",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-code-insecurity",
+    "automation-bias",
+    "oversight-scaling-inversion",
+    "quality-debt"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "oversight-scaling-inversion",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-code-insecurity",
+    "oversight-scaling-inversion",
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "R9CDT9KB",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "risk-routing",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "risk-routing",
+   "codex": "risk-routing",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system",
+    "framework",
+    "general-code",
+    "risk-security"
+   ],
+   "noted": [],
+   "dropped": [
+    "metrics",
+    "risk-overreliance"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "risk-routing"
+   ],
+   "codex": [
+    "ai-review",
+    "oversight-explanation",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "risk-routing"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "REZGA5WF",
+  "disposition": "ACCEPT",
+  "consensus_primary": "quality-debt",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "quality-debt",
+   "codex": "quality-debt",
+   "gemini": "quality-debt"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-mining",
+    "risk-quality"
+   ],
+   "noted": [
+    "risk-security"
+   ],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "quality-debt"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "quality-debt"
+   ],
+   "gemini": [
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "RG4A4D6K",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "provenance-auditability",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "provenance-auditability",
+   "codex": "provenance-auditability",
+   "gemini": "provenance-auditability"
+  },
+  "tripwires": [
+   "sprawl:codex=7",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "lit-review",
+    "risk-bias",
+    "risk-ip",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security"
+   ],
+   "noted": [
+    "agentic",
+    "assistive"
+   ],
+   "dropped": [
+    "intro-framing"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "org-governance",
+    "provenance-auditability",
+    "regulatory-compliance"
+   ],
+   "codex": [
+    "org-governance",
+    "oversight-explanation",
+    "provenance-auditability",
+    "quality-debt",
+    "regulatory-compliance",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "org-governance",
+    "provenance-auditability",
+    "regulatory-compliance"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "RNDPW7VA",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "oversight-explanation",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-explanation",
+   "codex": "oversight-explanation",
+   "gemini": "oversight-explanation"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "general-ai",
+    "method-experiment"
+   ],
+   "noted": [],
+   "dropped": [
+    "intro-framing",
+    "method-self-report",
+    "non-developer",
+    "risk-overreliance",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "oversight-explanation"
+   ],
+   "codex": [
+    "oversight-explanation"
+   ],
+   "gemini": [
+    "oversight-explanation"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "RPHK78A9",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "oversight-scaling-inversion",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-scaling-inversion",
+   "codex": "hitl-workflow",
+   "gemini": "oversight-scaling-inversion"
+  },
+  "tripwires": [
+   "sprawl:opus=10",
+   "sprawl:codex=11",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "assistive"
+   ],
+   "noted": [
+    "method-field-study",
+    "method-self-report",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security",
+    "steering",
+    "survey-input"
+   ],
+   "dropped": [
+    "counterpoint",
+    "framework",
+    "intro-framing",
+    "method-mining",
+    "non-developer",
+    "problem-statement-anchor"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "agent-scope-drift",
+    "ai-review",
+    "automation-bias",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "quality-debt",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-review",
+    "automation-bias",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "quality-debt",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "oversight-scaling-inversion"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "RX9SICP9",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "hitl-workflow",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "hitl-workflow",
+   "gemini": "hitl-workflow"
+  },
+  "tripwires": [
+   "sprawl:codex=9"
+  ],
+  "facets": {
+   "accept": [
+    "adopted",
+    "agentic",
+    "built-system",
+    "framework",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security",
+    "steering"
+   ],
+   "noted": [
+    "counterpoint",
+    "method-field-study"
+   ],
+   "dropped": [
+    "metrics",
+    "risk-bias"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "automation-bias",
+    "hitl-workflow",
+    "oversight-scaling-inversion",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-review",
+    "automation-bias",
+    "hitl-workflow",
+    "oversight-explanation",
+    "oversight-theater",
+    "provenance-auditability",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "hitl-workflow"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "S7FPFUT8",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": null,
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "org-governance",
+   "codex": "oversight-explanation",
+   "gemini": "provenance-auditability"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "general-ai"
+   ],
+   "noted": [
+    "intro-framing",
+    "risk-overreliance"
+   ],
+   "dropped": [
+    "design-only"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "org-governance",
+    "provenance-auditability",
+    "regulatory-compliance"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "org-governance",
+    "oversight-explanation",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "oversight-explanation",
+    "provenance-auditability",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "SHK6KAX6",
+  "disposition": "ACCEPT",
+  "consensus_primary": "quality-debt",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "quality-debt",
+   "codex": "quality-debt",
+   "gemini": "quality-debt"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-mining",
+    "risk-quality",
+    "risk-security"
+   ],
+   "noted": [
+    "survey-input"
+   ],
+   "dropped": [
+    "problem-statement-anchor",
+    "risk-overreliance"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-code-insecurity",
+    "oversight-scaling-inversion",
+    "quality-debt"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "oversight-scaling-inversion",
+    "oversight-theater",
+    "quality-debt"
+   ],
+   "gemini": [
+    "ai-code-insecurity",
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "T2EG4BE2",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "quality-debt",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "quality-debt",
+   "codex": "quality-debt",
+   "gemini": "quality-debt"
+  },
+  "tripwires": [
+   "sprawl:opus=9",
+   "sprawl:codex=12"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-field-study",
+    "method-mining",
+    "risk-quality",
+    "risk-security",
+    "steering"
+   ],
+   "noted": [
+    "risk-overreliance"
+   ],
+   "dropped": [
+    "intro-framing",
+    "method-self-report",
+    "risk-ip"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-code-insecurity",
+    "ai-review",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "quality-debt",
+    "regulatory-compliance",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-code-insecurity",
+    "ai-review",
+    "automation-bias",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "quality-debt",
+    "regulatory-compliance",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-code-insecurity",
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "T3XTXIXW",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "tooling-supply-chain",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system",
+    "risk-security"
+   ],
+   "noted": [
+    "general-code",
+    "method-experiment"
+   ],
+   "dropped": [
+    "agentic",
+    "counterpoint",
+    "framework",
+    "metrics",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "rules-based-checks",
+    "tooling-supply-chain"
+   ],
+   "codex": [
+    "ai-review",
+    "rules-based-checks",
+    "tooling-supply-chain"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "TA6GIUK2",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "rules-based-checks",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "counterpoint",
+    "method-experiment",
+    "risk-quality"
+   ],
+   "noted": [
+    "intro-framing"
+   ],
+   "dropped": [
+    "design-only",
+    "framework",
+    "problem-statement-anchor",
+    "risk-overreliance",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "oversight-scaling-inversion",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "ai-review",
+    "oversight-scaling-inversion",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "TJH7QFAX",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "risk-routing",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "risk-routing",
+   "codex": "risk-routing",
+   "gemini": "quality-debt"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-experiment",
+    "risk-quality"
+   ],
+   "noted": [],
+   "dropped": [
+    "method-mining",
+    "routing-signal"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "quality-debt",
+    "risk-routing"
+   ],
+   "codex": [
+    "quality-debt",
+    "risk-routing"
+   ],
+   "gemini": [
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "TW4I6DU6",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "regulatory-compliance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "regulatory-compliance",
+   "codex": "oversight-theater",
+   "gemini": "regulatory-compliance"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "general-ai",
+    "intro-framing",
+    "risk-overreliance"
+   ],
+   "noted": [],
+   "dropped": [
+    "counterpoint"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "automation-bias",
+    "hitl-workflow",
+    "oversight-explanation",
+    "regulatory-compliance"
+   ],
+   "codex": [
+    "automation-bias",
+    "hitl-workflow",
+    "oversight-explanation",
+    "oversight-theater",
+    "regulatory-compliance"
+   ],
+   "gemini": [
+    "regulatory-compliance"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "U9VZQXGI",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "hitl-workflow",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "hitl-workflow",
+   "codex": "hitl-workflow",
+   "gemini": "hitl-workflow"
+  },
+  "tripwires": [
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "general-ai",
+    "method-experiment",
+    "method-self-report"
+   ],
+   "noted": [
+    "framework",
+    "non-developer",
+    "steering"
+   ],
+   "dropped": [
+    "risk-security",
+    "survey-input"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "oversight-explanation",
+    "risk-routing"
+   ],
+   "codex": [
+    "ai-review",
+    "automation-bias",
+    "hitl-workflow",
+    "oversight-explanation",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "hitl-workflow",
+    "oversight-explanation",
+    "risk-routing"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "UIXCRBQX",
+  "disposition": "ACCEPT",
+  "consensus_primary": "quality-debt",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "quality-debt",
+   "codex": "quality-debt",
+   "gemini": "quality-debt"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "method-mining",
+    "risk-quality"
+   ],
+   "noted": [
+    "built-system"
+   ],
+   "dropped": [
+    "routing-signal"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "quality-debt"
+   ],
+   "codex": [
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "V4IRKSFI",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "adopted",
+    "built-system",
+    "framework",
+    "general-code",
+    "method-field-study",
+    "method-self-report",
+    "risk-quality",
+    "risk-security"
+   ],
+   "noted": [
+    "method-mining",
+    "metrics"
+   ],
+   "dropped": [
+    "survey-input"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review"
+   ],
+   "codex": [
+    "ai-review",
+    "risk-routing"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "VCI88UZD",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "provenance-auditability",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "org-governance",
+   "codex": "provenance-auditability",
+   "gemini": "provenance-auditability"
+  },
+  "tripwires": [
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "risk-security"
+   ],
+   "noted": [
+    "design-only",
+    "framework",
+    "general-code",
+    "steering"
+   ],
+   "dropped": [
+    "intro-framing",
+    "risk-quality"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "org-governance",
+    "provenance-auditability"
+   ],
+   "codex": [
+    "formal-methods",
+    "hitl-workflow",
+    "org-governance",
+    "provenance-auditability",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "provenance-auditability"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "VFNJSZD9",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-code-insecurity",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [
+   "sprawl:opus=7",
+   "sprawl:codex=8"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "design-only",
+    "framework",
+    "metrics",
+    "risk-security"
+   ],
+   "noted": [
+    "counterpoint"
+   ],
+   "dropped": [
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-code-insecurity",
+    "ai-review",
+    "org-governance",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "rules-based-checks",
+    "tooling-supply-chain"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-code-insecurity",
+    "ai-review",
+    "org-governance",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "rules-based-checks",
+    "tooling-supply-chain"
+   ],
+   "gemini": [
+    "ai-code-insecurity",
+    "ai-review",
+    "org-governance",
+    "provenance-auditability",
+    "rules-based-checks",
+    "tooling-supply-chain"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "VG8PSMM7",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "expert-validated",
+    "framework",
+    "risk-quality",
+    "steering"
+   ],
+   "noted": [],
+   "dropped": [
+    "method-experiment",
+    "metrics"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "hitl-workflow",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "provenance-auditability",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "hitl-workflow",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "VTDG995V",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-explanation",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "assistive"
+   ],
+   "noted": [
+    "method-experiment",
+    "metrics",
+    "risk-quality"
+   ],
+   "dropped": [
+    "agentic",
+    "risk-overreliance"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "oversight-explanation"
+   ],
+   "codex": [
+    "ai-review",
+    "oversight-explanation",
+    "quality-debt"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "VZ27QUPQ",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "quality-debt",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "assistive",
+    "built-system",
+    "method-experiment",
+    "risk-quality"
+   ],
+   "noted": [
+    "framework"
+   ],
+   "dropped": [
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "quality-debt"
+   ],
+   "codex": [
+    "ai-review",
+    "quality-debt"
+   ],
+   "gemini": [
+    "ai-review"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "WBS9U5N7",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-review",
+   "codex": "agent-scope-drift",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "method-experiment"
+   ],
+   "noted": [
+    "framework",
+    "risk-quality"
+   ],
+   "dropped": [
+    "counterpoint"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-review",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "WH2PIBNQ",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "org-governance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "org-governance",
+   "codex": "org-governance",
+   "gemini": "org-governance"
+  },
+  "tripwires": [
+   "sprawl:codex=10",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security"
+   ],
+   "noted": [
+    "intro-framing"
+   ],
+   "dropped": [
+    "design-only",
+    "framework",
+    "lit-review",
+    "non-developer",
+    "risk-ip",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "org-governance",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "risk-routing"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "automation-bias",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "provenance-auditability",
+    "quality-debt",
+    "regulatory-compliance",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "org-governance",
+    "provenance-auditability",
+    "risk-routing"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "WPWF7A32",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "org-governance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "org-governance",
+   "codex": "org-governance",
+   "gemini": "org-governance"
+  },
+  "tripwires": [
+   "sprawl:codex=8"
+  ],
+  "facets": {
+   "accept": [
+    "risk-ip"
+   ],
+   "noted": [
+    "assistive",
+    "steering"
+   ],
+   "dropped": [
+    "design-only",
+    "framework",
+    "intro-framing",
+    "method-self-report"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "org-governance",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "risk-routing",
+    "rules-based-checks",
+    "tooling-supply-chain"
+   ],
+   "gemini": [
+    "org-governance",
+    "regulatory-compliance"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "WRXR2VTP",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": null,
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "rules-based-checks",
+   "codex": "formal-methods",
+   "gemini": "hitl-workflow"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "framework",
+    "risk-quality",
+    "steering"
+   ],
+   "noted": [
+    "design-only"
+   ],
+   "dropped": [
+    "intro-framing"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "ai-review",
+    "formal-methods",
+    "provenance-auditability",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "hitl-workflow",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "WUUDHL8R",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "ai-review",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "hitl-workflow",
+   "codex": "ai-review",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "framework",
+    "risk-quality"
+   ],
+   "noted": [
+    "general-code"
+   ],
+   "dropped": [
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "regulatory-compliance",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "ai-review",
+    "hitl-workflow",
+    "quality-debt",
+    "regulatory-compliance",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "hitl-workflow",
+    "regulatory-compliance"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "WWBUQM7V",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "quality-debt",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "quality-debt",
+   "codex": "quality-debt",
+   "gemini": "quality-debt"
+  },
+  "tripwires": [
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "assistive",
+    "method-self-report",
+    "risk-quality",
+    "survey-input"
+   ],
+   "noted": [],
+   "dropped": [
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "quality-debt"
+   ],
+   "codex": [
+    "hitl-workflow",
+    "quality-debt",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "quality-debt"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "WZCULPXN",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "org-governance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "org-governance",
+   "codex": "org-governance",
+   "gemini": "org-governance"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "intro-framing"
+   ],
+   "noted": [
+    "risk-bias",
+    "risk-ip",
+    "risk-quality",
+    "risk-security"
+   ],
+   "dropped": [
+    "assistive",
+    "lit-review"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "org-governance",
+    "regulatory-compliance"
+   ],
+   "codex": [
+    "org-governance",
+    "quality-debt",
+    "regulatory-compliance",
+    "rules-based-checks",
+    "tooling-supply-chain"
+   ],
+   "gemini": [
+    "org-governance"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "X7EN6DXZ",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "tooling-supply-chain",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "tooling-supply-chain",
+   "codex": "tooling-supply-chain",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "general-code",
+    "method-experiment",
+    "risk-security"
+   ],
+   "noted": [
+    "built-system"
+   ],
+   "dropped": [
+    "counterpoint",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "tooling-supply-chain"
+   ],
+   "codex": [
+    "ai-review",
+    "tooling-supply-chain"
+   ],
+   "gemini": [
+    "ai-review",
+    "tooling-supply-chain"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "XJAXB98T",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "org-governance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "org-governance",
+   "codex": "org-governance",
+   "gemini": "org-governance"
+  },
+  "tripwires": [
+   "sprawl:codex=9"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "assistive",
+    "method-mining",
+    "risk-ip",
+    "risk-quality",
+    "survey-input"
+   ],
+   "noted": [
+    "risk-security",
+    "steering"
+   ],
+   "dropped": [
+    "counterpoint"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "org-governance",
+    "oversight-scaling-inversion",
+    "provenance-auditability"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "quality-debt",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "hitl-workflow",
+    "org-governance",
+    "oversight-scaling-inversion",
+    "provenance-auditability"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "XK3P9C96",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "risk-routing",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "risk-routing",
+   "codex": "risk-routing",
+   "gemini": "risk-routing"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "general-ai",
+    "method-experiment",
+    "method-self-report"
+   ],
+   "noted": [
+    "non-developer"
+   ],
+   "dropped": [
+    "counterpoint",
+    "framework",
+    "risk-overreliance",
+    "survey-input"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "hitl-workflow",
+    "risk-routing"
+   ],
+   "codex": [
+    "automation-bias",
+    "hitl-workflow",
+    "oversight-explanation",
+    "risk-routing"
+   ],
+   "gemini": [
+    "hitl-workflow",
+    "risk-routing"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "XRTVITVP",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "oversight-scaling-inversion",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-scaling-inversion",
+   "codex": "oversight-scaling-inversion",
+   "gemini": "hitl-workflow"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "framework",
+    "non-developer",
+    "steering"
+   ],
+   "noted": [
+    "method-experiment"
+   ],
+   "dropped": []
+  },
+  "themes": {
+   "opus": [
+    "oversight-scaling-inversion"
+   ],
+   "codex": [
+    "oversight-scaling-inversion"
+   ],
+   "gemini": [
+    "hitl-workflow"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "XZEHQYNZ",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "regulatory-compliance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "regulatory-compliance",
+   "codex": "regulatory-compliance",
+   "gemini": "regulatory-compliance"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "demote:context:codex"
+  ],
+  "facets": {
+   "accept": [
+    "agentic",
+    "intro-framing",
+    "lit-review"
+   ],
+   "noted": [],
+   "dropped": [
+    "counterpoint",
+    "risk-overreliance"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "org-governance",
+    "regulatory-compliance"
+   ],
+   "codex": [
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "provenance-auditability",
+    "regulatory-compliance"
+   ],
+   "gemini": [
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "regulatory-compliance"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "Y4TIF9KW",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "regulatory-compliance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "regulatory-compliance",
+   "codex": "regulatory-compliance",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "built-system",
+    "expert-validated",
+    "general-code",
+    "risk-security"
+   ],
+   "noted": [
+    "framework"
+   ],
+   "dropped": [
+    "method-experiment"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "regulatory-compliance"
+   ],
+   "codex": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "regulatory-compliance"
+   ],
+   "gemini": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "regulatory-compliance"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "YA7XNWYE",
+  "disposition": "ACCEPT",
+  "consensus_primary": "ai-code-insecurity",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-code-insecurity",
+   "codex": "ai-code-insecurity",
+   "gemini": "ai-code-insecurity"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "assistive",
+    "method-experiment",
+    "risk-security"
+   ],
+   "noted": [
+    "risk-overreliance",
+    "risk-quality"
+   ],
+   "dropped": [
+    "intro-framing",
+    "problem-statement-anchor",
+    "survey-input"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-code-insecurity",
+    "org-governance",
+    "regulatory-compliance",
+    "tooling-supply-chain"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "automation-bias",
+    "formal-methods",
+    "org-governance",
+    "regulatory-compliance",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-code-insecurity"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "YBHHYR4P",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "ai-code-insecurity",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "ai-code-insecurity",
+   "codex": "ai-code-insecurity",
+   "gemini": "automation-bias"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "assistive",
+    "method-experiment",
+    "risk-overreliance",
+    "risk-security"
+   ],
+   "noted": [
+    "method-self-report",
+    "problem-statement-anchor"
+   ],
+   "dropped": [
+    "non-developer",
+    "steering",
+    "survey-input"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-code-insecurity",
+    "automation-bias"
+   ],
+   "codex": [
+    "ai-code-insecurity",
+    "automation-bias"
+   ],
+   "gemini": [
+    "ai-code-insecurity",
+    "automation-bias"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "ZBF86IJM",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "oversight-explanation",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-explanation",
+   "codex": "risk-routing",
+   "gemini": "oversight-explanation"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "assistive",
+    "built-system",
+    "method-experiment",
+    "method-self-report",
+    "risk-overreliance"
+   ],
+   "noted": [
+    "risk-quality"
+   ],
+   "dropped": [
+    "metrics",
+    "survey-input"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "oversight-explanation"
+   ],
+   "codex": [
+    "ai-review",
+    "oversight-explanation",
+    "risk-routing"
+   ],
+   "gemini": [
+    "oversight-explanation"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "ZGST9CY6",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "oversight-explanation",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-explanation",
+   "codex": "oversight-explanation",
+   "gemini": "oversight-explanation"
+  },
+  "tripwires": [
+   "sprawl:opus=7",
+   "demote:context:opus",
+   "sprawl:codex=9",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "design-only",
+    "framework",
+    "general-ai"
+   ],
+   "noted": [
+    "agentic",
+    "counterpoint",
+    "risk-overreliance"
+   ],
+   "dropped": [
+    "risk-bias",
+    "steering"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "provenance-auditability",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-review",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "oversight-theater",
+    "provenance-auditability",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "hitl-workflow",
+    "oversight-explanation",
+    "risk-routing",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "ZH6QIU8A",
+  "disposition": "RERUN-NEEDED",
+  "consensus_primary": "oversight-explanation",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "oversight-explanation",
+   "codex": "oversight-explanation",
+   "gemini": "ai-review"
+  },
+  "tripwires": [],
+  "facets": {
+   "accept": [
+    "agentic",
+    "built-system",
+    "method-experiment",
+    "risk-overreliance",
+    "steering"
+   ],
+   "noted": [
+    "method-self-report",
+    "risk-quality"
+   ],
+   "dropped": [
+    "framework",
+    "method-mining",
+    "survey-input"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "automation-bias",
+    "hitl-workflow",
+    "oversight-explanation",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "agent-scope-drift",
+    "ai-review",
+    "automation-bias",
+    "oversight-explanation",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "oversight-explanation",
+    "quality-debt",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ },
+ {
+  "key": "ZSB2S59N",
+  "disposition": "LIGHT-REVIEW",
+  "consensus_primary": "org-governance",
+  "note": null,
+  "runs": {
+   "opus": 1,
+   "codex": 1,
+   "gemini": 1
+  },
+  "primaries": {
+   "opus": "org-governance",
+   "codex": "org-governance",
+   "gemini": "org-governance"
+  },
+  "tripwires": [
+   "demote:context:opus",
+   "sprawl:codex=7",
+   "demote:context:codex",
+   "demote:context:gemini"
+  ],
+  "facets": {
+   "accept": [
+    "general-ai",
+    "steering"
+   ],
+   "noted": [
+    "lit-review",
+    "risk-bias",
+    "risk-security"
+   ],
+   "dropped": [
+    "design-only",
+    "framework",
+    "risk-quality"
+   ]
+  },
+  "themes": {
+   "opus": [
+    "ai-review",
+    "hitl-workflow",
+    "org-governance",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "rules-based-checks"
+   ],
+   "codex": [
+    "ai-review",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation",
+    "regulatory-compliance",
+    "risk-routing",
+    "rules-based-checks"
+   ],
+   "gemini": [
+    "ai-review",
+    "hitl-workflow",
+    "org-governance",
+    "regulatory-compliance",
+    "rules-based-checks"
+   ]
+  },
+  "audit_sample": false
+ }
+]

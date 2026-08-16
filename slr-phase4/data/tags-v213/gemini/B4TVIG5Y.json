@@ -1,0 +1,16 @@
+{
+  "key": "B4TVIG5Y",
+  "primary_theme": "org-governance",
+  "themes": [
+    "org-governance"
+  ],
+  "facets": [
+    "intro-framing"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "org-governance": "Proposes an organizational maturity model for AI-assisted software development."
+  }
+}

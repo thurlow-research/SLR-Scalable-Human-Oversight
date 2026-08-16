@@ -1,0 +1,23 @@
+{
+  "key": "96XE669R",
+  "primary_theme": "quality-debt",
+  "themes": [
+    "quality-debt",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "metrics",
+    "risk-quality",
+    "steering"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "quality-debt": "Addresses non-functional issues like coding style and maintainability.",
+    "rules-based-checks": "Uses deterministic linters and static analysis to verify instructions.",
+    "metrics": "Defines instruction following scores to measure quality.",
+    "risk-quality": "Defines a metric for it and reports an empirical result.",
+    "steering": "Focuses on following generation instructions rather than oversight gating."
+  }
+}

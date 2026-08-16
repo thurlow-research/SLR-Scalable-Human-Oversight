@@ -1,0 +1,22 @@
+{
+  "key": "R9CDT9KB",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "risk-routing"
+  ],
+  "facets": [
+    "built-system",
+    "framework",
+    "general-code",
+    "risk-security"
+  ],
+  "rationale": {
+    "ai-review": "Evaluates a multi-LLM ensemble for code vulnerability detection with confidence calibration.",
+    "risk-routing": "Uses propagated confidence to route findings to automated gates or human review.",
+    "built-system": "Implemented the multi-model pipeline and evaluated it on a vulnerability dataset.",
+    "framework": "Proposes a pipeline architecture for confidence-aware DevSecOps vulnerability triage.",
+    "general-code": "The oversight mechanism targets generic code, not specifically AI-generated code.",
+    "risk-security": "Reports empirical results on detecting security vulnerabilities via multi-LLM ensemble."
+  }
+}

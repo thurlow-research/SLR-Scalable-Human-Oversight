@@ -1,0 +1,23 @@
+{
+  "key": "6F3S8IB7",
+  "primary_theme": "risk-routing",
+  "themes": [
+    "risk-routing",
+    "hitl-workflow",
+    "org-governance"
+  ],
+  "facets": [
+    "design-only",
+    "agentic",
+    "assistive",
+    "risk-quality",
+    "risk-overreliance"
+  ],
+  "rationale": {
+    "risk-routing": "Formal decision matrix assigning tasks to autonomy tiers based on risk.",
+    "hitl-workflow": "Defines tiered validation protocols integrated into Agile and Scrum ceremonies.",
+    "org-governance": "Addresses accountability, scaling roles, and governance principles for hybrid teams.",
+    "risk-quality": "Mitigates quality decay via tiered validation and error rate tracking.",
+    "risk-overreliance": "Mitigates skill atrophy via Principle 4 periodic human-only execution cycles."
+  }
+}

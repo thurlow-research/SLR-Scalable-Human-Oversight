@@ -1,0 +1,23 @@
+{
+  "key": "JCTP8VXP",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "oversight-explanation",
+    "provenance-auditability"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "agentic",
+    "steering",
+    "method-experiment",
+    "method-field-study",
+    "method-self-report"
+  ],
+  "rationale": {
+    "hitl-workflow": "Human plan-gate sets enforcement levels; supervisor panel allows pausing and redirecting.",
+    "oversight-explanation": "Enforcement evidence panel explains rule satisfaction via summaries, code, and tests.",
+    "provenance-auditability": "Maintains persistent audit trail of enforcement evidence for post-hoc human review."
+  }
+}

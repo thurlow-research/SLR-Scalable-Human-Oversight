@@ -1,0 +1,20 @@
+{
+  "key": "YBHHYR4P",
+  "primary_theme": "ai-code-insecurity",
+  "themes": [
+    "ai-code-insecurity",
+    "automation-bias"
+  ],
+  "facets": [
+    "assistive",
+    "risk-security",
+    "risk-overreliance",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-code-insecurity": "Empirically found AI assistants led to insecure code.",
+    "automation-bias": "Empirically found AI users were overconfident in their code's security.",
+    "risk-security": "Reports an empirical result about security mistakes.",
+    "risk-overreliance": "Reports an empirical result about user over-trust."
+  }
+}

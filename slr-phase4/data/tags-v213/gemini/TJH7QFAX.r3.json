@@ -1,0 +1,18 @@
+{
+  "key": "TJH7QFAX",
+  "primary_theme": "quality-debt",
+  "themes": [
+    "quality-debt"
+  ],
+  "facets": [
+    "agentic",
+    "method-experiment",
+    "risk-quality",
+    "routing-signal"
+  ],
+  "rationale": {
+    "quality-debt": "empirical evidence that code quality impacts AI refactoring break rates",
+    "risk-quality": "reports empirical result on quality metrics and code smells",
+    "routing-signal": "proposes CodeHealth as signal for human oversight allocation"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "key": "X7EN6DXZ",
+  "primary_theme": "tooling-supply-chain",
+  "themes": [
+    "tooling-supply-chain",
+    "ai-review"
+  ],
+  "facets": [
+    "general-code",
+    "risk-security",
+    "method-experiment"
+  ],
+  "rationale": {
+    "tooling-supply-chain": "Introduces and evaluates a supply-chain attack vector targeting the AI reviewer.",
+    "ai-review": "Analyzes the reliability limits of LLM reviewers regarding contextual framing bias."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "key": "TA6GIUK2",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "counterpoint",
+    "intro-framing",
+    "agentic",
+    "risk-quality",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-review": "Tests correlated error failures and reliability limits of AI reviewers.",
+    "rules-based-checks": "Demonstrates BDD tests catch domain bugs that AI reviewers miss.",
+    "counterpoint": "Argues against deploying AI reviewers without deterministic external specifications.",
+    "intro-framing": "Position paper framing AI review limits without operationalizing new mechanisms.",
+    "agentic": "Studies AI reviewer agents validating complete generated artifacts.",
+    "risk-quality": "Evaluates detection of functional correctness and domain logic bugs.",
+    "method-experiment": "Controlled test of AI reviewer models on planted bug corpus."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "key": "4FGIVVTG",
+  "primary_theme": "oversight-explanation",
+  "themes": [
+    "oversight-explanation",
+    "automation-bias",
+    "hitl-workflow"
+  ],
+  "facets": [
+    "agentic",
+    "steering",
+    "risk-overreliance",
+    "risk-security",
+    "risk-quality",
+    "method-experiment",
+    "method-self-report"
+  ],
+  "rationale": {
+    "oversight-explanation": "Proposes explaining reasoning, citations, and tests to help humans validate output.",
+    "automation-bias": "Empirically observes a developer over-trusting and failing to notice hallucinated code.",
+    "hitl-workflow": "Studies developer workflows when reviewing and editing AI-generated code migrations.",
+    "risk-overreliance": "Reports an empirical result about users over-trusting hallucinated AI output.",
+    "risk-security": "Reports an empirical result about user concerns regarding security vulnerabilities.",
+    "risk-quality": "Reports an empirical result about needing test suites for verification."
+  }
+}

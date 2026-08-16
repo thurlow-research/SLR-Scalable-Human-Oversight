@@ -1,0 +1,16 @@
+{
+  "key": "3Z45M3V3",
+  "primary_theme": "ai-code-insecurity",
+  "themes": [
+    "ai-code-insecurity"
+  ],
+  "facets": [
+    "assistive",
+    "risk-security",
+    "method-mining",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-code-insecurity": "Empirical study of security vulnerabilities (CWEs) in Copilot-generated GitHub code."
+  }
+}

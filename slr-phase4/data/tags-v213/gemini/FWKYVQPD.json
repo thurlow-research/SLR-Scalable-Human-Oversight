@@ -1,0 +1,21 @@
+{
+  "key": "FWKYVQPD",
+  "primary_theme": "quality-debt",
+  "themes": [
+    "quality-debt",
+    "ai-code-insecurity"
+  ],
+  "facets": [
+    "agentic",
+    "assistive",
+    "risk-security",
+    "risk-quality",
+    "risk-overreliance",
+    "method-experiment",
+    "method-self-report"
+  ],
+  "rationale": {
+    "quality-debt": "Quantifies maintainability and complexity decline in code generated via vibe coding",
+    "ai-code-insecurity": "Empirically reports increased security vulnerabilities produced during vibe coding tasks"
+  }
+}

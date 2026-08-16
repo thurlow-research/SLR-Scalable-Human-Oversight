@@ -1,0 +1,18 @@
+{
+  "key": "399HN438",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "general-code",
+    "risk-security",
+    "risk-quality",
+    "method-self-report"
+  ],
+  "rationale": {
+    "ai-review": "Proposes and evaluates LLM multi-agent CodeEvaluator framework for automated PR review."
+  }
+}

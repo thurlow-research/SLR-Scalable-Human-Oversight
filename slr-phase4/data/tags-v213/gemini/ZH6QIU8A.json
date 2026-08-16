@@ -1,0 +1,30 @@
+{
+  "key": "ZH6QIU8A",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "rules-based-checks",
+    "quality-debt",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "built-system",
+    "agentic",
+    "steering",
+    "risk-quality",
+    "risk-overreliance",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-review": "AI formalizes decisions into test suites to validate the implementation",
+    "rules-based-checks": "automatically runs the generated test suites to validate the code",
+    "quality-debt": "quantifies cognitive debt via mental model disagreement with the code",
+    "oversight-explanation": "test summaries and code references help users validate agent output",
+    "built-system": "Aporia implemented as a VS Code extension and evaluated",
+    "agentic": "studies autonomous coding agents modifying codebases at artifact granularity",
+    "steering": "Decision Bank directly shapes the agent's code generation process",
+    "risk-quality": "addresses cognitive debt and programmers' mental models of their code",
+    "risk-overreliance": "mitigates vibe coding where users blindly cede decision-making authority",
+    "method-experiment": "within-subjects user study with 14 programmers completing tasks"
+  }
+}

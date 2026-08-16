@@ -1,0 +1,22 @@
+{
+  "key": "WRXR2VTP",
+  "primary_theme": "formal-methods",
+  "themes": [
+    "formal-methods",
+    "rules-based-checks",
+    "hitl-workflow"
+  ],
+  "facets": [
+    "intro-framing",
+    "agentic",
+    "risk-quality"
+  ],
+  "rationale": {
+    "formal-methods": "Proposes autoformalizing developer intent into Design by Contract specifications.",
+    "rules-based-checks": "Uses generated contracts to guide targeted testing and runtime verification.",
+    "hitl-workflow": "Developers manually review and validate the generated contracts as a checkpoint.",
+    "intro-framing": "A vision paper proposing the paradigm without formal empirical evaluation.",
+    "agentic": "Addresses multi-step generation at the artifact level (ATM project).",
+    "risk-quality": "Mitigates hidden logic errors to improve correctness and robustness."
+  }
+}

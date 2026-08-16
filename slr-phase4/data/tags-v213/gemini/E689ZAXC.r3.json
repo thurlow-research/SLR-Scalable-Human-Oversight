@@ -1,0 +1,23 @@
+{
+  "key": "E689ZAXC",
+  "primary_theme": "automation-bias",
+  "themes": [
+    "automation-bias"
+  ],
+  "facets": [
+    "agentic",
+    "counterpoint",
+    "general-ai",
+    "method-experiment",
+    "non-developer",
+    "risk-overreliance"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "automation-bias": "Empirical study showing workers offload to AI instead of modifying.",
+    "counterpoint": "Challenges assumption that review and accountability decrease AI outsourcing.",
+    "risk-overreliance": "Reports empirical results on human over-reliance on AI-generated content."
+  }
+}

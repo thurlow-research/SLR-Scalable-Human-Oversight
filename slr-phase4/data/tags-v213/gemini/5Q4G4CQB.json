@@ -1,0 +1,22 @@
+{
+  "key": "5Q4G4CQB",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "survey-input",
+    "assistive",
+    "agentic",
+    "risk-security",
+    "risk-quality",
+    "risk-bias",
+    "risk-overreliance",
+    "method-self-report",
+    "method-mining",
+    "method-field-study"
+  ],
+  "rationale": {
+    "ai-review": "Evaluates practitioner adoption of AI for code review and its limits."
+  }
+}

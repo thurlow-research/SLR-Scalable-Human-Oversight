@@ -1,0 +1,23 @@
+{
+  "key": "D87A4CAS",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "framework",
+    "assistive",
+    "agentic",
+    "steering",
+    "risk-quality",
+    "method-self-report",
+    "method-mining",
+    "method-field-study"
+  ],
+  "rationale": {
+    "hitl-workflow": "Employs explicit HITL sprint review gates and rollback plans for artifact gating",
+    "rules-based-checks": "Uses automated test cases to validate LLM-generated code alongside manual testing",
+    "risk-quality": "Reports an empirical result about it (achieved 30 percent error reduction)"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "key": "E689ZAXC",
+  "primary_theme": "automation-bias",
+  "themes": [
+    "automation-bias"
+  ],
+  "facets": [
+    "counterpoint",
+    "general-ai",
+    "non-developer",
+    "risk-overreliance",
+    "method-experiment",
+    "agentic"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "automation-bias": "review causes workers to defer to AI and offload work",
+    "counterpoint": "challenges assumption that review increases effort and discourages offloading"
+  }
+}

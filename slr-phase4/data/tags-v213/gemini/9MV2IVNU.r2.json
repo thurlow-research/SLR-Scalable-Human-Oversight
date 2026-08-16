@@ -1,0 +1,31 @@
+{
+  "key": "9MV2IVNU",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "oversight-theater",
+    "risk-routing",
+    "oversight-explanation",
+    "org-governance"
+  ],
+  "facets": [
+    "design-only",
+    "metrics",
+    "general-ai",
+    "counterpoint",
+    "risk-overreliance"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "hitl-workflow": "Designs human intervention checkpoints, override authority, and execution boundaries.",
+    "oversight-theater": "Defines Rubber-Stamp Risk where review lacks authority to change outcomes.",
+    "risk-routing": "Proposes escalation triggers to route uncertain and high-impact cases.",
+    "oversight-explanation": "Details providing decision-ready reasons and uncertainty signals to reviewers.",
+    "org-governance": "Provides operating model, roles, and ISO-aligned risk management mapping.",
+    "counterpoint": "Opposes prevailing position that token human-in-the-loop ensures genuine compliance.",
+    "metrics": "Defines 10 KPIs measuring over-reliance and compliance with intervention controls.",
+    "risk-overreliance": "Devotes focal analysis to mitigating rubber-stamp risk and automation bias."
+  }
+}

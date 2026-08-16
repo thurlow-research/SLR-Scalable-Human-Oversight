@@ -1,0 +1,19 @@
+{
+  "key": "X7EN6DXZ",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "tooling-supply-chain"
+  ],
+  "facets": [
+    "built-system",
+    "general-code",
+    "risk-security",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-review": "Evaluates reliability limits of AI reviewers against contextual bias.",
+    "tooling-supply-chain": "Demonstrates a supply-chain attack targeting the AI reviewer.",
+    "risk-security": "Reports empirical results about missed security vulnerabilities."
+  }
+}

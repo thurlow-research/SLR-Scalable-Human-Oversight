@@ -1,0 +1,27 @@
+{
+  "key": "R2QMVNXI",
+  "primary_theme": "oversight-scaling-inversion",
+  "themes": [
+    "oversight-scaling-inversion",
+    "quality-debt",
+    "ai-code-insecurity"
+  ],
+  "facets": [
+    "assistive",
+    "agentic",
+    "risk-security",
+    "risk-quality",
+    "risk-overreliance",
+    "risk-ip",
+    "method-mining",
+    "survey-input",
+    "intro-framing"
+  ],
+  "rationale": {
+    "oversight-scaling-inversion": "identifies code review as the new primary bottleneck in AI workflows",
+    "quality-debt": "reports unmaintainable spaghetti code and technical debt from vibe coding",
+    "ai-code-insecurity": "analyzes security risks including Replit database deletion and data leaks",
+    "intro-framing": "defines vibe versus agentic coding and sets an education agenda without operationalizing",
+    "survey-input": "synthesizes rich practitioner concerns and adoption workflows useful for survey design"
+  }
+}

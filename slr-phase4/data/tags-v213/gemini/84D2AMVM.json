@@ -1,0 +1,21 @@
+{
+  "key": "84D2AMVM",
+  "primary_theme": "automation-bias",
+  "themes": [
+    "automation-bias"
+  ],
+  "facets": [
+    "lit-review",
+    "general-ai",
+    "risk-overreliance"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "automation-bias": "Synthesizes literature on human conformity, complacency, and disincentives to AI oversight",
+    "lit-review": "Paper systematically reviews existing literature on human decision-making and automation bias",
+    "general-ai": "Examines AI governance across general domains like medical and military applications",
+    "risk-overreliance": "Focal synthesis of literature on automation bias, complacency, and machine conformity"
+  }
+}

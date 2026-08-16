@@ -1,0 +1,28 @@
+{
+  "key": "2KPHQ5IV",
+  "primary_theme": "provenance-auditability",
+  "themes": [
+    "provenance-auditability",
+    "oversight-explanation",
+    "hitl-workflow",
+    "oversight-scaling-inversion",
+    "quality-debt"
+  ],
+  "facets": [
+    "intro-framing",
+    "framework",
+    "design-only",
+    "agentic",
+    "metrics",
+    "risk-quality",
+    "risk-overreliance"
+  ],
+  "rationale": {
+    "provenance-auditability": "Persistent consensus graph maintains auditable structural claims and evidence links.",
+    "oversight-explanation": "Structured graph projections resolve dimension collapse to aid human understanding of diffs.",
+    "hitl-workflow": "Defines human-gated review checkpoints over structural graph deltas and commit/rollback.",
+    "oversight-scaling-inversion": "Scaling AI code generation creates an inspection bottleneck, demoting reviewers to rubber-stamping.",
+    "quality-debt": "Unchecked vibe coding introduces hidden structural regressions and maintainability decay.",
+    "metrics": "Defines consensus entropy and alignment fidelity metrics measuring comprehensibility and quality."
+  }
+}

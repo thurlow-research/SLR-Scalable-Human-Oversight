@@ -1,0 +1,19 @@
+{
+  "key": "6TZHUCMD",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "built-system",
+    "general-code",
+    "risk-ip",
+    "risk-security",
+    "method-field-study"
+  ],
+  "rationale": {
+    "ai-review": "AI model judges source code artifacts to detect sensitive information.",
+    "risk-ip": "Contributes a classifier to mitigate intellectual property leaks.",
+    "risk-security": "Contributes a classifier to mitigate credential and secret data leaks."
+  }
+}

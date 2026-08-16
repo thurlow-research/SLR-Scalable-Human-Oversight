@@ -1,0 +1,30 @@
+{
+  "key": "59ZW4R58",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "oversight-explanation",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "framework",
+    "design-only",
+    "agentic",
+    "metrics",
+    "risk-quality",
+    "risk-security",
+    "counterpoint"
+  ],
+  "rationale": {
+    "hitl-workflow": "ACIP introduces human gates requiring explicit comprehension confirmation of AI code",
+    "oversight-explanation": "EEL provides visual documentation of AI decision-making and alternative approaches",
+    "rules-based-checks": "AGDV and CIW perform automated deterministic checks on documentation and metrics",
+    "framework": "proposes VIBE4M, a multi-layered pipeline architecture for AI code integration",
+    "design-only": "specifies components, metrics, and formulas for VIBE4M without evaluating them",
+    "agentic": "studies vibe coding where AI generates complete applications and artifacts",
+    "metrics": "defines ASMM metrics for quality and comprehensibility of AI code",
+    "risk-quality": "devotes focal analysis to technical debt and code quality decay",
+    "risk-security": "devotes focal analysis to security vulnerabilities in vibe coding",
+    "counterpoint": "argues against vibe coding hype replacing developers and structured engineering"
+  }
+}

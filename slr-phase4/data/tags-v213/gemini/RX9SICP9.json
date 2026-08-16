@@ -1,0 +1,30 @@
+{
+  "key": "RX9SICP9",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "ai-review"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "adopted",
+    "counterpoint",
+    "agentic",
+    "steering",
+    "risk-security",
+    "risk-quality",
+    "risk-overreliance",
+    "risk-bias",
+    "method-field-study"
+  ],
+  "rationale": {
+    "hitl-workflow": "Implements human approval gates across an 8-phase AI development lifecycle.",
+    "ai-review": "AI acts as adversarial red team critiquing architecture with specialized lenses.",
+    "counterpoint": "Argues against vibe coding, demanding structured human oversight and verification.",
+    "risk-security": "Security lens actively mitigates the risk of exploitable architecture flaws.",
+    "risk-quality": "Architectural lenses mitigate technical debt and architectural complexity inflation.",
+    "risk-overreliance": "Double-loop adversarial critique combats LLM sycophancy and automation bias.",
+    "risk-bias": "Situational ethical lens explicitly mitigates algorithmic bias in designs."
+  }
+}

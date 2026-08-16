@@ -1,0 +1,32 @@
+{
+  "key": "59ZW4R58",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "oversight-explanation",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "design-only",
+    "framework",
+    "counterpoint",
+    "metrics",
+    "agentic",
+    "risk-quality",
+    "risk-security",
+    "risk-overreliance"
+  ],
+  "rationale": {
+    "hitl-workflow": "Proposes ACIP and CIW gated inspection workflows for AI code.",
+    "oversight-explanation": "EEL generates decision trees and documentation to aid human comprehension.",
+    "rules-based-checks": "AGDV automates coverage analysis and consistency verification of documentation.",
+    "design-only": "Specifies VIBE4M framework and metrics but has not implemented them.",
+    "framework": "VIBE4M is a reference architecture for a code integration pipeline.",
+    "counterpoint": "Argues against vibe coding hype and unreviewed AI code generation.",
+    "metrics": "Defines metrics for quality and comprehensibility.",
+    "agentic": "Analyzes vibe coding which generates complete code artifacts from prompts.",
+    "risk-quality": "Substantive treatment of quality debt and code comprehensibility via mitigations.",
+    "risk-security": "Devotes focal analysis to security vulnerabilities caused by vibe coding.",
+    "risk-overreliance": "Devotes focal analysis to over-reliance and diminished human responsibility."
+  }
+}

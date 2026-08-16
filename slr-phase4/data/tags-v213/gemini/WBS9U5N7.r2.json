@@ -1,0 +1,1 @@
+{"key":"WBS9U5N7","primary_theme":"ai-review","themes":["ai-review","rules-based-checks"],"facets":["built-system","agentic","method-experiment"],"rationale":{"ai-review":"Evaluates LLM-judge reliability limits via a multi-agent adversarial review committee.","rules-based-checks":"Uses AI-authored adversarial counter-test execution to validate generated code artifacts."}}

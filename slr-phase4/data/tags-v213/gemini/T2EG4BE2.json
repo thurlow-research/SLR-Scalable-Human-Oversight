@@ -1,0 +1,23 @@
+{
+  "key": "T2EG4BE2",
+  "primary_theme": "quality-debt",
+  "themes": [
+    "quality-debt",
+    "ai-code-insecurity"
+  ],
+  "facets": [
+    "intro-framing",
+    "agentic",
+    "steering",
+    "risk-quality",
+    "risk-security",
+    "method-field-study",
+    "method-mining"
+  ],
+  "rationale": {
+    "quality-debt": "Analyzes technical debt, inconsistency, and maintainability in vibe-coded systems.",
+    "ai-code-insecurity": "Scanned seven vibe-coded MVPs and found 970 security vulnerabilities.",
+    "risk-quality": "Devotes focal analysis to maintainability and architectural inconsistency.",
+    "risk-security": "Reports an empirical result of 970 security issues in MVPs."
+  }
+}

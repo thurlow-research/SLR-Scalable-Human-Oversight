@@ -1,0 +1,20 @@
+{
+  "key": "TA6GIUK2",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "counterpoint",
+    "framework",
+    "agentic",
+    "risk-quality",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-review": "Evaluates AI reviewer reliability limits and cross-model correlated errors",
+    "rules-based-checks": "Proposes BDD specifications as the primary deterministic quality gate",
+    "counterpoint": "Argues against the prevailing industry reliance on standalone AI reviewers"
+  }
+}

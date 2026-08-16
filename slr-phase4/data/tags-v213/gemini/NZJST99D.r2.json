@@ -1,0 +1,17 @@
+{
+  "key": "NZJST99D",
+  "primary_theme": "oversight-scaling-inversion",
+  "themes": [
+    "oversight-scaling-inversion"
+  ],
+  "facets": [
+    "problem-statement-anchor",
+    "agentic",
+    "risk-quality",
+    "method-mining"
+  ],
+  "rationale": {
+    "oversight-scaling-inversion": "Finds reviewer abandonment is the leading cause of agentic PR failures.",
+    "risk-quality": "Clause fired: reports an empirical result about agent code failures."
+  }
+}

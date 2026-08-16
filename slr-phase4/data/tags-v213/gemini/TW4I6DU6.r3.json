@@ -1,0 +1,17 @@
+{
+  "key": "TW4I6DU6",
+  "primary_theme": "regulatory-compliance",
+  "themes": [
+    "regulatory-compliance"
+  ],
+  "facets": [
+    "intro-framing",
+    "general-ai"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "regulatory-compliance": "analyzes EU AI Act Article 14 on human oversight"
+  }
+}

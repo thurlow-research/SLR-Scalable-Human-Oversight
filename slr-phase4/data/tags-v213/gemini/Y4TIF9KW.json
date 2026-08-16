@@ -1,0 +1,22 @@
+{
+  "key": "Y4TIF9KW",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "regulatory-compliance",
+    "hitl-workflow",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "built-system",
+    "expert-validated",
+    "general-code",
+    "risk-security"
+  ],
+  "rationale": {
+    "ai-review": "Uses multi-agent, multi-LLM workflows to automatically detect vulnerabilities in code.",
+    "regulatory-compliance": "Generates auditor-ready evidence mapped directly to NIST and OWASP frameworks.",
+    "hitl-workflow": "Provides human-in-the-loop controls to select models and validate ambiguous findings.",
+    "oversight-explanation": "Produces explanatory flows with root-cause and remediation recommendations for findings."
+  }
+}

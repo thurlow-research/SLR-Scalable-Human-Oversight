@@ -1,0 +1,25 @@
+{
+  "key": "WUUDHL8R",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "quality-debt",
+    "regulatory-compliance",
+    "hitl-workflow"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "agentic",
+    "general-code",
+    "risk-quality",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-review": "Evaluates LLM sensitivity and specificity for detecting data clumps.",
+    "quality-debt": "Focuses entirely on identifying and refactoring data clumps (code smells).",
+    "regulatory-compliance": "Analyzes EU AI Act risk tiers and designs compliance via HITL.",
+    "hitl-workflow": "Designs a PR-granularity human gate to ensure regulatory compliance.",
+    "risk-quality": "Contributes and evaluates a mitigation for data clumps."
+  }
+}

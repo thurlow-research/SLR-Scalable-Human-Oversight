@@ -1,0 +1,22 @@
+{
+  "key": "QI8246A3",
+  "primary_theme": "oversight-scaling-inversion",
+  "themes": [
+    "oversight-scaling-inversion",
+    "ai-review",
+    "quality-debt",
+    "provenance-auditability"
+  ],
+  "facets": [
+    "agentic",
+    "method-mining",
+    "risk-quality"
+  ],
+  "rationale": {
+    "oversight-scaling-inversion": "Documents PR scale causing review bottlenecks and superficial rapid triage.",
+    "ai-review": "Analyzes empirical adoption of AI review bots evaluating agent-generated PRs.",
+    "quality-debt": "Analyzes cyclomatic complexity, showing AI prioritizes throughput over structural complexity.",
+    "provenance-auditability": "Evaluates lack of authorship metadata in agent PRs, hindering accountability.",
+    "risk-quality": "Reports an empirical result about cyclomatic complexity changes in agent PRs."
+  }
+}

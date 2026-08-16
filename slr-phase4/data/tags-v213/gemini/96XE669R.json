@@ -1,0 +1,19 @@
+{
+  "key": "96XE669R",
+  "primary_theme": "quality-debt",
+  "themes": [
+    "quality-debt",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "risk-quality"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "quality-debt": "evaluates non-functional code quality like style and complexity",
+    "rules-based-checks": "uses deterministic linters and static analysis for verification",
+    "risk-quality": "reports an empirical result about it"
+  }
+}

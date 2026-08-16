@@ -1,0 +1,30 @@
+{
+  "key": "5RLPIA3K",
+  "primary_theme": "oversight-explanation",
+  "themes": [
+    "oversight-explanation",
+    "regulatory-compliance",
+    "hitl-workflow",
+    "risk-routing"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "general-ai",
+    "non-developer",
+    "risk-overreliance",
+    "risk-bias",
+    "agentic"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "oversight-explanation": "multi-agent adversarial debate surfaces AI reasoning for human comprehension",
+    "regulatory-compliance": "maps reference architecture directly to EU AI Act Article 14 requirements",
+    "hitl-workflow": "UI requires human engagement and final decision on candidate evaluations",
+    "risk-routing": "automatically escalates low-confidence or bias-flagged decisions to priority review",
+    "risk-overreliance": "contributes mitigation for automation bias via adversarial debate",
+    "risk-bias": "contributes mitigation by using Adversary agent to flag discrimination"
+  }
+}

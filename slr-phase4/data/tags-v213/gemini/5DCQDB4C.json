@@ -1,0 +1,27 @@
+{
+  "key": "5DCQDB4C",
+  "primary_theme": "automation-bias",
+  "themes": [
+    "automation-bias"
+  ],
+  "facets": [
+    "intro-framing",
+    "general-ai",
+    "non-developer",
+    "risk-quality",
+    "risk-bias",
+    "risk-overreliance"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "automation-bias": "Frames human oversight performance and failures using signal detection theory.",
+    "intro-framing": "Proposes SDT perspective without operationalizing a specific mechanism.",
+    "general-ai": "Focuses on general AI in medical and hiring, not code.",
+    "non-developer": "Overseers are doctors, HR managers, and judges, not software developers.",
+    "risk-quality": "Devotes focal analysis to the detection of inaccurate system outputs.",
+    "risk-bias": "Devotes focal analysis to the detection of unfair system outputs.",
+    "risk-overreliance": "Analyzes complacency and automation bias as factors affecting error detection."
+  }
+}

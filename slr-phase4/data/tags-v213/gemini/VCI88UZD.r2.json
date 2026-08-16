@@ -1,0 +1,22 @@
+{
+  "key": "VCI88UZD",
+  "primary_theme": "provenance-auditability",
+  "themes": [
+    "provenance-auditability"
+  ],
+  "facets": [
+    "intro-framing",
+    "agentic",
+    "steering",
+    "risk-security"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "provenance-auditability": "Proposes SLSA-aligned provenance tracking for AI-composed software artifacts.",
+    "intro-framing": "Presents a reference architecture without evaluating on real data.",
+    "steering": "Constrains AI by restricting generation to pre-certified module inputs.",
+    "risk-security": "Focuses heavily on supply-chain security and vulnerability mitigation."
+  }
+}

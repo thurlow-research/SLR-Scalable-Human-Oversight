@@ -1,0 +1,13 @@
+{
+  "key": "VTDG995V",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "assistive"
+  ],
+  "rationale": {
+    "ai-review": "Evaluates calibration and reliability limits of models judging their own generated code."
+  }
+}

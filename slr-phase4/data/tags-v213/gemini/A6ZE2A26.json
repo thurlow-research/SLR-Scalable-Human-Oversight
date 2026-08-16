@@ -1,0 +1,17 @@
+{
+  "key": "A6ZE2A26",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "built-system",
+    "agentic",
+    "risk-quality",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-review": "Evaluates unanimous multi-LLM juries for reviewing generated SQL.",
+    "risk-quality": "Evaluates a mitigation for incorrect SQL generation."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "key": "BLR3XE3I",
+  "primary_theme": "automation-bias",
+  "themes": [
+    "automation-bias",
+    "quality-debt"
+  ],
+  "facets": [
+    "survey-input",
+    "agentic",
+    "assistive",
+    "non-developer",
+    "risk-overreliance",
+    "risk-quality",
+    "method-self-report"
+  ],
+  "rationale": {
+    "automation-bias": "Empirically studies user over-reliance, deskilling, and trust asymmetries in vibe coding.",
+    "quality-debt": "Identifies AI code bloat and integration failures degrading maintainability.",
+    "survey-input": "Provides substantive empirical findings on enterprise adoption, workflows, and trust.",
+    "agentic": "Studies tools like Bolt generating complete functional prototypes and applications.",
+    "assistive": "Also studies Cursor and conversational inline code generation.",
+    "non-developer": "Studies UX designers and product managers generating and overseeing code.",
+    "risk-overreliance": "Focal analysis on pseudo-productivity, skill erosion, and uncritical AI dependence.",
+    "risk-quality": "Analyzes code unreliability, scaling breakdowns, and unstructured code accumulation.",
+    "method-self-report": "Conducted semi-structured interviews with 22 product team members."
+  }
+}

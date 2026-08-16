@@ -1,0 +1,34 @@
+{
+  "key": "VFNJSZD9",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "ai-code-insecurity",
+    "rules-based-checks",
+    "provenance-auditability",
+    "org-governance",
+    "tooling-supply-chain"
+  ],
+  "facets": [
+    "framework",
+    "design-only",
+    "agentic",
+    "counterpoint",
+    "metrics",
+    "risk-security"
+  ],
+  "rationale": {
+    "ai-review": "Proposes Agent Reasoning Audit where an AI auditor evaluates the primary agent",
+    "ai-code-insecurity": "Contributes original Agentic Vulnerability Taxonomy classifying vulnerabilities unique to agentic pipelines",
+    "rules-based-checks": "Proposes Semantic Static Analysis and Behavioral Dynamic Analysis for agentic pipelines",
+    "provenance-auditability": "Proposes Provenance Chain Verification for verifiable AI-generated code artifacts",
+    "org-governance": "Proposes Continuous Governance Integration for live agentic risk management and policy",
+    "tooling-supply-chain": "Proposes dependency behavioral analysis to vet imported packages against supply chain attacks",
+    "framework": "Proposes Unified Agentic Security Testing reference architecture integratable into pipelines",
+    "design-only": "Specifies architecture and metric in detail without running on real data",
+    "agentic": "Analyzes autonomous coding agents performing multi-step generation tasks",
+    "counterpoint": "Argues against the sufficiency of incremental extensions to SAST and DAST",
+    "metrics": "Defines Agentic Risk Scoring Model metric for security",
+    "risk-security": "Defines metric and contributes mitigation architecture for security vulnerabilities"
+  }
+}

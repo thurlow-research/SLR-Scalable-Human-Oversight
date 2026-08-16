@@ -1,0 +1,20 @@
+{
+  "key": "PR4GS7SP",
+  "primary_theme": "rules-based-checks",
+  "themes": [
+    "rules-based-checks",
+    "formal-methods"
+  ],
+  "facets": [
+    "built-system",
+    "assistive",
+    "risk-security",
+    "risk-quality"
+  ],
+  "rationale": {
+    "rules-based-checks": "Uses deterministic symbolic execution to verify AI-generated code correctness.",
+    "formal-methods": "Applies symbolic execution and SMT solvers for semantic equivalence.",
+    "risk-security": "Contributes mitigation clause fired: evaluates security-oriented assembly code.",
+    "risk-quality": "Contributes mitigation clause fired: assesses functional correctness of code."
+  }
+}

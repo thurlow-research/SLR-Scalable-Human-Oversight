@@ -1,0 +1,26 @@
+{
+  "key": "PD297DUM",
+  "primary_theme": "oversight-scaling-inversion",
+  "themes": [
+    "oversight-scaling-inversion"
+  ],
+  "facets": [
+    "survey-input",
+    "problem-statement-anchor",
+    "assistive",
+    "agentic",
+    "risk-security",
+    "risk-overreliance",
+    "method-self-report"
+  ],
+  "rationale": {
+    "oversight-scaling-inversion": "Survey finds developers code faster but spend more time on security reviews.",
+    "survey-input": "Provides empirical data on developer perceptions useful for organizational survey design.",
+    "problem-statement-anchor": "Anchors scaling inversion: 44% report spending more time reviewing AI code.",
+    "assistive": "Explicitly compares risks of code completion tools versus full program creation.",
+    "agentic": "Explicitly compares risks of full program creation tools versus code completion.",
+    "risk-security": "Reports empirical survey results about perceived security of AI generated code.",
+    "risk-overreliance": "Reports empirical result that 65% perceive overreliance as the greatest risk.",
+    "method-self-report": "Evidence comes entirely from a survey of 105 software developers."
+  }
+}

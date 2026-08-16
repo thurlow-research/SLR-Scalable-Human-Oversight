@@ -1,0 +1,30 @@
+{
+  "key": "ZSB2S59N",
+  "primary_theme": "org-governance",
+  "themes": [
+    "org-governance",
+    "regulatory-compliance",
+    "rules-based-checks",
+    "ai-review",
+    "hitl-workflow"
+  ],
+  "facets": [
+    "general-ai",
+    "lit-review",
+    "steering",
+    "risk-security",
+    "risk-quality",
+    "risk-bias"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "org-governance": "focuses on enterprise roles, accountability, and audit logging",
+    "regulatory-compliance": "discusses EU AI Act, NIST RMF, and legal penalties",
+    "rules-based-checks": "covers regex filtering and schema validation for guardrails",
+    "ai-review": "discusses ML classifiers used to detect toxicity and bias",
+    "hitl-workflow": "covers human-in-the-loop workflows for edge case adjudication",
+    "lit-review": "synthesizes existing tools, policies, and enterprise case studies"
+  }
+}

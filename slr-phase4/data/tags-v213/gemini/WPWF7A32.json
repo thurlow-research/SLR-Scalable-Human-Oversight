@@ -1,0 +1,20 @@
+{
+  "key": "WPWF7A32",
+  "primary_theme": "org-governance",
+  "themes": [
+    "org-governance",
+    "regulatory-compliance"
+  ],
+  "facets": [
+    "intro-framing",
+    "assistive",
+    "risk-ip"
+  ],
+  "rationale": {
+    "org-governance": "proposes DevLicOps framework for ACA policies, training, and audits",
+    "regulatory-compliance": "focuses on mitigating legal liability and open-source license infringement",
+    "intro-framing": "position paper proposing an organizational model without technical mechanism",
+    "assistive": "focuses on IDE-embedded AI coding assistants used by developers",
+    "risk-ip": "focal analysis on copyright and open-source licensing risks"
+  }
+}

@@ -1,0 +1,1 @@
+{"key":"6NTZ85CW","primary_theme":"ai-review","themes":["ai-review","rules-based-checks"],"facets":["built-system","framework","general-code","risk-security","method-mining"],"rationale":{"ai-review":"LLM multi-agent reasons about, judges, and adaptively exploits vulnerabilities","rules-based-checks":"tool-grounded sandbox execution + mandatory end-to-end PoC validation oracle"}}

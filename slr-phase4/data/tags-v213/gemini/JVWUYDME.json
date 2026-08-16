@@ -1,0 +1,31 @@
+{
+  "key": "JVWUYDME",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "oversight-theater",
+    "provenance-auditability",
+    "rules-based-checks",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "counterpoint",
+    "framework",
+    "design-only",
+    "general-ai",
+    "agentic",
+    "non-developer",
+    "risk-overreliance"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "hitl-workflow": "Proposes Human-in-Command, shifting human control to envelope definition and exception gating.",
+    "oversight-theater": "Critiques HITL as Scapegoat-as-a-Service where reviewers rubber-stamp due to throughput pressure.",
+    "provenance-auditability": "Requires verifiable provenance inputs and deterministic payloads for immutable audit logs.",
+    "rules-based-checks": "Requires deterministic engines to evaluate policy constraints before action execution.",
+    "oversight-explanation": "Pre-execution receipt provides intent and action preview to support human judgment.",
+    "counterpoint": "Argues against HITL as a safety control, calling it liability transfer."
+  }
+}

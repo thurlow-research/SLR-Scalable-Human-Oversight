@@ -1,0 +1,16 @@
+{
+  "key": "KF5MGIBI",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "built-system",
+    "general-code"
+  ],
+  "rationale": {
+    "ai-review": "Proposes an LLM fine-tuned to perform automated code review.",
+    "oversight-explanation": "Enhances review comprehensibility to help humans judge the AI's findings."
+  }
+}

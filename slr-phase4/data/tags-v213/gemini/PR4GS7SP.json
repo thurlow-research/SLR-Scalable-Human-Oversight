@@ -1,0 +1,18 @@
+{
+  "key": "PR4GS7SP",
+  "primary_theme": "rules-based-checks",
+  "themes": [
+    "rules-based-checks",
+    "formal-methods"
+  ],
+  "facets": [
+    "built-system",
+    "assistive",
+    "risk-quality",
+    "risk-security"
+  ],
+  "rationale": {
+    "rules-based-checks": "Uses symbolic execution to automatically check generated code against a reference",
+    "formal-methods": "Employs symbolic execution to assess semantic equivalence between code snippets"
+  }
+}

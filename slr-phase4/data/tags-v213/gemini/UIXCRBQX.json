@@ -1,0 +1,16 @@
+{
+  "key": "UIXCRBQX",
+  "primary_theme": "quality-debt",
+  "themes": [
+    "quality-debt"
+  ],
+  "facets": [
+    "agentic",
+    "method-mining",
+    "risk-quality"
+  ],
+  "rationale": {
+    "quality-debt": "Empirically compares breaking changes in agent-generated and human-authored PRs",
+    "risk-quality": "Reports an empirical result about breaking changes"
+  }
+}

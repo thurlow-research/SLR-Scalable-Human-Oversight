@@ -1,0 +1,22 @@
+{
+  "key": "TA6GIUK2",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "counterpoint",
+    "method-experiment",
+    "agentic",
+    "risk-quality"
+  ],
+  "rationale": {
+    "ai-review": "Demonstrates reliability limits and correlated errors of AI code reviewers.",
+    "rules-based-checks": "Argues executable specifications are necessary to ground AI review pipelines.",
+    "counterpoint": "Argues against prevailing reliance on pure AI-to-AI code review pipelines.",
+    "method-experiment": "Conducted controlled experiments comparing AI review to BDD specifications.",
+    "agentic": "Evaluates pipelines where agents review whole code artefacts.",
+    "risk-quality": "Classifies structural and architectural code decay as Category D defects."
+  }
+}

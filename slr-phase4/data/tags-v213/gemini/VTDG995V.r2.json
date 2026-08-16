@@ -1,0 +1,14 @@
+{
+  "key": "VTDG995V",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "assistive",
+    "built-system"
+  ],
+  "rationale": {
+    "ai-review": "Evaluates calibration of LLM reflective confidence when judging generated code correctness."
+  }
+}

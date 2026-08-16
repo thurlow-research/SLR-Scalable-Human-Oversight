@@ -1,0 +1,26 @@
+{
+  "key": "95CPB7CF",
+  "primary_theme": "oversight-explanation",
+  "themes": [
+    "oversight-explanation",
+    "quality-debt",
+    "oversight-scaling-inversion",
+    "automation-bias"
+  ],
+  "facets": [
+    "framework",
+    "design-only",
+    "agentic",
+    "non-developer",
+    "metrics",
+    "risk-quality",
+    "risk-overreliance"
+  ],
+  "rationale": {
+    "oversight-explanation": "Proposes causal reasoning graphs to make agent decision processes transparent.",
+    "quality-debt": "Identifies agentic entropy causing accumulated structural misalignments.",
+    "oversight-scaling-inversion": "Highlights reviewer paradox where autonomous velocity overwhelms verification capacity.",
+    "automation-bias": "Examines cognitive debt where reviewers lose system-level mental models.",
+    "metrics": "Proposes a cognitive debt index measuring human over-reliance and comprehension."
+  }
+}

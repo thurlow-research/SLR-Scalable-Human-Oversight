@@ -1,0 +1,18 @@
+{
+  "key": "5AVZQCVU",
+  "primary_theme": "org-governance",
+  "themes": [
+    "org-governance"
+  ],
+  "facets": [
+    "general-ai",
+    "risk-security"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "org-governance": "Proposes the ARC framework for org governance teams to manage AI risks.",
+    "risk-security": "Contributes mitigations (technical controls) for specific security hazards in a Risk Register."
+  }
+}

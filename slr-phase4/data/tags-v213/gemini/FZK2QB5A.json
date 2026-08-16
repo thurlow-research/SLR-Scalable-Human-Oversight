@@ -1,0 +1,24 @@
+{
+  "key": "FZK2QB5A",
+  "primary_theme": "remediation-gating",
+  "themes": [
+    "remediation-gating",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "intro-framing",
+    "framework",
+    "agentic",
+    "risk-quality",
+    "steering"
+  ],
+  "rationale": {
+    "remediation-gating": "Proposes autonomous generate-and-test reprompting loops governed by fitness filters.",
+    "rules-based-checks": "Uses regression tests and static metrics as the semantic filters.",
+    "intro-framing": "Keynote position paper outlining a research agenda without empirical evaluation.",
+    "framework": "Provides a reference architecture pipeline for Assured LLMSE.",
+    "agentic": "Focuses on offline autonomous code generation awaiting final human review.",
+    "risk-quality": "Discusses optimizing execution performance and refactoring technical debt.",
+    "steering": "Proposes optimizing the LLM prompting strategy via computational search."
+  }
+}

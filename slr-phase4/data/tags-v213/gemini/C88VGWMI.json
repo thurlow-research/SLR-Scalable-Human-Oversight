@@ -1,0 +1,23 @@
+{
+  "key": "C88VGWMI",
+  "primary_theme": "ai-code-insecurity",
+  "themes": [
+    "ai-code-insecurity",
+    "regulatory-compliance"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "agentic",
+    "steering",
+    "risk-security"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "ai-code-insecurity": "Baseline evaluation documents 11 CWE vulnerabilities in AI-generated code.",
+    "regulatory-compliance": "Matrix provides auditable evidence for regulatory requirements like PCI-DSS.",
+    "risk-security": "Contributes a mitigation and reports empirical results for CWEs."
+  }
+}

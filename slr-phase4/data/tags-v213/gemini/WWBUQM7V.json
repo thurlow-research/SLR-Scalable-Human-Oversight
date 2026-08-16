@@ -1,0 +1,20 @@
+{
+  "key": "WWBUQM7V",
+  "primary_theme": "quality-debt",
+  "themes": [
+    "quality-debt"
+  ],
+  "facets": [
+    "survey-input",
+    "assistive",
+    "risk-quality",
+    "method-self-report"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "quality-debt": "interviews identify non-security quality issues and manual debugging burden in ChatGPT code",
+    "risk-quality": "reports an empirical result about lack of precision and debugging burden"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "key": "JCTP8VXP",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "agentic",
+    "built-system",
+    "method-experiment",
+    "method-self-report",
+    "steering"
+  ],
+  "rationale": {
+    "hitl-workflow": "Plan gating with explicit enforcement levels and execution checkpoints.",
+    "oversight-explanation": "Surfaces execution evidence, tests, and summaries supporting user review."
+  }
+}

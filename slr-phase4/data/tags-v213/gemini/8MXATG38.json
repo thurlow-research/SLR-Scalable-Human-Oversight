@@ -1,0 +1,31 @@
+{
+  "key": "8MXATG38",
+  "primary_theme": "org-governance",
+  "themes": [
+    "org-governance",
+    "ai-review",
+    "rules-based-checks",
+    "hitl-workflow",
+    "risk-routing"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "adopted",
+    "assistive",
+    "agentic",
+    "risk-security",
+    "risk-quality",
+    "risk-ip",
+    "method-self-report",
+    "method-mining",
+    "method-field-study"
+  ],
+  "rationale": {
+    "org-governance": "Contributes governance template with policies, audit, telemetry, and scanning guardrails.",
+    "ai-review": "Deploys an AI reviewer in CI to comment on PR diffs.",
+    "rules-based-checks": "Enforces SAST, SCA, and license scans on AI-generated code.",
+    "hitl-workflow": "Requires explicit human approval for AI-generated code and ticket closures.",
+    "risk-routing": "Uses an LLM triage classifier to prioritize and route bug tickets."
+  }
+}

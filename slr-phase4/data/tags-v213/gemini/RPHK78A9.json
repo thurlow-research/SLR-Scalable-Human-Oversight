@@ -1,0 +1,19 @@
+{
+  "key": "RPHK78A9",
+  "primary_theme": "oversight-scaling-inversion",
+  "themes": [
+    "oversight-scaling-inversion"
+  ],
+  "facets": [
+    "intro-framing",
+    "assistive",
+    "agentic",
+    "steering"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "oversight-scaling-inversion": "Speeding up coding increases the frequency and magnitude of mistakes."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "key": "BLR3XE3I",
+  "primary_theme": "automation-bias",
+  "themes": [
+    "automation-bias",
+    "quality-debt",
+    "oversight-scaling-inversion",
+    "org-governance"
+  ],
+  "facets": [
+    "survey-input",
+    "non-developer",
+    "agentic",
+    "risk-quality",
+    "risk-overreliance",
+    "risk-security",
+    "risk-ip",
+    "method-self-report"
+  ],
+  "rationale": {
+    "automation-bias": "Empirical findings on skill erosion, over-reliance, and settling for first drafts.",
+    "quality-debt": "Interviewees report AI generates bloated, unmanageable code degrading maintainability.",
+    "oversight-scaling-inversion": "Identifies debugging and editing as the primary bottlenecks in AI workflows.",
+    "org-governance": "Reports on enterprise compliance policies and shifting role accountability.",
+    "survey-input": "Substantive findings on how different roles adopt and prefer vibe coding.",
+    "risk-quality": "Reports an empirical result about code bloat and degraded maintainability.",
+    "risk-overreliance": "Devotes focal analysis to deskilling, shallow creativity, and AI dependency.",
+    "risk-security": "Reports an empirical result about credential leakage and insecure workflows.",
+    "risk-ip": "Reports an empirical result about copyright, intellectual property, and attribution."
+  }
+}

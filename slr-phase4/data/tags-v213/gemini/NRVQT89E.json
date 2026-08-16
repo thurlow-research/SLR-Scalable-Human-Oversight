@@ -1,0 +1,1 @@
+{"key":"NRVQT89E","primary_theme":"ai-review","themes":["ai-review"],"facets":["built-system","agentic","risk-quality","method-experiment"],"rationale":{"ai-review":"Trains an LLM critic to review code and help humans find bugs."}}

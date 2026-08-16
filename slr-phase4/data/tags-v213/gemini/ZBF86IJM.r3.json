@@ -1,0 +1,22 @@
+{
+  "key": "ZBF86IJM",
+  "primary_theme": "oversight-explanation",
+  "themes": [
+    "oversight-explanation",
+    "automation-bias"
+  ],
+  "facets": [
+    "built-system",
+    "assistive",
+    "risk-quality",
+    "risk-overreliance",
+    "method-experiment",
+    "method-self-report"
+  ],
+  "rationale": {
+    "oversight-explanation": "Contributes uncertainty highlighting to help humans judge AI code completions.",
+    "automation-bias": "Studies capable humans missing flaws even when warned by probability highlights.",
+    "risk-quality": "Clause fired: reports an empirical result about code accuracy.",
+    "risk-overreliance": "Clause fired: evaluates uncertainty highlighting as a mitigation for overreliance."
+  }
+}

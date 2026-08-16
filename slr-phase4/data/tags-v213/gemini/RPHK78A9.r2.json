@@ -1,0 +1,19 @@
+{
+  "key": "RPHK78A9",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow"
+  ],
+  "facets": [
+    "intro-framing",
+    "assistive",
+    "agentic",
+    "steering"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "hitl-workflow": "Human acts as executive chef directing and setting goals for AI."
+  }
+}
