@@ -1,0 +1,17 @@
+{
+  "key": "6ZC3H7AF",
+  "primary_theme": "tooling-supply-chain",
+  "themes": [
+    "tooling-supply-chain"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "risk-security",
+    "method-mining"
+  ],
+  "rationale": {
+    "tooling-supply-chain": "Empirical security analysis and detection framework for vetting AI agent skills.",
+    "risk-security": "Reports empirical result on vulnerability prevalence."
+  }
+}

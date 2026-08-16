@@ -1,0 +1,18 @@
+{
+  "key": "DJMBHHZN",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "framework",
+    "design-only",
+    "agentic"
+  ],
+  "rationale": {
+    "ai-review": "Proposes Supervision and Consensus agents to evaluate artifacts and reach agreement.",
+    "framework": "Outlines a reference architecture integrating AI agent communities into development environments.",
+    "design-only": "Project proposal presenting architectural design without a credibly evaluated implementation.",
+    "agentic": "Focuses on autonomous AI agent communities performing and evaluating SE tasks."
+  }
+}

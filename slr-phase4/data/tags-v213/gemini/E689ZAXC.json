@@ -1,0 +1,25 @@
+{
+  "key": "E689ZAXC",
+  "primary_theme": "automation-bias",
+  "themes": [
+    "automation-bias",
+    "provenance-auditability"
+  ],
+  "facets": [
+    "counterpoint",
+    "general-ai",
+    "non-developer",
+    "agentic",
+    "risk-overreliance",
+    "method-experiment"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "automation-bias": "Workers offload to AI and avoid modifications when under review accountability.",
+    "provenance-auditability": "Requiring AI logs alongside final submissions mitigates workers' offloading to AI.",
+    "counterpoint": "Argues against the assumption that review accountability decreases outsourcing to AI.",
+    "risk-overreliance": "Reports empirical results on worker offloading and evaluates process visibility mitigation."
+  }
+}

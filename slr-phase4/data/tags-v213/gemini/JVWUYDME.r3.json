@@ -1,0 +1,27 @@
+{
+  "key": "JVWUYDME",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "oversight-theater",
+    "org-governance"
+  ],
+  "facets": [
+    "intro-framing",
+    "counterpoint",
+    "agentic",
+    "general-ai",
+    "non-developer",
+    "risk-overreliance"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "hitl-workflow": "Proposes Human-in-Command envelope and gates instead of passive review.",
+    "oversight-theater": "Critiques standard HITL as performative liability transfer or Scapegoat-as-a-Service.",
+    "org-governance": "Specifies audit logging, policy constraints, and procurement guardrails.",
+    "counterpoint": "Argues against Human-in-the-Loop as the default safety control.",
+    "risk-overreliance": "Devotes focal analysis to mitigating automation bias and rubber-stamping."
+  }
+}

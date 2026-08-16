@@ -1,0 +1,29 @@
+{
+  "key": "XJAXB98T",
+  "primary_theme": "org-governance",
+  "themes": [
+    "org-governance",
+    "oversight-scaling-inversion",
+    "provenance-auditability",
+    "hitl-workflow"
+  ],
+  "facets": [
+    "survey-input",
+    "assistive",
+    "agentic",
+    "steering",
+    "risk-security",
+    "risk-quality",
+    "risk-ip",
+    "method-mining"
+  ],
+  "rationale": {
+    "org-governance": "Analyzes OSS community policies, rules, and accountability structures for GenAI contributions.",
+    "oversight-scaling-inversion": "Documents the maintainer review bottleneck and burden caused by AI contributions.",
+    "provenance-auditability": "Documents disclosure requirements, AI metadata, and provenance tracing for AI inputs.",
+    "hitl-workflow": "Documents human checkpoints, evidence gates, and scope controls for PR reviews.",
+    "risk-security": "Devotes focal analysis to security channel governance and mitigation strategies.",
+    "risk-quality": "Devotes focal analysis to PR quality concerns and verification gating.",
+    "risk-ip": "Devotes focal analysis to licensing compliance and provenance safeguarding."
+  }
+}

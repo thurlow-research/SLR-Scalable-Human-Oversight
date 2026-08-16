@@ -1,0 +1,19 @@
+{
+  "key": "LCPH3THV",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "intro-framing",
+    "lit-review"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "ai-review": "reviews literature on LLMs acting as judges for software artifacts",
+    "intro-framing": "proposes a vision and research roadmap for the field",
+    "lit-review": "systematic literature review of LLM-as-a-judge in software engineering"
+  }
+}

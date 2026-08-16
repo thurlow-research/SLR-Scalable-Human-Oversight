@@ -1,0 +1,19 @@
+{
+  "key": "WBS9U5N7",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "built-system",
+    "agentic",
+    "risk-quality",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-review": "Studies LLM judge reliability and uses multi-agent adversarial evaluation.",
+    "rules-based-checks": "Uses deterministic adversarial code execution to ground the evaluation.",
+    "risk-quality": "Devotes focal analysis to specification gaming in generated tests."
+  }
+}

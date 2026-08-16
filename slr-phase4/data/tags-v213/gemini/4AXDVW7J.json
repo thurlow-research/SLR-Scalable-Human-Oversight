@@ -1,0 +1,23 @@
+{
+  "key": "4AXDVW7J",
+  "primary_theme": "provenance-auditability",
+  "themes": [
+    "provenance-auditability",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "lit-review",
+    "intro-framing",
+    "steering"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "provenance-auditability": "Reviews provenance tracking of AI prompts and context for human reviewability.",
+    "rules-based-checks": "Synthesizes evidence on integrating deterministic checks like linters and tests.",
+    "lit-review": "Built via a focused rapid review consolidating evidence from prior studies.",
+    "intro-framing": "Proposes a roadmap and capability model for ethical prompt engineering.",
+    "steering": "Focal contribution focuses heavily on prompt generation and context binding."
+  }
+}

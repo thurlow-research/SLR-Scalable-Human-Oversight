@@ -1,0 +1,1 @@
+{"key":"VTDG995V","primary_theme":"ai-review","themes":["ai-review"],"facets":["assistive","risk-quality"],"flags":["demote:context"],"rationale":{"ai-review":"Model self-reflection lacks producer independence; demoting as pure tool calibration benchmark."}}

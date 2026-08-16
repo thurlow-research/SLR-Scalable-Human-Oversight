@@ -1,0 +1,20 @@
+{
+  "key": "E5SQKRH7",
+  "primary_theme": "formal-methods",
+  "themes": [
+    "formal-methods",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "built-system",
+    "metrics",
+    "risk-quality",
+    "agentic"
+  ],
+  "rationale": {
+    "formal-methods": "uses symbolic execution to cluster semantically equivalent outputs",
+    "rules-based-checks": "applies deterministic symbolic execution to gate incorrect code",
+    "metrics": "defines symbolic cluster count metric for quality",
+    "risk-quality": "defines a metric for quality via functional correctness"
+  }
+}

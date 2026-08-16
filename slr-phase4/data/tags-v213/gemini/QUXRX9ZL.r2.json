@@ -1,0 +1,21 @@
+{
+  "key": "QUXRX9ZL",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow"
+  ],
+  "facets": [
+    "intro-framing",
+    "steering",
+    "risk-quality"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "hitl-workflow": "Proposes a structured human-in-the-loop workflow cycle for AI-assisted programming.",
+    "intro-framing": "Proposes a conceptual framework without operationalized mechanisms or empirical evaluation.",
+    "steering": "The framework relies heavily on prompt engineering and shaping AI generation.",
+    "risk-quality": "Addresses maintainability debt and code quality via the proposed refactor step."
+  }
+}

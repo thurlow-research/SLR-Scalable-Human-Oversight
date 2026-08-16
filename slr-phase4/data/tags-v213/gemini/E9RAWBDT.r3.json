@@ -1,0 +1,29 @@
+{
+  "key": "E9RAWBDT",
+  "primary_theme": "automation-bias",
+  "themes": [
+    "automation-bias",
+    "quality-debt",
+    "ai-review",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "agentic",
+    "method-self-report",
+    "method-mining",
+    "survey-input",
+    "steering",
+    "risk-security",
+    "risk-quality",
+    "risk-overreliance"
+  ],
+  "rationale": {
+    "automation-bias": "Documents over-reliance, skill erosion, and approving code without understanding.",
+    "quality-debt": "Documents empirical evidence of technical debt and unmaintainable code.",
+    "ai-review": "Documents practice of delegating code review back to AI.",
+    "rules-based-checks": "Documents practice of using tests to verify AI generated code.",
+    "risk-security": "Reports empirical findings of security vulnerabilities and plain text passwords.",
+    "risk-quality": "Reports empirical findings of technical debt and unmaintainable code.",
+    "risk-overreliance": "Reports empirical findings on skill erosion and over-trusting AI."
+  }
+}

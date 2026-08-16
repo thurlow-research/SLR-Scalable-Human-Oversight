@@ -1,0 +1,18 @@
+{
+  "key": "4PSM6ZCD",
+  "primary_theme": "ai-code-insecurity",
+  "themes": [
+    "ai-code-insecurity"
+  ],
+  "facets": [
+    "agentic",
+    "risk-security",
+    "method-experiment"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "ai-code-insecurity": "Empirical evidence of security vulnerabilities in agent-generated code on real-world tasks."
+  }
+}

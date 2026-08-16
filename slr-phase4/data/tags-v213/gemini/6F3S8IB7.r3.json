@@ -1,0 +1,26 @@
+{
+  "key": "6F3S8IB7",
+  "primary_theme": "risk-routing",
+  "themes": [
+    "risk-routing",
+    "hitl-workflow"
+  ],
+  "facets": [
+    "framework",
+    "design-only",
+    "assistive",
+    "agentic",
+    "risk-quality",
+    "risk-overreliance"
+  ],
+  "rationale": {
+    "risk-routing": "Delegation decision matrix and tier transition criteria allocate human validation effort.",
+    "hitl-workflow": "Specifies autonomy tiers and oversight checkpoints integrated into agile team workflows.",
+    "framework": "Proposes HAIF, a reusable protocol architecture for governing hybrid team operations.",
+    "design-only": "Specifies framework mechanics and thresholds without empirical evaluation on real data.",
+    "assistive": "Models human-driven work with AI support as its base autonomy tier.",
+    "agentic": "Models bounded autonomous AI agents producing deliverables requiring periodic human audit.",
+    "risk-quality": "Mitigates quality degradation through structured validation checklists and tier demotions.",
+    "risk-overreliance": "Mitigates skill erosion and dependency through mandatory human-only execution cycles."
+  }
+}

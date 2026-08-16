@@ -1,0 +1,19 @@
+{
+  "key": "QUXRX9ZL",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "provenance-auditability"
+  ],
+  "facets": [
+    "design-only",
+    "agentic",
+    "steering",
+    "risk-quality"
+  ],
+  "rationale": {
+    "hitl-workflow": "Proposes a human-in-the-loop checkpoint workflow for reviewing AI code.",
+    "provenance-auditability": "Introduces prompt naming conventions to create a traceable, auditable record.",
+    "risk-quality": "The Refactor stage specifically mitigates maintainability debt and poor readability."
+  }
+}

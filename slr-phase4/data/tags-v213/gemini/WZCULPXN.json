@@ -1,0 +1,16 @@
+{
+  "key": "WZCULPXN",
+  "primary_theme": "org-governance",
+  "themes": [
+    "org-governance"
+  ],
+  "facets": [
+    "intro-framing"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "org-governance": "Conceptual risk framework without operationalizable metrics or mechanisms."
+  }
+}

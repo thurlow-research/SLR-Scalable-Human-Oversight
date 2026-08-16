@@ -1,0 +1,20 @@
+{
+  "key": "X7EN6DXZ",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "tooling-supply-chain"
+  ],
+  "facets": [
+    "general-code",
+    "risk-security",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-review": "Studies reliability limits of AI reviewers under framing effects.",
+    "tooling-supply-chain": "Demonstrates adversarial attacks on the AI reviewer via PR metadata.",
+    "general-code": "Evaluates AI review on general open source pull requests.",
+    "risk-security": "Focuses on security vulnerability detection and bypass.",
+    "method-experiment": "Controlled experiments measuring model susceptibility to contextual bias."
+  }
+}

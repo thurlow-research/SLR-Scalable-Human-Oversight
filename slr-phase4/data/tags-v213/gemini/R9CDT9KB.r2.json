@@ -1,0 +1,22 @@
+{
+  "key": "R9CDT9KB",
+  "primary_theme": "risk-routing",
+  "themes": [
+    "risk-routing",
+    "ai-review"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "general-code",
+    "risk-security"
+  ],
+  "rationale": {
+    "risk-routing": "Routes findings to human review or automation using ensemble confidence.",
+    "ai-review": "Evaluates code for vulnerabilities and impact using an LLM ensemble.",
+    "framework": "Proposes a three-stage DevSecOps pipeline architecture for security triage.",
+    "built-system": "Implements and evaluates the confidence-propagating LLM pipeline.",
+    "general-code": "Targets general software vulnerabilities from CVEs and GitHub.",
+    "risk-security": "Focuses entirely on vulnerability detection and security triage."
+  }
+}

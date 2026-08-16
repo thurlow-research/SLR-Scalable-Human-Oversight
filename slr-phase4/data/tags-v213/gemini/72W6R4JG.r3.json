@@ -1,0 +1,1 @@
+{"key":"72W6R4JG","primary_theme":"rules-based-checks","themes":["rules-based-checks","formal-methods"],"facets":["built-system","non-developer","agentic"],"rationale":{"rules-based-checks":"deterministic verification using generic rules and temporal logic constraints","formal-methods":"uses temporal logic (FCL) to verify functional constraints over traces"}}

@@ -1,0 +1,25 @@
+{
+  "key": "ZH6QIU8A",
+  "primary_theme": "oversight-explanation",
+  "themes": [
+    "oversight-explanation",
+    "ai-review",
+    "rules-based-checks",
+    "automation-bias"
+  ],
+  "facets": [
+    "built-system",
+    "agentic",
+    "steering",
+    "risk-overreliance",
+    "risk-security",
+    "method-experiment",
+    "method-self-report"
+  ],
+  "rationale": {
+    "oversight-explanation": "Groups tests by decision to help users validate AI-generated code.",
+    "ai-review": "A planner agent uses an LLM to generate test suites.",
+    "rules-based-checks": "Automatically runs the generated test suites to verify the implementation.",
+    "automation-bias": "Study shows baseline users suffer complacency and miss implementation flaws."
+  }
+}

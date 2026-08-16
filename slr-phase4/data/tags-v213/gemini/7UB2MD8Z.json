@@ -1,0 +1,24 @@
+{
+  "key": "7UB2MD8Z",
+  "primary_theme": "oversight-explanation",
+  "themes": [
+    "oversight-explanation"
+  ],
+  "facets": [
+    "built-system",
+    "agentic",
+    "risk-quality",
+    "method-experiment",
+    "method-self-report",
+    "survey-input"
+  ],
+  "rationale": {
+    "oversight-explanation": "Provides an LLM reasoning trace to help developers review generated patches.",
+    "built-system": "Authors implemented and evaluated the AutoSD tool on real bugs.",
+    "agentic": "AI plans multi-step debugging to generate a patch for review.",
+    "risk-quality": "Evaluates developer accuracy in assessing the quality of proposed patches.",
+    "method-experiment": "Conducted a controlled human study on patch review tasks.",
+    "method-self-report": "Administered a questionnaire and interview on explanation satisfaction.",
+    "survey-input": "Substantive findings on developer preference for explanations in APR tools."
+  }
+}

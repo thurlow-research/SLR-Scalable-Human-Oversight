@@ -1,0 +1,23 @@
+{
+  "key": "XK3P9C96",
+  "primary_theme": "risk-routing",
+  "themes": [
+    "risk-routing",
+    "hitl-workflow"
+  ],
+  "facets": [
+    "built-system",
+    "agentic",
+    "general-ai",
+    "non-developer",
+    "method-experiment",
+    "method-self-report"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "risk-routing": "A DP algorithm computes optimal checkpoints to ask humans to confirm.",
+    "hitl-workflow": "Users interact at scheduled checkpoints to diagnose and correct agent errors."
+  }
+}

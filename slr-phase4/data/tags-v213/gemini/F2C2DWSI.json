@@ -1,0 +1,20 @@
+{
+  "key": "F2C2DWSI",
+  "primary_theme": "oversight-scaling-inversion",
+  "themes": [
+    "oversight-scaling-inversion",
+    "quality-debt"
+  ],
+  "facets": [
+    "assistive",
+    "counterpoint",
+    "method-mining",
+    "risk-quality"
+  ],
+  "rationale": {
+    "oversight-scaling-inversion": "Empirical evidence that AI increases review burden and decreases maintainer productivity.",
+    "quality-debt": "Empirical finding that AI adoption increases PR rework and technical debt.",
+    "counterpoint": "Argues against AI productivity maximalism by showing expert maintenance burdens increase.",
+    "risk-quality": "Reports an empirical result about technical debt and PR rework increases."
+  }
+}

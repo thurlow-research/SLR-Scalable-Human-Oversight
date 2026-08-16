@@ -1,0 +1,18 @@
+{
+  "key": "PD297DUM",
+  "primary_theme": "automation-bias",
+  "themes": [
+    "automation-bias"
+  ],
+  "facets": [
+    "survey-input",
+    "assistive",
+    "agentic",
+    "risk-security",
+    "risk-overreliance",
+    "method-self-report"
+  ],
+  "rationale": {
+    "automation-bias": "Studies developer skill erosion, overreliance risks, and behavior changes using GAI"
+  }
+}

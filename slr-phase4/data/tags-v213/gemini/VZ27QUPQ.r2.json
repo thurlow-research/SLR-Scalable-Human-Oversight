@@ -1,0 +1,17 @@
+{
+  "key": "VZ27QUPQ",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "built-system",
+    "assistive",
+    "risk-quality",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-review": "Dr.Fix uses LLM prompting to detect API misuses in generated code",
+    "risk-quality": "reports empirical results and evaluates a mitigation for API misuse"
+  }
+}

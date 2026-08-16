@@ -1,0 +1,19 @@
+{
+  "key": "F2C2DWSI",
+  "primary_theme": "oversight-scaling-inversion",
+  "themes": [
+    "oversight-scaling-inversion",
+    "quality-debt"
+  ],
+  "facets": [
+    "problem-statement-anchor",
+    "assistive",
+    "risk-quality",
+    "method-mining"
+  ],
+  "rationale": {
+    "oversight-scaling-inversion": "empirical evidence that AI maintenance burden piles onto experienced developers",
+    "quality-debt": "reports empirical increase in PR rework indicating technical debt accumulation",
+    "risk-quality": "reports an empirical result about it"
+  }
+}

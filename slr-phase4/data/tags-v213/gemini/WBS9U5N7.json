@@ -1,0 +1,22 @@
+{
+  "key": "WBS9U5N7",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "built-system",
+    "agentic",
+    "method-experiment",
+    "risk-quality"
+  ],
+  "rationale": {
+    "ai-review": "Tests LLM judge limits and uses multi-agent adversarial review committee.",
+    "rules-based-checks": "Committee generates and executes Python counter-tests to validate the claims.",
+    "built-system": "Authors built and ran the ZTARE adversarial evaluation workbench.",
+    "agentic": "The mutator generates complete code-backed theses for evaluation.",
+    "risk-quality": "Analyzes specification gaming and test validation failures in generated code.",
+    "method-experiment": "Controlled experiments evaluate frontier LLM judges on detecting the gaming."
+  }
+}

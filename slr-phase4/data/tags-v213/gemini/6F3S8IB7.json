@@ -1,0 +1,24 @@
+{
+  "key": "6F3S8IB7",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow"
+  ],
+  "facets": [
+    "framework",
+    "design-only",
+    "assistive",
+    "agentic",
+    "risk-overreliance",
+    "risk-quality"
+  ],
+  "rationale": {
+    "hitl-workflow": "Defines tiered human control surfaces, reviews, and bounds for AI tasks.",
+    "framework": "Integrates hybrid team AI validation protocols directly into Agile workflows.",
+    "design-only": "Specifies the HAIF protocol and tiers but lacks empirical field evaluation.",
+    "assistive": "Tier 1 models AI supporting human execution at the assistive level.",
+    "agentic": "Tiers 2-4 model AI producing complete artifacts requiring human gating.",
+    "risk-overreliance": "Mandates human-only cycles to actively maintain competence and prevent skill atrophy.",
+    "risk-quality": "Provides specific validation protocols and checklists for verifying output correctness."
+  }
+}

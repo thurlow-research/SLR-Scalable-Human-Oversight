@@ -1,0 +1,17 @@
+{
+  "key": "VZ27QUPQ",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "built-system",
+    "assistive",
+    "risk-quality",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-review": "LLM pipeline detects and repairs API misuses in generated code",
+    "risk-quality": "contributes and evaluates a mitigation for API misuse defects"
+  }
+}

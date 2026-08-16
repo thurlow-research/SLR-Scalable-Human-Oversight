@@ -1,0 +1,24 @@
+{
+  "key": "34ELRWJH",
+  "primary_theme": "regulatory-compliance",
+  "themes": [
+    "regulatory-compliance",
+    "oversight-scaling-inversion",
+    "ai-review"
+  ],
+  "facets": [
+    "intro-framing",
+    "non-developer",
+    "agentic",
+    "risk-security",
+    "risk-ip"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "regulatory-compliance": "Analyzes legal liabilities and regulatory compliance (GDPR, CCPA) in vibe coding.",
+    "oversight-scaling-inversion": "Argues rapid AI development velocity outpaces traditional legal review capacity.",
+    "ai-review": "Proposes LLM prompts to inspect code for privacy and licensing compliance."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "key": "NZJST99D",
+  "primary_theme": "oversight-scaling-inversion",
+  "themes": [
+    "oversight-scaling-inversion",
+    "quality-debt"
+  ],
+  "facets": [
+    "problem-statement-anchor",
+    "agentic",
+    "risk-quality",
+    "method-mining"
+  ],
+  "rationale": {
+    "oversight-scaling-inversion": "Quantifies reviewer abandonment and the review burden of agentic PRs.",
+    "quality-debt": "Quantifies CI failures and code quality issues in agentic PRs."
+  }
+}

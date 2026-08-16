@@ -1,0 +1,28 @@
+{
+  "key": "7SH86C2W",
+  "primary_theme": "rules-based-checks",
+  "themes": [
+    "rules-based-checks",
+    "agent-scope-drift"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "agentic",
+    "steering",
+    "risk-quality",
+    "method-experiment",
+    "counterpoint"
+  ],
+  "rationale": {
+    "rules-based-checks": "Uses Robot Framework tests to deterministically validate agent PRs",
+    "agent-scope-drift": "Executable requirements detect and bound agent architectural drift",
+    "framework": "Proposes Shift-Up reference architecture for GenAI-native development",
+    "built-system": "Implemented the workflow to develop a snack-bar web application",
+    "agentic": "Agents generate full code PRs evaluated by acceptance tests",
+    "steering": "Uses C4 and ADR artifacts as context to guide generation",
+    "risk-quality": "Mitigates reduced maintainability and architectural drift in AI-generated code",
+    "method-experiment": "Controlled comparison of three development paradigms on a web app",
+    "counterpoint": "Argues against vibe coding abandoning traditional software engineering artifacts"
+  }
+}

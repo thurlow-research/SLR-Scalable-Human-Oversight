@@ -1,0 +1,23 @@
+{
+  "key": "TW4I6DU6",
+  "primary_theme": "regulatory-compliance",
+  "themes": [
+    "regulatory-compliance",
+    "hitl-workflow"
+  ],
+  "facets": [
+    "intro-framing",
+    "general-ai",
+    "non-developer"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "regulatory-compliance": "Analyzes EU AI Act Article 14 for human oversight effectiveness.",
+    "hitl-workflow": "Conceptualizes the human's control surface and constraints for effective oversight.",
+    "intro-framing": "Defines effective oversight conceptually without operationalizing a specific technical mechanism.",
+    "general-ai": "Focuses on general AI systems rather than coding-specific AI.",
+    "non-developer": "Discusses oversight by non-developers like HR managers and factory workers."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "key": "KF5MGIBI",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "built-system",
+    "general-code",
+    "risk-quality"
+  ],
+  "rationale": {
+    "ai-review": "Fine-tunes LLMs to automatically detect code issues and generate review comments.",
+    "oversight-explanation": "Generates structured explanations for AI-detected issues to assist human verification.",
+    "risk-quality": "Evaluates a mitigation for detecting and repairing code quality issues."
+  }
+}

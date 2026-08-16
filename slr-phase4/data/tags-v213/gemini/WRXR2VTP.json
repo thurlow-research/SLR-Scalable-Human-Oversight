@@ -1,0 +1,20 @@
+{
+  "key": "WRXR2VTP",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "framework",
+    "design-only",
+    "intro-framing",
+    "agentic",
+    "steering",
+    "risk-quality"
+  ],
+  "rationale": {
+    "hitl-workflow": "Developers manually validate AI-generated task contracts as a checkpoint before code generation.",
+    "rules-based-checks": "Uses the validated contracts to systematically guide targeted testing and runtime verification."
+  }
+}

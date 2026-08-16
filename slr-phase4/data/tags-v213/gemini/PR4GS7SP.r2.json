@@ -1,0 +1,16 @@
+{
+  "key": "PR4GS7SP",
+  "primary_theme": "rules-based-checks",
+  "themes": [
+    "rules-based-checks",
+    "formal-methods"
+  ],
+  "facets": [
+    "built-system",
+    "assistive"
+  ],
+  "rationale": {
+    "rules-based-checks": "Uses deterministic symbolic execution to check correctness of generated code.",
+    "formal-methods": "Leverages symbolic execution to assess semantic equivalence against a reference."
+  }
+}

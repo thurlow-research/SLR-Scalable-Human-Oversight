@@ -1,0 +1,36 @@
+{
+  "key": "RX9SICP9",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "ai-review"
+  ],
+  "facets": [
+    "problem-statement-anchor",
+    "counterpoint",
+    "framework",
+    "built-system",
+    "adopted",
+    "agentic",
+    "steering",
+    "risk-security",
+    "risk-quality",
+    "risk-overreliance",
+    "method-field-study"
+  ],
+  "rationale": {
+    "hitl-workflow": "Structures development through explicit human approval gates and predefined checkpoints.",
+    "ai-review": "AI attacks architectural artifacts using specialized lenses in an adversarial role.",
+    "problem-statement-anchor": "Palmer and METR statistics anchor the core verification gap problem.",
+    "counterpoint": "Argues against vibe coding and direct prompting as structurally flawed.",
+    "framework": "Contributes an 8-phase reference architecture with defined gates and artifacts.",
+    "built-system": "Implemented as VSCode extensions (Versus Claude and Versus Copilot).",
+    "adopted": "Deployed across 20+ operational projects in an industrial R&D institution.",
+    "agentic": "Oversees AI generating complete architecture modules and implementation code.",
+    "steering": "Problem discovery and specs repository explicitly shape and constrain inputs.",
+    "risk-security": "Defines a universal security lens to systematically analyze attack surfaces.",
+    "risk-quality": "Mitigates tech debt via simplification phase and architectural coupling lenses.",
+    "risk-overreliance": "Combats sycophancy and fluency bias via teach-back and adversarial refutation.",
+    "method-field-study": "Validated through application in 20+ real projects in production environment."
+  }
+}

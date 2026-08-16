@@ -1,0 +1,19 @@
+{
+  "key": "CTGGMIX9",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "general-code",
+    "risk-quality",
+    "method-field-study",
+    "method-self-report"
+  ],
+  "rationale": {
+    "ai-review": "Proposes a dual-pathway LLM framework to judge code artifacts.",
+    "risk-quality": "Contributes a mitigation for the software quality assurance gap."
+  }
+}

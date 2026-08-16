@@ -1,0 +1,24 @@
+{
+  "key": "XZEHQYNZ",
+  "primary_theme": "regulatory-compliance",
+  "themes": [
+    "regulatory-compliance",
+    "hitl-workflow",
+    "org-governance",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "intro-framing",
+    "lit-review",
+    "agentic"
+  ],
+  "rationale": {
+    "regulatory-compliance": "Frames human oversight requirements through EU AI Act mandates.",
+    "hitl-workflow": "Focuses on designing human-in-the-loop control architectures.",
+    "org-governance": "Explores accountability, audit trails, and governance-by-design.",
+    "oversight-explanation": "Addresses AI interpretability and explainability for developers.",
+    "intro-framing": "Sets a research agenda and roadmap without operationalizing.",
+    "lit-review": "Synthesizes challenges via a multivocal literature review.",
+    "agentic": "Focuses specifically on oversight for Agentic AI systems."
+  }
+}

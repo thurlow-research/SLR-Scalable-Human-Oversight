@@ -1,0 +1,19 @@
+{
+  "key": "BU73N7PC",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "risk-routing"
+  ],
+  "facets": [
+    "built-system",
+    "general-code",
+    "risk-quality",
+    "method-mining"
+  ],
+  "rationale": {
+    "ai-review": "fine-tuned LLMs judge diffs to predict SEV risk scores",
+    "risk-routing": "uses risk score thresholds to gate diffs for human review",
+    "risk-quality": "evaluates mitigation of severe quality faults (SEVs)"
+  }
+}

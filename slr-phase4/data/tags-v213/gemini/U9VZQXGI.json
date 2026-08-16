@@ -1,0 +1,28 @@
+{
+  "key": "U9VZQXGI",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "risk-routing",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "built-system",
+    "general-ai",
+    "non-developer",
+    "agentic",
+    "steering",
+    "risk-security",
+    "method-experiment",
+    "method-self-report"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "hitl-workflow": "Proposes action guards, co-tasking, and approval gates for human intervention.",
+    "risk-routing": "ActionGuard LLM judge computes whether an action requires human approval.",
+    "oversight-explanation": "UI provides collapsible action histories and live browser views for monitoring.",
+    "risk-security": "Evaluates a mitigation for security risks like prompt injections and exfiltration."
+  }
+}

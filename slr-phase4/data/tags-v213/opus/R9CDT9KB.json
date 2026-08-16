@@ -1,0 +1,1 @@
+{"key":"R9CDT9KB","primary_theme":"risk-routing","themes":["risk-routing","ai-review"],"facets":["framework","built-system","general-code","risk-security"],"rationale":{"risk-routing":"trust-score thresholds tier findings to auto-gate vs human review","ai-review":"multi-LLM ensemble probabilistically judges code for vulnerabilities"}}

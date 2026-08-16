@@ -1,0 +1,19 @@
+{
+  "key": "8KJEKBGT",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "general-code",
+    "risk-security",
+    "risk-quality",
+    "method-experiment"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "ai-review": "Evaluates third-party LLMs' ability to review code for vulnerabilities and correctness."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "key": "V4IRKSFI",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "adopted",
+    "general-code",
+    "metrics",
+    "risk-security",
+    "risk-quality",
+    "method-field-study",
+    "method-self-report",
+    "method-mining"
+  ],
+  "rationale": {
+    "ai-review": "Proposes BitsAI-CR, an LLM-based automated code reviewer",
+    "framework": "Contributes the two-stage BitsAI-CR pipeline architecture",
+    "built-system": "Implemented as a working prototype and system",
+    "adopted": "Deployed in ByteDance production serving 12000 WAU",
+    "general-code": "Oversight targets general code rather than AI-generated code",
+    "metrics": "Defines Outdated Rate to measure quality and oversight effectiveness",
+    "risk-security": "Mitigates security risks via specific vulnerability review rules",
+    "risk-quality": "Mitigates quality risks via specific code review rules",
+    "method-field-study": "Evaluated in a real-world ByteDance deployment",
+    "method-self-report": "Conducted quantitative surveys and structured expert interviews",
+    "method-mining": "Mined internal repositories for MR comments and commits"
+  }
+}

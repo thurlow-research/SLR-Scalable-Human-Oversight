@@ -1,0 +1,27 @@
+{
+  "key": "EB49Q8QM",
+  "primary_theme": "automation-bias",
+  "themes": [
+    "automation-bias",
+    "org-governance"
+  ],
+  "facets": [
+    "lit-review",
+    "intro-framing",
+    "counterpoint",
+    "risk-overreliance",
+    "risk-security"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "automation-bias": "Analyzes human over-reliance and skill degradation when using automated SOC systems.",
+    "org-governance": "Proposes organizational policies and training to govern the adoption of automation.",
+    "lit-review": "Synthesizes secondary literature to construct a conceptual model of automation bias.",
+    "intro-framing": "Defines the automation bias problem and proposes conceptual framework without operationalizing.",
+    "counterpoint": "Argues against automation-maximalism, advocating instead for preserving human-in-the-loop oversight.",
+    "risk-overreliance": "Devotes focal analysis to the harm of human complacency and over-reliance.",
+    "risk-security": "Analyzes real-world security breaches caused by automation complacency in SOCs."
+  }
+}

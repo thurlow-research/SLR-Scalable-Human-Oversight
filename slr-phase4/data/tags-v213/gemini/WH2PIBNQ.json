@@ -1,0 +1,29 @@
+{
+  "key": "WH2PIBNQ",
+  "primary_theme": "org-governance",
+  "themes": [
+    "org-governance",
+    "risk-routing",
+    "provenance-auditability"
+  ],
+  "facets": [
+    "intro-framing",
+    "agentic",
+    "risk-security",
+    "risk-quality",
+    "risk-overreliance"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "org-governance": "Proposes org-level governance, policies, and accountability for vibe coding.",
+    "risk-routing": "Advocates risk-tiered autonomy routing based on task risk level.",
+    "provenance-auditability": "Emphasizes prompt versioning and audit trails for traceability.",
+    "intro-framing": "Position paper defining vibe coding and proposing a research agenda.",
+    "agentic": "Studies vibe coding which generates complete artifacts via AI orchestration.",
+    "risk-security": "Devotes focal analysis to security pitfalls and insecure defaults.",
+    "risk-quality": "Analyzes maintainability pitfalls, specification drift, and explanatory debt.",
+    "risk-overreliance": "Discusses cognitive dynamics, verification drift, and illusion of alignment."
+  }
+}

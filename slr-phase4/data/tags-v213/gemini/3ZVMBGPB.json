@@ -1,0 +1,30 @@
+{
+  "key": "3ZVMBGPB",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "rules-based-checks",
+    "hitl-workflow",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "framework",
+    "design-only",
+    "agentic",
+    "risk-security",
+    "risk-quality",
+    "risk-overreliance"
+  ],
+  "rationale": {
+    "ai-review": "Proposes a multi-agent framework to autonomously review pull requests.",
+    "rules-based-checks": "Runtime Analysis Agent executes PR code in a sandbox for deterministic checks.",
+    "hitl-workflow": "Defines explicit human-in-the-loop quality gates and mandatory approval checkpoints.",
+    "oversight-explanation": "Features explanation agents and visual diff-maps to aid human comprehension.",
+    "framework": "Contributes a reference architecture integrating AI agents into build pipelines.",
+    "design-only": "Specifies the agent architecture in buildable detail without running it.",
+    "agentic": "Assesses oversight of AI-accelerated code delivered at pull request granularity.",
+    "risk-security": "Substantive treatment of the harm via focal analysis of injected vulnerabilities.",
+    "risk-quality": "Substantive treatment of the harm by analyzing defect and regression detection.",
+    "risk-overreliance": "Substantive treatment of the harm via a focal section on automation bias."
+  }
+}

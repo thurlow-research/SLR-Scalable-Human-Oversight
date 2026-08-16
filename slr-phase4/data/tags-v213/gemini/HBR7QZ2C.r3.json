@@ -1,0 +1,34 @@
+{
+  "key": "HBR7QZ2C",
+  "primary_theme": "rules-based-checks",
+  "themes": [
+    "rules-based-checks",
+    "ai-review",
+    "risk-routing",
+    "provenance-auditability",
+    "regulatory-compliance"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "agentic",
+    "general-ai",
+    "metrics",
+    "method-experiment",
+    "risk-security",
+    "risk-ip"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "rules-based-checks": "OPA policy-as-code evaluates deterministic rules over agent actions",
+    "ai-review": "evaluates agent actions using multiple AI safety classifiers",
+    "risk-routing": "escalates actions for human review based on risk thresholds",
+    "provenance-auditability": "records tamper-evident audit events for all enforcement decisions",
+    "regulatory-compliance": "designs enforcement to meet EU AI Act and ISO 42001",
+    "metrics": "defines composite risk scores for security and compliance",
+    "risk-security": "contributes a mitigation for it via prompt injection detectors",
+    "risk-ip": "contributes a mitigation for it via data exfiltration policies"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "key": "4T5QFWZE",
+  "primary_theme": "quality-debt",
+  "themes": [
+    "quality-debt",
+    "automation-bias"
+  ],
+  "facets": [
+    "agentic",
+    "metrics",
+    "risk-quality",
+    "risk-overreliance",
+    "method-mining"
+  ],
+  "rationale": {
+    "quality-debt": "Evaluates AI code redundancy and resulting silent technical debt",
+    "automation-bias": "Reviewers fail to notice redundancy due to surface-level plausibility",
+    "metrics": "Defines Max Redundancy Score metric for quality",
+    "risk-quality": "Reports an empirical result about it",
+    "risk-overreliance": "Reports an empirical result about it"
+  }
+}

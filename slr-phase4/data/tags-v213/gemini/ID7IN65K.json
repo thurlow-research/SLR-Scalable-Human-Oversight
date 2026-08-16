@@ -1,0 +1,42 @@
+{
+  "key": "ID7IN65K",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "oversight-scaling-inversion",
+    "oversight-explanation",
+    "provenance-auditability",
+    "ai-review",
+    "rules-based-checks",
+    "quality-debt",
+    "regulatory-compliance"
+  ],
+  "facets": [
+    "survey-input",
+    "intro-framing",
+    "counterpoint",
+    "method-self-report",
+    "risk-quality",
+    "risk-security",
+    "assistive",
+    "agentic"
+  ],
+  "rationale": {
+    "hitl-workflow": "Coins bounded delegation pattern to preserve human craft via explicit authority scoping.",
+    "oversight-scaling-inversion": "Highlights the right-shift problem where verification bottlenecks accelerating AI code generation.",
+    "oversight-explanation": "Demands uncertainty signaling and inline explanations as core guardrails for AI outputs.",
+    "provenance-auditability": "Proposes decision context systems and persistent provenance records for human reviewability.",
+    "ai-review": "Reports empirical demand for context-aware AI pull request review assistants.",
+    "rules-based-checks": "Reports empirical demand for change-aware AI test generation and quality gates.",
+    "quality-debt": "Identifies the accumulation of AI-induced technical debt from the right-shift problem.",
+    "regulatory-compliance": "Reports empirical demand for compiling audit evidence and interpreting policy requirements.",
+    "survey-input": "Survey of 860 developers details desired AI tools and workflow constraints.",
+    "intro-framing": "Sets a design agenda for 22 AI systems based on developer needs.",
+    "counterpoint": "Argues against automation-first approaches, advocating for bounded delegation instead.",
+    "method-self-report": "Analyzed open-ended responses from a survey of 860 Microsoft developers.",
+    "risk-quality": "Reports empirical result: developers demand proactive regression warnings and quality gates.",
+    "risk-security": "Reports empirical result: developers demand pre-merge security advisors with patch suggestions.",
+    "assistive": "Proposes assistive tools like drafting workbenches and interactive exploration boards.",
+    "agentic": "Proposes agentic tools like autonomous test generation and PR review assistants."
+  }
+}

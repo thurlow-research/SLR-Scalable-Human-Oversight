@@ -1,0 +1,20 @@
+{
+  "key": "YA7XNWYE",
+  "primary_theme": "ai-code-insecurity",
+  "themes": [
+    "ai-code-insecurity"
+  ],
+  "facets": [
+    "intro-framing",
+    "assistive",
+    "risk-security",
+    "method-experiment"
+  ],
+  "rationale": {
+    "ai-code-insecurity": "Empirical study showing five third-party LLMs generate insecure code containing CWEs.",
+    "intro-framing": "Issue brief naming policy and security gaps without operationalizing a mechanism.",
+    "assistive": "Evaluates models generating snippet-level code in response to user prompts.",
+    "risk-security": "Provides focal empirical evaluation of security vulnerabilities in AI-generated code.",
+    "method-experiment": "Controlled study characterizing third-party models using a security prompt dataset."
+  }
+}

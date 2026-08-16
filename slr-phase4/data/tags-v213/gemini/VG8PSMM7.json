@@ -1,0 +1,24 @@
+{
+  "key": "VG8PSMM7",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "hitl-workflow",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "expert-validated",
+    "agentic",
+    "steering",
+    "risk-quality"
+  ],
+  "rationale": {
+    "ai-review": "Evaluates generated PLC code semantically using an independent LLM rater.",
+    "hitl-workflow": "Requires human expert review via structured checklist as final acceptance gate.",
+    "rules-based-checks": "Validates logic using IDE compilation and truth-table property tests.",
+    "risk-quality": "Reports empirical results on code readability, modularity, and correctness.",
+    "steering": "Benchmarking 21 generation prompting techniques is a substantive contribution."
+  }
+}

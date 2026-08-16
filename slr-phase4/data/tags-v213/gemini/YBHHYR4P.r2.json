@@ -1,0 +1,18 @@
+{
+  "key": "YBHHYR4P",
+  "primary_theme": "automation-bias",
+  "themes": [
+    "automation-bias",
+    "ai-code-insecurity"
+  ],
+  "facets": [
+    "assistive",
+    "risk-security",
+    "risk-overreliance",
+    "method-experiment"
+  ],
+  "rationale": {
+    "automation-bias": "users over-trusted AI and believed their insecure code was secure",
+    "ai-code-insecurity": "empirical study finding AI-assisted users produced significantly less secure code"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "key": "KF5MGIBI",
+  "primary_theme": "oversight-explanation",
+  "themes": [
+    "ai-review",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "built-system",
+    "general-code",
+    "risk-quality"
+  ],
+  "rationale": {
+    "ai-review": "Proposes an LLM-based system to automatically review and detect code issues.",
+    "oversight-explanation": "Distinctive novelty is making AI review comments comprehensible to human reviewers.",
+    "built-system": "Authors implemented and evaluated the Carllm prototype.",
+    "general-code": "Targets general human-written pull requests, not AI-generated code.",
+    "risk-quality": "Evaluates a mitigation (automated code review) for software quality issues."
+  }
+}

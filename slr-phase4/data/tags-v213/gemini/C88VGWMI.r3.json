@@ -1,0 +1,23 @@
+{
+  "key": "C88VGWMI",
+  "primary_theme": "provenance-auditability",
+  "themes": [
+    "provenance-auditability",
+    "regulatory-compliance"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "agentic",
+    "steering",
+    "risk-security",
+    "method-experiment"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "provenance-auditability": "Creates traceability matrix mapping constitutional security principles to generated code locations.",
+    "regulatory-compliance": "Generates audit evidence addressing strict regulatory frameworks like PCI-DSS and GDPR."
+  }
+}

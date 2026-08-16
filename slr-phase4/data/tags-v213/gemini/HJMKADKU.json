@@ -1,0 +1,20 @@
+{
+  "key": "HJMKADKU",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "built-system",
+    "general-code",
+    "risk-security",
+    "method-self-report"
+  ],
+  "rationale": {
+    "ai-review": "LLMs analyze GitHub pull requests to detect security vulnerabilities.",
+    "built-system": "Implemented the Bugdar system as a GitHub app.",
+    "general-code": "Reviews standard pull requests, not AI-generated code.",
+    "risk-security": "Contributes and evaluates an AI mitigation for security vulnerabilities.",
+    "method-self-report": "Conducted preliminary user studies with developers on usability."
+  }
+}

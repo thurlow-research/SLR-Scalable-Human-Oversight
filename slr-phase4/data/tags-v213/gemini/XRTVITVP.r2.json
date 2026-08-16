@@ -1,0 +1,21 @@
+{
+  "key": "XRTVITVP",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "agentic",
+    "steering",
+    "non-developer",
+    "method-experiment"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "hitl-workflow": "Interactive human questioning to shape generation intent."
+  }
+}

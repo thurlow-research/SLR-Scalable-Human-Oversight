@@ -1,0 +1,18 @@
+{
+  "key": "RNDPW7VA",
+  "primary_theme": "oversight-explanation",
+  "themes": [
+    "oversight-explanation"
+  ],
+  "facets": [
+    "general-ai",
+    "method-experiment",
+    "non-developer"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "oversight-explanation": "Tests AI chat as a support tool for humans evaluating complex tasks."
+  }
+}

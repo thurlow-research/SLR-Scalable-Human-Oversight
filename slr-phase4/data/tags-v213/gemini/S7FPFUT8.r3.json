@@ -1,0 +1,29 @@
+{
+  "key": "S7FPFUT8",
+  "primary_theme": "provenance-auditability",
+  "themes": [
+    "provenance-auditability",
+    "org-governance"
+  ],
+  "facets": [
+    "intro-framing",
+    "general-ai",
+    "non-developer",
+    "agentic",
+    "risk-security",
+    "risk-overreliance"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "provenance-auditability": "Proposes agent identifiers and activity logging for traceability and forensic accountability.",
+    "org-governance": "Discusses oversight structures and real-time monitoring by deployers and service providers.",
+    "intro-framing": "Names visibility gaps and outlines potential measures without operationalizing a mechanism.",
+    "general-ai": "Focuses on general AI agents across societal contexts, not software engineering.",
+    "non-developer": "Discusses delegation of commercial and personal activities by general users.",
+    "agentic": "Examines systems acting directly in the world to achieve long-horizon goals.",
+    "risk-security": "Provides focal analysis on malicious use and harmful capabilities of agents.",
+    "risk-overreliance": "Provides focal analysis on human overreliance and collective dependence on agents."
+  }
+}

@@ -1,0 +1,1 @@
+{"key":"JQPPKSFQ","primary_theme":"oversight-scaling-inversion","themes":["oversight-scaling-inversion"],"facets":["agentic","method-mining"],"rationale":{"oversight-scaling-inversion":"Empirically studies unreviewed auto-merging of agentic PRs driven by review bottlenecks.","agentic":"Analyzes AI-generated pull requests.","method-mining":"Mines the AIDev GitHub PR dataset."}}

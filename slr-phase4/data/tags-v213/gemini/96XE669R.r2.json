@@ -1,0 +1,24 @@
+{
+  "key": "96XE669R",
+  "primary_theme": "rules-based-checks",
+  "themes": [
+    "rules-based-checks",
+    "quality-debt"
+  ],
+  "facets": [
+    "built-system",
+    "assistive",
+    "metrics",
+    "risk-quality",
+    "method-experiment"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "rules-based-checks": "Uses deterministic linters and AST analysis to verify coding instructions.",
+    "quality-debt": "Instructions target non-functional code quality, style, and logic patterns.",
+    "metrics": "Defines IF score measuring quality (coding style and logic patterns).",
+    "risk-quality": "Defines metric and reports results for non-functional code quality."
+  }
+}

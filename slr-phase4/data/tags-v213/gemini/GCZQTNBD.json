@@ -1,0 +1,17 @@
+{
+  "key": "GCZQTNBD",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "agentic"
+  ],
+  "rationale": {
+    "ai-review": "Evaluates an LLM-as-a-judge for validating AI-generated compiler test files.",
+    "rules-based-checks": "Validation pipeline uses deterministic compilation and execution to filter invalid tests."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "key": "DJHG9BBS",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "built-system",
+    "general-code",
+    "risk-quality"
+  ],
+  "rationale": {
+    "ai-review": "Proposes LLM agents to autonomously review code and identify bugs",
+    "built-system": "Authors implemented the multi-agent system and ran initial tests",
+    "general-code": "Oversight mechanism targets code generally rather than AI-generated code",
+    "risk-quality": "Mitigates code smells and potential bugs to improve code quality"
+  }
+}

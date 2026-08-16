@@ -1,0 +1,18 @@
+{
+  "key": "T3XTXIXW",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review"
+  ],
+  "facets": [
+    "built-system",
+    "general-code",
+    "risk-security",
+    "counterpoint"
+  ],
+  "rationale": {
+    "ai-review": "exposes reliability limits of CoT LLM detectors against adversarial obfuscation",
+    "counterpoint": "argues against assumed robustness of CoT LLM security detectors",
+    "risk-security": "reports an empirical result about security vulnerabilities"
+  }
+}

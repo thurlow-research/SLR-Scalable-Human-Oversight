@@ -1,0 +1,22 @@
+{
+  "key": "BU73N7PC",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "risk-routing"
+  ],
+  "facets": [
+    "built-system",
+    "adopted",
+    "general-code",
+    "risk-quality"
+  ],
+  "rationale": {
+    "ai-review": "Generative LLM evaluates code diffs to predict severe fault risk.",
+    "risk-routing": "Uses predicted risk scores to gate diffs at thresholds for review.",
+    "built-system": "Authors trained and evaluated iDiffLlama models on diff data.",
+    "adopted": "Baseline logistic regression risk model is deployed in Meta's production.",
+    "general-code": "Predicts risk for all code diffs, not just AI-generated code.",
+    "risk-quality": "Mitigates quality risk by predicting severe faults (SEVs)."
+  }
+}

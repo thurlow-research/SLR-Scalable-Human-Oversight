@@ -1,0 +1,26 @@
+{
+  "key": "5RLPIA3K",
+  "primary_theme": "regulatory-compliance",
+  "themes": [
+    "regulatory-compliance",
+    "oversight-explanation",
+    "hitl-workflow",
+    "risk-routing"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "general-ai",
+    "risk-overreliance",
+    "risk-bias"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "regulatory-compliance": "Proposes a reference architecture specifically for EU AI Act Article 14 compliance.",
+    "oversight-explanation": "Displays full multi-agent debate to explain the AI's reasoning to humans.",
+    "hitl-workflow": "UI gates decision buttons until human reviews all agent debate outputs.",
+    "risk-routing": "Automatically escalates evaluations with bias risks or low confidence to priority review."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "key": "HBR7QZ2C",
+  "primary_theme": "risk-routing",
+  "themes": [
+    "risk-routing",
+    "regulatory-compliance",
+    "provenance-auditability"
+  ],
+  "facets": [
+    "framework",
+    "built-system",
+    "agentic",
+    "general-ai",
+    "metrics",
+    "risk-security"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "risk-routing": "Engine evaluates composite risk scores to escalate actions for human review.",
+    "regulatory-compliance": "Maps policy enforcement to EU AI Act, NIST RMF, and ISO 42001.",
+    "provenance-auditability": "Generates immutable audit logs of all terminal enforcement states for post-hoc analysis.",
+    "metrics": "Defines a composite scoring function to measure security and compliance.",
+    "risk-security": "Devotes focal analysis to threat models involving prompt injection and tool misuse."
+  }
+}

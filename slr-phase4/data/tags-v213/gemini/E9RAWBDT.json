@@ -1,0 +1,38 @@
+{
+  "key": "E9RAWBDT",
+  "primary_theme": "automation-bias",
+  "themes": [
+    "automation-bias",
+    "oversight-scaling-inversion",
+    "quality-debt",
+    "ai-review",
+    "rules-based-checks",
+    "provenance-auditability"
+  ],
+  "facets": [
+    "survey-input",
+    "agentic",
+    "steering",
+    "risk-security",
+    "risk-quality",
+    "risk-overreliance",
+    "method-mining",
+    "method-self-report"
+  ],
+  "rationale": {
+    "automation-bias": "Studies how trust and flow lead developers to approve unread code.",
+    "oversight-scaling-inversion": "Documents how large AI codebases make manual review tedious and unscalable.",
+    "quality-debt": "Empirical reports of vibe coding causing technical debt and unmaintainable code.",
+    "ai-review": "Documents practitioners asking AI models to review and audit generated code.",
+    "rules-based-checks": "Documents practitioners writing or generating tests to verify AI outputs.",
+    "provenance-auditability": "Documents practitioners asking AI to log its changes for version control.",
+    "survey-input": "Substantive empirical findings on developer adoption, preferences, and pain points.",
+    "agentic": "Vibe coding involves conversational generation at the PR or artifact level.",
+    "steering": "Documents practitioners using persona prompts and context rules to guide generation.",
+    "risk-security": "Reports an empirical result about it: users generated plain-text passwords.",
+    "risk-quality": "Reports an empirical result about it: users experienced severe technical debt.",
+    "risk-overreliance": "Reports an empirical result about it: users reported addiction and over-reliance.",
+    "method-mining": "Analyzed 134 Reddit and LinkedIn posts and over 5,000 comments.",
+    "method-self-report": "Conducted 11 semi-structured developer interviews about their experiences."
+  }
+}

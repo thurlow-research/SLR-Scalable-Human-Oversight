@@ -1,0 +1,26 @@
+{
+  "key": "VFNJSZD9",
+  "primary_theme": "ai-code-insecurity",
+  "themes": [
+    "ai-code-insecurity",
+    "ai-review",
+    "rules-based-checks",
+    "provenance-auditability",
+    "org-governance"
+  ],
+  "facets": [
+    "framework",
+    "design-only",
+    "agentic",
+    "metrics",
+    "risk-security"
+  ],
+  "rationale": {
+    "ai-code-insecurity": "Contributes the AVT, an original vulnerability taxonomy for agentic coding systems.",
+    "ai-review": "UAST architecture uses an LLM auditor and LLM-assisted semantic analysis.",
+    "rules-based-checks": "UAST includes dynamic analysis by executing dependencies in isolated sandboxes.",
+    "provenance-auditability": "PCV layer verifies code provenance and reasoning traces for human forensics.",
+    "org-governance": "CGI layer integrates risk signals into organizational GRC platforms and dashboards.",
+    "metrics": "ARSM defines an organizational risk metric for security in agentic pipelines."
+  }
+}

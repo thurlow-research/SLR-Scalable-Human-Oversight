@@ -1,0 +1,1 @@
+{"key":"B7APR28B","primary_theme":"ai-review","themes":["ai-review","rules-based-checks"],"facets":["built-system","agentic","risk-quality"],"rationale":{"ai-review":"Evaluates LLM judges and empirically exposes unstable code-quality assessments.","rules-based-checks":"Uses unit tests as guardrails and analyzes their scalability limitations."}}

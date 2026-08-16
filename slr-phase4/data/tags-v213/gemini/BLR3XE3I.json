@@ -1,0 +1,29 @@
+{
+  "key": "BLR3XE3I",
+  "primary_theme": "org-governance",
+  "themes": [
+    "org-governance",
+    "automation-bias",
+    "quality-debt",
+    "provenance-auditability",
+    "hitl-workflow"
+  ],
+  "facets": [
+    "survey-input",
+    "non-developer",
+    "agentic",
+    "steering",
+    "risk-quality",
+    "risk-security",
+    "risk-overreliance",
+    "risk-ip",
+    "method-self-report"
+  ],
+  "rationale": {
+    "org-governance": "Documents shifting team roles, accountability, and enterprise policy constraints.",
+    "automation-bias": "Documents practitioner concerns regarding skill erosion and over-trust in AI.",
+    "quality-debt": "Documents AI-generated code bloat causing unstructured and unmanageable codebases.",
+    "provenance-auditability": "Documents the need for AI crediting, prompt logging, and clear attribution.",
+    "hitl-workflow": "Documents manual testing and review checkpoints before deployment."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "key": "6NTZ85CW",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "rules-based-checks",
+    "oversight-scaling-inversion"
+  ],
+  "facets": [
+    "problem-statement-anchor",
+    "built-system",
+    "agentic",
+    "risk-security"
+  ],
+  "rationale": {
+    "ai-review": "Multi-agent LLM system autonomously assesses application security and vulnerabilities.",
+    "rules-based-checks": "Validates findings via concrete execution of end-to-end proof-of-concept exploits.",
+    "oversight-scaling-inversion": "Argues AI development pace outstrips security assessment capacity causing scalability crisis.",
+    "problem-statement-anchor": "Anchors problem with stat that 40% of AI code has vulnerabilities.",
+    "built-system": "Authors built and evaluated the MAPTA penetration testing system.",
+    "agentic": "Autonomous agents coordinate multi-step security assessments and exploit execution.",
+    "risk-security": "Detects web application security vulnerabilities like SQLi and RCE."
+  }
+}

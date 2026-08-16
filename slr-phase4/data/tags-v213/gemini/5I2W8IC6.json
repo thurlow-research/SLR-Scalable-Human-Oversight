@@ -1,0 +1,23 @@
+{
+  "key": "5I2W8IC6",
+  "primary_theme": "automation-bias",
+  "themes": [
+    "automation-bias"
+  ],
+  "facets": [
+    "lit-review",
+    "method-self-report",
+    "risk-overreliance",
+    "risk-quality",
+    "risk-security"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "automation-bias": "synthesizes literature on developers' excessive or insufficient trust in LLMs",
+    "risk-overreliance": "focal analysis of overtrust and undertrust in developer interactions",
+    "risk-quality": "discusses functional correctness and quality impacts of overtrust",
+    "risk-security": "reports how overtrust leads to accepting security vulnerabilities"
+  }
+}

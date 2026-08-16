@@ -1,0 +1,22 @@
+{
+  "key": "I6FZ5GD2",
+  "primary_theme": "oversight-explanation",
+  "themes": [
+    "oversight-explanation"
+  ],
+  "facets": [
+    "built-system",
+    "expert-validated",
+    "agentic",
+    "method-self-report",
+    "method-experiment"
+  ],
+  "rationale": {
+    "oversight-explanation": "visual analytics system helping humans understand the agent's iterative coding process",
+    "built-system": "authors built a working visual analytics prototype",
+    "expert-validated": "evaluated via structured feedback from a panel of five domain experts",
+    "agentic": "studies an autonomous agent generating full solutions via multi-step exploration",
+    "method-self-report": "collected expert feedback and opinions via think-aloud protocol",
+    "method-experiment": "experts evaluated the system via guided exploration of prepared case studies"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "key": "Y4TIF9KW",
+  "primary_theme": "ai-review",
+  "themes": [
+    "ai-review",
+    "oversight-explanation"
+  ],
+  "facets": [
+    "built-system",
+    "expert-validated",
+    "general-code",
+    "risk-security",
+    "method-experiment",
+    "method-self-report"
+  ],
+  "rationale": {
+    "ai-review": "Proposes a multi-agent LLM framework to automate static code security reviews.",
+    "oversight-explanation": "Provides side-by-side LLM outputs and regulatory mappings to aid human validation."
+  }
+}

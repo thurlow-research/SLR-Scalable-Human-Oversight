@@ -1,0 +1,1 @@
+{"key":"XRTVITVP","primary_theme":"oversight-scaling-inversion","themes":["oversight-scaling-inversion"],"facets":["framework","built-system","agentic","non-developer","steering","method-experiment"],"flags":["demote:context"],"rationale":{"oversight-scaling-inversion":"Formalizes verification burden when non-experts cannot validate autonomous software outputs."}}

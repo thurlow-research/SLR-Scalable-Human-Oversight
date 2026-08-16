@@ -1,0 +1,34 @@
+{
+  "key": "JVWUYDME",
+  "primary_theme": "hitl-workflow",
+  "themes": [
+    "hitl-workflow",
+    "oversight-theater",
+    "provenance-auditability",
+    "regulatory-compliance",
+    "org-governance",
+    "rules-based-checks"
+  ],
+  "facets": [
+    "counterpoint",
+    "framework",
+    "design-only",
+    "general-ai",
+    "non-developer",
+    "agentic",
+    "risk-overreliance"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "hitl-workflow": "redefines human control surface to bounded delegation and envelope enforcement",
+    "oversight-theater": "critiques HITL as liability transfer due to rubber-stamping under pressure",
+    "provenance-auditability": "requires persistent evidence record of provenance and deterministic action preview",
+    "regulatory-compliance": "aligns system governance with EU AI Act and NIST AI RMF",
+    "org-governance": "proposes identity maturity models and vendor procurement guardrails for accountability",
+    "rules-based-checks": "evaluates system constraints pre-execution using a deterministic policy engine",
+    "counterpoint": "argues against treating passive human-in-the-loop review as default safety control",
+    "risk-overreliance": "devotes focal analysis to automation bias and human rubber-stamping"
+  }
+}

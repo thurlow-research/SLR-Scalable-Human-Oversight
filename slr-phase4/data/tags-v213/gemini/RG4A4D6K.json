@@ -1,0 +1,37 @@
+{
+  "key": "RG4A4D6K",
+  "primary_theme": "provenance-auditability",
+  "themes": [
+    "provenance-auditability",
+    "regulatory-compliance",
+    "org-governance"
+  ],
+  "facets": [
+    "lit-review",
+    "intro-framing",
+    "assistive",
+    "agentic",
+    "risk-quality",
+    "risk-security",
+    "risk-ip",
+    "risk-bias",
+    "risk-overreliance"
+  ],
+  "flags": [
+    "demote:context"
+  ],
+  "rationale": {
+    "provenance-auditability": "Focuses on identifying, documenting, and tracking AI code provenance.",
+    "regulatory-compliance": "Examines GDPR and EU AI Act disclosure requirements.",
+    "org-governance": "Recommends establishing corporate governance policies for AI code.",
+    "lit-review": "Synthesizes evidence from industry data and existing literature.",
+    "intro-framing": "Names transparency gap and proposes agenda without building mechanisms.",
+    "assistive": "Discusses AI assistants like Copilot and Codex.",
+    "agentic": "Discusses autonomous agentic AI pursuing open-ended objectives.",
+    "risk-quality": "Section III.A dedicates focus to technical debt and maintenance.",
+    "risk-security": "Section III.B details vulnerability assessments and security protocols.",
+    "risk-ip": "Section III.C focuses on copyright infringement and ownership tracking.",
+    "risk-bias": "Section III.C analyzes discrimination risks from training data biases.",
+    "risk-overreliance": "Section III.D covers developer skill erosion and over-reliance."
+  }
+}
