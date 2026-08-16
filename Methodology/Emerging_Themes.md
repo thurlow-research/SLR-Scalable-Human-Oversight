@@ -82,6 +82,17 @@ bar. **Never on a `lit-review` paper** — its stats are secondhand; chase and a
 design** (what practitioners want, prioritize, or limit). *Valuable even at context tier — that's the point.*
 - `29NBUJWT` — developer AI-adoption appraisals and RAI priorities by task type.
 
+**`dissertation-input`** (added 2026-08-15) — findings or theory the **dissertation** must engage with
+directly (research questions, survey constructs, discussion), beyond the paper's role in the SLR corpus.
+**HUMAN-ONLY synthesis tag** — never in the model instrument (v2.13 frozen mid-sweep; models can't judge
+dissertation relevance anyway); arbiter-applied, sparse by design. Bar: substantive contribution to a
+dissertation-level question; a **child note is required** stating which question and why (mirrors the
+`problem-statement-anchor` capture convention). Orthogonal to tier — expected mostly on context items.
+Tier ≠ importance: context is a scope judgment; this tag carries the value judgment separately.
+- `UTTJ5N93` (seed) — cognitive forcing functions reduce AI overreliance: the oversight-*effectiveness*
+  dimension (oversight quality as a manipulable design variable, not a fixed human property), feeding the
+  "effective as well as scalable" dissertation question; stays context per the `7BMFG5IK` precedent.
+
 **`intro-framing`** — position / agenda / definitional papers that *name the gap* but don't operationalize
 a mechanism; cite in the Introduction. Usually context-tier (+ often `lit-review`).
 - `4TUNZ7FU` — position/agenda paper establishing the need.
