@@ -1,0 +1,368 @@
+# Dissertation Lit Review — Candidate Sweep (2026-08-16)
+
+
+Swept the full core+context pool (1,040 items: 148 core + 892 context) against three criteria:
+**(A) practice** — defines a concrete oversight mechanism/process; **(B) theory** — grounds HOW to make oversight effective (automation-bias, trust calibration, cognitive forcing, vigilance, signal detection, accountability — general-AI counts if it transfers); **(C) survey-insight** — quantified findings specific enough to draft a survey item from.
+
+Two-pass process (documented so the QC step is auditable): a 16-way parallel first pass over 65-item batches flagged 406 candidates (39% of pool) but showed severe rater-variance (15%-83% match rate across batches — the same panel-inconsistency problem this project has fought throughout the sweep). A second, independent strict-verification pass re-judged all 406 from scratch (first-pass verdict treated as untrusted metadata only) against an explicit calibration target, converging to **175 items (16.8% of pool)**.
+
+**Final: 128 High Confidence + 47 Medium Confidence.** By category: practice 44 · theory 77 · survey-insight 54 (a paper can count once; category = its strongest qualifying criterion).
+
+Filed additively into Zotero `Dissertation Lit Review / 01 - Candidates / {01 - High Confidence, 02 - Medium Confidence}` — nothing removed from any existing collection. Each item tagged `dissertation-input` + `dissertation-category:<practice|theory|survey-insight>` + `dissertation-confidence:<high|medium>`, with a rationale child note. Pre-write snapshot: `Backups/zotero-item-snapshots/dissertation_candidates_pre_2026-08-16.json`.
+
+
+## High Confidence (128)
+
+- **8MXATG38** [practice] AI-augmented software engineering for rapid feature delivery and operations automation
+  - Production case study: a governance template combining policy, filtering, scanning, and human oversight sustained a 20x deployment-frequency gain with no reliability loss.
+- **3SU9QZ6F** [practice] AIRA: AI-induced risk audit: a structured inspection framework for AI-generated code
+  - AIRA: 15-check deterministic audit detects fail-soft 'failure-untruthful' code patterns at 1.8x rate vs. human controls (matched replication).
+- **JB32U5RE** [practice] Agentic pipelines in embedded software engineering: emerging practices and challenges
+  - Qualitative study (10 experts, 4 companies): 11 emerging practices and 14 challenges governing agentic pipelines in safety-critical embedded SE.
+- **BPMFPZZB** [practice] Applying generative artificial intelligence for vulnerability fixing in a proprietary soft
+  - Deployed PSECO-SafePatch process (structured remediation + human-in-loop validation) cut vulnerability remediation time 84% with 89% patch success rate.
+- **V4IRKSFI** [practice] BitsAI-CR: automated code review via LLM in practice
+  - BitsAI-CR's two-stage rule-check/precision-filter review system, deployed to 12k weekly users at ByteDance, reaches 75% precision with a real adoption metric.
+- **JFFKDXG8** [practice] Building software by rolling the dice: a qualitative study of vibe coding
+  - Grounded theory of 20 vibe-coding sessions maps concrete verification behaviors from blind trust to inspect-and-adapt, tied to mental models.
+- **C88VGWMI** [practice] Constitutional spec-driven development: enforcing security by construction in AI-assisted 
+  - Constitutional spec-driven development embeds security constraints pre-generation, cutting defects 73% vs. unconstrained AI generation.
+- **CDJ5CGEV** [practice] Deep learning-based code reviews: a paradigm shift or a double-edged sword?
+  - Controlled experiment, 29 developers, 50+ recorded hours: measures how LLM co-review changes review quality, cost, and reviewer confidence.
+- **VFE9BX2T** [practice] Deployability-centric infrastructure-as-code generation: fail, learn, refine, and succeed 
+  - Iterative human-in-the-loop feedback on deployability errors raises LLM-generated IaC deployment success from ~25% to over 90% within 25 iterations.
+- **VFZXPDJX** [practice] Enhancing human-machine pair inspection with risk number and code inspection diagram
+  - Risk Number + Code Inspection Diagram operationalizes self-inspection guidance; case study shows faster, more effective defect detection than prior method.
+- **CI93QRUH** [practice] HiLDE: intentional code generation via human-in-the-loop decoding
+  - N=18 experiment: a human-in-the-loop decoding interface surfacing critical LLM decisions produced significantly fewer vulnerabilities than standard code completion.
+- **DZYEZVFE** [practice] Human-AI experience in integrated development environments: a systematic literature review
+  - SLR of 90 studies distills concrete interface principles — surfaced context, explanations, user control — for effective in-IDE AI oversight.
+- **QF6IR6BU** [practice] Improving steering and verification in AI-assisted data analysis with interactive task dec
+  - Controlled study (N=18): stepwise/phasewise task decomposition significantly improves user verification and steering of AI-generated analysis code.
+- **NUNE3V8D** [practice] Interactive debugging and steering of multi-agent AI systems
+  - AGDebugger tool study (N=14): interactive message-editing/resets are key to human debugging and steering of multi-agent AI systems.
+- **U9VZQXGI** [practice] Magentic-UI: Towards Human-in-the-loop Agentic Systems
+  - Magentic-UI operationalizes six low-cost HITL mechanisms (co-planning, action guards, etc.) for agentic systems, evaluated via benchmarks, user studies, and safety tests.
+- **BU73N7PC** [practice] Moving Faster and Reducing Risk: Using LLMs in Release Deployment
+  - Meta's diff-risk-score model gates a small fraction of code changes to catch most severe incidents, a concrete deployed oversight-routing mechanism.
+- **CTGGMIX9** [practice] SGCR: A Specification-Grounded Framework for Trustworthy LLM Code Review
+  - SGCR grounds LLM code review in human specs via dual deterministic/heuristic pathways; deployed industrially, reaching 42% developer adoption vs 22% baseline.
+- **U3IQJ4VK** [practice] Security weaknesses of copilot-generated code in GitHub projects: an empirical study
+  - Empirical study: 24-30% of Copilot-generated code has security weaknesses; feeding static-analysis warnings back to Copilot Chat fixes up to 55.5%.
+- **B9XME6V7** [practice] Software doping analysis for human oversight
+  - Formal black-box falsification technique for detecting hidden 'software doping,' applied to real emissions-cheating and discrimination cases, built for EU AI Act oversight.
+- **LQVJ7XT6** [practice] State of the art of the security of code generated by LLMs: a systematic literature review
+  - SLR (3,104→15 studies) catalogs 7 vulnerability types, 6 concrete mitigation strategies, and 4 recommended tools for securing LLM code.
+- **MFSZPSPU** [practice] Towards a human-in-the-loop framework for reliable patch evaluation using an LLM-as-a-judg
+  - Human-reviews-once-then-LLM-judges rubric protocol for patch validity reaches kappa=0.75 with human consensus.
+- **5JZQD2VK** [practice] Vibe coding: programming through conversation with artificial intelligence
+  - First empirical vibe-coding study: trust built through iterative verification cycles, not blanket acceptance; expertise redistributes to evaluation.
+- **XK3P9C96** [practice] When Should Users Check? Modeling Confirmation Frequency in Multi-Step Agentic AI Tasks
+  - Decision-theoretic model for placing agent confirmation checkpoints; 48-participant study found 81% preferred it over confirm-at-end and finished 13.5% faster.
+- **B644HQFS** [survey-insight] "An Endless Stream of AI Slop": How Developers Discuss the Burden of AI-Assisted Software 
+  - Codebook of 15 codes from 1,154 developer posts frames AI-generated code review burden as a tragedy-of-the-commons externality onto reviewers.
+- **455MHPCI** [survey-insight] A survey of generative AI adoption and perceived productivity among scientists who program
+  - 868-scientist survey: over-reliance tied to inexperience; testing/review/version-control moderate it; accepted-code batch size predicts perceived productivity.
+- **29NBUJWT** [survey-insight] AI Where It Matters: Where, Why, and How Developers Want AI Support in Daily Work
+  - N=860 cognitive-appraisal study maps developer task types to differentiated Responsible-AI priorities needing distinct oversight design.
+- **Z2EYJP79** [survey-insight] AI risk and governance in startups: a study of implementation gaps and founder justificati
+  - 72-founder survey: 95% risk-aware yet 85% have no protective governance measures; 39% favor shared developer/implementer responsibility.
+- **F2C2DWSI** [survey-insight] AI-Assisted Programming Decreases the Productivity of Experienced Developers by Increasing
+  - Post-Copilot, core reviewers do 6.5% more review work while their own code output drops 19%, quantifying review-burden shift to experienced developers.
+- **S7BJA4RD** [survey-insight] AI-assisted collaboration: exploring developer experience with GitHub copilot and windsurf
+  - Mixed-methods DevEx study (36-person unit): AI tools speed routine tasks but impose a substantial validation burden — productivity-validation tension.
+- **QA6MIBD8** [survey-insight] Artificially insecure: examining GitHub copilot’s AI-based vulnerability prevention system
+  - Benchmarks Copilot: 97% functionally correct but 30.6% of generated snippets contain at least one security vulnerability.
+- **2MPUZHQL** [survey-insight] Asleep at the keyboard? Assessing the security of GitHub copilot’s code contributions
+  - Rigorous 89-scenario, 1,689-program study: ~40% of Copilot code across CWE Top-25 categories is vulnerable, a foundational quantified security baseline.
+- **WNGESYPT** [survey-insight] Automated code review in practice
+  - 238 practitioners, 4,335 PRs: 73.8% of automated review comments were resolved, yet overall PR closure time increased under the AI-assisted tool.
+- **9H6FWJME** [survey-insight] Debt Behind the AI Boom: A Large-Scale Empirical Study of AI-Generated Code in the Wild
+  - 302.6k AI-authored commits across 6,299 repos: 484k tracked issues found, 15%+ of commits introduce at least one, 22.7% persist unresolved.
+- **UDEHDB27** [survey-insight] Do AI coding agents log like humans? An empirical study
+  - 4,550 agentic PRs, 81 repos: explicit logging instructions are rare (4.7%) and 67% ignored; humans silently repair 72.5% of agent logging gaps.
+- **RBQZMXWT** [survey-insight] Does pass rate tell the whole story? Evaluating design constraint compliance in LLM-based 
+  - 495 issues, 1,787 constraints: fewer than half of test-passing LLM patches satisfy project design constraints; pass rate barely correlates with design compliance.
+- **DVQATU3E** [survey-insight] Everyday practitioner experiences of AI-first policies adopted by U.S. big tech companies
+  - Mixed-methods AI-first policy study: 56% report competitiveness pressure; validating AI suggestions is the main hurdle, burden falls on senior staff.
+- **U32NRMDM** [survey-insight] Examining software engineering practices in the pre-AI and post-AI ERA
+  - Longitudinal GitHub analysis of 6 major repos: post-AI review intensity declined while bug-fix frequency rose, evidencing oversight erosion.
+- **K5IAE4E7** [survey-insight] Facilitating Trust in AI-assisted Software Tools
+  - PICSE trust framework from 18 interviews, validated via N=368 Microsoft survey identifying concrete trust factors for AI tools.
+- **9M68WEJA** [survey-insight] From industry claims to empirical reality: an empirical study of code review agents in pul
+  - 19,450 PRs: code-review-agent-only PRs merge at 45.2% vs. 68.4% for human-only, with 60% of CRA feedback falling in the 0-30% signal range.
+- **E9RAWBDT** [survey-insight] Good vibrations? A qualitative study of Co-creation, communication, flow, and trust in vib
+  - 190,000-word qualitative study grounds vibe-coding practice: trust regulates a delegation-vs-cocreation continuum, surfacing concrete pain points and emergent best practices.
+- **MQ5KZQTX** [survey-insight] Human and machine: how software engineers perceive and engage with AI-assisted code review
+  - 20 interviews: LLM code-review feedback adoption is constrained by trust and missing context, unlike peer review — concrete oversight barrier.
+- **424WFD9R** [survey-insight] Human-AI synergy in agentic code review
+  - 278,790 review conversations: AI-agent code suggestions adopted far less than human suggestions; humans give more testing/knowledge-transfer feedback.
+- **UMCQ52IC** [survey-insight] Humans integrate, agents fix: how agent-authored pull requests are referenced in practice
+  - Mining AIDev data: PRs referencing agent-authored work have substantially longer lifespans/review times, quantifying agent-human integration overhead.
+- **D93DVDLG** [survey-insight] Impact of an LLM-based review assistant in practice: a mixed open-/closed-source case stud
+  - Live deployment at Mozilla and Ubisoft: only 8.1% of LLM-generated review comments were accepted by human reviewers across 587 patch reviews.
+- **XSUGEJT2** [survey-insight] Investigating autonomous agent contributions in the wild: activity patterns and code chang
+  - 110k-PR dataset across 5 coding agents quantifies churn/survival rates, showing agent code churns more than human-authored code.
+- **4PSM6ZCD** [survey-insight] Is vibe coding safe? Benchmarking vulnerability of agent-generated code in real-world task
+  - Benchmark: only 10.5% of functionally-correct agent-generated code is secure; hint-based mitigation fails to close the gap.
+- **PD297DUM** [survey-insight] My code is less secure with gen AI: surveying developers' perceptions of the impact of cod
+  - 105-developer survey: only about 25% are confident in AI-generated code security, and experienced developers report their own secure-coding proficiency declining.
+- **XACCJD46** [survey-insight] Novice developers produce larger review overhead for project maintainers while vibe coding
+  - 22,953 PRs: low-experience vibe coders get 4.52x more review comments, 31% lower acceptance, 5.16x longer resolution time.
+- **59KP8GTP** [survey-insight] On Autopilot? An Empirical Study of Human-AI Teaming and Review Practices in Open Source
+  - 67.5% of AI-co-authored PRs come from non-owners; about 80% of those merge with zero review, and most repos lack agent-usage guidelines.
+- **P868GNU7** [survey-insight] On the use of agentic coding: an empirical study of pull requests on GitHub
+  - 567 agentic PRs: 83.8% accepted, 54.9% merged unmodified, 45.1% required human revision — direct survey-item seed on revision rates.
+- **NSWZUQV2** [survey-insight] Programming by Chat: A Large-Scale Behavioral Analysis of 11,579 Real-World AI-Assisted ID
+  - 74,998-message study: developers delegate diagnosis/validation to AI and negotiate autonomy via context injection and behavioral constraints.
+- **VJ5WZ2ZE** [survey-insight] SWE-chat: coding agent interactions from real users in the wild
+  - 6,000 real agent sessions: 41% fully agent-authored, only 44% of agent code survives to commit, human pushback in 44% of turns.
+- **UIXCRBQX** [survey-insight] Safer builders, risky maintainers: a comparative study of breaking changes in human vs age
+  - Quantifies agentic-PR breaking-change rates by task type (3.45% vs 7.40% human; up to 9.35% in maintenance); identifies 'Confidence Trap'.
+- **REZGA5WF** [survey-insight] Speed at the cost of quality: how cursor AI increases short-term velocity and long-term co
+  - Diff-in-differences causal design: Cursor adoption boosts velocity transiently but persistently raises static-analysis warnings and complexity, making QA the real bottleneck.
+- **6ABGGGRP** [survey-insight] State of AI-assisted software development
+  - DORA ~5000-respondent study: AI amplifies existing organizational dysfunction or strength; returns depend on platform quality and workflow clarity.
+- **QI8246A3** [survey-insight] The rise of AI teammates in software engineering (SE) 3.0: how autonomous coding agents ar
+  - AIDev dataset: 456k PRs across 5 agents and 61k repos shows agents submit faster but get accepted less often and produce simpler PRs.
+- **DYKE748V** [survey-insight] The role of firm AI capabilities in generative AI-pair coding
+  - Global-firm study: coding quality negatively correlates with productivity throughput gains; quality-adjusted gains depend on firm's AI-governance capability.
+- **CJ78UHQ2** [survey-insight] Theoretical considerations and development of a questionnaire to measure trust in automati
+  - Validated Trust-in-Automation (TiA) questionnaire — a ready-made instrument for measuring trust calibration in a survey.
+- **9D9QSWGZ** [survey-insight] These aren't the reviews you're looking for how humans review AI-generated pull requests
+  - Mining AIDev PRs: most AI-generated PRs get no review at all; reviewed ones are dominated by agents, not humans.
+- **ID7IN65K** [survey-insight] To copilot and beyond: 22 AI systems developers want built
+  - N=860 developer survey defines 'bounded delegation': concrete wanted controls (authority scoping, provenance, uncertainty signaling, least-privilege access).
+- **7C3MCTVH** [survey-insight] Understanding dominant themes in reviewing agentic AI-authored code
+  - 19,450 review comments on agent-authored PRs yield a 12-theme taxonomy; reviewers focus on documentation, refactoring, style, testing, and security gaps.
+- **8J86V6HB** [survey-insight] Why agentic-PRs get rejected: a comparative study of coding agents
+  - 654 rejected agentic PRs across 5 agents: 'distrust of AI-generated code' is a distinct rejection mode; 67.9% lack explicit reviewer feedback.
+- **PWC7TXTM** [survey-insight] Why you shouldn't fully trust ChatGPT: a synthesis of this AI tool's error rates across di
+  - MLR quantifies ChatGPT SDLC error rates by phase: 5-20% requirements/design vs 10-50% coding/testing, varying by model version.
+- **5H6KQCJM** [survey-insight] Will it survive? Deciphering the fate of AI-generated code in open source
+  - Survival analysis of 201 projects, 200K+ code units: AI-authored code survives significantly longer than human code (HR=0.842, p<.001); bottleneck is org practice.
+- **GPL5G889** [theory] A model for types and levels of human interaction with automation
+  - Canonical Parasuraman/Sheridan/Wickens model: four automation function types x levels, foundational framework for allocating human oversight in system design.
+- **KAW7EMHG** [theory] A systematic review of algorithm aversion in augmented decision making
+  - Systematic review of 61 studies on algorithm aversion causes/mitigators across expertise, autonomy, and incentive themes.
+- **524TWMDJ** [theory] AI knows best? The paradox of expertise, AI-reliance, and performance in educational tutor
+  - RCT, 95 participants: experienced experts override correct AI advice more than novices; text explanations increase over-reliance vs. inline highlighting.
+- **5NY5HVNV** [theory] Accountability in code review: the role of intrinsic drivers&nbsp;and the impact of LLMs
+  - Identifies four intrinsic accountability drivers in code review and shows LLM-assisted review shifts individual to collective accountability.
+- **I9CBMHGA** [theory] Adaptive automation, trust, and self-confidence in fault management of time-critical tasks
+  - Shows automation reliability (not self-confidence) drives trust and final-authority allocation in time-critical fault management — trust calibration.
+- **HD5ACBJD** [theory] Adjust for trust: mitigating trust-induced inappropriate reliance on AI assistance
+  - Trust-adaptive interventions (counter-explanations at high trust, forced pauses) cut inappropriate AI reliance 38% and raised decision accuracy 20% across two domains.
+- **F93HNFF2** [theory] Algorithmic decision-making and the control problem
+  - Formalizes 'the control problem' (complacency/over-reliance) with three mitigation strategies and six design principles for human-machine oversight.
+- **KINFW8AS** [theory] Automation bias, accountability, and verification behaviors
+  - Classic pilot studies show imposed accountability pressure reduces automation bias and improves verification behavior.
+- **KPGJPZT7** [theory] Automation bias: a systematic review of frequency, effect mediators, and mitigators
+  - Systematic review of 74 studies on automation bias frequency, mediators (workload, cognitive style), and design mitigators.
+- **4DM29UWA** [theory] Automation bias: decision making and performance in high-tech cockpits.
+  - Cockpit study: internalized accountability (not imposed demands) reduces automation-bias errors — a testable oversight-design mechanism.
+- **ING3D89M** [theory] Complacency and bias in human use of automation: an attentional integration
+  - Integrated attentional model explains automation complacency and automation bias as related, training-resistant phenomena under multi-task load.
+- **YBHHYR4P** [theory] Do users write more insecure code with AI assistants?
+  - Large-scale study: users who trusted the AI assistant less and engaged more critically with prompts produced measurably more secure code.
+- **PA77DC8U** [theory] Does automation bias decision-making?
+  - Foundational automation-bias experiment quantifying omission and commission errors when operators over-trust an imperfect automated monitoring aid.
+- **5DCQDB4C** [theory] Effective human oversight of AI-based systems: a signal detection perspective on the detec
+  - Applies Signal Detection Theory to human oversight, distinguishing detection sensitivity from response bias and naming task/system/person-level moderators of each.
+- **HWBR9AAF** [theory] Explainability does not mitigate the negative impact of incorrect AI advice in a personnel
+  - 5 experiments (N=1403): explainability does not reduce overreliance on incorrect AI advice — key negative result for oversight design.
+- **74UAHJ47** [theory] Exploring automation bias in human–AI collaboration: a review and implications for explain
+  - PRISMA review of 35 studies identifies concrete automation-bias moderators: AI literacy, expertise, verification demands, explanation complexity.
+- **DG6LWQJU** [theory] Exploring the effects of urgency and reputation in code review an eye-tracking study
+  - Eye-tracking experiment (n=37): PR priority and author reputation shift reviewer attention/cognitive load, entirely outside conscious awareness.
+- **XZ4DFQVR** [theory] Extending three existing models to analysis of trust in automation: signal detection, stat
+  - Three quantitative trust-calibration models (signal detection, parameter estimation, model-based control) directly usable for oversight-design measurement.
+- **ZBF86IJM** [theory] Generation Probabilities Are Not Enough: Uncertainty Highlighting in AI Code Completions
+  - 30-programmer study: highlighting tokens by predicted edit-likelihood, not generation probability, speeds error-finding and is preferred, a real cognitive-forcing intervention.
+- **PG2GXVY8** [theory] How readable is model-generated code? Examining readability and visual inspection of GitHu
+  - Eye-tracking (n=21): programmers direct significantly less visual attention to AI-generated code than human code—direct automation-bias evidence.
+- **45RNUJ97** [theory] How transparency modulates trust in artificial intelligence
+  - Opposition-loafing-vigilance framework: dynamic task allocation and confidence signaling outperform mere explainability for calibrating trust.
+- **NK5VHI9V** [theory] Human factors in AI-driven cybersecurity: cognitive biases and trust issues
+  - Interviews (n=19) + dual-process theory: automation bias (47%) and confirmation bias (37%) shape analyst trust; 79% prefer hybrid over full automation.
+- **7ZZ845I6** [theory] Is the most accurate AI the best teammate? Optimizing AI for teamwork
+  - Models human accept/verify/self-solve decisions, showing most-accurate AI isn't the best teammate; team-utility optimization framework.
+- **8EEKFTQL** [theory] Is your machine better than you? You may never know
+  - Formal model of supervisory verification bias explains why humans overruling a machine may never learn whether it is actually better.
+- **NRVQT89E** [theory] LLM Critics Help Catch LLM Bugs
+  - Critic LLMs trained via RLHF catch more bugs than paid human reviewers alone, and human+critic teams hallucinate less than critics alone.
+- **QMKQC7SC** [theory] LLMs corrupt your documents when you delegate
+  - 19-model benchmark (DELEGATE-52): frontier LLMs corrupt ~25% of delegated document content over long workflows, grounding risk-based escalation triggers.
+- **I2IWRQVZ** [theory] MOSAIC-bench: measuring compositional vulnerability induction in coding agents
+  - Reviewer agents approve 25.8% of confirmed-vulnerable diffs when malicious intent is staged across innocuous tickets, exposing a concrete review blind spot.
+- **RNDPW7VA** [theory] Measuring Progress on Scalable Oversight for Large Language Models
+  - Foundational scalable-oversight framing with a proof-of-concept experiment: humans paired with an unreliable LLM assistant outperform either alone on hard QA tasks.
+- **89JB6NW4** [theory] Misuse of diagnostic aids in process control: the effects of automation misses on complace
+  - Training exposure to automation misses reduces complacency and omission errors — a concrete training intervention for calibrating oversight.
+- **DIZ9FQTG** [theory] Moral crumple zones: cautionary tales in human-robot interaction (pre-print)
+  - Moral crumple zones: HITL design lets humans absorb blame/liability for AI failures without real control, a core oversight-effectiveness mechanism.
+- **CLHB8SRT** [theory] More code, less understanding? On the impact of AI assistants on developers’ productivity 
+  - Controlled 69-participant experiment measures AI-assistant impact on code ownership/understanding, a direct empirical proxy for retained oversight capability.
+- **22JBEZNK** [theory] Non-programmers assessing AI-generated code: a case study of business users analyzing data
+  - Marketing/sales professionals repeatedly failed to catch flawed AI-generated analyses despite explicit warnings, showing automation bias survives active debiasing prompts.
+- **DQ72G4Z3** [theory] Not all trust is the same: effects of decision workflow and explanations in human-AI decis
+  - RCT: neither 1-step nor 2-step decision workflows reduce AI overreliance; self-reported trust and behavioral reliance are distinct, separately measurable constructs.
+- **TW4I6DU6** [theory] On the Quest for Effectiveness in Human Oversight: Interdisciplinary Perspectives
+  - Synthesizes psychology, law, and philosophy into four necessary conditions for effective human oversight (causal power, epistemic access, self-control, fitting intentions).
+- **BD6EVT65** [theory] On the complexities of testing for compliance with human oversight requirements in AI regu
+  - Directly analyzes how to test compliance with human-oversight mandates under the EU AI Act—checklist vs. resource-intensive empirical testing.
+- **DIE6CCI5** [theory] On the independence of compliance and reliance: are automation false alarms worse than mis
+  - False-alarm-prone automation harms performance more than miss-prone automation; compliance and reliance are not independent constructs.
+- **7ZMU5AIF** [theory] Overseeing Agents Without Constant Oversight: Challenges and Opportunities
+  - Three user studies show redesigned action traces speed error-finding in agent verification but don't improve accuracy, a confidence/accuracy dissociation.
+- **EVQPIQWK** [theory] Poisoned ChatGPT finds work for idle hands: exploring developers’ coding practices with in
+  - 238-survey plus 30-lab study: developers misplace trust in AI coding tools, systematically overlooking data-poisoning risk despite awareness.
+- **2CBE8X9X** [theory] Prompting as governance: behavioral gaps and control system failures in AI-assisted infras
+  - 570 experiments across 90 infrastructure scenarios with GPT-4/Claude: prompt engineering alone fails as a reliable governance control mechanism.
+- **CUE8AP27** [theory] Putting a human in the loop: increasing uptake, but decreasing accuracy of automated decis
+  - Finds HITL increases uptake of algorithmic recommendations but decreases accuracy—humans under-intervene on the least-accurate recommendations.
+- **Y9RT3GUE** [theory] Quantifying uncertainty in answers from any language model and enhancing their trustworthi
+  - BSDETECTOR yields per-answer confidence scores flagging unreliable LLM outputs, a concrete black-box trust-calibration mechanism validated on GPT-3/ChatGPT.
+- **84D2AMVM** [theory] Realizing the promise of AI governance involving humans-in-the-loop
+  - Synthesizes human-decision-making literature into concrete HITL-effectiveness risk factors (complacency, workload, conformity, unequal error treatment) that determine whether oversight is real.
+- **T54432DN** [theory] Regulation and cyborgs
+  - Applies normal accident theory: human-in-the-loop only produces resilience if system design actually enables meaningful human intervention.
+- **8CQRCPW2** [theory] SWE-PRBench: benchmarking AI code review quality against pull request feedback
+  - Kappa-validated benchmark: frontier models detect only 15-31% of human-flagged PR issues; added context triggers attention-dilution collapse in accuracy.
+- **TPAAIV8D** [theory] Security degradation in iterative AI code generation: a systematic analysis of the paradox
+  - Controlled experiment (400 samples, 40 rounds): iterative LLM refinement raises critical vulnerabilities 37.6% after 5 iterations, refuting improvement assumption.
+- **7BMFG5IK** [theory] Self-critiquing models for assisting human evaluators
+  - Self-critiquing models produce critiques that help humans catch flaws they'd otherwise miss - a concrete mechanism for scaling oversight.
+- **BBRAXQHC** [theory] Stages and levels of automation: an integrated meta-analysis
+  - Meta-analysis of 14 studies: higher automation degree trades routine performance gains against failure-mode and situation-awareness costs.
+- **D62FTR38** [theory] Stuck on suggestions: automation bias, the anchoring effect, and the factors that shape th
+  - Pathology experts (n=28): AI assistance yields a 7% automation-bias rate; time pressure intensifies anchoring severity though not frequency.
+- **UPVFC3N9** [theory] Systems with human monitors: a signal detection analysis
+  - Signal-detection model shows human-monitor plus automated-alert system performance hinges on where the automation's decision threshold is set.
+- **XXCF6IHG** [theory] The effect of AI-induced outcome favorability on vigilance performance—an exploration base
+  - 3 experiments: attention-capacity theory shows AI-favorability breeds complacency; a failure-experience intervention reverses it—cognitive-forcing mechanism.
+- **GPAGR8AF** [theory] The effects of level of automation and adaptive automation on human performance, situation
+  - Experimentally tests level-of-automation x adaptive-automation interaction on situation awareness and workload — core function-allocation theory for oversight.
+- **9HPPSFM6** [theory] The flaws of policies requiring human oversight of government algorithms
+  - Reviews 41 government human-oversight policies, identifying two recurring structural flaws in how oversight-of-algorithms mandates are actually designed.
+- **4HHPJ4R4** [theory] The uncertain advisor: trust, accuracy, and self-correction in an automated decision suppo
+  - Experiment shows high trust causes missed automation errors; system self-correction speed shapes trust calibration dynamically.
+- **C2K75UGE** [theory] The vicious circles of skill erosion: a case study of cognitive automation
+  - Causal-loop case study: automation reliance breeds complacency, eroding awareness/competence/output-assessment mindfulness — mechanism for degraded oversight capacity.
+- **UTTJ5N93** [theory] To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assi
+  - Cognitive forcing interventions cut AI overreliance in a controlled N=199 study; trade-off with subjective ratings and Need-for-Cognition moderation.
+- **H4NWPBAV** [theory] To rely or not to rely? Evaluating interventions for appropriate reliance on large languag
+  - RCT (N=400): reliance interventions reduce over-reliance on LLM advice but fail to improve calibration; users overconfident after bad calls.
+- **WTZE6EMB** [theory] Trust in automation
+  - Systematic review (101 papers) yields a dispositional/situational/learned three-layer trust model with concrete trustworthy-automation design recommendations.
+- **5WHS4UEW** [theory] Trust in automation: designing for appropriate reliance
+  - Lee & See's seminal conceptual model of trust dynamics guiding appropriate human reliance on imperfect automation.
+- **2PUXWUZF** [theory] Trust in collaborative automation in high stakes software engineering work: a case study a
+  - NASA ethnographic case study: engineer trust in an autonomous SE tool driven by transparency, usability, social context, org process.
+- **7PPE2M2I** [theory] Turning off your better judgment: algorithmic conformity in artificial intelligence-human 
+  - 4 studies, N=1,445: normative pressure (discomfort disagreeing with AI) drives overreliance, distinct from informational trust in algorithmic advice.
+- **8PM9IXSU** [theory] Under what influence: measuring AI influence to fit user profiles in decision-making
+  - Validated influence-index framework across 4 clinical domains quantifies AI decision influence and anchoring bias (up to 6.94), a transferable trust-calibration measure.
+- **KCARNBD6** [theory] Understanding human management of automation errors
+  - Systematic review builds a framework of variables governing detect-understand-correct automation-error-management, core to escalation design.
+- **Q5RS3ZXV** [theory] Understanding the effects of AI-assisted critical thinking on human-AI decision making
+  - AACT counterfactual-reflection intervention reduces AI overreliance in decision-making, a cognitive-forcing mechanism comparable to Buçinca-style designs.
+- **QG34FIKD** [theory] Why human guidance matters in collaborative vibe coding
+  - 737-participant, 20-experiment study: humans give best high-level instructions, AI best at evaluation; hybrid role-division outperforms either alone.
+
+## Medium Confidence (47)
+
+- **H38TX28S** [practice] Balancing security and correctness in code generation: an empirical study on commercial la
+  - Empirical test of prompt-guidance strategies on commercial LLMs: appropriate prompting measurably reduces generated-code vulnerabilities; model choice has the largest effect.
+- **XJAXB98T** [practice] Beyond banning AI: a first look at GenAI governance in open source software communities
+  - Analysis of 67 OSS projects catalogs 3 governance orientations and 12 concrete GenAI contribution-governance strategies.
+- **R7H5R4ET** [practice] Building trustworthy AI solutions: a case for practical solutions for small businesses
+  - Systematically evaluates 77 responsible-AI toolkits against 33 criteria with intercoder agreement, giving a concrete toolkit-selection mechanism.
+- **VZ9H37V5** [practice] Context before code: an experience report on vibe coding in practice
+  - Vibe-coding experience report identifies concrete 'non-delegation zones'—multi-tenancy, access control, memory policy—needing explicit architectural verification.
+- **6QSXGBDM** [practice] DSCode comparator: an interactive interface for comparing models and evaluating code for d
+  - 22-participant study validates an interactive tool that annotates and compares AI-generated data-science code across models to support human review.
+- **ZH6QIU8A** [practice] Decision-Oriented Programming with Aporia
+  - Aporia surfaces AI design decisions as explicit, testable artifacts; 14-programmer study found 5x more accurate mental models of AI-written code.
+- **24ZVGAAA** [practice] Embedding ethical AI risks in public sector risk management practice an explorative analys
+  - Applies Three-Lines-of-Defense risk model to embed AI ethical-risk ownership in public-sector risk management, evaluated via survey and interviews.
+- **KLVCD5PJ** [practice] Governing citizen development to address low-code platform challenges
+  - 30 interviews yield concrete governance guidance for overseeing novice/citizen-developer code output, directly analogous to AI-generated-code oversight.
+- **T72TU8B5** [practice] Hedwig: dynamic autonomy for coding agents under local oversight
+  - Formative study of 21 developers on autonomy-calibration frustration underlies a system that dynamically tightens or loosens oversight based on trust history.
+- **BISE8375** [practice] Human-AI collaboration for scaling agile regression testing: an agentic-AI teammate from m
+  - Siemens industrial case study: 'silent AI teammate' generates regression test scripts (30-50% code reuse) for mandatory human review before merge.
+- **5VTAJISY** [practice] Human-In-the-loop software development agents
+  - Atlassian JIRA deployment of a human-guided LLM coding-plan framework; engineers report reduced dev time, but evidence is self-reported, not experimentally validated.
+- **ZP7AKMBR** [practice] Investigating generative AI’s impact on software organizations’ security practices: a mult
+  - Gioia-methodology multi-case study names four concrete GenAI-supported security-review practices (threat assessment, testing, ops, guidance) via OWASP SAMM.
+- **N5X8N7C7** [practice] Levels of Autonomy for AI agents
+  - Defines five escalating agent-autonomy levels (operator through observer) as a deliberate oversight design parameter.
+- **NSJ9U3H3** [practice] Pramana: a protocol-layer treatment of claim verification in autonomous agent networks
+  - Formally specified ClaimAttestation/verify() protocol for audit-replayable claim verification; TLA+ verified (38k+ states), working implementation with 84 tests.
+- **2Z4PZABF** [practice] Regulatory gap: why model risk management is structurally ill-suited to govern AI-driven c
+  - Pillar-by-pillar analysis of named regulatory frameworks (SR 11-7, OCC 2011-12) showing why model-risk-management structurally can't govern AI code transformation.
+- **54SD2PSQ** [practice] Resolving code review comments with machine learning
+  - Deployed Google pipeline: ML-suggested edits resolve 7.5% of reviewer comments — a real production human+ML review workflow, modestly evidenced.
+- **CBXBKRA9** [practice] Rethinking code review workflows with LLM assistance: an empirical study
+  - Field study at a real company: developers preferred AI-led upfront review for large/unfamiliar PRs; hybrid proactive/on-demand design balanced trust and control.
+- **RRFXCNIV** [practice] Tracking the moving target: a framework for continuous evaluation of LLM test generation i
+  - Industry-tested (LKS Next) continuous-evaluation framework for LLM test generation, integrating SonarQube metrics with expert assessment for ongoing audit.
+- **7KUUA2DZ** [practice] WaitGPT: monitoring and steering conversational LLM agent in data analysis with on-the-fly
+  - WaitGPT (N=12): real-time visualization of LLM-generated code improves user error detection and confidence — small but concrete verification aid.
+- **JCTP8VXP** [practice] ZORO: active rules for reliable vibe coding
+  - ZORO makes CLAUDE.md-style rules active by requiring agents prove step-by-step compliance; technical evaluation and a user study show behavior change.
+- **IMG5R8EY** [practice] capAI - a procedure for conducting conformity assessment of AI systems in line with the EU
+  - capAI: an operationalized, step-based conformity-assessment/audit procedure for demonstrating AI-system trustworthiness under the EU AI Act.
+- **PF595SEQ** [survey-insight] "You still have to study" -- On the Security of LLM generated code
+  - Case study quantifies human-guidance effect: insecure LLM code drops from ~65% to near-zero with skilled-engineer prompting oversight.
+- **QDQEBT6T** [survey-insight] AI act high-risk requirements readiness: industrial perspectives and case company insights
+  - Case study + interviews: post-market monitoring (Art 72) and explanation rights (Art 86) are the hardest AI Act oversight obligations.
+- **8M6347W6** [survey-insight] Adversarial bug reports as a security risk in language model-based automated program repai
+  - Adversarial bug reports bypass pre-repair filters 90% of the time; human-required post-repair review catches only 58%.
+- **H92HVS6A** [survey-insight] Agentic much? Adoption of coding agents on GitHub
+  - Large-scale study (128k projects) quantifies 22.2-28.66% coding-agent adoption on GitHub with commit-size/type characteristics — solid adoption baseline.
+- **AYGMC9Y4** [survey-insight] Analyzing the impact of prompt engineering on efficiency, code quality, and security in CR
+  - Comparative LLM benchmark finds human intervention remains specifically essential for environment setup and security configuration, not general coding.
+- **WMJWMS9W** [survey-insight] Dear diary: a randomized controlled trial of generative AI coding tools in the workplace
+  - RCT+diary study: developer trust in AI code stayed unchanged despite sustained use; 84% reported concrete work-practice changes.
+- **PAZT6K56** [survey-insight] Deploy, but verify: analysing LLM generated code safety
+  - 5-model benchmark: GPT-4-Turbo generated 4.5% more secure Python code than a 3-year-experienced human developer, on average.
+- **NZGCKNZN** [survey-insight] Expectation vs. Experience: evaluating the usability of code generation tools powered by l
+  - User study (N=24): difficulty understanding/editing/debugging Copilot output hindered task effectiveness despite preference — concrete verification barrier.
+- **G4BQ2IUU** [survey-insight] Factors influencing the quality of AI-generated code: a synthesis of empirical evidence
+  - SLR of 24 studies isolates concrete AI-code-quality drivers: prompt design, task specification, developer expertise—seeds targeted survey items.
+- **5F7E92UD** [survey-insight] Is vibe coding the future? An empirical assessment of LLM generated codes for construction
+  - 450 vibe-coded scripts: ~45% silent-failure rate; informal prompt persona significantly increases hallucinated safety variables in generated code.
+- **Z8TPRNEU** [survey-insight] Professional Software Developers Don't Vibe, They Control: AI Agent Use for Coding in 2025
+  - Field study (N=13) plus survey (N=99) documents concrete strategies experienced developers use to retain control when delegating to coding agents.
+- **Q8Z3T386** [survey-insight] The AI productivity paradox in software development: a meta-analysis of implementation out
+  - Meta-analysis: positive AI-implementation outcomes correlate with executive-level governance, focused use-case selection, and vendor partnerships over broad rollout.
+- **I2JHP2ZV** [survey-insight] What Needs Attention? Prioritizing Drivers of Developers' Trust and Adoption of Generative
+  - N=238 PLS-SEM at GitHub/Microsoft: quality, functional value, goal-maintenance drive trust; IPMA flags underperforming factors.
+- **TAM6DHLU** [theory] Automatic program repair as semantic suggestions: an empirical study
+  - 16-participant controlled study: developers using a real-time IDE repair tool were too eager to accept patches, evidencing automation bias in code review.
+- **BAWCBT9R** [theory] Bias in the loop: auditing LLM-as-a-judge for software engineering
+  - LLM-as-judge verdicts shift systematically with prompt framing across three coding tasks, undermining automated review as a substitute for human oversight.
+- **SMHWVB9J** [theory] Designing human-automation redundancy: overreliance, automation shirking, and the operator
+  - 3 studies, N=970: automation redundancy design increases 'automation shirking'—deliberate reduced monitoring—and measurably raises accident risk.
+- **462N6DT8** [theory] Developers’ dilemma: opportunities and pitfalls of generative AI for software development
+  - 30 expert interviews, grounded in social-capital theory, link GenAI reliance to skill degradation and developer homogenization.
+- **7UB2MD8Z** [theory] Explainable automated debugging via large language model-driven scientific debugging
+  - N=20 study: AI-generated debugging explanations improved human patch-correctness judgment in 5 of 6 real bugs; 70% of participants wanted explanations.
+- **PPMTM4DG** [theory] Fight fire with fire: how much can we trust ChatGPT on source code-related tasks?
+  - ChatGPT's self-verification is unreliable: it mislabels its own incorrect, vulnerable, or failed-repair code as correct, evidence against automated self-checking as oversight.
+- **HIRBHS87** [theory] Human performance consequences of stages and levels of automation
+  - Second DOA meta-analysis (18 experiments) pinpoints a critical automation boundary past which failure-performance and situation-awareness drop sharply.
+- **4K8J6X33** [theory] Institutionalised distrust and human oversight of artificial intelligence: towards a democ
+  - Novel taxonomy separates constitutive vs. corrective oversight roles; six normative principles institutionalize distrust of human overseers under the AI Act.
+- **ET5U88I7** [theory] Interpretability without actionability: mechanistic intervention methods fail to correct c
+  - Mechanistic interpretability methods fail to let humans correct clinical LLM triage errors — interpretability doesn't equal actionable oversight.
+- **KNEMNE5W** [theory] Social bias in LLM-generated code: benchmark and mitigation
+  - 343-task bias benchmark: diffusing fairness responsibility across all agent roles worsens code bias vs. scoping responsibility to one early role.
+- **TA6GIUK2** [theory] The specification as quality gate: three hypotheses on AI-assisted code review
+  - Argues homogeneous LLM review is structurally circular (correlated errors); executable specs as a domain-transition quality gate.
+- **ADV48DKV** [theory] The stability trap: evaluating the reliability of LLM-based instruction adherence auditing
+  - LLM-judge audits show near-perfect verdict agreement (>99%) but reasoning-trace stability as low as ~19%, transferable to code-review audit reliability.
+- **UDVHQ5HR** [theory] Uncovering systematic failures of LLMs in verifying code against natural language specific
+  - LLMs systematically misclassify correct code as noncompliant with requirements, and more elaborate correction prompting makes misjudgment worse, not better.

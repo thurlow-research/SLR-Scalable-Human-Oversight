@@ -82,16 +82,34 @@ bar. **Never on a `lit-review` paper** — its stats are secondhand; chase and a
 design** (what practitioners want, prioritize, or limit). *Valuable even at context tier — that's the point.*
 - `29NBUJWT` — developer AI-adoption appraisals and RAI priorities by task type.
 
-**`dissertation-input`** (added 2026-08-15) — findings or theory the **dissertation** must engage with
-directly (research questions, survey constructs, discussion), beyond the paper's role in the SLR corpus.
-**HUMAN-ONLY synthesis tag** — never in the model instrument (v2.13 frozen mid-sweep; models can't judge
-dissertation relevance anyway); arbiter-applied, sparse by design. Bar: substantive contribution to a
-dissertation-level question; a **child note is required** stating which question and why (mirrors the
-`problem-statement-anchor` capture convention). Orthogonal to tier — expected mostly on context items.
-Tier ≠ importance: context is a scope judgment; this tag carries the value judgment separately.
-- `UTTJ5N93` (seed) — cognitive forcing functions reduce AI overreliance: the oversight-*effectiveness*
-  dimension (oversight quality as a manipulable design variable, not a fixed human property), feeding the
-  "effective as well as scalable" dissertation question; stays context per the `7BMFG5IK` precedent.
+**`dissertation-input`** (added 2026-08-15; extended to a corpus-wide sweep 2026-08-16) — findings or
+theory the **dissertation** must engage with directly (research questions, survey constructs, discussion),
+beyond the paper's role in the SLR corpus. Bar: substantive contribution to a dissertation-level question.
+Orthogonal to tier — expected mostly on context items. Tier ≠ importance: context is a scope judgment;
+this tag carries the value judgment separately. Still **never enters the frozen v2.13 theme-tagging
+instrument** (`Tag_Prompt.md`) — that gauge-constancy guarantee is unrelated to and unaffected by the
+separate ad-hoc screening sweep below, which uses its own one-off prompts outside the calibrated panel.
+- `UTTJ5N93` (seed, 2026-08-15) — cognitive forcing functions reduce AI overreliance: the
+  oversight-*effectiveness* dimension (oversight quality as a manipulable design variable, not a fixed
+  human property), feeding the "effective as well as scalable" dissertation question; stays context per
+  the `7BMFG5IK` precedent. Bore a required rationale child note (mirrors the `problem-statement-anchor`
+  capture convention) — retained as the per-item documentation pattern for the sweep below.
+- **Corpus-wide sweep (2026-08-16):** all 1,040 core+context items screened against three criteria —
+  (A) practice: concrete oversight mechanism/process; (B) theory: grounds *how* to make oversight
+  effective (automation bias, trust calibration, cognitive forcing, vigilance, signal detection,
+  accountability — general-AI counts if it transfers); (C) survey-insight: quantified findings specific
+  enough to seed a survey item. Two-pass QC (16-way parallel first pass showed severe rater-variance,
+  15–83% match rate across batches — the same panel-inconsistency problem the tagging sweep fights;
+  a strict independent second pass, first-pass verdicts treated as untrusted, converged to **175 items
+  (16.8% of pool)**: 128 High Confidence / 47 Medium Confidence). Sub-tags applied:
+  `dissertation-category:<practice|theory|survey-insight>` + `dissertation-confidence:<high|medium>`.
+  Filed in Zotero `Dissertation Lit Review / 01 - Candidates / {01 - High Confidence, 02 - Medium
+  Confidence}`. Full list + rationale: `Methodology/Dissertation_Candidates_2026-08-16.md`.
+- **Machine-assisted, not machine-only:** the sweep and its QC pass are a first-draft filter, same
+  epistemic status as the theme-tagging panel's machine proposals — Scott's read of the candidate list
+  is the actual bar, not this tag's presence alone. This tag remains **human-final**: it may be seeded
+  by a machine sweep, but is not written to `theme:`/facet vocabulary or treated as settled until
+  reviewed, the same standing the tagging panel's proposals have before human confirmation.
 
 **`intro-framing`** — position / agenda / definitional papers that *name the gap* but don't operationalize
 a mechanism; cite in the Introduction. Usually context-tier (+ often `lit-review`).
