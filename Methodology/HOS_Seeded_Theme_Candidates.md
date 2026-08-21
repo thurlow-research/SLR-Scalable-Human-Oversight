@@ -151,6 +151,31 @@ oversight layer).
   roster ("N of M systems have benchmark-grade evidence") — likely fast, given agentic-systems
   papers' benchmark habits; promote then. ≠ the paper *being* a benchmark study of third-party
   systems (that's `method-experiment`, subjects-may-be-systems rule).
+- **(Corpus-seeded, 2026-08-20) `synthetic-evaluated` form facet — STAGED.** Own system evaluated
+  against **self-constructed, non-standardized scenarios/workloads** (constructed tasks, mock data)
+  rather than a standardized third-party benchmark or a real deployment — an evidence-strength rung
+  *within* `built-system`, below `benchmark-evaluated`: self-tests < `synthetic-evaluated` <
+  `benchmark-evaluated` < field study < adopted. Motivating instance: **HBR7QZ2C** (policy engine
+  for agentic AI) — Section 10 evaluation runs the authors' own system over three self-constructed
+  workloads (document automation / financial analysis / knowledge assistant, 200–300 tasks each),
+  outcomes scored by human reviewers post-hoc; no real users, no field deployment, no standardized
+  benchmark. Machine panel had proposed `method-experiment` here — wrong per the world-or-tool
+  test (results describe the tool, not the world); human read caught it on full-text check.
+  Deliberately NOT a `method-*` value, same reasoning as `benchmark-evaluated`. Deliberately NOT
+  named with "mock" — that word is already reserved (`design-only`'s "mock demo ≠ built": fabricated
+  *outputs*, keeps a paper OFF `built-system` entirely). `synthetic-evaluated` presumes the system
+  really runs and produces real (unfabricated) outputs — only the *workload* is constructed, not
+  the mechanism's results. **Tripwire already fired at staging time:** a scan of the sweep panel's
+  votes found `built-system` + `method-experiment` co-proposed by at least one model on **21 of 128
+  sweep papers** (7 in 01-Accept, 13 in 02-Light-Review, 1 in the Full Read bucket) — 38% of the
+  sweep's 55 built-system papers. Zero such co-occurrence survived in the 20 human-verified
+  calibration gold papers, consistent with this being a real, recurring machine-only confusion that
+  resolves correctly only on a full-text check. Candidate list for spot-checking as the arbiter
+  works the workbook: 7SH86C2W, 7UB2MD8Z, 96XE669R, A5WDGC7J, A6ZE2A26, C88VGWMI, CI93QRUH, I6FZ5GD2,
+  JCTP8VXP, MFSZPSPU, NRVQT89E, T3XTXIXW, U9VZQXGI, VZ27QUPQ, WBS9U5N7, X7EN6DXZ, XK3P9C96, XRTVITVP,
+  Y4TIF9KW, ZBF86IJM, ZH6QIU8A. Not yet grafted into the live `Tag_Prompt.md`/`Tag_Cheatsheet.md`
+  v2.13 instrument (frozen for gauge constancy); available now as a `cal:human:facet:` override on
+  individual items ahead of a formal graft decision.
 
 ## Grafting checklist (do before classifying cores)
 1. Cross-check pass-through corpus papers (Mitropoulos, Ferdous, Charoenwet, Parris, Kumar,

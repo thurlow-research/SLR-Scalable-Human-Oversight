@@ -2,7 +2,7 @@ type: ActionsTagsBackup
 author: scott
 platformVersion: "7.0.15"
 pluginVersion: "2.4.0"
-timestamp: "2026-07-21T00:00:00.000Z"
+timestamp: "2026-08-20T00:00:00.000Z"
 actions:
   slr-oversight-scaling-inversion:
     event: 0
@@ -356,6 +356,14 @@ actions:
     menu: "[SLR] facet:method-field-study"
     enabled: true
     name: "[SLR] facet:method-field-study"
+  slr-facet-synthetic-evaluated:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:synthetic-evaluated"
+    shortcut: ""
+    menu: "[SLR] facet:synthetic-evaluated"
+    enabled: true
+    name: "[SLR] facet:synthetic-evaluated"
   slr-demote-context:
     event: 0
     operation: 3
