@@ -111,7 +111,7 @@ Model panel: `opus` (Claude Opus) · `fable` (Claude Fable 5) · `codex` (gpt-5.
   papers (E95T8E88, UW2R6BBJ, E3E5YA2E, 5VTAJISY) + Set C carry the fully-clean comparison.
 - **2026-07-20 — method backfill audit → v2.9 (changelog §26).** Set A method facets backfilled
   (7/10 first-pass); whose-properties triangle + subjects-may-be-systems rules encoded;
-  22JBEZNK +experiment, UB2EVUFU −experiment; `benchmark-evaluated` staged (UB2EVUFU/ProjDevBench
+  22JBEZNK +experiment, UB2EVUFU −experiment; `evaluated-benchmark` staged (UB2EVUFU/ProjDevBench
   = first instance). Text-only; menu stays 43.
 - **2026-07-20 — data-collection method family (v2.8, changelog §25).** `method-self-report` /
   `method-mining` / `method-experiment` / `method-field-study` — own-evidence-only, multi-apply,

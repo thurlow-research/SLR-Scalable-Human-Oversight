@@ -2,7 +2,7 @@ type: ActionsTagsBackup
 author: scott
 platformVersion: "7.0.15"
 pluginVersion: "2.4.0"
-timestamp: "2026-07-21T00:00:00.000Z"
+timestamp: "2026-08-21T00:02:00.000Z"
 actions:
   slr-oversight-scaling-inversion:
     event: 0
@@ -356,7 +356,47 @@ actions:
     menu: "[SLR] facet:method-field-study"
     enabled: true
     name: "[SLR] facet:method-field-study"
-  slr-demote-context:
+  slr-facet-evaluated-benchmark:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:evaluated-benchmark"
+    shortcut: ""
+    menu: "[SLR] facet:evaluated-benchmark"
+    enabled: true
+    name: "[SLR] facet:evaluated-benchmark"
+  slr-facet-evaluated-synthetic:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:evaluated-synthetic"
+    shortcut: ""
+    menu: "[SLR] facet:evaluated-synthetic"
+    enabled: true
+    name: "[SLR] facet:evaluated-synthetic"
+  slr-facet-agent-panel:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:agent-panel"
+    shortcut: ""
+    menu: "[SLR] facet:agent-panel"
+    enabled: true
+    name: "[SLR] facet:agent-panel"
+  slr-facet-cross-model:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:cross-model"
+    shortcut: ""
+    menu: "[SLR] facet:cross-model"
+    enabled: true
+    name: "[SLR] facet:cross-model"
+  z-slr-dissertation-input:
+    event: 0
+    operation: 3
+    data: "dissertation-input"
+    shortcut: ""
+    menu: "[SLR] dissertation-input"
+    enabled: true
+    name: "[SLR] dissertation-input"
+  zz-slr-demote-context:
     event: 0
     operation: 3
     data: "demote:context"

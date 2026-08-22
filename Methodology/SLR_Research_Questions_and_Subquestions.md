@@ -56,7 +56,7 @@ general anatomy of practice; SQ5 is its sharpest, most-RQ-central slice
 ## Timing & methodological guardrail
 
 - **When to finalize:** the bottom-up RQ→SQ refinement is the **bridge step after
-  the full 114 extraction + QA** (stable theme/facet frequencies tell you which SQs
+  the full 148-item core extraction + QA** (stable theme/facet frequencies tell you which SQs
   the evidence can actually support), and **before synthesis writing**. This
   skeleton is provisional and doubles now as a **field-coverage check** (every SQ
   maps to captured fields).
@@ -64,7 +64,8 @@ general anatomy of practice; SQ5 is its sharpest, most-RQ-central slice
   (descriptive/structural = legitimate); do **not** write *findings-claims* into the
   SQs before synthesis. Document the refinement transparently as an emergent step,
   consistent with the earlier two-part scope narrowing.
-- **What we already see shaping emphasis:** corpus is solution-heavy (90/114 both)
-  → problem SQs lighter (framing); thin effectiveness/human-subjects evidence → SQ5
+- **What we already see shaping emphasis:** corpus is solution-heavy (90/114 both,
+  measured against the earlier 114-item set — **recompute against the 148-item core
+  before citing**) → problem SQs lighter (framing); thin effectiveness/human-subjects evidence → SQ5
   effectiveness will honestly report an *immature evidence base*, which is itself the
   finding that **justifies the organizational survey**.
