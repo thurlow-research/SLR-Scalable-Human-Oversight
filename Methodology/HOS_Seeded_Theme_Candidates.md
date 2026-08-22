@@ -159,6 +159,16 @@ oversight layer).
   sweep panel's automated scan had initially flagged it as an `evaluated-synthetic` candidate
   (mixed-signal Bucket B) — full-text check distinguished "own self-constructed workload" from
   "standardized third-party benchmark."
+  **Boundary sharpened (2026-08-22), worked example ZBF86IJM** (uncertainty-highlighting study):
+  its coding tasks were *sourced from* a well-known platform (LeetCode, "easy" tier), but that
+  alone does not confer `evaluated-benchmark` — the authors hand-picked 15 candidates, generated
+  their own Codex completions, piloted with 3 participants, and pruned to a final 3 by their own
+  criteria (10-minute completion time, diversity of error types). **"Standardized" means
+  administering a recognized third-party benchmark's own fixed protocol** — its established task
+  set *and* its established scoring methodology, as DVNA/ProjDevBench are — not "sourced from a
+  platform that happens to have difficulty tiers." Curating raw material from a well-known pool is
+  authored curation, not benchmark administration. (ZBF86IJM doesn't land on this ladder at all in
+  the end — see the `evaluated-synthetic` entry below for why.)
 - **(Corpus-seeded, 2026-08-20; renamed 2026-08-22) `evaluated-synthetic` form facet — STAGED.**
   (Renamed from `synthetic-evaluated`, same sort-adjacency rationale as above.) Own system
   evaluated against **self-constructed, non-standardized scenarios/workloads** (constructed
@@ -199,6 +209,36 @@ oversight layer).
   `cal:human:facet:benchmark-evaluated` → `cal:human:facet:evaluated-benchmark` and
   `cal:human:facet:synthetic-evaluated` → `cal:human:facet:evaluated-synthetic` (12 items,
   `slr-tools/rename_eval_facets.py`); `slr_human_tags_actions.yml` menu entries renamed to match.
+  **Ladder-vs-`method-*` exclusivity rule, sharpened (2026-08-22)** after a pressure-test against
+  ZBF86IJM (uncertainty-highlighting study, LeetCode-derived tasks, 30 real programmers). The
+  earlier phrasing "no real users, no field deployment, no standardized benchmark" was a
+  description of the HBR7QZ2C worked example, not a general criterion, and reads as arbitrary
+  without the reasoning: **the rung a paper's evaluation lands on is governed by the instrument's
+  own pre-existing world-or-tool test** (§ method family) — *"results describing the world (real
+  users, real deployment, real behavior) → method facet; results describing only the tool
+  (self-run tests over constructed corpora) → built-system evaluation."* That is a **fork, not two
+  independently-composable properties**: a given evaluation event lands on the tool side
+  (`self-tests`/`evaluated-synthetic`/`evaluated-benchmark`) **or** the world side
+  (`method-experiment`/`method-field-study` as a method facet) — never both for the *same*
+  evaluation. Plainly: **`evaluated-synthetic` = the authors invented their own test data and test
+  cases and measured their own system's performance against that self-made material** — no real
+  subject performs the task in that evaluation event. The instant a real subject performs the task
+  and their behavior/outcomes are what's measured, that evaluation event is `method-experiment` (a
+  defined task set + a manipulated condition, investigating a specific question) or
+  `method-field-study` (real work, natural setting, closer to "and what did you think?") instead —
+  **not additionally `evaluated-synthetic`,** even though the task material itself was authored/
+  curated (curating stimuli is inherent to running *any* controlled experiment, so treating that as
+  sufficient for `evaluated-synthetic` would make it fire on nearly every `method-experiment` paper
+  and erase its discriminating power — the same failure mode already rejected once this session for
+  the `risks` facet). **Worked contrast: ZBF86IJM stays `method-experiment` only** — real
+  programmers used the Edit Model live, so results describe the world, not the tool; it does
+  **not** also get `evaluated-synthetic` despite the LeetCode-derived tasks being author-curated.
+  **A single paper can still land on both sides**, just via *separate* evaluation events, not the
+  same one twice — see NRVQT89E: the critic model runs alone and a contractor grades its output
+  after the fact (tool side → `method-field-study` rung, real production-sourced material) **and**
+  the contractors' own tampering/rating task is a real controlled human-subjects exercise (world
+  side → `method-experiment` facet) — two distinct measurements in one paper, not one measurement
+  double-tagged.
   **`method-field-study` vs. `adopted` boundary sharpened (2026-08-22), worked example
   NRVQT89E** (LLM Critics Help Catch LLM Bugs / CriticGPT): evaluated on real ChatGPT production
   RLHF data (real user interactions, real production contractor-labeling infrastructure) — not a

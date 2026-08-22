@@ -768,3 +768,48 @@ explicitly not corpus evidence for it, per the standing guardrail (`HOS_Seeded_T
 
 Not yet in the live v2.13 instrument (frozen for gauge constancy); apply by hand as
 `cal:human:facet:agent-panel` / `cal:human:facet:cross-model` ahead of a formal graft decision.
+
+## 34. `evaluated-synthetic`/`evaluated-benchmark` boundary rules sharpened via pressure-testing (ZBF86IJM, NRVQT89E, 2026-08-22)
+
+Arbiter pressure-tested both staged evidence-strength facets against two new worked examples
+during full-read cleanup, surfacing two real gaps in the prior wording (§33's rename carried the
+gaps forward unchanged; this entry fixes the substance).
+
+**Gap 1 — "standardized" was underspecified.** ZBF86IJM's coding tasks were sourced from LeetCode
+(a well-known platform, "easy" tier) — initially read as pushing toward `evaluated-benchmark`
+("well-known dataset"). **Ruling: "standardized" means administering a recognized third-party
+benchmark's own fixed protocol** (task set + scoring methodology, as DVNA/ProjDevBench are) — not
+"sourced from a platform with difficulty tiers." The authors hand-picked 15 candidates from
+LeetCode, generated their own completions, piloted, and pruned to 3 by their own criteria — that's
+authored curation on top of a well-known raw-material pool, not benchmark administration.
+`evaluated-benchmark` requires the real, fixed, field-recognized thing, run as-is.
+
+**Gap 2 — the "no real users" phrasing in `evaluated-synthetic`'s HBR7QZ2C worked example had been
+read as a general criterion, and wasn't justified as one.** Corrected ruling, grounded in the
+instrument's pre-existing world-or-tool test rather than an ad hoc rule: **the evidence-strength
+ladder (`self-tests`/`evaluated-synthetic`/`evaluated-benchmark`) and the method-* facets
+(`method-experiment`/`method-field-study`) are a fork, not independently-composable properties.**
+An evaluation event lands on the *tool* side (nobody real performs the task; the system runs and
+something/someone grades the output after) or the *world* side (a real subject performs the task
+and their behavior is measured) — never both for the same event. `evaluated-synthetic` = the
+authors invented their own test data/cases and measured their own system against that self-made
+material, tool side only. The moment a real subject performs the task, that event is
+`method-experiment` (defined task set + manipulated condition) or `method-field-study` (real work,
+natural setting) instead — **not additionally `evaluated-synthetic`**, even when the task material
+was author-curated, because stimulus curation is inherent to any controlled experiment and treating
+it as sufficient would make the facet fire on nearly every `method-experiment` paper (the same
+near-100%-base-rate failure mode already rejected once this session for a `risks` facet proposal).
+
+**Worked contrast, both directions:**
+- **ZBF86IJM** — real programmers used the Edit Model live to complete tasks; results describe the
+  world. `method-experiment` only. Does **not** also get `evaluated-synthetic`, despite the
+  author-curated LeetCode-derived material.
+- **NRVQT89E** — contains *two separate* evaluation events, one on each side, which is why it
+  legitimately carries tags from both without violating the fork: the critic model runs alone and
+  a contractor grades its output afterward (tool side → `method-field-study` *ladder rung*, on the
+  strength of real production-sourced material) **and** the contractors' own tampering/rating task
+  is itself a real controlled human-subjects exercise (world side → `method-experiment` *facet*).
+  Two distinct measurements in one paper, not one measurement double-tagged.
+
+Docs updated: `Methodology/HOS_Seeded_Theme_Candidates.md` (`evaluated-benchmark` and
+`evaluated-synthetic` entries both carry the corrected reasoning + worked examples inline).
