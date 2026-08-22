@@ -708,3 +708,63 @@ each fix was re-tested, and the sharpest result — the `risk-routing`/`hitl-wor
 refinement — converted a persistent **2/3 model split into 5/5 unanimity aligned with the human**.
 Cross-model tagging behavior is a **model disposition, not a vendor trait** (Fable≈Gemini), and **model
 consensus does not substitute for human judgment** on breadth and scope.
+
+## 33. Staged-facet rename (sort adjacency) + `agent-panel`/`cross-model` staged + `7SH86C2W` resolved (2026-08-22)
+
+**Rename, no definitional change.** `benchmark-evaluated` → `evaluated-benchmark` and
+`synthetic-evaluated` → `evaluated-synthetic`, purely so the two sort adjacently in the Zotero
+tag-selector menu. All 12 affected Zotero items re-tagged (`slr-tools/rename_eval_facets.py`);
+`slr_human_tags_actions.yml` menu entries renamed to match; every doc reference updated
+(`HOS_Seeded_Theme_Candidates.md`, `Synthetic_Eval_Check_Guide.md`, `Emerging_Themes.md`,
+`Sweep_Reading_Guide.md`, `README.md`, `Tag_Prompt.md`/`Tag_Cheatsheet.md`'s parenthetical
+mention). Historical entries (§26, `SETB_Human_Packet.md`) left under the old names as a record
+of what the instrument said at the time.
+
+**`7SH86C2W` resolved** (one of the `evaluated-synthetic` candidate-list papers): a single
+self-selected, non-repeated scenario (one web-app build, journaled), explicitly self-labeled
+exploratory/preliminary by its own authors — falls below `evaluated-synthetic` on the
+evidence-strength ladder, at the plain `self-tests` (untagged) rung. A separate `ad-hoc-evaluated`
+tier (bare smoke-test vs. a real-but-single-case empirical exercise) was considered and
+**rejected**: no corpus instance yet exists that is genuinely *weaker* than 7SH86C2W's real
+data-collection effort, so there's nothing to split against, and the split wouldn't change any
+synthesis claim (proposed-vs-adopted maturity story doesn't distinguish the two). Ladder stays
+4 rungs; revisit only if a bare-existence-proof instance turns up.
+
+**`agent-panel` + `cross-model` facets — STAGED.** Motivated by a structure/function conflation
+in `theme:ai-review`'s own text ("single-reviewer, multi-agent panels, and independent/cross-model
+review"). `theme:ai-review` is **unchanged** — it fires whenever an AI judges/checks a produced
+artifact, regardless of what's underneath. Two new orthogonal structural facets separate the
+questions `theme:ai-review` was conflating:
+- **`agent-panel`** — multiple distinct agents involved, in *any* capacity (generation, review, or
+  both). A PM/Architect/Tech-Design agent panel producing a design gets this but not
+  `theme:ai-review` (generation, not judging). A review committee gets both.
+- **`cross-model`** — of those agents, they're different vendors, not multiple instances of one —
+  a modifier *on* `agent-panel`'s composition, never on `ai-review` (so it never presupposes
+  review is happening).
+
+Corpus check before staging (grep for named model vendors across the strongest `ai-review`
+multi-agent candidates — not exhaustive, some may be baseline-comparison mentions rather than the
+paper's own architecture, full-text confirm still pending): **10 of 13 checked show genuine
+cross-vendor composition** (A6ZE2A26, GAD5Z8PV, UB2EVUFU, Y4TIF9KW, 5RKMGRNA, 7V7SRG43, S7FPFUT8,
+U9VZQXGI, XK3P9C96, V4IRKSFI); **1 clearly same-vendor** (HBR7QZ2C — gpt only, multiple personas —
+the `agent-panel`-without-`cross-model` worked example); 2 inconclusive (F9JM9CI6, CTGGMIX9 —
+single incidental mention, likely a baseline citation). Preliminary read: cross-vendor composition
+looks like the dominant pattern among this corpus's multi-agent review solutions, not the
+exception — a citable prevalence claim once confirmed by a full read.
+
+**Naming trail:** "adversarial-review" (broad, compound) rejected as repeating `ai-review`'s own
+structure/function conflation. "Cross-examination" rejected — checked against the corpus
+directly: appears exactly once (*Measuring Progress on Scalable Oversight for LLMs*), meaning a
+**human** cross-examining a **single** AI, not agent-checks-agent; adopting it would import a term
+the corpus already uses for a different concept. "Adversarial" alone *is* corpus-native (recurs in
+UB2EVUFU, U9VZQXGI, HBR7QZ2C for close to this concept) but was dropped in favor of the
+structure/function split above rather than one compound name. "Cross-model" is corpus-native
+(A6ZE2A26, describing multi-vendor composition directly) and was kept.
+
+**HOS guardrail note:** HOS's own decorrelation design (Claude=author, Codex=adversary,
+Gemini=correctness/architecture, Copilot=CI baseline) motivated *asking* this question but is
+explicitly not corpus evidence for it, per the standing guardrail (`HOS_Seeded_Theme_Candidates.md`
+§ intro) — the corpus check above, not HOS, is what grounds staging this.
+
+Not yet in the live v2.13 instrument (frozen for gauge constancy); apply by hand as
+`cal:human:facet:agent-panel` / `cal:human:facet:cross-model` ahead of a formal graft decision.

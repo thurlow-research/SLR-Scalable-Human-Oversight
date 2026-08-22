@@ -150,8 +150,8 @@ Five prefixed dimensions on Zotero tags:
 ### Key collection keys (verify before reporting)
 | Collection | Key | Last-known count |
 |---|---|---|
-| Phase 2 Keep | `3D8XR6AP` | 923 items |
-| Phase 2 Maybe→Keep | `ZB6R4G9H` | 59 items |
+| Phase 2 Keep | `3D8XR6AP` | 911 items (verified 2026-08-18) |
+| Phase 2 Maybe→Keep | `ZB6R4G9H` | 59 items (verified 2026-08-18) |
 | LinkedIn Post 01 | `JHJN4DKW` | 5 items |
 | Practitioner Network Keep | `5XM4VKNG` | — |
 
@@ -167,6 +167,11 @@ Five prefixed dimensions on Zotero tags:
 
 ## 6. Current pipeline state (last known — VERIFY)
 
+> **Re-verified 2026-08-18** (read-only Zotero): Phase 2 Keep `3D8XR6AP` = **911**, Maybe→Keep
+> `ZB6R4G9H` = **59** → eligible pool **970**. Library-wide PRISMA: **9,518** unique records
+> identified, 4,367 in scope (Keep∪Maybe); the `03 - Final` set holds **1,040** — **148 core** /
+> 892 context. The July figures below are retained as the prior snapshot.
+>
 > **Live-verified 2026-07-01** (read-only Zotero): Phase 2 apply is **complete** — `00-Queue` = 0 across all 10 sources; Phase 2 Keep `3D8XR6AP` = **924**, Maybe→Keep `ZB6R4G9H` = **59** → eligible pool **983**. The AI-House queries (Q-SCO-06/07, Q-arXiv-06/07, Q-ACM-07/08, Q-IEX-23/24) are fetched, deduped, and Pass-1 + Pass-2 screened (item traces show `s1:*` + `s2:*` tags and correct Phase 2 bucket membership). They contributed almost nothing to *Keep* under the tight Pass-2 rubric, which is why the pool held near 923.
 
 - **Two-phase screening complete across major sources.** Phase 1 (recall) → 4,061 Keep+Maybe. Phase 2 → **973 Keep / 73 Maybe / 2,908 Discard**. Final eligible pool (live 2026-07-01): **924** items (`3D8XR6AP`) + **59** Maybe→Keep (`ZB6R4G9H`) = **983**.

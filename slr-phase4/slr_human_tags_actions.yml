@@ -356,22 +356,38 @@ actions:
     menu: "[SLR] facet:method-field-study"
     enabled: true
     name: "[SLR] facet:method-field-study"
-  slr-facet-synthetic-evaluated:
+  slr-facet-evaluated-benchmark:
     event: 0
     operation: 3
-    data: "cal:human:facet:synthetic-evaluated"
+    data: "cal:human:facet:evaluated-benchmark"
     shortcut: ""
-    menu: "[SLR] facet:synthetic-evaluated"
+    menu: "[SLR] facet:evaluated-benchmark"
     enabled: true
-    name: "[SLR] facet:synthetic-evaluated"
-  slr-facet-benchmark-evaluated:
+    name: "[SLR] facet:evaluated-benchmark"
+  slr-facet-evaluated-synthetic:
     event: 0
     operation: 3
-    data: "cal:human:facet:benchmark-evaluated"
+    data: "cal:human:facet:evaluated-synthetic"
     shortcut: ""
-    menu: "[SLR] facet:benchmark-evaluated"
+    menu: "[SLR] facet:evaluated-synthetic"
     enabled: true
-    name: "[SLR] facet:benchmark-evaluated"
+    name: "[SLR] facet:evaluated-synthetic"
+  slr-facet-agent-panel:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:agent-panel"
+    shortcut: ""
+    menu: "[SLR] facet:agent-panel"
+    enabled: true
+    name: "[SLR] facet:agent-panel"
+  slr-facet-cross-model:
+    event: 0
+    operation: 3
+    data: "cal:human:facet:cross-model"
+    shortcut: ""
+    menu: "[SLR] facet:cross-model"
+    enabled: true
+    name: "[SLR] facet:cross-model"
   z-slr-dissertation-input:
     event: 0
     operation: 3

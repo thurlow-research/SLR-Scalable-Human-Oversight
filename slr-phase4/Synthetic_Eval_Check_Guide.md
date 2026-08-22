@@ -8,13 +8,15 @@ full tripwire evidence) · `Sweep_Reading_Guide.md` (the parent protocol this bo
 
 ## 1. What this collection is
 
-A staged, not-yet-live facet candidate: **`synthetic-evaluated`** — own system evaluated
-against **self-constructed, non-standardized scenarios/workloads** (constructed tasks, mock
-data) rather than a standardized third-party benchmark or a real deployment. It's a
-`built-system` evidence-strength rung, below `benchmark-evaluated`:
+A staged, not-yet-live facet candidate: **`evaluated-synthetic`** (renamed 2026-08-22 from
+`synthetic-evaluated`, purely for tag-menu sort adjacency with `evaluated-benchmark` — no
+definitional change) — own system evaluated against **self-constructed, non-standardized
+scenarios/workloads** (constructed tasks, mock data) rather than a standardized third-party
+benchmark or a real deployment. It's a `built-system` evidence-strength rung, below
+`evaluated-benchmark`:
 
 ```
-self-tests (untagged) < synthetic-evaluated < benchmark-evaluated < method-field-study < adopted
+self-tests (untagged) < evaluated-synthetic < evaluated-benchmark < method-field-study < adopted
 ```
 
 **Why it exists:** motivated by HBR7QZ2C during Full Read review — the machine panel proposed
@@ -30,14 +32,14 @@ resolves correctly on a full-text check.
 for gauge constancy — grafting it would make future panel runs v2.14 and break comparability
 with everything already scored). Available now only as a `cal:human:facet:` override you can
 type by hand, or via the Actions & Tags menu **after reimporting**
-`slr-phase4/slr_human_tags_actions.yml` (it now includes `[SLR] facet:synthetic-evaluated`).
+`slr-phase4/slr_human_tags_actions.yml` (it now includes `[SLR] facet:evaluated-synthetic`).
 
 ## 2. The 21 candidates, pre-triaged
 
 An automated pass (grep + full-text read, not a model panel) already sorted these into three
 buckets. **Nothing here is final — every call is marked "pending confirm" and needs your read.**
 
-### A. Tagged `cal:human:facet:synthetic-evaluated` (6) — my read says yes
+### A. Tagged `cal:human:facet:evaluated-synthetic` (6) — my read says yes
 Each has a child note explaining why. Confirm or override same as any Light Read: silence
 (`s5:read`, no change) = agree; use the menu to remove the facet if you disagree.
 
@@ -102,7 +104,7 @@ Same mechanics as the sweep workbook (`Sweep_Reading_Guide.md` §1): `s5:read` w
 `cal:human:*` menu to override. For this collection specifically:
 
 - **Agree with a tag** (bucket A): `s5:read`, no change.
-- **Disagree with a tag** (bucket A): remove `cal:human:facet:synthetic-evaluated` via the menu,
+- **Disagree with a tag** (bucket A): remove `cal:human:facet:evaluated-synthetic` via the menu,
   `s5:read`.
 - **Bucket B calls**: add the facet if you agree it's synthetic; leave it off and `s5:read` if
   not. A one-line note either way helps the promotion decision below.
@@ -112,7 +114,7 @@ Same mechanics as the sweep workbook (`Sweep_Reading_Guide.md` §1): `s5:read` w
 
 If the pattern holds up — a meaningful cluster of papers where the true evaluation is
 self-constructed/synthetic and the current instrument can't distinguish that from a real
-`method-experiment` — the next step is deciding whether to graft `synthetic-evaluated` into a
+`method-experiment` — the next step is deciding whether to graft `evaluated-synthetic` into a
 new instrument version (v2.14) for future panel runs, vs. keeping it a human-only override tag
 indefinitely. That's a separate decision from this read-through; this collection just gathers the
 evidence.

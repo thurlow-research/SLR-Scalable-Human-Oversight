@@ -38,7 +38,7 @@ keystrokes.
    changelog/§7-style audit trail.
 6. **New-tag instincts:** if a paper makes you want a tag that doesn't exist, do NOT improvise a
    slug — note it in a child note ("candidate: <idea>"). Staged candidates with armed tripwires
-   already exist for `benchmark-evaluated` and the `risk-quantification` family.
+   already exist for `evaluated-benchmark` and the `risk-quantification` family.
 7. **Dissertation/survey capture (any bucket):** `dissertation-input` (with its required child
    note naming the dissertation question) and `survey-input` are yours to apply on sight.
 

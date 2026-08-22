@@ -392,7 +392,7 @@ artifacts measured (repos, PRs, commits, forum posts, logs, telemetry — behavi
   whose-properties test; parity with VibeGuard's untagged "controlled experiments on synthetic
   projects." The triangle: VibeGuard (own tool, synthetic) none · UB2EVUFU (own tool, standardized
   bench) none · UDVHQ5HR (others' tools studied) experiment. Benchmark-grade evidence for own
-  systems = evidence-strength within `built-system` — staged `benchmark-evaluated` candidate.
+  systems = evidence-strength within `built-system` — staged `evaluated-benchmark` candidate.
 - **Slug rationale:** `method-self-report`, not `method-survey` — avoids colliding with
   `survey-input`, whose slug already misled the arbiter once (B644HQFS probe: the facet tests the
   finding's *utility to the org survey*, method-independent; a mined study can be survey-input).

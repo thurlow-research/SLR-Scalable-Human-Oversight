@@ -142,45 +142,107 @@ oversight layer).
   expert-validated design < built prototype < adopted). **Tripwire: papers where a documented
   panel validates the contribution itself accumulate** — the motivating instance dissolved on
   closer read (its panel was input-side), so the facet waits for a genuine first instance.
-- **(Corpus-seeded, 2026-07-20) `benchmark-evaluated` form facet — STAGED.** Own system evaluated
-  **under a standardized third-party benchmark's prescribed conditions** (UB2EVUFU on ProjDevBench
-  = first genuine instance) — an evidence-strength rung *within* `built-system`: self-tests <
-  standardized benchmark < field study < adopted. Deliberately NOT a `method-*` value (that would
-  reverse the world-or-tool cut — the results still describe the tool). **Tripwire: built-system
-  papers with standardized-benchmark evaluations accumulate** such that the Discussion wants the
-  roster ("N of M systems have benchmark-grade evidence") — likely fast, given agentic-systems
-  papers' benchmark habits; promote then. ≠ the paper *being* a benchmark study of third-party
-  systems (that's `method-experiment`, subjects-may-be-systems rule). **Second instance (2026-08-21):
-  Y4TIF9KW** (Code Prism) — benchmarks detection coverage against DVNA (Damn Vulnerable Node
-  Application), a standardized third-party vulnerable-app benchmark, with findings mapped to OWASP
-  Top Ten; caught during the Full Read pass after the sweep panel's automated scan had initially
-  flagged it as a `synthetic-evaluated` candidate (mixed-signal Bucket B) — full-text check
-  distinguished "own self-constructed workload" from "standardized third-party benchmark."
-- **(Corpus-seeded, 2026-08-20) `synthetic-evaluated` form facet — STAGED.** Own system evaluated
-  against **self-constructed, non-standardized scenarios/workloads** (constructed tasks, mock data)
-  rather than a standardized third-party benchmark or a real deployment — an evidence-strength rung
-  *within* `built-system`, below `benchmark-evaluated`: self-tests < `synthetic-evaluated` <
-  `benchmark-evaluated` < field study < adopted. Motivating instance: **HBR7QZ2C** (policy engine
-  for agentic AI) — Section 10 evaluation runs the authors' own system over three self-constructed
-  workloads (document automation / financial analysis / knowledge assistant, 200–300 tasks each),
-  outcomes scored by human reviewers post-hoc; no real users, no field deployment, no standardized
-  benchmark. Machine panel had proposed `method-experiment` here — wrong per the world-or-tool
-  test (results describe the tool, not the world); human read caught it on full-text check.
-  Deliberately NOT a `method-*` value, same reasoning as `benchmark-evaluated`. Deliberately NOT
-  named with "mock" — that word is already reserved (`design-only`'s "mock demo ≠ built": fabricated
-  *outputs*, keeps a paper OFF `built-system` entirely). `synthetic-evaluated` presumes the system
-  really runs and produces real (unfabricated) outputs — only the *workload* is constructed, not
-  the mechanism's results. **Tripwire already fired at staging time:** a scan of the sweep panel's
-  votes found `built-system` + `method-experiment` co-proposed by at least one model on **21 of 128
-  sweep papers** (7 in 01-Accept, 13 in 02-Light-Review, 1 in the Full Read bucket) — 38% of the
-  sweep's 55 built-system papers. Zero such co-occurrence survived in the 20 human-verified
-  calibration gold papers, consistent with this being a real, recurring machine-only confusion that
-  resolves correctly only on a full-text check. Candidate list for spot-checking as the arbiter
-  works the workbook: 7SH86C2W, 7UB2MD8Z, 96XE669R, A5WDGC7J, A6ZE2A26, C88VGWMI, CI93QRUH, I6FZ5GD2,
-  JCTP8VXP, MFSZPSPU, NRVQT89E, T3XTXIXW, U9VZQXGI, VZ27QUPQ, WBS9U5N7, X7EN6DXZ, XK3P9C96, XRTVITVP,
-  Y4TIF9KW, ZBF86IJM, ZH6QIU8A. Not yet grafted into the live `Tag_Prompt.md`/`Tag_Cheatsheet.md`
-  v2.13 instrument (frozen for gauge constancy); available now as a `cal:human:facet:` override on
-  individual items ahead of a formal graft decision.
+- **(Corpus-seeded, 2026-07-20; renamed 2026-08-22) `evaluated-benchmark` form facet — STAGED.**
+  (Renamed from `benchmark-evaluated` purely for tag-menu sort adjacency with `evaluated-synthetic`
+  — no definitional change; all prior Zotero tags updated to the new slug, see rename note below.)
+  Own system evaluated **under a standardized third-party benchmark's prescribed conditions**
+  (UB2EVUFU on ProjDevBench = first genuine instance) — an evidence-strength rung *within*
+  `built-system`: self-tests < standardized benchmark < field study < adopted. Deliberately NOT a
+  `method-*` value (that would reverse the world-or-tool cut — the results still describe the
+  tool). **Tripwire: built-system papers with standardized-benchmark evaluations accumulate** such
+  that the Discussion wants the roster ("N of M systems have benchmark-grade evidence") — likely
+  fast, given agentic-systems papers' benchmark habits; promote then. ≠ the paper *being* a
+  benchmark study of third-party systems (that's `method-experiment`, subjects-may-be-systems
+  rule). **Second instance (2026-08-21): Y4TIF9KW** (Code Prism) — benchmarks detection coverage
+  against DVNA (Damn Vulnerable Node Application), a standardized third-party vulnerable-app
+  benchmark, with findings mapped to OWASP Top Ten; caught during the Full Read pass after the
+  sweep panel's automated scan had initially flagged it as an `evaluated-synthetic` candidate
+  (mixed-signal Bucket B) — full-text check distinguished "own self-constructed workload" from
+  "standardized third-party benchmark."
+- **(Corpus-seeded, 2026-08-20; renamed 2026-08-22) `evaluated-synthetic` form facet — STAGED.**
+  (Renamed from `synthetic-evaluated`, same sort-adjacency rationale as above.) Own system
+  evaluated against **self-constructed, non-standardized scenarios/workloads** (constructed
+  tasks, mock data) rather than a standardized third-party benchmark or a real deployment — an
+  evidence-strength rung *within* `built-system`, below `evaluated-benchmark`: self-tests <
+  `evaluated-synthetic` < `evaluated-benchmark` < field study < adopted. Motivating instance:
+  **HBR7QZ2C** (policy engine for agentic AI) — Section 10 evaluation runs the authors' own system
+  over three self-constructed workloads (document automation / financial analysis / knowledge
+  assistant, 200–300 tasks each), outcomes scored by human reviewers post-hoc; no real users, no
+  field deployment, no standardized benchmark. Machine panel had proposed `method-experiment` here
+  — wrong per the world-or-tool test (results describe the tool, not the world); human read caught
+  it on full-text check. Deliberately NOT a `method-*` value, same reasoning as
+  `evaluated-benchmark`. Deliberately NOT named with "mock" — that word is already reserved
+  (`design-only`'s "mock demo ≠ built": fabricated *outputs*, keeps a paper OFF `built-system`
+  entirely). `evaluated-synthetic` presumes the system really runs and produces real (unfabricated)
+  outputs — only the *workload* is constructed, not the mechanism's results. **Tripwire already
+  fired at staging time:** a scan of the sweep panel's votes found `built-system` +
+  `method-experiment` co-proposed by at least one model on **21 of 128 sweep papers** (7 in
+  01-Accept, 13 in 02-Light-Review, 1 in the Full Read bucket) — 38% of the sweep's 55
+  built-system papers. Zero such co-occurrence survived in the 20 human-verified calibration gold
+  papers, consistent with this being a real, recurring machine-only confusion that resolves
+  correctly only on a full-text check. Candidate list for spot-checking as the arbiter works the
+  workbook: 7SH86C2W, 7UB2MD8Z, 96XE669R, A5WDGC7J, A6ZE2A26, C88VGWMI, CI93QRUH, I6FZ5GD2,
+  JCTP8VXP, MFSZPSPU, NRVQT89E, T3XTXIXW, U9VZQXGI, VZ27QUPQ, WBS9U5N7, X7EN6DXZ, XK3P9C96,
+  XRTVITVP, Y4TIF9KW, ZBF86IJM, ZH6QIU8A. Not yet grafted into the live
+  `Tag_Prompt.md`/`Tag_Cheatsheet.md` v2.13 instrument (frozen for gauge constancy); available now
+  as a `cal:human:facet:` override on individual items ahead of a formal graft decision.
+  **7SH86C2W resolved (2026-08-22):** full-read check — single self-selected, non-repeated
+  scenario (one web-app project, one journal of observations), explicitly self-labeled
+  "exploratory"/"preliminary" — falls below `evaluated-synthetic` on the ladder, at the plain
+  `self-tests` (untagged) rung. Considered and rejected a separate `ad-hoc-evaluated` tier between
+  `self-tests` and `evaluated-synthetic` (bare-smoke-test vs. real-if-single-case empirical
+  exercise): no worked example yet exists of a *weaker* case than 7SH86C2W's real data-collection
+  effort, so there is nothing to split against, and it wouldn't change any synthesis claim either
+  way (proposed-vs-adopted maturity story doesn't distinguish the two). Ladder stays 4 rungs;
+  revisit only if a genuinely weaker (bare existence-proof, no data collected) instance turns up.
+  **Tag-rename note (2026-08-22):** all live Zotero tags updated
+  `cal:human:facet:benchmark-evaluated` → `cal:human:facet:evaluated-benchmark` and
+  `cal:human:facet:synthetic-evaluated` → `cal:human:facet:evaluated-synthetic` (12 items,
+  `slr-tools/rename_eval_facets.py`); `slr_human_tags_actions.yml` menu entries renamed to match.
+
+- **(Corpus-seeded, 2026-08-22) `agent-panel` + `cross-model` facets — STAGED.** Two new
+  orthogonal, composable structural facets, motivated by a naming ambiguity in `theme:ai-review`'s
+  own text ("single-reviewer, multi-agent panels, and independent/cross-model review" conflates
+  *structure* — is more than one agent involved — with *function* — is checking/judging actually
+  happening). `theme:ai-review` itself is **unchanged**: it fires whenever an AI judges/checks a
+  produced artifact, regardless of whether that's one agent, a same-model panel, or a cross-vendor
+  panel underneath. The two new facets separate out the structural questions:
+  - **`agent-panel`** — multiple distinct agents are involved in the workflow, in *any* capacity
+    (generation, review, or both). A PM-agent/Architect-agent/Tech-Design-agent panel
+    collaboratively producing a design gets this facet but NOT `theme:ai-review` (no judging of a
+    produced artifact — generation/steering territory). A three-agent review committee gets both.
+  - **`cross-model`** — of those agents, they are different underlying vendors/models, not
+    multiple instances of one — a modifier *on* `agent-panel` (panel composition), not on
+    `ai-review` (so it never presupposes review is happening).
+  Corpus check before staging (2026-08-22, grep for named model vendors — not exhaustive, some
+  entries may be baseline-comparison mentions rather than the paper's own cooperating architecture,
+  full-text confirm still needed): of the strongest `ai-review`-tagged multi-agent candidates,
+  **10 of 13 checked show genuine cross-vendor composition** (A6ZE2A26 — claude/codellama/
+  deepseek/gemini/gpt/llama/mistral; GAD5Z8PV — claude/gpt; UB2EVUFU — claude/deepseek/gpt/llama;
+  Y4TIF9KW — claude/gemini/gpt; 5RKMGRNA — gemini/gpt; 7V7SRG43 — gpt/llama; S7FPFUT8 —
+  gemini/gpt/llama/palm; U9VZQXGI — claude/deepseek/gemini/gpt; XK3P9C96 — claude/gpt; V4IRKSFI —
+  deepseek/gpt/llama), **1 is clearly same-vendor** (HBR7QZ2C — gpt only, multiple personas/roles
+  — the `agent-panel`-without-`cross-model` worked example), 2 inconclusive (F9JM9CI6, CTGGMIX9 —
+  single incidental vendor mention, likely a baseline citation rather than the paper's own
+  architecture). Preliminary read: cross-vendor composition is the dominant, not the exceptional,
+  pattern among this corpus's multi-agent review solutions — a genuinely citable prevalence claim
+  for the dissertation once the inconclusive/baseline-vs-architecture distinction is confirmed by a
+  full read, not left as a grep artifact.
+  **Naming decision trail (2026-08-22):** considered "adversarial-review" (broad) — rejected as
+  conflating structure+function, same problem as `ai-review`'s own text. Considered
+  "cross-examination" — checked against the corpus directly: appears exactly once, in *Measuring
+  Progress on Scalable Oversight for LLMs*, meaning a **human** cross-examining a **single** AI
+  (not agent-checks-agent) — adopting it would import a term the corpus already uses for a
+  different concept, so rejected. "Adversarial" on its own *is* corpus-native (recurs in UB2EVUFU,
+  U9VZQXGI, HBR7QZ2C for close to this exact broad concept) but was dropped in favor of splitting
+  structure (`agent-panel`) from function (`ai-review`, unchanged) rather than one compound name.
+  "Cross-model" is corpus-native (A6ZE2A26, 2 occurrences, describing multi-vendor composition
+  directly) and was kept. **HOS guardrail note:** HOS's own decorrelation design (Claude=author,
+  Codex=adversary, Gemini=correctness/architecture, Copilot=CI baseline) motivated *asking* this
+  question but is explicitly not corpus evidence for it (per the guardrail above) — the corpus
+  check above, not HOS, is what grounds staging this. Not yet in the live v2.13 instrument; apply
+  by hand as `cal:human:facet:agent-panel` / `cal:human:facet:cross-model` ahead of a formal graft
+  decision.
 
 ## Grafting checklist (do before classifying cores)
 1. Cross-check pass-through corpus papers (Mitropoulos, Ferdous, Charoenwet, Parris, Kumar,
