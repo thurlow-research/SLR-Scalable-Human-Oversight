@@ -2,7 +2,7 @@ type: ActionsTagsBackup
 author: scott
 platformVersion: "7.0.15"
 pluginVersion: "2.4.0"
-timestamp: "2026-08-21T00:00:00.000Z"
+timestamp: "2026-08-21T00:01:00.000Z"
 actions:
   slr-oversight-scaling-inversion:
     event: 0
@@ -380,3 +380,11 @@ actions:
     menu: "[SLR] demote:context"
     enabled: true
     name: "[SLR] demote:context"
+  z-slr-dissertation-input:
+    event: 0
+    operation: 3
+    data: "dissertation-input"
+    shortcut: ""
+    menu: "[SLR] dissertation-input"
+    enabled: true
+    name: "[SLR] dissertation-input"
