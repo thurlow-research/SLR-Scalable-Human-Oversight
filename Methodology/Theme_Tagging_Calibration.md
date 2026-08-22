@@ -55,7 +55,27 @@ per tag. Output = strict JSON.
 - `cal:<model>:facet:<slug>` — each facet
 - `demote:<state>` (plain, not source-encoded) — transient re-scope flag, e.g. `demote:context`: this
   core looks like it belongs in another disposition; batch-reviewed then moved + flag removed.
-- (human will be `cal:human:*`). After adjudication, the agreed set lands as plain `theme:<slug>`.
+- `cal:human:theme:<slug>` / `cal:human:primary:theme:<slug>` / `cal:human:facet:<slug>` — the
+  arbiter's working judgment; can be revised mid-review.
+
+**Final-tag convention — RATIFIED 2026-08-21 (supersedes the "plain `theme:<slug>`" plan above,
+which was never executed).** Two things forced a decision: (1) Scott's standing principle that
+**Zotero is the sole source of truth — all data lives in Zotero**, including the per-model
+proposals (not just the human-adjudicated set), so the panel's individual votes get written to
+Zotero for every sweep paper, not left only in `sweep_triage_final.json`/the workbook; (2) a bare
+`theme:<slug>` namespace turned out to already be live — 3 legacy tags (`theme:tooling`,
+`theme:oversight`, `theme:vibe-coding`) from an unrelated Phase-1 topic-bucket system predate the
+v2.13 instrument, so "final = plain, unprefixed" would collide. Decision:
+- `cal:<model>:*` (opus/codex/gemini/+fable tie-breaks) — per-model proposals, as above, extended
+  to all 128 sweep papers (data already exists: `slr-phase4/data/tags-v213/{opus,codex,gemini}/`).
+- `cal:human:*` — the arbiter's working pass, as above. **Kept permanently, not stripped** —
+  Scott's call: the SLR needs a full audit trail/provenance, not just a locked final value.
+- **`final:theme:<slug>` / `final:primary:theme:<slug>` / `final:facet:<slug>`** (new, prefixed
+  — not bare) — the locked, reportable copy. Written once, at paper closeout (same moment as
+  `s5:read`), by copying whatever `cal:human:*` holds at that instant. **Stats/reporting queries
+  run against `final:*` only** — an in-progress `cal:human:*` edit never contaminates a report
+  mid-review. All three layers coexist permanently: `cal:<model>:*` = what the panel proposed,
+  `cal:human:*` = the arbiter's working record, `final:*` = the locked value used for reporting.
 
 **Tooling** (now under `slr-phase4/tools/`; scripts are resumable/idempotent): `run_cli.sh`
 (codex+gemini loop with per-call `timeout 300` + JSON salvage), Opus subagents, `write_tags.py`
