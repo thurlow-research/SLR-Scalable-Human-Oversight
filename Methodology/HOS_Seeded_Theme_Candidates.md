@@ -150,7 +150,12 @@ oversight layer).
   papers with standardized-benchmark evaluations accumulate** such that the Discussion wants the
   roster ("N of M systems have benchmark-grade evidence") — likely fast, given agentic-systems
   papers' benchmark habits; promote then. ≠ the paper *being* a benchmark study of third-party
-  systems (that's `method-experiment`, subjects-may-be-systems rule).
+  systems (that's `method-experiment`, subjects-may-be-systems rule). **Second instance (2026-08-21):
+  Y4TIF9KW** (Code Prism) — benchmarks detection coverage against DVNA (Damn Vulnerable Node
+  Application), a standardized third-party vulnerable-app benchmark, with findings mapped to OWASP
+  Top Ten; caught during the Full Read pass after the sweep panel's automated scan had initially
+  flagged it as a `synthetic-evaluated` candidate (mixed-signal Bucket B) — full-text check
+  distinguished "own self-constructed workload" from "standardized third-party benchmark."
 - **(Corpus-seeded, 2026-08-20) `synthetic-evaluated` form facet — STAGED.** Own system evaluated
   against **self-constructed, non-standardized scenarios/workloads** (constructed tasks, mock data)
   rather than a standardized third-party benchmark or a real deployment — an evidence-strength rung
