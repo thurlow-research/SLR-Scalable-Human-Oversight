@@ -199,6 +199,17 @@ oversight layer).
   `cal:human:facet:benchmark-evaluated` → `cal:human:facet:evaluated-benchmark` and
   `cal:human:facet:synthetic-evaluated` → `cal:human:facet:evaluated-synthetic` (12 items,
   `slr-tools/rename_eval_facets.py`); `slr_human_tags_actions.yml` menu entries renamed to match.
+  **`method-field-study` vs. `adopted` boundary sharpened (2026-08-22), worked example
+  NRVQT89E** (LLM Critics Help Catch LLM Bugs / CriticGPT): evaluated on real ChatGPT production
+  RLHF data (real user interactions, real production contractor-labeling infrastructure) — not a
+  benchmark, not self-constructed/synthetic. The one-line discriminator: **validated *with*
+  production data → `method-field-study`; used/operating *in* production → `adopted`.**
+  NRVQT89E's critic model was evaluated offline against real production-sourced data and never
+  itself deployed to real ChatGPT users, so it lands at `method-field-study` (one rung below
+  `adopted`), not `adopted` itself. Same discriminator the `adopted` pilot rule already draws
+  (study-site pilot vs. the org's own operational use) — this just names the production-data-source
+  case explicitly, since "production" language in a paper (baseline model, labeling pipeline) can
+  otherwise read as if the paper's own system were deployed when it wasn't.
 
 - **(Corpus-seeded, 2026-08-22) `agent-panel` + `cross-model` facets — STAGED.** Two new
   orthogonal, composable structural facets, motivated by a naming ambiguity in `theme:ai-review`'s
