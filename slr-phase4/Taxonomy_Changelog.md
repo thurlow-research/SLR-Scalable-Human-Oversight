@@ -1156,3 +1156,22 @@ form is fully carried by `design-only` ("specifies a mechanism in buildable deta
 credibly runs it" — tiers, thresholds, matrix all qualify) and its subject by
 `primary:theme:org-governance`. **This reverses the arbiter's earlier same-session instance call
 ("definitely a framework") — flagged explicitly rather than silently applied.**
+
+**§39 addendum — the decision line, in the arbiter's words (2026-08-23).** *"Proposing a framework
+for a pipeline is a design-only framework. Process is governance."* Three-way resolution, now the
+canonical form of this rule in `Tag_Cheatsheet.md`:
+
+| What the paper offers | Tags |
+|---|---|
+| Pipeline architecture, built | `framework` + `built-system` (+ `adopted` if used outside research) |
+| Pipeline architecture, proposed only | `framework` + `design-only` — *a proposed pipeline framework is a design-only framework*, not a non-framework (the 12 corpus papers) |
+| Process / org practice, no technical artifact | `theme:org-governance` + `design-only` — **no `framework`** |
+
+The middle row is the one that had been ambiguous and drove the §38 misstep: "not built" was being
+conflated with "not a framework." Buildability, not build status, is the test.
+
+**Applied to 6F3S8IB7 (HAIF):** `cal:human:facet:framework` **removed** (snapshot:
+`Backups/zotero-item-snapshots/6F3S8IB7_pre-framework-removal_2026-08-23.json`; arbiter note added
+to the item). Final human tag set: `primary:theme:org-governance`; themes `org-governance`,
+`hitl-workflow`, `risk-routing`, `provenance-auditability`, `oversight-scaling-inversion`; facets
+`design-only`, `risk-overreliance`, `risk-quality`. Core, `dissertation-input`, `s5:read`.
