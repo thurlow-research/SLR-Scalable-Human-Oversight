@@ -1542,3 +1542,33 @@ not the tag's name.
 
 **Docs updated:** `Tag_Cheatsheet.md` mode-pair line only. **Not** propagated to `Tag_Prompt.md`,
 per §41 — the panel prompt stays frozen at v2.13-as-used until the successor instrument is cut.
+
+## 48. Correction — WBS9U5N7 is a two-event paper, not a method-experiment confusion exemplar (2026-08-23)
+
+`WBS9U5N7` (Alami, *Cognitive camouflage*) had been characterized — in the Light Read prep sheet and
+in my own advice — as a clean example of the machine-only `built-system`/`method-experiment`
+confusion the §34 fork was written to catch. **That was wrong.** Arbiter endorsed
+`method-experiment` on review.
+
+**Why it holds:** the instrument's own carve-out covers it — *"**Subjects may be systems:**
+controlled studies of **third-party** tools/models whose findings characterize those systems =
+`method-experiment` (UDVHQ5HR)."* The paper reports a controlled comparison of Claude, GPT-4o and
+Gemini whose findings characterize *those* models (Gemini missed 2/8, Claude 0/8; Gemini fooled 4/5
+in the full-thesis condition; GPT-4o oscillates across all four domains). The "whose properties?"
+test points at third parties, not at ZTARE.
+
+So it is the **two-event pattern** (NRVQT89E, U9VZQXGI): ZTARE's own performance → the ladder rung
+`evaluated-synthetic`; the third-party model comparison → `method-experiment`. Both stand; the fork
+is not violated because they measure different events.
+
+**Final human record on the item:** endorsed `theme:ai-review` (membership only — explicitly *not*
+primary), `theme:rules-based-checks`, `facet:built-system`, `facet:method-experiment`,
+`facet:evaluated-synthetic`. Rejected `facet:agentic` (§47). Primary deliberately empty, slot held
+by `primary-proposed:theme:evaluator-reliability`. `demote:context`.
+
+**Lesson worth keeping:** "no human subjects" is not sufficient for the machine-only diagnosis — the
+question is *whose properties the findings describe*. A study with zero humans can still be
+`method-experiment` when its subjects are third-party systems. The earlier reading collapsed
+"no humans" into "tool-results," which the UDVHQ5HR clause explicitly rules out.
+
+**Docs updated:** prep sheet entry for WBS9U5N7 rewritten with the resolution and a pointer here.
