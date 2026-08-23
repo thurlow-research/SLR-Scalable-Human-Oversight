@@ -57,6 +57,17 @@ per tag. Output = strict JSON.
   core looks like it belongs in another disposition; batch-reviewed then moved + flag removed.
 - `cal:human:theme:<slug>` / `cal:human:primary:theme:<slug>` / `cal:human:facet:<slug>` — the
   arbiter's working judgment; can be revised mid-review.
+- `cal:human:reject:theme:<slug>` / `cal:human:reject:facet:<slug>` — **RATIFIED 2026-08-23
+  (changelog §46).** An explicit arbiter rejection of a panel proposal: *"I considered this and it
+  does not apply."* Needed because arbiter tagging is **non-exhaustive** — an omission means "didn't
+  jump out," not "rejected," so the two must be distinguishable. Semantics of the human layer are
+  therefore: **endorsement (`cal:human:theme|facet:*`, additive) · rejection
+  (`cal:human:reject:*`) · silence (not considered — panel proposal stands)**. The final write pass
+  computes **panel modal ∪ endorsements − rejections**. Primary is exempt (single-valued —
+  `cal:human:primary:theme:*` simply replaces the machine's). Rejections are part of the permanent
+  audit trail and, like the rest of `cal:human:*`, are never stripped; they do not themselves become
+  `final:*` tags — they *subtract* from what does. First instances: `WUUDHL8R`
+  (`reject:theme:regulatory-compliance`, `reject:theme:hitl-workflow`).
 
 **Final-tag convention — RATIFIED 2026-08-21 (supersedes the "plain `theme:<slug>`" plan above,
 which was never executed).** Two things forced a decision: (1) Scott's standing principle that

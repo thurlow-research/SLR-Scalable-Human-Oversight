@@ -1470,3 +1470,45 @@ with the arbiter, not written as a silent rejection.
 against this distinction — a bounded, enumerable set, and cheap to list from Zotero. Deferred to
 end-of-screening with the other write-pass questions, but it is a **data-integrity** item, not a
 refinement.
+
+## 46. `cal:human:reject:*` RATIFIED — resolves the §45 convention conflict (2026-08-23)
+
+Arbiter adopted the proposed fix. The `cal:human:*` layer now encodes **three** states instead of
+two:
+
+| State | Tag | Meaning |
+|---|---|---|
+| **Endorsed** | `cal:human:theme:<slug>` · `cal:human:facet:<slug>` | "This applies." **Additive** — does *not* imply the set is complete |
+| **Rejected** | `cal:human:reject:theme:<slug>` · `cal:human:reject:facet:<slug>` | "I considered this and it does not apply" — overturns a panel proposal |
+| **Not considered** | *silence* | Didn't jump out; the panel proposal **stands by default** |
+
+**Final write pass computes: panel modal ∪ endorsements − rejections.** Not endorsements alone.
+
+**Primary is exempt** — single-valued, so `cal:human:primary:theme:<slug>` simply replaces the
+machine's primary; a reject marker there would be meaningless.
+
+**Placement in the ratified namespace:** `reject:` is a sublayer of `cal:human:` and, like the rest
+of that layer, is **permanent audit trail — never stripped**. Rejections do not themselves become
+`final:*` tags; they *subtract* from what does.
+
+**First instances — `WUUDHL8R`** (Baumgartner et al. 2024, *AI-driven refactoring: data clumps*):
+- `cal:human:reject:theme:regulatory-compliance` (panel **9/9**) — *"It is not compliance. That was
+  justification / background."*
+- `cal:human:reject:theme:hitl-workflow` (panel **8/9**) — *"It didn't cover it."* Closes the §45
+  open item: this was previously encoded as a silent drop resting on an *assistant* argument
+  (plumbing rule); it is now an arbiter ruling with its own reason and marker.
+
+Both are unanimous-or-near-unanimous panel proposals overturned by human review — the §44a
+correlated-error pattern, now machine-countable rather than buried in note prose. That count is one
+of the reportable outputs of the human pass.
+
+**Docs updated:** `Sweep_Reading_Guide.md` §1.3 (the source of the defective wording — rewritten to
+the three-state model), `Methodology/Theme_Tagging_Calibration.md` (namespace section).
+
+**Still owed (deferred, §45):** items tagged *before* today were written under wholesale-override
+semantics and need review against the endorsed-vs-rejected distinction before the `final:*` pass
+runs. Bounded and enumerable from Zotero. **Data-integrity item.**
+
+**Open, minor:** the Actions & Tags YAML has no `reject:` menu entries. Adding all 44 (17 themes +
+27 facets) would bloat the menu for a rare action — recommend adding entries **on demand** as
+rejections recur, or continuing to have them applied via the API. Not blocking.
