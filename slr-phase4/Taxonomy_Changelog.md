@@ -1115,3 +1115,44 @@ itself is unaffected: it rests on the paper's self-description ("governing what 
 model produces output"; "accountability assignment") and on the component-doesn't-outrank rule,
 both independent of the facet. Recorded here rather than silently amended so the bad inference
 doesn't get reused.
+
+## 39. `framework` scope-widening REVERTED — base-rate failure; narrow technical scoping restored (2026-08-23)
+
+§38 widened `framework` from "technical framework / reference architecture integratable into a
+build pipeline" to "defines a mechanism **or process**." **Reverted same session by arbiter
+ruling:** *"Nearly everything would do that. Let's restrict framework to built scenarios —
+something you integrate into a pipeline."*
+
+**Measured, not asserted (opus base runs, n=128):**
+
+| Scoping | Papers carrying `framework` |
+|---|---|
+| Technical / pipeline (original, restored) | **46 (36%)** — discriminating |
+| "Defines a mechanism or process" (§38, reverted) | **≥72 (56%)** floor — and that floor is derived from facets the models assigned under the *narrow* reading, so the true figure is higher, approaching universal across the solution half of the corpus |
+
+A facet that fires on most of the corpus carries no information. Same base-rate failure mode
+already rejected for a proposed `risks` facet (§34) and guarded against for `metrics` on
+`risk-routing` papers (§36.5). **Standing lesson: when widening a facet, compute the resulting
+base rate before adopting the wording** — §38 was reasoned from a single hard case (HAIF) without
+checking what the new wording would sweep in. One paper is enough to expose a gap; it is not
+enough to size a fix.
+
+**What "built scenarios" does and does not mean.** It does **not** require `built-system`: 12
+corpus papers carry `framework`+`design-only`, and that composition is documented in the
+`design-only` definition ("*mutually exclusive with `built-system`/`adopted`; composes with
+`framework`*"). Requiring a build would invalidate all 12 and contradict the instrument. The
+restriction is **buildable and pipeline-integratable — built or not.**
+
+**What survives from §38:** the **orthogonality** clarification stands, unaffected by scope. Theme
+answers *what subject*; facet answers *what form*. `framework`+`theme:org-governance` still
+co-occur freely (8 corpus papers) **when the artifact is technical and the subject is governance** —
+HBR7QZ2C, a policy engine, is the clean case. The legacy "≠ `theme:org-governance`" phrasing still
+means "not a substitute for the theme," not an exclusion.
+
+**Consequence for 6F3S8IB7 (HAIF):** it no longer qualifies — four principles, a tier decision
+matrix, validation protocols, checklists and Scrum ceremony changes, but **zero technical
+artifact** and nothing to integrate into a pipeline. Nothing is lost by dropping the facet: its
+form is fully carried by `design-only` ("specifies a mechanism in buildable detail but never
+credibly runs it" — tiers, thresholds, matrix all qualify) and its subject by
+`primary:theme:org-governance`. **This reverses the arbiter's earlier same-session instance call
+("definitely a framework") — flagged explicitly rather than silently applied.**
