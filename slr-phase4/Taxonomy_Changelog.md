@@ -1078,3 +1078,40 @@ the same separation already documented for `dissertation-input` ("tier ≠ impor
 **Stat this enables (compute at end-of-screening, not before):** proportion of solution-side Core
 papers at `design-only` with no method-* facet. If that share is large it is a *finding*, not
 corpus noise — it is the evidence-gap the dissertation's organizational survey exists to close.
+
+## 38. `framework` facet RESOLVED — orthogonal to theme; covers process, not just pipeline (6F3S8IB7, 2026-08-23)
+
+Raised as an open boundary question while tagging HAIF and **resolved same-session by arbiter
+ruling** (not deferred — this is a definitional clarification of an existing tag, not a pass-design
+question, so the park-until-end rule does not apply).
+
+**The ruling, in the arbiter's words:** *"Org governance is: does it address org governance.
+Framework is: whether it defines a mechanism / process."*
+
+**Two axes, not one.** The theme answers **what subject the paper addresses**; the `framework`
+facet answers **whether a definable mechanism/process is offered**. They are orthogonal, so
+`framework` + `theme:org-governance` co-occur freely — and the corpus already shows this (8 of 128
+papers in opus's base read; HBR7QZ2C carries both by prior arbiter hand). The old "≠
+`theme:org-governance`" wording meant only *the facet is not a substitute for the theme*; it was
+being misread as an exclusion.
+
+**Scope widened to match the ruling:** `framework` is **not** restricted to technical/pipeline
+artifacts. "Mechanism **or process**" includes organizational/team process designs. `6F3S8IB7`
+(HAIF) is the grounding positive case — zero software (four principles, a tier decision matrix,
+validation protocols, checklists, Scrum ceremony changes), yet a fully specified adoptable process
+→ `framework` **+** `primary:theme:org-governance`. The old test ("*would someone adopt it as a
+reusable **pipeline** design?*") returned the wrong answer on process frameworks and is replaced by
+"*does it define a mechanism or process someone else could adopt?*"
+
+**What survives unchanged:** the point-tool exclusion still does the real discriminating work. A
+one-off tool or single stage bolted onto someone else's pipeline is not a defined mechanism/process
+(BU73N7PC, §36 — ruling stands under the new wording, for the same reason). A bare
+taxonomy/decision-model alone still earns neither.
+
+**Correction to §36a reasoning.** In arguing 6F3S8IB7's primary I cited the *absence* of
+`framework` as a confirming signal for `org-governance`. Under orthogonality that inference was
+never valid — facet presence/absence carries no information about the theme. The primary ruling
+itself is unaffected: it rests on the paper's self-description ("governing what happens after the
+model produces output"; "accountability assignment") and on the component-doesn't-outrank rule,
+both independent of the facet. Recorded here rather than silently amended so the bad inference
+doesn't get reused.
