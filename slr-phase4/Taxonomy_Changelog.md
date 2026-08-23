@@ -864,3 +864,48 @@ built-system-evaluation papers on this axis).
 plays for the main v2.13 instrument. If a future formal panel run ever extends
 `evaluated-synthetic`/`evaluated-benchmark` coverage (Context tier, or a Core-tier panel-accuracy
 check), this 21-item set is the reference to score the panel against, not a target for re-review.
+
+## 36. Four discriminators sharpened during a Light Read full-record tag (BU73N7PC, 2026-08-23)
+
+Arbiter tagged BU73N7PC ("Moving Faster and Reducing Risk: Using LLMs in Release Deployment")
+against the panel's proposal (Opus/Codex primary `risk-routing`, Gemini primary `ai-review`;
+Codex additionally proposed `hitl-workflow`+`oversight-explanation`; Opus/Codex also proposed
+`framework`+`metrics`; no model proposed a method-* facet despite unanimous `built-system`+
+`adopted`). Four real gaps surfaced resolving the disagreements — instrument definitions
+unchanged in substance, discriminators made explicit:
+
+**1. Primary-theme tie-breaker, goal vs. mechanism.** When a paper spans `risk-routing` and
+`ai-review`, primary goes to whichever role the paper's own contribution occupies: is the AI
+*judgment* itself the thing being contributed/evaluated (`ai-review`), or is the paper's
+contribution the *allocation decision* that AI judgment feeds into (`risk-routing`)? BU73N7PC:
+the risk-routing decision (which release changes get flagged for review) is the paper's stated
+goal; the LLM classifier producing that signal is the mechanism serving it. Primary =
+`risk-routing`, secondary theme `ai-review`. This sharpens (doesn't replace) the existing
+altitude/novelty tie-breaker (§ Tag_Cheatsheet.md "Tie-breaker" bullet) with a concrete
+goal-vs-mechanism framing for this specific theme pair.
+
+**2. `hitl-workflow` requires a workflow built for human review of AI output — not any workflow
+that happens to use AI.** BU73N7PC drops an LLM risk-classifier into Uber's pre-existing release
+pipeline; no checkpoint/gate was *designed* to have a human review AI-generated code. Ruling:
+"AI operating inside a pre-existing operational workflow" ≠ `hitl-workflow`. The direction also
+matters — here the AI is reviewing/assessing **human-written** code changes, not AI output being
+reviewed by a human, which is the inverse of what the theme covers and routes instead to the
+`general-code` scope flag (the mechanism targets code generally, review-side AI, transferable to
+our setting).
+
+**3. `framework` negative worked example: a tool/stage bolted onto someone else's existing
+pipeline fails the "reusable architecture" test.** BU73N7PC's classifier is one stage feeding an
+existing deployment pipeline, not a pipeline design of its own — confirms the existing test
+(*would someone adopt it as a reusable pipeline design?*) with a clean negative case, since the
+paper's `built-system`+`adopted` pairing could otherwise read as `framework`-shaped at a glance.
+
+**4. `adopted` does not imply `method-field-study` — check what the paper actually measured.**
+A system can be in real production use (`adopted`) while the *evidence reported about it* still
+comes from a controlled experiment (assigned/manipulated conditions) rather than observed
+natural-use outcomes over time. BU73N7PC: `adopted`+`built-system` (real deployment) **+
+`method-experiment`**, no `method-field-study` — the paper reports a controlled comparison, not
+post-rollout incident-rate outcomes; had it reported the latter, `method-field-study` would apply
+instead/additionally. Deployment status and evidence shape are independent axes.
+
+Docs updated: `Tag_Cheatsheet.md` (`hitl-workflow`, `framework`, tie-breaker bullet — inline
+worked-example additions).
