@@ -1175,3 +1175,83 @@ conflated with "not a framework." Buildability, not build status, is the test.
 to the item). Final human tag set: `primary:theme:org-governance`; themes `org-governance`,
 `hitl-workflow`, `risk-routing`, `provenance-auditability`, `oversight-scaling-inversion`; facets
 `design-only`, `risk-overreliance`, `risk-quality`. Core, `dissertation-input`, `s5:read`.
+
+## 40. Was the agent prompt ambiguous on `framework`? — yes, but narrower than it looks; plus instrument drift found (2026-08-23)
+
+Question raised after the §38→§39 reversal: *was the same ambiguity present in the tagging
+instructions given to the panel?* Checked against the run data rather than reasoned about.
+
+### 40a. Yes — and it is systematic, not noise
+
+`Tag_Prompt.md` line 50 carried the **identical** pre-§39 wording ("technical framework /
+reference architecture integratable into a build pipeline… ≠ `theme:org-governance`… *would
+someone adopt it as a reusable pipeline design?*"). On 6F3S8IB7 (HAIF), the panel split **5 of 9
+runs**, and the split is **model-systematic, not random**:
+
+| model | r1 | r2 | r3 |
+|---|---|---|---|
+| codex | ✓ | ✓ | ✓ |
+| gemini | ✓ | ✗ | ✓ |
+| opus | ✗ | ✗ | ✗ |
+
+Opus read the definition as technical-only (the reading §39 restored); codex read it as
+any-framework; gemini was unstable with itself. A clean, reproducible disagreement on exactly the
+pipeline-vs-process boundary — so the ambiguity was in the instrument, not only in the arbiter's
+or assistant's reading of it.
+
+### 40b. But `framework` is NOT an outlier — the facet layer is broadly contested
+
+Split rate = share of papers (among those where ≥1 run proposed the facet) on which the 9 runs
+disagreed. Computed over all 128 sweep papers:
+
+| split % | facet | | split % | facet |
+|---:|---|---|---:|---|
+| 94% | problem-statement-anchor | | 53% | risk-ip · method-field-study |
+| 87% | intro-framing | | 50% | assistive · lit-review |
+| 85% | risk-bias | | 48% | general-code |
+| 83% | counterpoint | | 45% | risk-quality |
+| 81% | non-developer | | 44% | method-mining |
+| 75% | steering | | 40% | method-experiment |
+| 74% | metrics | | 36% | method-self-report |
+| 70% | design-only | | 35% | risk-security |
+| 68% | survey-input | | 27% | agentic |
+| **59%** | **`framework` — rank 10 of 24** | | 20% | built-system |
+| 56% | risk-overreliance | | 11% | general-ai |
+
+**Nine facets are worse.** Singling out `framework` would have been a mistake — the honest finding
+is that the *facet layer generally* carries high inter-run disagreement, with the role facets
+(problem-statement-anchor, intro-framing, counterpoint) worst of all. Caveat: low-n facets inflate
+the rate (risk-bias n=13, problem-statement-anchor n=17), but `steering` (n=63, 75%) and
+`framework` (n=70, 59%) are large-n and still high.
+
+**This is contained by design, not a crisis:** the triage ladder already routes non-unanimous
+papers to LIGHT-REVIEW or HUMAN. High facet split is what the ladder exists to absorb. It does,
+however, mean **facet counts from panel data alone are not reportable** — they need the human pass
+behind them, which is what the Light Read is doing.
+
+**Minor, don't overclaim:** the "≠ `theme:org-governance`" wording did mildly suppress
+co-tagging — 8 observed co-occurrences vs 11.1 expected under independence (opus base, n=128).
+Consistent with it being read as soft discouragement rather than hard exclusion. Small n.
+
+### 40c. Instrument drift discovered — `Tag_Prompt.md` has separated from `Tag_Cheatsheet.md`
+
+`Tag_Prompt.md` is the cheat-sheet body **plus** a 13-line task block, and the two have
+historically been kept in lockstep (last joint update `05a8b35`). **This session's six refinements
+landed in `Tag_Cheatsheet.md` only** — lines 28 `hitl-workflow`, 50 `framework`, 54 `adopted`,
+64 `metrics`, 71 method-* facets, 78 primary tie-breaker.
+
+So the drift is **accidental, not a deliberate gauge freeze**. That distinction matters: a future
+session could reasonably "helpfully" sync them and thereby change the machine gauge mid-corpus
+without anyone deciding to.
+
+**DEFERRED to end-of-screening** (pass-design decision, per the standing rule): whether to (a) sync
+the prompt and accept a changed gauge for any future run, (b) deliberately freeze `Tag_Prompt.md`
+at v2.13 and document it as frozen, or (c) fork a v2.14 prompt for restricted re-runs only. **Until
+that is decided, do not sync them** — the divergence is now recorded, which is what makes it safe
+to leave.
+
+### 40d. Feeds the deferred §37c question
+
+The split rates above are the empirical face of the lost-in-the-middle question, and of the
+instrument's own admission in the facet checklist ("*misses cluster here; 42 tags exceed recall*").
+Data for that decision. Also deferred.
