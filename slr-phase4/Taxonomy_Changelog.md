@@ -1572,3 +1572,49 @@ question is *whose properties the findings describe*. A study with zero humans c
 "no humans" into "tool-results," which the UDVHQ5HR clause explicitly rules out.
 
 **Docs updated:** prep sheet entry for WBS9U5N7 rewritten with the resolution and a pointer here.
+
+## 49. `framework` — span rule + mental model (WUUDHL8R, 2026-08-23)
+
+Fourth `framework` refinement today. Arbiter rejected the facet on `WUUDHL8R` despite it being a
+genuinely built, CI/CD-integrated pipeline — the case §39's wording did not cover.
+
+**Arbiter rationale:** *"restriction to one part of overall lifecycle, one engineering task. It
+identified code that should be refactored, facilitates it."*
+
+**Span rule:** confinement to **one lifecycle stage / one engineering task** disqualifies, no matter
+how many internal steps the thing has. **Frameworks govern the flow; tools do a job inside it.**
+
+**Mental model (arbiter's formulation, now the primary test):**
+> *"Can this be integrated into a CI/CD or code-building pipeline **to facilitate code generation at
+> quality with oversight**?"*
+
+Both halves must hold — integratable **and** in service of overseen generation.
+
+**Reconciled with the calibration anchors** (this was the check that validated the rule rather than
+just accepting it):
+
+| | What it does | Verdict |
+|---|---|---|
+| VibeGuard `T8E8SCCG` | detect + **publish gate**, no auto-fix | governs the release boundary — spans the flow ✔ |
+| Hedwig `T72TU8B5` | dynamic-autonomy classifier + check-in surface | routing + human interaction across the flow ✔ |
+| `WUUDHL8R` | detect data clumps → refactor → validate → PR | many steps, **one maintenance task**, one phase ✘ |
+
+**Wording defect this exposed and fixes:** the clause "*a focused **single-concern** architecture
+qualifies*" was being read as "single-**task** qualifies" — which licenses precisely what the span
+rule rejects, and is the likely reason **9 of 9** panel runs proposed `framework` here. Now stated
+explicitly: **concern may be narrow; span may not.** VibeGuard is single-concern (one quality
+dimension) yet spans detect→gate; WUUDHL8R is single-task.
+
+**Known tension, flagged not resolved.** The mental model cleanly reproduces the HAIF (§39) and
+WUUDHL8R rejections, but **does not obviously reproduce the BU73N7PC rejection** — that risk
+classifier *is* CI/CD-integrated and *is* in service of overseen release, yet §39 excludes it as a
+stage bolted onto someone else's pipeline. Mental model and point-tool exclusion may pull in
+different directions there. Left open deliberately; candidate for resolution in the end-of-validation
+revision (§41).
+
+**Meta-observation for the revision.** `framework` has now been amended four times in one day
+(§38 widen → §39 revert → §39 decision line → §49 span rule) and carries a **59% panel split rate**
+(§40b, rank 10 of 24). Treat it as the instrument's most under-specified facet and rewrite it
+wholesale in the successor rather than patching further.
+
+**Docs updated:** `Tag_Cheatsheet.md` only. **Not** propagated to `Tag_Prompt.md` per §41.
