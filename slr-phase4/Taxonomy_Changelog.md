@@ -1381,3 +1381,43 @@ theme.**
 points (Art. 5 as enumerated prohibitions; Art. 6 classification via Annex I/III; provenance
 irrelevant to tier) are well established, but verify article numbers before any of this reaches the
 dissertation.*
+
+## 44. `regulatory-compliance` — justification/background ≠ compliance contribution; and a correlated-error caution (WUUDHL8R, 2026-08-23)
+
+**Discriminator (arbiter, 2026-08-23):** *"It is not compliance. That was justification /
+background."* Invoking a regulation to **motivate** the work is not contributing to the compliance
+argument. `regulatory-compliance` requires the paper to *do the lift* — map its mechanism to
+specific obligations, operationalize a control, produce audit evidence, or analyse the legal
+requirement substantively. Reciting a regulation's structure in a background section is **mention**,
+however long the section is (the mention-vs-focal rule at paragraph length, §ZUM76CCG lesson).
+
+`WUUDHL8R` is the worked negative: a dedicated §"Regulatory Compliance and EU AI Act", the Act named
+in the abstract, keywords and stated contributions — yet the section recites the four risk tiers
+with **no mapping to its own pipeline** and gets two substantive facts wrong (§43). Background, not
+contribution. Theme **not** applied.
+
+### 44a. Correlated error — unanimity is not evidence of correctness
+
+**All 9 panel runs proposed `regulatory-compliance` on WUUDHL8R.** The arbiter rejected it on solid
+grounds. This is a clean instance of a failure mode the triage ladder does not otherwise surface:
+
+> When the error lives in a **shared misreading of the instrument** (here: treating any substantive
+> discussion of a regulation as membership), unanimity **amplifies** it rather than correcting it.
+> Three models agreeing is only evidence of independence-adjusted correctness when their errors are
+> uncorrelated — and models reading the same definition are not independent on definitional
+> questions.
+
+This matters because the ladder treats 3/3 consensus as the ACCEPT band, audited at ~10%. A
+systematic definitional misreading would pass straight through.
+
+**Exposure, measured:** `regulatory-compliance` is proposed by ≥1 run on **27 of 128** papers, and
+**unanimously on 12**: `27YULT5I`, `34ELRWJH`, `5RLPIA3K`, `HBR7QZ2C`, `ID7IN65K`, `P837LJWE`,
+`RG4A4D6K`, `TW4I6DU6`, `WPWF7A32`, `WUUDHL8R`, `XZEHQYNZ`, `ZSB2S59N`. WUUDHL8R is now 1 of 12
+checked and 1 of 1 wrong — a sample far too small to generalize from, and several of the others
+(e.g. `XZEHQYNZ`, `5RLPIA3K`, both EU-AI-Act-titled) are plausibly genuine compliance papers.
+
+**Mitigation already in place, no new work proposed:** the arbiter is performing a demote review
+across the Accept band (§42), so these do not sit unexamined. **Apply the justification-vs-
+contribution discriminator when each is reached.** Whether the unanimous-12 warrant a targeted
+check as a group is an end-of-screening question, deferred per the standing rule — flagged here so
+the observation is not lost, not to prompt action now.
