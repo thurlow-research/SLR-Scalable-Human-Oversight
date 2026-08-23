@@ -920,3 +920,83 @@ failure mode already rejected for other facets (§34).
 
 Docs updated: `Tag_Cheatsheet.md` (`hitl-workflow`, `framework`, `metrics`, tie-breaker bullet —
 inline worked-example additions).
+
+## 37. `evaluator-reliability` theme STAGED + `primary-proposed:` convention + pass-scoping principle (2026-08-23)
+
+Three things settled while working the Light Read pass. The theme candidate itself is recorded in
+`Methodology/HOS_Seeded_Theme_Candidates.md` (§E, full definition/discriminator/anchors); this
+entry carries the two *general* conventions that fell out of staging it, which apply to any future
+staged tag, not just this one.
+
+### 37a. `evaluator-reliability` staged (summary; full record in HOS_Seeded_Theme_Candidates §E)
+
+Papers whose object is **whether an AI evaluator works** (LLM-as-judge, verifier, automated
+reviewer audited as the subject) have no home in the instrument. Evidence: of 14 current
+`demote:context` items (*demote = Core → **Context tier**; the paper is retained in the corpus,
+just not carried into the Phase 6 core synthesis — it is not a discard*), **three** are this exact
+class — `WBS9U5N7` (theme layer left *blank*
+because nothing fit), `UDVHQ5HR` and `BAWCBT9R` (both forced into `primary:theme:ai-review` for
+lack of an alternative). Fills the empty slot in *Limits of current oversight* alongside
+`automation-bias` (human fails) and `oversight-theater` (process fails). Scoped narrowly to
+evaluator-**auditing**; a broad `llm-eval` was considered and **rejected** as cannibalizing
+`ai-code-insecurity`/`quality-debt`, core themes for which LLM evaluation is the *method*, not the
+identity. Discriminator vs `ai-review` (whose text already claims "its reliability limits") is the
+open question the sweep must settle, not assume.
+
+### 37b. NEW CONVENTION — `cal:human:primary-proposed:theme:<slug>` during staging
+
+**Problem:** a staged tag that would become a paper's *primary* can't be written as
+`cal:human:primary:theme:<slug>` without destroying the record of what the primary was before —
+and without silently changing the frozen instrument's output mid-corpus. Applying it at all
+conflates "this was always the primary" with "this primary changed when a new theme arrived."
+
+**Rule:** while a theme is staged, record displacement as
+`cal:human:primary-proposed:theme:<slug>` and **leave the standing `cal:human:primary:theme:*`
+untouched**. Membership still goes on normally as `cal:human:theme:<slug>`.
+
+- Preserves gauge constancy — the frozen instrument's primary is undisturbed while the candidate
+  is provisional.
+- Preserves provenance — original vs. changed primary stays distinguishable, which
+  `cal:human:primary:*` alone cannot express (the panel's `cal:<model>:primary:theme:*` tags are
+  *machine* proposals, not the arbiter's prior human call).
+- Clean cutover both ways — promotion converts `primary-proposed:` → `primary:` in one
+  deterministic pass; rejection deletes the tag and disturbs nothing.
+
+Generalizes to any staged tag capable of displacing a primary. Layers cleanly under the ratified
+three-layer namespace (§ `Theme_Tagging_Calibration.md`): `cal:<model>:*` → `cal:human:*` →
+`final:*`; `primary-proposed:` is a staging-only sublayer of the middle tier and never survives
+into `final:*`.
+
+### 37c. Pass-scoping principle — compartmentalize by mutual-exclusion group, not by tag count
+
+**Question raised:** at what point does asking one model to weigh 44 tags in a single pass hit a
+lost-in-the-middle failure, versus splitting into narrow compartmentalized runs (as was done for
+the evidence-ladder facets)?
+
+**Answer adopted: split by whether the tags are mutually constraining or orthogonal — tag *count*
+is the wrong axis.**
+
+- **Mutually-exclusive / comparative decisions must stay in ONE pass.** Primary-theme selection is
+  inherently comparative — "the theme carrying the distinctive novelty" is unanswerable from a
+  two-theme menu. Same for the evidence-strength ladder (`self-tests` < `evaluated-synthetic` <
+  `evaluated-benchmark` < `method-field-study` < `adopted`): one slot, competing fillers, one pass.
+  This is *why* the eval-facet run worked — it happened to be exactly one mutual-exclusion group.
+- **Orthogonal binaries can be split off freely.** `agent-panel`/`cross-model`,
+  `evaluator-reliability` membership, the `risk-*` flags — independent judgments that don't compete
+  for a slot. These are the safe candidates for a separate restricted run, and splitting them buys
+  richer per-tag definitions and worked examples in the prompt.
+- **Corroborating evidence that the current single pass is at/over capacity:** the instrument
+  already concedes it — `Tag_Cheatsheet.md`'s facet block carries an explicit seven-question
+  checklist with the note "*misses cluster here; 42 tags exceed recall*." An enumerated checklist
+  is a mitigation for exactly this failure. The panel shows both failure modes in the sweep data:
+  codex sprawl (8–12 themes proposed) and facet misses generally.
+- **Cost of over-splitting (real, not hypothetical):** each pass re-reads the full text, and a
+  paper judged in eight narrow passes can accumulate an *incoherent* tag set (facets contradicting
+  the theme) that no single pass would have produced. Coherence is a property of joint judgment.
+
+**Testable, no new runs required:** the k=3 replication data already measures decision quality
+directly via intra-model instability (the `unstable:<model>` tripwire). If lost-in-the-middle is
+real, instability should rise with the number of themes a model proposes — i.e. codex (8–12) should
+be measurably less self-consistent than opus (3–4) on the same papers. Worth computing from the
+existing `data/tags-v213/{opus,codex,gemini}/*.r*.json` files before designing any further passes;
+it converts this principle from reasoning to measurement.
