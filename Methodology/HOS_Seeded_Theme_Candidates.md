@@ -159,6 +159,16 @@ oversight layer).
   sweep panel's automated scan had initially flagged it as an `evaluated-synthetic` candidate
   (mixed-signal Bucket B) — full-text check distinguished "own self-constructed workload" from
   "standardized third-party benchmark."
+  **Boundary sharpened (2026-08-22), worked example ZBF86IJM** (uncertainty-highlighting study):
+  its coding tasks were *sourced from* a well-known platform (LeetCode, "easy" tier), but that
+  alone does not confer `evaluated-benchmark` — the authors hand-picked 15 candidates, generated
+  their own Codex completions, piloted with 3 participants, and pruned to a final 3 by their own
+  criteria (10-minute completion time, diversity of error types). **"Standardized" means
+  administering a recognized third-party benchmark's own fixed protocol** — its established task
+  set *and* its established scoring methodology, as DVNA/ProjDevBench are — not "sourced from a
+  platform that happens to have difficulty tiers." Curating raw material from a well-known pool is
+  authored curation, not benchmark administration. (ZBF86IJM doesn't land on this ladder at all in
+  the end — see the `evaluated-synthetic` entry below for why.)
 - **(Corpus-seeded, 2026-08-20; renamed 2026-08-22) `evaluated-synthetic` form facet — STAGED.**
   (Renamed from `synthetic-evaluated`, same sort-adjacency rationale as above.) Own system
   evaluated against **self-constructed, non-standardized scenarios/workloads** (constructed
@@ -180,12 +190,13 @@ oversight layer).
   01-Accept, 13 in 02-Light-Review, 1 in the Full Read bucket) — 38% of the sweep's 55
   built-system papers. Zero such co-occurrence survived in the 20 human-verified calibration gold
   papers, consistent with this being a real, recurring machine-only confusion that resolves
-  correctly only on a full-text check. Candidate list for spot-checking as the arbiter works the
-  workbook: 7SH86C2W, 7UB2MD8Z, 96XE669R, A5WDGC7J, A6ZE2A26, C88VGWMI, CI93QRUH, I6FZ5GD2,
-  JCTP8VXP, MFSZPSPU, NRVQT89E, T3XTXIXW, U9VZQXGI, VZ27QUPQ, WBS9U5N7, X7EN6DXZ, XK3P9C96,
-  XRTVITVP, Y4TIF9KW, ZBF86IJM, ZH6QIU8A. Not yet grafted into the live
-  `Tag_Prompt.md`/`Tag_Cheatsheet.md` v2.13 instrument (frozen for gauge constancy); available now
-  as a `cal:human:facet:` override on individual items ahead of a formal graft decision.
+  correctly only on a full-text check. Candidate list, all 21 arbiter-resolved as of 2026-08-23
+  (**COMPLETE** — full disposition + reasoning trail in `Taxonomy_Changelog.md` §35, retained as
+  the gold/validation set for this facet pair): 7SH86C2W, 7UB2MD8Z, 96XE669R, A5WDGC7J, A6ZE2A26,
+  C88VGWMI, CI93QRUH, I6FZ5GD2, JCTP8VXP, MFSZPSPU, NRVQT89E, T3XTXIXW, U9VZQXGI, VZ27QUPQ,
+  WBS9U5N7, X7EN6DXZ, XK3P9C96, XRTVITVP, Y4TIF9KW, ZBF86IJM, ZH6QIU8A. Not yet grafted into the
+  live `Tag_Prompt.md`/`Tag_Cheatsheet.md` v2.13 instrument (frozen for gauge constancy); applied
+  as `cal:human:facet:` overrides on all 21 items ahead of a formal graft decision.
   **7SH86C2W resolved (2026-08-22):** full-read check — single self-selected, non-repeated
   scenario (one web-app project, one journal of observations), explicitly self-labeled
   "exploratory"/"preliminary" — falls below `evaluated-synthetic` on the ladder, at the plain
@@ -199,6 +210,47 @@ oversight layer).
   `cal:human:facet:benchmark-evaluated` → `cal:human:facet:evaluated-benchmark` and
   `cal:human:facet:synthetic-evaluated` → `cal:human:facet:evaluated-synthetic` (12 items,
   `slr-tools/rename_eval_facets.py`); `slr_human_tags_actions.yml` menu entries renamed to match.
+  **Ladder-vs-`method-*` exclusivity rule, sharpened (2026-08-22)** after a pressure-test against
+  ZBF86IJM (uncertainty-highlighting study, LeetCode-derived tasks, 30 real programmers). The
+  earlier phrasing "no real users, no field deployment, no standardized benchmark" was a
+  description of the HBR7QZ2C worked example, not a general criterion, and reads as arbitrary
+  without the reasoning: **the rung a paper's evaluation lands on is governed by the instrument's
+  own pre-existing world-or-tool test** (§ method family) — *"results describing the world (real
+  users, real deployment, real behavior) → method facet; results describing only the tool
+  (self-run tests over constructed corpora) → built-system evaluation."* That is a **fork, not two
+  independently-composable properties**: a given evaluation event lands on the tool side
+  (`self-tests`/`evaluated-synthetic`/`evaluated-benchmark`) **or** the world side
+  (`method-experiment`/`method-field-study` as a method facet) — never both for the *same*
+  evaluation. Plainly: **`evaluated-synthetic` = the authors invented their own test data and test
+  cases and measured their own system's performance against that self-made material** — no real
+  subject performs the task in that evaluation event. The instant a real subject performs the task
+  and their behavior/outcomes are what's measured, that evaluation event is `method-experiment` (a
+  defined task set + a manipulated condition, investigating a specific question) or
+  `method-field-study` (real work, natural setting, closer to "and what did you think?") instead —
+  **not additionally `evaluated-synthetic`,** even though the task material itself was authored/
+  curated (curating stimuli is inherent to running *any* controlled experiment, so treating that as
+  sufficient for `evaluated-synthetic` would make it fire on nearly every `method-experiment` paper
+  and erase its discriminating power — the same failure mode already rejected once this session for
+  the `risks` facet). **Worked contrast: ZBF86IJM stays `method-experiment` only** — real
+  programmers used the Edit Model live, so results describe the world, not the tool; it does
+  **not** also get `evaluated-synthetic` despite the LeetCode-derived tasks being author-curated.
+  **A single paper can still land on both sides**, just via *separate* evaluation events, not the
+  same one twice — see NRVQT89E: the critic model runs alone and a contractor grades its output
+  after the fact (tool side → `method-field-study` rung, real production-sourced material) **and**
+  the contractors' own tampering/rating task is a real controlled human-subjects exercise (world
+  side → `method-experiment` facet) — two distinct measurements in one paper, not one measurement
+  double-tagged.
+  **`method-field-study` vs. `adopted` boundary sharpened (2026-08-22), worked example
+  NRVQT89E** (LLM Critics Help Catch LLM Bugs / CriticGPT): evaluated on real ChatGPT production
+  RLHF data (real user interactions, real production contractor-labeling infrastructure) — not a
+  benchmark, not self-constructed/synthetic. The one-line discriminator: **validated *with*
+  production data → `method-field-study`; used/operating *in* production → `adopted`.**
+  NRVQT89E's critic model was evaluated offline against real production-sourced data and never
+  itself deployed to real ChatGPT users, so it lands at `method-field-study` (one rung below
+  `adopted`), not `adopted` itself. Same discriminator the `adopted` pilot rule already draws
+  (study-site pilot vs. the org's own operational use) — this just names the production-data-source
+  case explicitly, since "production" language in a paper (baseline model, labeling pipeline) can
+  otherwise read as if the paper's own system were deployed when it wasn't.
 
 - **(Corpus-seeded, 2026-08-22) `agent-panel` + `cross-model` facets — STAGED.** Two new
   orthogonal, composable structural facets, motivated by a naming ambiguity in `theme:ai-review`'s

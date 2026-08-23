@@ -112,6 +112,30 @@ before submission — do not trust prose memory for PRISMA counts.
   tags (`source:` / `s1:` / `s2:` / `s3:` / `centrality:` / `cocite:`); every stage scripted,
   resumable, and auditable (public repo, gitignored copyrighted texts).
 
+**PRISMA alignment note (2026-08-22).** This project's internal "Phase 1–6" pipeline-tracking
+scheme is custom (Zotero/workflow convention), not PRISMA vocabulary itself — the standard PRISMA
+2020 flow diagram has four stages (Identification → Screening → Eligibility → Included) and
+normally stops at Included. Internal Phases 1–3 map cleanly onto Identification/Screening/
+Eligibility; **Phases 4–6 are not extra, post-inclusion activity — they ARE the eligibility
+determination, executed as a multi-pass process rather than a single pass, because corpus volume
+makes a single abstract-level pass too coarse to trust as final.** Phase 3's centrality-banded
+triage is a *provisional* eligibility call from abstracts only; the Phase 5 full-text read is what
+*finalizes* it — confirming or overturning the provisional tier (Core/Context/exclude) once a human
+has actually read the whole paper (worked examples: VCI88UZD, Y4TIF9KW demoted Core→Context on
+full read, 2026-08-22). **Phase 6 is simply the settled output of that whole determination** — the
+"Included" corpus, reported once all of it (not just the cheap first pass) is done. This should be
+written up as *one* PRISMA Eligibility→Included stage with a multi-pass method, not narrated as
+if Phase 3 were the real inclusion decision and Phase 5/6 something that happened after.
+
+**Distinct from the above — a volume-driven design choice worth naming explicitly:** the same
+Phase 5 full-text reading pass that finalizes eligibility *also* performs data extraction/coding
+(theme/facet tagging, §3.7–§3.10) in the same read, rather than as a separate pass. **With this
+corpus's volume, reading each paper once and doing both jobs was the only way to get through it —
+not an accidental conflation of two things PRISMA's checklist treats as separate items** (data
+extraction/data items are checklist items distinct from the eligibility determination). Worth
+stating plainly in the methods write-up so a PRISMA-literate reviewer sees it as a deliberate
+efficiency choice, not a blurring of two things that should have stayed separate.
+
 ### 3.2 Search strategy (Phase 1)
 - Nine sources: ACM DL, IEEE Xplore, Scopus, SSRN, Web of Science, arXiv, plus Coursework,
   Practitioner Network, and Committee Recommendations channels **[verify query strings and
