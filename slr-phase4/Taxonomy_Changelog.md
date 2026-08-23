@@ -1294,3 +1294,42 @@ above are both incidental rather than deliberate.
 v3.0 (new gauge) depends on whether the refinements turn out to be clarifications or definitional
 changes — §38→§39 showed that distinction is not always obvious in advance, and the gauge-constancy
 consequences differ.
+
+## 42. Light Read protocol — what the demote call short-circuits (methods record, 2026-08-23)
+
+Clarified by the arbiter mid-pass, recorded because it determines how corpus statistics may be
+scoped in the write-up.
+
+**The protocol:** every Light Read paper receives a human read and an **independent human tier
+call**. Panel unanimity does *not* cause the review to be skipped. What the demote call
+short-circuits is **downstream tag verification** — once a paper is ruled Context, its remaining
+theme/facet proposals are not verified against the instrument.
+
+**Why this is methodologically sound rather than a shortcut:** the tier decision does not depend on
+the unverified tags. It is made by the arbiter from the paper itself against the §3 core bar, so
+there is no circularity (the earlier worry — "tier decided on impression because the tags that
+would evidence it went unchecked" — does not arise). Context papers do not enter the Phase 6
+synthesis, so their tag depth has no downstream consumer. Effort is proportional to what the tags
+are used for.
+
+**Consequence for reportable statistics — the two axes have different coverage:**
+
+| Axis | Human coverage | What may be claimed |
+|---|---|---|
+| **Tier** (Core/Context) | **corpus-complete** — human ruling on every paper | tier-level human-vs-panel agreement may be reported corpus-wide |
+| **Tags** (themes/facets) | **Core only** — verification stops at a Context ruling | any human-vs-panel *tag* agreement statistic **must be scoped to Core**; stating it corpus-wide would overclaim, since the verified subset is non-randomly selected |
+
+**Residual gaps (both pre-existing, neither caused by this protocol):**
+- **Demote reasons are unstructured.** `demote:context` records *that* a paper was excluded, not
+  *why*; reasons live in free-text arbiter notes where they exist at all. So "N excluded as
+  secondary literature, M as general-AI object" is not currently computable. Detailed tag review
+  would not have fixed this — it needs reason codes, a separate and smaller change. Same gap
+  surfaced while staging `evaluator-reliability` (§37).
+- **Rescue cost is bounded and known.** If a staged tag later moves a Context paper back to Core
+  (the `evaluator-reliability` candidate is the live case), that paper's tags need a verification
+  pass at that point.
+
+**Superseded reasoning:** an earlier draft of this analysis recommended stratifying the skip by
+panel unanimity and audit-sampling the demote pile. Both assumed unanimity was gating arbiter
+effort. It is not — every paper is read — so neither applies. Recorded so the recommendations are
+not resurrected from a stale premise.
