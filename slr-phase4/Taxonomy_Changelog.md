@@ -969,6 +969,12 @@ into `final:*`.
 
 ### 37c. Pass-scoping principle — compartmentalize by mutual-exclusion group, not by tag count
 
+> **DEFERRED — decide after screening completes.** Standing rule (2026-08-23): pass-design
+> questions raised mid-screening are **parked, not resolved** — "we consider passes when done with
+> the screening, that way we have the full picture." This section records the reasoning while it
+> is fresh so the decision has something to start from; it is **not** a settled ruling and nothing
+> here should drive a run before the Light Read pass is finished.
+
 **Question raised:** at what point does asking one model to weigh 44 tags in a single pass hit a
 lost-in-the-middle failure, versus splitting into narrow compartmentalized runs (as was done for
 the evidence-ladder facets)?
@@ -994,9 +1000,11 @@ is the wrong axis.**
   paper judged in eight narrow passes can accumulate an *incoherent* tag set (facets contradicting
   the theme) that no single pass would have produced. Coherence is a property of joint judgment.
 
-**Testable, no new runs required:** the k=3 replication data already measures decision quality
-directly via intra-model instability (the `unstable:<model>` tripwire). If lost-in-the-middle is
-real, instability should rise with the number of themes a model proposes — i.e. codex (8–12) should
-be measurably less self-consistent than opus (3–4) on the same papers. Worth computing from the
-existing `data/tags-v213/{opus,codex,gemini}/*.r*.json` files before designing any further passes;
-it converts this principle from reasoning to measurement.
+**Testable, no new runs required — QUEUED for post-screening:** the k=3 replication data already
+measures decision quality directly via intra-model instability (the `unstable:<model>` tripwire).
+If lost-in-the-middle is real, instability should rise with the number of themes a model proposes
+— i.e. codex (8–12) should be measurably less self-consistent than opus (3–4) on the same papers.
+Computable from the existing `data/tags-v213/{opus,codex,gemini}/*.r*.json` files; it converts this
+principle from reasoning to measurement. **Run it when the screening is complete, not before** —
+even zero-cost analysis is premature mid-pass, since a partial picture risks designing the next
+pass around a pattern the remaining papers would have changed.
