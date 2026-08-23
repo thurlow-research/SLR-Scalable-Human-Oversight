@@ -1340,3 +1340,44 @@ are used for.
 panel unanimity and audit-sampling the demote pile. Both assumed unanimity was gating arbiter
 effort. It is not — every paper is read — so neither applies. Recorded so the recommendations are
 not resurrected from a stale premise.
+
+## 43. WATCH TRIPWIRE — papers misstating the EU AI Act as motivation (first instance WUUDHL8R, 2026-08-23)
+
+Not a tag. A corpus-observation tripwire: **count recurrences; if a cluster forms it is a reportable
+finding about field maturity**, directly relevant to the dissertation's governance-landscape strand
+("papers invoke the AI Act as motivation without engaging it correctly"). One instance is not a
+pattern — log and move on.
+
+**First instance — `WUUDHL8R`** (AI-driven refactoring for data clumps), §"Regulatory Compliance
+and EU AI Act". Two distinct errors:
+
+1. *"Unacceptable risk … Therefore AI-Driven Refactoring cannot be used here."* — category error
+   **and** vacuity. The Act's tiers classify an AI system by **intended purpose**, not the dev
+   tooling used to produce it; a refactoring tool takes no tier from the domain of the code it
+   touches. Worse, Art. 5 practices are **banned outright**, so there is no "here" in which any
+   tool is or isn't usable.
+2. *"AI Systems **or which use AI generated code** fall in this [high-risk] category…"* — flatly
+   false, and the more consequential of the two: high-risk classification turns on Annex I
+   (product-safety components) or Annex III (enumerated use cases). **Code provenance is not a
+   criterion.** A spam filter written entirely by an LLM stays minimal risk; a CV-screening tool
+   hand-written in assembly is still high risk. This error would drive real behaviour — it implies
+   "we used AI, therefore we are high-risk," a false compliance trigger.
+
+**Correct mapping (arbiter's reframe, endorsed):** *"if refactor is done in a risky area, needs more
+human review."* The driver is the classification of the **system being modified**, not of the tool:
+a high-risk system's provider already carries risk-management, QMS, logging and Art. 14
+human-oversight duties, and a *substantial modification* can trigger re-conformity assessment — so
+automated refactoring in that codebase needs controlled change management and human sign-off. Note
+this reframe is itself **risk-routing**: regulatory tier as a routing signal for review intensity,
+structurally the same move HAIF (6F3S8IB7) makes.
+
+**Diagnostic value for tagging:** the error is evidence for a **mention-vs-membership** call. This
+paper *claims* AI Act engagement as a stated contribution, but the section recites the four tiers
+with no mapping to its own pipeline — no gate, no criteria, nothing operationalized. A paper that
+had genuinely engaged would not produce those two sentences. → **no `regulatory-compliance`
+theme.**
+
+*Caveat on this entry: the Act analysis above is from working knowledge, not a cited text. The core
+points (Art. 5 as enumerated prohibitions; Art. 6 classification via Annex I/III; provenance
+irrelevant to tier) are well established, but verify article numbers before any of this reaches the
+dissertation.*
