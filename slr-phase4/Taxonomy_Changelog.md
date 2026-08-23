@@ -1008,3 +1008,36 @@ Computable from the existing `data/tags-v213/{opus,codex,gemini}/*.r*.json` file
 principle from reasoning to measurement. **Run it when the screening is complete, not before** —
 even zero-cost analysis is premature mid-pass, since a partial picture risks designing the next
 pass around a pattern the remaining papers would have changed.
+
+### 36a. Goal-vs-mechanism discriminator — mirror case confirming the rule (6F3S8IB7, 2026-08-23)
+
+`6F3S8IB7` (HAIF) is the negative-image companion to BU73N7PC for the §36.1 discriminator, and
+worth keeping as a pair since the rule is only testable if it lands both ways.
+
+Both papers carry a genuine, non-token risk-tiering mechanism. They resolve **oppositely**:
+- **BU73N7PC** — the allocation decision *is* the contribution; the LLM classifier serves it →
+  primary `risk-routing`.
+- **6F3S8IB7** — the tier matrix (Structuredness / Verifiability / Consequence of Error / AI
+  Demonstrated Capability → Tier 1–4) is real and operational, but it is *one component* of a
+  hybrid-team operating model (four principles, delegation protocol, estimation, retrospectives)
+  → primary `hitl-workflow`, `risk-routing` retained as a secondary theme. The existing
+  component-doesn't-outrank-the-broader-contribution rule decides it.
+
+**Arbiter flipped the panel here** (modal `risk-routing`, 7 of 9 runs; gemini's base run alone
+proposed `hitl-workflow`) — a case where the machine majority tracked the most *conspicuous*
+mechanism rather than the contribution's altitude.
+
+**Secondary ruling — routed *depth* is still routing.** HAIF states that *every* AI output has a
+named human owner and that *all* outputs are "subject to validation," which reads at first like
+the review-everything anti-pattern (which would make it a `counterpoint` candidate, not
+`risk-routing`). It isn't: coverage and accountability are 100%, but **review depth is routed** —
+Tier 2 full checklist review, Tier 3 post-hoc sampling at p% (default 20%, adjusted down on
+evidence), Tier 4 monitoring plus exception handling; the owner "does not need to review every
+output personally." **Rule: `risk-routing` is satisfied by allocating review *intensity*, not only
+by allocating *whether* an item is seen at all.** Universal accountability coexists with routed
+scrutiny; check which of the two a paper's "every output" language is actually claiming before
+reaching for the anti-pattern.
+
+*(Corpus note, not a tag: HAIF's tiering explicitly adapts **acceptance sampling** from statistical
+quality control — AQL and lot sizes, cited as such — making it a direct corpus instance of the
+SQC/Jidoka framing used in the project's own QA design.)*
