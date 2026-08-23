@@ -1618,3 +1618,43 @@ revision (§41).
 wholesale in the successor rather than patching further.
 
 **Docs updated:** `Tag_Cheatsheet.md` only. **Not** propagated to `Tag_Prompt.md` per §41.
+
+## 50. METHOD ≠ CONTRIBUTION — the apparatus rule, promoted to a cross-cutting preamble rule (2026-08-23)
+
+**Arbiter ruling:** *"For our tags, those elements must be in the proposed system / framework / etc,
+not just used for analyzing data in the study."*
+
+Promoted from a per-tag caveat to a **universal preamble rule** in `Tag_Cheatsheet.md`, because the
+principle already existed in the instrument **four separate times under four different names** and
+still failed to catch theme-level cases:
+
+| Where it already lived | Wording |
+|---|---|
+| `metrics` | *"Contribution, not apparatus"* — every empirical paper has an evaluation apparatus; that gets nothing |
+| method-\* facets | *"Applies to the paper's **own evidence production**"* + the world-or-tool test |
+| `agentic`/`assistive` (§47) | apparatus-vs-object — agents that *stage* a study earn nothing |
+| preamble | *"Plumbing ≠ membership"* — tag only mechanisms the paper *argues about* |
+
+None of those reach a **theme** proposed off the methods section, which is the gap this closes.
+
+**The test:** *is this candidate tag triggered by what the paper **studies**, or by how the authors
+**did the study**?*
+
+**Worked failure — `ID7IN65K`** (Choudhuri et al.): the paper codes open-ended survey responses with
+three LLMs against an author-approved codebook and reports Krippendorff's α with pairwise Cohen's κ.
+**All 3 panel runs proposed `theme:ai-review`** — reading the methods section as content. Arbiter
+caught it: *"there is a lot of discussion of multiagent panel etc for analysis of the survey data, so
+could yield false positive for those tags."*
+
+**Why this error is high-frequency and worth a preamble slot:** it fires precisely when a paper's
+*research design resembles the phenomenon under study* — and in a corpus about AI reviewing code,
+papers that use AI to analyse data are common. The resemblance that makes the paper methodologically
+interesting is the same resemblance that makes the tagger misfire.
+
+**Reflexive note.** This is also the trap the SLR's own panel is most exposed to, since our method
+*is* multi-model AI review. Papers worth citing for their method (see
+`Theme_Tagging_Calibration.md` §9 and the new **Methodology Support** collection) are exactly the
+papers most likely to be mistagged for it. **Cite for method; do not tag for it.**
+
+**Docs updated:** `Tag_Cheatsheet.md` preamble. **Not** propagated to `Tag_Prompt.md` per §41 —
+though note this one is a *machine* error, so it is a strong candidate for the successor prompt.
