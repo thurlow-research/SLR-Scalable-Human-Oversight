@@ -1305,6 +1305,13 @@ call**. Panel unanimity does *not* cause the review to be skipped. What the demo
 short-circuits is **downstream tag verification** — once a paper is ruled Context, its remaining
 theme/facet proposals are not verified against the instrument.
 
+**Extended to the Accept band (arbiter, same session): the 44 `01 - Accept` papers also receive a
+human demote review.** This goes beyond the `Sweep_Reading_Guide.md` protocol for that band
+("*read for content; override only if something jumps out*", plus 4 mandatory audit papers) —
+tier is now deliberately ruled on, not merely left undisturbed. Consequence: the human **tier**
+judgment covers all three bands and is genuinely corpus-wide (6 Full Read + 78 Light Read + 44
+Accept = 128), not Light-Read-only.
+
 **Why this is methodologically sound rather than a shortcut:** the tier decision does not depend on
 the unverified tags. It is made by the arbiter from the paper itself against the §3 core bar, so
 there is no circularity (the earlier worry — "tier decided on impression because the tags that
@@ -1316,8 +1323,8 @@ are used for.
 
 | Axis | Human coverage | What may be claimed |
 |---|---|---|
-| **Tier** (Core/Context) | **corpus-complete** — human ruling on every paper | tier-level human-vs-panel agreement may be reported corpus-wide |
-| **Tags** (themes/facets) | **Core only** — verification stops at a Context ruling | any human-vs-panel *tag* agreement statistic **must be scoped to Core**; stating it corpus-wide would overclaim, since the verified subset is non-randomly selected |
+| **Tier** (Core/Context) | **corpus-complete, all 128** — human demote review across Full Read (6), Light Read (78) **and Accept (44)** | tier-level human-vs-panel agreement may be reported corpus-wide |
+| **Tags** (themes/facets) | **partial — Core only** — full adjudication on the 6 Full Reads; on Light Reads verification stops at a Context ruling; on Accepts only the 4 designated audit papers plus anything that jumps out | any human-vs-panel *tag* agreement statistic **must be scoped to Core**, and the Accept-band contribution is an audit sample rather than a census; stating it corpus-wide would overclaim, since the verified subset is non-randomly selected |
 
 **Residual gaps (both pre-existing, neither caused by this protocol):**
 - **Demote reasons are unstructured.** `demote:context` records *that* a paper was excluded, not
