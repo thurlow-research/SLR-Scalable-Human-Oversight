@@ -1041,3 +1041,40 @@ reaching for the anti-pattern.
 *(Corpus note, not a tag: HAIF's tiering explicitly adapts **acceptance sampling** from statistical
 quality control — AQL and lot sizes, cited as such — making it a direct corpus instance of the
 SQC/Jidoka framing used in the project's own QA design.)*
+
+### 36b. `design-only` tier discrimination — a Core/Context contrast pair (6F3S8IB7 vs VCI88UZD, 2026-08-23)
+
+Two `design-only` papers, opposite tiers, discriminated by exactly one clause. Recorded as a pair
+because the `design-only` core-bar carve-out is easy to read as a judgment call and isn't one.
+
+**The carve-out (existing, `Tag_Cheatsheet.md` → `design-only`):** *names the elements to track AND
+defines operationalizable metrics → clears the bar as measurement even unevaluated; what-only
+enumerations / unevaluated frameworks without defined metrics → context candidates.*
+
+- **`6F3S8IB7` (HAIF) → CORE.** What+how both present: elements to track (error rates, error types,
+  review time, false acceptance rates) *and* operationalizable criteria (S/V/C/D decision matrix →
+  Tier 1–4, 20% starting sample rate with adjustment rule, tier-transition mechanics). The paper
+  claims the carve-out in its own framing — prior work converges on *what* teams should attend to
+  (transparency, ownership, validation discipline, skill preservation); HAIF positions itself as
+  the missing *how*.
+- **`VCI88UZD` (human-certified module repositories) → CONTEXT.** What-only: asserts trusted
+  repositories are needed without specifying how to operate one — no metrics, no criteria, no
+  protocol. (Compounded by minimal AI involvement, but the what-only shortfall alone is
+  sufficient.)
+
+**Rule made explicit — uncalibrated ≠ unspecified.** HAIF concedes its thresholds are reasoned
+estimates requiring empirical calibration, and identifies empirical validation as future work.
+That does **not** cost it the carve-out: the reader must *calibrate* a supplied parameter, not
+*invent* an absent one. Operational test for future cases: **could a team run it Monday without
+inventing the missing piece?**
+
+**Tier is not evidence strength.** The two axes are independent by design and must not be traded
+against each other: tier (Core/Context) is a *scope* judgment; the form ladder (`design-only` →
+`built-system` → `adopted`) plus the method-* facets carry *evidence strength*. A normative
+"here is the right thing to do" contribution with no field evidence is a legitimate Core paper
+sitting at the lowest evidence rung — that combination is reportable, not contradictory. Mirrors
+the same separation already documented for `dissertation-input` ("tier ≠ importance").
+
+**Stat this enables (compute at end-of-screening, not before):** proportion of solution-side Core
+papers at `design-only` with no method-* facet. If that share is large it is a *finding*, not
+corpus noise — it is the evidence-gap the dissertation's organizational survey exists to close.
