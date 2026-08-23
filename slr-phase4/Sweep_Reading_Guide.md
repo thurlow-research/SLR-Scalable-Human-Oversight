@@ -2,7 +2,9 @@
 
 **Who this is for:** the arbiter (Scott), reading in Zotero, working the 128-core sweep results.
 **Companions:** `data/tags-v213/sweep_review_workbook.md` (per-paper proposals + votes) ·
-`Tag_Cheatsheet.md` (the instrument) · changelog §19–§32 (binding rulings — do not re-litigate).
+`data/tags-v213/light_read_tagging_questions.md` (the 02 - Light Read prep sheet — per-paper
+checklist, alphabetical by first author) · `Tag_Cheatsheet.md` (the instrument) · changelog
+§19–§32 (binding rulings — do not re-litigate).
 
 The collections map to effort tiers — spend attention where the machines couldn't resolve:
 
@@ -93,10 +95,15 @@ Genuine three-way splits; each model's *stable* modal read differs. For each:
 
 ### 02 - Light Read (78 papers)
 Machine gives a 2/1 modal proposal + tripwires telling you where to look.
-- **The 18 unanimous-demote papers first** (workbook bucket B) — fastest wins. Question per
-  paper: does a demote-menu reason actually hold (general-AI object · steering-only · pure tool
-  benchmark · secondary lit · not operationalizable)? Remember `general-code` alone is NOT a
-  demote reason, and §30's sole-exemplar exception is "look at keeping," not "keep."
+- **Work order:** `data/tags-v213/light_read_tagging_questions.md` is the prep sheet — 78 entries,
+  one per paper, sorted **alphabetically by first author** (not grouped by demote/tripwire type).
+  Work it top to bottom: open a doc, resolve every bullet listed under it, `s5:read`, move to the
+  next. Don't jump around by question type — that was tried and made the pass harder to track,
+  not easier (2026-08-22).
+- For demote calls (18 of the 78 carry one): does a demote-menu reason actually hold (general-AI
+  object · steering-only · pure tool benchmark · secondary lit · not operationalizable)? Remember
+  `general-code` alone is NOT a demote reason, and §30's sole-exemplar exception is "look at
+  keeping," not "keep."
 - For the rest: read abstract + skim the sections the tripwires point at
   (`sprawl:codex=9` → check for theme-stuffing; `unstable:<model>` → boundary paper, check the
   dissent before confirming the majority). Confirm (silence) or override (menu).
