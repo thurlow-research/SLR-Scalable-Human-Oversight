@@ -190,12 +190,13 @@ oversight layer).
   01-Accept, 13 in 02-Light-Review, 1 in the Full Read bucket) — 38% of the sweep's 55
   built-system papers. Zero such co-occurrence survived in the 20 human-verified calibration gold
   papers, consistent with this being a real, recurring machine-only confusion that resolves
-  correctly only on a full-text check. Candidate list for spot-checking as the arbiter works the
-  workbook: 7SH86C2W, 7UB2MD8Z, 96XE669R, A5WDGC7J, A6ZE2A26, C88VGWMI, CI93QRUH, I6FZ5GD2,
-  JCTP8VXP, MFSZPSPU, NRVQT89E, T3XTXIXW, U9VZQXGI, VZ27QUPQ, WBS9U5N7, X7EN6DXZ, XK3P9C96,
-  XRTVITVP, Y4TIF9KW, ZBF86IJM, ZH6QIU8A. Not yet grafted into the live
-  `Tag_Prompt.md`/`Tag_Cheatsheet.md` v2.13 instrument (frozen for gauge constancy); available now
-  as a `cal:human:facet:` override on individual items ahead of a formal graft decision.
+  correctly only on a full-text check. Candidate list, all 21 arbiter-resolved as of 2026-08-23
+  (**COMPLETE** — full disposition + reasoning trail in `Taxonomy_Changelog.md` §35, retained as
+  the gold/validation set for this facet pair): 7SH86C2W, 7UB2MD8Z, 96XE669R, A5WDGC7J, A6ZE2A26,
+  C88VGWMI, CI93QRUH, I6FZ5GD2, JCTP8VXP, MFSZPSPU, NRVQT89E, T3XTXIXW, U9VZQXGI, VZ27QUPQ,
+  WBS9U5N7, X7EN6DXZ, XK3P9C96, XRTVITVP, Y4TIF9KW, ZBF86IJM, ZH6QIU8A. Not yet grafted into the
+  live `Tag_Prompt.md`/`Tag_Cheatsheet.md` v2.13 instrument (frozen for gauge constancy); applied
+  as `cal:human:facet:` overrides on all 21 items ahead of a formal graft decision.
   **7SH86C2W resolved (2026-08-22):** full-read check — single self-selected, non-repeated
   scenario (one web-app project, one journal of observations), explicitly self-labeled
   "exploratory"/"preliminary" — falls below `evaluated-synthetic` on the ladder, at the plain

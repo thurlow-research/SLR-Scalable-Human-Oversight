@@ -813,3 +813,54 @@ near-100%-base-rate failure mode already rejected once this session for a `risks
 
 Docs updated: `Methodology/HOS_Seeded_Theme_Candidates.md` (`evaluated-benchmark` and
 `evaluated-synthetic` entries both carry the corrected reasoning + worked examples inline).
+
+## 35. `05 - Synthetic-Eval Check` (21 items) — arbiter pass COMPLETE, retained as gold set (2026-08-22/23)
+
+Arbiter worked all 21 candidates from the original tripwire scan (§ staging note in
+`HOS_Seeded_Theme_Candidates.md`) to a final `cal:human:facet:*` disposition on the
+`evaluated-synthetic`/`evaluated-benchmark`/`method-field-study`/`method-experiment`/plain
+`self-tests` axis, applying the corrected exclusivity rule (§34) throughout. Several calls
+surfaced mid-read as sharper edge cases than the original tripwire scan anticipated — recorded
+here since they're reusable reasoning, not just this-paper trivia:
+
+- **I6FZ5GD2** (visual analytics for AIDE coding agents) — `evaluated-benchmark`: Section 6 runs
+  22/24 case-study competitions from **MLE-Bench (lite)**, a genuine established third-party
+  benchmark, administered with its own real Kaggle tasks/metrics. Also carries a separate
+  human-expert component (5 ML scientists) that the panel already proposed `expert-validated`
+  for — plausibly correct for the right reason (panel judges the finished tool, not producing
+  data), unlike MFSZPSPU below.
+- **MFSZPSPU** (LLM-as-judge patch validity) — `method-field-study`, **not** `expert-validated`:
+  real production-sourced bugs (Google sanitizer tools) support the field-study ladder rung, but
+  neither human touchpoint clears the `expert-validated` bar — the rubric-refinement step is
+  input-side shaping (excluded by definition) and the 3-rater ground truth is "experts as study
+  subjects" (also explicitly excluded, routes to `method-experiment` instead, which stays as a
+  separate co-occurring tag).
+- **VZ27QUPQ** (API misuse detection/repair) — `evaluated-synthetic` **+ `method-mining`**: the
+  qualitative-study dataset draws on The Stack (real, established GitHub corpus) but the authors
+  build their own extraction/sampling pipeline on top of it (no prescribed protocol exists for
+  "API misuse" on The Stack) — real raw material, author-invented methodology, so `method-mining`
+  for the real-world-artifact characterization, not `evaluated-benchmark`. Dr.Fix (the repair
+  system) separately stays `evaluated-synthetic` — self-labeled "our benchmark," release-upon-
+  acceptance only, not yet adopted by anyone (the "wants to be a benchmark ≠ is one" distinction).
+- **XRTVITVP** (scalable interactive oversight) — `evaluated-synthetic`, no `method-experiment`
+  despite the panel proposing both: appendix read confirmed carefully-constructed prompts/tasks,
+  system self-runs, LLM-judge scores it — no real human in the main-loop evaluation (a simulated
+  non-expert user substitutes for one side of the "sandwich protocol," an LLM-judge substitutes
+  for the other at scale).
+- **96XE669R** — confirmed `evaluated-synthetic` (new instrument — VERICODE taxonomy + SWE-IF
+  testbed — built on top of established benchmarks BigCodeBench/LiveCodeBench, substantial
+  deviation, no release/availability language found). A leftover `evaluated-benchmark` tag from
+  before this resolution was removed to avoid the two rungs co-existing on one evaluation event.
+
+**Full final tag distribution (21 items):** `method-experiment` only — ZBF86IJM, JCTP8VXP,
+WBS9U5N7*, CI93QRUH, ZH6QIU8A, XK3P9C96 (6, *WBS9U5N7's ladder side is `evaluated-synthetic`,
+listed there). `evaluated-synthetic` only — A6ZE2A26, C88VGWMI, WBS9U5N7, 96XE669R, VZ27QUPQ,
+XRTVITVP (6). `evaluated-benchmark` only — X7EN6DXZ, A5WDGC7J, T3XTXIXW, I6FZ5GD2 (4).
+`method-field-study` only — MFSZPSPU (1). Two-event papers (ladder + separate `method-experiment`)
+— U9VZQXGI, NRVQT89E, 7UB2MD8Z (3). Untagged/`self-tests` — Y4TIF9KW, 7SH86C2W (2, not
+built-system-evaluation papers on this axis).
+
+**Retained as the gold/validation set for these two facet pairs** — same role `human_gold.json`
+plays for the main v2.13 instrument. If a future formal panel run ever extends
+`evaluated-synthetic`/`evaluated-benchmark` coverage (Context tier, or a Core-tier panel-accuracy
+check), this 21-item set is the reference to score the panel against, not a target for re-review.
