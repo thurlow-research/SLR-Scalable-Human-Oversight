@@ -1255,3 +1255,42 @@ to leave.
 The split rates above are the empirical face of the lost-in-the-middle question, and of the
 instrument's own admission in the facet checklist ("*misses cluster here; 42 tags exceed recall*").
 Data for that decision. Also deferred.
+
+## 41. Versioning plan for the accumulated refinements — RATIFIED, executed at end of validation (2026-08-23)
+
+Standing decision on what happens to §36–§40's refinements. Recorded now so a future session does
+not act on them prematurely or lose the provenance.
+
+**The plan (arbiter, 2026-08-23):**
+1. **Implications are considered at the END of the validation exercise**, not during it. Refinements
+   keep accumulating in `Tag_Cheatsheet.md` and this changelog as the Light Read proceeds; nothing
+   is acted on mid-pass.
+2. **A new, revised tagging definition is produced at the end** — a successor instrument
+   incorporating the refinements.
+3. **The original is kept for records.** v2.13-as-used must remain retrievable verbatim: it is the
+   gauge that produced both the 128-paper panel data and the human Light Read pass, so every stat
+   computed from that work is only interpretable against it.
+4. **A second panel run is NOT committed to.** Whether the revisions warrant re-running the panel
+   is decided at the end, once the revisions are known and their scope is visible.
+
+**This supersedes the open question in §40c** — the answer is option (c), fork a successor, with
+the timing fixed at end-of-validation and preservation of the original made an explicit
+requirement. **The "do not sync `Tag_Prompt.md`" instruction from §40c therefore stands until the
+revised instrument is cut.**
+
+**Where v2.13-as-used currently lives (verified 2026-08-23):**
+- `Tag_Cheatsheet.md` @ commit **`05a8b35`** — the last state before this session's edits.
+- `Tag_Prompt.md` @ HEAD, lines 1–80 — **byte-identical** to the above (verified by diff). The
+  §40c drift, which was accidental, has the incidental effect of preserving the original in the
+  working tree. Note this is *luck, not design*: it survives only as long as nobody "fixes" the
+  drift, which is precisely why §40c says not to.
+
+**Recommended before the revised instrument is cut (not yet done, needs a go-ahead):** write an
+explicit frozen copy — e.g. `slr-phase4/Tag_Cheatsheet_v2.13_AS-USED.md` — so the record does not
+depend on git archaeology or on the drift persisting. Cheap insurance; the two preservation paths
+above are both incidental rather than deliberate.
+
+**Naming for the successor is deliberately not fixed here.** Whether it is v2.14 (revision) or
+v3.0 (new gauge) depends on whether the refinements turn out to be clarifications or definitional
+changes — §38→§39 showed that distinction is not always obvious in advance, and the gauge-constancy
+consequences differ.
