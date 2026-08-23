@@ -113,6 +113,25 @@ oversight layer).
   accumulate *making this argument*; otherwise it's a Discussion point. Don't name it
   "democratization" (phenomenon-name; would keyword-attract adoption papers that belong in
   `survey-input`).
+  **Second instance (2026-08-23): `95CPB7CF`** (Casserini et al., *Beyond the "diff"*) — arrives at
+  the same gap from the **opposite direction** and, notably, **proposes a check for it**. Where
+  `22JBEZNK` documents non-experts who cannot evaluate at all, this paper describes *capable*
+  professionals whose competence **erodes** through delegation: *"developers who rely on agentic
+  tools can lose the system-level mental models needed to notice violations, accumulating cognitive
+  debt that resides in people rather than code,"* leaving humans *"procedurally in the loop yet
+  progressively less able to govern the system."* Its framework then adds an **understanding
+  requirement** — *"the reviewer should be able to independently reconstruct the principal steps in
+  the causal graph and recognize when an action falls outside permitted boundaries, with failure to
+  do so signaling growing cognitive debt that warrants intervention."*
+  **Why this matters for promotion:** it converts the gap from a *diagnosis* into an
+  **operationalizable gate condition** — reviewer comprehension as a measurable precondition for
+  valid oversight, not merely an observed deficit. That is the "operationalizable mechanism" half of
+  the core bar, which the `22JBEZNK`-only version of the candidate lacked. It also widens the
+  candidate's scope: competence absence (22JBEZNK, non-developers) **and** competence erosion
+  (95CPB7CF, professionals) are the same theme with two etiologies. Tagged
+  `theme:automation-bias` + `facet:risk-overreliance` here as the nearest live homes; neither
+  captures the *gate* idea. **Tripwire widened:** watch `non-developer` **and** papers proposing
+  overseer-competence checks/requirements — 2 instances now, from independent directions.
 - **(Corpus-seeded, 2026-07-18) Authority-allocation spectrum — "human in absolute control."** A
   recurring *stance*, not yet a tag: not human-in-the-loop of an AI-driven flow but AI-as-tool inside
   a human-commanded flow; the spectrum runs absolute control → bounded delegation → tiered autonomy →
