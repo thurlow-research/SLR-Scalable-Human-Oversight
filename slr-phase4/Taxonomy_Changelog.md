@@ -1512,3 +1512,33 @@ runs. Bounded and enumerable from Zotero. **Data-integrity item.**
 **Open, minor:** the Actions & Tags YAML has no `reject:` menu entries. Adding all 44 (17 themes +
 27 facets) would bloat the menu for a rare action — recommend adding entries **on demand** as
 rejections recur, or continuing to have them applied via the API. Not blocking.
+
+## 47. `agentic`/`assistive` — apparatus-vs-object rule (WBS9U5N7, 2026-08-23)
+
+**Arbiter ruling:** *"Agents as part of setting up the experiment, not agents as a core part of the
+experiment."* Agents used to **stage** a study — manufacture stimulus, generate test material, drive
+the harness — are **apparatus** and earn no mode facet. The pair fires only when the
+agentic/assistive generation is the **phenomenon under study**.
+
+Test: *is the agent the thing being examined, or the thing doing the examining/staging?*
+
+**Worked negative — `WBS9U5N7`** (Alami, *Cognitive camouflage*): a Mutator agent synthesizes
+deliberately-gamed code so a review committee can be tested on whether it catches the gaming. Agents
+are everywhere in the design, but there is no developer, no pipeline, no production setting — the
+paper studies **detection**, not agentic development. All 9 panel runs proposed `agentic`; arbiter
+rejected → `cal:human:reject:facet:agentic`.
+
+This **sharpens rather than changes** the existing clause ("*uses agents*" ≠ `agentic`) by naming
+the specific confusion it was written to prevent: the earlier wording said what doesn't count but
+not *why*, so a paper saturated with agents still reads as agentic on a fast pass. Apparatus-vs-
+object gives the reason.
+
+**Assistant-error note (pattern, not incident).** I recommended endorsing `agentic` here on
+"there are agents," reading the facet name in its ordinary sense rather than its instrument-scoped
+sense. Same class of error as §38, where I widened `framework` because HAIF "is a framework in plain
+English." Both times the definition already excluded the case and I read past it. Flagged so the
+pattern is visible in my recommendations — the instrument's scoping clauses are the operative text,
+not the tag's name.
+
+**Docs updated:** `Tag_Cheatsheet.md` mode-pair line only. **Not** propagated to `Tag_Prompt.md`,
+per §41 — the panel prompt stays frozen at v2.13-as-used until the successor instrument is cut.
