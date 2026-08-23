@@ -1421,3 +1421,52 @@ across the Accept band (§42), so these do not sit unexamined. **Apply the justi
 contribution discriminator when each is reached.** Whether the unanimous-12 warrant a targeted
 check as a group is an end-of-screening question, deferred per the standing rule — flagged here so
 the observation is not lost, not to prompt action now.
+
+## 45. ⚠ CONVENTION CONFLICT — `cal:human:*` override semantics vs non-exhaustive arbiter tagging (2026-08-23)
+
+**Open issue. Affects the eventual `final:*` write pass. Do not script that pass until resolved.**
+
+**Arbiter's working practice (stated 2026-08-23):** *"I am not doing an exhaustive audit of tags. I
+am giving tags that I feel are valid. My omission of a tag does not mean it isn't valid, it means it
+wasn't something that jumped out at me. Exhaustive tagging would be 2 or 3× the effort."*
+
+**Documented convention it contradicts** (`Sweep_Reading_Guide.md` §1.3): *"any `cal:human:*` tag is
+read as an **arbiter override** that beats the machine proposal wholesale for that layer (if you set
+any `cal:human:theme:*`, your theme set is THE theme set…)"*
+
+**The defect:** the convention has two states where the work has three.
+
+| State | Meaning | Encoded today |
+|---|---|---|
+| Endorsed | arbiter named it — valid | `cal:human:*` ✔ |
+| **Rejected** | arbiter considered and ruled it out | ✗ conflated |
+| **Not considered** | didn't jump out; may well be valid | ✗ conflated — silently read as rejection |
+
+Under wholesale-override semantics, a scripted `final:*` pass would **strip valid themes** from every
+paper where the arbiter named only one or two — which, under non-exhaustive tagging, is most of them.
+
+**Live instance:** `WUUDHL8R`. `cal:human:theme:ai-review` was written, which under the convention
+drops `regulatory-compliance` (9/9 panel) *and* `hitl-workflow` (8/9). The first is a genuine
+arbiter rejection ("it is not compliance — that was justification/background", §44). The second was
+an **assistant argument** (plumbing rule) that the arbiter never ruled on — so the record currently
+encodes a rejection that was not made. **Flagged to the arbiter; awaiting a call on whether
+`hitl-workflow` is restored.**
+
+**Proposed resolution (assistant recommendation, NOT adopted):** make `cal:human:*` purely
+**additive endorsements**, and give active rejections their own machine-readable marker —
+`cal:human:reject:theme:<slug>` / `cal:human:reject:facet:<slug>`. The final pass then computes
+**panel modal ∪ human endorsements − human rejections** instead of *endorsements alone*. Costs the
+arbiter nothing (rejections are rare and deliberate — two today, both reasoned) and makes the
+three states distinguishable. Layers under the ratified namespace (§`Theme_Tagging_Calibration.md`)
+as a `cal:human:` sublayer that never survives into `final:*`.
+
+**Interim assistant practice, effective immediately:** do not write `cal:human:theme:*` as if it were
+a complete set; record arbiter-named tags as *additive endorsements* and note explicitly in the
+arbiter note that the set is non-exhaustive. Any tag dropped on assistant reasoning must be raised
+with the arbiter, not written as a silent rejection.
+
+**Retrospective exposure to check before the final pass runs:** every paper already carrying
+`cal:human:theme:*` or `cal:human:facet:*` was written under the old reading. Those need review
+against this distinction — a bounded, enumerable set, and cheap to list from Zotero. Deferred to
+end-of-screening with the other write-pass questions, but it is a **data-integrity** item, not a
+refinement.
