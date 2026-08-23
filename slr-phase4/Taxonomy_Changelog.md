@@ -1658,3 +1658,37 @@ papers most likely to be mistagged for it. **Cite for method; do not tag for it.
 
 **Docs updated:** `Tag_Cheatsheet.md` preamble. **Not** propagated to `Tag_Prompt.md` per §41 —
 though note this one is a *machine* error, so it is a strong candidate for the successor prompt.
+
+## 51. Reference-oracle exclusion — a checker needing ground truth is not an oversight mechanism (PR4GS7SP, 2026-08-23)
+
+**Arbiter ruling:** *"Symbolic execution would be yes, but this is using symbolic execution to compare
+against a 'known implementation' rather than assess correctness on its own."*
+
+**Rule:** a checker that requires a **known-correct reference implementation** is a *measurement
+instrument*, not a Detect-stage oversight mechanism — because in real oversight the reference does
+not exist. If you had the correct implementation, you would not need the generated code. The
+technique used internally is irrelevant to this test.
+
+**Operational question:** *could this run on an artifact whose correct answer is unknown?* No → not
+a Detect mechanism.
+
+**Worked case — `PR4GS7SP`** (Cotroneo et al., *Automating the correctness assessment of AI-generated
+code for security contexts*). ACCA genuinely uses symbolic execution, and both `rules-based-checks`
+(which explicitly lists "symbolic exec") and `formal-methods` (ditto, with the documented
+`rules-based-checks`+`formal-methods` pairing for a classical engine) appeared 9/9 in the panel.
+By the letter of both definitions they fire. **Arbiter rejected both** — ACCA tests *equivalence to
+a ground-truth implementation*, so it can only operate where correctness is already known. It is a
+benchmarking oracle for comparing code generators, which the paper states plainly: assess
+correctness *"without any human effort"*, validated by correlation against human evaluation.
+
+**Why this needed stating:** the Detect definitions enumerate *techniques* (tests, static analysis,
+symbolic exec, sandbox) and a technique list cannot distinguish a deployable check from a research
+oracle using the same machinery. This is the missing condition.
+
+**Naming hazard noted in passing.** `rules-based-checks` invites reading its *name* literally ("it
+doesn't discuss any rules") when its definition is the deterministic-grounded-check bucket, symbolic
+exec included. That is the mirror of the assistant's own errors today, which read `framework` and
+`agentic` too *loosely* (§38, §47). **The tag names in this instrument are bucket labels, not
+definitions — in both directions.** Worth a line in the successor instrument.
+
+**Docs updated:** `Tag_Cheatsheet.md` Detect-group preamble. Not propagated to `Tag_Prompt.md` (§41).
