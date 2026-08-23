@@ -11,7 +11,7 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 ## THEME TAGS (`theme:<slug>`)
 
 **Problem — quantify**
-- `oversight-scaling-inversion` — AI code is riskier yet *less* inspected; PRs auto-merged unreviewed; review is the bottleneck; burden piles on maintainers
+- `oversight-scaling-inversion` — **FAIL-OPEN ONLY (§52):** AI code is riskier yet *less* inspected and **ships anyway** — PRs auto-merged unreviewed; review is the bottleneck; burden piles on maintainers. **The harm is that bad code reaches production.** *Capacity saturation that resolves **fail-closed** — agent PRs ignored/abandoned so nothing merges — is NOT this theme*: safety holds, throughput collapses, and the harm is productivity, not risk (NZJST99D, 33k agent PRs dominated by reviewer abandonment). **Synthesis test:** would the paper read naturally in a section on *bad code shipping unreviewed*? If it would jar because nothing shipped, this is the wrong home.
 - `ai-code-insecurity` — empirical **security**-vulnerability evidence in AI code (CWEs, insecure-but-confident), **incl. hallucinated/poisoned dependencies in the output** (D4 ruling). Incident analyses & original vulnerability taxonomies count; secondhand rate citations alone don't
 - `quality-debt` — **non-security** quality decay: tech debt, complexity, smells, maintainability, breaking changes
 

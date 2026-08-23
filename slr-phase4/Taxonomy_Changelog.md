@@ -1692,3 +1692,48 @@ exec included. That is the mirror of the assistant's own errors today, which rea
 definitions — in both directions.** Worth a line in the successor instrument.
 
 **Docs updated:** `Tag_Cheatsheet.md` Detect-group preamble. Not propagated to `Tag_Prompt.md` (§41).
+
+## 52. `oversight-scaling-inversion` NARROWED to fail-open; fail-closed saturation logged as a gap (NZJST99D, 2026-08-23)
+
+**Arbiter ruling:** *"One case (fail closed) impacts productivity, usefulness but is quite safe. Bad
+code never ships. Fail open is truly a risk and scary — bad code ships. That is actually an
+important distinction. If we bucketed this paper in with those that talk about all the maladies of
+bad code shipping, this paper would be very out of place."*
+
+**The narrowing.** The theme is **fail-open only**: capacity mismatch whose consequence is that
+under-inspected AI code **reaches production**. Capacity mismatch that resolves **fail-closed** —
+work abandoned, nothing merged — is a *productivity* failure, not an oversight failure, and does not
+belong here.
+
+**Why the old wording admitted both.** The definition was four clauses in a list: *"riskier yet less
+inspected; PRs auto-merged unreviewed; review is the bottleneck; burden piles on maintainers."*
+Clauses 1–2 are fail-open; clauses 3–4 are bare capacity language that fits either resolution. Read
+as alternatives, any capacity paper qualified. The definition **conflated a cause (capacity
+mismatch) with an effect (unsafe code ships)** — and only the effect defines the harm.
+
+**The test that settled it — synthesis, not definition-matching.** A theme is *where a paper gets
+written up*. Asked whether `NZJST99D` would sit naturally in a section on the maladies of bad code
+shipping, the answer is no: **nothing shipped**. 33k agent-authored PRs, dominated by reviewer
+abandonment, with no fail-open case found in the text. Safety held; throughput collapsed. Rejected
+→ `cal:human:reject:theme:oversight-scaling-inversion`.
+
+**Corpus exposure of the narrowing:** `oversight-scaling-inversion` is proposed by ≥1 run on **33 of
+128** papers, **unanimously on 13**. Papers already tagged with it under the loose reading should be
+re-checked against the fail-open condition before the `final:*` write — add to the §45 retrospective
+list. Bounded; the synthesis test is quick to apply.
+
+### 52a. GAP — no theme for fail-closed review saturation (tripwire, 1 instance)
+
+With the narrowing, `NZJST99D`'s headline finding has **no home**: review capacity exhausted, agent
+contributions dropped on the floor. Distinct from `oversight-theater` (review exists but lacks
+authority — here it does not happen at all) and from `oversight-scaling-inversion` (fail-open).
+
+Conceptually interesting because the **remedy differs**: fail-open calls for gates; fail-closed
+saturation calls for triage — i.e. this phenomenon is *motivation for* `risk-routing` rather than
+membership in it.
+
+**One instance is not enough to stage** (the `evaluator-reliability` candidate had three).
+**Tripwire:** papers reporting that AI/agent output volume overwhelms review capacity **without**
+unreviewed code shipping. Count recurrences; revisit at end of validation.
+
+**Docs updated:** `Tag_Cheatsheet.md` theme definition. Not propagated to `Tag_Prompt.md` (§41).
