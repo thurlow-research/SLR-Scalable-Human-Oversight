@@ -865,13 +865,13 @@ plays for the main v2.13 instrument. If a future formal panel run ever extends
 `evaluated-synthetic`/`evaluated-benchmark` coverage (Context tier, or a Core-tier panel-accuracy
 check), this 21-item set is the reference to score the panel against, not a target for re-review.
 
-## 36. Four discriminators sharpened during a Light Read full-record tag (BU73N7PC, 2026-08-23)
+## 36. Five discriminators sharpened during a Light Read full-record tag (BU73N7PC, 2026-08-23)
 
 Arbiter tagged BU73N7PC ("Moving Faster and Reducing Risk: Using LLMs in Release Deployment")
 against the panel's proposal (Opus/Codex primary `risk-routing`, Gemini primary `ai-review`;
 Codex additionally proposed `hitl-workflow`+`oversight-explanation`; Opus/Codex also proposed
 `framework`+`metrics`; no model proposed a method-* facet despite unanimous `built-system`+
-`adopted`). Four real gaps surfaced resolving the disagreements — instrument definitions
+`adopted`). Five real gaps surfaced resolving the disagreements — instrument definitions
 unchanged in substance, discriminators made explicit:
 
 **1. Primary-theme tie-breaker, goal vs. mechanism.** When a paper spans `risk-routing` and
@@ -907,5 +907,16 @@ natural-use outcomes over time. BU73N7PC: `adopted`+`built-system` (real deploym
 post-rollout incident-rate outcomes; had it reported the latter, `method-field-study` would apply
 instead/additionally. Deployment status and evidence shape are independent axes.
 
-Docs updated: `Tag_Cheatsheet.md` (`hitl-workflow`, `framework`, tie-breaker bullet — inline
-worked-example additions).
+**5. `metrics` requires the metric be a defined, reported deliverable — not the internal
+apparatus a mechanism runs on.** Opus/Codex proposed `metrics` on BU73N7PC's risk score, but the
+paper doesn't dwell on it: no formula, no reported detection-rate numbers, no discussion of the
+metric's own properties — it's mostly inferred from what the routing decision implies. Ruling:
+this is the apparatus feeding `risk-routing`'s allocation decision, not a separately-contributed
+measurand the paper names and evaluates in its own right (the existing "contribution, not
+apparatus" bar in the facet's definition, applied). Rejected. Worth flagging as a recurring
+temptation specifically on `risk-routing` papers — nearly every one computes *some* internal
+score, so treating that as sufficient would push `metrics` toward the same near-100%-base-rate
+failure mode already rejected for other facets (§34).
+
+Docs updated: `Tag_Cheatsheet.md` (`hitl-workflow`, `framework`, `metrics`, tie-breaker bullet —
+inline worked-example additions).
