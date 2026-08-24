@@ -2016,3 +2016,46 @@ specifies components or specifies obligations.**
 `framework`+`built-system` · pipeline architecture, proposed → `framework`+`design-only` ·
 **conformance requirement / obligations spec → `design-only`, no `framework`** · process or
 org practice → theme only, no `framework` · single task at one lifecycle stage → no `framework`.
+
+## 57. Method facets — instrumentation ≠ contribution; one event, one classification (Karuppuchamy, 2026-08-24)
+
+**Arbiter:** *"Not sure about mining. They built a system and used it for building prod services.
+Primary artifact was not from mining repos to see what types of changes were made. They did mine
+CI/CD logs for before/after analysis."*
+
+**Rule:** logs and telemetry used to **measure** something else are the *instrument*, not the
+evidence event. `method-mining` requires the artifact analysis to **be** the finding.
+
+The instrument already implied this — *"a detector run over real repos gets `method-mining` only if
+the findings **characterize the repos**"* — but stated it only for detectors-over-repos, so it did
+not reach a deployment measured via CI/CD telemetry.
+
+| | Evidence event | Tag |
+|---|---|---|
+| **Instrumentation** | logs/telemetry measure a deployment's effect | `method-field-study` |
+| **Contribution** | the artifact analysis *is* the result — `NZJST99D`, 33k PRs characterised | `method-mining` |
+
+**Corollary — one evaluation event gets ONE method classification.** Two method facets require two
+genuinely *separate* measurement events (§34's fork logic, `NRVQT89E`: a critic-model run graded by
+contractors **and** a distinct human-subjects tampering task). Never one event measured by two
+techniques.
+
+**Worked failure — `8MXATG38`:** `method-field-study` **+** `method-mining` **+** `method-self-report`
+all proposed **3/3** on what is a *single* longitudinal field deployment at one organisation, measured
+via a telemetry dashboard. The panel read three *techniques* as three *methods*. Resolved to
+`method-field-study` alone; the other two rejected. `method-self-report` fails for the same reason —
+"resolving early feedback (prompt tuning, policy refinements)" is deployment iteration, not elicited
+data.
+
+**Why it matters beyond tidiness:** method facets are how the corpus will report its evidence base.
+Triple-counting one deployment inflates the apparent volume of empirical work — "N papers with field
+evidence, M with mining evidence" would double-count the same study.
+
+**Also recorded from this paper:** `adopted` is one of the scarcest facets in the corpus — **5 of
+128** (`8MXATG38`, `BU73N7PC`, `P837LJWE`, `RX9SICP9`, `V4IRKSFI`). Karuppuchamy clears the §36
+pilot rule explicitly: the paper says *"prior to **adoption**"* and describes a phased rollout ending
+in *"broad enablement through standard plugins, CI jobs, and issue-tracker automation"* — past the
+study pilot into the organisation's own operational use.
+
+**Docs updated:** `Tag_Cheatsheet.md` method-facet block. Not propagated to `Tag_Prompt.md` (§41) —
+but this is a **machine error** (3/3), so it belongs in the successor prompt alongside §50 and §54.
