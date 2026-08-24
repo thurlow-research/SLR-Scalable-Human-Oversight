@@ -130,8 +130,19 @@ oversight layer).
   candidate's scope: competence absence (22JBEZNK, non-developers) **and** competence erosion
   (95CPB7CF, professionals) are the same theme with two etiologies. Tagged
   `theme:automation-bias` + `facet:risk-overreliance` here as the nearest live homes; neither
-  captures the *gate* idea. **Tripwire widened:** watch `non-developer` **and** papers proposing
-  overseer-competence checks/requirements — 2 instances now, from independent directions.
+  captures the *gate* idea.
+  **THIRD INSTANCE (2026-08-23): `34ELRWJH`** (Goodhue, *The hidden legal minefield*) — the gap in a
+  **legal** register. Section heading: *"The Expertise Gap: Solo Entrepreneurs Making Enterprise-Scale
+  Legal Decisions."* Solo vibe-coders are structurally unable to evaluate the licensing, privacy and
+  PCI-DSS exposure their AI-built applications carry, yet remain accountable for it. `non-developer`
+  endorsed (3/3) — the candidate's own tripwire facet. **Three instances now, from three independent
+  directions:** competence **absence** (`22JBEZNK`, non-experts who cannot evaluate at all),
+  competence **erosion** (`95CPB7CF`, professionals losing the mental models through delegation), and
+  competence **domain-mismatch** (`34ELRWJH`, capable builders facing a discipline — law — they were
+  never trained in). Three was the count that took `evaluator-reliability` to staging, so **this
+  candidate is now promotion-eligible; staging it remains an arbiter decision.**
+  **Tripwire widened:** watch `non-developer` **and** papers proposing
+  overseer-competence checks/requirements — **3 instances** now, from independent directions.
 - **(Corpus-seeded, 2026-07-18) Authority-allocation spectrum — "human in absolute control."** A
   recurring *stance*, not yet a tag: not human-in-the-loop of an AI-driven flow but AI-as-tool inside
   a human-commanded flow; the spectrum runs absolute control → bounded delegation → tiered autonomy →
