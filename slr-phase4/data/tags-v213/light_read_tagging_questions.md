@@ -28,8 +28,8 @@ Synthetic-Eval-Check rescan for the two newer facet pairs:
 ### Alami, D. (2026). *Cognitive camouflage: specification gaming in LLM-generated code evades holistic evaluation but not adversarial execution*. 9. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6512960 (`WBS9U5N7`)
 - **Primary theme — `ai-review`:** confirm or flip to the dissent (unstable: opus disagrees).
 - **Structural facet** (`agent-panel` / `cross-model`): primary is `ai-review` — check the reviewer architecture.
-- **Evidence-strength ladder — already resolved:** `evaluated-synthetic` confirmed this session (0 participants found).
-  - *Question:* the panel's `method-experiment` proposal here (3/3!) is a clean example of the exact machine-only confusion this facet pair was built to catch — good reference case, not something to re-derive.
+- **RESOLVED 2026-08-23 — two-event paper, both sides stand.** `evaluated-synthetic` (ZTARE's own performance) **and** `method-experiment` (controlled comparison of Claude / GPT-4o / Gemini, findings characterizing those third-party models — the "subjects may be systems" clause, UDVHQ5HR precedent). Also endorsed: `theme:ai-review` (membership, **not** primary), `theme:rules-based-checks`, `facet:built-system`. Rejected: `facet:agentic` (apparatus, not the studied generation — §47). Primary left empty; slot held by `primary-proposed:theme:evaluator-reliability`. Demoted to Context.
+  - *Correction:* an earlier draft of this sheet called the panel's `method-experiment` proposal a machine-only confusion exemplar. That was wrong — see changelog §48.
 
 ### Bara, M. (2026). *HAIF: a human-AI integration framework for hybrid team operations* (2602.07641). arXiv. https://arxiv.org/abs/2602.07641 (`6F3S8IB7`)
 - **Primary theme — `risk-routing`:** confirm or flip to the dissent (unstable: opus and gemini disagree; sprawl: codex proposed 9 themes).

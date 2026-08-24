@@ -113,6 +113,36 @@ oversight layer).
   accumulate *making this argument*; otherwise it's a Discussion point. Don't name it
   "democratization" (phenomenon-name; would keyword-attract adoption papers that belong in
   `survey-input`).
+  **Second instance (2026-08-23): `95CPB7CF`** (Casserini et al., *Beyond the "diff"*) — arrives at
+  the same gap from the **opposite direction** and, notably, **proposes a check for it**. Where
+  `22JBEZNK` documents non-experts who cannot evaluate at all, this paper describes *capable*
+  professionals whose competence **erodes** through delegation: *"developers who rely on agentic
+  tools can lose the system-level mental models needed to notice violations, accumulating cognitive
+  debt that resides in people rather than code,"* leaving humans *"procedurally in the loop yet
+  progressively less able to govern the system."* Its framework then adds an **understanding
+  requirement** — *"the reviewer should be able to independently reconstruct the principal steps in
+  the causal graph and recognize when an action falls outside permitted boundaries, with failure to
+  do so signaling growing cognitive debt that warrants intervention."*
+  **Why this matters for promotion:** it converts the gap from a *diagnosis* into an
+  **operationalizable gate condition** — reviewer comprehension as a measurable precondition for
+  valid oversight, not merely an observed deficit. That is the "operationalizable mechanism" half of
+  the core bar, which the `22JBEZNK`-only version of the candidate lacked. It also widens the
+  candidate's scope: competence absence (22JBEZNK, non-developers) **and** competence erosion
+  (95CPB7CF, professionals) are the same theme with two etiologies. Tagged
+  `theme:automation-bias` + `facet:risk-overreliance` here as the nearest live homes; neither
+  captures the *gate* idea.
+  **THIRD INSTANCE (2026-08-23): `34ELRWJH`** (Goodhue, *The hidden legal minefield*) — the gap in a
+  **legal** register. Section heading: *"The Expertise Gap: Solo Entrepreneurs Making Enterprise-Scale
+  Legal Decisions."* Solo vibe-coders are structurally unable to evaluate the licensing, privacy and
+  PCI-DSS exposure their AI-built applications carry, yet remain accountable for it. `non-developer`
+  endorsed (3/3) — the candidate's own tripwire facet. **Three instances now, from three independent
+  directions:** competence **absence** (`22JBEZNK`, non-experts who cannot evaluate at all),
+  competence **erosion** (`95CPB7CF`, professionals losing the mental models through delegation), and
+  competence **domain-mismatch** (`34ELRWJH`, capable builders facing a discipline — law — they were
+  never trained in). Three was the count that took `evaluator-reliability` to staging, so **this
+  candidate is now promotion-eligible; staging it remains an arbiter decision.**
+  **Tripwire widened:** watch `non-developer` **and** papers proposing
+  overseer-competence checks/requirements — **3 instances** now, from independent directions.
 - **(Corpus-seeded, 2026-07-18) Authority-allocation spectrum — "human in absolute control."** A
   recurring *stance*, not yet a tag: not human-in-the-loop of an AI-driven flow but AI-as-tool inside
   a human-commanded flow; the spectrum runs absolute control → bounded delegation → tiered autonomy →
@@ -295,6 +325,55 @@ oversight layer).
   check above, not HOS, is what grounds staging this. Not yet in the live v2.13 instrument; apply
   by hand as `cal:human:facet:agent-panel` / `cal:human:facet:cross-model` ahead of a formal graft
   decision.
+
+- **(Corpus-seeded, 2026-08-23) `evaluator-reliability` THEME candidate — "the automated checker
+  itself is unreliable."** The paper's object is **whether an AI evaluator works** — LLM-as-judge,
+  LLM verifier, automated reviewer — audited or benchmarked as the thing under study, rather than
+  an oversight mechanism operating on code.
+  **Why a theme, not a facet:** it fills a visible structural gap in the *Limits of current
+  oversight* group, which currently holds only `automation-bias` (the **human** checker fails) and
+  `oversight-theater` (the **process** fails). "The **AI** checker fails" completes the trio and
+  is where such a paper would be written up in depth — the theme test.
+  **Anchors (3, all already `demote:context`):** `WBS9U5N7` (Cognitive camouflage — spec gaming
+  evades holistic LLM evaluation but not adversarial execution; arbiter left the theme layer
+  **blank** rather than force `ai-review` — the gap made visible), `UDVHQ5HR` (systematic failures
+  of LLMs verifying code against NL specs), `BAWCBT9R` (Bias in the loop: auditing LLM-as-a-judge
+  for SE). The latter two were assigned `primary:theme:ai-review` under protest-by-absence — no
+  better slot existed.
+  **Scale signal:** `ai-review` is the corpus's largest theme by a wide margin — **33 of 128**
+  sweep papers carry it as majority primary (41 had ≥1 model propose it). Strong prior that it is
+  absorbing this class as a catch-all; the sweep is what sizes the real cluster.
+  **Discriminator vs `ai-review` — MUST be settled before any sweep, or the run encodes a guess.**
+  `ai-review`'s live definition already claims "**its reliability limits**," so the instrument
+  currently says these papers *are* `ai-review`; this candidate is a proposed **carve-out**, not a
+  new region. Proposed rule, pending arbiter confirmation: **lab benchmark of evaluator capability
+  with no deployment context → `evaluator-reliability`; a review mechanism practiced or proposed
+  in an org/pipeline whose limits are then characterized → stays `ai-review`.**
+  **Scope guard — do NOT define this as "LLM eval" broadly.** Considered and rejected: `llm-eval`
+  would cannibalize `ai-code-insecurity` and `quality-debt`, both **core** themes that are
+  *quantified by* LLM evaluation (evaluating LLM output is their method, not their identity). The
+  class observed is specifically evaluator-**auditing** — the evaluator is the subject, not the
+  instrument.
+  **Open consequence (flagged, not resolved):** landing this in *Limits of current oversight* puts
+  it in the **insufficiency layer**, which the review question explicitly includes ("evidence
+  current oversight doesn't close the gap"). Naming the class properly may therefore **rescue**
+  some papers back to Core rather than efficiently demoting them — the opposite of the motivating
+  intuition. All three anchors currently sit at Context; whether that survives the discriminator
+  above is exactly what the sweep should test.
+  *(Terminology: `demote:context` = **Core → Context tier**. The paper stays in the corpus; it is
+  simply not carried into the Phase 6 core synthesis. Not a discard — that's `demote:discard`.)*
+  **Gauge-constancy note:** an 18th theme on the frozen v2.13 instrument. The panel never saw it,
+  so panel-vs-human *theme* agreement is non-comparable for affected papers. Contained **only if**
+  they stay at Context (Phase 6 core stats untouched) — if the rescue case above lands, the
+  affected Core papers need their non-comparability recorded in the stats section.
+  **Application during staging (see Taxonomy_Changelog §37):** apply membership as
+  `cal:human:theme:evaluator-reliability`; where it *would* displace an existing primary, record
+  `cal:human:primary-proposed:theme:evaluator-reliability` and **leave the standing
+  `cal:human:primary:theme:*` untouched** — the instrument isn't changed yet, and this preserves
+  the pre-change primary for the audit trail. Promotion converts `primary-proposed:` → `primary:`
+  in one deterministic cutover; rejection drops the tag and disturbs nothing.
+  **Tripwire:** cluster size at sweep. Promote iff the class is large enough that the Discussion
+  needs it as a roster `ai-review` + rationale text cannot reconstruct.
 
 ## Grafting checklist (do before classifying cores)
 1. Cross-check pass-through corpus papers (Mitropoulos, Ferdous, Charoenwet, Parris, Kumar,

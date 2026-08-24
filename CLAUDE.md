@@ -14,5 +14,14 @@
   This is the project's own oversight thesis applied to itself — AI-authored changes get a
   human inspect-and-gate step. Direct pushes to main are reserved for Scott's own hand edits.
 - `main` is protected by a GitHub ruleset (PRs required; Scott holds bypass).
+- **Flag model fit at the start of a session, unprompted.** If the work at hand is
+  judgment-heavy — pressure-testing taxonomy boundaries, adjudicating contested tags, drafting
+  methodology text that lands in the dissertation, resolving panel disagreements — say so and
+  recommend Opus before getting into it. Errors in that work become permanent methodology
+  entries, not just bad file edits, so a stronger model is worth the cost. For mechanical work
+  (writing tags to Zotero, batch scripts, PR mechanics, following an already-settled
+  convention), Sonnet is fine — say that too rather than upselling. Scott switches with
+  `/model`; the assistant can't. Adopted 2026-08-23, after a full session of boundary
+  adjudication ran on Sonnet before the question came up.
 - Project conventions live in the `slr-conventions` skill; methodology source of truth is
   `Methodology/`; the current handoff doc in `handoffs/` is the session entry point.

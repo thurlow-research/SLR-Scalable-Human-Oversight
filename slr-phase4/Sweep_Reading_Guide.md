@@ -25,11 +25,26 @@ keystrokes.
 2. **You agree with the workbook proposal** (primary + themes + 3/3 facets + flags): add
    `s5:read` and nothing else. The write pass will apply the machine proposal as-is.
 3. **You disagree on anything:** use the Actions-menu toggles (the same `cal:human:*` menu from
-   calibration) to record *your* ruling — your primary, your theme set, your facets. On sweep
-   items, any `cal:human:*` tag is read as an **arbiter override** that beats the machine
-   proposal wholesale for that layer (if you set any `cal:human:theme:*`, your theme set is THE
-   theme set; same per layer for primary/facets). Partial overrides are fine (e.g., fix only the
-   primary).
+   calibration) to record *your* ruling. **REVISED 2026-08-23 (changelog §45–46) — three states,
+   not two.** Tagging is deliberately **non-exhaustive**: you tag what jumps out, and an omission
+   is *not* a rejection.
+   - **`cal:human:theme:<slug>` / `cal:human:facet:<slug>` = ENDORSEMENT, additive.** "This tag is
+     valid." It does **not** mean "and nothing else is." Panel proposals you didn't address stay
+     live.
+   - **`cal:human:reject:theme:<slug>` / `cal:human:reject:facet:<slug>` = REJECTION.** "I
+     considered this and it does not apply." Use when overturning a panel proposal — especially a
+     unanimous one, where the reason is worth capturing (e.g. WUUDHL8R:
+     `reject:theme:regulatory-compliance` — the Act was justification/background, not a compliance
+     contribution).
+   - **Silence = not considered.** Neither endorsed nor rejected; the panel proposal stands by
+     default.
+   - **Primary is the exception** — single-valued, so `cal:human:primary:theme:<slug>` simply
+     replaces the machine's primary. No reject marker needed or meaningful there.
+
+   The final write pass therefore computes **panel modal ∪ endorsements − rejections**, *not*
+   endorsements alone. The old wording ("if you set any `cal:human:theme:*`, your theme set is THE
+   theme set") would have silently stripped valid tags from every non-exhaustively-reviewed paper —
+   see §45 for the defect and the retrospective check owed on items tagged before this date.
 4. **Demote proposals** (bucket B especially): if you **confirm** the demote, toggle
    `demote:context` on the item. If you **reject** it (paper stays core), just `s5:read` with no
    demote tag — after `s5:read`, absence of the demote tag is an explicit keep-core ruling.

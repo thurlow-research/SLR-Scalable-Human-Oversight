@@ -864,3 +864,1119 @@ built-system-evaluation papers on this axis).
 plays for the main v2.13 instrument. If a future formal panel run ever extends
 `evaluated-synthetic`/`evaluated-benchmark` coverage (Context tier, or a Core-tier panel-accuracy
 check), this 21-item set is the reference to score the panel against, not a target for re-review.
+
+## 36. Five discriminators sharpened during a Light Read full-record tag (BU73N7PC, 2026-08-23)
+
+Arbiter tagged BU73N7PC ("Moving Faster and Reducing Risk: Using LLMs in Release Deployment")
+against the panel's proposal (Opus/Codex primary `risk-routing`, Gemini primary `ai-review`;
+Codex additionally proposed `hitl-workflow`+`oversight-explanation`; Opus/Codex also proposed
+`framework`+`metrics`; no model proposed a method-* facet despite unanimous `built-system`+
+`adopted`). Five real gaps surfaced resolving the disagreements — instrument definitions
+unchanged in substance, discriminators made explicit:
+
+**1. Primary-theme tie-breaker, goal vs. mechanism.** When a paper spans `risk-routing` and
+`ai-review`, primary goes to whichever role the paper's own contribution occupies: is the AI
+*judgment* itself the thing being contributed/evaluated (`ai-review`), or is the paper's
+contribution the *allocation decision* that AI judgment feeds into (`risk-routing`)? BU73N7PC:
+the risk-routing decision (which release changes get flagged for review) is the paper's stated
+goal; the LLM classifier producing that signal is the mechanism serving it. Primary =
+`risk-routing`, secondary theme `ai-review`. This sharpens (doesn't replace) the existing
+altitude/novelty tie-breaker (§ Tag_Cheatsheet.md "Tie-breaker" bullet) with a concrete
+goal-vs-mechanism framing for this specific theme pair.
+
+**2. `hitl-workflow` requires a workflow built for human review of AI output — not any workflow
+that happens to use AI.** BU73N7PC drops an LLM risk-classifier into Uber's pre-existing release
+pipeline; no checkpoint/gate was *designed* to have a human review AI-generated code. Ruling:
+"AI operating inside a pre-existing operational workflow" ≠ `hitl-workflow`. The direction also
+matters — here the AI is reviewing/assessing **human-written** code changes, not AI output being
+reviewed by a human, which is the inverse of what the theme covers and routes instead to the
+`general-code` scope flag (the mechanism targets code generally, review-side AI, transferable to
+our setting).
+
+**3. `framework` negative worked example: a tool/stage bolted onto someone else's existing
+pipeline fails the "reusable architecture" test.** BU73N7PC's classifier is one stage feeding an
+existing deployment pipeline, not a pipeline design of its own — confirms the existing test
+(*would someone adopt it as a reusable pipeline design?*) with a clean negative case, since the
+paper's `built-system`+`adopted` pairing could otherwise read as `framework`-shaped at a glance.
+
+**4. `adopted` does not imply `method-field-study` — check what the paper actually measured.**
+A system can be in real production use (`adopted`) while the *evidence reported about it* still
+comes from a controlled experiment (assigned/manipulated conditions) rather than observed
+natural-use outcomes over time. BU73N7PC: `adopted`+`built-system` (real deployment) **+
+`method-experiment`**, no `method-field-study` — the paper reports a controlled comparison, not
+post-rollout incident-rate outcomes; had it reported the latter, `method-field-study` would apply
+instead/additionally. Deployment status and evidence shape are independent axes.
+
+**5. `metrics` requires the metric be a defined, reported deliverable — not the internal
+apparatus a mechanism runs on.** Opus/Codex proposed `metrics` on BU73N7PC's risk score, but the
+paper doesn't dwell on it: no formula, no reported detection-rate numbers, no discussion of the
+metric's own properties — it's mostly inferred from what the routing decision implies. Ruling:
+this is the apparatus feeding `risk-routing`'s allocation decision, not a separately-contributed
+measurand the paper names and evaluates in its own right (the existing "contribution, not
+apparatus" bar in the facet's definition, applied). Rejected. Worth flagging as a recurring
+temptation specifically on `risk-routing` papers — nearly every one computes *some* internal
+score, so treating that as sufficient would push `metrics` toward the same near-100%-base-rate
+failure mode already rejected for other facets (§34).
+
+Docs updated: `Tag_Cheatsheet.md` (`hitl-workflow`, `framework`, `metrics`, tie-breaker bullet —
+inline worked-example additions).
+
+## 37. `evaluator-reliability` theme STAGED + `primary-proposed:` convention + pass-scoping principle (2026-08-23)
+
+Three things settled while working the Light Read pass. The theme candidate itself is recorded in
+`Methodology/HOS_Seeded_Theme_Candidates.md` (§E, full definition/discriminator/anchors); this
+entry carries the two *general* conventions that fell out of staging it, which apply to any future
+staged tag, not just this one.
+
+### 37a. `evaluator-reliability` staged (summary; full record in HOS_Seeded_Theme_Candidates §E)
+
+Papers whose object is **whether an AI evaluator works** (LLM-as-judge, verifier, automated
+reviewer audited as the subject) have no home in the instrument. Evidence: of 14 current
+`demote:context` items (*demote = Core → **Context tier**; the paper is retained in the corpus,
+just not carried into the Phase 6 core synthesis — it is not a discard*), **three** are this exact
+class — `WBS9U5N7` (theme layer left *blank*
+because nothing fit), `UDVHQ5HR` and `BAWCBT9R` (both forced into `primary:theme:ai-review` for
+lack of an alternative). Fills the empty slot in *Limits of current oversight* alongside
+`automation-bias` (human fails) and `oversight-theater` (process fails). Scoped narrowly to
+evaluator-**auditing**; a broad `llm-eval` was considered and **rejected** as cannibalizing
+`ai-code-insecurity`/`quality-debt`, core themes for which LLM evaluation is the *method*, not the
+identity. Discriminator vs `ai-review` (whose text already claims "its reliability limits") is the
+open question the sweep must settle, not assume.
+
+### 37b. NEW CONVENTION — `cal:human:primary-proposed:theme:<slug>` during staging
+
+**Problem:** a staged tag that would become a paper's *primary* can't be written as
+`cal:human:primary:theme:<slug>` without destroying the record of what the primary was before —
+and without silently changing the frozen instrument's output mid-corpus. Applying it at all
+conflates "this was always the primary" with "this primary changed when a new theme arrived."
+
+**Rule:** while a theme is staged, record displacement as
+`cal:human:primary-proposed:theme:<slug>` and **leave the standing `cal:human:primary:theme:*`
+untouched**. Membership still goes on normally as `cal:human:theme:<slug>`.
+
+- Preserves gauge constancy — the frozen instrument's primary is undisturbed while the candidate
+  is provisional.
+- Preserves provenance — original vs. changed primary stays distinguishable, which
+  `cal:human:primary:*` alone cannot express (the panel's `cal:<model>:primary:theme:*` tags are
+  *machine* proposals, not the arbiter's prior human call).
+- Clean cutover both ways — promotion converts `primary-proposed:` → `primary:` in one
+  deterministic pass; rejection deletes the tag and disturbs nothing.
+
+Generalizes to any staged tag capable of displacing a primary. Layers cleanly under the ratified
+three-layer namespace (§ `Theme_Tagging_Calibration.md`): `cal:<model>:*` → `cal:human:*` →
+`final:*`; `primary-proposed:` is a staging-only sublayer of the middle tier and never survives
+into `final:*`.
+
+### 37c. Pass-scoping principle — compartmentalize by mutual-exclusion group, not by tag count
+
+> **DEFERRED — decide after screening completes.** Standing rule (2026-08-23): pass-design
+> questions raised mid-screening are **parked, not resolved** — "we consider passes when done with
+> the screening, that way we have the full picture." This section records the reasoning while it
+> is fresh so the decision has something to start from; it is **not** a settled ruling and nothing
+> here should drive a run before the Light Read pass is finished.
+
+**Question raised:** at what point does asking one model to weigh 44 tags in a single pass hit a
+lost-in-the-middle failure, versus splitting into narrow compartmentalized runs (as was done for
+the evidence-ladder facets)?
+
+**Answer adopted: split by whether the tags are mutually constraining or orthogonal — tag *count*
+is the wrong axis.**
+
+- **Mutually-exclusive / comparative decisions must stay in ONE pass.** Primary-theme selection is
+  inherently comparative — "the theme carrying the distinctive novelty" is unanswerable from a
+  two-theme menu. Same for the evidence-strength ladder (`self-tests` < `evaluated-synthetic` <
+  `evaluated-benchmark` < `method-field-study` < `adopted`): one slot, competing fillers, one pass.
+  This is *why* the eval-facet run worked — it happened to be exactly one mutual-exclusion group.
+- **Orthogonal binaries can be split off freely.** `agent-panel`/`cross-model`,
+  `evaluator-reliability` membership, the `risk-*` flags — independent judgments that don't compete
+  for a slot. These are the safe candidates for a separate restricted run, and splitting them buys
+  richer per-tag definitions and worked examples in the prompt.
+- **Corroborating evidence that the current single pass is at/over capacity:** the instrument
+  already concedes it — `Tag_Cheatsheet.md`'s facet block carries an explicit seven-question
+  checklist with the note "*misses cluster here; 42 tags exceed recall*." An enumerated checklist
+  is a mitigation for exactly this failure. The panel shows both failure modes in the sweep data:
+  codex sprawl (8–12 themes proposed) and facet misses generally.
+- **Cost of over-splitting (real, not hypothetical):** each pass re-reads the full text, and a
+  paper judged in eight narrow passes can accumulate an *incoherent* tag set (facets contradicting
+  the theme) that no single pass would have produced. Coherence is a property of joint judgment.
+
+**Testable, no new runs required — QUEUED for post-screening:** the k=3 replication data already
+measures decision quality directly via intra-model instability (the `unstable:<model>` tripwire).
+If lost-in-the-middle is real, instability should rise with the number of themes a model proposes
+— i.e. codex (8–12) should be measurably less self-consistent than opus (3–4) on the same papers.
+Computable from the existing `data/tags-v213/{opus,codex,gemini}/*.r*.json` files; it converts this
+principle from reasoning to measurement. **Run it when the screening is complete, not before** —
+even zero-cost analysis is premature mid-pass, since a partial picture risks designing the next
+pass around a pattern the remaining papers would have changed.
+
+### 36a. Goal-vs-mechanism discriminator — mirror case confirming the rule (6F3S8IB7, 2026-08-23)
+
+`6F3S8IB7` (HAIF) is the negative-image companion to BU73N7PC for the §36.1 discriminator, and
+worth keeping as a pair since the rule is only testable if it lands both ways.
+
+Both papers carry a genuine, non-token risk-tiering mechanism. They resolve **oppositely**:
+- **BU73N7PC** — the allocation decision *is* the contribution; the LLM classifier serves it →
+  primary `risk-routing`.
+- **6F3S8IB7** — the tier matrix (Structuredness / Verifiability / Consequence of Error / AI
+  Demonstrated Capability → Tier 1–4) is real and operational, but it is *one component* of a
+  hybrid-team operating model (four principles, delegation protocol, estimation, retrospectives)
+  → primary `hitl-workflow`, `risk-routing` retained as a secondary theme. The existing
+  component-doesn't-outrank-the-broader-contribution rule decides it.
+
+**Arbiter flipped the panel here** (modal `risk-routing`, 7 of 9 runs; gemini's base run alone
+proposed `hitl-workflow`) — a case where the machine majority tracked the most *conspicuous*
+mechanism rather than the contribution's altitude.
+
+**Secondary ruling — routed *depth* is still routing.** HAIF states that *every* AI output has a
+named human owner and that *all* outputs are "subject to validation," which reads at first like
+the review-everything anti-pattern (which would make it a `counterpoint` candidate, not
+`risk-routing`). It isn't: coverage and accountability are 100%, but **review depth is routed** —
+Tier 2 full checklist review, Tier 3 post-hoc sampling at p% (default 20%, adjusted down on
+evidence), Tier 4 monitoring plus exception handling; the owner "does not need to review every
+output personally." **Rule: `risk-routing` is satisfied by allocating review *intensity*, not only
+by allocating *whether* an item is seen at all.** Universal accountability coexists with routed
+scrutiny; check which of the two a paper's "every output" language is actually claiming before
+reaching for the anti-pattern.
+
+*(Corpus note, not a tag: HAIF's tiering explicitly adapts **acceptance sampling** from statistical
+quality control — AQL and lot sizes, cited as such — making it a direct corpus instance of the
+SQC/Jidoka framing used in the project's own QA design.)*
+
+### 36b. `design-only` tier discrimination — a Core/Context contrast pair (6F3S8IB7 vs VCI88UZD, 2026-08-23)
+
+Two `design-only` papers, opposite tiers, discriminated by exactly one clause. Recorded as a pair
+because the `design-only` core-bar carve-out is easy to read as a judgment call and isn't one.
+
+**The carve-out (existing, `Tag_Cheatsheet.md` → `design-only`):** *names the elements to track AND
+defines operationalizable metrics → clears the bar as measurement even unevaluated; what-only
+enumerations / unevaluated frameworks without defined metrics → context candidates.*
+
+- **`6F3S8IB7` (HAIF) → CORE.** What+how both present: elements to track (error rates, error types,
+  review time, false acceptance rates) *and* operationalizable criteria (S/V/C/D decision matrix →
+  Tier 1–4, 20% starting sample rate with adjustment rule, tier-transition mechanics). The paper
+  claims the carve-out in its own framing — prior work converges on *what* teams should attend to
+  (transparency, ownership, validation discipline, skill preservation); HAIF positions itself as
+  the missing *how*.
+- **`VCI88UZD` (human-certified module repositories) → CONTEXT.** What-only: asserts trusted
+  repositories are needed without specifying how to operate one — no metrics, no criteria, no
+  protocol. (Compounded by minimal AI involvement, but the what-only shortfall alone is
+  sufficient.)
+
+**Rule made explicit — uncalibrated ≠ unspecified.** HAIF concedes its thresholds are reasoned
+estimates requiring empirical calibration, and identifies empirical validation as future work.
+That does **not** cost it the carve-out: the reader must *calibrate* a supplied parameter, not
+*invent* an absent one. Operational test for future cases: **could a team run it Monday without
+inventing the missing piece?**
+
+**Tier is not evidence strength.** The two axes are independent by design and must not be traded
+against each other: tier (Core/Context) is a *scope* judgment; the form ladder (`design-only` →
+`built-system` → `adopted`) plus the method-* facets carry *evidence strength*. A normative
+"here is the right thing to do" contribution with no field evidence is a legitimate Core paper
+sitting at the lowest evidence rung — that combination is reportable, not contradictory. Mirrors
+the same separation already documented for `dissertation-input` ("tier ≠ importance").
+
+**Stat this enables (compute at end-of-screening, not before):** proportion of solution-side Core
+papers at `design-only` with no method-* facet. If that share is large it is a *finding*, not
+corpus noise — it is the evidence-gap the dissertation's organizational survey exists to close.
+
+## 38. `framework` facet RESOLVED — orthogonal to theme; covers process, not just pipeline (6F3S8IB7, 2026-08-23)
+
+Raised as an open boundary question while tagging HAIF and **resolved same-session by arbiter
+ruling** (not deferred — this is a definitional clarification of an existing tag, not a pass-design
+question, so the park-until-end rule does not apply).
+
+**The ruling, in the arbiter's words:** *"Org governance is: does it address org governance.
+Framework is: whether it defines a mechanism / process."*
+
+**Two axes, not one.** The theme answers **what subject the paper addresses**; the `framework`
+facet answers **whether a definable mechanism/process is offered**. They are orthogonal, so
+`framework` + `theme:org-governance` co-occur freely — and the corpus already shows this (8 of 128
+papers in opus's base read; HBR7QZ2C carries both by prior arbiter hand). The old "≠
+`theme:org-governance`" wording meant only *the facet is not a substitute for the theme*; it was
+being misread as an exclusion.
+
+**Scope widened to match the ruling:** `framework` is **not** restricted to technical/pipeline
+artifacts. "Mechanism **or process**" includes organizational/team process designs. `6F3S8IB7`
+(HAIF) is the grounding positive case — zero software (four principles, a tier decision matrix,
+validation protocols, checklists, Scrum ceremony changes), yet a fully specified adoptable process
+→ `framework` **+** `primary:theme:org-governance`. The old test ("*would someone adopt it as a
+reusable **pipeline** design?*") returned the wrong answer on process frameworks and is replaced by
+"*does it define a mechanism or process someone else could adopt?*"
+
+**What survives unchanged:** the point-tool exclusion still does the real discriminating work. A
+one-off tool or single stage bolted onto someone else's pipeline is not a defined mechanism/process
+(BU73N7PC, §36 — ruling stands under the new wording, for the same reason). A bare
+taxonomy/decision-model alone still earns neither.
+
+**Correction to §36a reasoning.** In arguing 6F3S8IB7's primary I cited the *absence* of
+`framework` as a confirming signal for `org-governance`. Under orthogonality that inference was
+never valid — facet presence/absence carries no information about the theme. The primary ruling
+itself is unaffected: it rests on the paper's self-description ("governing what happens after the
+model produces output"; "accountability assignment") and on the component-doesn't-outrank rule,
+both independent of the facet. Recorded here rather than silently amended so the bad inference
+doesn't get reused.
+
+## 39. `framework` scope-widening REVERTED — base-rate failure; narrow technical scoping restored (2026-08-23)
+
+§38 widened `framework` from "technical framework / reference architecture integratable into a
+build pipeline" to "defines a mechanism **or process**." **Reverted same session by arbiter
+ruling:** *"Nearly everything would do that. Let's restrict framework to built scenarios —
+something you integrate into a pipeline."*
+
+**Measured, not asserted (opus base runs, n=128):**
+
+| Scoping | Papers carrying `framework` |
+|---|---|
+| Technical / pipeline (original, restored) | **46 (36%)** — discriminating |
+| "Defines a mechanism or process" (§38, reverted) | **≥72 (56%)** floor — and that floor is derived from facets the models assigned under the *narrow* reading, so the true figure is higher, approaching universal across the solution half of the corpus |
+
+A facet that fires on most of the corpus carries no information. Same base-rate failure mode
+already rejected for a proposed `risks` facet (§34) and guarded against for `metrics` on
+`risk-routing` papers (§36.5). **Standing lesson: when widening a facet, compute the resulting
+base rate before adopting the wording** — §38 was reasoned from a single hard case (HAIF) without
+checking what the new wording would sweep in. One paper is enough to expose a gap; it is not
+enough to size a fix.
+
+**What "built scenarios" does and does not mean.** It does **not** require `built-system`: 12
+corpus papers carry `framework`+`design-only`, and that composition is documented in the
+`design-only` definition ("*mutually exclusive with `built-system`/`adopted`; composes with
+`framework`*"). Requiring a build would invalidate all 12 and contradict the instrument. The
+restriction is **buildable and pipeline-integratable — built or not.**
+
+**What survives from §38:** the **orthogonality** clarification stands, unaffected by scope. Theme
+answers *what subject*; facet answers *what form*. `framework`+`theme:org-governance` still
+co-occur freely (8 corpus papers) **when the artifact is technical and the subject is governance** —
+HBR7QZ2C, a policy engine, is the clean case. The legacy "≠ `theme:org-governance`" phrasing still
+means "not a substitute for the theme," not an exclusion.
+
+**Consequence for 6F3S8IB7 (HAIF):** it no longer qualifies — four principles, a tier decision
+matrix, validation protocols, checklists and Scrum ceremony changes, but **zero technical
+artifact** and nothing to integrate into a pipeline. Nothing is lost by dropping the facet: its
+form is fully carried by `design-only` ("specifies a mechanism in buildable detail but never
+credibly runs it" — tiers, thresholds, matrix all qualify) and its subject by
+`primary:theme:org-governance`. **This reverses the arbiter's earlier same-session instance call
+("definitely a framework") — flagged explicitly rather than silently applied.**
+
+**§39 addendum — the decision line, in the arbiter's words (2026-08-23).** *"Proposing a framework
+for a pipeline is a design-only framework. Process is governance."* Three-way resolution, now the
+canonical form of this rule in `Tag_Cheatsheet.md`:
+
+| What the paper offers | Tags |
+|---|---|
+| Pipeline architecture, built | `framework` + `built-system` (+ `adopted` if used outside research) |
+| Pipeline architecture, proposed only | `framework` + `design-only` — *a proposed pipeline framework is a design-only framework*, not a non-framework (the 12 corpus papers) |
+| Process / org practice, no technical artifact | `theme:org-governance` + `design-only` — **no `framework`** |
+
+The middle row is the one that had been ambiguous and drove the §38 misstep: "not built" was being
+conflated with "not a framework." Buildability, not build status, is the test.
+
+**Applied to 6F3S8IB7 (HAIF):** `cal:human:facet:framework` **removed** (snapshot:
+`Backups/zotero-item-snapshots/6F3S8IB7_pre-framework-removal_2026-08-23.json`; arbiter note added
+to the item). Final human tag set: `primary:theme:org-governance`; themes `org-governance`,
+`hitl-workflow`, `risk-routing`, `provenance-auditability`, `oversight-scaling-inversion`; facets
+`design-only`, `risk-overreliance`, `risk-quality`. Core, `dissertation-input`, `s5:read`.
+
+## 40. Was the agent prompt ambiguous on `framework`? — yes, but narrower than it looks; plus instrument drift found (2026-08-23)
+
+Question raised after the §38→§39 reversal: *was the same ambiguity present in the tagging
+instructions given to the panel?* Checked against the run data rather than reasoned about.
+
+### 40a. Yes — and it is systematic, not noise
+
+`Tag_Prompt.md` line 50 carried the **identical** pre-§39 wording ("technical framework /
+reference architecture integratable into a build pipeline… ≠ `theme:org-governance`… *would
+someone adopt it as a reusable pipeline design?*"). On 6F3S8IB7 (HAIF), the panel split **5 of 9
+runs**, and the split is **model-systematic, not random**:
+
+| model | r1 | r2 | r3 |
+|---|---|---|---|
+| codex | ✓ | ✓ | ✓ |
+| gemini | ✓ | ✗ | ✓ |
+| opus | ✗ | ✗ | ✗ |
+
+Opus read the definition as technical-only (the reading §39 restored); codex read it as
+any-framework; gemini was unstable with itself. A clean, reproducible disagreement on exactly the
+pipeline-vs-process boundary — so the ambiguity was in the instrument, not only in the arbiter's
+or assistant's reading of it.
+
+### 40b. But `framework` is NOT an outlier — the facet layer is broadly contested
+
+Split rate = share of papers (among those where ≥1 run proposed the facet) on which the 9 runs
+disagreed. Computed over all 128 sweep papers:
+
+| split % | facet | | split % | facet |
+|---:|---|---|---:|---|
+| 94% | problem-statement-anchor | | 53% | risk-ip · method-field-study |
+| 87% | intro-framing | | 50% | assistive · lit-review |
+| 85% | risk-bias | | 48% | general-code |
+| 83% | counterpoint | | 45% | risk-quality |
+| 81% | non-developer | | 44% | method-mining |
+| 75% | steering | | 40% | method-experiment |
+| 74% | metrics | | 36% | method-self-report |
+| 70% | design-only | | 35% | risk-security |
+| 68% | survey-input | | 27% | agentic |
+| **59%** | **`framework` — rank 10 of 24** | | 20% | built-system |
+| 56% | risk-overreliance | | 11% | general-ai |
+
+**Nine facets are worse.** Singling out `framework` would have been a mistake — the honest finding
+is that the *facet layer generally* carries high inter-run disagreement, with the role facets
+(problem-statement-anchor, intro-framing, counterpoint) worst of all. Caveat: low-n facets inflate
+the rate (risk-bias n=13, problem-statement-anchor n=17), but `steering` (n=63, 75%) and
+`framework` (n=70, 59%) are large-n and still high.
+
+**This is contained by design, not a crisis:** the triage ladder already routes non-unanimous
+papers to LIGHT-REVIEW or HUMAN. High facet split is what the ladder exists to absorb. It does,
+however, mean **facet counts from panel data alone are not reportable** — they need the human pass
+behind them, which is what the Light Read is doing.
+
+**Minor, don't overclaim:** the "≠ `theme:org-governance`" wording did mildly suppress
+co-tagging — 8 observed co-occurrences vs 11.1 expected under independence (opus base, n=128).
+Consistent with it being read as soft discouragement rather than hard exclusion. Small n.
+
+### 40c. Instrument drift discovered — `Tag_Prompt.md` has separated from `Tag_Cheatsheet.md`
+
+`Tag_Prompt.md` is the cheat-sheet body **plus** a 13-line task block, and the two have
+historically been kept in lockstep (last joint update `05a8b35`). **This session's six refinements
+landed in `Tag_Cheatsheet.md` only** — lines 28 `hitl-workflow`, 50 `framework`, 54 `adopted`,
+64 `metrics`, 71 method-* facets, 78 primary tie-breaker.
+
+So the drift is **accidental, not a deliberate gauge freeze**. That distinction matters: a future
+session could reasonably "helpfully" sync them and thereby change the machine gauge mid-corpus
+without anyone deciding to.
+
+**DEFERRED to end-of-screening** (pass-design decision, per the standing rule): whether to (a) sync
+the prompt and accept a changed gauge for any future run, (b) deliberately freeze `Tag_Prompt.md`
+at v2.13 and document it as frozen, or (c) fork a v2.14 prompt for restricted re-runs only. **Until
+that is decided, do not sync them** — the divergence is now recorded, which is what makes it safe
+to leave.
+
+### 40d. Feeds the deferred §37c question
+
+The split rates above are the empirical face of the lost-in-the-middle question, and of the
+instrument's own admission in the facet checklist ("*misses cluster here; 42 tags exceed recall*").
+Data for that decision. Also deferred.
+
+## 41. Versioning plan for the accumulated refinements — RATIFIED, executed at end of validation (2026-08-23)
+
+Standing decision on what happens to §36–§40's refinements. Recorded now so a future session does
+not act on them prematurely or lose the provenance.
+
+**The plan (arbiter, 2026-08-23):**
+1. **Implications are considered at the END of the validation exercise**, not during it. Refinements
+   keep accumulating in `Tag_Cheatsheet.md` and this changelog as the Light Read proceeds; nothing
+   is acted on mid-pass.
+2. **A new, revised tagging definition is produced at the end** — a successor instrument
+   incorporating the refinements.
+3. **The original is kept for records.** v2.13-as-used must remain retrievable verbatim: it is the
+   gauge that produced both the 128-paper panel data and the human Light Read pass, so every stat
+   computed from that work is only interpretable against it.
+4. **A second panel run is NOT committed to.** Whether the revisions warrant re-running the panel
+   is decided at the end, once the revisions are known and their scope is visible.
+
+**This supersedes the open question in §40c** — the answer is option (c), fork a successor, with
+the timing fixed at end-of-validation and preservation of the original made an explicit
+requirement. **The "do not sync `Tag_Prompt.md`" instruction from §40c therefore stands until the
+revised instrument is cut.**
+
+**Where v2.13-as-used currently lives (verified 2026-08-23):**
+- `Tag_Cheatsheet.md` @ commit **`05a8b35`** — the last state before this session's edits.
+- `Tag_Prompt.md` @ HEAD, lines 1–80 — **byte-identical** to the above (verified by diff). The
+  §40c drift, which was accidental, has the incidental effect of preserving the original in the
+  working tree. Note this is *luck, not design*: it survives only as long as nobody "fixes" the
+  drift, which is precisely why §40c says not to.
+
+**Recommended before the revised instrument is cut (not yet done, needs a go-ahead):** write an
+explicit frozen copy — e.g. `slr-phase4/Tag_Cheatsheet_v2.13_AS-USED.md` — so the record does not
+depend on git archaeology or on the drift persisting. Cheap insurance; the two preservation paths
+above are both incidental rather than deliberate.
+
+**Naming for the successor is deliberately not fixed here.** Whether it is v2.14 (revision) or
+v3.0 (new gauge) depends on whether the refinements turn out to be clarifications or definitional
+changes — §38→§39 showed that distinction is not always obvious in advance, and the gauge-constancy
+consequences differ.
+
+## 42. Light Read protocol — what the demote call short-circuits (methods record, 2026-08-23)
+
+Clarified by the arbiter mid-pass, recorded because it determines how corpus statistics may be
+scoped in the write-up.
+
+**The protocol:** every Light Read paper receives a human read and an **independent human tier
+call**. Panel unanimity does *not* cause the review to be skipped. What the demote call
+short-circuits is **downstream tag verification** — once a paper is ruled Context, its remaining
+theme/facet proposals are not verified against the instrument.
+
+**Extended to the Accept band (arbiter, same session): the 44 `01 - Accept` papers also receive a
+human demote review.** This goes beyond the `Sweep_Reading_Guide.md` protocol for that band
+("*read for content; override only if something jumps out*", plus 4 mandatory audit papers) —
+tier is now deliberately ruled on, not merely left undisturbed. Consequence: the human **tier**
+judgment covers all three bands and is genuinely corpus-wide (6 Full Read + 78 Light Read + 44
+Accept = 128), not Light-Read-only.
+
+**Why this is methodologically sound rather than a shortcut:** the tier decision does not depend on
+the unverified tags. It is made by the arbiter from the paper itself against the §3 core bar, so
+there is no circularity (the earlier worry — "tier decided on impression because the tags that
+would evidence it went unchecked" — does not arise). Context papers do not enter the Phase 6
+synthesis, so their tag depth has no downstream consumer. Effort is proportional to what the tags
+are used for.
+
+**Consequence for reportable statistics — the two axes have different coverage:**
+
+| Axis | Human coverage | What may be claimed |
+|---|---|---|
+| **Tier** (Core/Context) | **corpus-complete, all 128** — human demote review across Full Read (6), Light Read (78) **and Accept (44)** | tier-level human-vs-panel agreement may be reported corpus-wide |
+| **Tags** (themes/facets) | **partial — Core only** — full adjudication on the 6 Full Reads; on Light Reads verification stops at a Context ruling; on Accepts only the 4 designated audit papers plus anything that jumps out | any human-vs-panel *tag* agreement statistic **must be scoped to Core**, and the Accept-band contribution is an audit sample rather than a census; stating it corpus-wide would overclaim, since the verified subset is non-randomly selected |
+
+**Residual gaps (both pre-existing, neither caused by this protocol):**
+- **Demote reasons are unstructured.** `demote:context` records *that* a paper was excluded, not
+  *why*; reasons live in free-text arbiter notes where they exist at all. So "N excluded as
+  secondary literature, M as general-AI object" is not currently computable. Detailed tag review
+  would not have fixed this — it needs reason codes, a separate and smaller change. Same gap
+  surfaced while staging `evaluator-reliability` (§37).
+- **Rescue cost is bounded and known.** If a staged tag later moves a Context paper back to Core
+  (the `evaluator-reliability` candidate is the live case), that paper's tags need a verification
+  pass at that point.
+
+**Superseded reasoning:** an earlier draft of this analysis recommended stratifying the skip by
+panel unanimity and audit-sampling the demote pile. Both assumed unanimity was gating arbiter
+effort. It is not — every paper is read — so neither applies. Recorded so the recommendations are
+not resurrected from a stale premise.
+
+## 43. WATCH TRIPWIRE — papers misstating the EU AI Act as motivation (first instance WUUDHL8R, 2026-08-23)
+
+Not a tag. A corpus-observation tripwire: **count recurrences; if a cluster forms it is a reportable
+finding about field maturity**, directly relevant to the dissertation's governance-landscape strand
+("papers invoke the AI Act as motivation without engaging it correctly"). One instance is not a
+pattern — log and move on.
+
+**First instance — `WUUDHL8R`** (AI-driven refactoring for data clumps), §"Regulatory Compliance
+and EU AI Act". Two distinct errors:
+
+1. *"Unacceptable risk … Therefore AI-Driven Refactoring cannot be used here."* — category error
+   **and** vacuity. The Act's tiers classify an AI system by **intended purpose**, not the dev
+   tooling used to produce it; a refactoring tool takes no tier from the domain of the code it
+   touches. Worse, Art. 5 practices are **banned outright**, so there is no "here" in which any
+   tool is or isn't usable.
+2. *"AI Systems **or which use AI generated code** fall in this [high-risk] category…"* — flatly
+   false, and the more consequential of the two: high-risk classification turns on Annex I
+   (product-safety components) or Annex III (enumerated use cases). **Code provenance is not a
+   criterion.** A spam filter written entirely by an LLM stays minimal risk; a CV-screening tool
+   hand-written in assembly is still high risk. This error would drive real behaviour — it implies
+   "we used AI, therefore we are high-risk," a false compliance trigger.
+
+**Correct mapping (arbiter's reframe, endorsed):** *"if refactor is done in a risky area, needs more
+human review."* The driver is the classification of the **system being modified**, not of the tool:
+a high-risk system's provider already carries risk-management, QMS, logging and Art. 14
+human-oversight duties, and a *substantial modification* can trigger re-conformity assessment — so
+automated refactoring in that codebase needs controlled change management and human sign-off. Note
+this reframe is itself **risk-routing**: regulatory tier as a routing signal for review intensity,
+structurally the same move HAIF (6F3S8IB7) makes.
+
+**Diagnostic value for tagging:** the error is evidence for a **mention-vs-membership** call. This
+paper *claims* AI Act engagement as a stated contribution, but the section recites the four tiers
+with no mapping to its own pipeline — no gate, no criteria, nothing operationalized. A paper that
+had genuinely engaged would not produce those two sentences. → **no `regulatory-compliance`
+theme.**
+
+*Caveat on this entry: the Act analysis above is from working knowledge, not a cited text. The core
+points (Art. 5 as enumerated prohibitions; Art. 6 classification via Annex I/III; provenance
+irrelevant to tier) are well established, but verify article numbers before any of this reaches the
+dissertation.*
+
+## 44. `regulatory-compliance` — justification/background ≠ compliance contribution; and a correlated-error caution (WUUDHL8R, 2026-08-23)
+
+**Discriminator (arbiter, 2026-08-23):** *"It is not compliance. That was justification /
+background."* Invoking a regulation to **motivate** the work is not contributing to the compliance
+argument. `regulatory-compliance` requires the paper to *do the lift* — map its mechanism to
+specific obligations, operationalize a control, produce audit evidence, or analyse the legal
+requirement substantively. Reciting a regulation's structure in a background section is **mention**,
+however long the section is (the mention-vs-focal rule at paragraph length, §ZUM76CCG lesson).
+
+`WUUDHL8R` is the worked negative: a dedicated §"Regulatory Compliance and EU AI Act", the Act named
+in the abstract, keywords and stated contributions — yet the section recites the four risk tiers
+with **no mapping to its own pipeline** and gets two substantive facts wrong (§43). Background, not
+contribution. Theme **not** applied.
+
+### 44a. Correlated error — unanimity is not evidence of correctness
+
+**All 9 panel runs proposed `regulatory-compliance` on WUUDHL8R.** The arbiter rejected it on solid
+grounds. This is a clean instance of a failure mode the triage ladder does not otherwise surface:
+
+> When the error lives in a **shared misreading of the instrument** (here: treating any substantive
+> discussion of a regulation as membership), unanimity **amplifies** it rather than correcting it.
+> Three models agreeing is only evidence of independence-adjusted correctness when their errors are
+> uncorrelated — and models reading the same definition are not independent on definitional
+> questions.
+
+This matters because the ladder treats 3/3 consensus as the ACCEPT band, audited at ~10%. A
+systematic definitional misreading would pass straight through.
+
+**Exposure, measured:** `regulatory-compliance` is proposed by ≥1 run on **27 of 128** papers, and
+**unanimously on 12**: `27YULT5I`, `34ELRWJH`, `5RLPIA3K`, `HBR7QZ2C`, `ID7IN65K`, `P837LJWE`,
+`RG4A4D6K`, `TW4I6DU6`, `WPWF7A32`, `WUUDHL8R`, `XZEHQYNZ`, `ZSB2S59N`. WUUDHL8R is now 1 of 12
+checked and 1 of 1 wrong — a sample far too small to generalize from, and several of the others
+(e.g. `XZEHQYNZ`, `5RLPIA3K`, both EU-AI-Act-titled) are plausibly genuine compliance papers.
+
+**Mitigation already in place, no new work proposed:** the arbiter is performing a demote review
+across the Accept band (§42), so these do not sit unexamined. **Apply the justification-vs-
+contribution discriminator when each is reached.** Whether the unanimous-12 warrant a targeted
+check as a group is an end-of-screening question, deferred per the standing rule — flagged here so
+the observation is not lost, not to prompt action now.
+
+## 45. ⚠ CONVENTION CONFLICT — `cal:human:*` override semantics vs non-exhaustive arbiter tagging (2026-08-23)
+
+**Open issue. Affects the eventual `final:*` write pass. Do not script that pass until resolved.**
+
+**Arbiter's working practice (stated 2026-08-23):** *"I am not doing an exhaustive audit of tags. I
+am giving tags that I feel are valid. My omission of a tag does not mean it isn't valid, it means it
+wasn't something that jumped out at me. Exhaustive tagging would be 2 or 3× the effort."*
+
+**Documented convention it contradicts** (`Sweep_Reading_Guide.md` §1.3): *"any `cal:human:*` tag is
+read as an **arbiter override** that beats the machine proposal wholesale for that layer (if you set
+any `cal:human:theme:*`, your theme set is THE theme set…)"*
+
+**The defect:** the convention has two states where the work has three.
+
+| State | Meaning | Encoded today |
+|---|---|---|
+| Endorsed | arbiter named it — valid | `cal:human:*` ✔ |
+| **Rejected** | arbiter considered and ruled it out | ✗ conflated |
+| **Not considered** | didn't jump out; may well be valid | ✗ conflated — silently read as rejection |
+
+Under wholesale-override semantics, a scripted `final:*` pass would **strip valid themes** from every
+paper where the arbiter named only one or two — which, under non-exhaustive tagging, is most of them.
+
+**Live instance:** `WUUDHL8R`. `cal:human:theme:ai-review` was written, which under the convention
+drops `regulatory-compliance` (9/9 panel) *and* `hitl-workflow` (8/9). The first is a genuine
+arbiter rejection ("it is not compliance — that was justification/background", §44). The second was
+an **assistant argument** (plumbing rule) that the arbiter never ruled on — so the record currently
+encodes a rejection that was not made. **Flagged to the arbiter; awaiting a call on whether
+`hitl-workflow` is restored.**
+
+**Proposed resolution (assistant recommendation, NOT adopted):** make `cal:human:*` purely
+**additive endorsements**, and give active rejections their own machine-readable marker —
+`cal:human:reject:theme:<slug>` / `cal:human:reject:facet:<slug>`. The final pass then computes
+**panel modal ∪ human endorsements − human rejections** instead of *endorsements alone*. Costs the
+arbiter nothing (rejections are rare and deliberate — two today, both reasoned) and makes the
+three states distinguishable. Layers under the ratified namespace (§`Theme_Tagging_Calibration.md`)
+as a `cal:human:` sublayer that never survives into `final:*`.
+
+**Interim assistant practice, effective immediately:** do not write `cal:human:theme:*` as if it were
+a complete set; record arbiter-named tags as *additive endorsements* and note explicitly in the
+arbiter note that the set is non-exhaustive. Any tag dropped on assistant reasoning must be raised
+with the arbiter, not written as a silent rejection.
+
+**Retrospective exposure to check before the final pass runs:** every paper already carrying
+`cal:human:theme:*` or `cal:human:facet:*` was written under the old reading. Those need review
+against this distinction — a bounded, enumerable set, and cheap to list from Zotero. Deferred to
+end-of-screening with the other write-pass questions, but it is a **data-integrity** item, not a
+refinement.
+
+## 46. `cal:human:reject:*` RATIFIED — resolves the §45 convention conflict (2026-08-23)
+
+Arbiter adopted the proposed fix. The `cal:human:*` layer now encodes **three** states instead of
+two:
+
+| State | Tag | Meaning |
+|---|---|---|
+| **Endorsed** | `cal:human:theme:<slug>` · `cal:human:facet:<slug>` | "This applies." **Additive** — does *not* imply the set is complete |
+| **Rejected** | `cal:human:reject:theme:<slug>` · `cal:human:reject:facet:<slug>` | "I considered this and it does not apply" — overturns a panel proposal |
+| **Not considered** | *silence* | Didn't jump out; the panel proposal **stands by default** |
+
+**Final write pass computes: panel modal ∪ endorsements − rejections.** Not endorsements alone.
+
+**Primary is exempt** — single-valued, so `cal:human:primary:theme:<slug>` simply replaces the
+machine's primary; a reject marker there would be meaningless.
+
+**Placement in the ratified namespace:** `reject:` is a sublayer of `cal:human:` and, like the rest
+of that layer, is **permanent audit trail — never stripped**. Rejections do not themselves become
+`final:*` tags; they *subtract* from what does.
+
+**First instances — `WUUDHL8R`** (Baumgartner et al. 2024, *AI-driven refactoring: data clumps*):
+- `cal:human:reject:theme:regulatory-compliance` (panel **9/9**) — *"It is not compliance. That was
+  justification / background."*
+- `cal:human:reject:theme:hitl-workflow` (panel **8/9**) — *"It didn't cover it."* Closes the §45
+  open item: this was previously encoded as a silent drop resting on an *assistant* argument
+  (plumbing rule); it is now an arbiter ruling with its own reason and marker.
+
+Both are unanimous-or-near-unanimous panel proposals overturned by human review — the §44a
+correlated-error pattern, now machine-countable rather than buried in note prose. That count is one
+of the reportable outputs of the human pass.
+
+**Docs updated:** `Sweep_Reading_Guide.md` §1.3 (the source of the defective wording — rewritten to
+the three-state model), `Methodology/Theme_Tagging_Calibration.md` (namespace section).
+
+**Still owed (deferred, §45):** items tagged *before* today were written under wholesale-override
+semantics and need review against the endorsed-vs-rejected distinction before the `final:*` pass
+runs. Bounded and enumerable from Zotero. **Data-integrity item.**
+
+**Open, minor:** the Actions & Tags YAML has no `reject:` menu entries. Adding all 44 (17 themes +
+27 facets) would bloat the menu for a rare action — recommend adding entries **on demand** as
+rejections recur, or continuing to have them applied via the API. Not blocking.
+
+## 47. `agentic`/`assistive` — apparatus-vs-object rule (WBS9U5N7, 2026-08-23)
+
+**Arbiter ruling:** *"Agents as part of setting up the experiment, not agents as a core part of the
+experiment."* Agents used to **stage** a study — manufacture stimulus, generate test material, drive
+the harness — are **apparatus** and earn no mode facet. The pair fires only when the
+agentic/assistive generation is the **phenomenon under study**.
+
+Test: *is the agent the thing being examined, or the thing doing the examining/staging?*
+
+**Worked negative — `WBS9U5N7`** (Alami, *Cognitive camouflage*): a Mutator agent synthesizes
+deliberately-gamed code so a review committee can be tested on whether it catches the gaming. Agents
+are everywhere in the design, but there is no developer, no pipeline, no production setting — the
+paper studies **detection**, not agentic development. All 9 panel runs proposed `agentic`; arbiter
+rejected → `cal:human:reject:facet:agentic`.
+
+This **sharpens rather than changes** the existing clause ("*uses agents*" ≠ `agentic`) by naming
+the specific confusion it was written to prevent: the earlier wording said what doesn't count but
+not *why*, so a paper saturated with agents still reads as agentic on a fast pass. Apparatus-vs-
+object gives the reason.
+
+**Assistant-error note (pattern, not incident).** I recommended endorsing `agentic` here on
+"there are agents," reading the facet name in its ordinary sense rather than its instrument-scoped
+sense. Same class of error as §38, where I widened `framework` because HAIF "is a framework in plain
+English." Both times the definition already excluded the case and I read past it. Flagged so the
+pattern is visible in my recommendations — the instrument's scoping clauses are the operative text,
+not the tag's name.
+
+**Docs updated:** `Tag_Cheatsheet.md` mode-pair line only. **Not** propagated to `Tag_Prompt.md`,
+per §41 — the panel prompt stays frozen at v2.13-as-used until the successor instrument is cut.
+
+## 48. Correction — WBS9U5N7 is a two-event paper, not a method-experiment confusion exemplar (2026-08-23)
+
+`WBS9U5N7` (Alami, *Cognitive camouflage*) had been characterized — in the Light Read prep sheet and
+in my own advice — as a clean example of the machine-only `built-system`/`method-experiment`
+confusion the §34 fork was written to catch. **That was wrong.** Arbiter endorsed
+`method-experiment` on review.
+
+**Why it holds:** the instrument's own carve-out covers it — *"**Subjects may be systems:**
+controlled studies of **third-party** tools/models whose findings characterize those systems =
+`method-experiment` (UDVHQ5HR)."* The paper reports a controlled comparison of Claude, GPT-4o and
+Gemini whose findings characterize *those* models (Gemini missed 2/8, Claude 0/8; Gemini fooled 4/5
+in the full-thesis condition; GPT-4o oscillates across all four domains). The "whose properties?"
+test points at third parties, not at ZTARE.
+
+So it is the **two-event pattern** (NRVQT89E, U9VZQXGI): ZTARE's own performance → the ladder rung
+`evaluated-synthetic`; the third-party model comparison → `method-experiment`. Both stand; the fork
+is not violated because they measure different events.
+
+**Final human record on the item:** endorsed `theme:ai-review` (membership only — explicitly *not*
+primary), `theme:rules-based-checks`, `facet:built-system`, `facet:method-experiment`,
+`facet:evaluated-synthetic`. Rejected `facet:agentic` (§47). Primary deliberately empty, slot held
+by `primary-proposed:theme:evaluator-reliability`. `demote:context`.
+
+**Lesson worth keeping:** "no human subjects" is not sufficient for the machine-only diagnosis — the
+question is *whose properties the findings describe*. A study with zero humans can still be
+`method-experiment` when its subjects are third-party systems. The earlier reading collapsed
+"no humans" into "tool-results," which the UDVHQ5HR clause explicitly rules out.
+
+**Docs updated:** prep sheet entry for WBS9U5N7 rewritten with the resolution and a pointer here.
+
+## 49. `framework` — span rule + mental model (WUUDHL8R, 2026-08-23)
+
+Fourth `framework` refinement today. Arbiter rejected the facet on `WUUDHL8R` despite it being a
+genuinely built, CI/CD-integrated pipeline — the case §39's wording did not cover.
+
+**Arbiter rationale:** *"restriction to one part of overall lifecycle, one engineering task. It
+identified code that should be refactored, facilitates it."*
+
+**Span rule:** confinement to **one lifecycle stage / one engineering task** disqualifies, no matter
+how many internal steps the thing has. **Frameworks govern the flow; tools do a job inside it.**
+
+**Mental model (arbiter's formulation, now the primary test):**
+> *"Can this be integrated into a CI/CD or code-building pipeline **to facilitate code generation at
+> quality with oversight**?"*
+
+Both halves must hold — integratable **and** in service of overseen generation.
+
+**Reconciled with the calibration anchors** (this was the check that validated the rule rather than
+just accepting it):
+
+| | What it does | Verdict |
+|---|---|---|
+| VibeGuard `T8E8SCCG` | detect + **publish gate**, no auto-fix | governs the release boundary — spans the flow ✔ |
+| Hedwig `T72TU8B5` | dynamic-autonomy classifier + check-in surface | routing + human interaction across the flow ✔ |
+| `WUUDHL8R` | detect data clumps → refactor → validate → PR | many steps, **one maintenance task**, one phase ✘ |
+
+**Wording defect this exposed and fixes:** the clause "*a focused **single-concern** architecture
+qualifies*" was being read as "single-**task** qualifies" — which licenses precisely what the span
+rule rejects, and is the likely reason **9 of 9** panel runs proposed `framework` here. Now stated
+explicitly: **concern may be narrow; span may not.** VibeGuard is single-concern (one quality
+dimension) yet spans detect→gate; WUUDHL8R is single-task.
+
+**Known tension, flagged not resolved.** The mental model cleanly reproduces the HAIF (§39) and
+WUUDHL8R rejections, but **does not obviously reproduce the BU73N7PC rejection** — that risk
+classifier *is* CI/CD-integrated and *is* in service of overseen release, yet §39 excludes it as a
+stage bolted onto someone else's pipeline. Mental model and point-tool exclusion may pull in
+different directions there. Left open deliberately; candidate for resolution in the end-of-validation
+revision (§41).
+
+**Meta-observation for the revision.** `framework` has now been amended four times in one day
+(§38 widen → §39 revert → §39 decision line → §49 span rule) and carries a **59% panel split rate**
+(§40b, rank 10 of 24). Treat it as the instrument's most under-specified facet and rewrite it
+wholesale in the successor rather than patching further.
+
+**Docs updated:** `Tag_Cheatsheet.md` only. **Not** propagated to `Tag_Prompt.md` per §41.
+
+## 50. METHOD ≠ CONTRIBUTION — the apparatus rule, promoted to a cross-cutting preamble rule (2026-08-23)
+
+**Arbiter ruling:** *"For our tags, those elements must be in the proposed system / framework / etc,
+not just used for analyzing data in the study."*
+
+Promoted from a per-tag caveat to a **universal preamble rule** in `Tag_Cheatsheet.md`, because the
+principle already existed in the instrument **four separate times under four different names** and
+still failed to catch theme-level cases:
+
+| Where it already lived | Wording |
+|---|---|
+| `metrics` | *"Contribution, not apparatus"* — every empirical paper has an evaluation apparatus; that gets nothing |
+| method-\* facets | *"Applies to the paper's **own evidence production**"* + the world-or-tool test |
+| `agentic`/`assistive` (§47) | apparatus-vs-object — agents that *stage* a study earn nothing |
+| preamble | *"Plumbing ≠ membership"* — tag only mechanisms the paper *argues about* |
+
+None of those reach a **theme** proposed off the methods section, which is the gap this closes.
+
+**The test:** *is this candidate tag triggered by what the paper **studies**, or by how the authors
+**did the study**?*
+
+**Worked failure — `ID7IN65K`** (Choudhuri et al.): the paper codes open-ended survey responses with
+three LLMs against an author-approved codebook and reports Krippendorff's α with pairwise Cohen's κ.
+**All 3 panel runs proposed `theme:ai-review`** — reading the methods section as content. Arbiter
+caught it: *"there is a lot of discussion of multiagent panel etc for analysis of the survey data, so
+could yield false positive for those tags."*
+
+**Why this error is high-frequency and worth a preamble slot:** it fires precisely when a paper's
+*research design resembles the phenomenon under study* — and in a corpus about AI reviewing code,
+papers that use AI to analyse data are common. The resemblance that makes the paper methodologically
+interesting is the same resemblance that makes the tagger misfire.
+
+**Reflexive note.** This is also the trap the SLR's own panel is most exposed to, since our method
+*is* multi-model AI review. Papers worth citing for their method (see
+`Theme_Tagging_Calibration.md` §9 and the new **Methodology Support** collection) are exactly the
+papers most likely to be mistagged for it. **Cite for method; do not tag for it.**
+
+**Docs updated:** `Tag_Cheatsheet.md` preamble. **Not** propagated to `Tag_Prompt.md` per §41 —
+though note this one is a *machine* error, so it is a strong candidate for the successor prompt.
+
+## 51. Reference-oracle exclusion — a checker needing ground truth is not an oversight mechanism (PR4GS7SP, 2026-08-23)
+
+**Arbiter ruling:** *"Symbolic execution would be yes, but this is using symbolic execution to compare
+against a 'known implementation' rather than assess correctness on its own."*
+
+**Rule:** a checker that requires a **known-correct reference implementation** is a *measurement
+instrument*, not a Detect-stage oversight mechanism — because in real oversight the reference does
+not exist. If you had the correct implementation, you would not need the generated code. The
+technique used internally is irrelevant to this test.
+
+**Operational question:** *could this run on an artifact whose correct answer is unknown?* No → not
+a Detect mechanism.
+
+**Worked case — `PR4GS7SP`** (Cotroneo et al., *Automating the correctness assessment of AI-generated
+code for security contexts*). ACCA genuinely uses symbolic execution, and both `rules-based-checks`
+(which explicitly lists "symbolic exec") and `formal-methods` (ditto, with the documented
+`rules-based-checks`+`formal-methods` pairing for a classical engine) appeared 9/9 in the panel.
+By the letter of both definitions they fire. **Arbiter rejected both** — ACCA tests *equivalence to
+a ground-truth implementation*, so it can only operate where correctness is already known. It is a
+benchmarking oracle for comparing code generators, which the paper states plainly: assess
+correctness *"without any human effort"*, validated by correlation against human evaluation.
+
+**Why this needed stating:** the Detect definitions enumerate *techniques* (tests, static analysis,
+symbolic exec, sandbox) and a technique list cannot distinguish a deployable check from a research
+oracle using the same machinery. This is the missing condition.
+
+**Naming hazard noted in passing.** `rules-based-checks` invites reading its *name* literally ("it
+doesn't discuss any rules") when its definition is the deterministic-grounded-check bucket, symbolic
+exec included. That is the mirror of the assistant's own errors today, which read `framework` and
+`agentic` too *loosely* (§38, §47). **The tag names in this instrument are bucket labels, not
+definitions — in both directions.** Worth a line in the successor instrument.
+
+**Docs updated:** `Tag_Cheatsheet.md` Detect-group preamble. Not propagated to `Tag_Prompt.md` (§41).
+
+## 52. `oversight-scaling-inversion` NARROWED to fail-open; fail-closed saturation logged as a gap (NZJST99D, 2026-08-23)
+
+**Arbiter ruling:** *"One case (fail closed) impacts productivity, usefulness but is quite safe. Bad
+code never ships. Fail open is truly a risk and scary — bad code ships. That is actually an
+important distinction. If we bucketed this paper in with those that talk about all the maladies of
+bad code shipping, this paper would be very out of place."*
+
+**The narrowing.** The theme is **fail-open only**: capacity mismatch whose consequence is that
+under-inspected AI code **reaches production**. Capacity mismatch that resolves **fail-closed** —
+work abandoned, nothing merged — is a *productivity* failure, not an oversight failure, and does not
+belong here.
+
+**Why the old wording admitted both.** The definition was four clauses in a list: *"riskier yet less
+inspected; PRs auto-merged unreviewed; review is the bottleneck; burden piles on maintainers."*
+Clauses 1–2 are fail-open; clauses 3–4 are bare capacity language that fits either resolution. Read
+as alternatives, any capacity paper qualified. The definition **conflated a cause (capacity
+mismatch) with an effect (unsafe code ships)** — and only the effect defines the harm.
+
+**The test that settled it — synthesis, not definition-matching.** A theme is *where a paper gets
+written up*. Asked whether `NZJST99D` would sit naturally in a section on the maladies of bad code
+shipping, the answer is no: **nothing shipped**. 33k agent-authored PRs, dominated by reviewer
+abandonment, with no fail-open case found in the text. Safety held; throughput collapsed. Rejected
+→ `cal:human:reject:theme:oversight-scaling-inversion`.
+
+**Corpus exposure of the narrowing:** `oversight-scaling-inversion` is proposed by ≥1 run on **33 of
+128** papers, **unanimously on 13**. Papers already tagged with it under the loose reading should be
+re-checked against the fail-open condition before the `final:*` write — add to the §45 retrospective
+list. Bounded; the synthesis test is quick to apply.
+
+**SCOPE GUARD (added 2026-08-23, after an over-application).** The narrowing is **fail-open vs
+fail-closed ONLY**. It does **not** restrict the theme to *code review*. Any oversight function that
+fails to scale while output ships qualifies — legal/compliance capacity, security review, audit
+capacity. The review question says "**human oversight** of AI-generated code… keeps pace with code
+volume," not "code review." `34ELRWJH` (Goodhue) is the worked case: *"Traditional software companies
+scale legal capacity alongside technical capability… AI-assisted development **breaks this coupling
+entirely**"* — legal review is the bottleneck, the applications ship anyway, fail-open. The assistant
+initially challenged it by inventing a second, unruled narrowing (code-review-only) and mis-ran the
+synthesis test by pre-loading "bad code ships" as *defects* rather than *exposure*. Recorded so the
+same over-application is not repeated across the other 32 affected papers.
+
+### 52a. GAP — no theme for fail-closed review saturation (tripwire, 1 instance)
+
+With the narrowing, `NZJST99D`'s headline finding has **no home**: review capacity exhausted, agent
+contributions dropped on the floor. Distinct from `oversight-theater` (review exists but lacks
+authority — here it does not happen at all) and from `oversight-scaling-inversion` (fail-open).
+
+Conceptually interesting because the **remedy differs**: fail-open calls for gates; fail-closed
+saturation calls for triage — i.e. this phenomenon is *motivation for* `risk-routing` rather than
+membership in it.
+
+**One instance is not enough to stage** (the `evaluator-reliability` candidate had three).
+**Tripwire:** papers reporting that AI/agent output volume overwhelms review capacity **without**
+unreviewed code shipping. Count recurrences; revisit at end of validation.
+
+**Docs updated:** `Tag_Cheatsheet.md` theme definition. Not propagated to `Tag_Prompt.md` (§41).
+
+## 53. §30 general-AI exception — second exercise, and what clears the bar (9MV2IVNU, 2026-08-23)
+
+§30 established that a `general-ai` paper is a *context candidate*, and that the sole-exemplar
+exception is **"look at keeping," not "keep."** `9MV2IVNU` (Eze, *Human-in-the-loop isn't a
+checkbox*) is the second exercise of that exception and the first worked example of what actually
+clears it.
+
+**Facts:** the decision domain is loans / benefits / moderation, not code — `general-ai` proposed
+9/9 and applied. All three models flagged the demote. **Kept Core anyway.**
+
+**Arbiter's reasoning:** *"This is actually useful for coding scenarios even though not code. It
+defines the controls, checks, etc which are applicable."* The four intervention controls (Override,
+Escalate, Explain, Execution Boundary Control) and the ten-KPI suite transfer to a code-review
+pipeline unchanged — override rate, escalation precision, review latency, disagreement tracking,
+intervention drift are domain-agnostic oversight measurements.
+
+**Corpus check that made it sole-exemplar rather than merely transferable** (this is the part worth
+reusing): `oversight-theater` is modal on only **4 of 128** sweep papers, and only **2** of those
+also carry `metrics` — this one and `2KPHQ5IV` (a consensus-layer architecture paper, not a
+measurement one). So it is plausibly the **only** corpus paper that operationalizes
+theater-detection *as measurement*: *"an extremely low override rate may indicate rubber-stamping;
+an extremely high OR may suggest weak model performance."*
+
+**Generalizable test for §30, extracted:** transferability alone is not enough — nearly any
+general-AI governance paper "could apply to code." What clears the bar is **transferability +
+scarcity**: run the corpus count for the theme/facet combination the paper uniquely supplies. If
+something else already covers it, demote; if the corpus would lose the capability, keep.
+
+**Scope flag is retained on a kept-core paper, deliberately.** `general-ai` here works the way
+`general-code` is documented to — *"the audit trail for kept-core transfers."* It records that the
+mismatch was seen and overridden, rather than missed. Reporting queries that need coding-specific
+papers can still exclude on the flag.
+
+**Also noted:** `design-only` applied with a caveat from the arbiter — *"It doesn't read like a
+design, it is more of an enumeration of things to do / requirements than a pure design, but serves
+as checklist."* It clears the buildable-detail bar via named controls plus metric definitions. A
+reminder that `design-only`'s population includes requirement-enumerations, not only architectures.
+
+## 54. Steering exclusion — the turn-over-turn rule (CI93QRUH, 2026-08-23)
+
+**Arbiter ruling:** *"There is nothing that provides for the turn over turn behavior. It is more of
+explaining what is being suggested in a turn."*
+
+**Rule:** steering requires shaping the artifact **across turns** — an ongoing human↔AI loop that
+develops the output. **Within-turn** explanation of, or selection among, what the model has already
+produced is **not** steering.
+
+This restores the arbiter's own working definition of steering (*"an ongoing interaction between
+human and AI to develop the artifact rather than autonomous operation"*) into the instrument, which
+previously described steering only in terms of *what* is controlled (inputs, prompts, specs,
+context) and said nothing about **time**. The temporal condition is what discriminates the hard
+cases.
+
+**Worked case — `CI93QRUH` (HiLDE).** Highlights critical decision points in an LLM code completion,
+displays local alternatives derived from top tokens at the current step, **explains the differences
+between them**, and lets the programmer select one. **7 of 9 panel runs proposed `steering`** —
+wrong. There is no iterative loop; the human reads an explanation and picks, within one suggestion.
+Rejected → `cal:human:reject:facet:steering`.
+
+Corroborating: the paper positions itself explicitly *against* steering — its stated motivation is
+that *"programmers lack the agency to effectively control LLM behavior, relying on vague
+prompt-tuning."* Prompt-tuning is the steering exclusion; HiLDE offers decision-point review as the
+alternative to it.
+
+**Consequence for disposition:** with steering off, the steering-only demote route closed, and the
+paper was demoted on separate grounds — see below.
+
+### 54a. §53 test reused, and it cut the other way (first negative application)
+
+`CI93QRUH` was weighed for the §53 keep test: *transferability + scarcity*. The arbiter's
+keep-argument was that the explanation mechanism "could be used in other, agentic contexts."
+
+**Corpus check:** `oversight-explanation` is modal on **30 of 128** papers — one of the largest
+themes. **13** are also `built-system` (so HiLDE is not unique even among built explanation tools),
+and **19** are also `agentic` — the corpus already holds substantial explanation work *in agentic
+contexts*, which is exactly the ground HiLDE would have to be extrapolated into.
+
+**Demoted.** Nothing is lost. Contrast §53 (`9MV2IVNU`), where the equivalent count was **2 of 128**
+and the corpus would have lost a capability.
+
+**The asymmetry that makes the test principled:** "could be used in agentic contexts" is a claim
+about **potential**; the 19 agentic explanation papers are **actual**. *Potential does not compete
+with actual for scarcity.* Worth reusing — it is the sentence that resolved this cleanly.
+
+Also notable: this is the first time the §53 test produced a **demote**. A keep-test that only ever
+says keep is not a test.
+
+**Docs updated:** `Tag_Cheatsheet.md` steering-exclusion preamble. Not propagated to
+`Tag_Prompt.md` (§41) — but flagged as a **machine-error** fix (7/9 wrong), so it belongs in the
+successor prompt alongside §50.
+
+## 55. The directness / tangency test — what actually drives the Core/Context call (2026-08-23)
+
+Articulated by the arbiter after a run of demotes that the written §3 bar did not cleanly explain.
+
+**The test, in the arbiter's words:** *"Does it have to do about oversight, scaling oversight, or a
+practice that directly applies? Then keep in core. If tangential to that, then context."*
+
+**The specific weakening it names:** *"An empirical finding about underlying tech (LLM as code
+review) doesn't directly contribute to the scalable human oversight. **Code review is a separate
+topic we are taking as a given.**"*
+
+That is the sentence the written bar was missing. §3 requires "(1) directly about scalable human
+oversight… AND (2) an operationalizable mechanism, measurement, framework, or empirical finding."
+A capability benchmark can satisfy **(2) completely** — sound method, real result — and still fail
+(1). The bar named the ingredients but not the failure mode; **tangency** is the failure mode.
+
+**The positive pole makes it usable.** Scaling oversight *is* **allocating finite human attention**,
+so findings on **risk identification, prioritization, routing** are directly on-question. Arbiter:
+*"A finding on risk identification or prioritization would tie in more directly."* Findings on
+whether the underlying technology **can perform the task** are upstream — this review presupposes
+code review rather than studying it.
+
+| Directly on-question | Tangential |
+|---|---|
+| where to look · what to prioritize · how to allocate review · how the human exercises judgement | whether the underlying tech is *capable* of the task |
+
+### 55a. NOT categorical — judge on coverage, not genre
+
+**Arbiter's guard:** *"Consider as contribution to scalable human oversight is not a given. Case by
+case based on what is covered. If the code reviews, for example, include risk ratings and oversight
+explanation, then it might be a keeper. Just establishing LLM capability to do reviews, less so."*
+
+This matters at scale: `ai-review` is modal on **33 of 128** papers, and a categorical
+capability-exclusion would over-demote a large slice of them. A capability study that *also* carries
+risk ratings, prioritization, or explanation support is core-eligible, because those bear on
+allocating and exercising attention. **Same failure mode as the §38 `framework` widening in reverse:
+do not convert a good discriminator into a blunt population-level rule.**
+
+### 55b. Two failure modes of tangency
+
+1. **Wrong topic — capability only.** The *evaluator family*, all demoted for the same reason:
+   `WBS9U5N7` (spec-gaming evades holistic eval) · `UDVHQ5HR` (LLMs failing to verify against NL
+   specs) · `BAWCBT9R` (auditing LLM-as-judge bias) · `PR4GS7SP` (ACCA correctness oracle) ·
+   `8KJEKBGT` (LLM vulnerability/functionality assessment). Five papers, methodologically sound,
+   collectively answering "does the evaluator work?" — a question upstream of the review.
+2. **Right topic, peripheral treatment.** `TJH7QFAX` (Borg) contributes a genuine prioritization
+   signal — CodeHealth predicting AI-modification success, framed by the authors as guiding "where
+   additional human oversight is warranted" — but as a stated implication, not the paper's focus.
+   Demoted. **The positive pole is not a keyword trigger: mentioning prioritization is not
+   contributing to it.**
+
+### 55c. Theme membership ≠ tier (third independent axis)
+
+Earning a theme does not make a paper Core. `ai-review`'s definition explicitly includes *"its
+reliability limits"*, so capability and reliability studies **are** `ai-review` by definition and
+still fail the directness test. That is why it is simultaneously the corpus's **largest theme
+(33/128)** and its **most demoted** — and why the panel keeps proposing keeps on this class.
+
+Third such axis needing explicit separation, each of which caused real confusion today:
+
+| Axis | Confusion prevented |
+|---|---|
+| tier vs **evidence strength** (§36b) | `design-only` is a rung, not a demerit |
+| tier vs **dissertation value** | Context papers can be dissertation-central (`TJH7QFAX`, `RNDPW7VA`, `LGZXFLSJ`) |
+| tier vs **theme membership** (§55c) | earning `ai-review` does not make it Core |
+
+**Docs updated:** `Tag_Cheatsheet.md` — both rules inserted immediately **above** the demote-flag
+list, since they gate it. Not propagated to `Tag_Prompt.md` (§41).
+
+## 56. `counterpoint` DEPRECATED for polarity inversion; `scaling-dissent` created (JVWUYDME, 2026-08-24)
+
+**The finding, in the arbiter's words:** *"What gets me is that this paper is arguing for our thesis,
+yet we called it counterpoint."*
+
+`JVWUYDME` (Jessee, *Scapegoat-as-a-service*) argues **for** the review's thesis — that oversight
+should shift from per-item review to command authority over routed exceptions. **All 9 panel runs
+tagged it `counterpoint`**, the opposition marker. Not a split, not a coin flip: unanimous and
+confidently backwards.
+
+### 56a. The defect is polarity inversion, not ambiguity
+
+The written definition asked only *"does it argue against a prevailing position?"* — and Jessee
+plainly does, against HITL-as-practiced. It **never asked which position**, so a paper opposing *bad
+oversight* scored identically to one opposing *oversight itself*.
+
+**This is worse than a noisy tag.** If the discussion ever reports "N papers dissent from the scaling
+thesis," `counterpoint` as applied yields a **false claim** — papers arguing *for* better oversight
+counted as arguing *against* scaling it. Reportable-statistics defect, not a tagging annoyance.
+
+**Corroborating symptom:** proposed on **35 of 128** papers, only **6 unanimous**, **29 split — 82%
+of touched papers**, among the worst agreement rates in the instrument (§40b). That is the signature
+of a near-unfalsifiable predicate: almost every paper argues against *something*.
+
+### 56b. Replaced, not redefined — the `dissertation-input` lesson applied
+
+`counterpoint` is **deprecated**, not narrowed. Redefining a tag that already carries 35 applications
+would leave old and new data meaning different things with no way to tell them apart — exactly the
+collision that `dissertation-input` produced (177 items from an earlier `dissertation-*` pass
+colliding with a new human-only definition). Legacy applications stay put and are explicitly marked
+**never to be read as scaling dissent**.
+
+### 56c. `scaling-dissent` — definition and the guard that makes it work
+
+> The paper argues delegation of oversight is **unworkable or impermissible as a general matter**.
+
+**Polarity guard (arbiter):** *"Our thesis is that many things can be delegated, some can't. That's
+risk routing."* A risk-graded delegate/don't-delegate line **is the thesis**, however conservatively
+drawn. This is the clause that stops `oversight-theater` papers flooding in and recreating
+`counterpoint`'s 82% problem under a new name.
+
+**Three calibration points, two from the corpus:**
+
+| | Claim | Verdict |
+|---|---|---|
+| **Thesis** | delegate broadly, route exceptions to a human — a *graded* line | `risk-routing` — **`JVWUYDME`** |
+| **Approaching dissent** | this class of work is *categorically* off-limits to AI | closer — **`WUUDHL8R`** ("Unacceptable risk… Therefore AI-Driven Refactoring cannot be used here") |
+| **Dissent** | the line can't be drawn reliably · review-everything is the only defensible posture · oversight cannot scale | `scaling-dissent` |
+
+**Discriminator: graded vs categorical.** `WUUDHL8R` stays a *boundary annotation* rather than an
+instance on two counts — its bar derives from a **misreading** of Art. 5 rather than an argument,
+and it concerns *tool usability*, not whether human oversight can scale. An artifact, not a position.
+
+**`JVWUYDME` is the sophisticated near-miss** and the more valuable calibration point: asserting an
+*irreducible human authority* reads like a limit on scaling but is in fact the routing claim.
+Recorded as `cal:human:reject:facet:scaling-dissent` so the negative is machine-findable.
+
+### 56d. Consequences
+
+- **Standing review practice:** whenever the panel proposes `counterpoint`, **surface the
+  `scaling-dissent` question for discussion** — it is a trigger, never a mapping.
+- **Added to the deferred restricted panel re-run** (§37c/§41) alongside `agent-panel` /
+  `cross-model` / the `evaluated-*` pair — `scaling-dissent` needs corpus-wide application to be
+  countable.
+- **The other 5 unanimous `counterpoint` papers** (`E689ZAXC`, `EB49Q8QM`, `ID7IN65K`, `P837LJWE`,
+  `TA6GIUK2`) join the §45 retrospective list; same polarity risk on each.
+- **Expect scarcity.** If the corpus-wide pass returns near-empty, *that is the finding* — "no
+  substantive dissent from the scaling premise" is a legitimate result, not a failed tag.
+
+**Docs updated:** `Tag_Cheatsheet.md` — `counterpoint` marked deprecated in place; `scaling-dissent`
+added beside it. Not propagated to `Tag_Prompt.md` (§41).

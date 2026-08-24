@@ -57,6 +57,17 @@ per tag. Output = strict JSON.
   core looks like it belongs in another disposition; batch-reviewed then moved + flag removed.
 - `cal:human:theme:<slug>` / `cal:human:primary:theme:<slug>` / `cal:human:facet:<slug>` — the
   arbiter's working judgment; can be revised mid-review.
+- `cal:human:reject:theme:<slug>` / `cal:human:reject:facet:<slug>` — **RATIFIED 2026-08-23
+  (changelog §46).** An explicit arbiter rejection of a panel proposal: *"I considered this and it
+  does not apply."* Needed because arbiter tagging is **non-exhaustive** — an omission means "didn't
+  jump out," not "rejected," so the two must be distinguishable. Semantics of the human layer are
+  therefore: **endorsement (`cal:human:theme|facet:*`, additive) · rejection
+  (`cal:human:reject:*`) · silence (not considered — panel proposal stands)**. The final write pass
+  computes **panel modal ∪ endorsements − rejections**. Primary is exempt (single-valued —
+  `cal:human:primary:theme:*` simply replaces the machine's). Rejections are part of the permanent
+  audit trail and, like the rest of `cal:human:*`, are never stripped; they do not themselves become
+  `final:*` tags — they *subtract* from what does. First instances: `WUUDHL8R`
+  (`reject:theme:regulatory-compliance`, `reject:theme:hitl-workflow`).
 
 **Final-tag convention — RATIFIED 2026-08-21 (supersedes the "plain `theme:<slug>`" plan above,
 which was never executed).** Two things forced a decision: (1) Scott's standing principle that
@@ -554,3 +565,40 @@ effort, CLI version, timestamp), repo-side only. Caveat for the writeup: "high" 
 operating point per vendor, not a cross-vendor equivalence claim — comparability rests on the
 calibration results themselves.
 
+
+## 9. External precedent for the multi-model panel design (ID7IN65K, found 2026-08-23)
+
+Until now the panel design was justified internally — decorrelation reasoning plus our own
+calibration results. `ID7IN65K` (Choudhuri, Bird, Badea & Sarma, *To Copilot and Beyond: 22 AI
+Systems Developers Want Built*, Oregon State + Microsoft Research, arXiv 2604.07830) supplies an
+**independent published instance of substantially the same design**, applied to qualitative coding
+of survey data. Worth citing in the methodology chapter: it moves "we invented a defensible
+procedure" to "we applied a procedure others independently arrived at."
+
+**Their pipeline (their §3.2), against ours:**
+
+| Their stage | Ours |
+|---|---|
+| S1 Independent theme discovery — three models, separately | Independent per-model tagging runs |
+| S2 Codebook reconciliation | Instrument consolidation across calibration rounds |
+| S3 **Author review and codebook approval** — humans lock the codebook before coding | v2.13 human-locked instrument, frozen before the sweep |
+| S4 Systematic coding — all three models code every response, **rationale before code** | All three models tag every paper; rationale required in the JSON schema |
+| S5 IRR — **Krippendorff's α** + **pairwise Cohen's κ**, then consensus | Cross-model agreement + κ; consensus/tripwire triage ladder |
+
+**Convergent points worth naming explicitly** — these are the design choices that were arguable in
+isolation and are corroborated here: (a) humans approve the codebook *before* machine coding, not
+after; (b) models are required to produce a rationale *before* assigning a code; (c) inter-rater
+statistics are computed **between models**, treating each as a rater; (d) disagreement routes to a
+consensus step rather than a majority vote alone.
+
+**Where we go further:** k=3 replication per model (they run each model once), so we can separate
+*inter*-model disagreement from *intra*-model instability — the `unstable:<model>` tripwire has no
+counterpart in their design. Also our arbiter rules on every item's tier, where their humans
+approve the codebook but do not re-code.
+
+**Reflexive caution (important, and the paper illustrates it).** Their multi-model machinery is
+their **method**, not their subject — and our own panel proposed `ai-review` 3/3 on this paper,
+almost certainly by reading the methods section as content. That is the apparatus-vs-object failure
+(Taxonomy_Changelog §47), and it is the same trap our corpus tagging must avoid when a paper's
+research design resembles the phenomenon under study. Cite this paper for its method; do not tag it
+for it. Disposition: Context, `survey-input`, `02 - Supporting`.
