@@ -1722,6 +1722,17 @@ abandonment, with no fail-open case found in the text. Safety held; throughput c
 re-checked against the fail-open condition before the `final:*` write — add to the §45 retrospective
 list. Bounded; the synthesis test is quick to apply.
 
+**SCOPE GUARD (added 2026-08-23, after an over-application).** The narrowing is **fail-open vs
+fail-closed ONLY**. It does **not** restrict the theme to *code review*. Any oversight function that
+fails to scale while output ships qualifies — legal/compliance capacity, security review, audit
+capacity. The review question says "**human oversight** of AI-generated code… keeps pace with code
+volume," not "code review." `34ELRWJH` (Goodhue) is the worked case: *"Traditional software companies
+scale legal capacity alongside technical capability… AI-assisted development **breaks this coupling
+entirely**"* — legal review is the bottleneck, the applications ship anyway, fail-open. The assistant
+initially challenged it by inventing a second, unruled narrowing (code-review-only) and mis-ran the
+synthesis test by pre-loading "bad code ships" as *defects* rather than *exposure*. Recorded so the
+same over-application is not repeated across the other 32 affected papers.
+
 ### 52a. GAP — no theme for fail-closed review saturation (tripwire, 1 instance)
 
 With the narrowing, `NZJST99D`'s headline finding has **no home**: review capacity exhausted, agent
