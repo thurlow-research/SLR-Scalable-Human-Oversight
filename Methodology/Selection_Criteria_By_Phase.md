@@ -180,6 +180,24 @@ raw rubric):**
   rest context.
 - **Grey literature generally EXCLUDED** (blogs, vendor posts, benchmark landing pages, docs,
   social) — retained only as a few exceptions of *extreme* relevance, flagged by hand.
+  - **Scope note (added 2026-08-24).** "Grey literature" here means **web/vendor/social content**.
+    It does **NOT** include **preprints** (arXiv, SSRN, OSF), which are treated as ordinary
+    literature. This matters because preprints are **57 of the 128 Core papers (~45%)**, and
+    ~62% of Core is non-peer-reviewed by venue. Justification is **recency, not relaxed
+    standards**: **77% of the Core corpus is dated 2025–2026**, and the preprint share *rises*
+    toward the present (33 of 53 in 2026 vs 19 of 45 in 2025) — the signature of publication
+    lag. Excluding preprints would have **preferentially removed the newest work** on a
+    fast-moving, practitioner-driven phenomenon: a recency bias, not a safeguard. Preprints
+    that subsequently publish are updated in place per the preprint→journal convention
+    (`orig-type:` / `orig-date:` lineage tags; see the *Preprint - Now Published* collection).
+  - **The hand-flagged exception channel is `source:practitioner`** (added to the record
+    2026-08-24; the channel existed but was undocumented). Targeted, non-systematic collection
+    of practitioner books, talks and posts encountered during the review period, screened
+    against the same criteria. **8 items to date; 1 reached Core** — `RPHK78A9` (Kim & Yegge,
+    *Vibe Coding*, IT Revolution), kept at `s1:human:keep`. Two were screened out
+    (`s3:opus:discard`, `s2:machine:discard`). **5 remain unscreened** and must be dispositioned
+    before the PRISMA flow is finalised, or explicitly scoped out as background reading rather
+    than search results — otherwise the flow numbers will not reconcile.
 
 **Lineage tags:** `s3:opus:<bin>` + `centrality:<n>`.
 

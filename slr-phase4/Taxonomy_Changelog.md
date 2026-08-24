@@ -2059,3 +2059,62 @@ study pilot into the organisation's own operational use.
 
 **Docs updated:** `Tag_Cheatsheet.md` method-facet block. Not propagated to `Tag_Prompt.md` (§41) —
 but this is a **machine error** (3/3), so it belongs in the successor prompt alongside §50 and §54.
+
+## 58. Contributes-mechanisms vs organises-existing-mechanisms (Khoo vs Eze, 2026-08-24)
+
+**Arbiter, on `5AVZQCVU` (Khoo):** *"E.g. Elgendy shape."*
+
+**Test:** does the paper contribute **the mechanisms**, or **a structure for organising mechanisms
+that already exist**? The latter is real work, but it lands Context unless the *structure itself* is
+scarce.
+
+**Worked contrast, both decided today:**
+
+| | Contribution | Verdict |
+|---|---|---|
+| `9MV2IVNU` **Eze** | the **instruments themselves** — Override Rate, Override Directionality, Escalation Precision, Intervention Drift, each newly *defined* with a measurand | **Core** (§53: `oversight-theater`+`metrics` = 2 of 128) |
+| `5AVZQCVU` **Khoo** | a **risk register + control catalogue** over controls that are borrowed security hygiene — *"implement input guardrails," "escape filtering before including web content in prompts," "use structured retrieval APIs rather than web scraping"* — and the paper calls its list *"tentative"* | **Context** |
+| `WH2PIBNQ` **Elgendy** | Figure 1 workflow model, Table 1 modalities, Table 2 technical attributes — an arrangement of known practice | **Context** |
+
+**Why this needed a separate test.** Khoo is *not* unactionable — it tiers controls by criticality
+(Cardinal / Standard / Best Practice), maps capabilities to risks, and defines residual-risk
+assessment. Judged on "is it operationalizable?" it passes. The demote turns on **whose mechanisms
+they are**. Recording this so the audit trail does not say "not actionable," which the tiering would
+falsify.
+
+**Relationship to §55:** this is the *positive-pole* refinement. §55 says findings on risk
+identification and prioritisation tie in directly — Khoo *does* prioritise. §58 adds that
+prioritising **someone else's** controls is an organising contribution, and organising contributions
+need the §53 scarcity test like any other transferable-but-crowded work. `org-governance` is modal
+on **31 of 128**, so the structure is not scarce.
+
+## 59. Panel failure mode — vocabulary matching, not mechanism reading (consolidated, 2026-08-24)
+
+Scattered across §47, §49b, §50 and §57; consolidated here because it is **the single highest-value
+input to the successor prompt** (§41) and because every instance is a *machine* error, not an
+arbiter clarification.
+
+**The pattern: the panel matches words in the paper to words in tag names, without checking what the
+mechanism does.**
+
+| Trigger word | Wrongly fired | Corpus instances |
+|---|---|---|
+| "agent" | `agentic` | `WBS9U5N7` (Mutator = apparatus, 9/9) · `ZH6QIU8A` (helper agents, assistive, 9/9) · `8MXATG38` (helper agents, 2/3) |
+| "test suite" | `rules-based-checks` | `ZH6QIU8A` (tests are a *representation* of a decision, 9/9 — violates the plumbing rule's own worked example, "agents running test suites ≠ `rules-based-checks`") |
+| "survey" | `survey-input` | conflates *the paper ran a survey* with *the finding is useful to the org survey* |
+| multi-model panel in the **methods** | `ai-review` | `ID7IN65K` (3/3, reading the methods section as content — §50) |
+| logs/telemetry as instrument | `method-mining` | `8MXATG38` (3/3 on a single field deployment — §57) |
+| "framework" / "evidence standard" / "integration layer" | `framework` | `JVWUYDME` — *assistant* error, reading technical vocabulary as technical artifact (§49b) |
+
+**Inverse failure — vocabulary absent, mechanism present:** `ZH6QIU8A` carries a **Decision Bank**,
+explicitly *"a persistent, editable record"* with decisions *"traceable to code"*, and the panel
+proposed `provenance-auditability` **0 of 9**. It reads labels, not function, in both directions.
+
+**Concentration:** `ZH6QIU8A` alone produced three keyword misfires plus the inverse miss — four
+vocabulary errors on one paper.
+
+**Implication for the successor prompt:** the current prompt lists tag definitions. It does not
+instruct the model to **identify the mechanism first and only then match it to a tag**. Every fix
+above (§47 apparatus-vs-object, §50 method≠contribution, §57 instrumentation≠contribution, the
+plumbing rule) is a special case of that one instruction. **Consider a single explicit step: "state
+what the mechanism does in your own words before assigning any tag."**
