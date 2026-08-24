@@ -1737,3 +1737,41 @@ membership in it.
 unreviewed code shipping. Count recurrences; revisit at end of validation.
 
 **Docs updated:** `Tag_Cheatsheet.md` theme definition. Not propagated to `Tag_Prompt.md` (§41).
+
+## 53. §30 general-AI exception — second exercise, and what clears the bar (9MV2IVNU, 2026-08-23)
+
+§30 established that a `general-ai` paper is a *context candidate*, and that the sole-exemplar
+exception is **"look at keeping," not "keep."** `9MV2IVNU` (Eze, *Human-in-the-loop isn't a
+checkbox*) is the second exercise of that exception and the first worked example of what actually
+clears it.
+
+**Facts:** the decision domain is loans / benefits / moderation, not code — `general-ai` proposed
+9/9 and applied. All three models flagged the demote. **Kept Core anyway.**
+
+**Arbiter's reasoning:** *"This is actually useful for coding scenarios even though not code. It
+defines the controls, checks, etc which are applicable."* The four intervention controls (Override,
+Escalate, Explain, Execution Boundary Control) and the ten-KPI suite transfer to a code-review
+pipeline unchanged — override rate, escalation precision, review latency, disagreement tracking,
+intervention drift are domain-agnostic oversight measurements.
+
+**Corpus check that made it sole-exemplar rather than merely transferable** (this is the part worth
+reusing): `oversight-theater` is modal on only **4 of 128** sweep papers, and only **2** of those
+also carry `metrics` — this one and `2KPHQ5IV` (a consensus-layer architecture paper, not a
+measurement one). So it is plausibly the **only** corpus paper that operationalizes
+theater-detection *as measurement*: *"an extremely low override rate may indicate rubber-stamping;
+an extremely high OR may suggest weak model performance."*
+
+**Generalizable test for §30, extracted:** transferability alone is not enough — nearly any
+general-AI governance paper "could apply to code." What clears the bar is **transferability +
+scarcity**: run the corpus count for the theme/facet combination the paper uniquely supplies. If
+something else already covers it, demote; if the corpus would lose the capability, keep.
+
+**Scope flag is retained on a kept-core paper, deliberately.** `general-ai` here works the way
+`general-code` is documented to — *"the audit trail for kept-core transfers."* It records that the
+mismatch was seen and overridden, rather than missed. Reporting queries that need coding-specific
+papers can still exclude on the flag.
+
+**Also noted:** `design-only` applied with a caveat from the arbiter — *"It doesn't read like a
+design, it is more of an enumeration of things to do / requirements than a pure design, but serves
+as checklist."* It clears the buildable-detail bar via named controls plus metric definitions. A
+reminder that `design-only`'s population includes requirement-enumerations, not only architectures.
