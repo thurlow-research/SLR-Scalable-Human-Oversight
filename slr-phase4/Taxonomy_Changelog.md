@@ -1775,3 +1775,56 @@ papers can still exclude on the flag.
 design, it is more of an enumeration of things to do / requirements than a pure design, but serves
 as checklist."* It clears the buildable-detail bar via named controls plus metric definitions. A
 reminder that `design-only`'s population includes requirement-enumerations, not only architectures.
+
+## 54. Steering exclusion — the turn-over-turn rule (CI93QRUH, 2026-08-23)
+
+**Arbiter ruling:** *"There is nothing that provides for the turn over turn behavior. It is more of
+explaining what is being suggested in a turn."*
+
+**Rule:** steering requires shaping the artifact **across turns** — an ongoing human↔AI loop that
+develops the output. **Within-turn** explanation of, or selection among, what the model has already
+produced is **not** steering.
+
+This restores the arbiter's own working definition of steering (*"an ongoing interaction between
+human and AI to develop the artifact rather than autonomous operation"*) into the instrument, which
+previously described steering only in terms of *what* is controlled (inputs, prompts, specs,
+context) and said nothing about **time**. The temporal condition is what discriminates the hard
+cases.
+
+**Worked case — `CI93QRUH` (HiLDE).** Highlights critical decision points in an LLM code completion,
+displays local alternatives derived from top tokens at the current step, **explains the differences
+between them**, and lets the programmer select one. **7 of 9 panel runs proposed `steering`** —
+wrong. There is no iterative loop; the human reads an explanation and picks, within one suggestion.
+Rejected → `cal:human:reject:facet:steering`.
+
+Corroborating: the paper positions itself explicitly *against* steering — its stated motivation is
+that *"programmers lack the agency to effectively control LLM behavior, relying on vague
+prompt-tuning."* Prompt-tuning is the steering exclusion; HiLDE offers decision-point review as the
+alternative to it.
+
+**Consequence for disposition:** with steering off, the steering-only demote route closed, and the
+paper was demoted on separate grounds — see below.
+
+### 54a. §53 test reused, and it cut the other way (first negative application)
+
+`CI93QRUH` was weighed for the §53 keep test: *transferability + scarcity*. The arbiter's
+keep-argument was that the explanation mechanism "could be used in other, agentic contexts."
+
+**Corpus check:** `oversight-explanation` is modal on **30 of 128** papers — one of the largest
+themes. **13** are also `built-system` (so HiLDE is not unique even among built explanation tools),
+and **19** are also `agentic` — the corpus already holds substantial explanation work *in agentic
+contexts*, which is exactly the ground HiLDE would have to be extrapolated into.
+
+**Demoted.** Nothing is lost. Contrast §53 (`9MV2IVNU`), where the equivalent count was **2 of 128**
+and the corpus would have lost a capability.
+
+**The asymmetry that makes the test principled:** "could be used in agentic contexts" is a claim
+about **potential**; the 19 agentic explanation papers are **actual**. *Potential does not compete
+with actual for scarcity.* Worth reusing — it is the sentence that resolved this cleanly.
+
+Also notable: this is the first time the §53 test produced a **demote**. A keep-test that only ever
+says keep is not a test.
+
+**Docs updated:** `Tag_Cheatsheet.md` steering-exclusion preamble. Not propagated to
+`Tag_Prompt.md` (§41) — but flagged as a **machine-error** fix (7/9 wrong), so it belongs in the
+successor prompt alongside §50.
