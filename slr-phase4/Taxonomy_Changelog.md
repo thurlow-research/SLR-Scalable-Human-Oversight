@@ -1908,3 +1908,75 @@ Third such axis needing explicit separation, each of which caused real confusion
 
 **Docs updated:** `Tag_Cheatsheet.md` — both rules inserted immediately **above** the demote-flag
 list, since they gate it. Not propagated to `Tag_Prompt.md` (§41).
+
+## 56. `counterpoint` DEPRECATED for polarity inversion; `scaling-dissent` created (JVWUYDME, 2026-08-24)
+
+**The finding, in the arbiter's words:** *"What gets me is that this paper is arguing for our thesis,
+yet we called it counterpoint."*
+
+`JVWUYDME` (Jessee, *Scapegoat-as-a-service*) argues **for** the review's thesis — that oversight
+should shift from per-item review to command authority over routed exceptions. **All 9 panel runs
+tagged it `counterpoint`**, the opposition marker. Not a split, not a coin flip: unanimous and
+confidently backwards.
+
+### 56a. The defect is polarity inversion, not ambiguity
+
+The written definition asked only *"does it argue against a prevailing position?"* — and Jessee
+plainly does, against HITL-as-practiced. It **never asked which position**, so a paper opposing *bad
+oversight* scored identically to one opposing *oversight itself*.
+
+**This is worse than a noisy tag.** If the discussion ever reports "N papers dissent from the scaling
+thesis," `counterpoint` as applied yields a **false claim** — papers arguing *for* better oversight
+counted as arguing *against* scaling it. Reportable-statistics defect, not a tagging annoyance.
+
+**Corroborating symptom:** proposed on **35 of 128** papers, only **6 unanimous**, **29 split — 82%
+of touched papers**, among the worst agreement rates in the instrument (§40b). That is the signature
+of a near-unfalsifiable predicate: almost every paper argues against *something*.
+
+### 56b. Replaced, not redefined — the `dissertation-input` lesson applied
+
+`counterpoint` is **deprecated**, not narrowed. Redefining a tag that already carries 35 applications
+would leave old and new data meaning different things with no way to tell them apart — exactly the
+collision that `dissertation-input` produced (177 items from an earlier `dissertation-*` pass
+colliding with a new human-only definition). Legacy applications stay put and are explicitly marked
+**never to be read as scaling dissent**.
+
+### 56c. `scaling-dissent` — definition and the guard that makes it work
+
+> The paper argues delegation of oversight is **unworkable or impermissible as a general matter**.
+
+**Polarity guard (arbiter):** *"Our thesis is that many things can be delegated, some can't. That's
+risk routing."* A risk-graded delegate/don't-delegate line **is the thesis**, however conservatively
+drawn. This is the clause that stops `oversight-theater` papers flooding in and recreating
+`counterpoint`'s 82% problem under a new name.
+
+**Three calibration points, two from the corpus:**
+
+| | Claim | Verdict |
+|---|---|---|
+| **Thesis** | delegate broadly, route exceptions to a human — a *graded* line | `risk-routing` — **`JVWUYDME`** |
+| **Approaching dissent** | this class of work is *categorically* off-limits to AI | closer — **`WUUDHL8R`** ("Unacceptable risk… Therefore AI-Driven Refactoring cannot be used here") |
+| **Dissent** | the line can't be drawn reliably · review-everything is the only defensible posture · oversight cannot scale | `scaling-dissent` |
+
+**Discriminator: graded vs categorical.** `WUUDHL8R` stays a *boundary annotation* rather than an
+instance on two counts — its bar derives from a **misreading** of Art. 5 rather than an argument,
+and it concerns *tool usability*, not whether human oversight can scale. An artifact, not a position.
+
+**`JVWUYDME` is the sophisticated near-miss** and the more valuable calibration point: asserting an
+*irreducible human authority* reads like a limit on scaling but is in fact the routing claim.
+Recorded as `cal:human:reject:facet:scaling-dissent` so the negative is machine-findable.
+
+### 56d. Consequences
+
+- **Standing review practice:** whenever the panel proposes `counterpoint`, **surface the
+  `scaling-dissent` question for discussion** — it is a trigger, never a mapping.
+- **Added to the deferred restricted panel re-run** (§37c/§41) alongside `agent-panel` /
+  `cross-model` / the `evaluated-*` pair — `scaling-dissent` needs corpus-wide application to be
+  countable.
+- **The other 5 unanimous `counterpoint` papers** (`E689ZAXC`, `EB49Q8QM`, `ID7IN65K`, `P837LJWE`,
+  `TA6GIUK2`) join the §45 retrospective list; same polarity risk on each.
+- **Expect scarcity.** If the corpus-wide pass returns near-empty, *that is the finding* — "no
+  substantive dissent from the scaling premise" is a legitimate result, not a failed tag.
+
+**Docs updated:** `Tag_Cheatsheet.md` — `counterpoint` marked deprecated in place; `scaling-dissent`
+added beside it. Not propagated to `Tag_Prompt.md` (§41).
