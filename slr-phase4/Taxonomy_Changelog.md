@@ -1980,3 +1980,39 @@ Recorded as `cal:human:reject:facet:scaling-dissent` so the negative is machine-
 
 **Docs updated:** `Tag_Cheatsheet.md` — `counterpoint` marked deprecated in place; `scaling-dissent`
 added beside it. Not propagated to `Tag_Prompt.md` (§41).
+
+### 49b. `framework` — conformance requirement ≠ architecture (Jessee, Eze; 2026-08-24)
+
+Fifth `framework` refinement, and the one that explains the previous four misfires.
+
+**Arbiter ruling:** *"He is enumerating principles of a system, but it hasn't been built… framework as
+software ready or designed to be used, and defining process or principles informing process, are
+different. I think this lands on the latter."*
+
+**Rule:** a **conformance requirement** — a spec of what a system must *produce*, abstracted from how
+it is built — is **not** a framework, however technical its vocabulary. Note this is *not* the
+built/unbuilt axis (§39 already settled that a merely-proposed pipeline architecture **is** a
+framework, +`design-only`). The axis here is **requirement vs design**.
+
+**The tell: the paper declares its own platform-independence.** Jessee (`JVWUYDME`) states it
+outright — *"In regulated environments, 'control' cannot depend on bespoke dashboards or idealized
+tooling. **It must be definable independently of any specific UI, vendor, or platform.**"* MV-HIC
+then lists four artifacts a system must be able to emit before acting (Intent · Inputs/Provenance ·
+Constraints/Policy References · Action Preview as a deterministic dry-run payload), and §8.1 frames
+it as *"a necessary but not sufficient condition."* That is a standard, not a design.
+→ `design-only`, **`cal:human:reject:facet:framework`**.
+
+**Applied identically to Eze (`9MV2IVNU`)**: the ten-KPI suite specifies *what must be measured*, not
+an architecture. → `cal:human:reject:facet:framework` (panel had it 5/9).
+
+**Assistant-error note, third of the same family.** I recommended *for* `framework` on Jessee after
+grepping "technical evidence standard", "integration layer", "deterministic payload" — reading
+**technical vocabulary as technical artifact**. Same shape as reading `framework` and `agentic` by
+their names (§38, §47). The instrument's scoping clauses, not the paper's register, are the operative
+text. **Guard: when a candidate `framework` paper uses architectural language, check whether it
+specifies components or specifies obligations.**
+
+**Consolidated `framework` decision path** (§39 · §49 · §49b): pipeline architecture, built →
+`framework`+`built-system` · pipeline architecture, proposed → `framework`+`design-only` ·
+**conformance requirement / obligations spec → `design-only`, no `framework`** · process or
+org practice → theme only, no `framework` · single task at one lifecycle stage → no `framework`.
