@@ -1839,3 +1839,72 @@ says keep is not a test.
 **Docs updated:** `Tag_Cheatsheet.md` steering-exclusion preamble. Not propagated to
 `Tag_Prompt.md` (§41) — but flagged as a **machine-error** fix (7/9 wrong), so it belongs in the
 successor prompt alongside §50.
+
+## 55. The directness / tangency test — what actually drives the Core/Context call (2026-08-23)
+
+Articulated by the arbiter after a run of demotes that the written §3 bar did not cleanly explain.
+
+**The test, in the arbiter's words:** *"Does it have to do about oversight, scaling oversight, or a
+practice that directly applies? Then keep in core. If tangential to that, then context."*
+
+**The specific weakening it names:** *"An empirical finding about underlying tech (LLM as code
+review) doesn't directly contribute to the scalable human oversight. **Code review is a separate
+topic we are taking as a given.**"*
+
+That is the sentence the written bar was missing. §3 requires "(1) directly about scalable human
+oversight… AND (2) an operationalizable mechanism, measurement, framework, or empirical finding."
+A capability benchmark can satisfy **(2) completely** — sound method, real result — and still fail
+(1). The bar named the ingredients but not the failure mode; **tangency** is the failure mode.
+
+**The positive pole makes it usable.** Scaling oversight *is* **allocating finite human attention**,
+so findings on **risk identification, prioritization, routing** are directly on-question. Arbiter:
+*"A finding on risk identification or prioritization would tie in more directly."* Findings on
+whether the underlying technology **can perform the task** are upstream — this review presupposes
+code review rather than studying it.
+
+| Directly on-question | Tangential |
+|---|---|
+| where to look · what to prioritize · how to allocate review · how the human exercises judgement | whether the underlying tech is *capable* of the task |
+
+### 55a. NOT categorical — judge on coverage, not genre
+
+**Arbiter's guard:** *"Consider as contribution to scalable human oversight is not a given. Case by
+case based on what is covered. If the code reviews, for example, include risk ratings and oversight
+explanation, then it might be a keeper. Just establishing LLM capability to do reviews, less so."*
+
+This matters at scale: `ai-review` is modal on **33 of 128** papers, and a categorical
+capability-exclusion would over-demote a large slice of them. A capability study that *also* carries
+risk ratings, prioritization, or explanation support is core-eligible, because those bear on
+allocating and exercising attention. **Same failure mode as the §38 `framework` widening in reverse:
+do not convert a good discriminator into a blunt population-level rule.**
+
+### 55b. Two failure modes of tangency
+
+1. **Wrong topic — capability only.** The *evaluator family*, all demoted for the same reason:
+   `WBS9U5N7` (spec-gaming evades holistic eval) · `UDVHQ5HR` (LLMs failing to verify against NL
+   specs) · `BAWCBT9R` (auditing LLM-as-judge bias) · `PR4GS7SP` (ACCA correctness oracle) ·
+   `8KJEKBGT` (LLM vulnerability/functionality assessment). Five papers, methodologically sound,
+   collectively answering "does the evaluator work?" — a question upstream of the review.
+2. **Right topic, peripheral treatment.** `TJH7QFAX` (Borg) contributes a genuine prioritization
+   signal — CodeHealth predicting AI-modification success, framed by the authors as guiding "where
+   additional human oversight is warranted" — but as a stated implication, not the paper's focus.
+   Demoted. **The positive pole is not a keyword trigger: mentioning prioritization is not
+   contributing to it.**
+
+### 55c. Theme membership ≠ tier (third independent axis)
+
+Earning a theme does not make a paper Core. `ai-review`'s definition explicitly includes *"its
+reliability limits"*, so capability and reliability studies **are** `ai-review` by definition and
+still fail the directness test. That is why it is simultaneously the corpus's **largest theme
+(33/128)** and its **most demoted** — and why the panel keeps proposing keeps on this class.
+
+Third such axis needing explicit separation, each of which caused real confusion today:
+
+| Axis | Confusion prevented |
+|---|---|
+| tier vs **evidence strength** (§36b) | `design-only` is a rung, not a demerit |
+| tier vs **dissertation value** | Context papers can be dissertation-central (`TJH7QFAX`, `RNDPW7VA`, `LGZXFLSJ`) |
+| tier vs **theme membership** (§55c) | earning `ai-review` does not make it Core |
+
+**Docs updated:** `Tag_Cheatsheet.md` — both rules inserted immediately **above** the demote-flag
+list, since they gate it. Not propagated to `Tag_Prompt.md` (§41).
