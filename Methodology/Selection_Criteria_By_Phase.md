@@ -190,14 +190,15 @@ raw rubric):**
     fast-moving, practitioner-driven phenomenon: a recency bias, not a safeguard. Preprints
     that subsequently publish are updated in place per the preprint→journal convention
     (`orig-type:` / `orig-date:` lineage tags; see the *Preprint - Now Published* collection).
-  - **The hand-flagged exception channel is `source:practitioner`** (added to the record
-    2026-08-24; the channel existed but was undocumented). Targeted, non-systematic collection
-    of practitioner books, talks and posts encountered during the review period, screened
-    against the same criteria. **8 items to date; 1 reached Core** — `RPHK78A9` (Kim & Yegge,
-    *Vibe Coding*, IT Revolution), kept at `s1:human:keep`. Two were screened out
-    (`s3:opus:discard`, `s2:machine:discard`). **5 remain unscreened** and must be dispositioned
-    before the PRISMA flow is finalised, or explicitly scoped out as background reading rather
-    than search results — otherwise the flow numbers will not reconcile.
+  - **Tag ↔ stream mapping (recorded 2026-08-24).** The identification tier 3 streams above carry
+    Zotero source tags: `source:practitioner` = Practitioner Network, `source:cao` = Committee
+    Recommendations, `source:coursework` = author-assembled prior reading. Yields to date:
+    **`source:practitioner` 8 items, 1 reaching Core** — `RPHK78A9` (Kim & Yegge, *Vibe Coding*,
+    IT Revolution), kept at `s1:human:keep`; **`source:cao` 45 items, 0 reaching Core.** Both
+    behaved as the tier intends: tight inclusion, small yield.
+  - **Open bookkeeping item:** 5 of the 8 `source:practitioner` items carry no `s1:`/`s2:`/`s3:`
+    disposition. Screen them, or scope them explicitly as background reading rather than
+    identified records, so the PRISMA identification and exclusion counts reconcile.
 
 **Lineage tags:** `s3:opus:<bin>` + `centrality:<n>`.
 
