@@ -2118,3 +2118,175 @@ instruct the model to **identify the mechanism first and only then match it to a
 above (§47 apparatus-vs-object, §50 method≠contribution, §57 instrumentation≠contribution, the
 plumbing rule) is a special case of that one instruction. **Consider a single explicit step: "state
 what the mechanism does in your own words before assigning any tag."**
+
+## 60. `steering` — the three-case discriminator: contribution vs plumbing (2026-08-24/25)
+
+Three papers in two days drew `steering` proposals from the panel and got three different arbiter
+answers. The rulings are consistent, but only under a discriminator the instrument did not state:
+**§54's temporal rule settles one case; "contribution, not topic" settles the other two.**
+
+| Paper | Panel | Ruling | Operative reason |
+|---|---|---|---|
+| `CI93QRUH` HiLDE (Vasconcelos-adjacent) | 7/9 | **reject** | §54 — *within-turn* selection among what the model already produced |
+| `JCTP8VXP` Zoro (Ma et al.) | **9/9** | **reject** | rule injection is **plumbing for enforcement**; the contribution is the CLI gate |
+| `C88VGWMI` Marri | **9/9** | **ACCEPT** | strip the enforcement and injection **is** the contribution — nothing else is there |
+
+**Why §54 does not decide the last two.** §54 excludes *within-turn* explanation/selection and
+requires shaping "across turns." Both Zoro's constitution-style rules and Marri's constitution
+persist across the whole development process, so both clear the temporal bar. The temporal rule was
+written for HiLDE and does not discriminate the spec-driven cases at all.
+
+**The rule that does — already in the facet text, never applied as the primary test:** steering
+fires when generation-shaping is *"a **substantive part of the contribution** — NOT any incidental
+prompt-shaping component every AI system has."* Applied:
+- **Zoro** — arbiter: *"It describes a mechanism to set rules constraining what the LLM can do…
+  In the scenario given, that was steering… but it could be enforcing a process, checklist, etc. too
+  in pure agentic."* The rule *content* is user-supplied and arbitrary; the contributed machinery is
+  `zoro-cli` refusing `update-step` until proofs exist. Steering is what the plumbing carries, not
+  what was built. **Reject** — despite 9/9 and despite the paper's own §8.1 using the word
+  ("**Steering** agent behavior through explicit, enforceable, and evolvable policies…"), which is
+  almost certainly what drove the unanimity (§59 vocabulary matching).
+- **Marri** — the Constitution is *"not prescriptive about implementation technology; it specifies
+  what must hold, not how to achieve it."* No gate, no checker, no executable enforcement anywhere
+  (see §61). What remains is a structured document injected into the generator's context. Arbiter:
+  *"just injecting 'don't do that' to the prompts."* That is the contribution. **Accept.**
+
+**Test to reuse:** *if the enforcement machinery were removed, would anything remain?* If yes, the
+prompt-shaping was plumbing (reject). If the injection **is** what remains, it is the contribution
+(accept). Expect this on every spec-driven / rules-file paper; the class is growing.
+
+**Docs:** `Tag_Cheatsheet.md` steering entry needs the discriminator added at closeout — the current
+text carries the "contribution, not topic" clause but buries it behind the §54 temporal preamble,
+which is why all three cases had to be argued from scratch.
+
+## 61. `framework` — §49b's second application, and the enforcement-gap observation (`C88VGWMI`, 2026-08-25)
+
+**Panel 9/9 `framework`; arbiter rejected.** Second clean application of §49b
+(conformance-requirement ≠ architecture), and the tell fired exactly as written — *the paper
+declares its own platform-independence*:
+
+> *"A constitution is **not prescriptive about implementation technology; it specifies what must
+> hold, not how to achieve it**."* · *"The methodology is **domain-agnostic**."*
+
+Same shape as Jessee/`JVWUYDME` MV-HIC. §49b is now two-for-two and can be treated as reliable.
+
+**Full-text check on where enforcement lives — it doesn't.** Arbiter asked directly whether the
+paper says *how* the guardrails are enforced. It does not:
+- The **"Validator"** appears once, as a box in an ASCII architecture figure, never described in prose.
+- **"Machine-readable"** means the constitution is *structured* (CWE mappings, MUST/SHOULD/MAY per
+  RFC 2119). Nothing in the system machine-*reads* it.
+- The **Compliance Traceability Matrix** is the strongest automation claim — *"principle to
+  implementation artifacts at file and line-number granularity, **enabling** automated compliance
+  verification."* Enabling, not doing; Table 1 is hand-authored and the stated purpose is
+  *"Audit Support, where **auditors can verify**."*
+- The only executable enforcement in the paper is **Pydantic field validators** in the demo app —
+  ordinary input validation that happens to satisfy principle SEC-006, not a check of the constitution.
+
+Actual pipeline: **constitution → context for the generator → human-authored matrix afterward.** The
+paper's central claim, *"secure by construction rather than by post-hoc verification,"* is therefore
+unearned: prevention here is better prompting, and there is no construction-time check.
+
+**Disposition — Context (§53).** Not tangency: transferability is fine. **Scarcity fails.** Marri and
+`JCTP8VXP` (Zoro) occupy the same axis — structured rules constraining AI generation — and Zoro ships
+a CLI that rejects commands plus executable tests. On the shared axis Marri is dominated. Arbiter:
+*"Not enough meat in the discussion for others to use."* Third negative application of §53 (after
+§54a), which continues to make it a real test rather than a keep-rubber-stamp.
+
+**Worth carrying forward — an unwitting instance of the §A enforcement gap.** `HOS_Seeded_Theme_Candidates`
+§A records *"the gap is enforcement, not knowledge — orgs don't lack oversight policy, the policy is
+documented but not mechanically enforced."* Marri writes policy in deliberately machine-readable form,
+claims construction-time enforcement, and never builds it. That is the gap appearing **in the
+literature** rather than in an audit. **Example-grade, not evidence-grade** — the paper does not
+reflect on its own missing enforcement, so it instantiates the gap rather than reporting it; cite it
+as an illustration, do not synthesise from it. This distinction is why Context is the right tier even
+though the observation is valuable.
+
+**Other calls:** primary `ai-code-insecurity` (arbiter: *"This one is all about improving security"*),
+overriding a genuine 3-way panel split (`provenance-auditability` 4 / `ai-code-insecurity` 4 /
+`org-governance` 1 — no modal winner, a tripwire in itself). `regulatory-compliance` **kept** (7/9)
+against an initial §44 lean, on CWE/PCI-DSS/GDPR mapping plus audit support as a stated purpose.
+`method-experiment` (5/9) rejected — the §35 gold pass already ruled `evaluated-synthetic`, and §34's
+fork forbids both for one event.
+
+## 62. `agent-scope-drift` — tag by the OBJECT of the drift (Zhu vs Zoro, 2026-08-24)
+
+The panel proposed `agent-scope-drift` on two consecutive papers; the arbiter accepted one and
+rejected the other. Same word, different object — and the definition already says *"tag by the
+mechanism's **object**, not the actor's motivation."* Extended: **also not by the word.**
+
+- **`ZGST9CY6` (Zhu) — REJECT.** Its drift machinery is *"versioning, drift detection, and abstain
+  mechanisms"* over *"significant drifts in system behaviour that occur even without explicit
+  re-training,"* with *"drift detection precision/recall"* as a sample metric. That is **model
+  behavioural drift** — a statistical property of the system over time. Nothing wanders off-mandate.
+- **`JCTP8VXP` (Zoro) — ACCEPT.** *"Codex **pauses mid-execution and asks** Johnny whether gray is
+  an acceptable default colour… a rule that might normally **go unnoticed**,"* marked strict because
+  the user *"does not want Codex **quietly choosing a colour**."* Plus the CLI halt on unproven
+  rules. That is **an agent making unreviewed decisions outside its mandate**, and mechanisms that
+  bound it — the theme as defined.
+
+**Rule:** `agent-scope-drift` requires *an agent departing from intent*. Distribution/behaviour drift
+of a model is **not** this theme, however prominent the word "drift" is in the paper. Panel proposed
+it 1/3 on Zhu and 3/9 on Zoro — weak signals both times, so the tag is not reliably machine-detected
+in either direction; expect to rule it by hand.
+
+## 63. `remediation-gating` — §4 refined: a gate counts when it drives an autonomous fix (`JCTP8VXP`, 2026-08-24)
+
+**Assistant recommended reject citing §4; arbiter overrode, and the override is correct.**
+
+§4 records an over-tagging: VibeGuard (`T8E8SCCG`) drew `remediation-gating` from a human *and*
+Opus and should not have. The assistant read §4 as a blanket caution against gates and applied it
+to Zoro's CLI. §4's actual reason is narrower — VibeGuard is *"a detect/publish gate with **no
+auto-fix**."*
+
+Zoro differs on exactly that fact. The definition's process-gate list already includes
+*"stop-progression, fail-closed,"* and there **is** an autonomous fix being governed:
+
+> *"Codex is forced back to handle the migration. It **generates a backfill script** for all
+> existing LogEntry records, **runs a unit test to verify it**, and submits proof."*
+
+No human in that loop. **Accept.**
+
+**Refinement to §4 (binding):** a fail-closed gate earns `remediation-gating` when it **drives an
+autonomous remediation**; it does not when it merely blocks publication and hands back to a human.
+The discriminating question is *what happens after the gate fires* — not whether a gate exists.
+§4 should be read with this attached; on its own it reads as a blanket exclusion and was applied as
+one.
+
+## 64. `counterpoint` polarity inversion — second measured instance; and §52's first clean negative (`59ZW4R58`, 2026-08-24)
+
+**§56 second instance.** Maes drew `counterpoint` **8/9** — another thesis-*supporting* paper read as
+opposition, after Jessee/`JVWUYDME` at 9/9. Two independent high-consensus misfires on papers arguing
+**for** engineered oversight promotes the failure mode from observed to **measured**. The panel is
+reading *register* — "gotchas," "goes against the trend," a pessimistic tone — as *polarity*.
+
+Maes's actual argument arc is the dissertation's own: generation scales → safety requires rigorous
+human verification → verification erases the productivity gain and excludes non-programmers →
+*"**Therefore, there would be value to now automate such frameworks**"*; §7.6: *"they are **not
+automated yet**… In an upcoming paper, we will describe an **automated, and somehow autonomous,
+implementation**."* Under §56's guard — dissent requires delegation being unworkable or impermissible
+**as a general matter** — this fails the test exactly as Jessee did. Rejected.
+
+### 64a. §52's first clean negative application
+
+Maes was weighed for `oversight-scaling-inversion` (panel 4/9) and **declined**. The assistant
+initially argued for it; the arbiter pushed back — *"indirectly acknowledging it… but I don't think
+it is direct enough"* — and a full-text search settled it:
+
+- *"huge amount of code"* appears **once**, in framing, never connected to review capacity.
+- **No** bottleneck / backlog / throughput / keep-up language anywhere in ~7,000 words.
+- "Scale" appears once more meaning the *built system* is unscalable — a different sense entirely.
+
+What the assistant had read as the inversion — *"they now must perform rigorous code verifications"*
+negating the productivity gain — is a claim about **cost per item**, not **volume exceeding
+capacity**. §52's narrowing exists precisely to stop the tag firing on any paper observing that
+oversight is expensive, and it worked. **This is the narrowing discriminating rather than merely
+restricting** — worth recording next to §54a as evidence the fail-open scoping is load-bearing.
+
+**Consequence — a second scaling mechanism logged, not tagged.** Maes argues AI code is *less
+reviewable per unit*, so oversight cost rises at constant volume. Distinct from T0's volume
+mechanism and multiplicative with it. Recorded as a WATCH ITEM in
+`HOS_Seeded_Theme_Candidates` §A with a promotion tripwire (a second paper making per-item
+reviewability decline its own mechanism), explicitly **not** as an `oversight-scaling-inversion`
+instance. A third candidate mechanism surfaced the next day — detector false-positive volume
+defeating triage (alert fatigue), with two instances already (`ZGST9CY6` Zhu, `R9CDT9KB` Mahmud) —
+and belongs in the same watch item.
