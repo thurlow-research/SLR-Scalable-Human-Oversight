@@ -196,9 +196,9 @@ raw rubric):**
     **`source:practitioner` 8 items, 1 reaching Core** — `RPHK78A9` (Kim & Yegge, *Vibe Coding*,
     IT Revolution), kept at `s1:human:keep`; **`source:cao` 45 items, 0 reaching Core.** Both
     behaved as the tier intends: tight inclusion, small yield.
-  - **Open bookkeeping item:** 5 of the 8 `source:practitioner` items carry no `s1:`/`s2:`/`s3:`
-    disposition. Screen them, or scope them explicitly as background reading rather than
-    identified records, so the PRISMA identification and exclusion counts reconcile.
+  - **Verified 2026-08-24:** all 8 `source:practitioner` items carry screening dispositions;
+    none are unaccounted. Six were discarded at s1, one at s3 (`8FFCMYBL`), and one reached
+    Core (`RPHK78A9`). The tier-3 streams reconcile.
 
 **Lineage tags:** `s3:opus:<bin>` + `centrality:<n>`.
 
