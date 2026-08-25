@@ -391,6 +391,59 @@ it affects **12**, of which 7 are Core: `ZGST9CY6` (Zhu), `9MV2IVNU` (Eze), `JVW
 screened-out pool items whose typing affects no output, and a bulk mutation of that size across the
 source of truth is not worth the risk.
 
+### OPEN PROBLEM — find authority signals that do not depend on venue (raised 2026-08-25)
+
+**Arbiter:** *"We are forced to use preprints. The domain is moving too quickly. Make a note that we
+need to look for other ways to provide authority to these sources."*
+
+If venue cannot carry authority in this corpus, something else must, or the dissertation is open to
+the charge that it rests on unrefereed work. This needs a **decided, documented, uniformly applied**
+answer before synthesis — not a per-paper improvisation.
+
+**The obvious signal is already in the library and does not work.** Citegeist/OpenAlex enrichment
+supplies `Citegeist.citedByCount`, `fwci` and `percentile` in the Extra field, but coverage is
+**23 of 79** Light Read papers, and it fails *systematically on SSRN* — the very stream this problem
+is about. `ZGST9CY6` (Zhu) has **no** Citegeist data despite being cited **15 times** (arbiter,
+2026-08-25, from SSRN/Scholar). Any authority argument built on the existing enrichment would
+silently privilege arXiv and indexed venues over exactly the papers that need defending.
+
+**Candidate signals to evaluate (none adopted yet):**
+1. **Multi-source citation counts.** Semantic Scholar + Google Scholar + SSRN's own metrics, to
+   cover what OpenAlex misses. The `semantic-scholar` skill can supply counts and influential-citation
+   flags in bulk; SSRN download/abstract-view counts are weak but non-zero evidence.
+2. **Author track record**, not paper track record — prior refereed publication and h-index for the
+   author set. Distinguishes Zhu (CSIRO Data61 + UNSW, six authors with SE/AI publication histories)
+   from a single-author paper with no prior record, which is the distinction that actually matters
+   and that venue status fails to capture.
+3. **Institutional provenance** — national labs, university groups, standards bodies.
+4. **Independent corroboration inside the corpus** — is the claim demonstrated elsewhere by someone
+   else? This is already how `VFNJSZD9` was assessed (Mitropoulos and Parris demonstrate what it
+   asserts) and it is the strongest available substitute for peer review, because it is *evidence*
+   rather than *reputation*.
+5. **Documented deployment / known uses** — Zhu names AAAI's review pilot, Revelo eReviewer,
+   Vertesia, ValidMind, Norm AI, Acrolinx, Consensus, Elicit, Scite. A paper whose mechanisms are in
+   production somewhere has external validation independent of refereeing.
+6. **Standards alignment** — explicit mapping to NIST AI RMF, ISO/IEC 42001, OWASP LLM Top 10 anchors
+   a paper to externally-reviewed artifacts (`VFNJSZD9` §8, `XZEHQYNZ`).
+7. **Subsequent publication** — resolved by the closeout re-check below.
+8. **Explicit MLR quality assessment** — apply Garousi, Felderer & Mäntylä's authority / accuracy /
+   coverage / objectivity criteria per paper and *record the result*, rather than leaving it implicit.
+   `XZEHQYNZ` (Tuape) is a corpus example of a paper doing exactly this to its own grey-lit sources,
+   and is citable as precedent for the method.
+
+**Design constraints on whatever is chosen.**
+- **Apply it uniformly, or not at all.** A signal applied only to papers whose conclusions are liked
+  is post-hoc rationalisation. Decide the rule, then run it across the corpus.
+- **Citation counts penalise recency**, and 77% of Core is 2025–26. A raw count will rank a 2023
+  paper above a 2026 one regardless of merit; `fwci`/percentile partially correct for this, raw counts
+  do not. **11 Light Read papers have zero citations** and that is uninformative, not damning.
+- **Do not let the signal become an inclusion criterion retroactively.** Screening decisions are
+  already made and recorded; authority evidence is for *defending* the corpus in the methods chapter,
+  not for re-filtering it. Re-filtering after the fact would be a form of HARKing.
+
+**DEFERRED — do not build yet.** Decide which signals to adopt at closeout, alongside the
+publication-status re-check below, so both passes over the corpus happen once.
+
 ### DEFERRED — publication-status re-check at closeout
 
 **Re-check the actual publication status of every surviving preprint/SSRN paper before synthesis.**
