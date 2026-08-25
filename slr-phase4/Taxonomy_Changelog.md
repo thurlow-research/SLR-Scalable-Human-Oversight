@@ -2290,3 +2290,66 @@ reviewability decline its own mechanism), explicitly **not** as an `oversight-sc
 instance. A third candidate mechanism surfaced the next day — detector false-positive volume
 defeating triage (alert fatigue), with two instances already (`ZGST9CY6` Zhu, `R9CDT9KB` Mahmud) —
 and belongs in the same watch item.
+
+## 65. Lit-review themes require FOCAL synthesis — a mechanism inventory earns nothing (`4AXDVW7J`, 2026-08-25)
+
+**Panel 9/9 `rules-based-checks`; arbiter rejected on a full-text check.** The largest unanimous
+override of the Light Read pass, and the second 9/9 override in two papers (after `framework` on
+`C88VGWMI`). Both were caught the same way: by reading past the vocabulary to what the paper does
+with it.
+
+Arbiter: *"No to rules based check. I didn't see anything. It was more of a design and what's
+important to check."* Verification found the terms present but framed as survey material:
+
+> *"**Recurring mechanisms.** At interaction time, typical SE pipelines combine a small set of
+> mechanisms: prompt and response schemas, repository-grounded retrieval with scoped access, and
+> **verification passes (for example, tests, linters, licence checks, or safety filters)**"*
+> *"This is a **descriptive inventory of interaction-time mechanisms observed in SE practice**."*
+
+Two occurrences, both inside an example list, inside an inventory of what other people already do.
+
+**Rule (extends §58 to secondary literature).** A `lit-review` earns a **theme** only on **focal
+secondary synthesis** — the review must gather, compare and draw conclusions from evidence *about
+that theme*. **Enumerating a mechanism in a catalogue of practice is not focal synthesis.** The
+existing instrument already says this for the `risk-*` flags (*"lit-reviews CAN earn these flags via
+focal secondhand synthesis… passing enumeration still never fires"*); this entry states that the same
+bar governs **themes**, which was implicit and had never been applied as a test.
+
+**Why the panel missed it.** §59 vocabulary matching. "checks", "linters", "verification passes",
+"safety filters" all appear; a label-reader sees the theme. The discriminator is *whose* mechanism
+and *what the paper does with it* — the same object-vs-apparatus family as §47 and §50, here applied
+to survey content rather than research machinery.
+
+**Watch consequence:** inventory-style reviews are a recurring shape in this corpus (roadmaps,
+capability models, SE2030-style agenda papers). Expect high-consensus theme proposals from them that
+reflect the *inventory's* coverage rather than the *review's* argument. Check the framing sentence
+around the term before endorsing.
+
+## 66. `metrics` — naming what to report is not defining a metric (`4AXDVW7J` vs `59ZW4R58`, 2026-08-25)
+
+**Panel 3/9 `metrics`; the assistant argued FOR it and the arbiter rejected.** Arbiter: *"it
+enumerated things important to check, but not sure that it rose to the level of metrics."* Correct,
+and the pair of papers gives the boundary a clean worked contrast.
+
+- **`4AXDVW7J` (Migliarini) — NO.** Delivers *"harmonized evaluation constructs and a **reporting
+  kit** that co-reports utility with ethical compliance, robustness to prompt perturbations,
+  traceability from constraints to output spans/tool calls, and sustainability overhead with full
+  configuration disclosure."* Every item names a **dimension to report**. Nothing is computed: no
+  formula, no index, no threshold, no aggregation rule.
+- **`59ZW4R58` (Maes) — YES.** Ships `CEI = α·C_cyclomatic + β·D_naming + γ·S_structural`, an
+  `AGDV_Score` function with explicit weights (0.4 coverage / 0.3 readability / 0.3 consistency), and
+  `M_understanding ≥ T_threshold`. Computable, with stated parameters.
+
+**Rule:** `metrics` requires a **defined measurement procedure** — an index, formula, score,
+threshold, or aggregation the reader could apply to produce a number. **A list of dimensions worth
+reporting is a reporting framework, not a metric**, and belongs to the paper's theme(s) plus (where
+the form fits) `design-only`. The existing definition's *"defines metrics/scores/indices as a
+deliverable"* wording was read too loosely — "as a deliverable" was carrying the weight, when the
+operative word is **defines**.
+
+**Note the near-miss both ways.** A reporting kit is genuinely deliverable-side and genuinely
+reusable, which is what makes it tempting; and Zhu's per-pattern "Signals to track" lists sit on the
+same line — they were accepted there because Zhu pairs them with computed quantities (veto precision,
+audit reversal rate, drift detection precision/recall) rather than with dimension names. Where a
+paper offers only dimension names, the honest tag set is theme + `design-only`, with the reporting
+guidance captured in the rationale.
