@@ -504,6 +504,36 @@ corrections and the manual Google Scholar counts.
 **Scope:** surviving papers only (Core + Context). Screened-out pool items are not carried into
 synthesis and do not need re-verification.
 
+#### Drift severity tracks the KIND of transition, not the fact of one (two worked cases, 2026-08-25)
+
+Both version transitions in the corpus have now been checked at full text, and they came out
+opposite ways. **The difference is not random — it predicts which papers need re-extraction and which
+need only a metadata update**, which is what makes the sweep affordable.
+
+| | `DN9R4PDQ` (Li et al.) | `ZGST9CY6` (Zhu et al.) |
+|---|---|---|
+| Transition | arXiv preprint → **CHIWORK '26 conference paper** | SSRN preprint → **AI and Ethics** (Springer journal) |
+| Title | **changed twice** ("for UX design" → "for product design" → "in product teams") | unchanged |
+| Substance | **materially reframed** — scale/scaling 7→13 mentions, traceability 2→5, **calibration 0→4** (absent from the draft entirely); five sub-theme headings rewritten around scale | **unchanged** — copy-edits only ("flags cases that need verification" → "flags cases needing verification"), plus citations added throughout |
+| Consequence | the framing that makes the paper relevant **exists only in the published version**; quoting the draft would have misrepresented it | no tag, note or changelog entry required revision; the §9b anchor passage survives and now carries a citation |
+
+**Working prior for the sweep (revise if a third case contradicts it):**
+- **Preprint → journal, title unchanged** → expect copy-editing. Update metadata; a targeted check of
+  the specific passages the review depends on is sufficient. *Do not assume — Zhu was verified, not
+  presumed.*
+- **Preprint → conference/venue with a title change** → expect substantive revision. **Re-extract and
+  re-read before quoting**, and re-check any tag that rested on framing rather than findings.
+- **Title change is the loudest signal available before opening the file**, and it is visible from
+  metadata alone. It is also what defeats Zotero's duplicate detection (see the Li lineage note), so
+  the same signal flags both risks at once.
+
+**Handling when a version is superseded:** keep both. Label attachments explicitly — Zhu's are marked
+`★ PUBLISHED … AUTHORITATIVE, quote from this` and `SUPERSEDED … provenance only, do not quote` — and
+retain the superseded extraction under a distinct filename (`ZGST9CY6.preprint-ssrn.txt`), because
+**the panel runs and all `cal:human:*` tagging were performed against the superseded text** and the
+tagging trail must stay reconstructible. Record the arrangement in the item's `extra` so it does not
+have to be rediscovered.
+
 ### DEFERRED — publication-status re-check at closeout
 
 **Re-check the actual publication status of every surviving preprint/SSRN paper before synthesis.**
