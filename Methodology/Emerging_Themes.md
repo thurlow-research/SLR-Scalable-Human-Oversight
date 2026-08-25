@@ -898,3 +898,47 @@ kept only as a pointer so there is a single source of truth.
 Synthesis tags are distinct from the screening-lineage tags (`source:`, `s1:`, `s2:`, `s3:`,
 `centrality:`, `superseded-by:`, `cocite:`): they mark *why an item matters to the argument*,
 independent of core/context disposition, and are applied liberally (an item can carry several).
+
+---
+
+## Candidate corpus-level finding — "where to look" is well covered; "does looking work" is not (2026-08-24)
+
+**Status: UNVERIFIED. Do not use until counted.** Recorded during the Light Read pass so it is not
+rediscovered at synthesis.
+
+**The claim:**
+
+> The literature is rich in deciding **where to look** and poor in measuring **whether looking works**.
+
+**Where it came from.** Langer et al. (`5DCQDB4C`, Context) imports Signal Detection Theory into the
+human-oversight setting, which supplies vocabulary the corpus otherwise lacks:
+
+- **Response criterion (`c`)** — how readily the overseer accepts. Set optimally by the *prior
+  probability of a defect* and the *cost of a miss*.
+- **Sensitivity (`d′`)** — whether the overseer, once looking, actually *detects* the defect.
+
+Under that frame, **risk-routing is criterion-setting**. "This file is historically buggy, review it
+harder" is adjusting `c` by base rate — the same mechanism, in operational rather than SDT language.
+(Noted by the arbiter of HOS's own risk rating, which does this without using SDT terms.)
+
+**The apparent asymmetry:**
+
+| Half of SDT | Corpus coverage |
+|---|---|
+| **Criterion-setting** — where to look, what to prioritise, how to route | Heavily populated: `risk-routing` is among the largest themes; `TJH7QFAX` (Borg), `BU73N7PC` (Abreu), `6F3S8IB7` (HAIF), `3ZVMBGPB` (Kamalı) all contribute allocation machinery |
+| **Sensitivity-measuring** — whether the reviewer catches what they are shown | Apparently scarce: `9MV2IVNU` (Eze) operationalizes it as override rate (*"an extremely low OR may indicate rubber-stamping"*) and was **2 of 128** on the `oversight-theater`+`metrics` scarcity count (§53) |
+
+**How to verify (do this at synthesis, not now):** classify Core papers into criterion-setting
+(contributes a routing/prioritisation signal or allocation logic) vs sensitivity-measuring
+(measures whether human review actually detects defects), and count. Beware double-counting papers
+that do both, and beware treating *proposing* a gate as *measuring* its effectiveness.
+
+**Why it matters if it holds.** It is a gap statement of the kind an SLR exists to produce, and it
+converts into a direct survey question for the dissertation: *do organizations know whether their
+reviewers catch what gets routed to them?* Most likely do not — which would make the gap both a
+literature finding and an empirical one.
+
+**Caveat.** The asymmetry may be an artifact of the instrument rather than the literature:
+`risk-routing` is a theme with a facet family behind it, while "measured detection effectiveness"
+has no tag at all. Check whether the absence is in the papers or in the vocabulary before reporting
+it.
