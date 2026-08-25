@@ -602,3 +602,55 @@ almost certainly by reading the methods section as content. That is the apparatu
 (Taxonomy_Changelog §47), and it is the same trap our corpus tagging must avoid when a paper's
 research design resembles the phenomenon under study. Cite this paper for its method; do not tag it
 for it. Disposition: Context, `survey-input`, `02 - Supporting`.
+
+## 9b. Second external precedent — divergence detection as a *designed* oversight mechanism (ZGST9CY6, found 2026-08-24)
+
+§9 established that others independently arrived at our panel **procedure**. Zhu, Lu, Ding, Lee &
+Wang (2025), *Designing Meaningful Human Oversight in AI* (CSIRO Data61 / UNSW, `ZGST9CY6`) supplies
+a different and stronger kind of support: it names the same construct as a **prescribed design
+mechanism** for oversight in general, not as one team's study method.
+
+Their mechanism catalogue (their Table 4) lists:
+
+> **Divergence detection and independent checker** — *"Comparison against a second AI/system,
+> heuristic, or ruleset with alerting"* — agency dimension *source of action* — solve–verify
+> contribution: *"Flags cases that need verification when solvers disagree, **avoids blind
+> trust**."*
+
+It recurs in all four of their end-to-end patterns, including *"Stand up a lightweight rules checker
+to power divergence alerts"* (Pattern 1) and *"an **independent summariser** or rule-based sampler to
+**challenge the main synthesis**"* (Pattern 3).
+
+**Why this is worth citing in the methodology chapter, alongside §9.** §9 is a precedent of
+*practice* — another team happened to do this. This is a precedent of *prescription* — an
+AI-assurance group states that independent cross-checking is a mechanism oversight designs **should**
+include, and gives the reason (disagreement is the signal that a case needs human verification;
+blind trust is the failure it prevents). Cited together, the pair moves the panel design from "we
+invented a defensible procedure" (§9: "others did it too") to "we applied a mechanism the oversight
+literature independently prescribes."
+
+**Two further alignments worth naming:**
+
+- **Zhu's Pattern 3 is a literature-synthesis pipeline** — corpus register with frozen
+  inclusion criteria, dedup rules, per-claim provenance anchors, sentinel-item coverage probes,
+  minority-view mining, risk-weighted spot checks, abstain on low evidence density. That is a close
+  structural match to this SLR's own Stage 3–5 design, arrived at independently. Their "Known Uses"
+  for the pattern are Consensus, Elicit, and Scite.
+- **Their Pattern 2 prescribes reviewer calibration on a golden set with inter-rater agreement
+  tracking** — the same instrument as our calibration rounds and κ reporting.
+
+**Guardrail — do NOT let this become circular.** Zhu is a *corpus paper* under review by the very
+panel whose design it is being cited to support. Two consequences: (a) its own tagging must be
+argued from its content, never from its usefulness to our method (it was: `org-governance` primary,
+nine themes, all textually grounded); and (b) when cited in the methodology chapter it must be
+presented as **independent published prescription encountered during screening**, with the
+screening-discovery noted — not as a source consulted while designing the panel, which it was not.
+The panel design predates this paper's discovery; the changelog and this file carry that timeline.
+
+**Corpus-tagging consequence.** `ZGST9CY6` carries the staged `cal:human:facet:agent-panel` +
+`cal:human:facet:cross-model` by arbiter ruling (2026-08-24). Note the evidence is *"a second
+AI/system"* / *"independent model"* — **functional independence, not named vendor diversity**. If
+the staged facets are formally grafted, the `cross-model` definition ("different underlying
+vendors/models") needs a decision on whether prescriptive "independent model" language qualifies, or
+whether the facet requires an actually-composed multi-vendor panel. This is the first item where the
+distinction bites; the sweep will produce more.
