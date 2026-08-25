@@ -229,6 +229,71 @@ oversight layer).
   platform that happens to have difficulty tiers." Curating raw material from a well-known pool is
   authored curation, not benchmark administration. (ZBF86IJM doesn't land on this ladder at all in
   the end — see the `evaluated-synthetic` entry below for why.)
+- **(Corpus-seeded, 2026-08-24) `evaluated-real-world` — MISSING LADDER RUNG, staged as a
+  candidate. NAME NOT SETTLED.** Motivating instance: `R9CDT9KB` (Mahmud, Rawajfih & Arnold,
+  *Trust-calibrated multi-stage LLM pipeline*, ACSAC Workshops 2025) — tool-side evaluation on a
+  **1,979-example corpus the authors assembled from real CVE/NVD records**, with *"synthetic data
+  comprises 4% of the full corpus, deliberately kept below 5% to minimize potential bias from
+  LLM-generated examples."* Arbiter ruled **neither existing rung applies** (2026-08-24), and §34's
+  own wording is why: `evaluated-benchmark` requires *"administering a recognized third-party
+  benchmark's own fixed protocol… run as-is"* (they assembled their own), and `evaluated-synthetic`
+  requires that *"the authors **invented** their own test data/cases"* (they went out of their way
+  not to — the sub-5% cap is a deliberate design choice).
+  **Why the gap matters — it is a measurement error, not a naming preference.** Under §34's
+  tool-vs-world fork this event is unambiguously tool-side, so it must land on the ladder
+  (self-tests < `evaluated-synthetic` < `evaluated-benchmark`) — but it falls *between* the top two
+  rungs: real-world-sourced material is stronger evidence than self-invented cases and weaker than
+  benchmark administration. With no rung, it currently records as **indistinguishable from a paper
+  that ran no evaluation at all**. Arbiter's stated driver (2026-08-24): *"If we do some analysis in
+  the SLR about 'how did they test' then we will likely need it."* Any counted evidence-strength
+  claim in the Discussion is biased downward until this rung exists.
+  **Proposed discriminator:** *material is real-world-sourced (production logs, CVE/NVD records,
+  mined repository artifacts) AND is not administered as a recognized third-party protocol.*
+  **OPEN — does provenance or curation decide? NO TEST CASE EXISTS YET.** `ZBF86IJM` (Vasconcelos
+  et al.) looks like the natural precedent — LeetCode-derived material, real-world-*sourced* but
+  hand-picked and pruned by the authors — but it does **not** bear on this at all, and the earlier
+  wording here overstated the connection. It has **no tool-side event**: real participants performed
+  the tasks and the results describe the world, so under §34's fork the ladder never applies to it.
+  It is a different axis, not a near-miss. Settling provenance-vs-curation requires a case where the
+  system runs **alone** on real-world-sourced material that the authors also curated — and the
+  corpus has not yet produced one. Do not infer the rule from `ZBF86IJM`.
+  **Naming — WORKING NAME `evaluated-real-world`, revisitable at graft time (arbiter, 2026-08-24).**
+  Chosen over the arbiter's own first proposal `evaluated-prod-data`, which failed the `cross-model`
+  naming test on two counts: (a) **collision** — "production system" appears in **23 corpus papers
+  (36 hits)** meaning *a deployed, running system*, which is what the neighbouring `adopted` rung
+  already carries; a "prod" rung sitting beside `adopted` on the same ladder invites exactly that
+  conflation; (b) **narrower than its own anchor** — Mahmud's material is CVE/NVD records, real-world
+  but nobody's production data, so the name would fail on the single confirmed instance, which is how
+  `framework` and `counterpoint` drifted. `evaluated-real-world` is corpus-native ("real-world data",
+  5 papers / 6 hits) with no competing sense. Note "prod" is deliberately left unspent — it fits a
+  possible *future* distinction (evaluated on data from a live system) that would sit above this rung
+  and below `adopted`. Also considered: `evaluated-field-data`, `evaluated-corpus`. Sort-adjacency
+  with the existing `evaluated-*` rungs is a constraint (§33).
+  **Candidate pool — UNCONFIRMED, grep-level only, needs full-text checks.** Query used: papers
+  carrying human-confirmed `cal:human:facet:built-system` with **no** ladder rung and **no**
+  `method-*` facet (i.e. tool-side evaluation with nothing recording what it was evaluated on) —
+  7 of the 20 human-confirmed built-system papers: `PR4GS7SP`, `Y4TIF9KW`, `UB2EVUFU`, `7V7SRG43`,
+  `6DXZGHD9`, `T8E8SCCG`, `VG6CIDQW`. Two are already excluded on inspection — **`Y4TIF9KW`**
+  (DVNA, ×10) and **`UB2EVUFU`** (ProjDevBench ×20 + SWE-bench) are `evaluated-benchmark`
+  candidates, not this rung. **`T8E8SCCG`** (VibeGuard) is genuinely mixed — production, CVE,
+  synthetic and "we constructed" all appear — and needs a read. The remaining three are
+  undetermined. Treat this list as a reconstruction aid, not a finding.
+  **Gauge-constancy note:** a new rung on a ladder that is itself still staged and never seen by
+  the v2.13 panel. Compounding uncertainty is the main argument for taking the whole ladder in one
+  graft decision rather than rung-by-rung.
+  **Tripwire:** cluster size at sweep. One confirmed instance from a hand pass over ~35 papers could
+  be many more across 128 — or could stay at one. Promote iff the sweep shows the rung is
+  load-bearing for a "how did they test" analysis; drop it if the count stays low enough that
+  rationale text can carry the distinction.
+  **Resolution path (arbiter, 2026-08-24) — deliberately deferred, do not resolve mid-pass.** The
+  candidate pool above is recorded *so the call can be reconstructed later*, not so it can be
+  decided now. Two routes, and they compose: (1) **arbiter revisits this list by hand** and makes
+  the tag call if a "how did they test" analysis turns out to need the rung; (2) **the restricted
+  panel re-run picks it up** — this rung joins the existing re-run roster (`agent-panel`,
+  `cross-model`, the `evaluated-*` ladder, `scaling-dissent`, possibly `evaluator-reliability`), so
+  the panel tags it across the full corpus rather than the arbiter hand-checking 128 papers. Route 2
+  also sizes the cluster properly, which is what the tripwire actually needs. Neither route runs
+  until the Light Read pass closes (§37c).
 - **(Corpus-seeded, 2026-08-20; renamed 2026-08-22) `evaluated-synthetic` form facet — STAGED.**
   (Renamed from `synthetic-evaluated`, same sort-adjacency rationale as above.) Own system
   evaluated against **self-constructed, non-standardized scenarios/workloads** (constructed
