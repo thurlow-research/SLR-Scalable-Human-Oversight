@@ -229,7 +229,7 @@ oversight layer).
   platform that happens to have difficulty tiers." Curating raw material from a well-known pool is
   authored curation, not benchmark administration. (ZBF86IJM doesn't land on this ladder at all in
   the end — see the `evaluated-synthetic` entry below for why.)
-- **(Corpus-seeded, 2026-08-24) `evaluated-real-world` — MISSING LADDER RUNG, staged as a
+- **(Corpus-seeded, 2026-08-24) `evaluated-real-data` — MISSING LADDER RUNG, staged as a
   candidate. NAME NOT SETTLED.** Motivating instance: `R9CDT9KB` (Mahmud, Rawajfih & Arnold,
   *Trust-calibrated multi-stage LLM pipeline*, ACSAC Workshops 2025) — tool-side evaluation on a
   **1,979-example corpus the authors assembled from real CVE/NVD records**, with *"synthetic data
@@ -257,18 +257,29 @@ oversight layer).
   It is a different axis, not a near-miss. Settling provenance-vs-curation requires a case where the
   system runs **alone** on real-world-sourced material that the authors also curated — and the
   corpus has not yet produced one. Do not infer the rule from `ZBF86IJM`.
-  **Naming — WORKING NAME `evaluated-real-world`, revisitable at graft time (arbiter, 2026-08-24).**
+  **Naming — WORKING NAME `evaluated-real-data`, revisitable at graft time (arbiter, 2026-08-24).**
   Chosen over the arbiter's own first proposal `evaluated-prod-data`, which failed the `cross-model`
   naming test on two counts: (a) **collision** — "production system" appears in **23 corpus papers
   (36 hits)** meaning *a deployed, running system*, which is what the neighbouring `adopted` rung
   already carries; a "prod" rung sitting beside `adopted` on the same ladder invites exactly that
   conflation; (b) **narrower than its own anchor** — Mahmud's material is CVE/NVD records, real-world
   but nobody's production data, so the name would fail on the single confirmed instance, which is how
-  `framework` and `counterpoint` drifted. `evaluated-real-world` is corpus-native ("real-world data",
-  5 papers / 6 hits) with no competing sense. Note "prod" is deliberately left unspent — it fits a
-  possible *future* distinction (evaluated on data from a live system) that would sit above this rung
-  and below `adopted`. Also considered: `evaluated-field-data`, `evaluated-corpus`. Sort-adjacency
-  with the existing `evaluated-*` rungs is a constraint (§33).
+  `framework` and `counterpoint` drifted. **`evaluated-real-world` was then proposed and rejected on the
+  same test:** "real-world" is the corpus's most common such phrase (**104 papers, 469 hits**) and its
+  dominant collocations are *setting* and *deployment* senses ("real-world deployment" 8 papers,
+  "real-world setting" 3, "real-world evaluation" 2) — i.e. **the world side of §34's fork**, which is
+  `method-field-study`/`adopted` territory. Naming a *tool-side* rung with a term that overwhelmingly
+  denotes world-side conditions repeats the "prod" error one level down. **`evaluated-real-data` wins
+  because the head noun lands on the *material*, which is the actual discriminator** — weakly
+  corpus-native alone ("real data", 2 papers) but transparent and unambiguous, which beats a frequent
+  term pulling the wrong way. Both "prod" and "real-world" are deliberately left unspent: each fits a
+  possible *future* distinction above this rung and below `adopted` (evaluated on live-system data;
+  evaluated in a real setting). Also considered: `evaluated-field-data`, `evaluated-corpus`.
+  Sort-adjacency with the existing `evaluated-*` rungs is a constraint (§33).
+  **Naming lesson, general (2026-08-24):** three candidates died on the same test in one sitting. A
+  ladder-rung name must not borrow a word the corpus already uses for an **adjacent rung's** concept —
+  adjacency is where confusion costs most. Check *collocations*, not raw term frequency: "real-world"
+  is strongly corpus-native and still wrong here.
   **Candidate pool — UNCONFIRMED, grep-level only, needs full-text checks.** Query used: papers
   carrying human-confirmed `cal:human:facet:built-system` with **no** ladder rung and **no**
   `method-*` facet (i.e. tool-side evaluation with nothing recording what it was evaluated on) —
