@@ -165,7 +165,7 @@ Synthetic-Eval-Check rescan for the two newer facet pairs:
 - **Evidence-strength ladder — already resolved:** tagged `evaluated-benchmark` this session.
   - *Question:* the `method-experiment` noted (2/3) is likely a panel miscall (same pattern as WBS9U5N7/X7EN6DXZ) — worth a fast confirm, not a full re-derivation.
 
-### Li, J., Hou, Y., Lin, L., Zhu, R., Cao, H., & El Ali, A. (2026). Vibe coding in product teams: reconfiguring AI-assisted workflows, prototyping, and collaboration. *Proceedings of the 5th Annual Symposium on Human-Computer Interaction for Work, CHIWORK '26*, 1–16. https://doi.org/10.1145/3808045.3808062 (`BLR3XE3I`)
+### Li, J., Hou, Y., Lin, L., Zhu, R., Cao, H., & El Ali, A. (2026). Vibe coding in product teams: reconfiguring AI-assisted workflows, prototyping, and collaboration. *Proceedings of the 5th Annual Symposium on Human-Computer Interaction for Work, CHIWORK '26*, 1–16. https://doi.org/10.1145/3808045.3808062 (`DN9R4PDQ`) *(merged 2026-08-25; was `BLR3XE3I` — Zotero made the preprint record master)*
 - **Primary theme — `automation-bias`:** confirm or flip to the dissent (unstable: gemini disagrees; sprawl: codex proposed 9 themes).
 - No ladder facet applies — `method-self-report` is present, no `built-system`.
 

@@ -192,7 +192,7 @@ Confirm the modal proposal or flip to the dissent; tripwires tell you where to l
 - proposal: **ai-review** | tripwires: demote:context:gemini
 - facets 3/3: agentic risk-quality | facets 2/3 (noted): built-system
 
-### BLR3XE3I — Vibe coding in product teams: reconfiguring AI-assisted workflows, prototyping, 
+### DN9R4PDQ (was BLR3XE3I, merged 2026-08-25) — Vibe coding in product teams: reconfiguring AI-assisted workflows, prototyping, 
 - proposal: **automation-bias** | tripwires: unstable:gemini, sprawl:codex=9
 - facets 3/3: agentic method-self-report non-developer risk-ip risk-overreliance risk-quality risk-security survey-input | facets 2/3 (noted): assistive
 

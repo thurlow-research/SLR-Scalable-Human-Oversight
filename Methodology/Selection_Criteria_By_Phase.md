@@ -348,5 +348,55 @@ record's full history survives re-filing and client merges. Synthesis tags
 - `Stage4_Snowball_Enrichment_and_Rescreening.md` — snowball parity, abstract-gate, enrichment, §9 review outcome.
 - `SLR_Research_Questions_and_Subquestions.md` — the RQ/SQ skeleton the criteria serve.
 - `slr-conventions` skill — the operative playbook (library map, tag vocabulary, discriminators).
+
+---
+
+## Screening decisions are a LAYERED HISTORY, not a mutable state (recorded 2026-08-25)
+
+**Rule: `s3:` tags record the title/abstract screening decision and are NEVER revised in place.
+A later full-text reversal is recorded by ADDING `demote:context` (or `demote:discard`), not by
+editing or removing the `s3:` tag. Both are retained permanently.**
+
+A record can therefore legitimately carry, simultaneously:
+
+    s3:human:core        s3:opus:core        s3:human:context     s3:opus:context     demote:context
+
+That is **not** a data error, and it must not be "cleaned up." It reads as: *at title/abstract
+screening the human judged Core; some models agreed and others said Context; the full read then
+reversed the human call to Context, which is the current status.* Arbiter, 2026-08-25:
+*"Human said core based on title / abstract. Reading caused demote. The different models had
+different conclusions. That is expected. The full read demote is the current status."*
+
+**Why it is designed this way.** Each tag is a distinct epistemic moment, and the value of the
+record is that the moments stay separable:
+- **Model disagreement at the screening stage is a finding about the models**, not noise. Collapsing
+  it destroys the evidence behind the calibration work (`Theme_Tagging_Calibration.md`) and the
+  cross-model κ figures.
+- **Whether a full read changes the screening call is itself a measurable rate** — the basis for any
+  claim about abstract-only screening reliability, which the PRISMA writeup needs.
+- **Flattening is irreversible.** The current state can always be recomputed from the layers; the
+  layers cannot be recovered from the current state.
+
+**Same principle, three places in this project** — worth naming so the pattern is recognised rather
+than rediscovered:
+
+| Layered record | Proposal layer | Human layer | Resolved layer |
+|---|---|---|---|
+| Theme/facet tagging | `cal:<model>:*` | `cal:human:*` (+ `cal:human:reject:*`) | `final:*` at closeout |
+| Screening tier | `s3:<model>:*` | `s3:human:*` | `demote:*` supersedes |
+| Version lineage | `orig-type:` / `orig-date:` / `orig-title:` | — | `supersedes:` / `superseded-by:` |
+
+**How to read current status** (the only supported query):
+- Tier = `demote:context` / `demote:discard` if present, **else** the `s3:human:*` value.
+- Never infer tier from `s3:<model>:*` alone — those are proposals, and the panel is known to
+  over-keep (see `model-screening-calibration`).
+
+**Consequence for the PRISMA writeup.** Report screening-stage counts from the `s3:human:*` layer
+and final-corpus counts after applying `demote:*`. Reporting only the latter understates how much
+work full-text screening did; reporting only the former overstates the corpus. The gap between them
+is a reportable result, not an inconsistency to hide.
+
+**Cleanup timing.** Attachment/duplicate tidying on demoted records is deliberately deferred to
+**Stage 6** (final-set assembly), in one batch — not per paper during the Light Read pass.
 </content>
 </invoke>
