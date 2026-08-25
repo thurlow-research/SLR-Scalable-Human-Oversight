@@ -408,9 +408,25 @@ is about. `ZGST9CY6` (Zhu) has **no** Citegeist data despite being cited **15 ti
 silently privilege arXiv and indexed venues over exactly the papers that need defending.
 
 **Candidate signals to evaluate (none adopted yet):**
-1. **Multi-source citation counts.** Semantic Scholar + Google Scholar + SSRN's own metrics, to
-   cover what OpenAlex misses. The `semantic-scholar` skill can supply counts and influential-citation
-   flags in bulk; SSRN download/abstract-view counts are weak but non-zero evidence.
+1. **Multi-source citation counts — DECIDED 2026-08-25: manual Google Scholar retrieval, with
+   Semantic Scholar as the reproducible cross-check.** Arbiter: *"As part of our program, we will
+   manually retrieve the counts from Google Scholar. Painful, but it seems to be the most
+   comprehensive source for citation counts."* Correct for this corpus specifically: GS indexes
+   SSRN, arXiv, theses and non-indexed venues, which is exactly where OpenAlex and Semantic Scholar
+   go blind — `ZGST9CY6` (Zhu) shows **15 on GS vs 4 on S2**, and had **no** Citegeist record at all.
+   **Methods-chapter obligations that come with this choice, all mandatory:**
+   - **Record the retrieval date with every count.** GS counts drift continuously and are not
+     versioned; an undated count is unreproducible even in principle.
+   - **State that GS is not API-accessible and that automated retrieval is against its terms** —
+     hence manual collection. This is a transparency statement, not an apology.
+   - **State what GS counts include** — preprints, theses, and non-refereed citing sources — so the
+     numbers are not read as refereed-citation counts.
+   - **Report the S2 count alongside** wherever S2 has the paper, and state the discrepancy rather
+     than choosing the flattering number. The gap is itself informative about indexing coverage in a
+     preprint-heavy field.
+   - **Storage convention:** mirror the existing Citegeist pattern in the Zotero `extra` field —
+     `GS.citedByCount:` and `GS.retrieved:` — so the provenance of every number is inspectable and
+     the two sources never get conflated.
 2. **Author track record**, not paper track record — prior refereed publication and h-index for the
    author set. Distinguishes Zhu (CSIRO Data61 + UNSW, six authors with SE/AI publication histories)
    from a single-author paper with no prior record, which is the distinction that actually matters
@@ -441,8 +457,18 @@ silently privilege arXiv and indexed venues over exactly the papers that need de
   already made and recorded; authority evidence is for *defending* the corpus in the methods chapter,
   not for re-filtering it. Re-filtering after the fact would be a form of HARKing.
 
-**DEFERRED — do not build yet.** Decide which signals to adopt at closeout, alongside the
-publication-status re-check below, so both passes over the corpus happen once.
+**DEFERRED — do not build yet.** Decide the remaining signals at closeout, alongside the
+publication-status re-check below and the manual GS pass decided above, so the corpus is touched once.
+
+**⚠ First spot-check already invalidated a same-day conclusion.** A single Semantic Scholar lookup on
+2026-08-25 found that `ZGST9CY6` (Zhu) **is no longer a preprint**: published in *AI and Ethics* 6
+(Springer, open access CC BY-NC-ND), **2026-05-04**, DOI 10.1007/s43681-026-01147-7, indexed in DBLP.
+Hours earlier the assistant had argued Zhu and `VFNJSZD9` (Hjazeen) occupied the same
+unrefereed-SSRN category; they do not, and had not for three months. **Implication for timing:** if
+the hit rate is anything like one-for-one, deferring the status re-check to closeout means reasoning
+about provenance that is months stale, and the SSRN typing artifact hides it. Consider running the
+read-only sweep early — a Semantic Scholar pass over surviving papers reporting which now carry DOIs
+and in which venues — and acting on the results at closeout.
 
 ### DEFERRED — publication-status re-check at closeout
 
