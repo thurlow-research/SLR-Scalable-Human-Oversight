@@ -351,6 +351,57 @@ record's full history survives re-filing and client merges. Synthesis tags
 
 ---
 
+## Preprint status is NOT a quality discriminator in this corpus (recorded 2026-08-25)
+
+**Arbiter ruling:** *"Due to the nature of the domain, we are having to work with preprints, so
+holding Zhu to a different standard doesn't make sense."*
+
+**Rule: do not down-weight, demote, or exclude a paper on the ground that it is a preprint.**
+Vibe-coding governance is roughly two years old as a research area; 77% of the Core corpus is dated
+2025–26, and peer review has not had time to run. A corpus filtered to refereed work would not be a
+higher-quality corpus, it would be a corpus about a different, older problem. Assess these papers on
+the MLR criteria already adopted — **authority, accuracy, coverage, objectivity** (Garousi, Felderer
+& Mäntylä 2019) — not on venue status.
+
+**What this does and does not license.**
+- It does **not** flatten authority differences. `ZGST9CY6` (Zhu et al. — CSIRO Data61 + UNSW, six
+  authors, a mechanism catalogue and pattern language that stand on their own) and `VFNJSZD9`
+  (Hjazeen — single author, personal contact domain, self-disclosed unvalidated weights) are both
+  unrefereed SSRN items and are **not** of equal authority. Judge the paper, not the venue.
+- It does **not** rescue a paper excluded on other grounds. `VFNJSZD9` was kept out of the
+  dissertation collection on **redundancy** — Mitropoulos and Parris already *demonstrate* the
+  trust-boundary claim it only asserts — and that reasoning is unaffected by this rule.
+
+### Metadata artifact — SSRN items are typed `journalArticle` (found 2026-08-25)
+
+SSRN's Zotero translator assigns `itemType: journalArticle` with an empty `publicationTitle`.
+Library-wide this affects **3,783 of 3,785 `source:ssrn` items**; within the 79-paper Light Read set
+it affects **12**, of which 7 are Core: `ZGST9CY6` (Zhu), `9MV2IVNU` (Eze), `JVWUYDME` (Jessee),
+`27YULT5I` (Sharma), `5RLPIA3K` (Swidey), `E689ZAXC` (Zhou), plus `95CPB7CF` (Casserini, arXiv).
+
+**Two consequences, one of which is a reporting risk:**
+1. **Citations render working papers as published articles.** `VFNJSZD9` was retyped to `preprint`
+   (repository SSRN, archiveID SSRN 6271220) on 2026-08-25, with the original type and dropped
+   fields recorded in its Extra field.
+2. **⚠ `itemType` is UNRELIABLE for PRISMA stream counts.** Identification tier 2 is the preprint
+   stream; deriving preprint counts from `itemType` would badly understate it. **Use the `source:*`
+   tags, which are reliable, and never `itemType`.** This holds whether or not the records are fixed.
+
+**Scope decision:** fix only the corpus papers actually being read and cited. The other ~3,770 are
+screened-out pool items whose typing affects no output, and a bulk mutation of that size across the
+source of truth is not worth the risk.
+
+### DEFERRED — publication-status re-check at closeout
+
+**Re-check the actual publication status of every surviving preprint/SSRN paper before synthesis.**
+Papers dated 2025–26 are exactly the ones likely to have been published in the interim. Follow the
+existing preprint→journal convention: add the published record, dedupe to one study keeping the
+published version, inherit disposition tiers, tag `source:retrieval` on the newly found record, and
+**do not inflate identification counts** — it is the same study. Extends the previously deferred
+preprint re-check (57 Core preprints, 23 dated ≤2025) to include SSRN items masked by the typing
+artifact above. See `preprint-journal-version-convention`; `BLR3XE3I`→`DN9R4PDQ` (Li) is the worked
+example, including how retitling between versions defeats Zotero's duplicate detection.
+
 ## Screening decisions are a LAYERED HISTORY, not a mutable state (recorded 2026-08-25)
 
 **Rule: `s3:` tags record the title/abstract screening decision and are NEVER revised in place.
