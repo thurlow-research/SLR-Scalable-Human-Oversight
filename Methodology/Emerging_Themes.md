@@ -942,3 +942,72 @@ literature finding and an empirical one.
 `risk-routing` is a theme with a facet family behind it, while "measured detection effectiveness"
 has no tag at all. Check whether the absence is in the papers or in the vocabulary before reporting
 it.
+
+## Synthesis thread — OVERSIGHT EFFECTIVENESS as the outcome variable (SQ2, opened 2026-08-25)
+
+**Arbiter framing (2026-08-25):** *"Oversight effectiveness … that is really 'is the human oversight
+actually working'. Factors that feed into that are automation bias, oversight theatre, etc."*
+
+That sentence reorganises a whole theme group. The corpus's *Limits of current oversight* themes are
+all **determinants**; effectiveness is the **outcome** they determine, and it has no home:
+
+| Existing theme | What fails | Role |
+|---|---|---|
+| `automation-bias` | the human checker | determinant |
+| `oversight-theater` | the process / authority to act | determinant |
+| `evaluator-reliability` (staged) | the AI checker | determinant |
+| **— none —** | **whether oversight actually caught anything** | **outcome** |
+
+**This is NOT `evaluator-reliability`, and the boundary is the arbiter's** (2026-08-25):
+*"Not evaluator reliability. That would apply to this LLM compared to that LLM."* That candidate is
+scoped to an **AI evaluator audited against another model or ground truth** — three anchors, all
+`demote:context` (`WBS9U5N7` Alami, `BAWCBT9R` Zhao, `UDVHQ5HR` Jin), all also carrying
+`primary-proposed:`. Two earlier notes of mine wrongly stretched it: `ZGST9CY6` (Zhu) was filed there
+as a "converse instance," and `84D2AMVM` (McKay) was read as firing its promotion tripwire. **Both
+were out of scope** and are relocated here. The `evaluator-reliability` entry in
+`HOS_Seeded_Theme_Candidates` §E needs those two passages struck.
+
+**Why a synthesis thread and not a tag.** A tag marks what a paper is *about*; these papers are not
+about the same thing. McKay surveys determinants, Zhu prescribes signals to track, Langer supplies a
+formalism. What unites them is that they bear on **SQ2 — "how and why is current oversight
+insufficient"** — which is a synthesis axis, not a subject. Promotion to a tag stays available and is
+cheap; un-tagging a wrong candidate across items is not.
+
+**Instances.**
+- **`84D2AMVM` McKay (ANCHOR, read 2026-08-25).** The only paper so far whose subject is oversight
+  effectiveness itself. Surveys a century of human-factors work for determinants — conformity,
+  complacency, persuasion, workload, unequal treatment of active vs passive error, and
+  *"organisational policies and norms which may deter thorough review and human challenge of AI
+  recommendations."* Names the measurement gap outright: *"an urgent need for evaluation approaches
+  useful in selecting promising overseer candidates"*, *"robust measurement methodologies"*,
+  *"performance measurement approaches which support incentives for active oversight."* Also supplies
+  the proportionality principle (§3.2) that oversight requirements should scale with the risk of
+  oversight *failure*.
+- **`ZGST9CY6` Zhu.** Prescriptive, machine + human: every pattern closes with "Signals to track" —
+  veto precision, audit reversal rate, inter-rater agreement against a golden set, incidence of
+  "right answer, wrong reasons", disagreement rate with rules baseline.
+- **`5DCQDB4C` Langer — UNREAD, check on arrival.** *Effective human oversight of AI-based systems:
+  a signal detection perspective.* No verbal definition found on probe; it appears to **operationalise**
+  effectiveness via signal detection theory instead — potentially the most directly usable framing in
+  the corpus, since d′/criterion separates *sensitivity* from *threshold* and that is exactly the
+  distinction the routing argument needs.
+- **`TW4I6DU6` Sterz et al. — UNREAD, check on arrival.** *On the Quest for Effectiveness in Human
+  Oversight: Interdisciplinary Perspectives.* Contains an explicit definition — *"We understand human
+  oversight to be the supervision of a system…"* Six authors across dependable systems, DFKI and law.
+  **Corrects a provisional claim:** McKay is the only definitional paper *so far*, not in the corpus.
+- **`9HPPSFM6` Green — UNREAD.** *The flaws of policies requiring human oversight of government
+  algorithms* — argues oversight policies assume humans can reliably correct AI errors, an assumption
+  unsupported by evidence. The strongest counterweight in the corpus to any permissive reading.
+
+**Relationship to the "where to look vs does looking work" finding (§ above).** Same observation one
+level up. That entry contrasts *criterion-setting* against *sensitivity-measuring* at the level of
+**mechanisms**; this thread is the same asymmetry at the level of **the oversight system as a whole**.
+If both hold, they reinforce: the corpus is populated with allocation machinery and with named failure
+modes, and thin on evidence that any of it demonstrably works. **Verify them together at synthesis** —
+they share a counting method and would share a caveat, since either could be an artifact of an
+instrument built to capture mechanisms rather than outcomes.
+
+**Regulatory hook (worth carrying into the discussion).** EU AI Act Art. 14(4)(a) requires the
+overseer *"remain aware of the possible tendency of automatically relying or over-relying on the
+output."* Automation bias is therefore not merely a quality concern but a **compliance** one — which
+gives the determinants above legal salience and makes the absent outcome measure harder to excuse.
