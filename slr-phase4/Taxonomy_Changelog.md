@@ -1980,3 +1980,141 @@ Recorded as `cal:human:reject:facet:scaling-dissent` so the negative is machine-
 
 **Docs updated:** `Tag_Cheatsheet.md` — `counterpoint` marked deprecated in place; `scaling-dissent`
 added beside it. Not propagated to `Tag_Prompt.md` (§41).
+
+### 49b. `framework` — conformance requirement ≠ architecture (Jessee, Eze; 2026-08-24)
+
+Fifth `framework` refinement, and the one that explains the previous four misfires.
+
+**Arbiter ruling:** *"He is enumerating principles of a system, but it hasn't been built… framework as
+software ready or designed to be used, and defining process or principles informing process, are
+different. I think this lands on the latter."*
+
+**Rule:** a **conformance requirement** — a spec of what a system must *produce*, abstracted from how
+it is built — is **not** a framework, however technical its vocabulary. Note this is *not* the
+built/unbuilt axis (§39 already settled that a merely-proposed pipeline architecture **is** a
+framework, +`design-only`). The axis here is **requirement vs design**.
+
+**The tell: the paper declares its own platform-independence.** Jessee (`JVWUYDME`) states it
+outright — *"In regulated environments, 'control' cannot depend on bespoke dashboards or idealized
+tooling. **It must be definable independently of any specific UI, vendor, or platform.**"* MV-HIC
+then lists four artifacts a system must be able to emit before acting (Intent · Inputs/Provenance ·
+Constraints/Policy References · Action Preview as a deterministic dry-run payload), and §8.1 frames
+it as *"a necessary but not sufficient condition."* That is a standard, not a design.
+→ `design-only`, **`cal:human:reject:facet:framework`**.
+
+**Applied identically to Eze (`9MV2IVNU`)**: the ten-KPI suite specifies *what must be measured*, not
+an architecture. → `cal:human:reject:facet:framework` (panel had it 5/9).
+
+**Assistant-error note, third of the same family.** I recommended *for* `framework` on Jessee after
+grepping "technical evidence standard", "integration layer", "deterministic payload" — reading
+**technical vocabulary as technical artifact**. Same shape as reading `framework` and `agentic` by
+their names (§38, §47). The instrument's scoping clauses, not the paper's register, are the operative
+text. **Guard: when a candidate `framework` paper uses architectural language, check whether it
+specifies components or specifies obligations.**
+
+**Consolidated `framework` decision path** (§39 · §49 · §49b): pipeline architecture, built →
+`framework`+`built-system` · pipeline architecture, proposed → `framework`+`design-only` ·
+**conformance requirement / obligations spec → `design-only`, no `framework`** · process or
+org practice → theme only, no `framework` · single task at one lifecycle stage → no `framework`.
+
+## 57. Method facets — instrumentation ≠ contribution; one event, one classification (Karuppuchamy, 2026-08-24)
+
+**Arbiter:** *"Not sure about mining. They built a system and used it for building prod services.
+Primary artifact was not from mining repos to see what types of changes were made. They did mine
+CI/CD logs for before/after analysis."*
+
+**Rule:** logs and telemetry used to **measure** something else are the *instrument*, not the
+evidence event. `method-mining` requires the artifact analysis to **be** the finding.
+
+The instrument already implied this — *"a detector run over real repos gets `method-mining` only if
+the findings **characterize the repos**"* — but stated it only for detectors-over-repos, so it did
+not reach a deployment measured via CI/CD telemetry.
+
+| | Evidence event | Tag |
+|---|---|---|
+| **Instrumentation** | logs/telemetry measure a deployment's effect | `method-field-study` |
+| **Contribution** | the artifact analysis *is* the result — `NZJST99D`, 33k PRs characterised | `method-mining` |
+
+**Corollary — one evaluation event gets ONE method classification.** Two method facets require two
+genuinely *separate* measurement events (§34's fork logic, `NRVQT89E`: a critic-model run graded by
+contractors **and** a distinct human-subjects tampering task). Never one event measured by two
+techniques.
+
+**Worked failure — `8MXATG38`:** `method-field-study` **+** `method-mining` **+** `method-self-report`
+all proposed **3/3** on what is a *single* longitudinal field deployment at one organisation, measured
+via a telemetry dashboard. The panel read three *techniques* as three *methods*. Resolved to
+`method-field-study` alone; the other two rejected. `method-self-report` fails for the same reason —
+"resolving early feedback (prompt tuning, policy refinements)" is deployment iteration, not elicited
+data.
+
+**Why it matters beyond tidiness:** method facets are how the corpus will report its evidence base.
+Triple-counting one deployment inflates the apparent volume of empirical work — "N papers with field
+evidence, M with mining evidence" would double-count the same study.
+
+**Also recorded from this paper:** `adopted` is one of the scarcest facets in the corpus — **5 of
+128** (`8MXATG38`, `BU73N7PC`, `P837LJWE`, `RX9SICP9`, `V4IRKSFI`). Karuppuchamy clears the §36
+pilot rule explicitly: the paper says *"prior to **adoption**"* and describes a phased rollout ending
+in *"broad enablement through standard plugins, CI jobs, and issue-tracker automation"* — past the
+study pilot into the organisation's own operational use.
+
+**Docs updated:** `Tag_Cheatsheet.md` method-facet block. Not propagated to `Tag_Prompt.md` (§41) —
+but this is a **machine error** (3/3), so it belongs in the successor prompt alongside §50 and §54.
+
+## 58. Contributes-mechanisms vs organises-existing-mechanisms (Khoo vs Eze, 2026-08-24)
+
+**Arbiter, on `5AVZQCVU` (Khoo):** *"E.g. Elgendy shape."*
+
+**Test:** does the paper contribute **the mechanisms**, or **a structure for organising mechanisms
+that already exist**? The latter is real work, but it lands Context unless the *structure itself* is
+scarce.
+
+**Worked contrast, both decided today:**
+
+| | Contribution | Verdict |
+|---|---|---|
+| `9MV2IVNU` **Eze** | the **instruments themselves** — Override Rate, Override Directionality, Escalation Precision, Intervention Drift, each newly *defined* with a measurand | **Core** (§53: `oversight-theater`+`metrics` = 2 of 128) |
+| `5AVZQCVU` **Khoo** | a **risk register + control catalogue** over controls that are borrowed security hygiene — *"implement input guardrails," "escape filtering before including web content in prompts," "use structured retrieval APIs rather than web scraping"* — and the paper calls its list *"tentative"* | **Context** |
+| `WH2PIBNQ` **Elgendy** | Figure 1 workflow model, Table 1 modalities, Table 2 technical attributes — an arrangement of known practice | **Context** |
+
+**Why this needed a separate test.** Khoo is *not* unactionable — it tiers controls by criticality
+(Cardinal / Standard / Best Practice), maps capabilities to risks, and defines residual-risk
+assessment. Judged on "is it operationalizable?" it passes. The demote turns on **whose mechanisms
+they are**. Recording this so the audit trail does not say "not actionable," which the tiering would
+falsify.
+
+**Relationship to §55:** this is the *positive-pole* refinement. §55 says findings on risk
+identification and prioritisation tie in directly — Khoo *does* prioritise. §58 adds that
+prioritising **someone else's** controls is an organising contribution, and organising contributions
+need the §53 scarcity test like any other transferable-but-crowded work. `org-governance` is modal
+on **31 of 128**, so the structure is not scarce.
+
+## 59. Panel failure mode — vocabulary matching, not mechanism reading (consolidated, 2026-08-24)
+
+Scattered across §47, §49b, §50 and §57; consolidated here because it is **the single highest-value
+input to the successor prompt** (§41) and because every instance is a *machine* error, not an
+arbiter clarification.
+
+**The pattern: the panel matches words in the paper to words in tag names, without checking what the
+mechanism does.**
+
+| Trigger word | Wrongly fired | Corpus instances |
+|---|---|---|
+| "agent" | `agentic` | `WBS9U5N7` (Mutator = apparatus, 9/9) · `ZH6QIU8A` (helper agents, assistive, 9/9) · `8MXATG38` (helper agents, 2/3) |
+| "test suite" | `rules-based-checks` | `ZH6QIU8A` (tests are a *representation* of a decision, 9/9 — violates the plumbing rule's own worked example, "agents running test suites ≠ `rules-based-checks`") |
+| "survey" | `survey-input` | conflates *the paper ran a survey* with *the finding is useful to the org survey* |
+| multi-model panel in the **methods** | `ai-review` | `ID7IN65K` (3/3, reading the methods section as content — §50) |
+| logs/telemetry as instrument | `method-mining` | `8MXATG38` (3/3 on a single field deployment — §57) |
+| "framework" / "evidence standard" / "integration layer" | `framework` | `JVWUYDME` — *assistant* error, reading technical vocabulary as technical artifact (§49b) |
+
+**Inverse failure — vocabulary absent, mechanism present:** `ZH6QIU8A` carries a **Decision Bank**,
+explicitly *"a persistent, editable record"* with decisions *"traceable to code"*, and the panel
+proposed `provenance-auditability` **0 of 9**. It reads labels, not function, in both directions.
+
+**Concentration:** `ZH6QIU8A` alone produced three keyword misfires plus the inverse miss — four
+vocabulary errors on one paper.
+
+**Implication for the successor prompt:** the current prompt lists tag definitions. It does not
+instruct the model to **identify the mechanism first and only then match it to a tag**. Every fix
+above (§47 apparatus-vs-object, §50 method≠contribution, §57 instrumentation≠contribution, the
+plumbing rule) is a special case of that one instruction. **Consider a single explicit step: "state
+what the mechanism does in your own words before assigning any tag."**

@@ -39,6 +39,36 @@ theme stands on corpus evidence.
 - **Unit of analysis:** AI-code quality is a *session* property, not a single-PR one — errors
   interlock across steps ("house of cards"). (HOS-original: `working-state-invariant`.)
 
+- ⭐ **A SECOND scaling mechanism — reviewability decline, not volume growth (corpus-seeded,
+  Maes `59ZW4R58`, 2026-08-24). WATCH ITEM, not yet a claim.** T0 as currently framed is a
+  **volume** argument: generation outpaces reviewer capacity, so items ship unreviewed.
+  Maes never makes that argument — a full-text search finds no bottleneck / backlog / throughput /
+  keep-up language anywhere in the paper, and "scale" appears once meaning the *built system* does
+  not scale. His mechanism is different and orthogonal: **AI-generated code is less reviewable per
+  unit**, so oversight cost rises even at constant volume. *"The generated code often ends up no
+  more be understandable, even to its developers"*; *"developers integrate AI-generated code
+  **without fully understanding its implementation**"*; and the fix — *"they now must perform
+  rigorous code verifications"* — is what *"goes against the trend that AI makes developers more
+  productive."*
+  **Why this matters for the problem statement.** Volume and reviewability are multiplicative:
+  more items × more cost per item. Framing T0 on volume alone understates the squeeze and leaves
+  the dissertation open to the obvious counter ("just add reviewers" / "just sample"), which
+  answers volume but not comprehensibility. It also predicts a different intervention class —
+  volume calls for triage and sampling; reviewability calls for explanation, provenance, and
+  structural constraints on generated code. Note this cuts against a starting assumption rather
+  than confirming one, which is the point: the org survey is meant to discover what practitioners
+  actually face, not to ratify the initial frame.
+  **Tagging consequence — do NOT tag this as `oversight-scaling-inversion`.** Arbiter ruling
+  2026-08-24: indirect acknowledgement is not enough, and §52's narrowing exists precisely to stop
+  the tag firing on any paper that observes oversight is expensive. Panel proposed it 4/9 on Maes,
+  which reads as a partial vocabulary match. The tag stays a **volume + fail-open** tag.
+  **Tripwire for promotion from watch-item to problem-statement claim:** a second paper arguing
+  **per-item reviewability decline as its own mechanism** — not merely noting AI code is hard to
+  read, but tying reduced reviewability to an oversight-capacity failure. Two independent
+  instances graft it into `Problem_Statement_Evidence` as a named second limiter; one stays here.
+  Candidates to re-check at closeout: papers already carrying `oversight-explanation` +
+  `risk-quality` where comprehensibility is the focal harm.
+
 ## B. New theme candidate — T3: "The overseer is itself an untrusted, attackable component"
 
 *Thesis:* AI reviewers/scanners are not a trusted oracle — they emit confident false signal, can
@@ -374,6 +404,36 @@ oversight layer).
   in one deterministic cutover; rejection drops the tag and disturbs nothing.
   **Tripwire:** cluster size at sweep. Promote iff the class is large enough that the Discussion
   needs it as a roster `ai-review` + rationale text cannot reconstruct.
+
+  **CONVERSE INSTANCE — `ZGST9CY6` (Zhu et al., *Designing Meaningful Human Oversight in AI*),
+  found 2026-08-24. NOT a fourth anchor; recorded because it cuts the other way.** The three
+  anchors above are *diagnostic* — they audit an AI evaluator and find it wanting. Zhu is
+  **prescriptive**: it specifies how to measure whether an oversight loop is working, and does so
+  for **both** the machine and the human evaluator. Its four patterns each close with a "Signals to
+  track" list containing exactly the sensitivity measures the anchors say are missing —
+  *"reviewer calibration using a **golden set**; **inter-rater agreement** tracking"*,
+  *"agreement with golden set on soft norms"*, *"**veto precision**"*, *"**audit reversal rate**"*,
+  *"incidence of 'right answer, wrong reasons'"*, *"disagreement rate with rules baseline"*,
+  *"sentinel-hit rate"*, *"minority-view capture rate"*, *"watchlist-miss rate"*,
+  *"precision/recall against adjudicated samples"*.
+  **Why it does not fit the candidate as currently scoped.** The proposed discriminator is
+  *"lab benchmark of evaluator capability with no deployment context → `evaluator-reliability`"* —
+  the evaluator must be the **object of study**. Zhu studies nothing; it designs. Filing it as an
+  anchor would silently widen the candidate from "papers auditing evaluators" to "papers concerned
+  with evaluator reliability at all," which is the same over-broadening already rejected for
+  `llm-eval` in the scope guard above. Tag written on the item: **none** for this candidate.
+  **What it actually bears on — two things, both live:**
+  (1) It is a **counterexample to the corpus-level gap recorded in `Emerging_Themes`** ("the
+  literature is rich in deciding *where to look* and poor in measuring *whether looking works*").
+  Zhu is the clearest case so far of a paper doing the second thing. When that claim is verified at
+  closeout, Zhu belongs in the numerator, and if the gap survives it must be stated as
+  *predominantly* rather than *uniformly* true.
+  (2) If `evaluator-reliability` is promoted, the group *Limits of current oversight* would hold
+  three failure themes (`automation-bias` human, `oversight-theater` process, `evaluator-reliability`
+  machine) and **no theme for the measurement response** — prescribing sensitivity instrumentation
+  for the oversight loop. Whether that is a genuine fourth slot or belongs inside
+  `provenance-auditability`/`metrics` is an open question for the same promotion decision. Do not
+  resolve mid-screening (Changelog §37c); a second prescriptive instance is the tripwire.
 
 ## Grafting checklist (do before classifying cores)
 1. Cross-check pass-through corpus papers (Mitropoulos, Ferdous, Charoenwet, Parris, Kumar,

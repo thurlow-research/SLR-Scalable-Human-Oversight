@@ -180,6 +180,25 @@ raw rubric):**
   rest context.
 - **Grey literature generally EXCLUDED** (blogs, vendor posts, benchmark landing pages, docs,
   social) — retained only as a few exceptions of *extreme* relevance, flagged by hand.
+  - **Scope note (added 2026-08-24).** "Grey literature" here means **web/vendor/social content**.
+    It does **NOT** include **preprints** (arXiv, SSRN, OSF), which are treated as ordinary
+    literature. This matters because preprints are **57 of the 128 Core papers (~45%)**, and
+    ~62% of Core is non-peer-reviewed by venue. Justification is **recency, not relaxed
+    standards**: **77% of the Core corpus is dated 2025–2026**, and the preprint share *rises*
+    toward the present (33 of 53 in 2026 vs 19 of 45 in 2025) — the signature of publication
+    lag. Excluding preprints would have **preferentially removed the newest work** on a
+    fast-moving, practitioner-driven phenomenon: a recency bias, not a safeguard. Preprints
+    that subsequently publish are updated in place per the preprint→journal convention
+    (`orig-type:` / `orig-date:` lineage tags; see the *Preprint - Now Published* collection).
+  - **Tag ↔ stream mapping (recorded 2026-08-24).** The identification tier 3 streams above carry
+    Zotero source tags: `source:practitioner` = Practitioner Network, `source:cao` = Committee
+    Recommendations, `source:coursework` = author-assembled prior reading. Yields to date:
+    **`source:practitioner` 8 items, 1 reaching Core** — `RPHK78A9` (Kim & Yegge, *Vibe Coding*,
+    IT Revolution), kept at `s1:human:keep`; **`source:cao` 45 items, 0 reaching Core.** Both
+    behaved as the tier intends: tight inclusion, small yield.
+  - **Verified 2026-08-24:** all 8 `source:practitioner` items carry screening dispositions;
+    none are unaccounted. Six were discarded at s1, one at s3 (`8FFCMYBL`), and one reached
+    Core (`RPHK78A9`). The tier-3 streams reconcile.
 
 **Lineage tags:** `s3:opus:<bin>` + `centrality:<n>`.
 
