@@ -470,6 +470,40 @@ about provenance that is months stale, and the SSRN typing artifact hides it. Co
 read-only sweep early — a Semantic Scholar pass over surviving papers reporting which now carry DOIs
 and in which venues — and acting on the results at closeout.
 
+### DEFERRED — RECORD-STATUS RE-CHECK across the whole surviving corpus
+
+**Arbiter 2026-08-25:** *"We need to check for 'status changes' on all papers too, since months have
+passed for the survivors."* Broader than the preprint→journal check below: **every** surviving paper
+gets re-verified, not only the preprints.
+
+Screening ran from mid-2026; the corpus is 77% dated 2025–26. In a field this young, records move —
+and the SSRN typing artifact means the library's own metadata cannot be trusted to reveal it. The
+first spot-check (Zhu) found a three-month-old publication the library had no record of.
+
+**Check for, in order of consequence:**
+1. **Retractions, corrections, and expressions of concern.** A retracted paper sitting in Core is a
+   research-integrity failure, not a bookkeeping one, and nothing in the current pipeline would
+   surface it. Partial coverage already exists — Citegeist writes `Citegeist.isRetracted` into
+   `extra` — but only on **23 of 79** Light Read papers, so absence of the flag means nothing. Scite
+   exposes `editorialNotices` and Crossref exposes `update-to` relations; either can carry this.
+2. **Preprint → published.** Per the convention below.
+3. **Version drift on preprints that stay preprints.** arXiv v1 → v3 can change substance, not just
+   typesetting. `DN9R4PDQ` (Li) is the worked proof: between the arXiv draft and the published
+   version, scale/scaling went 7 → 13 mentions, traceability 2 → 5, and **calibration 0 → 4** — the
+   framing that makes the paper relevant to this review appears *only* in the later version.
+   **Anything extracted from a superseded version may be extracted from text the authors have since
+   revised.**
+4. **Withdrawal or removal**, especially for SSRN and self-hosted items.
+5. **Venue/DOI changes** — proceedings papers moved to journals, DOIs reassigned.
+
+**Method:** a read-only sweep first, producing a report, with no writes — Semantic Scholar for DOI /
+venue / publication type, Crossref for update relations, Scite for editorial notices. Act on the
+results in one batch afterwards, so each record is touched once and paired with the item-type
+corrections and the manual Google Scholar counts.
+
+**Scope:** surviving papers only (Core + Context). Screened-out pool items are not carried into
+synthesis and do not need re-verification.
+
 ### DEFERRED — publication-status re-check at closeout
 
 **Re-check the actual publication status of every surviving preprint/SSRN paper before synthesis.**
