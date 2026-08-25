@@ -363,7 +363,9 @@ Synthetic-Eval-Check rescan for the two newer facet pairs:
 - **Demote to Context:** confirm (flagged by all 3 models).
 - No ladder facet applies — `method-experiment` is present, no `built-system` co-proposed.
 
-### Liming Zhu, Qinghua Lu, Ding Ming, Sung Une Lee, & Chen Wang. (2025). *Designing meaningful human oversight in AI*. 16. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5501939 (`ZGST9CY6`)
+### ✅ DONE — Zhu, L., Lu, Q., Ming, D., Lee, S. U., & Wang, C. (2025). *Designing meaningful human oversight in AI*. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5501939 (`ZGST9CY6`)
+
+> **Sort note:** this entry appears here under **L** because the Zotero record stored the first author single-field as "Liming Zhu" (First Last), so it sorted on the given name. The record has since been corrected to `Zhu, Liming`; its true alphabetical position is at the **end, under Z**. Adjudicated 2026-08-24 — Core, `01 - Primary`, primary `org-governance`, 9 themes.
 - **Primary theme — `oversight-explanation`:** confirm or flip to the dissent (sprawl: opus proposed 7 themes, codex proposed 9 — check for over-tagging).
 - **Demote to Context:** confirm (flagged by all 3 models).
 - No ladder facet applies — `design-only` is already present.

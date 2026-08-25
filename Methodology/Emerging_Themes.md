@@ -986,11 +986,15 @@ cheap; un-tagging a wrong candidate across items is not.
 - **`ZGST9CY6` Zhu.** Prescriptive, machine + human: every pattern closes with "Signals to track" —
   veto precision, audit reversal rate, inter-rater agreement against a golden set, incidence of
   "right answer, wrong reasons", disagreement rate with rules baseline.
-- **`5DCQDB4C` Langer — UNREAD, check on arrival.** *Effective human oversight of AI-based systems:
-  a signal detection perspective.* No verbal definition found on probe; it appears to **operationalise**
-  effectiveness via signal detection theory instead — potentially the most directly usable framing in
-  the corpus, since d′/criterion separates *sensitivity* from *threshold* and that is exactly the
-  distinction the routing argument needs.
+- **`5DCQDB4C` Langer, Baum & Schlicker (2024) — ALREADY ADJUDICATED, `demote:context`.**
+  *Effective human oversight of AI-based systems: a signal detection perspective on the detection of
+  inaccurate and unfair outputs.* Tagged `primary:theme:automation-bias` + `general-ai` +
+  `intro-framing` + `risk-bias` + `risk-overreliance`. No verbal definition of oversight; it
+  **operationalises** effectiveness via signal detection theory — d′ (sensitivity) separated from
+  criterion (threshold), which is exactly the distinction the risk-routing argument needs and which
+  nothing else in the corpus supplies. **Its Context tier does not diminish its value to this thread:
+  tier ≠ dissertation value (§55c), and this is the thread's formal backbone.** Worth revisiting at
+  synthesis specifically for the d′/criterion framing.
 - **`TW4I6DU6` Sterz et al. — UNREAD, check on arrival.** *On the Quest for Effectiveness in Human
   Oversight: Interdisciplinary Perspectives.* Contains an explicit definition — *"We understand human
   oversight to be the supervision of a system…"* Six authors across dependable systems, DFKI and law.
