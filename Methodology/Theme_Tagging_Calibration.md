@@ -669,7 +669,9 @@ being an instrument for surfacing the contested surface.
 ### 10.2 Corpus and bands
 128 Core papers, in three bands by expected effort, **all of which receive a human tier call**:
 **6 Full Read** · **78 Light Read** (the per-paper checklist pass) · **44 Accept**. Band determines
-*depth of tag verification*, never *whether a human ruled* (§42).
+*depth of tag verification*, never *whether a human ruled* (§42). An earlier design gated review on
+**panel agreement** instead; that band was removed — see **§11** for why and for the measured
+override rate that settled it.
 
 ### 10.3 Instrument
 A single frozen vocabulary — **v2.13**, 17 themes + 27 facets — expressed as `Tag_Cheatsheet.md` plus
@@ -721,7 +723,11 @@ specific contested tags rather than presenting a full list.
 Every Light Read paper gets a human read and an **independent human tier call**; panel unanimity does
 not skip the review. A **demote ruling short-circuits downstream tag verification** — Context papers
 do not enter Phase 6 synthesis, so their tag depth has no consumer (§42). Effort is proportional to
-what the tags are used for.
+what the tags are used for — to **downstream consequence**, never to panel agreement (§11.8).
+
+The panel's role here is **recall**: it holds the whole vocabulary against every paper so the arbiter
+does not have to. Its proposals are **suggestions, never facts** — measured at T0, **8.3% of
+panel-modal proposals were overturned** by the arbiter (§11.5).
 
 ### 10.10 What the design deliberately does NOT do
 - **No feedback between raters, and no revision rounds.** Taggers never see one another's output. The
@@ -744,3 +750,214 @@ noise concentrates (§3.1–3.2), and model signatures show directional bias (§
 - A restricted re-run is queued for tags the frozen instrument never contained — `agent-panel`,
   `cross-model`, the `evaluated-*` ladder, `scaling-dissent`, `evaluator-reliability`,
   `evaluated-real-data`.
+- **A closeout sweep is owed for deprecated tags that are still panel-modal.** `counterpoint` (§56)
+  survives into `final:*` on any paper where it was modal and never rejected, since silence lets a
+  modal proposal stand. Handle as one bulk act rather than per paper, so the deprecation is a single
+  auditable event.
+- **T1 and T2 measurement points are outstanding** (§11.9). Regenerate with
+  `slr-tools/tag_layer_stats.py`; T0 is frozen at `slr-phase4/data/tags-v213/tag_layer_stats_T0_2026-08-26.json`.
+- **Human override rate is the headline reliability figure** and is computed by that script —
+  8.3% at T0, to be recomputed on the closed corpus.
+
+---
+
+## 11. HOW THE PROCEDURE EVOLVED — and why the confidence gate was abandoned (2026-08-26)
+
+§10 states the method as it now stands. This section records **how it got there**, because the
+single largest change — from confidence-gated sampling to full human supervision — was forced by
+measurement rather than chosen up front, and a methods chapter that presents the end state as if it
+were the design would be misrepresenting it.
+
+### 11.1 Provenance of the instrument — co-authored, not machine-generated
+The controlled vocabulary was **not** produced by the models that later applied it. Its chain:
+
+1. **Emergent** — derived bottom-up from the extracted core full texts (`Emerging_Themes.md` →
+   *Tag reference*), not imposed a priori from the literature.
+2. **Co-authored** — machine-drafted, human-revised, iteratively. Neither party authored it alone.
+3. **Human-locked before any coding** — v2.13 approved by the arbiter *before* the panel ran.
+4. **Calibrated** — Sets A/B/C sharpened boundaries and produced the discriminators.
+5. **Frozen** for the measurement pass (§41).
+6. **Gaps found in use** — accumulated in `Taxonomy_Changelog.md`, grafted only at a versioned cut.
+
+Steps 1–3 map stage-for-stage onto Choudhuri et al.'s S1→S2→S3 (§9): independent machine theme
+discovery, codebook reconciliation, then **author review and approval before coding**. The
+provenance therefore matches a published precedent rather than requiring a defense from first
+principles. Step 6 is the stage their pipeline does not have, because they coded once.
+
+**Why this matters beyond bookkeeping:** a machine-authored, machine-applied vocabulary would be the
+panel grading its own homework at the instrument level. Co-authorship, human lock, and human-driven
+revision each break that.
+
+### 11.2 The design as originally specified — a confidence-gated triage ladder
+The 2026-07-21/22 design (§5) routed papers by **panel agreement**:
+
+| Consensus | Disposition |
+|---|---|
+| 3/3 | **ACCEPT** — auto-accepted, covered only by a 10% seeded random audit |
+| 2/1 | LIGHT-REVIEW |
+| split | HUMAN |
+
+Replication was **disagreement-triggered**, not universal: *"unanimous first-pass papers are never
+replicated."* Sampling was to begin at the sweep. Under that design most of the corpus would have
+received no human read.
+
+### 11.3 Why it was wrong in principle — the ACCEPT band violated producer-independence
+Panel agreement is **the producer's own signal**. Gating review on it lets the thing being checked
+decide whether it needs checking — precisely the failure the corpus documents when practitioners
+delegate review to the generator (§71), and precisely what `risk-routing`'s producer-independence
+clause forbids (§74).
+
+This reframes the change as a **principled correction rather than a reaction**: the flaw was present
+at design time, and the errors below were its *detection*, not its cause.
+
+### 11.4 Why it was wrong in practice — measured unanimous error
+| Instance | Panel | Arbiter |
+|---|---|---|
+| `WUUDHL8R` — `regulatory-compliance` (§44) | **9/9** | rejected: the Act is motivation, not contribution |
+| `WUUDHL8R` — `hitl-workflow` (§46) | 8/9 | rejected |
+| `PR4GS7SP` — `rules-based-checks`+`formal-methods` (§51) | **9/9** | rejected: benchmarking oracle, not a deployable check |
+| Maes — `counterpoint` (§64) | 8/9 | **polarity inverted** — a thesis-*supporting* paper read as opposition |
+| `9MV2IVNU` (Eze) — `demote:context` (§53) | **9/9** | **overruled; kept Core** — the tier half of the same finding |
+
+**Vendor decorrelation reduces correlated error but does not eliminate shared misreadings of the
+instrument, and those are invisible to agreement statistics.** Unanimity measures how legible the
+cheatsheet is, not whether the tag is true.
+
+### 11.5 The measured override rate — the figure that settles it
+Over the 57 Light Read papers adjudicated at T0, across **515 panel-modal proposals** (≥2 of 3
+models):
+
+| | n | % |
+|---|---|---|
+| human endorsed | 374 | 72.6% |
+| **human rejected** | **43** | **8.3%** |
+| human silent (stands on modality) | 98 | 19.0% |
+
+Plus **29 non-modal (1/3) proposals rescued** by human endorsement — found by the panel, and
+discarded by any consensus rule.
+
+**Roughly one modal proposal in twelve is wrong.** A 3/3 auto-accept band would have shipped those
+into the reported statistics. This single figure carries the argument better than the anecdotes in
+§11.4, and it is recomputed at every measurement point (§11.9).
+
+### 11.6 What the panel is actually for — recall and coding consistency
+The correction is **not** that the panel is untrustworthy. It is that panel output has a different
+epistemic status: **proposals, not facts.** The division of labour follows cognitive strength:
+
+- **Panel → recall.** Holds the entire vocabulary against every paper, every time. Human working
+  memory cannot do that reliably across 44 tags and 128 papers; that is the failure the panel fixes.
+- **Human → precision.** Validates each proposal against the text.
+
+Supervision is therefore **validate-not-reproduce**, which is the same efficiency the oversight
+literature runs on — and §52's inversion is what happens when validating stops being cheaper than
+producing. This procedure sits on the working side of that line.
+
+**Consequence for the statistics:** the panel measures **reliability** (inter-rater agreement across
+vendors; intra-rater repeatability via k=3). The human is the **criterion**, so agreement with the
+human is **validity**. Reliability is *necessary but not sufficient* for validity — three raters can
+be perfectly consistent and consistently wrong, which is exactly `WUUDHL8R` at 9/9. High κ therefore
+never licenses skipping the criterion.
+
+### 11.7 The anchoring limitation — real, measured, and narrower than expected
+Supervision creates an obvious risk: validation is **anchored by what gets proposed**. A tag no
+model offers is one the arbiter is less likely to add — automation bias in our own instrument.
+
+At T0 the effect is measurable, and the design happens to contain its own control. The blind-first
+calibration band (§1) had the same arbiter tag the same instrument **without seeing proposals**:
+
+| Band | human tags | originated by the human |
+|---|---|---|
+| Light Read (supervised) | 438 | **8.0%** |
+| Calibration (blind-first) | 157 | **80.9%** |
+
+But **17 of the 35 Light Read originations are post-freeze tags the panel could not propose** —
+`evaluated-synthetic`, `agent-panel`, `cross-model`, `evaluated-benchmark`, `evaluator-reliability`.
+Excluding what was unreachable, human origination against the vocabulary the panel *could* see is
+**~4%**.
+
+**So the limitation lands somewhere more useful than "the arbiter gets anchored": panel recall on
+its own vocabulary is ~96%, and the real bound is that a frozen instrument caps what can be proposed
+at all.** The mitigation is instrument revision (§41 graft + restricted re-run), not more human
+vigilance.
+
+Three caveats belong in the write-up rather than in a reviewer's question:
+- **"Originated" means absent from every model's *modal* set.** Only modal tags reach Zotero, so a
+  1-of-3-run proposal counts as originated; 8.0% is an **upper bound**.
+- **80.9% vs 8.0% is directional, not an effect size.** The blind-first pass was an *exhaustive*
+  coding; the supervised pass is deliberately non-exhaustive (§10.8, silence = not considered). The
+  share attributable to anchoring versus to intended design is not separable from these data.
+- **Because the vocabulary was co-authored with the arbiter**, recall is measured against a *shared*
+  instrument, not independent ground truth. Standard for codebook studies; still ours to say.
+
+### 11.8 What survives from the ladder, and the two axes
+The triage ladder was not deleted — it was **demoted from gate to sort order**. Tripwires (sprawl,
+`unstable:<model>`, demote flags, split primaries) still **rank attention and mark contested
+surface**; they no longer **grant exemptions**.
+
+Two axes, deliberately independent:
+
+| Axis | Scaled by | Rule |
+|---|---|---|
+| **Whether** a human rules | nothing | 100% — every paper, tags and tier |
+| **How deep** verification goes | **downstream use** | Core → full scrutiny; Context → §42 short-circuit |
+
+Depth is never scaled by panel agreement. Because coverage is total, **there is no sampling-error
+argument for the methods chapter to make**, and the 10% seeded audit is moot.
+
+This is itself risk-routed oversight: earlier weeding was low-consequence and was delegated to
+models with sampling-based oversight; final tagging produces the reported statistics and is
+therefore fully supervised. The routing signal is **downstream consequence**, not confidence.
+
+> **Reflexivity guardrail.** That convergence is a **worked illustration, not evidence.** It is n=1
+> self-observation and does not enter the findings — the same rule that keeps HOS's architecture out
+> of the instrument. It earns a paragraph in the methods chapter answering *"why review everything,
+> isn't that expensive?"* and nothing more.
+
+### 11.9 Instrument drift, and the measurement points
+The instrument grew in use. At T0:
+
+| | count |
+|---|---|
+| **v2.13 frozen** — what the panel ran on | **44** (17 themes + 27 facets) |
+| **Cheatsheet today** | **45** (17 + 28) — `scaling-dissent` added (§56); `counterpoint` retained as a deprecated tombstone |
+| **Live in Zotero, Phase 5** | **50** (18 themes + 32 facets) |
+
+The five beyond the cheatsheet are all post-freeze and all human-originated: theme
+`evaluator-reliability`; facets `agent-panel`, `cross-model`, `evaluated-synthetic`,
+`evaluated-benchmark`. `evaluated-real-data` is staged with no uses yet.
+
+**Every one of the 45 cheatsheet tags has fired at least once** — no dead vocabulary, which is a
+small instrument-validity result worth reporting.
+
+**An instrument revised during use would normally invalidate the measurement.** It does not here
+because revisions are **deferred to a versioned cut**: `Taxonomy_Changelog.md` is a **queue, not a
+patch stream** — 75 sections of accumulated refinements, none applied mid-sweep (§41). Gauge
+constancy is what lets the pass survive the discovery of its own gaps.
+
+Figures are regenerated by `slr-tools/tag_layer_stats.py` at three points:
+
+| Point | State | Question it answers |
+|---|---|---|
+| **T0** | now, frozen instrument | baseline — `tag_layer_stats_T0_2026-08-26.json` |
+| **T1** | Light Read + Accept closed, still frozen | do the T0 rates hold over the full corpus? |
+| **T2** | after the restricted re-run on the revised instrument | was the gap the *instrument* or the *panel*? |
+
+**T1→T2 is the informative comparison.** If origination on the post-freeze slugs collapses toward
+zero, the gap was the instrument. If the panel still misses them with the definitions in hand, that
+is a panel capability limit and a reportable finding.
+
+> **Caveat that must be stated first.** The revised definitions were written **from** the arbiter's
+> rulings (§56, §65, and others). T2 therefore does **not** independently rediscover those tags — it
+> tests whether the definition is **transmissible**. Worth measuring; not a blind validation.
+
+### 11.10 Earlier changes, with what prompted each
+| Change | Prompted by |
+|---|---|
+| Fable 5 added as a fourth tagger (2026-07-14), later dropped | cost per marginal disagreement not justified once the decisive comparison ran (§3.5) |
+| k=3 replication: disagreement-triggered → universal | run-to-run variability observed during assignment; needed to separate intra-model instability from inter-model disagreement (§5) |
+| Persona framing evaluated and **rejected** | no measurable effect at panel tier (§8.1) |
+| Prompt splitting assessed and **declined** | no length effect at panel tier; three of the four longest papers were unanimous and correct (§8.2) |
+| Instrument **frozen**; refinements queued to the changelog | gauge constancy — the instrument must not move while measurements are taken with it (§8.3, §41) |
+| `cal:human:reject:*` created mid-pass | endorsement-only could not remove a *modal* wrong proposal from `final:*` (§45/§46) |
+| `primary-proposed:` staged-tag convention | let a candidate tag accumulate instances without moving the frozen instrument |
+| §42 clarified: demote short-circuits tag verification, but every band still gets a human tier call | separating *coverage* from *depth* once the ACCEPT band was removed |

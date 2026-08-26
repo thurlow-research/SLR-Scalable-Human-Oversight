@@ -2658,3 +2658,47 @@ LLM confidences are poor predictors of code correctness."* Their own figures sho
 fitted on the deploying organisation's own workload, using its own correctness labels (they use test
 outcomes, chosen because *"tests are widely used, and are easily automated"*). That makes it an
 org-side capability, and therefore a fair survey question rather than a vendor-side abstraction.
+
+## 75. The confidence gate is gone — panel output is a suggestion, not a fact (2026-08-26)
+
+Not a taxonomy refinement; a **procedural** one, recorded here because this changelog is the register
+the methods chapter draws from. Full treatment in `Methodology/Theme_Tagging_Calibration.md` §11.
+
+**What changed.** The original triage ladder (§5 of the calibration doc) auto-accepted 3/3 panel
+consensus with only a 10% seeded random audit. That band is removed. **Every paper now gets a human
+ruling on both tags and tier, regardless of agreement.** Sampling is not applicable — coverage is
+total, so there is no sampling-error argument to make.
+
+**Why, in principle.** Panel agreement is *the producer's own signal*. Gating review on it let the
+thing being checked decide whether it needed checking — the failure §71 documents in practitioners
+delegating review to the generator, and what §74's producer-independence clause forbids. The flaw was
+present at design time; the errors below detected it.
+
+**Why, in practice.** Unanimous panel error is measured, not hypothetical: `WUUDHL8R`
+`regulatory-compliance` 9/9 (§44), `PR4GS7SP` `rules-based-checks`+`formal-methods` 9/9 (§51), Maes
+`counterpoint` 8/9 with the polarity inverted (§64), and `9MV2IVNU` `demote:context` 9/9 overruled
+(§53). Vendor decorrelation reduces correlated error; it does not remove **shared misreadings of the
+instrument**, and those are invisible to agreement statistics.
+
+**The number that settles it.** Across 515 panel-modal proposals on the 57 Light Read papers
+adjudicated at T0: **72.6% endorsed · 8.3% rejected · 19.0% silent**, plus 29 non-modal proposals
+rescued by human endorsement. **About one modal proposal in twelve is wrong.**
+
+**What the panel is for.** Recall, not adjudication — it holds all 44 tags against every paper, which
+is the thing human working memory fails at. Measured: panel recall on its *own* vocabulary is ~96%
+(human origination 8.0% of written tags, ~4% once the post-freeze tags the panel could not propose
+are excluded). It is a strong aid and not a substitute; the arbiter remains the criterion.
+
+**Tagging is not fully automated *or* fully manual.** It is machine-proposed and human-validated —
+supervision, not re-derivation. The vocabulary itself was likewise **co-authored** (emergent from the
+corpus → machine-drafted → human-revised → human-locked before coding), which is what keeps the panel
+from grading its own homework at the instrument level.
+
+**Standing consequences:**
+- Tripwires **rank attention**; they never **grant exemptions**.
+- Depth of verification scales with **downstream consequence** (§42), never with agreement.
+- `slr-tools/tag_layer_stats.py` regenerates these figures; T0 is frozen at
+  `slr-phase4/data/tags-v213/tag_layer_stats_T0_2026-08-26.json`. T1 (corpus closed) and T2 (after
+  the restricted re-run) are owed.
+- **Instrument drift to date:** frozen v2.13 = 44 tags · cheatsheet now 45 · live in Zotero 50. All
+  five post-freeze additions are human-originated. Every cheatsheet tag has fired at least once.

@@ -1165,3 +1165,33 @@ The permissive reading is about what the Act requires *in general*; VARI's is ab
 *once a system is already inside Annex III*. **The disagreement is over the scope of the high-risk
 class, not over the review rule** — which is exactly the gate-1/gate-2 split. Sterz et al.
 (`TW4I6DU6`) critique Art. 14 directly and should be read alongside both.
+
+## Exogenous corroboration — the volume→over-reliance shape outside AI coding (`EB49Q8QM`, 2026-08-26)
+
+**Framing material, not a tag.** Tilbury & Flowerday (2024), *The rationality of automation bias in
+security operation centers*, was ruled **Context** — the object is SOC alert triage, not AI-generated
+code (`general-ai` 2/3, `demote:context` 3/3). Its value is to the **framing**, not the corpus.
+
+**Why it is worth citing anyway.** The paper's motivating chain is the inversion shape, in a domain
+with a decade of prior literature and no connection to this thesis:
+
+> *"a commonly discussed challenge is the volume of alerts that need to be assessed"* → SOCs adopt
+> automated decision aids to triage → analysts become over-reliant, suffer cognitive skill
+> degradation, and **miss flaws despite contradictory information being present**.
+
+Volume exceeds human review capacity → automate the triage → the human check degrades. That is
+`oversight-scaling-inversion` feeding `automation-bias`, established **outside** software
+engineering.
+
+**How it earns its place in the argument.** It is evidence the dynamic is **not novel to AI coding** —
+which pre-empts the obvious objection that this review has found a temporary artifact of an immature
+tooling generation. A reviewer who doubts the mechanism in a code-review context has to contend with
+it being documented where the alert volumes have been overwhelming for years.
+
+**Connects to:** the oversight-effectiveness thread (SQ2) — Tilbury's four critical success factors
+are conditions under which automated triage *retains* a working human check, which is the same
+outcome variable that thread is organized around.
+
+**Caution on transfer.** SOC triage is a *detection* task with a ground-truth outcome (the alert was
+real or it was not); code review is not. Use the paper for the **shape of the failure**, not for
+effect sizes or for its CSFs as portable controls.
