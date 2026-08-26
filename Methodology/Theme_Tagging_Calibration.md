@@ -654,3 +654,93 @@ the staged facets are formally grafted, the `cross-model` definition ("different
 vendors/models") needs a decision on whether prescriptive "independent model" language qualifies, or
 whether the facet requires an actually-composed multi-vendor panel. This is the first item where the
 distinction bites; the sweep will produce more.
+
+## 10. THE PROCEDURE AS PRACTISED — consolidated statement (2026-08-26)
+
+Sections 1–9 record how this method was *developed*, chronologically and with the dead ends left in.
+This section states what the method **is**, so the write-up does not have to reconstruct it from the
+history. Where something is still open it says so.
+
+### 10.1 What it is, in one sentence
+**Independent multi-rater coding of full texts by three decorrelated LLM taggers with intra-rater
+replication, followed by human arbitration** — the human being the instrument of record, the models
+being an instrument for surfacing the contested surface.
+
+### 10.2 Corpus and bands
+128 Core papers, in three bands by expected effort, **all of which receive a human tier call**:
+**6 Full Read** · **78 Light Read** (the per-paper checklist pass) · **44 Accept**. Band determines
+*depth of tag verification*, never *whether a human ruled* (§42).
+
+### 10.3 Instrument
+A single frozen vocabulary — **v2.13**, 17 themes + 27 facets — expressed as `Tag_Cheatsheet.md` plus
+a fixed prompt prefix. Identical for every tagger. **Frozen deliberately for gauge constancy**: the
+instrument must not move while measurements are being taken with it, so refinements accumulate in
+`Taxonomy_Changelog.md` and are grafted only at a versioned cut (§41).
+
+### 10.4 Input
+**Full document text**, not title/abstract — child TXT attachments, roughly 2k–32k words. Tagging is
+on what the paper *does*, which cannot be read off an abstract.
+
+### 10.5 Taggers and replication
+Three **different vendors**, top reasoning tier — Claude Opus, OpenAI `gpt-5.6-sol` via `codex`,
+Gemini 3.1 Pro. Vendor diversity is deliberate **decorrelation**: same-vendor raters share failure
+modes, and correlated error is invisible to agreement statistics.
+Each model runs the same paper **k=3** times, giving **9 runs per paper**. The replication measures
+**intra-model instability** separately from **inter-model disagreement** — a distinction single-run
+designs cannot make, and the basis of the `unstable:<model>` tripwire.
+
+### 10.6 Output contract
+Per paper, per run: one **primary** theme, all **theme** memberships (multi-label, membership not
+mention), any **facets**, and a **≤12-word rationale per tag**, as strict JSON. **Rationale is
+required before the code is accepted** — the same constraint Choudhuri et al. impose (§9), and it is
+what makes a wrong tag diagnosable rather than merely wrong.
+
+### 10.7 The three-layer namespace
+| Layer | Written by | Meaning |
+|---|---|---|
+| `cal:<model>:*` | the taggers | proposals; never edited |
+| `cal:human:*` and `cal:human:reject:*` | the arbiter | endorsement and rejection |
+| `final:*` | computed at closeout | the reportable set |
+
+**Final = panel modal ∪ human endorsements − human rejections.** Layers are additive and never
+overwritten, so the current state is always recomputable from the record and the record is never
+recoverable from the state (cf. the same principle for screening tiers in
+`Selection_Criteria_By_Phase.md`).
+
+### 10.8 The three-state human layer (§45/§46)
+The arbiter's pass is **deliberately non-exhaustive**, so silence had to be given a defined meaning:
+- **endorsement** — `cal:human:theme|facet:*`, additive
+- **rejection** — `cal:human:reject:*`, subtractive; needed wherever a panel proposal is **modal**, or
+  the deprecated/incorrect tag survives into `final:*`
+- **silence** — not considered; the panel proposal stands or falls on its own modality
+
+**Silence is not disagreement.** This is why the assistant prompts the arbiter per paper with the
+specific contested tags rather than presenting a full list.
+
+### 10.9 Arbitration
+Every Light Read paper gets a human read and an **independent human tier call**; panel unanimity does
+not skip the review. A **demote ruling short-circuits downstream tag verification** — Context papers
+do not enter Phase 6 synthesis, so their tag depth has no consumer (§42). Effort is proportional to
+what the tags are used for.
+
+### 10.10 What the design deliberately does NOT do
+- **No feedback between raters, and no revision rounds.** Taggers never see one another's output. The
+  panel is not run to reach consensus; **disagreement is the measurement**, and averaging it away
+  would destroy the signal the panel exists to produce.
+- **No model adjudicates another model.** Only the human resolves conflict.
+- **No instrument changes mid-measurement** (§10.3).
+- **No tier decided by the panel.** Models propose tags; tier is always human.
+
+### 10.11 Reliability reporting
+Cross-model agreement and κ are computed **between models, treating each as a rater**; the human is
+kept as an independent baseline via the blind-first Set B design (§1). Known measured facts to carry
+into the write-up: primary-theme assignment is reliable, secondary multi-label breadth is where the
+noise concentrates (§3.1–3.2), and model signatures show directional bias (§3.3).
+
+### 10.12 Still open at time of writing
+- `final:*` has not been computed; it is a closeout step.
+- Whether to re-run the panel on the revised instrument after the Light Read pass closes is
+  **undecided** (§41).
+- A restricted re-run is queued for tags the frozen instrument never contained — `agent-panel`,
+  `cross-model`, the `evaluated-*` ladder, `scaling-dissent`, `evaluator-reliability`,
+  `evaluated-real-data`.
