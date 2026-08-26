@@ -2503,3 +2503,77 @@ distinction** — in a four-item set one soft member is a quarter of the evidenc
 single-institution confound, L2 and L3 concede the central properties are unmeasured. The
 qualification exists to keep the corpus statistic honest, not because the authors overclaimed.
 
+
+## 69. `oversight-theater` presupposes a process to be hollow (`E9RAWBDT`, 2026-08-25)
+
+**Arbiter, ruling out `oversight-theater` (panel 3/9):** *"There is no oversight, so there can't be
+theatre."*
+
+That is a cleaner statement of the boundary than the live definition carries. `oversight-theater` is
+*"review exists on paper but lacks authority/time/info to change the outcome (rubber-stamp, token
+HITL)"* — it presupposes **a process that exists and is hollow**. Where no review process exists at
+all, the finding is **absence**, and absence belongs to `automation-bias` (over-trust) or
+`oversight-scaling-inversion` (capacity), not here.
+
+**Discriminator to reuse:** theater is a process performed **for someone else's benefit** — a
+requirement, an auditor, a policy — that cannot change the outcome. A developer *choosing* a cheaper
+check to preserve their own flow is **pragmatic substitution**, self-directed, and can still change
+the outcome if it fires. Different mechanism, already covered by `automation-bias`.
+
+**Assistant error, recorded because it is the third of its kind today.** I offered as evidence for
+theater the line *"not read the original source beyond verifying its existence."* It is a **footnote
+by the authors about their own citation practice** (*"Citation taken from Royal [64]; we have not
+read the original source beyond verifying its existence"*) — scrupulous of them, and nothing to do
+with how developers review code. Same family as §65 and §67(c): **a string matched out of context is
+not evidence.** Read the surrounding sentence before quoting a grep hit as a finding.
+
+## 70. First endorsement of `oversight-scaling-inversion` in the Light Read pass (`E9RAWBDT`, 2026-08-25)
+
+Panel 7/9; **endorsed** — the first time the tag has survived arbiter review in this pass, after being
+declined on `59ZW4R58` (Maes — cost per item, not volume), `R9CDT9KB` (Mahmud — detector false
+positives), `VFNJSZD9` (Hjazeen — detection blindness) and `X7EN6DXZ` (Mitropoulos — subversion of a
+working reviewer).
+
+**What earned it — a documented practitioner adaptation, not an assertion:**
+
+> *"extensive code review is itself a pain point: **'My 400-line code is now 3000 lines and neither
+> of us can read it anymore'** (R63). Reviewing generated code can be tedious… **As a result, some
+> vibe coders recommend delegating review back to the AI by asking it to audit its own code.**"*
+
+Volume outstrips human review capacity → developers hand review **back to the generator** → nothing
+human inspects the artifact → it ships. Fail-open, and it passes §52's synthesis test: it would read
+naturally in a section on bad code shipping unreviewed.
+
+**Methodological significance:** four rejections and one endorsement, all decided on the same
+narrowing, is evidence that §52 **discriminates** rather than merely restricts. A test that never
+fires is as useless as one that always does. Pair this entry with §64a (the first clean negative) when
+defending the scoping in the write-up.
+
+## 71. The independence failure — practitioners delegate review to the generator (`E9RAWBDT`, 2026-08-25)
+
+Not a tag ruling; a corpus finding worth carrying into synthesis, and the sharpest thing in this paper
+for the dissertation's thesis.
+
+**The practice** (their §4.5, from mined posts and interviews):
+> *"delegating review back to the AI by asking it to **audit its own code**… 'Once you have finished
+> building, take your code and pass it through a leading reasoning model with the following prompt:
+> Please review for production readiness: check for common vulnerabilities…' (R41). This strategy
+> supports flow by preserving a sense of control while enabling effortless review. **However, it also
+> signals high trust in model ability; it is unclear how effective these strategies are compared to
+> traditional code review.**"*
+
+**Why it matters.** The design literature in this same corpus prescribes the opposite. Zhu
+(`ZGST9CY6`, Table 4) specifies *"divergence detection and independent checker — comparison against a
+**second** AI/system, heuristic, or ruleset… flags cases needing verification when solvers disagree;
+**avoids blind trust**."* Mahmud (`R9CDT9KB`) routes on **inter-model disagreement** across three
+vendors precisely because *"different models exhibit different blind spots."*
+
+**So: practitioners are doing the thing the design literature explicitly warns against** — using the
+producer as its own checker, which destroys the producer-independence that makes the check
+informative. The corpus contains both the prescription and the measured deviation from it, which is a
+stronger claim than either alone.
+
+**Cross-links:** strengthens §B (*the overseer is itself an untrusted, attackable component*) from the
+practice side; supplies a mechanism for the `automation-bias` primary here; and is the practitioner
+counterpart to `risk-routing`'s producer-independence requirement (*"model self-confidence is
+disqualified"*), which turns out to be violated in the field by default.
