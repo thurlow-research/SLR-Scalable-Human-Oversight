@@ -1301,3 +1301,38 @@ regulatory side.
 
 **Bucketing note:** third data point for the schema — high construct value, low evidential weight, and
 unlike MOSAICO also *secondhand*. See the open design note above.
+
+## TRIPWIRE on the two-gate frame — the UN-ROUTED REMAINDER (staged 2026-08-26, `ZBF86IJM`)
+
+**Status: staged, not adopted.** One instance, out of scope, token granularity. Do not carry into the
+argument until a second instance lands at artifact granularity.
+
+**The claim being watched.** Risk-routed oversight is the thesis's answer to scaling: send the risky
+things to humans, let the rest through. Gate 1 therefore always produces an **un-routed remainder** —
+and the open question is whether that remainder receives *the same* reduced scrutiny it would have got
+under no routing at all, or **less**, because the absence of a routing signal is read as an
+endorsement.
+
+**First instance — Vasconcelos et al. (`ZBF86IJM`, Context).** Token-level uncertainty highlighting in
+AI code completions, n=30, within-subjects:
+- *"several participants mentioned that they **interpreted a lack of highlights as signal that the code
+  was correct**."*
+- *"By editing **only the tokens highlighted**… participants would be able to pass the provided unit
+  tests… **but their code would improperly handle an edge case**."*
+- The authors' own caution: *"we may find that we are simply **shifting** the automation bias such that
+  people are applying an insufficient level of skepticism to the highlights, where before they were
+  insufficiently skeptical of the code completion itself."*
+
+**Why it matters if it replicates.** It would mean risk routing does not merely *reallocate* scrutiny
+but **destroys** some — the routed items gain attention while the un-routed lose more than they had.
+That converts an efficiency mechanism into a net-negative one at some ratio, and it is the empirical
+form of the concern raised against Sidney (requiring inspection of everything but varying depth — the
+shallow path acquires a false clean bill of health).
+
+**Why it is NOT yet usable.** Assistive mode, token granularity, three puzzle tasks, and the accuracy
+effect was not significant (p = 0.145). At PR granularity the human faces a different task entirely.
+**Promote on:** any paper observing reduced scrutiny of un-flagged *artifacts* (not tokens) in an
+agentic or PR-review setting.
+
+**Related but distinct:** the independence thread's measurement leg stays with `VTDG995V` — that is
+about whether the *signal* is any good; this is about what humans do with the *absence* of one.
