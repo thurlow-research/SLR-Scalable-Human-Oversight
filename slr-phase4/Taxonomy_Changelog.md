@@ -2413,3 +2413,57 @@ same failure as the Zhu `rules-based-checks` call (§65's family): **a pattern s
 evidence of nothing, and must not be reported as a negative finding.** Standing correction: when
 checking whether a paper contains X, read the structure — section headings, contribution list — before
 concluding absence, and state the search's limits when reporting one.
+
+## 68. Check the paper's OWN definition before tagging on its vocabulary (`RX9SICP9`, 2026-08-25)
+
+**Both arbiter and assistant proposed `agent-panel` on Moreira; it does not apply.** The paper's
+central construct is the *Verification Agent*, and it defines the term itself:
+
+> *"**Verification Agent (VA): Any entity capable of evaluating an artifact's correctness.** Two
+> types: **VA-automatic (unit tests, linters, compilers** — binary verdict on specific properties)
+> and **VA-human (the operator)** — evaluates semantic adequacy, usability, domain correctness."*
+
+The gate table then lists **VA-human** as the primary verifier for phases 0–4. So the paper's "agents"
+are deterministic tools and people. `agent-panel` requires multiple distinct **AI** agents; nothing
+here is one.
+
+**Rule (generalises §47 and §59):** a term appearing in a paper is not evidence for the tag that
+shares its name — **read the paper's own definition of the term first.** §47 covers apparatus vs
+object (agents used to *run* a study ≠ `agentic`); §59 covers panel label-matching. **This is a third
+case: the paper redefines a common word for its own construct.** The tag vocabulary and the paper's
+vocabulary can collide without overlapping at all.
+
+**Watch list — corpus terms known to be redefined by individual papers:** *agent* (Moreira: any
+verifier, human or tool), *constitution* (Marri: a policy document, not a governance body),
+*side-car* (Mitchell: a verification process, not deployment topology), *framing* (Mitropoulos: a
+cognitive-bias attack vector, not problem statement). Expect more; the corpus is young and authors
+are coining freely.
+
+**Notable because it is the first tag error the arbiter and assistant made independently and
+identically** — the shared cause is that both read a phrase (*"external verification agents"*) rather
+than a definition. It is exactly the failure mode §59 attributes to the panel, occurring in humans.
+
+### 68a. `adopted` without a method facet — deployed but never measured (`RX9SICP9`)
+
+A clean worked example of the `adopted` ≠ `method-field-study` rule, and an unusual evidence profile
+worth naming.
+
+**`adopted` earned** (9/9, and rare — roughly 5 of 128 sweep papers reach the ladder's top):
+> *"applied across **more than 20 projects involving multiple practitioners** at a single R&D
+> institution… Internal records document consistent application across these projects."*
+
+**`method-field-study` rejected** (6/9), on the paper's own limitations:
+> *"does not establish superiority over alternatives or generalisability"* · *"**L2 — Property 4 not
+> empirically tested.** The claim… is intuitive but **unmeasured**"* · *"**L3 — Gate cost not
+> measured.**"*
+
+**Ruling: no method facet at all.** Deployment is not measurement. Internal records documenting
+*consistent application* evidence that the methodology was **used**, not that anything about it was
+**observed or compared**. The method facets attach to an evidence-production event; there wasn't one.
+
+**Why this profile matters for synthesis.** `adopted` + no method facet is the signature of
+*practitioner methodology with real uptake and no evaluation* — high on the deployment ladder, absent
+from the evidence base. Papers like this should not be counted as effectiveness evidence for SQ5 no
+matter how mature their deployment status looks. The rung measures **maturity of use**, not
+**strength of evidence**, and conflating the two would systematically overstate the corpus's
+empirical footing.
