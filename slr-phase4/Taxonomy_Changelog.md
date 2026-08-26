@@ -2825,3 +2825,39 @@ tagged; watch for a second instance before considering vocabulary.
 (`s3:opus:context`) that was never human-confirmed, while a Core paper depends on it for its
 formalism. Not a dedupe — genuinely different content — but the tier may be wrong. A third team paper,
 `DU5B9CCK`, was discarded at s1.
+
+## 78. §43 gets its first clean NEGATIVE — a paper that engages the AI Act correctly (`XZEHQYNZ`, 2026-08-26)
+
+Tuape, Gabrielmichael & Kasurinen, *Architecting trust: designing human oversight and accountability
+for AI-driven software engineering under the EU AI Act*. Ruled **Context** (`lit-review` 3/3,
+self-described *"foundational step in a long-term research endeavor"* with *"preliminary findings"*),
+added to **Dissertation Supporting**.
+
+**Why it matters to §43.** `XZEHQYNZ` is one of the **12 papers on the EU-AI-Act watch tripwire**.
+Checked against the two `WUUDHL8R` errors, it commits **neither**: no claim that dev tooling inherits
+a risk tier, and no claim that AI-generated code makes a system high-risk. What it asserts is accurate:
+
+- *"the Act strongly emphasizes 'effective oversight' for **high-risk AI systems**, its practical
+  implementation for Agentic AI… lacks concrete guidance"* — correctly scoped
+- *"the Act's expectation of human overseer competence"* — Art 14(4)(a), correct
+- *"beyond a simple 'stop button' to real-time debugging"* — Art 14(4)(e), correctly characterised as
+  insufficient for agentic systems
+
+Only loose usage: *"high-risk applications of Agentic AI"* in the Discussion reads colloquially rather
+than as the Act's term of art. Borderline, **not** a misstatement.
+
+**Recorded as a CONTRAST CASE, not an instance.** §43 counts recurrences to test whether "papers invoke
+the Act without engaging it correctly" is a reportable finding about field maturity. **A clean negative
+is worth as much as a positive** — without negatives the tripwire measures only how many papers mention
+the Act, not what share get it wrong. Watch count unchanged; denominator now has a confirmed correct
+member.
+
+**Also — the §44 converse.** §44 rejected `regulatory-compliance` on `WUUDHL8R` because the Act was
+*justification*, not contribution. Here it **genuinely fires**: the Act is the **subject**, and the
+paper's contribution is a taxonomy of implementation gaps in operationalizing Art 14 human oversight
+for agentic SE. Panel proposed it as primary 3/3 and would have been right. **Not written** — §42
+short-circuits tag verification on a Context ruling — but recorded so §44 has its positive pole.
+
+**Discriminator worth keeping:** *does the paper's contribution change depending on what the Act says?*
+`WUUDHL8R` — no, the refactoring tool is unaffected. `XZEHQYNZ` — yes, the entire gap taxonomy is
+derived from Art 14's requirements. That is the line between motivation and contribution.
