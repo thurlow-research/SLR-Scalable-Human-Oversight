@@ -2861,3 +2861,49 @@ short-circuits tag verification on a Context ruling — but recorded so §44 has
 **Discriminator worth keeping:** *does the paper's contribution change depending on what the Act says?*
 `WUUDHL8R` — no, the refactoring tool is unaffected. `XZEHQYNZ` — yes, the entire gap taxonomy is
 derived from Art 14's requirements. That is the line between motivation and contribution.
+
+## 79. §53 worked NEGATIVE — a transferable finding does not earn Core when the thread already holds it (`ZBF86IJM`, 2026-08-26)
+
+Vasconcelos et al., *Generation Probabilities Are Not Enough: Uncertainty Highlighting in AI Code
+Completions* (ACM TOCHI 32(1), 2025). **Ruled Context.** Recorded because the assistant initially
+argued for Core and the scarcity test reversed it — the reasoning is the reusable part.
+
+**The tempting argument (rejected).** The paper's headline result reads as the producer-independence
+clause proved: three within-subjects conditions over the **same completions**, differing only in what
+was highlighted. Highlighting by **generation probability** — the producer's own signal — gave **no
+benefit over no highlighting**; highlighting by a **separate edit model** gave faster completion and
+more targeted edits. Mechanism-level, so it appears to transfer to agentic settings that route on
+self-reported model confidence.
+
+**Why it fails anyway — three counts of the §55 directness test:**
+1. **Wrong mode.** `assistive`: human-initiated, snippet granularity, human authoring in the flow.
+   The review's interest is agentic code.
+2. **No scaling content.** No volume argument, no capacity argument, no delegation. The thesis's
+   problem does not appear in the paper.
+3. **Thin evidence for the transferable part.** n=30, three puzzle tasks, 10-minute cap, 38% baseline
+   accuracy — and the accuracy hypothesis was **not supported** (p = 0.145). The significant effects
+   were time, targeting, and preference; correctness did not move.
+
+**The decisive check — the leg was already occupied.** The independence thread's *measurement* leg is
+held by `VTDG995V` (Gros, Spiess et al., ICSE 2025), which tests four producer-internal confidence
+measures directly against code correctness (ECE 0.09–0.73) and shows rescaling works only against
+external ground truth. Same claim, **on code, at scale, no UI confound, and in scope.**
+
+**Rule this establishes:** **§53 scarcity is tested against the ARGUMENT SLOT, not against the corpus
+at large.** A finding is not scarce because it is unusual — it is scarce because *nothing else in the
+corpus fills the role it would fill*. Before promoting on transferability, name the leg it would
+occupy and check whether an in-scope paper already holds it. Contrast `9MV2IVNU` (Eze, §53), where the
+slot was genuinely empty and the general-AI exception fired.
+
+**What survives the demotion — one staged watch item.** Vasconcelos has something the rest of the
+thread lacks: **human behavioural response to a routing signal** (`VTDG995V` is a calibration study
+with no humans). Two observations, staged not adopted:
+- *"several participants mentioned that they **interpreted a lack of highlights as signal that the code
+  was correct**."*
+- *"By editing **only the tokens highlighted**… participants would be able to pass the provided unit
+  tests… **but their code would improperly handle an edge case** (because unit tests are not
+  comprehensive)."*
+
+This is the **un-routed remainder problem** — the failure mode of gate 1. Demonstrated only at token
+granularity in assistive mode; extending it to PR-granularity agentic review is extrapolation.
+**Tripwire: promote to a finding on a second instance at artifact granularity.**
