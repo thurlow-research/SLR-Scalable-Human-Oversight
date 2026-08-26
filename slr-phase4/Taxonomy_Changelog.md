@@ -2577,3 +2577,55 @@ stronger claim than either alone.
 practice side; supplies a mechanism for the `automation-bias` primary here; and is the practitioner
 counterpart to `risk-routing`'s producer-independence requirement (*"model self-confidence is
 disqualified"*), which turns out to be violated in the field by default.
+
+## 72. §51's reference-oracle exclusion does NOT fire on migration/translation tasks (`27YULT5I`, 2026-08-25)
+
+§51 excludes a checker that needs a known-correct reference implementation, on the stated ground that
+*"in real oversight you do not have the reference (if you did, you would not need the generated
+code)."* **That rationale fails for one whole task class.**
+
+Sharma (Ronit) proposes *"**differential testing protocols that verify functional equivalence against
+original systems**"* for LLM-driven legacy code migration in regulated finance. In migration the
+reference is the **legacy codebase** — it exists, it is in production, and equivalence to it is the
+actual acceptance criterion, not a research stand-in. The counterfactual §51 relies on ("if you had
+the reference you would not need the generated code") is simply false here: you have the COBOL *and*
+you need the Java.
+
+**Rule:** §51 excludes reference-oracle checkers **when the reference would not exist in deployment**
+(the case it was written for — `PR4GS7SP`/ACCA testing against ground-truth implementations). It does
+**not** exclude them for **migration, translation, refactoring, or re-platforming**, where
+equivalence-to-source is the oversight mechanism itself. `rules-based-checks` endorsed on that basis.
+
+**Expect recurrence:** legacy modernisation is a major AI-coding use case, and every paper in it will
+propose some form of differential/equivalence testing. Check the task class before applying §51.
+
+## 73. `evaluated-real-data` — second instance, and the provenance-vs-curation test case arrives (`5DI9B43K`, 2026-08-25)
+
+The staged rung (see `HOS_Seeded_Theme_Candidates` §E) had **one** confirmed instance and an open
+question flagged as having **no test case**. Both change here.
+
+**Second instance.** Sistla et al. (Google DeepMind / Google / Meta) evaluate on *"a **dataset of 20
+problems, manually picked**, primarily from two [sources]"* — real MemorySanitizer-detected
+uninitialized-variable bugs, plus 20 program-equivalence queries. Real-world-sourced; not a
+recognized third-party protocol. Under the live instrument **no rung applies**: `evaluated-benchmark`
+requires administering a recognized protocol as-is, `evaluated-synthetic` requires the authors to have
+invented the material. Tool-side per §34's fork, so the ladder should apply and doesn't.
+
+**And it is the missing test case.** The open question was whether **provenance** or **curation**
+decides. Mahmud (`R9CDT9KB`) was real-sourced with no curation dispute — it did not discriminate.
+Sistla is **real-sourced AND author-curated** ("manually picked"), which is exactly the contested cell.
+`ZBF86IJM` could not settle it because it has no tool-side event at all.
+
+**The question, stated precisely for the graft decision:** does `evaluated-real-data` require only that
+the *material* be real-world-sourced (Sistla qualifies), or also that the *selection* be
+protocol-driven rather than hand-picked (Sistla fails)? A curation bar would collapse the rung toward
+`evaluated-benchmark`, since protocol-driven selection over real data largely *is* a benchmark. A
+provenance-only bar admits hand-picked real bugs, which is weaker evidence than it looks — 20
+manually chosen cases is not a sample.
+**Provisional lean, not a ruling: provenance decides, and sample size is recorded in the rationale
+rather than in the tag.** The rung's job is to say what the system ran *against*; how much and how
+selected belongs in the write-up. Revisit at graft with both instances in hand.
+
+**Corpus note:** two instances now, both from strong industrial-research groups, both hand-curated
+from real defects. If that pattern holds the rung is describing a real and common evaluation style,
+not an edge case.
