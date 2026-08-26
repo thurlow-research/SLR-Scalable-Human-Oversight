@@ -2467,3 +2467,39 @@ from the evidence base. Papers like this should not be counted as effectiveness 
 matter how mature their deployment status looks. The rung measures **maturity of use**, not
 **strength of evidence**, and conflating the two would systematically overstate the corpus's
 empirical footing.
+
+### 68b. `adopted` qualified — deployment status vs verifiability of the deployment claim (`RX9SICP9`, 2026-08-25)
+
+The tag **stands**: Moreira clears the pilot rule (*"outside the research **context**" ≠ "outside the
+research **org**"*), because the 20+ projects are the organisation's own operational work, not a study
+site — the paper ran no study at all. **What is qualified is the verifiability of the claim, not its
+scope.** New tag `evidence:self-reported-unverified`, plus a child note carrying the reasoning.
+
+**Why a scarce tag needs this.** `adopted` is **4 papers among the 48 adjudicated** (panel proposed it
+on 8 of 149; the human layer roughly halved it). Ranked by inspectability:
+
+| Paper | Org | Method facet |
+|---|---|---|
+| Abreu et al., *Moving Faster and Reducing Risk* (`BU73N7PC`) | **Meta**, ICSE-SEIP industrial track | `method-experiment` |
+| Karuppuchamy, *AI-Augmented SE* (`8MXATG38`) | **eBay Inc.**, IEEE CCWC | `method-field-study` |
+| Takerngsaksiri et al., *HITL SD Agents* (`5VTAJISY`) | Monash + **Atlassian**, ICSE-SEIP | `method-field-study` + `method-self-report` |
+| **Moreira, *IACDM* (`RX9SICP9`)** | **name withheld**, records *"not publicly available"* | **NONE** |
+
+The first three name an identifiable employer, publish in peer-reviewed practice tracks, and all
+carry a method facet. Moreira is the only one with **neither** an identifiable deploying organisation
+**nor** any measurement — and the methodology's author is the person reporting its use.
+
+**So 25% of the corpus's `adopted` set rests on unverifiable self-report**, and it is the same
+instance that §68a flags as deployed-but-never-measured. **The two weaknesses coincide**, which is
+what makes it worth separating rather than absorbing.
+
+**Rule:** deployment status and **evidential quality of the deployment claim** are a third
+independent axis, alongside the two already recorded (tier vs evidence strength, §36b; deployment vs
+evidence shape, §68a). Do not let a rung's scarcity substitute for its strength. **Any counted claim
+of the form "N papers report production adoption" must exclude this instance or state the
+distinction** — in a four-item set one soft member is a quarter of the evidence.
+
+**Not a criticism of the paper.** Its limitations section is unusually candid: L1 names the
+single-institution confound, L2 and L3 concede the central properties are unmeasured. The
+qualification exists to keep the corpus statistic honest, not because the authors overclaimed.
+
