@@ -1242,3 +1242,26 @@ cannot be ordered on one axis:
 **Consequence to carry:** if MOSAICO stays Primary, it must be flagged **construct-source** so nothing
 downstream cites it as *support* for a claim. A one-bit evidential marker on the dissertation buckets
 would remove the ambiguity — worth deciding when the schema is built, not per paper.
+
+## UPDATE to the Mitchell demote decision — Töpfer read; domination is PARTIAL (2026-08-26)
+
+`72W6R4JG` (Töpfer) is now adjudicated. Against the decision rule recorded above:
+
+**Delivered:** formal-constraint-driven feedback for vibe coding, implemented and evaluated. The
+constraint verifier checks FCL formulas over execution traces and emits repairable counterexamples;
+the LLM repairs autonomously within a bounded 10-iteration gate. This *is* Mitchell's proposal built —
+for the **feedback** half.
+
+**Not delivered — autoformalization.** Töpfer's constraints are **hand-authored by the domain expert**.
+The paper names reducing *"the manual effort of 'constraint engineering'"* as future work. Mitchell's
+specific advocacy was autoformalization *plus* verification; the automatic derivation of formal specs
+from natural language remains unclaimed by any read paper.
+
+**Status: Mitchell is partially dominated, not dominated.** Decision deferred to `FZK2QB5A`
+(Alshahwan, *Assured offline LLM-based software engineering*), still unread — the last candidate that
+could close the autoformalization gap.
+
+**Coupling to watch (§77).** If the `formal-methods` definition is ever narrowed to proof-grade work,
+the cluster shrinks below 7 of 149 and the §53 scarcity test moves in Mitchell's favour — a *smaller*
+cluster makes Mitchell more likely to survive as the corpus's position statement of the gap. The
+definition call and the tier call are coupled; resolve the definition first.
