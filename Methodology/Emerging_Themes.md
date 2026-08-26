@@ -1195,3 +1195,50 @@ outcome variable that thread is organized around.
 **Caution on transfer.** SOC triage is a *detection* task with a ground-truth outcome (the alert was
 real or it was not); code review is not. Use the paper for the **shape of the failure**, not for
 effect sizes or for its CSFs as portable controls.
+
+## Independence thread — a design that gets it half right (`DJMBHHZN`, 2026-08-26)
+
+Feeds the **INDEPENDENCE OF THE CHECK** thread. MOSAICO (Tisi et al.) is the first corpus design that
+**instantiates producer-independence architecturally** and then partially undercuts it.
+
+**Right:** two levels. First-level *solution agents* propose; separate second-level *supervision
+agents* evaluate. The checker is structurally not the producer — which is the thread's normative
+claim rendered as an architecture rather than an exhortation.
+
+**Wrong:** the governance language admits *"the uncertainty agents can have about their own answers"*
+as an input to the decision. That is **self-reported producer confidence**, the anti-pattern §74
+names. A design can be independent at the layer that matters and still readmit the producer's own
+signal through a side channel.
+
+**Why it earns a place in the thread:** most corpus papers either violate independence without
+noticing or assert it without mechanism. This one shows the failure is not binary — independence is a
+property of *each signal*, not of the architecture as a whole. Any org-survey question about
+"independent review" needs to ask what the reviewer *sees*, not just who the reviewer is.
+
+**Second contribution — oversight as configuration.** MOSAICO relocates the human from inspecting
+artifacts to **authoring policy** (agreement type, minimum votes, deadlines, confidence thresholds).
+This is a distinct answer to **gate 1** of the two-gate frame: not "route risky artifacts to humans"
+but "let humans set the conditions under which machine agreement suffices." Directly convertible into
+survey instrument: *does your org define, in writing, what agreement level is required before AI
+output is accepted?* Almost nothing else in the corpus generates that question.
+
+## OPEN DESIGN NOTE — the dissertation bucketing schema is doing two jobs (2026-08-26)
+
+Parked for the schema work, recorded now while the reasoning is fresh. **Dissertation
+Primary/Supporting currently conflates two independent axes:**
+
+- **evidential weight** — how much the paper's findings can support a claim
+- **construct value** — how much it shapes the argument, vocabulary, or survey instrument
+
+Three papers already adjudicated make a natural **test set**, because they sit at different points and
+cannot be ordered on one axis:
+
+| Paper | Evidential weight | Construct value | Ruled |
+|---|---|---|---|
+| **MOSAICO** (`DJMBHHZN`) | **none** — design-only, month 3 of 36, nothing measured | **high** — governance policy language, agent repository w/ KPIs, oversight-as-configuration | SLR Core · Diss **Primary** |
+| **Kim & Yegge** | low — self-report, authors' own anecdotes | moderate — practitioner framing | SLR Core · Diss **Supporting** |
+| **Sidney** | low — vendor whitepaper, no study | moderate — risk-tiered review depth | SLR Core · Diss **Primary** |
+
+**Consequence to carry:** if MOSAICO stays Primary, it must be flagged **construct-source** so nothing
+downstream cites it as *support* for a claim. A one-bit evidential marker on the dissertation buckets
+would remove the ambiguity — worth deciding when the schema is built, not per paper.

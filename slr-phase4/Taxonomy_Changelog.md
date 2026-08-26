@@ -2702,3 +2702,53 @@ from grading its own homework at the instrument level.
   the restricted re-run) are owed.
 - **Instrument drift to date:** frozen v2.13 = 44 tags · cheatsheet now 45 · live in Zotero 50. All
   five post-freeze additions are human-originated. Every cheatsheet tag has fired at least once.
+
+## 76. `metrics` — second application of §66; and MOSAICO's half-independence (`DJMBHHZN`, 2026-08-26)
+
+Tisi et al., *MOSAICO: management, orchestration and supervision of AI-agent communities* — an EU
+project proposal, month 3 of a 36-month span. Ruled **Core**, added to Dissertation Primary.
+
+**(a) `metrics` rejected — §66 holds on its second case.** The agent repository specifies
+*"quality attributes (KPIs), such as accuracy, failure rate, and latency."* Named dimensions, no
+computable procedure. Same line as the Migliarini ruling: **naming what to report is not defining a
+metric.** §66 now has a positive (Maes) and two negatives (Migliarini, MOSAICO).
+
+**(b) `built-system` rejected despite an explicit prototype sentence.** The paper says *"We built
+early prototypes to experiment ideas about the four technical solutions."* Prototypes built to
+*explore ideas* in month 3 of 36, with every mechanism described in future tense and no evaluation,
+do not clear §67's bar that the **core mechanism must run**. Codex proposed it 1/3; opus and gemini
+both said `design-only`, and the arbiter agreed. **Worked rule:** a prototype sentence is not
+self-certifying — check what the prototype *does* against the mechanism the paper claims.
+
+**(c) `org-governance` declined as a vocabulary match (§59, and the panel got this one right).**
+MOSAICO uses "governance" throughout, but the referent is a **technical policy language** for agent
+communities (agreement type, minimum votes, deadlines, confidence thresholds) that the project owner
+configures — not organizational policy or process for governing AI use. Test applied: *does the paper
+describe governance of the org's AI use, or a mechanism the org configures?* Latter → `framework`,
+which was already 3/3. **Notable:** 0 of 3 models proposed `org-governance`; the arbiter raised it and
+withdrew it. The §59 failure mode usually runs the other way, so this is a useful converse instance.
+
+**(d) `risk-routing` declined; human participation ≠ escalation.** The relevant sentence is *"Once
+such a consensus is reached (potentially with the help of human evaluators **if they are also allowed
+to participate according to the governance policy**)"* — humans are policy-permitted **participants**
+in consensus, not a destination that disagreement escalates to. The confidence threshold routes to
+**more agent discussion**, never to human attention. **Discriminator:** routing requires the signal to
+allocate *human* review; a threshold that buys more machine deliberation is orchestration, not
+routing.
+
+**(e) `cross-model` declined — `agent-panel` without model heterogeneity.** The diversity claim is
+*"specialisation of workers on tasks"*: role specialisation, not different models or vendors. Clean
+worked case of the two facets coming apart — a panel can be many agents on one model.
+
+**(f) Half-independence — a design that satisfies §74 at one layer and violates it at another.**
+MOSAICO is architecturally producer-independent where it counts: first-level **solution agents**
+propose, separate second-level **supervision agents** evaluate. But one of its two governance signals
+is *"the uncertainty agents can have about their own answers"* — **self-reported producer
+confidence**, the exact anti-pattern §74 names. Recorded because the corpus mostly offers designs
+that ignore independence entirely; this is the first that gets it right structurally and then
+undercuts it with a self-report channel.
+
+**(g) Four correct tags proposed by one model only.** `tooling-supply-chain`, `agent-scope-drift`,
+`oversight-explanation`, and `risk-quality` were codex-only (1/3) and all four were endorsed. Any
+consensus rule would have discarded them — a single-paper instance of the effect quantified in
+`Theme_Tagging_Calibration.md` §11.5 (29 non-modal proposals rescued across the pass).
