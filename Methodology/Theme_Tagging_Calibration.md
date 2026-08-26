@@ -922,9 +922,15 @@ The instrument grew in use. At T0:
 | **Cheatsheet today** | **45** (17 + 28) — `scaling-dissent` added (§56); `counterpoint` retained as a deprecated tombstone |
 | **Live in Zotero, Phase 5** | **50** (18 themes + 32 facets) |
 
-The five beyond the cheatsheet are all post-freeze and all human-originated: theme
-`evaluator-reliability`; facets `agent-panel`, `cross-model`, `evaluated-synthetic`,
-`evaluated-benchmark`. `evaluated-real-data` is staged with no uses yet.
+Two different comparisons, both worth stating because they answer different questions:
+
+- **Beyond the *frozen instrument* (44) — 6 tags**, i.e. what the panel could not propose:
+  `evaluator-reliability`, `agent-panel`, `cross-model`, `evaluated-synthetic`,
+  `evaluated-benchmark`, `scaling-dissent`. This is the set the restricted re-run targets.
+- **Beyond the *current cheatsheet* (45) — 5 tags**: the same list minus `scaling-dissent`, which was
+  grafted at the §56 cut. This is the set still awaiting a graft.
+
+All are human-originated. `evaluated-real-data` is staged with no uses yet.
 
 **Every one of the 45 cheatsheet tags has fired at least once** — no dead vocabulary, which is a
 small instrument-validity result worth reporting.
