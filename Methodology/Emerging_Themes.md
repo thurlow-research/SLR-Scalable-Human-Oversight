@@ -1042,3 +1042,67 @@ user commands over code consistency"*, so accumulated natural-language constrain
 contradict one another and developers do not notice. A specific mechanism for long-run vibe-coding
 degradation, adjacent to Casserini's agentic entropy (`95CPB7CF`) and Maes's reviewability decline
 (`59ZW4R58`, §A watch item). Cite it for the mechanism even from Context.
+
+## Synthesis thread — INDEPENDENCE OF THE CHECK: why the checker cannot be the producer (opened 2026-08-25)
+
+**Arbiter framing:** *"The score comes from the thing being checked, which is the disqualifier — and
+the paper's numbers back it up. This could be important to explaining the importance of having
+something else do the checking, and checks and balances."*
+
+**The claim.** An oversight signal is informative only to the extent it is **produced independently of
+the artifact's producer**. A model's assessment of its own output is not a check; it is the same
+computation reporting on itself. This is a *structural* property, not a quality-of-model property —
+it does not improve as models improve.
+
+**What makes this thread unusually strong: the corpus supplies all four legs of the argument.**
+
+**1. The instrument already asserts it (design rule).** `risk-routing` requires *"a computed &
+**producer-independent** signal — **model self-confidence is disqualified**."* Recorded as a design
+judgement, before any evidence.
+
+**2. The literature prescribes it (design side).**
+- `ZGST9CY6` **Zhu et al.** (*AI and Ethics* 2026), mechanism catalogue: *"Divergence detection and
+  independent checker — comparison against **a second AI/system**, heuristic, or ruleset with
+  alerting… flags cases needing verification when solvers disagree; **avoids blind trust**."*
+- `R9CDT9KB` **Mahmud et al.** (ACSAC 2025) build it: three vendors (GPT-4 Turbo, Claude Sonnet 4.5,
+  Gemini 2.0 Flash), routing on **inter-model disagreement**, with the rationale stated —
+  *"different models exhibit **different blind spots** across vulnerability categories."*
+- `5DI9B43K` **Sistla et al.** (Google DeepMind/Google/Meta) use an **external formal verifier** over
+  the agent's extracted reasoning — independence by construction, not by ensemble.
+
+**3. The measurement confirms it (evidence side) — this is the new leg.**
+`VTDG995V` **Gros, Spiess et al.** (ICSE 2025) test four *producer-internal* confidence measures
+(average token probability, sequence probability, verbalized self-ask, QA logit) and find
+**ECE 0.09–0.73**; *"intrinsic LLM confidences are **poor predictors of code correctness**."*
+Local Platt rescaling against real correctness labels moves ECE **0.46 → 0.04** — which shows the
+signal carries *some* information, but only once fitted against an **external** ground truth
+(they use test outcomes). **The rescue comes from outside the model.**
+
+**4. Practice violates it (observed side).**
+`E9RAWBDT` **Pimenova et al.**: developers, overwhelmed by review volume, *"recommend **delegating
+review back to the AI by asking it to audit its own code**"* — with the authors noting *"it is unclear
+how effective these strategies are compared to traditional code review."* So the field's default
+adaptation to the scaling problem is **exactly the move the design literature forbids and the
+measurement shows fails.**
+
+**Why this is the strongest argument shape available in the corpus.** Rule → prescription →
+measurement → observed deviation, with independent sources at each step, and no step resting on the
+dissertation's own reasoning. The prescription and the deviation were found in separate papers by
+separate groups; the measurement was not sought to support either.
+
+**Extension — the checker is not merely dependent but attackable.** `X7EN6DXZ` **Mitropoulos et al.**
+demonstrate **100% success** re-introducing CVEs past LLM reviewers via crafted PR metadata, and name
+the asymmetry that makes it structural: *"attackers can iteratively refine attacks against a local
+clone of the review pipeline, while defenders have only one chance to detect them."* Independence is
+therefore necessary but not sufficient — see the §B candidate in `HOS_Seeded_Theme_Candidates`
+(*the overseer is itself an untrusted, attackable component*), which `VFNJSZD9` (Hjazeen) asserts and
+Mitropoulos demonstrates.
+
+**Caveat to carry.** "Independent" admits degrees, and the corpus shows at least four:
+same-model self-report < same-model rescaled against external labels < different-vendor ensemble <
+external deterministic verifier. **Do not flatten these into a binary** in the write-up; the
+interesting claim is that the gradient exists and that practice sits at the weakest end of it.
+
+**Survey hook.** Ask what produces the signal that decides review depth — the assistant itself, a
+different model, or a deterministic tool — and whether that choice was deliberate. The expected answer
+is "the assistant," unexamined.
