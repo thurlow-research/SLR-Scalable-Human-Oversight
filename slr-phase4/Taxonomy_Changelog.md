@@ -2752,3 +2752,76 @@ undercuts it with a self-report channel.
 `oversight-explanation`, and `risk-quality` were codex-only (1/3) and all four were endorsed. Any
 consensus rule would have discarded them — a single-paper instance of the effect quantified in
 `Theme_Tagging_Calibration.md` §11.5 (29 non-modal proposals rescued across the pass).
+
+## 77. `formal-methods` — membership tracks the technique used, not the technique invented (`72W6R4JG`, 2026-08-26)
+
+Töpfer et al., *Vibe-coding: feedback-based automated verification with no human code inspection*.
+Ruled **Core**; primary `rules-based-checks`; `formal-methods` kept as a theme.
+
+**The finding that forced the question.** The abstract and the contributions list both present FCL
+(Functional Constraint Logic) as *"a novel first-order temporal logic"*, but §4 says
+*"Functional Constraint Logic (FCL), **introduced in [11]**"* and *"More examples and details on FCL
+can be found in [11]."* **[11] is the authors' own companion paper** — Töpfer, Plášil, Bureš,
+Hnětynka (2026), arXiv 2602.18607 — **already in the library as `2KDTRGRP`, sitting at Context**.
+The formalism is borrowed; this paper contributes the feedback loop that uses it.
+
+**Ruling — the two calls come apart:**
+- **Primary: NO.** §67 lets `formal-methods` be primary *when the technique is the subject*. Here the
+  technique is prior work, so the premise fails. Primary is `rules-based-checks` (panel 2/3).
+- **Membership: YES.** **Theme membership tracks what the paper DOES, not what it INVENTS.** Novelty
+  is a primary-selection criterion, never a membership bar — requiring it would strip mechanism tags
+  off every paper that adopts machinery rather than inventing it.
+
+**Why it clears the bar on the merits, not just by default:**
+1. The formalism is **operative**. The central claim — *"diagnostic specificity is necessary"* — is a
+   claim about FCL's properties: counting semantics localise failures where coarse metrics cannot.
+   Remove FCL and there is no result (§67's core-mechanism-must-run test).
+2. **§51's reference-oracle exclusion does not fire.** Constraints are authored *independently of the
+   generated code*, so the checker runs on artifacts whose correct answer is unknown — the exact
+   operational question §51 added, answered yes. Contrast `PR4GS7SP`, where it answered no.
+3. It is the documented `rules-based-checks`+`formal-methods` pairing for a classical engine (§51).
+
+**Strength vs kind — the distinction to keep.** The paper states *"The goal is not to prove properties
+exhaustively, but to provide a detailed feedback message that supports repair."* Runtime trace-checking
+over observed runs is weaker **evidence** than proof, but it is the same **kind** of technique. The tag
+carries no proof-strength threshold. **If one is ever added — restricting `formal-methods` to
+proof-grade work — it must be a written rule, not a per-paper call**, and it would shrink the cluster
+(7 of 149), which feeds the §53 scarcity test on Mitchell (`6ZW9QNQH`). The definition call and the
+Mitchell tier call are coupled.
+
+**Also ruled on this paper:**
+- **`agent-panel` REJECTED — tag by object (§62).** The "agents" are entities *inside the simulated
+  system* (*"Villagers (agents) are farmers or…"*, ensembles in the Dragon Hunt CAS), i.e. the subject
+  matter of the generated code. The architecture is one LLM plus one deterministic verifier — nothing
+  reviews anything else. **Worked rule: the word "agent" in a paper's domain vocabulary is not
+  evidence of an agent panel.**
+- **`steering` REJECTED.** The domain expert states constraints once and exits; the turn-over-turn loop
+  is **machine↔machine** (verifier → LLM). §54 requires an ongoing *human↔AI* loop. An automated repair
+  loop is `remediation-gating`, not steering.
+- **`method-experiment` REJECTED; `evaluated-synthetic` applied (§34 fork).** There is a real
+  manipulation — three feedback-level variants, 10 independent attempts each — but it is an **ablation
+  of the authors' own feedback design**, and the finding characterises *their tool*. Whose-properties
+  test → tool-results. **Sharpest test case on record: a controlled ablation with replicates still
+  earns no method facet.**
+- **`provenance-auditability` REJECTED.** The counterexample report is *"rendered as a concise textual
+  report… to provide a detailed feedback message that supports repair"* — it goes **to the LLM**. The
+  definition requires a persistent record serving *human* reviewability; machine-to-machine persistence
+  is plumbing. A human audit trail would also contradict the paper's own no-human-inspection thesis.
+- **`evaluator-reliability` REJECTED — the evaluator is deterministic.** The FCL verifier is sound by
+  construction; the LLMs here are *generators*, not evaluators. **The tag presupposes a probabilistic
+  evaluator whose trustworthiness is in doubt** — the open question here is spec adequacy instead.
+
+**New observation — the explanation channel runs backwards (`oversight-explanation` declined).** FCL is
+explicitly designed for *legibility of failure*, argued against LTL: it yields *"attack happens 0 times
+in steps 1–15"* rather than a generic *"globally"* / *"sometimes in the future"*. That is a genuine
+explanation-design argument — but the stated audience is the model (*"counterexamples that can be
+translated into **LLM-friendly feedback**"*), and **the human never sees AI output at all**: the domain
+expert's surface is the constraint set they authored. `oversight-explanation` explains AI output *to a
+human*; here a human-authored spec explains the failure *to the AI*. **First corpus instance of the
+explanation channel pointing from the human's artifact toward the machine.** Recorded rather than
+tagged; watch for a second instance before considering vocabulary.
+
+**Follow-up owed at closeout:** `2KDTRGRP` (the FCL paper) sits at Context on a machine screening tag
+(`s3:opus:context`) that was never human-confirmed, while a Core paper depends on it for its
+formalism. Not a dedupe — genuinely different content — but the tier may be wrong. A third team paper,
+`DU5B9CCK`, was discarded at s1.
