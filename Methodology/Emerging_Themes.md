@@ -1265,3 +1265,39 @@ could close the autoformalization gap.
 the cluster shrinks below 7 of 149 and the §53 scarcity test moves in Mitchell's favour — a *smaller*
 cluster makes Mitchell more likely to survive as the corpus's position statement of the gap. The
 definition call and the tier call are coupled; resolve the definition first.
+
+## The scaling problem stated from the REGULATORY side (`XZEHQYNZ`, 2026-08-26)
+
+Tuape et al. is Context (secondhand, preliminary) but sits in **Dissertation Supporting** because it is
+one of the few corpus papers treating the EU AI Act as **subject** rather than motivation — and because
+it engages it correctly (§78), which makes it citable as framing rather than as evidence *about* the
+field's misreadings.
+
+**Two extracts worth carrying.**
+
+**1. The inversion, arrived at from regulation rather than from practice:**
+
+> *"This creates a reinforcing cycle where the desire for greater AI automation in software development
+> is directly challenged by the absence of frameworks that support human understanding, intervention,
+> and ethical alignment **at scale**."*
+
+Same shape as `oversight-scaling-inversion`, reached from a completely different direction: not "review
+capacity is exceeded so bad code ships," but "the compliance obligation cannot be discharged at the
+volumes automation produces." Useful because it means the scaling claim does not rest solely on
+practitioner-reported review capacity — a regulatory-analysis paper reaches it independently.
+
+**2. A two-tiered adoption hypothesis — and a survey question:**
+
+> *"while basic automation using AI in software development is emerging (e.g., code suggestions), the
+> more complex and high-risk applications of Agentic AI necessitate a profound re-architecture of
+> development methodologies… This suggests a **two-tiered adoption scenario**."*
+
+This is a **risk-routing-shaped claim at the adoption level** — routing not individual artifacts but
+whole *modes of use* into different governance regimes. Directly testable in the org survey: **do orgs
+actually bifurcate their governance between assistive and agentic use, or apply one policy to both?**
+If they bifurcate, the two gates (§SQ5) are operating at organizational rather than artifact
+granularity — which is the altitude question the ZUM76CCG ruling raised, arriving here from the
+regulatory side.
+
+**Bucketing note:** third data point for the schema — high construct value, low evidential weight, and
+unlike MOSAICO also *secondhand*. See the open design note above.
