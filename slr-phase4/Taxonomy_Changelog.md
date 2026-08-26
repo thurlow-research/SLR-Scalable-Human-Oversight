@@ -2907,3 +2907,55 @@ with no humans). Two observations, staged not adopted:
 This is the **un-routed remainder problem** — the failure mode of gate 1. Demonstrated only at token
 granularity in assistive mode; extending it to PR-granularity agentic review is extrapolation.
 **Tripwire: promote to a finding on a second instance at artifact granularity.**
+
+## 80. `metrics` §66 — borrowed NOTATION without the mathematics (`2KPHQ5IV`, 2026-08-26)
+
+Wang et al., *Scaling human-AI coding collaboration requires a governable consensus layer* (arXiv
+2026-04-20). **Core.** Primary `provenance-auditability`.
+
+**(a) `metrics` REJECTED at 3/3 — a correlated panel error, and a new §66 variant.** All three models
+proposed it. The paper's §"Evaluation Framework" offers four measures; none clears the computable-
+procedure bar, and **the authors disclaim the central one themselves**:
+
+> *"Consensus entropy **H(𝐶 | 𝐼)** quantifies structural ambiguity given current intent; **we use
+> conditional-entropy notation as conceptual shorthand rather than a literal Shannon quantity**."*
+
+Alignment fidelity is *"**F(𝐼, 𝐶, 𝐴)** increases when…"* — function notation with no function,
+*"can be estimated via human annotations, counterfactual questions, and post-hoc blame assignment."*
+Cognitive load is a borrowed existing construct. Only *intervention distance* approaches it
+(*"counts the number and complexity of human corrections"*) — the count is computable, "complexity"
+and "correct consensus state" are not.
+
+**The new variant:** §66's earlier negatives (Migliarini, MOSAICO) named *dimensions in prose*. This
+one names them in **mathematical notation** — `H(·|·)`, `F(·,·,·)` — which creates an appearance of
+formal content that the surrounding text explicitly withdraws. **Symbolic notation is a §59
+vocabulary match at the symbolic level, and the panel fell for it 3/3.** Test to apply: *strip the
+notation and restate in prose — is a procedure still described?* Here: no.
+
+**(b) `oversight-scaling-inversion` — the cleanest §52 instance since `E9RAWBDT`.** Fail-open is
+explicit; the approval happens anyway:
+
+> *"Tests pass; **you click Merge**… you approve based on vibes: surface plausibility rather than
+> structural understanding. Three months later a regression appears…"*
+> *"As AI throughput scales, **opacity accumulates faster than humans can inspect it**… scaled
+> AI-assisted engineering degrades into **scaled opacity**."*
+
+Worth noting the *mechanism* is novel to the corpus: the inversion is driven not by diff **volume**
+alone but by **dimension collapse** — the artifact (code plus chat history) cannot represent the
+structural commitments, so inspection capacity fails for want of a reviewable representation rather
+than for want of time. Complementary to the capacity-based accounts, not a duplicate of them.
+
+**(c) `oversight-theater` applied — and the contrast with `E9RAWBDT` that sharpens §69.** On Pimenova
+the arbiter refused theatre: *"There is no oversight, so there can't be theatre."* Here the process
+**exists** — PR review, click Merge — and is hollow for want of **information**:
+*"reviewers demoted to rubber-stamping opacity."* §69's presupposes-a-process condition is met.
+**Discriminator: theatre needs a ritual to be empty. No ritual → no theatre; ritual without
+information → theatre.**
+
+**(d) `quality-debt` and `risk-routing` REJECTED at 2/3 each.** Both modal, both dropped on the
+arbiter's read. Recorded because rejection was *required* — under §45/§46 a modal proposal survives
+into `final:*` on silence, so "drop" is only effective as an explicit `cal:human:reject:*`.
+
+**(e) `counterpoint` 2/3 — third measured polarity inversion (§56/§64).** The paper argues *better
+models alone do not eliminate oversight needs*, which is thesis-**supporting**. Not `scaling-dissent`.
+Left to the closeout deprecation sweep rather than rejected per-paper.
