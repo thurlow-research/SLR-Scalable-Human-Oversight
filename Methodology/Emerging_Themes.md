@@ -1336,3 +1336,45 @@ agentic or PR-review setting.
 
 **Related but distinct:** the independence thread's measurement leg stays with `VTDG995V` — that is
 about whether the *signal* is any good; this is about what humans do with the *absence* of one.
+
+## Inversion mechanism — DIMENSION COLLAPSE, or why capacity is not the only story (`2KPHQ5IV`, 2026-08-26)
+
+Wang et al. supply an `oversight-scaling-inversion` instance whose **mechanism differs from every
+other instance in the corpus**, and the difference is worth preserving in the write-up.
+
+**The standard account (capacity).** Volume of AI-generated change exceeds the time humans have to
+review it; review degrades; bad code ships. `E9RAWBDT`, Pimenova, and the practitioner-reported
+accounts all run this way.
+
+**Wang's account (representation).** The bottleneck is not time but **the artifact itself**:
+
+> *"the dominant artifact of AI-assisted development (code plus chat history) performs **dimension
+> collapse**, flattening complex system topology into low-dimensional text and making systems opaque
+> and fragile under change."*
+> *"Reviewers cannot determine what invariants were assumed, what changed, or why a regression
+> occurred. **This is not a generation failure but a control failure.**"*
+
+On this account, **more review time would not fix it** — the information required to review was never
+recorded. Scaling makes it worse because *"opacity accumulates faster than humans can inspect it"*,
+degrading into **"scaled opacity."**
+
+**Why it matters to the argument.** It splits the inversion into two mechanisms with **different
+remedies**:
+
+| Mechanism | Bottleneck | Remedy implied |
+|---|---|---|
+| **Capacity** | reviewer time vs. change volume | routing, prioritisation, more reviewers, better tooling |
+| **Representation** | the artifact cannot carry the commitments | change the primary artifact so review is *possible* |
+
+Routing — the thesis's main scaling answer — **only addresses the first.** If representation is the
+binding constraint, routing a reviewer to the right diff still leaves them unable to determine what
+was assumed. This is a real limit on the two-gate frame and should be stated rather than glossed.
+
+**Connects to:** the reviewability-decline watch item (Maes, §A in `HOS_Seeded_Theme_Candidates`) and
+Mitchell's degradation mechanism (`6ZW9QNQH` — accumulated natural-language constraints silently
+contradicting one another). All three describe *review getting harder*, independent of volume.
+**Watch for a fourth; if the cluster holds, "reviewability decay" is a finding distinct from the
+capacity inversion.**
+
+**Survey hook.** Ask whether reviewers of AI-generated changes can determine *what was assumed* — not
+whether they have time. The two constraints have different fixes and orgs likely conflate them.
