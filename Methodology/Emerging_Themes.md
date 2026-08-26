@@ -1106,3 +1106,62 @@ interesting claim is that the gradient exists and that practice sits at the weak
 **Survey hook.** Ask what produces the signal that decides review depth — the assistant itself, a
 different model, or a deterministic tool — and whether that choice was deliberate. The expected answer
 is "the assistant," unexamined.
+
+## Analytical frame — THE TWO GATES OF RISK ROUTING (SQ5, opened 2026-08-26)
+
+**Arbiter framing:** *"HOS as 'risk assessment' — and only the thing identified as high risk gets that
+enforcement."* Drawn while comparing HOS's rule (human approval of **all high-risk changes, period**)
+with VARI's (`5RLPIA3K`), which requires human review of **everything** in its domain and varies only
+the depth.
+
+**The distinction.** Risk routing operates at two levels, and papers differ in which they address:
+
+| | **Gate 1 — ACCESS** | **Gate 2 — DEPTH** |
+|---|---|---|
+| Question | Does this need human review **at all**? | Given that it does, **how much**? |
+| Requires | a computed risk assessment | a prioritisation signal |
+| Effect on load | **reduces the count of human touches** | reallocates a **fixed** workload |
+| Scaling | **this is where scaling lives** | no scaling effect |
+
+**Why it matters: only gate 1 scales.** Gate 2 makes oversight better-targeted, not cheaper. A system
+with no gate 1 has a human-attention cost that grows linearly with output no matter how good its
+prioritisation is.
+
+**The worked contrast that produced the frame.**
+- **HOS** computes the classification, and enforcement applies **only** to what it identifies as
+  high-risk. Gate 1 + gate 2.
+- **`5RLPIA3K` VARI** *inherits* its classification: EU AI Act **Annex III Point 4(a)** declares
+  employment AI high-risk before the system sees anything, so gate 1 is answered "yes, always." Its
+  escalation triggers — *"adversary flags moderate or severe bias risk · arbitrator confidence falls
+  below threshold · advocate and adversary reach irreconcilable positions · data quality is
+  insufficient"* — are genuine computed signals, but they allocate **depth only**.
+  It is therefore **the corpus's only gate-2-only design**, and a useful contrast case rather than a
+  weak instance of routing.
+
+**Correction this frame supplies.** VARI first read as "anti-scaling," and it deliberately *increases*
+per-decision human cost (forced viewing of all three agent outputs before the decision buttons unlock,
+time-on-task tracking, random engagement audits). But that is not a design flaw — **given a classifier
+that returns "high" for everything, 100% review is the correct policy, identical to HOS's.** The
+absence of scaling is inherited from the domain, not chosen.
+
+**Consequences worth testing at synthesis.**
+1. **Count gate-1 vs gate-2 contributions across the corpus.** First read: most routing papers are
+   gate 1 — Mahmud (`R9CDT9KB`) routes uncertain cases *to* humans, Abreu (`BU73N7PC`) risk-classifies
+   which releases get scrutiny, Zhu (`ZGST9CY6`) uses risk-weighted sampling to select what is reviewed
+   at all. If that holds, gate 2 is thinly covered and VARI is near-unique.
+2. **If all scaling leverage is at gate 1, the quality of the risk assessment is the whole game** —
+   everything downstream allocates a budget already set. That is a thesis-shaped claim and it is
+   testable against the corpus.
+3. **A classifier that over-assigns "high risk" fails expensive, not safe.** VARI-level cost applied to
+   work that did not need it: productivity collapses while safety holds. This is the **fail-closed**
+   harm (§52 / the Ehsani ruling) arriving through the classifier rather than through reviewer
+   saturation.
+
+**Bearing on the Article 14 argument.** The corpus now holds **two opposed readings of the same
+Article**: the permissive one (Art. 14 mandates oversight *capability*, not per-item review; 14(5)'s
+two-person rule for biometric ID is the carve-out that proves the general case) and VARI's conservative
+one (per-item human interpretation required). **Both can be right** — they answer different questions.
+The permissive reading is about what the Act requires *in general*; VARI's is about what it requires
+*once a system is already inside Annex III*. **The disagreement is over the scope of the high-risk
+class, not over the review rule** — which is exactly the gate-1/gate-2 split. Sterz et al.
+(`TW4I6DU6`) critique Art. 14 directly and should be read alongside both.
