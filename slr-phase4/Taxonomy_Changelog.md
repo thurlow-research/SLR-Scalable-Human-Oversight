@@ -2629,3 +2629,32 @@ selected belongs in the write-up. Revisit at graft with both instances in hand.
 **Corpus note:** two instances now, both from strong industrial-research groups, both hand-curated
 from real defects. If that pattern holds the rung is describing a real and common evaluation style,
 not an edge case.
+
+## 74. `risk-routing`'s producer-independence clause gets empirical corroboration (`VTDG995V`, 2026-08-25)
+
+The instrument disqualifies model self-confidence as a routing signal on principle:
+*"Signal must be **computed & producer-independent** — model self-confidence is disqualified."*
+Gros, Spiess et al. (ICSE 2025) **measure how badly it performs**, which turns a design judgement into
+a supported one.
+
+Their four measures are all producer-internal — average token probability, generated sequence
+probability, verbalized self-ask, and QA logit. Result: **ECE 0.09–0.73** across settings; *"intrinsic
+LLM confidences are poor predictors of code correctness."* Their own figures show
+**ECE 0.46 → 0.04** once Platt rescaling is applied against local correctness labels.
+
+**Two consequences for the instrument.**
+1. **The clause is right, and now citable.** Where a rule previously rested on our reasoning, there is
+   a peer-reviewed measurement behind it. Pair with §71 (practitioners delegating review to the
+   generator) — the same axis from the practice side.
+2. **Rescaling is a partial rescue, and the boundary matters.** A locally-calibrated confidence is
+   *derived from* the model but *fitted against external outcomes*. It is still not
+   producer-independent — the signal originates in the thing being checked — but it is materially
+   better than raw. Contrast the genuinely independent cases: `R9CDT9KB` (Mahmud) routes on
+   **inter-model disagreement** across three vendors; `5DI9B43K` (Sistla) routes on an **external
+   formal verifier**. **Rule unchanged: self-confidence, rescaled or not, does not earn
+   `risk-routing` or `routing-signal`.** Record rescaling in the rationale if a paper does it.
+
+**Practical note for the survey.** Calibration is **not inheritable from the vendor** — it must be
+fitted on the deploying organisation's own workload, using its own correctness labels (they use test
+outcomes, chosen because *"tests are widely used, and are easily automated"*). That makes it an
+org-side capability, and therefore a fair survey question rather than a vendor-side abstraction.

@@ -481,6 +481,30 @@ oversight layer).
   **Tripwire:** cluster size at sweep. Promote iff the class is large enough that the Discussion
   needs it as a roster `ai-review` + rationale text cannot reconstruct.
 
+  **FOURTH ANCHOR — and the first at Core: `VTDG995V` (Gros, Spiess et al., *Calibration and
+  Correctness of Language Models for Code*, ICSE 2025), 2026-08-25.** The cleanest instance yet, and
+  it fits the arbiter's scoping exactly — it **audits an automated correctness assessment against
+  ground truth** (test outcomes) and finds it wanting: intrinsic confidence measures span
+  **ECE 0.09–0.73**, *"intrinsic LLM confidences are poor predictors of code correctness."*
+  Post-hoc Platt rescaling on local correctness labels takes ECE from **0.46 to 0.04**.
+  **Contrast with the two entries wrongly pushed here earlier** (`ZGST9CY6` Zhu, `84D2AMVM` McKay,
+  both relocated to the oversight-effectiveness thread in `Emerging_Themes`): those *prescribe*
+  measurement; this one *audits an evaluator*. That is the line.
+  **Why it matters to the promotion decision — the rescue case is now real.** The "Open consequence"
+  above warned that naming the class properly might **rescue** papers to Core rather than efficiently
+  demoting them. `VTDG995V` is that case: ICSE 2025, Devanbu/Pradel/Ahmed, and Core on its own merits.
+  The three original anchors are all `demote:context`; the class is therefore **not** uniformly a
+  demote-class, which removes the main practical argument for promoting it (efficient disposal) and
+  leaves only the structural one (the *Limits of current oversight* trio needs its third member).
+  **Also a textbook demonstration of the carve-out problem.** The arbiter's reaction on reading it was
+  *"`ai-review` isn't quite right… this isn't really about AI performing a code review"* — while
+  `ai-review` **is** technically correct under v2.13, purely via its *"its reliability limits"* clause.
+  That mismatch between what the instrument licenses and what the arbiter recognises is precisely the
+  evidence this candidate exists to act on. Applied as
+  `cal:human:primary-proposed:theme:evaluator-reliability` with the standing primary left as
+  `ai-review`, per the convention above.
+  **Cluster now: 4 anchors** (`WBS9U5N7`, `BAWCBT9R`, `UDVHQ5HR` at Context; `VTDG995V` at Core).
+
   **CONVERSE INSTANCE — `ZGST9CY6` (Zhu et al., *Designing Meaningful Human Oversight in AI*),
   found 2026-08-24. NOT a fourth anchor; recorded because it cuts the other way.** The three
   anchors above are *diagnostic* — they audit an AI evaluator and find it wanting. Zhu is
