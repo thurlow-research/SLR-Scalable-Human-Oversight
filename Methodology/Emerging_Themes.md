@@ -1015,3 +1015,30 @@ instrument built to capture mechanisms rather than outcomes.
 overseer *"remain aware of the possible tendency of automatically relying or over-relying on the
 output."* Automation bias is therefore not merely a quality concern but a **compliance** one — which
 gives the determinants above legal salience and makes the absent outcome measure harder to excuse.
+
+## FOLLOW-UP — `6ZW9QNQH` (Mitchell) flagged DEMOTE CANDIDATE, contingent on the formal-methods cluster (2026-08-25)
+
+**Not demoted.** Kept Core provisionally; revisit once the `formal-methods` cluster is fully read.
+
+**Why flagged:** a 5,300-word workshop position paper (LMPL '25) whose prototype under-delivers its
+own thesis — it advocates autoformalization plus formal verification and implements syntactic checks
+plus compilation success. `design-only`, no ladder rung, no method facets.
+
+**Why not demoted now:** the §53 scarcity test cannot be run. `formal-methods` is 7 of 149, and
+**three are unread** — `E5SQKRH7` (Sharma, *Assessing correctness in LLM-based code generation*),
+`5DI9B43K` (Sistla, *Towards verified code reasoning by LLMs*), `72W6R4JG` (Töpfer, *Vibe-coding:
+feedback-based automated verification*). `FZK2QB5A` (Alshahwan, *Assured offline LLM-based software
+engineering*) is also unread. Töpfer's title in particular describes Mitchell's proposal implemented.
+
+**Decision rule at revisit:**
+- If Töpfer / Sistla / Alshahwan deliver autoformalization-plus-feedback for vibe coding → Mitchell is
+  **dominated** (advocacy for what another corpus paper built — the Marri-vs-Zoro pattern, §61) →
+  **demote to Context.**
+- If none of them covers that ground → Mitchell is the corpus's **position statement of the gap** →
+  **keep Core.**
+
+**Preserve regardless of tier** — a causal claim not seen elsewhere in the corpus: *"LLMs prioritize
+user commands over code consistency"*, so accumulated natural-language constraints silently
+contradict one another and developers do not notice. A specific mechanism for long-run vibe-coding
+degradation, adjacent to Casserini's agentic entropy (`95CPB7CF`) and Maes's reviewability decline
+(`59ZW4R58`, §A watch item). Cite it for the mechanism even from Context.

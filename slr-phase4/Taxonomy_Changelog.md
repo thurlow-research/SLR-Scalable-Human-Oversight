@@ -2353,3 +2353,63 @@ same line — they were accepted there because Zhu pairs them with computed quan
 audit reversal rate, drift detection precision/recall) rather than with dimension names. Where a
 paper offers only dimension names, the honest tag set is theme + `design-only`, with the reporting
 guidance captured in the rationale.
+
+## 67. `formal-methods` may be PRIMARY when the technique is the subject; `built-system` needs the core mechanism to run (`6ZW9QNQH`, 2026-08-25)
+
+Two rulings on Mitchell & Shaaban, *Position: vibe coding needs vibe reasoning* (LMPL '25), plus an
+assistant error worth recording because it repeats a pattern.
+
+**(a) `formal-methods` as primary — the advocacy case.** The instrument reads
+*"[technique, COMPOSABLE] … **Pair with the performer**: AI does it → `ai-review`+`formal-methods`;
+classical engine → `rules-based-checks`+`formal-methods`; no performer (pure advocacy/position) →
+`formal-methods` + the `intro-framing` facet."* The assistant applied the second clause and proposed
+`rules-based-checks` primary, since Mitchell's verification is *"lightweight syntactic checks and
+compilation success"* — a classical engine — and 4 of the corpus's other 6 `formal-methods` papers
+sit under `rules-based-checks`.
+
+**Arbiter overrode to `formal-methods` primary, correctly.** The pair-with-the-performer rule governs
+papers that **use** the technique. Mitchell's **subject is the technique** — it argues formal methods
+are the answer to vibe coding's constraint-contradiction problem, and the performer is a deliberate
+stub with real verification deferred to *"future implementations."* That is the third clause's
+advocacy case in all but name.
+**Rule:** *pair with the performer when the paper **uses** formal methods; `formal-methods` may be
+the home when the paper's **subject is the technique itself**.* The third clause is the tell — where
+the performer is absent or placeholder, the technique is the subject.
+
+**Correction to a scarcity claim made the same session.** The assistant reported Mitchell as "the
+corpus's only paper with `formal-methods` as primary" and offered it as a §53 keep argument. That was
+an artifact of reading panel output, not a property of the paper — and under the ruling above it is
+no longer even anomalous. `formal-methods` is 7 of 149; three of those (`E5SQKRH7` Sharma,
+`5DI9B43K` Sistla, `72W6R4JG` Töpfer) are **unread**, and Töpfer's title —
+*Vibe-coding: feedback-based automated verification* — describes Mitchell's proposal implemented.
+**The scarcity test cannot be run on this cluster yet.** See the follow-up item below.
+
+**(b) `built-system` requires the CORE mechanism to run — extends the R4WJZBSF mock-demo rule.**
+Panel 3/3 `built-system`; arbiter rejected. There *is* a real prototype: *"a small proof-of-concept
+implementation written in TypeScript… we integrated our proposed side-car with Claude Code… via hooks
+that run on code changes."* It genuinely executes. But the paper's thesis is **autoformalization plus
+formal verification**, and what runs is LLM template instantiation plus *"lightweight syntactic checks
+and compilation success."* **The hard part is stubbed.**
+
+The instrument already holds the adjacent rule — *"a mock demo ≠ built: a demo that fabricates the
+mechanism's core outputs … is still `design-only`"* (R4WJZBSF). **Extension:** substituting a
+**placeholder for the mechanism's core** is the same failure as fabricating its outputs. Ruling:
+`design-only` (+ `framework`, which composes for proposed-but-unrun architectures), **not**
+`built-system`. Arbiter: *"not even a built system. It is incomplete."*
+**Honest counter, recorded so the call is knowing:** the Claude Code hook integration is real and is
+arguably the novel contribution, with verification as a swappable backend. Rejected because without
+verification the side-car has nothing to say — but a future paper of this shape may deserve the
+opposite call.
+**Ladder consequence:** no rung. *"Results were promising; for example, the prototype system can emit
+the lines in red in Listing 1"* on author-written toy functions is a **demonstration, not a
+measurement**; `evaluated-synthetic` requires measuring against self-made material. Matches the
+`7SH86C2W` precedent (single self-selected, non-repeated, exploratory scenario → below the rung).
+
+**(c) Assistant error — a false negative reported as a verified finding.** The assistant grepped for
+`we (implement|built|prototyp…)`, matched nothing, and stated "verified — it's a position paper with
+no artifact and no evaluation." The paper says *"implementation written in TypeScript"* and *"the
+prototype system"*, and has an **Experiments** section; the arbiter supplied the text. This is the
+same failure as the Zhu `rules-based-checks` call (§65's family): **a pattern search that misses is
+evidence of nothing, and must not be reported as a negative finding.** Standing correction: when
+checking whether a paper contains X, read the structure — section headings, contribution list — before
+concluding absence, and state the search's limits when reporting one.
