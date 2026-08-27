@@ -3043,3 +3043,70 @@ limit — not oversight degraded but oversight **absent** — and the instrument
 - **`regulatory-compliance` REJECTED at 2/3** — compliance appears as a *risk category to document*,
   not as an external-standard contribution (§44 discriminator: the contribution does not change
   depending on what any regulation says).
+
+## 82. Routing to REDUCE load vs routing to ENSURE coverage — two mechanisms, one tag (`RG4A4D6K`, 2026-08-26)
+
+Watson & Italie, *From black box to open book: an emerging transparency imperative in generative AI
+codebases*. **Ruled Context** (`lit-review` 3/3, evidence is *"documented case studies and industry
+data"*, recommendations only; `demote:context` 2/3). Tag verification short-circuited per §42; the
+rulings below are recorded as reasoning-of-record rather than written to the arbiter layer.
+
+**(a) The distinction the arbiter drew, which the vocabulary does not yet make.** Accepting detection
+as a routing signal, the arbiter added: ***"It isn't tackling scaling at all, just ensuring review."***
+That names two mechanisms currently sharing one tag:
+
+| | Purpose | Effect on human load | Failure mode |
+|---|---|---|---|
+| **Routing to reduce load** | decide what *can safely skip* human review | **decreases** it | the un-routed remainder reads as endorsed (staged tripwire, `ZBF86IJM`) |
+| **Routing to ensure coverage** | decide what *must not* skip review | **increases** it | false negatives read as *human-authored* and get ordinary review |
+
+Watson is the second kind: AI-authored segments are detected and **selected for targeted human
+review** — attention is *added* where there was none, not redirected away. **Both are `risk-routing`
+mechanically, and they answer opposite questions.** This matters for SQ5: only the first is a scaling
+mechanism. A corpus count of `risk-routing` papers therefore **cannot** be read as a count of scaling
+mechanisms without separating the two.
+
+**Symmetry worth noting:** the failure modes are the same shape. Vasconcelos showed un-highlighted
+tokens read as correct; a detector's false negatives make AI code read as human-authored. **In both
+directions, the absence of a routing signal is interpreted as a clean bill of health.**
+
+**(b) Producer-independence satisfied by construction — second design instance.** The detector is
+explicitly external to the generator: *"an **'outside-in' approach, analyzing the code itself without
+requiring access to the AI tool's internal data or metadata from the generation process**."* Stronger
+than MOSAICO's half-independence (§76f), which readmitted self-reported agent confidence. Feeds the
+independence thread even from Context.
+
+**(c) `regulatory-compliance` REJECTED at 3/3 — §78 discriminator applied.** *Does the contribution
+change depending on what the regulation says?* No: the provenance-tracking recommendation stands
+regardless, and compliance is one of four listed motivations alongside QA, security, and IP. Arbiter:
+*"It is a motivation, but not deeply discussed."* Same pattern as `WUUDHL8R` (§44).
+
+**(d) §43 watch tripwire — a THIRD category, and it may be the largest.** `RG4A4D6K` is one of the 12
+flagged papers. It is neither correct (Tuape, §78) nor wrong (`WUUDHL8R`, §44) but **hedged to the
+point of being unfalsifiable**: *"GDPR and the EU's AI Act **may require** organizations to disclose AI
+use in their products"*, and *"regulatory bodies **increasingly mandate** transparency requirements for
+AI systems in software development"* — the Act's transparency duties attach to specific system types,
+not to AI use in software authoring, so the second overstates without asserting anything checkable.
+**If several of the remaining 9 land here, the tripwire is measuring vagueness rather than error, and
+the finding changes** from "the field misreads the Act" to "the field invokes it without engaging it."
+Classify each of the 12 into correct / wrong / vague at closeout.
+
+**(e) WATCH — risk flags may over-fire on risk-survey papers.** All five (`risk-security`,
+`risk-quality`, `risk-ip`, `risk-bias`, `risk-overreliance`) came in 3/3. The arbiter's read of the
+depth: *"It mentioned the various risks in the doc (**bullet points with explanations**)."* The bar is
+substantive treatment — define a metric, contribute/evaluate a mitigation, report an empirical result,
+or devote focal analysis — and bullet-with-explanation sits between "intro risk-list sentence" and
+focal analysis. **Not adjudicated here (§42), but flagged: a lit review that surveys risks will trip
+every flag, and risk-flag counts feed the identified/measured matrix.** Check at closeout whether
+`lit-review` papers carry systematically more risk flags than primaries; if so the matrix needs to
+segment by `lit-review` before counting.
+
+**(f) Scarcity note supporting the demote.** Arbiter: *"there are several other papers I've seen that
+have done detection of AI-gened code in GitHub repos."* Detection of AI-authored code is **not scarce**
+in the corpus, and this paper contributes no detector of its own — it synthesizes the case for one.
+§53 slot already occupied (cf. §79).
+
+**(g) `problem-statement-anchor` NOT applied** despite the paper's committee-friendly opener —
+*"GenAI tools… now generate an estimated **20-30% of code in many enterprise codebases**."* The rule is
+**never on `lit-review`**: anchor the primary instead. **Action: chase citation [source of the 20–30%
+figure] and evaluate the primary for the anchor.**
