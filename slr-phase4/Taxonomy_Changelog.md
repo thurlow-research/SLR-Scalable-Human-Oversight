@@ -4134,3 +4134,61 @@ and the T0/T1/T2 snapshots (§89, §100) are only interpretable against a named 
 
 **Standing check added:** diff **both** instrument files against `origin/main` at every PR, and treat
 any movement in `Tag_Prompt.md` as a versioned cut requiring a new capture and a changelog entry.
+
+## 104. Oversight machinery used as EVALUATION APPARATUS is an instrument, not a contribution (`VG8PSMM7`, 2026-08-27)
+
+**First paper of the Accept band.** Adnyana & Schwung, *Benchmarking and validation of prompting
+techniques for AI-assisted industrial PLC programming* (*Machine Learning with Applications*, 2026).
+**Ruled Context** despite **no demote flag from any of the three models**. §42 short-circuit.
+
+**The tension the arbiter named.** *"The primary focus of the paper is to evaluate LLMs' ability to
+generate code for their particular scenario. However, they used some of the techniques that might be
+applicable to scaling human oversight in the setup of their pipeline — e.g. using LLMs to review the
+code. So while the focus of the paper would yield a demote, the methods of the paper are aligned."*
+
+**PRE-COMMITTED RULE** — same device as §92/§93, because this shape recurs:
+
+> **Oversight machinery used as *evaluation apparatus* is an instrument, not a contribution.** A paper
+> earns Core for it only when the machinery is **argued for** — proposed, justified, or evaluated as
+> such — never when it is merely **used** to measure something else.
+
+This generalises §57's instrumentation-≠-contribution rule from the method facets to the **tier
+decision**, and it is the same shape as §84's offered-for-reuse test for `metrics`. **Three rules, one
+principle: what a paper *uses* is not what a paper *contributes*.** Consistent with §94 (Zhong — a
+deployable checker inside a benchmarking paper) and distinct from §98a (Zhuo — where §51 fired because
+the checker was reference-grounded and could not have been deployed at all).
+
+**Expected recurrence in this band:** Bhatnagar, Ghammam, Salem, Şeker look like the same shape.
+Sollenberger, Raghavendra and Karakaya sit on the **other** side of the line, where the checker *is* the
+argument — those are Core-eligible on the same rule.
+
+### 104a. What the rule discards, and the mitigation
+
+**The tier decision throws away real evidence**, and the arbiter identified why it matters:
+*"'what that loses' sounds a lot like risk routing."*
+
+> **Core/Context is itself a routing decision, and Context is our un-routed remainder.** Downstream,
+> demoted papers get read as "nothing here" — precisely the failure staged as a tripwire from `ZBF86IJM`
+> (§79): **the absence of a routing signal is interpreted as a clean bill of health.** The review's own
+> method exhibits the failure mode the review documents.
+
+**Mitigation adopted — the validation-apparatus harvest.** A paper's methods section is evidence about
+**what its authors considered adequate validation of AI-generated code**. Nobody required Adnyana's team
+to reject BLEU as sufficient, add a semantic LLM check, and still gate safety-critical output behind a
+human expert — that layering is a **revealed belief about where machine checking runs out**. It is
+evidence about norms, harvestable regardless of tier.
+
+**Established:**
+- Zotero collection **`Dissertation Lit Review / 04 - Validation Apparatus`** (`XPPEXKBN`) — additive,
+  orthogonal to SLR tier.
+- **`Methodology/Validation_Apparatus_Harvest.md`** — running record: layers, automated components,
+  AI-as-checker (and whether cross-vendor), human position, escalation trigger, stated rationale, domain.
+- **Scope: the Phase-5 128 first.** Hard constraint — full texts exist only for those. Measure the
+  yield, then decide on expansion; if expanding, use **targeted retrieval**, not an abstract scan, since
+  abstracts rarely describe validation apparatus.
+- Accumulates during the Accept pass, with a back-fill over the Light Read band at closeout.
+
+**`VG8PSMM7` is entry one:** BLEU → LLM-in-the-Loop (four dimensions) → HITL expert review, with
+generation and syntax-checking split across **different vendors** (DeepSeek/Gemini generate;
+ChatGPT-4o/Copilot check). The human sits **terminal and scoped to safety-critical** — not asked to
+check everything, only what the domain marks as dangerous.
