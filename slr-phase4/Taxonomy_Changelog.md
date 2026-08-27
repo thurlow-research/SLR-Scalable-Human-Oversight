@@ -3423,3 +3423,51 @@ looser reading. Under the leakage test the bar is higher, so **more than six of 
 papers are likely misapplied**. A cheap sizing is available before the re-check: tally how many of the
 15 have panel rationales citing *burden/bottleneck/capacity* versus *leakage/merged-unreviewed* — the
 former are near-certain rejects. **Not run (mid-pass); queued for closeout.**
+
+## 89. STAGED FOR THE RE-RUN — `oversight-scaling-inversion` v2, built on the leakage test (2026-08-26)
+
+**Arbiter directive:** include an inversion **v2** tag in the upcoming tagging run. Staged here; **not
+grafted into `Tag_Cheatsheet.md`** (§41 — the frozen instrument does not move mid-measurement).
+
+**Draft v2 definition — leads with the harm, not the symptom (§88):**
+
+> **Risky AI-generated code escapes the review that should have caught it.** Requires an **escape
+> event or a stated mechanism producing one**: PRs auto-merged unreviewed · merge-on-green where the
+> check cannot see the defect class · review conducted without visibility into what actually changed ·
+> a gate that passes what it was placed there to stop.
+>
+> **NOT sufficient, on their own:** maintainer burden · queue growth · falling throughput · displaced
+> project work · experts absorbing the rework. ***The gate holding slowly is not the gate failing.***
+>
+> **Synthesis test (retained):** would the paper read naturally in a section on *bad code shipping
+> unreviewed*? If it would jar because nothing shipped, this is the wrong home.
+
+**DESIGN QUESTION — use a NEW SLUG, not a redefinition of the old one.** The namespace labels tags by
+*who proposed them* (`cal:<model>:*`), **never by which instrument version produced them**. So if the
+re-run emits `oversight-scaling-inversion` under the v2 definition, those proposals become
+indistinguishable from the 32 v1-era proposals already in Zotero, and `final:*` would silently mix two
+different constructs.
+
+**Recommendation: a distinct slug** (working name **`oversight-leakage`**; final name the arbiter's
+call). Benefits:
+1. **Comparability.** v1 and v2 proposals coexist and are separately countable.
+2. **It converts the §88 instrument defect into a measurement.** Re-running the *same corpus* under a
+   *sharpened* definition yields a directly reportable number: **how many papers reclassify when the
+   symptom language is removed.** That is a quantified demonstration that definitional wording drives
+   tagger behaviour — a genuine methods-chapter result, obtainable at no extra cost because the run is
+   happening anyway.
+3. **No rewriting of history.** The v1 record stays intact and auditable per the additive-layers rule.
+
+**Cost if the slug is reused instead:** the reclassification measurement is lost, and the closeout
+re-check of the 15 silent-modal papers (§87/§88) becomes mandatory manual work rather than something
+the re-run largely answers by itself.
+
+**Re-run roster — this joins the existing restricted-re-run list** (`Theme_Tagging_Calibration.md`
+§10.12): `agent-panel`, `cross-model`, the `evaluated-*` ladder, `scaling-dissent`,
+`evaluator-reliability`, `evaluated-real-data`, **+ inversion v2**. Note this one differs in kind from
+the others: they are tags the frozen instrument **never contained**, whereas this **competes with an
+existing tag** — which is precisely why it needs its own slug.
+
+**Open for the arbiter:** (a) final slug name; (b) whether v2 **supersedes** v1 at closeout (v1 tags
+retired, `final:*` computed from v2 only) or whether both are reported with the delta as a finding.
+Recommend the latter — the delta is more informative than either count alone.
