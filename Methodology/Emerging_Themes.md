@@ -1378,3 +1378,46 @@ capacity inversion.**
 
 **Survey hook.** Ask whether reviewers of AI-generated changes can determine *what was assumed* — not
 whether they have time. The two constraints have different fixes and orgs likely conflate them.
+
+## CANDIDATE FINDING — the inspection point may be absent, not merely degraded (opened 2026-08-26)
+
+**Status: two instances, tripwire set at three.** This is the sharpest form the thesis's problem can
+take, and the instrument currently cannot express it (§81).
+
+**The claim.** The review's framing assumes oversight *degrades* under scale — reviewers get less
+time, less context, less authority. A stronger possibility is visible in the corpus: a mode of
+development in which **no human inspects the generated artifact at any point**. Not rubber-stamping a
+diff nobody understands, but never opening it.
+
+**Why the instrument missed it.** The generation-mode pair cuts on who initiates and the reviewable
+unit — and **both poles presuppose an inspection point**: `assistive` at acceptance (the human accepts
+piece-by-piece), `agentic` at the gate (the artifact is reviewed as a unit). Vibe coding as practised
+fits neither. Arbiter, ruling on `T2EG4BE2`: *"Not assistive. **Human likely not even looking at the
+code.**"*
+
+**Instance 1 — observed practice.** `T2EG4BE2` (Waseem et al.): *"a single 'fix this' prompt can
+rewrite large parts of the codebase **before architects or testers have seen the previous version**."*
+Their industry teams treat VC as *"unsafe by default for customer-facing systems"* — an admission that
+the default path has no inspection in it.
+
+**Instance 2 — deliberate design.** `72W6R4JG` (Töpfer et al.), titled *"…with **no human code
+inspection**"*: the human authors formal constraints and never reads the generated adaptation manager.
+Here the absence is **engineered and defended**, on the argument that a formal checker substitutes.
+
+**The two instances are the interesting part.** The same absence arrives from opposite directions —
+one as a practice that emerged without anyone deciding it, one as an explicit engineering position
+with a compensating mechanism. That contrast is the argument: **the question is not whether humans
+inspect less, but whether the inspection point exists at all, and if not, what stands in for it.**
+
+**How it reframes the two gates.** Gate 1 asks *does this need human review?* Both instances answer
+"no" — but only Töpfer answers it *deliberately*, with a replacement. Waseem's teams answer it by
+default, with nothing. **An org can arrive at zero-inspection by design or by drift, and those look
+identical in the artifact.** That distinction is exactly what an org survey can detect and a code
+audit cannot.
+
+**Survey hook.** Not *"how thoroughly is AI-generated code reviewed?"* but **"is there a point in your
+process where a human is required to read it — and if not, what replaced that?"** The expected finding
+is that some orgs cannot answer the second half.
+
+**Promote on:** a third instance. See §81 for the vocabulary options (a `no-inspection` scope flag vs.
+an explicit third mode); do not graft mid-measurement (§41).
