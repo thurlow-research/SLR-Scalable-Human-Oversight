@@ -2959,3 +2959,67 @@ into `final:*` on silence, so "drop" is only effective as an explicit `cal:human
 **(e) `counterpoint` 2/3 — third measured polarity inversion (§56/§64).** The paper argues *better
 models alone do not eliminate oversight needs*, which is thesis-**supporting**. Not `scaling-dissent`.
 Left to the closeout deprecation sweep rather than rejected per-paper.
+
+## 81. The generation-mode pair has a HOLE — both poles presuppose inspection (`T2EG4BE2`, 2026-08-26)
+
+Waseem et al., *Vibe coding in practice: flow, technical debt, and guidelines for sustainable use*.
+**Core**, primary `quality-debt`. **`agentic` REJECTED at 3/3 — and `assistive` not applied either.**
+
+**The arbiter's ruling and its reasoning.** *"Agentic means agents generating code autonomously. This
+one focuses on vibe coding in iterative sessions with human directing."* Then, on the fallback:
+***"Not assistive. Human likely not even looking at the code."***
+
+**Why this is a vocabulary finding, not a per-paper call.** The mode pair cuts on **who initiates +
+the reviewable unit**. Vibe coding breaks it on a **third dimension the pair never encoded — whether
+the human inspects the output at all**:
+
+| | initiator | reviewable unit | human inspects? |
+|---|---|---|---|
+| `assistive` | human | snippet | **yes — accepts piece-by-piece** |
+| `agentic` | AI | artifact/PR | **yes — at the gate** |
+| **vibe coding as practised** | human | artifact-scale | **possibly never** |
+
+Both existing poles **presuppose an inspection point**. Assistive locates it at acceptance; agentic
+locates it at the gate. Vibe coding may have neither: the human directs by prompt and never reads the
+result. Evidence in this paper — *"a single 'fix this' prompt can rewrite large parts of the codebase
+**before architects or testers have seen the previous version**"* — and its own framing of approval
+*"based on vibes: surface plausibility rather than structural understanding"* (cf. `2KPHQ5IV`).
+
+**Ruling: no mode facet.** `assistive` was 0/3; writing nothing yields the correct outcome. Recorded
+rather than forced, because forcing either pole would assert an inspection point the paper says is
+absent.
+
+**Second instance already on record.** `72W6R4JG` (Töpfer, §77) is titled *"…with **no human code
+inspection**"* — the same absence, there as a *deliberate design choice* rather than an observed
+practice. **Two instances in one week, from opposite directions.**
+
+**Tripwire:** a third instance promotes this to a vocabulary change — either a `no-inspection` scope
+flag or an explicit third mode. Do not graft mid-measurement (§41); accumulate to the next versioned
+cut. **Why it matters beyond bookkeeping:** if a mode exists in which no human inspects the artifact
+at any point, that is the scaling inversion at its limit — not oversight degraded, but oversight
+absent — and the instrument currently cannot express it.
+
+**Other rulings on this paper:**
+- **`method-mining` KEPT over an initial arbiter instinct to drop it.** The concern was that the
+  evidence base is *"authors' experiences, chats over coffee."* But the paper contains a discrete
+  quantified measurement: *"We also **scanned seven early-stage vibe-coded MVPs**… **970 security
+  issues were detected, including 801 high-severity**… unsafe input handling, insecure file
+  operations, and exposed credentials accounted for **over 70% of all findings**."* Artifacts
+  measured, findings characterising those artifacts — the `NZJST99D` shape at small scale. **Test
+  that settled it: if the facet were dropped the paper would carry no method facet at all, asserting
+  "no empirical evidence produced," which is false.**
+- **`method-field-study` REJECTED at 3/3.** The experiential narrative (a microservice regenerating
+  its auth from JWT to session cookies; API contracts with inconsistent field names) is **recounted,
+  not observed as method**. **Discriminator: an experience report is not a field study — field study
+  requires the observation to be conducted as method, not recalled as anecdote.**
+- **`method-self-report` correctly absent (1/3).** No instrument: *"Surveying vibe-coded
+  practitioners"* appears in the paper's **future work**, and the surveys it cites are other people's.
+- **`org-governance` CONFIRMED after a challenge.** The assistant flagged over-tagging risk on the
+  2/3 countermeasures cluster; checking it, the risk did not materialise. Table 1 is a **role-specific
+  guideline matrix** with an explicit *"ʝ = guidance primarily for **CIO/CTO and organizational
+  leadership**"* audience, whose rows define *"roles, approval gates, and audit trails"*,
+  *"approval permissions"*, *"sign-off for high-impact code generations"*, and **"policy-as-code
+  gates"** by name. Hits nearly the whole definition, and it is the paper's stated deliverable.
+- **`regulatory-compliance` REJECTED at 2/3** — compliance appears as a *risk category to document*,
+  not as an external-standard contribution (§44 discriminator: the contribution does not change
+  depending on what any regulation says).
