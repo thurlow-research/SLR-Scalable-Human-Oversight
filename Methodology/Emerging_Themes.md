@@ -1460,3 +1460,45 @@ such**, and it strengthens the case for promoting that tripwire if a second inst
 
 **Survey hook.** Ask both halves separately: *what lets a change skip review* and *what forces a change
 into review* — and whether the same signal drives both. Orgs likely have one and not the other.
+
+## MECHANISM — SUBSTITUTION: when oversight holds, senior building capacity pays for it (`F2C2DWSI`, 2026-08-26)
+
+Xu et al. supply something no other corpus paper does: **a price tag on oversight that does not fail.**
+
+**The finding.** A difference-in-differences study over a monthly GitHub panel (July 2020–July 2022)
+following Copilot's introduction. Productivity rises — but the gain is concentrated in
+**less-experienced (peripheral)** contributors, whose code *"requires more rework to satisfy repository
+standards."* The rework lands on **core** developers, who **review 6.5% more code** and show a
+**19% drop in their own original code productivity**.
+
+**Why it is not `oversight-scaling-inversion` (§83).** Nothing here shows review being skipped. Review
+*holds* — the contributions get revised before integration. What gives way is something else.
+
+**Two release valves under the same pressure.** Rising AI code volume plus falling per-unit quality has
+to go somewhere, and the corpus now documents two distinct outlets:
+
+| | What gives way | Observable | Corpus |
+|---|---|---|---|
+| **Inversion** | the review itself | bad code ships; PRs merged unreviewed; rubber-stamping | `2KPHQ5IV`, `T2EG4BE2`, `E9RAWBDT` |
+| **Substitution** | senior *building* capacity | experts stop producing; review load rises | `F2C2DWSI` |
+
+**An organization can be in either state and not know which** — and the two call for opposite
+responses. The inversion needs review capacity added; substitution means capacity is already being
+paid for, out of a budget nobody is looking at.
+
+**The measurement trap, and why this matters for the survey.** Aggregate throughput went **up**. The
+peripheral developers' gains and the core developers' losses **net out**, so an org watching commit
+volume sees AI working exactly as advertised while its most experienced people quietly stop producing
+anything new. **The cost is real, large, and invisible to the metric most orgs actually track.**
+
+Arbiter's framing: *"as it increases in volume, the focus on the experienced team members is shifting
+from building to fixing."* The harm is a **substitution**, not an overtime bill — which is why it does
+not show up as a capacity complaint until the pool of experts thins.
+
+**Survey hooks.**
+- *Has the share of senior engineers' time spent reviewing versus authoring changed since AI adoption?*
+- *Do you measure senior original output separately, or only team throughput?* — the expected answer is
+  the latter, which is precisely why the substitution would go unnoticed.
+
+**Connects to:** the reviewability-decay cluster (Wang §80, Maes §A, Mitchell) — those describe review
+getting *harder*; this describes who *absorbs* that difficulty and what they stop doing instead.
