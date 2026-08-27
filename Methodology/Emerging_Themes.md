@@ -1389,11 +1389,12 @@ time, less context, less authority. A stronger possibility is visible in the cor
 development in which **no human inspects the generated artifact at any point**. Not rubber-stamping a
 diff nobody understands, but never opening it.
 
-**Why the instrument missed it.** The generation-mode pair cuts on who initiates and the reviewable
-unit — and **both poles presuppose an inspection point**: `assistive` at acceptance (the human accepts
-piece-by-piece), `agentic` at the gate (the artifact is reviewed as a unit). Vibe coding as practised
-fits neither. Arbiter, ruling on `T2EG4BE2`: *"Not assistive. **Human likely not even looking at the
-code.**"*
+**Where it lives in the instrument.** Not in the generation-mode pair — that was the first attempt and
+it was wrong (§81). Modes describe how code is *produced*; whether anyone reads it is an *oversight*
+property, so it belongs on its own axis. **`no-inspection` is staged as an orthogonal flag** (§81a),
+composable with either mode: `agentic` + `no-inspection` says what neither says alone. Arbiter, ruling
+on `T2EG4BE2`: *"Not assistive. **Human likely not even looking at the code.**"* — the observation was
+right; the channel was not.
 
 **Instance 1 — observed practice.** `T2EG4BE2` (Waseem et al.): *"a single 'fix this' prompt can
 rewrite large parts of the codebase **before architects or testers have seen the previous version**."*
