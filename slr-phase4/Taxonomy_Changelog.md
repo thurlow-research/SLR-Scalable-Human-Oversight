@@ -4091,3 +4091,46 @@ is the check available, and it points the right way.**
 touched again before the versioned cut** (§41). If a clarification is urgent enough to write down mid-
 pass, it is urgent enough to write *here* instead. Re-check the diff of both instrument files at every
 PR from now on.
+
+## 103. AMENDS §102 — the prompt is the instrument; frozen capture created (2026-08-26)
+
+§102 disclosed three mid-pass edits to `Tag_Cheatsheet.md` and reasoned that the measurements still
+stood. **The reasoning was right; the file model behind it was wrong, and the correction makes the
+position stronger, not weaker.**
+
+**What was actually the case.** `Tag_Prompt.md` is not a "prompt prefix" wrapped around the cheatsheet —
+**it is a self-contained frozen copy** of the cheatsheet vocabulary plus the task block and JSON output
+contract. Verified by vocabulary diff: **the prompt enumerates 37 slugs, the cheatsheet 38, and the
+difference is exactly `scaling-dissent`** — added to the cheatsheet at §56 and, exactly as every
+changelog entry claimed, never propagated.
+
+So the two files have distinct roles, and only one of them was ever the gauge:
+
+| File | Role |
+|---|---|
+| **`Tag_Prompt_v2.13.md`** *(new)* | **Instrument of record** — verbatim capture of what the taggers ran on. Frozen; never edit. |
+| `Tag_Prompt.md` | Operative prompt; substantively identical to the capture. |
+| `Tag_Cheatsheet.md` | **Living arbiter reference — not the instrument.** Now headed as such. |
+
+**Consequences:**
+1. **§102's conclusion is upgraded from "the edits didn't reach the panel" to "the edits *could not
+   have* reached the panel."** The panel read a physically separate file that was never touched. The
+   residual concern §102 raised — that the *arbiter* read a sharpening reference across the pass —
+   still stands and is still the honest caveat.
+2. **§10.3 of `Theme_Tagging_Calibration.md` was wrong and is corrected.** It described the instrument
+   as *"`Tag_Cheatsheet.md` plus a fixed prompt prefix"*, which inverts the relationship. **The
+   write-up must cite `Tag_Prompt_v2.13.md`**, not the cheatsheet.
+3. **The proposed `Tag_Cheatsheet_v2.13-FROZEN.md` was dropped as redundant** — the prompt capture
+   already contains the frozen vocabulary, and a third file with the same content would be one more
+   thing to keep in sync.
+
+**Convention adopted (arbiter):** *"We will be updating prompts in future, so let's have a capture of
+what was used separate from the git log."* **Every prompt change gets its own
+`Tag_Prompt_v<version>.md` capture.** `Tag_Prompt_v0.md` already preserved the pre-calibration
+original; `Tag_Prompt_v2.13.md` now preserves the version behind all 9×128 panel runs. The gauge's
+history is therefore legible from the repository tree, without archaeology through commit history —
+which matters because the methods chapter needs to state *which* instrument produced *which* numbers,
+and the T0/T1/T2 snapshots (§89, §100) are only interpretable against a named instrument version.
+
+**Standing check added:** diff **both** instrument files against `origin/main` at every PR, and treat
+any movement in `Tag_Prompt.md` as a versioned cut requiring a new capture and a changelog entry.
