@@ -750,6 +750,18 @@ noise concentrates (§3.1–3.2), and model signatures show directional bias (§
 - A restricted re-run is queued for tags the frozen instrument never contained — `agent-panel`,
   `cross-model`, the `evaluated-*` ladder, `scaling-dissent`, `evaluator-reliability`,
   `evaluated-real-data`.
+- **Plus `oversight-scaling-inversion` v2** (changelog §89), which differs in kind from the rest: the
+  others are tags the instrument never had, whereas v2 **competes with an existing tag**. Its
+  definition leads with the **leakage test** — *risky code escapes the review that should have caught
+  it* — and names maintainer burden, queue growth, falling throughput and displaced work as
+  insufficient (§88). **Needs its own slug**, because the namespace records *who* proposed a tag but
+  never *which instrument version* produced it; reusing the slug would silently merge two constructs
+  in `final:*`. Running both makes the reclassification delta a **reportable measurement** of how far
+  definitional wording drives tagger behaviour.
+- **Re-check the 15 papers carrying `oversight-scaling-inversion` on arbiter silence** before
+  computing `final:*` (§87/§88). 4 of the 10 examined cases were rejected, and the leakage test raises
+  the bar further, so this is the **largest known single source of tag error in the corpus**. The v2
+  re-run answers much of it automatically if the slug is kept distinct.
 - **A closeout sweep is owed for deprecated tags that are still panel-modal.** `counterpoint` (§56)
   survives into `final:*` on any paper where it was modal and never rejected, since silence lets a
   modal proposal stand. Handle as one bulk act rather than per paper, so the deprecation is a single
