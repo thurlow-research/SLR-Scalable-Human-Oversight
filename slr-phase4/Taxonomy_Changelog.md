@@ -3790,3 +3790,54 @@ corpus evidence**.
 developers**; the dissertation's survey targets organisations governing professional developers.
 Supporting fits — the paper is the contrast case for what oversight becomes when nobody can read the
 code.
+
+## 97. Consistency beats scarcity when two same-shape rulings already exist (`XK3P9C96`, 2026-08-26)
+
+Zhou et al., *When Should Users Check? Modeling Confirmation Frequency in Multi-Step Agentic AI Tasks*
+(**CHI 2026**). **Ruled Context**, agreeing with a unanimous 3/3 panel demote. Added to **Dissertation
+Supporting**. §42 short-circuit; panel recorded: `risk-routing` primary 3/3, `hitl-workflow` 3/3,
+`general-ai` 3/3, `agentic` 3/3, `built-system` 3/3, `method-experiment` 3/3, `method-self-report` 2/3,
+`non-developer` 2/3.
+
+**The tension, recorded because it was genuine.** §53's two legs pointed opposite ways:
+
+- **Transferability: strong.** The model is parameterised by error rate and rollback cost, both of
+  which agentic coding has (rollback = redo the PR). Results are real — 48-participant within-subjects
+  study, **81% preferred intermediate confirmation**, **13.54% task-time reduction**.
+- **Scarcity: the specific slot looked EMPTY.** This is the only corpus paper that **computes how much
+  oversight to apply**. Others ask *whether* to review or *what to show*; this asks **how often** and
+  solves it as a scheduling problem. The nearest neighbour, `7ZMU5AIF` (Grunde-McLaughlin), occupies
+  **trace design** — what the human sees — not timing.
+
+**What decided it: consistency with rulings already made.** Two structurally identical papers are
+already Context — `7ZMU5AIF` (general-ai, agentic oversight, **three user studies**, measured
+error-finding time) and Mozannar's *Magentic-UI* (general-ai, HITL agentic, human study). Keeping this
+one would contradict both without revisiting them.
+
+> **Rule: where the §53 legs disagree, an existing ruling on the same shape outranks an empty slot.**
+> A slot that looks empty is often an artefact of how narrowly it was described; a prior ruling on a
+> matching paper is evidence about where the boundary actually sits. **Revisit the earlier rulings or
+> follow them — do not silently split them.**
+
+Supporting observation: the corpus's Core `general-ai` keeps (Eze §53, Zhu, Jessee, Swidey) are all
+**controls or mechanisms that transfer to governance**, not HCI interaction studies. `XK3P9C96` is the
+latter.
+
+**Dissertation Supporting, though**, because the frequency question is directly survey-relevant:
+*does your org confirm every step, only at the end, or something in between — and was that chosen or
+defaulted?* The paper's answer — that the right frequency is **computable** from error rate and
+rollback cost — reframes a question most orgs will have settled by accident.
+
+**Two tag corrections against the arbiter's initial list:**
+- **`oversight-explanation` declined** (panel 1/3). The contribution is **timing**; the clickable
+  traces are incidental. **Trace design belongs to `7ZMU5AIF`**, and the intuition appears to have been
+  tracking that paper's territory.
+- **`evaluated-synthetic` declined — §34 fork answers it.** This is a human-subjects study
+  characterising **behaviour in the world**, so the **method facets fire and the ladder does not**
+  (`method-experiment` 3/3, `method-self-report` 2/3). Worth stating because the arbiter asked
+  specifically whether the new tags applied: **the ladder is for tool evaluation, not for studies of
+  people.**
+
+**Preserved: the CDCR pattern** — Confirmation–Diagnosis–Correction–Redo, a descriptive model of what
+the act of overseeing actually consists of. The corpus is thin on accounts of the oversight *act*
+itself (as opposed to mechanisms that invoke it); pairs with the decision-surface cluster (§96e).
