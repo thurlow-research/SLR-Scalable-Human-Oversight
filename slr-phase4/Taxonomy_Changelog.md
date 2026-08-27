@@ -3161,3 +3161,52 @@ primary evidence, however framing-relevant its conclusions are.**
 unlike `2KPHQ5IV`) and `risk-overreliance` (1/3) left to stand or fall on modality. `counterpoint`
 (2/3) is a **fourth** polarity inversion — the paper opposes AI *productivity maximalism*, which is
 thesis-**supporting**, not `scaling-dissent`; deferred to the closeout deprecation sweep.
+
+## 84. `metrics` §66 — the OFFERED-FOR-REUSE test, and the facet's first two-condition positive (`F2C2DWSI`, 2026-08-26)
+
+Follows §83. `metrics` **APPLIED** to Xu et al. after a challenge from both directions — the arbiter
+doubted it fit (*"I'm not sure that this fits our definition"*) and the assistant expected to agree.
+**The text overruled both.**
+
+**What decided it:**
+
+> *"**A key contribution of our study is to operationalize technical debt at its point of entry.** We
+> conceptualize extensive PR rework as realized technical debt…"*
+
+and the measure is positioned **against existing measurement work**, not merely used —
+*"Measurement approaches for technical debt have evolved along two complementary axes… PR rework
+provides a **direct operationalization** of [it]."*
+
+**Why this matters: it is the facet's first instance satisfying BOTH conditions in this pass.**
+
+| Paper | Claimed as deliverable | Computable procedure | Ruling |
+|---|---|---|---|
+| `2KPHQ5IV` Wang (§80) | yes | **no** — *"conceptual shorthand rather than a literal Shannon quantity"* | reject |
+| `DJMBHHZN` MOSAICO (§76a) | no — named KPIs | no | reject |
+| Migliarini (§66) | no — named dimensions | no | reject |
+| **`F2C2DWSI` Xu** | **yes** | **yes** — a regression variable; the DiD forces precision | **apply** |
+
+**The discriminator, stated for reuse — the OFFERED-FOR-REUSE test:**
+
+> **Is the measure *offered for reuse*, or *constructed to answer this paper's question*? The tell is
+> whether the paper situates it in the measurement literature. Every empirical paper builds variables;
+> only some argue for them.**
+
+This is deliberately the **same shape as §57's instrumentation-vs-contribution rule** for method
+facets — measurement machinery used to reach a finding is an instrument; measurement machinery argued
+for on its own terms is a contribution. The two rules should be read together.
+
+**Why the "computable" half alone is insufficient** (and why this does not reopen §80): a regression
+variable is computable by construction, so computability cannot distinguish a contributed metric from
+an ordinary dependent variable. **Both conditions are required, in either order** — §66 kills the
+formally-dressed-but-uncomputable case (Wang), the offered-for-reuse test kills the
+computed-but-incidental case (any quantitative study).
+
+**Narrowing considered and declined.** A stricter reading was put to the arbiter — reserve `metrics`
+for measures with **a name and a formula** that another paper could adopt by name, which would treat
+Xu's "PR rework as proxy" as a modelling choice rather than a metric. **Declined** (*"Let's keep
+metrics"*); noted here because it would also retire the Maes positive, and because it remains available
+as a §41 graft if the facet proves to over-fire at closeout.
+
+**`risk-overreliance` NOT applied** (1/3, non-modal — falls out with nothing written). Arbiter
+confirmed.
