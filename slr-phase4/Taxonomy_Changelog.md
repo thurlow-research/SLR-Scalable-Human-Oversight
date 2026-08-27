@@ -3611,3 +3611,49 @@ anything else operationalizes it as cleanly.
 as a **candidate** for the Supporting bucket on the strength of the comprehensibility rubric, to be
 settled with the bucketing schema (see the open design note in `Emerging_Themes.md`) rather than now.
 **No collection membership written.**
+
+## 93. Pure measurement is Context — a pre-committed rule for the `ai-code-insecurity` cluster (`4PSM6ZCD`, 2026-08-26)
+
+Zhao et al., *Is vibe coding safe? Benchmarking vulnerability of agent-generated code in real-world
+tasks* (SUSVIBES). **Ruled Context**, agreeing with the panel's `demote:context` at 2/3.
+`ai-code-insecurity` primary 3/3. §42 short-circuit.
+
+**Ground.** Arbiter: *"focuses on a measurement of AI generated code quality for security… I was
+optimistic they might cover agent panel or cross model, but they really didn't."* The paper measures
+**what agents produce**; it contributes nothing about **how anyone checks it**.
+
+**Scarcity — the slot is about to be crowded.** `ai-code-insecurity` covers **13 of 128**, but only 3
+are adjudicated (**2 Core · 1 Context**) and **10 are unread**, nearly all the same shape and mostly in
+the **Accept band**: Fu, Ji, Dora, Ghammam, Bilal Naqvi, Chang, Liu, Irfan Samsyudin, Waseem.
+
+**PRE-COMMITTED RULE — decide the cluster once, not ten times** (same device as §92's `general-code`
+rule):
+
+> **An `ai-code-insecurity` paper earns Core when it says something about *oversight* — human
+> behaviour, a detection approach, or a gate that fails. It is Context when it is *pure measurement of
+> model output insecurity*.**
+
+Consistent with what is already ruled: **Perry** Core (users with AI write less secure code — a human
+finding), **Hjazeen** Core (a unified security testing approach — a detection contribution),
+**Marri** Context, **Zhao** Context. This is the same finding-versus-improvement shape as §90(b) and
+§92, now applied to the Problem side of the taxonomy rather than the Solution side.
+
+**PRESERVED — two items that outlive the demote.**
+
+1. **The tests-pass / security-fails gap, quantified on agentic real-world tasks.** 200 tasks derived
+   from genuine vulnerability-fix commits; SWE-Agent with Claude 4 Sonnet reaches **61% functionally
+   correct but only 10.5% secure** — roughly **83% of the code that passes its own tests is
+   vulnerable**, across **77 CWEs**. This is not merely "AI code is insecure"; it is **the mechanism by
+   which insecure code clears a real pipeline**: CI gates run tests, tests pass, and the defect class
+   is invisible to the check being run. **Directly relevant to inversion v2 (§89) as a leakage
+   pathway** — a gate that passes what it was placed there to stop. Check at closeout whether any Core
+   paper states this gap more cleanly; if not, cite Zhao for it from Context.
+2. **A failed mitigation on the steering side.** *"preliminary security strategies, such as augmenting
+   the feature request with vulnerability hints, **cannot mitigate** these security issues."*
+   Generation-side fixes do not close the gap — an argument **for** inspection, reached negatively.
+   Pairs with §90: `steering` improves the generator; it does not substitute for a check.
+
+**Note on `problem-statement-anchor`.** Codex proposed it 1/3 on the 80%+ figure. **Not written** —
+§42 short-circuits — but flagged: if the anchor slot is still open at closeout, the 61%/10.5% pair is a
+stronger candidate than most, and tier does not formally bar it (contrast §82g, where Watson's figure
+was refused for being **secondhand**, not for being Context).
