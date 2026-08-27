@@ -3376,3 +3376,50 @@ actually examined — a 40% error rate on a unanimous-prone theme. **15 papers c
 on silence alone.** At the observed rate roughly six are likely misapplied. **Re-check all 15 against
 the fail-closed exclusion and the synthesis test before computing `final:*`.** This is the largest
 known single source of tag error in the corpus.
+
+## 88. THE LEAKAGE TEST — §52's operative criterion, and a diagnosis of its own wording (2026-08-26)
+
+Follows §86/§87. The arbiter narrowed `oversight-scaling-inversion` to a single sufficient condition
+and named three symptoms that **do not qualify on their own**:
+
+> ***"Burden falls on maintainers doesn't cut it. Throughput down, queue up. Maintainer who is serious
+> still reviews, just takes longer. Preventing project work doesn't do it either. Has to result in
+> **leakage of risky code**."***
+
+**THE LEAKAGE TEST — the operative criterion:**
+
+> **Risky code must escape the review that should have caught it.** Not "review is strained" — review
+> **failed to hold**, and something got through as a result.
+
+**Explicitly NOT sufficient (each of these was argued for and rejected):**
+
+| Symptom | Why it fails | Case |
+|---|---|---|
+| Burden piles on maintainers | strain is not failure | `XJAXB98T` |
+| Queue grows, throughput falls | *"a serious maintainer still reviews, just takes longer"* — **latency is not leakage** | `NZJST99D` |
+| Real project work displaced | productivity harm, not risk harm | curl's fabricated security reports (`XJAXB98T`) |
+| Experts absorb the rework | the gate held; the cost was paid elsewhere | `F2C2DWSI` (§83) |
+
+The clearest formulation: **the gate holding slowly is not the gate failing.** Delay, cost, and
+displacement are all consistent with oversight *working*.
+
+**DIAGNOSIS — the definition is causing its own false positives.** §52's positive description reads
+*"AI code is riskier yet less inspected and ships anyway — PRs auto-merged unreviewed; **review is the
+bottleneck; burden piles on maintainers**."* The final clause **describes a symptom that the same
+entry elsewhere rules insufficient**, and it sits in the part of the text the taggers pattern-match
+against. That is very likely the mechanism behind the 25% proposal rate measured in §87 — the panel is
+matching a phrase the definition itself supplies. **The assistant's "pro" case for Yang was built on
+the same phrase, so this is not a model-only failure.**
+
+**GRAFT CANDIDATE for the next versioned cut (§41 — do NOT edit `Tag_Cheatsheet.md` now):**
+1. Remove *"review is the bottleneck; burden piles on maintainers"* from the positive description, or
+   demote it to an explicitly-insufficient example alongside the fail-closed exclusion.
+2. Lead the definition with **the leakage test** rather than with symptoms.
+3. Keep the synthesis test, which already works: *would the paper read naturally in a section on bad
+   code shipping unreviewed?*
+
+**CLOSEOUT — revises the §87 estimate upward.** The 40% rejection rate was computed against the old
+looser reading. Under the leakage test the bar is higher, so **more than six of the 15 silent-modal
+papers are likely misapplied**. A cheap sizing is available before the re-check: tally how many of the
+15 have panel rationales citing *burden/bottleneck/capacity* versus *leakage/merged-unreviewed* — the
+former are near-certain rejects. **Not run (mid-pass); queued for closeout.**
