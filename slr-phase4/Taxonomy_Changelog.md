@@ -4054,3 +4054,40 @@ artifact is not universal).
 **Risk to carry:** if a published version is materially revised, an adjudication made on the preprint is
 stale. The **Zhu precedent** (`BLR3XE3I`→`DN9R4PDQ`, converted in place, full texts diffed to confirm no
 quoted passage moved) is the template. Tractable for 12 papers at closeout.
+
+## 102. DISCLOSURE — `Tag_Cheatsheet.md` was edited three times during the pass; why the measurements still stand (2026-08-26)
+
+Surfaced during the pre-merge review of PR #13. §10.3 describes the instrument as *"v2.13 … expressed
+as `Tag_Cheatsheet.md` plus a fixed prompt prefix"*, and §41 requires gauge constancy — so an edit to
+that file during an active measurement pass needs disclosing rather than leaving in the diff.
+
+**What changed** (all in commit `b424416`, early in the branch):
+1. `scaling-dissent` — four guards added (§56, §58), with the two rejected candidates as worked cases.
+2. `framework` — the §49b **conformance-requirement ≠ architecture** clause.
+3. `method-*` — §57's **instrumentation ≠ contribution**, plus the one-event-one-classification
+   corollary and the `8MXATG38` worked failure.
+
+**Why the measurements remain comparable:**
+
+- **The taggers never saw any of it.** `Tag_Prompt.md` is **unchanged on this branch** (verified by
+  diff against `origin/main`). Every changelog entry making these refinements recorded *"Not propagated
+  to `Tag_Prompt.md` (§41)"*, and that held. **The panel ran on a genuinely frozen instrument for all
+  9 runs of all 128 papers.**
+- **No vocabulary was added or removed**, and **no tag's extension changed.** All three edits are
+  clarifications of existing definitions, each attached to a worked case that was already decided.
+- **They are arbiter-side reference material**, not measurement apparatus.
+
+**The residual effect, stated honestly.** The *arbiter* read a slowly-sharpening reference sheet across
+the pass, so rulings late in the pass had more written guidance than early ones. That is a real if small
+asymmetry and cannot be undone retrospectively.
+
+**Weak evidence against drift:** the arbiter-layer rates were stable end-to-end — origination
+**8.0% → 7.7%**, override **8.3% → 8.8%** between T0 (57 papers) and T1 (65 papers, §100). If the
+sharpening reference sheet were materially changing arbiter behaviour, the override rate would be
+expected to move; it did not. **Not proof — the metric is coarse and the sharpening was small — but it
+is the check available, and it points the right way.**
+
+**Rule going forward:** clarifications belong in this changelog, and **`Tag_Cheatsheet.md` should not be
+touched again before the versioned cut** (§41). If a clarification is urgent enough to write down mid-
+pass, it is urgent enough to write *here* instead. Re-check the diff of both instrument files at every
+PR from now on.
