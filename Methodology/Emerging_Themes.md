@@ -1257,9 +1257,11 @@ The paper names reducing *"the manual effort of 'constraint engineering'"* as fu
 specific advocacy was autoformalization *plus* verification; the automatic derivation of formal specs
 from natural language remains unclaimed by any read paper.
 
-**Status: Mitchell is partially dominated, not dominated.** Decision deferred to `FZK2QB5A`
-(Alshahwan, *Assured offline LLM-based software engineering*), still unread — the last candidate that
-could close the autoformalization gap.
+**Status: RESOLVED 2026-08-27 — Mitchell KEEPS Core.** `FZK2QB5A` (Alshahwan) was the last candidate
+and does **not** close the gap: its twin guarantees are *"does not regress the properties of the
+original code"* — **regression against existing behaviour, not specifications derived from intent**.
+No corpus paper delivers autoformalization plus feedback, so **Mitchell survives as the corpus's
+position statement of that gap** (§105a). Decision closed.
 
 **Coupling to watch (§77).** If the `formal-methods` definition is ever narrowed to proof-grade work,
 the cluster shrinks below 7 of 149 and the §53 scarcity test moves in Mitchell's favour — a *smaller*
