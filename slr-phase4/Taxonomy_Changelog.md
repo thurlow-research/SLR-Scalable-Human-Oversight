@@ -3907,3 +3907,50 @@ exist at review time. **Not a latent contribution — a measurement that can onl
 Useful for the write-up: the two papers look alike from the abstract — both build checking machinery
 and both were demoted — but the *reasons differ*, and conflating them would make §51 look like a
 general anti-benchmark rule rather than the specific deployability test it is.
+
+## 99. Three post-freeze tags land at once; and §83's `intro-framing` rule refined (`TA6GIUK2`, 2026-08-26)
+
+Zietsman, *The specification as quality gate: three hypotheses on AI-assisted code review*.
+**Core + Dissertation Supporting.** Primary `ai-review`; `rules-based-checks`, `evaluator-reliability`;
+`agentic`, `risk-quality`, `method-experiment`, `intro-framing`, `cross-model`, `agent-panel`.
+Rejected `oversight-scaling-inversion` (2/3). **Final paper of the Light Read pass.**
+
+**(a) Three post-freeze tags apply to one paper** — the largest single-paper cluster of them so far, and
+a good illustration of why the restricted re-run (§89, §10.12) is needed: **the panel could not have
+proposed any of them.**
+- **`cross-model`** — Experiment 3 is *"a cross-family panel of four models from three families"*, run
+  against a same-family baseline. Fourth corpus instance (Mahmud, Swidey, Zhu, this).
+- **`agent-panel`** — four models reviewing the same artifacts.
+- **`evaluator-reliability`** — **its strongest instance to date.** The arbiter scoped this tag as
+  *"this LLM compared to that LLM"*; Zietsman compares **evaluator configurations** (same-family vs
+  cross-family panel) against a BDD ground truth and reports detection rates per condition. Measured,
+  not asserted — better fit than Spiess or Zhu.
+
+**(b) `evaluated-synthetic` DECLINED — §34 fork, subjects-may-be-systems.** The planted-bug corpus is
+the **stimulus**, not the object of study; the subjects are **third-party models**, so the rule sends
+this to `method-experiment` (3/3) and the ladder does not fire. Same reasoning as `XK3P9C96` (§97).
+**Worth stating as a pattern: a contrived corpus does not by itself trigger the ladder — ask what the
+findings characterise.**
+
+**(c) §83 REFINED — the `intro-framing` test.** §83 stated the facet *"never applies to a study that
+produces primary evidence."* **Too strong.** Xu's DiD evidence *was* the contribution; here the
+**argument** is the contribution and the experiments illustrate it — the author's own framing is
+*"directional evidence, not a controlled demonstration."*
+
+> **Refined test: is the evidence the contribution, or does it illustrate one?** `intro-framing`
+> applies to the latter even when experiments are present. Presence of evidence is not the
+> discriminator; **evidentiary weight-bearing** is.
+
+**(d) `oversight-scaling-inversion` REJECTED at 2/3 — §88 leakage test, fourth consecutive.** The
+failure demonstrated is a **correlated blind spot** (AI review misses domain-opaque bugs), not a
+capacity failure. No volume mechanism is involved. Cf. Xu (§83), Yang (§86), Zhou (§96b).
+
+**(e) `counterpoint` 3/3 → NOT `scaling-dissent`.** The paper argues *this particular delegation fails
+without an external reference* — thesis-**supporting**. Fifth measured polarity instance; deferred to
+the closeout deprecation sweep.
+
+**(f) Substantive contribution recorded in `Emerging_Themes.md`:** the independence thread's gradient
+conflated **decorrelation** and **reference** into one axis. Zietsman separates them — *"model diversity
+does not supply ground truth"* — which means a four-vendor panel with no specification produces
+**agreement**, not **correctness**. This corrects our own framing and links the specification cluster
+(Töpfer, `XRTVITVP`) to the panel cluster (Mahmud, Swidey, Zhu) as complementary rather than competing.
