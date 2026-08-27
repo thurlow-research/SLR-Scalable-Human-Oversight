@@ -3210,3 +3210,66 @@ as a §41 graft if the facet proves to over-fire at closeout.
 
 **`risk-overreliance` NOT applied** (1/3, non-modal — falls out with nothing written). Arbiter
 confirmed.
+
+## 85. Primary belongs to the MECHANISM, not the harm it targets (`QUXRX9ZL`, 2026-08-26)
+
+Yanev et al., *The prompt–refactor–verify (PRV) cycle: a human-centered framework for AI-assisted
+programming*. **Ruled Context.** Tag verification short-circuited (§42); rulings recorded below as
+reasoning-of-record: primary `hitl-workflow`, theme `quality-debt`, facets `agentic`, `design-only`.
+
+**(a) The primary question, and the rule it produced.** The arbiter's initial call was
+`hitl-workflow`, then reconsidered toward `quality-debt`: *"the framework proposed as the explicit
+refactor stage… is human supervised refactor and cleanup of the code. That might tilt to quality as
+primary actually?"* **Held at `hitl-workflow`**, for a reason that generalises:
+
+> **Nearly every Solution theme exists to protect quality.** `rules-based-checks`, `ai-review`, and
+> `remediation-gating` all catch defects. If "the mechanism targets quality" made `quality-debt`
+> primary, most of the Detect→Fix half of the taxonomy would file under a Problem heading and the
+> solution themes would empty out. **`risk-quality` is the flag that records which harm is targeted;
+> the primary records what kind of thing the paper is.**
+
+Reinforced by the flag-vs-theme rule: `quality-debt` as a theme *"still requires the paper to do the
+lift."* Yanev asserts the decay and cites Copilot studies for it; its own pages go to the cycle.
+
+**Worked pair, same week, opposite rulings:**
+
+| | Contribution | Primary |
+|---|---|---|
+| `F2C2DWSI` Xu (§83) | **measures** the debt | `quality-debt` |
+| `QUXRX9ZL` Yanev | **proposes a workflow** to prevent it | `hitl-workflow` |
+
+**Where the arbiter's instinct did land:** Refactor being *human-guided* is what makes this
+`hitl-workflow` rather than `remediation-gating` or `steering` — the human performs the cleanup rather
+than approving a machine's. That argues **for** the mechanism primary, not against it.
+
+**(b) Mode tie-rule applied a second time, consistently.** Panel split `assistive` 2/3 / `agentic` 2/3.
+Gemini's rationale is the tie-rule case verbatim — *"Prompts generate complete artifacts like
+controllers that require holistic manual review."* Human-initiated, artifact-granularity → **reviewable
+unit dominates → `agentic`** (cf. §81, where the same rule was restored on `T2EG4BE2`).
+
+**(c) `design-only`, and an enforcement-gap observation.** Codex read Verify as *"a defined pre-merge
+checkpoint with **blocking authority**."* **Overread.** The paper says *"confirm correctness before
+merging"* and self-describes as a **"micro-methodology"** — discipline, not enforcement. This is the
+third or fourth proposal in the pass that specifies human checkpoints with no machinery behind them
+(cf. §61). **Watch:** if the cluster holds, "prescribed-but-unenforced human checkpoints" is a
+reportable pattern about the solution literature, not just a per-paper caveat.
+
+**(d) §53 scarcity — a worked FAILURE, run per §79 against the argument slot.** The slot is
+*an unbuilt, human-centred practice discipline for vibe coding*. Corpus-wide, `hitl-workflow` plus a
+proposal facet (`design-only`/`framework`/`intro-framing`) covers **32 of 128** papers. Direct
+neighbours: **Elgendy** (*Responsible vibe coding*) — **already Context, same shape, same subject**;
+**Mitchell** (*vibe coding needs vibe reasoning*); **Maes** (*gotchas of AI coding and vibe coding*);
+**Kamalı** (*Rethinking code review in the age of AI*); **Bara** (*HAIF*). **Elgendy is the decisive
+precedent — keeping Yanev at Core would contradict a ruling already made on the same profile.**
+Transferable content is held elsewhere by papers with more behind them, and Yanev concedes its own
+Verify stage is unreliable in the setting it targets (*"contexts lack robust test suites"*).
+
+**(e) Preserved regardless of tier — two items.**
+1. **The self-refinement contrast**, a crisp design-side statement of producer-independence reached
+   without reference to §74: *"PRV's Refactor stage resembles **self-refinement**, but with a critical
+   difference: **the responsibility lies with the developer, not the model.** The AI can propose
+   changes, but the human…"* Feeds the independence thread's prescription leg.
+2. **The commit-prefix convention** — `init-` / `refactor-` / `verify-` prefixes plus prompt logs as an
+   artifact-level provenance trail. Small and unenforced, but possibly **the only artifact-level
+   AI-tagging convention proposed in the corpus**. Check at closeout before discarding; if unique it is
+   worth a sentence in the provenance discussion even from Context.
