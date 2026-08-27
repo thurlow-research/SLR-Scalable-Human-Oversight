@@ -1554,3 +1554,67 @@ usually cannot. **That asymmetry is worth testing in the survey.**
 - *Do contributors have to disclose AI assistance? Is anything required before review begins?*
 - The 12 strategies are a ready-made response menu — use them as closed options rather than
   free-texting the question.
+
+## ARGUMENT STRUCTURE — "X fails, therefore Y and Z" is OUR synthesis, not the literature's (`PPMTM4DG`, 2026-08-26)
+
+Yu et al., *Fight fire with fire: how much can we trust ChatGPT on source code-related tasks?*
+(**IEEE TSE**, Dec 2024). Core + Dissertation Primary. This entry records the **shape of the argument**
+it participates in, because the shape needs declaring before the chapter uses it.
+
+**The arbiter's formulation:** *"X doesn't work, need to look for other solutions. Y and Z (which
+aren't discussed by X) but address the issues in X's failure."*
+
+### The measurement — the weakest rung, quantified
+Yu tests ChatGPT verifying **its own** output across generation, completion, and repair. Missing-report
+rates for its own defects:
+
+| Task | Own errors it fails to report |
+|---|---|
+| incorrect code generation | **67%** |
+| failed program repairs | **59%** |
+| vulnerabilities in completed code | 23% |
+
+Plus **75% of the explanations** in its self-generated test reports are **inaccurate** for incorrect
+code and failed repairs — the artifact a human would read *to check the check* is mostly wrong. And
+self-contradictory hallucination: code called correct at generation, incorrect at verification, with
+nothing changed in between.
+
+**Stronger in kind than `VTDG995V`.** Gros/Spiess showed model confidence is *poorly calibrated* — a
+noisy signal. Yu shows the check **does not work**. Noise versus failure.
+
+**Placement on the independence gradient** (which the thread warns not to flatten):
+
+> **same-model self-report ← Yu** · same-model rescaled against external labels ← `VTDG995V` ·
+> different-vendor ensemble ← Mahmud · external deterministic verifier ← Sistla
+
+**Scope caveat — this is a LOWER BOUND.** The self-check runs in the **same session**, so the model has
+its own prior output in context: the most degenerate configuration available. A fresh-session same-model
+check might do better, and **the corpus does not test that**. Do not present 67% as the general
+self-check rate; present it as the worst case, which is what makes it decisive against *"just have it
+review itself."*
+
+### The structural point — declare the synthesis
+**Yu proposes no fix.** It concludes that human judgement remains essential; it never mentions agent
+panels or cross-model checking. **Mahmud and Zhu propose those without citing Yu.** So the chain
+*"self-check fails → therefore diverse checkers"* is **assembled by this review**.
+
+**Stated carelessly that is a weakness; stated properly it is the stronger shape** — independent groups,
+neither writing to support the other, cf. the independence thread's rule → prescription → measurement →
+deviation structure. **But it must be labelled as synthesis in the chapter**, or a committee will read
+it as a finding one of these papers reported. It is not.
+
+**The half-claim to avoid.** Yu establishes that **self-verification fails**. It does **not** establish
+that **cross-model verification succeeds** — no different-model checker is tested. Cited alone as the
+case for panels, it is vulnerable to *"you have shown self-check is bad, not that panels are good."*
+The positive half must come from Mahmud (*"different models exhibit different blind spots"*), and even
+that is routing on **disagreement** rather than a head-to-head comparison.
+
+### GAP TO VERIFY AT CLOSEOUT
+What would close the chain is a study comparing, on the same artifacts:
+
+> model A generates → **A checks** &nbsp;versus&nbsp; model A generates → **B checks**
+
+**I do not believe the corpus contains this** — but that is a claim to verify against the full set
+before asserting, not to assume. If confirmed absent, it is a **named research gap** the dissertation
+can claim, and a cheap experiment to run given Yu's published setup and datasets. **Action: check the
+`ai-review` and `agent-panel` sets explicitly at closeout.**
