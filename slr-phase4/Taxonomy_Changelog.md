@@ -3741,3 +3741,52 @@ domain rather than mechanism. Flagged there as a revisit condition.
 `publicationTitle`, the known SSRN import artifact (`source:ssrn`). It is one of the ~11 Light Read
 items still affected; not corrected here, and still queued for the closeout record-status sweep.
 `itemType` remains unreliable for PRISMA stream counts.
+
+## 96. `oversight-explanation` + `steering` legitimately co-occur; and where `evaluated-synthetic` came from (`XRTVITVP`, 2026-08-26)
+
+Zhou et al., *Steering LLMs via scalable interactive oversight*. **Kept Core over a unanimous 3/3
+panel demote flag.** Primary `oversight-explanation`; `hitl-workflow`, `steering`, `non-developer`,
+`framework`, `built-system`, `agentic`, `evaluated-synthetic`, `method-experiment`. Rejected
+`oversight-scaling-inversion` (2/3). Added to **Dissertation Supporting**.
+
+**(a) The assistant argued the wrong way first — record of the correction.** The initial position was
+that `oversight-explanation` cannot apply because the human never sees generated code (the evaluation
+pivot is a **PRD**, not an artifact), making this steering-only and therefore Context under §90(a).
+**The precedent refutes it:** `ZH6QIU8A` (Kasibatla, *Decision-Oriented Programming with Aporia*) is
+already Core with **`oversight-explanation` as primary and `steering` as a human-written facet**, on an
+essentially identical mechanism — an agent proactively eliciting structured decisions from the human.
+
+> **Rule: `oversight-explanation` and `steering` are not mutually exclusive.** A design that gives the
+> human a *structured decision surface* earns `oversight-explanation` even when the surface sits
+> **before** generation and no artifact is ever displayed. §90(a)'s steering-only Context signal
+> applies to papers that improve the **generator with no human control surface at all** (Yao/REAL), not
+> to papers that relocate human control upstream.
+
+**(b) `oversight-scaling-inversion` REJECTED at 2/3 — §88 leakage test.** The paper formalises a
+**capability** gap (*"non-experts cannot validate autonomous software outputs"*), but nothing escapes a
+review that should have caught it. No leakage, no inversion. Third consecutive rejection of this theme
+on the same test (Xu §83, Yang §86, here) — see the §87 closeout action.
+
+**(c) §34 fork respected — two genuine measurement events.** `evaluated-synthetic` and
+`method-experiment` both apply because the paper runs **two separate evaluations**: a simulated-user
+study (Table 1, module-level PRD scores) and **§4.4 "Real-user Study on Alignment Effectiveness — We
+hired a non-expert to engage in our interaction system."** Not the `8MXATG38` failure pattern; two
+events, two classifications.
+
+**(d) PROVENANCE — this is one of the papers that produced `evaluated-synthetic`.** Arbiter: *"This was
+one of the papers that led to us introducing synthetic. They concocted the data from other sources."*
+Recorded because `evaluated-synthetic` is one of the six **post-freeze** tags the panel could never
+propose (`Theme_Tagging_Calibration.md` §11.9), and the methods chapter should be able to say **which
+papers forced each addition** rather than presenting the vocabulary as arriving fully formed.
+
+**(e) Cluster action — DECISION SURFACE.** At the arbiter's direction, the cluster members were placed
+in **Dissertation Supporting**: `XRTVITVP` (Zhou), `ZH6QIU8A` (Aporia), `CI93QRUH` (HiLDE) — none had
+been in Primary or Supporting, all three sat only in Dissertation *Candidates*. Mechanism staged in
+`Emerging_Themes.md`, including the two design variables (**altitude**, **options with analysis**)
+drawn from the arbiter's system-building experience and explicitly marked as a **reading lens, not
+corpus evidence**.
+
+**(f) Dissertation Primary declined.** The population is **non-expert entrepreneurs building without
+developers**; the dissertation's survey targets organisations governing professional developers.
+Supporting fits — the paper is the contrast case for what oversight becomes when nobody can read the
+code.

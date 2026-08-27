@@ -1664,3 +1664,51 @@ sign-off on AI-generated PRs reduce the rate at which reviewers modify them?
 demote, transferable controls — where the sole-exemplar exception was exercised. Here the arbiter
 ruled demote, so the mechanism is preserved as framing rather than promoted to Core. **If a code-domain
 replication appears later, revisit.**
+
+## CANDIDATE MECHANISM — the DECISION SURFACE: what the human engages when they cannot read the artifact (2026-08-26)
+
+**Staged, 3 instances.** Companion to the `no-inspection` staging (§81a): that records *the human does
+not read the code*; this records **what they engage instead**.
+
+**The claim.** In a growing set of designs the human's oversight object is **not an artifact but a
+decision** — curated, structured, and presented for a choice. The artifact may never be shown at all.
+
+| Paper | Tier | Decision surface | Traceable to code? |
+|---|---|---|---|
+| **Kasibatla**, *Decision-Oriented Programming with Aporia* (`ZH6QIU8A`) | Core · Diss Supporting | decisions explicit and structured as *"the shared medium between the programmer and the agent"*, elicited proactively | **yes** |
+| **González**, *HiLDE* (`CI93QRUH`) | Context · Diss Supporting | decision points in a completion, alternatives explained, human picks | yes (within-turn) |
+| **Zhou**, *Steering LLMs via scalable interactive oversight* (`XRTVITVP`) | Core · Diss Supporting | recursive tree of low-burden decisions, pre-generation | **no** — stops at the PRD |
+
+Aporia names the problem the cluster answers: *"developers **cede decision-making authority to
+agents**, often without realizing that important design decisions are being made without them."*
+
+### The two design variables — from the arbiter's HOS experience
+Neither is named by any of the three papers, and both are what separate a usable decision surface from
+an unusable one:
+
+1. **Altitude.** Escalations pitched at code level are unreadable to anyone not already deep in the
+   codebase — *"anyone who was 'new' to the code (e.g. everyone) would struggle to follow."* The
+   decision must be raised to the level at which a non-expert can grasp *what is at stake*, not *what
+   changed*.
+2. **Options with analysis.** Not "here is a problem" but "here are the choices and what each costs."
+   A decision surface without alternatives is a notification; with alternatives and their consequences
+   it becomes an actual locus of control.
+
+> *Provenance note:* these come from the arbiter's own system-building experience, offered as
+> comprehension of the papers. **They are a lens for reading the corpus, not evidence in it** — the
+> claim that altitude and options matter needs corpus or survey support before it enters findings.
+
+### Why it matters
+If oversight increasingly happens at the decision layer rather than the artifact layer, then **the
+quality of oversight is a property of interface design, not of reviewer diligence.** That relocates
+the whole question: a diligent reviewer facing a bad decision surface cannot oversee well, and the
+governance literature's focus on *who reviews* and *whether they signed off* misses it entirely.
+
+**Distinguish from `oversight-explanation`.** That facet covers explaining an artifact *post hoc* so a
+human can judge it. This is *ante hoc* — the choice is presented before the artifact exists. The two
+co-occur in practice (Aporia carries `oversight-explanation` as primary **and** `steering`), which is
+why a separate tag is staged rather than assumed.
+
+**Promote on:** a fourth instance, or any paper that measures decision-surface quality rather than
+merely proposing one. **Survey hook:** when an AI agent needs a human decision, what does the human
+actually see — a diff, a summary, or a choice with alternatives?
