@@ -2960,46 +2960,66 @@ into `final:*` on silence, so "drop" is only effective as an explicit `cal:human
 models alone do not eliminate oversight needs*, which is thesis-**supporting**. Not `scaling-dissent`.
 Left to the closeout deprecation sweep rather than rejected per-paper.
 
-## 81. The generation-mode pair has a HOLE — both poles presuppose inspection (`T2EG4BE2`, 2026-08-26)
+## 81. Mode tie-rule UPHELD; "nobody inspects" belongs on its own axis (`T2EG4BE2`, 2026-08-26)
 
 Waseem et al., *Vibe coding in practice: flow, technical debt, and guidelines for sustainable use*.
-**Core**, primary `quality-debt`. **`agentic` REJECTED at 3/3 — and `assistive` not applied either.**
+**Core**, primary `quality-debt`. **`agentic` APPLIED** under the standing tie-rule.
 
-**The arbiter's ruling and its reasoning.** *"Agentic means agents generating code autonomously. This
-one focuses on vibe coding in iterative sessions with human directing."* Then, on the fallback:
-***"Not assistive. Human likely not even looking at the code."***
+**This entry was rewritten the same day.** It first recorded a *no mode facet* ruling, which was
+reversed on review. **The reversal is the instructive part and is left visible.**
 
-**Why this is a vocabulary finding, not a per-paper call.** The mode pair cuts on **who initiates +
-the reviewable unit**. Vibe coding breaks it on a **third dimension the pair never encoded — whether
-the human inspects the output at all**:
+**What went wrong.** The arbiter reasoned *"Agentic means agents generating code autonomously. This
+one focuses on vibe coding in iterative sessions with human directing"*, then on the fallback:
+*"Not assistive. Human likely not even looking at the code."* The assistant agreed and wrote no mode
+facet — **without checking the tie-rule that already governs exactly this case:**
 
-| | initiator | reviewable unit | human inspects? |
-|---|---|---|---|
-| `assistive` | human | snippet | **yes — accepts piece-by-piece** |
-| `agentic` | AI | artifact/PR | **yes — at the gate** |
-| **vibe coding as practised** | human | artifact-scale | **possibly never** |
+> *"**Tie-rule:** initiator vs reviewable unit disagree (human-prompted chat task → complete artifact)
+> → **the reviewable unit dominates** (wholesale artifact = the gate = `agentic`)."*
 
-Both existing poles **presuppose an inspection point**. Assistive locates it at acceptance; agentic
-locates it at the gate. Vibe coding may have neither: the human directs by prompt and never reads the
-result. Evidence in this paper — *"a single 'fix this' prompt can rewrite large parts of the codebase
-**before architects or testers have seen the previous version**"* — and its own framing of approval
-*"based on vibes: surface plausibility rather than structural understanding"* (cf. `2KPHQ5IV`).
+Waseem is that case verbatim: human-prompted, complete-artifact output. **A standing written rule was
+overridden by an unwritten exception.**
 
-**Ruling: no mode facet.** `assistive` was 0/3; writing nothing yields the correct outcome. Recorded
-rather than forced, because forcing either pole would assert an inspection point the paper says is
-absent.
+**Two checks that caught it:**
+1. **An internal contradiction in the data.** `72W6R4JG` (Töpfer, §77) — titled *"with no human code
+   inspection"* — carries `agentic` (3/3, endorsed). Waseem carried no mode. **Same phenomenon,
+   opposite tags, differing only in the order the two papers were discussed.**
+2. **The no-mode bucket already means something else.** 22 of 66 adjudicated papers carry no mode, and
+   they are there because *mode is irrelevant to the claim* — AI on the review side only, general-AI,
+   or lit reviews (Migliarini, McKay, Sistla, Mitropoulos, Sterz…). Filing Waseem there **conflates
+   "irrelevant" with "inexpressible"**, when mode is the paper's entire subject.
 
-**Second instance already on record.** `72W6R4JG` (Töpfer, §77) is titled *"…with **no human code
-inspection**"* — the same absence, there as a *deliberate design choice* rather than an observed
-practice. **Two instances in one week, from opposite directions.**
+**The category error, stated for reuse.** The insight — *the human may never look at the code* — is
+real, but it is an **oversight** property, not a **generation** property. Modes describe how code is
+produced; inspection describes what happens to it afterwards. **Recording an oversight fact by
+withholding a generation tag puts it on the wrong axis, and that is why it collided with the
+tie-rule.** General rule: **when a tag feels wrong because of something the vocabulary cannot express,
+do not encode the gap by omission — stage a new tag on the correct axis.**
 
-**Tripwire:** a third instance promotes this to a vocabulary change — either a `no-inspection` scope
-flag or an explicit third mode. Do not graft mid-measurement (§41); accumulate to the next versioned
-cut. **Why it matters beyond bookkeeping:** if a mode exists in which no human inspects the artifact
-at any point, that is the scaling inversion at its limit — not oversight degraded, but oversight
-absent — and the instrument currently cannot express it.
+**Ruling:** `agentic` applied. `assistive` not applied (0/3, and the human is not authoring in the
+flow). The absence-of-inspection observation is **staged as a facet candidate**, not encoded here.
+
+### 81a. STAGED CANDIDATE — `no-inspection` (2 instances, tripwire at 3)
+An **orthogonal flag**, composable with either mode, marking that no human reads the generated
+artifact at any point. `agentic` + `no-inspection` says what neither tag says alone.
+
+| Instance | Character | Evidence |
+|---|---|---|
+| `T2EG4BE2` Waseem | **observed drift** | *"a single 'fix this' prompt can rewrite large parts of the codebase **before architects or testers have seen the previous version**"*; approval *"based on vibes"* |
+| `72W6R4JG` Töpfer | **deliberate design** | titled *"…with **no human code inspection**"*; a formal checker is offered as the substitute |
+
+**Do not graft mid-measurement (§41)** — accumulate to the next versioned cut. **Why it matters:** if a
+mode exists in which no human inspects the artifact at any point, that is the scaling inversion at its
+limit — not oversight degraded but oversight **absent** — and the instrument cannot currently say so.
 
 **Other rulings on this paper:**
+- **`agent-scope-drift` APPLIED** (codex 1/3 — a fourth non-modal rescue). The object is the agent
+  departing from its mandate across regeneration cycles: *"one microservice **regenerated its
+  authentication mechanism from JSON Web Tokens to session cookies**, causing authorization failures
+  (HTTP 401) across dependent services"*, and the countermeasure is aimed squarely at it —
+  *"Compare regenerated code semantically; highlight **intent-level changes** rather than line diffs
+  to **prevent drift**."* Also *"reduces architectural drift"* and *"governance of architectural
+  decisions (to prevent drift across iterations)."* §62 satisfied: the drifting thing is the agent,
+  not the model.
 - **`method-mining` KEPT over an initial arbiter instinct to drop it.** The concern was that the
   evidence base is *"authors' experiences, chats over coffee."* But the paper contains a discrete
   quantified measurement: *"We also **scanned seven early-stage vibe-coded MVPs**… **970 security
