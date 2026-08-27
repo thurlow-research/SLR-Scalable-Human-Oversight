@@ -3552,3 +3552,62 @@ A-checks-versus-B-checks study.
 (+ Tisi, Wang). **Both are floors, not totals** — the tags are post-freeze, so only arbiter-noticed
 instances exist and no systematic sweep has run. Do not report these counts before the restricted
 re-run (§10.12).
+
+## 92. "BACKWARDS" — the oversight surface faces the wrong way (`KF5MGIBI`, 2026-08-26)
+
+Yu, Rong, Shen et al., *Fine-Tuning LLMs to Improve Accuracy and Comprehensibility of Automated Code
+Review* (Carllm, **ACM TOSEM**, Dec 2024). **Ruled Context.** §42 short-circuit; panel recorded as
+reasoning-of-record: `oversight-explanation` primary 2/3, `ai-review` 3/3, `built-system` 3/3,
+`general-code` 3/3, `risk-quality` 3/3.
+
+**This overrides a unanimous non-flag — 0 of 3 models proposed demote**, and the paper is strong on
+its own terms: TOSEM, a working fine-tuned system, and **RQ2 is a *manual* comprehensibility
+evaluation**, not automated proxy metrics. Recorded explicitly because overriding 0/3 deserves the
+same visibility as overriding 3/3.
+
+**The ground — direction, not depth.** The arbiter's first framing was *"getting into nuts and bolts
+of models, not oversight"*, then sharpened to ***"Backwards."*** That is the operative reason:
+
+> **Our question: humans overseeing AI-generated code.**
+> **Carllm: AI overseeing human-written code**, with the human supervising the AI *reviewer*.
+
+The paper states it — *"reviewed diffs are general repository code, not specifically AI-generated"* —
+and `general-code` at 3/3 is precisely the flag for it. The comprehensibility insight transfers, but
+transferability alone is not the test (§53); the slot is crowded — **18 of 128** papers carry
+`oversight-explanation` plus a human-subjects method facet, most already Context.
+
+**FOLLOW-UP REGISTERED — size the "backwards" cluster before the Accept pass.** `general-code` covers
+**20 of 128 (16%)**, currently **5 Core · 5 Context · 10 unread**, and the unread ones are
+overwhelmingly AI-code-review tools (Bugdar, BitsAI-CR, Rasheed, Dutta, Nimraka, Sun, Jin, SGCR).
+**The 5/5 split is not arbitrary — an implicit rule is already operating, and it should be made
+explicit before 10 more arrive:**
+
+> **A `general-code` paper earns Core when it yields a transferable *oversight finding*; Context when
+> it is a *review tool*.** Core members fit: Mahmud (cross-model routing), Sistla (external formal
+> verification), Mitropoulos (LLM reviewers are attackable), Kamalı (vision for AI-era review),
+> Abreu (LLMs in release). Context members are tools that review code better. Same shape as §90(b)
+> — **finding versus improvement**.
+
+Pre-committing this rule should cut per-paper churn in the Accept band, where most of the remaining
+cluster sits.
+
+**Methodological note.** This cluster is the mirror image of the §90(c) terminology hazard: there,
+*"scalable supervision"* pulled in alignment work; here, *"AI + code review"* pulls in tooling for
+**traditional** review. Both are search-strategy false-positive sources and both deserve a sentence in
+the methods chapter rather than silent exclusion.
+
+**PRESERVED — the comprehensibility rubric.** The paper operationalizes what makes an automated check
+**reviewable by a human**:
+
+> *"good comprehensibility requires each ACR to (a) accurately **detect and localize** the issue,
+> (b) provide [**cause/explanation**], (c) [**repair suggestion**]"*
+
+Pairs directly with `PPMTM4DG` (§91), where **75%** of AI self-generated explanations were inaccurate:
+**one paper defines what a good explanation must contain, the other measures how often AI explanations
+fail to.** Carry into the oversight-explanation discussion from Context; check at closeout whether
+anything else operationalizes it as cleanly.
+
+**DISSERTATION — flagged, not actioned.** Arbiter: *"Might be supporting for dissertation."* Recorded
+as a **candidate** for the Supporting bucket on the strength of the comprehensibility rubric, to be
+settled with the bucketing schema (see the open design note in `Emerging_Themes.md`) rather than now.
+**No collection membership written.**
