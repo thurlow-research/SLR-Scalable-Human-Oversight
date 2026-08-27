@@ -3110,3 +3110,54 @@ in the corpus, and this paper contributes no detector of its own — it synthesi
 *"GenAI tools… now generate an estimated **20-30% of code in many enterprise codebases**."* The rule is
 **never on `lit-review`**: anchor the primary instead. **Action: chase citation [source of the 20–30%
 figure] and evaluate the primary for the anchor.**
+
+## 83. `oversight-scaling-inversion` REJECTED at 3/3 — silence is not evidence of fail-open (`F2C2DWSI`, 2026-08-26)
+
+Xu, Medappa, Tunç, Vroegindeweij & Fransoo, *AI-assisted programming decreases the productivity of
+experienced developers by increasing the technical debt and maintenance burden*. **Core**, primary
+`quality-debt`.
+
+**The rejection.** All three models proposed `oversight-scaling-inversion` and two made it **primary**.
+Rejected. §52 requires **both** conditions affirmatively: AI code is riskier **yet less inspected**,
+**and it ships anyway**. Xu supports neither — core contributors *"review more PRs"* (+6.5%), and
+AI-generated contributions *"require more revisions **before integration**."*
+
+**The rationale that survived arbiter correction, and it is the important part.** The assistant first
+argued the reject on the ground that *"nothing ships unreviewed."* The arbiter corrected this:
+*"Less that nothing ships unreviewed, as the core team is spending more time fixing stuff."* **The
+paper never measures whether unreviewed code merges at all** — it measures rework volume and effort
+allocation. The correct basis is therefore **silence, not contradiction**:
+
+> **§52 requires affirmative evidence of fail-open. A paper that does not study inspection coverage
+> cannot supply it, however strongly its other findings rhyme with the mechanism.**
+
+This is a stronger and more portable rule than the one first offered, and it guards a real failure
+mode: reading a paper's *adjacent* findings as though they established the specific claim a tag
+requires. Cf. §59 — the panel matched "review burden" + "scaling" to the tag's vocabulary.
+
+**What the paper supplies instead — the SUBSTITUTION mechanism.** Its own contribution statement:
+
+> *"technical debt is increasingly an **outdated workload distribution phenomenon**: maintenance costs
+> are concentrated among a **shrinking pool of core contributors, whose own productive output
+> declines** as maintenance demands rise"* — and this holds *"even when the OSS repository workflow
+> remains unchanged."*
+
+Core developers review **6.5% more** and lose **19% of their own original output**. Oversight does not
+fail; **senior building capacity** does. Recorded as a distinct mechanism in `Emerging_Themes.md`.
+
+**`problem-statement-anchor` APPLIED (codex 1/3 — non-modal rescue).** The 6.5% / 19% pair quantifies
+the overall two-part frame rather than a sub-argument, and this is a **primary study** — a
+difference-in-differences design over a monthly GitHub panel (July 2020–July 2022, treatment/control
+at project and contributor level) — so the never-on-`lit-review` bar does not bite (contrast §82g,
+where Watson's 20–30% figure was refused for exactly that reason).
+
+**`intro-framing` NOT applied** despite an initial arbiter instinct toward it. Panel 0/3, and the
+paper is econometric causal inference, not a position paper. **Discriminator restated: `intro-framing`
+marks papers that name a gap *instead of* operationalizing; it never applies to a study that produces
+primary evidence, however framing-relevant its conclusions are.**
+
+**Others:** `assistive` 3/3 (Copilot), `method-mining` 3/3 (mined repos/PRs/commits/review activity),
+`risk-quality` 3/3. `metrics` (2/3, PR rework operationalized as a debt measure — likely clears §66,
+unlike `2KPHQ5IV`) and `risk-overreliance` (1/3) left to stand or fall on modality. `counterpoint`
+(2/3) is a **fourth** polarity inversion — the paper opposes AI *productivity maximalism*, which is
+thesis-**supporting**, not `scaling-dissent`; deferred to the closeout deprecation sweep.
