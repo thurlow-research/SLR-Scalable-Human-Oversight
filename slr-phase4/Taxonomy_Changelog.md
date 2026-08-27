@@ -3954,3 +3954,50 @@ conflated **decorrelation** and **reference** into one axis. Zietsman separates 
 does not supply ground truth"* — which means a four-vendor panel with no specification produces
 **agreement**, not **correctness**. This corrects our own framing and links the specification cluster
 (Töpfer, `XRTVITVP`) to the panel cluster (Mahmud, Swidey, Zhu) as complementary rather than competing.
+
+## 100. LIGHT READ BAND CLOSED — completeness audit and outstanding sweeps (2026-08-26)
+
+**78 of 78 papers carry `s5:read`. Core 35 · Context 43. Every Core paper has a human primary theme.**
+No partials remain. T1 snapshot written to
+`slr-phase4/data/tags-v213/tag_layer_stats_T1-lightread_2026-08-26.json`.
+
+**Reliability figures held steady across the pass** — worth reporting, because stability is itself
+evidence the arbiter did not drift:
+
+| | T0 (57 papers) | T1 (65 papers) |
+|---|---|---|
+| human origination | 8.0% | **7.7%** |
+| override rate on panel-modal proposals | 8.3% | **8.8%** |
+
+*(n counts papers carrying an arbiter layer; the 13 Context papers ruled under §42's short-circuit have
+no `cal:human` tags by design.)*
+
+### Outstanding sweeps, now sized
+
+**1. Deprecated `counterpoint` — 8 papers still modal and unrejected** (5 Core, 3 Context): Eze 3/3,
+Zietsman 3/3, Choudhuri 3/3, Tilbury 3/3, Zhou 3/3, Wang 2/3, Xu 2/3, Zhu 2/3. Under §45/§46 each
+survives into `final:*` on silence. **Handle as one bulk act** (§56 deprecation), not per paper.
+
+**2. `oversight-scaling-inversion` silent-modal — only 2 remain in this band**, both Context
+(Choudhuri 3/3, Kudriavtseva 2/3). **This materially revises §87's estimate.** That figure of 15 was
+corpus-wide across all 128 Phase 5 papers; the Light Read pass has since resolved nearly all of its
+share through explicit adjudication — including **four consecutive rejections** on the §88 leakage test
+(Xu §83, Yang §86, Zhou §96b, Zietsman §99d). **The remaining burden sits in the Accept and Full Read
+bands**, which is where the closeout re-check should concentrate.
+
+**3. SSRN `itemType` artifact — 9 Light Read items** typed `journalArticle` with no
+`publicationTitle`: `WBS9U5N7` Alami, `NGIH5T4C` Batte, `9MV2IVNU` Eze, `34ELRWJH` Goodhue,
+`LGZXFLSJ` Hein, `JVWUYDME` Jessee, `27YULT5I` Sharma, `5RLPIA3K` Swidey, `E689ZAXC` Zhou. Queued for
+the record-status sweep; **`itemType` remains unreliable for PRISMA stream counts**.
+
+**4. Facet inconsistency on `VZ27QUPQ`** (§98) — `method-mining` looks wrong on LLM-generated code;
+flagged, not fixed, per §42.
+
+### Pre-committed rules now in force for the Accept band
+Recorded together because the Accept pass will hit all three repeatedly:
+- **§92** — a `general-code` paper is Core when it yields a transferable oversight **finding**, Context
+  when it is a review **tool**. ~10 unread instances waiting.
+- **§93** — an `ai-code-insecurity` paper is Core when it says something about oversight, Context when
+  it is **pure measurement of model output insecurity**. ~10 unread instances waiting.
+- **§88 leakage test** — `oversight-scaling-inversion` requires risky code to **escape** a review that
+  should have caught it; burden, queue growth, displaced work and absorbed rework do not qualify.
