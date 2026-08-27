@@ -1712,3 +1712,58 @@ why a separate tag is staged rather than assumed.
 **Promote on:** a fourth instance, or any paper that measures decision-surface quality rather than
 merely proposing one. **Survey hook:** when an AI agent needs a human decision, what does the human
 actually see — a diff, a summary, or a choice with alternatives?
+
+## INDEPENDENCE THREAD — REFINEMENT: diversity and ground truth are two axes, not one (`TA6GIUK2`, 2026-08-26)
+
+Zietsman, *The specification as quality gate: three hypotheses on AI-assisted code review* (arXiv
+2026-03). Core · Dissertation Supporting. **This corrects something in our own framing.**
+
+**What the thread has said until now.** Independence admits degrees, and we listed them as a single
+gradient: same-model self-report < same-model rescaled against external labels < different-vendor
+ensemble < external deterministic verifier. **That treats vendor diversity as *the* axis.**
+
+**Zietsman splits it:**
+
+> *"A cross-family pipeline, Grok reviewing Claude-generated code for instance, has more independence
+> than a same-family pipeline. Different organisations, different training corpora, different reward
+> signals. Errors are partially independent in ways that same-family models are not. **But model
+> diversity does not supply ground truth. A cross-family reviewer without an external specification is
+> still checking code against code, not code against intent.**"*
+
+**Two axes, not one:**
+
+| | Low | High |
+|---|---|---|
+| **Decorrelation** | same model, same session | different vendors, different training corpora |
+| **Reference** | no external spec — checking the artifact against itself | executable specification, tests, formal constraints |
+
+**You can max out one and have none of the other.** A four-vendor panel with no specification is highly
+decorrelated and still has no ground truth: it produces *agreement*, which we may mistake for
+*correctness*. That is a different failure from the one Yu (§91) documents, and our gradient conflated
+them.
+
+**Consequences worth carrying:**
+- **Agreement is not validation.** `agent-panel` and `cross-model` mechanisms buy decorrelated error;
+  they do not buy a reference. Anything reported about panel effectiveness should say which axis it
+  moved.
+- **It qualifies the arbiter's HOS observation** (cross-model panel review of specs and architecture
+  proved useful) without contradicting it: diversity helped, *and* the specification was present as the
+  reference. Both were doing work.
+- **It links the two clusters.** The specification-side papers (Töpfer, Zhou `XRTVITVP`, this) supply
+  the *reference* axis; the panel papers (Mahmud, Swidey, Zhu) supply the *decorrelation* axis. They are
+  complementary answers, not competing ones.
+
+**Supporting evidence, weak but pointed** — Experiment 2, planted domain-convention bugs, neutral
+docstrings: **BDD caught 5/5; AI review ranged 0%–100%**, collapsing exactly where domain knowledge was
+not inferable from the code (`interpolate_rate` 0%). And a self-caught confound that is itself a
+finding: *"the original docstrings stated the domain convention explicitly… **A docstring that encodes
+the convention is a specification.**"* Much informal evidence that "AI review works fine" may be
+**spec-assisted without anyone noticing**.
+
+**Caveat to carry:** single author, preprint, five functions per experiment, planted bugs, and the
+author's own framing — *"directional evidence, not a controlled demonstration."* **Cite for the
+distinction, not for the numbers.**
+
+**Also worth noting for §91:** Zietsman constructs the same argument chain we assembled — AI reviewing
+AI is circular, therefore an external reference is required — **independently**. That partly answers
+the concern that the chain is our own synthesis.
