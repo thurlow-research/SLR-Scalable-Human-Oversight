@@ -594,3 +594,30 @@ is a reportable result, not an inconsistency to hide.
 **Stage 6** (final-set assembly), in one batch — not per paper during the Light Read pass.
 </content>
 </invoke>
+
+## Terminology hazard — "scalable oversight" / "scalable supervision" is a false friend (2026-08-26)
+
+**Surfaced by `9R6TGN82`** (Yao et al., REAL), which describes itself as *"prompt-agnostic and
+reference-free, **enabling scalable supervision without manual intervention**."*
+
+**Two distinct research programmes share this vocabulary:**
+
+| | ML-alignment sense | This review's sense |
+|---|---|---|
+| **Problem** | training a model without enough human labels | reviewing AI-generated code at production volume |
+| **"Supervision"** | the **training signal** (rewards, preferences) | **human inspection** of a produced artifact |
+| **"Scalable"** | works without per-example human labelling | keeps working as output volume grows |
+| **Typical work** | RLAIF, constitutional methods, reward modelling, weak-to-strong | code review practice, governance, routing, gating |
+
+**Why it matters to the methods chapter.** A keyword search on either phrase returns a large
+alignment literature answering a *different question*, and its papers can look superficially on-topic
+— they discuss oversight, scaling, and code. This is a **plausible source of false positives in the
+original screening**, and the search-strategy section should say so explicitly rather than let a
+reader assume the terms carried our meaning throughout.
+
+**Screening rule:** the discriminator is **where the supervision lands**. Signals shaping the model
+*before* an artifact exists are out of scope (they are `steering`, cf. changelog §90); signals applied
+to an artifact *after* generation, for a human or a gate, are in scope.
+
+**Check at closeout:** whether any Phase-1/2 query used these phrases, and whether alignment-sense
+papers entered the pool through them. If so, report it as a named limitation rather than a silent one.

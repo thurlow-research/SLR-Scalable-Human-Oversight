@@ -3471,3 +3471,41 @@ existing tag** — which is precisely why it needs its own slug.
 **Open for the arbiter:** (a) final slug name; (b) whether v2 **supersedes** v1 at closeout (v1 tags
 retired, `final:*` computed from v2 only) or whether both are reported with the delta as a finding.
 Recommend the latter — the delta is more informative than either count alone.
+
+## 90. STEERING-ONLY as a demote ground; and a search-strategy terminology hazard (`9R6TGN82`, 2026-08-26)
+
+Yao et al., *Training language models to generate quality code with program analysis feedback* (REAL).
+**Ruled Context.** Tag verification short-circuited (§42); panel proposals recorded as
+reasoning-of-record: `rules-based-checks` primary 3/3, `steering` 3/3, `built-system` 3/3,
+`metrics` 3/3, `risk-security` 3/3, `risk-quality` 3/3.
+
+**(a) The ground: steering-only.** Arbiter: *"focus is on model training."* Opus put it most precisely
+— *"taint/static analysis + unit tests, **but as RL reward not oversight**"* and *"steering-only."*
+REAL's static analysis is a **reward function**, never a gate on an artifact; nothing it produces ever
+reaches a human. The steering exclusion directs us to *"tag only the paper's inspection/comprehension/
+gating contribution"* — and there is none.
+
+> **Rule: `steering` as the *whole* contribution is a Context signal.** A paper that improves the
+> generator, with no inspection or gating surface, is upstream of this review's question however good
+> the engineering.
+
+**(b) The contrast that makes it non-obvious — Spiess.** Spiess was **kept Core** on what looks like
+the same ground (arbiter's own summary: *"tuning quality of generated code"*). The distinction is what
+each paper *yields*: Spiess produced an **oversight finding** — that a model's own score cannot be
+trusted as a quality signal — which fills a leg of the independence thread. Yao produces a **better
+generator**. Under §79, Yao's argument slot is already occupied and it adds no leg.
+
+> **Discriminator: does the paper yield a finding about oversight, or an improvement to generation?**
+> Both may involve tuning; only the first belongs at Core.
+
+**(c) TERMINOLOGY HAZARD — "scalable supervision" is a false friend.** REAL claims to be
+*"prompt-agnostic and reference-free, enabling **scalable supervision** without manual intervention."*
+That is the **ML-alignment** sense: reward signals at *training* time that do not require human labels.
+It is **not** this review's sense: human review of AI-generated code at deployment volume. **Same
+phrase, different problem, different field.**
+
+**Consequence for the methods chapter:** any keyword search on *"scalable oversight"* / *"scalable
+supervision"* will surface RLAIF and alignment work that is out of scope, and this is a plausible
+source of false positives in the original screening. Recorded in
+`Selection_Criteria_By_Phase.md`; the search-strategy section should state the distinction explicitly
+rather than leave a reader to assume the terms were used in our sense.
