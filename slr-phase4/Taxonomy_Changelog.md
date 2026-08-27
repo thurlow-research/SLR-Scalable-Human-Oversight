@@ -3330,3 +3330,49 @@ studied a single setting.
 `risk-quality`, `risk-ip` (3/3 each), `risk-security` (2/3), `steering` (2/3).
 **Declined on arbiter ruling:** `agent-scope-drift` (1/3), `oversight-explanation` (1/3) — both
 non-modal, nothing written.
+
+## 87. DISCRIMINATING POWER as a boundary criterion — §52 stays narrow (2026-08-26)
+
+Arising from the Yang ruling (§86a), the arbiter pressure-tested the rejection and then settled the
+general question: ***"We need to be careful about being too broad, then everything qualifies."***
+
+**The question.** The working gist of `oversight-scaling-inversion` is *"code volume overwhelms review
+mechanisms."* §52 as written requires more: volume overwhelms review **and bad code ships**. The two
+come apart exactly in the **fail-closed** cases — saturation answered by bans, gates, queue caps, or
+expert absorption — which is where every recent dispute has landed (`NZJST99D`, `F2C2DWSI` §83,
+`XJAXB98T` §86).
+
+**Measured spread at T0 (128 Phase 5 papers):**
+
+| | n | share |
+|---|---|---|
+| proposed by ≥1 model (≈ "mentions review burden") | **32** | 25% |
+| panel-modal ≥2/3 — carries the tag **on arbiter silence** | **21** | 16% |
+| arbiter **endorsed** | 6 | |
+| arbiter **rejected** | 4 | |
+
+**Ruling: §52 stays narrow.** Widening it to the gist would move the theme from 6 papers toward ~32.
+At that point the claim *"the inversion is widespread in the literature"* would be **an artifact of the
+definition rather than an observation** — the finding would be circular.
+
+**Principle, stated for reuse across the instrument:**
+
+> **A theme's value is its discriminating power. If a boundary is widened until the theme fires on
+> everything that gestures at the topic, it stops separating papers and can no longer support a
+> finding about prevalence.** When tempted to widen, ask what share of the corpus would qualify and
+> whether the resulting claim would still be informative.
+
+This generalises §55 (directness/tangency) from the *paper* side to the *tag* side: §55 asks whether
+a paper is close enough to the question; this asks whether a tag still tells us anything once it
+admits everything close to the topic.
+
+**Where the excluded material goes.** Fail-closed saturation is not discarded — it is accumulating in
+`Emerging_Themes.md` under two mechanisms with better resolution than a widened §52 would give:
+**substitution** (`F2C2DWSI` — senior building capacity pays) and **intake restriction**
+(`XJAXB98T` — communities refuse rather than triage). **Splitting beat widening.**
+
+**CLOSEOUT ACTION, now quantified (sharpens §86b).** The arbiter has rejected **4 of the 10** cases
+actually examined — a 40% error rate on a unanimous-prone theme. **15 papers currently carry the tag
+on silence alone.** At the observed rate roughly six are likely misapplied. **Re-check all 15 against
+the fail-closed exclusion and the synthesis test before computing `final:*`.** This is the largest
+known single source of tag error in the corpus.
