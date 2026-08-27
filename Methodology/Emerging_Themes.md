@@ -1422,3 +1422,41 @@ is that some orgs cannot answer the second half.
 
 **Promote on:** a third instance. See §81 for the vocabulary options (a `no-inspection` scope flag vs.
 an explicit third mode); do not graft mid-measurement (§41).
+
+## SQ5 REFINEMENT — risk routing has two purposes, and only one of them scales (2026-08-26)
+
+**Arbiter, ruling on `RG4A4D6K`:** *"I can buy detection as risk routing. **It isn't tackling scaling at
+all, just ensuring review.**"* That distinction should be carried into the two-gate frame, because it
+changes what a count of routing papers means.
+
+**Gate 1 asks *does this need human review?* — but papers reach that gate from opposite directions:**
+
+| | Question asked | Human load | Corpus examples |
+|---|---|---|---|
+| **Load-reducing** | what can safely **skip** review? | **down** | the risk-tiered review-depth designs; `ZUM76CCG`; Sidney |
+| **Coverage-ensuring** | what must **not** skip review? | **up** | `RG4A4D6K` (detect AI-authored code → targeted review) |
+
+**Only the load-reducing kind is a scaling mechanism.** The coverage-ensuring kind is a *quality*
+mechanism that happens to use the same machinery — it finds work that was escaping oversight and adds
+it back. **A corpus count of `risk-routing` cannot be read as a count of scaling mechanisms without
+separating these.**
+
+**Why this is more than bookkeeping.** The two have opposite relationships to the inversion. A
+load-reducing router is a *response* to the inversion — it exists because review capacity is
+exhausted. A coverage-ensuring router *deepens* the capacity problem: it adds review load in exchange
+for catching what was slipping through. **An org adopting both is pulling in two directions**, and
+whether the net effect relieves or worsens the inversion is an empirical question about the ratio —
+one the survey could actually ask.
+
+**Shared failure mode, in both directions.** The absence of a routing signal gets read as a clean bill
+of health:
+- load-reducing — un-flagged artifacts read as safe (`ZBF86IJM` tripwire: *"interpreted a lack of
+  highlights as signal that the code was correct"*)
+- coverage-ensuring — **detector false negatives make AI-authored code read as human-authored**, and
+  human-authored code attracts ordinary, unheightened review
+
+So the un-routed-remainder problem is not a quirk of one design; it is **structural to routing as
+such**, and it strengthens the case for promoting that tripwire if a second instance lands.
+
+**Survey hook.** Ask both halves separately: *what lets a change skip review* and *what forces a change
+into review* — and whether the same signal drives both. Orgs likely have one and not the other.
