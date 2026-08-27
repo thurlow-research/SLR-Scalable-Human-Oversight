@@ -3509,3 +3509,46 @@ supervision"* will surface RLAIF and alignment work that is out of scope, and th
 source of false positives in the original screening. Recorded in
 `Selection_Criteria_By_Phase.md`; the search-strategy section should state the distinction explicitly
 rather than leave a reader to assume the terms were used in our sense.
+
+## 91. `oversight-explanation` rescued at 1/3 — the explanation of a check is a separate object (`PPMTM4DG`, 2026-08-26)
+
+Yu et al., *Fight fire with fire* (**IEEE TSE**, Dec 2024). **Core + Dissertation Primary.** Primary
+`ai-review` (3/3). Applied: `oversight-explanation` (codex **1/3**, arbiter-rescued), `assistive`,
+`agentic`, `method-experiment`, `risk-security` (3/3 each), `risk-quality` (2/3).
+
+**The rescue and why it is not redundant with `ai-review`.** The paper reports two *distinct*
+measurements:
+1. **verdict accuracy** — the model misses **67%** of its own incorrect generations and **59%** of its
+   own failed repairs → `ai-review` (reliability limits of AI judging AI);
+2. **explanation accuracy** — **75%** of the explanations in its self-generated test reports are
+   **inaccurate** for incorrect code and failed repairs → `oversight-explanation`.
+
+> **Rule: the explanation of a check is a separate object from the check.** A reviewer reading the
+> report to decide whether to trust the verdict is consuming the *explanation*, and it can fail
+> independently of the verdict. Papers that measure explanation quality earn
+> `oversight-explanation` even when the explanation is machine-produced and the verdict is the
+> headline result.
+
+This is the sharper form of the §67-adjacent worry: a check that is wrong is bad; a check that is
+wrong **and explains itself persuasively** defeats the human whose job is to catch it.
+
+**Mode: both applied (`assistive` + `agentic`, 3/3 each), and opus cited the tie-rule explicitly** —
+completion tasks are snippet-granularity while generation and repair return complete artifacts
+reviewed as wholes. Genuine span, consistent with §86e.
+
+**Not applied, left to the arbiter and unaddressed:** `evaluator-reliability` (post-freeze — no model
+could propose it; Yu is arguably its purest instance, measuring **one evaluator against ground truth**
+rather than model-against-model) and `ai-code-insecurity` (1/3, CodeQL-confirmed vulnerabilities in
+27% of completed code). **Both remain open; neither written.** `counterpoint` 1/3, non-modal,
+deprecated — nothing written.
+
+**Synthesis-structure note recorded separately** in `Emerging_Themes.md`: the chain *"self-check fails
+→ therefore diverse checkers"* is **the review's own synthesis**, since Yu proposes no fix and
+Mahmud/Zhu do not cite Yu. Includes the lower-bound caveat (same-session self-check is the most
+degenerate configuration) and a closeout action to verify whether the corpus lacks a head-to-head
+A-checks-versus-B-checks study.
+
+**Count check run this session:** `cross-model` = 3 papers (Mahmud, Swidey, Zhu), `agent-panel` = 5
+(+ Tisi, Wang). **Both are floors, not totals** — the tags are post-freeze, so only arbiter-noticed
+instances exist and no systematic sweep has run. Do not report these counts before the restricted
+re-run (§10.12).
