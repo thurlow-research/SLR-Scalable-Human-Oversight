@@ -1618,3 +1618,49 @@ What would close the chain is a study comparing, on the same artifacts:
 before asserting, not to assume. If confirmed absent, it is a **named research gap** the dissertation
 can claim, and a cheap experiment to run given Yu's published setup and datasets. **Action: check the
 `ai-review` and `agent-panel` sets explicitly at closeout.**
+
+## PRESERVE FROM CONTEXT — accountability pressure INCREASES AI deference (`E689ZAXC`, 2026-08-26)
+
+Zhou & Zhao, *Review makes workers less likely to revise AI output* (SSRN, 2026). **Ruled Context** —
+the task domain is writing social media posts, not code (`general-ai` 3/3, panel demote 3/3). **The
+domain is orthogonal; the mechanism is not.** Recorded here because it contradicts a premise the rest
+of the corpus assumes.
+
+**The finding.** Seven experiments, **N = 2,895**:
+
+> *"Can review — a cornerstone of organizational accountability — encourage workers to collaborate
+> with AI rather than outsource their work entirely to it? … we find that review has the **opposite
+> effect**: participants who expected their work to be evaluated [were **less** likely to revise AI
+> output] … than risk introducing errors through modification."*
+
+**Telling someone their work will be reviewed makes them defer MORE to the AI.** Editing means owning
+the edits; passing the AI's output through unmodified is defensible. Accountability pressure converts
+into deference rather than scrutiny.
+
+**Why it matters to this review.** Most of the corpus's solution literature assumes the opposite —
+that adding a reviewer, a sign-off, or an approval gate increases the care taken with AI output. This
+supplies an **empirically grounded reason the assumption can invert**, and with unusual statistical
+power for a behavioural result.
+
+**It explains three things already on record:**
+- **Jessee**, *Scapegoat-as-a-service* — if the human's role is blame-absorption, the rational move is
+  to change nothing, which is exactly what these experiments observe.
+- **`oversight-theater`** — the arbiter's own worked example (a junior developer assigned to approve
+  AI-generated PRs) now has a mechanism: the reviewer's incentive is to pass it through.
+- **§85's enforcement gap** — prescribed-but-unenforced checkpoints may be worse than neutral if the
+  act of assigning a reviewer *reduces* revision.
+
+**The uncomfortable implication for the thesis.** Human oversight is the review's proposed answer to
+the scaling problem, and this says the answer can be **self-defeating in the direction of its own
+mechanism**: formalising accountability may buy less scrutiny, not more. That belongs in the
+limitations discussion whether or not it is ever cited as evidence.
+
+**Scope caveat.** General-AI task (social media posts), student and crowdworker participants, no code.
+Do **not** present it as a finding about code review; present it as a mechanism that *would* need
+testing in a code-review setting — which is a **concrete survey/experiment hook**: does formal
+sign-off on AI-generated PRs reduce the rate at which reviewers modify them?
+
+**Not exercised: §30.** This is structurally the Eze case (`9MV2IVNU`, §53) — `general-ai`, panel
+demote, transferable controls — where the sole-exemplar exception was exercised. Here the arbiter
+ruled demote, so the mechanism is preserved as framing rather than promoted to Core. **If a code-domain
+replication appears later, revisit.**

@@ -3708,3 +3708,36 @@ low-inspection or `no-inspection` setting (§81a) that is a concrete mechanism f
 the human is using to decide whether to trust it. **Carry into the automation-bias / no-inspection
 discussion; strong candidate for a survey question about whether teams re-run functional tests after
 iterative refinement.**
+
+## 95. §30 considered and NOT exercised — Context with the mechanism preserved (`E689ZAXC`, 2026-08-26)
+
+Zhou & Zhao, *Review makes workers less likely to revise AI output*. **Ruled Context**, agreeing with
+a **unanimous 3/3 panel demote**. `general-ai` 3/3 (social media posts, not code); primaries split
+`automation-bias` 2/3 / `oversight-theater` 1/3. §42 short-circuit.
+
+**Disambiguation note.** The arbiter first referred to *"Zhou and Zhou"*, then *"Zhou and Zhao"* — the
+Light Read queue contains **three** distinct Zhou first-author papers, so the assistant asked rather
+than inferring. Resolution: **`E689ZAXC` is a single paper authored by Pete Zhou *and* Yujie Zhao.**
+Recorded because the near-miss is instructive — a surname-plus-surname reference can denote one
+co-authored paper or two papers, and the earlier `WH2PIBNQ` revert came from exactly this class of
+misattribution. **Rule reaffirmed: never infer which paper a ruling attaches to when more than one
+candidate matches the surname; ask.**
+
+**§30 exercised? No.** The assistant flagged this as structurally identical to `9MV2IVNU` (Eze, §53) —
+`general-ai`, panel-flagged demote, transferable content — where the sole-exemplar exception *was*
+taken. The transferable content here is strong: seven experiments, **N = 2,895**, finding that
+**expecting review makes workers less likely to revise AI output**, because modification means owning
+the errors. That inverts the premise underneath most of the corpus's HITL proposals.
+
+**Arbiter ruled demote regardless.** Recorded as a **worked instance of §30 being considered and
+declined** — the exception is *"look at keeping," not "keep"* (§53), and looking at it is what
+happened. The mechanism is preserved as framing in `Emerging_Themes.md` rather than promoted, so the
+finding stays citable without inflating Core.
+
+**Open, if it recurs:** a code-domain replication would change the calculus, since the objection is
+domain rather than mechanism. Flagged there as a revisit condition.
+
+**Housekeeping — SSRN typing artifact.** This item is typed `journalArticle` with no
+`publicationTitle`, the known SSRN import artifact (`source:ssrn`). It is one of the ~11 Light Read
+items still affected; not corrected here, and still queued for the closeout record-status sweep.
+`itemType` remains unreliable for PRISMA stream counts.
