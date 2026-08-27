@@ -3841,3 +3841,38 @@ rollback cost — reframes a question most orgs will have settled by accident.
 **Preserved: the CDCR pattern** — Confirmation–Diagnosis–Correction–Redo, a descriptive model of what
 the act of overseeing actually consists of. The corpus is thin on accounts of the oversight *act*
 itself (as opposed to mechanisms that invoke it); pairs with the decision-surface cluster (§96e).
+
+## 98. A closed autonomous repair loop is not a Detect→Fix oversight pipeline (`VZ27QUPQ`, 2026-08-26)
+
+Zhuo et al., *Identifying and mitigating API misuse in large language models* (**IEEE TSE**, 2026-03).
+**Ruled Context** — arbiter: *"evaluation paper, demote."* **Overrides a unanimous NON-flag: 0 of 3
+models proposed demote**, and the panel made `ai-review` primary 2/3. §42 short-circuit.
+
+**Why the panel reached for `ai-review`, and why it is wrong here.** The mitigation is **Dr.Fix —
+"Detect-reason-Fix"** — which reads like the taxonomy's own **Detect → Triage → Fix** pipeline, so the
+name alone invites the tag. But the loop is **closed and autonomous**: it always attempts a repair,
+scored by **BLEU** against baseline prompting. No human sees anything, and there is **no refusal
+state**.
+
+> **Discriminator: does the mechanism have a state in which it declines to proceed?** §63 established
+> that autonomous fixing does **not** disqualify a paper — `ZORO`'s active rules gate *and then* drive
+> a fix. The difference is that **ZORO can refuse; Dr.Fix cannot.** A repairer with no gate is **code
+> improvement**, not oversight. Detect-in-the-name is not Detect-in-the-taxonomy.
+
+**The measurement half is likewise upstream.** A large-scale characterisation of API-misuse patterns
+across StarCoder-7B, Qwen2.5-Coder-7B and GitHub Copilot (3,209 method-level and 3,492 parameter-level
+misuses, manually annotated) is **pure measurement of model output** — the §93 rule, applied on the
+quality side rather than the security side.
+
+**FACET INCONSISTENCY FLAGGED, NOT FIXED** (§42 — Context tag depth has no Phase-6 consumer). The
+item carries **`evaluated-synthetic` and `method-mining`** from the earlier partial pass, while the
+panel proposed **`method-experiment` 3/3**. Two concerns:
+1. **`method-mining` looks wrong.** The corpus analysed is **LLM-generated** code, not mined
+   repositories, and the findings characterise **the models**. The cheatsheet's *subjects-may-be-
+   systems* rule sends that to `method-experiment`; `method-mining` requires the artifact analysis to
+   *be* a finding about real repos (`NZJST99D`: 33k PRs characterised).
+2. **The §34 fork may still be satisfied** if the misuse study and the Dr.Fix evaluation count as two
+   events — plausible, but unverified.
+
+**Queued for the closeout facet sweep** alongside the other Context-tier tag questions; recorded here
+so the inconsistency is discoverable rather than silently inherited into `final:*`.
