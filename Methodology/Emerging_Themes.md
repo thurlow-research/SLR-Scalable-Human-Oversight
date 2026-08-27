@@ -1769,3 +1769,50 @@ distinction, not for the numbers.**
 **Also worth noting for §91:** Zietsman constructs the same argument chain we assembled — AI reviewing
 AI is circular, therefore an external reference is required — **independently**. That partly answers
 the concern that the chain is our own synthesis.
+
+## INDEPENDENCE THREAD — a SECOND AXIS: independent of generation vs independent of intent (`P837LJWE`, 2026-08-27)
+
+Arising from the arbiter's question on Bhatnagar: *"the oversight is really the same oversight that a
+human gets — someone else reviews the code. Right?"* **Nearly — and the gap is the finding.**
+
+Bhatnagar describes *"asynchronous collaboration between **a senior domain expert** and an LLM"* —
+singular. The human lead **sets the constraints, prompts the AI, and performs the Strategic
+Rollbacks.** Single-author paper; no second reviewer anywhere in it.
+
+**Ordinary code review has two degrees of separation:** the reviewer did not write the code, and
+usually did not write the ticket. **Here there is one.**
+
+**The thread's existing gradient covers the checker's *substrate*** — same-model self-report <
+rescaled against external labels < different-vendor ensemble < external deterministic verifier. **This
+is the human-side axis, and it is orthogonal:**
+
+| Configuration | Independent of **generation**? | Independent of **intent**? |
+|---|---|---|
+| AI writes, AI checks (`PPMTM4DG`, §91) | ✗ | ✗ |
+| **AI writes, the human who specified it checks** (`P837LJWE`; and the default IDE workflow) | ✓ | **✗** |
+| AI writes, a different human checks (ordinary peer review) | ✓ | ✓ |
+
+### The implication is about the field, not this paper
+
+**The default AI coding workflow — developer prompts, developer accepts — has LESS independence than
+the peer review it displaces.** We have been treating human-reviews-AI as the baseline against which
+AI-reviews-AI is degraded (§91). But human-reviews-own-prompted-output is *itself* a degraded form of
+peer review, because **the same person owns the request and the acceptance**.
+
+**This compounds with `E689ZAXC` (§95):** expecting review makes workers *less* likely to revise AI
+output, because editing means owning the change. **If they already own the request, that pressure is
+stronger, not weaker.** Two independent mechanisms pointing the same way.
+
+**Why it matters for the survey.** An organisation can truthfully answer *"yes, a human reviews all
+AI-generated code"* while having **less** separation than its pre-AI process had — and nobody involved
+would experience that as a reduction in oversight. It is invisible from inside.
+
+**Survey hook (banked as #13):** *Is the person who reviews AI-generated output the same person who
+prompted it? If so, what else in the loop is independent?*
+
+**Also preserved from `P837LJWE` — a failure mode we do not otherwise have.** Strategic Rollbacks
+caught *"AI-generated configurations that, **while syntactically correct, failed to adhere to** [the
+enterprise's security guardrails]"*, and the paper names the general propensity: *"syntactically
+plausible but **architecturally flawed** code."* That is Zhao's tests-pass/security-fails gap (§93)
+**one level up** — syntax passes, **compliance and architecture** fail — and what caught it was human
+architectural judgement, not any automated check. Cite for the failure mode, not for the effect sizes.

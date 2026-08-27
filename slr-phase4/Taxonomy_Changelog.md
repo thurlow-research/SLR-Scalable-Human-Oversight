@@ -4249,3 +4249,62 @@ specifications automatically derived from intent.**
 
 **The gap Mitchell names is therefore unclaimed by the corpus, and Mitchell survives as its position
 statement.** Decision closed; the follow-up in `Emerging_Themes.md` is marked resolved.
+
+## 106. An oversight claim needs a contrast that VARIES the oversight (`P837LJWE`, 2026-08-27)
+
+Bhatnagar, *Modernization of enterprise payment infrastructure: a case study on LLM-assisted migration
+of legacy distributed systems* (*Array* 30, 2026). **Ruled Context** despite **no demote flag from any
+model**, `hitl-workflow` primary 3/3, and `adopted` 3/3. §42 short-circuit. Added to
+`04 - Validation Apparatus`.
+
+**Recorded at length because the assistant argued Core three times and was wrong three times.** Each
+of the arbiter's corrections removed a ground, and the accumulated effect is the ruling.
+
+**(a) THE CONFOUND — a pre-committed rule.** The headline outcome (67% production-error reduction)
+compares **legacy human-authored code** against **AI-refactored code**. There is no arm without the
+HITL, so the improvement cannot be attributed to the oversight — only to the modernisation. Any
+competent rewrite of a 15-year-old monolith would improve error rates.
+
+> **An oversight claim requires a contrast that VARIES the oversight.** Comparing AI-with-oversight
+> against no-AI measures **the AI**, with oversight held constant. Any paper reporting *"our
+> HITL-governed AI process outperformed the previous manual process"* has measured the AI.
+
+Expect this in the industrial case studies still unread in this band.
+
+**(b) CONFIRMING A TENET IS NOT CONTRIBUTING A FINDING.** Arbiter: *"There is no insight about
+oversight, just that it was important."* And the calibration that makes it operational: *"this is
+oversight in the way of a human inspecting code generated in vibe coding while in an IDE is
+oversight."*
+
+> The corpus does not need more evidence that oversight matters — that is established many times over.
+> It needs evidence about **what makes oversight work**. A paper showing oversight was present and
+> important supplies an **instance**, not a **finding**. **Instances belong in the harvest; findings
+> belong in Core.**
+
+**(c) The three RQs, and why none of them lands.** RQ1 measures lead time (productivity). RQ2 is the
+confounded comparison in (a). RQ3 — *"What specific human-centric governance protocols, such as
+'Strategic Rollbacks,' are required to ensure PCI-DSS compliance…"* — **does** engage oversight, but
+the arbiter's read is decisive: *"The compliance was also very light. The central focus was not related
+to compliance. It showed up as a follow-up."*
+
+**(d) `intro-framing` DECLINED** (the arbiter's own suggestion, on the reasoning that the paper
+confirms a central tenet). §99c settles it: **the test is whether the evidence is the contribution or
+merely illustrates one.** Here the evidence *is* the contribution, however confounded — so this is an
+empirical paper, not a framing one. **"Confirms a tenet without insight" has no tag; that is what the
+harvest is for.**
+
+**(e) LARGEST CORRELATED FACET ERROR OBSERVED — three unanimous 3/3 facets, all wrong.**
+
+| Facet | Panel | Fails |
+|---|---|---|
+| `framework` | **3/3** | §49 span rule — one migration, one job. The `WUUDHL8R` negative case exactly. |
+| `built-system` | **3/3** | No oversight artifact was built. The migrated application is the **object** of the work, not the mechanism. §39 sends process to the theme. |
+| `regulatory-compliance` | **3/3** | §78 — PCI-DSS is a **constraint input** to the migration, not the contribution. As with Watson (§82c) and `WUUDHL8R` (§44). |
+
+`hitl-workflow` primary 3/3 and `adopted` 3/3 both hold. **Not written** (§42), but recorded: a paper
+describing an industrial deployment reliably triggers the artifact-maturity cluster whether or not an
+artifact exists. **Watch for this in the remaining industrial case studies.**
+
+**(f) `adopted` is an evidence rung, not a relevance criterion.** It is genuinely scarce — 5 of 128,
+and the three previously adjudicated are all Core — but it describes **maturity**, not what a paper
+tells us. A production deployment with nothing to say about oversight is still Context.

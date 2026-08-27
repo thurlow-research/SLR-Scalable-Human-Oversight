@@ -94,6 +94,26 @@ pipelines, then read methods sections.
   deliverable (§105a). When comparing apparatus across papers, record *where in the pipeline* a check
   sits — the same machinery means different things at different positions.
 
+### `P837LJWE` — Bhatnagar (2026), *Modernization of enterprise payment infrastructure* · **SLR: Context**
+- **Layers:** a **five-stage constraint-based protocol** — (1) human sets non-negotiable constraints
+  (PCI-DSS, sub-2s latency); (2) LLM proposes architectural patterns; (3) trade-off analysis against
+  operational complexity and resilience; (4) LLM generates with security hardening (CSP, CSRF) by
+  default; (5) **Strategic Governance gate** — human judgement, *"frequently resulted in 'strategic
+  rollbacks' in which proposed AI optimizations were **rejected**"*.
+- **Determinism controls:** frozen model version (Claude 4 Sonnet), **temperature 0**, chain-of-thought
+  prompting, and **cross-verification across multiple scanning passes** to confirm the 29.4% code
+  reduction was consolidation rather than lost functional coverage. *The most explicit reproducibility
+  apparatus in the harvest so far.*
+- **AI-as-checker:** no. The LLM analyses and generates; all checking is human.
+- **Human position:** **both ends** — constraints before generation, governance gate after. But
+  **the same person occupies both**, and there is no second reviewer (§106 / independence second axis).
+- **Escalation trigger:** rejection criteria named — architectural complexity threatening low-risk
+  operational continuity, or exceeding resource budgets.
+- **Domain:** PCI-DSS-regulated payment infrastructure; 85k lines C# → 60k TypeScript; `adopted`.
+- **Why it matters:** the only harvest entry so far with an **observed, exercised refusal state in
+  production**, and the only one with named rejection criteria. Also the clearest case of the
+  prompter-as-reviewer configuration.
+
 ## Back-fill candidates from the Light Read band (at closeout)
 `72W6R4JG` Töpfer (FCL constraint verifier + bounded repair loop) · `TA6GIUK2` Zietsman (BDD vs AI
 review head-to-head) · `96XE669R` Zhong (VeriCode's 30 deterministic verifiers) · `VZ27QUPQ` Zhuo

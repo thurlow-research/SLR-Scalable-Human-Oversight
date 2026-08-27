@@ -48,6 +48,7 @@ Each already recorded in `Emerging_Themes.md` / `Taxonomy_Changelog.md` with its
 | 10 | Does contributor **disclosure** of AI assistance exist? Is anything required *before* review begins? | Yang §86 |
 | 11 | Do reviewers of AI-generated changes have enough information to determine **what was assumed** — not merely whether they have time? | Wang §80 (dimension collapse: representation vs capacity) |
 | 12 | Does formal **sign-off** on AI-generated PRs change how often reviewers actually modify them? | Zhou & Zhao §95 (accountability → deference; needs code-domain testing) |
+| **13** | **Is the person who reviews AI-generated output the same person who prompted it?** If so, what else in the loop is independent? | Bhatnagar §106 / independence second axis — an org can truthfully say "a human reviews everything" while having *less* separation than its pre-AI process |
 
 ## Source location — RESOLVED 2026-08-27
 
