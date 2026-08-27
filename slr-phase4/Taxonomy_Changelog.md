@@ -3876,3 +3876,34 @@ panel proposed **`method-experiment` 3/3**. Two concerns:
 
 **Queued for the closeout facet sweep** alongside the other Context-tier tag questions; recorded here
 so the inconsistency is discoverable rather than silently inherited into `final:*`.
+
+### 98a. §51 DOES fire on `VZ27QUPQ` — and the matched pair with §94
+
+Follow-up after the arbiter re-read the paper and asked whether anything had been missed. **Nothing
+had — and the ground is firmer than first stated.**
+
+Zhuo's misuse identification is **reference-grounded**:
+
+> *"since **human-written code is used as ground truth**…"* · *"we treat it as an **approximate ground
+> truth**"*
+
+So §51's **reference-oracle exclusion fires**: the Detect step **cannot operate on an artifact whose
+correct answer is unknown**, exactly as with `PR4GS7SP` (Cotroneo/ACCA). It is a benchmarking oracle
+wrapped in a repair loop, not a deployable checker. This is a **stronger** basis for the demote than
+§98's no-refusal-state argument, and it should be cited first.
+
+**It also closes off the residual possibility the arbiter raised** — *"maybe a risk signal, but that is
+it."* API-misuse density would make a plausible producer-independent routing signal, but it is **not
+operationalisable from this method**: computing it requires the human-written reference that does not
+exist at review time. **Not a latent contribution — a measurement that can only exist in a lab.**
+
+**Matched pair for §51, both from this session:**
+
+| Paper | Checker | Runs without a reference? | §51 |
+|---|---|---|---|
+| `96XE669R` Zhong / VeriCode (§94) | linters, AST checks, regex | **yes** | **does not fire** — demoted on contribution instead |
+| `VZ27QUPQ` Zhuo / Dr.Fix (§98) | comparison to human-written ground truth | **no** | **fires** |
+
+Useful for the write-up: the two papers look alike from the abstract — both build checking machinery
+and both were demoted — but the *reasons differ*, and conflating them would make §51 look like a
+general anti-benchmark rule rather than the specific deployability test it is.
