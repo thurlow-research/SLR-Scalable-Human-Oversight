@@ -674,10 +674,29 @@ being an instrument for surfacing the contested surface.
 override rate that settled it.
 
 ### 10.3 Instrument
-A single frozen vocabulary — **v2.13**, 17 themes + 27 facets — expressed as `Tag_Cheatsheet.md` plus
-a fixed prompt prefix. Identical for every tagger. **Frozen deliberately for gauge constancy**: the
-instrument must not move while measurements are being taken with it, so refinements accumulate in
-`Taxonomy_Changelog.md` and are grafted only at a versioned cut (§41).
+A single frozen vocabulary — **v2.13**, 17 themes + 27 facets = **44 tags** — identical for every
+tagger. **Frozen deliberately for gauge constancy**: the instrument must not move while measurements
+are being taken with it, so refinements accumulate in `Taxonomy_Changelog.md` and are grafted only at
+a versioned cut (§41).
+
+**Which file is the instrument** (corrected 2026-08-26; an earlier draft of this section had these the
+wrong way round — see changelog §103):
+
+| File | Role |
+|---|---|
+| **`slr-phase4/Tag_Prompt_v2.13.md`** | **The instrument of record.** The exact prompt the taggers ran on — vocabulary **plus** task block and JSON output contract — captured verbatim as a standing artifact. Frozen; never edited. Cite **this** in the write-up. |
+| `slr-phase4/Tag_Prompt.md` | The operative prompt; currently identical in substance to the v2.13 capture. |
+| `slr-phase4/Tag_Cheatsheet.md` | **The living arbiter reference — NOT the instrument.** It has continued to evolve since the freeze and is clearly headed as such. |
+
+The separation is what made gauge constancy hold in practice rather than only in principle: the
+cheatsheet accrued `scaling-dissent` (§56), the §49b `framework` clause and the §57 method rules
+**during** the pass, and none of it reached the taggers, because the prompt is a physically separate
+frozen file. Verified by vocabulary diff — the prompt carries 37 enumerated slugs to the cheatsheet's
+38, the difference being exactly `scaling-dissent`.
+
+Versioned prompt captures are the convention (`Tag_Prompt_v0.md` preserves the pre-calibration
+original). **Every future prompt change gets its own capture**, so the gauge's history never depends on
+reading `git log`.
 
 ### 10.4 Input
 **Full document text**, not title/abstract — child TXT attachments, roughly 2k–32k words. Tagging is

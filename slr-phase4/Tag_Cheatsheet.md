@@ -1,4 +1,23 @@
-# Theme-tagging cheat-sheet (Vibe Coding Governance SLR)
+# Theme-tagging cheat-sheet (Vibe Coding Governance SLR) — LIVING REFERENCE
+
+> **This file is NOT the measurement instrument.** It is the **arbiter's working reference**, and it
+> has continued to evolve since the v2.13 freeze. Do not cite it as the instrument in the write-up.
+>
+> - **Instrument of record:** `Tag_Prompt_v2.13.md` — the exact prompt the taggers ran on, 9 runs ×
+>   128 papers. Frozen; never edit.
+> - **This file:** accumulates refinements between versioned cuts. Changes here **do not** reach the
+>   taggers (§41 gauge constancy); they are grafted only at a cut.
+>
+> **Accrued since the freeze** (in this file, not in the instrument): `scaling-dissent` (§56) with its
+> four guards (§58) · the `framework` conformance-requirement clause (§49b) · the `method-*`
+> instrumentation-≠-contribution rule and one-event-one-classification corollary (§57) ·
+> `counterpoint` deprecation notice (§56).
+>
+> **Queued for the next cut, NOT yet added here:** `agent-panel`, `cross-model`, `evaluated-synthetic`,
+> `evaluated-benchmark`, `evaluator-reliability`, `evaluated-real-data`, and
+> `oversight-scaling-inversion` **v2** on its own slug (§89). See `Taxonomy_Changelog.md` §101–§103 and
+> `Methodology/Theme_Tagging_Calibration.md` §10.12.
+
 
 Tag on the **document contents**. **Multi-tag freely** — a paper can carry several themes.
 Tag on **membership** (the paper *contributes to* that theme's argument), **not mention**.
