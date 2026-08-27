@@ -49,12 +49,13 @@ Each already recorded in `Emerging_Themes.md` / `Taxonomy_Changelog.md` with its
 | 11 | Do reviewers of AI-generated changes have enough information to determine **what was assumed** — not merely whether they have time? | Wang §80 (dimension collapse: representation vs capacity) |
 | 12 | Does formal **sign-off** on AI-generated PRs change how often reviewers actually modify them? | Zhou & Zhao §95 (accountability → deference; needs code-domain testing) |
 
-## Open input needed
+## Source location — RESOLVED 2026-08-27
 
-- **Where do the HOS materials live?** Zotero has `HOS/*` collections and `hos-area:*` tags, and the
-  `marvin` repo is on the working-directory list, but the document set (design docs, findings,
-  retrospectives, escalation logs) has not been located. **Pointing at it means the audit can start
-  the day the Accept band closes.**
+**HOS materials: `~/Code/Thurlow-Research/HumanOversightSystem/Human`** (arbiter). Plus the Zotero
+`HOS/*` collections and `hos-area:*` tags already in the library.
+
+**Not yet opened, deliberately.** Per the timing rule above, the HOS materials stay unread until the
+Accept band closes, so nothing from them can influence Accept-band tagging.
 
 ## Method for the audit itself (proposed)
 
