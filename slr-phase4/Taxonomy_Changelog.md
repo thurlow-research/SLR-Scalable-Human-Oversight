@@ -4001,3 +4001,56 @@ Recorded together because the Accept pass will hit all three repeatedly:
   it is **pure measurement of model output insecurity**. ~10 unread instances waiting.
 - **§88 leakage test** — `oversight-scaling-inversion` requires risky code to **escape** a review that
   should have caught it; burden, queue growth, displaced work and absorbed rework do not qualify.
+
+## 101. Closeout decisions — deprecation handled at computation; SSRN sweep deferred and scoped (2026-08-26)
+
+Three arbiter rulings following the §100 audit.
+
+**(a) `counterpoint` — NO bulk reject sweep. Exclude deprecated tags at the `final:*` computation
+step instead.** Arbiter: *"OK to leave counterpoints on, we will likely not use them but let's not lose
+the information."*
+
+**Clarification recorded because it affected the choice:** rejecting would **not** have lost
+information — the layers are additive and `cal:<model>:*` is never edited (§10.7), so a
+`cal:human:reject:*` only changes what `final:*` computes. Both options preserve the record. The
+computation-step exclusion is nonetheless better: **one rule instead of eight writes**, the model layer
+untouched, and the §56 deprecation stays a single auditable act rather than being scattered across
+papers.
+
+> **Rule for closeout: `final:* = panel modal ∪ human endorsements − human rejections − deprecated
+> vocabulary.`** The fourth term is new; `counterpoint` is its first member. Any future deprecation
+> joins it without needing a per-paper sweep.
+
+**(b) CANDIDATE FINDING — the field asserts the inversion far more often than it demonstrates it.**
+Arbiter, on the v2 tag: *"Means that our tighter definition focusing on studies of actual leaks is not
+common."* That is a **reportable observation about the literature's evidentiary standards**, not merely
+a tagging outcome:
+
+| | count |
+|---|---|
+| papers with `oversight-scaling-inversion` proposed by ≥1 model | **32 of 128** |
+| panel-modal (≥2/3) | 21 |
+| arbiter-endorsed under the **loose** reading | 6 |
+| expected under the **§88 leakage test** | fewer — the v2 re-run will fix the number |
+
+Four consecutive rejections on the leakage test (Xu §83, Yang §86, Zhou §96b, Zietsman §99d) all turned
+on the same thing: the paper described **burden** and asserted the consequence. **The v2 re-run (§89)
+therefore measures something worth reporting — the gap between how often the inversion is claimed and
+how often an escape is actually documented.** Keeping v1 and v2 on distinct slugs is what makes that
+gap computable; a redefinition in place would have erased it.
+
+**(c) SSRN record sweep — DEFERRED to after the Accept band, as one run.** Scoped: **12 mistyped items
+across Phase 5** (9 Light Read, 2 Accept, 1 Full Read; 2 further SSRN items are correctly typed, so the
+artifact is not universal).
+
+**Two distinct jobs, only one needing a lookup:**
+1. **Type correction — deterministic, no API.** `source:ssrn` + `journalArticle` + empty
+   `publicationTitle` ⇒ `preprint` with `repository: SSRN`. Scriptable.
+2. **Published-version check — the substantive half.** Has the working paper since appeared in a
+   journal? **OpenAlex first** (skill installed), **Semantic Scholar as fallback**; both link
+   preprint↔published versions by DOI and title. **Not Google Scholar territory**, though a residue of
+   perhaps 2–4 poorly-indexed SSRN working papers may need manual checking.
+
+**Risk to carry:** if a published version is materially revised, an adjudication made on the preprint is
+stale. The **Zhu precedent** (`BLR3XE3I`→`DN9R4PDQ`, converted in place, full texts diffed to confirm no
+quoted passage moved) is the template. Tractable for 12 papers at closeout.
