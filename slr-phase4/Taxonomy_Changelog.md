@@ -3273,3 +3273,60 @@ Verify stage is unreliable in the setting it targets (*"contexts lack robust tes
    artifact-level provenance trail. Small and unenforced, but possibly **the only artifact-level
    AI-tagging convention proposed in the corpus**. Check at closeout before discarding; if unique it is
    worth a sentence in the provenance discussion even from Context.
+
+## 86. §52's fail-closed exclusion — second unanimous rejection, and RATE-LIMITING ≠ ROUTING (`XJAXB98T`, 2026-08-26)
+
+Yang, He & Zhou, *Beyond banning AI: a first look at GenAI governance in open source software
+communities* (arXiv 2026-03-27). **Core**, primary `org-governance` (3/3), **added to Dissertation
+Primary**. Multi-stage qualitative analysis of governance materials from **67 highly visible OSS
+projects**.
+
+**(a) `oversight-scaling-inversion` REJECTED at 3/3 — the definition already covered this case.**
+§52's full text carries an explicit exclusion the assistant had been quoting only in truncated form:
+
+> *"Capacity saturation that resolves **fail-closed** — agent PRs ignored/abandoned so nothing merges —
+> is **NOT** this theme: safety holds, throughput collapses, and the harm is **productivity, not
+> risk**."* · *"**Synthesis test:** would the paper read naturally in a section on bad code shipping
+> unreviewed? If it would jar because nothing shipped, this is the wrong home."*
+
+Yang is the purest fail-closed case in the corpus: the entire paper documents **gates going up** —
+bans, evidence requirements, disclosure mandates, queue limits. FastAPI's *"a **Denial-of-service
+attack on our human effort**"* is throughput collapse, exactly the excluded harm.
+
+**(b) The pattern this makes — a reproducible panel error, now at two instances.** `F2C2DWSI` (§83)
+and `XJAXB98T` both drew **3/3** on this theme and both were rejected. **The panel reliably reads
+"review burden + scaling" as the inversion and skips the fail-open requirement.** This is a §59-class
+vocabulary match, and unlike most it is *predictable*: any paper whose abstract pairs rising AI volume
+with maintainer strain will trip it. **Action at closeout: re-check every `oversight-scaling-inversion`
+tag in the corpus against the fail-closed exclusion and the synthesis test — the theme is likely
+over-applied wherever the arbiter was silent.** Note also that §83's "silence is not evidence of
+fail-open" rule, while sound, was a weaker instrument than the clause already written; cite the
+exclusion first.
+
+**(c) NEW DISCRIMINATOR — rate-limiting is not routing.** `risk-routing` was proposed 1/3 on the
+strength of *"independent queue limits route excess newcomer PRs away from reviewer attention."*
+**Rejected.** Arbiter: ***"it would need to escalate to get risk routing."***
+
+> **Routing directs an item to a destination chosen by its risk. Rate-limiting caps intake volume
+> regardless of risk. A queue cap throttles; it does not triage.** No destination, no assessment, no
+> escalation path → not `risk-routing`.
+
+Sits alongside §82's load-reducing / coverage-ensuring split as a third distinction, and it is the
+sharper one: §82 separates two *purposes* of routing; this separates routing from a mechanism that
+merely *reduces* the queue without discriminating within it.
+
+**(d) `survey-input` at its strongest instance so far.** Three governance orientations and **12
+strategies in four functional groups** (entry admissibility and input qualification; responsibility and
+evidence restoration; review burden and workflow protection; infrastructure and institutional
+adjustment), derived from observed practice rather than proposed. This is a **ready-made instrument
+skeleton** for the dissertation's org survey — the reason for the Dissertation Primary placement.
+
+**(e) Both modes applied (`assistive` + `agentic`, 3/3 each)** — legitimate span, not indecision:
+disclosure rules cover inline completion while `AGENTS.md` and autonomous-patch policies cover
+artifact-granularity agents. Contrast §81/§85, where the tie-rule had to pick one because the paper
+studied a single setting.
+
+**Also applied:** `provenance-auditability` (3/3), `hitl-workflow` (3/3), `method-mining` (3/3),
+`risk-quality`, `risk-ip` (3/3 each), `risk-security` (2/3), `steering` (2/3).
+**Declined on arbiter ruling:** `agent-scope-drift` (1/3), `oversight-explanation` (1/3) — both
+non-modal, nothing written.

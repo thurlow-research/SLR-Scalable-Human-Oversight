@@ -1502,3 +1502,55 @@ not show up as a capacity complaint until the pool of experts thins.
 
 **Connects to:** the reviewability-decay cluster (Wang §80, Maes §A, Mitchell) — those describe review
 getting *harder*; this describes who *absorbs* that difficulty and what they stop doing instead.
+
+## FINDING CANDIDATE — when review saturates, communities RESTRICT INTAKE rather than scale review (`XJAXB98T`, 2026-08-26)
+
+Yang et al. is the first corpus paper documenting, at scale and from observed practice rather than
+proposal, **what organisations actually do when AI contribution volume exceeds review capacity.**
+Multi-stage qualitative analysis of governance materials from **67 highly visible OSS projects**.
+Dissertation Primary.
+
+**The answer is not "scale oversight." It is "reduce what arrives."**
+
+Twelve strategies in four functional groups: **entry admissibility and input qualification**;
+**responsibility and evidence restoration**; **review burden and workflow protection**; and
+**infrastructure and institutional adjustment**. Three of the four operate on the *input side*.
+
+**Practitioners state the thesis themselves, which is rare and citable:**
+
+> Oh My Zsh: ***"review is the bottleneck. Not code generation."***
+> FastAPI: low-effort AI submissions are ***"a Denial-of-service attack on our human effort."***
+> typescript-eslint: maintainers do not want review to become ***"effectively babysitting someone's
+> Claude instance via the code review process."***
+> curl: *"fake and otherwise made up security problems effectively **prevent us from doing real project
+> work** and make us waste time and resources."*
+> Jaeger: *"Code review is a discussion between people, not bots."*
+
+**How this reframes gate 1 (SQ5).** The two-gate frame assumed gate 1 asks *does this need human
+review?* — a triage question applied to arriving work. These communities are operating gate 1 by
+**exclusion instead of triage**: ban AI-assisted contributions, require disclosure, demand evidence
+before review, cap newcomer queues. **The gate is placed before the work exists, not after.**
+
+| Gate-1 posture | Mechanism | Corpus |
+|---|---|---|
+| **Triage** | assess arriving work, route by risk | the risk-tiered designs; `ZUM76CCG` |
+| **Exclusion** | restrict who/what may submit at all | `XJAXB98T` — bans, disclosure mandates, evidence gates, queue caps |
+
+**Why the distinction earns its keep.** Exclusion needs no assessment capacity, which is exactly why
+saturated projects reach for it — triage costs reviewer attention, and reviewer attention is the
+exhausted resource. **A community with no spare review capacity cannot afford to triage; it can only
+afford to refuse.** That predicts a specific organisational pattern: risk-based routing should appear
+in orgs with *slack*, and blanket restriction in orgs without it.
+
+**Note this is fail-CLOSED** (§86a): safety holds, throughput collapses, and the harm is productivity.
+It is therefore **not** `oversight-scaling-inversion` — and its presence alongside the fail-open cases
+(Wang, Waseem, Pimenova) shows the same pressure resolving in opposite directions depending on **who
+controls intake**. OSS maintainers can refuse a PR; an employed reviewer facing their own team's output
+usually cannot. **That asymmetry is worth testing in the survey.**
+
+**Survey hooks.**
+- *When AI-generated contributions exceeded review capacity, did you add reviewers, route by risk, or
+  restrict what could be submitted?*
+- *Do contributors have to disclose AI assistance? Is anything required before review begins?*
+- The 12 strategies are a ready-made response menu — use them as closed options rather than
+  free-texting the question.
