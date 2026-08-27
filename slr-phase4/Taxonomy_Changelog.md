@@ -3657,3 +3657,54 @@ finding), **Hjazeen** Core (a unified security testing approach — a detection 
 §42 short-circuits — but flagged: if the anchor slot is still open at closeout, the 61%/10.5% pair is a
 stronger candidate than most, and tier does not formally bar it (contrast §82g, where Watson's figure
 was refused for being **secondhand**, not for being Context).
+
+## 94. §51 does NOT fire on a deployable checker used for benchmarking (`96XE669R`, 2026-08-26)
+
+Zhong et al., *Vibe checker: aligning code evaluation with human preference* (VeriCode / Vibe Checker).
+**Ruled Context**, agreeing with the panel's `demote:context` at 2/3. `rules-based-checks` primary 2/3.
+§42 short-circuit; closes the earlier partial (`evaluated-synthetic` already written).
+
+**Ground.** Arbiter: *"focus on measuring single turn vs. multi turn success across different models."*
+The paper's own aim is model development — *"to benchmark and develop models against a more
+human-aligned notion of code quality beyond functionality."* Per §90(b), a measurement of generation,
+not a finding about oversight.
+
+**§51 NEAR-MISS — recorded so it is not mis-cited later.** The assistant expected §51's
+reference-oracle exclusion to fire, as it did on `PR4GS7SP` (Cotroneo/ACCA). **It does not.**
+VeriCode's 30 verifiers are linters, AST checks and regex tests for properties like type hints and
+docstrings; they answer §51's operational question — *could this run on an artifact whose correct
+answer is unknown?* — **yes**.
+
+> **Distinction to keep: a checker can be genuinely deployable and still sit in a paper whose
+> contribution is benchmarking.** §51 disqualifies checkers that *cannot work without a known-correct
+> reference*; it says nothing about checkers that merely *happen to be used* for evaluation. **This
+> demote rests on contribution, not on the checker being an oracle.**
+
+**PRESERVED — two items.**
+
+**1. Third instance of "the check that runs doesn't measure what matters."** *"current code evaluation
+remains anchored to **pass@k** and captures only functional correctness, overlooking the non-functional
+instructions that users routinely apply."*
+
+| Paper | Check actually run | What it misses |
+|---|---|---|
+| `4PSM6ZCD` Zhao (§93) | tests / CI | security — 61% correct, 10.5% secure |
+| **`96XE669R` Zhong** | pass@k | non-functional instruction compliance |
+| `PPMTM4DG` Yu (§91) | AI self-verification | 67% of its own errors |
+
+Three independent papers, three different checks, one failure shape. **Cluster candidate: the gate in
+place is blind to the defect class that matters.** This is the general form of the leakage pathway
+inversion v2 (§89) is built to catch — worth a synthesis paragraph, and worth checking at closeout for
+a fourth instance.
+
+**2. The refinement loop trades correctness for style — a mechanism, not just a benchmark result.**
+*"single-turn generation better preserves functionality but follows fewer instructions, whereas
+**multi-turn editing achieves higher IF at the cost** [of functionality]."*
+
+The **iterative refinement loop — the core vibe-coding gesture — improves what the human can observe
+(readability, structure, "feels right") while degrading what they cannot (correctness).** In a
+low-inspection or `no-inspection` setting (§81a) that is a concrete mechanism for producing code that
+*reads* well and *works* worse, and it compounds automation bias: the loop optimises the exact signal
+the human is using to decide whether to trust it. **Carry into the automation-bias / no-inspection
+discussion; strong candidate for a survey question about whether teams re-run functional tests after
+iterative refinement.**
