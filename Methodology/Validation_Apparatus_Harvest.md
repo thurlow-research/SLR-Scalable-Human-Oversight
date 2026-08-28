@@ -192,6 +192,26 @@ pipelines, then read methods sections.
   and reports it failing. **Apparatus design usually reports what worked; this reports what does not,
   which is rarer and more actionable.**
 
+### `3Z45M3V3` — Fu, Liang, Tahir et al. (2023), *Security weaknesses of Copilot generated code in GitHub* · **SLR: Core**
+- **Apparatus:** off-the-shelf static analysers over AI-generated code found in real repositories —
+  **CodeQL** (general purpose), **ESLint** (JavaScript), **Bandit** (Python). Nothing purpose-built.
+- **The loop, and the reason this entry matters:** detector → **warning message as prompt** → LLM
+  repair → re-scan to verify. **An external deterministic detector driving repair by the model that
+  produced the defect.**
+- **AI-as-checker:** no — the AI is the *fixer*, the static analyser is the *checker*. That separation
+  is the point.
+- **Human position:** none in the loop. The human chooses the tooling and reads the outcome.
+- **Escalation trigger:** none; every detected weakness is sent for repair.
+- **Measured effect — the only priced intervention in the harvest.** Unaided self-repair fixes
+  **19.3%** of security issues; supplying the static-analysis warning raises it to **55.5%**. Success
+  *"varies between CWEs."*
+- **Domain:** real GitHub projects, Python and JavaScript; 733 snippets, 43 CWEs, 8 in the CWE Top-25.
+- **Why it matters:** the harvest's clearest demonstration that **an external signal is worth more than
+  a better prompt**. Every other entry asserts that layering helps; this one measures the gap between
+  self-check and externally-informed check, with commodity tooling any team already has. **Nearly
+  triples the fix rate — and still leaves 44.5% unfixed**, which is the part to quote when someone
+  proposes static analysis as sufficient.
+
 ## Back-fill candidates from the Light Read band (at closeout)
 `72W6R4JG` Töpfer (FCL constraint verifier + bounded repair loop) · `TA6GIUK2` Zietsman (BDD vs AI
 review head-to-head) · `96XE669R` Zhong (VeriCode's 30 deterministic verifiers) · `VZ27QUPQ` Zhuo

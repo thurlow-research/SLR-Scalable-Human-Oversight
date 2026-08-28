@@ -4789,3 +4789,66 @@ paper by paper.
 
 **Open housekeeping:** `JQPPKSFQ` (Branco) was never placed in a dissertation collection despite its
 bimodality finding being Primary-grade. Revisit alongside the anchor decision.
+
+## 115. §104 REFINED — an instrument becomes a contribution when the paper measures the effect of USING it (`3Z45M3V3`, 2026-08-27)
+
+Fu, Liang, Tahir, Li, Shahin & Yu, *Security weaknesses of Copilot generated code in GitHub* (arXiv
+2023). **Core + Dissertation Supporting + Validation Apparatus.** Primary `ai-code-insecurity` (3/3);
+`rules-based-checks` (2/3); `assistive`, `risk-security`, `method-mining` (3/3), `method-experiment`
+(2/3), `problem-statement-anchor`.
+
+**(a) THE REFINEMENT, prompted by the arbiter:** *"also an angle on tools that could be used as a
+security detector in pipeline?"* The assistant had declined `rules-based-checks` under §104 — the
+static analysers looked like measurement apparatus. **That was wrong.**
+
+> **§104 refined: an instrument becomes a contribution when the paper measures the effect of USING it,
+> rather than merely using it to measure something else.**
+
+Fu's static analysers (**CodeQL**, plus ESLint for JavaScript and Bandit for Python) are a **component
+of a loop whose effect is measured**: detector → warning message → LLM repair → re-scan. The headline
+number *is* that measurement. Contrast `VG8PSMM7` (Adnyana, §104), where the LITL+HITL ladder scored
+**prompting techniques** — there the pipeline was apparatus for a different question.
+
+**(b) Fourth measurement leg for the independence thread — and the only one that PRICES the external
+signal.**
+
+> *"Using the fix command can fix **19.3%** of security issues, while using the enhanced prompt raises
+> [it to] **up to 55.5%**"* · *"Providing Copilot Chat with a **warning message from the static analysis
+> tool** resulted in a better fix."*
+
+**The model repairs 19.3% of its own security defects unaided, 55.5% when handed an external
+producer-independent signal.** Same shape as `VTDG995V` (rescaling against external ground truth moved
+ECE 0.46 → 0.04) — *the rescue comes from outside the model* — but this one quantifies **what the
+outside signal buys**. The thread now runs: rule (instrument design) → prescription (Zhu, Mahmud,
+Sistla) → measurement (Gros/Spiess, Yu, Ferdous, **Fu**) → observed deviation (Pimenova).
+
+**The architecture is also the one the thread endorses:** an external deterministic detector driving
+repair by a model that cannot find its own defects. **Passes §51** — static analysis needs no
+known-correct reference.
+
+**(c) FIELD measurement, not benchmark — a distinction §93 does not currently make.** 733 snippets from
+**real GitHub projects**, explicitly filling the gap that prior work *"examin[ed] code produced in
+controlled environments rather than open source development scenarios."* 29.5% of Python and 24.2% of
+JavaScript affected; 43 CWEs; 8 in the 2023 CWE Top-25.
+
+> **Watch item for §93:** the rule sends *pure measurement of model output insecurity* to Context, but
+> was written against **benchmark** papers (Zhao, Dora). **Field measurement on real repositories is
+> stronger evidence** and may warrant separate treatment. Not changed now — Fu qualifies for Core on
+> (b) regardless — but flagged, since `ai-code-insecurity` has ~8 unread instances left in this band.
+
+**(d) `problem-statement-anchor` — ONE ANCHOR PER CLAIM, not one anchor total.** This resolves the
+dilution concern raised at §114c. The review's frame has two halves, so each takes its own anchor:
+
+| Claim | Anchor candidate |
+|---|---|
+| **AI code is risky** | `3Z45M3V3` Fu — 29.5% / 24.2% in **real projects** |
+| **Oversight fails** | `59KP8GTP` Gao (80% unreviewed) *or* `JQPPKSFQ` Branco — still to choose |
+
+Fu also carries a **legacy bare `problem-statement-anchor` tag** from an earlier pass; now written
+properly in the `cal:human` namespace.
+
+**(e) Dissertation Supporting, named use (§109a):** the **19.3% → 55.5%** figure converts directly into
+a survey question — *do you feed static-analysis output back to the assistant?* — and supplies the
+reason the question matters. Not Primary: it is a mechanism finding, not a picture of practice.
+
+**Declined:** `steering` (1/3).
