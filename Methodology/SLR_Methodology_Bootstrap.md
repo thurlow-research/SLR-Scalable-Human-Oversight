@@ -139,10 +139,32 @@ Group library; collection-based provenance (NOT tag-based for source provenance)
 
 - **Items never leave `01-Imports/`**. Import membership is permanent provenance — same item can live in `Q-IEX-03` and `Q-IEX-12` and `Q-SCO-07` simultaneously; that's the audit trail.
 - **Source counts are invariant** when moving items between screening buckets.
+- **Phase collections are populated once, then frozen — membership is PROVENANCE, not current state.**
+  Each phase creates its **own** collections and populates them. Once that phase completes, its
+  memberships are **never changed**. A later phase's conclusions are expressed by **new collections
+  and/or tags** — never by editing an earlier phase's collections. Movement happens *during*
+  population (earlier phases used `00-Queue` → `01-Keep` / `02-Maybe` / `03-Discard` sub-collections,
+  and the workflow moved each item from the queue into that phase's disposition); the freeze applies
+  when the phase is done. **Consequence:** a paper's collection membership records **what each phase
+  concluded at the time**, not what it is now. A Phase-5 demote does **not** remove the paper from
+  Phase 3's `01-Core` — Phase 3's answer stays Phase 3's answer. Reading current disposition off
+  collection membership is therefore **wrong by construction**; see the disposition rule below.
 - **Always merge, never delete** for duplicates. Zotero's merge preserves all collection memberships and tags on the surviving record.
 - **04-Superseded** holds the inferior duplicates after manual cross-source dedup (e.g., a preprint that was later published as a journal article — keep the journal version in the live workflow, send the preprint to Superseded).
 - **Screening decisions propagate cross-source.** If the same item is in IEEE and Scopus and screened Keep in IEEE, the Scopus copy gets Keep too.
-- **Tags are sorting/filtering aids only.** Source provenance lives in collections, not tags. `theme:*` and `s1:*` tags are screening aids; the screening decision in another source takes priority if there's a conflict.
+- **Tags are sorting/filtering aids only — for SOURCE PROVENANCE and SCREENING.** Source provenance lives in collections, not tags. `theme:*` and `s1:*` tags are screening aids; the screening decision in another source takes priority if there's a conflict.
+- **From Phase 4 onward this INVERTS for disposition and tagging.** Collections stayed provenance, but
+  the *decisions* moved into tags, and those tags are **authoritative, not aids**:
+  - **Current tier** = the **`demote:context`** tag. **Absent = surviving.** It is the only place the
+    live disposition exists.
+  - **Tag decisions** = the `cal:human:*` layer (`cal:human:theme:*`, `cal:human:facet:*`,
+    `cal:human:primary:theme:*`, `cal:human:reject:*`); model proposals = `cal:<model>:*`.
+  - **Phase 6** will materialise the surviving set (every reviewed paper with **no** `demote:context`)
+    as a collection — the first time current disposition is readable from membership again, and only
+    because it is created fresh at that point rather than edited into an older phase.
+
+  **Do not read tier from collection membership.** A demoted paper still sits in the `01-Core` of every
+  earlier phase that put it there; that is the audit trail working as designed, not an inconsistency.
 
 ### Publication venue hierarchy for dedup
 
