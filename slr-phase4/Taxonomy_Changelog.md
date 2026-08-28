@@ -5419,3 +5419,98 @@ Yu/`PPMTM4DG` self-review failure mode does not arise. The reviewing in this pap
 **humans reading explanations**, which is why the primary is `oversight-explanation` and the human
 side is carried by `hitl-workflow`. The paper's own framing (*"full developer trust requires a manual
 patch review"*) names the human as the reviewer.
+
+## 122. §117 applied and OVERRULED by §111 — concrete routing advice in a discussion section does not rescue a measurement paper (`5NZ2EDEK`, 2026-08-28)
+
+**Paper:** Karakaya, *Understanding the Limits of Automated Evaluation for Code Review Bots in
+Practice*, arXiv (2026-04-27).
+**Written:** primary `ai-review` (3/3); `general-code` (3/3); `method-mining` (2/3),
+`method-experiment` (3/3), `method-self-report` (3/3); `evaluator-reliability`.
+**`demote:context` · Dissertation: Supporting.**
+**Declined:** `scaling-dissent`, `oversight-explanation`, `routing-signal` (1/3),
+`hitl-workflow` (1/3), `cross-model`.
+
+### 122a. What the paper is — a THREE-layer oversight stack, and two of the layers fail
+
+The arbiter's initial read was *"a measurement of how good the feedback was from ACR by seeing what
+humans did with it."* That is the paper's **setup**; its finding is that the setup does not work.
+
+| Layer | Who checks whom | Verdict |
+|---|---|---|
+| 1 | ACR bot reviews the PR | not the object of study |
+| 2 | **LLM-as-a-Judge / G-Eval score the bot's comments** | **0.44–0.62 agreement** with human labels |
+| 3 | **developer `fixed`/`wontFix` labels = "ground truth"** | **contaminated** |
+
+Layer 3 is the more interesting failure: *"**wontFix reflects organizational or contextual constraints
+rather than purely technical non-usefulness**"* — *"local priorities, release pressure, ownership
+boundaries, or timing"* — corroborated by an interview with Beko's director of software engineering.
+
+**Carry this into the dissertation's own instrument design:** developer accept/reject signals are
+**not** clean ground truth for whether AI review was useful. Any survey item asking practitioners
+whether AI review comments were helpful inherits exactly this contamination. Logged in
+`Emerging_Themes.md`.
+
+### 122b. `scaling-dissent` DECLINED — the §56 polarity trap, second instance
+
+The arbiter proposed it: *"it might be a dissent since they conclude that humans should not rely on
+ACR, but just treat it as one of many potential signals."* The reading of the text is right; the
+polarity is not.
+
+The paper says **this particular delegation is not yet reliable, so do not rely on it alone.** That is
+**the review's thesis**, not opposition to it. Dissent requires arguing delegation is unworkable or
+impermissible **as a general matter**. This is the precise failure that killed `counterpoint` at §56 —
+9/9 tagged a thesis-*supporting* paper as opposition. **First recorded human-side instance of the same
+polarity error**, which is worth knowing: the trap is not model-specific, it is inherent to the
+construct. Guard to keep applying: *"many things can be delegated, some can't" is the thesis
+(`risk-routing`); dissent argues delegation itself is unworkable.*
+
+### 122c. §117 APPLIED — and it changed nothing, which is the point
+
+Per §117 (*read the implications section before ruling absence*) the arbiter's *"there isn't [anything
+concrete on oversight or routing] by my read"* was checked rather than accepted. **§5.1 Implications
+for Practitioners does contain concrete routing content**, none of it visible in the abstract:
+
+> **"Use automated evaluation for triage, not decision-making.** A more conservative integration is to
+> use automated scores to prioritize what to inspect (e.g., **routing low-score or disputed cases to
+> manual review**), rather than to automatically accept or dismiss comments. This can **reduce
+> evaluation cost while limiting the harm** from misclassifications."
+
+Plus: scores *"require periodic sampling and human verification"*, and *"any deployment should include
+**routine re-evaluation after model upgrades** or prompt/rubric changes."*
+
+The first is this review's thesis stated as a deployment pattern — a cheap computed signal allocating
+scarce human attention.
+
+### 122d. Why it is STILL context — §111 governs
+
+**§111: a proposed instrument does not rescue a measurement paper.** Karakaya *recommends* the triage
+design in a discussion section: it never builds it, never evaluates it, and reports no data on whether
+routing by score works. The arbiter's own Branco rule applies unchanged — *"the study is not showing
+us how that decision is made."* `routing-signal` therefore stays off at 1/3; a recommendation is not a
+validated signal.
+
+The paper's actual contribution remains **judge-vs-human agreement measurement**, which §98 routes to
+context through the `BAWCBT9R` precedent: *"metrics auditing a measurement tool's/judge's own
+reliability = tool validation → context; the object is the evaluator, not AI-code risk."* Karakaya is
+`BAWCBT9R` in an industrial setting.
+
+**The rule this pair establishes:** §117 obliges the *check*, not a particular *outcome*. Reading the
+implications section is mandatory before ruling absence — and it may still return "found, and it does
+not change the disposition." Recording a §117 pass that **confirmed** the initial call is as useful as
+recording one that overturned it (§117a), because otherwise §117 reads as a rule that always rescues.
+
+### 122e. Dissertation Supporting — two named uses (§109a)
+
+1. **Triage-not-decision** — a directly usable design principle for the oversight architecture, stated
+   nowhere else in the corpus this plainly.
+2. **Evaluator drift as a governance practice** — *"routine re-evaluation after model upgrades or
+   prompt/rubric changes."* Nothing else in the corpus says the **oversight apparatus itself** needs
+   periodic recalibration; pairs directly with the cross-model panel design.
+
+### 122f. `evaluated-real-data` NOT introduced here
+
+The paper is the natural first instance — an industrial corpus of 2,604 real PR comments rather than a
+benchmark — but the slug has **zero uses** and remains staged (§41). **A slug's first instance sets its
+working definition, and §42 short-circuits tag verification on demoted papers**, so a context paper is
+the wrong place to establish one. Deferred to the F2 instrument cut, with this paper named as the
+candidate seed.
