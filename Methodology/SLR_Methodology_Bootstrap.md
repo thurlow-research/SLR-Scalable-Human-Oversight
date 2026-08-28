@@ -154,7 +154,15 @@ Group library; collection-based provenance (NOT tag-based for source provenance)
 - **Screening decisions propagate cross-source.** If the same item is in IEEE and Scopus and screened Keep in IEEE, the Scopus copy gets Keep too.
 - **Tags are sorting/filtering aids only — for SOURCE PROVENANCE and SCREENING.** Source provenance lives in collections, not tags. `theme:*` and `s1:*` tags are screening aids; the screening decision in another source takes priority if there's a conflict.
 - **From Phase 4 onward this INVERTS for disposition and tagging.** Collections stayed provenance, but
-  the *decisions* moved into tags, and those tags are **authoritative, not aids**:
+  the *decisions* moved into tags, and those tags are **authoritative, not aids**.
+
+  **Why the switch happened — cardinality, not preference.** Earlier stages were **single-valued**
+  decisions (keep / maybe / discard — exactly one per item), which folders represent perfectly and
+  which Zotero's UI supports by **drag-and-drop**. That is why collections carried the decision for
+  Phases 1–3. **Tagging broke it:** a paper carries **many** tags at once (17 themes + 27 facets,
+  plus per-model proposals), and no folder tree can represent a multi-valued assignment. So the
+  decision layer moved to tags at Phase 4. The rule generalises: **single-valued disposition →
+  collection; multi-valued → tag.**
   - **Current tier** = the **`demote:context`** tag. **Absent = surviving.** It is the only place the
     live disposition exists.
   - **Tag decisions** = the `cal:human:*` layer (`cal:human:theme:*`, `cal:human:facet:*`,
