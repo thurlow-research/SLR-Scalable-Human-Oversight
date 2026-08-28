@@ -4681,3 +4681,59 @@ Dutta returns to Supporting.
 **Not resolved (§42 short-circuit):** `method-self-report` 3/3 is questionable on a 3,231-word paper
 reporting early results — no instrument is described. Left unadjudicated; noted in case the closeout
 facet sweep reaches Context papers.
+
+## 113. The instrument's own design rule gets empirical backing — the Confidence Trap (`UIXCRBQX`, 2026-08-27)
+
+Ferdous, Banik, Chowdhury & Shamim, *Safer builders, risky maintainers: a comparative study of breaking
+changes in human vs agentic PRs* (arXiv 2026-03). **Core + Dissertation Primary + Validation
+Apparatus.** Primary `quality-debt` (3/3); `agentic`, `method-mining`, `risk-quality` (3/3);
+`built-system` (2/3); **`routing-signal` rescued** (codex 1/3).
+
+**The headline is not the valuable part.** The comparison — agents introduce **fewer** breaking changes
+than humans overall (**3.45% vs 7.40%**) but **more** during maintenance (refactoring **6.72%**, chore
+**9.35%**) — is a quality result. Two *oversight* findings sit underneath it, and both matter more.
+
+**(a) THE CONFIDENCE TRAP — evidence for a rule the instrument had only asserted.** `risk-routing`'s
+definition states *"Signal must be **computed & producer-independent** — **model self-confidence is
+disqualified**"* as a **design judgement**, recorded before any evidence (independence thread, leg 1).
+This paper tests it:
+
+> *"99.9% of AI-generated pull requests [score] between **8 and 10**"* · breaking-change rates at
+> confidence **8 / 9 / 10 = 3.94% / 3.96% / 3.16%** · *"**confidence scores do not reliably reflect
+> breaking change risk**"* · *"confidence scores alone are **insufficient for prioritizing review or
+> deployment**, and should be supplemented with additional verification mechanisms."*
+
+**The signal has almost no variance — 99.9% of cases in a three-point band — so it cannot discriminate
+even in principle**, independent of whether it is calibrated. That is a stronger failure than
+miscalibration.
+
+**Third measurement leg for the independence thread**, from a third method:
+`VTDG995V` (Gros/Spiess — intrinsic confidence poorly calibrated, ECE 0.09–0.73) · `PPMTM4DG` (Yu —
+self-verification misses 67% of own errors) · **`UIXCRBQX` (self-reported confidence does not
+discriminate breaking-change risk)**. Three independent groups, three designs, one conclusion.
+
+**Worth noting for the methods chapter:** a design decision recorded in the instrument **before** the
+evidence existed has now been independently corroborated. That is the strongest form the
+reflexivity argument can take — cf. §11.8, where the review's convergence with its own findings was
+flagged as illustration only.
+
+**(b) `routing-signal` RESCUED — passes all three §107e clauses.**
+*"we recommend practitioners apply **enhanced, task-specific review policies**"*, grounded in the
+maintenance-versus-generation rate difference.
+- **Within-unit conditional** ✓ — same repo, different treatment by task type, not a policy difference
+  between repos.
+- **A computed signal, not a tendency** ✓ — task type is derivable from the PR, not inferred from
+  aggregate merge behaviour (contrast `JQPPKSFQ`, §107e).
+- **Producer-independent** ✓ — task classification does not come from the agent.
+
+**`routing-signal`, not `risk-routing`** — they recommend policies without operationalising selection or
+gating logic, which is exactly the facet's scope, and the two are mutually exclusive by definition.
+
+**(c) `rules-based-checks` DECLINED (codex 1/3).** The AST-based breaking-change detector is their
+**measurement instrument**, which §104 places on the instrument side. *Building a detector to measure
+something is not contributing a detection mechanism.*
+
+**Dissertation Primary rather than Supporting.** The arbiter's stated use — agents break less than
+humans — is real but comparative. **The confidence-trap finding is the one that changes an argument:**
+it is the corpus's only empirical demonstration that the signal an organisation would reach for first
+is unusable.

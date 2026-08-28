@@ -172,6 +172,26 @@ pipelines, then read methods sections.
   **Three different implicit answers to "what makes a check adequate": more rungs, more classes, or
   proof.**
 
+### `UIXCRBQX` — Ferdous, Banik, Chowdhury & Shamim (2026), *Safer builders, risky maintainers* · **SLR: Core**
+- **Apparatus:** a purpose-built **AST-based breaking-change detector**, run over 8,593 PRs and 60,324
+  patches (7,191 agentic vs 1,402 human) from the AIDev dataset, Python repositories.
+- **What makes it distinctive:** the check is **structural and deterministic** — abstract syntax tree
+  comparison for backward-compatibility violations. No model judges anything. Contrast the LLM-judge
+  apparatus elsewhere in this harvest.
+- **AI-as-checker:** no. The AI is the *subject*, not the checker.
+- **Human position:** none in the apparatus; humans appear only in the **recommendation** —
+  *"enhanced, task-specific review policies."*
+- **Escalation trigger — the contribution:** **task type**. Maintenance work (refactoring 6.72%, chore
+  9.35%) carries roughly double the breaking-change risk of generation (3.45%). A computed,
+  producer-independent signal for where review effort should go.
+- **The negative result is the more useful one.** Agent **self-reported confidence** fails as a
+  triage signal: 99.9% of PRs self-score 8–10, and breaking-change rates across that band are flat
+  (3.94% / 3.96% / 3.16%). **A signal with no variance cannot triage anything.**
+- **Why it matters to the harvest:** the first entry whose contribution is a **signal for allocating
+  review** rather than a mechanism for performing it — and the only one that tests a *candidate* signal
+  and reports it failing. **Apparatus design usually reports what worked; this reports what does not,
+  which is rarer and more actionable.**
+
 ## Back-fill candidates from the Light Read band (at closeout)
 `72W6R4JG` Töpfer (FCL constraint verifier + bounded repair loop) · `TA6GIUK2` Zietsman (BDD vs AI
 review head-to-head) · `96XE669R` Zhong (VeriCode's 30 deterministic verifiers) · `VZ27QUPQ` Zhuo
