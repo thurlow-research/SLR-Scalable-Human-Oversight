@@ -4852,3 +4852,79 @@ a survey question — *do you feed static-analysis output back to the assistant?
 reason the question matters. Not Primary: it is a mechanism finding, not a picture of practice.
 
 **Declined:** `steering` (1/3).
+
+## 116. `survey-input` NARROWED to papers containing a user survey; and theatre vs inversion on the same data (`SHK6KAX6`, 2026-08-27)
+
+Ghammam & Almukhtar, *AI builds, we analyze: an empirical study of AI-generated build code quality*
+(arXiv 2026-01). **Core.** Primary `quality-debt` (3/3); `ai-code-insecurity` (3/3);
+**`oversight-theater` rescued** (codex 1/3); `agentic`, `risk-quality`, `risk-security`, `method-mining`
+(3/3). Rejected `oversight-scaling-inversion` (2/3) and `survey-input` (2/3).
+
+### 116a. DEFINITIONAL NARROWING — `survey-input`
+
+The facet has been declined three times (`JQPPKSFQ`, `59KP8GTP`, here) on the ground that the paper did
+not survey anyone, which contradicts its written text: *"`method-self-report` ≠ `survey-input` (method
+vs the finding's **utility to the org survey** — **a mined study can be `survey-input`**)."* The arbiter
+resolved the divergence: ***"The intention for input-survey was a user survey — Likert scale, etc."***
+
+**Checked against the corpus before adopting**, since the narrow reading risks making the facet
+redundant with `method-self-report`:
+
+| | n (of 128) |
+|---|---|
+| `survey-input` **and** `method-self-report` | **12** |
+| `survey-input` only | **5** — Chang, Gao, Ghammam, Li, Yang |
+| `method-self-report` only | 15 |
+
+**Not redundant.** Under the narrow reading the facet becomes a **utility filter on self-report
+papers** — 12 of 27 — marking *papers whose survey instruments we can learn from*. That is a small,
+concrete, actionable set. The broad reading would fire on almost any organisational-practice paper,
+which is the §87 discriminating-power problem.
+
+> **NARROWED (binding): `survey-input` requires the paper to have collected practitioner input directly
+> — survey, Likert instrument, structured questionnaire — AND for that instrument or its findings to be
+> useful to the dissertation's org survey. A mined study does NOT qualify, whatever its findings say
+> about practice.**
+
+**The five affected papers lose nothing substantive** — all carry `org-governance` or `method-mining`,
+and Gao and Yang are already Dissertation Primary. **Cheatsheet text is now wrong and must be corrected
+at the next versioned cut (§41 — not edited now).**
+
+**CLOSEOUT ACTIONS:** (1) remove `survey-input` from the 5 mined studies; (2) re-check the 12 overlap
+papers — do they genuinely offer instrument value, or merely carry self-report evidence?
+
+### 116b. THEATRE, not inversion — the ritual is present but hollow
+
+Two findings, deliberately kept apart:
+- **RQ1:** 364 maintainability and security build smells in agent-authored build code.
+- **RQ3:** *"**61.4% (238/387)** of the analyzed PRs were merged by developers, and in most cases, the
+  merge occurred **immediately**"*; *"Reviewers often accept the PR changes with [little to no
+  modification]."*
+
+**`oversight-theater` applies** — §69 requires a process to be hollow, and here **reviewers do accept**;
+the ritual exists and carries minimal engagement. **A clean contrast with `59KP8GTP` (Gao, §114):**
+
+| | What happens | Theme |
+|---|---|---|
+| **Gao** | merged **without any explicit review** — no ritual | inversion |
+| **Ghammam** | **reviewers accept**, then merge immediately without modification — ritual present | **theatre** |
+
+**`oversight-scaling-inversion` REJECTED (2/3) — seventh rejection.** The paper never links RQ1 to RQ3:
+it does not show the *smelly* PRs were the merged ones. Arithmetic makes it likely, but §88 requires
+the escape to be demonstrated, not inferred — the same gap that kept the tag off Chang and Catalan.
+**Assistant's call, twice offered to the arbiter and passed over; reversible in one edit.**
+
+**`automation-bias` NOT applied** (0/3, and the arbiter raised it as a possibility). §16's discriminator
+requires **a capable human demonstrably failing**. Fast merges with little modification are equally
+consistent with rubber-stamping *or* with the code being acceptable. **Merge speed is not evidence of a
+missed catch.**
+
+### 116c. CITATION DISCIPLINE — three papers, one dataset
+
+`JQPPKSFQ` (Branco), `59KP8GTP` (Gao) and `SHK6KAX6` (Ghammam) all mine **AIDev**, and report different
+review-absence figures on overlapping data: auto-merge rates (bimodal by repo) · **~80%** of non-owner
+AI PRs merged without explicit review · **61.4%** of build-code agentic PRs merged, mostly immediately.
+
+> **Different subsets, different definitions. Cite one number for one population.** Three papers
+> agreeing loosely would read as replication when it is one dataset sliced three ways — and a committee
+> that notices the shared provenance will discount all three.
