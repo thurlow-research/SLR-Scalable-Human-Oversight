@@ -5089,3 +5089,92 @@ reviewer affect** toward objectively worse code.
 **merged** code that review failed to catch would qualify — but the paper says *"silent accumulation…
 in real-world development environments"* without establishing that the studied PRs merged. **Route (ii)
 should not be widened on its first outing; check RQ1's sample at closeout.**
+
+## 119. §34 MISREAD — the ladder and method facets are not a fork; and shift-left to the model maker (`YA7XNWYE`, 2026-08-28)
+
+Ji, Jun, Wu & Gelles, *Cybersecurity risks of AI-generated code*, **Center for Security and Emerging
+Technology (CSET), Georgetown** — a policy report, 2024-11. **Core + Dissertation Primary + Validation
+Apparatus.** Primary `ai-code-insecurity` (3/3); `org-governance`, `regulatory-compliance` (2/3),
+**`tooling-supply-chain`** (rescued 1/3); `assistive`, `risk-security`, `method-experiment` (3/3),
+**`evaluated-benchmark`**, `risk-quality`, `risk-overreliance` (2/3).
+
+**Attribution correction:** initially described as a NIST report. It is **CSET** — a policy think tank,
+not a standards body. NIST appears *within* the report as a cited framework. **The distinction matters
+for how much authority the recommendations carry in the write-up.**
+
+### 119a. ASSISTANT ERROR — §34 does not bar ladder/method co-occurrence
+
+The assistant has cited §34 three times this session as a **fork** preventing the `evaluated-*` ladder
+and `method-*` facets from co-occurring — on `72W6R4JG` (§77), `XK3P9C96` (§97) and `TA6GIUK2` (§99b).
+**That is not what §34 says.** Its corollary is *"one evaluation event gets ONE **method**
+classification; two **method facets** require two genuinely separate measurement events"* — a rule about
+method facets **among themselves**.
+
+**Corpus practice, in the arbiter's own prior rulings, settles it:**
+
+| Paper | Rung | Also carries |
+|---|---|---|
+| Kang | `evaluated-benchmark` | `method-experiment` |
+| Li, Mitropoulos | `evaluated-benchmark` | `built-system`, `method-experiment` |
+| Mozannar | `evaluated-benchmark` | `built-system`, `method-experiment`, `method-self-report` |
+| Ma / ZORO | `evaluated-synthetic` | three method facets |
+
+**8 of 16 ladder-tagged papers also carry method facets.**
+
+> **CORRECTED: what governs ladder-versus-method is the WORLD-OR-TOOL test, not a fork.** Results
+> describing only the tool → ladder rung, no method facet. Results describing the world (or third-party
+> systems) → method facet. **A paper doing both earns both.**
+
+**CLOSEOUT ACTION: re-check §77, §97 and §99b.** The rulings may stand on the world-or-tool test, but
+**the stated reason is wrong in the record** and is cited three times.
+
+### 119b. `evaluated-benchmark` — measuring AGAINST an accepted benchmark, not contributing one
+
+The arbiter corrected the assistant's reading: *"evaluated benchmark is not that they created a
+benchmark, it is that they **measured themselves against a standard / well accepted benchmark**."*
+
+**`A5WDGC7J` (Jin) is the matching precedent** — `evaluated-benchmark` with **no** `built-system` and
+**no** method facet, evaluating third-party LLMs on benchmarks. Same shape as Ji.
+
+**Applied here:** the **LLMSecEval** dataset — 67 published, CWE-mapped security prompts — held constant
+across **five third-party models** (GPT-4, GPT-3.5-turbo, Code Llama 7B Instruct, WizardCoder 7B,
+Mistral 7B Instruct) with **CodeQL** as the assessor. The authors are explicit that they did **not**
+build a benchmark: *"our objective was not to… create a new benchmark for code security."*
+
+> **The ladder rates EVIDENCE STRENGTH, not artifact maturity.** A contributed system is not required —
+> what matters is whether the evidence rests on ad-hoc tests, constructed data, or an accepted
+> benchmark.
+
+### 119c. Mode — `assistive` only (`agentic` 0/3, declined)
+
+The arbiter proposed both, reasoning that *"their methodology was generating code from a prompt which
+can happen in both scenarios."* **Declined on scope:** the mode pair marks **which setting the paper
+studies**, not which settings the technique could appear in. The report is assistive throughout —
+Copilot as *"autocomplete for code"*, *"AI pair programming"*, infilling models, *"AI code assistant"* —
+with **no agentic content**, unsurprising for **November 2024**.
+
+**GAP RECORDED at the arbiter's request:** the dissertation will need to argue that **the same
+underlying technology powers both assistive and agentic scenarios**. **No corpus paper currently
+supports this**, and our own mode-pair rulings treat the two as distinct settings. **Find a source, or
+argue it explicitly as the review's own position.** Logged in `Emerging_Themes.md`.
+
+### 119d. The accountability argument, and SHIFT-LEFT to the model maker
+
+> *"**Regardless of its authorship**, code should be evaluated as part of **existing secure software
+> development practices**"* — and — *"the burden… **falls mainly on the users**. However, the willingness
+> to proactively expend costs to check code outputs for security—**at the expense of efficiency—will not
+> be constant across users**. The current state **does not align** with the White House's 2023 National
+> Cybersecurity Strategy to **shift the burden of responsibility away from individuals** to
+> organizations best positioned to reduce systemic risk at scale."*
+
+**Two positions that cohere into one:** *the practices are adequate; the accountability placement is
+not.* And the stated reason is this review's thesis in policy language — **oversight that depends on
+individual discretion, against the individual's own efficiency incentives, does not hold uniformly.**
+
+**Arbiter's framing, recorded because it extends our gate-placement spectrum:** *"This is **shift left** —
+if the model makers do a better job, there will be less left for individuals to pick up… Same as
+detecting and fixing problems earlier in SDLC."* See `Emerging_Themes.md`.
+
+**Also worth carrying:** *"Evaluation benchmarks… **overlook security, incentivizing future
+code-generation models to prioritize performance over security**"* — the measurement regime shapes what
+gets built, which pairs with §66/§84 on what counts as a metric.

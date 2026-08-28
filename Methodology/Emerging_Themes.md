@@ -2034,3 +2034,52 @@ is high.*
 it. Self-throttling is the same move applied to the tool rather than the contributor. **Watch for a
 second instance;** if the pattern holds, "restrict production" is a third gate-1 posture alongside
 triage and exclusion.
+
+## SHIFT-LEFT PAST THE SDLC — the gate-placement spectrum, extended upstream (`YA7XNWYE`, 2026-08-28)
+
+Arbiter, on Ji's accountability argument: *"This is **shift left** — if the model makers do a better job,
+there will be less left for individuals to pick up and better security overall. Same as detecting and
+fixing problems earlier in SDLC."*
+
+**That completes a spectrum the corpus has been building piecemeal.** Every mechanism we have catalogued
+places a gate somewhere; ordering them by *how early* reveals a dimension no single paper names:
+
+| Position | Mechanism | Corpus |
+|---|---|---|
+| **Before the model exists** | curate training data; evaluate models on security benchmarks, not only functional ones | **`YA7XNWYE`** (Ji) |
+| **Before the artifact exists** | self-throttling — reduce suggestion volume when project debt is high | `REZGA5WF` (He, §117) |
+| **Before the work arrives** | intake restriction — bans, disclosure, evidence gates, queue caps | `XJAXB98T` (Yang, §86) |
+| **Before the artifact is specified** | decision elicitation; formal constraints authored up front | Aporia, `XRTVITVP`, `72W6R4JG` |
+| **Between generation and merge** | review, filters, gates — where nearly everything sits | most of the corpus |
+| **After merge** | debt measurement, refactoring sprints triggered by metrics | `REZGA5WF` |
+
+**The insight the ordering produces:** the field's attention is concentrated almost entirely at
+*between generation and merge* — the position where oversight is **most expensive and least
+leveraged**, because every artifact must be handled individually by a human whose attention is the
+scarce resource. **The upstream positions are structurally cheaper** (one intervention affects all
+downstream output) and are occupied by **one paper each**.
+
+**Why that matters for the dissertation.** If the scaling problem is that per-artifact human review does
+not scale, then **the answer may not be better review — it may be fewer artifacts needing it.** Ji makes
+this argument at the model layer, He at the tool layer, Yang at the contribution layer. **None of the
+three cites the others; none names the pattern.** Naming it is available to the review.
+
+**Caution.** Shift-left is a *reallocation* of accountability, not an elimination of it. Ji is explicit
+that responsibility should move toward *"organizations best positioned to reduce systemic risk at
+scale"* — which for an org survey raises: **does your organisation treat AI code security as something
+it can influence upstream (tooling, model choice, procurement) or only downstream (review)?** Most will
+answer downstream, and that answer is the finding.
+
+## GAP TO FILL — one technology, two settings (recorded 2026-08-28)
+
+**The dissertation will need to establish that the same underlying technology powers both assistive and
+agentic scenarios.** Our own mode-pair rulings treat them as distinct *settings* (§81, §108b, §117e),
+and the tie-rule exists precisely because the boundary is contested — but the *technology* is one thing
+in two configurations, and the argument depends on that.
+
+**No corpus paper currently supports the claim.** `R2QMVNXI` (Chang, §109) comes closest — its Figure 2
+presents a practitioner-recognised **spectrum** of AI-based coding from assistive through agentic — but
+it is Context, an MLR of YouTube discourse, and not strong enough to carry the point alone.
+
+**Options:** find a source (a technical survey of code-assistant architectures would serve), or **argue
+it as the review's own position** and mark it as such. **Flagged now so it is not discovered late.**
