@@ -5178,3 +5178,141 @@ detecting and fixing problems earlier in SDLC."* See `Emerging_Themes.md`.
 **Also worth carrying:** *"Evaluation benchmarks… **overlook security, incentivizing future
 code-generation models to prioritize performance over security**"* — the measurement regime shapes what
 gets built, which pairs with §66/§84 on what counts as a metric.
+
+## 120. The reuse test lives in `framework`, not `built-system` — boundary probed, NO change (`A5WDGC7J`, 2026-08-28)
+
+**Paper:** Jin, Wang, Guo et al., *Are LLMs reliable code reviewers? Systematic overcorrection in
+requirement conformance judgement*, **Automated Software Engineering** (2026-06).
+**Written:** primary `ai-review`; `rules-based-checks`, `general-code`, `built-system`,
+`method-experiment`, `evaluated-benchmark` (pre-existing); **`framework` rejected** (panel 2/3).
+**SLR: Core · Dissertation: Primary · 04 - Validation Apparatus.**
+
+### 120a. What the paper is, and why an LLM-evaluation paper survives the demote rule
+
+We have demoted a long run of "how well do LLMs do X" evaluations. This one is kept, on the same
+ground as Yu (`PPMTM4DG`): **the LLM under evaluation is occupying the oversight seat.** The object of
+study is the *reviewer*, not the generator, so the failure it characterises is a failure of the
+review mechanism itself.
+
+The specific finding: LLM judges given a **spec and an implementation** do not fail by rubber-stamping
+— they fail by **systematic overcorrection**, rejecting conformant code and inventing faults, with
+false-positive rates as high as **88.74%** (GPT-4o on MBPP). Together with two papers already in the
+corpus this completes an **LLM-reviewer failure triad**:
+
+| Paper | Failure mode |
+|---|---|
+| Yu (`PPMTM4DG`) | **false negatives** — a model cannot catch its own defects |
+| Zietsman (`TA6GIUK2`) | **circularity** — review without an external referent |
+| **Jin (`A5WDGC7J`)** | **false positives** — overcorrection *even when given* a spec |
+
+The triad matters because it closes an escape route: the fix for Yu is "give the reviewer an
+independent referent," and Jin shows that supplying one produces a *different* failure rather than
+no failure. **Handing the reviewer a spec is not sufficient.**
+
+**Arbiter's substantive contribution, recorded because the corpus lacks the distinction:** this paper
+applies review **against the V-model** — checking the implementation against the *specification*
+rather than scanning for bugs or poor structure. That separates two things we have been calling one:
+
+- **conformance review** — *did it build what was asked?* Requires a referent; fails by overcorrection.
+- **defect review** — *is this code bad?* Needs no referent; fails by omission.
+
+Logged to `Emerging_Themes.md`. Most corpus oversight mechanisms are defect review; the oversight
+question that actually worries practitioners is conformance.
+
+### 120b. `framework` REJECTED — the reuse test, applied
+
+Panel proposed `framework` 2/3. **Rejected on two independent grounds.**
+
+**Span (§49).** The contributed mechanism is a **Fix-guided Verification Filter**, and the paper states
+its trigger condition plainly: *"the filter is **applied only when the judge returns NO**."* That is a
+**single post-judge stage**, not an architecture governing a flow — the `WUUDHL8R` / `BU73N7PC` negative
+case (a component bolted onto a pre-existing pipeline). The paper's own phrase *"filter-embedded
+framework"* is technical vocabulary, not a technical artifact.
+
+**Reuse.** `framework` already carries the test in its slug text: ***"would someone adopt it as a
+reusable pipeline design?"*** Here the answer is no, and the paper's availability statements say why:
+
+> *"To facilitate **reproducibility**, we make the curated datasets and scripts publicly available…"*
+> **Code Availability:** *"The **experimental framework** and mitigation filter implementation are available…"*
+
+**Released ≠ released for use.** These are **reproducibility artifacts**, described by the authors as an
+*experimental* framework. The filter also only runs where an executable test suite exists **plus**
+GPT-4o-generated augmented tests — it is a robustness patch on the authors' own measurement, not a
+component a team could drop into a review pipeline.
+
+### 120c. `built-system` — boundary probed, definition UNCHANGED
+
+The arbiter put a sharper test to the facet: ***"would someone use what they built in other scenarios,
+or was it just applicable to testing their hypothesis?"*** — i.e. **contributed artifact vs experimental
+apparatus**, the §104/§115 principle applied at facet granularity.
+
+Probed and **deliberately not adopted.** Arbiter's ruling: *"let's not change `built-system`, keep as
+is. `framework` captures the case I was thinking about."* The resulting **division of labour is now
+explicit**, and this is the entry to cite when it comes up again:
+
+| Facet | Question it answers | Kind of marker |
+|---|---|---|
+| `built-system` | **Did they implement and run it?** | existence / maturity |
+| `framework` | **Would someone adopt it elsewhere?** | reuse / transferability |
+
+**Why leaving `built-system` bare is right — the arbiter's statement of it, which governs:**
+
+> *"**Built is counterpoint to design.** Design, they designed it but did not build. Built-system, they
+> actually built it."*
+
+The pair is a **binary on a single question — did it get made?** — and `design-only` is already declared
+*"mutually exclusive with `built-system`/`adopted`."* The two slugs partition the space of papers that
+propose a mechanism, and every such paper must land on exactly one side.
+
+That is why a reuse test could not be loaded onto it: purpose-built apparatus **was in fact built**, so
+it cannot take `design-only`, and denying it `built-system` would leave it in a gap the partition does
+not admit. The ladder — *unvalidated design < expert-validated < built prototype < adopted* — grades
+**how far past paper the thing got**, not how useful it would be to anyone else. Reuse is a different
+question, and `framework` is where it is asked.
+
+**Two consequences, both avoided by the no-change ruling:**
+
+1. **Jin keeps `built-system`** (panel 3/3, correct). The filter was implemented, run, and reported
+   before/after: **FPR 88.74% → 39.96%**. It exists; that is all the facet claims.
+2. **Ferdous (`UIXCRBQX`) is NOT backed out.** The arbiter raised it as the likeliest casualty, and
+   under the rejected test it would have been — the paper is unusually explicit that its tool is
+   apparatus: *"…making these tools **unsuitable for our study**. Therefore, **we develop a tool** to
+   detect potential [breaking changes]"* and *"To **validate the reliability of our tool**, we randomly
+   selected 94 patches."* Built for their measurement, then calibrated as an instrument. Under the
+   retained definition it is still built, and `built-system` stands.
+
+**A superseded correction, recorded so the reasoning is not repeated.** The assistant initially argued
+`built-system` from §115 — *the paper measures the effect of using the instrument*. That was the wrong
+lever: §115 governs **whether apparatus rises to a contribution**, and measuring your own instrument's
+effect on your own error rate is **internal validity**, not a contributed tool. `built-system` never
+needed §115, because it never asked the contribution question in the first place.
+
+**Related boundary already in the instrument:** `design-only`'s carve-out exclusion — *"metrics auditing
+a measurement tool's/judge's OWN reliability = tool validation → context"* (`BAWCBT9R`). Ferdous's
+94-patch validation is precisely that, which is why tool-validation evidence does not lift a paper's
+disposition even where `built-system` applies.
+
+### 120d. `rules-based-checks` — kept, with the qualification stated
+
+Panel 3/3, retained. The arbiter's challenge — *"my read was that they tested their hypothesis against
+LLMs, not that they built a system that others might use"* — is correct about the paper's centre of
+gravity but does not defeat the theme: the filter is a **specified deterministic decision procedure**
+(*"executes both against the benchmark test cases T and an augmented test set T̃. The final verdict is
+determined by four common outcomes"*).
+
+**Qualification worth carrying:** it is **not purely deterministic** — *"the test generation step is
+standardized to GPT-4o"*, so an LLM produces the augmented tests the filter then executes. This is the
+increasingly common **hybrid** shape: deterministic adjudication over LLM-generated inputs. Flagged as
+a candidate refinement for the next versioned cut; **no change made now.**
+
+### 120e. Open at closeout
+
+- **`counterpoint` 2/3** — not carried (deprecated, §56). The `scaling-dissent` question was checked:
+  Jin reports a **failure mode of a delegated reviewer**, not an argument that delegation is
+  unworkable as a general matter. **Does not qualify.**
+- **Queue hygiene** — Jin was added to `01 - Primary` and `04 - Validation Apparatus` but left in
+  `03 - Queue`. The convention is inconsistent: **16 of 21** `01 - Primary` members have been removed
+  from Queue, **5 have not**. Settle the rule and sweep the 6 at closeout.
+- **Mode pair** — neither panel nor arbiter assigned `assistive`/`agentic`. Reasonably absent: the
+  paper studies judges over benchmark programs, so no generation setting is under study. Noted so the
+  silence is not later read as an omission.

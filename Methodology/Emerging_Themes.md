@@ -2083,3 +2083,60 @@ it is Context, an MLR of YouTube discourse, and not strong enough to carry the p
 
 **Options:** find a source (a technical survey of code-assistant architectures would serve), or **argue
 it as the review's own position** and mark it as such. **Flagged now so it is not discovered late.**
+
+## Conformance review vs defect review — a distinction the corpus conflates (`A5WDGC7J`, 2026-08-28)
+
+Raised by the arbiter on Jin, whose framing is that the paper applies code review **against the
+V-model** — checking the implementation against the *specification* rather than scanning for bugs or
+poor structure. That separates two activities the corpus has been treating as one:
+
+| | Question | Needs a referent? | How it fails |
+|---|---|---|---|
+| **Defect review** | *Is this code bad?* | no — judge the artifact alone | **omission** — misses what it did not look for |
+| **Conformance review** | *Did it build what was asked?* | **yes** — a spec to check against | **overcorrection** — rejects conformant work, invents faults |
+
+**Why the distinction earns a place in the findings.** Most oversight mechanisms in the corpus are
+defect review — linters, scanners, security gates, quality checks. But the failure practitioners
+describe with agentic coding is usually **conformance**: the agent produced clean, well-structured,
+passing code that *is not what was asked for*. A gate made entirely of defect review cannot see that
+failure, because the artifact is not defective.
+
+**The evidence chain this completes.** Three corpus papers now make a single argument about LLM
+reviewers that none makes alone:
+
+1. **Yu (`PPMTM4DG`)** — a model cannot reliably catch its own defects (**false negatives**). Implied
+   fix: give the reviewer an independent referent.
+2. **Zietsman (`TA6GIUK2`)** — review without an external referent is **circular**. Reinforces the fix.
+3. **Jin (`A5WDGC7J`)** — supplying the referent produces a **different failure**, not no failure:
+   systematic **overcorrection**, FPR up to **88.74%**.
+
+**So "give the reviewer the spec" is necessary and not sufficient.** The escape route the first two
+papers point at is closed by the third. This is the strongest form of the review's scaling argument
+available so far, because it does not rest on models being weak — it rests on the **review task itself
+being two-sided**, where fixing one error direction moves cost into the other.
+
+**Open question for the dissertation:** overcorrection is the *expensive* failure for scalable
+oversight. A reviewer that misses defects degrades quality silently; a reviewer that rejects
+conformant work **consumes the scarce resource oversight is trying to conserve** — human attention —
+and trains the human toward dismissal, which is `automation-bias` arriving from the opposite
+direction than usual (§118). Whether that dismissal reflex is observed empirically anywhere in the
+corpus is **not yet checked**; flagged for the closeout sweep.
+
+## The tagging procedure as a worked instance of its own subject (2026-08-28)
+
+Recorded because the arbiter raised it as a findings-relevant observation, and bounded because it is
+self-observation. Full statement in `Theme_Tagging_Calibration.md` §11.6b.
+
+**The observation:** the tag taxonomy (44 slugs frozen / 50 live, seven checklist questions per paper)
+exceeds what the arbiter can hold in working memory, so tagging is **mediated** rather than direct —
+*"human suggests, machine helps validate. Machine suggests more,"* with the arbiter adjudicating. This
+held for **every** supervised paper, including those where the arbiter named tags first.
+
+**Why it is interesting:** it is the review's own subject running at n=1 — `hitl-workflow` over
+`ai-review`, adopted not for speed but because **recall over a large vocabulary is the specific thing
+human attention fails at**, which is the same premise the corpus's oversight tooling runs on.
+
+**Guardrail (§11.8).** This is a **worked illustration, not evidence.** Its home is the methods chapter
+as procedure and limitation, plus at most a paragraph in the discussion. It does **not** enter the
+findings, is **not** citable as a result about oversight in general, and the assistant is **not** an
+independent rater — its checks are correlated with the arbiter's by construction.

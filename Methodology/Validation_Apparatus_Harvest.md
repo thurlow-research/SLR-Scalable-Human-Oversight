@@ -227,6 +227,32 @@ pipelines, then read methods sections.
   only the artifact**. An apparatus that only measures code quality would have reported redundancy and
   missed that nobody noticed — which is the part that matters for oversight.
 
+### `A5WDGC7J` — Jin, Wang, Guo et al. (2026), *Are LLMs reliable code reviewers?* · **SLR: Core**
+- **Apparatus — the only entry where the validator is the thing being validated.** Every other entry
+  here builds an apparatus to judge *code*. This one builds an apparatus to judge **judges**: paired
+  datasets (a conformant program and a seeded-buggy variant of the same requirement), five LLM
+  reviewers (three closed, two open), verdicts forced into structured JSON (**verdict + rationale +
+  fix**), scored against ground-truth `bug_type` labels.
+- **What it treats as adequate validation of a reviewer:** not agreement rate — **two-sided error**.
+  FPR and FNR reported separately, because the two failures have opposite operational costs and an
+  aggregate accuracy figure hides which one you are buying.
+- **AI-as-checker:** yes, and that is the object of study rather than the method.
+- **Human position:** absent by design — no human arm. The paper measures what the machine reviewer
+  does **unsupervised**, which is what makes it usable as evidence about the unsupervised case.
+- **Escalation trigger:** the **Fix-guided Verification Filter** — when the judge returns NO *and*
+  proposes a fix, execute both the original and the fixed program against the benchmark tests **plus**
+  a GPT-4o-generated augmented set, and decide on four outcomes. **FPR 88.74% → 39.96%** (GPT-4o/MBPP).
+- **The transferable design lesson:** a rejecting reviewer can be **cheaply second-guessed by
+  execution**, because a NO verdict comes with a testable claim attached — the proposed fix. This is
+  differential evidence, not a second opinion, and it needs no additional model to adjudicate.
+- **The caution that comes with it (§120b):** the filter only runs where an executable test suite
+  already exists, and it leans on an LLM to generate the augmented tests. Released as a
+  **reproducibility artifact**, not as a deployable component — do not read it as a shipped tool.
+- **Why it matters to the harvest:** it supplies the failure mode the other entries assume away.
+  Apparatus built on AI-as-checker generally worries about **missed defects**; Jin shows the dominant
+  error can be the opposite — **rejecting correct work** — which no amount of adding reviewers fixes,
+  and which burns exactly the human attention that oversight is trying to conserve.
+
 ## Back-fill candidates from the Light Read band (at closeout)
 `72W6R4JG` Töpfer (FCL constraint verifier + bounded repair loop) · `TA6GIUK2` Zietsman (BDD vs AI
 review head-to-head) · `96XE669R` Zhong (VeriCode's 30 deterministic verifiers) · `VZ27QUPQ` Zhuo

@@ -889,6 +889,82 @@ human is **validity**. Reliability is *necessary but not sufficient* for validit
 be perfectly consistent and consistently wrong, which is exactly `WUUDHL8R` at 9/9. High κ therefore
 never licenses skipping the criterion.
 
+### 11.6b The arbiter does not tag directly — they tag THROUGH an assistant (recorded 2026-08-28)
+
+§11.6 describes one loop: **panel proposes → human validates.** In practice a **second loop runs the
+other direction**, and it was operating for the whole supervised pass without being written down.
+
+> **Arbiter's statement of it:** *"The tag taxonomy is large enough that the human struggles to keep it
+> all in their brain. Instead of tagging directly, the human is tagging **through** the AI to help
+> ensure consistency with all the tags. The AI references the taxonomy, advises on potentially missing
+> or incorrectly applied tags. The human adjudicates."*
+
+**The actual turn order, in the arbiter's words:** *"The reality is **human suggests, machine helps
+validate. Machine suggests more.**"* It is **one sequence, opened by the human** — not two loops:
+
+| Step | Actor | Act |
+|---|---|---|
+| 1 | **arbiter** | reads the paper, **suggests** tags |
+| 2 | assistant | **validates those** against the taxonomy — confirms or challenges each |
+| 3 | assistant | **suggests more** — tags the arbiter did not name |
+| 4 | **arbiter** | **adjudicates** everything on the table |
+
+The **panel** (§11.6) sits underneath as a separate, earlier layer: it runs offline, blind to the
+arbiter, and never sees what was concluded. **This** sequence is interactive and the correction travels
+**both ways** — step 2 critiques the arbiter's tags, step 3 extends them, and step 4 can overturn
+either.
+
+`A5WDGC7J` (§120) is a clean instance of the full sequence, including step 2 doing real work in the
+direction that matters: the assistant proposed `framework`, `built-system`, and `rules-based-checks`;
+the arbiter challenged all three; **two were overturned** and the survivor was re-grounded on better
+evidence than it had first been argued from. The arbiter's challenge also produced the §120c boundary
+ruling, which the assistant had argued *against*.
+
+**The constraint that forces it is capacity, not convenience.** The instrument is 44 slugs frozen / 50
+live, and §10.13's checklist requires **seven separate questions** on every paper. That is a recall
+task, and recall is the thing human working memory fails at first — the same premise §11.6 gives for
+the panel, applied to the arbiter's *own* pass rather than to the machine's.
+
+**Scope: the loop is coextensive with the supervised pass, not a subset of it.** The arbiter's
+clarification (2026-08-28): *"Even for the ones I tagged directly using the trigger action, we had you
+help with QA / sanity checking."* So the two modes are **not two populations of papers** — papers where
+the arbiter named tags first still received an assistant pass for omissions and misapplications. The
+difference between them is **who speaks first**, not whether the check happened.
+
+**Consequence: there is no unassisted arm in the supervised bands.** Any statement of the form *"the
+arbiter independently…"* is unsupported for Light Read, Full Read, and Accept. The figures below
+describe an **assisted arbiter throughout**, and that qualifier has to travel with them.
+
+**Open — the control band's status (resolve before §11.7 is written up).** The blind-first calibration
+band (n=20) is the control for anchoring, and it is documented as blind to **panel proposals**. Whether
+it was also **unassisted** is not recorded and is not inferable from the tag data. It matters: if that
+pass was assistant-mediated too, then the review has **no unassisted arm at all** and the 80.9% vs 8.0%
+comparison contrasts *blind-to-panel* against *panel-supervised*, both assisted — a narrower claim than
+§11.7 currently implies. **Arbiter to confirm from memory of that session.**
+
+**Why this belongs in the write-up: it changes what the origination statistic means.** A tag the
+arbiter reaches **in dialogue with the assistant** is written `cal:human:*`, and if the panel also
+proposed it, it counts as an **endorsement**. So the assistant-mediated contribution is **invisible in
+the layer statistics** — it is neither panel output nor unaided human origination, and it silently
+inflates the apparent independence of the endorsement figure (Light Read T1: **478 of 518 written tags
+= 92.3% endorsements**, against **3.5%** origination on vocabulary the panel could see). The honest
+claim is *"the arbiter, assisted, endorsed 92.3%"* — not *"the arbiter independently agreed with 92.3%."*
+
+**Three things this does NOT license:**
+- It is **not** a second independent rater. The assistant reads the arbiter's reasoning as it works, so
+  its checks are **correlated with** the arbiter's, not decorrelated from them. It cannot enter a κ.
+- It does **not** weaken the criterion. Every disposition still terminates in the arbiter, and the
+  §120c ruling — *"let's not change `built-system`"* — is the pattern: the assistant argued a change,
+  the arbiter declined, the instrument held.
+- It is **n=1 self-observation.** Under the §11.8 reflexivity guardrail its home is the **methods
+  chapter** (procedure + limitation) and at most a **worked illustration** in the discussion. It is
+  **not** corpus evidence and must not be cited as a finding about oversight in general.
+
+**What it is good for.** It is a concrete, lived answer to the question the review keeps putting to
+other people's systems: *where does the human actually sit when the vocabulary exceeds what they can
+hold?* Here the answer is **adjudication over machine-maintained recall, in both directions** — which
+is `hitl-workflow` over `ai-review`, self-applied. Cross-referenced in `Emerging_Themes.md`.
+
 ### 11.7 The anchoring limitation — real, measured, and narrower than expected
 Supervision creates an obvious risk: validation is **anchored by what gets proposed**. A tag no
 model offers is one the arbiter is less likely to add — automation bias in our own instrument.
