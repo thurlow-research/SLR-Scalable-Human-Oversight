@@ -153,6 +153,25 @@ pipelines, then read methods sections.
   entirely and puts a human with a checklist against the artifact. **Two papers, same year, opposite
   answers to who does the checking — and neither justifies its choice against the alternative.**
 
+### `399HN438` — Dutta, Sharma, Rajgor et al. (2025), *Turbocharging pull request reviews* (CodeEvaluator) · **SLR: Context**
+- **Structure — the harvest's first PARTITIONED apparatus.** Where other entries *layer* checks in
+  sequence, this one *divides* them by defect class: five agents run against the same diff —
+  **Code Review** (issues in the diff), **Bug Report**, **Code Smell**, **Code Optimization**
+  (reinforcement-learning based), **Security Vulnerability Detection**.
+- **AI-as-checker:** yes, throughout. No deterministic layer described.
+- **Human position:** terminal and unspecified. The paper notes *"the necessity for human oversight"*
+  and *"the extent of human oversight required"* as open challenges rather than describing where the
+  human sits. **The apparatus is fully specified; the human's role is not.**
+- **Escalation trigger:** none described.
+- **Coverage rationale:** the decomposition is itself the claim about adequacy — five defect classes
+  are treated as spanning what review must catch. **Nobody argues for the five, or for why five.**
+- **Domain:** general pull requests (`general-code`), not AI-generated code.
+- **Why it matters:** the clearest statement in the harvest of *coverage-by-partition* — an implicit
+  theory that adequate review means checking a defined set of defect classes. Contrast Adnyana's
+  ladder (`VG8PSMM7`, escalating rigour) and MAPTA's proof (`6NTZ85CW`, execution as ground truth).
+  **Three different implicit answers to "what makes a check adequate": more rungs, more classes, or
+  proof.**
+
 ## Back-fill candidates from the Light Read band (at closeout)
 `72W6R4JG` Töpfer (FCL constraint verifier + bounded repair loop) · `TA6GIUK2` Zietsman (BDD vs AI
 review head-to-head) · `96XE669R` Zhong (VeriCode's 30 deterministic verifiers) · `VZ27QUPQ` Zhuo

@@ -4640,3 +4640,44 @@ finding about the field's evidentiary habits rather than about oversight.
 **Harvest value:** a checklist built **because its authors judged existing assessment inadequate for
 LLM-generated code** is precisely *"what did they consider adequate validation"* — the harvest's
 premise. Recorded there rather than in Supporting.
+
+## 112. PARALLEL SPECIALISTS are not a panel either; and deferring Supporting against a known cluster (`399HN438`, 2026-08-27)
+
+Dutta, Sharma, Rajgor et al., *Turbocharging pull request reviews: exploring generative AI for code
+review* (2025). **Ruled Context** per **§92** — `general-code` 3/3, and CodeEvaluator is a review
+**tool** reporting *"early results"*, not a transferable oversight finding. Added to
+`04 - Validation Apparatus`. **Dissertation Supporting DEFERRED, not declined.**
+
+**(a) §110 REFINED — the test is the QUESTION, not the topology.** CodeEvaluator is a multi-agent
+framework with five agents: Code Review, Bug Report, Code Smell, Code Optimization (RL-based), and
+Security Vulnerability Detection. All five run against the **same diff**, which makes it look more
+panel-like than MAPTA's sequential Coordinator/Sandbox arrangement. **It is not a panel either.**
+
+> **Agents form a panel when they answer the SAME question independently** — redundancy bought for
+> decorrelated error. **They are specialists when they answer DIFFERENT questions**, however parallel
+> the execution. §110's test stands and sharpens: *removing an agent loses a **job** or loses a
+> **vote**?* Removing the Security agent here loses **security coverage**, not a vote.
+
+**Two flavours of specialisation now on record**, neither a panel: **by pipeline stage** (`6NTZ85CW`
+MAPTA — orchestrate, then execute) and **by defect class** (`399HN438` — five parallel hunters, one
+artifact). **Neither cross-checks.** Contrast `DJMBHHZN` (MOSAICO, §76), where supervision agents
+evaluate the *same* proposals and a consensus agent adjudicates.
+
+**(b) SUPPORTING DEFERRED — applying §109a prospectively.** The plausible named use is structuring a
+survey question about *what AI review tools actually check for*, and the defect-class decomposition
+serves that. **But four stronger candidates for the same use remain unread in this band:** `V4IRKSFI`
+(Sun, *BitsAI-CR* — automated code review **in practice**, i.e. production), `5RKMGRNA` (Nimraka),
+`DJHG9BBS` (Rasheed), and `A5WDGC7J` (Jin — LLM reviewer **reliability**). Dutta is 3,231 words of
+early results.
+
+> **§109a extended: a named use is not enough if a better source for that same use is known to be
+> coming.** Admitting the weakest member of a cluster first means admitting the rest for parity — the
+> failure mode the criterion exists to prevent. **Defer, do not decline**; the paper is in the harvest
+> regardless, so nothing is lost if the stronger candidates disappoint.
+
+**Revisit condition:** if none of the four delivers a usable decomposition of AI-review coverage,
+Dutta returns to Supporting.
+
+**Not resolved (§42 short-circuit):** `method-self-report` 3/3 is questionable on a 3,231-word paper
+reporting early results — no instrument is described. Left unadjudicated; noted in case the closeout
+facet sweep reaches Context papers.
