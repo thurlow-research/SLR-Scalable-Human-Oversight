@@ -4308,3 +4308,56 @@ artifact exists. **Watch for this in the remaining industrial case studies.**
 **(f) `adopted` is an evidence rung, not a relevance criterion.** It is genuinely scarce — 5 of 128,
 and the three previously adjudicated are all Core — but it describes **maturity**, not what a paper
 tells us. A production deployment with nothing to say about oversight is still Context.
+
+## 107. §52's FIRST CLEAN POSITIVE under the leakage test (`JQPPKSFQ`, 2026-08-27)
+
+Branco, Canelas, Gamboa & Fonseca, *LGTM! Characteristics of Auto-Merged LLM-based Agentic PRs*
+(2026). **Core.** Primary `oversight-scaling-inversion`; `agentic`, `method-mining`,
+`problem-statement-anchor`.
+
+**(a) The theme's first positive after four consecutive rejections** (Xu §83, Yang §86, Zhou §96b,
+Zietsman §99d). §88's leakage test is satisfied in the abstract's opening sentence:
+
+> *"AI tools are generating code **faster than humans can properly review it**, leading repositories to
+> **skip review and auto-merge** agentic Pull Requests directly."*
+
+Volume exceeds capacity · review is skipped · **code merges anyway**. It is also the canonical case
+§52's own definition names — *"PRs auto-merged unreviewed."* **After the run of rejections this matters
+for the write-up: the tag is narrow, not empty.**
+
+**(b) `problem-statement-anchor` APPLIED (opus 1/3, rescued) — and it is the corpus's best instance.**
+A **primary** mining study quantifying unreviewed auto-merge across ~33k PRs, anchoring the *overall*
+two-part frame rather than a sub-argument. Contrast the two near-misses: Watson's 20–30% figure was
+refused as **secondhand** on a lit-review (§82g), and Zhao's 61%/10.5% was flagged only as a fallback
+candidate (§93). **This one is first-hand, corpus-scale, and directly about the inversion.**
+
+**(c) NOT applied — `ai-review` (0/3).** Proposed by the arbiter, declined on inspection: **the paper is
+about review being *absent*.** Auto-merge is the *skipping* of review, not a machine performing it.
+Nothing in it has AI judging an artifact.
+
+**(d) NOT applied — `intro-framing` (0/3).** The arbiter raised it as the way to capture "gives us
+stats," then identified `problem-statement-anchor` as what he actually meant. §99c settles it: **the
+test is whether the evidence *is* the contribution.** Here it is — a mining study. Same ruling as Xu
+(§83); opposite to Zietsman (§99c), where the argument was the contribution.
+
+**(e) NEW DISCRIMINATOR — describing who routes ≠ contributing a routing signal.** `risk-routing`
+(codex 1/3) declined on the arbiter's test: *"Just discussion of who enables and doesn't. Nothing
+saying in repo X review is required under conditions Y."*
+
+> **Observed variation in who gates is a *finding about practice*. `risk-routing` requires a
+> contributed rule or signal** — a stated condition under which review is required. Sits alongside
+> §86's rate-limiting distinction: **throttling isn't routing, and neither is describing other
+> people's routing.**
+
+**(f) `survey-input` DECLINED by the arbiter — and a definitional risk flagged.** The stated ground was
+*"There was no survey. They mined repos."* The facet, however, is **not** about the paper's method:
+
+> *"`method-self-report` ≠ `survey-input` (method vs the finding's **utility to the org survey** — **a
+> mined study can be survey-input**)."*
+
+`method-self-report` correctly does not apply here — the arbiter's second point is right on that tag.
+**But the two facets are being run together, and the risk is systematic under-application.** Corpus
+state at this ruling: `survey-input` is **panel-modal on 17 papers**, arbiter-endorsed on **8**, with
+**7 overlapping** — i.e. **10 modal proposals stand on silence** and could be affected by the same
+reading. **CLOSEOUT ACTION: re-check `survey-input` across the corpus against the utility-to-our-survey
+definition, not the did-they-survey one.** Not written here (1/3, non-modal — it falls out regardless).

@@ -1816,3 +1816,51 @@ enterprise's security guardrails]"*, and the paper names the general propensity:
 plausible but **architecturally flawed** code."* That is Zhao's tests-pass/security-fails gap (§93)
 **one level up** — syntax passes, **compliance and architecture** fail — and what caught it was human
 architectural judgement, not any automated check. Cite for the failure mode, not for the effect sizes.
+
+## THE INVERSION IS BIMODAL — two studies, one population, opposite tails (`JQPPKSFQ` + `NZJST99D`, 2026-08-27)
+
+**The most consequential pairing in the corpus so far**, because it changes the question the
+dissertation should be asking.
+
+| | Paper | Tail studied | Outcome |
+|---|---|---|---|
+| `JQPPKSFQ` | Branco et al., *LGTM!* | **auto-merged** agentic PRs | **fail-OPEN** — review skipped, code ships |
+| `NZJST99D` | Ehsani et al., *Where Do AI Coding Agents Fail?* | **not-merged** agentic PRs | **fail-CLOSED** — PRs abandoned, throughput collapses |
+
+**Same population (AIDev, ~33k agent-authored PRs), opposite halves of the distribution.** §52's
+definition already cited `NZJST99D` as the fail-closed exemplar; Branco supplies the fail-open half.
+
+**And Branco reports the distribution is bimodal, with a discriminator:**
+
+> *"agentic PR acceptance is **bimodally distributed**, typically either fully accepted or rejected.
+> Auto-merged agentic PRs are notably smaller and more focused, and **less common in more mature,
+> well-governed projects**."*
+
+Repositories *"tend to either auto-merge all or none"* — and **governance maturity predicts which.**
+
+### Why this reframes the research question
+
+The review has been implicitly asking *"does the oversight inversion happen?"* — and the tagging pass
+kept answering *"not in this paper"* (four consecutive §88 rejections). **The bimodality explains why
+both answers kept appearing: the inversion is real, and it is not universal.** It is a property of
+**ungoverned repositories**, not of agentic coding as such.
+
+> **The right question is not *whether* the inversion happens but *in which organisations*, and what
+> distinguishes them.** That is an empirical question about org characteristics — precisely what a
+> survey can answer and a code audit cannot.
+
+**Two further findings worth carrying:**
+- **Maintainers auto-merge agentic PRs *more* often than human-authored ones** — AI code receiving
+  *less* scrutiny than human code, stated as a measured differential rather than an inference.
+- **They show caution toward PRs that delete existing code.** A risk signal operating in the wild:
+  deletion triggers scrutiny where addition does not. Not a contributed mechanism (§107e), but a
+  revealed heuristic, and a good survey probe.
+
+**Survey implications.** Ask for the *shape*, not the average: **is auto-merge all-or-nothing in your
+org, or conditional?** If bimodality holds outside OSS, the interesting variable is what moves a team
+from one mode to the other — and Branco's answer, governance maturity, is testable.
+
+**Caveat.** Both papers are OSS repository mining. Whether the bimodality survives in commercial
+settings — where maintainers are employees and cannot simply abandon a PR — is **untested**, and the
+asymmetry noted at §86 (OSS maintainers can refuse; employed reviewers often cannot) suggests it may
+not transfer cleanly.
