@@ -4876,10 +4876,15 @@ redundant with `method-self-report`:
 | `survey-input` only | **5** — Chang, Gao, Ghammam, Li, Yang |
 | `method-self-report` only | 15 |
 
-**Not redundant.** Under the narrow reading the facet becomes a **utility filter on self-report
-papers** — 12 of 27 — marking *papers whose survey instruments we can learn from*. That is a small,
-concrete, actionable set. The broad reading would fire on almost any organisational-practice paper,
-which is the §87 discriminating-power problem.
+**Not redundant — and the overlap figure above OVERSTATES the qualifying set.** Corrected after the
+arbiter pushed back on the framing: *"self report is NOT a survey."* The definition is
+**`method-self-report` — *(humans tell you: questionnaires, interviews, focus groups, diaries)***.
+
+> **Self-report is the genus; a survey is one species.** Interviews, focus groups and diaries are
+> self-report and are **not** surveys. So `survey-input` under the narrow reading is a subset of the
+> *questionnaire-using* subset of self-report papers — **smaller and more discriminating** than the
+> 12-paper overlap suggests. The broad reading would fire on almost any organisational-practice paper,
+> which is the §87 discriminating-power problem.
 
 > **NARROWED (binding): `survey-input` requires the paper to have collected practitioner input directly
 > — survey, Likert instrument, structured questionnaire — AND for that instrument or its findings to be
@@ -4890,8 +4895,17 @@ which is the §87 discriminating-power problem.
 and Gao and Yang are already Dissertation Primary. **Cheatsheet text is now wrong and must be corrected
 at the next versioned cut (§41 — not edited now).**
 
-**CLOSEOUT ACTIONS:** (1) remove `survey-input` from the 5 mined studies; (2) re-check the 12 overlap
-papers — do they genuinely offer instrument value, or merely carry self-report evidence?
+**CLOSEOUT ACTION — narrowed after the arbiter confirmed he has been applying this lens throughout:**
+*"I've been reviewing the papers and enforcing that lens. I will continue to."*
+
+**The arbiter's `cal:human:facet:survey-input` endorsements are therefore authoritative and need no
+re-check.** The exposure is confined to papers where the facet is **panel-modal and the arbiter was
+silent** — where the models applied the broad written reading and nothing overrode it. At the time of
+this ruling: **17 panel-modal, 8 arbiter-endorsed, 7 overlapping ⇒ ~10 modal proposals standing on
+silence.**
+
+> **Closeout: for each modal-on-silence instance, confirm the paper administered a questionnaire or
+> survey. Remove where it did not.** Endorsed instances stand as-is.
 
 ### 116b. THEATRE, not inversion — the ritual is present but hollow
 
