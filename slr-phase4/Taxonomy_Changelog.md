@@ -5592,3 +5592,106 @@ AIDev is **mined repository data**; there is no instrument at all. Under §121b'
 nothing is *elicited* — no participant states a preference. This is the Ghammam pattern (§116a) that
 prompted the original narrowing, recurring on the source dataset itself. Rejected explicitly rather
 than left silent, since at 2/3 it is modal and would otherwise stand into `final:*`.
+
+## 124. Shift-Up — a 3/3 primary moved on altitude; and the `evaluated-*` ladder has a HOLE (`7SH86C2W`, 2026-08-28)
+
+**Paper:** Lipsanen et al., *Shift-Up: a framework for software engineering guardrails in AI-native
+software development — initial findings*, arXiv (2026-04-22). DSR; reinterprets BDD, C4 and ADRs as
+guardrails for agent-driven development.
+**Written:** primary **`hitl-workflow`**; `rules-based-checks`, `agent-scope-drift`,
+`provenance-auditability`; facets `framework`, `built-system`, `agentic`, `steering`, `risk-quality`.
+**Rejected:** `method-experiment` (2/3), `method-self-report` (2/3), `counterpoint` (2/3).
+**SLR: Core · Dissertation: Supporting.**
+
+### 124a. PRIMARY moved from `rules-based-checks` (3/3) to `hitl-workflow` (2/3) — altitude, not evidence
+
+The arbiter's challenge: *"rules based seems suspicious to me."* Checked, and the mechanism **is**
+genuinely there — this is not steering wearing a checking costume:
+
+> *"each user story was decomposed into **executable acceptance tests in Robot Framework 7 format**"* ·
+> prompt: *"constraint (**test id's that must pass** for issue [closure])"* ·
+> *"this cycle **repeats until all constrained acceptance** [tests pass]"*
+
+So `rules-based-checks` is correctly applied — but it is **not the primary**. The tie-breaker governs:
+*primary = the theme carrying its **distinctive novelty**, not the standard scaffolding.* An acceptance-
+test loop gating a build is ordinary TDD/CI, merely pointed at an agent. The distinctive claim is:
+
+> *"**verification [is] delegated to GenAI tools, allowing human developers to focus on the higher
+> layers of the V-Model.** At the top-left, [developers] engage in acceptance testing, deployment
+> oversight, and operational feedback. The objective of Shift-Up is thus to **free developers**…"*
+
+**That is what the title means — *shift-up* = move the HUMAN up the V-model**, delegating implementation
+*and* verification downward. A claim about **where the human sits** is `hitl-workflow`.
+
+**Arbiter's statement of the ruling, which is the general form:** *"The gist of the paper is about how
+human and machine work; rules are part of it, not the core."*
+
+**Third consecutive paper where the panel anchored on visible machinery over framing** (§121d scope
+miss, §123a volume-over-leakage, this). The pattern for the closeout: **panels read mechanisms well
+and altitude poorly** — check every 3/3 primary against the tie-breaker before `final:*`.
+
+### 124b. `steering` + `rules-based-checks` co-hold — dual-purpose artifacts, and NOT a demote trigger
+
+The artifacts are explicitly both: *"not as documentation, but as **machine-readable, persistent
+contextual constraints**"* (fed to the agent → `steering`) **and** executed as gates
+(→ `rules-based-checks`). Recorded because `steering` at 3/3 could otherwise trip the demote menu's
+**steering-only** clause. It is not steering-only; there is a real verification arm.
+
+### 124c. BOTH method facets REJECTED — §98 world-or-tool, with the authors as subjects
+
+> *"The methodology is then compared to a purely prompt-driven approach. **The authors worked as** [the
+> developers]"* · *"**The authors** … re-familiarized themselves with, analyzed, and **categorized their
+> own prompts**. Subsequently, the authors **cross-validated each** [other]"*
+
+No external subjects; nothing characterises the world. Per §98 this is `built-system` evaluation and
+**earns no method facet**. Authors categorising their own prompts is artifact analysis, not
+`method-self-report` (which requires humans-as-subjects telling you something).
+
+**Consequence — the honest evidence grade.** The paper produces **no empirical evidence about the
+world**: n=1, self-built case, self-assessed, explicitly *"initial findings"* and *"intentionally"*
+exploratory. That is why **Dissertation Supporting, not Primary** — the ideas are citable, the findings
+cannot be leaned on.
+
+### 124d. GAP FOUND — the `evaluated-*` ladder cannot describe this evaluation
+
+Checked against every post-freeze slug; **none apply**. `cross-model` fails though two models are used
+(*"GPT-5.0-Codex agent"*; *"Claude Sonnet 4.5"*) because they do **different jobs** — task allocation,
+not mutual checking (the Karakaya rule). `agent-panel`, `evaluator-reliability`, `scaling-dissent`: no.
+
+And **no rung of the `evaluated-*` ladder fits**: not a benchmark, not synthetic, not real-world data.
+The evidence is *"a **qualitative evaluation** of the approaches according to 5 different categories:
+upfront investment, human control, structured constraints, development speed, and guardrails"* — the
+proposers judging their own artifact on a case they built.
+
+**`built-system` says the thing exists; nothing says the only evidence is its authors' own qualitative
+judgement.** That is the weakest evidence rung there is, it is common in this literature, and a review
+about **oversight evidence quality** should be able to state it. **Candidate for the F2 cut:
+`evaluated-self-demo`** (or similar). Not coined here — same reasoning as §122f: a slug's first
+instance sets its definition and should not be established in passing.
+
+### 124e. Dissertation named uses (§109a)
+
+1. **The SE-discipline-for-agentic thread.** Pairs with Ji's shift-left (§119d): ***shift-up*** raises
+   the human's altitude, ***shift-left*** moves the check earlier — the same gate-placement spectrum on
+   **orthogonal axes**. Logged in `Emerging_Themes.md`.
+2. **The prompt taxonomy** as question-seed material for the org survey. **NOT `survey-input`** — see
+   §124f.
+3. **The constructive answer to Jin (§120a).** Jin shows LLM *conformance* review fails badly (FPR to
+   88.74%) **even when handed a spec**. Shift-Up makes the spec **executable**, so conformance becomes
+   deterministic and needs no LLM judge at all. **Jin diagnoses; Shift-Up sidesteps.** Neither cites
+   the other; the pairing is ours.
+
+### 124f. §121b, third formulation — "it will yield survey questions" is not a criterion
+
+The arbiter, on his own stated use of the prompt taxonomy: *"**May yield questions is different than
+they did a survey.** May yield questions may come from mining or other sources."*
+
+The cleanest statement yet of why the facet cannot be utility-based: **question-seeding is
+unconstrained by source** — mined studies, experiments and position papers can all yield survey items,
+so the property fails to discriminate at all. The three-part rule now reads:
+
+| | requirement |
+|---|---|
+| §116a | an actual **survey instrument** must exist (not mined data) |
+| §121b | it must **elicit stated preferences** (not measure a construct) |
+| **§124f** | **"it yields questions for our survey" is not a criterion** — that is dissertation utility, recorded in the named-use list |
