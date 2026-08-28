@@ -1940,3 +1940,53 @@ automation-bias paper**, which is the discriminating-power collapse §87 exists 
   will not know, and **not knowing is itself the finding**.
 - *Is there anything in your process that deliberately interrupts a reviewer's flow to force
   re-engagement — batch size limits, mandatory breaks, forced justification?*
+
+## MISALLOCATION, NOT OVERLOAD — the norm inversion (`59KP8GTP`, 2026-08-27)
+
+A **sixth** mechanism, and the first where reviewers are **present, responsive, and pointed the wrong
+way**.
+
+**The finding.** Gao et al. expand the AIDev dataset with contributor code-ownership data and a
+human-authored baseline:
+
+> *"In contrast to human-created PRs where **non-owner developers receive the most feedback**,
+> AI-co-authored PRs from non-owners receive the **least**, with approximately **80% merged without any
+> explicit review**."*
+
+Plus: **67.5%** of AI-co-authored PRs come from contributors with **no prior code ownership**, and
+**86.9%** of repositories have **no AI-agent guidelines at all**.
+
+### Why this is not the capacity inversion
+
+| | Reviewers | Failure |
+|---|---|---|
+| **Capacity inversion** (Branco §107) | overwhelmed, absent | volume exceeds review capacity |
+| **Misallocation** (Gao) | **present and responding** | attention aimed **away** from the higher-risk population |
+
+Branco's repositories skip review because they cannot keep up. Gao's reviewers **are** reviewing — they
+are simply giving least scrutiny to newcomers using AI, which is **the reversal of a long-standing OSS
+norm**. Onboarding scrutiny for unfamiliar contributors is one of the few oversight practices open
+source reliably does well, and AI co-authorship appears to switch it off.
+
+**Why it might happen** (untested, and worth stating as hypotheses rather than conclusions):
+- **Attribution laundering** — an AI co-author reads as a competence signal, so the human contributor is
+  treated as vouched-for.
+- **Diffusion of responsibility** — nobody owns a review of code nobody wrote.
+- **Surface plausibility** — AI-generated PRs *look* more polished (cf. Wang's *"approve based on
+  vibes"*, §80), and polish substitutes for provenance.
+
+### Why it matters more than the headline number
+
+The 80% figure is a capacity story anyone would predict. **The inversion is not predictable and runs
+against the field's own norms** — which makes it the more interesting finding, and one an organisation
+would never detect from inside, because every individual review decision looks locally reasonable.
+
+**Connects to:** §106's second independence axis — a newcomer's AI-co-authored PR has *neither*
+independence (the AI generated it, the newcomer prompted it, and no owner reviews it). This is the
+weakest configuration in the corpus, and it is the **most common** one at 67.5%.
+
+**Survey hooks:**
+- *Do contributions involving AI receive more, less, or the same review as comparable contributions
+  without it? How would you know?*
+- *Does your onboarding scrutiny for unfamiliar contributors change when the contribution is
+  AI-assisted?*

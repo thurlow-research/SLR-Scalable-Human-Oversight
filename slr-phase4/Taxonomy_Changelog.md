@@ -4737,3 +4737,55 @@ something is not contributing a detection mechanism.*
 humans — is real but comparative. **The confidence-trap finding is the one that changes an argument:**
 it is the corpus's only empirical demonstration that the signal an organisation would reach for first
 is unusable.
+
+## 114. Second clean §88 positive, and a NORM inversion distinct from the capacity one (`59KP8GTP`, 2026-08-27)
+
+Gao, Banyongrakkul, Guan, Zahedi & Treude, *On Autopilot? An Empirical Study of Human-AI Teaming and
+Review Practices in Open Source* (arXiv 2026-01). **Core + Dissertation Primary.** Primary
+`oversight-scaling-inversion` (3/3); `org-governance` (3/3); `problem-statement-anchor` (3/3),
+`agentic`, `method-mining` (3/3). Method verified as pure mining — the only occurrence of *"survey"* in
+the paper is inside a **reference title**; no questionnaire, interviews or participants.
+
+**(a) §88 satisfied — second clean positive after `JQPPKSFQ`.** *"approximately **80% merged without any
+explicit review**."* This states review *absence* directly, where Branco's evidence was auto-merge
+configuration. **The theme now has two anchors and six rejections**, which is the shape §87 predicted
+for a narrow tag.
+
+**(b) THE FINDING WORTH LEADING WITH — a norm inversion, not a capacity failure.**
+
+> *"In contrast to human-created PRs where **non-owner developers receive the most feedback**,
+> AI-co-authored PRs from non-owners receive the **least**."*
+
+**The OSS norm — scrutinise contributions from people who do not know the codebase — reverses when AI
+is involved.** Newcomers *with* AI receive less scrutiny than newcomers *without*, measured against a
+human baseline **in the same dataset**. With **67.5% of AI-co-authored PRs originating from
+contributors with no prior code ownership**, the population receiving least scrutiny is precisely the
+one that historically received most.
+
+**This is a distinct mechanism from the capacity inversion.** Branco's repositories skip review because
+volume exceeds capacity; here reviewers are *present and responding*, but allocate attention **away**
+from the higher-risk population. **Not overload — misallocation**, and it runs against an established
+social norm rather than against a resource limit. Recorded in `Emerging_Themes.md`.
+
+**(c) `problem-statement-anchor` 3/3 — and possibly the better of the two.** Both this and `JQPPKSFQ`
+are first-hand and corpus-scale, but *"80% merged without any explicit review"* states the inversion
+more directly than auto-merge rates. **Closeout action: choose ONE to anchor the frame** — the facet is
+for *the* stat that anchors the overall problem statement, and two papers doing that job dilutes it.
+
+**(d) The governance number answers the dissertation's question directly.** *"the majority of
+repositories lack guidelines for AI-coding agent usage"* — **86.9% have none.** With Yang's 12
+governance strategies (§86), this gives both the **prevalence** and the **content** of AI governance in
+OSS. Basis for Dissertation Primary rather than the Supporting placement first proposed.
+
+**(e) Declined:** `provenance-auditability` (codex 1/3 — disclosure rules leaving traces is incidental),
+`steering` (1/3).
+
+**(f) `survey-input` (3/3) HELD, not written — pending a definitional ruling.** See §107f: the facet is
+*"the finding's **utility to the org survey**"*, and *"a mined study can be `survey-input`"*. The
+arbiter has now twice declined it on the ground that the paper did not survey anyone — which is the
+`method-self-report` test, not this one. **Corpus exposure: panel-modal on 17 papers, arbiter-endorsed
+on 8, so ten modal proposals stand on silence.** A ruling here settles it corpus-wide rather than
+paper by paper.
+
+**Open housekeeping:** `JQPPKSFQ` (Branco) was never placed in a dissertation collection despite its
+bimodality finding being Primary-grade. Revisit alongside the anchor decision.
