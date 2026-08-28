@@ -93,6 +93,29 @@ The panel's tier judgement is weak (see C3), and these are the least-corroborate
 `BAWCBT9R` (2/3, demoted) is corroborated twice over — **leave it**. `M74M3RFJ` and `2CKL96B8` have
 panel agreement; `VG6CIDQW` at 1/3 is noise.
 
+### B7. Four Accept-band papers are PARTIALLY tagged — not adjudicated
+Discovered 2026-08-28 while checking the band roster. They sit out of alphabetical order with 1–5
+human tags each, **no primary theme**, and **19 of 22 modal proposals silent** — the shape of a
+targeted earlier write, not an Accept-band pass:
+
+| Paper | key | human tags | silent modals |
+|---|---|---|---|
+| McAleese, *LLM Critics Help Catch LLM Bugs* | `NRVQT89E` | 2 | 5 |
+| Shi, *Towards a HITL framework…* | `MFSZPSPU` | 1 | 5 |
+| Ullah, *Vibe coding on trial…* | `A6ZE2A26` | 1 | 5 |
+| Wang (Junpeng), *Illuminating LLM coding agents* | `I6FZ5GD2` | 5 | 4 |
+
+**They need a real pass**, and they are not in the alphabetical queue because they already look
+"started." **McAleese is the notable one** — it already anchors a methodology ruling (§NRVQT89E is
+cited in the method-field-study boundary work), so it is carrying weight it has not been adjudicated
+for.
+
+**Consequence for C4 — scope the silence reclassification.** Silence means *"lightly scanned, nothing
+to discuss"* **only where a pass actually happened**. On these four, silence is genuine **absence**.
+Applying the reclassification blanket would convert 19 un-examined modal proposals into weak
+endorsements and inflate the panel's apparent precision. **C4 applies to Light Read (and any band
+with a completed pass), not to partially-tagged papers.**
+
 ### B6. Model `demote:context` flags have no home in Zotero
 5 records across `BAWCBT9R` and `UW2R6BBJ` (and any others surfaced by A1). The `cal:` namespace has
 **no flag form** — Light Read encodes only `primary`/`theme`/`facet`. Either define a form
@@ -269,11 +292,28 @@ Running v1 and v2 of the inversion makes the reclassification delta a **reportab
 how far definitional wording drives tagger behaviour.
 
 ### F3. Materialise Phase 6
-The surviving set. **Predicate: reviewed AND not demoted** — `cal:human:*` present **and** no
-`demote:context`. *"Absent = surviving" alone is wrong* — it sweeps in unreviewed papers.
+The surviving set. **Predicate: `cal:human:primary:theme:*` present AND no `demote:context`.**
 
-Projected as of 2026-08-28: **149 unique papers in tagging review · 127 reviewed · 64 surviving ·
-63 demoted · 22 remaining.** At Accept's current 32% demote rate, Phase 6 lands near **79**.
+**Use the PRIMARY, not "any `cal:human` tag."** Two weaker predicates are both wrong:
+- *"absent `demote:context` = surviving"* — sweeps in the 22 papers never looked at.
+- *"any `cal:human` tag = reviewed"* — sweeps in **partially-tagged** papers (see B7). A targeted
+  earlier write (one `evaluated-*` facet, say) leaves a human tag behind without an adjudication.
+
+**Every properly adjudicated paper carries a primary theme**; partial writes do not. That is the only
+reliable completeness signal in the data.
+
+**Corrected projection, 2026-08-28** — supersedes an earlier 149/64/63 count that used the loose
+predicate *and* pulled Otten (`ZUM76CCG`) in through the mis-scoped `46QVUN7N` (A3):
+
+| | n |
+|---|---|
+| unique papers in tagging review | **148** |
+| **surviving** (primary, not demoted) | **60** |
+| demoted | 62 |
+| **partial** (human tags, no primary) | **4** |
+| untouched | 22 |
+
+At Accept's current demote rate, Phase 6 lands near **75–80**.
 
 ### F4. HOS audit → survey question bank
 `Methodology/Survey_Instrument_Design.md`. Mine `~/Code/Thurlow-Research/HumanOversightSystem/Human`
