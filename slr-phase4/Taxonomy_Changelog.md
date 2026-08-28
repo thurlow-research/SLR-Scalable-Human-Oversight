@@ -4980,9 +4980,29 @@ six months of pre-adoption history, plus panel GMM: **3–5× velocity increase 
 dissipate after two months**, while warnings and complexity persist and *"subsequently dampen future
 development velocity"* — a **self-reinforcing cycle**.
 
-**(d) `oversight-scaling-inversion` REJECTED — eighth.** The mechanism is **debt drag**, not review
-failure. *"Teams should treat AI code as requiring extra scrutiny"* implies they do not, but that is
-inference; §88 requires the escape to be demonstrated.
+**(d) `oversight-scaling-inversion` APPLIED — reversing the assistant's rejection, and §88 gains a
+second satisfaction route.** The assistant first rejected it, reading the mechanism as **debt drag**
+rather than review failure. The arbiter overruled. **The reversal is right:**
+
+> §88 was being read as requiring **observed review absence** (Branco's auto-merge, Gao's 80%
+> unreviewed). But this study measures **repository state** by difference-in-differences — warnings
+> **+30%** and complexity **+41%** *persist post-adoption*, which means those defects are **in merged
+> code**. And the paper names the cause: *"developers heavily vibe-coding and **not rigorously
+> reviewing AI-generated code**."*
+
+> **§88 REFINED — two routes to leakage:**
+> **(i) observed absence** — review demonstrably skipped (`JQPPKSFQ`, `59KP8GTP`);
+> **(ii) demonstrated outcome** — defects measurably present in **merged** code, with review failure as
+> the stated or evident cause. **Defects in shipped code are an escape, whether or not the gate was
+> watched.**
+
+**Consistency flag — `SHK6KAX6` (Ghammam, §116b) sits closer to the line now.** It was rejected as the
+seventh because it never links its 364 build smells to its 61.4% merge rate. **The distinction that
+holds:** He measures the **repository** (merged by construction), whereas Ghammam measures **PRs** and
+merge rates as separate quantities. That distinction is real but fine, and **Ghammam should be
+revisited at closeout** alongside the other inversion re-checks (§87). Route (ii) must not be allowed
+to swallow every quality-measurement paper — **the defects must be in code that shipped, not in
+candidates that were assessed** (which is what keeps `4PSM6ZCD` Zhao, a benchmark, correctly out).
 
 **(e) Mode calibration — third instance.** `agentic` 3/3, `assistive` 0/3, against an arbiter reading of
 *"assistive scenarios."* The paper argues the distinction itself: *"LLM agent assistants like Cursor,
@@ -4992,3 +5012,12 @@ navigating files, proposing multi-file refactorings**."*
 > **Calibration, now three instances deep** (`T2EG4BE2` §81, `5BAZZWHG` §108b, here): **IDE integration
 > does not make a tool assistive — the reviewable unit does.** Cursor proposes multi-file refactorings;
 > that is artifact granularity.
+
+### 117f. `oversight-explanation` DECLINED on `REZGA5WF`
+Arbiter: *"explanation no."* The assistant had floated it as a cold rescue (0/3) on §108's absence
+rule, since the paper documents comprehensibility degrading **and** argues for what should exist
+(readability-aware fine-tuning, post-hoc simplification passes). **Declined.** The comprehension tax is
+carried by `risk-quality`, whose definition already covers *"code comprehensibility — explainability of
+the code"*, and the paper proposes **no explanation mechanism** — it recommends the code be *simpler*,
+not that it be *explained*. **Discriminator: making an artifact easier to understand is a quality
+intervention; making its behaviour legible to a reviewer is `oversight-explanation`.**
