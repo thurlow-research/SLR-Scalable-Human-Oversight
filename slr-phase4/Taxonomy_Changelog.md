@@ -4432,6 +4432,42 @@ System 1 → System 2 interrupt.** The paper names the direction and operational
 this an identified-but-unfilled opening rather than a gap the dissertation would have to argue into
 existence.
 
-**Method facets both 3/3 and unaddressed by the arbiter; they stand on modality.** The §57 two-event
-question was raised and not ruled — a formative study with tasks plus think-aloud plausibly has two
-genuine measurement events, but it is the `8MXATG38` shape. **Flagged, not resolved.**
+### 108c. §57 RESOLVED — a self-report instrument inside a controlled task is not a second method
+
+The two-event question was raised, then settled by the arbiter: *"There was one [survey], but it wasn't
+the core (the experiments with users coding was), just a **data collection mechanism**."*
+
+> **A self-report instrument used to measure *within* a controlled task is the INSTRUMENT, not a second
+> evidence event.** One event → one method classification (§34, §57).
+
+**`method-experiment` kept; `method-self-report` REJECTED at 3/3** (modal, so an explicit reject was
+required). Same shape as the `8MXATG38` failure the rule was written for.
+
+**Fourth application of one principle**, now spanning the taxonomy: §57 logs-as-instrument · §84
+`metrics` offered-for-reuse · §104 apparatus-is-not-contribution · **§108c self-report-as-instrument**.
+*What a paper uses to measure is not what a paper contributes or how it measured.*
+
+### 108d. `oversight-scaling-inversion` DECLINED — the mechanism is not the consequence
+
+The arbiter proposed it, reasoning that inversion *"is a consequence of humans tuning out in later
+cycles, as described in the paper"*, then agreed on inspection: *"inversion is a stretch in this case."*
+
+**The study has no review step.** Four participants, one code-generation task each, engagement measured
+by self-report; **nothing is merged, shipped or gated, so no defect can escape a review that should
+have caught it.** §88 unsatisfied; §83's rule applies — *a paper that does not study inspection
+coverage cannot supply affirmative evidence of fail-open, however strongly its other findings rhyme
+with the mechanism.*
+
+> **A mechanism that could produce leakage is not leakage.** If *"this could lead to leakage"* fired the
+> tag it would fire on **every** automation-bias paper — Tilbury, Zhou & Zhao, Parasuraman — which is
+> exactly the discriminating-power collapse §87 exists to prevent.
+
+The causal chain is preserved as a **stated hypothesis** in `Emerging_Themes.md`, with only its first
+link demonstrated.
+
+### 108e. Evidence-grade correction, self-recorded
+The assistant initially presented engagement decay as "the fifth mechanism" alongside Xu's DiD and
+Branco's 33k-PR mining study. **That over-weighted an N=4 formative study with self-reported outcomes.**
+The `Emerging_Themes.md` entry now carries an explicit evidence-grade caveat: **Parasuraman carries the
+theoretical weight; Catalan is the domain probe.** Recorded because the error was in the direction of
+enthusiasm for a striking finding, which is the direction worth guarding against.

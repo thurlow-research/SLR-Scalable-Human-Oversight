@@ -1870,6 +1870,13 @@ not transfer cleanly.
 **The fifth distinct mechanism by which oversight fails, and the only one that is temporal and
 intra-session.** Core + Dissertation Primary.
 
+> **EVIDENCE GRADE — hypothesis, not established.** `5BAZZWHG` is a **formative study with four
+> participants**, one code-generation task each, engagement measured by **self-report** plus think-aloud.
+> That is a *suggestive probe*, not a demonstration. **The theoretical weight is carried by
+> `ING3D89M` (Parasuraman & Manzey) and the wider vigilance-decrement literature; Catalan is the
+> software-engineering instance pointing the same way.** Do not cite the N=4 study for the mechanism —
+> cite it for *domain* relevance and cite Parasuraman for the effect. **Promote on replication at scale.**
+
 **The finding.** A formative study of software engineers working with an agentic coding assistant:
 
 > *"**cognitive engagement consistently declines as tasks progress**, and current ACA designs provide
@@ -1913,6 +1920,20 @@ The paper names **cognitive-forcing mechanisms** as the design response and oper
 the arbiter independently arrived at the same question (System 1 vs System 2 triggers, alternate checks
 and balances, effective escalation). **That is an identified-but-unfilled opening**, not a gap needing
 to be argued into existence.
+
+### The arbiter's causal chain — stated as a hypothesis, only the first link demonstrated
+
+> **engagement decays → attention lapses → defects pass unreviewed → the inversion**
+
+Arbiter: *"it is a consequence of humans tuning out in later cycles, as described in the paper."*
+**Plausible, and worth testing — but Catalan demonstrates only the first link.** Nothing in the study
+is merged, shipped or gated; there is no review step in the design, so no defect can escape one.
+`oversight-scaling-inversion` was therefore declined (§108c): tagging the last link would import the
+conclusion from the mechanism, and **"could lead to leakage" would fire the tag on every
+automation-bias paper**, which is the discriminating-power collapse §87 exists to prevent.
+
+**The chain is testable, and that is its value.** It predicts review quality should degrade measurably
+*across a session* — a prediction no corpus paper has tested and an organisation could.
 
 **Survey hooks:**
 - *Does review quality differ between the first and last change reviewed in a session?* — most orgs
