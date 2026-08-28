@@ -4603,3 +4603,40 @@ challenges; median **$0.073** per successful attempt versus **$0.357** per failu
 early-stopping thresholds at ~40 tool calls or $0.30. **Machine-side resource allocation, not human
 attention** — so not `risk-routing` (§107e), but relevant if the dissertation ever costs out automated
 versus human checking.
+
+## 111. A proposed instrument does not rescue a measurement paper (`PDYJGF2R`, 2026-08-27)
+
+Dora, Lunkad, Aslam et al., *The hidden risks of LLM-generated web application code: a security-centric
+evaluation of code generation capabilities in large language models* (2026). **Ruled Context** per
+**§93** — pure measurement of model-output insecurity across ChatGPT, DeepSeek, Claude, Gemini and Grok.
+Added to `04 - Validation Apparatus`. **No Dissertation Supporting.**
+
+**(a) §104 and §93 interact, and §93 wins — worth recording since the two could be read as conflicting.**
+The paper explicitly proposes its instrument: *"**Created a checklist** for evaluating the security of
+LLM-generated Web Applications: We have created a comprehensive checklist along with risk for
+systematic analysis."* So §104 does **not** demote it — the machinery is *argued for*, not merely used
+(contrast Adnyana, §104).
+
+> **But a proposed instrument does not convert a measurement paper into a contribution paper.** The
+> checklist occupies one bullet; the paper is the **evaluation of five LLMs**, which is exactly what §93
+> sends to Context. **Ask what the paper is FOR, not only what it contains.**
+
+**(b) Dissertation Supporting DECLINED on the §109a named-use test.** The checklist is **technical**
+(authentication, session management, input validation, HTTP security headers), not organisational.
+Surveys cannot enumerate technical checks, and the survey-relevant checklists are already held by
+better sources — Waseem's role-specific guideline matrix, Yang's 12 governance strategies, Watson's
+transparency recommendations. **No use this serves better than what is already there**, which is the
+criterion. **First application of §109a as a refusal**, and it worked as intended: the question was not
+*"is this relevant?"* but *"what would it be for?"*
+
+**(c) SECOND INSTANCE — asserting the tenet (§106b).** The abstract closes:
+*"Our findings underscore that **human expertise is crucial** to ensure secure software deployment or
+review of LLM-generated code."* **Asserted from an evaluation with no human in it, that measured
+nothing about human review.** Twice now in eight Accept-band papers (cf. `P837LJWE`, §106b). **Watch
+item:** if this recurs across the band it is a reportable observation — *the literature routinely
+concludes that human oversight is essential from studies that never observed any*, which would be a
+finding about the field's evidentiary habits rather than about oversight.
+
+**Harvest value:** a checklist built **because its authors judged existing assessment inadequate for
+LLM-generated code** is precisely *"what did they consider adequate validation"* — the harvest's
+premise. Recorded there rather than in Supporting.
