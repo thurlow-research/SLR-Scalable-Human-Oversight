@@ -4340,14 +4340,35 @@ stats," then identified `problem-statement-anchor` as what he actually meant. §
 test is whether the evidence *is* the contribution.** Here it is — a mining study. Same ruling as Xu
 (§83); opposite to Zietsman (§99c), where the argument was the contribution.
 
-**(e) NEW DISCRIMINATOR — describing who routes ≠ contributing a routing signal.** `risk-routing`
-(codex 1/3) declined on the arbiter's test: *"Just discussion of who enables and doesn't. Nothing
-saying in repo X review is required under conditions Y."*
+**(e) NEW DISCRIMINATOR — the WITHIN-UNIT test for `risk-routing`.** Declined at codex 1/3. The
+arbiter's formulation, sharpened across two exchanges, supersedes the assistant's first attempt
+(*"describing who routes ≠ contributing a routing signal"*), which located the distinction in the wrong
+place:
 
-> **Observed variation in who gates is a *finding about practice*. `risk-routing` requires a
-> contributed rule or signal** — a stated condition under which review is required. Sits alongside
-> §86's rate-limiting distinction: **throttling isn't routing, and neither is describing other
-> people's routing.**
+> **Between-unit variation is policy heterogeneity. Within-unit conditional allocation is routing.**
+> *Repo A requires review, Repo B does not* → **not routing.**
+> *Repo A routes to humans under conditions X and auto-merges under conditions Y* → **routing.**
+
+Better because it catches a case the contributed-vs-observed framing missed: a paper can *contribute* a
+between-unit comparison and still not be routing, while a paper *observing* within-unit conditional
+allocation can be.
+
+**Second clause, added after a worked edge case.** Applying the rule to this very paper reopened one
+finding — *"maintainers auto-merge agentic PRs more often but **show caution toward PRs that delete
+existing code**"* — which is within-unit conditional on its face. **Arbiter's mechanism test:** *"How is
+the decision made? If there is logic setup in the CI/CD pipeline to make this call, then it might
+qualify. If it is a generic statement, not so much."*
+
+**Checked: it is statistical, not configured.** The finding rests on distribution comparisons —
+*"Auto-merged PRs are significantly smaller in lines changed, files changed, additions, and
+deletions"* — box plots, p-values and effect sizes. **No pipeline logic exists.** The caution is an
+inferred behavioural tendency from aggregate merge outcomes.
+
+> **Full test: within-unit conditional allocation qualifies only when it is a RULE OR SIGNAL — encoded
+> in a pipeline, policy, or stated condition — never a tendency inferred from aggregate outcomes.**
+
+Sits alongside §86's rate-limiting distinction. **Three things that are not routing: throttling
+intake, varying policy between units, and a measured correlation in who-merges-what.**
 
 **(f) `survey-input` DECLINED by the arbiter — and a definitional risk flagged.** The stated ground was
 *"There was no survey. They mined repos."* The facet, however, is **not** about the paper's method:
