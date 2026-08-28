@@ -2140,3 +2140,36 @@ human attention fails at**, which is the same premise the corpus's oversight too
 as procedure and limitation, plus at most a paragraph in the discussion. It does **not** enter the
 findings, is **not** citable as a result about oversight in general, and the assistant is **not** an
 independent rater — its checks are correlated with the arbiter's by construction.
+
+## Certified registries — vetting the SUPPLY rather than the output (`VCI88UZD` + `6ZC3H7AF`, 2026-08-28)
+
+Surfaced by the arbiter while ruling Liu, *Agent Skills in the Wild*: *"There was a paper a while back
+about having a list of trusted repository / packages. That concept could apply to Liu as well.
+Trusted skills."*
+
+**The pairing:**
+- **Enyedi (`VCI88UZD`)** — *Human-certified module repositories for the AI age.* The mechanism:
+  a curated registry whose contents carry a **human certification**, so consumers inherit vetting they
+  did not perform.
+- **Liu (`6ZC3H7AF`)** — *Agent Skills in the Wild.* The empirical case for needing one: **26.1% of
+  31,132 marketplace skills contain at least one vulnerability**, and skills bundling executable
+  scripts are **2.12× more likely** to be vulnerable (OR=2.12, p<0.001). The paper's own conclusion
+  calls for *"capability-based permission systems and mandatory security vetting."*
+
+**Why this is a distinct oversight shape, and worth naming.** Everything else in the corpus oversees
+**what the AI produces**. This oversees **what the AI consumes** — the skills, modules and packages an
+agent pulls in at run time. Certification moves the human review **once, upstream, to the artifact**,
+and every downstream use inherits it. That is a genuinely different scaling economics from reviewing
+each output: pay once per package rather than once per generation.
+
+**The catch, and why it is not a free win.** It relocates the bottleneck rather than removing it —
+someone must certify 42,447 skills, and Liu's own detector runs at 86.7% precision / 82.5% recall, so
+an automated gate over that volume admits a meaningful error rate. The unresolved question is
+**who certifies, at what cadence, and what happens when a certified artifact is later found
+vulnerable** — a revocation problem the corpus does not address anywhere.
+
+**Status:** neither paper is at core for this (Liu demoted 2026-08-28 — the object is human-authored
+third-party packages, not AI-generated code; supply-chain security of agent *inputs*). The arbiter
+explicitly ruled **no dissertation role**. Recorded because the *shape* — upstream certification as an
+alternative to per-output review — is a real point on the oversight design space and may return if
+the scope ever widens to agent tooling.
