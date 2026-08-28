@@ -4367,8 +4367,22 @@ inferred behavioural tendency from aggregate merge outcomes.
 > **Full test: within-unit conditional allocation qualifies only when it is a RULE OR SIGNAL — encoded
 > in a pipeline, policy, or stated condition — never a tendency inferred from aggregate outcomes.**
 
-Sits alongside §86's rate-limiting distinction. **Three things that are not routing: throttling
-intake, varying policy between units, and a measured correlation in who-merges-what.**
+**Third clause — human discretion is not a computed signal.** Arbiter: *"If a human were making a
+case-by-case call, that is **human routing, not risk routing**."* This is already latent in the tag's
+own text — *"Signal must be **computed** & producer-independent"* — but had never been stated for the
+human case, only for the model-self-confidence case. **A maintainer deciding per-PR on judgement,
+however risk-sensitive, is `hitl-workflow`, not `risk-routing`.** The theme is *"the **smarts of
+surfacing** (signal + selection/tiering logic)"*; unaided human judgement supplies neither.
+
+**Consolidated — four things that are NOT `risk-routing`:**
+1. **Throttling intake** — a queue cap reduces volume without discriminating within it (§86).
+2. **Between-unit policy variation** — Repo A gates, Repo B doesn't; heterogeneity, not allocation.
+3. **A tendency inferred from aggregate outcomes** — a p-value on a box plot is not a rule (this §).
+4. **Human case-by-case discretion** — not a computed signal; `hitl-workflow` instead.
+
+**What remains:** a computed, producer-independent signal *plus* operationalized selection or tiering
+logic. Signal without the allocation decision → `routing-signal` + `metrics`. Allocation without a
+computed signal → `hitl-workflow`.
 
 **(f) `survey-input` DECLINED by the arbiter — and a definitional risk flagged.** The stated ground was
 *"There was no survey. They mined repos."* The facet, however, is **not** about the paper's method:
