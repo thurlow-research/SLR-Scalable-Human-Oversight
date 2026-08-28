@@ -174,6 +174,16 @@ Group library; collection-based provenance (NOT tag-based for source provenance)
   **Do not read tier from collection membership.** A demoted paper still sits in the `01-Core` of every
   earlier phase that put it there; that is the audit trail working as designed, not an inconsistency.
 
+- **Superseded MODEL RUNS are provenance too — NEVER delete them.** When the instrument is revised and
+  the panel re-run, the earlier run's tags are not garbage to be cleared; they are the record of what
+  that instrument produced. **Rename, don't remove:** prefix the superseded tags with **`v1_`**
+  (`cal:opus:theme:X` → `v1_cal:opus:theme:X`), then write the new run in the bare `cal:` form. The
+  prefix falls outside the `cal:` namespace that the stats tooling matches, so superseded runs drop
+  out of the figures automatically with no code change, while staying visible and queryable in Zotero.
+  **Never add a new run alongside an old one un-prefixed** — both share the `cal:<model>:` prefix, so
+  they would silently merge into a union of two different instruments and corrupt every statistic
+  computed off that band.
+
 ### Publication venue hierarchy for dedup
 
 When the same item exists across sources at different stages of publication:
