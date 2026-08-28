@@ -5695,3 +5695,85 @@ so the property fails to discriminate at all. The three-part rule now reads:
 | §116a | an actual **survey instrument** must exist (not mined data) |
 | §121b | it must **elicit stated preferences** (not measure a construct) |
 | **§124f** | **"it yields questions for our survey" is not a criterion** — that is dissertation utility, recorded in the named-use list |
+
+## 125. §119c's GAP FILLED — the first paper covering both modes; and the human baseline is ERODING (`9H6FWJME`, 2026-08-28)
+
+**Paper:** Liu, Yue et al., *Debt Behind the AI Boom: A Large-Scale Empirical Study of AI-Generated
+Code in the Wild*, arXiv (2026-04-26). 302.6k verified AI-authored commits, 6,299 GitHub repos, five
+assistants, static analysis run **before and after** each commit, every introduced issue tracked to
+the latest revision.
+**Written:** primary `quality-debt`; `ai-code-insecurity`; `method-mining`, `risk-quality`,
+`risk-security`, **`agentic` + `assistive`**, `problem-statement-anchor`.
+**SLR: Core · Dissertation: PRIMARY.** **Declined:** `oversight-scaling-inversion` (0/3).
+
+### 125a. BOTH mode facets applied — and this closes the §119c gap
+
+**§119c logged an open gap:** *"the dissertation will need to argue that **the same underlying
+technology powers both assistive and agentic scenarios**. **No corpus paper currently supports this** —
+find a source, or argue it explicitly as the review's own position."*
+
+**This is the source.** The five tools are *"GitHub Copilot, Claude, Cursor, Gemini, and **Devin**"* —
+spanning inline assistive completion through fully agentic delivery — and the paper treats them as
+**one class**, measuring identical debt outcomes across all of them. Both facets therefore apply, which
+is unusual and correct: the mode pair marks *which setting the paper studies*, and this paper studies
+both, deliberately.
+
+**Why it matters beyond the tag:** the dissertation no longer has to assert mode-convergence as its
+own position. It can cite a 302.6k-commit study in which assistive and agentic tools produce the
+**same failure profile** — which is the empirical basis for treating oversight requirements as
+mode-independent. §119c's action item is closed.
+
+### 125b. The human baseline is ERODING — a finding hiding inside a limitation
+
+The arbiter's critique: *"I would have loved to see comparison stats computed for human authored PRs.
+**Is AI better, worse, or the same as human** rather than is it perfect or not."* Correct — and the
+paper concedes it, with a reason that is more important than the omission:
+
+> *"…AI-authored commits against a baseline of purely human-written commits. Because developers may
+> use AI without [disclosure]… a **reliable human-only baseline is difficult to construct**, and
+> comparing against an unreliable baseline could [mislead]."*
+
+**The counterfactual is disappearing.** Once AI use is ubiquitous and undisclosed, *"human-authored
+code"* stops being a measurable category. Three consequences worth carrying:
+
+1. **Comparative claims have a closing window.** Papers that already made the comparison — **Xu**
+   (quality below human) and **Ferdous** (`UIXCRBQX`: agents make **fewer** breaking changes than
+   humans) — become *more* valuable as the baseline erodes, not less. Their measurements may be
+   unrepeatable.
+2. **"Is it perfect?" is the wrong question and increasingly the only answerable one.** Absolute defect
+   rates without a baseline cannot support a deployment decision: 15% of commits introducing an issue
+   is alarming or reassuring depending entirely on the human rate, which is now unmeasurable.
+3. **Survey exposure.** Self-reported *"did a human or AI write this"* inherits exactly the
+   contamination Karakaya (§122a) found in `wontFix` labels. Logged for the survey instrument.
+
+### 125c. Statically DETECTABLE issues that survived — an oversight failure, not a capability failure
+
+The arbiter's observation: the issues are found by **standard static analysis**, and clean static
+analysis is a common pipeline gate. The paper's own numbers make the point sharper: **484,366 distinct
+issues**, and **22.7% still present at the latest revision**.
+
+These are not subtle defects requiring judgement — **a pipeline gating on clean static analysis
+catches them by construction.** So the finding reframes: the tools to catch this already existed and
+**were not gating**. That is a process failure, and it is the strongest argument in the corpus that
+**existing engineering discipline, applied unchanged, would absorb a large share of AI-introduced
+debt** — pairing directly with Ji's shift-left (§119d) and Lipsanen's Shift-Up (§124).
+
+**`oversight-scaling-inversion` still DECLINED (0/3).** §88 requires **review failure as the cause**,
+and the paper never examines whether review occurred. **89.3% of the issues are code smells**, which
+teams routinely tolerate by choice rather than fail to catch — tolerated ≠ leaked. Given §123a, where
+the panel over-applied inversion on comparably circumstantial reasoning, the bar holds.
+
+### 125d. `evaluated-real-data` declined here — REDUNDANT with `method-mining`
+
+The natural first instance: real production commits, no benchmark, no synthetic construction, and —
+unlike the three prior candidates (§122f Karakaya, Liu `6ZC3H7AF`, §124d Lipsanen) — a **Core +
+Dissertation Primary** paper, which is the right grade to establish a slug on.
+
+**Declined anyway, on redundancy.** `method-mining` is defined as *"artifacts measured: repos, PRs,
+commits, posts, logs, telemetry"* — mining **is** real-world data by definition, so on a pure mining
+study the two tags carry identical information.
+
+**Scoping decision for the F2 cut:** define `evaluated-real-data` **against `built-system`** — *a built
+artifact evaluated on real production data rather than a benchmark or synthetic corpus.* That is a
+genuine unmarked rung on the evidence ladder. Written as a general "real data" marker it becomes noise
+on every mining paper in the corpus.
