@@ -4471,3 +4471,79 @@ Branco's 33k-PR mining study. **That over-weighted an N=4 formative study with s
 The `Emerging_Themes.md` entry now carries an explicit evidence-grade caveat: **Parasuraman carries the
 theoretical weight; Catalan is the domain probe.** Recorded because the error was in the direction of
 enthusiasm for a striking finding, which is the direction worth guarding against.
+
+## 109. MLR of grey media — `lit-review` applies, and its consequences cascade (`R2QMVNXI`, 2026-08-27)
+
+Chang, Shirazi, Cao & Mobasser, *Coding with AI: from a reflection on industrial practices to future
+CS and SE education* (arXiv 2025-12). **Ruled Context**, added to **Dissertation Supporting**.
+
+**(a) It is a Multivocal Literature Review, so `lit-review` applies (rescued from opus 1/3).** The
+paper follows **Garousi, Felderer & Mäntylä's grey-literature/MLR guidelines**, applying their quality
+criteria — including *"Evidence: inclusion of examples, rationale, or empirical support"* — to 57
+curated YouTube videos. **Grey literature is still literature under that methodology.** Arbiter's
+framing was exact: *"a 'lit review' of youtube videos about vibecoding and agentic coding to see how
+the videos are positioning / practicing things."*
+
+> **Rule: a systematic synthesis of grey media is `lit-review`, not a method facet.** The unit of
+> analysis is *published discourse*, and the evidence is synthesised rather than produced.
+
+**(b) TWO AUTOMATIC CONSEQUENCES, both applied.**
+1. **No method facets.** *"`lit-review` papers get none — evidence synthesized, the methods live in
+   the primaries."* **`method-mining` REJECTED at 2/3** (modal, explicit reject required);
+   `method-self-report` 1/3 falls out. This also answers the question the paper first raised — it is
+   neither mining nor self-report, it is **synthesis**.
+2. **Primary must be the biggest-tent theme.** With the inversion rejected (below), the panel's
+   unanimous primary vanishes and no replacement was ruled. **Left unresolved and moot** — Context
+   papers do not enter Phase 6 synthesis, so the primary has no consumer (§42).
+
+**(c) `oversight-scaling-inversion` REJECTED at 3/3 — fifth rejection, and it fails twice over.**
+*"Code review as a bottleneck"* is a named RQ2 theme, but:
+- **§88:** a bottleneck is **capacity strain, not leakage**. Nothing reports review being skipped or
+  defects shipping. The paper cuts the other way in two places — practitioners scope vibe coding as
+  *"**not meant to ship to production**"*, and quality issues are said to *"necessitate **careful human
+  review**."*
+- **Biggest-tent test:** review-as-bottleneck is one theme among many spanning definitions, security,
+  quality, skill erosion and education. Not the largest share.
+
+**(d) Tier — consistent with the lit-review precedent.** `RG4A4D6K` (Watson §82), `XZEHQYNZ`
+(Tuape §78) and Tereci were all reviews and all demoted. This one synthesises **what practitioners say
+on YouTube** — evidence about **discourse**, not practice, a limitation the authors acknowledge.
+
+### 109a. NAMED-USE CRITERION for Dissertation Supporting
+
+Arbiter: *"Should we dissertation support, or is this not strong enough to be helpful?"* The
+substantive findings are **duplicative** — quality and security (Zhao, Fu, Perry, Waseem), skill
+erosion (Catalan, Parasuraman, Xu), review bottleneck (Yang, Branco, Xu) are all sourced better
+elsewhere. **Supporting is justified by one specific use, not by general relevance:**
+
+> **Vocabulary calibration for the survey instrument.** Survey questions must use terms as respondents
+> understand them. Where a controlled study gives the corrected version, **grey media gives the
+> vernacular** — and for instrument design the vernacular is what matters.
+
+**Proposed criterion, adopted:**
+
+> **Dissertation Supporting membership carries a NAMED USE, not general relevance.** A bucket that
+> admits everything tells you nothing at selection time — the §87 discriminating-power argument applied
+> to collections rather than tags. **Back-fill a one-line rationale on existing Supporting members:
+> cheap now, expensive at fifty.**
+
+A **Zotero note (`VTRCWI6K`)** records the named use and the extracted definitions on the item itself,
+per the source-of-truth principle.
+
+### 109b. Three findings from the practitioner definitions
+
+1. **INSTRUMENT HAZARD.** Practitioners scope vibe coding as **explicitly non-production** — *"that's
+   the YOLO vibe coding and **not meant to ship to production**."* A survey question about *vibe coding
+   in production* therefore risks denials meaning **"we don't call that vibe coding"** rather than
+   **"we don't do that."** **Ask about the practice — prompt-driven generation accepted without reading
+   the code — not the label.**
+2. **VOCABULARY VALIDATION for a tag we invented.** The paper's term for the vibe-coding posture is
+   ***"material disengagement"*** from the code — the practitioners' own name for what we staged as
+   `no-inspection` (§81a). **The concept existed in the field's vernacular before it existed in our
+   vocabulary**, which is useful support when defending a staged facet the panel could never propose.
+3. **The practitioner spectrum matches our mode pair.** Figure 2 presents assistive → agentic as a
+   recognised spectrum, and the agentic definition places the human as **orchestrator** — consistent
+   with the decision-surface cluster (§96e) and the upstream-control papers.
+
+**Possibly unique and worth watching:** the RQ3 theme *"Code review as the new primary skill"* — not
+seen stated elsewhere in the corpus.
