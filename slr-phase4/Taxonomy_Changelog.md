@@ -5514,3 +5514,81 @@ benchmark — but the slug has **zero uses** and remains staged (§41). **A slug
 working definition, and §42 short-circuits tag verification on demoted papers**, so a context paper is
 the wrong place to establish one. Deferred to the F2 instrument cut, with this paper named as the
 candidate seed.
+
+## 123. AIDev — the source dataset demoted while its data anchors the corpus; and a 3/3 inversion primary REJECTED on §88 (`QI8246A3`, 2026-08-28)
+
+**Paper:** Li, Zhang, Hassan et al., *The rise of AI teammates in software engineering (SE 3.0)*,
+arXiv (2025-07-20). **This is AIDev** — 456,000 agentic PRs, 5 agents, 61,000 repos, 47,000 devs.
+**Written:** `ai-review`, `quality-debt`, `provenance-auditability`; `agentic`, `method-mining`,
+`risk-quality`, `problem-statement-anchor`. **`demote:context` · Dissertation: PRIMARY.**
+**Rejected:** `oversight-scaling-inversion` (**3/3**), `survey-input` (2/3).
+**No primary theme recorded — deliberately** (see §123c).
+
+### 123a. A unanimous 3/3 primary REJECTED — the panel inferred inversion from pressure alone
+
+All three vendors made `oversight-scaling-inversion` the **primary**. It is wrong, and the paper's own
+headline finding contradicts it:
+
+> **"Finding #2: Autonomous Coding Agents lag human in PR acceptance rates by a large margin"** —
+> OpenAI Codex 64%, Devin 49%, GitHub Copilot lower.
+
+**Agent PRs are accepted LESS often. That is gatekeeping holding, not leakage.** §87/§88's test is
+*risky code escaping the review that should have caught it*, and AIDev evidences the opposite.
+
+**What the panel actually anchored on** is the volume statistic — *"176 Agentic-PRs in 3 days vs. 176
+Human-PRs over the previous 3 years"* — and inferred inversion **from pressure alone**. That is
+precisely the inference the arbiter ruled out on Yang (§88): *"throughput down, queue up… Preventing
+project work doesn't do it either. Has to result in leakage of risky code."*
+
+**Significance for the reliability record:** a **3/3 correlated error on the PRIMARY slot**, on the
+single tag already identified as the corpus's largest error source (closeout B1). It is further
+evidence that unanimity measures instrument legibility, not truth (§11.4) — and a caution for the B1
+sweep: the 15 papers carrying inversion on silence should be checked for **the same substitution of
+volume pressure for demonstrated leakage**, which is likely the dominant failure mode.
+
+### 123b. Demoted — a dataset has no mechanism to be primary about
+
+The arbiter's read: *"leaning demote because it is about constructing a new evaluation dataset."*
+Sustained, and the instrument's own **struggle signal** independently confirms it: *"can't pick a
+primary / stretching a definition to fill the set = the paper likely doesn't belong at core."*
+
+The contribution is **a dataset, descriptive findings, and nine research directions** — no mechanism,
+nothing deployable. It is *not* a capability benchmark (the paper explicitly positions itself as
+*"beyond synthetic benchmarks like SWE-bench"*), so the demote ground is **not operationalizable**
+rather than *pure tool benchmark*.
+
+### 123c. NO primary recorded — and why that is unambiguous
+
+Recording a stretched primary purely to fill the slot would contradict the struggle-signal rule that
+justified the demote. Leaving it empty is safe because **`demote:context` disambiguates it**: the B7
+partial-detection predicate is *human tags **and** no primary **and** no demote*, so a demoted paper
+without a primary reads as adjudicated, not partial. Closeout F3's surviving predicate (*primary AND
+not demoted*) also resolves correctly. **This is the reference case** for demoted papers where no
+theme fits.
+
+### 123d. Dissertation PRIMARY despite the demote — the tier and the role are independent
+
+Unusual pairing, recorded because the reasoning generalises. Three named uses (§109a):
+
+1. **The corpus's best problem-statement anchor.** *"176 Agentic-PRs in 3 days vs. 176 Human-PRs over
+   the previous 3 years"* — one developer, one figure, the whole scale shift. Nothing else quantifies
+   it as cleanly, and it pairs with the finding that those PRs *"alter fewer structural aspects of
+   code."*
+2. **Bot-reviewer analysis the mining papers never report.** AIDev classifies reviewer identities and
+   analyses *"the 10 most active bot reviewers among Agentic-PRs… in comparison to human reviewers"* —
+   **agents reviewing agents, measured in the wild.** Directly relevant to the agent-panel thread and
+   absent from Branco, Gao and Ghammam.
+3. **The §116c citation anchor.** Branco (`JQPPKSFQ`), Gao (`59KP8GTP`) and Ghammam (`SHK6KAX6`) all
+   mine AIDev and report **different review-absence figures**. Reconciling them requires the source;
+   the dissertation must cite AIDev directly rather than through three secondary readings.
+
+**The general rule:** SLR tier answers *"does this paper contribute a mechanism to the review's
+argument?"* Dissertation role answers *"will I use this?"* A dataset paper can be **no** to the first
+and **emphatically yes** to the second. Precedent for other substrate/infrastructure papers.
+
+### 123e. `survey-input` REJECTED at 2/3 — the case §116a was written for
+
+AIDev is **mined repository data**; there is no instrument at all. Under §121b's elicitation test
+nothing is *elicited* — no participant states a preference. This is the Ghammam pattern (§116a) that
+prompted the original narrowing, recurring on the source dataset itself. Rejected explicitly rather
+than left silent, since at 2/3 it is modal and would otherwise stand into `final:*`.
