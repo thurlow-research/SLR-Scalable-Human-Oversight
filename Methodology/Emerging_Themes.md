@@ -1864,3 +1864,58 @@ from one mode to the other — and Branco's answer, governance maturity, is test
 settings — where maintainers are employees and cannot simply abandon a PR — is **untested**, and the
 asymmetry noted at §86 (OSS maintainers can refuse; employed reviewers often cannot) suggests it may
 not transfer cleanly.
+
+## MECHANISM — ENGAGEMENT DECAY: oversight quality falls as the session proceeds (`5BAZZWHG`, 2026-08-27)
+
+**The fifth distinct mechanism by which oversight fails, and the only one that is temporal and
+intra-session.** Core + Dissertation Primary.
+
+**The finding.** A formative study of software engineers working with an agentic coding assistant:
+
+> *"**cognitive engagement consistently declines as tasks progress**, and current ACA designs provide
+> limited affordances for reflection, verification, and meaning-making."*
+
+Arbiter's reading: *"people start strong with oversight, and then their mind numbs and quality / depth
+of the oversight lags."*
+
+### Where it sits among the mechanisms
+
+| Mechanism | What fails | Kind |
+|---|---|---|
+| **Inversion** (§107, Branco) | review is skipped | structural — volume |
+| **Substitution** (Xu §83) | senior building capacity is spent | structural — cost |
+| **Intake restriction** (Yang §86) | work is refused rather than triaged | structural — policy |
+| **Reviewability decay** (Wang §80) | the artifact cannot be reviewed | structural — representation |
+| **Engagement decay** (Catalan) | **the reviewer's attention declines while reviewing** | **temporal — intra-session** |
+
+**The consequence the others do not have:** *oversight quality is not a constant per reviewer — it is a
+decreasing function of time-on-task.* Every organisational control we have seen assumes a reviewer is
+either present or absent. **None accounts for a reviewer who is present and progressively less
+effective.**
+
+### It has a theoretical anchor already in the corpus
+`ING3D89M` — **Parasuraman & Manzey**, *Complacency and bias in human use of automation* (Context,
+`dissertation-input`). Catalan is the **software-engineering empirical instance** of that classical
+vigilance-decrement result. **Theory and domain evidence from independent literatures**, neither
+written to support the other — the same argument shape the independence thread relies on.
+
+### Two links worth carrying
+- **To the decision-surface cluster (§96e).** Aporia / HiLDE / Zhou ask *what the human should engage
+  with*; Catalan asks *whether they engage at all*. **A well-designed decision surface presented to a
+  disengaged reviewer is still unread** — which means decision-surface quality and engagement are
+  independent failure points, and fixing one does not fix the other.
+- **To accountability deference (§95, Zhou & Zhao).** Two mechanisms, same outcome: the reviewer does
+  not meaningfully revise. One because attention decays, one because ownership discourages editing.
+  **They would compound.**
+
+### The dissertation opening
+The paper names **cognitive-forcing mechanisms** as the design response and operationalises none — and
+the arbiter independently arrived at the same question (System 1 vs System 2 triggers, alternate checks
+and balances, effective escalation). **That is an identified-but-unfilled opening**, not a gap needing
+to be argued into existence.
+
+**Survey hooks:**
+- *Does review quality differ between the first and last change reviewed in a session?* — most orgs
+  will not know, and **not knowing is itself the finding**.
+- *Is there anything in your process that deliberately interrupts a reviewer's flow to force
+  re-engagement — batch size limits, mandatory breaks, forced justification?*

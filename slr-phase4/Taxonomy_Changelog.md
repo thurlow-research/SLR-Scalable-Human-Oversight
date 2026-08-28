@@ -4396,3 +4396,42 @@ state at this ruling: `survey-input` is **panel-modal on 17 papers**, arbiter-en
 **7 overlapping** — i.e. **10 modal proposals stand on silence** and could be affected by the same
 reading. **CLOSEOUT ACTION: re-check `survey-input` across the corpus against the utility-to-our-survey
 definition, not the did-they-survey one.** Not written here (1/3, non-modal — it falls out regardless).
+
+## 108. Documenting an ABSENCE — when it earns the theme and when it doesn't (`5BAZZWHG`, 2026-08-27)
+
+Catalan, Dizon, Monderin & Kuang, *"I'm not reading all of that": understanding software engineers'
+level of cognitive engagement with agentic coding assistants* (arXiv 2026-03).
+**Core + Dissertation Primary.** Primary `automation-bias` (3/3); `oversight-explanation` (2/3);
+`agentic`, `risk-overreliance`, `method-experiment`, `method-self-report` (3/3 each).
+
+**(a) THE ABSENCE RULE.** The arbiter took `oversight-explanation` while noting *"it is more saying
+that there isn't much explanation in this case."* Two papers earlier, `ai-review` was declined on
+`JQPPKSFQ` **because** that paper is about review being absent (§107c). Both rulings are right, and the
+reconciliation needs stating:
+
+> **Documenting an absence earns the theme when the paper *argues about what should be there*. It does
+> not when the absence is merely the *measured outcome*.**
+
+Catalan finds ACAs *"provide limited affordances for reflection, verification, and meaning-making"*
+**and** proposes directions — cognitive-forcing mechanisms, richer interaction modalities. That
+contributes to the explanation-design argument. Branco measures merge outcomes and proposes nothing
+about review. **Expect this repeatedly: several papers in this band study things not happening.**
+
+**(b) Mode: `agentic` 3/3, `assistive` 0/3 — and the §81 pattern held.** The arbiter's initial
+`assistive` reasoning was *"it was modelled after vibe coding, a prompt to generate code"* — the exact
+configuration §81 resolved on `T2EG4BE2`: **human-prompted but artifact-scale, so the reviewable unit
+dominates.** Tool-category naming pulls the wrong way here (they are called *assistants*), but the
+paper studies *"agentic AI systems that operate with **minimal human involvement**."* **Third
+consistent application of the tie-rule** (§81, §85, here).
+
+**(c) Design opportunity the paper names but does not build.** *"we identify concrete design
+opportunities leveraging richer interaction modalities and **cognitive-forcing mechanisms** to sustain
+engagement and promote deeper thinking."* Recorded because the arbiter independently raised the same
+question (*"trigger level 1 / level 2 thinking"*) — **cognitive forcing functions are the
+System 1 → System 2 interrupt.** The paper names the direction and operationalises nothing, which makes
+this an identified-but-unfilled opening rather than a gap the dissertation would have to argue into
+existence.
+
+**Method facets both 3/3 and unaddressed by the arbiter; they stand on modality.** The §57 two-event
+question was raised and not ruled — a formative study with tasks plus think-aloud plausibly has two
+genuine measurement events, but it is the `8MXATG38` shape. **Flagged, not resolved.**
