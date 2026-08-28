@@ -114,6 +114,28 @@ pipelines, then read methods sections.
   production**, and the only one with named rejection criteria. Also the clearest case of the
   prompter-as-reviewer configuration.
 
+### `6NTZ85CW` — David & Gervais (2025), *Multi-agent penetration testing AI for the web* (MAPTA) · **SLR: Context**
+- **Layers:** LLM orchestration → tool-grounded execution (nmap, ffuf, etc.) → **mandatory
+  proof-of-concept validation** of every finding.
+- **The distinctive move — validation by execution.** Findings are not flagged; they are **proven** by a
+  working end-to-end exploit. **Ground truth is self-demonstrating**, so no human adjudicates whether a
+  finding is real. Removes the false-positive triage burden entirely.
+- **AI-as-checker:** yes, and fully autonomous — *"penetration testing **without human**."*
+- **Human position:** **none.** Explicitly framed as a shift *"from human-dependent pattern recognition
+  to adaptive adversarial execution."*
+- **Agent structure:** **role specialisation, not a panel** (§110a) — Coordinator orchestrates, Sandbox
+  agents execute. Nothing votes.
+- **Escalation trigger:** none for humans. Machine-side early-stopping at ~40 tool calls or $0.30.
+- **Economics:** $21.38 total across 104 challenges; median $0.073 per success vs $0.357 per failure.
+  **The only apparatus entry with a cost model.**
+- **Domain:** general web applications (XBOW benchmark), not AI-generated code.
+- **Why it matters:** the strongest counter-example in the harvest to human-in-the-loop framing — a
+  check that is *more* trustworthy for having no human in it, because it proves rather than judges.
+  **Bounded by defect class:** works where a defect is demonstrable by execution (SSRF, injection,
+  misconfiguration at 83–100%), fails where it is not (blind SQLi **0%**, XSS 57%). **That boundary is
+  the finding worth carrying — validation-by-execution does not generalise to defects you cannot
+  exploit on demand.**
+
 ## Back-fill candidates from the Light Read band (at closeout)
 `72W6R4JG` Töpfer (FCL constraint verifier + bounded repair loop) · `TA6GIUK2` Zietsman (BDD vs AI
 review head-to-head) · `96XE669R` Zhong (VeriCode's 30 deterministic verifiers) · `VZ27QUPQ` Zhuo

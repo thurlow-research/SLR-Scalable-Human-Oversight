@@ -4547,3 +4547,59 @@ per the source-of-truth principle.
 
 **Possibly unique and worth watching:** the RQ3 theme *"Code review as the new primary skill"* — not
 seen stated elsewhere in the corpus.
+
+## 110. ROLE SPECIALISATION ≠ AGENT PANEL; and validation-by-execution (`6NTZ85CW`, 2026-08-27)
+
+David & Gervais, *Multi-agent penetration testing AI for the web* (MAPTA, arXiv 2025-08).
+**Ruled Context** per **§92** — a `general-code` review **tool**, not an oversight finding. Added to
+`04 - Validation Apparatus`. Arbiter: *"it is building an agentic system that does penetration testing.
+So not really AI generated code."*
+
+**Motivation is our thesis; the artifact is not.** The abstract opens on the scalability crisis —
+*"the pace of development now **vastly outstrips the capacity for thorough security assessment**"* — but
+MAPTA is a general web-application pen-testing system benchmarked on XBOW's 104 challenges. **AI-generated
+code is the justification; general web applications are the object.** `general-code` 2/3.
+
+**No human anywhere:** *"end-to-end, continuous penetration testing **without human**"*; *"shifting
+security assessment **from human-dependent** pattern recognition to adaptive adversarial execution."*
+
+**(a) NEW DISCRIMINATOR — role specialisation is not an agent panel.** "Multi-agent" in a title
+reliably invites `agent-panel`; here it should not.
+
+> **A panel means several agents judging the SAME artifact — redundancy for decorrelated error.
+> Role specialisation is a DIVISION OF LABOUR: different agents doing different jobs in sequence.**
+
+MAPTA's structure is a **Coordinator** (strategy, orchestration) plus **Sandbox** agents (tactical
+execution in isolated containers) — a pipeline, not a jury. Contrast `DJMBHHZN` (MOSAICO, §76): solution
+agents propose, **separate supervision agents evaluate the same output**, and a consensus agent
+adjudicates. **That is a panel.** Test: *would removing one agent lose a job, or lose a vote?*
+
+**(b) `oversight-scaling-inversion` REJECTED at 2/3 — sixth rejection.** The scalability crisis is
+**motivation, not contribution**; the paper never studies inspection coverage. Same shape as
+`WUUDHL8R`'s `regulatory-compliance` (§44), and §83's rule applies directly.
+
+**(c) `problem-statement-anchor` DECLINED (1/3).** The *"up to 40% of AI-generated code contains
+vulnerabilities"* figure is **cited from other studies**, not produced here. Same refusal as Watson's
+20–30% (§82g). **Action: chase the primary — a 40% vulnerability rate in AI-generated code would be a
+strong anchor if it holds up at source.**
+
+**(d) PRESERVED — validation by execution.** *"**mandatory proof-of-concept validation for all
+findings**."* Every reported vulnerability is proven by a working end-to-end exploit rather than flagged
+as a suspicion.
+
+> **Validation by execution rather than by judgement.** No human adjudicates whether a finding is real,
+> because the system **demonstrates** it. This removes the false-positive triage burden that makes most
+> automated security tooling expensive to operate — the cost that Yang's curl case (§86) shows consuming
+> scarce security-handling time.
+
+A **design choice, not a measured finding** — the triage saving is never quantified, which is why §92
+still sends the paper to Context. But it is the cleanest instance in the corpus of a check needing **no
+human adjudication because the ground truth is self-demonstrating**, and it belongs in the apparatus
+harvest. **Relates inversely to §51:** that exclusion disqualifies checkers needing a *known-correct
+reference*; a working exploit needs none — it is its own proof.
+
+**Cost figures worth noting for the economics of automated checking:** total $21.38 across 104
+challenges; median **$0.073** per successful attempt versus **$0.357** per failure; practical
+early-stopping thresholds at ~40 tool calls or $0.30. **Machine-side resource allocation, not human
+attention** — so not `risk-routing` (§107e), but relevant if the dissertation ever costs out automated
+versus human checking.
