@@ -1990,3 +1990,47 @@ weakest configuration in the corpus, and it is the **most common** one at 67.5%.
   without it? How would you know?*
 - *Does your onboarding scrutiny for unfamiliar contributors change when the contribution is
   AI-assisted?*
+
+## PRESCRIPTION vs VIOLATION — the literature says more scrutiny, practice gives less (2026-08-27)
+
+**The dissertation-grade pairing from the Accept band**, assembled from two independent datasets whose
+authors were not writing in response to one another.
+
+| | Claim | Evidence |
+|---|---|---|
+| **Prescription** — `REZGA5WF` (He et al.) | AI-generated code *"requir[es] **extra scrutiny** during review"* | DiD + matched controls + panel GMM: complexity **+41%**, warnings **+30%**, persistent; a *"comprehension tax… regardless of functional correctness"* |
+| **Violation** — `59KP8GTP` (Gao et al.) | AI-co-authored PRs from non-owners receive **the least** feedback; **~80%** merged without explicit review | AIDev mining with a human-authored baseline |
+
+**The literature prescribes more scrutiny for AI code on measured grounds; practice supplies less, also
+measured.** Neither paper cites the other. That is the same argument shape the independence thread
+relies on — **prescription and observed deviation from independent sources** — and it is stronger than
+either finding alone.
+
+**Why it matters:** it converts "organisations should review AI code more carefully" from an assertion
+into a **documented gap between recommendation and behaviour**, which is precisely what an
+organisational survey is positioned to explain.
+
+### Framing consequence — the productivity defence does not hold
+He's temporal result defuses the standard counter-argument to investing in oversight. *"Accept the
+quality cost as the price of speed"* assumes the speed persists. It does not:
+
+> **3–5× velocity gain in month one; gains dissipate after two months. Warnings +30% and complexity
+> +41% persist — and drive the long-term slowdown.**
+
+**The gain is transient and the cost is permanent**, so the trade being invoked is not the trade on
+offer.
+
+### SELF-THROTTLING — a gate upstream of generation (staged)
+> *"tools might implement **self-throttling: automatically reducing suggestion volume or aggressiveness
+> when project-level complexity or debt exceeds healthy thresholds**, forcing developers to consolidate
+> before generating more code."*
+
+**Every other gate in the corpus sits between generation and merge. This one sits before generation.**
+It is a proposal, not a built mechanism, and appears in a discussion section — but it is a distinct
+answer to gate 1: *do not route the artifact for review; prevent the artifact from existing while debt
+is high.*
+
+**Connects to** the intake-restriction finding (Yang §86) — communities refuse work rather than triage
+it. Self-throttling is the same move applied to the tool rather than the contributor. **Watch for a
+second instance;** if the pattern holds, "restrict production" is a third gate-1 posture alongside
+triage and exclusion.

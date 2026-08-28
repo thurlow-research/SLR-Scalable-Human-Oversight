@@ -4942,3 +4942,53 @@ AI PRs merged without explicit review · **61.4%** of build-code agentic PRs mer
 > **Different subsets, different definitions. Cite one number for one population.** Three papers
 > agreeing loosely would read as replication when it is one dataset sliced three ways — and a committee
 > that notices the shared provenance will discount all three.
+
+## 117. Read the implications section before ruling "no oversight content" (`REZGA5WF`, 2026-08-27)
+
+He, Miller, Agarwal, Kästner & Vasilescu, *Speed at the cost of quality: how Cursor AI increases
+short-term velocity and long-term complexity in open-source projects* (2026). **Core + Dissertation
+Primary.** Primary `quality-debt` (3/3); `agentic`, `method-mining`, `risk-quality` (3/3). Rejected
+`oversight-scaling-inversion`.
+
+**(a) ASSISTANT ERROR, corrected by the arbiter.** The assistant assessed this as having **no oversight
+content** — on the strength of the abstract and the panel's silence (no model proposed an oversight
+theme) — and proposed Context. The arbiter pushed back: *"Also points to the need for an ecosystem to
+maintain quality / debt."* **Section 5.2 Practical Implications is substantive:**
+
+> *"process adaptation that **scales quality assurance with AI-era velocity**"* · *"refactoring sprints
+> **triggered by code quality metrics**"* · *"test coverage requirements that **scale with lines of code
+> added**"* · *"teams should treat AI-generated code as **requiring extra scrutiny during review**."*
+
+> **Rule: panel silence plus a quiet abstract is not evidence of absence.** Empirical papers routinely
+> carry their oversight content in **implications and discussion**, which the taggers weight lightly
+> and the abstract omits. **Before ruling that a paper says nothing about oversight, read the
+> implications section.** Third time an Accept-band paper's value sat below the abstract (cf.
+> `UIXCRBQX` §113, `3Z45M3V3` §115).
+
+**(b) THE COMPREHENSION TAX — reviewability degrading independent of correctness, measured.**
+> *"a **'comprehension tax' that persists regardless of functional correctness**… LLMs may be generating
+> **structurally valid but semantically opaque** code"* — complexity **+41%**, warnings **+30%**,
+> persistent. *"**Unless** future workflows allow fully automated AI development **without any human code
+> reviews**, code readability will remain an important dimension."*
+
+This is `2KPHQ5IV`'s **dimension collapse** (§80) with a causal design behind it, and it makes
+readability a **precondition for oversight** rather than a style preference. Carried by `risk-quality`,
+whose definition already covers *"code comprehensibility — explainability of the code."*
+
+**(c) The temporal finding, which is what makes it Dissertation Primary.** DiD with matched controls on
+six months of pre-adoption history, plus panel GMM: **3–5× velocity increase in month one, gains
+dissipate after two months**, while warnings and complexity persist and *"subsequently dampen future
+development velocity"* — a **self-reinforcing cycle**.
+
+**(d) `oversight-scaling-inversion` REJECTED — eighth.** The mechanism is **debt drag**, not review
+failure. *"Teams should treat AI code as requiring extra scrutiny"* implies they do not, but that is
+inference; §88 requires the escape to be demonstrated.
+
+**(e) Mode calibration — third instance.** `agentic` 3/3, `assistive` 0/3, against an arbiter reading of
+*"assistive scenarios."* The paper argues the distinction itself: *"LLM agent assistants like Cursor,
+**by contrast**, are tightly integrated into the IDE with persistent codebase awareness, **autonomously
+navigating files, proposing multi-file refactorings**."*
+
+> **Calibration, now three instances deep** (`T2EG4BE2` §81, `5BAZZWHG` §108b, here): **IDE integration
+> does not make a tool assistive — the reviewable unit does.** Cursor proposes multi-file refactorings;
+> that is artifact granularity.
