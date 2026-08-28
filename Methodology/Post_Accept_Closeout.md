@@ -116,6 +116,24 @@ Applying the reclassification blanket would convert 19 un-examined modal proposa
 endorsements and inflate the panel's apparent precision. **C4 applies to Light Read (and any band
 with a completed pass), not to partially-tagged papers.**
 
+### B8. Verify every item with NO `cal:human` tag — confirm it was genuinely never examined
+**Scott's rule (2026-08-28):** *"we've modified tags on every item, so if there aren't any with human
+tags, they are highly unlikely to have been examined."* Every paper that received a pass got **at
+least one** human tag written, so **absence of `cal:human:*` is a reliable proxy for "not looked at."**
+
+**Still sweep them to be sure** — it is a cheap query and the whole corpus count depends on it.
+As of 2026-08-28: **22 items** carry no human layer at all.
+
+**Note the asymmetry with B7 — the two failure modes are opposite and need different checks:**
+
+| signal | meaning | action |
+|---|---|---|
+| **no `cal:human` tag** | almost certainly never examined | sweep to confirm (this item) |
+| **human tags but no primary** | examined? unclear — a targeted write leaves the same trace | **must re-open individually** (B7) |
+
+A "no human tags" sweep will **not** surface the B7 papers, because they *have* tags. That is exactly
+why they stayed invisible until the roster was checked by hand.
+
 ### B6. Model `demote:context` flags have no home in Zotero
 5 records across `BAWCBT9R` and `UW2R6BBJ` (and any others surfaced by A1). The `cal:` namespace has
 **no flag form** — Light Read encodes only `primary`/`theme`/`facet`. Either define a form
