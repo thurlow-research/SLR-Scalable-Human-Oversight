@@ -5777,3 +5777,14 @@ study the two tags carry identical information.
 artifact evaluated on real production data rather than a benchmark or synthetic corpus.* That is a
 genuine unmarked rung on the evidence ladder. Written as a general "real data" marker it becomes noise
 on every mining paper in the corpus.
+
+**DEFINITION SETTLED (arbiter, same day) — the discriminator is whether an artifact is under
+evaluation:**
+
+> *"In **real-data**, a **tool is developed** and that tool is **evaluated using real data**. Tool could
+> be a pipeline. In **mining**, **pre-existing data is mined for insights. No new tool is being
+> evaluated**."*
+
+**Entailment to enforce when grafting: `evaluated-real-data` ⇒ `built-system`.** If nothing was built,
+the tag cannot apply — which is exactly why it does not fire here. Full statement and candidate seeds
+in `Methodology/Post_Accept_Closeout.md` §F2a.

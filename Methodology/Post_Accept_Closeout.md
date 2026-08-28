@@ -299,6 +299,38 @@ alongside — same principle as A1.
 `final:* = panel modal ∪ human endorsements − human rejections − deprecated vocabulary` (§101a).
 **Blocked on all of Section B.**
 
+### F2a. `evaluated-real-data` — definition SETTLED (2026-08-28), ready to graft
+
+Scott's formulation, which is the definition of record:
+
+> *"In **real-data**, a **tool is developed** and that tool is **evaluated using real data**. Tool could
+> be a pipeline. In **mining**, **pre-existing data is mined for insights. No new tool is being
+> evaluated**."*
+
+**The discriminator is: is there a developed artifact under evaluation?**
+
+| | artifact built? | evidence source | tag |
+|---|---|---|---|
+| `evaluated-real-data` | **yes** — tool or pipeline | real production data | the artifact was proven outside a benchmark |
+| `method-mining` | **no** | pre-existing artifacts | the study characterises the world |
+| `evaluated-benchmark` | (either) | a standard benchmark | measured **against** an accepted benchmark (§119b) |
+
+**Entailment to enforce at grafting: `evaluated-real-data` ⇒ `built-system`.** If nothing was built,
+the tag cannot apply. Worth a consistency check in the tooling.
+
+**Why the scoping matters:** written as a general "real data" marker it fires on every mining paper in
+the corpus and carries no information (mining **is** real data by definition — §125d). Scoped to a
+built artifact it marks a genuine, currently unmarked rung: *proven on production data rather than on
+a benchmark or a synthetic corpus.*
+
+**Candidate seeds** (all deferred rather than tagged, so first use lands deliberately):
+Karakaya `5NZ2EDEK` (§122f) · Liu `6ZC3H7AF` · Lipsanen `7SH86C2W` (§124d).
+**Not** Liu `9H6FWJME` — pure mining, no tool (§125d).
+
+**Related open rung — `evaluated-self-demo`** (§124d): the proposers qualitatively judging their own
+artifact on a case they built. Weakest evidence there is, common in this literature, currently
+unmarked; `built-system` says only that the thing exists.
+
 ### F2. Next versioned instrument cut (§41) + restricted re-run
 Graft: `scaling-dissent` · the `evaluated-*` ladder · `agent-panel` · `cross-model` ·
 `evaluator-reliability` · `evaluated-real-data` · **`oversight-scaling-inversion` v2 (its own slug —
