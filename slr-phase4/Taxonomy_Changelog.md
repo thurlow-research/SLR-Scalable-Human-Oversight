@@ -5021,3 +5021,71 @@ carried by `risk-quality`, whose definition already covers *"code comprehensibil
 the code"*, and the paper proposes **no explanation mechanism** — it recommends the code be *simpler*,
 not that it be *explained*. **Discriminator: making an artifact easier to understand is a quality
 intervention; making its behaviour legible to a reviewer is `oversight-explanation`.**
+
+## 118. `automation-bias` gets its cleanest instance; and aggregated warning counts are not risk-flag evidence (`4T5QFWZE`, 2026-08-27)
+
+Huang, Jaisri, Shimizu, Chen, Nakashima & Rodríguez-Pérez, *More code, less reuse: investigating code
+quality and reviewer sentiment towards AI-generated pull requests* (arXiv 2026-01). **Core +
+Dissertation Primary + Validation Apparatus.** Primary `quality-debt` (3/3); **`automation-bias`
+rescued** (gemini 1/3); `metrics`, `agentic`, `method-mining`, `risk-quality` (3/3), `risk-overreliance`
+(1/3).
+
+**(a) `automation-bias` RESCUED — the cleanest instance in the band.** §16 requires **a capable human
+demonstrably failing**, which has kept the tag off papers where fast merges were ambiguous evidence
+(`SHK6KAX6` §116b). Here the failure is demonstrated on **both sides simultaneously**:
+
+> *"LLM Agents frequently disregard code reuse opportunities, resulting in **higher levels of
+> redundancy** compared to human developers. **In contrast to the quality issues**, our emotions
+> analysis reveals that **reviewers tend to express more neutral or positive emotions towards
+> AI-generated contributions than human ones.** This disconnect suggests that the **surface-level
+> plausibility of AI code masks redundancy**, leading to the **silent accumulation of technical
+> debt**."*
+
+**MRS establishes the defect exists; sentiment analysis establishes reviewers did not register it — and
+felt better about it.** Reviewers looked at objectively worse code and reacted more positively. **That
+is oversight failing, measured on both the artifact and the human**, not inferred from merge latency.
+
+**(b) `metrics` — strongest instance since `F2C2DWSI`, and a clean §84 pass.** *"we propose a new metric
+called the **Max Redundancy Score (MRS)**"*, computed via Type-4 semantic-clone detection, positioned
+explicitly against the status quo — *"existing metrics solely measure pass rates, failing to reflect
+impacts on long-term maintainability and readability."* **Named · computable · argued for · situated in
+the measurement literature.** All four of §84's conditions, unusually explicit.
+
+**(c) `risk-security` NOT applied (0/3) — verified absent.** The only occurrence of *"security"* in the
+paper is a **venue name in a reference**.
+
+### 118a. AGGREGATED WARNING COUNTS ARE NOT RISK-FLAG EVIDENCE — `risk-security` rejected on `REZGA5WF`
+
+Closing He's last open item, and stating a rule the mining studies will keep testing. He's
+`risk-security` was **2/3 modal**, resting on the static-analysis warning increase. The variable
+definition settles it:
+
+> *"**Static Analysis Warnings**ᵢₜ : Total number of **reliability, maintainability, and security
+> issues** for repository i at month t"*
+
+**The +30% is a composite of three categories, never decomposed** — the security share is
+unrecoverable. Every other security mention in the paper is a **citation to other work** as background.
+
+> **RULE: an aggregated warning count is not substantive treatment of any of its components.** The
+> risk-flag bar requires *defining a metric for the harm · contributing or evaluating a mitigation ·
+> reporting an empirical result **about it** · focal analysis*. A composite that happens to include a
+> harm satisfies none. This is the *"intro risk-list sentence = mention, NO tag"* rule one level up —
+> **from a sentence that mentions to a number that subsumes.**
+
+**Expect recurrence:** several papers in this band use SonarQube-style composite counts. **The risk
+flags must not all fire off one undifferentiated number.**
+
+### 118b. Second EFFECT–MECHANISM pairing in the band
+`59KP8GTP` (Gao, §114) measured that AI-co-authored PRs receive **the least** reviewer feedback and
+recorded **three untested hypotheses** for why — one being *"polish substitutes for provenance."*
+**Huang measures that hypothesis directly** and finds it holds: surface plausibility produces **positive
+reviewer affect** toward objectively worse code.
+
+> **Gao has the effect; Huang has the cause. Neither cites the other.** Second such pairing after
+> He/Gao's prescription-versus-violation (§117) — and the same argument shape the independence thread
+> relies on: **independent groups, converging, neither writing to support the other.**
+
+**Flagged, not applied:** `oversight-scaling-inversion`. Under §88's route (ii) (§117d), redundancy in
+**merged** code that review failed to catch would qualify — but the paper says *"silent accumulation…
+in real-world development environments"* without establishing that the studied PRs merged. **Route (ii)
+should not be widened on its first outing; check RQ1's sample at closeout.**

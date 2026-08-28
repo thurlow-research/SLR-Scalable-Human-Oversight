@@ -212,6 +212,21 @@ pipelines, then read methods sections.
   triples the fix rate — and still leaves 44.5% unfixed**, which is the part to quote when someone
   proposes static analysis as sufficient.
 
+### `4T5QFWZE` — Huang, Jaisri, Shimizu et al. (2026), *More code, less reuse* · **SLR: Core**
+- **Apparatus — two instruments, deliberately paired.** (1) **Internal quality:** LOC, Cyclomatic
+  Complexity, and a purpose-built **Max Redundancy Score (MRS)** using Type-4 semantic-clone detection.
+  (2) **External perception:** **sentiment analysis of reviewer comments** on the same PRs.
+- **Why the pairing is the contribution:** the apparatus measures the artifact **and** the humans
+  looking at it, on the same objects. Every other harvest entry measures only the artifact.
+- **AI-as-checker:** no. Deterministic clone detection plus NLP sentiment over human comments.
+- **Human position:** the humans are the **measurand**, not the mechanism — the only entry where
+  reviewers are what gets assessed.
+- **The finding the pairing enables:** objective quality **down**, reviewer sentiment **up**. Neither
+  instrument alone could show it; the gap between them *is* the result.
+- **Why it matters to the harvest:** the strongest argument yet for **instrumenting the reviewer, not
+  only the artifact**. An apparatus that only measures code quality would have reported redundancy and
+  missed that nobody noticed — which is the part that matters for oversight.
+
 ## Back-fill candidates from the Light Read band (at closeout)
 `72W6R4JG` Töpfer (FCL constraint verifier + bounded repair loop) · `TA6GIUK2` Zietsman (BDD vs AI
 review head-to-head) · `96XE669R` Zhong (VeriCode's 30 deterministic verifiers) · `VZ27QUPQ` Zhuo
