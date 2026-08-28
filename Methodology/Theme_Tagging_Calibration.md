@@ -763,6 +763,10 @@ into the write-up: primary-theme assignment is reliable, secondary multi-label b
 noise concentrates (§3.1–3.2), and model signatures show directional bias (§3.3).
 
 ### 10.12 Still open at time of writing
+
+> **The working checklist is now `Methodology/Post_Accept_Closeout.md`** (created 2026-08-28) — it
+> consolidates this list with §120e and the 2026-08-27/28 findings, and adds ordering constraints.
+> **Work from that file.** The items below are retained for their *reasoning*, not as a second queue.
 - `final:*` has not been computed; it is a closeout step.
 - Whether to re-run the panel on the revised instrument after the Light Read pass closes is
   **undecided** (§41).
