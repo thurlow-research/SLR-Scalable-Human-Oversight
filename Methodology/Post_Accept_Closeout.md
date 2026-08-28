@@ -58,6 +58,18 @@ is the *genus* (questionnaires, interviews, focus groups, diaries); survey is on
 been enforcing the narrow lens on everything he ruled explicitly, so exposure is only the silent
 modals.
 
+**Apply the §121b ELICITATION TEST — it is much faster and more consistent than "is there a survey":**
+
+> **`survey-input`** = the instrument elicits **stated preferences / adoption / priorities** (findings
+> that could become org-survey items).
+> **`method-self-report` only** = the instrument measures a **construct or performance** — cognitive
+> load, engagement, comprehension, satisfaction, demographics.
+
+**Neither the survey's centrality to the paper nor its usefulness to us is part of the test** (both
+were proposed as refinements and withdrawn — see §121b). Worked pair: Catalan `5BAZZWHG` measures
+cognitive engagement → **off**; Kang `7UB2MD8Z` asks what developers *want* → **on**. The two facets
+**co-occur** freely; they are different axes.
+
 ### B3. Deprecated-tag sweep — `counterpoint` (§56)
 Survives into `final:*` on any paper where it was modal and never rejected, because silence lets a
 modal proposal stand. **Do it as one bulk auditable act**, not per paper. Note §101a already excludes

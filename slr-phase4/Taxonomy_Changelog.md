@@ -4862,6 +4862,12 @@ Ghammam & Almukhtar, *AI builds, we analyze: an empirical study of AI-generated 
 
 ### 116a. DEFINITIONAL NARROWING — `survey-input`
 
+> **SUPERSEDED IN PART by §121b (2026-08-28).** The narrowing below stands (an actual user-survey
+> instrument must exist), but the operative test is now **what the instrument ELICITS**: stated
+> preferences / adoption / priorities → `survey-input`; a construct or performance measure
+> (cognitive load, engagement, comprehension, satisfaction) → `method-self-report` only.
+> Neither the survey's centrality to the paper nor its usefulness to us is part of the test.
+
 The facet has been declined three times (`JQPPKSFQ`, `59KP8GTP`, here) on the ground that the paper did
 not survey anyone, which contradicts its written text: *"`method-self-report` ≠ `survey-input` (method
 vs the finding's **utility to the org survey** — **a mined study can be `survey-input`**)."* The arbiter
@@ -5316,3 +5322,100 @@ a candidate refinement for the next versioned cut; **no change made now.**
 - **Mode pair** — neither panel nor arbiter assigned `assistive`/`agentic`. Reasonably absent: the
   paper studies judges over benchmark programs, so no generation setting is under study. Noted so the
   silence is not later read as an omission.
+
+## 121. `survey-input` REFINED to an elicitation test; and a debugging paper earns core on its explanation study (`7UB2MD8Z`, 2026-08-28)
+
+**Paper:** Kang, An, Yoo, *Explainable automated debugging via large language model-driven scientific
+debugging*, **Empirical Software Engineering** (2024-12).
+**Written:** primary `oversight-explanation`; `hitl-workflow`; facets `general-code`,
+`risk-overreliance`, `survey-input`, `routing-signal`, `method-self-report`, `agentic`,
+`built-system`, plus pre-existing `evaluated-benchmark` and `method-experiment`.
+**Declined:** `ai-review` (0/3, arbiter-proposed), `risk-routing`, `framework` (1/3),
+`automation-bias` (1/3). **SLR: Core · Dissertation: Primary · 04 - Validation Apparatus.**
+
+**No rejection tags were written.** Every panel-modal proposal (≥2/3) was endorsed; everything
+declined was 1/3 or 0/3 and therefore never reaches `final:*`. Recorded because the absence of
+`cal:human:reject:*` on a contested paper can otherwise read as an incomplete pass.
+
+### 121a. Why an automated-program-repair paper is core
+
+AutoSD prompts an LLM to form hypotheses, drives a **debugger** to test them, and emits a patch **plus
+the reasoning that produced it**. On its face this is APR — a family we have demoted repeatedly. It is
+kept because **the contribution is the explanation, and the explanation is evaluated on human
+decisions**: a 20-participant study in which *"participants with access to explanations judged patch
+correctness more accurately in five out of six real-world bugs."*
+
+That satisfies §115 exactly — **an instrument becomes a contribution when the paper measures the
+effect of using it** — and it is the corpus's strongest instance of *measuring* whether explanation
+improves oversight rather than asserting it. Pairs with Zhou (`XRTVITVP`, *Steering LLMs*) and the
+"when users should check" paper, supplying the outcome measurement that cluster otherwise lacks.
+
+### 121b. §116a REFINED — `survey-input` fires on WHAT THE INSTRUMENT ELICITS
+
+**Two wrong refinements were proposed and withdrawn before the right one.** Both are recorded because
+each is a plausible reading that will recur:
+
+1. **"The survey must be the paper's core."** Drawn from the arbiter's Catalan ruling (*"it wasn't the
+   core… just a data collection mechanism"*). **Wrong** — it imports a *method* question into a
+   **role** facet, and it would exclude Kang, which is a correct positive.
+2. **"The survey findings must be useful to the org survey."** **Wrong for a different reason**, and
+   the arbiter caught it: *"this should record the method used, not its significance, right?"* A
+   utility test is **not reproducible** — another coder cannot apply it, and it drifts as our
+   interests change. **The decisive evidence: the panel proposes `survey-input`** (2/3 here). Models
+   have no access to our interest level, so whatever they key on must be a **visible property of the
+   paper**.
+
+**The rule that survives — an elicitation test, objective and panel-codeable:**
+
+> **`survey-input`** = the instrument elicits **stated preferences, adoption, or priorities** — the
+> kind of finding that can become an item in the org survey.
+> **`method-self-report` only** = the instrument measures a **construct or performance** (cognitive
+> load, engagement, comprehension, satisfaction, demographics).
+
+Neither centrality nor significance enters. The two live rulings then reconcile **without revisiting
+either**:
+
+| Paper | What the instrument measures | Verdict |
+|---|---|---|
+| Catalan (`5BAZZWHG`) | a **construct** — cognitive engagement by Bloom level (*"assessing their reasoning, attention"*; *"(3) Understanding, (4) Analyzing, (5) Evaluation"*), perceived cognitive load | `method-self-report` only |
+| **Kang (`7UB2MD8Z`)** | **stated preferences about tooling** — *"70% agreed [explanations were wanted]"*; *"half agreed or strongly agreed that explanations would be important **when using repair tools**"* | **`survey-input`** |
+
+The arbiter's intuition (*"in Kang the survey results are something we are super interested in, whereas
+in Catalan it is just a supporting player"*) was tracking a real difference — but the difference is not
+our interest. **Kang asked people what they want; Catalan measured what they did.**
+
+`survey-input` and `method-self-report` **co-occur** on Kang, consistent with §116a's standing note
+that the two are different axes (finding-role vs evidence-production).
+
+**Closeout consequence:** the `survey-input` re-check (≈10 silent-modal instances) now applies
+*preferences vs construct*, not *is there a survey* — a faster and far more consistent call. Recorded
+in `Methodology/Post_Accept_Closeout.md` §B2.
+
+### 121c. `routing-signal` YES, `risk-routing` NO — a validated signal is not a router
+
+AutoSD emits a `<DEBUGGING DONE>` token: *"we can **gauge how confident AutoSD is**"*, and RQ3 tests
+whether it predicts correctness, motivated by *"if AutoSD can indicate when it is likely to be
+correct, this [lets developers skip] **patches that AutoSD is not confident in**."*
+
+That is a **computed, per-item, producer-independent signal** — `routing-signal` fires. But **no gate
+is built on it**; they measure that the signal *predicts*, they do not route on it. This is the Branco
+rule applied to a within-paper case: *"the study is not showing us how that [decision] is made."*
+**§107e stands: a validated signal is a signal, not routing.** The pair on one paper is a clean
+worked example of the boundary.
+
+### 121d. `general-code` — a unanimous panel MISS worth noting
+
+**0/3.** The object of study is **human-written buggy code** from repair benchmarks, not AI-generated
+code. That is precisely what the facet exists to mark: the transfer audit trail for a kept-core paper
+whose findings are about code in general. The panel proposed the mode facet (`agentic` 3/3) but missed
+the scope facet entirely — consistent with §11.7's finding that panel recall is bounded, and a
+reminder that the **scope** question in the seven-part checklist is the one most often skipped.
+
+### 121e. `ai-review` declined — the AI repairs, the human reviews
+
+Proposed by the arbiter, **0/3 from the panel**, and declined on examination. AutoSD's internal
+verification is a **debugger executing hypotheses** — deterministic, not a model judging code — so the
+Yu/`PPMTM4DG` self-review failure mode does not arise. The reviewing in this paper is done by
+**humans reading explanations**, which is why the primary is `oversight-explanation` and the human
+side is carried by `hitl-workflow`. The paper's own framing (*"full developer trust requires a manual
+patch review"*) names the human as the reviewer.
