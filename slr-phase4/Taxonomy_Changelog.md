@@ -6790,3 +6790,65 @@ project**, so the "field" is observed by interested parties, and `method-self-re
 for that reason. Distinguish from Lipsanen (§124c), where the method facets were **rejected** because
 the authors evaluated their **own proposed framework** on a case they built: there, results described
 the *tool*; here they describe a *real delivery project*, which is the world — however partially.
+
+## 139. `rules-based-checks` REQUIRES DETERMINISTIC EVALUATION — an LLM-judged rubric is `ai-review` (`GCZQTNBD`, 2026-08-28)
+
+**Paper:** Sollenberger et al., *LLM4VV: exploring LLM-as-a-judge for validation and verification
+testsuites*, SC'24 Workshops (2025-02-11). LLM-as-judge over OpenMP/OpenACC **compiler validation
+testsuites**.
+**Written:** primary `ai-review`; `built-system`, `framework`, `agentic`, `evaluator-reliability`.
+**Rejected:** `rules-based-checks` (**3/3**). **`demote:context`, no dissertation role.**
+
+### 139a. THE RULE (arbiter, 2026-08-28)
+
+> ***"Rubrics that are LLM evaluated are not rules-based-checks."***
+
+**`rules-based-checks` requires the evaluation itself to be DETERMINISTIC** — a check whose verdict is
+computed, reproducible, and independent of a model's judgement. **Rule-*shaped* criteria evaluated by
+a model are `ai-review`**, however explicit the criteria look. The theme names *how the verdict is
+produced*, not *how the criteria are written*.
+
+**Why the distinction is load-bearing and not pedantry.** It is the axis §134b turns on: deterministic
+checks and LLM judgements have **different error profiles**, and the whole soft-vs-deterministic
+finding collapses if a rubric scored by GPT-4o counts as a rule-based check. Jin **88.74% FPR**,
+Bugdar **24–58% precision**, Raghavendra **~46% low-utility rejections** — versus Parris's AIRA,
+Töpfer's FCL verifier, Zhong's 30 verifiers, Lipsanen's executable acceptance tests, which either fire
+or do not. **Collapsing them would erase the corpus's clearest practical result.**
+
+Consistent with §134c, where the assistant declined the tag on Raghavendra for the same reason. This
+entry promotes that one-off into the rule.
+
+### 139b. Why this paper had nothing to reconsider
+
+The arbiter's question — *"Another LLM as judge paper. We've demoted / discarded those in the past. Is
+there anything in this one that should have us reconsider it?"* — checked, and the one plausible hook
+fails:
+
+**The *"agent-based approach"* is a SINGLE LLM, not a panel:** *"An agent-based approach involves
+treating **the LLM as an autonomous agent** that interacts with its environment."* The *"pipeline"* is
+*"pipeline stages and **parallel processing**"* — throughput, not redundancy. **No `agent-panel`
+evidence**, which was the only reason to reopen the family.
+
+Otherwise it sits further out than its predecessors: same class as Zhao (§98), Karakaya (§122) and
+Raghavendra (§134); **narrower domain** (HPC compiler testsuites, judging compiler test cases); and
+**no human anywhere**, which is §134a's settled rule — *verification serving automated validation is
+not oversight; verification serving a human decision is.* The negative-probing design
+(*"intentionally-erroneous code"*) is a third instance of a methodology the corpus already has, better
+executed, in Jin's paired datasets and McAleese's tampering task.
+
+### 139c. Retroactive exposure — 24 papers carry human-endorsed `rules-based-checks`
+
+The rule is new, so prior applications need checking. **24 papers** carry it in the human layer
+(3 as primary: Parris `3SU9QZ6F`, Töpfer `72W6R4JG`, Xie/VibeGuard `T8E8SCCG` — all deterministic, all
+safe).
+
+**Most are clearly correct** — executable tests, static analysers, constraint verifiers, security
+gates. **The re-check population is papers where the evaluator is plausibly a model**, not all 24.
+
+**One known hybrid, already flagged:** **Jin** (`A5WDGC7J`, §120d) — the Fix-guided Verification Filter
+*executes* tests deterministically, but *"the test generation step is **standardized to GPT-4o**."*
+**Deterministic adjudication over LLM-generated inputs.** The rule as stated does not settle this: the
+*verdict* is computed, the *criteria* are model-authored. Left as written and referred to F2, which
+should decide whether hybrid pipelines take both tags, the deterministic one, or a new slug.
+
+Added to the closeout as **B10**.

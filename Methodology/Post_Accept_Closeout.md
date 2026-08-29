@@ -160,6 +160,30 @@ decision rather than an accident. **Note the reflexivity:** the review is, in mi
 the pathology it studies — worth a sentence in the methods chapter, under the §11.8 guardrail
 (illustration, not evidence).
 
+### B10. `rules-based-checks` re-check — the evaluation must be DETERMINISTIC (§139a)
+**Rule (arbiter, 2026-08-28):** *"Rubrics that are LLM evaluated are not rules-based-checks."* The
+theme names **how the verdict is produced**, not how the criteria are written. Rule-shaped criteria
+scored by a model are `ai-review`.
+
+**Exposure: 24 papers** carry `cal:human:*:theme:rules-based-checks`. **Do not re-open all 24** — most
+are plainly deterministic (executable tests, static analysers, constraint verifiers, security gates),
+including all three that carry it as **primary** (Parris `3SU9QZ6F`, Töpfer `72W6R4JG`, Xie
+`T8E8SCCG`).
+
+**Re-check only where the evaluator is plausibly a model.** Screening question per paper: *does a
+model produce the verdict, or does code?* Candidates to look at first — titles suggesting
+LLM-based reasoning or agentic review: `5DI9B43K` Sistla · `3ZVMBGPB` Kamalı · `6ZW9QNQH` Mitchell ·
+`RX9SICP9` Moreira · `59ZW4R58` Maes · `RPHK78A9` Kim. (Demoted papers carrying it — `WBS9U5N7`,
+`27YULT5I`, `N7E3MR2V`, `QWHE9EXH`, `D87A4CAS` — are lower priority under §42.)
+
+**Known hybrid, referred to F2:** **Jin** (`A5WDGC7J`, §120d/§139c) — deterministic test execution
+over **GPT-4o-generated** tests. Verdict computed, criteria model-authored. The rule does not settle
+it; F2 must decide whether hybrids take both tags, the deterministic one, or a new slug.
+
+**Why it matters:** this is the axis §134b turns on. Deterministic checks and LLM judgements have
+different error profiles (Jin 88.74% FPR · Bugdar 24–58% precision · Raghavendra ~46% low-utility vs
+checks that either fire or do not). Conflating them erases the corpus's clearest practical result.
+
 ### B8. Verify every item with NO `cal:human` tag — confirm it was genuinely never examined
 **Scott's rule (2026-08-28):** *"we've modified tags on every item, so if there aren't any with human
 tags, they are highly unlikely to have been examined."* Every paper that received a pass got **at
