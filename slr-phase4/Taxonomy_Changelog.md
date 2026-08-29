@@ -5968,3 +5968,69 @@ It is also the first candidate at **Core + Dissertation Primary**, i.e. the grad
 slug's first instance should be established on. The three earlier candidates were all demoted or
 Supporting and were deferred for that reason. **Not written — awaiting an explicit call on whether to
 apply it here or hold the whole ladder for the F2 graft.**
+
+## 128. `risk-bias` in vocabulary ≠ in scope; and a third 3/3 altitude/mode correction (`QTJPLBYR`, 2026-08-28)
+
+**Paper:** Naqvi et al., *Evaluating security and inclusivity in LLM-generated code: a controlled
+experiment*, SSRN preprint (2026-01-10). Three prompting rounds; artifacts scored on security and
+inclusivity by **13 human experts and 5 LLMs**.
+**Written:** primary `ai-code-insecurity`; `ai-review`; `steering`, `method-experiment`,
+`risk-security`, `risk-bias`. **Rejected:** `agentic` (**3/3**). **`demote:context`, no dissertation
+role.**
+
+### 128a. The demote ground — not operationalizable, NOT out of taxonomy
+
+The arbiter's read: *"not related at all to our thesis"* / *"focus on inclusivity, neurodivergence."*
+Sustained, but the ground needs stating precisely, because **`risk-bias` is in our vocabulary** —
+inclusivity is a risk type the instrument already tracks. The paper is not off-taxonomy.
+
+**It is a capability evaluation that contributes no oversight mechanism** — the *not operationalizable*
+branch of the demote menu. It measures whether generated code meets security and inclusivity criteria;
+it proposes nothing for **overseeing** either. Also an **unreviewed SSRN preprint** (*"This preprint
+research paper has not been peer reviewed"*), which is not itself a demote ground but bears on how the
+one transferable finding below can be used.
+
+**Rule worth carrying:** *a risk type being in the vocabulary does not put a paper about that risk in
+scope.* The instrument's risk facets describe **what a paper treats**; the core bar asks what it
+**contributes to oversight**. Keeping these separate prevents a slow drift where any paper touching a
+tagged risk is presumed core.
+
+### 128b. The one transferable finding, recorded with its weakness
+
+The paper tests two head-to-head **human vs LLM reviewer** hypotheses — the delegation question:
+
+- **H2a — humans outperform LLMs at spotting inclusivity issues: SUPPORTED.**
+- **H2b — LLMs outperform humans at detecting security vulnerabilities: NOT supported.**
+
+Directionally consistent with Yu (`PPMTM4DG`) and Jin (`A5WDGC7J`) on the limits of delegated review,
+**but well below their evidentiary grade**, and the reason is worth recording as a pattern:
+
+> H2a's support is that *"human evaluators were **more critical** in their assessment of inclusivity,
+> as reflected by consistently **lower scores**."*
+
+**Severity is being used as a proxy for accuracy, with no ground truth.** A harsher scorer is not
+necessarily a better detector — it may simply be miscalibrated. Same structural defect the arbiter
+identified on Bhatnagar (§106: a comparison that does not vary the thing being measured). **Do not
+cite H2a as evidence that humans out-detect LLMs.**
+
+### 128c. `agentic` REJECTED at 3/3 — the Waseem rule, third application
+
+The design is *"after each round, the LLM-generated code artifact [was evaluated]"* — **iterative
+prompting with a human directing each round.** That is the arbiter's Waseem ruling verbatim:
+*"Focused on vibe coding, which is **steering, not agentic**."* `steering` also carried 3/3, which is
+the panel proposing both halves of a distinction it did not resolve.
+
+Rejected explicitly rather than left silent: at 3/3 it is modal and would otherwise stand into
+`final:*`.
+
+### 128d. PRIMARY moved from `ai-review` (3/3) to `ai-code-insecurity` — altitude again
+
+The object of study is the **security and inclusivity of generated code**; the human/LLM evaluation is
+the **method** by which that object is measured, not the contribution. Panel put its primary on the
+visible evaluation machinery.
+
+**Third consecutive altitude correction** (§123a volume-over-leakage, §124a mechanism-over-framing,
+this one method-over-object) — and the fourth including §121d's scope miss. The closeout pattern
+recorded at §124a now has four instances: **check every 3/3 primary against the tie-breaker before
+`final:*`.** On the evidence so far this is the panel's single most systematic error mode, and it lands
+on the **primary** slot, which carries the most downstream weight.
