@@ -68,3 +68,41 @@ Accept band closes, so nothing from them can influence Accept-band tagging.
 4. **Merge with the banked hooks above**, dedupe, and group by construct.
 5. **Mark provenance on every question** — corpus / HOS / both — so the instrument's design rationale
    is auditable and the guardrail is visibly respected.
+
+## COVERAGE REQUIREMENT — ask across all DISCIPLINES, not just dev/test/UX (2026-08-28)
+
+**Arbiter:** *"All aspects means **all disciplines**, not just dev, test, ux design."* Raised while
+ruling `N7E3MR2V` (SDLC AutoPilot AI), whose lifecycle decomposition is retained as an
+**instrument-design input** — a completeness prompt, not a citation (the paper is demoted, §132).
+
+**The problem this fixes.** The corpus is **code-centric**: nearly every oversight mechanism reviewed
+governs source artifacts — quality gates, scanners, review bots, conformance checks, complexity
+thresholds, routing by predicted review effort. But agentic delivery produces **requirements, test
+plans, architecture decisions, infrastructure-as-code, migration scripts, runbooks and
+documentation**. Each has a **different reviewer, a different competence, and a different failure
+mode**, and the literature says almost nothing about any of them.
+
+**This is a place the survey can answer what the literature cannot** — where AI output is actually
+landing across an organisation, and who (if anyone) checks it.
+
+**Disciplines the instrument should cover:**
+requirements / business analysis · architecture & design · **project management, estimation and
+capacity planning** · development · test & QA · UX design · security · infrastructure / SRE /
+platform · data & analytics · documentation and technical writing · release and change management ·
+compliance and audit.
+
+**Design implications:**
+- **Ask per discipline, not once in general.** A single "do you review AI output?" collapses the
+  variation that matters — the answer is plausibly *yes* for code and *no* for runbooks.
+- **Ask who reviews, not just whether.** Reviewer *competence* is the live question outside
+  development: a developer reviewing AI-generated IaC or a compliance mapping may not be qualified to
+  catch its failures, and would not know it.
+- **Expect asymmetric adoption.** Volume of AI output and depth of oversight are likely uncorrelated
+  across disciplines; that asymmetry is itself a finding.
+- **Cover the commitment side.** Estimation, work breakdown and capacity planning under agentic
+  delivery — the gap recorded in `Emerging_Themes.md`. Every corpus mechanism gates *merges*; none
+  gates *intake*.
+
+**Guard:** discipline breadth must not dilute the instrument's focus on **scalable oversight**. The
+question in each discipline is the same one — *what gets checked, by whom, and what is let through* —
+not a general survey of AI adoption.
