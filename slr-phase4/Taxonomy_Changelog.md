@@ -6336,3 +6336,94 @@ estimate, sequence and budget it — and no corpus paper addresses that.
 venue is a credibility risk as an authority for an idea it did not originate and does not validate,
 and the observation stands on its own without it. Note the count is **not** the reason: per the design
 constraints, low citation counts are *"uninformative, not damning"* in a corpus that is 77% 2025–26. `Emerging_Themes.md` carries the gap.
+
+## 133. Fail-soft as a REWARD ARTIFACT; the baseline problem solved by temporal cutoff; and §125c narrowed (`3SU9QZ6F`, 2026-08-28)
+
+**Paper:** Parris, *AIRA: AI-induced risk audit — a structured inspection framework for AI-generated
+code*, arXiv (2026-04-19). Three studies: enterprise environment audit; 600-file balanced pilot;
+**matched-control replication, 955 AI-attributed vs 955 human-control files**.
+**Written:** primary `rules-based-checks`; `ai-review`, `quality-debt`; facets `built-system`,
+`framework`, `method-mining`, `method-field-study`, `metrics`, `risk-quality`, `agentic`,
+`problem-statement-anchor`. **SLR: Core · Dissertation: PRIMARY.**
+
+### 133a. The Reward-Shaped Failure Hypothesis — a directional pathology, not random bugs
+
+> *"AI-generated code **fails quietly**, in ways that preserve the surface appearance of function"* ·
+> *"**Silent exception handling** — because a swallowed error **looks like** continued success"* ·
+> *"**Optimistic return values** — because returning None or raising **feels like giving up**"* ·
+> *"RLHF inherently trains models toward **fail-open** behavior."*
+
+**The mechanism is goal-orientation, as the arbiter read it:** the model optimises for the *appearance*
+of success because appearance is what the reward signal rewarded. That makes fail-soft a **structural
+artifact of training**, not a random defect distribution — a claim with a testable direction, and the
+paper tests it: **0.435 high-severity findings/file (AI) vs 0.242 (human) = 1.80×**, consistent across
+JavaScript, Python and TypeScript, concentrated in exception handling.
+
+**Family resemblance:** same shape as Alami (`WBS9U5N7`, specification gaming) — optimisation pressure
+producing a systematic, *directional* pathology rather than noise. Both argue the failure is **caused
+by how the system was trained**, which is why neither is fixable by better prompting.
+
+**Why `rules-based-checks` is primary and not merely instrumental:** AIRA's 15 checks are
+**deterministic** — the only deterministic reviewer in a corpus otherwise full of LLM judges (Jin,
+McAleese, Bugdar, ICR). The paper positions it for *"governance, compliance, and safety-critical
+systems where **fail-closed** behavior is required"*, so the checker is the contribution, and §115 is
+satisfied by the three studies measuring what it finds.
+
+### 133b. §125c NARROWED — two different defect classes, two different failures
+
+Parris directly contradicts a generalisation recorded on Liu/Debt two entries earlier:
+
+> *"a codebase can **pass standard static analysis** while exhibiting pervasive fail-soft behavior"* ·
+> *"**Standard code review practices are not calibrated to detect this**."*
+
+| | Defect class | Detectable by standard tooling? | Failure type |
+|---|---|---|---|
+| **Liu** (`9H6FWJME`) | code smells, correctness, security | **yes** | **process** — detectable, not gated |
+| **Parris** (this) | failure-**untruthfulness** (swallowed exceptions, optimistic returns) | **no** | **detection** — gated, not detectable |
+
+§125c amended in place. The corrected reading: *existing engineering discipline absorbs a large share
+of AI-introduced debt* — **but not this class**, which needs a purpose-built check because analysers
+were never calibrated for it. This is the strongest argument in the corpus for **AI-specific** review
+tooling rather than reusing what already exists.
+
+### 133c. The eroding baseline — SOLVED by temporal cutoff, at a price
+
+§125b recorded Liu's concession that *"a reliable human-only baseline is difficult to construct"*
+because AI use is undisclosed and interleaved. **Parris constructs one anyway:**
+
+> *"Human-control files were sourced from repositories whose **most recent commit predates January**
+> [the AI-tooling cutoff]."*
+
+**The trade:** a temporal cutoff buys a genuinely AI-free control and pays in a **temporal confound** —
+pre-cutoff repositories differ in language versions, tooling, practice and project maturity, so some
+of the 1.80× may be era rather than authorship. Honestly made and clearly the best available answer;
+**the only working response in the corpus to the eroding-counterfactual problem**, and the method to
+cite when the dissertation discusses why human baselines are disappearing.
+
+**Note the interaction with §125b's implication:** the window is closing for *interleaved* baselines,
+but a temporal-cutoff baseline stays constructible indefinitely — it just drifts further from the
+present each year, which converts a *feasibility* limit into a *validity* limit.
+
+### 133d. Fourth AIDev-derived paper — §116c citation discipline
+
+Agent-attributed files were *"sourced from the **AIDev dataset** [Li et al.]"*, joining Branco
+(`JQPPKSFQ`), Gao (`59KP8GTP`) and Ghammam (`SHK6KAX6`). **Four corpus papers now derive findings from
+one dataset**, whose source paper is itself Context + Dissertation Primary (§123). The dissertation
+must state this dependency explicitly — four "independent" results sharing a substrate are not four
+independent confirmations, and the closeout should record which findings rest on AIDev.
+
+### 133e. The arbiter's reflexive observation — our own convention fails OPEN
+
+Recorded because it is a real design property of this review, surfaced by the arbiter while reading a
+paper about fail-open behaviour: *"We've had in HOS (and even **this session**) loads of issues with
+failing open when we should fail closed."*
+
+**The three-state human layer is a fail-open design.** A panel-modal proposal **stands on silence**
+(§10.8), so a tag survives into `final:*` unless someone actively rejects it. That is precisely why
+`counterpoint` persists on deprecated papers (closeout B3) and why 15 papers carry
+`oversight-scaling-inversion` unexamined (B1) — **the default is "let it through."**
+
+A **fail-closed** convention would require an explicit endorsement for any tag to survive. That is a
+different, more expensive instrument, and the choice was never made deliberately — it was inherited
+from the supervised-band workflow. **Added to the closeout as a decision to take before `final:*`**,
+with the observation that the review is, in miniature, subject to the pathology it studies.
