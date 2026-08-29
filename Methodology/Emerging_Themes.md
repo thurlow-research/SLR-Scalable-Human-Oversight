@@ -2478,3 +2478,90 @@ checking deployable**, and it is the only such component in the corpus with prod
    validator is a design decision the corpus never discusses.
 3. **False-negative cost under suppression** — BitsAI-CR's filter removes findings, and suppressed
    defects are invisible in precision and Outdated Rate alike.
+
+## REDUNDANCY vs ADJUDICATION — two different operations, one of which the corpus undermines (2026-08-28)
+
+Sharpening of the topology table above, forced by the arbiter asking which mitigation to use:
+*"a checker and a validator of the checker. Or multi vendor checker and keeping only the things found
+by multiple models (our final checks do that)."*
+
+**They are not two flavours of one thing:**
+
+| | Question asked | Operation | Fails when |
+|---|---|---|---|
+| **Redundancy** — multi-vendor intersection | the **same** question, N times | agreement | **errors correlate across models** |
+| **Adjudication** — checker → validator | a **different** question: *"is this finding valid?"* | evaluation of a claim | the validator shares the checker's blind spot |
+
+**The corpus is unkind to redundancy specifically.** Yu (`PPMTM4DG`): a model cannot check itself —
+which is exactly why the arbiter runs a **cross-vendor** panel, and that is the correct response.
+But cross-vendor is not sufficient: **§11.4 records our own panel agreeing 9/9 on a wrong tag** —
+three vendors, three runs each, wrong together, because they shared a misreading of the *instrument*.
+**Decorrelating the model does not decorrelate the prompt.**
+
+Adjudication avoids that failure by construction: the validator is not repeating the task, so a
+different question can catch an error every checker would make. It is also the arrangement with
+measured results — Jin **88.74% → 39.96%**, Sun **75% precision in production**.
+
+**Both are legitimate; they do different jobs.** Intersection raises confidence that something *is* an
+issue. Adjudication decides whether a *specific claim* holds. **If the false-positive wall is the
+problem, the evidence points at adjudication.**
+
+### The rabbit problem has an answer — the validator is a SHARED stage
+
+Arbiter: *"So my 28 agents will expand. Agents breed like rabbits?"* **No — if the validator is not
+paired to each checker.** BitsAI-CR runs **219 review rules → one RuleChecker → one ReviewFilter**.
+Cost is **N + 1**, not **2N**, because the adjudication question is *uniform regardless of which
+specialist raised the finding*.
+
+**Three real costs remain:** adjudication is **serial** by construction and cannot be parallelised away
+as intersection can; **the recursion has no natural stop** (BitsAI-CR simply halts at one filter and
+accepts the residual); and **suppression is invisible** — a validator that kills a true finding leaves
+no trace in precision or Outdated Rate, both of which measure only what survived.
+
+## NEGOTIATED CONVERGENCE — a sixth shape, and why conjunctive gates may not blockade in practice
+
+The topology table predicts that a conjunctive gate-set is the most false-positive-exposed
+configuration available. The arbiter's operational observation runs the other way:
+
+> *"the various agents haven't caused failures, blockages. The agents went back and forth and **found
+> solution**. Very occasionally (handful of times), escalated to the human to arbitrate."*
+
+**The prediction and the observation are compatible, because that is not a conjunctive gate.** A gate
+**blocks on disagreement**; a negotiation **resolves it**. Iterating to agreement with
+**human escalation on deadlock** converts a false positive from a blockage into a round trip. The
+human arbitrates the residue rather than the volume — which is the allocation the whole review is
+about.
+
+| | On disagreement | Human load |
+|---|---|---|
+| Conjunctive gate | **blocks** | every false positive |
+| **Negotiated convergence** | **iterate; escalate only on deadlock** | **deadlocks only** |
+
+**Its failure mode is not blockage but non-termination** — Minh's *"silent abandonment"* (§127c): the
+agent that cannot absorb feedback stalls rather than converging. So the design question shifts from
+*"how do we avoid spurious blocks?"* to **"how do we detect a loop that will not converge, and escalate
+it early?"** Nothing in the corpus measures convergence rates or time-to-deadlock for agent
+negotiation.
+
+> **§11.8 guardrail.** The HOS observation is **n=1 self-observation and is not evidence.** It is
+> recorded as **design context** — it names a shape the corpus does not, and generates a research
+> question. It must not be cited as a finding, and it did not shape the instrument.
+
+## What a second checker actually contributes: MISSED REQUIREMENTS, not missed defects (2026-08-28)
+
+Three independent sources converge, which is worth more than any of them alone:
+
+| Source | Finding |
+|---|---|
+| **Raghavendra** (`8VBH957K`) | rubric failures classified: **Root Cause Missed 17.5%**, **Missing Edges 15.1%** — *"even when tests [pass]"* |
+| **Jin** (`A5WDGC7J`) | **conformance** review (*did it build what was asked?*) is a distinct failure axis from **defect** review (§120a) |
+| **HOS** *(design context, not evidence)* | *"The big thing that emerged from cross panel reviews was **missed requirements / edge cases**"* |
+
+**The value of a second checker is finding what was never considered — not catching defects in what
+was.** That reframes what multi-agent checking is *for*: not redundant defect-hunting on the same
+surface, but **coverage of the specification space**. It also explains why deterministic checks and
+LLM review are complements rather than competitors — a linter cannot notice an absent requirement,
+because there is no code for it to inspect.
+
+**Open question:** if this is the real contribution, the right metric is **requirement coverage**, not
+defect precision. Every corpus paper measures the latter.
