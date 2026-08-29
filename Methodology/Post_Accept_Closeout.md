@@ -394,6 +394,23 @@ alongside — same principle as A1.
 `final:* = panel modal ∪ human endorsements − human rejections − deprecated vocabulary` (§101a).
 **Blocked on all of Section B.**
 
+### F2-PREP. Restricted re-run spec — DRAFTED, awaiting 4 decisions
+`slr-phase4/Restricted_Rerun_Spec.md` (2026-08-28). **Prep only, not authorised to run.**
+
+**Design settled:** restricted **output**, discriminative **context** — the prompt admits only the 9
+new slugs, but carries for each the neighbours it must be distinguished from, the discriminator test,
+and the Accept-band worked cases. A bare new-slug list would over-apply (the error corrected 5× on
+`agent-panel`, 4× on `cross-model`); the full revised instrument would invite re-adjudication of old
+tags. Old tags are unreachable **by schema**, not by instruction.
+
+**Population: 72** — 68 kept (primary present, no demote) + the 4 remaining (`MFSZPSPU`, `GAD5Z8PV`,
+`I6FZ5GD2`, `CTGGMIX9`). TXT available for all 72.
+
+**Blocked on D1 (coin `evaluated-self-demo`?) · D2 (re-run revised `survey-input`/`rules-based-checks`,
+or keep as human re-checks B2/B10?) · D3 (kept-only or + Context?) · D4 (confirm 3×k=3, fable
+excluded).** Also blocked on **D1 tooling** — `tag_layer_stats.py` must be fixed before T2 is
+recorded, or T2 inherits the T0/T1 band defects.
+
 ### F2a. `evaluated-real-data` — definition SETTLED (2026-08-28), ready to graft
 
 Scott's formulation, which is the definition of record:
