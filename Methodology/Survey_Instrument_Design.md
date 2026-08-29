@@ -210,3 +210,57 @@ retraining. Same function, opposite tunability — and practitioners will land o
 **Expected answer, worth preparing for:** most teams will have a **verdict**, no score, no threshold,
 and no way to adjust strictness. If so, that is a concrete finding about why AI review gets switched
 off rather than tuned when it proves noisy.
+
+## QUESTION AREA — how much effort goes into defining the CRITERIA? (added 2026-08-29)
+
+**Arbiter's hypothesis:** *"practitioners don't put that much energy into the definition of their
+agents."* Raised on Shi (`MFSZPSPU`), and worth testing because the corpus makes the stakes explicit.
+
+**Why this is the highest-value question in the instrument.** Shi's structure is the only one in the
+corpus with **O(1) human cost**: an LLM drafts a per-bug rubric, a human reviews it **once**, and the
+rubric is then applied to arbitrarily many patches — **κ 0.75, recall 0.94, precision 0.80**. Every
+other mechanism reviews outputs (O(N)) or routes a fraction of them (O(kN)). **The leverage is in the
+criteria, not the checking.**
+
+**And the corpus barely examines them:**
+
+| Paper | Criteria artifact | Validation reported |
+|---|---|---|
+| Shi (`MFSZPSPU`) | per-bug rubric | **yes — one-time human review** |
+| SGCR (`CTGGMIX9`) | human-authored specifications | asserted, not measured |
+| **Sun (`V4IRKSFI`)** | **219-rule taxonomy**, governing review for **12,000 developers** | **not reported at all** |
+| Lipsanen (`7SH86C2W`) | BDD / C4 / ADR artifacts | authors' own |
+
+**If the hypothesis holds, the finding is concrete:** teams are spending on models, prompts and
+plumbing while the component with the best measured return goes unexamined.
+
+### Ask about ARTIFACTS and EVENTS, never about effort
+
+Asking *"how much effort do you put into your criteria?"* collects self-flattery. Ask things that are
+true or false:
+
+1. **Where did your agent's review criteria come from?** *(we wrote them · vendor default · the model
+   generated them · there are no explicit criteria)* — the last two options are the hypothesis.
+2. **Is there a document?** *Could you point someone to it right now?* — binary, and hard to fake.
+3. **Did anyone review the criteria before they went live?** Who, and roughly how long did it take?
+4. **When did they last change, and what triggered the change?** *(A criteria set that has never
+   changed since setup is a strong signal.)*
+5. **Who owns them now?** *(No owner ⇒ nobody is maintaining them.)*
+6. **Can you say what your agent checks for** without looking it up?
+
+### The asymmetry to probe
+
+Compare **effort on the agent** (model choice, prompt iteration, tooling, integration) against
+**effort on the criteria** (what "good" means, who decided, who checks it still holds). The prediction
+is a large gap. Asking both in the same block makes the gap visible to the respondent as well as to us
+— which may itself be the most useful thing the survey does.
+
+### Design cautions
+
+- **Do not lead.** Nothing in the wording should imply criteria *ought* to be documented, or
+  respondents will report the aspiration rather than the practice.
+- **"The model generated them" is a legitimate answer, not a failure** — Shi does exactly that, then
+  has a human review it. **The discriminator is the review, not the authorship.** Ask both.
+- **Expect vendor defaults to dominate.** If most teams run an off-the-shelf reviewer with criteria
+  they have never read, that is the finding — and it means the criteria governing their oversight were
+  written by someone with no knowledge of their codebase.
