@@ -299,8 +299,11 @@ alongside — same principle as A1.
 - **E6. Verify the dissertation-queue records** created for Du / Huang / Islam (the agent-checks-agent
   gap, surfaced via Gemini and deliberately **not** added to the corpus).
 - **E8. Google Scholar citation retrieval — DECIDED but not executed.**
-  `Selection_Criteria_By_Phase.md` §394 signal #1: manually retrieve GS counts for the surviving
-  corpus, with Semantic Scholar as the reproducible cross-check. Not started; **first instance
+  `Selection_Criteria_By_Phase.md` §394 signal #1: manually retrieve GS counts, with Semantic Scholar
+  as the reproducible cross-check. **SCOPE (arbiter, 2026-08-28): run on the SURVIVORS only** — the
+  Phase 6 set (reviewed, no `demote:context`), not the whole corpus. Demoted papers are not being
+  defended in the write-up, so they do not need counts. This makes the manual effort tractable:
+  ~75–80 papers rather than ~150. Not started; **first instance
   recorded 2026-08-28** on `N7E3MR2V` (Citegeist **0** vs GS **2**), which is the discrepancy the
   decision exists to catch.
   - **Storage convention:** `GS.citedByCount:` / `GS.retrieved:` in the Zotero `extra` field,

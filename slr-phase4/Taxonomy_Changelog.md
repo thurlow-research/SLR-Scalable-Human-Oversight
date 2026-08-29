@@ -6302,10 +6302,22 @@ authority into a **formal metric** (track record, h-index) and **filtering on it
 | Sole or decisive ground for a disposition | **Not adopted** |
 | Retroactive re-filter of already-screened papers | **Barred (HARKing)** |
 
-**Applied here:** the demote rests on claim–evidence proportionality; authorship is recorded as a
-**contributing factor** and as an *explanation* of the pattern — a semester-scoped undergraduate
-project will overclaim in the abstract and evaluate one component. Nothing was excluded that the
-uniform criterion would have kept.
+**Applied here — the arbiter's statement of the compound ground (2026-08-28):** *"the main concern is
+**undergraduate status along with design-only**. It is more of a **vision piece without backing
+evidence of effectiveness** by junior people."*
+
+**Neither factor is doing the work alone, and that is the point.** The principle this yields, which
+generalises:
+
+> **`design-only` + unestablished authorship = insufficient warrant.** An unevaluated proposal is
+> credited *on the author's standing to have made it* — that is what a vision piece trades on. Remove
+> the standing and nothing remains to credit, because the paper offers no effectiveness evidence of
+> its own. Where the same design comes from an established group (Zhu, CSIRO Data61 + UNSW), the
+> authority substitutes for the missing evaluation; here it cannot.
+
+This keeps authority as **a** factor — it never decides alone, and it does not touch papers that carry
+their own evidence. **A junior-authored paper with a real evaluation is unaffected by this rule**, as
+is an unevaluated proposal from an authoritative group. Only the **conjunction** disqualifies.
 
 **Corrections withdrawn by the assistant:** citation count as a signal (the doc calls zero citations
 uninformative), and the claim that authority has no legitimate role.
