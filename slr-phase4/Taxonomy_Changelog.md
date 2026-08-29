@@ -6504,3 +6504,79 @@ author-curated material sourced from a well-known pool.
 **`evaluator-reliability`** — the paper measures rubric–ground-truth agreement and audits the
 **utility distribution of rubric failures**, which is the facet's subject. Panel proposed neither;
 both are scope/evidence-grade facets, the class the panel most consistently misses (cf. §121d, §130c).
+
+## 135. Superseded by its own successors; and the RELAY — a third multi-agent shape (`DJHG9BBS`, 2026-08-28)
+
+**Paper:** Rasheed et al., *AI-powered code review with LLMs: early results*, arXiv (2024-04-29). Four
+specialised review agents (Code Review, Bug Report, Code Smell, Code Optimization) with sequential
+handoff and a coordination layer.
+**Written:** primary `ai-review`; `built-system`, `framework`, `general-code`, `risk-quality`.
+**`demote:context`, no dissertation role.**
+
+### 135a. The evidence floor of the band — a results section with no numbers
+
+The arbiter's question was *"Is it adding anything new?"* Section 4, **"Preliminary Result"**, answers
+it. In full, its findings are:
+
+> *"demonstrated a **strong capability**"* · *"**showed good performance**"* · *"was **effective**"* ·
+> *"**generally well aligned**"* · *"**in several cases**"* · *"in several test cases"*
+
+**No dataset size, no accuracy, no baseline, nothing counted.** Accuracy is explicitly deferred:
+*"our **future** research aims to evaluate the accuracy and efficiency."* The title's *"early results"*
+is honest.
+
+**Grading against the band** — this sits below every comparable paper, which is why it falls out where
+Nimraka and Naulty were already marginal:
+
+| Paper | Evidence produced |
+|---|---|
+| Naulty / Bugdar (`HJMKADKU`) | precision/recall against ground truth (24–58%) |
+| Lipsanen (`7SH86C2W`) | structured 3-arm qualitative comparison, 5 categories |
+| Nimraka (`5RKMGRNA`) | unit and integration tests pass |
+| **Rasheed (this)** | **narrative assertion; no comparison, no numbers** |
+
+It is the clearest case yet for the **`evaluated-self-demo`** rung queued at F2 (§124d) — and arguably
+sits *below* it, since there is no demonstration protocol at all, only prose.
+
+### 135b. REDUNDANCY — every claim it makes is measured elsewhere in the corpus
+
+The decisive ground, and stronger than weak evidence alone. Its central empirical claim:
+
+> *"in several cases, it detected issues that **traditional static analysis tools either missed** or
+> reported with very limited explanation."*
+
+**Raghavendra (`8VBH957K`) measures exactly this** — rubrics flag what tests miss: **Root Cause Missed
+17.5%**, **Missing Edges 15.1%**, 54% of failures high-utility (§134b). Rasheed *asserts*; Raghavendra
+*quantifies*. Likewise the architecture: **Nimraka** builds the four-specialist design more completely,
+and **Dutta** (`399HN438`) confirms specialist review agents perform well.
+
+This is the **Hjazeen ground** (`VFNJSZD9`, kept out of the dissertation collection because *"Mitropoulos
+and Parris already demonstrate the trust-boundary claim it only asserts"*), applied at the SLR tier.
+**Priority is not a criterion in this review** — being first to propose something the corpus later
+measures does not earn core, and a 2024-04 preprint superseded by 2025–26 work is exactly that case.
+
+Also `general-code` 3/3: the object is **code review generally**, not AI-generated code.
+
+### 135c. NEW — the RELAY shape, a third multi-agent topology
+
+Fifth application of §130b (*specialists on distinct aspects = division of labour, not `agent-panel`*),
+but this instance is **not parallel**:
+
+> *"forwards its findings to **subsequent agents** for deeper analysis within the multi-agent
+> workflow"* · agents operate *"after the initial review phase and **receive the preliminary
+> findings**."*
+
+**Three shapes now distinguished, and the F2 `agent-panel` definition should name all three:**
+
+| Shape | Question | Arrangement | Failure mode |
+|---|---|---|---|
+| **Panel** | the **same** question | redundant, votes | correlated error survives unanimity (§11.4) |
+| **Parallel division** | **distinct** questions | concurrent, independent | gaps between specialisms; no cross-check |
+| **Relay** | **distinct** questions | **sequential, each consuming the prior's output** | **errors COMPOUND** |
+
+**The relay is the one worth flagging as a design hazard.** A later agent reasons *on an earlier
+agent's findings*, so an upstream false positive propagates and is elaborated rather than averaged out
+— the opposite of a panel, where redundancy damps error. Given the false-positive rates the corpus
+records for LLM reviewers (Jin 88.74%, Bugdar 24–58%, Raghavendra ~46% low-utility), **a relay of LLM
+reviewers is the architecture most likely to amplify them, and no corpus paper measures this.** Logged
+in `Emerging_Themes.md` as an open question.

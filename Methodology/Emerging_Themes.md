@@ -2333,3 +2333,29 @@ story-point calibration, reference-class forecasting) or to be argued as the rev
 estimation assumes a stable relationship between scope and effort mediated by a human team's velocity.
 If an agent's cost is compute rather than person-hours, and its failure mode is silent abandonment
 (§127c) rather than slow progress, the estimation object itself may have changed.
+
+## Multi-agent topologies — three shapes, three failure modes (2026-08-28)
+
+Consolidated after five papers where "multi-agent" in a title predicted nothing about the actual
+architecture (David §110, Dutta §112a, Nimraka §130b, P §132a, Rasheed §135c).
+
+| Shape | Agents answer | Arrangement | Failure mode | Corpus instances |
+|---|---|---|---|---|
+| **Panel** | the **same** question | redundant, votes/consensus | **correlated error survives unanimity** — 9/9 agreement on a wrong tag (§11.4); a model cannot check itself (Yu) | Ullah (`A6ZE2A26`, *unanimous LLM juries*) — the only real instance in the Accept band |
+| **Parallel division** | **distinct** questions | concurrent, independent | **gaps between specialisms**; nobody checks anybody | Nimraka (`5RKMGRNA`), ICR; David (`6NTZ85CW`); P (`N7E3MR2V`) |
+| **Relay** | **distinct** questions | **sequential**, each consuming the prior's output | **errors COMPOUND** — upstream false positives are elaborated downstream | Rasheed (`DJHG9BBS`) |
+
+**The discriminator that decides which you have:** *"loses a job or loses a vote?"* (§110). Remove one
+agent — if coverage disappears, it is division of labour; if a vote disappears, it is a panel.
+
+**Why the relay is the one to worry about.** A panel's redundancy **damps** error; a relay's dependency
+**amplifies** it. Later agents reason on earlier findings, so a false positive is not merely passed on
+but *built upon* — the second agent explains why the first agent's phantom bug matters, and the third
+proposes a fix for it. Set against the false-positive rates the corpus records for LLM reviewers — Jin
+**88.74% FPR**, Bugdar **24–58% precision**, Raghavendra **~46% low-utility rejections** — a relay of
+LLM reviewers is the topology most likely to manufacture confident nonsense.
+
+**Open question, unaddressed anywhere in the corpus:** *does error compound across a relay, and at what
+rate?* Every multi-agent paper reports end-to-end performance; none isolates whether the pipeline
+corrects or amplifies upstream mistakes. This is directly relevant to any architecture where a
+reviewing agent hands findings to a remediating agent — which is the common production shape.
