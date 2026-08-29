@@ -6436,3 +6436,71 @@ A **fail-closed** convention would require an explicit endorsement for any tag t
 different, more expensive instrument, and the choice was never made deliberately — it was inherited
 from the supervised-band workflow. **Added to the closeout as a decision to take before `final:*`**,
 with the observation that the review is, in miniature, subject to the pathology it studies.
+
+## 134. Soft verification is CONSUMER-DEPENDENT — the same error rate is viable for a ranker and fatal for a human (`8VBH957K`, 2026-08-28)
+
+**Paper:** Raghavendra et al., *Agentic Rubrics as Contextual Verifiers for SWE Agents* (2026-01-07).
+An expert agent explores the repository, builds a context-grounded rubric, and candidate patches are
+scored against it **without test execution**. SWE-Bench Verified, parallel test-time scaling: 54.2% on
+Qwen3-Coder-30B, **+3.5pp over the strongest baseline**.
+**Written:** primary `ai-review`; `agentic`, `built-system`, `risk-quality`, `evaluated-benchmark`,
+`evaluator-reliability`. **`demote:context` · Dissertation: Supporting** (child note `GIDV2HHG`).
+
+### 134a. Demote — verification for the AGENT, not for a human
+
+*"Verification is critical for improving agents: it provides the **reward signal for Reinforcement
+Learning** and enables inference-time gains through **Test-Time Scaling**"* · *"sampling multiple
+candidates and **selecting the best one** using a verifier."*
+
+**There is no human in the loop.** The paper names *"human-in-the-loop rubric refinement"* as **future
+work**. Same ground as Yao and Yu-tuning (model-training focus), and the exact contrast with McAleese
+(`NRVQT89E`), which was kept at Core **because** it measures a human arm (§126a). The distinction is
+now load-bearing across three papers and should be applied as a rule: **verification serving agent
+self-improvement is not oversight; verification serving a human decision is.**
+
+### 134b. The finding worth keeping — and it is the SAME number read two ways
+
+The arbiter's framing: *"In HOS, we tried this and eventually gave up, opting for **deterministic
+guardrails** instead."* The paper explains why, without meaning to.
+
+**Rubrics genuinely catch what tests miss:** *"rubrics surface diagnostic concerns (e.g., unnecessary
+edits or missing edge-case handling) **even when tests** [pass]"* — **Root Cause Missed 17.5%**,
+**Missing Edges 15.1%**, and *"**54% of rubric failures are high-utility**."*
+
+**Read the other way: ~46% of rubric rejections are noise.**
+
+> **The principle: soft verification is viable as an *automated ranking signal* and not as a
+> *human-facing gate*.** A best-of-K selector absorbs 46% junk and still picks better patches — that is
+> where the +3.5pp comes from. **A human reviewer cannot absorb that**, because every spurious
+> rejection costs attention, which is the scarce resource (Minh, §127a). *Same signal, same error
+> rate, opposite viability depending on who consumes it.*
+
+**This resolves an apparent conflict in the corpus rather than adding to it.** Papers reporting soft
+verification as successful and papers reporting it as unusable are **both right**, and differ in
+consumer:
+
+| Consumer | Tolerates false positives? | Corpus evidence |
+|---|---|---|
+| **Automated ranker / RL reward** | **yes** — noise averages out over K samples | this paper, +3.5pp at ~46% low-utility rejections |
+| **Human reviewer / gate** | **no** — each false positive spends attention | Jin (`A5WDGC7J`) 88.74% FPR · Bugdar (`HJMKADKU`) 24–58% precision |
+
+And it explains why the **deterministic** route is the one that survives contact with a human
+downstream: Parris/AIRA's 15 checks (`3SU9QZ6F`), Lipsanen's executable acceptance tests
+(`7SH86C2W`), Zhong's 30 verifiers (`96XE669R`). **The arbiter's HOS trajectory — rubrics abandoned
+for deterministic guardrails — is the predicted outcome of putting a human at the consuming end.**
+
+### 134c. `rules-based-checks` DECLINED at 1/3 — the distinction is the whole point
+
+Rubrics are **LLM-judged**, not deterministic. Tagging this `rules-based-checks` would collapse
+precisely the axis §134b is about. The theme is reserved for deterministic evaluation; a checklist
+scored by a model is `ai-review`, however rule-shaped the checklist looks.
+
+### 134d. `evaluated-benchmark` and `evaluator-reliability` ADDED (both 0/3)
+
+**`evaluated-benchmark`** — SWE-Bench Verified, administered as-is under its own protocol, which is
+exactly §34's requirement (*"the real, fixed, field-recognized thing, run as-is"*), as against
+author-curated material sourced from a well-known pool.
+
+**`evaluator-reliability`** — the paper measures rubric–ground-truth agreement and audits the
+**utility distribution of rubric failures**, which is the facet's subject. Panel proposed neither;
+both are scope/evidence-grade facets, the class the panel most consistently misses (cf. §121d, §130c).
