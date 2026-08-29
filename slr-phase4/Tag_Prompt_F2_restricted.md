@@ -61,7 +61,7 @@ Return **exactly one JSON object**, no prose around it:
 | `rules-based-checks-v2` | `evaluated-real-data` |
 | | `evaluated-synthetic` |
 | | `evaluated-benchmark` |
-| | `scaling-dissent` |
+| | `deterministic-orchestration` |
 | | `survey-input-v2` |
 
 Any other string is a **validation failure**, not a proposal. Emitting `survey-input` or
@@ -75,6 +75,28 @@ frozen v1 tags and must not be touched.
 - **No disposition.** Never propose keep, demote, or tier.
 - **`flags` is for genuine boundary cases** — emit the flag *instead of* guessing when a definition
   half-fits. A flagged non-emission is more useful than a confident wrong tag.
+
+---
+
+## 2b. TWO SLUGS THAT LOOK ALIKE AND ARE NOT — ask two separate questions
+
+`rules-based-checks-v2` and `deterministic-orchestration` both concern "code rather than model," and
+conflating them is the easiest error in this instrument. **They answer different questions. Ask both.**
+
+> **Q1 — is any of the CHECKING non-AI?** → `rules-based-checks-v2`
+> Does the system include checking whose **verdict is computed by code**, from criteria authored by a
+> human or a tool — linters, scanners, static analysis, executable tests, constraint verifiers?
+> *If every verdict comes from a model, the answer is no.*
+>
+> **Q2 — does code stop the AI taking shortcuts?** → `deterministic-orchestration`
+> Does **code, not a model**, control which steps run and whether their outcomes are honoured?
+
+**All four answers occur.** They are orthogonal; neither implies the other:
+
+| | **Q1 yes** | **Q1 no** |
+|---|---|---|
+| **Q2 yes** | CI pipeline + static analysis | **Vargas · Lyu** — code-enforced process, AI verdicts |
+| **Q2 no** | Töpfer · Parris — checks, no agent to constrain | free-form agentic reviewer |
 
 ---
 
@@ -243,23 +265,59 @@ authors built.
 
 ---
 
-### `scaling-dissent` *(facet)*
+### `deterministic-orchestration` *(facet — §147b)*
 
-**Fires when:** the paper argues that **delegating oversight is unworkable or impermissible as a general
-matter** — a principled objection to the scaling project itself.
+**The question this answers:** *does **code**, not a model, control which steps run and whether their
+outcomes are honoured — **so the AI cannot take shortcuts?***
 
-**Does NOT fire when** the paper reports that *a particular* delegation is unreliable, or that a
-specific tool underperforms. **That is the review's own thesis, not dissent from it.**
+Keep it separate from `rules-based-checks-v2`, which answers a **different** question: *is any of the
+**checking** non-AI?* One is about **who checks**; this one is about **who controls the process**.
 
-> **POLARITY TRAP — assume it is live.** The predecessor slug `counterpoint` was deprecated (§56)
-> because the panel tagged a thesis-**supporting** paper as opposition **9/9 — unanimously wrong.**
-> The failure mode is reading *"AI review has problems"* as *"oversight cannot be scaled."* Almost
-> every paper in this corpus reports problems; almost none dissents from the project.
->
-> Before emitting, answer explicitly in the rationale: **what general claim does this paper make that
-> the scaling thesis must answer?** If you cannot state one, do not emit.
+**Fires on either form:**
+- **(a) Sequencing** — which steps run, and in what order, is fixed in code. **The model cannot skip a
+  step**, because the harness advances the state.
+- **(b) Enforcement** — the consequence of a step's outcome is fixed in code. A failing check produces
+  rejection or escalation **without the model choosing to honour it**. **Fires regardless of what
+  produced the finding** — a linter or an LLM. *Orchestrator rejects a PR because the linter failed:
+  fires. Orchestrator rejects a PR because the AI found issues: also fires.*
 
-**Negatives:** Karakaya `5NZ2EDEK` · Lipsanen `7SH86C2W`.
+**TWO PRECONDITIONS, BOTH REQUIRED:**
+
+1. **The orchestrator is NOT AI.** If a model decides the sequence, nothing is deterministic.
+   > ⚠ ***"Orchestrator" is standard LLM-app vocabulary and usually denotes an LLM.*** This is the same
+   > trap as `RuleChecker` being a name rather than a mechanism. **Read what advances the state**, not
+   > the noun. Systems described as having an "orchestrator agent" or "manager agent" that *decides what
+   > to do next* are the **inverse** of this facet.
+2. **There is model discretion actually being removed.** The facet is meaningful only where an agent
+   could otherwise have skipped the step or ignored the result. **Deterministic machinery with no model
+   to constrain is just a pipeline** — without this precondition, form (b) fires on every `if` statement
+   in every CI config.
+
+**NOT EXCLUSIVE with AI checking.** These are orthogonal axes and the combination is the common,
+load-bearing case: **code-enforced process wrapped around model judgement.**
+
+| | **Deterministic verdict** | **AI verdict** |
+|---|---|---|
+| **Deterministic orchestration** | CI pipeline + static analysis | **Vargas · Lyu** ← the interesting cell |
+| **Model orchestration** | agent that chooses to run a linter | free-form agentic reviewer |
+
+**Positives:**
+- **Vargas `GAD5Z8PV`** — *"a **static orchestration model with three fixed phases**"*; *"orchestrator
+  with **fixed prompts, which prevents early**"* termination. Deterministic orchestration, **AI**
+  verdicts.
+- **Lyu `UB2EVUFU` — the mixed case, and the one to reason from.** *"The orchestrator is the central
+  coordination layer… managing phase transitions. **The orchestrator does not make software engineering
+  decisions itself**; rather, it provides the scheduling infrastructure."* A three-phase state machine
+  (Strategy → Execution → Verification) in code — **while** manager agents *"dynamically hire, assign"*
+  the team. **Phase sequencing is code-determined; staffing is model-determined. It fires.** The facet
+  asks about the **control flow**, not whether any model has discretion anywhere in the system.
+
+**Negative:** an LLM planner deciding what to do next.
+
+**Why it exists:** instruction-following is probabilistic; a state transition is not. LLMs skip steps in
+multi-step protocols even under explicit instruction, and a phase machine is the structural answer.
+**But note the limit** — a phase machine guarantees the check *happens*, not that the criterion is
+*right*.
 
 ---
 
@@ -343,11 +401,20 @@ Sun `V4IRKSFI` — **both** stages are fine-tuned LLMs; *"RuleChecker"* is a **n
 >
 > **Also not this slug:** *deterministic orchestration* — a fixed state machine sequencing the steps —
 > is not deterministic *checking*. Many systems have rigid control flow and an LLM judge at the end.
-> The question is only about the **verdict**.
+> **That combination gets `deterministic-orchestration`, not this.** The question here is only about
+> the **verdict**.
 
-**Known hybrid — FLAG, do not force.** Deterministic **execution** over **model-generated** criteria
-(e.g. running GPT-4o-authored tests): verdict computed, criteria model-authored. F2 has not settled
-hybrids. **Emit a `flags` entry and let the arbiter rule.**
+**HYBRIDS DO NOT FIRE — settled §147a.** Deterministic **execution** over **model-generated** criteria
+(e.g. running GPT-4o-authored tests) **does not take this tag.** The definition has three conjuncts and
+a hybrid fails the third: the verdict is computed and reproducible but **not independent of a model's
+judgement**, because the criteria are the model's. **Determinism downstream of a model's judgement buys
+reproducibility, not independence** — the same answer every time, including when it is wrong.
+
+Confirmed empirically: Jin, the hybrid case, runs at **88.74% FPR** — the LLM error profile, not the
+fire-or-don't profile this theme exists to isolate.
+
+**Still emit a `flags` entry when you meet one**, so the hybrid class can be counted for a possible
+future slug — but **do not emit the tag**.
 
 ---
 
