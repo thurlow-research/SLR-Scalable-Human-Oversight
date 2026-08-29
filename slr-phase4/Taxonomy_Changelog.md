@@ -7041,16 +7041,24 @@ one another. The *"LLM-Level Analysis"* **compares** behaviour across LLMs, whic
 pattern (§122) and one of the four declined `cross-model` readings. `cross-model` does not apply
 either.
 
-**Recorded as a definition change, not an error.** The tag was defensible when written; the slug had no
-reference case, and §140a narrowed it afterwards. **This is the first reversal of a hand-applied
-post-freeze tag by a later definition, and it will not be the last** — five slugs were applied by hand
-before Ullah and Vargas gave `agent-panel` and `cross-model` their positive cases.
+**CORRECTED (arbiter, having read the paper): this was an ERROR, not a definition change.**
+The assistant first recorded it as a definitional reversal — tag defensible when written, slug
+narrowed later by §140a. **That framing is wrong.** There is no panel here under *any* reading: the
+paper contains no agents checking one another, and the sole panel-like phrase describes an ensemble
+**model** inside a Kaggle solution. It was never a boundary case. Arbiter: *"I would say that agent
+panel was applied in error. Consider it a **QA correction**, not a change."*
 
-**Closeout consequence:** the F2 restricted re-run will propose `agent-panel` and `cross-model`
-independently across the surviving corpus. **Where the panel disagrees with a hand-applied instance,
-treat that as a signal to re-examine the human tag**, not as a panel error — the human tags predate
-the definitions. The 7 `agent-panel` and 5 `cross-model` hand-applications should each be checked
-against §140a. Added to closeout **B11**.
+**The distinction matters, and the correction is the less comfortable reading.** A definitional drift
+is expected and benign — it says the vocabulary matured. **An error says the hand-application pass had
+a defect rate**, and **11 further post-freeze tags were applied in that same pass**
+(`agent-panel` ×7, `cross-model` ×5, minus this one). One observed error in a small hand-applied set
+is a reason to check the rest, not to assume they are fine.
+
+**Closeout consequence:** the F2 restricted re-run proposes these slugs independently across the
+surviving corpus. Where the panel disagrees with a hand-applied instance, **re-examine the human
+tag** — not because the human tags predate the definitions (they mostly do not), but because this set
+was applied ad hoc, outside the panel-proposes/human-adjudicates workflow that governs everything
+else, and now has a known error in it. Added to closeout **B11**.
 
 ### 142b. Demoted on SCOPE — the generalisation claim is narrower than it first reads
 
