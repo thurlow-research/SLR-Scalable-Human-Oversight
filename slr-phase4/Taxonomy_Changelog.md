@@ -6238,3 +6238,80 @@ turned on elicitation (Kang on, Catalan off) or on the absence of any instrument
 Here the elicitation test passes and the tag still fails. **Both conditions must hold**, and the B2
 sweep should apply them in that order — instrument first, then elicitation — because the instrument
 check is cheaper and disposes of interview-only studies immediately.
+
+## 132. Authority is A factor, not THE factor — and the PM-discipline gap recorded without a citation (`N7E3MR2V`, 2026-08-28)
+
+**Paper:** P, Praneesh Roshan; Thavasi, M; Jaslin, C Quba, *SDLC AutoPilot AI: agentic automation of
+software development life cycle*, ICOIICS 2025 (IEEE), 2025-11-19.
+**Written:** primary `org-governance`; `hitl-workflow`, `rules-based-checks`,
+`provenance-auditability`; facets `design-only`, `framework`, `agentic`, `steering`, `risk-quality`.
+**`demote:context`, no dissertation role.**
+
+### 132a. Demote ground — evidence-to-claim proportionality, applied uniformly
+
+The abstract promises end-to-end SDLC orchestration *"to ensure accountability and resilience, the
+system includes **governance guardrails for human approval**, observability features such as decision
+logs and audit trails."* What is **specified and measured** is the estimation model (a COCOMO-style
+parametric baseline plus a learned residual, evaluated control-vs-treatment on accuracy / precision /
+recall / F1) and role allocation.
+
+**The oversight half is asserted, not designed.** *"human approvals at critical points"* appears twice
+with no criteria, thresholds, escalation rules, or statement of who approves what; audit trails are
+named as features and never specified. **Same ground as Naulty (§129) and Nimraka (§130)** — the thing
+built and measured is not the thing that would make it core — applied uniformly across all three.
+
+Also note **"role assignment" is not agents-in-engineering-roles**: *"Role Assignment Agent: **Matches
+tasks to resources**"*, forming human teams. The agents map to **PM/coordination functions**
+(requirement parsing, planning, role assignment, milestone tracking). **Fourth application of §130b** —
+specialists on distinct functions are **division of labour**, not `agent-panel`.
+
+### 132b. Authorship — the boundary between a legitimate factor and a retroactive filter
+
+The arbiter raised author level (*"authored by student. What level of student? If not doctoral, that
+might be an issue"*), citing precedent that **unaffiliated researchers were demoted partly on
+credibility**. Facts: two authors listed as *"Student"* with `22am155@` / `22am236@` emails — the `22`
+being the 2022 admission cohort, so **final-year undergraduates** — supervised by **C Quba Jaslin,
+Assistant Professor**, same institution. Minor IEEE conference, **0 citations**.
+
+**The assistant initially argued authorship should not be used at all**, citing
+`Selection_Criteria_By_Phase.md`'s design constraints: *"Apply it uniformly, or not at all"*;
+*"Do not let the signal become an inclusion criterion retroactively… Re-filtering after the fact would
+be a form of **HARKing**"*; and *"11 Light Read papers have zero citations and that is **uninformative,
+not damning**."*
+
+**Arbiter's correction, which is the ruling:** ***"Credibility of authorship is a factor, not THE
+factor. Keep that in mind."***
+
+**Reconciliation — the distinction that resolves both positions.** Authority is **already adopted** as
+one of the four Garousi MLR criteria (*authority / accuracy / coverage / objectivity*, §Selection
+Criteria item 8), and the preprint ruling explicitly preserves it: *"It does **not** flatten authority
+differences… **Judge the paper, not the venue**."* What is **not** adopted is signal **#2** — turning
+authority into a **formal metric** (track record, h-index) and **filtering on it**.
+
+| Use of authority | Status |
+|---|---|
+| Qualitative input to a holistic assessment, alongside other factors | **Legitimate — already in force** |
+| Sole or decisive ground for a disposition | **Not adopted** |
+| Retroactive re-filter of already-screened papers | **Barred (HARKing)** |
+
+**Applied here:** the demote rests on claim–evidence proportionality; authorship is recorded as a
+**contributing factor** and as an *explanation* of the pattern — a semester-scoped undergraduate
+project will overclaim in the abstract and evaluate one component. Nothing was excluded that the
+uniform criterion would have kept.
+
+**Corrections withdrawn by the assistant:** citation count as a signal (the doc calls zero citations
+uninformative), and the claim that authority has no legitimate role.
+
+### 132c. Dissertation role DROPPED — the gap is stronger than the citation
+
+The arbiter valued two design ideas: *"the authors leverage the design of human engineering processes
+for agentic processes and identify agents for common roles in the SDLC… They also brought in
+**estimation, work breakdown structures**, etc., bringing **project management discipline** in."*
+
+The second is a **genuine hole in the corpus**: every oversight framework reviewed governs **code
+quality**; **none governs commitment and forecast**. If agents produce work at volume, someone must
+estimate, sequence and budget it — and no corpus paper addresses that.
+
+**Recorded as a gap, not as a citation** — the §130d move. A 0-citation undergraduate paper at a minor
+venue is a credibility risk as an authority for an idea it did not originate and does not validate,
+and the observation stands on its own without it. `Emerging_Themes.md` carries the gap.
