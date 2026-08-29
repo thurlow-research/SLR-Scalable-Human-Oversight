@@ -106,3 +106,57 @@ compliance and audit.
 **Guard:** discipline breadth must not dilute the instrument's focus on **scalable oversight**. The
 question in each discipline is the same one — *what gets checked, by whom, and what is let through* —
 not a general survey of AI adoption.
+
+## QUESTION AREA — validating agent feedback (added 2026-08-28)
+
+**Arbiter:** *"Will definitely want questions in survey for dissertation about **validating agent
+feedback**."* Raised while ruling Sun / BitsAI-CR (`V4IRKSFI`).
+
+**Why this area is high-value: the literature is nearly empty here.** Exactly **one** corpus paper
+reports a production validation stage (BitsAI-CR's ReviewFilter, ByteDance, 12k WAU, 75% precision),
+and **one** reports a lab equivalent (Jin's Fix-guided Verification Filter, FPR 88.74% → 39.96%).
+Everything else measures reviewer accuracy and stops. **Practitioners will have experience the
+literature does not**, which is the strongest reason to ask.
+
+### What the corpus establishes, and therefore what to ask about
+
+| Established | Question it generates |
+|---|---|
+| LLM reviewers false-positive heavily (Jin 88.74% FPR · Bugdar 24–58% precision · Raghavendra ~46% low-utility) | Do teams experience AI review as noisy? What do they do about it? |
+| A validator stage measurably suppresses false positives, and is a **shared** stage (N+1, not 2N) | Is there **anything between the checker and the developer**? |
+| Redundancy ≠ adjudication — intersection fails on correlated error (§11.4, 9/9 wrong) | Multiple models **agreeing**, or a second model **judging the finding**? |
+| BitsAI-CR retires rules developers ignore (Outdated Rate) | Is there a **feedback loop from developer behaviour back into the checks**? |
+| A second checker's real value is **missed requirements**, not missed defects | What do AI reviewers actually catch that humans miss? |
+
+### Draft question directions (not final wording)
+
+1. **Existence of a validation stage.** When an AI reviewer produces a finding, does anything filter,
+   rank or suppress it before a human sees it? Who built it, and can they turn it off?
+2. **Architecture, stated concretely rather than by label.** Avoid asking "do you use a multi-agent
+   panel" — the corpus shows *"multi-agent"* predicts nothing. Ask instead: *do several checkers run
+   on the same code? Must all pass? What happens when they disagree — block, iterate, or escalate?*
+   That distinguishes conjunctive gate · advisory · negotiated convergence without jargon.
+3. **Observed precision, and the response to it.** Roughly what fraction of AI review comments are
+   acted on versus dismissed? Has anyone **turned a check off** because it was too noisy? *(Rule
+   retirement is a strong, concrete signal — it happens or it doesn't.)*
+4. **Measurement.** Does anyone track whether the AI reviewer is right? What metric — and critically,
+   **is anything measured about what it MISSES?** BitsAI-CR measures precision and adoption and never
+   surfaces suppressed findings; if practitioners are the same, that is a finding.
+5. **What it catches.** Free-text or checklist: defects, style, security, **missed requirements**,
+   **missed edge cases**. The corpus predicts the last two dominate; practitioners can confirm or
+   refute.
+6. **Escalation.** When AI review and a human disagree, who wins, and is that written down anywhere?
+
+### Design cautions specific to this area
+
+- **Karakaya's contamination applies directly** (§122a). Asking *"do you act on AI review comments?"*
+  collects a signal shaped by *"release pressure, ownership boundaries, or timing"*, not by comment
+  quality. **Prefer questions about mechanisms and observable events** (*is there a filter? has a check
+  been turned off?*) over questions about attitudes or perceived usefulness.
+- **Do not ask by architecture name.** Five topologies in the corpus are all described as
+  *"multi-agent"* by their authors. Ask what happens on disagreement; infer the shape.
+- **Suppression is invisible to practitioners too.** If nobody measures what the filter removed, they
+  cannot report it — so ask whether it is measured, not what the number is.
+- **Expect the honest answer to be "nothing."** Most teams likely have a raw AI reviewer wired to PRs
+  with no validation stage at all. **That is the finding**, and it is the gap BitsAI-CR's production
+  evidence says matters.
