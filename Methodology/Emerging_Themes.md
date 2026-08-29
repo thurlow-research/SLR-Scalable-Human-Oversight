@@ -1257,9 +1257,11 @@ The paper names reducing *"the manual effort of 'constraint engineering'"* as fu
 specific advocacy was autoformalization *plus* verification; the automatic derivation of formal specs
 from natural language remains unclaimed by any read paper.
 
-**Status: Mitchell is partially dominated, not dominated.** Decision deferred to `FZK2QB5A`
-(Alshahwan, *Assured offline LLM-based software engineering*), still unread — the last candidate that
-could close the autoformalization gap.
+**Status: RESOLVED 2026-08-27 — Mitchell KEEPS Core.** `FZK2QB5A` (Alshahwan) was the last candidate
+and does **not** close the gap: its twin guarantees are *"does not regress the properties of the
+original code"* — **regression against existing behaviour, not specifications derived from intent**.
+No corpus paper delivers autoformalization plus feedback, so **Mitchell survives as the corpus's
+position statement of that gap** (§105a). Decision closed.
 
 **Coupling to watch (§77).** If the `formal-methods` definition is ever narrowed to proof-grade work,
 the cluster shrinks below 7 of 149 and the §53 scarcity test moves in Mitchell's favour — a *smaller*
@@ -1767,3 +1769,831 @@ distinction, not for the numbers.**
 **Also worth noting for §91:** Zietsman constructs the same argument chain we assembled — AI reviewing
 AI is circular, therefore an external reference is required — **independently**. That partly answers
 the concern that the chain is our own synthesis.
+
+## INDEPENDENCE THREAD — a SECOND AXIS: independent of generation vs independent of intent (`P837LJWE`, 2026-08-27)
+
+Arising from the arbiter's question on Bhatnagar: *"the oversight is really the same oversight that a
+human gets — someone else reviews the code. Right?"* **Nearly — and the gap is the finding.**
+
+Bhatnagar describes *"asynchronous collaboration between **a senior domain expert** and an LLM"* —
+singular. The human lead **sets the constraints, prompts the AI, and performs the Strategic
+Rollbacks.** Single-author paper; no second reviewer anywhere in it.
+
+**Ordinary code review has two degrees of separation:** the reviewer did not write the code, and
+usually did not write the ticket. **Here there is one.**
+
+**The thread's existing gradient covers the checker's *substrate*** — same-model self-report <
+rescaled against external labels < different-vendor ensemble < external deterministic verifier. **This
+is the human-side axis, and it is orthogonal:**
+
+| Configuration | Independent of **generation**? | Independent of **intent**? |
+|---|---|---|
+| AI writes, AI checks (`PPMTM4DG`, §91) | ✗ | ✗ |
+| **AI writes, the human who specified it checks** (`P837LJWE`; and the default IDE workflow) | ✓ | **✗** |
+| AI writes, a different human checks (ordinary peer review) | ✓ | ✓ |
+
+### The implication is about the field, not this paper
+
+**The default AI coding workflow — developer prompts, developer accepts — has LESS independence than
+the peer review it displaces.** We have been treating human-reviews-AI as the baseline against which
+AI-reviews-AI is degraded (§91). But human-reviews-own-prompted-output is *itself* a degraded form of
+peer review, because **the same person owns the request and the acceptance**.
+
+**This compounds with `E689ZAXC` (§95):** expecting review makes workers *less* likely to revise AI
+output, because editing means owning the change. **If they already own the request, that pressure is
+stronger, not weaker.** Two independent mechanisms pointing the same way.
+
+**Why it matters for the survey.** An organisation can truthfully answer *"yes, a human reviews all
+AI-generated code"* while having **less** separation than its pre-AI process had — and nobody involved
+would experience that as a reduction in oversight. It is invisible from inside.
+
+**Survey hook (banked as #13):** *Is the person who reviews AI-generated output the same person who
+prompted it? If so, what else in the loop is independent?*
+
+**Also preserved from `P837LJWE` — a failure mode we do not otherwise have.** Strategic Rollbacks
+caught *"AI-generated configurations that, **while syntactically correct, failed to adhere to** [the
+enterprise's security guardrails]"*, and the paper names the general propensity: *"syntactically
+plausible but **architecturally flawed** code."* That is Zhao's tests-pass/security-fails gap (§93)
+**one level up** — syntax passes, **compliance and architecture** fail — and what caught it was human
+architectural judgement, not any automated check. Cite for the failure mode, not for the effect sizes.
+
+## THE INVERSION IS BIMODAL — two studies, one population, opposite tails (`JQPPKSFQ` + `NZJST99D`, 2026-08-27)
+
+**The most consequential pairing in the corpus so far**, because it changes the question the
+dissertation should be asking.
+
+| | Paper | Tail studied | Outcome |
+|---|---|---|---|
+| `JQPPKSFQ` | Branco et al., *LGTM!* | **auto-merged** agentic PRs | **fail-OPEN** — review skipped, code ships |
+| `NZJST99D` | Ehsani et al., *Where Do AI Coding Agents Fail?* | **not-merged** agentic PRs | **fail-CLOSED** — PRs abandoned, throughput collapses |
+
+**Same population (AIDev, ~33k agent-authored PRs), opposite halves of the distribution.** §52's
+definition already cited `NZJST99D` as the fail-closed exemplar; Branco supplies the fail-open half.
+
+**And Branco reports the distribution is bimodal, with a discriminator:**
+
+> *"agentic PR acceptance is **bimodally distributed**, typically either fully accepted or rejected.
+> Auto-merged agentic PRs are notably smaller and more focused, and **less common in more mature,
+> well-governed projects**."*
+
+Repositories *"tend to either auto-merge all or none"* — and **governance maturity predicts which.**
+
+### Why this reframes the research question
+
+The review has been implicitly asking *"does the oversight inversion happen?"* — and the tagging pass
+kept answering *"not in this paper"* (four consecutive §88 rejections). **The bimodality explains why
+both answers kept appearing: the inversion is real, and it is not universal.** It is a property of
+**ungoverned repositories**, not of agentic coding as such.
+
+> **The right question is not *whether* the inversion happens but *in which organisations*, and what
+> distinguishes them.** That is an empirical question about org characteristics — precisely what a
+> survey can answer and a code audit cannot.
+
+**Two further findings worth carrying:**
+- **Maintainers auto-merge agentic PRs *more* often than human-authored ones** — AI code receiving
+  *less* scrutiny than human code, stated as a measured differential rather than an inference.
+- **They show caution toward PRs that delete existing code.** A risk signal operating in the wild:
+  deletion triggers scrutiny where addition does not. Not a contributed mechanism (§107e), but a
+  revealed heuristic, and a good survey probe.
+
+**Survey implications.** Ask for the *shape*, not the average: **is auto-merge all-or-nothing in your
+org, or conditional?** If bimodality holds outside OSS, the interesting variable is what moves a team
+from one mode to the other — and Branco's answer, governance maturity, is testable.
+
+**Caveat.** Both papers are OSS repository mining. Whether the bimodality survives in commercial
+settings — where maintainers are employees and cannot simply abandon a PR — is **untested**, and the
+asymmetry noted at §86 (OSS maintainers can refuse; employed reviewers often cannot) suggests it may
+not transfer cleanly.
+
+## MECHANISM — ENGAGEMENT DECAY: oversight quality falls as the session proceeds (`5BAZZWHG`, 2026-08-27)
+
+**The fifth distinct mechanism by which oversight fails, and the only one that is temporal and
+intra-session.** Core + Dissertation Primary.
+
+> **EVIDENCE GRADE — hypothesis, not established.** `5BAZZWHG` is a **formative study with four
+> participants**, one code-generation task each, engagement measured by **self-report** plus think-aloud.
+> That is a *suggestive probe*, not a demonstration. **The theoretical weight is carried by
+> `ING3D89M` (Parasuraman & Manzey) and the wider vigilance-decrement literature; Catalan is the
+> software-engineering instance pointing the same way.** Do not cite the N=4 study for the mechanism —
+> cite it for *domain* relevance and cite Parasuraman for the effect. **Promote on replication at scale.**
+
+**The finding.** A formative study of software engineers working with an agentic coding assistant:
+
+> *"**cognitive engagement consistently declines as tasks progress**, and current ACA designs provide
+> limited affordances for reflection, verification, and meaning-making."*
+
+Arbiter's reading: *"people start strong with oversight, and then their mind numbs and quality / depth
+of the oversight lags."*
+
+### Where it sits among the mechanisms
+
+| Mechanism | What fails | Kind |
+|---|---|---|
+| **Inversion** (§107, Branco) | review is skipped | structural — volume |
+| **Substitution** (Xu §83) | senior building capacity is spent | structural — cost |
+| **Intake restriction** (Yang §86) | work is refused rather than triaged | structural — policy |
+| **Reviewability decay** (Wang §80) | the artifact cannot be reviewed | structural — representation |
+| **Engagement decay** (Catalan) | **the reviewer's attention declines while reviewing** | **temporal — intra-session** |
+
+**The consequence the others do not have:** *oversight quality is not a constant per reviewer — it is a
+decreasing function of time-on-task.* Every organisational control we have seen assumes a reviewer is
+either present or absent. **None accounts for a reviewer who is present and progressively less
+effective.**
+
+### It has a theoretical anchor already in the corpus
+`ING3D89M` — **Parasuraman & Manzey**, *Complacency and bias in human use of automation* (Context,
+`dissertation-input`). Catalan is the **software-engineering empirical instance** of that classical
+vigilance-decrement result. **Theory and domain evidence from independent literatures**, neither
+written to support the other — the same argument shape the independence thread relies on.
+
+### Two links worth carrying
+- **To the decision-surface cluster (§96e).** Aporia / HiLDE / Zhou ask *what the human should engage
+  with*; Catalan asks *whether they engage at all*. **A well-designed decision surface presented to a
+  disengaged reviewer is still unread** — which means decision-surface quality and engagement are
+  independent failure points, and fixing one does not fix the other.
+- **To accountability deference (§95, Zhou & Zhao).** Two mechanisms, same outcome: the reviewer does
+  not meaningfully revise. One because attention decays, one because ownership discourages editing.
+  **They would compound.**
+
+### The dissertation opening
+The paper names **cognitive-forcing mechanisms** as the design response and operationalises none — and
+the arbiter independently arrived at the same question (System 1 vs System 2 triggers, alternate checks
+and balances, effective escalation). **That is an identified-but-unfilled opening**, not a gap needing
+to be argued into existence.
+
+### The arbiter's causal chain — stated as a hypothesis, only the first link demonstrated
+
+> **engagement decays → attention lapses → defects pass unreviewed → the inversion**
+
+Arbiter: *"it is a consequence of humans tuning out in later cycles, as described in the paper."*
+**Plausible, and worth testing — but Catalan demonstrates only the first link.** Nothing in the study
+is merged, shipped or gated; there is no review step in the design, so no defect can escape one.
+`oversight-scaling-inversion` was therefore declined (§108c): tagging the last link would import the
+conclusion from the mechanism, and **"could lead to leakage" would fire the tag on every
+automation-bias paper**, which is the discriminating-power collapse §87 exists to prevent.
+
+**The chain is testable, and that is its value.** It predicts review quality should degrade measurably
+*across a session* — a prediction no corpus paper has tested and an organisation could.
+
+**Survey hooks:**
+- *Does review quality differ between the first and last change reviewed in a session?* — most orgs
+  will not know, and **not knowing is itself the finding**.
+- *Is there anything in your process that deliberately interrupts a reviewer's flow to force
+  re-engagement — batch size limits, mandatory breaks, forced justification?*
+
+## MISALLOCATION, NOT OVERLOAD — the norm inversion (`59KP8GTP`, 2026-08-27)
+
+A **sixth** mechanism, and the first where reviewers are **present, responsive, and pointed the wrong
+way**.
+
+**The finding.** Gao et al. expand the AIDev dataset with contributor code-ownership data and a
+human-authored baseline:
+
+> *"In contrast to human-created PRs where **non-owner developers receive the most feedback**,
+> AI-co-authored PRs from non-owners receive the **least**, with approximately **80% merged without any
+> explicit review**."*
+
+Plus: **67.5%** of AI-co-authored PRs come from contributors with **no prior code ownership**, and
+**86.9%** of repositories have **no AI-agent guidelines at all**.
+
+### Why this is not the capacity inversion
+
+| | Reviewers | Failure |
+|---|---|---|
+| **Capacity inversion** (Branco §107) | overwhelmed, absent | volume exceeds review capacity |
+| **Misallocation** (Gao) | **present and responding** | attention aimed **away** from the higher-risk population |
+
+Branco's repositories skip review because they cannot keep up. Gao's reviewers **are** reviewing — they
+are simply giving least scrutiny to newcomers using AI, which is **the reversal of a long-standing OSS
+norm**. Onboarding scrutiny for unfamiliar contributors is one of the few oversight practices open
+source reliably does well, and AI co-authorship appears to switch it off.
+
+**Why it might happen** (untested, and worth stating as hypotheses rather than conclusions):
+- **Attribution laundering** — an AI co-author reads as a competence signal, so the human contributor is
+  treated as vouched-for.
+- **Diffusion of responsibility** — nobody owns a review of code nobody wrote.
+- **Surface plausibility** — AI-generated PRs *look* more polished (cf. Wang's *"approve based on
+  vibes"*, §80), and polish substitutes for provenance.
+
+### Why it matters more than the headline number
+
+The 80% figure is a capacity story anyone would predict. **The inversion is not predictable and runs
+against the field's own norms** — which makes it the more interesting finding, and one an organisation
+would never detect from inside, because every individual review decision looks locally reasonable.
+
+**Connects to:** §106's second independence axis — a newcomer's AI-co-authored PR has *neither*
+independence (the AI generated it, the newcomer prompted it, and no owner reviews it). This is the
+weakest configuration in the corpus, and it is the **most common** one at 67.5%.
+
+**Survey hooks:**
+- *Do contributions involving AI receive more, less, or the same review as comparable contributions
+  without it? How would you know?*
+- *Does your onboarding scrutiny for unfamiliar contributors change when the contribution is
+  AI-assisted?*
+
+## PRESCRIPTION vs VIOLATION — the literature says more scrutiny, practice gives less (2026-08-27)
+
+**The dissertation-grade pairing from the Accept band**, assembled from two independent datasets whose
+authors were not writing in response to one another.
+
+| | Claim | Evidence |
+|---|---|---|
+| **Prescription** — `REZGA5WF` (He et al.) | AI-generated code *"requir[es] **extra scrutiny** during review"* | DiD + matched controls + panel GMM: complexity **+41%**, warnings **+30%**, persistent; a *"comprehension tax… regardless of functional correctness"* |
+| **Violation** — `59KP8GTP` (Gao et al.) | AI-co-authored PRs from non-owners receive **the least** feedback; **~80%** merged without explicit review | AIDev mining with a human-authored baseline |
+
+**The literature prescribes more scrutiny for AI code on measured grounds; practice supplies less, also
+measured.** Neither paper cites the other. That is the same argument shape the independence thread
+relies on — **prescription and observed deviation from independent sources** — and it is stronger than
+either finding alone.
+
+**Why it matters:** it converts "organisations should review AI code more carefully" from an assertion
+into a **documented gap between recommendation and behaviour**, which is precisely what an
+organisational survey is positioned to explain.
+
+### Framing consequence — the productivity defence does not hold
+He's temporal result defuses the standard counter-argument to investing in oversight. *"Accept the
+quality cost as the price of speed"* assumes the speed persists. It does not:
+
+> **3–5× velocity gain in month one; gains dissipate after two months. Warnings +30% and complexity
+> +41% persist — and drive the long-term slowdown.**
+
+**The gain is transient and the cost is permanent**, so the trade being invoked is not the trade on
+offer.
+
+### SELF-THROTTLING — a gate upstream of generation (staged)
+> *"tools might implement **self-throttling: automatically reducing suggestion volume or aggressiveness
+> when project-level complexity or debt exceeds healthy thresholds**, forcing developers to consolidate
+> before generating more code."*
+
+**Every other gate in the corpus sits between generation and merge. This one sits before generation.**
+It is a proposal, not a built mechanism, and appears in a discussion section — but it is a distinct
+answer to gate 1: *do not route the artifact for review; prevent the artifact from existing while debt
+is high.*
+
+**Connects to** the intake-restriction finding (Yang §86) — communities refuse work rather than triage
+it. Self-throttling is the same move applied to the tool rather than the contributor. **Watch for a
+second instance;** if the pattern holds, "restrict production" is a third gate-1 posture alongside
+triage and exclusion.
+
+## SHIFT-LEFT PAST THE SDLC — the gate-placement spectrum, extended upstream (`YA7XNWYE`, 2026-08-28)
+
+Arbiter, on Ji's accountability argument: *"This is **shift left** — if the model makers do a better job,
+there will be less left for individuals to pick up and better security overall. Same as detecting and
+fixing problems earlier in SDLC."*
+
+**That completes a spectrum the corpus has been building piecemeal.** Every mechanism we have catalogued
+places a gate somewhere; ordering them by *how early* reveals a dimension no single paper names:
+
+| Position | Mechanism | Corpus |
+|---|---|---|
+| **Before the model exists** | curate training data; evaluate models on security benchmarks, not only functional ones | **`YA7XNWYE`** (Ji) |
+| **Before the artifact exists** | self-throttling — reduce suggestion volume when project debt is high | `REZGA5WF` (He, §117) |
+| **Before the work arrives** | intake restriction — bans, disclosure, evidence gates, queue caps | `XJAXB98T` (Yang, §86) |
+| **Before the artifact is specified** | decision elicitation; formal constraints authored up front | Aporia, `XRTVITVP`, `72W6R4JG` |
+| **Between generation and merge** | review, filters, gates — where nearly everything sits | most of the corpus |
+| **After merge** | debt measurement, refactoring sprints triggered by metrics | `REZGA5WF` |
+
+**The insight the ordering produces:** the field's attention is concentrated almost entirely at
+*between generation and merge* — the position where oversight is **most expensive and least
+leveraged**, because every artifact must be handled individually by a human whose attention is the
+scarce resource. **The upstream positions are structurally cheaper** (one intervention affects all
+downstream output) and are occupied by **one paper each**.
+
+**Why that matters for the dissertation.** If the scaling problem is that per-artifact human review does
+not scale, then **the answer may not be better review — it may be fewer artifacts needing it.** Ji makes
+this argument at the model layer, He at the tool layer, Yang at the contribution layer. **None of the
+three cites the others; none names the pattern.** Naming it is available to the review.
+
+**Caution.** Shift-left is a *reallocation* of accountability, not an elimination of it. Ji is explicit
+that responsibility should move toward *"organizations best positioned to reduce systemic risk at
+scale"* — which for an org survey raises: **does your organisation treat AI code security as something
+it can influence upstream (tooling, model choice, procurement) or only downstream (review)?** Most will
+answer downstream, and that answer is the finding.
+
+## GAP TO FILL — one technology, two settings (recorded 2026-08-28)
+
+**The dissertation will need to establish that the same underlying technology powers both assistive and
+agentic scenarios.** Our own mode-pair rulings treat them as distinct *settings* (§81, §108b, §117e),
+and the tie-rule exists precisely because the boundary is contested — but the *technology* is one thing
+in two configurations, and the argument depends on that.
+
+**No corpus paper currently supports the claim.** `R2QMVNXI` (Chang, §109) comes closest — its Figure 2
+presents a practitioner-recognised **spectrum** of AI-based coding from assistive through agentic — but
+it is Context, an MLR of YouTube discourse, and not strong enough to carry the point alone.
+
+**Options:** find a source (a technical survey of code-assistant architectures would serve), or **argue
+it as the review's own position** and mark it as such. **Flagged now so it is not discovered late.**
+
+## Conformance review vs defect review — a distinction the corpus conflates (`A5WDGC7J`, 2026-08-28)
+
+Raised by the arbiter on Jin, whose framing is that the paper applies code review **against the
+V-model** — checking the implementation against the *specification* rather than scanning for bugs or
+poor structure. That separates two activities the corpus has been treating as one:
+
+| | Question | Needs a referent? | How it fails |
+|---|---|---|---|
+| **Defect review** | *Is this code bad?* | no — judge the artifact alone | **omission** — misses what it did not look for |
+| **Conformance review** | *Did it build what was asked?* | **yes** — a spec to check against | **overcorrection** — rejects conformant work, invents faults |
+
+**Why the distinction earns a place in the findings.** Most oversight mechanisms in the corpus are
+defect review — linters, scanners, security gates, quality checks. But the failure practitioners
+describe with agentic coding is usually **conformance**: the agent produced clean, well-structured,
+passing code that *is not what was asked for*. A gate made entirely of defect review cannot see that
+failure, because the artifact is not defective.
+
+**The evidence chain this completes.** Three corpus papers now make a single argument about LLM
+reviewers that none makes alone:
+
+1. **Yu (`PPMTM4DG`)** — a model cannot reliably catch its own defects (**false negatives**). Implied
+   fix: give the reviewer an independent referent.
+2. **Zietsman (`TA6GIUK2`)** — review without an external referent is **circular**. Reinforces the fix.
+3. **Jin (`A5WDGC7J`)** — supplying the referent produces a **different failure**, not no failure:
+   systematic **overcorrection**, FPR up to **88.74%**.
+
+**So "give the reviewer the spec" is necessary and not sufficient.** The escape route the first two
+papers point at is closed by the third. This is the strongest form of the review's scaling argument
+available so far, because it does not rest on models being weak — it rests on the **review task itself
+being two-sided**, where fixing one error direction moves cost into the other.
+
+**Open question for the dissertation:** overcorrection is the *expensive* failure for scalable
+oversight. A reviewer that misses defects degrades quality silently; a reviewer that rejects
+conformant work **consumes the scarce resource oversight is trying to conserve** — human attention —
+and trains the human toward dismissal, which is `automation-bias` arriving from the opposite
+direction than usual (§118). Whether that dismissal reflex is observed empirically anywhere in the
+corpus is **not yet checked**; flagged for the closeout sweep.
+
+## The tagging procedure as a worked instance of its own subject (2026-08-28)
+
+Recorded because the arbiter raised it as a findings-relevant observation, and bounded because it is
+self-observation. Full statement in `Theme_Tagging_Calibration.md` §11.6b.
+
+**The observation:** the tag taxonomy (44 slugs frozen / 50 live, seven checklist questions per paper)
+exceeds what the arbiter can hold in working memory, so tagging is **mediated** rather than direct —
+*"human suggests, machine helps validate. Machine suggests more,"* with the arbiter adjudicating. This
+held for **every** supervised paper, including those where the arbiter named tags first.
+
+**Why it is interesting:** it is the review's own subject running at n=1 — `hitl-workflow` over
+`ai-review`, adopted not for speed but because **recall over a large vocabulary is the specific thing
+human attention fails at**, which is the same premise the corpus's oversight tooling runs on.
+
+**Guardrail (§11.8).** This is a **worked illustration, not evidence.** Its home is the methods chapter
+as procedure and limitation, plus at most a paragraph in the discussion. It does **not** enter the
+findings, is **not** citable as a result about oversight in general, and the assistant is **not** an
+independent rater — its checks are correlated with the arbiter's by construction.
+
+## Certified registries — vetting the SUPPLY rather than the output (`VCI88UZD` + `6ZC3H7AF`, 2026-08-28)
+
+Surfaced by the arbiter while ruling Liu, *Agent Skills in the Wild*: *"There was a paper a while back
+about having a list of trusted repository / packages. That concept could apply to Liu as well.
+Trusted skills."*
+
+**The pairing:**
+- **Enyedi (`VCI88UZD`)** — *Human-certified module repositories for the AI age.* The mechanism:
+  a curated registry whose contents carry a **human certification**, so consumers inherit vetting they
+  did not perform.
+- **Liu (`6ZC3H7AF`)** — *Agent Skills in the Wild.* The empirical case for needing one: **26.1% of
+  31,132 marketplace skills contain at least one vulnerability**, and skills bundling executable
+  scripts are **2.12× more likely** to be vulnerable (OR=2.12, p<0.001). The paper's own conclusion
+  calls for *"capability-based permission systems and mandatory security vetting."*
+
+**Why this is a distinct oversight shape, and worth naming.** Everything else in the corpus oversees
+**what the AI produces**. This oversees **what the AI consumes** — the skills, modules and packages an
+agent pulls in at run time. Certification moves the human review **once, upstream, to the artifact**,
+and every downstream use inherits it. That is a genuinely different scaling economics from reviewing
+each output: pay once per package rather than once per generation.
+
+**The catch, and why it is not a free win.** It relocates the bottleneck rather than removing it —
+someone must certify 42,447 skills, and Liu's own detector runs at 86.7% precision / 82.5% recall, so
+an automated gate over that volume admits a meaningful error rate. The unresolved question is
+**who certifies, at what cadence, and what happens when a certified artifact is later found
+vulnerable** — a revocation problem the corpus does not address anywhere.
+
+**Status:** neither paper is at core for this (Liu demoted 2026-08-28 — the object is human-authored
+third-party packages, not AI-generated code; supply-chain security of agent *inputs*). The arbiter
+explicitly ruled **no dissertation role**. Recorded because the *shape* — upstream certification as an
+alternative to per-output review — is a real point on the oversight design space and may return if
+the scope ever widens to agent tooling.
+
+## Quality scaling vs THROUGHPUT scaling — two things "scalable oversight" is being used to mean (2026-08-28)
+
+Forced by the arbiter's devil's-advocate question on McAleese (`NRVQT89E`, CriticGPT): *"Wouldn't this
+say that scaling human oversight isn't possible since you still need a human (in partnership with AI)
+to look at everything?"*
+
+The question exposes a **term collision** that has to be resolved before the corpus is synthesised:
+
+| | meaning | the question it answers |
+|---|---|---|
+| **Quality scaling** | more **accurate** oversight per human-hour | *how good is the review a human gives?* |
+| **Throughput scaling** | more **code overseen** per human-hour | *how much can get reviewed at all?* |
+
+**This review's premise is the second.** In the arbiter's words: *"the human doesn't have to look at
+everything. We can figure out what AI can review on its own and what really needs human eyes."*
+Allocation, not augmentation.
+
+**OpenAI's "scalable oversight" is the first**, and the papers say so plainly: *"The ultimate goal of
+scalable oversight is to **help humans evaluate model output in order to train** [better models]"* ·
+*"methods that can **help humans to correctly evaluate** model output."* Their human never leaves any
+sample — **cannot** leave, because in an RLHF labelling regime the human's judgment *is* the product.
+
+**The diagnostic that settles which a paper supports:** does it measure **time or volume**, or only
+**accuracy**? McAleese reports contractors taking *"fifty minutes per example"* and **never claims the
+critic makes them faster** — only more correct. A method that is better-but-not-faster does not scale
+throughput at all, however much it improves quality.
+
+**Consequences for reading the corpus:**
+- **Do not cite quality-scaling results as throughput evidence.** McAleese, Kang and Zhou all
+  demonstrate the first; none demonstrates the second.
+- **The genuinely throughput-relevant finding in McAleese is different from its headline:** critics
+  found *"hundreds of errors in ChatGPT training data rated as **flawless**"* — recovering coverage that
+  human review at volume had **already lost**. That is about what humans miss when they cannot look
+  properly, which is the allocation problem.
+- **Routing evidence is what the review is actually short of.** Papers keep supplying configuration
+  performance (which arrangement reviews best) and almost never supply allocation rules (which items
+  need which arrangement). Karakaya recommends triage but does not build it (§122d); McAleese has a
+  deployment-time precision/recall knob but never evaluates routing on it.
+
+## The idealised reviewer — why human-arm baselines are optimistic (`NRVQT89E`, 2026-08-28)
+
+Arbiter, on McAleese's human contractors: *"the human in this paper is likely less distracted and will
+do a better job. Reality is an ugly thing."*
+
+The human arm is **a best-case human** — a contractor paid to spend *"fifty minutes per example"*, no
+release pressure, no competing work, reviewing as the task rather than around it. That biases the two
+headline findings in **opposite** directions, and both directions matter:
+
+- **"AI catches more bugs than human contractors" gets STRONGER.** The model beat an *idealised*
+  reviewer, not a distracted one. Against a real maintainer the margin should widen.
+- **"Human+AI is best" gets WEAKER.** The human contribution to the team was measured from an
+  attentive partner. A real maintainer under Karakaya's *"release pressure, ownership boundaries, or
+  timing"* (§122a) contributes less, so the team advantage over AI-alone is an **upper bound**.
+
+**General rule for the corpus:** whenever a study's human arm is a *paid, unhurried, single-tasked*
+reviewer, its human-alone baseline is optimistic and its human-in-the-loop benefit is an upper bound.
+Catalan's engagement decay is the mechanism that erodes it in practice. Worth checking against every
+paper reporting a human-vs-AI or human+AI comparison.
+
+## The authoring-side limit — why swapping in an agent reviewer does not close the loop (`74GE3TF7`, 2026-08-28)
+
+Raised by the arbiter as a prediction, then found in the paper as its own limitation: *"Even if agents
+are doing the reviewing, we could end up in the same sad state of abandoned PRs because the coder agent
+couldn't deal with the feedback."*
+
+> *"a pattern of '**silent abandonment**': small PRs that look safe (no CI touches) but **stall because
+> the agent cannot handle subjective feedback**. This implies that while we can catch the 'explosive'
+> failures, the '**silent' failures require behavioral monitoring**."*
+
+**Why this is a distinct failure and not a variant of the others.** Almost every oversight mechanism in
+the corpus watches the **artifact** — scanners, tests, review bots, complexity gates. This failure is
+invisible to all of them, because **the artifact is fine**. The defect is in the agent's capacity to
+**iterate under feedback**: it produces something plausible, receives a subjective critique, and
+cannot converge. Minh's own structural router — AUC 0.958 on cost prediction — **misses these as false
+negatives**.
+
+**The consequence for delegation.** Automating the *reviewer* side does not help, because the
+bottleneck is on the *authoring* side. An agent reviewer would issue the same subjective feedback the
+coder agent already cannot absorb — faster, and at greater volume. Feedback throughput rises;
+convergence does not. **This is a limit on full delegation that no amount of better reviewing fixes**,
+and it pairs with §126's finding that the human+AI team beats AI alone on precision.
+
+**What it implies is needed:** signals about the *interaction*, not the artifact — Minh calls it
+*"behavioral monitoring"*, and proposes *"semantic risk models to catch subtle logic bugs that
+structural gates miss"* plus *"cryptographic identity to enable **reputation tracking**."* Per-agent
+reputation as a routing input appears nowhere else in the corpus.
+
+**Open question for the dissertation:** the corpus measures agents as *producers* (quality, security,
+debt) and as *reviewers* (Yu, Jin, McAleese). It does not measure them as **negotiators** — the ability
+to take critique and converge. If oversight is a loop rather than a gate, that capacity is the one that
+determines whether delegation terminates.
+
+## The scrutiny decay curve — reconciling three papers that appear to disagree (2026-08-28)
+
+Prompted by the arbiter on Omidvar-Tehrani: *"they found that people treat the AI like a team mate,
+provide the same due diligence as they would a PR from human. **This goes against some of the other
+data** about them getting less scrutiny."*
+
+They do not disagree. They measure **different points on one curve**, and the disagreement is an
+artifact of setting:
+
+| Paper | Setting | Attention | Curve position |
+|---|---|---|---|
+| **Omidvar** (`4FGIVVTG`) | N=11 recruited **to review diffs**; reviewing *is* the task | full scrutiny, AI held to teammate standards | **t = 0** |
+| **Catalan** (`5BAZZWHG`) | repeated coding/review cycles | **engagement decay** across cycles | **the slope** |
+| **Ghammam** (`SHK6KAX6`) | artifacts in the wild, no researcher present | oversight **theatre** | **the asymptote** |
+
+The mechanism connecting them is §126d's **idealised reviewer**: a participant recruited to review is
+attentive by construction, so a study of that participant measures the *ceiling*, not the operating
+point.
+
+**Why this is worth more than a truce.** It converts three contradictory-looking results into a
+**falsifiable claim**: scrutiny of AI output starts **genuine** and **erodes**, rather than being
+absent from the outset. That is testable — a longitudinal design with the same reviewers over many
+cycles should reproduce Omidvar's result early and Ghammam's late.
+
+**And it changes what an intervention should do.** If scrutiny were never present, the remedy is to
+**establish** it (training, mandated review, gates). If it is present and decays, the remedy targets
+**sustaining** it: reviewer rotation, cadence limits, forced escalation, or — the allocation answer —
+routing so that fewer items demand attention and the attention spent stays fresh (Minh, `74GE3TF7`).
+The corpus's own evidence favours the second, which is a stronger argument for routing than any single
+paper makes on its own.
+
+**Caveat to carry:** Omidvar is **N=11**. It fixes the shape of the curve's start, not its magnitude.
+
+**Related, from the same paper — the teammate frame is a MISAPPLIED model, not just a generous one.**
+Developers extend handholding *"with the unspoken expectation that these teammates will learn over
+time."* A model does not learn from correction within the engagement, so the patience is priced against
+a return that never arrives. Any survey item asking whether practitioners review AI output as carefully
+as a colleague's can therefore collect an honest *yes* that is uninformative — the comparison class
+carries assumptions the AI does not satisfy.
+
+## GAP — the corpus governs code quality, never commitment and forecast (2026-08-28)
+
+Surfaced by the arbiter on `N7E3MR2V`, which brings *"estimation, work breakdown structures, etc.,
+bringing **project management discipline** in."*
+
+**Every oversight mechanism reviewed so far governs the artifact**: quality gates, security scanners,
+review bots, conformance checks, complexity thresholds, routing by predicted review effort. **Nothing
+governs the commitment side** — how much work is promised, how it is sequenced, what it will cost,
+and how confident the estimate is.
+
+**Why the omission matters if agents produce work at volume.** Minh (`74GE3TF7`) shows a maintainer
+*attention* budget being blown. The same logic applies upstream to a *delivery* budget: if agents can
+open PRs faster than humans can absorb them, someone still has to decide **what should be attempted
+at all**, in what order, against what capacity. An oversight regime that gates merges but never gates
+intake will fill the queue faster than it drains it — which is Yang's intake-restriction mechanism
+arriving from the planning side rather than the review side.
+
+**Recorded as a GAP, not as a citation.** `N7E3MR2V` is demoted (§132) — a two-citation undergraduate
+conference paper that neither originated nor validated the idea. The observation stands without it,
+and is stronger as a stated gap than as a weak attribution. If the dissertation wants to make the
+argument, it needs either a source from outside this corpus (classical estimation literature — COCOMO,
+story-point calibration, reference-class forecasting) or to be argued as the review's own position.
+
+**Related open question:** does forecast discipline even survive contact with agentic delivery? Classical
+estimation assumes a stable relationship between scope and effort mediated by a human team's velocity.
+If an agent's cost is compute rather than person-hours, and its failure mode is silent abandonment
+(§127c) rather than slow progress, the estimation object itself may have changed.
+
+## Multi-agent topologies — three shapes, three failure modes (2026-08-28)
+
+Consolidated after five papers where "multi-agent" in a title predicted nothing about the actual
+architecture (David §110, Dutta §112a, Nimraka §130b, P §132a, Rasheed §135c).
+
+| Shape | Agents answer | Arrangement | Failure mode | Corpus instances |
+|---|---|---|---|---|
+| **Panel** | the **same** question | redundant, votes/consensus | **correlated error survives unanimity** — 9/9 agreement on a wrong tag (§11.4); a model cannot check itself (Yu) | Ullah (`A6ZE2A26`, *unanimous LLM juries*) — the only real instance in the Accept band |
+| **Parallel division** | **distinct** questions | concurrent, independent | **gaps between specialisms**; nobody checks anybody | Nimraka (`5RKMGRNA`), ICR; David (`6NTZ85CW`); P (`N7E3MR2V`) |
+| **Relay** | **distinct** questions | **sequential**, each consuming the prior's output | **errors COMPOUND** — upstream false positives are elaborated downstream | Rasheed (`DJHG9BBS`) |
+
+**The discriminator that decides which you have:** *"loses a job or loses a vote?"* (§110). Remove one
+agent — if coverage disappears, it is division of labour; if a vote disappears, it is a panel.
+
+**Why the relay is the one to worry about.** A panel's redundancy **damps** error; a relay's dependency
+**amplifies** it. Later agents reason on earlier findings, so a false positive is not merely passed on
+but *built upon* — the second agent explains why the first agent's phantom bug matters, and the third
+proposes a fix for it. Set against the false-positive rates the corpus records for LLM reviewers — Jin
+**88.74% FPR**, Bugdar **24–58% precision**, Raghavendra **~46% low-utility rejections** — a relay of
+LLM reviewers is the topology most likely to manufacture confident nonsense.
+
+**Open question, unaddressed anywhere in the corpus:** *does error compound across a relay, and at what
+rate?* Every multi-agent paper reports end-to-end performance; none isolates whether the pipeline
+corrects or amplifies upstream mistakes. This is directly relevant to any architecture where a
+reviewing agent hands findings to a remediating agent — which is the common production shape.
+
+## The LATENCY WINDOW — available oversight is a function of time between generation and consequence (2026-08-28)
+
+Forced by Shinde (`QWHE9EXH`, STELP), which targets a setting the rest of the corpus never enters:
+LLM-generated Python executed **the moment it is produced**, in headless real-time systems where
+*"recurring human reviews [are] impractical."*
+
+**The organising claim:** the corpus's mechanisms are not competing answers to one question. They
+occupy **different windows**, and the window determines which controls are physically available.
+
+| Window between generation and consequence | Control that is possible | Corpus |
+|---|---|---|
+| **Zero** — snippet executed on generation | **containment only** — bound the blast radius; nobody ever reads it | Shinde (`QWHE9EXH`) |
+| **Short** — CI/CD, agentic PR, minutes to days | automated gates, deterministic checks, **routing** | Minh (`74GE3TF7`), Parris (`3SU9QZ6F`), Lipsanen (`7SH86C2W`), Zhong |
+| **Long** — spec, architecture, design | **human review**, explanation, debate | Kang (`7UB2MD8Z`), Zietsman, McAleese (`NRVQT89E`) |
+
+**Why this is worth having as a frame.** It dissolves a recurring apparent conflict — papers advocating
+containment, gating and review are not disagreeing about what works; they are answering for different
+windows. It also predicts the failure mode of borrowing across windows: applying a long-window
+mechanism (human review) to a zero-window problem yields **oversight theatre**, and applying a
+zero-window mechanism (containment) to a long-window problem **forfeits understanding you had time to
+acquire**.
+
+**Orthogonal to shift-left / shift-up.** Ji (§119d) and Lipsanen (§124) move *where in the lifecycle*
+the check happens. This is about *how much time exists before the code has effect* — which constrains
+what any check can be. A shift-left check still needs a window to run in.
+
+**The dissertation's scope sits in the middle band**, and saying so explicitly is useful: the thesis is
+about the **reviewable window**, and Shinde marks where that window closes.
+
+## PARKED — nested runtime generation (out of current scope, 2026-08-28)
+
+**The gap:** every oversight mechanism in the corpus assumes **the artifact reviewed is the artifact
+that runs**. That assumption fails when a reviewed program **itself calls an LLM at runtime**, or
+invokes tools that do — build-time review then certifies a program whose behaviour is not determined
+by its source. Shinde is the only corpus paper operating in that regime, and it addresses the inner
+layer only.
+
+**Arbiter's ruling (2026-08-28):** *"isn't a scenario we are considering now, so we will save it for
+future… The LLM layering is interesting to consider but is a **separate problem**."* The dissertation
+scenario is **writing code that goes into a product** using an LLM — a build-time artifact.
+
+**Recorded so it is a bounded exclusion rather than an oversight.** If a reviewer asks *"what about
+programs that generate code at runtime?"*, the answer is that it is a known, named, deliberately
+scoped-out problem — not something the review missed.
+
+## Multi-agent topologies — REVISED: conjunctive gate-sets are not advisory panels (2026-08-28)
+
+**Supersedes the three-shape table recorded earlier the same day.** The arbiter's statement of the
+dissertation premise forced the correction: *"Coder produces code. Tester, Security reviewer, code
+reviewer 'check' the work and **it passes only if they are all satisfied**."*
+
+The earlier taxonomy separated shapes by *what agents are asked*. That is insufficient — the decisive
+second axis is **whether an agent can BLOCK**.
+
+| Shape | Agents answer | Aggregation | Failure mode | Corpus |
+|---|---|---|---|---|
+| **Panel (redundant)** | the **same** question | vote / consensus | correlated error survives unanimity (§11.4, 9/9 on a wrong tag) | Ullah `A6ZE2A26` |
+| **Specialist gate-set (conjunctive)** | **different** questions | **all must pass — each holds a veto** | **false positives compound** | **the HOS design** |
+| Specialist advisory | **different** questions | report; **no veto** | gaps between specialisms | Nimraka `5RKMGRNA`, David, P |
+| Relay | different questions | sequential, consumes prior output | errors **amplify** | Rasheed `DJHG9BBS` |
+| **Precision filter** | validates the **prior stage's output** | admit / suppress | **errors damped** — the only measured mitigation | Sun `V4IRKSFI`, Jin `A5WDGC7J` |
+
+### The dilemma facing conjunctive gate-sets
+
+Against measured LLM-reviewer error rates — Jin **88.74% FPR**, Bugdar **24–58% precision**,
+Raghavendra **~46% low-utility** — a conjunctive gate is the **most false-positive-exposed
+configuration in the design space**: any one veto blocks. And the obvious defence fails:
+
+- **If errors are independent**, false positives **compound** across vetoes.
+- **If errors are correlated**, unanimity buys **no redundancy** — which is §11.4's finding exactly
+  (9/9 agreement on a wrong tag, because the models shared a misreading).
+
+**Independent errors compound; correlated errors make the panel decorative.** A design must answer
+which regime it is in, and nothing in the corpus measures the correlation between specialist
+reviewers.
+
+### The precision filter is the only measured mitigation — and it replicates
+
+**Produce → validate → admit**, applied recursively to whatever artifact is at issue:
+
+| Paper | Gated artifact | Result |
+|---|---|---|
+| **Sun / BitsAI-CR** | a **review comment** | **75.0% precision** in production; validator introduced *because* the first stage hallucinated |
+| **Jin** | a **judge verdict** | FPR **88.74% → 39.96%** |
+
+The arbiter's observation: *"this paper has that pattern, but in the context of producing code review
+comments. One agent reviews, the other agent checks. Comment only stands if it passes."* **Same
+structure, one level up** — HOS gates code, BitsAI-CR gates the commentary about code.
+
+### Direction of failure — the same architecture serves opposite goals
+
+BitsAI-CR states the tradeoff and made it deliberately: *"we **prioritize precision over recall**"*,
+recall **69.0–81.8%**, and *"prioritizing precision over recall metrics is **crucial for successful**
+automated code review."*
+
+| | Protects | Fails open on | Hidden cost |
+|---|---|---|---|
+| **BitsAI-CR** | developer **attention** | **defects** — 20–30% missed | escaped issues, absent from the headline metrics |
+| **HOS conjunctive gate** | the **codebase** | **attention** | spurious blocks, delivery friction |
+
+**The transfer argument runs *a fortiori*, not against the gate design.** BitsAI-CR is **advisory** —
+nobody is blocked, and a noisy advisory system merely gets *ignored* (which is what its Outdated Rate
+measures). **A noisy gate stops delivery.** False positives cost strictly more in a blocking
+architecture. So if a validation stage was *necessary* to make advice tolerable at 75% precision, a
+conjunctive gate needs one **more** urgently.
+
+**Conclusion for the dissertation:** the ReviewFilter is not polish — **it is what makes multi-agent
+checking deployable**, and it is the only such component in the corpus with production evidence
+(12,000 WAU) behind it.
+
+### Open questions this leaves
+
+1. **Correlation between specialist reviewers** — unmeasured anywhere. Decides which horn of the
+   dilemma above applies.
+2. **Where does produce→validate→admit terminate?** The pattern is recursive; who validates the
+   validator is a design decision the corpus never discusses.
+3. **False-negative cost under suppression** — BitsAI-CR's filter removes findings, and suppressed
+   defects are invisible in precision and Outdated Rate alike.
+
+## REDUNDANCY vs ADJUDICATION — two different operations, one of which the corpus undermines (2026-08-28)
+
+Sharpening of the topology table above, forced by the arbiter asking which mitigation to use:
+*"a checker and a validator of the checker. Or multi vendor checker and keeping only the things found
+by multiple models (our final checks do that)."*
+
+**They are not two flavours of one thing:**
+
+| | Question asked | Operation | Fails when |
+|---|---|---|---|
+| **Redundancy** — multi-vendor intersection | the **same** question, N times | agreement | **errors correlate across models** |
+| **Adjudication** — checker → validator | a **different** question: *"is this finding valid?"* | evaluation of a claim | the validator shares the checker's blind spot |
+
+**The corpus is unkind to redundancy specifically.** Yu (`PPMTM4DG`): a model cannot check itself —
+which is exactly why the arbiter runs a **cross-vendor** panel, and that is the correct response.
+But cross-vendor is not sufficient: **§11.4 records our own panel agreeing 9/9 on a wrong tag** —
+three vendors, three runs each, wrong together, because they shared a misreading of the *instrument*.
+**Decorrelating the model does not decorrelate the prompt.**
+
+Adjudication avoids that failure by construction: the validator is not repeating the task, so a
+different question can catch an error every checker would make. It is also the arrangement with
+measured results — Jin **88.74% → 39.96%**, Sun **75% precision in production**.
+
+**Both are legitimate; they do different jobs.** Intersection raises confidence that something *is* an
+issue. Adjudication decides whether a *specific claim* holds. **If the false-positive wall is the
+problem, the evidence points at adjudication.**
+
+### The rabbit problem has an answer — the validator is a SHARED stage
+
+Arbiter: *"So my 28 agents will expand. Agents breed like rabbits?"* **No — if the validator is not
+paired to each checker.** BitsAI-CR runs **219 review rules → one RuleChecker → one ReviewFilter**.
+Cost is **N + 1**, not **2N**, because the adjudication question is *uniform regardless of which
+specialist raised the finding*.
+
+**Three real costs remain:** adjudication is **serial** by construction and cannot be parallelised away
+as intersection can; **the recursion has no natural stop** (BitsAI-CR simply halts at one filter and
+accepts the residual); and **suppression is invisible** — a validator that kills a true finding leaves
+no trace in precision or Outdated Rate, both of which measure only what survived.
+
+## NEGOTIATED CONVERGENCE — a sixth shape, and why conjunctive gates may not blockade in practice
+
+The topology table predicts that a conjunctive gate-set is the most false-positive-exposed
+configuration available. The arbiter's operational observation runs the other way:
+
+> *"the various agents haven't caused failures, blockages. The agents went back and forth and **found
+> solution**. Very occasionally (handful of times), escalated to the human to arbitrate."*
+
+**The prediction and the observation are compatible, because that is not a conjunctive gate.** A gate
+**blocks on disagreement**; a negotiation **resolves it**. Iterating to agreement with
+**human escalation on deadlock** converts a false positive from a blockage into a round trip. The
+human arbitrates the residue rather than the volume — which is the allocation the whole review is
+about.
+
+| | On disagreement | Human load |
+|---|---|---|
+| Conjunctive gate | **blocks** | every false positive |
+| **Negotiated convergence** | **iterate; escalate only on deadlock** | **deadlocks only** |
+
+**Its failure mode is not blockage but non-termination** — Minh's *"silent abandonment"* (§127c): the
+agent that cannot absorb feedback stalls rather than converging. So the design question shifts from
+*"how do we avoid spurious blocks?"* to **"how do we detect a loop that will not converge, and escalate
+it early?"** Nothing in the corpus measures convergence rates or time-to-deadlock for agent
+negotiation.
+
+> **§11.8 guardrail.** The HOS observation is **n=1 self-observation and is not evidence.** It is
+> recorded as **design context** — it names a shape the corpus does not, and generates a research
+> question. It must not be cited as a finding, and it did not shape the instrument.
+
+## What a second checker actually contributes: MISSED REQUIREMENTS, not missed defects (2026-08-28)
+
+Three independent sources converge, which is worth more than any of them alone:
+
+| Source | Finding |
+|---|---|
+| **Raghavendra** (`8VBH957K`) | rubric failures classified: **Root Cause Missed 17.5%**, **Missing Edges 15.1%** — *"even when tests [pass]"* |
+| **Jin** (`A5WDGC7J`) | **conformance** review (*did it build what was asked?*) is a distinct failure axis from **defect** review (§120a) |
+| **HOS** *(design context, not evidence)* | *"The big thing that emerged from cross panel reviews was **missed requirements / edge cases**"* |
+
+**The value of a second checker is finding what was never considered — not catching defects in what
+was.** That reframes what multi-agent checking is *for*: not redundant defect-hunting on the same
+surface, but **coverage of the specification space**. It also explains why deterministic checks and
+LLM review are complements rather than competitors — a linter cannot notice an absent requirement,
+because there is no code for it to inspect.
+
+**Open question:** if this is the real contribution, the right metric is **requirement coverage**, not
+defect precision. Every corpus paper measures the latter.
+
+### Bounded retry as the deadlock detector (HOS: three attempts, then escalate — 2026-08-28)
+
+The negotiated-convergence entry above left an open question: *how do you detect a loop that will not
+converge, and escalate it early?* The arbiter's answer is structural rather than diagnostic:
+***"In HOS, three attempts then escalate."***
+
+**You do not detect non-convergence — you bound it.** A fixed retry budget converts an unbounded
+problem into a bounded one and makes the human load **predictable**: escalations = deadlock rate ×
+volume, both measurable and tunable. No classifier, no monitoring model, no semantic judgement.
+
+**It is also the cheapest possible answer to Minh's blind spot.** Minh (`74GE3TF7`, §127c) found that
+structural routing misses *"silent abandonment"* — PRs that *"look safe… but stall because the agent
+cannot handle subjective feedback"* — and proposed *"behavioral monitoring"* and *"semantic risk
+models"* as the remedy. **A retry counter is behavioural monitoring**, and it costs an integer. It
+converts silent abandonment into a **detected deadlock** at the moment the budget is exhausted, which
+is exactly the class the AUC-0.958 router lets through as false negatives.
+
+**The open empirical question is the parameter, not the mechanism.** Is three right?
+
+- **Too low** → premature escalation; human attention spent on disputes the agents would have settled
+  on attempt four. The scarce resource is wasted on the thing automation was meant to absorb.
+- **Too high** → compute burned and escalation delayed; the human arrives late to a conversation that
+  stopped progressing several rounds ago.
+
+The optimum depends on the **distribution of attempts-to-convergence** — and **no corpus paper reports
+that distribution**. Every multi-agent paper reports end-to-end outcomes; none reports how many rounds
+convergence took, or what fraction never converged. That is a small, cheap, and genuinely novel
+measurement.
+
+> **§11.8 guardrail.** HOS detail recorded as **design context, n=1, not evidence.** Its value here is
+> that it names a mechanism and a parameter the literature does not discuss.

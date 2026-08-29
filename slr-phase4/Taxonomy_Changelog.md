@@ -4134,3 +4134,2812 @@ and the T0/T1/T2 snapshots (§89, §100) are only interpretable against a named 
 
 **Standing check added:** diff **both** instrument files against `origin/main` at every PR, and treat
 any movement in `Tag_Prompt.md` as a versioned cut requiring a new capture and a changelog entry.
+
+## 104. Oversight machinery used as EVALUATION APPARATUS is an instrument, not a contribution (`VG8PSMM7`, 2026-08-27)
+
+**First paper of the Accept band.** Adnyana & Schwung, *Benchmarking and validation of prompting
+techniques for AI-assisted industrial PLC programming* (*Machine Learning with Applications*, 2026).
+**Ruled Context** despite **no demote flag from any of the three models**. §42 short-circuit.
+
+**The tension the arbiter named.** *"The primary focus of the paper is to evaluate LLMs' ability to
+generate code for their particular scenario. However, they used some of the techniques that might be
+applicable to scaling human oversight in the setup of their pipeline — e.g. using LLMs to review the
+code. So while the focus of the paper would yield a demote, the methods of the paper are aligned."*
+
+**PRE-COMMITTED RULE** — same device as §92/§93, because this shape recurs:
+
+> **Oversight machinery used as *evaluation apparatus* is an instrument, not a contribution.** A paper
+> earns Core for it only when the machinery is **argued for** — proposed, justified, or evaluated as
+> such — never when it is merely **used** to measure something else.
+
+This generalises §57's instrumentation-≠-contribution rule from the method facets to the **tier
+decision**, and it is the same shape as §84's offered-for-reuse test for `metrics`. **Three rules, one
+principle: what a paper *uses* is not what a paper *contributes*.** Consistent with §94 (Zhong — a
+deployable checker inside a benchmarking paper) and distinct from §98a (Zhuo — where §51 fired because
+the checker was reference-grounded and could not have been deployed at all).
+
+**Expected recurrence in this band:** Bhatnagar, Ghammam, Salem, Şeker look like the same shape.
+Sollenberger, Raghavendra and Karakaya sit on the **other** side of the line, where the checker *is* the
+argument — those are Core-eligible on the same rule.
+
+### 104a. What the rule discards, and the mitigation
+
+**The tier decision throws away real evidence**, and the arbiter identified why it matters:
+*"'what that loses' sounds a lot like risk routing."*
+
+> **Core/Context is itself a routing decision, and Context is our un-routed remainder.** Downstream,
+> demoted papers get read as "nothing here" — precisely the failure staged as a tripwire from `ZBF86IJM`
+> (§79): **the absence of a routing signal is interpreted as a clean bill of health.** The review's own
+> method exhibits the failure mode the review documents.
+
+**Mitigation adopted — the validation-apparatus harvest.** A paper's methods section is evidence about
+**what its authors considered adequate validation of AI-generated code**. Nobody required Adnyana's team
+to reject BLEU as sufficient, add a semantic LLM check, and still gate safety-critical output behind a
+human expert — that layering is a **revealed belief about where machine checking runs out**. It is
+evidence about norms, harvestable regardless of tier.
+
+**Established:**
+- Zotero collection **`Dissertation Lit Review / 04 - Validation Apparatus`** (`XPPEXKBN`) — additive,
+  orthogonal to SLR tier.
+- **`Methodology/Validation_Apparatus_Harvest.md`** — running record: layers, automated components,
+  AI-as-checker (and whether cross-vendor), human position, escalation trigger, stated rationale, domain.
+- **Scope: the Phase-5 128 first.** Hard constraint — full texts exist only for those. Measure the
+  yield, then decide on expansion; if expanding, use **targeted retrieval**, not an abstract scan, since
+  abstracts rarely describe validation apparatus.
+- Accumulates during the Accept pass, with a back-fill over the Light Read band at closeout.
+
+**`VG8PSMM7` is entry one:** BLEU → LLM-in-the-Loop (four dimensions) → HITL expert review, with
+generation and syntax-checking split across **different vendors** (DeepSeek/Gemini generate;
+ChatGPT-4o/Copilot check). The human sits **terminal and scoped to safety-critical** — not asked to
+check everything, only what the domain marks as dangerous.
+
+## 105. A filter that SELECTS among candidates is part of the generator (`FZK2QB5A`, 2026-08-27)
+
+Alshahwan, Harman et al. (Meta), *Assured offline LLM-based software engineering* (InteNSE '24
+keynote). **Ruled Context** despite **no demote flag from any model** and `remediation-gating` primary
+3/3. §42 short-circuit. Added to `04 - Validation Apparatus`.
+
+**§104 does NOT carry this one — recorded because the rule is one paper old.** Under §104 the filters
+here *are* argued for, not apparatus, so §104 points **Core**. The demote rests on two other grounds.
+
+**(a) NEW DISCRIMINATOR — fitness function vs gate.** The authors characterise their own mechanism:
+
+> *"Assured LLMSE can be thought of as a kind of **Genetic Improvement** in which LLMs are used as the
+> operator for generating candidate solutions. The filters we describe in this paper can be thought of
+> as **playing a similar role to fitness functions** for generate-and-test approaches to GI."*
+
+> **A filter that *selects among generated candidates* is part of the generator. A filter that *gates a
+> deliverable* is oversight.** Same machinery, different position in the pipeline. Generate-many-and-keep-
+> the-survivors is **search**; refuse-this-artifact is **oversight**.
+
+This explains `steering` at 3/3 — the panel registered the generator-side placement without being able
+to name it. Distinct from §98's test (*does the mechanism have a refusal state?*): Alshahwan's filters
+**do** refuse — *"either the candidate code passes through the filter or it is discarded"* — but they
+refuse **candidates inside a search loop**, not deliverables at a gate. **Both tests are needed; a
+mechanism can pass §98 and still fail this one.**
+
+**(b) §53 second leg fails decisively — the family is better served elsewhere.** Arbiter: *"what it
+discusses is kinda standard practice now. Do we have papers that more firmly establish the goal
+oriented practice?"* Corpus check on `remediation-gating`:
+
+| Tier | Paper | Evidence |
+|---|---|---|
+| Core | Ma — *ZORO: active rules for reliable vibe coding* | built-system · evaluated-synthetic · **method-field-study** |
+| Core | Töpfer — *feedback-based automated verification* | built-system · evaluated-synthetic |
+| unread | Shinde — *STELP* | built-system |
+| unread | Vargas — *SLEAN* | built-system |
+| **this** | **Alshahwan** | **design-only — nothing built, nothing run** |
+
+**Alshahwan is the only member of its own family with no implementation and no evaluation.** ZORO —
+the paper that produced §63's discriminator — even has a field study.
+
+**(c) The one thesis-relevant sentence is undeveloped.** *"The human plays the role only of final code
+reviewer, as they would do with code generated by other human engineers"* appears **once, in the
+abstract**, and nowhere in the remaining 5,700 words. **Framing, not argument** — it cannot be cited as
+a position on where oversight sits. The Meta stakeholder interviews are likewise background for one
+design choice (local optimisation), not evidence production — **no `method-self-report`**.
+
+### 105a. §77 RESOLVED — Mitchell stays Core
+
+Mitchell (`6ZW9QNQH`) was flagged demote-candidate contingent on whether any paper delivered
+**autoformalization plus feedback**. Töpfer delivered the feedback half with hand-authored constraints
+(§77); **Alshahwan was the last candidate and does not close it.** Its twin guarantees are
+*"does not regress the properties of the original code"* — **regression against existing behaviour, not
+specifications automatically derived from intent.**
+
+**The gap Mitchell names is therefore unclaimed by the corpus, and Mitchell survives as its position
+statement.** Decision closed; the follow-up in `Emerging_Themes.md` is marked resolved.
+
+## 106. An oversight claim needs a contrast that VARIES the oversight (`P837LJWE`, 2026-08-27)
+
+Bhatnagar, *Modernization of enterprise payment infrastructure: a case study on LLM-assisted migration
+of legacy distributed systems* (*Array* 30, 2026). **Ruled Context** despite **no demote flag from any
+model**, `hitl-workflow` primary 3/3, and `adopted` 3/3. §42 short-circuit. Added to
+`04 - Validation Apparatus`.
+
+**Recorded at length because the assistant argued Core three times and was wrong three times.** Each
+of the arbiter's corrections removed a ground, and the accumulated effect is the ruling.
+
+**(a) THE CONFOUND — a pre-committed rule.** The headline outcome (67% production-error reduction)
+compares **legacy human-authored code** against **AI-refactored code**. There is no arm without the
+HITL, so the improvement cannot be attributed to the oversight — only to the modernisation. Any
+competent rewrite of a 15-year-old monolith would improve error rates.
+
+> **An oversight claim requires a contrast that VARIES the oversight.** Comparing AI-with-oversight
+> against no-AI measures **the AI**, with oversight held constant. Any paper reporting *"our
+> HITL-governed AI process outperformed the previous manual process"* has measured the AI.
+
+Expect this in the industrial case studies still unread in this band.
+
+**(b) CONFIRMING A TENET IS NOT CONTRIBUTING A FINDING.** Arbiter: *"There is no insight about
+oversight, just that it was important."* And the calibration that makes it operational: *"this is
+oversight in the way of a human inspecting code generated in vibe coding while in an IDE is
+oversight."*
+
+> The corpus does not need more evidence that oversight matters — that is established many times over.
+> It needs evidence about **what makes oversight work**. A paper showing oversight was present and
+> important supplies an **instance**, not a **finding**. **Instances belong in the harvest; findings
+> belong in Core.**
+
+**(c) The three RQs, and why none of them lands.** RQ1 measures lead time (productivity). RQ2 is the
+confounded comparison in (a). RQ3 — *"What specific human-centric governance protocols, such as
+'Strategic Rollbacks,' are required to ensure PCI-DSS compliance…"* — **does** engage oversight, but
+the arbiter's read is decisive: *"The compliance was also very light. The central focus was not related
+to compliance. It showed up as a follow-up."*
+
+**(d) `intro-framing` DECLINED** (the arbiter's own suggestion, on the reasoning that the paper
+confirms a central tenet). §99c settles it: **the test is whether the evidence is the contribution or
+merely illustrates one.** Here the evidence *is* the contribution, however confounded — so this is an
+empirical paper, not a framing one. **"Confirms a tenet without insight" has no tag; that is what the
+harvest is for.**
+
+**(e) LARGEST CORRELATED FACET ERROR OBSERVED — three unanimous 3/3 facets, all wrong.**
+
+| Facet | Panel | Fails |
+|---|---|---|
+| `framework` | **3/3** | §49 span rule — one migration, one job. The `WUUDHL8R` negative case exactly. |
+| `built-system` | **3/3** | No oversight artifact was built. The migrated application is the **object** of the work, not the mechanism. §39 sends process to the theme. |
+| `regulatory-compliance` | **3/3** | §78 — PCI-DSS is a **constraint input** to the migration, not the contribution. As with Watson (§82c) and `WUUDHL8R` (§44). |
+
+`hitl-workflow` primary 3/3 and `adopted` 3/3 both hold. **Not written** (§42), but recorded: a paper
+describing an industrial deployment reliably triggers the artifact-maturity cluster whether or not an
+artifact exists. **Watch for this in the remaining industrial case studies.**
+
+**(f) `adopted` is an evidence rung, not a relevance criterion.** It is genuinely scarce — 5 of 128,
+and the three previously adjudicated are all Core — but it describes **maturity**, not what a paper
+tells us. A production deployment with nothing to say about oversight is still Context.
+
+## 107. §52's FIRST CLEAN POSITIVE under the leakage test (`JQPPKSFQ`, 2026-08-27)
+
+Branco, Canelas, Gamboa & Fonseca, *LGTM! Characteristics of Auto-Merged LLM-based Agentic PRs*
+(2026). **Core.** Primary `oversight-scaling-inversion`; `agentic`, `method-mining`,
+`problem-statement-anchor`.
+
+**(a) The theme's first positive after four consecutive rejections** (Xu §83, Yang §86, Zhou §96b,
+Zietsman §99d). §88's leakage test is satisfied in the abstract's opening sentence:
+
+> *"AI tools are generating code **faster than humans can properly review it**, leading repositories to
+> **skip review and auto-merge** agentic Pull Requests directly."*
+
+Volume exceeds capacity · review is skipped · **code merges anyway**. It is also the canonical case
+§52's own definition names — *"PRs auto-merged unreviewed."* **After the run of rejections this matters
+for the write-up: the tag is narrow, not empty.**
+
+**(b) `problem-statement-anchor` APPLIED (opus 1/3, rescued) — and it is the corpus's best instance.**
+A **primary** mining study quantifying unreviewed auto-merge across ~33k PRs, anchoring the *overall*
+two-part frame rather than a sub-argument. Contrast the two near-misses: Watson's 20–30% figure was
+refused as **secondhand** on a lit-review (§82g), and Zhao's 61%/10.5% was flagged only as a fallback
+candidate (§93). **This one is first-hand, corpus-scale, and directly about the inversion.**
+
+**(c) NOT applied — `ai-review` (0/3).** Proposed by the arbiter, declined on inspection: **the paper is
+about review being *absent*.** Auto-merge is the *skipping* of review, not a machine performing it.
+Nothing in it has AI judging an artifact.
+
+**(d) NOT applied — `intro-framing` (0/3).** The arbiter raised it as the way to capture "gives us
+stats," then identified `problem-statement-anchor` as what he actually meant. §99c settles it: **the
+test is whether the evidence *is* the contribution.** Here it is — a mining study. Same ruling as Xu
+(§83); opposite to Zietsman (§99c), where the argument was the contribution.
+
+**(e) NEW DISCRIMINATOR — the WITHIN-UNIT test for `risk-routing`.** Declined at codex 1/3. The
+arbiter's formulation, sharpened across two exchanges, supersedes the assistant's first attempt
+(*"describing who routes ≠ contributing a routing signal"*), which located the distinction in the wrong
+place:
+
+> **Between-unit variation is policy heterogeneity. Within-unit conditional allocation is routing.**
+> *Repo A requires review, Repo B does not* → **not routing.**
+> *Repo A routes to humans under conditions X and auto-merges under conditions Y* → **routing.**
+
+Better because it catches a case the contributed-vs-observed framing missed: a paper can *contribute* a
+between-unit comparison and still not be routing, while a paper *observing* within-unit conditional
+allocation can be.
+
+**Second clause, added after a worked edge case.** Applying the rule to this very paper reopened one
+finding — *"maintainers auto-merge agentic PRs more often but **show caution toward PRs that delete
+existing code**"* — which is within-unit conditional on its face. **Arbiter's mechanism test:** *"How is
+the decision made? If there is logic setup in the CI/CD pipeline to make this call, then it might
+qualify. If it is a generic statement, not so much."*
+
+**Checked: it is statistical, not configured.** The finding rests on distribution comparisons —
+*"Auto-merged PRs are significantly smaller in lines changed, files changed, additions, and
+deletions"* — box plots, p-values and effect sizes. **No pipeline logic exists.** The caution is an
+inferred behavioural tendency from aggregate merge outcomes.
+
+> **Full test: within-unit conditional allocation qualifies only when it is a RULE OR SIGNAL — encoded
+> in a pipeline, policy, or stated condition — never a tendency inferred from aggregate outcomes.**
+
+**Third clause — human discretion is not a computed signal.** Arbiter: *"If a human were making a
+case-by-case call, that is **human routing, not risk routing**."* This is already latent in the tag's
+own text — *"Signal must be **computed** & producer-independent"* — but had never been stated for the
+human case, only for the model-self-confidence case. **A maintainer deciding per-PR on judgement,
+however risk-sensitive, is `hitl-workflow`, not `risk-routing`.** The theme is *"the **smarts of
+surfacing** (signal + selection/tiering logic)"*; unaided human judgement supplies neither.
+
+**Consolidated — four things that are NOT `risk-routing`:**
+1. **Throttling intake** — a queue cap reduces volume without discriminating within it (§86).
+2. **Between-unit policy variation** — Repo A gates, Repo B doesn't; heterogeneity, not allocation.
+3. **A tendency inferred from aggregate outcomes** — a p-value on a box plot is not a rule (this §).
+4. **Human case-by-case discretion** — not a computed signal; `hitl-workflow` instead.
+
+**What remains:** a computed, producer-independent signal *plus* operationalized selection or tiering
+logic. Signal without the allocation decision → `routing-signal` + `metrics`. Allocation without a
+computed signal → `hitl-workflow`.
+
+**(f) `survey-input` DECLINED by the arbiter — and a definitional risk flagged.** The stated ground was
+*"There was no survey. They mined repos."* The facet, however, is **not** about the paper's method:
+
+> *"`method-self-report` ≠ `survey-input` (method vs the finding's **utility to the org survey** — **a
+> mined study can be survey-input**)."*
+
+`method-self-report` correctly does not apply here — the arbiter's second point is right on that tag.
+**But the two facets are being run together, and the risk is systematic under-application.** Corpus
+state at this ruling: `survey-input` is **panel-modal on 17 papers**, arbiter-endorsed on **8**, with
+**7 overlapping** — i.e. **10 modal proposals stand on silence** and could be affected by the same
+reading. **CLOSEOUT ACTION: re-check `survey-input` across the corpus against the utility-to-our-survey
+definition, not the did-they-survey one.** Not written here (1/3, non-modal — it falls out regardless).
+
+## 108. Documenting an ABSENCE — when it earns the theme and when it doesn't (`5BAZZWHG`, 2026-08-27)
+
+Catalan, Dizon, Monderin & Kuang, *"I'm not reading all of that": understanding software engineers'
+level of cognitive engagement with agentic coding assistants* (arXiv 2026-03).
+**Core + Dissertation Primary.** Primary `automation-bias` (3/3); `oversight-explanation` (2/3);
+`agentic`, `risk-overreliance`, `method-experiment`, `method-self-report` (3/3 each).
+
+**(a) THE ABSENCE RULE.** The arbiter took `oversight-explanation` while noting *"it is more saying
+that there isn't much explanation in this case."* Two papers earlier, `ai-review` was declined on
+`JQPPKSFQ` **because** that paper is about review being absent (§107c). Both rulings are right, and the
+reconciliation needs stating:
+
+> **Documenting an absence earns the theme when the paper *argues about what should be there*. It does
+> not when the absence is merely the *measured outcome*.**
+
+Catalan finds ACAs *"provide limited affordances for reflection, verification, and meaning-making"*
+**and** proposes directions — cognitive-forcing mechanisms, richer interaction modalities. That
+contributes to the explanation-design argument. Branco measures merge outcomes and proposes nothing
+about review. **Expect this repeatedly: several papers in this band study things not happening.**
+
+**(b) Mode: `agentic` 3/3, `assistive` 0/3 — and the §81 pattern held.** The arbiter's initial
+`assistive` reasoning was *"it was modelled after vibe coding, a prompt to generate code"* — the exact
+configuration §81 resolved on `T2EG4BE2`: **human-prompted but artifact-scale, so the reviewable unit
+dominates.** Tool-category naming pulls the wrong way here (they are called *assistants*), but the
+paper studies *"agentic AI systems that operate with **minimal human involvement**."* **Third
+consistent application of the tie-rule** (§81, §85, here).
+
+**(c) Design opportunity the paper names but does not build.** *"we identify concrete design
+opportunities leveraging richer interaction modalities and **cognitive-forcing mechanisms** to sustain
+engagement and promote deeper thinking."* Recorded because the arbiter independently raised the same
+question (*"trigger level 1 / level 2 thinking"*) — **cognitive forcing functions are the
+System 1 → System 2 interrupt.** The paper names the direction and operationalises nothing, which makes
+this an identified-but-unfilled opening rather than a gap the dissertation would have to argue into
+existence.
+
+### 108c. §57 RESOLVED — a self-report instrument inside a controlled task is not a second method
+
+The two-event question was raised, then settled by the arbiter: *"There was one [survey], but it wasn't
+the core (the experiments with users coding was), just a **data collection mechanism**."*
+
+> **A self-report instrument used to measure *within* a controlled task is the INSTRUMENT, not a second
+> evidence event.** One event → one method classification (§34, §57).
+
+**`method-experiment` kept; `method-self-report` REJECTED at 3/3** (modal, so an explicit reject was
+required). Same shape as the `8MXATG38` failure the rule was written for.
+
+**Fourth application of one principle**, now spanning the taxonomy: §57 logs-as-instrument · §84
+`metrics` offered-for-reuse · §104 apparatus-is-not-contribution · **§108c self-report-as-instrument**.
+*What a paper uses to measure is not what a paper contributes or how it measured.*
+
+### 108d. `oversight-scaling-inversion` DECLINED — the mechanism is not the consequence
+
+The arbiter proposed it, reasoning that inversion *"is a consequence of humans tuning out in later
+cycles, as described in the paper"*, then agreed on inspection: *"inversion is a stretch in this case."*
+
+**The study has no review step.** Four participants, one code-generation task each, engagement measured
+by self-report; **nothing is merged, shipped or gated, so no defect can escape a review that should
+have caught it.** §88 unsatisfied; §83's rule applies — *a paper that does not study inspection
+coverage cannot supply affirmative evidence of fail-open, however strongly its other findings rhyme
+with the mechanism.*
+
+> **A mechanism that could produce leakage is not leakage.** If *"this could lead to leakage"* fired the
+> tag it would fire on **every** automation-bias paper — Tilbury, Zhou & Zhao, Parasuraman — which is
+> exactly the discriminating-power collapse §87 exists to prevent.
+
+The causal chain is preserved as a **stated hypothesis** in `Emerging_Themes.md`, with only its first
+link demonstrated.
+
+### 108e. Evidence-grade correction, self-recorded
+The assistant initially presented engagement decay as "the fifth mechanism" alongside Xu's DiD and
+Branco's 33k-PR mining study. **That over-weighted an N=4 formative study with self-reported outcomes.**
+The `Emerging_Themes.md` entry now carries an explicit evidence-grade caveat: **Parasuraman carries the
+theoretical weight; Catalan is the domain probe.** Recorded because the error was in the direction of
+enthusiasm for a striking finding, which is the direction worth guarding against.
+
+## 109. MLR of grey media — `lit-review` applies, and its consequences cascade (`R2QMVNXI`, 2026-08-27)
+
+Chang, Shirazi, Cao & Mobasser, *Coding with AI: from a reflection on industrial practices to future
+CS and SE education* (arXiv 2025-12). **Ruled Context**, added to **Dissertation Supporting**.
+
+**(a) It is a Multivocal Literature Review, so `lit-review` applies (rescued from opus 1/3).** The
+paper follows **Garousi, Felderer & Mäntylä's grey-literature/MLR guidelines**, applying their quality
+criteria — including *"Evidence: inclusion of examples, rationale, or empirical support"* — to 57
+curated YouTube videos. **Grey literature is still literature under that methodology.** Arbiter's
+framing was exact: *"a 'lit review' of youtube videos about vibecoding and agentic coding to see how
+the videos are positioning / practicing things."*
+
+> **Rule: a systematic synthesis of grey media is `lit-review`, not a method facet.** The unit of
+> analysis is *published discourse*, and the evidence is synthesised rather than produced.
+
+**(b) TWO AUTOMATIC CONSEQUENCES, both applied.**
+1. **No method facets.** *"`lit-review` papers get none — evidence synthesized, the methods live in
+   the primaries."* **`method-mining` REJECTED at 2/3** (modal, explicit reject required);
+   `method-self-report` 1/3 falls out. This also answers the question the paper first raised — it is
+   neither mining nor self-report, it is **synthesis**.
+2. **Primary must be the biggest-tent theme.** With the inversion rejected (below), the panel's
+   unanimous primary vanishes and no replacement was ruled. **Left unresolved and moot** — Context
+   papers do not enter Phase 6 synthesis, so the primary has no consumer (§42).
+
+**(c) `oversight-scaling-inversion` REJECTED at 3/3 — fifth rejection, and it fails twice over.**
+*"Code review as a bottleneck"* is a named RQ2 theme, but:
+- **§88:** a bottleneck is **capacity strain, not leakage**. Nothing reports review being skipped or
+  defects shipping. The paper cuts the other way in two places — practitioners scope vibe coding as
+  *"**not meant to ship to production**"*, and quality issues are said to *"necessitate **careful human
+  review**."*
+- **Biggest-tent test:** review-as-bottleneck is one theme among many spanning definitions, security,
+  quality, skill erosion and education. Not the largest share.
+
+**(d) Tier — consistent with the lit-review precedent.** `RG4A4D6K` (Watson §82), `XZEHQYNZ`
+(Tuape §78) and Tereci were all reviews and all demoted. This one synthesises **what practitioners say
+on YouTube** — evidence about **discourse**, not practice, a limitation the authors acknowledge.
+
+### 109a. NAMED-USE CRITERION for Dissertation Supporting
+
+Arbiter: *"Should we dissertation support, or is this not strong enough to be helpful?"* The
+substantive findings are **duplicative** — quality and security (Zhao, Fu, Perry, Waseem), skill
+erosion (Catalan, Parasuraman, Xu), review bottleneck (Yang, Branco, Xu) are all sourced better
+elsewhere. **Supporting is justified by one specific use, not by general relevance:**
+
+> **Vocabulary calibration for the survey instrument.** Survey questions must use terms as respondents
+> understand them. Where a controlled study gives the corrected version, **grey media gives the
+> vernacular** — and for instrument design the vernacular is what matters.
+
+**Proposed criterion, adopted:**
+
+> **Dissertation Supporting membership carries a NAMED USE, not general relevance.** A bucket that
+> admits everything tells you nothing at selection time — the §87 discriminating-power argument applied
+> to collections rather than tags. **Back-fill a one-line rationale on existing Supporting members:
+> cheap now, expensive at fifty.**
+
+A **Zotero note (`VTRCWI6K`)** records the named use and the extracted definitions on the item itself,
+per the source-of-truth principle.
+
+### 109b. Three findings from the practitioner definitions
+
+1. **INSTRUMENT HAZARD.** Practitioners scope vibe coding as **explicitly non-production** — *"that's
+   the YOLO vibe coding and **not meant to ship to production**."* A survey question about *vibe coding
+   in production* therefore risks denials meaning **"we don't call that vibe coding"** rather than
+   **"we don't do that."** **Ask about the practice — prompt-driven generation accepted without reading
+   the code — not the label.**
+2. **VOCABULARY VALIDATION for a tag we invented.** The paper's term for the vibe-coding posture is
+   ***"material disengagement"*** from the code — the practitioners' own name for what we staged as
+   `no-inspection` (§81a). **The concept existed in the field's vernacular before it existed in our
+   vocabulary**, which is useful support when defending a staged facet the panel could never propose.
+3. **The practitioner spectrum matches our mode pair.** Figure 2 presents assistive → agentic as a
+   recognised spectrum, and the agentic definition places the human as **orchestrator** — consistent
+   with the decision-surface cluster (§96e) and the upstream-control papers.
+
+**Possibly unique and worth watching:** the RQ3 theme *"Code review as the new primary skill"* — not
+seen stated elsewhere in the corpus.
+
+## 110. ROLE SPECIALISATION ≠ AGENT PANEL; and validation-by-execution (`6NTZ85CW`, 2026-08-27)
+
+David & Gervais, *Multi-agent penetration testing AI for the web* (MAPTA, arXiv 2025-08).
+**Ruled Context** per **§92** — a `general-code` review **tool**, not an oversight finding. Added to
+`04 - Validation Apparatus`. Arbiter: *"it is building an agentic system that does penetration testing.
+So not really AI generated code."*
+
+**Motivation is our thesis; the artifact is not.** The abstract opens on the scalability crisis —
+*"the pace of development now **vastly outstrips the capacity for thorough security assessment**"* — but
+MAPTA is a general web-application pen-testing system benchmarked on XBOW's 104 challenges. **AI-generated
+code is the justification; general web applications are the object.** `general-code` 2/3.
+
+**No human anywhere:** *"end-to-end, continuous penetration testing **without human**"*; *"shifting
+security assessment **from human-dependent** pattern recognition to adaptive adversarial execution."*
+
+**(a) NEW DISCRIMINATOR — role specialisation is not an agent panel.** "Multi-agent" in a title
+reliably invites `agent-panel`; here it should not.
+
+> **A panel means several agents judging the SAME artifact — redundancy for decorrelated error.
+> Role specialisation is a DIVISION OF LABOUR: different agents doing different jobs in sequence.**
+
+MAPTA's structure is a **Coordinator** (strategy, orchestration) plus **Sandbox** agents (tactical
+execution in isolated containers) — a pipeline, not a jury. Contrast `DJMBHHZN` (MOSAICO, §76): solution
+agents propose, **separate supervision agents evaluate the same output**, and a consensus agent
+adjudicates. **That is a panel.** Test: *would removing one agent lose a job, or lose a vote?*
+
+**(b) `oversight-scaling-inversion` REJECTED at 2/3 — sixth rejection.** The scalability crisis is
+**motivation, not contribution**; the paper never studies inspection coverage. Same shape as
+`WUUDHL8R`'s `regulatory-compliance` (§44), and §83's rule applies directly.
+
+**(c) `problem-statement-anchor` DECLINED (1/3).** The *"up to 40% of AI-generated code contains
+vulnerabilities"* figure is **cited from other studies**, not produced here. Same refusal as Watson's
+20–30% (§82g). **Action: chase the primary — a 40% vulnerability rate in AI-generated code would be a
+strong anchor if it holds up at source.**
+
+**(d) PRESERVED — validation by execution.** *"**mandatory proof-of-concept validation for all
+findings**."* Every reported vulnerability is proven by a working end-to-end exploit rather than flagged
+as a suspicion.
+
+> **Validation by execution rather than by judgement.** No human adjudicates whether a finding is real,
+> because the system **demonstrates** it. This removes the false-positive triage burden that makes most
+> automated security tooling expensive to operate — the cost that Yang's curl case (§86) shows consuming
+> scarce security-handling time.
+
+A **design choice, not a measured finding** — the triage saving is never quantified, which is why §92
+still sends the paper to Context. But it is the cleanest instance in the corpus of a check needing **no
+human adjudication because the ground truth is self-demonstrating**, and it belongs in the apparatus
+harvest. **Relates inversely to §51:** that exclusion disqualifies checkers needing a *known-correct
+reference*; a working exploit needs none — it is its own proof.
+
+**Cost figures worth noting for the economics of automated checking:** total $21.38 across 104
+challenges; median **$0.073** per successful attempt versus **$0.357** per failure; practical
+early-stopping thresholds at ~40 tool calls or $0.30. **Machine-side resource allocation, not human
+attention** — so not `risk-routing` (§107e), but relevant if the dissertation ever costs out automated
+versus human checking.
+
+## 111. A proposed instrument does not rescue a measurement paper (`PDYJGF2R`, 2026-08-27)
+
+Dora, Lunkad, Aslam et al., *The hidden risks of LLM-generated web application code: a security-centric
+evaluation of code generation capabilities in large language models* (2026). **Ruled Context** per
+**§93** — pure measurement of model-output insecurity across ChatGPT, DeepSeek, Claude, Gemini and Grok.
+Added to `04 - Validation Apparatus`. **No Dissertation Supporting.**
+
+**(a) §104 and §93 interact, and §93 wins — worth recording since the two could be read as conflicting.**
+The paper explicitly proposes its instrument: *"**Created a checklist** for evaluating the security of
+LLM-generated Web Applications: We have created a comprehensive checklist along with risk for
+systematic analysis."* So §104 does **not** demote it — the machinery is *argued for*, not merely used
+(contrast Adnyana, §104).
+
+> **But a proposed instrument does not convert a measurement paper into a contribution paper.** The
+> checklist occupies one bullet; the paper is the **evaluation of five LLMs**, which is exactly what §93
+> sends to Context. **Ask what the paper is FOR, not only what it contains.**
+
+**(b) Dissertation Supporting DECLINED on the §109a named-use test.** The checklist is **technical**
+(authentication, session management, input validation, HTTP security headers), not organisational.
+Surveys cannot enumerate technical checks, and the survey-relevant checklists are already held by
+better sources — Waseem's role-specific guideline matrix, Yang's 12 governance strategies, Watson's
+transparency recommendations. **No use this serves better than what is already there**, which is the
+criterion. **First application of §109a as a refusal**, and it worked as intended: the question was not
+*"is this relevant?"* but *"what would it be for?"*
+
+**(c) SECOND INSTANCE — asserting the tenet (§106b).** The abstract closes:
+*"Our findings underscore that **human expertise is crucial** to ensure secure software deployment or
+review of LLM-generated code."* **Asserted from an evaluation with no human in it, that measured
+nothing about human review.** Twice now in eight Accept-band papers (cf. `P837LJWE`, §106b). **Watch
+item:** if this recurs across the band it is a reportable observation — *the literature routinely
+concludes that human oversight is essential from studies that never observed any*, which would be a
+finding about the field's evidentiary habits rather than about oversight.
+
+**Harvest value:** a checklist built **because its authors judged existing assessment inadequate for
+LLM-generated code** is precisely *"what did they consider adequate validation"* — the harvest's
+premise. Recorded there rather than in Supporting.
+
+## 112. PARALLEL SPECIALISTS are not a panel either; and deferring Supporting against a known cluster (`399HN438`, 2026-08-27)
+
+Dutta, Sharma, Rajgor et al., *Turbocharging pull request reviews: exploring generative AI for code
+review* (2025). **Ruled Context** per **§92** — `general-code` 3/3, and CodeEvaluator is a review
+**tool** reporting *"early results"*, not a transferable oversight finding. Added to
+`04 - Validation Apparatus`. **Dissertation Supporting DEFERRED, not declined.**
+
+**(a) §110 REFINED — the test is the QUESTION, not the topology.** CodeEvaluator is a multi-agent
+framework with five agents: Code Review, Bug Report, Code Smell, Code Optimization (RL-based), and
+Security Vulnerability Detection. All five run against the **same diff**, which makes it look more
+panel-like than MAPTA's sequential Coordinator/Sandbox arrangement. **It is not a panel either.**
+
+> **Agents form a panel when they answer the SAME question independently** — redundancy bought for
+> decorrelated error. **They are specialists when they answer DIFFERENT questions**, however parallel
+> the execution. §110's test stands and sharpens: *removing an agent loses a **job** or loses a
+> **vote**?* Removing the Security agent here loses **security coverage**, not a vote.
+
+**Two flavours of specialisation now on record**, neither a panel: **by pipeline stage** (`6NTZ85CW`
+MAPTA — orchestrate, then execute) and **by defect class** (`399HN438` — five parallel hunters, one
+artifact). **Neither cross-checks.** Contrast `DJMBHHZN` (MOSAICO, §76), where supervision agents
+evaluate the *same* proposals and a consensus agent adjudicates.
+
+**(b) SUPPORTING DEFERRED — applying §109a prospectively.** The plausible named use is structuring a
+survey question about *what AI review tools actually check for*, and the defect-class decomposition
+serves that. **But four stronger candidates for the same use remain unread in this band:** `V4IRKSFI`
+(Sun, *BitsAI-CR* — automated code review **in practice**, i.e. production), `5RKMGRNA` (Nimraka),
+`DJHG9BBS` (Rasheed), and `A5WDGC7J` (Jin — LLM reviewer **reliability**). Dutta is 3,231 words of
+early results.
+
+> **§109a extended: a named use is not enough if a better source for that same use is known to be
+> coming.** Admitting the weakest member of a cluster first means admitting the rest for parity — the
+> failure mode the criterion exists to prevent. **Defer, do not decline**; the paper is in the harvest
+> regardless, so nothing is lost if the stronger candidates disappoint.
+
+**Revisit condition:** if none of the four delivers a usable decomposition of AI-review coverage,
+Dutta returns to Supporting.
+
+**Not resolved (§42 short-circuit):** `method-self-report` 3/3 is questionable on a 3,231-word paper
+reporting early results — no instrument is described. Left unadjudicated; noted in case the closeout
+facet sweep reaches Context papers.
+
+## 113. The instrument's own design rule gets empirical backing — the Confidence Trap (`UIXCRBQX`, 2026-08-27)
+
+Ferdous, Banik, Chowdhury & Shamim, *Safer builders, risky maintainers: a comparative study of breaking
+changes in human vs agentic PRs* (arXiv 2026-03). **Core + Dissertation Primary + Validation
+Apparatus.** Primary `quality-debt` (3/3); `agentic`, `method-mining`, `risk-quality` (3/3);
+`built-system` (2/3); **`routing-signal` rescued** (codex 1/3).
+
+**The headline is not the valuable part.** The comparison — agents introduce **fewer** breaking changes
+than humans overall (**3.45% vs 7.40%**) but **more** during maintenance (refactoring **6.72%**, chore
+**9.35%**) — is a quality result. Two *oversight* findings sit underneath it, and both matter more.
+
+**(a) THE CONFIDENCE TRAP — evidence for a rule the instrument had only asserted.** `risk-routing`'s
+definition states *"Signal must be **computed & producer-independent** — **model self-confidence is
+disqualified**"* as a **design judgement**, recorded before any evidence (independence thread, leg 1).
+This paper tests it:
+
+> *"99.9% of AI-generated pull requests [score] between **8 and 10**"* · breaking-change rates at
+> confidence **8 / 9 / 10 = 3.94% / 3.96% / 3.16%** · *"**confidence scores do not reliably reflect
+> breaking change risk**"* · *"confidence scores alone are **insufficient for prioritizing review or
+> deployment**, and should be supplemented with additional verification mechanisms."*
+
+**The signal has almost no variance — 99.9% of cases in a three-point band — so it cannot discriminate
+even in principle**, independent of whether it is calibrated. That is a stronger failure than
+miscalibration.
+
+**Third measurement leg for the independence thread**, from a third method:
+`VTDG995V` (Gros/Spiess — intrinsic confidence poorly calibrated, ECE 0.09–0.73) · `PPMTM4DG` (Yu —
+self-verification misses 67% of own errors) · **`UIXCRBQX` (self-reported confidence does not
+discriminate breaking-change risk)**. Three independent groups, three designs, one conclusion.
+
+**Worth noting for the methods chapter:** a design decision recorded in the instrument **before** the
+evidence existed has now been independently corroborated. That is the strongest form the
+reflexivity argument can take — cf. §11.8, where the review's convergence with its own findings was
+flagged as illustration only.
+
+**(b) `routing-signal` RESCUED — passes all three §107e clauses.**
+*"we recommend practitioners apply **enhanced, task-specific review policies**"*, grounded in the
+maintenance-versus-generation rate difference.
+- **Within-unit conditional** ✓ — same repo, different treatment by task type, not a policy difference
+  between repos.
+- **A computed signal, not a tendency** ✓ — task type is derivable from the PR, not inferred from
+  aggregate merge behaviour (contrast `JQPPKSFQ`, §107e).
+- **Producer-independent** ✓ — task classification does not come from the agent.
+
+**`routing-signal`, not `risk-routing`** — they recommend policies without operationalising selection or
+gating logic, which is exactly the facet's scope, and the two are mutually exclusive by definition.
+
+**(c) `rules-based-checks` DECLINED (codex 1/3).** The AST-based breaking-change detector is their
+**measurement instrument**, which §104 places on the instrument side. *Building a detector to measure
+something is not contributing a detection mechanism.*
+
+**Dissertation Primary rather than Supporting.** The arbiter's stated use — agents break less than
+humans — is real but comparative. **The confidence-trap finding is the one that changes an argument:**
+it is the corpus's only empirical demonstration that the signal an organisation would reach for first
+is unusable.
+
+## 114. Second clean §88 positive, and a NORM inversion distinct from the capacity one (`59KP8GTP`, 2026-08-27)
+
+Gao, Banyongrakkul, Guan, Zahedi & Treude, *On Autopilot? An Empirical Study of Human-AI Teaming and
+Review Practices in Open Source* (arXiv 2026-01). **Core + Dissertation Primary.** Primary
+`oversight-scaling-inversion` (3/3); `org-governance` (3/3); `problem-statement-anchor` (3/3),
+`agentic`, `method-mining` (3/3). Method verified as pure mining — the only occurrence of *"survey"* in
+the paper is inside a **reference title**; no questionnaire, interviews or participants.
+
+**(a) §88 satisfied — second clean positive after `JQPPKSFQ`.** *"approximately **80% merged without any
+explicit review**."* This states review *absence* directly, where Branco's evidence was auto-merge
+configuration. **The theme now has two anchors and six rejections**, which is the shape §87 predicted
+for a narrow tag.
+
+**(b) THE FINDING WORTH LEADING WITH — a norm inversion, not a capacity failure.**
+
+> *"In contrast to human-created PRs where **non-owner developers receive the most feedback**,
+> AI-co-authored PRs from non-owners receive the **least**."*
+
+**The OSS norm — scrutinise contributions from people who do not know the codebase — reverses when AI
+is involved.** Newcomers *with* AI receive less scrutiny than newcomers *without*, measured against a
+human baseline **in the same dataset**. With **67.5% of AI-co-authored PRs originating from
+contributors with no prior code ownership**, the population receiving least scrutiny is precisely the
+one that historically received most.
+
+**This is a distinct mechanism from the capacity inversion.** Branco's repositories skip review because
+volume exceeds capacity; here reviewers are *present and responding*, but allocate attention **away**
+from the higher-risk population. **Not overload — misallocation**, and it runs against an established
+social norm rather than against a resource limit. Recorded in `Emerging_Themes.md`.
+
+**(c) `problem-statement-anchor` 3/3 — and possibly the better of the two.** Both this and `JQPPKSFQ`
+are first-hand and corpus-scale, but *"80% merged without any explicit review"* states the inversion
+more directly than auto-merge rates. **Closeout action: choose ONE to anchor the frame** — the facet is
+for *the* stat that anchors the overall problem statement, and two papers doing that job dilutes it.
+
+**(d) The governance number answers the dissertation's question directly.** *"the majority of
+repositories lack guidelines for AI-coding agent usage"* — **86.9% have none.** With Yang's 12
+governance strategies (§86), this gives both the **prevalence** and the **content** of AI governance in
+OSS. Basis for Dissertation Primary rather than the Supporting placement first proposed.
+
+**(e) Declined:** `provenance-auditability` (codex 1/3 — disclosure rules leaving traces is incidental),
+`steering` (1/3).
+
+**(f) `survey-input` (3/3) HELD, not written — pending a definitional ruling.** See §107f: the facet is
+*"the finding's **utility to the org survey**"*, and *"a mined study can be `survey-input`"*. The
+arbiter has now twice declined it on the ground that the paper did not survey anyone — which is the
+`method-self-report` test, not this one. **Corpus exposure: panel-modal on 17 papers, arbiter-endorsed
+on 8, so ten modal proposals stand on silence.** A ruling here settles it corpus-wide rather than
+paper by paper.
+
+**Open housekeeping:** `JQPPKSFQ` (Branco) was never placed in a dissertation collection despite its
+bimodality finding being Primary-grade. Revisit alongside the anchor decision.
+
+## 115. §104 REFINED — an instrument becomes a contribution when the paper measures the effect of USING it (`3Z45M3V3`, 2026-08-27)
+
+Fu, Liang, Tahir, Li, Shahin & Yu, *Security weaknesses of Copilot generated code in GitHub* (arXiv
+2023). **Core + Dissertation Supporting + Validation Apparatus.** Primary `ai-code-insecurity` (3/3);
+`rules-based-checks` (2/3); `assistive`, `risk-security`, `method-mining` (3/3), `method-experiment`
+(2/3), `problem-statement-anchor`.
+
+**(a) THE REFINEMENT, prompted by the arbiter:** *"also an angle on tools that could be used as a
+security detector in pipeline?"* The assistant had declined `rules-based-checks` under §104 — the
+static analysers looked like measurement apparatus. **That was wrong.**
+
+> **§104 refined: an instrument becomes a contribution when the paper measures the effect of USING it,
+> rather than merely using it to measure something else.**
+
+Fu's static analysers (**CodeQL**, plus ESLint for JavaScript and Bandit for Python) are a **component
+of a loop whose effect is measured**: detector → warning message → LLM repair → re-scan. The headline
+number *is* that measurement. Contrast `VG8PSMM7` (Adnyana, §104), where the LITL+HITL ladder scored
+**prompting techniques** — there the pipeline was apparatus for a different question.
+
+**(b) Fourth measurement leg for the independence thread — and the only one that PRICES the external
+signal.**
+
+> *"Using the fix command can fix **19.3%** of security issues, while using the enhanced prompt raises
+> [it to] **up to 55.5%**"* · *"Providing Copilot Chat with a **warning message from the static analysis
+> tool** resulted in a better fix."*
+
+**The model repairs 19.3% of its own security defects unaided, 55.5% when handed an external
+producer-independent signal.** Same shape as `VTDG995V` (rescaling against external ground truth moved
+ECE 0.46 → 0.04) — *the rescue comes from outside the model* — but this one quantifies **what the
+outside signal buys**. The thread now runs: rule (instrument design) → prescription (Zhu, Mahmud,
+Sistla) → measurement (Gros/Spiess, Yu, Ferdous, **Fu**) → observed deviation (Pimenova).
+
+**The architecture is also the one the thread endorses:** an external deterministic detector driving
+repair by a model that cannot find its own defects. **Passes §51** — static analysis needs no
+known-correct reference.
+
+**(c) FIELD measurement, not benchmark — a distinction §93 does not currently make.** 733 snippets from
+**real GitHub projects**, explicitly filling the gap that prior work *"examin[ed] code produced in
+controlled environments rather than open source development scenarios."* 29.5% of Python and 24.2% of
+JavaScript affected; 43 CWEs; 8 in the 2023 CWE Top-25.
+
+> **Watch item for §93:** the rule sends *pure measurement of model output insecurity* to Context, but
+> was written against **benchmark** papers (Zhao, Dora). **Field measurement on real repositories is
+> stronger evidence** and may warrant separate treatment. Not changed now — Fu qualifies for Core on
+> (b) regardless — but flagged, since `ai-code-insecurity` has ~8 unread instances left in this band.
+
+**(d) `problem-statement-anchor` — ONE ANCHOR PER CLAIM, not one anchor total.** This resolves the
+dilution concern raised at §114c. The review's frame has two halves, so each takes its own anchor:
+
+| Claim | Anchor candidate |
+|---|---|
+| **AI code is risky** | `3Z45M3V3` Fu — 29.5% / 24.2% in **real projects** |
+| **Oversight fails** | `59KP8GTP` Gao (80% unreviewed) *or* `JQPPKSFQ` Branco — still to choose |
+
+Fu also carries a **legacy bare `problem-statement-anchor` tag** from an earlier pass; now written
+properly in the `cal:human` namespace.
+
+**(e) Dissertation Supporting, named use (§109a):** the **19.3% → 55.5%** figure converts directly into
+a survey question — *do you feed static-analysis output back to the assistant?* — and supplies the
+reason the question matters. Not Primary: it is a mechanism finding, not a picture of practice.
+
+**Declined:** `steering` (1/3).
+
+## 116. `survey-input` NARROWED to papers containing a user survey; and theatre vs inversion on the same data (`SHK6KAX6`, 2026-08-27)
+
+Ghammam & Almukhtar, *AI builds, we analyze: an empirical study of AI-generated build code quality*
+(arXiv 2026-01). **Core.** Primary `quality-debt` (3/3); `ai-code-insecurity` (3/3);
+**`oversight-theater` rescued** (codex 1/3); `agentic`, `risk-quality`, `risk-security`, `method-mining`
+(3/3). Rejected `oversight-scaling-inversion` (2/3) and `survey-input` (2/3).
+
+### 116a. DEFINITIONAL NARROWING — `survey-input`
+
+> **SUPERSEDED IN PART by §121b (2026-08-28).** The narrowing below stands (an actual user-survey
+> instrument must exist), but the operative test is now **what the instrument ELICITS**: stated
+> preferences / adoption / priorities → `survey-input`; a construct or performance measure
+> (cognitive load, engagement, comprehension, satisfaction) → `method-self-report` only.
+> Neither the survey's centrality to the paper nor its usefulness to us is part of the test.
+
+The facet has been declined three times (`JQPPKSFQ`, `59KP8GTP`, here) on the ground that the paper did
+not survey anyone, which contradicts its written text: *"`method-self-report` ≠ `survey-input` (method
+vs the finding's **utility to the org survey** — **a mined study can be `survey-input`**)."* The arbiter
+resolved the divergence: ***"The intention for input-survey was a user survey — Likert scale, etc."***
+
+**Checked against the corpus before adopting**, since the narrow reading risks making the facet
+redundant with `method-self-report`:
+
+| | n (of 128) |
+|---|---|
+| `survey-input` **and** `method-self-report` | **12** |
+| `survey-input` only | **5** — Chang, Gao, Ghammam, Li, Yang |
+| `method-self-report` only | 15 |
+
+**Not redundant — and the overlap figure above OVERSTATES the qualifying set.** Corrected after the
+arbiter pushed back on the framing: *"self report is NOT a survey."* The definition is
+**`method-self-report` — *(humans tell you: questionnaires, interviews, focus groups, diaries)***.
+
+> **Self-report is the genus; a survey is one species.** Interviews, focus groups and diaries are
+> self-report and are **not** surveys. So `survey-input` under the narrow reading is a subset of the
+> *questionnaire-using* subset of self-report papers — **smaller and more discriminating** than the
+> 12-paper overlap suggests. The broad reading would fire on almost any organisational-practice paper,
+> which is the §87 discriminating-power problem.
+
+> **NARROWED (binding): `survey-input` requires the paper to have collected practitioner input directly
+> — survey, Likert instrument, structured questionnaire — AND for that instrument or its findings to be
+> useful to the dissertation's org survey. A mined study does NOT qualify, whatever its findings say
+> about practice.**
+
+**The five affected papers lose nothing substantive** — all carry `org-governance` or `method-mining`,
+and Gao and Yang are already Dissertation Primary. **Cheatsheet text is now wrong and must be corrected
+at the next versioned cut (§41 — not edited now).**
+
+**CLOSEOUT ACTION — narrowed after the arbiter confirmed he has been applying this lens throughout:**
+*"I've been reviewing the papers and enforcing that lens. I will continue to."*
+
+**The arbiter's `cal:human:facet:survey-input` endorsements are therefore authoritative and need no
+re-check.** The exposure is confined to papers where the facet is **panel-modal and the arbiter was
+silent** — where the models applied the broad written reading and nothing overrode it. At the time of
+this ruling: **17 panel-modal, 8 arbiter-endorsed, 7 overlapping ⇒ ~10 modal proposals standing on
+silence.**
+
+> **Closeout: for each modal-on-silence instance, confirm the paper administered a questionnaire or
+> survey. Remove where it did not.** Endorsed instances stand as-is.
+
+### 116b. THEATRE, not inversion — the ritual is present but hollow
+
+Two findings, deliberately kept apart:
+- **RQ1:** 364 maintainability and security build smells in agent-authored build code.
+- **RQ3:** *"**61.4% (238/387)** of the analyzed PRs were merged by developers, and in most cases, the
+  merge occurred **immediately**"*; *"Reviewers often accept the PR changes with [little to no
+  modification]."*
+
+**`oversight-theater` applies** — §69 requires a process to be hollow, and here **reviewers do accept**;
+the ritual exists and carries minimal engagement. **A clean contrast with `59KP8GTP` (Gao, §114):**
+
+| | What happens | Theme |
+|---|---|---|
+| **Gao** | merged **without any explicit review** — no ritual | inversion |
+| **Ghammam** | **reviewers accept**, then merge immediately without modification — ritual present | **theatre** |
+
+**`oversight-scaling-inversion` REJECTED (2/3) — seventh rejection.** The paper never links RQ1 to RQ3:
+it does not show the *smelly* PRs were the merged ones. Arithmetic makes it likely, but §88 requires
+the escape to be demonstrated, not inferred — the same gap that kept the tag off Chang and Catalan.
+**Assistant's call, twice offered to the arbiter and passed over; reversible in one edit.**
+
+**`automation-bias` NOT applied** (0/3, and the arbiter raised it as a possibility). §16's discriminator
+requires **a capable human demonstrably failing**. Fast merges with little modification are equally
+consistent with rubber-stamping *or* with the code being acceptable. **Merge speed is not evidence of a
+missed catch.**
+
+### 116c. CITATION DISCIPLINE — three papers, one dataset
+
+`JQPPKSFQ` (Branco), `59KP8GTP` (Gao) and `SHK6KAX6` (Ghammam) all mine **AIDev**, and report different
+review-absence figures on overlapping data: auto-merge rates (bimodal by repo) · **~80%** of non-owner
+AI PRs merged without explicit review · **61.4%** of build-code agentic PRs merged, mostly immediately.
+
+> **Different subsets, different definitions. Cite one number for one population.** Three papers
+> agreeing loosely would read as replication when it is one dataset sliced three ways — and a committee
+> that notices the shared provenance will discount all three.
+
+## 117. Read the implications section before ruling "no oversight content" (`REZGA5WF`, 2026-08-27)
+
+He, Miller, Agarwal, Kästner & Vasilescu, *Speed at the cost of quality: how Cursor AI increases
+short-term velocity and long-term complexity in open-source projects* (2026). **Core + Dissertation
+Primary.** Primary `quality-debt` (3/3); `agentic`, `method-mining`, `risk-quality` (3/3). Rejected
+`oversight-scaling-inversion`.
+
+**(a) ASSISTANT ERROR, corrected by the arbiter.** The assistant assessed this as having **no oversight
+content** — on the strength of the abstract and the panel's silence (no model proposed an oversight
+theme) — and proposed Context. The arbiter pushed back: *"Also points to the need for an ecosystem to
+maintain quality / debt."* **Section 5.2 Practical Implications is substantive:**
+
+> *"process adaptation that **scales quality assurance with AI-era velocity**"* · *"refactoring sprints
+> **triggered by code quality metrics**"* · *"test coverage requirements that **scale with lines of code
+> added**"* · *"teams should treat AI-generated code as **requiring extra scrutiny during review**."*
+
+> **Rule: panel silence plus a quiet abstract is not evidence of absence.** Empirical papers routinely
+> carry their oversight content in **implications and discussion**, which the taggers weight lightly
+> and the abstract omits. **Before ruling that a paper says nothing about oversight, read the
+> implications section.** Third time an Accept-band paper's value sat below the abstract (cf.
+> `UIXCRBQX` §113, `3Z45M3V3` §115).
+
+**(b) THE COMPREHENSION TAX — reviewability degrading independent of correctness, measured.**
+> *"a **'comprehension tax' that persists regardless of functional correctness**… LLMs may be generating
+> **structurally valid but semantically opaque** code"* — complexity **+41%**, warnings **+30%**,
+> persistent. *"**Unless** future workflows allow fully automated AI development **without any human code
+> reviews**, code readability will remain an important dimension."*
+
+This is `2KPHQ5IV`'s **dimension collapse** (§80) with a causal design behind it, and it makes
+readability a **precondition for oversight** rather than a style preference. Carried by `risk-quality`,
+whose definition already covers *"code comprehensibility — explainability of the code."*
+
+**(c) The temporal finding, which is what makes it Dissertation Primary.** DiD with matched controls on
+six months of pre-adoption history, plus panel GMM: **3–5× velocity increase in month one, gains
+dissipate after two months**, while warnings and complexity persist and *"subsequently dampen future
+development velocity"* — a **self-reinforcing cycle**.
+
+**(d) `oversight-scaling-inversion` APPLIED — reversing the assistant's rejection, and §88 gains a
+second satisfaction route.** The assistant first rejected it, reading the mechanism as **debt drag**
+rather than review failure. The arbiter overruled. **The reversal is right:**
+
+> §88 was being read as requiring **observed review absence** (Branco's auto-merge, Gao's 80%
+> unreviewed). But this study measures **repository state** by difference-in-differences — warnings
+> **+30%** and complexity **+41%** *persist post-adoption*, which means those defects are **in merged
+> code**. And the paper names the cause: *"developers heavily vibe-coding and **not rigorously
+> reviewing AI-generated code**."*
+
+> **§88 REFINED — two routes to leakage:**
+> **(i) observed absence** — review demonstrably skipped (`JQPPKSFQ`, `59KP8GTP`);
+> **(ii) demonstrated outcome** — defects measurably present in **merged** code, with review failure as
+> the stated or evident cause. **Defects in shipped code are an escape, whether or not the gate was
+> watched.**
+
+**Consistency flag — `SHK6KAX6` (Ghammam, §116b) sits closer to the line now.** It was rejected as the
+seventh because it never links its 364 build smells to its 61.4% merge rate. **The distinction that
+holds:** He measures the **repository** (merged by construction), whereas Ghammam measures **PRs** and
+merge rates as separate quantities. That distinction is real but fine, and **Ghammam should be
+revisited at closeout** alongside the other inversion re-checks (§87). Route (ii) must not be allowed
+to swallow every quality-measurement paper — **the defects must be in code that shipped, not in
+candidates that were assessed** (which is what keeps `4PSM6ZCD` Zhao, a benchmark, correctly out).
+
+**(e) Mode calibration — third instance.** `agentic` 3/3, `assistive` 0/3, against an arbiter reading of
+*"assistive scenarios."* The paper argues the distinction itself: *"LLM agent assistants like Cursor,
+**by contrast**, are tightly integrated into the IDE with persistent codebase awareness, **autonomously
+navigating files, proposing multi-file refactorings**."*
+
+> **Calibration, now three instances deep** (`T2EG4BE2` §81, `5BAZZWHG` §108b, here): **IDE integration
+> does not make a tool assistive — the reviewable unit does.** Cursor proposes multi-file refactorings;
+> that is artifact granularity.
+
+### 117f. `oversight-explanation` DECLINED on `REZGA5WF`
+Arbiter: *"explanation no."* The assistant had floated it as a cold rescue (0/3) on §108's absence
+rule, since the paper documents comprehensibility degrading **and** argues for what should exist
+(readability-aware fine-tuning, post-hoc simplification passes). **Declined.** The comprehension tax is
+carried by `risk-quality`, whose definition already covers *"code comprehensibility — explainability of
+the code"*, and the paper proposes **no explanation mechanism** — it recommends the code be *simpler*,
+not that it be *explained*. **Discriminator: making an artifact easier to understand is a quality
+intervention; making its behaviour legible to a reviewer is `oversight-explanation`.**
+
+## 118. `automation-bias` gets its cleanest instance; and aggregated warning counts are not risk-flag evidence (`4T5QFWZE`, 2026-08-27)
+
+Huang, Jaisri, Shimizu, Chen, Nakashima & Rodríguez-Pérez, *More code, less reuse: investigating code
+quality and reviewer sentiment towards AI-generated pull requests* (arXiv 2026-01). **Core +
+Dissertation Primary + Validation Apparatus.** Primary `quality-debt` (3/3); **`automation-bias`
+rescued** (gemini 1/3); `metrics`, `agentic`, `method-mining`, `risk-quality` (3/3), `risk-overreliance`
+(1/3).
+
+**(a) `automation-bias` RESCUED — the cleanest instance in the band.** §16 requires **a capable human
+demonstrably failing**, which has kept the tag off papers where fast merges were ambiguous evidence
+(`SHK6KAX6` §116b). Here the failure is demonstrated on **both sides simultaneously**:
+
+> *"LLM Agents frequently disregard code reuse opportunities, resulting in **higher levels of
+> redundancy** compared to human developers. **In contrast to the quality issues**, our emotions
+> analysis reveals that **reviewers tend to express more neutral or positive emotions towards
+> AI-generated contributions than human ones.** This disconnect suggests that the **surface-level
+> plausibility of AI code masks redundancy**, leading to the **silent accumulation of technical
+> debt**."*
+
+**MRS establishes the defect exists; sentiment analysis establishes reviewers did not register it — and
+felt better about it.** Reviewers looked at objectively worse code and reacted more positively. **That
+is oversight failing, measured on both the artifact and the human**, not inferred from merge latency.
+
+**(b) `metrics` — strongest instance since `F2C2DWSI`, and a clean §84 pass.** *"we propose a new metric
+called the **Max Redundancy Score (MRS)**"*, computed via Type-4 semantic-clone detection, positioned
+explicitly against the status quo — *"existing metrics solely measure pass rates, failing to reflect
+impacts on long-term maintainability and readability."* **Named · computable · argued for · situated in
+the measurement literature.** All four of §84's conditions, unusually explicit.
+
+**(c) `risk-security` NOT applied (0/3) — verified absent.** The only occurrence of *"security"* in the
+paper is a **venue name in a reference**.
+
+### 118a. AGGREGATED WARNING COUNTS ARE NOT RISK-FLAG EVIDENCE — `risk-security` rejected on `REZGA5WF`
+
+Closing He's last open item, and stating a rule the mining studies will keep testing. He's
+`risk-security` was **2/3 modal**, resting on the static-analysis warning increase. The variable
+definition settles it:
+
+> *"**Static Analysis Warnings**ᵢₜ : Total number of **reliability, maintainability, and security
+> issues** for repository i at month t"*
+
+**The +30% is a composite of three categories, never decomposed** — the security share is
+unrecoverable. Every other security mention in the paper is a **citation to other work** as background.
+
+> **RULE: an aggregated warning count is not substantive treatment of any of its components.** The
+> risk-flag bar requires *defining a metric for the harm · contributing or evaluating a mitigation ·
+> reporting an empirical result **about it** · focal analysis*. A composite that happens to include a
+> harm satisfies none. This is the *"intro risk-list sentence = mention, NO tag"* rule one level up —
+> **from a sentence that mentions to a number that subsumes.**
+
+**Expect recurrence:** several papers in this band use SonarQube-style composite counts. **The risk
+flags must not all fire off one undifferentiated number.**
+
+### 118b. Second EFFECT–MECHANISM pairing in the band
+`59KP8GTP` (Gao, §114) measured that AI-co-authored PRs receive **the least** reviewer feedback and
+recorded **three untested hypotheses** for why — one being *"polish substitutes for provenance."*
+**Huang measures that hypothesis directly** and finds it holds: surface plausibility produces **positive
+reviewer affect** toward objectively worse code.
+
+> **Gao has the effect; Huang has the cause. Neither cites the other.** Second such pairing after
+> He/Gao's prescription-versus-violation (§117) — and the same argument shape the independence thread
+> relies on: **independent groups, converging, neither writing to support the other.**
+
+**Flagged, not applied:** `oversight-scaling-inversion`. Under §88's route (ii) (§117d), redundancy in
+**merged** code that review failed to catch would qualify — but the paper says *"silent accumulation…
+in real-world development environments"* without establishing that the studied PRs merged. **Route (ii)
+should not be widened on its first outing; check RQ1's sample at closeout.**
+
+## 119. §34 MISREAD — the ladder and method facets are not a fork; and shift-left to the model maker (`YA7XNWYE`, 2026-08-28)
+
+Ji, Jun, Wu & Gelles, *Cybersecurity risks of AI-generated code*, **Center for Security and Emerging
+Technology (CSET), Georgetown** — a policy report, 2024-11. **Core + Dissertation Primary + Validation
+Apparatus.** Primary `ai-code-insecurity` (3/3); `org-governance`, `regulatory-compliance` (2/3),
+**`tooling-supply-chain`** (rescued 1/3); `assistive`, `risk-security`, `method-experiment` (3/3),
+**`evaluated-benchmark`**, `risk-quality`, `risk-overreliance` (2/3).
+
+**Attribution correction:** initially described as a NIST report. It is **CSET** — a policy think tank,
+not a standards body. NIST appears *within* the report as a cited framework. **The distinction matters
+for how much authority the recommendations carry in the write-up.**
+
+### 119a. ASSISTANT ERROR — §34 does not bar ladder/method co-occurrence
+
+The assistant has cited §34 three times this session as a **fork** preventing the `evaluated-*` ladder
+and `method-*` facets from co-occurring — on `72W6R4JG` (§77), `XK3P9C96` (§97) and `TA6GIUK2` (§99b).
+**That is not what §34 says.** Its corollary is *"one evaluation event gets ONE **method**
+classification; two **method facets** require two genuinely separate measurement events"* — a rule about
+method facets **among themselves**.
+
+**Corpus practice, in the arbiter's own prior rulings, settles it:**
+
+| Paper | Rung | Also carries |
+|---|---|---|
+| Kang | `evaluated-benchmark` | `method-experiment` |
+| Li, Mitropoulos | `evaluated-benchmark` | `built-system`, `method-experiment` |
+| Mozannar | `evaluated-benchmark` | `built-system`, `method-experiment`, `method-self-report` |
+| Ma / ZORO | `evaluated-synthetic` | three method facets |
+
+**8 of 16 ladder-tagged papers also carry method facets.**
+
+> **CORRECTED: what governs ladder-versus-method is the WORLD-OR-TOOL test, not a fork.** Results
+> describing only the tool → ladder rung, no method facet. Results describing the world (or third-party
+> systems) → method facet. **A paper doing both earns both.**
+
+**CLOSEOUT ACTION: re-check §77, §97 and §99b.** The rulings may stand on the world-or-tool test, but
+**the stated reason is wrong in the record** and is cited three times.
+
+### 119b. `evaluated-benchmark` — measuring AGAINST an accepted benchmark, not contributing one
+
+The arbiter corrected the assistant's reading: *"evaluated benchmark is not that they created a
+benchmark, it is that they **measured themselves against a standard / well accepted benchmark**."*
+
+**`A5WDGC7J` (Jin) is the matching precedent** — `evaluated-benchmark` with **no** `built-system` and
+**no** method facet, evaluating third-party LLMs on benchmarks. Same shape as Ji.
+
+**Applied here:** the **LLMSecEval** dataset — 67 published, CWE-mapped security prompts — held constant
+across **five third-party models** (GPT-4, GPT-3.5-turbo, Code Llama 7B Instruct, WizardCoder 7B,
+Mistral 7B Instruct) with **CodeQL** as the assessor. The authors are explicit that they did **not**
+build a benchmark: *"our objective was not to… create a new benchmark for code security."*
+
+> **The ladder rates EVIDENCE STRENGTH, not artifact maturity.** A contributed system is not required —
+> what matters is whether the evidence rests on ad-hoc tests, constructed data, or an accepted
+> benchmark.
+
+### 119c. Mode — `assistive` only (`agentic` 0/3, declined)
+
+The arbiter proposed both, reasoning that *"their methodology was generating code from a prompt which
+can happen in both scenarios."* **Declined on scope:** the mode pair marks **which setting the paper
+studies**, not which settings the technique could appear in. The report is assistive throughout —
+Copilot as *"autocomplete for code"*, *"AI pair programming"*, infilling models, *"AI code assistant"* —
+with **no agentic content**, unsurprising for **November 2024**.
+
+**GAP RECORDED at the arbiter's request:** the dissertation will need to argue that **the same
+underlying technology powers both assistive and agentic scenarios**. **No corpus paper currently
+supports this**, and our own mode-pair rulings treat the two as distinct settings. **Find a source, or
+argue it explicitly as the review's own position.** Logged in `Emerging_Themes.md`.
+
+### 119d. The accountability argument, and SHIFT-LEFT to the model maker
+
+> *"**Regardless of its authorship**, code should be evaluated as part of **existing secure software
+> development practices**"* — and — *"the burden… **falls mainly on the users**. However, the willingness
+> to proactively expend costs to check code outputs for security—**at the expense of efficiency—will not
+> be constant across users**. The current state **does not align** with the White House's 2023 National
+> Cybersecurity Strategy to **shift the burden of responsibility away from individuals** to
+> organizations best positioned to reduce systemic risk at scale."*
+
+**Two positions that cohere into one:** *the practices are adequate; the accountability placement is
+not.* And the stated reason is this review's thesis in policy language — **oversight that depends on
+individual discretion, against the individual's own efficiency incentives, does not hold uniformly.**
+
+**Arbiter's framing, recorded because it extends our gate-placement spectrum:** *"This is **shift left** —
+if the model makers do a better job, there will be less left for individuals to pick up… Same as
+detecting and fixing problems earlier in SDLC."* See `Emerging_Themes.md`.
+
+**Also worth carrying:** *"Evaluation benchmarks… **overlook security, incentivizing future
+code-generation models to prioritize performance over security**"* — the measurement regime shapes what
+gets built, which pairs with §66/§84 on what counts as a metric.
+
+## 120. The reuse test lives in `framework`, not `built-system` — boundary probed, NO change (`A5WDGC7J`, 2026-08-28)
+
+**Paper:** Jin, Wang, Guo et al., *Are LLMs reliable code reviewers? Systematic overcorrection in
+requirement conformance judgement*, **Automated Software Engineering** (2026-06).
+**Written:** primary `ai-review`; `rules-based-checks`, `general-code`, `built-system`,
+`method-experiment`, `evaluated-benchmark` (pre-existing); **`framework` rejected** (panel 2/3).
+**SLR: Core · Dissertation: Primary · 04 - Validation Apparatus.**
+
+### 120a. What the paper is, and why an LLM-evaluation paper survives the demote rule
+
+We have demoted a long run of "how well do LLMs do X" evaluations. This one is kept, on the same
+ground as Yu (`PPMTM4DG`): **the LLM under evaluation is occupying the oversight seat.** The object of
+study is the *reviewer*, not the generator, so the failure it characterises is a failure of the
+review mechanism itself.
+
+The specific finding: LLM judges given a **spec and an implementation** do not fail by rubber-stamping
+— they fail by **systematic overcorrection**, rejecting conformant code and inventing faults, with
+false-positive rates as high as **88.74%** (GPT-4o on MBPP). Together with two papers already in the
+corpus this completes an **LLM-reviewer failure triad**:
+
+| Paper | Failure mode |
+|---|---|
+| Yu (`PPMTM4DG`) | **false negatives** — a model cannot catch its own defects |
+| Zietsman (`TA6GIUK2`) | **circularity** — review without an external referent |
+| **Jin (`A5WDGC7J`)** | **false positives** — overcorrection *even when given* a spec |
+
+The triad matters because it closes an escape route: the fix for Yu is "give the reviewer an
+independent referent," and Jin shows that supplying one produces a *different* failure rather than
+no failure. **Handing the reviewer a spec is not sufficient.**
+
+**Arbiter's substantive contribution, recorded because the corpus lacks the distinction:** this paper
+applies review **against the V-model** — checking the implementation against the *specification*
+rather than scanning for bugs or poor structure. That separates two things we have been calling one:
+
+- **conformance review** — *did it build what was asked?* Requires a referent; fails by overcorrection.
+- **defect review** — *is this code bad?* Needs no referent; fails by omission.
+
+Logged to `Emerging_Themes.md`. Most corpus oversight mechanisms are defect review; the oversight
+question that actually worries practitioners is conformance.
+
+### 120b. `framework` REJECTED — the reuse test, applied
+
+Panel proposed `framework` 2/3. **Rejected on two independent grounds.**
+
+**Span (§49).** The contributed mechanism is a **Fix-guided Verification Filter**, and the paper states
+its trigger condition plainly: *"the filter is **applied only when the judge returns NO**."* That is a
+**single post-judge stage**, not an architecture governing a flow — the `WUUDHL8R` / `BU73N7PC` negative
+case (a component bolted onto a pre-existing pipeline). The paper's own phrase *"filter-embedded
+framework"* is technical vocabulary, not a technical artifact.
+
+**Reuse.** `framework` already carries the test in its slug text: ***"would someone adopt it as a
+reusable pipeline design?"*** Here the answer is no, and the paper's availability statements say why:
+
+> *"To facilitate **reproducibility**, we make the curated datasets and scripts publicly available…"*
+> **Code Availability:** *"The **experimental framework** and mitigation filter implementation are available…"*
+
+**Released ≠ released for use.** These are **reproducibility artifacts**, described by the authors as an
+*experimental* framework. The filter also only runs where an executable test suite exists **plus**
+GPT-4o-generated augmented tests — it is a robustness patch on the authors' own measurement, not a
+component a team could drop into a review pipeline.
+
+### 120c. `built-system` — boundary probed, definition UNCHANGED
+
+The arbiter put a sharper test to the facet: ***"would someone use what they built in other scenarios,
+or was it just applicable to testing their hypothesis?"*** — i.e. **contributed artifact vs experimental
+apparatus**, the §104/§115 principle applied at facet granularity.
+
+Probed and **deliberately not adopted.** Arbiter's ruling: *"let's not change `built-system`, keep as
+is. `framework` captures the case I was thinking about."* The resulting **division of labour is now
+explicit**, and this is the entry to cite when it comes up again:
+
+| Facet | Question it answers | Kind of marker |
+|---|---|---|
+| `built-system` | **Did they implement and run it?** | existence / maturity |
+| `framework` | **Would someone adopt it elsewhere?** | reuse / transferability |
+
+**Why leaving `built-system` bare is right — the arbiter's statement of it, which governs:**
+
+> *"**Built is counterpoint to design.** Design, they designed it but did not build. Built-system, they
+> actually built it."*
+
+The pair is a **binary on a single question — did it get made?** — and `design-only` is already declared
+*"mutually exclusive with `built-system`/`adopted`."* The two slugs partition the space of papers that
+propose a mechanism, and every such paper must land on exactly one side.
+
+That is why a reuse test could not be loaded onto it: purpose-built apparatus **was in fact built**, so
+it cannot take `design-only`, and denying it `built-system` would leave it in a gap the partition does
+not admit. The ladder — *unvalidated design < expert-validated < built prototype < adopted* — grades
+**how far past paper the thing got**, not how useful it would be to anyone else. Reuse is a different
+question, and `framework` is where it is asked.
+
+**Two consequences, both avoided by the no-change ruling:**
+
+1. **Jin keeps `built-system`** (panel 3/3, correct). The filter was implemented, run, and reported
+   before/after: **FPR 88.74% → 39.96%**. It exists; that is all the facet claims.
+2. **Ferdous (`UIXCRBQX`) is NOT backed out.** The arbiter raised it as the likeliest casualty, and
+   under the rejected test it would have been — the paper is unusually explicit that its tool is
+   apparatus: *"…making these tools **unsuitable for our study**. Therefore, **we develop a tool** to
+   detect potential [breaking changes]"* and *"To **validate the reliability of our tool**, we randomly
+   selected 94 patches."* Built for their measurement, then calibrated as an instrument. Under the
+   retained definition it is still built, and `built-system` stands.
+
+**A superseded correction, recorded so the reasoning is not repeated.** The assistant initially argued
+`built-system` from §115 — *the paper measures the effect of using the instrument*. That was the wrong
+lever: §115 governs **whether apparatus rises to a contribution**, and measuring your own instrument's
+effect on your own error rate is **internal validity**, not a contributed tool. `built-system` never
+needed §115, because it never asked the contribution question in the first place.
+
+**Related boundary already in the instrument:** `design-only`'s carve-out exclusion — *"metrics auditing
+a measurement tool's/judge's OWN reliability = tool validation → context"* (`BAWCBT9R`). Ferdous's
+94-patch validation is precisely that, which is why tool-validation evidence does not lift a paper's
+disposition even where `built-system` applies.
+
+### 120d. `rules-based-checks` — kept, with the qualification stated
+
+Panel 3/3, retained. The arbiter's challenge — *"my read was that they tested their hypothesis against
+LLMs, not that they built a system that others might use"* — is correct about the paper's centre of
+gravity but does not defeat the theme: the filter is a **specified deterministic decision procedure**
+(*"executes both against the benchmark test cases T and an augmented test set T̃. The final verdict is
+determined by four common outcomes"*).
+
+**Qualification worth carrying:** it is **not purely deterministic** — *"the test generation step is
+standardized to GPT-4o"*, so an LLM produces the augmented tests the filter then executes. This is the
+increasingly common **hybrid** shape: deterministic adjudication over LLM-generated inputs. Flagged as
+a candidate refinement for the next versioned cut; **no change made now.**
+
+### 120e. Open at closeout
+
+- **`counterpoint` 2/3** — not carried (deprecated, §56). The `scaling-dissent` question was checked:
+  Jin reports a **failure mode of a delegated reviewer**, not an argument that delegation is
+  unworkable as a general matter. **Does not qualify.**
+- **Queue hygiene** — Jin was added to `01 - Primary` and `04 - Validation Apparatus` but left in
+  `03 - Queue`. The convention is inconsistent: **16 of 21** `01 - Primary` members have been removed
+  from Queue, **5 have not**. Settle the rule and sweep the 6 at closeout.
+- **Mode pair** — neither panel nor arbiter assigned `assistive`/`agentic`. Reasonably absent: the
+  paper studies judges over benchmark programs, so no generation setting is under study. Noted so the
+  silence is not later read as an omission.
+
+## 121. `survey-input` REFINED to an elicitation test; and a debugging paper earns core on its explanation study (`7UB2MD8Z`, 2026-08-28)
+
+**Paper:** Kang, An, Yoo, *Explainable automated debugging via large language model-driven scientific
+debugging*, **Empirical Software Engineering** (2024-12).
+**Written:** primary `oversight-explanation`; `hitl-workflow`; facets `general-code`,
+`risk-overreliance`, `survey-input`, `routing-signal`, `method-self-report`, `agentic`,
+`built-system`, plus pre-existing `evaluated-benchmark` and `method-experiment`.
+**Declined:** `ai-review` (0/3, arbiter-proposed), `risk-routing`, `framework` (1/3),
+`automation-bias` (1/3). **SLR: Core · Dissertation: Primary · 04 - Validation Apparatus.**
+
+**No rejection tags were written.** Every panel-modal proposal (≥2/3) was endorsed; everything
+declined was 1/3 or 0/3 and therefore never reaches `final:*`. Recorded because the absence of
+`cal:human:reject:*` on a contested paper can otherwise read as an incomplete pass.
+
+### 121a. Why an automated-program-repair paper is core
+
+AutoSD prompts an LLM to form hypotheses, drives a **debugger** to test them, and emits a patch **plus
+the reasoning that produced it**. On its face this is APR — a family we have demoted repeatedly. It is
+kept because **the contribution is the explanation, and the explanation is evaluated on human
+decisions**: a 20-participant study in which *"participants with access to explanations judged patch
+correctness more accurately in five out of six real-world bugs."*
+
+That satisfies §115 exactly — **an instrument becomes a contribution when the paper measures the
+effect of using it** — and it is the corpus's strongest instance of *measuring* whether explanation
+improves oversight rather than asserting it. Pairs with Zhou (`XRTVITVP`, *Steering LLMs*) and the
+"when users should check" paper, supplying the outcome measurement that cluster otherwise lacks.
+
+### 121b. §116a REFINED — `survey-input` fires on WHAT THE INSTRUMENT ELICITS
+
+**Two wrong refinements were proposed and withdrawn before the right one.** Both are recorded because
+each is a plausible reading that will recur:
+
+1. **"The survey must be the paper's core."** Drawn from the arbiter's Catalan ruling (*"it wasn't the
+   core… just a data collection mechanism"*). **Wrong** — it imports a *method* question into a
+   **role** facet, and it would exclude Kang, which is a correct positive.
+2. **"The survey findings must be useful to the org survey."** **Wrong for a different reason**, and
+   the arbiter caught it: *"this should record the method used, not its significance, right?"* A
+   utility test is **not reproducible** — another coder cannot apply it, and it drifts as our
+   interests change. **The decisive evidence: the panel proposes `survey-input`** (2/3 here). Models
+   have no access to our interest level, so whatever they key on must be a **visible property of the
+   paper**.
+
+**The rule that survives — an elicitation test, objective and panel-codeable:**
+
+> **`survey-input`** = the instrument elicits **stated preferences, adoption, or priorities** — the
+> kind of finding that can become an item in the org survey.
+> **`method-self-report` only** = the instrument measures a **construct or performance** (cognitive
+> load, engagement, comprehension, satisfaction, demographics).
+
+Neither centrality nor significance enters. The two live rulings then reconcile **without revisiting
+either**:
+
+| Paper | What the instrument measures | Verdict |
+|---|---|---|
+| Catalan (`5BAZZWHG`) | a **construct** — cognitive engagement by Bloom level (*"assessing their reasoning, attention"*; *"(3) Understanding, (4) Analyzing, (5) Evaluation"*), perceived cognitive load | `method-self-report` only |
+| **Kang (`7UB2MD8Z`)** | **stated preferences about tooling** — *"70% agreed [explanations were wanted]"*; *"half agreed or strongly agreed that explanations would be important **when using repair tools**"* | **`survey-input`** |
+
+The arbiter's intuition (*"in Kang the survey results are something we are super interested in, whereas
+in Catalan it is just a supporting player"*) was tracking a real difference — but the difference is not
+our interest. **Kang asked people what they want; Catalan measured what they did.**
+
+`survey-input` and `method-self-report` **co-occur** on Kang, consistent with §116a's standing note
+that the two are different axes (finding-role vs evidence-production).
+
+**Closeout consequence:** the `survey-input` re-check (≈10 silent-modal instances) now applies
+*preferences vs construct*, not *is there a survey* — a faster and far more consistent call. Recorded
+in `Methodology/Post_Accept_Closeout.md` §B2.
+
+### 121c. `routing-signal` YES, `risk-routing` NO — a validated signal is not a router
+
+AutoSD emits a `<DEBUGGING DONE>` token: *"we can **gauge how confident AutoSD is**"*, and RQ3 tests
+whether it predicts correctness, motivated by *"if AutoSD can indicate when it is likely to be
+correct, this [lets developers skip] **patches that AutoSD is not confident in**."*
+
+That is a **computed, per-item, producer-independent signal** — `routing-signal` fires. But **no gate
+is built on it**; they measure that the signal *predicts*, they do not route on it. This is the Branco
+rule applied to a within-paper case: *"the study is not showing us how that [decision] is made."*
+**§107e stands: a validated signal is a signal, not routing.** The pair on one paper is a clean
+worked example of the boundary.
+
+### 121d. `general-code` — a unanimous panel MISS worth noting
+
+**0/3.** The object of study is **human-written buggy code** from repair benchmarks, not AI-generated
+code. That is precisely what the facet exists to mark: the transfer audit trail for a kept-core paper
+whose findings are about code in general. The panel proposed the mode facet (`agentic` 3/3) but missed
+the scope facet entirely — consistent with §11.7's finding that panel recall is bounded, and a
+reminder that the **scope** question in the seven-part checklist is the one most often skipped.
+
+### 121e. `ai-review` declined — the AI repairs, the human reviews
+
+Proposed by the arbiter, **0/3 from the panel**, and declined on examination. AutoSD's internal
+verification is a **debugger executing hypotheses** — deterministic, not a model judging code — so the
+Yu/`PPMTM4DG` self-review failure mode does not arise. The reviewing in this paper is done by
+**humans reading explanations**, which is why the primary is `oversight-explanation` and the human
+side is carried by `hitl-workflow`. The paper's own framing (*"full developer trust requires a manual
+patch review"*) names the human as the reviewer.
+
+## 122. §117 applied and OVERRULED by §111 — concrete routing advice in a discussion section does not rescue a measurement paper (`5NZ2EDEK`, 2026-08-28)
+
+**Paper:** Karakaya, *Understanding the Limits of Automated Evaluation for Code Review Bots in
+Practice*, arXiv (2026-04-27).
+**Written:** primary `ai-review` (3/3); `general-code` (3/3); `method-mining` (2/3),
+`method-experiment` (3/3), `method-self-report` (3/3); `evaluator-reliability`.
+**`demote:context` · Dissertation: Supporting.**
+**Declined:** `scaling-dissent`, `oversight-explanation`, `routing-signal` (1/3),
+`hitl-workflow` (1/3), `cross-model`.
+
+### 122a. What the paper is — a THREE-layer oversight stack, and two of the layers fail
+
+The arbiter's initial read was *"a measurement of how good the feedback was from ACR by seeing what
+humans did with it."* That is the paper's **setup**; its finding is that the setup does not work.
+
+| Layer | Who checks whom | Verdict |
+|---|---|---|
+| 1 | ACR bot reviews the PR | not the object of study |
+| 2 | **LLM-as-a-Judge / G-Eval score the bot's comments** | **0.44–0.62 agreement** with human labels |
+| 3 | **developer `fixed`/`wontFix` labels = "ground truth"** | **contaminated** |
+
+Layer 3 is the more interesting failure: *"**wontFix reflects organizational or contextual constraints
+rather than purely technical non-usefulness**"* — *"local priorities, release pressure, ownership
+boundaries, or timing"* — corroborated by an interview with Beko's director of software engineering.
+
+**Carry this into the dissertation's own instrument design:** developer accept/reject signals are
+**not** clean ground truth for whether AI review was useful. Any survey item asking practitioners
+whether AI review comments were helpful inherits exactly this contamination. Logged in
+`Emerging_Themes.md`.
+
+### 122b. `scaling-dissent` DECLINED — the §56 polarity trap, second instance
+
+The arbiter proposed it: *"it might be a dissent since they conclude that humans should not rely on
+ACR, but just treat it as one of many potential signals."* The reading of the text is right; the
+polarity is not.
+
+The paper says **this particular delegation is not yet reliable, so do not rely on it alone.** That is
+**the review's thesis**, not opposition to it. Dissent requires arguing delegation is unworkable or
+impermissible **as a general matter**. This is the precise failure that killed `counterpoint` at §56 —
+9/9 tagged a thesis-*supporting* paper as opposition. **First recorded human-side instance of the same
+polarity error**, which is worth knowing: the trap is not model-specific, it is inherent to the
+construct. Guard to keep applying: *"many things can be delegated, some can't" is the thesis
+(`risk-routing`); dissent argues delegation itself is unworkable.*
+
+### 122c. §117 APPLIED — and it changed nothing, which is the point
+
+Per §117 (*read the implications section before ruling absence*) the arbiter's *"there isn't [anything
+concrete on oversight or routing] by my read"* was checked rather than accepted. **§5.1 Implications
+for Practitioners does contain concrete routing content**, none of it visible in the abstract:
+
+> **"Use automated evaluation for triage, not decision-making.** A more conservative integration is to
+> use automated scores to prioritize what to inspect (e.g., **routing low-score or disputed cases to
+> manual review**), rather than to automatically accept or dismiss comments. This can **reduce
+> evaluation cost while limiting the harm** from misclassifications."
+
+Plus: scores *"require periodic sampling and human verification"*, and *"any deployment should include
+**routine re-evaluation after model upgrades** or prompt/rubric changes."*
+
+The first is this review's thesis stated as a deployment pattern — a cheap computed signal allocating
+scarce human attention.
+
+### 122d. Why it is STILL context — §111 governs
+
+**§111: a proposed instrument does not rescue a measurement paper.** Karakaya *recommends* the triage
+design in a discussion section: it never builds it, never evaluates it, and reports no data on whether
+routing by score works. The arbiter's own Branco rule applies unchanged — *"the study is not showing
+us how that decision is made."* `routing-signal` therefore stays off at 1/3; a recommendation is not a
+validated signal.
+
+The paper's actual contribution remains **judge-vs-human agreement measurement**, which §98 routes to
+context through the `BAWCBT9R` precedent: *"metrics auditing a measurement tool's/judge's own
+reliability = tool validation → context; the object is the evaluator, not AI-code risk."* Karakaya is
+`BAWCBT9R` in an industrial setting.
+
+**The rule this pair establishes:** §117 obliges the *check*, not a particular *outcome*. Reading the
+implications section is mandatory before ruling absence — and it may still return "found, and it does
+not change the disposition." Recording a §117 pass that **confirmed** the initial call is as useful as
+recording one that overturned it (§117a), because otherwise §117 reads as a rule that always rescues.
+
+### 122e. Dissertation Supporting — two named uses (§109a)
+
+1. **Triage-not-decision** — a directly usable design principle for the oversight architecture, stated
+   nowhere else in the corpus this plainly.
+2. **Evaluator drift as a governance practice** — *"routine re-evaluation after model upgrades or
+   prompt/rubric changes."* Nothing else in the corpus says the **oversight apparatus itself** needs
+   periodic recalibration; pairs directly with the cross-model panel design.
+
+### 122f. `evaluated-real-data` NOT introduced here
+
+The paper is the natural first instance — an industrial corpus of 2,604 real PR comments rather than a
+benchmark — but the slug has **zero uses** and remains staged (§41). **A slug's first instance sets its
+working definition, and §42 short-circuits tag verification on demoted papers**, so a context paper is
+the wrong place to establish one. Deferred to the F2 instrument cut, with this paper named as the
+candidate seed.
+
+## 123. AIDev — the source dataset demoted while its data anchors the corpus; and a 3/3 inversion primary REJECTED on §88 (`QI8246A3`, 2026-08-28)
+
+**Paper:** Li, Zhang, Hassan et al., *The rise of AI teammates in software engineering (SE 3.0)*,
+arXiv (2025-07-20). **This is AIDev** — 456,000 agentic PRs, 5 agents, 61,000 repos, 47,000 devs.
+**Written:** `ai-review`, `quality-debt`, `provenance-auditability`; `agentic`, `method-mining`,
+`risk-quality`, `problem-statement-anchor`. **`demote:context` · Dissertation: PRIMARY.**
+**Rejected:** `oversight-scaling-inversion` (**3/3**), `survey-input` (2/3).
+**No primary theme recorded — deliberately** (see §123c).
+
+### 123a. A unanimous 3/3 primary REJECTED — the panel inferred inversion from pressure alone
+
+All three vendors made `oversight-scaling-inversion` the **primary**. It is wrong, and the paper's own
+headline finding contradicts it:
+
+> **"Finding #2: Autonomous Coding Agents lag human in PR acceptance rates by a large margin"** —
+> OpenAI Codex 64%, Devin 49%, GitHub Copilot lower.
+
+**Agent PRs are accepted LESS often. That is gatekeeping holding, not leakage.** §87/§88's test is
+*risky code escaping the review that should have caught it*, and AIDev evidences the opposite.
+
+**What the panel actually anchored on** is the volume statistic — *"176 Agentic-PRs in 3 days vs. 176
+Human-PRs over the previous 3 years"* — and inferred inversion **from pressure alone**. That is
+precisely the inference the arbiter ruled out on Yang (§88): *"throughput down, queue up… Preventing
+project work doesn't do it either. Has to result in leakage of risky code."*
+
+**Significance for the reliability record:** a **3/3 correlated error on the PRIMARY slot**, on the
+single tag already identified as the corpus's largest error source (closeout B1). It is further
+evidence that unanimity measures instrument legibility, not truth (§11.4) — and a caution for the B1
+sweep: the 15 papers carrying inversion on silence should be checked for **the same substitution of
+volume pressure for demonstrated leakage**, which is likely the dominant failure mode.
+
+### 123b. Demoted — a dataset has no mechanism to be primary about
+
+The arbiter's read: *"leaning demote because it is about constructing a new evaluation dataset."*
+Sustained, and the instrument's own **struggle signal** independently confirms it: *"can't pick a
+primary / stretching a definition to fill the set = the paper likely doesn't belong at core."*
+
+The contribution is **a dataset, descriptive findings, and nine research directions** — no mechanism,
+nothing deployable. It is *not* a capability benchmark (the paper explicitly positions itself as
+*"beyond synthetic benchmarks like SWE-bench"*), so the demote ground is **not operationalizable**
+rather than *pure tool benchmark*.
+
+### 123c. NO primary recorded — and why that is unambiguous
+
+Recording a stretched primary purely to fill the slot would contradict the struggle-signal rule that
+justified the demote. Leaving it empty is safe because **`demote:context` disambiguates it**: the B7
+partial-detection predicate is *human tags **and** no primary **and** no demote*, so a demoted paper
+without a primary reads as adjudicated, not partial. Closeout F3's surviving predicate (*primary AND
+not demoted*) also resolves correctly. **This is the reference case** for demoted papers where no
+theme fits.
+
+### 123d. Dissertation PRIMARY despite the demote — the tier and the role are independent
+
+Unusual pairing, recorded because the reasoning generalises. Three named uses (§109a):
+
+1. **The corpus's best problem-statement anchor.** *"176 Agentic-PRs in 3 days vs. 176 Human-PRs over
+   the previous 3 years"* — one developer, one figure, the whole scale shift. Nothing else quantifies
+   it as cleanly, and it pairs with the finding that those PRs *"alter fewer structural aspects of
+   code."*
+2. **Bot-reviewer analysis the mining papers never report.** AIDev classifies reviewer identities and
+   analyses *"the 10 most active bot reviewers among Agentic-PRs… in comparison to human reviewers"* —
+   **agents reviewing agents, measured in the wild.** Directly relevant to the agent-panel thread and
+   absent from Branco, Gao and Ghammam.
+3. **The §116c citation anchor.** Branco (`JQPPKSFQ`), Gao (`59KP8GTP`) and Ghammam (`SHK6KAX6`) all
+   mine AIDev and report **different review-absence figures**. Reconciling them requires the source;
+   the dissertation must cite AIDev directly rather than through three secondary readings.
+
+**The general rule:** SLR tier answers *"does this paper contribute a mechanism to the review's
+argument?"* Dissertation role answers *"will I use this?"* A dataset paper can be **no** to the first
+and **emphatically yes** to the second. Precedent for other substrate/infrastructure papers.
+
+### 123e. `survey-input` REJECTED at 2/3 — the case §116a was written for
+
+AIDev is **mined repository data**; there is no instrument at all. Under §121b's elicitation test
+nothing is *elicited* — no participant states a preference. This is the Ghammam pattern (§116a) that
+prompted the original narrowing, recurring on the source dataset itself. Rejected explicitly rather
+than left silent, since at 2/3 it is modal and would otherwise stand into `final:*`.
+
+## 124. Shift-Up — a 3/3 primary moved on altitude; and the `evaluated-*` ladder has a HOLE (`7SH86C2W`, 2026-08-28)
+
+**Paper:** Lipsanen et al., *Shift-Up: a framework for software engineering guardrails in AI-native
+software development — initial findings*, arXiv (2026-04-22). DSR; reinterprets BDD, C4 and ADRs as
+guardrails for agent-driven development.
+**Written:** primary **`hitl-workflow`**; `rules-based-checks`, `agent-scope-drift`,
+`provenance-auditability`; facets `framework`, `built-system`, `agentic`, `steering`, `risk-quality`.
+**Rejected:** `method-experiment` (2/3), `method-self-report` (2/3), `counterpoint` (2/3).
+**SLR: Core · Dissertation: Supporting.**
+
+### 124a. PRIMARY moved from `rules-based-checks` (3/3) to `hitl-workflow` (2/3) — altitude, not evidence
+
+The arbiter's challenge: *"rules based seems suspicious to me."* Checked, and the mechanism **is**
+genuinely there — this is not steering wearing a checking costume:
+
+> *"each user story was decomposed into **executable acceptance tests in Robot Framework 7 format**"* ·
+> prompt: *"constraint (**test id's that must pass** for issue [closure])"* ·
+> *"this cycle **repeats until all constrained acceptance** [tests pass]"*
+
+So `rules-based-checks` is correctly applied — but it is **not the primary**. The tie-breaker governs:
+*primary = the theme carrying its **distinctive novelty**, not the standard scaffolding.* An acceptance-
+test loop gating a build is ordinary TDD/CI, merely pointed at an agent. The distinctive claim is:
+
+> *"**verification [is] delegated to GenAI tools, allowing human developers to focus on the higher
+> layers of the V-Model.** At the top-left, [developers] engage in acceptance testing, deployment
+> oversight, and operational feedback. The objective of Shift-Up is thus to **free developers**…"*
+
+**That is what the title means — *shift-up* = move the HUMAN up the V-model**, delegating implementation
+*and* verification downward. A claim about **where the human sits** is `hitl-workflow`.
+
+**Arbiter's statement of the ruling, which is the general form:** *"The gist of the paper is about how
+human and machine work; rules are part of it, not the core."*
+
+**Third consecutive paper where the panel anchored on visible machinery over framing** (§121d scope
+miss, §123a volume-over-leakage, this). The pattern for the closeout: **panels read mechanisms well
+and altitude poorly** — check every 3/3 primary against the tie-breaker before `final:*`.
+
+### 124b. `steering` + `rules-based-checks` co-hold — dual-purpose artifacts, and NOT a demote trigger
+
+The artifacts are explicitly both: *"not as documentation, but as **machine-readable, persistent
+contextual constraints**"* (fed to the agent → `steering`) **and** executed as gates
+(→ `rules-based-checks`). Recorded because `steering` at 3/3 could otherwise trip the demote menu's
+**steering-only** clause. It is not steering-only; there is a real verification arm.
+
+### 124c. BOTH method facets REJECTED — §98 world-or-tool, with the authors as subjects
+
+> *"The methodology is then compared to a purely prompt-driven approach. **The authors worked as** [the
+> developers]"* · *"**The authors** … re-familiarized themselves with, analyzed, and **categorized their
+> own prompts**. Subsequently, the authors **cross-validated each** [other]"*
+
+No external subjects; nothing characterises the world. Per §98 this is `built-system` evaluation and
+**earns no method facet**. Authors categorising their own prompts is artifact analysis, not
+`method-self-report` (which requires humans-as-subjects telling you something).
+
+**Consequence — the honest evidence grade.** The paper produces **no empirical evidence about the
+world**: n=1, self-built case, self-assessed, explicitly *"initial findings"* and *"intentionally"*
+exploratory. That is why **Dissertation Supporting, not Primary** — the ideas are citable, the findings
+cannot be leaned on.
+
+### 124d. GAP FOUND — the `evaluated-*` ladder cannot describe this evaluation
+
+Checked against every post-freeze slug; **none apply**. `cross-model` fails though two models are used
+(*"GPT-5.0-Codex agent"*; *"Claude Sonnet 4.5"*) because they do **different jobs** — task allocation,
+not mutual checking (the Karakaya rule). `agent-panel`, `evaluator-reliability`, `scaling-dissent`: no.
+
+And **no rung of the `evaluated-*` ladder fits**: not a benchmark, not synthetic, not real-world data.
+The evidence is *"a **qualitative evaluation** of the approaches according to 5 different categories:
+upfront investment, human control, structured constraints, development speed, and guardrails"* — the
+proposers judging their own artifact on a case they built.
+
+**`built-system` says the thing exists; nothing says the only evidence is its authors' own qualitative
+judgement.** That is the weakest evidence rung there is, it is common in this literature, and a review
+about **oversight evidence quality** should be able to state it. **Candidate for the F2 cut:
+`evaluated-self-demo`** (or similar). Not coined here — same reasoning as §122f: a slug's first
+instance sets its definition and should not be established in passing.
+
+### 124e. Dissertation named uses (§109a)
+
+1. **The SE-discipline-for-agentic thread.** Pairs with Ji's shift-left (§119d): ***shift-up*** raises
+   the human's altitude, ***shift-left*** moves the check earlier — the same gate-placement spectrum on
+   **orthogonal axes**. Logged in `Emerging_Themes.md`.
+2. **The prompt taxonomy** as question-seed material for the org survey. **NOT `survey-input`** — see
+   §124f.
+3. **The constructive answer to Jin (§120a).** Jin shows LLM *conformance* review fails badly (FPR to
+   88.74%) **even when handed a spec**. Shift-Up makes the spec **executable**, so conformance becomes
+   deterministic and needs no LLM judge at all. **Jin diagnoses; Shift-Up sidesteps.** Neither cites
+   the other; the pairing is ours.
+
+### 124f. §121b, third formulation — "it will yield survey questions" is not a criterion
+
+The arbiter, on his own stated use of the prompt taxonomy: *"**May yield questions is different than
+they did a survey.** May yield questions may come from mining or other sources."*
+
+The cleanest statement yet of why the facet cannot be utility-based: **question-seeding is
+unconstrained by source** — mined studies, experiments and position papers can all yield survey items,
+so the property fails to discriminate at all. The three-part rule now reads:
+
+| | requirement |
+|---|---|
+| §116a | an actual **survey instrument** must exist (not mined data) |
+| §121b | it must **elicit stated preferences** (not measure a construct) |
+| **§124f** | **"it yields questions for our survey" is not a criterion** — that is dissertation utility, recorded in the named-use list |
+
+## 125. §119c's GAP FILLED — the first paper covering both modes; and the human baseline is ERODING (`9H6FWJME`, 2026-08-28)
+
+**Paper:** Liu, Yue et al., *Debt Behind the AI Boom: A Large-Scale Empirical Study of AI-Generated
+Code in the Wild*, arXiv (2026-04-26). 302.6k verified AI-authored commits, 6,299 GitHub repos, five
+assistants, static analysis run **before and after** each commit, every introduced issue tracked to
+the latest revision.
+**Written:** primary `quality-debt`; `ai-code-insecurity`; `method-mining`, `risk-quality`,
+`risk-security`, **`agentic` + `assistive`**, `problem-statement-anchor`.
+**SLR: Core · Dissertation: PRIMARY.** **Declined:** `oversight-scaling-inversion` (0/3).
+
+### 125a. BOTH mode facets applied — and this closes the §119c gap
+
+**§119c logged an open gap:** *"the dissertation will need to argue that **the same underlying
+technology powers both assistive and agentic scenarios**. **No corpus paper currently supports this** —
+find a source, or argue it explicitly as the review's own position."*
+
+**This is the source.** The five tools are *"GitHub Copilot, Claude, Cursor, Gemini, and **Devin**"* —
+spanning inline assistive completion through fully agentic delivery — and the paper treats them as
+**one class**, measuring identical debt outcomes across all of them. Both facets therefore apply, which
+is unusual and correct: the mode pair marks *which setting the paper studies*, and this paper studies
+both, deliberately.
+
+**Why it matters beyond the tag:** the dissertation no longer has to assert mode-convergence as its
+own position. It can cite a 302.6k-commit study in which assistive and agentic tools produce the
+**same failure profile** — which is the empirical basis for treating oversight requirements as
+mode-independent. §119c's action item is closed.
+
+### 125b. The human baseline is ERODING — a finding hiding inside a limitation
+
+The arbiter's critique: *"I would have loved to see comparison stats computed for human authored PRs.
+**Is AI better, worse, or the same as human** rather than is it perfect or not."* Correct — and the
+paper concedes it, with a reason that is more important than the omission:
+
+> *"…AI-authored commits against a baseline of purely human-written commits. Because developers may
+> use AI without [disclosure]… a **reliable human-only baseline is difficult to construct**, and
+> comparing against an unreliable baseline could [mislead]."*
+
+**The counterfactual is disappearing.** Once AI use is ubiquitous and undisclosed, *"human-authored
+code"* stops being a measurable category. Three consequences worth carrying:
+
+1. **Comparative claims have a closing window.** Papers that already made the comparison — **Xu**
+   (quality below human) and **Ferdous** (`UIXCRBQX`: agents make **fewer** breaking changes than
+   humans) — become *more* valuable as the baseline erodes, not less. Their measurements may be
+   unrepeatable.
+2. **"Is it perfect?" is the wrong question and increasingly the only answerable one.** Absolute defect
+   rates without a baseline cannot support a deployment decision: 15% of commits introducing an issue
+   is alarming or reassuring depending entirely on the human rate, which is now unmeasurable.
+3. **Survey exposure.** Self-reported *"did a human or AI write this"* inherits exactly the
+   contamination Karakaya (§122a) found in `wontFix` labels. Logged for the survey instrument.
+
+### 125c. Statically DETECTABLE issues that survived — an oversight failure, not a capability failure
+
+The arbiter's observation: the issues are found by **standard static analysis**, and clean static
+analysis is a common pipeline gate. The paper's own numbers make the point sharper: **484,366 distinct
+issues**, and **22.7% still present at the latest revision**.
+
+These are not subtle defects requiring judgement — **a pipeline gating on clean static analysis
+catches them by construction.** So the finding reframes: the tools to catch this already existed and
+**were not gating**. That is a process failure, and it is the strongest argument in the corpus that
+**existing engineering discipline, applied unchanged, would absorb a large share of AI-introduced
+debt** — pairing directly with Ji's shift-left (§119d) and Lipsanen's Shift-Up (§124).
+
+> **NARROWED by §133b (2026-08-28) — do NOT read this as "static analysis would solve AI code
+> quality."** It holds for **Liu's defect class** (code smells, correctness and security issues that
+> standard analysers already flag). It does **not** generalise: Parris (`3SU9QZ6F`) documents a class
+> that *"can **pass standard static analysis** while exhibiting pervasive fail-soft behavior,"* because
+> analysers are not calibrated for **failure-untruthfulness** (swallowed exceptions, optimistic
+> returns). **Liu = a PROCESS failure** — detectable, not gated. **Parris = a DETECTION failure** —
+> gated, not detectable. Existing discipline absorbs the first class only; the second needs
+> purpose-built, AI-specific checks.
+
+**`oversight-scaling-inversion` still DECLINED (0/3).** §88 requires **review failure as the cause**,
+and the paper never examines whether review occurred. **89.3% of the issues are code smells**, which
+teams routinely tolerate by choice rather than fail to catch — tolerated ≠ leaked. Given §123a, where
+the panel over-applied inversion on comparably circumstantial reasoning, the bar holds.
+
+### 125d. `evaluated-real-data` declined here — REDUNDANT with `method-mining`
+
+The natural first instance: real production commits, no benchmark, no synthetic construction, and —
+unlike the three prior candidates (§122f Karakaya, Liu `6ZC3H7AF`, §124d Lipsanen) — a **Core +
+Dissertation Primary** paper, which is the right grade to establish a slug on.
+
+**Declined anyway, on redundancy.** `method-mining` is defined as *"artifacts measured: repos, PRs,
+commits, posts, logs, telemetry"* — mining **is** real-world data by definition, so on a pure mining
+study the two tags carry identical information.
+
+**Scoping decision for the F2 cut:** define `evaluated-real-data` **against `built-system`** — *a built
+artifact evaluated on real production data rather than a benchmark or synthetic corpus.* That is a
+genuine unmarked rung on the evidence ladder. Written as a general "real data" marker it becomes noise
+on every mining paper in the corpus.
+
+**DEFINITION SETTLED (arbiter, same day) — the discriminator is whether an artifact is under
+evaluation:**
+
+> *"In **real-data**, a **tool is developed** and that tool is **evaluated using real data**. Tool could
+> be a pipeline. In **mining**, **pre-existing data is mined for insights. No new tool is being
+> evaluated**."*
+
+**Entailment to enforce when grafting: `evaluated-real-data` ⇒ `built-system`.** If nothing was built,
+the tag cannot apply — which is exactly why it does not fire here. Full statement and candidate seeds
+in `Methodology/Post_Accept_Closeout.md` §F2a.
+
+## 126. CriticGPT kept on the CONFIGURATION data, not the method; and "scalable oversight" is two different things (`NRVQT89E`, 2026-08-28)
+
+**Paper:** McAleese et al. (OpenAI), *LLM Critics Help Catch LLM Bugs*, arXiv (2024-06-28).
+**Written:** primary `ai-review`; `hitl-workflow`, `oversight-explanation`, `automation-bias`; facets
+`agentic`, `built-system`, `risk-quality`, `risk-overreliance`, `problem-statement-anchor`,
+`evaluator-reliability`. **SLR: Core · Dissertation: PRIMARY.**
+**Declined:** `risk-routing` (1/3), **`cross-model` (withdrawn — see §126c)**.
+**Unchanged:** `method-experiment` + `method-field-study`, adjudicated in §34/§35's gold set.
+
+### 126a. The keep-ground is narrow and must travel with the citation
+
+The arbiter's opening position was that a paper about **training or evaluating a model** is normally a
+demote for this review, and the scope objection was sharp: *"Our premise for scaling is that the human
+doesn't have to look at everything… This is absolutely about reinforcement training of a model. A very
+different animal."*
+
+Sustained on the scope point. The paper is kept on **one ground only**, in the arbiter's words:
+*"its data of human + AI is best makes a case for the joint review."*
+
+**Why that ground holds:** this is the **only paper in the corpus measuring all three arms head-to-head
+on the same tasks** — AI alone, human alone, human+AI. Kang (`7UB2MD8Z`) has two of them (humans with
+explanations judged patch correctness better than humans alone, 5 of 6 bugs); nothing else has the
+**AI-alone** arm alongside both. Deciding *what AI can review on its own* requires knowing how AI-alone
+performs against the alternatives, and this is the only measurement of it.
+
+**It also extends the delegation-limits family** the arbiter identified as Yu's and Jin's keep-ground
+(*"evidence of leveraging machine for scaling oversight — delegate to machine"*):
+
+| Yu (`PPMTM4DG`) | a model cannot catch its **own** defects |
+| Jin (`A5WDGC7J`) | giving it a spec yields **overcorrection** instead (FPR to 88.74%) |
+| **McAleese** | full delegation raises recall but **hallucinates**; adding the human back recovers precision at similar catch rate |
+
+**Binding condition on use.** The keep is the configuration data, **not** the RLHF method. Recorded so
+the paper is never cited for throughput scaling — see §126b.
+
+### 126b. "Scalable oversight" names two different problems — the term collision
+
+Forced by the arbiter's devil's-advocate question: *"Wouldn't this say that scaling human oversight
+isn't possible since you still need a human (in partnership with AI) to look at everything?"*
+
+**The paper's own framing answers it, and the answer is uncomfortable:** *"The ultimate goal of
+scalable oversight is to **help humans evaluate model output in order to train** [better models]."*
+In an RLHF labelling regime the human **cannot** leave any sample, because their judgment *is* the
+product. Their scalable oversight = **quality scaling** (a better-equipped human on everything).
+This review's = **throughput scaling** (the human does not look at everything).
+
+**Diagnostic:** does the paper measure **time or volume**, or only **accuracy**? McAleese reports
+contractors taking *"fifty minutes per example"* and **never claims the critic makes them faster.**
+Better-but-not-faster does not scale throughput at all.
+
+**The genuinely throughput-relevant finding is not the headline:** critics identified *"hundreds of
+errors in ChatGPT training data rated as **flawless**"* — recovering coverage that human review at
+volume had **already lost**. That speaks to what humans miss when they cannot look properly, which is
+the allocation problem. Full statement in `Emerging_Themes.md`.
+
+### 126c. `cross-model` WITHDRAWN — a fine-tuned critic is not a panel
+
+The assistant proposed `cross-model` on the reasoning that a separate specialised critic checking
+another model's output is the answer to Yu's self-review failure. **Withdrawn on the arbiter's
+correction:** the slug is for **debate / multi-agent / mutual checking among models**, and CriticGPT is
+**one** fine-tuned model doing a checking job. One model in a checking *role* ≠ models checking *each
+other*. This is the fourth consecutive paper where a plausible `cross-model` reading was declined
+(Karakaya = comparison, Lipsanen = task allocation, Liu = neither, this = single specialist), which is
+a strong signal the slug needs its **boundary written into the F2 definition**, not just its name.
+
+### 126d. The IDEALISED REVIEWER — human-arm baselines are optimistic
+
+Arbiter: *"the human in this paper is likely less distracted and will do a better job. Reality is an
+ugly thing."*
+
+The human arm is **best-case** — paid to spend fifty minutes on one example, no release pressure, no
+competing work. This biases the two headline findings in **opposite** directions:
+
+- **"AI catches more bugs than human contractors" gets STRONGER** — it beat an *idealised* reviewer.
+- **"Human+AI is best" gets WEAKER** — the team benefit was measured with an attentive partner. Under
+  Karakaya's *"release pressure, ownership boundaries, or timing"* (§122a) a real maintainer
+  contributes less, so the team advantage over AI-alone is an **upper bound**.
+
+**General rule recorded** (`Emerging_Themes.md`): wherever a study's human arm is *paid, unhurried and
+single-tasked*, its human-alone baseline is optimistic and its human-in-the-loop benefit is a ceiling.
+Catalan's engagement decay is the mechanism that erodes it in practice.
+
+### 126e. B7 CORRECTED — a "partial" may be a deliberate narrow-axis pass
+
+This paper was flagged as a B7 partial (human tags, no primary). That framing was **wrong for this
+paper**: §34/§35 record its `method-field-study` + `method-experiment` pairing as a **deliberate
+adjudication** — two separate evaluation events, one per side of the ladder/method fork — and it sits
+in the retained 21-item gold set.
+
+**So it was examined, on one axis, on purpose.** The partial signal is real (no primary, theme layer
+never considered) but it does **not** imply "unexamined." Closeout B7 amended accordingly: the four
+partials must each be checked for a **prior narrow-axis ruling before being re-opened**, or a
+deliberate adjudication risks being overwritten.
+
+## 127. The corpus's first BUILT-AND-EVALUATED router; and a second 3/3 inversion rejected on population mismatch (`74GE3TF7`, 2026-08-28)
+
+**Paper:** Minh, Dao Sy Duy et al., *Early-Stage Prediction of Review Effort in AI-Generated Pull
+Requests*, arXiv (2026-01-27). 33,707 agent-authored PRs (MSR 2026 Mining Challenge).
+**Written:** primary `risk-routing`; `agentic`, `method-mining`, `built-system`, `routing-signal`,
+`problem-statement-anchor`. **Rejected:** `oversight-scaling-inversion` (**3/3**).
+**SLR: Core · Dissertation: PRIMARY.**
+
+### 127a. `risk-routing` — the strongest instance in the corpus, and the first that is BUILT
+
+Every prior `risk-routing` candidate this session failed on the same defect: the routing was
+**recommended, not built**. Karakaya proposed triage-by-score and never implemented it (§122d); Kang
+validated a confidence signal but gated nothing (§121c). **This paper builds and evaluates the gate.**
+
+- **Signal:** 35 static, creation-time features (Intent / Context / Complexity) — available *before*
+  human review begins.
+- **Model:** LightGBM, **AUC 0.958** on chronological splits, against CodeBERT at **0.52**.
+- **Generalisation tested:** repo-disjoint **AUC ≈ 0.83**, *"validating that [the signals are general]
+  rather than repo-specific"* — it is not memorising repositories.
+- **The allocation result:** *"At a **20% review budget**… captures **69% of the high-effort PRs**."*
+- **Policy, with thresholds:** *"We recommend a **Gated Triage Policy**: treat agents like junior
+  interns, not senior engineers. Flag complex PRs (>500 additions), fast-fail those without plans, and
+  enforce strict timeouts (14 days) to prevent backlog pollution."*
+
+All four §107e clauses pass: computed (not human discretion), per-PR (not between-unit), per-item (not
+aggregate tendency), and a gate rides on it (not throttling).
+
+**Why it matters beyond the tag — this is THROUGHPUT scaling, stated as a budget.** §126b recorded that
+the corpus supplies configuration performance in quantity and allocation rules almost never. This is
+the allocation paper: it takes a **fixed human review budget** as the constraint and asks what fraction
+of the expensive tail it can capture. That is the review's own question, answered with a number.
+
+### 127b. `oversight-scaling-inversion` REJECTED at 3/3 — a population mismatch, not a volume argument
+
+Second unanimous inversion rejection in the band (cf. §123a on AIDev), and the reasoning is finer here
+because a genuine §88 route (i) argument exists:
+
+- **For:** *"28.3% of PRs merge instantly"* — merged in under a minute is **observed review absence**,
+  at scale, which is exactly route (i).
+- **Against, and decisive:** the instantly-merged PRs are the *"narrow-scope updates (median 68 total
+  changes vs 104)"* — merged fast because **trivial**, not because maintainers are swamped. The
+  overload symptom is **ghosting**, and **ghosted PRs never merge**.
+
+**The review-absence and the overload land on different PR populations, which breaks the causal link
+§88 requires.** Nothing risky escapes: the cheap work is waved through appropriately and the expensive
+work stalls in the open. **Arbiter concurred:** *"I don't see oversight inversion on this one."*
+
+**Rule this sharpens for closeout B1:** route (i) requires review absence **caused by** the overload,
+on the **same** population that the overload afflicts. Observed absence plus observed overload in the
+same paper is **not** sufficient if they fall on disjoint sets. Add this to the B1 sweep alongside
+§123a's volume-for-leakage substitution — **two distinct failure modes now identified**, and both
+produced 3/3 panel agreement.
+
+### 127c. The arbiter's extrapolation is IN the paper — as its own limitation
+
+The arbiter, before reading the discussion: *"Even if agents are doing the reviewing, we could end up
+in the same sad state of abandoned PRs because the coder agent couldn't deal with the feedback."*
+
+The paper found exactly this, and calls it a limitation of its own model:
+
+> *"We manually inspected false negatives and found a pattern of '**silent abandonment**': small PRs
+> that look safe (no CI touches) but **stall because the agent cannot handle subjective feedback**.
+> This implies that while we can catch the 'explosive' failures, the '**silent' failures require
+> behavioral monitoring**."*
+
+**Structural gates cannot see it.** The failure is not in the artifact — the PR looks fine — it is in
+the agent's *inability to iterate* under feedback. **Replacing the human reviewer with an agent
+reviewer does not fix this**, because the defect is on the authoring side of the loop. Logged in
+`Emerging_Themes.md` as a named limit on full delegation.
+
+Their own proposed fixes are worth carrying: *"**semantic risk models** to catch subtle logic bugs that
+structural gates miss"* and *"**cryptographic identity to enable reputation tracking**"* — a per-agent
+reputation signal, which is a routing input the corpus has nowhere else.
+
+### 127d. `evaluated-real-data` — the first genuinely qualifying seed, HELD pending the arbiter's call
+
+Under the settled F2a definition (*a tool is developed and that tool is evaluated using real data*),
+this is the first clean instance: the Circuit Breaker is a built model evaluated on 33,707 **real**
+agent PRs, not a benchmark or a synthetic corpus. The entailment holds — `evaluated-real-data` ⇒
+`built-system`, and `built-system` is written.
+
+It is also the first candidate at **Core + Dissertation Primary**, i.e. the grade §122f argued a
+slug's first instance should be established on. The three earlier candidates were all demoted or
+Supporting and were deferred for that reason. **Not written — awaiting an explicit call on whether to
+apply it here or hold the whole ladder for the F2 graft.**
+
+## 128. `risk-bias` in vocabulary ≠ in scope; and a third 3/3 altitude/mode correction (`QTJPLBYR`, 2026-08-28)
+
+**Paper:** Naqvi et al., *Evaluating security and inclusivity in LLM-generated code: a controlled
+experiment*, SSRN preprint (2026-01-10). Three prompting rounds; artifacts scored on security and
+inclusivity by **13 human experts and 5 LLMs**.
+**Written:** primary `ai-code-insecurity`; `ai-review`; `steering`, `method-experiment`,
+`risk-security`, `risk-bias`. **Rejected:** `agentic` (**3/3**). **`demote:context`, no dissertation
+role.**
+
+### 128a. The demote ground — not operationalizable, NOT out of taxonomy
+
+The arbiter's read: *"not related at all to our thesis"* / *"focus on inclusivity, neurodivergence."*
+Sustained, but the ground needs stating precisely, because **`risk-bias` is in our vocabulary** —
+inclusivity is a risk type the instrument already tracks. The paper is not off-taxonomy.
+
+**It is a capability evaluation that contributes no oversight mechanism** — the *not operationalizable*
+branch of the demote menu. It measures whether generated code meets security and inclusivity criteria;
+it proposes nothing for **overseeing** either. Also an **unreviewed SSRN preprint** (*"This preprint
+research paper has not been peer reviewed"*), which is not itself a demote ground but bears on how the
+one transferable finding below can be used.
+
+**Rule worth carrying:** *a risk type being in the vocabulary does not put a paper about that risk in
+scope.* The instrument's risk facets describe **what a paper treats**; the core bar asks what it
+**contributes to oversight**. Keeping these separate prevents a slow drift where any paper touching a
+tagged risk is presumed core.
+
+### 128b. The one transferable finding, recorded with its weakness
+
+The paper tests two head-to-head **human vs LLM reviewer** hypotheses — the delegation question:
+
+- **H2a — humans outperform LLMs at spotting inclusivity issues: SUPPORTED.**
+- **H2b — LLMs outperform humans at detecting security vulnerabilities: NOT supported.**
+
+Directionally consistent with Yu (`PPMTM4DG`) and Jin (`A5WDGC7J`) on the limits of delegated review,
+**but well below their evidentiary grade**, and the reason is worth recording as a pattern:
+
+> H2a's support is that *"human evaluators were **more critical** in their assessment of inclusivity,
+> as reflected by consistently **lower scores**."*
+
+**Severity is being used as a proxy for accuracy, with no ground truth.** A harsher scorer is not
+necessarily a better detector — it may simply be miscalibrated. Same structural defect the arbiter
+identified on Bhatnagar (§106: a comparison that does not vary the thing being measured). **Do not
+cite H2a as evidence that humans out-detect LLMs.**
+
+### 128c. `agentic` REJECTED at 3/3 — the Waseem rule, third application
+
+The design is *"after each round, the LLM-generated code artifact [was evaluated]"* — **iterative
+prompting with a human directing each round.** That is the arbiter's Waseem ruling verbatim:
+*"Focused on vibe coding, which is **steering, not agentic**."* `steering` also carried 3/3, which is
+the panel proposing both halves of a distinction it did not resolve.
+
+Rejected explicitly rather than left silent: at 3/3 it is modal and would otherwise stand into
+`final:*`.
+
+### 128d. PRIMARY moved from `ai-review` (3/3) to `ai-code-insecurity` — altitude again
+
+The object of study is the **security and inclusivity of generated code**; the human/LLM evaluation is
+the **method** by which that object is measured, not the contribution. Panel put its primary on the
+visible evaluation machinery.
+
+**Third consecutive altitude correction** (§123a volume-over-leakage, §124a mechanism-over-framing,
+this one method-over-object) — and the fourth including §121d's scope miss. The closeout pattern
+recorded at §124a now has four instances: **check every 3/3 primary against the tie-breaker before
+`final:*`.** On the evidence so far this is the panel's single most systematic error mode, and it lands
+on the **primary** slot, which carries the most downstream weight.
+
+## 129. A shipped LLM reviewer at ~40% precision — delegation RELOCATES the bottleneck (`HJMKADKU`, 2026-08-28)
+
+**Paper:** Naulty et al., *Bugdar: AI-augmented secure code review for GitHub pull requests* (2025-05-05).
+LLM + RAG vulnerability analysis wired into GitHub PRs, 56.4s per PR.
+**Written:** primary `ai-review`; `built-system`, `framework`, `general-code`, `risk-security`.
+**Rejected:** `method-self-report` (2/3). **`demote:context` · Dissertation: Supporting**
+(child note `CAFH5M65`).
+
+### 129a. Demote grounds — domain, not mechanism
+
+The arbiter's read: *"a super-duper security scanner, which using an LLM, and can be integrated into
+CI/CD… demote due to narrow focus. General-code BTW."* Sustained on all three points, with the domain
+narrower than the framing suggests: *"decentralized applications, smart contracts"*, languages
+*"Move and Solidity"*, keywords *"Blockchain, Web3"*, ground truth drawn from *"smart contracts and
+blockchain-related code."* It is a **smart-contract auditing tool**.
+
+`general-code` is correct — Bugdar reviews **all** PRs, not AI-generated code — but note it is **not**
+the demote ground on its own (the instrument: *"`general-code` alone is NOT a demote reason"*). The
+demote rests on the Web3 domain plus the absence of an oversight contribution beyond the tool itself.
+
+### 129b. The paper's own numbers contradict its scaling claim — the finding worth keeping
+
+**Detection precision 24–58%.** Best configuration *"precision of 58%, a recall of 73%"*; typical runs
+**35–43% precision**. So **most findings are false positives** — in a paper whose motivation is that
+*"automated tools frequently suffer from high false-positive rates, limiting their reliability."*
+
+**And the scaling claim is speed-only.** *"Bugdar reduces the reliance on manual reviews"* rests on
+line 286 — *"evaluated based on its **efficiency** compared to human reviews"* (56.4s/PR vs hours).
+**Detection accuracy is never compared against human auditors.**
+
+**The transferable point, and why it earns Dissertation Supporting despite the demote:** at ~40%
+precision the human effort **does not disappear — it relocates, from reviewing code to triaging false
+alarms.** Delegated review moves the bottleneck rather than removing it. This is §126b's
+quality-vs-throughput distinction with a third case: a tool can be **fast** and still fail to scale
+oversight, because the reviewer's output itself needs reviewing.
+
+**Pairs with:** Jin (`A5WDGC7J`) — LLM reviewers overcorrect, FPR to 88.74% — and Minh (`74GE3TF7`) —
+the maintainer attention tax. Bugdar is the **deployed** instance of the failure Jin measures in the
+lab. The corpus is short of accuracy numbers from *shipped* tools rather than research prototypes, and
+this supplies one.
+
+### 129c. `method-self-report` REJECTED at 2/3 — world-or-tool
+
+The evaluation is **tool performance** (precision/recall on smart-contract ground truth) plus a
+**speed** comparison. Developer commentary in the text is anecdotal, not a data-collection instrument.
+Under §98's world-or-tool test the results describe **the tool**, so no method facet is earned.
+Rejected explicitly since at 2/3 it is modal and would otherwise stand into `final:*`.
+
+### 129d. `framework` KEPT at 2/3 — the VibeGuard precedent
+
+A single-concern architecture (scan PRs for vulnerabilities) wired into CI/CD. §49's carve-out governs:
+*"not a one-off point tool… **a focused single-concern architecture qualifies** (VibeGuard, Hedwig)."*
+Contrast Jin (§120b), where `framework` failed because the artifact was **one stage inside** someone
+else's pipeline rather than an integration design of its own.
+
+## 130. §111 INVERTED — a built instrument with no effectiveness measurement does not rescue a design paper (`5RKMGRNA`, 2026-08-28)
+
+**Paper:** Nimraka et al., *An agentic-AI solution for intelligent code review* (2025-11-19). ICR —
+parallel specialist LLM agents, GNN semantic-duplication detection, graph dependency-impact analysis,
+rule-based PR title validation, shipped as a GitHub App + VS Code extension.
+**Written:** primary `ai-review`; `built-system`, `framework`, `general-code`, `risk-quality`,
+`risk-security`. **`demote:context`, no dissertation role.**
+
+### 130a. The demote ground — the evaluation measures the software, not the oversight
+
+The arbiter's question was the right one: *"Is the paper adding enough unique insight to keep though?"*
+The evaluation section answers it:
+
+> **"IV. EVALUATION — A. Evaluation Criteria.** The evaluation of the ICR system focused on
+> **verifying its** [functionality]… **unit and integration testing**, with **all test cases passing**."
+
+**They established that the software runs.** No precision, no recall, no ground truth, no comparison
+against human reviewers — and the paper concedes the gap: *"accuracy of the underlying AI models also
+presents [a limitation]."*
+
+**The rule, as the inverse of §111.** §111 held that *a proposed instrument does not rescue a
+measurement paper*. The complement now holds: **a built instrument whose effectiveness is never
+measured does not rescue a design paper.** Building it is not evidence that it works; passing your own
+unit tests is evidence about your test suite.
+
+**Grading against the neighbours** — the same claim at three evidence levels, which is why this one
+falls out:
+
+| Paper | What was measured | Tier |
+|---|---|---|
+| Bugdar (`HJMKADKU`) | detection precision 24–58% against ground truth | Context + Supporting (the number is citable) |
+| Lipsanen (`7SH86C2W`) | comparative qualitative assessment across three approaches | Core + Supporting |
+| **ICR (this)** | **unit and integration tests pass** | **Context, no dissertation role** |
+
+This is a weaker instance of the §124d ladder gap: `built-system` records that the thing exists, and
+nothing distinguishes *"evaluated against ground truth"* from *"the test suite is green."* Reinforces
+the case for an `evaluated-self-demo` rung at F2 — ICR sits **below** even Lipsanen's self-assessment.
+
+### 130b. `agent-panel` DOES NOT APPLY — division of labour, third application
+
+> *"a **parallel multi-agent architecture** orchestrated by LangGraph… each focusing on a **distinct
+> category**: an Error Detection Agent for [errors]"* — plus security and performance agents.
+
+§110/§112a governs: **a panel is agents answering the *same* question; role specialisation is division
+of labour.** The discriminator — *"loses a job or loses a vote?"* — resolves cleanly: remove the
+Security Agent and you lose security **coverage**, not a **vote**. No agent checks another's work;
+they partition the input space.
+
+Third application after David (§110) and Dutta (§112a). **The pattern is now stable enough to state as
+a heuristic for the F2 `agent-panel` definition:** *parallel + specialist + distinct categories ⇒
+division of labour. Panels require redundancy on the same question.* "Multi-agent" in a title predicts
+nothing about which one it is.
+
+### 130c. `framework` ADDED at 1/3 — panel under-called it
+
+A multi-stage architecture (ingest PR → parallel specialist analysis → duplication/dependency checks →
+structured review), distributed as a **GitHub App and VS Code extension** for adoption. Passes §49's
+span test and §120b's reuse test. The panel put 3/3 on `built-system` and only 1/3 on `framework`,
+which reads as anchoring on *"they built it"* over *"what shape is it."* Contrast Jin (§120b), where
+`framework` was correctly rejected: one stage inside someone else's pipeline.
+
+### 130d. The design ideas are real but not attributable here
+
+The arbiter flagged the notable components: *"they looked at the **dependency graph** and search for
+**duplicated code with semantic similarity** checks. That came out of other papers and is likely
+something that any automated pipeline needs to consider."*
+
+Agreed on both halves — including the second. GNN semantic-duplicate detection pairs directly with
+**Huang** (`4T5QFWZE`), which *measured* the reuse collapse in AI-generated code; ICR builds a detector
+for the problem Huang quantified. But the ideas **originate elsewhere**, so ICR is not the citation for
+them, and it supplies no evidence that they help. **No dissertation role** on the arbiter's ruling
+(*"demote away"*). The pipeline-component thread is recorded in `Emerging_Themes.md` against its
+sources instead.
+
+## 131. The apparent counter-example RECONCILED — same-standards is t=0 on the decay curve (`4FGIVVTG`, 2026-08-28)
+
+**Paper:** Omidvar-Tehrani et al., *Evaluating human-AI partnership for LLM-based code migration*,
+ACM (2024). Two between-subject experiments, **N=11**, participants reviewing real QCT-generated code
+diffs, plus semi-structured interviews.
+**Written:** primary **`hitl-workflow`**; `oversight-explanation`, `automation-bias`,
+`rules-based-checks`; facets `agentic`, `steering`, `method-experiment`, `method-self-report`,
+`risk-overreliance`, `risk-security`, `risk-quality`. **Rejected:** `survey-input` (2/3).
+**SLR: Core · Dissertation: PRIMARY.**
+
+### 131a. The finding, and the half that matters more
+
+The arbiter flagged it as contrarian: *"they found that people treat the AI like a team mate, provide
+the same due diligence as they would a PR from human. This goes against some of the other data about
+them getting less scrutiny."* The text supports it — and then keeps going:
+
+> *"developers consider AI to be a **teammate and hold the code produced to the same standards** as that
+> of a teammate… they expect a certain level of rigor and thought put into it. **However, they do
+> understand that their teammates may require some hand holding in the beginning.** Developers are
+> willing to provide this handholding to teammates, **with the unspoken expectation that these
+> teammates will learn over time**."*
+
+**The teammate frame imports an expectation of learning, and that expectation is false.** A junior
+colleague absorbs correction; a model does not learn from your handholding within the engagement. So
+the patience developers extend is **priced against a return that will not arrive** — a misapplied
+mental model rather than an accurate one. This is why `automation-bias` sits at 3/3 alongside a
+same-standards finding that would otherwise look like its opposite.
+
+**Carry this into the survey design:** an instrument asking whether practitioners review AI output as
+carefully as human output may get an honest *yes* that is nonetheless uninformative, because the
+comparison class ("a teammate") carries assumptions the AI does not satisfy.
+
+### 131b. NOT a contradiction — three papers, three points on one curve
+
+The apparent conflict with the automation-bias cluster dissolves once the settings are lined up:
+
+| Paper | Setting | Result |
+|---|---|---|
+| **Omidvar** (this) | N=11 recruited **to review diffs**; reviewing *is* the task | full scrutiny |
+| **Catalan** (`5BAZZWHG`) | repeated cycles over time | **engagement decay** |
+| **Ghammam** (`SHK6KAX6`) | artifacts in the wild | oversight theatre |
+
+§126d's **idealised reviewer** applies directly: participants recruited to review are attentive *by
+construction*. Omidvar plausibly measures **t=0** — scrutiny before decay — rather than refuting decay.
+
+**This is a testable claim, not a rhetorical patch:** it predicts that initial scrutiny of AI output is
+**genuine and erodes**, rather than being absent from the outset. That distinction matters for
+intervention design — if scrutiny starts real, the remedy targets *sustaining* attention (rotation,
+forced escalation, cadence limits); if it were never there, the remedy targets *establishing* it.
+Logged in `Emerging_Themes.md`.
+
+### 131c. PRIMARY moved from `oversight-explanation` (3/3) to `hitl-workflow` (3/3)
+
+The paper states its own contribution as *"human's role in the human-AI partnership (**human as a
+director and a reviewer**) and define a **trust framework**"* — role definition and trust calibration,
+not explanation design. `oversight-explanation` is retained as a theme (comprehension of model output
+is substantively treated) but is not where the effort lives.
+
+**Fifth altitude/scope correction in the band** (§121d, §123a, §124a, §128d, this). Every one landed on
+the **primary** slot; four of the five were unanimous. The closeout action stands and is now
+well-evidenced: **check every 3/3 primary against the tie-breaker before `final:*`.**
+
+### 131d. `survey-input` REJECTED at 2/3 — the instrument requirement bites
+
+A genuine edge case, and a useful one for the B2 sweep. The interviews **do** elicit stated
+preferences — what makes developers trust model output — so they **pass §121b's elicitation test**.
+They fail **§116a's instrument requirement**: *"The intention for input-survey was a user survey —
+Likert scale, etc."* Semi-structured interviews are self-report, not a survey.
+
+**The two tests are conjunctive, and this is the first case that isolates them:** every prior ruling
+turned on elicitation (Kang on, Catalan off) or on the absence of any instrument (Ghammam, AIDev).
+Here the elicitation test passes and the tag still fails. **Both conditions must hold**, and the B2
+sweep should apply them in that order — instrument first, then elicitation — because the instrument
+check is cheaper and disposes of interview-only studies immediately.
+
+## 132. Authority is A factor, not THE factor — and the PM-discipline gap recorded without a citation (`N7E3MR2V`, 2026-08-28)
+
+**Paper:** P, Praneesh Roshan; Thavasi, M; Jaslin, C Quba, *SDLC AutoPilot AI: agentic automation of
+software development life cycle*, ICOIICS 2025 (IEEE), 2025-11-19.
+**Written:** primary `org-governance`; `hitl-workflow`, `rules-based-checks`,
+`provenance-auditability`; facets `design-only`, `framework`, `agentic`, `steering`, `risk-quality`.
+**`demote:context`, no dissertation role.**
+
+### 132a. Demote ground — evidence-to-claim proportionality, applied uniformly
+
+The abstract promises end-to-end SDLC orchestration *"to ensure accountability and resilience, the
+system includes **governance guardrails for human approval**, observability features such as decision
+logs and audit trails."* What is **specified and measured** is the estimation model (a COCOMO-style
+parametric baseline plus a learned residual, evaluated control-vs-treatment on accuracy / precision /
+recall / F1) and role allocation.
+
+**The oversight half is asserted, not designed.** *"human approvals at critical points"* appears twice
+with no criteria, thresholds, escalation rules, or statement of who approves what; audit trails are
+named as features and never specified. **Same ground as Naulty (§129) and Nimraka (§130)** — the thing
+built and measured is not the thing that would make it core — applied uniformly across all three.
+
+Also note **"role assignment" is not agents-in-engineering-roles**: *"Role Assignment Agent: **Matches
+tasks to resources**"*, forming human teams. The agents map to **PM/coordination functions**
+(requirement parsing, planning, role assignment, milestone tracking). **Fourth application of §130b** —
+specialists on distinct functions are **division of labour**, not `agent-panel`.
+
+### 132b. Authorship — the boundary between a legitimate factor and a retroactive filter
+
+The arbiter raised author level (*"authored by student. What level of student? If not doctoral, that
+might be an issue"*), citing precedent that **unaffiliated researchers were demoted partly on
+credibility**. Facts: two authors listed as *"Student"* with `22am155@` / `22am236@` emails — the `22`
+being the 2022 admission cohort, so **final-year undergraduates** — supervised by **C Quba Jaslin,
+Assistant Professor**, same institution. Minor IEEE conference.
+
+**Citation count — first application of decided signal #1, and it immediately vindicates the
+decision.** `Citegeist.citedByCount: 0`; **Google Scholar: 2** (arbiter, retrieved 2026-08-28).
+Recorded on the item per the §394 convention — `GS.citedByCount: 2` / `GS.retrieved: 2026-08-28` in
+`extra`, **alongside** the Citegeist fields rather than replacing them, so the discrepancy stays
+inspectable. This is exactly the failure mode §394 predicted: *"any authority argument built on the
+existing enrichment would silently privilege arXiv and indexed venues."* The assistant reported 0 from
+Citegeist without cross-checking — the error the manual-GS rule exists to prevent.
+
+**The assistant initially argued authorship should not be used at all**, citing
+`Selection_Criteria_By_Phase.md`'s design constraints: *"Apply it uniformly, or not at all"*;
+*"Do not let the signal become an inclusion criterion retroactively… Re-filtering after the fact would
+be a form of **HARKing**"*; and *"11 Light Read papers have zero citations and that is **uninformative,
+not damning**."*
+
+**Arbiter's correction, which is the ruling:** ***"Credibility of authorship is a factor, not THE
+factor. Keep that in mind."***
+
+**Reconciliation — the distinction that resolves both positions.** Authority is **already adopted** as
+one of the four Garousi MLR criteria (*authority / accuracy / coverage / objectivity*, §Selection
+Criteria item 8), and the preprint ruling explicitly preserves it: *"It does **not** flatten authority
+differences… **Judge the paper, not the venue**."* What is **not** adopted is signal **#2** — turning
+authority into a **formal metric** (track record, h-index) and **filtering on it**.
+
+| Use of authority | Status |
+|---|---|
+| Qualitative input to a holistic assessment, alongside other factors | **Legitimate — already in force** |
+| Sole or decisive ground for a disposition | **Not adopted** |
+| Retroactive re-filter of already-screened papers | **Barred (HARKing)** |
+
+**Applied here — the arbiter's statement of the compound ground (2026-08-28):** *"the main concern is
+**undergraduate status along with design-only**. It is more of a **vision piece without backing
+evidence of effectiveness** by junior people."*
+
+**Neither factor is doing the work alone, and that is the point.** The principle this yields, which
+generalises:
+
+> **`design-only` + unestablished authorship = insufficient warrant.** An unevaluated proposal is
+> credited *on the author's standing to have made it* — that is what a vision piece trades on. Remove
+> the standing and nothing remains to credit, because the paper offers no effectiveness evidence of
+> its own. Where the same design comes from an established group (Zhu, CSIRO Data61 + UNSW), the
+> authority substitutes for the missing evaluation; here it cannot.
+
+This keeps authority as **a** factor — it never decides alone, and it does not touch papers that carry
+their own evidence. **A junior-authored paper with a real evaluation is unaffected by this rule**, as
+is an unevaluated proposal from an authoritative group. Only the **conjunction** disqualifies.
+
+**Corrections withdrawn by the assistant:** citation count as a signal (the doc calls zero citations
+uninformative), and the claim that authority has no legitimate role.
+
+### 132c. Dissertation role DROPPED — the gap is stronger than the citation
+
+The arbiter valued two design ideas: *"the authors leverage the design of human engineering processes
+for agentic processes and identify agents for common roles in the SDLC… They also brought in
+**estimation, work breakdown structures**, etc., bringing **project management discipline** in."*
+
+The second is a **genuine hole in the corpus**: every oversight framework reviewed governs **code
+quality**; **none governs commitment and forecast**. If agents produce work at volume, someone must
+estimate, sequence and budget it — and no corpus paper addresses that.
+
+**Recorded as a gap, not as a citation** — the §130d move. A 2-citation undergraduate paper at a minor
+venue is a credibility risk as an authority for an idea it did not originate and does not validate,
+and the observation stands on its own without it. Note the count is **not** the reason: per the design
+constraints, low citation counts are *"uninformative, not damning"* in a corpus that is 77% 2025–26. `Emerging_Themes.md` carries the gap.
+
+## 133. Fail-soft as a REWARD ARTIFACT; the baseline problem solved by temporal cutoff; and §125c narrowed (`3SU9QZ6F`, 2026-08-28)
+
+**Paper:** Parris, *AIRA: AI-induced risk audit — a structured inspection framework for AI-generated
+code*, arXiv (2026-04-19). Three studies: enterprise environment audit; 600-file balanced pilot;
+**matched-control replication, 955 AI-attributed vs 955 human-control files**.
+**Written:** primary `rules-based-checks`; `ai-review`, `quality-debt`; facets `built-system`,
+`framework`, `method-mining`, `method-field-study`, `metrics`, `risk-quality`, `agentic`,
+`problem-statement-anchor`. **SLR: Core · Dissertation: PRIMARY.**
+
+### 133a. The Reward-Shaped Failure Hypothesis — a directional pathology, not random bugs
+
+> *"AI-generated code **fails quietly**, in ways that preserve the surface appearance of function"* ·
+> *"**Silent exception handling** — because a swallowed error **looks like** continued success"* ·
+> *"**Optimistic return values** — because returning None or raising **feels like giving up**"* ·
+> *"RLHF inherently trains models toward **fail-open** behavior."*
+
+**The mechanism is goal-orientation, as the arbiter read it:** the model optimises for the *appearance*
+of success because appearance is what the reward signal rewarded. That makes fail-soft a **structural
+artifact of training**, not a random defect distribution — a claim with a testable direction, and the
+paper tests it: **0.435 high-severity findings/file (AI) vs 0.242 (human) = 1.80×**, consistent across
+JavaScript, Python and TypeScript, concentrated in exception handling.
+
+**Family resemblance:** same shape as Alami (`WBS9U5N7`, specification gaming) — optimisation pressure
+producing a systematic, *directional* pathology rather than noise. Both argue the failure is **caused
+by how the system was trained**, which is why neither is fixable by better prompting.
+
+**Why `rules-based-checks` is primary and not merely instrumental:** AIRA's 15 checks are
+**deterministic** — the only deterministic reviewer in a corpus otherwise full of LLM judges (Jin,
+McAleese, Bugdar, ICR). The paper positions it for *"governance, compliance, and safety-critical
+systems where **fail-closed** behavior is required"*, so the checker is the contribution, and §115 is
+satisfied by the three studies measuring what it finds.
+
+### 133b. §125c NARROWED — two different defect classes, two different failures
+
+Parris directly contradicts a generalisation recorded on Liu/Debt two entries earlier:
+
+> *"a codebase can **pass standard static analysis** while exhibiting pervasive fail-soft behavior"* ·
+> *"**Standard code review practices are not calibrated to detect this**."*
+
+| | Defect class | Detectable by standard tooling? | Failure type |
+|---|---|---|---|
+| **Liu** (`9H6FWJME`) | code smells, correctness, security | **yes** | **process** — detectable, not gated |
+| **Parris** (this) | failure-**untruthfulness** (swallowed exceptions, optimistic returns) | **no** | **detection** — gated, not detectable |
+
+§125c amended in place. The corrected reading: *existing engineering discipline absorbs a large share
+of AI-introduced debt* — **but not this class**, which needs a purpose-built check because analysers
+were never calibrated for it. This is the strongest argument in the corpus for **AI-specific** review
+tooling rather than reusing what already exists.
+
+### 133c. The eroding baseline — SOLVED by temporal cutoff, at a price
+
+§125b recorded Liu's concession that *"a reliable human-only baseline is difficult to construct"*
+because AI use is undisclosed and interleaved. **Parris constructs one anyway:**
+
+> *"Human-control files were sourced from repositories whose **most recent commit predates January**
+> [the AI-tooling cutoff]."*
+
+**The trade:** a temporal cutoff buys a genuinely AI-free control and pays in a **temporal confound** —
+pre-cutoff repositories differ in language versions, tooling, practice and project maturity, so some
+of the 1.80× may be era rather than authorship. Honestly made and clearly the best available answer;
+**the only working response in the corpus to the eroding-counterfactual problem**, and the method to
+cite when the dissertation discusses why human baselines are disappearing.
+
+**Note the interaction with §125b's implication:** the window is closing for *interleaved* baselines,
+but a temporal-cutoff baseline stays constructible indefinitely — it just drifts further from the
+present each year, which converts a *feasibility* limit into a *validity* limit.
+
+### 133d. Fourth AIDev-derived paper — §116c citation discipline
+
+Agent-attributed files were *"sourced from the **AIDev dataset** [Li et al.]"*, joining Branco
+(`JQPPKSFQ`), Gao (`59KP8GTP`) and Ghammam (`SHK6KAX6`). **Four corpus papers now derive findings from
+one dataset**, whose source paper is itself Context + Dissertation Primary (§123). The dissertation
+must state this dependency explicitly — four "independent" results sharing a substrate are not four
+independent confirmations, and the closeout should record which findings rest on AIDev.
+
+### 133e. The arbiter's reflexive observation — our own convention fails OPEN
+
+Recorded because it is a real design property of this review, surfaced by the arbiter while reading a
+paper about fail-open behaviour: *"We've had in HOS (and even **this session**) loads of issues with
+failing open when we should fail closed."*
+
+**The three-state human layer is a fail-open design.** A panel-modal proposal **stands on silence**
+(§10.8), so a tag survives into `final:*` unless someone actively rejects it. That is precisely why
+`counterpoint` persists on deprecated papers (closeout B3) and why 15 papers carry
+`oversight-scaling-inversion` unexamined (B1) — **the default is "let it through."**
+
+A **fail-closed** convention would require an explicit endorsement for any tag to survive. That is a
+different, more expensive instrument, and the choice was never made deliberately — it was inherited
+from the supervised-band workflow. **Added to the closeout as a decision to take before `final:*`**,
+with the observation that the review is, in miniature, subject to the pathology it studies.
+
+## 134. Soft verification is CONSUMER-DEPENDENT — the same error rate is viable for a ranker and fatal for a human (`8VBH957K`, 2026-08-28)
+
+**Paper:** Raghavendra et al., *Agentic Rubrics as Contextual Verifiers for SWE Agents* (2026-01-07).
+An expert agent explores the repository, builds a context-grounded rubric, and candidate patches are
+scored against it **without test execution**. SWE-Bench Verified, parallel test-time scaling: 54.2% on
+Qwen3-Coder-30B, **+3.5pp over the strongest baseline**.
+**Written:** primary `ai-review`; `agentic`, `built-system`, `risk-quality`, `evaluated-benchmark`,
+`evaluator-reliability`. **`demote:context` · Dissertation: Supporting** (child note `GIDV2HHG`).
+
+### 134a. Demote — verification for the AGENT, not for a human
+
+*"Verification is critical for improving agents: it provides the **reward signal for Reinforcement
+Learning** and enables inference-time gains through **Test-Time Scaling**"* · *"sampling multiple
+candidates and **selecting the best one** using a verifier."*
+
+**There is no human in the loop.** The paper names *"human-in-the-loop rubric refinement"* as **future
+work**. Same ground as Yao and Yu-tuning (model-training focus), and the exact contrast with McAleese
+(`NRVQT89E`), which was kept at Core **because** it measures a human arm (§126a). The distinction is
+now load-bearing across three papers and should be applied as a rule: **verification serving agent
+self-improvement is not oversight; verification serving a human decision is.**
+
+### 134b. The finding worth keeping — and it is the SAME number read two ways
+
+The arbiter's framing: *"In HOS, we tried this and eventually gave up, opting for **deterministic
+guardrails** instead."* The paper explains why, without meaning to.
+
+**Rubrics genuinely catch what tests miss:** *"rubrics surface diagnostic concerns (e.g., unnecessary
+edits or missing edge-case handling) **even when tests** [pass]"* — **Root Cause Missed 17.5%**,
+**Missing Edges 15.1%**, and *"**54% of rubric failures are high-utility**."*
+
+**Read the other way: ~46% of rubric rejections are noise.**
+
+> **The principle: soft verification is viable as an *automated ranking signal* and not as a
+> *human-facing gate*.** A best-of-K selector absorbs 46% junk and still picks better patches — that is
+> where the +3.5pp comes from. **A human reviewer cannot absorb that**, because every spurious
+> rejection costs attention, which is the scarce resource (Minh, §127a). *Same signal, same error
+> rate, opposite viability depending on who consumes it.*
+
+**This resolves an apparent conflict in the corpus rather than adding to it.** Papers reporting soft
+verification as successful and papers reporting it as unusable are **both right**, and differ in
+consumer:
+
+| Consumer | Tolerates false positives? | Corpus evidence |
+|---|---|---|
+| **Automated ranker / RL reward** | **yes** — noise averages out over K samples | this paper, +3.5pp at ~46% low-utility rejections |
+| **Human reviewer / gate** | **no** — each false positive spends attention | Jin (`A5WDGC7J`) 88.74% FPR · Bugdar (`HJMKADKU`) 24–58% precision |
+
+And it explains why the **deterministic** route is the one that survives contact with a human
+downstream: Parris/AIRA's 15 checks (`3SU9QZ6F`), Lipsanen's executable acceptance tests
+(`7SH86C2W`), Zhong's 30 verifiers (`96XE669R`). **The arbiter's HOS trajectory — rubrics abandoned
+for deterministic guardrails — is the predicted outcome of putting a human at the consuming end.**
+
+### 134c. `rules-based-checks` DECLINED at 1/3 — the distinction is the whole point
+
+Rubrics are **LLM-judged**, not deterministic. Tagging this `rules-based-checks` would collapse
+precisely the axis §134b is about. The theme is reserved for deterministic evaluation; a checklist
+scored by a model is `ai-review`, however rule-shaped the checklist looks.
+
+### 134d. `evaluated-benchmark` and `evaluator-reliability` ADDED (both 0/3)
+
+**`evaluated-benchmark`** — SWE-Bench Verified, administered as-is under its own protocol, which is
+exactly §34's requirement (*"the real, fixed, field-recognized thing, run as-is"*), as against
+author-curated material sourced from a well-known pool.
+
+**`evaluator-reliability`** — the paper measures rubric–ground-truth agreement and audits the
+**utility distribution of rubric failures**, which is the facet's subject. Panel proposed neither;
+both are scope/evidence-grade facets, the class the panel most consistently misses (cf. §121d, §130c).
+
+## 135. Superseded by its own successors; and the RELAY — a third multi-agent shape (`DJHG9BBS`, 2026-08-28)
+
+**Paper:** Rasheed et al., *AI-powered code review with LLMs: early results*, arXiv (2024-04-29). Four
+specialised review agents (Code Review, Bug Report, Code Smell, Code Optimization) with sequential
+handoff and a coordination layer.
+**Written:** primary `ai-review`; `built-system`, `framework`, `general-code`, `risk-quality`.
+**`demote:context`, no dissertation role.**
+
+### 135a. The evidence floor of the band — a results section with no numbers
+
+The arbiter's question was *"Is it adding anything new?"* Section 4, **"Preliminary Result"**, answers
+it. In full, its findings are:
+
+> *"demonstrated a **strong capability**"* · *"**showed good performance**"* · *"was **effective**"* ·
+> *"**generally well aligned**"* · *"**in several cases**"* · *"in several test cases"*
+
+**No dataset size, no accuracy, no baseline, nothing counted.** Accuracy is explicitly deferred:
+*"our **future** research aims to evaluate the accuracy and efficiency."* The title's *"early results"*
+is honest.
+
+**Grading against the band** — this sits below every comparable paper, which is why it falls out where
+Nimraka and Naulty were already marginal:
+
+| Paper | Evidence produced |
+|---|---|
+| Naulty / Bugdar (`HJMKADKU`) | precision/recall against ground truth (24–58%) |
+| Lipsanen (`7SH86C2W`) | structured 3-arm qualitative comparison, 5 categories |
+| Nimraka (`5RKMGRNA`) | unit and integration tests pass |
+| **Rasheed (this)** | **narrative assertion; no comparison, no numbers** |
+
+It is the clearest case yet for the **`evaluated-self-demo`** rung queued at F2 (§124d) — and arguably
+sits *below* it, since there is no demonstration protocol at all, only prose.
+
+### 135b. REDUNDANCY — every claim it makes is measured elsewhere in the corpus
+
+The decisive ground, and stronger than weak evidence alone. Its central empirical claim:
+
+> *"in several cases, it detected issues that **traditional static analysis tools either missed** or
+> reported with very limited explanation."*
+
+**Raghavendra (`8VBH957K`) measures exactly this** — rubrics flag what tests miss: **Root Cause Missed
+17.5%**, **Missing Edges 15.1%**, 54% of failures high-utility (§134b). Rasheed *asserts*; Raghavendra
+*quantifies*. Likewise the architecture: **Nimraka** builds the four-specialist design more completely,
+and **Dutta** (`399HN438`) confirms specialist review agents perform well.
+
+This is the **Hjazeen ground** (`VFNJSZD9`, kept out of the dissertation collection because *"Mitropoulos
+and Parris already demonstrate the trust-boundary claim it only asserts"*), applied at the SLR tier.
+**Priority is not a criterion in this review** — being first to propose something the corpus later
+measures does not earn core, and a 2024-04 preprint superseded by 2025–26 work is exactly that case.
+
+Also `general-code` 3/3: the object is **code review generally**, not AI-generated code.
+
+### 135c. NEW — the RELAY shape, a third multi-agent topology
+
+Fifth application of §130b (*specialists on distinct aspects = division of labour, not `agent-panel`*),
+but this instance is **not parallel**:
+
+> *"forwards its findings to **subsequent agents** for deeper analysis within the multi-agent
+> workflow"* · agents operate *"after the initial review phase and **receive the preliminary
+> findings**."*
+
+**Three shapes now distinguished, and the F2 `agent-panel` definition should name all three:**
+
+| Shape | Question | Arrangement | Failure mode |
+|---|---|---|---|
+| **Panel** | the **same** question | redundant, votes | correlated error survives unanimity (§11.4) |
+| **Parallel division** | **distinct** questions | concurrent, independent | gaps between specialisms; no cross-check |
+| **Relay** | **distinct** questions | **sequential, each consuming the prior's output** | **errors COMPOUND** |
+
+**The relay is the one worth flagging as a design hazard.** A later agent reasons *on an earlier
+agent's findings*, so an upstream false positive propagates and is elaborated rather than averaged out
+— the opposite of a panel, where redundancy damps error. Given the false-positive rates the corpus
+records for LLM reviewers (Jin 88.74%, Bugdar 24–58%, Raghavendra ~46% low-utility), **a relay of LLM
+reviewers is the architecture most likely to amplify them, and no corpus paper measures this.** Logged
+in `Emerging_Themes.md` as an open question.
+
+## 136. Literature figures presented as findings; and a high-FWCI paper that fails the quality read (`5Q4G4CQB`, 2026-08-28)
+
+**Paper:** Salem et al., *AI-driven continuous integration: automating code review and deployment with
+LLMs*, FMEC 2025 (IEEE), 2025-05-19.
+**Written:** primary `ai-review`; `assistive`, `method-self-report`, `survey-input`, `risk-quality`,
+`risk-overreliance`. **Rejected:** `risk-bias` (3/3), `risk-security` (3/3), `method-field-study`
+(3/3). **`demote:context`, no dissertation role.**
+
+### 136a. The abstract attributes other people's numbers to itself
+
+> **Abstract:** *"AI-based CI improves code quality by decreasing integration failure rates by **30%**
+> and deployment time by **40%**."*
+>
+> **Body:** *"Data from the survey has shown that **85% of the members FEEL** that AI-assisted code
+> reviews make work faster. **A figure that is consistent with the literature** and says the use of AI
+> in driving CI/CD reduces general software delivery time by **40%**. For instance, the bug discovery
+> rates would increase by **30%**, **an estimate that finds support in literature**…"*
+
+**The paper's own datum is a perception** (85% *feel* it is faster). The 30%/40% are **literature
+estimates cited as corroboration**, and the abstract restates them as this paper's results.
+
+This is a step beyond the claim–evidence mismatch seen in Naulty (§129), Nimraka (§130), P (§132) and
+Rasheed (§135): those **overclaimed about their own work**; this one **presents borrowed figures as
+findings**. Recorded as a distinct and more serious failure mode, and one that abstract-only screening
+cannot catch — a reminder of why the full-text read exists.
+
+**Two supporting defects:** **no sample sizes anywhere** (survey recruited from *"media groups of
+developers"*, no N, no response rate), and a methodology written in **future tense** — *"the study
+**will apply** bias audit… Regular audits **will be conducted**"* — describing intentions rather than
+what was done.
+
+### 136b. `survey-input` KEPT (3/3) — a clean instance, both conditions met
+
+Notable because §131d had just isolated the two conditions as conjunctive:
+- **§116a instrument requirement** — a real **five-point Likert** survey exists. ✔
+- **§121b elicitation test** — it elicits **stated attitudes**: *"85% feel…"*, *"60% of the respondents
+  voiced their fears…"*, respondents raising false-positive concerns. ✔
+
+The facet is about **what the instrument does**, not whether the findings are trustworthy. **The
+findings here are uncitable for want of an N — but the tag is still correct.** Worth stating: tag
+validity and evidence quality are independent axes, and conflating them would make the facet a
+quality judgement in disguise.
+
+### 136c. Three 3/3 facets REJECTED — the intro-list trap
+
+`risk-bias`, `risk-security` and `method-field-study` all carried **unanimous** panel support and all
+come off:
+
+- **`risk-bias` / `risk-security`** — the instrument is explicit: *"substantive treatment only, **never
+  intro-lists**."* The paper **enumerates** *"security vulnerabilities, model bias and the need for
+  human supervision"* without developing either. `risk-quality` and `risk-overreliance` are kept
+  because the false-positive and trust material **is** developed.
+- **`method-field-study`** — the "case studies" are **selection criteria with no reported cases**
+  (*"Case study criteria include companies…"*). Criteria for choosing cases are not cases.
+
+**A four-risk-facet sweep is itself a tripwire.** When a panel assigns most of the risk axis at 3/3,
+the likely cause is an enumerative paper, not a comprehensive one. Add to the closeout checks
+alongside the §124a altitude sweep.
+
+### 136d. AUTHORITY SIGNAL COUNTER-CASE — high FWCI, weak method (for E8/E9)
+
+`Citegeist.fwci: 4.38` · `percentile: 94.6` · `isTop10Percent: true`. **This paper is well cited for
+its field and year, and does not survive a careful read.**
+
+Recorded as a concrete counter-case for the authority-signal decision (closeout **E8/E9**). It
+supports the documented constraint that citation evidence is for **defending** the corpus in the
+methods chapter, **not for filtering it** — and demonstrates the converse of the usual worry: the risk
+is not only that good papers go uncited, but that **weak papers accumulate citations**. FWCI corrects
+for field and year; it does not correct for rigour. **No citation-derived signal can substitute for
+reading the paper.**
+
+Pairs with `N7E3MR2V` (§132b), where the enrichment *under*-reported (Citegeist 0 vs GS 2). Between
+them the two cases bound the problem: **the signal is noisy in both directions.**
+
+## 137. A SCOPE demote with sound method behind it; and the corpus's only CONTROLLED speed-vs-quality tradeoff (`FWKYVQPD`, 2026-08-28)
+
+**Paper:** Samsyudin et al., *Vibe coding and AI-led conversational programming: emerging trends in
+software development* (2025-09-17). Quasi-experimental, **N=30**, **within-subjects** across three
+conditions (traditional · AI-assisted/Copilot · vibe coding), ANOVA with effect sizes, plus post-task
+SUS surveys and semi-structured interviews.
+**Written:** primary `quality-debt`; `ai-code-insecurity`; `assistive`, `method-experiment`,
+`method-self-report`, `survey-input`, `risk-quality`, `risk-security`, `intro-framing`,
+`problem-statement-anchor`. **Rejected:** `agentic` (3/3). **`demote:context`.**
+
+### 137a. Demoted on CONTRIBUTION SCOPE, not rigour — a distinction worth preserving
+
+The last four demotes (§129 Naulty, §130 Nimraka, §132 P, §135 Rasheed, §136 Salem) were **evidence
+failures** — things built or claimed without adequate measurement. **This one is different**, and the
+record should not blur them: the method is sound. The failure is that the contribution is normative.
+
+The "three-pillar framework" is three sentences:
+
+> *"1. **Hybrid Integration** – Vibe coding should be used alongside, not in place of, traditional
+> [practices]. 2. **Human Oversight** – Developers must retain responsibility for validating AI
+> outputs. 3. **Context-Aware Deployment** – Adoption should be limited to non-critical
+> applications."*
+
+**"Human Oversight" here means "developers must retain responsibility."** That is the arbiter's
+Bhatnagar ruling verbatim (§106): *"There is no insight about oversight, just that it was important."*
+The paper concedes the status itself — *"a **preliminary** framework."* Hence `intro-framing`:
+confirming a central tenet without advancing it.
+
+**Why the distinction matters for the methods chapter:** "demoted" is doing two different jobs across
+this band — *we cannot trust what it reports* versus *we trust it and it is not about our question*.
+The second is a scope judgement and carries no criticism of the work.
+
+### 137b. The finding that survives — a CONTROLLED speed-vs-quality tradeoff
+
+Checked after the disposition was settled, and better than expected. Within-subjects, same
+participants, same tasks, all three conditions:
+
+| Measure | Vibe coding vs baseline |
+|---|---|
+| Development time | **27% faster** than traditional · **12% faster** than Copilot-assisted |
+| Duplicated logic | **15% more** |
+| Complexity | **18% higher** |
+| Potential vulnerabilities (scanned) | **22% more** |
+
+**You go faster and produce worse code, measured on the same people doing the same tasks.** That is the
+review's premise stated as a controlled result, and it is the **only** controlled version in the
+corpus — Xu, He, Liu (`9H6FWJME`) and Huang all reach compatible conclusions by **mining**, which
+cannot rule out selection effects (who adopts AI, on what kind of work). A within-subjects design can.
+
+**Specific corroboration:** the **15% more duplicated logic** is the experimental counterpart to
+**Huang** (`4T5QFWZE`, *More code, less reuse*), which mined the same phenomenon. Two independent
+method families agreeing on reuse collapse is worth more than either alone.
+
+`problem-statement-anchor` applied on this basis — **added beyond the approved tag set**, on the
+strength of numbers checked after the arbiter's authorisation, and flagged as such.
+
+**Open: this makes a case for Dissertation Supporting** that the disposition did not anticipate. The
+counter-argument is N=30 with students mixed in and a *"vibe coding simulation"* rather than
+production work. Left off pending the arbiter's call.
+
+### 137c. `agentic` REJECTED at 3/3 — Waseem rule, fourth application
+
+The experimental condition is *"Providing task instructions in natural language to the AI system"* —
+vibe coding, which the arbiter ruled is **steering, not agentic** (Waseem). `assistive` is correct for
+the Copilot baseline arm. Fourth application after Waseem, Catalan and Naqvi (§128c).
+
+**Pattern worth noting for the F2 mode-pair wording:** the panel has now put `agentic` at 3/3 on four
+separate vibe-coding papers. It appears to key on *"AI writes the code"* rather than on **who
+initiates and at what granularity the work is reviewable** — which is what the pair actually cuts on.
+The definition should lead with the initiation/granularity test rather than mentioning it mid-entry.
+
+## 138. FORM FACETS REQUIRE A PROPOSED MECHANISM — and a productivity case study with no control (`D87A4CAS`, 2026-08-28)
+
+**Paper:** Şeker et al., *Enhancing software development with large language models: a case study of
+kolay.ai*, **Electrica** (2026).
+**Written:** primary `hitl-workflow`; `rules-based-checks`; `assistive`, `steering`, `risk-quality`,
+`method-field-study`, `method-self-report`, `intro-framing`.
+**Rejected:** `built-system` (2/3), `framework` (2/3), `method-mining` (3/3), `agentic` (2/3).
+**`demote:context`, no dissertation role.**
+
+### 138a. NEW RULE — the form cluster presupposes a proposed mechanism
+
+Four modal rejections is unusual, and two of them establish a rule worth stating generally.
+
+**`built-system` and `framework` were rejected because there is nothing for them to describe.** The
+authors built **Kolay.ai — a commercial product**, not a contributed oversight artifact. The paper
+proposes no mechanism; it reports on adopting existing tools.
+
+> **Rule:** the **form/maturity cluster** (`design-only` · `framework` · `built-system` · `adopted`)
+> describes **the paper's proposed contribution**. Where a paper proposes no mechanism, **none of them
+> applies** — regardless of how much software exists in the story. The instrument already scopes
+> `design-only` this way (*"Only for papers that **propose** something"*); this extends the same
+> scoping to the rest of the cluster, which was implicit and is now explicit.
+
+**Why the panel got it wrong, and why it will recur:** the models key on *"a system exists"* rather than
+*"a mechanism is offered."* Every commercial case study will trip this. Add to the F2 wording, and to
+the closeout sweep alongside the §124a altitude check.
+
+**`method-mining` (3/3) rejected** — there is no repository, commit or artifact analysis anywhere in
+the paper. A straightforward unanimous error.
+
+**`agentic` (2/3) rejected** — fifth application of the Waseem rule; this is prompt-driven delegation,
+carried by `assistive` + `steering` (both 3/3).
+
+### 138b. Demoted — standard practice described, and figures that cannot be checked
+
+**The HITL content is practice, not contribution:** *"**HITL review:** Regular reviews were conducted
+to correct hallucinations and inconsistencies in LLM-generated outputs"* · *"HITL validations and
+post-sprint evaluations"* · *"manual oversight remains essential."* Bhatnagar (§106) again — *"no
+insight about oversight, just that it was important."* Hence `intro-framing`.
+
+**One near-miss:** *"routine coding tasks were **delegated to LLMs**, while more complex tasks"* went to
+humans. That is allocation by complexity — the *shape* of routing — but a **generic statement with no
+criteria**, which is the arbiter's Branco rule: *"If there is logic setup… then it might qualify. If it
+is a generic statement, not so much."* No `risk-routing`.
+
+**The productivity figures are unverifiable.** *"30–40% reduction in development time"* and *"30%
+reduction in coding errors"* come from a **single self-reported project with no control** — there is no
+baseline project to compare against. The same figures appear in the **introduction** as a general claim
+and in the **results** as this project's outcome, leaving provenance ambiguous (the §136a pattern,
+though milder).
+
+**`problem-statement-anchor` deliberately NOT applied** — the contrast with Samsyudin (§137b) is the
+point: that paper earned the facet on a **within-subjects** comparison; this one reports uncontrolled
+self-assessment of the authors' own project. **Same headline direction, incomparable evidentiary
+weight.** Anchors must be defensible under scrutiny, since they are the numbers most likely to be
+quoted.
+
+### 138c. `method-field-study` KEPT, with the contamination noted
+
+A real project in a real setting, so the facet applies — but it is **the authors documenting their own
+project**, so the "field" is observed by interested parties, and `method-self-report` (3/3) co-applies
+for that reason. Distinguish from Lipsanen (§124c), where the method facets were **rejected** because
+the authors evaluated their **own proposed framework** on a case they built: there, results described
+the *tool*; here they describe a *real delivery project*, which is the world — however partially.
+
+## 139. `rules-based-checks` REQUIRES DETERMINISTIC EVALUATION — an LLM-judged rubric is `ai-review` (`GCZQTNBD`, 2026-08-28)
+
+**Paper:** Sollenberger et al., *LLM4VV: exploring LLM-as-a-judge for validation and verification
+testsuites*, SC'24 Workshops (2025-02-11). LLM-as-judge over OpenMP/OpenACC **compiler validation
+testsuites**.
+**Written:** primary `ai-review`; `built-system`, `framework`, `agentic`, `evaluator-reliability`.
+**Rejected:** `rules-based-checks` (**3/3**). **`demote:context`, no dissertation role.**
+
+### 139a. THE RULE (arbiter, 2026-08-28)
+
+> ***"Rubrics that are LLM evaluated are not rules-based-checks."***
+
+**`rules-based-checks` requires the evaluation itself to be DETERMINISTIC** — a check whose verdict is
+computed, reproducible, and independent of a model's judgement. **Rule-*shaped* criteria evaluated by
+a model are `ai-review`**, however explicit the criteria look. The theme names *how the verdict is
+produced*, not *how the criteria are written*.
+
+**Why the distinction is load-bearing and not pedantry.** It is the axis §134b turns on: deterministic
+checks and LLM judgements have **different error profiles**, and the whole soft-vs-deterministic
+finding collapses if a rubric scored by GPT-4o counts as a rule-based check. Jin **88.74% FPR**,
+Bugdar **24–58% precision**, Raghavendra **~46% low-utility rejections** — versus Parris's AIRA,
+Töpfer's FCL verifier, Zhong's 30 verifiers, Lipsanen's executable acceptance tests, which either fire
+or do not. **Collapsing them would erase the corpus's clearest practical result.**
+
+Consistent with §134c, where the assistant declined the tag on Raghavendra for the same reason. This
+entry promotes that one-off into the rule.
+
+### 139b. Why this paper had nothing to reconsider
+
+The arbiter's question — *"Another LLM as judge paper. We've demoted / discarded those in the past. Is
+there anything in this one that should have us reconsider it?"* — checked, and the one plausible hook
+fails:
+
+**The *"agent-based approach"* is a SINGLE LLM, not a panel:** *"An agent-based approach involves
+treating **the LLM as an autonomous agent** that interacts with its environment."* The *"pipeline"* is
+*"pipeline stages and **parallel processing**"* — throughput, not redundancy. **No `agent-panel`
+evidence**, which was the only reason to reopen the family.
+
+Otherwise it sits further out than its predecessors: same class as Zhao (§98), Karakaya (§122) and
+Raghavendra (§134); **narrower domain** (HPC compiler testsuites, judging compiler test cases); and
+**no human anywhere**, which is §134a's settled rule — *verification serving automated validation is
+not oversight; verification serving a human decision is.* The negative-probing design
+(*"intentionally-erroneous code"*) is a third instance of a methodology the corpus already has, better
+executed, in Jin's paired datasets and McAleese's tampering task.
+
+### 139c. Retroactive exposure — 24 papers carry human-endorsed `rules-based-checks`
+
+The rule is new, so prior applications need checking. **24 papers** carry it in the human layer
+(3 as primary: Parris `3SU9QZ6F`, Töpfer `72W6R4JG`, Xie/VibeGuard `T8E8SCCG` — all deterministic, all
+safe).
+
+**Most are clearly correct** — executable tests, static analysers, constraint verifiers, security
+gates. **The re-check population is papers where the evaluator is plausibly a model**, not all 24.
+
+**One known hybrid, already flagged:** **Jin** (`A5WDGC7J`, §120d) — the Fix-guided Verification Filter
+*executes* tests deterministically, but *"the test generation step is **standardized to GPT-4o**."*
+**Deterministic adjudication over LLM-generated inputs.** The rule as stated does not settle this: the
+*verdict* is computed, the *criteria* are model-authored. Left as written and referred to F2, which
+should decide whether hybrid pipelines take both tags, the deterministic one, or a new slug.
+
+Added to the closeout as **B10**.
+
+## 140. THE PANEL PAPER — `agent-panel` and `cross-model` get their reference instance, and the correlation dilemma is answered (`A6ZE2A26`, 2026-08-28)
+
+**Paper:** Ullah et al., *Vibe coding on trial: operating characteristics of unanimous LLM juries*,
+arXiv (2026-02-12). 15 open models benchmarked on 82 MySQL text-to-SQL tasks under an
+execution-grounded protocol; **unanimous committees of size 1–6** built from the top 6; TPR / FPR /
+Youden's J reported per size **and per composition**.
+**Written:** primary `ai-review`; `risk-routing`; **`agent-panel`**, **`cross-model`**,
+`routing-signal`, `evaluator-reliability`, `metrics`, `built-system`, `method-experiment`, `agentic`,
+`risk-quality`. **Preserved untouched:** `evaluated-synthetic` (§34/§35 gold-set ruling).
+**SLR: Core · Dissertation: PRIMARY.** Arbiter: *"Ullah is gold. Our agent panel and cross vendor
+wrapped up together."*
+
+### 140a. The reference instance both staged slugs were missing
+
+`agent-panel` and `cross-model` have been staged since §33 and applied by hand without a defining
+case. **Four consecutive papers were declined** on `cross-model` — Karakaya (comparison), Lipsanen
+(task allocation), Liu (neither), McAleese (§126c, one fine-tuned critic) — and five on `agent-panel`
+as division of labour (§110, §112a, §130b, §132a, §135c). **This is the positive case for both:**
+
+- **`agent-panel`** — N judges answer **the same question** on the same artifact, aggregated by an
+  explicit rule (**unanimity to accept**). Redundant, not specialised. Removing a member removes a
+  **vote**, not a job.
+- **`cross-model`** — committees composed of **distinct models**, and composition is a measured
+  variable rather than an implementation detail.
+
+**Write both into the F2 definitions from this paper**, not from the multi-agent code-generation
+literature (MetaGPT/ChatDev/AgentCoder), which is division of labour throughout.
+
+### 140b. The correlation dilemma — ANSWERED, and the answer is composition
+
+§(topology entry) posed the dilemma facing conjunctive gate-sets: **independent errors compound
+across vetoes; correlated errors make unanimity decorative** (§11.4's 9/9 on a wrong tag). Nothing in
+the corpus measured the correlation between judges. **This paper does:**
+
+> *"**errors across judges can be correlated**"* · *"identify **complementary versus redundant** judge
+> combinations"* · *"the exact **committee composition matters significantly**"* · *"where
+> **conservatism delivers diminishing returns**"*
+
+**The resolution: the variable is composition, not count.** You do not add judges, you add judges that
+**fail differently** — and the paper identifies which combinations are complementary versus redundant.
+That reframes the design question from *"how many reviewers?"* to *"which reviewers fail
+independently?"*, which is answerable and currently unasked in practice.
+
+**Consequence for the arbiter's architecture** (cross-vendor panel, specialists must all be satisfied):
+the cross-vendor instinct is right — Yu (`PPMTM4DG`) establishes a model cannot check itself — but
+**vendor diversity is a proxy for error diversity, not a guarantee of it.** §11.4 is the standing
+counter-example: three vendors, three runs each, **9/9 wrong together**, because they shared a
+misreading of the *instrument*. **Decorrelating the model does not decorrelate the prompt.** Ullah's
+contribution is that complementarity is **measurable**, so it can be selected for rather than assumed.
+
+### 140c. `risk-routing` ENDORSED at 1/3 — TPR *is* the human-review-avoided measure
+
+The paper's own framing is this review's problem statement almost verbatim:
+
+> *"What is missing is **a reliable way to tell which model written queries are safe to accept without
+> sending everything to a human**."*
+
+And the metrics are defined in exactly those terms: *"**TPR** captures utility: the ability to accept
+correct SQL (**avoiding unnecessary human review**). **FPR** captures risk: the tendency to accept
+incorrect SQL."*
+
+All four §107e clauses pass — computed, per-item, within-unit, not human discretion — and a real gate
+rides on it. **Second built-and-evaluated router in the corpus after Minh (`74GE3TF7`, §127a)**, and
+the first where the router *is* a panel. Together they are the corpus's only quantified
+**throughput-scaling** evidence (§126b).
+
+**Direction of failure is the arbiter's, not BitsAI-CR's:** unanimity **to accept** means the default
+is **reject** — *"safety first deployments where **false accepts are more costly than false
+rejects**."* Fail-closed toward the codebase, which is the HOS orientation (§133e). The cost lands as
+false rejects rising with committee size, which the paper measures as diminishing returns rather than
+assuming away.
+
+### 140d. The limitation that must travel with the numbers
+
+**Domain: MySQL text-to-SQL**, where correctness is **decidable by execution** against ten
+independently seeded databases. That is precisely what makes clean TPR/FPR measurement possible — and
+precisely what is **absent** in general code review, where there is no oracle (Karakaya §122a: even
+the human labels are contaminated).
+
+**The method transfers; the numbers do not.** Cite Ullah for the *operating-characteristic framing*,
+the *composition-over-count finding*, and the *committee-size curve* — not for specific TPR/FPR values
+as expected performance in an unoracled setting.
+
+### 140e. B7 partial closed — prior ruling preserved
+
+Third of the four §126e partials to be resolved. Its single existing tag,
+`cal:human:facet:evaluated-synthetic`, is an adjudicated §34/§35 gold-set ruling (author-constructed
+82-task corpus) and was **left untouched**; the theme layer and primary were added around it. The
+§126e procedure worked as intended: check for a prior narrow-axis ruling before re-opening.
+Remaining partials: `MFSZPSPU` Shi · `I6FZ5GD2` Wang (Junpeng).

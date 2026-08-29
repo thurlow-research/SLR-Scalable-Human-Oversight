@@ -11,6 +11,13 @@
 .DS_Store
 **/.DS_Store
 .claude/
+# python build/cache artifacts (regenerable)
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
 # heavy / binary / re-derivable
 Backups/
 Downloads/

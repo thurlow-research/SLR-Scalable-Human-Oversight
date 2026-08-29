@@ -139,10 +139,50 @@ Group library; collection-based provenance (NOT tag-based for source provenance)
 
 - **Items never leave `01-Imports/`**. Import membership is permanent provenance — same item can live in `Q-IEX-03` and `Q-IEX-12` and `Q-SCO-07` simultaneously; that's the audit trail.
 - **Source counts are invariant** when moving items between screening buckets.
+- **Phase collections are populated once, then frozen — membership is PROVENANCE, not current state.**
+  Each phase creates its **own** collections and populates them. Once that phase completes, its
+  memberships are **never changed**. A later phase's conclusions are expressed by **new collections
+  and/or tags** — never by editing an earlier phase's collections. Movement happens *during*
+  population (earlier phases used `00-Queue` → `01-Keep` / `02-Maybe` / `03-Discard` sub-collections,
+  and the workflow moved each item from the queue into that phase's disposition); the freeze applies
+  when the phase is done. **Consequence:** a paper's collection membership records **what each phase
+  concluded at the time**, not what it is now. A Phase-5 demote does **not** remove the paper from
+  Phase 3's `01-Core` — Phase 3's answer stays Phase 3's answer. Reading current disposition off
+  collection membership is therefore **wrong by construction**; see the disposition rule below.
 - **Always merge, never delete** for duplicates. Zotero's merge preserves all collection memberships and tags on the surviving record.
 - **04-Superseded** holds the inferior duplicates after manual cross-source dedup (e.g., a preprint that was later published as a journal article — keep the journal version in the live workflow, send the preprint to Superseded).
 - **Screening decisions propagate cross-source.** If the same item is in IEEE and Scopus and screened Keep in IEEE, the Scopus copy gets Keep too.
-- **Tags are sorting/filtering aids only.** Source provenance lives in collections, not tags. `theme:*` and `s1:*` tags are screening aids; the screening decision in another source takes priority if there's a conflict.
+- **Tags are sorting/filtering aids only — for SOURCE PROVENANCE and SCREENING.** Source provenance lives in collections, not tags. `theme:*` and `s1:*` tags are screening aids; the screening decision in another source takes priority if there's a conflict.
+- **From Phase 4 onward this INVERTS for disposition and tagging.** Collections stayed provenance, but
+  the *decisions* moved into tags, and those tags are **authoritative, not aids**.
+
+  **Why the switch happened — cardinality, not preference.** Earlier stages were **single-valued**
+  decisions (keep / maybe / discard — exactly one per item), which folders represent perfectly and
+  which Zotero's UI supports by **drag-and-drop**. That is why collections carried the decision for
+  Phases 1–3. **Tagging broke it:** a paper carries **many** tags at once (17 themes + 27 facets,
+  plus per-model proposals), and no folder tree can represent a multi-valued assignment. So the
+  decision layer moved to tags at Phase 4. The rule generalises: **single-valued disposition →
+  collection; multi-valued → tag.**
+  - **Current tier** = the **`demote:context`** tag. **Absent = surviving.** It is the only place the
+    live disposition exists.
+  - **Tag decisions** = the `cal:human:*` layer (`cal:human:theme:*`, `cal:human:facet:*`,
+    `cal:human:primary:theme:*`, `cal:human:reject:*`); model proposals = `cal:<model>:*`.
+  - **Phase 6** will materialise the surviving set (every reviewed paper with **no** `demote:context`)
+    as a collection — the first time current disposition is readable from membership again, and only
+    because it is created fresh at that point rather than edited into an older phase.
+
+  **Do not read tier from collection membership.** A demoted paper still sits in the `01-Core` of every
+  earlier phase that put it there; that is the audit trail working as designed, not an inconsistency.
+
+- **Superseded MODEL RUNS are provenance too — NEVER delete them.** When the instrument is revised and
+  the panel re-run, the earlier run's tags are not garbage to be cleared; they are the record of what
+  that instrument produced. **Rename, don't remove:** prefix the superseded tags with **`v1_`**
+  (`cal:opus:theme:X` → `v1_cal:opus:theme:X`), then write the new run in the bare `cal:` form. The
+  prefix falls outside the `cal:` namespace that the stats tooling matches, so superseded runs drop
+  out of the figures automatically with no code change, while staying visible and queryable in Zotero.
+  **Never add a new run alongside an old one un-prefixed** — both share the `cal:<model>:` prefix, so
+  they would silently merge into a union of two different instruments and corrupt every statistic
+  computed off that band.
 
 ### Publication venue hierarchy for dedup
 
