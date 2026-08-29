@@ -298,6 +298,30 @@ alongside — same principle as A1.
   dissertation collection.
 - **E6. Verify the dissertation-queue records** created for Du / Huang / Islam (the agent-checks-agent
   gap, surfaced via Gemini and deliberately **not** added to the corpus).
+- **E8. Google Scholar citation retrieval — DECIDED but not executed.**
+  `Selection_Criteria_By_Phase.md` §394 signal #1: manually retrieve GS counts for the surviving
+  corpus, with Semantic Scholar as the reproducible cross-check. Not started; **first instance
+  recorded 2026-08-28** on `N7E3MR2V` (Citegeist **0** vs GS **2**), which is the discrepancy the
+  decision exists to catch.
+  - **Storage convention:** `GS.citedByCount:` / `GS.retrieved:` in the Zotero `extra` field,
+    **alongside** the `Citegeist.*` fields, never replacing them.
+  - **Mandatory methods-chapter obligations** (all five, from §394): record the retrieval date with
+    every count · state that GS is not API-accessible and automated retrieval is against its terms,
+    hence manual · state what GS counts include (preprints, theses, non-refereed citing sources) ·
+    report the S2 count alongside and **state the discrepancy rather than choosing the flattering
+    number** · keep provenance inspectable.
+  - **Why it matters:** existing Citegeist/OpenAlex enrichment covers only **23 of 79** Light Read
+    papers and fails **systematically on SSRN** — the stream most in need of defending. Zhu
+    (`ZGST9CY6`) has **15 GS citations and no Citegeist record at all**.
+  - **Constraint:** this is for **defending** the corpus in the methods chapter, **not re-filtering
+    it**. Counts are uninformative in a corpus that is 77% 2025–26 — *"uninformative, not damning"*.
+
+- **E9. Decide whether authority signals #2–#8 are adopted** (`Selection_Criteria_By_Phase.md` §394).
+  Only #1 is decided. Standing ruling (§132b, 2026-08-28): **credibility of authorship is A factor,
+  not THE factor** — legitimate as qualitative input to a holistic assessment (it is already one of
+  the four Garousi criteria), **not** as a sole ground and **never** as a retroactive re-filter
+  (HARKing). If any of #2–#8 is to bear on the write-up, decide it and apply it **uniformly**.
+
 - **E7. Confirm the untracked dir** `Scalable AI Coding Governance - 2026-08-27 - Light Reads
   Completed/` should stay untracked. **Repo is PUBLIC** — never commit paper full texts.
 

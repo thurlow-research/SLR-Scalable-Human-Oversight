@@ -2305,3 +2305,31 @@ time."* A model does not learn from correction within the engagement, so the pat
 a return that never arrives. Any survey item asking whether practitioners review AI output as carefully
 as a colleague's can therefore collect an honest *yes* that is uninformative — the comparison class
 carries assumptions the AI does not satisfy.
+
+## GAP — the corpus governs code quality, never commitment and forecast (2026-08-28)
+
+Surfaced by the arbiter on `N7E3MR2V`, which brings *"estimation, work breakdown structures, etc.,
+bringing **project management discipline** in."*
+
+**Every oversight mechanism reviewed so far governs the artifact**: quality gates, security scanners,
+review bots, conformance checks, complexity thresholds, routing by predicted review effort. **Nothing
+governs the commitment side** — how much work is promised, how it is sequenced, what it will cost,
+and how confident the estimate is.
+
+**Why the omission matters if agents produce work at volume.** Minh (`74GE3TF7`) shows a maintainer
+*attention* budget being blown. The same logic applies upstream to a *delivery* budget: if agents can
+open PRs faster than humans can absorb them, someone still has to decide **what should be attempted
+at all**, in what order, against what capacity. An oversight regime that gates merges but never gates
+intake will fill the queue faster than it drains it — which is Yang's intake-restriction mechanism
+arriving from the planning side rather than the review side.
+
+**Recorded as a GAP, not as a citation.** `N7E3MR2V` is demoted (§132) — a two-citation undergraduate
+conference paper that neither originated nor validated the idea. The observation stands without it,
+and is stronger as a stated gap than as a weak attribution. If the dissertation wants to make the
+argument, it needs either a source from outside this corpus (classical estimation literature — COCOMO,
+story-point calibration, reference-class forecasting) or to be argued as the review's own position.
+
+**Related open question:** does forecast discipline even survive contact with agentic delivery? Classical
+estimation assumes a stable relationship between scope and effort mediated by a human team's velocity.
+If an agent's cost is compute rather than person-hours, and its failure mode is silent abandonment
+(§127c) rather than slow progress, the estimation object itself may have changed.
