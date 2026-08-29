@@ -2265,3 +2265,43 @@ reputation as a routing input appears nowhere else in the corpus.
 debt) and as *reviewers* (Yu, Jin, McAleese). It does not measure them as **negotiators** — the ability
 to take critique and converge. If oversight is a loop rather than a gate, that capacity is the one that
 determines whether delegation terminates.
+
+## The scrutiny decay curve — reconciling three papers that appear to disagree (2026-08-28)
+
+Prompted by the arbiter on Omidvar-Tehrani: *"they found that people treat the AI like a team mate,
+provide the same due diligence as they would a PR from human. **This goes against some of the other
+data** about them getting less scrutiny."*
+
+They do not disagree. They measure **different points on one curve**, and the disagreement is an
+artifact of setting:
+
+| Paper | Setting | Attention | Curve position |
+|---|---|---|---|
+| **Omidvar** (`4FGIVVTG`) | N=11 recruited **to review diffs**; reviewing *is* the task | full scrutiny, AI held to teammate standards | **t = 0** |
+| **Catalan** (`5BAZZWHG`) | repeated coding/review cycles | **engagement decay** across cycles | **the slope** |
+| **Ghammam** (`SHK6KAX6`) | artifacts in the wild, no researcher present | oversight **theatre** | **the asymptote** |
+
+The mechanism connecting them is §126d's **idealised reviewer**: a participant recruited to review is
+attentive by construction, so a study of that participant measures the *ceiling*, not the operating
+point.
+
+**Why this is worth more than a truce.** It converts three contradictory-looking results into a
+**falsifiable claim**: scrutiny of AI output starts **genuine** and **erodes**, rather than being
+absent from the outset. That is testable — a longitudinal design with the same reviewers over many
+cycles should reproduce Omidvar's result early and Ghammam's late.
+
+**And it changes what an intervention should do.** If scrutiny were never present, the remedy is to
+**establish** it (training, mandated review, gates). If it is present and decays, the remedy targets
+**sustaining** it: reviewer rotation, cadence limits, forced escalation, or — the allocation answer —
+routing so that fewer items demand attention and the attention spent stays fresh (Minh, `74GE3TF7`).
+The corpus's own evidence favours the second, which is a stronger argument for routing than any single
+paper makes on its own.
+
+**Caveat to carry:** Omidvar is **N=11**. It fixes the shape of the curve's start, not its magnitude.
+
+**Related, from the same paper — the teammate frame is a MISAPPLIED model, not just a generous one.**
+Developers extend handholding *"with the unspoken expectation that these teammates will learn over
+time."* A model does not learn from correction within the engagement, so the patience is priced against
+a return that never arrives. Any survey item asking whether practitioners review AI output as carefully
+as a colleague's can therefore collect an honest *yes* that is uninformative — the comparison class
+carries assumptions the AI does not satisfy.
