@@ -126,6 +126,33 @@ Applying the reclassification blanket would convert 19 un-examined modal proposa
 endorsements and inflate the panel's apparent precision. **C4 applies to Light Read (and any band
 with a completed pass), not to partially-tagged papers.**
 
+### B9. DECIDE: should the human layer fail OPEN or fail CLOSED? (before `final:*`)
+Raised by the arbiter 2026-08-28 while reading Parris (`3SU9QZ6F`) on fail-soft behaviour:
+*"We've had in HOS (and even **this session**) loads of issues with failing open when we should fail
+closed."*
+
+**The three-state convention is a fail-OPEN design.** A panel-modal proposal **stands on silence**
+(§10.8), so a tag reaches `final:*` unless someone actively rejects it. **The default is "let it
+through."** That is the direct cause of two other closeout items:
+- **B3** — `counterpoint` survives on deprecated papers because nobody rejected it individually.
+- **B1** — 15 papers carry `oversight-scaling-inversion` on silence, the largest known error source.
+
+**A fail-CLOSED convention** would require an explicit endorsement for any tag to survive. More
+expensive, and it would invalidate the non-exhaustive supervised passes (silence would become
+rejection, which is *not* what it meant when those bands were worked — see C4).
+
+**The choice was never made deliberately** — it was inherited from the supervised-band workflow.
+Options: (a) keep fail-open and rely on the B1/B3 sweeps to clean up; (b) fail-closed for **new**
+work only, leaving existing bands under the old rule with the difference documented; (c) fail-closed
+for a defined **high-risk subset** (the deprecated vocabulary and the inversion tag), which is
+effectively what B1 and B3 already do — in which case make that explicit and general rather than
+per-tag firefighting.
+
+**Recommendation: (c)**, then state the rule in §10.8 so the next instrument version inherits a
+decision rather than an accident. **Note the reflexivity:** the review is, in miniature, subject to
+the pathology it studies — worth a sentence in the methods chapter, under the §11.8 guardrail
+(illustration, not evidence).
+
 ### B8. Verify every item with NO `cal:human` tag — confirm it was genuinely never examined
 **Scott's rule (2026-08-28):** *"we've modified tags on every item, so if there aren't any with human
 tags, they are highly unlikely to have been examined."* Every paper that received a pass got **at
