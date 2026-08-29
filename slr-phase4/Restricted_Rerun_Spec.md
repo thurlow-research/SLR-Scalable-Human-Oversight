@@ -1,6 +1,6 @@
 # Restricted re-run — new vocabulary only (spec, drafted 2026-08-28)
 
-**Status: PREP ONLY. Not authorised to run.** Four decisions below need Scott's call first.
+**Status: PREP. All four design decisions RESOLVED 2026-08-28 (§7). Awaiting an explicit run authorisation.**
 
 Implements closeout **F2** / §41: apply the post-freeze vocabulary to the surviving corpus **without
 re-adjudicating anything already settled**.
@@ -22,15 +22,16 @@ boundary against an existing one**:
 | `agent-panel` | division of labour · relay · advisory aggregation |
 | `cross-model` | comparison · task allocation · a single specialist critic |
 | `evaluated-real-data` | `method-mining` (and it **entails** `built-system`) |
-| `evaluated-self-demo` | `built-system` · `design-only` |
 | `scaling-dissent` | `risk-routing` — the paper's thesis vs dissent from it |
 | inversion **v2** | inversion **v1** + the §88 leakage test |
+| `survey-input-v2` | `method-self-report` — instrument type **and** what it elicits |
+| `rules-based-checks-v2` | `ai-review` — **who produces the verdict**, code or a model |
 
 Strip the contrast class and the panel over-applies — which is the error corrected **five times** in
 the Accept band (§110, §112a, §130b, §132a, §135c) and **four times** on `cross-model` (§122, §124d,
 §125d, §126c).
 
-**Running the full revised instrument also fails:** it pays for 44 slugs to use 9, and it invites the
+**Running the full revised instrument also fails:** it pays for 44 slugs to use 10, and it invites the
 panel to re-read the old vocabulary under revised wording — the re-adjudication Scott ruled out.
 
 **Adopted: a focused prompt whose OUTPUT SCHEMA admits only the new slugs**, but whose **context
@@ -48,14 +49,17 @@ by instruction.
 - **4 remaining** — `MFSZPSPU` Shi · `GAD5Z8PV` Vargas · `I6FZ5GD2` Wang (Junpeng) ·
   `CTGGMIX9` Wang (Kai)
 
-**Excluded:** all `demote:context` papers (§42 short-circuits tag verification at Context tier).
-**Decision D3 below** asks whether that exclusion should hold.
+**Excluded: all `demote:context` papers** — **CORE ONLY**, confirmed by the arbiter (D3). §42
+short-circuits tag verification at Context tier, and `final:*` is computed from the surviving set only.
+The 4 remaining are included because they are undispositioned; if any later demotes, its v2 proposals
+are simply not carried into `final:*`.
 
 ---
 
-## 3. Slugs in scope (9)
+## 3. Slugs in scope (10)
 
 Five are already in hand-applied use; the panel has **never** seen any of them, all being post-freeze.
+**`evaluated-self-demo` was DROPPED** (arbiter, 2026-08-28) — see §7 D1.
 
 | Slug | Hand-applied so far | Reference case |
 |---|---|---|
@@ -65,9 +69,10 @@ Five are already in hand-applied use; the panel has **never** seen any of them, 
 | `evaluated-synthetic` | 10 | §34/§35 gold set |
 | `evaluated-benchmark` | 9 | §34/§35 gold set · §119b |
 | `evaluated-real-data` | **0** | definition settled F2a; **no instance yet** |
-| `evaluated-self-demo` | **0** | proposed §124d; **not yet coined** — see **D2** |
 | `scaling-dissent` | **0** | replaces deprecated `counterpoint` (§56) |
 | `oversight-scaling-inversion-v2` | **0** | own slug — must NOT reuse v1 (§10.12) |
+| **`survey-input-v2`** | **0** | revised §116a+§121b+§124f — **v2 slug, v1 untouched** |
+| **`rules-based-checks-v2`** | **0** | revised §139a determinism rule — **v2 slug, v1 untouched** |
 
 ---
 
@@ -103,14 +108,6 @@ evaluated**."*
 **Negative:** Liu `9H6FWJME` — 302.6k real commits but **pure mining**, no tool (§125d).
 **Candidate positives:** Minh `74GE3TF7` · Karakaya `5NZ2EDEK` · Liu `6ZC3H7AF` · Lipsanen `7SH86C2W`.
 
-### `evaluated-self-demo` — **pending D2**
-**Fires when:** the **proposers** evaluate their **own artifact** on a case **they constructed**, with
-no external subjects, no benchmark and no ground truth.
-**Grades below `built-system`:** built-system says the thing exists; this says the only evidence is its
-authors' own judgement.
-**Candidates:** Lipsanen `7SH86C2W` (3-arm qualitative self-assessment) · Nimraka `5RKMGRNA` (unit
-tests pass) · Rasheed `DJHG9BBS` (narrative prose, no numbers — the floor).
-
 ### `scaling-dissent`
 **Fires when:** the paper argues delegation of oversight is **unworkable or impermissible as a general
 matter**.
@@ -134,6 +131,43 @@ as the cause**.
 **Run v1 and v2 as separate slugs** so the reclassification delta is a reportable measurement
 (§10.12).
 
+### `survey-input-v2`  *(v1 tags remain untouched)*
+**Both conditions must hold — they are CONJUNCTIVE (§131d isolated them):**
+1. **§116a instrument test** — an actual **survey instrument** exists (Likert-type / structured
+   questionnaire). Semi-structured interviews alone **fail** this.
+2. **§121b elicitation test** — the instrument elicits **stated preferences, adoption or priorities**.
+   An instrument measuring a **construct or performance** (cognitive load, engagement, comprehension,
+   satisfaction, demographics) is **`method-self-report` only**.
+
+**Explicitly NOT criteria — both were proposed and withdrawn (§121b, §124f):**
+- **Centrality** — the survey need not be the paper's main method.
+- **Usefulness to us** — *"it will yield questions for our survey"* is not a criterion; question-seeding
+  is unconstrained by source, so it cannot discriminate.
+
+**Positives:** Kang `7UB2MD8Z` (*"70% agreed"* explanations were wanted — stated preference) · Salem
+`5Q4G4CQB` (five-point Likert on attitudes).
+**Negatives:** Catalan `5BAZZWHG` (Likert exists, but measures **cognitive engagement** — a construct) ·
+Omidvar-Tehrani `4FGIVVTG` (**passes** elicitation, **fails** the instrument test — interviews) ·
+mined-data papers with no instrument at all (the original §116a case).
+**Note:** `survey-input-v2` and `method-self-report` **co-occur freely** — different axes.
+
+### `rules-based-checks-v2`  *(v1 tags remain untouched)*
+**Fires only when the EVALUATION is deterministic** — the verdict is **computed, reproducible, and
+independent of a model's judgement**.
+**Arbiter's rule (§139a):** ***"Rubrics that are LLM evaluated are not rules-based-checks."*** The theme
+names **how the verdict is produced**, not how the criteria are written. **Rule-shaped criteria scored
+by a model are `ai-review`**, however explicit the rubric.
+
+**Positives:** Parris `3SU9QZ6F` (15 deterministic checks) · Töpfer `72W6R4JG` (FCL constraint
+verifier) · Xie `T8E8SCCG` (VibeGuard security gate) · Zhong `96XE669R` (30 deterministic verifiers) ·
+Lipsanen `7SH86C2W` (executable acceptance tests, pass/fail).
+**Negatives:** Sollenberger `GCZQTNBD` (LLM judge) · Raghavendra `8VBH957K` (LLM-scored rubrics) ·
+Sun `V4IRKSFI` (**both** stages are fine-tuned LLMs — *"RuleChecker"* is a **name**, not a mechanism).
+**Trap:** do not tag from the component's name. Check what computes the verdict.
+**Known hybrid — flag, do not force:** Jin `A5WDGC7J` — deterministic test **execution** over
+**GPT-4o-generated** tests. Verdict computed, criteria model-authored. Emit the flag and let the
+arbiter rule; F2 has not settled hybrids.
+
 ### `evaluator-reliability` · `evaluated-synthetic` · `evaluated-benchmark`
 Carry the §34/§35 wording unchanged. `evaluated-benchmark` = measuring **against** a recognised
 third-party benchmark **run as-is** (§119b, §34) — not contributing one, and not author-curated
@@ -143,7 +177,7 @@ material sourced from a well-known pool.
 
 ## 5. Output contract and guardrails
 
-- **Schema admits the 9 slugs only.** Any other slug in output = a validation failure, not a proposal.
+- **Schema admits the 10 slugs only.** Any other slug in output = a validation failure, not a proposal.
 - **Write to `cal:<model>:*` in the normal namespace**, per-vendor, k=3 as usual.
 - **Never touch `cal:human:*`.** Where a slug is already hand-applied (42 instances across 5 slugs),
   the panel proposal is **independent evidence**, not an overwrite. Agreement/disagreement with the
@@ -154,26 +188,30 @@ material sourced from a well-known pool.
 
 ---
 
-## 6. DECISIONS NEEDED BEFORE RUNNING
+## 6. Interaction with closeout B2 / B10
 
-**D1 — Is `evaluated-self-demo` coined?** It has no instance and was deliberately not established on a
-demoted paper (§122f, §124d). Either coin it now with Lipsanen as the seed, or drop it from this run
-and leave the ladder with the gap.
+Running `survey-input-v2` and `rules-based-checks-v2` **changes what those items are**, and for the
+better. B2 (≈10 silent-modal `survey-input`) and B10 (24 papers carrying `rules-based-checks`) were
+planned as **blind human re-checks**. With v2 panel proposals in hand they become **supervised**
+adjudications — the arbiter rules with a proposal in view, as everywhere else in the project, rather
+than re-reading cold.
 
-**D2 — Do revised EXISTING definitions get re-run?** Two changed materially this session:
-- **`survey-input`** — §116a instrument requirement + §121b elicitation test + §124f (utility is not a
-  criterion). Closeout **B2** currently plans a *human* re-check of ~10 silent modals.
-- **`rules-based-checks`** — §139a determinism rule. Closeout **B10** plans a *human* re-check of 24
-  papers.
-Re-running either is **re-adjudication of an existing tag**, which Scott ruled out — but both
-definitions genuinely changed. **Recommend: keep both as human re-checks (B2/B10), exclude from this
-run.** Cheaper, and it preserves the no-re-adjudication rule.
+**Update B2 and B10 to depend on this run**, and note the epistemic change: they are no longer
+independent of the panel.
 
-**D3 — Population: kept only, or kept + Context?** Currently kept-only (68 + 4). Context papers were
-excluded under §42. But several new slugs are *evidence-grade* facets whose whole purpose is grading
-weak work — and the clearest `evaluated-self-demo` candidates (Nimraka, Rasheed) are **demoted**.
-**Recommend: kept-only for `final:*`**, with a **separate, cheap Context pass** if the ladder rungs are
-wanted for the methods chapter.
+---
 
-**D4 — Panel composition.** Standard 3 vendors × k=3 = 9 runs × 72 papers. Fable stays **excluded**
-(§C7 — uniform composition; it was built for a tiebreaker protocol that was dropped). Confirm.
+## 7. DECISIONS — all resolved 2026-08-28
+
+| | Question | Ruling |
+|---|---|---|
+| **D1** | Coin `evaluated-self-demo`? | **NO — dropped.** *"Delete self-demo."* The ladder gap stands unmarked; `built-system` continues to cover "it exists" with no rung below it. |
+| **D2** | Re-run revised existing definitions? | **YES — but as v2 slugs.** *"Run revised but we have to have new 'v2' tags so we don't zap the previous tags."* Same principle as inversion v2: v1 stays, and the **reclassification delta becomes a reportable measurement** instead of being destroyed. |
+| **D3** | Population | **CORE ONLY.** Demoted papers excluded. |
+| **D4** | Panel composition | **Confirmed** — 3 vendors × k=3 = 9 runs/paper × 72 papers. **Fable excluded** (uniform composition; built for a tiebreaker protocol that was dropped). |
+
+**Still blocking the run:** `slr-tools/tag_layer_stats.py` must be fixed first (closeout **D1 tooling**
+— band mis-scoping, wrong source for calibration, mislabelled blind arm) or the **T2** measurement
+point inherits the T0/T1 defects.
+
+**Nothing runs without an explicit authorisation.**
