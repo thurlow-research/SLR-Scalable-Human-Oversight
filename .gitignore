@@ -44,3 +44,7 @@ slr-phase4/data/critique/critique_input.md
 slr-phase4/data/critique/*.raw
 slr-phase4/data/critique/*.err
 slr-phase4/data/critique/gemini_ka*.md
+
+# F2 run outputs are regenerable model output, not source; the instrument and the
+# expected-answers file ARE source and stay tracked.
+slr-phase4/data/tags-f2/

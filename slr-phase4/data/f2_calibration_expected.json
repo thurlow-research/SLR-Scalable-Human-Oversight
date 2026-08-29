@@ -1,0 +1,61 @@
+{
+  "_comment": "Expected panel output for the F2 calibration set. Every entry is an ARBITER-SETTLED answer, not a guess — each cites the ruling that settled it. 'must' = the slug has to appear; 'must_not' = it must not; 'flag' = a flags entry is expected instead of a tag. Slugs not named are unconstrained: these papers were never adjudicated against the other new vocabulary, so silence there is neither right nor wrong and is not scored.",
+  "_scoring": "A definition FAILS calibration if a must is missed or a must_not fires at >=2/3 vendor agreement. A single dissenting vendor is noise; a majority is a definition that reads wrong.",
+  "cases": {
+    "GAD5Z8PV": {
+      "author": "Vargas",
+      "must": ["deterministic-orchestration"],
+      "must_not": ["rules-based-checks-v2"],
+      "why": "§147b. 'a static orchestration model with three fixed phases'; 'orchestrator with fixed prompts, which prevents early' termination. Deterministic orchestration with AI verdicts — the Q2-yes/Q1-no cell. If rules-based-checks-v2 fires here, the panel is conflating orchestration with checking, which is the exact error the facet was coined to prevent."
+    },
+    "UB2EVUFU": {
+      "author": "Lyu",
+      "must": ["deterministic-orchestration"],
+      "must_not": [],
+      "why": "§147b, the MIXED case and the hardest positive. Phase transitions in code — 'the orchestrator does not make software engineering decisions itself' — while manager agents 'dynamically hire, assign' the team. Tests whether the panel asks about CONTROL FLOW rather than whether any model has discretion anywhere. A miss here means precondition 1 is being over-applied."
+    },
+    "72W6R4JG": {
+      "author": "Töpfer",
+      "must": ["rules-based-checks-v2"],
+      "must_not": ["deterministic-orchestration"],
+      "why": "§139a positive — FCL constraint verifier, verdict computed. And the reverse dissociation: essentially no orchestration machinery and no agent discretion to constrain, so precondition 2 of §147b fails."
+    },
+    "3SU9QZ6F": {
+      "author": "Parris",
+      "must": ["rules-based-checks-v2"],
+      "must_not": ["deterministic-orchestration"],
+      "why": "§139a positive — AIRA, 15 deterministic checks. Same dissociation as Töpfer. These two are why the two slugs are separate rather than merged."
+    },
+    "UDVHQ5HR": {
+      "author": "Jin",
+      "must": [],
+      "must_not": ["rules-based-checks-v2"],
+      "flag": ["rules-based-checks-v2"],
+      "why": "§147a — THE HYBRID. Deterministic execution over GPT-4o-generated tests: verdict computed and reproducible but NOT independent of a model's judgement, so it fails §139a's third conjunct. Confirmed by its 88.74% FPR, an LLM error profile. The panel must decline the tag AND raise a flag. Firing the tag means the third conjunct is not being read."
+    },
+    "7UB2MD8Z": {
+      "author": "Kang",
+      "must": ["survey-input-v2"],
+      "must_not": [],
+      "why": "§121b positive — '70% agreed' explanations were wanted; a stated preference about tooling, reported as a result. This is the case that defeated the centrality reading twice (§121b, §145a), so a miss here means centrality has crept back in."
+    },
+    "T72TU8B5": {
+      "author": "Shukla",
+      "must": [],
+      "must_not": ["survey-input-v2"],
+      "why": "§145a — the NEW third condition, and the only paper that tests it in isolation. The N=21 survey passes the instrument test AND the elicitation test ('evolving preferences for level of oversight') but is FORMATIVE: it motivates the design rather than reporting a finding. If this fires, the reported-vs-formative test is not being applied."
+    },
+    "B644HQFS": {
+      "author": "Baltes",
+      "must": [],
+      "must_not": ["survey-input-v2"],
+      "why": "§116a — no instrument at all. 1,154 mined Reddit/HN posts, nobody surveyed. The precondition that survives every version of the definition."
+    },
+    "A6ZE2A26": {
+      "author": "Ullah",
+      "must": ["agent-panel", "cross-model", "evaluator-reliability"],
+      "must_not": [],
+      "why": "§140a — the reference case for the two architecture facets. Unanimous committees of 1–6 judges ruling on the SAME query (a vote is lost, not a job), composed of DISTINCT models with composition measured as a variable, and the paper's subject is the reliability of those juries. Also checks the §146a namespace fix: evaluator-reliability must arrive as a THEME."
+    }
+  }
+}
