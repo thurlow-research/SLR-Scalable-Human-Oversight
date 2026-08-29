@@ -6654,3 +6654,74 @@ reading the paper.**
 
 Pairs with `N7E3MR2V` (§132b), where the enrichment *under*-reported (Citegeist 0 vs GS 2). Between
 them the two cases bound the problem: **the signal is noisy in both directions.**
+
+## 137. A SCOPE demote with sound method behind it; and the corpus's only CONTROLLED speed-vs-quality tradeoff (`FWKYVQPD`, 2026-08-28)
+
+**Paper:** Samsyudin et al., *Vibe coding and AI-led conversational programming: emerging trends in
+software development* (2025-09-17). Quasi-experimental, **N=30**, **within-subjects** across three
+conditions (traditional · AI-assisted/Copilot · vibe coding), ANOVA with effect sizes, plus post-task
+SUS surveys and semi-structured interviews.
+**Written:** primary `quality-debt`; `ai-code-insecurity`; `assistive`, `method-experiment`,
+`method-self-report`, `survey-input`, `risk-quality`, `risk-security`, `intro-framing`,
+`problem-statement-anchor`. **Rejected:** `agentic` (3/3). **`demote:context`.**
+
+### 137a. Demoted on CONTRIBUTION SCOPE, not rigour — a distinction worth preserving
+
+The last four demotes (§129 Naulty, §130 Nimraka, §132 P, §135 Rasheed, §136 Salem) were **evidence
+failures** — things built or claimed without adequate measurement. **This one is different**, and the
+record should not blur them: the method is sound. The failure is that the contribution is normative.
+
+The "three-pillar framework" is three sentences:
+
+> *"1. **Hybrid Integration** – Vibe coding should be used alongside, not in place of, traditional
+> [practices]. 2. **Human Oversight** – Developers must retain responsibility for validating AI
+> outputs. 3. **Context-Aware Deployment** – Adoption should be limited to non-critical
+> applications."*
+
+**"Human Oversight" here means "developers must retain responsibility."** That is the arbiter's
+Bhatnagar ruling verbatim (§106): *"There is no insight about oversight, just that it was important."*
+The paper concedes the status itself — *"a **preliminary** framework."* Hence `intro-framing`:
+confirming a central tenet without advancing it.
+
+**Why the distinction matters for the methods chapter:** "demoted" is doing two different jobs across
+this band — *we cannot trust what it reports* versus *we trust it and it is not about our question*.
+The second is a scope judgement and carries no criticism of the work.
+
+### 137b. The finding that survives — a CONTROLLED speed-vs-quality tradeoff
+
+Checked after the disposition was settled, and better than expected. Within-subjects, same
+participants, same tasks, all three conditions:
+
+| Measure | Vibe coding vs baseline |
+|---|---|
+| Development time | **27% faster** than traditional · **12% faster** than Copilot-assisted |
+| Duplicated logic | **15% more** |
+| Complexity | **18% higher** |
+| Potential vulnerabilities (scanned) | **22% more** |
+
+**You go faster and produce worse code, measured on the same people doing the same tasks.** That is the
+review's premise stated as a controlled result, and it is the **only** controlled version in the
+corpus — Xu, He, Liu (`9H6FWJME`) and Huang all reach compatible conclusions by **mining**, which
+cannot rule out selection effects (who adopts AI, on what kind of work). A within-subjects design can.
+
+**Specific corroboration:** the **15% more duplicated logic** is the experimental counterpart to
+**Huang** (`4T5QFWZE`, *More code, less reuse*), which mined the same phenomenon. Two independent
+method families agreeing on reuse collapse is worth more than either alone.
+
+`problem-statement-anchor` applied on this basis — **added beyond the approved tag set**, on the
+strength of numbers checked after the arbiter's authorisation, and flagged as such.
+
+**Open: this makes a case for Dissertation Supporting** that the disposition did not anticipate. The
+counter-argument is N=30 with students mixed in and a *"vibe coding simulation"* rather than
+production work. Left off pending the arbiter's call.
+
+### 137c. `agentic` REJECTED at 3/3 — Waseem rule, fourth application
+
+The experimental condition is *"Providing task instructions in natural language to the AI system"* —
+vibe coding, which the arbiter ruled is **steering, not agentic** (Waseem). `assistive` is correct for
+the Copilot baseline arm. Fourth application after Waseem, Catalan and Naqvi (§128c).
+
+**Pattern worth noting for the F2 mode-pair wording:** the panel has now put `agentic` at 3/3 on four
+separate vibe-coding papers. It appears to key on *"AI writes the code"* rather than on **who
+initiates and at what granularity the work is reviewable** — which is what the pair actually cuts on.
+The definition should lead with the initiation/granularity test rather than mentioning it mid-entry.
