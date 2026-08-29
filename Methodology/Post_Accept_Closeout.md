@@ -19,7 +19,26 @@ quoted anywhere until fixed.
 
 ## A. Data integrity — do these FIRST, everything downstream depends on them
 
-### A1. Set A still holds the v1 model run in Zotero ⚠️ **highest priority**
+### A1. Set A v1 → v2.13 supersession ✅ **DONE 2026-08-29**
+**Executed** with `slr-tools/supersede_model_run.py --collection JFN8693L --prefix v1
+--new-run slr-phase4/data/tags-v213 --commit` after a library backup. **10 items · 233 tags renamed to
+`v1_` · 255 written.** Verified: **0 stray old-run tags** in the live namespace across all 10; the
+`cal:gemini-fast:*` near-miss preserved as 8 `v1_cal:gemini-fast:` tags with no bare remnant; human
+and demote layer **unchanged at 85 tags**; instrument guard **cleared** (was 0.0% match).
+
+**Result — the anchoring contrast is now computable from Zotero**, which was the point:
+
+| Band | Origination |
+|---|---|
+| Set A (model-first) | **12.7%** *(was a meaningless 54.9% — v1 panel vs v2.13 human layer)* |
+| Set B (**blind**) | **9.5%** |
+
+**The blind arm originates LESS than the model-first arm — no anchoring effect detectable.** Retires
+the 80.9% artifact and supplies §11.7's replacement claim (closeout **C1**).
+Snapshot: `tag_layer_stats_T2prep-b_2026-08-29.json`.
+
+*Original item, kept for the record:*
+### A1-original. Set A still holds the v1 model run in Zotero
 `01-AI Calibration Run` [JFN8693L], all 10 papers. Complete 3-vendor **v2.13** data exists on disk
 (`slr-phase4/data/tags-v213/{opus,codex,gemini}/`) and was never written back. The v2.13 re-run
 happened *because* the instrument evolved (calibration doc §5: *"Set A re-run included because the
