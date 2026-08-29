@@ -267,6 +267,26 @@ everywhere else: no panel proposal to react to, no contrast class in view, no ad
 **Priority:** the 7 `agent-panel` and 5 `cross-model` instances, checked against §140a's discriminator
 (*same question + explicit aggregation rule* / *distinct models checking each other, not comparing*).
 
+### B13. Set A — 7 unconsidered proposals from the v2.13 write-back (§144b)
+Set A was tagged **model-first** with **v1** proposals in view; the A1 supersession replaced them with
+**v2.13** proposals the arbiter never saw. Under the arbitration rule (kept papers, changed tags →
+reconsider the tags) these are reviewable. Demoted Set A papers are **excluded** — demotes are final.
+
+Filtered to exclude already-endorsed, already-rejected and deprecated vocabulary — **4 papers,
+7 proposals**:
+
+- `Z8TPRNEU` Huang — `risk-overreliance`, `risk-quality`, `oversight-explanation`, `rules-based-checks`
+- `UB2EVUFU` Lyu — `oversight-explanation`
+- `T72TU8B5` Shukla (Hedwig) — `steering`
+- `22JBEZNK` Virk — `risk-quality`
+
+Nothing new on `VG6CIDQW`, `F9JM9CI6`, `T8E8SCCG`. Jin (`UDVHQ5HR`) excluded — `framework` already
+rejected (§120b), `counterpoint` deprecated (B3).
+
+**Note the mirror effect:** 15 v1 modal proposals are no longer modal under v2.13. Endorsements resting
+on those are judgements, not vote-counts, so they stand — but this is why Set A's origination moved
+54.9% → 12.7%, and it belongs in the calibration write-up.
+
 ### B8. Verify every item with NO `cal:human` tag — confirm it was genuinely never examined
 **Scott's rule (2026-08-28):** *"we've modified tags on every item, so if there aren't any with human
 tags, they are highly unlikely to have been examined."* Every paper that received a pass got **at

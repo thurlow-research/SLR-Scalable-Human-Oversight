@@ -7182,3 +7182,74 @@ partials resolved with their prior narrow-axis rulings preserved (McAleese §126
 Baseline snapshot before the restricted re-run: `tag_layer_stats_T2prep_2026-08-29.json`. Set A remains
 flagged by the instrument guard at **0.0% match** — the v1→v2.13 supersession (closeout **A1**) is now
 the top of the queue, tooling built and dry-run verified.
+
+## 144. Jin CONSOLIDATED — `A5WDGC7J` merged into `UDVHQ5HR`; and Set A's write-back surfaced 7 unconsidered proposals (2026-08-29)
+
+### 144a. KEY CHANGE — cite `UDVHQ5HR`, not `A5WDGC7J`
+
+**Two records, one study.** `UDVHQ5HR` (arXiv 2508.12358, 2025-08, *Uncovering systematic failures of
+LLMs in verifying code against natural language specifications*) and `A5WDGC7J` (**Automated Software
+Engineering**, 2026-06, *Are LLMs reliable code reviewers? Systematic overcorrection in requirement
+conformance judgement*) are the same work by **Haolin Jin & Huaming Chen** — three verbatim shared
+runs including the entire 199-character opening, identical core finding and identical surprising
+result. The journal version extends it, replacing *"two improved prompting strategies"* with the
+**Fix-guided Verification Filter**.
+
+**Missed by dedupe** because the discovery streams differ (`source:arxiv` query vs `source:snowball`),
+the titles differ, and the item types differed (`preprint` vs `journalArticle` — Zotero merges only
+within a type).
+
+> ### ⚠ **`A5WDGC7J` IS NOW A TRASHED KEY. The surviving record is `UDVHQ5HR`.**
+> **~35 references across 13 documents still cite `A5WDGC7J`** — including §120 (the original
+> adjudication), §125, §133, §139, §143, the closeout, the re-run spec, the harvest, and the HOS issue
+> draft. **These are NOT being rewritten.** They record what was written at the time, and editing them
+> would falsify the case law (§548, layered history). **This entry is the mapping: `A5WDGC7J` →
+> `UDVHQ5HR`.** Use the surviving key for anything new.
+
+**Consolidation performed** per the dupe protocol — replicate tags on both, align metadata for client
+detection, arbiter merges in the client:
+- Full **73-tag union** across both records, with three deliberate exceptions.
+- **`demote:context` REMOVED** before the merge. Zotero unions tags, so it would have flipped the
+  Core + Dissertation Primary record to Context. Arbiter: *"We've already decided to keep the updated
+  paper, so delete the demote tag."* **The demote applied to the preprint's content; the study's
+  disposition follows the fuller journal version.** Not a reconsideration — the one-record-per-study
+  rule, not a tier reversal.
+- **Directional lineage** (`superseded-by:` / `supersedes:`) kept one per record pre-merge, then
+  **both removed post-merge** — with one record they were self-referential, and that is the circular-
+  reference defect the library has already had to clean up once. Provenance now carried by
+  `orig-type:preprint`, `orig-title:`, and Extra (`arXiv:2508.12358`, `preprint-date: 2025-08-17`).
+- **Extra restored after the merge:** the master's Extra won, losing `S2:672b87cc…` and
+  **`arXiv:2603.00539`** — a *third* posting, the journal-era arXiv version. Both re-added, plus
+  `merged-from: A5WDGC7J`.
+
+**CORPUS COUNT: 147 unique studies — 71 surviving, 76 demoted.** PRISMA must report this dedupe; both
+`source:arxiv` and `source:snowball` are retained on the survivor so neither stream's count changes.
+
+### 144b. Set A write-back surfaced 7 proposals the arbiter never saw
+
+Set A was tagged **model-first** — the v1 model tags were present during the arbiter's pass. The
+supersession replaced them with **v2.13** proposals that were never in view. Under the arbitration rule
+(*kept papers whose tags change in a re-run get reconsidered; demotes do not*), that makes these
+reviewable.
+
+**After excluding demoted papers, already-endorsed tags, already-rejected tags and deprecated
+vocabulary: 4 papers, 7 proposals.**
+
+- `Z8TPRNEU` Huang — `risk-overreliance` · `risk-quality` · `oversight-explanation` · `rules-based-checks`
+- `UB2EVUFU` Lyu — `oversight-explanation`
+- `T72TU8B5` Shukla (Hedwig) — `steering`
+- `22JBEZNK` Virk — `risk-quality`
+
+**Three kept papers have nothing new**: `VG6CIDQW` Goel · `F9JM9CI6` Heander · `T8E8SCCG` Xie.
+
+**Jin dropped out of the list entirely** — its two apparently-new proposals were `framework`, already
+**rejected** at §120b, and `counterpoint`, deprecated and handled by the B3 sweep. *(A first pass
+counted it as reviewable; the filter had excluded human endorsements but not human rejections.)*
+
+**The mirror-image effect, smaller but real:** **15 v1 modal proposals are no longer modal under
+v2.13**. Where the arbiter *endorsed* one of those, the endorsement now rests on evidence the current
+instrument does not reproduce. Endorsements are judgements rather than vote-counts, so this does not
+invalidate them — but it is the reason Set A's origination figure moved from 54.9% to **12.7%**, and it
+should be stated when the calibration numbers are reported.
+
+**Added to the closeout as B13.**
