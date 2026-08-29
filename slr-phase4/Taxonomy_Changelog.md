@@ -6725,3 +6725,68 @@ the Copilot baseline arm. Fourth application after Waseem, Catalan and Naqvi (§
 separate vibe-coding papers. It appears to key on *"AI writes the code"* rather than on **who
 initiates and at what granularity the work is reviewable** — which is what the pair actually cuts on.
 The definition should lead with the initiation/granularity test rather than mentioning it mid-entry.
+
+## 138. FORM FACETS REQUIRE A PROPOSED MECHANISM — and a productivity case study with no control (`D87A4CAS`, 2026-08-28)
+
+**Paper:** Şeker et al., *Enhancing software development with large language models: a case study of
+kolay.ai*, **Electrica** (2026).
+**Written:** primary `hitl-workflow`; `rules-based-checks`; `assistive`, `steering`, `risk-quality`,
+`method-field-study`, `method-self-report`, `intro-framing`.
+**Rejected:** `built-system` (2/3), `framework` (2/3), `method-mining` (3/3), `agentic` (2/3).
+**`demote:context`, no dissertation role.**
+
+### 138a. NEW RULE — the form cluster presupposes a proposed mechanism
+
+Four modal rejections is unusual, and two of them establish a rule worth stating generally.
+
+**`built-system` and `framework` were rejected because there is nothing for them to describe.** The
+authors built **Kolay.ai — a commercial product**, not a contributed oversight artifact. The paper
+proposes no mechanism; it reports on adopting existing tools.
+
+> **Rule:** the **form/maturity cluster** (`design-only` · `framework` · `built-system` · `adopted`)
+> describes **the paper's proposed contribution**. Where a paper proposes no mechanism, **none of them
+> applies** — regardless of how much software exists in the story. The instrument already scopes
+> `design-only` this way (*"Only for papers that **propose** something"*); this extends the same
+> scoping to the rest of the cluster, which was implicit and is now explicit.
+
+**Why the panel got it wrong, and why it will recur:** the models key on *"a system exists"* rather than
+*"a mechanism is offered."* Every commercial case study will trip this. Add to the F2 wording, and to
+the closeout sweep alongside the §124a altitude check.
+
+**`method-mining` (3/3) rejected** — there is no repository, commit or artifact analysis anywhere in
+the paper. A straightforward unanimous error.
+
+**`agentic` (2/3) rejected** — fifth application of the Waseem rule; this is prompt-driven delegation,
+carried by `assistive` + `steering` (both 3/3).
+
+### 138b. Demoted — standard practice described, and figures that cannot be checked
+
+**The HITL content is practice, not contribution:** *"**HITL review:** Regular reviews were conducted
+to correct hallucinations and inconsistencies in LLM-generated outputs"* · *"HITL validations and
+post-sprint evaluations"* · *"manual oversight remains essential."* Bhatnagar (§106) again — *"no
+insight about oversight, just that it was important."* Hence `intro-framing`.
+
+**One near-miss:** *"routine coding tasks were **delegated to LLMs**, while more complex tasks"* went to
+humans. That is allocation by complexity — the *shape* of routing — but a **generic statement with no
+criteria**, which is the arbiter's Branco rule: *"If there is logic setup… then it might qualify. If it
+is a generic statement, not so much."* No `risk-routing`.
+
+**The productivity figures are unverifiable.** *"30–40% reduction in development time"* and *"30%
+reduction in coding errors"* come from a **single self-reported project with no control** — there is no
+baseline project to compare against. The same figures appear in the **introduction** as a general claim
+and in the **results** as this project's outcome, leaving provenance ambiguous (the §136a pattern,
+though milder).
+
+**`problem-statement-anchor` deliberately NOT applied** — the contrast with Samsyudin (§137b) is the
+point: that paper earned the facet on a **within-subjects** comparison; this one reports uncontrolled
+self-assessment of the authors' own project. **Same headline direction, incomparable evidentiary
+weight.** Anchors must be defensible under scrutiny, since they are the numbers most likely to be
+quoted.
+
+### 138c. `method-field-study` KEPT, with the contamination noted
+
+A real project in a real setting, so the facet applies — but it is **the authors documenting their own
+project**, so the "field" is observed by interested parties, and `method-self-report` (3/3) co-applies
+for that reason. Distinguish from Lipsanen (§124c), where the method facets were **rejected** because
+the authors evaluated their **own proposed framework** on a case they built: there, results described
+the *tool*; here they describe a *real delivery project*, which is the world — however partially.
