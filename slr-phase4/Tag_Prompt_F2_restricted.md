@@ -78,11 +78,39 @@ frozen v1 tags and must not be touched.
 
 ---
 
-## 3. ENTAILMENT
+## 3. THE `evaluated-*` LADDER — read this before emitting any of the three
 
-**`evaluated-real-data` ⇒ the paper built something.** If no tool, system, pipeline or prototype was
-built by the authors, `evaluated-real-data` **cannot** fire, whatever data was used. This is the single
-hard entailment in the set; check it before emitting.
+`evaluated-synthetic`, `evaluated-real-data` and `evaluated-benchmark` are **not three independent
+flags.** They are **ordered rungs on one evidence-strength ladder, inside `built-system`**:
+
+> self-tests < **`evaluated-synthetic`** < **`evaluated-real-data`** < **`evaluated-benchmark`** <
+> field study < adopted
+
+**Three consequences, all binding:**
+
+1. **All three entail `built-system`.** They describe how the authors' *own system* was evaluated. If
+   the authors built nothing, **no rung can fire**, whatever data appears in the paper.
+2. **One evaluation event lands on exactly one rung.** Do not emit two rungs for the same evaluation.
+   A paper may legitimately carry two **only** when it ran **separate evaluation events** — say a
+   synthetic workload *and* a benchmark run. Say which event is which in the rationale.
+3. **The world-or-tool fork gates entry to the ladder at all.** The ladder is deliberately **not** a
+   `method-*` value, because these results describe **the tool**. If the results describe **the
+   world** — real participants performing tasks, findings about people or repositories — **the ladder
+   does not apply**, and the correct answer is a `method-*` facet you cannot emit. **Say nothing.**
+
+> ### ⚠ THE MOST COMMON MACHINE ERROR IN THIS PROJECT, WITH NUMBERS
+>
+> Panels routinely co-propose `built-system` + `method-experiment` for a single tool-side evaluation.
+> Measured: **21 of 128 sweep papers — 38% of that band's built-system papers.** In the 20
+> human-verified gold papers, **zero** such co-occurrences survived. It is a machine-only confusion
+> that **resolves correctly only on a full-text read**.
+>
+> The trap runs both ways, and this run can only make the second error:
+> - *"The authors constructed the tasks, so it's synthetic"* — **wrong** if a **real human subject
+>   then performed them.** Curating task stimuli does not earn `evaluated-synthetic` once a real
+>   subject is in the loop. That is a study of the world.
+> - **Before emitting any rung, answer in the rationale: whose properties do the results describe —
+>   the tool's, or the world's?** Only the tool's admits a rung.
 
 ---
 
@@ -150,39 +178,68 @@ evaluator's reliability.
 
 ---
 
-### `evaluated-real-data` *(facet)*
+### `evaluated-synthetic` *(facet — ladder rung; see §3 first)*
 
-**Definition (arbiter, F2a):** *"a **tool is developed** and that tool is **evaluated using real data**.
-Tool could be a pipeline. In mining, pre-existing data is mined for insights. **No new tool is being
-evaluated.**"*
+**Fires when:** the authors' own system is evaluated against **self-constructed, non-standardized
+scenarios or workloads** — constructed tasks, mock data — rather than a standardized third-party
+benchmark or a real deployment. **The authors invented their own test material.**
 
-**Two conditions, both required:**
-1. The authors **built** something (⇒ see §3);
-2. They **evaluated it** on **real-world** data — production repos, real commits, real issues, real
-   incidents — as opposed to synthetic or benchmark material.
+**The system really runs and produces real outputs.** Only the *workload* is constructed, never the
+mechanism's results. A demo that **fabricates the mechanism's own outputs** is `design-only` and keeps
+the paper off `built-system` entirely — a different and lower judgement.
 
-**Negative:** Liu `9H6FWJME` — 302.6k real commits, but **pure mining**. Nothing was built, so nothing
-was evaluated. Real data alone never suffices.
-
-**Candidate positives to assess on their merits:** Minh `74GE3TF7` · Karakaya `5NZ2EDEK` ·
-Liu `6ZC3H7AF` · Lipsanen `7SH86C2W`. *(No confirmed instance existed when the definition was settled —
-this slug may legitimately come back empty.)*
+**Positive:** `HBR7QZ2C` — the authors' policy engine run over three self-constructed workloads
+(200–300 tasks each), outcomes scored post-hoc. No real users, no deployment, no benchmark. *The panel
+proposed `method-experiment` here and was wrong* — the results describe the tool.
 
 ---
 
-### `evaluated-synthetic` · `evaluated-benchmark` *(facets)*
+### `evaluated-real-data` *(facet — ladder rung; see §3 first)*
 
-Carry the §34/§35 wording unchanged.
+**Fires when:** the authors' own system is evaluated on material that is **real-world-sourced**
+— production logs, CVE/NVD records, mined repository artifacts — **and** is not administered as a
+recognized third-party protocol. It sits **between** the other two rungs: real-world material is
+stronger evidence than self-invented cases, weaker than benchmark administration.
 
-- **`evaluated-synthetic`** — evaluated on **generated or constructed** material (injected faults,
-  synthesised tasks, model-authored test cases) rather than material drawn from real practice.
-- **`evaluated-benchmark`** — measured **against a recognised third-party benchmark run as-is**
-  (SWE-bench, Defects4J, HumanEval and similar). **Not** contributing a benchmark; **not**
-  author-curated material merely *sourced* from a well-known pool (§119b).
+**Arbiter's framing (F2a):** *"a **tool is developed** and that tool is **evaluated using real data**.
+Tool could be a pipeline. In mining, pre-existing data is mined for insights. **No new tool is being
+evaluated.**"*
 
-> **TRAP.** Running your own system on a standardised third-party benchmark is still **tool results**
-> and produces no method facet — but it does fire `evaluated-benchmark`. These are different questions;
-> do not conflate "what kind of evidence" with "what was it run on."
+**Motivating instance:** `R9CDT9KB` (Mahmud) — a 1,979-example corpus **the authors assembled from real
+CVE/NVD records**, with synthetic material deliberately capped below 5%. Neither neighbouring rung fits:
+they did not administer a third-party protocol, and they went out of their way *not* to invent their
+data.
+
+**Negative:** Liu `9H6FWJME` — 302.6k real commits, but **pure mining**. Nothing was built, so nothing
+was evaluated. **Real data alone never suffices.**
+
+**Other candidates, to assess on their merits:** Minh `74GE3TF7` · Karakaya `5NZ2EDEK` ·
+Liu `6ZC3H7AF` · Lipsanen `7SH86C2W`.
+
+> **OPEN QUESTION — flag, do not resolve.** Where material is real-world-*sourced* but heavily
+> **author-curated**, it is unsettled whether **provenance** or **curation** decides. No test case
+> exists in the corpus. If you meet one, **emit a `flags` entry rather than a tag.**
+
+---
+
+### `evaluated-benchmark` *(facet — ladder rung; see §3 first)*
+
+**Fires when:** the authors' own system is evaluated **under a recognized third-party benchmark's own
+fixed protocol** — its **established task set *and* its established scoring methodology** — run as-is.
+
+**Positive:** `UB2EVUFU` on ProjDevBench. DVNA is the same shape.
+
+**"Standardized" is strict.** It means **administering the benchmark's protocol**, not *"sourced from a
+platform that happens to have difficulty tiers."* **Curating raw material from a well-known pool is
+authored curation, not benchmark administration.** `ZBF86IJM` is the worked negative: LeetCode-derived
+material, but the authors hand-picked 15 candidates, generated their own completions, piloted with 3
+participants, and pruned to 3 by their own criteria. That is not benchmark administration — and in fact
+`ZBF86IJM` lands on **no rung at all**, because real participants performed the tasks and the results
+describe the world (§3).
+
+**Also not this slug:** the paper *being* a benchmark study **of third-party systems**. That is
+`method-experiment` under subjects-may-be-systems — the results describe those systems, not a tool the
+authors built.
 
 ---
 
