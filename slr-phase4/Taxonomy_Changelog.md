@@ -5882,3 +5882,89 @@ in the retained 21-item gold set.
 never considered) but it does **not** imply "unexamined." Closeout B7 amended accordingly: the four
 partials must each be checked for a **prior narrow-axis ruling before being re-opened**, or a
 deliberate adjudication risks being overwritten.
+
+## 127. The corpus's first BUILT-AND-EVALUATED router; and a second 3/3 inversion rejected on population mismatch (`74GE3TF7`, 2026-08-28)
+
+**Paper:** Minh, Dao Sy Duy et al., *Early-Stage Prediction of Review Effort in AI-Generated Pull
+Requests*, arXiv (2026-01-27). 33,707 agent-authored PRs (MSR 2026 Mining Challenge).
+**Written:** primary `risk-routing`; `agentic`, `method-mining`, `built-system`, `routing-signal`,
+`problem-statement-anchor`. **Rejected:** `oversight-scaling-inversion` (**3/3**).
+**SLR: Core · Dissertation: PRIMARY.**
+
+### 127a. `risk-routing` — the strongest instance in the corpus, and the first that is BUILT
+
+Every prior `risk-routing` candidate this session failed on the same defect: the routing was
+**recommended, not built**. Karakaya proposed triage-by-score and never implemented it (§122d); Kang
+validated a confidence signal but gated nothing (§121c). **This paper builds and evaluates the gate.**
+
+- **Signal:** 35 static, creation-time features (Intent / Context / Complexity) — available *before*
+  human review begins.
+- **Model:** LightGBM, **AUC 0.958** on chronological splits, against CodeBERT at **0.52**.
+- **Generalisation tested:** repo-disjoint **AUC ≈ 0.83**, *"validating that [the signals are general]
+  rather than repo-specific"* — it is not memorising repositories.
+- **The allocation result:** *"At a **20% review budget**… captures **69% of the high-effort PRs**."*
+- **Policy, with thresholds:** *"We recommend a **Gated Triage Policy**: treat agents like junior
+  interns, not senior engineers. Flag complex PRs (>500 additions), fast-fail those without plans, and
+  enforce strict timeouts (14 days) to prevent backlog pollution."*
+
+All four §107e clauses pass: computed (not human discretion), per-PR (not between-unit), per-item (not
+aggregate tendency), and a gate rides on it (not throttling).
+
+**Why it matters beyond the tag — this is THROUGHPUT scaling, stated as a budget.** §126b recorded that
+the corpus supplies configuration performance in quantity and allocation rules almost never. This is
+the allocation paper: it takes a **fixed human review budget** as the constraint and asks what fraction
+of the expensive tail it can capture. That is the review's own question, answered with a number.
+
+### 127b. `oversight-scaling-inversion` REJECTED at 3/3 — a population mismatch, not a volume argument
+
+Second unanimous inversion rejection in the band (cf. §123a on AIDev), and the reasoning is finer here
+because a genuine §88 route (i) argument exists:
+
+- **For:** *"28.3% of PRs merge instantly"* — merged in under a minute is **observed review absence**,
+  at scale, which is exactly route (i).
+- **Against, and decisive:** the instantly-merged PRs are the *"narrow-scope updates (median 68 total
+  changes vs 104)"* — merged fast because **trivial**, not because maintainers are swamped. The
+  overload symptom is **ghosting**, and **ghosted PRs never merge**.
+
+**The review-absence and the overload land on different PR populations, which breaks the causal link
+§88 requires.** Nothing risky escapes: the cheap work is waved through appropriately and the expensive
+work stalls in the open. **Arbiter concurred:** *"I don't see oversight inversion on this one."*
+
+**Rule this sharpens for closeout B1:** route (i) requires review absence **caused by** the overload,
+on the **same** population that the overload afflicts. Observed absence plus observed overload in the
+same paper is **not** sufficient if they fall on disjoint sets. Add this to the B1 sweep alongside
+§123a's volume-for-leakage substitution — **two distinct failure modes now identified**, and both
+produced 3/3 panel agreement.
+
+### 127c. The arbiter's extrapolation is IN the paper — as its own limitation
+
+The arbiter, before reading the discussion: *"Even if agents are doing the reviewing, we could end up
+in the same sad state of abandoned PRs because the coder agent couldn't deal with the feedback."*
+
+The paper found exactly this, and calls it a limitation of its own model:
+
+> *"We manually inspected false negatives and found a pattern of '**silent abandonment**': small PRs
+> that look safe (no CI touches) but **stall because the agent cannot handle subjective feedback**.
+> This implies that while we can catch the 'explosive' failures, the '**silent' failures require
+> behavioral monitoring**."*
+
+**Structural gates cannot see it.** The failure is not in the artifact — the PR looks fine — it is in
+the agent's *inability to iterate* under feedback. **Replacing the human reviewer with an agent
+reviewer does not fix this**, because the defect is on the authoring side of the loop. Logged in
+`Emerging_Themes.md` as a named limit on full delegation.
+
+Their own proposed fixes are worth carrying: *"**semantic risk models** to catch subtle logic bugs that
+structural gates miss"* and *"**cryptographic identity to enable reputation tracking**"* — a per-agent
+reputation signal, which is a routing input the corpus has nowhere else.
+
+### 127d. `evaluated-real-data` — the first genuinely qualifying seed, HELD pending the arbiter's call
+
+Under the settled F2a definition (*a tool is developed and that tool is evaluated using real data*),
+this is the first clean instance: the Circuit Breaker is a built model evaluated on 33,707 **real**
+agent PRs, not a benchmark or a synthetic corpus. The entailment holds — `evaluated-real-data` ⇒
+`built-system`, and `built-system` is written.
+
+It is also the first candidate at **Core + Dissertation Primary**, i.e. the grade §122f argued a
+slug's first instance should be established on. The three earlier candidates were all demoted or
+Supporting and were deferred for that reason. **Not written — awaiting an explicit call on whether to
+apply it here or hold the whole ladder for the F2 graft.**
