@@ -109,8 +109,15 @@ targeted earlier write, not an Accept-band pass:
 | Ullah, *Vibe coding on trial…* | `A6ZE2A26` | 1 | 5 |
 | Wang (Junpeng), *Illuminating LLM coding agents* | `I6FZ5GD2` | 5 | 4 |
 
-**They need a real pass**, and they are not in the alphabetical queue because they already look
-"started."
+**They need a real pass.**
+
+> **CORRECTED 2026-08-28 (arbiter).** An earlier version of this item claimed they *"sit outside the
+> alphabetical queue."* **Wrong** — Shi (S), Ullah (U) and Wang (W) all sort **after** the current
+> position and will surface normally in the alphabetical walk. **No special scheduling is needed.**
+> The actual risk is narrower: when reached, they may look *"already started"* and be waved through.
+> Treat each as a **full pass**, and check for a prior narrow-axis ruling first (§126e).
+> The only place they stay genuinely invisible is a **query-based** sweep keyed on "no `cal:human`
+> tag" — which is why **B8** exists and why the two items are separate.
 
 > **AMENDED 2026-08-28 (§126e). A "partial" may be a DELIBERATE narrow-axis pass, not an unexamined
 > paper.** McAleese was worked and closed on 2026-08-28: its two tags turned out to be an adjudicated
