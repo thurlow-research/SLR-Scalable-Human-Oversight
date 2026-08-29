@@ -6852,3 +6852,94 @@ gates. **The re-check population is papers where the evaluator is plausibly a mo
 should decide whether hybrid pipelines take both tags, the deterministic one, or a new slug.
 
 Added to the closeout as **B10**.
+
+## 140. THE PANEL PAPER — `agent-panel` and `cross-model` get their reference instance, and the correlation dilemma is answered (`A6ZE2A26`, 2026-08-28)
+
+**Paper:** Ullah et al., *Vibe coding on trial: operating characteristics of unanimous LLM juries*,
+arXiv (2026-02-12). 15 open models benchmarked on 82 MySQL text-to-SQL tasks under an
+execution-grounded protocol; **unanimous committees of size 1–6** built from the top 6; TPR / FPR /
+Youden's J reported per size **and per composition**.
+**Written:** primary `ai-review`; `risk-routing`; **`agent-panel`**, **`cross-model`**,
+`routing-signal`, `evaluator-reliability`, `metrics`, `built-system`, `method-experiment`, `agentic`,
+`risk-quality`. **Preserved untouched:** `evaluated-synthetic` (§34/§35 gold-set ruling).
+**SLR: Core · Dissertation: PRIMARY.** Arbiter: *"Ullah is gold. Our agent panel and cross vendor
+wrapped up together."*
+
+### 140a. The reference instance both staged slugs were missing
+
+`agent-panel` and `cross-model` have been staged since §33 and applied by hand without a defining
+case. **Four consecutive papers were declined** on `cross-model` — Karakaya (comparison), Lipsanen
+(task allocation), Liu (neither), McAleese (§126c, one fine-tuned critic) — and five on `agent-panel`
+as division of labour (§110, §112a, §130b, §132a, §135c). **This is the positive case for both:**
+
+- **`agent-panel`** — N judges answer **the same question** on the same artifact, aggregated by an
+  explicit rule (**unanimity to accept**). Redundant, not specialised. Removing a member removes a
+  **vote**, not a job.
+- **`cross-model`** — committees composed of **distinct models**, and composition is a measured
+  variable rather than an implementation detail.
+
+**Write both into the F2 definitions from this paper**, not from the multi-agent code-generation
+literature (MetaGPT/ChatDev/AgentCoder), which is division of labour throughout.
+
+### 140b. The correlation dilemma — ANSWERED, and the answer is composition
+
+§(topology entry) posed the dilemma facing conjunctive gate-sets: **independent errors compound
+across vetoes; correlated errors make unanimity decorative** (§11.4's 9/9 on a wrong tag). Nothing in
+the corpus measured the correlation between judges. **This paper does:**
+
+> *"**errors across judges can be correlated**"* · *"identify **complementary versus redundant** judge
+> combinations"* · *"the exact **committee composition matters significantly**"* · *"where
+> **conservatism delivers diminishing returns**"*
+
+**The resolution: the variable is composition, not count.** You do not add judges, you add judges that
+**fail differently** — and the paper identifies which combinations are complementary versus redundant.
+That reframes the design question from *"how many reviewers?"* to *"which reviewers fail
+independently?"*, which is answerable and currently unasked in practice.
+
+**Consequence for the arbiter's architecture** (cross-vendor panel, specialists must all be satisfied):
+the cross-vendor instinct is right — Yu (`PPMTM4DG`) establishes a model cannot check itself — but
+**vendor diversity is a proxy for error diversity, not a guarantee of it.** §11.4 is the standing
+counter-example: three vendors, three runs each, **9/9 wrong together**, because they shared a
+misreading of the *instrument*. **Decorrelating the model does not decorrelate the prompt.** Ullah's
+contribution is that complementarity is **measurable**, so it can be selected for rather than assumed.
+
+### 140c. `risk-routing` ENDORSED at 1/3 — TPR *is* the human-review-avoided measure
+
+The paper's own framing is this review's problem statement almost verbatim:
+
+> *"What is missing is **a reliable way to tell which model written queries are safe to accept without
+> sending everything to a human**."*
+
+And the metrics are defined in exactly those terms: *"**TPR** captures utility: the ability to accept
+correct SQL (**avoiding unnecessary human review**). **FPR** captures risk: the tendency to accept
+incorrect SQL."*
+
+All four §107e clauses pass — computed, per-item, within-unit, not human discretion — and a real gate
+rides on it. **Second built-and-evaluated router in the corpus after Minh (`74GE3TF7`, §127a)**, and
+the first where the router *is* a panel. Together they are the corpus's only quantified
+**throughput-scaling** evidence (§126b).
+
+**Direction of failure is the arbiter's, not BitsAI-CR's:** unanimity **to accept** means the default
+is **reject** — *"safety first deployments where **false accepts are more costly than false
+rejects**."* Fail-closed toward the codebase, which is the HOS orientation (§133e). The cost lands as
+false rejects rising with committee size, which the paper measures as diminishing returns rather than
+assuming away.
+
+### 140d. The limitation that must travel with the numbers
+
+**Domain: MySQL text-to-SQL**, where correctness is **decidable by execution** against ten
+independently seeded databases. That is precisely what makes clean TPR/FPR measurement possible — and
+precisely what is **absent** in general code review, where there is no oracle (Karakaya §122a: even
+the human labels are contaminated).
+
+**The method transfers; the numbers do not.** Cite Ullah for the *operating-characteristic framing*,
+the *composition-over-count finding*, and the *committee-size curve* — not for specific TPR/FPR values
+as expected performance in an unoracled setting.
+
+### 140e. B7 partial closed — prior ruling preserved
+
+Third of the four §126e partials to be resolved. Its single existing tag,
+`cal:human:facet:evaluated-synthetic`, is an adjudicated §34/§35 gold-set ruling (author-constructed
+82-task corpus) and was **left untouched**; the theme layer and primary were added around it. The
+§126e procedure worked as intended: check for a prior narrow-axis ruling before re-opening.
+Remaining partials: `MFSZPSPU` Shi · `I6FZ5GD2` Wang (Junpeng).
