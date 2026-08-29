@@ -2173,3 +2173,62 @@ third-party packages, not AI-generated code; supply-chain security of agent *inp
 explicitly ruled **no dissertation role**. Recorded because the *shape* — upstream certification as an
 alternative to per-output review — is a real point on the oversight design space and may return if
 the scope ever widens to agent tooling.
+
+## Quality scaling vs THROUGHPUT scaling — two things "scalable oversight" is being used to mean (2026-08-28)
+
+Forced by the arbiter's devil's-advocate question on McAleese (`NRVQT89E`, CriticGPT): *"Wouldn't this
+say that scaling human oversight isn't possible since you still need a human (in partnership with AI)
+to look at everything?"*
+
+The question exposes a **term collision** that has to be resolved before the corpus is synthesised:
+
+| | meaning | the question it answers |
+|---|---|---|
+| **Quality scaling** | more **accurate** oversight per human-hour | *how good is the review a human gives?* |
+| **Throughput scaling** | more **code overseen** per human-hour | *how much can get reviewed at all?* |
+
+**This review's premise is the second.** In the arbiter's words: *"the human doesn't have to look at
+everything. We can figure out what AI can review on its own and what really needs human eyes."*
+Allocation, not augmentation.
+
+**OpenAI's "scalable oversight" is the first**, and the papers say so plainly: *"The ultimate goal of
+scalable oversight is to **help humans evaluate model output in order to train** [better models]"* ·
+*"methods that can **help humans to correctly evaluate** model output."* Their human never leaves any
+sample — **cannot** leave, because in an RLHF labelling regime the human's judgment *is* the product.
+
+**The diagnostic that settles which a paper supports:** does it measure **time or volume**, or only
+**accuracy**? McAleese reports contractors taking *"fifty minutes per example"* and **never claims the
+critic makes them faster** — only more correct. A method that is better-but-not-faster does not scale
+throughput at all, however much it improves quality.
+
+**Consequences for reading the corpus:**
+- **Do not cite quality-scaling results as throughput evidence.** McAleese, Kang and Zhou all
+  demonstrate the first; none demonstrates the second.
+- **The genuinely throughput-relevant finding in McAleese is different from its headline:** critics
+  found *"hundreds of errors in ChatGPT training data rated as **flawless**"* — recovering coverage that
+  human review at volume had **already lost**. That is about what humans miss when they cannot look
+  properly, which is the allocation problem.
+- **Routing evidence is what the review is actually short of.** Papers keep supplying configuration
+  performance (which arrangement reviews best) and almost never supply allocation rules (which items
+  need which arrangement). Karakaya recommends triage but does not build it (§122d); McAleese has a
+  deployment-time precision/recall knob but never evaluates routing on it.
+
+## The idealised reviewer — why human-arm baselines are optimistic (`NRVQT89E`, 2026-08-28)
+
+Arbiter, on McAleese's human contractors: *"the human in this paper is likely less distracted and will
+do a better job. Reality is an ugly thing."*
+
+The human arm is **a best-case human** — a contractor paid to spend *"fifty minutes per example"*, no
+release pressure, no competing work, reviewing as the task rather than around it. That biases the two
+headline findings in **opposite** directions, and both directions matter:
+
+- **"AI catches more bugs than human contractors" gets STRONGER.** The model beat an *idealised*
+  reviewer, not a distracted one. Against a real maintainer the margin should widen.
+- **"Human+AI is best" gets WEAKER.** The human contribution to the team was measured from an
+  attentive partner. A real maintainer under Karakaya's *"release pressure, ownership boundaries, or
+  timing"* (§122a) contributes less, so the team advantage over AI-alone is an **upper bound**.
+
+**General rule for the corpus:** whenever a study's human arm is a *paid, unhurried, single-tasked*
+reviewer, its human-alone baseline is optimistic and its human-in-the-loop benefit is an upper bound.
+Catalan's engagement decay is the mechanism that erodes it in practice. Worth checking against every
+paper reporting a human-vs-AI or human+AI comparison.
