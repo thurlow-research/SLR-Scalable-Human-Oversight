@@ -7020,3 +7020,79 @@ Everywhere else in the corpus scope drift is a diagnosis; here it is a measured 
 applied verbatim** — a **68% harmful rate** on AI-proposed *fixes*, which is a sharper number than the
 corpus's generation-quality statistics because it concerns remediation, where the code is being
 changed on the premise that it improves things.
+
+## 142. A hand-applied tag REVERSED by a later definition; and behavioural monitoring as a modality (`I6FZ5GD2`, 2026-08-29)
+
+**Paper:** Wang, Chen, Pan, Yeh & Das, *Illuminating LLM coding agents: visual analytics for deeper
+understanding and enhancement*, arXiv (2025-08-18).
+**Written:** primary `oversight-explanation`; `provenance-auditability` (existing), `agentic`,
+`expert-validated`, `evaluated-benchmark` (all existing, §34/§35), `built-system`, `steering`.
+**REJECTED: `agent-panel`** — previously hand-applied. **`demote:context` · Dissertation: Supporting.**
+
+### 142a. `agent-panel` REVERSED — the definition moved, the paper did not
+
+This item carried `cal:human:facet:agent-panel`, hand-applied **before Ullah (`A6ZE2A26`) supplied the
+slug's reference case** (§140a). Under the settled definition — *N agents answering the **same
+question**, aggregated by an explicit rule* — it does not hold.
+
+**Full-text check:** the only match for panel-like language is *"because it ensembles multiple
+models"*, describing a glyph for an **ensemble model inside a Kaggle solution** — not agents checking
+one another. The *"LLM-Level Analysis"* **compares** behaviour across LLMs, which is the Karakaya
+pattern (§122) and one of the four declined `cross-model` readings. `cross-model` does not apply
+either.
+
+**Recorded as a definition change, not an error.** The tag was defensible when written; the slug had no
+reference case, and §140a narrowed it afterwards. **This is the first reversal of a hand-applied
+post-freeze tag by a later definition, and it will not be the last** — five slugs were applied by hand
+before Ullah and Vargas gave `agent-panel` and `cross-model` their positive cases.
+
+**Closeout consequence:** the F2 restricted re-run will propose `agent-panel` and `cross-model`
+independently across the surviving corpus. **Where the panel disagrees with a hand-applied instance,
+treat that as a signal to re-examine the human tag**, not as a panel error — the human tags predate
+the definitions. The 7 `agent-panel` and 5 `cross-model` hand-applications should each be checked
+against §140a. Added to closeout **B11**.
+
+### 142b. Demoted on SCOPE — the generalisation claim is narrower than it first reads
+
+The arbiter's question was the right one: *"is the tool produced something that anyone overseeing AI
+coding might be able to use? Or is this really special purpose for ML scientists?"* Three pieces of
+evidence settle it, and they revise an initial Core lean:
+
+1. **The generality claim is bounded:** *"be generalized to **other tree-based coding frameworks**."*
+   AIDE searches a **tree of solution attempts** — *"starts with a code draft (a root) and keeps
+   improving or debugging it, extending the root to become a tree."* That is characteristic of
+   **ML-experimentation** agents searching for a best-scoring model. Mainstream coding agents are not
+   tree-search, so the stated generality **excludes the architectures this review concerns**.
+2. **The users are not the oversight population:** *"Our target users are ML scientists who **design
+   and develop coding** [agents]"*, partnered with *"five ML scientists from a research [lab]"* —
+   people **building agents**, not people **overseeing agent output** in a delivery pipeline.
+3. **The evaluation is ML-domain:** Kaggle competitions, **22 from MLE-Bench**.
+
+**Ground is SCOPE, not rigour** — the same category as Samsyudin (§137a) and distinct from the
+evidence-failure demotes (§129, §130, §132, §135, §136). Five expert collaborators, a recognised
+benchmark, an expert-validated system. Good work aimed at a different population, and the record
+should say so rather than implying weakness.
+
+### 142c. Dissertation Supporting — BEHAVIOURAL MONITORING as an oversight modality
+
+The transferable contribution is not the tool but the **modality**: watching the **process** rather
+than the **artifact**. Every other mechanism in the corpus inspects an output — scanners, gates,
+review bots, conformance checks, routers. This visualises the agent's **trajectory**.
+
+**That is precisely the gap Minh named** (`74GE3TF7`, §127c): structural routing misses *"silent
+abandonment"* — PRs that *"look safe… but stall because the agent cannot handle subjective
+feedback"* — and *"the 'silent' failures require **behavioral monitoring**."* Wang et al. is the only
+corpus paper doing it.
+
+**Cite for the modality, not the tool.** And note the cheaper instance already recorded: a **bounded
+retry counter** is behavioural monitoring costing an integer, versus a full visual analytics system.
+
+### 142d. `steering` ADDED (0/3) — explanation feeding the PRODUCER, not a decision
+
+*"enables ML scientists to gain a structured understanding of agent behaviors, facilitating more
+effective debugging and **prompt engineering**."*
+
+**A distinct oversight mode.** Everywhere else `oversight-explanation` feeds a **decision** — Kang's
+explanations help judge a patch, Zhou's help a non-expert evaluate an escalation. Here it feeds
+**prompt refinement**: the output is not gated, the **producer is fixed**. That is upstream oversight,
+closer to Ji's shift-left (§119d) than to a review gate, and the only instance in the corpus.
