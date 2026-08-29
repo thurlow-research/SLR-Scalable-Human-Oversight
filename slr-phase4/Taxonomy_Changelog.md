@@ -6580,3 +6580,77 @@ agent's findings*, so an upstream false positive propagates and is elaborated ra
 records for LLM reviewers (Jin 88.74%, Bugdar 24–58%, Raghavendra ~46% low-utility), **a relay of LLM
 reviewers is the architecture most likely to amplify them, and no corpus paper measures this.** Logged
 in `Emerging_Themes.md` as an open question.
+
+## 136. Literature figures presented as findings; and a high-FWCI paper that fails the quality read (`5Q4G4CQB`, 2026-08-28)
+
+**Paper:** Salem et al., *AI-driven continuous integration: automating code review and deployment with
+LLMs*, FMEC 2025 (IEEE), 2025-05-19.
+**Written:** primary `ai-review`; `assistive`, `method-self-report`, `survey-input`, `risk-quality`,
+`risk-overreliance`. **Rejected:** `risk-bias` (3/3), `risk-security` (3/3), `method-field-study`
+(3/3). **`demote:context`, no dissertation role.**
+
+### 136a. The abstract attributes other people's numbers to itself
+
+> **Abstract:** *"AI-based CI improves code quality by decreasing integration failure rates by **30%**
+> and deployment time by **40%**."*
+>
+> **Body:** *"Data from the survey has shown that **85% of the members FEEL** that AI-assisted code
+> reviews make work faster. **A figure that is consistent with the literature** and says the use of AI
+> in driving CI/CD reduces general software delivery time by **40%**. For instance, the bug discovery
+> rates would increase by **30%**, **an estimate that finds support in literature**…"*
+
+**The paper's own datum is a perception** (85% *feel* it is faster). The 30%/40% are **literature
+estimates cited as corroboration**, and the abstract restates them as this paper's results.
+
+This is a step beyond the claim–evidence mismatch seen in Naulty (§129), Nimraka (§130), P (§132) and
+Rasheed (§135): those **overclaimed about their own work**; this one **presents borrowed figures as
+findings**. Recorded as a distinct and more serious failure mode, and one that abstract-only screening
+cannot catch — a reminder of why the full-text read exists.
+
+**Two supporting defects:** **no sample sizes anywhere** (survey recruited from *"media groups of
+developers"*, no N, no response rate), and a methodology written in **future tense** — *"the study
+**will apply** bias audit… Regular audits **will be conducted**"* — describing intentions rather than
+what was done.
+
+### 136b. `survey-input` KEPT (3/3) — a clean instance, both conditions met
+
+Notable because §131d had just isolated the two conditions as conjunctive:
+- **§116a instrument requirement** — a real **five-point Likert** survey exists. ✔
+- **§121b elicitation test** — it elicits **stated attitudes**: *"85% feel…"*, *"60% of the respondents
+  voiced their fears…"*, respondents raising false-positive concerns. ✔
+
+The facet is about **what the instrument does**, not whether the findings are trustworthy. **The
+findings here are uncitable for want of an N — but the tag is still correct.** Worth stating: tag
+validity and evidence quality are independent axes, and conflating them would make the facet a
+quality judgement in disguise.
+
+### 136c. Three 3/3 facets REJECTED — the intro-list trap
+
+`risk-bias`, `risk-security` and `method-field-study` all carried **unanimous** panel support and all
+come off:
+
+- **`risk-bias` / `risk-security`** — the instrument is explicit: *"substantive treatment only, **never
+  intro-lists**."* The paper **enumerates** *"security vulnerabilities, model bias and the need for
+  human supervision"* without developing either. `risk-quality` and `risk-overreliance` are kept
+  because the false-positive and trust material **is** developed.
+- **`method-field-study`** — the "case studies" are **selection criteria with no reported cases**
+  (*"Case study criteria include companies…"*). Criteria for choosing cases are not cases.
+
+**A four-risk-facet sweep is itself a tripwire.** When a panel assigns most of the risk axis at 3/3,
+the likely cause is an enumerative paper, not a comprehensive one. Add to the closeout checks
+alongside the §124a altitude sweep.
+
+### 136d. AUTHORITY SIGNAL COUNTER-CASE — high FWCI, weak method (for E8/E9)
+
+`Citegeist.fwci: 4.38` · `percentile: 94.6` · `isTop10Percent: true`. **This paper is well cited for
+its field and year, and does not survive a careful read.**
+
+Recorded as a concrete counter-case for the authority-signal decision (closeout **E8/E9**). It
+supports the documented constraint that citation evidence is for **defending** the corpus in the
+methods chapter, **not for filtering it** — and demonstrates the converse of the usual worry: the risk
+is not only that good papers go uncited, but that **weak papers accumulate citations**. FWCI corrects
+for field and year; it does not correct for rigour. **No citation-derived signal can substitute for
+reading the paper.**
+
+Pairs with `N7E3MR2V` (§132b), where the enrichment *under*-reported (Citegeist 0 vs GS 2). Between
+them the two cases bound the problem: **the signal is noisy in both directions.**
