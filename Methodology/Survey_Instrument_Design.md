@@ -181,3 +181,32 @@ must have chosen a number, and nobody has asked what it is.
 the only mechanism in evidence that turns **non-convergence** into a **detected event**. If most teams
 have no budget, unconverged work is being dropped without anyone counting it — which would be a
 concrete, quantifiable oversight gap rather than a conceptual one.
+
+### Sub-area — SCORE vs VERDICT: who makes the decision, the model or the code? (filed 2026-08-29)
+
+**Arbiter, while ruling Vargas/SLEAN:** *"Judging produces score, routing / decisions based on score?"*
+Parked as a design thread; recorded here as a survey angle. Full note on the Zotero item
+`GAD5Z8PV` (child note `ZFCD4U6G`).
+
+**The distinction to probe.** A model can emit a **verdict** (accept/reject) or a **score** that
+deterministic code then acts on. The second is auditable, tunable and testable; the first is not — you
+cannot move a threshold that does not exist. SLEAN applies this to **orchestration** already
+(deterministic control flow, adopted because *LLMs skip steps even under explicit instruction*); the
+open question is whether anyone applies it to **decisions**.
+
+**Ask:**
+1. When your AI reviewer flags something, does it output a **score or confidence**, or just a verdict?
+2. If a score — **who set the threshold, and has it ever been changed?** *(A threshold nobody can name
+   or move is a verdict wearing a score's clothing. This is the diagnostic question.)*
+3. Is the accept / reject / escalate decision made **in code** or **by the model**?
+4. Could you make the gate **stricter or looser without retraining or re-prompting**?
+
+**Why these discriminate.** Q2 and Q4 are **observable and hard to answer falsely** — either someone
+can name the threshold and the last time it moved, or they cannot. Compare the corpus: Raghavendra's
+precision/recall trade *"can be selected at deployment time without re-training"* because it is a
+**parameter**; Sun's ReviewFilter is a fine-tuned LLM whose strictness **cannot** be adjusted without
+retraining. Same function, opposite tunability — and practitioners will land on one side or the other.
+
+**Expected answer, worth preparing for:** most teams will have a **verdict**, no score, no threshold,
+and no way to adjust strictness. If so, that is a concrete finding about why AI review gets switched
+off rather than tuned when it proves noisy.
