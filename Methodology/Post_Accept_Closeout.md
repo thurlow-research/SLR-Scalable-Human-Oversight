@@ -184,6 +184,24 @@ it; F2 must decide whether hybrids take both tags, the deterministic one, or a n
 different error profiles (Jin 88.74% FPR · Bugdar 24–58% precision · Raghavendra ~46% low-utility vs
 checks that either fire or do not). Conflating them erases the corpus's clearest practical result.
 
+### B11. Re-check hand-applied post-freeze tags against their later definitions (§142a)
+Five post-freeze slugs were applied **by hand before they had reference cases**. Two now have settled
+definitions from the Accept band — `agent-panel` and `cross-model`, both defined against Ullah
+(`A6ZE2A26`, §140a) and Vargas (`GAD5Z8PV`, §141c). **The first reversal has already happened:**
+`agent-panel` was removed from `I6FZ5GD2` because the definition moved, not because the original call
+was careless.
+
+**Exposure:** `agent-panel` **7** hand-applied · `cross-model` **5** · `evaluator-reliability` 11 ·
+`evaluated-synthetic` 10 · `evaluated-benchmark` 9.
+
+**Do NOT re-open all of them.** The F2 restricted re-run proposes these slugs independently across the
+surviving corpus. **Where the panel disagrees with a hand-applied instance, treat it as a prompt to
+re-examine the HUMAN tag** — unusually, the human tags here predate the definitions, so the normal
+presumption (human is the criterion) is weakened for this specific set.
+
+**Priority:** the 7 `agent-panel` and 5 `cross-model` instances, checked against §140a's discriminator
+(*same question + explicit aggregation rule* / *distinct models checking each other, not comparing*).
+
 ### B8. Verify every item with NO `cal:human` tag — confirm it was genuinely never examined
 **Scott's rule (2026-08-28):** *"we've modified tags on every item, so if there aren't any with human
 tags, they are highly unlikely to have been examined."* Every paper that received a pass got **at
