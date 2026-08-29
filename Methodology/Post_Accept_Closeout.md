@@ -436,6 +436,59 @@ predicate *and* pulled Otten (`ZUM76CCG`) in through the mis-scoped `46QVUN7N` (
 
 At Accept's current demote rate, Phase 6 lands near **75–80**.
 
+### F5. GAP ASSESSMENT → targeted supplementary search (AFTER F1 + F2)
+**Arbiter's sequencing (2026-08-28):** *"What we should look at is what these papers cover. First
+question — **do they close gaps**? Then if so, we figure out a strategy to look for papers on those
+specific gaps. Let's do that after we finish the tagging including applying the new tags. **We will
+first assess whether we have a gap** after that."*
+
+**Why this ordering matters methodologically.** The alternative — reviewing excluded papers because
+they were machine-discarded, or because they surfaced in a citation while reading — makes the
+selection rule *"papers I noticed."* That is the HARKing problem in §394's design constraints. A
+**gap-driven** search takes its selection rule from **what the synthesis cannot answer**, which is
+defensible, reportable, and reproducible.
+
+**Sequence (do not start early):**
+1. **F1** `final:*` computed · **F2** instrument cut + restricted re-run applied.
+2. **Assess coverage.** Which themes/facets are thin or empty? Which questions does the corpus fail
+   to answer? Only claims the synthesis actually needs count as gaps.
+3. **Only if a gap exists**, define a targeted search **for that gap**, stated before looking.
+4. **Search sources, in order:** (i) the **machine-only discard pool** — 2,389 `source:snowball`
+   items excluded at title/abstract by machine with **no human screening tag**, filterable by
+   `cocite:` (≥3 → 53 items · ≥2 → 197); (ii) fresh database queries; (iii) forward citation from
+   Core papers.
+5. **Record as a new layer** — a `Reconsider` collection (never edit `03-Discard`; phase-freeze) and
+   a new `s4:human:*` tag rather than revising `s1:`. **Report in PRISMA**: original exclusions and
+   any reinstatements, with reasons.
+
+**Candidate gaps already accumulated during the Accept band** — the starting list for step 2, not a
+commitment that any is real:
+
+| Gap | Recorded | Status |
+|---|---|---|
+| **`agent-panel` reference architectures** — MetaGPT, ChatDev, AgentCoder are the canonical multi-agent SE systems and are all machine-discarded; needed to *distinguish* panel from division of labour | §130b, §135c | likely needed for the F2 definition even if not re-admitted |
+| **Relay error compounding** — does error amplify across sequential agents, and at what rate? | §135c | **no corpus paper measures it** |
+| **Agents as negotiators** — capacity to take critique and converge, vs as producers/reviewers | §127c | unaddressed |
+| **Commitment side** — estimation, work breakdown, capacity planning under agentic delivery | §132c | unaddressed; may need out-of-corpus sources |
+| **Certified-registry revocation** — what happens when a certified artifact is later found vulnerable | Liu `6ZC3H7AF` | unaddressed |
+| **Allocation rules** (as against configuration performance) | §126b, §127a | thin — Minh only |
+| Mode convergence (assistive ≡ agentic failure profile) | §119c | **CLOSED** by Liu `9H6FWJME` (§125a) |
+
+### F6. Process-integrity items, independent of any gap
+Small, defined populations — worth doing regardless of whether a gap is found, because they are
+records where the review's own rules were not applied, not judgements about scope.
+
+- **8 records carry a human KEEP that a machine later discarded.** The human is the criterion in this
+  project; an unreviewed machine reversal of a human keep is the one combination the layered-history
+  rule (§548) does not sanction. Includes **Karpathy `Z4IKFZJ4`** — *"There's a new kind of coding I
+  call vibecoding"*, the **origin of the term this review is about**; **Pappu `2XV8ZVM8`** —
+  *"Multi-agent teams hold experts back"*, a possible `scaling-dissent` counter-finding; plus
+  `D3ZU22JC` Dong, `Y9G3DA92` Imai, `UG5D8G6U` Alenezi, `EN5DT6ZJ` J. Wang, `6NR73DTR` Li,
+  `MBKP4DCY` Liang. **Review all 8**; a complete population is not cherry-picking.
+- **AgentCoder is duplicated and unlinked** — `G3FF4MDW` (snowball, discarded) and `WWDHF6EU`
+  (retrieval, sitting in `03 - Queue`), with **no `superseded-by:`/`supersedes:` between them** and
+  contradictory dispositions. Breaks the one-record-per-study rule. Merge per the dedupe convention.
+
 ### F4. HOS audit → survey question bank
 `Methodology/Survey_Instrument_Design.md`. Mine `~/Code/Thurlow-Research/HumanOversightSystem/Human`
 for questions informed by HOS **and** the SLR findings. 13 survey hooks already banked. HOS path is
