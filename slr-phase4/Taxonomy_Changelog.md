@@ -5788,3 +5788,97 @@ evaluation:**
 **Entailment to enforce when grafting: `evaluated-real-data` ⇒ `built-system`.** If nothing was built,
 the tag cannot apply — which is exactly why it does not fire here. Full statement and candidate seeds
 in `Methodology/Post_Accept_Closeout.md` §F2a.
+
+## 126. CriticGPT kept on the CONFIGURATION data, not the method; and "scalable oversight" is two different things (`NRVQT89E`, 2026-08-28)
+
+**Paper:** McAleese et al. (OpenAI), *LLM Critics Help Catch LLM Bugs*, arXiv (2024-06-28).
+**Written:** primary `ai-review`; `hitl-workflow`, `oversight-explanation`, `automation-bias`; facets
+`agentic`, `built-system`, `risk-quality`, `risk-overreliance`, `problem-statement-anchor`,
+`evaluator-reliability`. **SLR: Core · Dissertation: PRIMARY.**
+**Declined:** `risk-routing` (1/3), **`cross-model` (withdrawn — see §126c)**.
+**Unchanged:** `method-experiment` + `method-field-study`, adjudicated in §34/§35's gold set.
+
+### 126a. The keep-ground is narrow and must travel with the citation
+
+The arbiter's opening position was that a paper about **training or evaluating a model** is normally a
+demote for this review, and the scope objection was sharp: *"Our premise for scaling is that the human
+doesn't have to look at everything… This is absolutely about reinforcement training of a model. A very
+different animal."*
+
+Sustained on the scope point. The paper is kept on **one ground only**, in the arbiter's words:
+*"its data of human + AI is best makes a case for the joint review."*
+
+**Why that ground holds:** this is the **only paper in the corpus measuring all three arms head-to-head
+on the same tasks** — AI alone, human alone, human+AI. Kang (`7UB2MD8Z`) has two of them (humans with
+explanations judged patch correctness better than humans alone, 5 of 6 bugs); nothing else has the
+**AI-alone** arm alongside both. Deciding *what AI can review on its own* requires knowing how AI-alone
+performs against the alternatives, and this is the only measurement of it.
+
+**It also extends the delegation-limits family** the arbiter identified as Yu's and Jin's keep-ground
+(*"evidence of leveraging machine for scaling oversight — delegate to machine"*):
+
+| Yu (`PPMTM4DG`) | a model cannot catch its **own** defects |
+| Jin (`A5WDGC7J`) | giving it a spec yields **overcorrection** instead (FPR to 88.74%) |
+| **McAleese** | full delegation raises recall but **hallucinates**; adding the human back recovers precision at similar catch rate |
+
+**Binding condition on use.** The keep is the configuration data, **not** the RLHF method. Recorded so
+the paper is never cited for throughput scaling — see §126b.
+
+### 126b. "Scalable oversight" names two different problems — the term collision
+
+Forced by the arbiter's devil's-advocate question: *"Wouldn't this say that scaling human oversight
+isn't possible since you still need a human (in partnership with AI) to look at everything?"*
+
+**The paper's own framing answers it, and the answer is uncomfortable:** *"The ultimate goal of
+scalable oversight is to **help humans evaluate model output in order to train** [better models]."*
+In an RLHF labelling regime the human **cannot** leave any sample, because their judgment *is* the
+product. Their scalable oversight = **quality scaling** (a better-equipped human on everything).
+This review's = **throughput scaling** (the human does not look at everything).
+
+**Diagnostic:** does the paper measure **time or volume**, or only **accuracy**? McAleese reports
+contractors taking *"fifty minutes per example"* and **never claims the critic makes them faster.**
+Better-but-not-faster does not scale throughput at all.
+
+**The genuinely throughput-relevant finding is not the headline:** critics identified *"hundreds of
+errors in ChatGPT training data rated as **flawless**"* — recovering coverage that human review at
+volume had **already lost**. That speaks to what humans miss when they cannot look properly, which is
+the allocation problem. Full statement in `Emerging_Themes.md`.
+
+### 126c. `cross-model` WITHDRAWN — a fine-tuned critic is not a panel
+
+The assistant proposed `cross-model` on the reasoning that a separate specialised critic checking
+another model's output is the answer to Yu's self-review failure. **Withdrawn on the arbiter's
+correction:** the slug is for **debate / multi-agent / mutual checking among models**, and CriticGPT is
+**one** fine-tuned model doing a checking job. One model in a checking *role* ≠ models checking *each
+other*. This is the fourth consecutive paper where a plausible `cross-model` reading was declined
+(Karakaya = comparison, Lipsanen = task allocation, Liu = neither, this = single specialist), which is
+a strong signal the slug needs its **boundary written into the F2 definition**, not just its name.
+
+### 126d. The IDEALISED REVIEWER — human-arm baselines are optimistic
+
+Arbiter: *"the human in this paper is likely less distracted and will do a better job. Reality is an
+ugly thing."*
+
+The human arm is **best-case** — paid to spend fifty minutes on one example, no release pressure, no
+competing work. This biases the two headline findings in **opposite** directions:
+
+- **"AI catches more bugs than human contractors" gets STRONGER** — it beat an *idealised* reviewer.
+- **"Human+AI is best" gets WEAKER** — the team benefit was measured with an attentive partner. Under
+  Karakaya's *"release pressure, ownership boundaries, or timing"* (§122a) a real maintainer
+  contributes less, so the team advantage over AI-alone is an **upper bound**.
+
+**General rule recorded** (`Emerging_Themes.md`): wherever a study's human arm is *paid, unhurried and
+single-tasked*, its human-alone baseline is optimistic and its human-in-the-loop benefit is a ceiling.
+Catalan's engagement decay is the mechanism that erodes it in practice.
+
+### 126e. B7 CORRECTED — a "partial" may be a deliberate narrow-axis pass
+
+This paper was flagged as a B7 partial (human tags, no primary). That framing was **wrong for this
+paper**: §34/§35 record its `method-field-study` + `method-experiment` pairing as a **deliberate
+adjudication** — two separate evaluation events, one per side of the ladder/method fork — and it sits
+in the retained 21-item gold set.
+
+**So it was examined, on one axis, on purpose.** The partial signal is real (no primary, theme layer
+never considered) but it does **not** imply "unexamined." Closeout B7 amended accordingly: the four
+partials must each be checked for a **prior narrow-axis ruling before being re-opened**, or a
+deliberate adjudication risks being overwritten.

@@ -106,9 +106,15 @@ targeted earlier write, not an Accept-band pass:
 | Wang (Junpeng), *Illuminating LLM coding agents* | `I6FZ5GD2` | 5 | 4 |
 
 **They need a real pass**, and they are not in the alphabetical queue because they already look
-"started." **McAleese is the notable one** — it already anchors a methodology ruling (§NRVQT89E is
-cited in the method-field-study boundary work), so it is carrying weight it has not been adjudicated
-for.
+"started."
+
+> **AMENDED 2026-08-28 (§126e). A "partial" may be a DELIBERATE narrow-axis pass, not an unexamined
+> paper.** McAleese was worked and closed on 2026-08-28: its two tags turned out to be an adjudicated
+> §34/§35 ruling (two evaluation events, one per side of the ladder/method fork) and it sits in the
+> retained 21-item gold set. It was examined — on one axis, on purpose — and simply never given a
+> theme layer. **Check each remaining partial for a prior narrow-axis ruling BEFORE re-opening it**,
+> or a deliberate adjudication may be silently overwritten. Remaining: `MFSZPSPU`, `A6ZE2A26`,
+> `I6FZ5GD2`.
 
 **Consequence for C4 — scope the silence reclassification.** Silence means *"lightly scanned, nothing
 to discuss"* **only where a pass actually happened**. On these four, silence is genuine **absence**.
