@@ -6034,3 +6034,58 @@ this one method-over-object) — and the fourth including §121d's scope miss. T
 recorded at §124a now has four instances: **check every 3/3 primary against the tie-breaker before
 `final:*`.** On the evidence so far this is the panel's single most systematic error mode, and it lands
 on the **primary** slot, which carries the most downstream weight.
+
+## 129. A shipped LLM reviewer at ~40% precision — delegation RELOCATES the bottleneck (`HJMKADKU`, 2026-08-28)
+
+**Paper:** Naulty et al., *Bugdar: AI-augmented secure code review for GitHub pull requests* (2025-05-05).
+LLM + RAG vulnerability analysis wired into GitHub PRs, 56.4s per PR.
+**Written:** primary `ai-review`; `built-system`, `framework`, `general-code`, `risk-security`.
+**Rejected:** `method-self-report` (2/3). **`demote:context` · Dissertation: Supporting**
+(child note `CAFH5M65`).
+
+### 129a. Demote grounds — domain, not mechanism
+
+The arbiter's read: *"a super-duper security scanner, which using an LLM, and can be integrated into
+CI/CD… demote due to narrow focus. General-code BTW."* Sustained on all three points, with the domain
+narrower than the framing suggests: *"decentralized applications, smart contracts"*, languages
+*"Move and Solidity"*, keywords *"Blockchain, Web3"*, ground truth drawn from *"smart contracts and
+blockchain-related code."* It is a **smart-contract auditing tool**.
+
+`general-code` is correct — Bugdar reviews **all** PRs, not AI-generated code — but note it is **not**
+the demote ground on its own (the instrument: *"`general-code` alone is NOT a demote reason"*). The
+demote rests on the Web3 domain plus the absence of an oversight contribution beyond the tool itself.
+
+### 129b. The paper's own numbers contradict its scaling claim — the finding worth keeping
+
+**Detection precision 24–58%.** Best configuration *"precision of 58%, a recall of 73%"*; typical runs
+**35–43% precision**. So **most findings are false positives** — in a paper whose motivation is that
+*"automated tools frequently suffer from high false-positive rates, limiting their reliability."*
+
+**And the scaling claim is speed-only.** *"Bugdar reduces the reliance on manual reviews"* rests on
+line 286 — *"evaluated based on its **efficiency** compared to human reviews"* (56.4s/PR vs hours).
+**Detection accuracy is never compared against human auditors.**
+
+**The transferable point, and why it earns Dissertation Supporting despite the demote:** at ~40%
+precision the human effort **does not disappear — it relocates, from reviewing code to triaging false
+alarms.** Delegated review moves the bottleneck rather than removing it. This is §126b's
+quality-vs-throughput distinction with a third case: a tool can be **fast** and still fail to scale
+oversight, because the reviewer's output itself needs reviewing.
+
+**Pairs with:** Jin (`A5WDGC7J`) — LLM reviewers overcorrect, FPR to 88.74% — and Minh (`74GE3TF7`) —
+the maintainer attention tax. Bugdar is the **deployed** instance of the failure Jin measures in the
+lab. The corpus is short of accuracy numbers from *shipped* tools rather than research prototypes, and
+this supplies one.
+
+### 129c. `method-self-report` REJECTED at 2/3 — world-or-tool
+
+The evaluation is **tool performance** (precision/recall on smart-contract ground truth) plus a
+**speed** comparison. Developer commentary in the text is anecdotal, not a data-collection instrument.
+Under §98's world-or-tool test the results describe **the tool**, so no method facet is earned.
+Rejected explicitly since at 2/3 it is modal and would otherwise stand into `final:*`.
+
+### 129d. `framework` KEPT at 2/3 — the VibeGuard precedent
+
+A single-concern architecture (scan PRs for vulnerabilities) wired into CI/CD. §49's carve-out governs:
+*"not a one-off point tool… **a focused single-concern architecture qualifies** (VibeGuard, Hedwig)."*
+Contrast Jin (§120b), where `framework` failed because the artifact was **one stage inside** someone
+else's pipeline rather than an integration design of its own.
