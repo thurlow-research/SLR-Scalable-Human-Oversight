@@ -7114,3 +7114,71 @@ effective debugging and **prompt engineering**."*
 explanations help judge a patch, Zhou's help a non-expert evaluate an escalation. Here it feeds
 **prompt refinement**: the output is not gated, the **producer is fixed**. That is upstream oversight,
 closer to Ji's shift-left (§119d) than to a review gate, and the only instance in the corpus.
+
+## 143. ACCEPT BAND CLOSED — 44/44; and criteria definition as the O(1) intervention (`MFSZPSPU`, 2026-08-29)
+
+**Paper:** Shi, Wei, Tufano, Cambronero, Cheng, Ivančić & Rondon, *Towards a human-in-the-loop
+framework for reliable patch evaluation using an LLM-as-a-judge*, arXiv (2025-11-14).
+**Written:** primary **`hitl-workflow`**; `ai-review`; facets `agentic`, `built-system`, `framework`,
+`evaluator-reliability`. **Preserved:** `method-field-study` (§34/§35). **Rejected:**
+`method-experiment` (3/3). **SLR: Core · Dissertation: PRIMARY.**
+
+### 143a. The only O(1) human-cost structure in the corpus
+
+> *"we first employ an LLM to generate a **per-bug rubric**, followed by a **one-time human review**
+> and optional refinement to this rubric, and then employ an LLM to judge patches using the refined
+> rubric."*
+
+**Human effort is O(1) in the criteria, not O(N) in the outputs.** Every other mechanism reviewed
+either inspects outputs (O(N)) or routes a fraction of them (O(kN), k<1). This pays a human **once per
+rubric** and then applies it to arbitrarily many patches — **κ 0.75, recall 0.94, precision 0.80**
+against human consensus.
+
+**That is scalable human oversight in its strongest available form:** the human cost does not grow
+with volume at all. It should be stated as such in the synthesis, because no other paper achieves it.
+
+**Honest limitation, and it matters:** κ falls **0.75 → 0.57** once patches where the three human
+raters *disagree* are included. **The method works where humans agree and degrades where they do
+not** — which is precisely where help is most wanted. Automated judgement **inherits** human ambiguity
+rather than resolving it, pairing with Karakaya's contaminated-ground-truth finding (§122a).
+
+### 143b. `hitl-workflow` PRIMARY over `ai-review` (3/3) — sixth altitude correction
+
+The paper is titled *a human-in-the-loop framework*, and the novelty is **where the human sits**: once,
+upstream, on the criteria. LLM-as-judge is the scaffolding. `ai-review` retained as a theme.
+
+**`method-experiment` REJECTED at 3/3** — §35's gold-set ruling lists this paper as
+*"`method-field-study` **only**"*, so the method axis was already adjudicated. A later 3/3 proposal does
+not reopen a settled gold-set call (§126e).
+
+### 143c. GAP: the criteria artifact is the leverage point, and nobody validates it
+
+Follows directly from §143a. If the leverage is in the criteria, **criteria quality is decisive** — and
+the corpus barely examines it:
+
+| Paper | Criteria artifact | Validation reported |
+|---|---|---|
+| **Shi (this)** | per-bug rubric | **yes — one-time human review** |
+| SGCR (`CTGGMIX9`) | human-authored specifications | asserted, not measured |
+| **Sun (`V4IRKSFI`)** | **219-rule taxonomy**, governing review for **12,000 developers** | **none reported** |
+| Lipsanen (`7SH86C2W`) | BDD / C4 / ADR artifacts | authors' own |
+| Ullah (`A6ZE2A26`) | none — judges without a rubric | n/a |
+
+**Arbiter's hypothesis, now a survey question area:** *"practitioners don't put that much energy into
+the definition of their agents."* If it holds, teams are investing in models, prompts and plumbing
+while the component with the **best measured return** goes unexamined. Instrument recorded in
+`Survey_Instrument_Design.md` — asked through **artifacts and events** (is there a document, could you
+produce it, when did it last change, who owns it) rather than through self-reported effort.
+
+### 143d. BAND CLOSED — 44/44, and the corpus is fully adjudicated
+
+**Accept band: 44/44** — 22 surviving, 22 demoted (**50%**, against the 32% projected from the first
+22; the later alphabet was demote-heavy).
+
+**Whole corpus: 148 unique papers, 0 partial, 0 untouched** — 71 surviving, 77 demoted. All four §126e
+partials resolved with their prior narrow-axis rulings preserved (McAleese §126e, Ullah §140e, Wang
+§142, Shi here).
+
+Baseline snapshot before the restricted re-run: `tag_layer_stats_T2prep_2026-08-29.json`. Set A remains
+flagged by the instrument guard at **0.0% match** — the v1→v2.13 supersession (closeout **A1**) is now
+the top of the queue, tooling built and dry-run verified.
