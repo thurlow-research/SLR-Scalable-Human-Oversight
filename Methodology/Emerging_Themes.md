@@ -2645,3 +2645,52 @@ adjudication question is uniform regardless of which specialist raised the findi
 (RQ2) isolates its two *specification* pathways, not the ensemble, so **how much the ensemble
 contributes versus the aggregator is unknown in every case.** For a design deciding how many agents to
 run, that is the number that matters most, and nobody reports it.
+
+## SPEC VALIDATION IS THE LEVERAGE POINT — a phase machine guarantees the check, not the criterion (2026-08-29)
+
+Arbiter, on TheBotCompany's **Strategy → Execution → Verification** machine: *"the nuance is the
+importance of **spec validation** (which several code review papers had)."*
+
+**Two separate guarantees, and only one is structural.**
+
+| Guarantee | Mechanism | Corpus |
+|---|---|---|
+| **Verification HAPPENS** | make it a **state** the work must transit, not an instruction the model may skip | Lyu `UB2EVUFU` (three-phase machine) · Vargas `GAD5Z8PV` (deterministic orchestration) |
+| **Verification is against the RIGHT criterion** | **validate the spec/rubric itself**, up front | Shi `MFSZPSPU` · Wang/SGCR `CTGGMIX9` · Lipsanen `7SH86C2W` · Zietsman `TA6GIUK2` |
+
+**A state machine delivers the first and is silent on the second.** If the Strategy phase emits an
+**agent-generated, unvalidated** spec, the machine has guaranteed a rigorous check **against a possibly
+wrong criterion** — verification theatre with a compliance guarantee bolted on. The failure is worse
+than a skipped check, because it produces evidence of diligence.
+
+### What the spec cluster establishes
+
+- **Jin (`UDVHQ5HR`)** — an LLM given a spec still **overcorrects**, FPR to 88.74%. *Having* a spec is
+  not enough if a model does the judging.
+- **Lipsanen (`7SH86C2W`)** — make the spec **executable** (BDD) and conformance checking becomes
+  deterministic; no judge required.
+- **Wang/SGCR (`CTGGMIX9`)** — ground the reviewer in **human-authored** specifications, compiled into
+  an explicit deterministic path. **42% developer adoption vs 22% baseline**, in production.
+- **Shi (`MFSZPSPU`)** — **validate the rubric once**, apply it to arbitrarily many artifacts.
+  **κ 0.75**, and human cost is **O(1) in the criteria** rather than O(N) in the outputs.
+- **Zietsman (`TA6GIUK2`)** — the specification *as* the quality gate.
+
+**Composed, they give the full shape:**
+
+> **Strategy (spec, human-validated) → Execution → Verification (against the validated spec, by
+> deterministic means where possible).**
+
+TheBotCompany supplies the machine. Shi supplies the validation step. SGCR supplies the grounding and
+the production evidence. **No single paper has all three**, and the combination is the strongest
+design the corpus supports.
+
+### Consequence for a fixed-roster panel
+
+A conjunctive gate inherits this exactly. Specialists checking against **criteria nobody validated**
+produce confident, unanimous, well-orchestrated agreement about the wrong thing — and §11.4's 9/9 is
+the worked example: three vendors, three runs, wrong together, because they **shared a misreading of
+the instrument**. **The instrument was the unvalidated criterion.** Decorrelating models cannot fix a
+criterion defect, because every model reads the same criterion.
+
+**This is why the criteria-definition survey area (`Survey_Instrument_Design.md`) is high-value:** the
+corpus says criteria quality is decisive, and only one paper reports validating them.
