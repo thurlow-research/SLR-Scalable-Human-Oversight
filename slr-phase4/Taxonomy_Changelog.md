@@ -6271,7 +6271,15 @@ The arbiter raised author level (*"authored by student. What level of student? I
 might be an issue"*), citing precedent that **unaffiliated researchers were demoted partly on
 credibility**. Facts: two authors listed as *"Student"* with `22am155@` / `22am236@` emails — the `22`
 being the 2022 admission cohort, so **final-year undergraduates** — supervised by **C Quba Jaslin,
-Assistant Professor**, same institution. Minor IEEE conference, **0 citations**.
+Assistant Professor**, same institution. Minor IEEE conference.
+
+**Citation count — first application of decided signal #1, and it immediately vindicates the
+decision.** `Citegeist.citedByCount: 0`; **Google Scholar: 2** (arbiter, retrieved 2026-08-28).
+Recorded on the item per the §394 convention — `GS.citedByCount: 2` / `GS.retrieved: 2026-08-28` in
+`extra`, **alongside** the Citegeist fields rather than replacing them, so the discrepancy stays
+inspectable. This is exactly the failure mode §394 predicted: *"any authority argument built on the
+existing enrichment would silently privilege arXiv and indexed venues."* The assistant reported 0 from
+Citegeist without cross-checking — the error the manual-GS rule exists to prevent.
 
 **The assistant initially argued authorship should not be used at all**, citing
 `Selection_Criteria_By_Phase.md`'s design constraints: *"Apply it uniformly, or not at all"*;
@@ -6312,6 +6320,7 @@ The second is a **genuine hole in the corpus**: every oversight framework review
 quality**; **none governs commitment and forecast**. If agents produce work at volume, someone must
 estimate, sequence and budget it — and no corpus paper addresses that.
 
-**Recorded as a gap, not as a citation** — the §130d move. A 0-citation undergraduate paper at a minor
+**Recorded as a gap, not as a citation** — the §130d move. A 2-citation undergraduate paper at a minor
 venue is a credibility risk as an authority for an idea it did not originate and does not validate,
-and the observation stands on its own without it. `Emerging_Themes.md` carries the gap.
+and the observation stands on its own without it. Note the count is **not** the reason: per the design
+constraints, low citation counts are *"uninformative, not damning"* in a corpus that is 77% 2025–26. `Emerging_Themes.md` carries the gap.
