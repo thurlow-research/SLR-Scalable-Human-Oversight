@@ -29,6 +29,14 @@ Downloads/
 # copyrighted full-texts (re-derivable from Zotero)
 slr-phase4/txt/
 
+# Zotero library exports — RDF + a files/ dir of the actual attachment PDFs.
+# These land in the working tree with the export's own name (e.g.
+# "Scalable AI Coding Governance - 2026-08-27 - Light Reads Completed/"), so
+# Backups/ does not catch them. Multi-GB and copyrighted; the repo is PUBLIC.
+*.rdf
+**/files/
+Scalable AI Coding Governance*/
+
 # redundant binary spreadsheets (csv kept)
 *.xls
 *.xlsx

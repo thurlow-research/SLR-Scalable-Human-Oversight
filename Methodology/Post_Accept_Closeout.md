@@ -19,7 +19,26 @@ quoted anywhere until fixed.
 
 ## A. Data integrity — do these FIRST, everything downstream depends on them
 
-### A1. Set A still holds the v1 model run in Zotero ⚠️ **highest priority**
+### A1. Set A v1 → v2.13 supersession ✅ **DONE 2026-08-29**
+**Executed** with `slr-tools/supersede_model_run.py --collection JFN8693L --prefix v1
+--new-run slr-phase4/data/tags-v213 --commit` after a library backup. **10 items · 233 tags renamed to
+`v1_` · 255 written.** Verified: **0 stray old-run tags** in the live namespace across all 10; the
+`cal:gemini-fast:*` near-miss preserved as 8 `v1_cal:gemini-fast:` tags with no bare remnant; human
+and demote layer **unchanged at 85 tags**; instrument guard **cleared** (was 0.0% match).
+
+**Result — the anchoring contrast is now computable from Zotero**, which was the point:
+
+| Band | Origination |
+|---|---|
+| Set A (model-first) | **12.7%** *(was a meaningless 54.9% — v1 panel vs v2.13 human layer)* |
+| Set B (**blind**) | **9.5%** |
+
+**The blind arm originates LESS than the model-first arm — no anchoring effect detectable.** Retires
+the 80.9% artifact and supplies §11.7's replacement claim (closeout **C1**).
+Snapshot: `tag_layer_stats_T2prep-b_2026-08-29.json`.
+
+*Original item, kept for the record:*
+### A1-original. Set A still holds the v1 model run in Zotero
 `01-AI Calibration Run` [JFN8693L], all 10 papers. Complete 3-vendor **v2.13** data exists on disk
 (`slr-phase4/data/tags-v213/{opus,codex,gemini}/`) and was never written back. The v2.13 re-run
 happened *because* the instrument evolved (calibration doc §5: *"Set A re-run included because the
@@ -84,18 +103,56 @@ double-count.
 §119a established that §34 does **not** bar ladder/method co-occurrence (the **world-or-tool test**
 governs). Three earlier rulings cited the misreading and need revisiting.
 
-### B5. Demote decisions needing a second look (4 papers)
-The panel's tier judgement is weak (see C3), and these are the least-corroborated calls:
+### B5. STRUCK — demotes are final (arbiter rule, 2026-08-29)
 
-| Paper | Set | panel | human | why flagged |
-|---|---|---|---|---|
-| De La Cruz (`E3E5YA2E`) | B | **0/3** | demote | no panel signal at all |
-| Navneet (`TF56EPIP`) | B | **0/3** | demote | no panel signal at all |
-| Sudarsan (`UW2R6BBJ`) | B | **3/3** | keep | kept against unanimity (§30 exception — verify it still holds) |
-| Jin (`UDVHQ5HR`) | A | **0/3** | demote | Set A parallel case |
+> **The arbitration rule:** *"if we reviewed and demoted, **we don't reconsider**. If we kept and the
+> re-run of the tagging instruments surfaces changes to the tags, **we reconsider the tags**."*
 
-`BAWCBT9R` (2/3, demoted) is corroborated twice over — **leave it**. `M74M3RFJ` and `2CKL96B8` have
-panel agreement; `VG6CIDQW` at 1/3 is noise.
+**Tier is settled. Only TAGS are revisitable, and only on kept papers.**
+
+**This item is withdrawn.** It listed four demote calls as "least-corroborated" on the ground that the
+panel gave no signal (0/3) on two of them. **That reasoning was wrong:** the corpus-wide measurement
+(§C3) shows panel demote recall is **57.4%** — the panel gives no signal on **26 of 61** human
+demotes. So *"0/3 panel signal"* is the **modal case**, not an anomaly. The figure described the
+panel's weakness on the tier axis and was misread as doubt about the rulings.
+
+`UW2R6BBJ` also carried a **documented §30 exception** at the time of the call (general-AI object →
+flag proposes, human kept) — an adjudicated decision with reasoning on file, not an open question.
+
+**Consistency:** the rule matches the rest of the design. Demoted papers are **excluded from the F2
+re-run** (D3, Core only), so no new proposals can arrive on them; and re-opening settled dispositions
+is the retroactive re-filtering §394 bars. **Kept papers** receive new-slug proposals and their tags
+are adjudicated as normal.
+
+**Not an exception:** the Jin preprint/journal consolidation (see B12) is the **one-record-per-study**
+rule, not a tier reversal. The study's disposition is the keeper's; the superseded record's tier
+becomes historical provenance.
+
+### B12. Jin preprint→journal consolidated (2026-08-29) — corpus count corrected
+`UDVHQ5HR` *Uncovering systematic failures of LLMs in verifying code against natural language
+specifications* (arXiv 2508.12358, 2025-08) and `A5WDGC7J` *Are LLMs reliable code reviewers?
+Systematic overcorrection in requirement conformance judgement* (**Automated Software Engineering**,
+2026-06) are **the same study** by Haolin Jin & Huaming Chen.
+
+**Evidence:** three verbatim shared runs including the entire 199-character opening; identical core
+finding and identical surprising result (more detailed prompting **raises** misjudgment rates). The
+journal version extends it, replacing the preprint's *"two improved prompting strategies"* with the
+**Fix-guided Verification Filter**.
+
+**Why dedupe missed it:** different discovery streams (`source:arxiv` query vs `source:snowball`) and
+different titles.
+
+**Done:** `superseded-by:A5WDGC7J` on the preprint; `supersedes:UDVHQ5HR` on the journal; `source:arxiv`
+carried to the keeper so the arXiv stream's PRISMA count stays correct; `evaluator-reliability` and
+`metrics` carried across (present only on the preprint record, legitimate for the study).
+
+**Still open:** placement of `UDVHQ5HR` into an `04-Superseded` collection. **Two exist**
+(`DLZGGSDI`, `EJ898XHK`) and phase collections are frozen — needs the arbiter's call on which, or
+whether tag-based supersession alone suffices (the memory notes supersession *is* tag-based and the
+Zotero `relations` field is unused).
+
+**COUNT CORRECTION:** the corpus is **147 unique studies**, not 148 — **71 surviving, 76 demoted**.
+The audit counted by item key; this is one study with two records. **PRISMA must report the dedupe.**
 
 ### B7. Four Accept-band papers are PARTIALLY tagged — not adjudicated
 Discovered 2026-08-28 while checking the band roster. They sit out of alphabetical order with 1–5
@@ -209,6 +266,26 @@ everywhere else: no panel proposal to react to, no contrast class in view, no ad
 
 **Priority:** the 7 `agent-panel` and 5 `cross-model` instances, checked against §140a's discriminator
 (*same question + explicit aggregation rule* / *distinct models checking each other, not comparing*).
+
+### B13. Set A — 7 unconsidered proposals from the v2.13 write-back (§144b)
+Set A was tagged **model-first** with **v1** proposals in view; the A1 supersession replaced them with
+**v2.13** proposals the arbiter never saw. Under the arbitration rule (kept papers, changed tags →
+reconsider the tags) these are reviewable. Demoted Set A papers are **excluded** — demotes are final.
+
+Filtered to exclude already-endorsed, already-rejected and deprecated vocabulary — **4 papers,
+7 proposals**:
+
+- `Z8TPRNEU` Huang — `risk-overreliance`, `risk-quality`, `oversight-explanation`, `rules-based-checks`
+- `UB2EVUFU` Lyu — `oversight-explanation`
+- `T72TU8B5` Shukla (Hedwig) — `steering`
+- `22JBEZNK` Virk — `risk-quality`
+
+Nothing new on `VG6CIDQW`, `F9JM9CI6`, `T8E8SCCG`. Jin (`UDVHQ5HR`) excluded — `framework` already
+rejected (§120b), `counterpoint` deprecated (B3).
+
+**Note the mirror effect:** 15 v1 modal proposals are no longer modal under v2.13. Endorsements resting
+on those are judgements, not vote-counts, so they stand — but this is why Set A's origination moved
+54.9% → 12.7%, and it belongs in the calibration write-up.
 
 ### B8. Verify every item with NO `cal:human` tag — confirm it was genuinely never examined
 **Scott's rule (2026-08-28):** *"we've modified tags on every item, so if there aren't any with human
@@ -490,6 +567,27 @@ never reuse, or two constructs merge silently in `final:*`)** · corrected `surv
 
 Running v1 and v2 of the inversion makes the reclassification delta a **reportable measurement** of
 how far definitional wording drives tagger behaviour.
+
+**SCOPE CONFIRMED 2026-08-29 — Sets A and B are IN the re-run population.** Arbiter asked whether the
+new slugs were covered by the v2.13 run that superseded Set A and populated Set B. **They were not**,
+and the gap is structural rather than "no paper warranted them." Verified two ways:
+
+- **The instrument says so.** `Tag_Prompt_v2.13.md` carries a provenance banner: these slugs *"did not
+  exist in this instrument and **could not be proposed by any model** — `agent-panel`, `cross-model`,
+  `evaluated-synthetic`, `evaluated-benchmark`, `evaluator-reliability`, `scaling-dissent` — which is
+  what the restricted re-run (§89) exists to address."*
+- **The run output agrees.** Across both bands (20 items × 3 vendors, 60/60 files present in
+  `data/tags-v213/`), those six plus `evaluated-real-data` scored **0 vendor-votes**. The only new-slug
+  names that fired are the three whose *definitions* were later revised and which therefore carry `-v2`
+  slugs in the spec: `survey-input` (7 A / 13 B), `rules-based-checks` (9 A / 5 B),
+  `oversight-scaling-inversion` (1 A / 7 B).
+
+**Consequence.** The 15 kept papers in the calibration bands (8 in Set A, 7 in Set B) need the new
+slugs proposed like any other survivor. **To verify before the run:** whether those 15 are already
+inside the spec's 71–72 survivor population — they should be, since the population is defined by the
+F3 predicate rather than by band membership, but a library-wide scan timed out and this was not
+confirmed. If any are outside, add them. **Do not re-adjudicate their existing tags** — restricted
+OUTPUT schema, per the spec.
 
 ### F3. Materialise Phase 6
 The surviving set. **Predicate: `cal:human:primary:theme:*` present AND no `demote:context`.**

@@ -7182,3 +7182,215 @@ partials resolved with their prior narrow-axis rulings preserved (McAleese §126
 Baseline snapshot before the restricted re-run: `tag_layer_stats_T2prep_2026-08-29.json`. Set A remains
 flagged by the instrument guard at **0.0% match** — the v1→v2.13 supersession (closeout **A1**) is now
 the top of the queue, tooling built and dry-run verified.
+
+## 144. Jin CONSOLIDATED — `A5WDGC7J` merged into `UDVHQ5HR`; and Set A's write-back surfaced 7 unconsidered proposals (2026-08-29)
+
+### 144a. KEY CHANGE — cite `UDVHQ5HR`, not `A5WDGC7J`
+
+**Two records, one study.** `UDVHQ5HR` (arXiv 2508.12358, 2025-08, *Uncovering systematic failures of
+LLMs in verifying code against natural language specifications*) and `A5WDGC7J` (**Automated Software
+Engineering**, 2026-06, *Are LLMs reliable code reviewers? Systematic overcorrection in requirement
+conformance judgement*) are the same work by **Haolin Jin & Huaming Chen** — three verbatim shared
+runs including the entire 199-character opening, identical core finding and identical surprising
+result. The journal version extends it, replacing *"two improved prompting strategies"* with the
+**Fix-guided Verification Filter**.
+
+**Missed by dedupe** because the discovery streams differ (`source:arxiv` query vs `source:snowball`),
+the titles differ, and the item types differed (`preprint` vs `journalArticle` — Zotero merges only
+within a type).
+
+> ### ⚠ **`A5WDGC7J` IS NOW A TRASHED KEY. The surviving record is `UDVHQ5HR`.**
+> **~35 references across 13 documents still cite `A5WDGC7J`** — including §120 (the original
+> adjudication), §125, §133, §139, §143, the closeout, the re-run spec, the harvest, and the HOS issue
+> draft. **These are NOT being rewritten.** They record what was written at the time, and editing them
+> would falsify the case law (§548, layered history). **This entry is the mapping: `A5WDGC7J` →
+> `UDVHQ5HR`.** Use the surviving key for anything new.
+
+**Consolidation performed** per the dupe protocol — replicate tags on both, align metadata for client
+detection, arbiter merges in the client:
+- Full **73-tag union** across both records, with three deliberate exceptions.
+- **`demote:context` REMOVED** before the merge. Zotero unions tags, so it would have flipped the
+  Core + Dissertation Primary record to Context. Arbiter: *"We've already decided to keep the updated
+  paper, so delete the demote tag."* **The demote applied to the preprint's content; the study's
+  disposition follows the fuller journal version.** Not a reconsideration — the one-record-per-study
+  rule, not a tier reversal.
+- **Directional lineage** (`superseded-by:` / `supersedes:`) kept one per record pre-merge, then
+  **both removed post-merge** — with one record they were self-referential, and that is the circular-
+  reference defect the library has already had to clean up once. Provenance now carried by
+  `orig-type:preprint`, `orig-title:`, and Extra (`arXiv:2508.12358`, `preprint-date: 2025-08-17`).
+- **Extra restored after the merge:** the master's Extra won, losing `S2:672b87cc…` and
+  **`arXiv:2603.00539`** — a *third* posting, the journal-era arXiv version. Both re-added, plus
+  `merged-from: A5WDGC7J`.
+
+**CORPUS COUNT: 147 unique studies — 71 surviving, 76 demoted.** PRISMA must report this dedupe; both
+`source:arxiv` and `source:snowball` are retained on the survivor so neither stream's count changes.
+
+### 144b. Set A write-back surfaced 7 proposals the arbiter never saw
+
+Set A was tagged **model-first** — the v1 model tags were present during the arbiter's pass. The
+supersession replaced them with **v2.13** proposals that were never in view. Under the arbitration rule
+(*kept papers whose tags change in a re-run get reconsidered; demotes do not*), that makes these
+reviewable.
+
+**After excluding demoted papers, already-endorsed tags, already-rejected tags and deprecated
+vocabulary: 4 papers, 7 proposals.**
+
+- `Z8TPRNEU` Huang — `risk-overreliance` · `risk-quality` · `oversight-explanation` · `rules-based-checks`
+- `UB2EVUFU` Lyu — `oversight-explanation`
+- `T72TU8B5` Shukla (Hedwig) — `steering`
+- `22JBEZNK` Virk — `risk-quality`
+
+**Three kept papers have nothing new**: `VG6CIDQW` Goel · `F9JM9CI6` Heander · `T8E8SCCG` Xie.
+
+**Jin dropped out of the list entirely** — its two apparently-new proposals were `framework`, already
+**rejected** at §120b, and `counterpoint`, deprecated and handled by the B3 sweep. *(A first pass
+counted it as reviewable; the filter had excluded human endorsements but not human rejections.)*
+
+**The mirror-image effect, smaller but real:** **15 v1 modal proposals are no longer modal under
+v2.13**. Where the arbiter *endorsed* one of those, the endorsement now rests on evidence the current
+instrument does not reproduce. Endorsements are judgements rather than vote-counts, so this does not
+invalidate them — but it is the reason Set A's origination figure moved from 54.9% to **12.7%**, and it
+should be stated when the calibration numbers are reported.
+
+**Added to the closeout as B13.**
+
+### 145a. `survey-input` — §121b HELD, substantiveness bar SHARPENED (arbiter, 2026-08-29)
+
+**Centrality was proposed a second time and declined a second time.** Recording both the proposal and
+the reasons, because this is now the *second* recurrence and it will recur again.
+
+**The proposal.** *"The core of the paper is the system, and the survey was part of validating the
+system? If that is the case, not survey input. By previous discussion, the survey has to be the primary
+thing for it to be applied."*
+
+**Why it was declined — the same two reasons as §121b's "wrong refinement #1":**
+
+1. **Role vs method.** `method-self-report` already records *"they ran a survey."* If `survey-input`
+   also keys on how the paper was built, the two facets collapse toward each other. Elicitation keeps
+   them orthogonal: one is **how evidence was produced**, the other is **what kind of finding it is**.
+2. **Kang (`7UB2MD8Z`) breaks it.** Kang is a *correct positive* — *"70% agreed [explanations were
+   wanted]"*, *"half agreed or strongly agreed that explanations would be important when using repair
+   tools."* Under centrality, AutoSD is the system and the survey validates it, so **Kang flips to
+   reject.** Centrality is strictly narrower than elicitation: it rejects everything elicitation
+   rejects, **plus Kang and Hedwig.**
+
+**Assistant error corrected in the same exchange.** The re-check list first offered under the centrality
+reading placed Kang in "fails centrality," citing the arbiter's earlier *"falls short"* remark on it —
+**wrong**, and it inverted the very case §121b was built on. §121b records Kang as the counterexample
+that *defeats* centrality. Flagged because the same misreading produced a wrong recommendation twice
+this session: **check what the changelog already decided before proposing a rule change.**
+
+#### The rule, unchanged
+
+> **`survey-input`** = the instrument elicits **stated preferences, adoption, or priorities**.
+> **`method-self-report` only** = the instrument measures a **construct or performance** (cognitive
+> load, engagement, comprehension, satisfaction, demographics).
+> **Precondition (§116a, stands):** an actual user-survey instrument must exist. Mined data cannot fire
+> it (§123e).
+> **Excluded:** centrality (§121b, twice) · utility to our own org survey (§116a, §121b).
+
+#### The sharpening — what centrality was reaching for
+
+The arbiter's instinct is right about a real class of case; it was aiming at the wrong variable. The
+correct discriminator already exists in §116a — *"one incidental adoption stat ≠ membership"* — and is
+now made operational:
+
+> **The elicited preference must be a REPORTED FINDING of the paper, not FORMATIVE material that
+> motivates its design.** A survey that establishes *why the authors built the thing* is motivation; a
+> survey whose preference results are reported as results is a finding.
+
+**Location test, reproducible and panel-codeable:** does the preference appear in the **Results**, or in
+the **Motivation / Background**? A coder can apply this without knowing what the paper is "mainly"
+about, which is what centrality could never deliver.
+
+| Paper | Elicits preferences? | Where does it appear? | Verdict |
+|---|---|---|---|
+| **Kang** (`7UB2MD8Z`) | yes — what people want from repair tools | **Results** | **`survey-input`** |
+| **Shukla**, *Hedwig* (`T72TU8B5`) | yes — *"evolving preferences for level of oversight"* | **Formative**, motivating the design | **fails the bar** |
+| **Catalan** (`5BAZZWHG`) | no — a construct (engagement by Bloom level) | — | `method-self-report` only |
+| **HULA** (`5VTAJISY`) | no — 8/11 questions under the authors' own heading *"The performance of HULA"* | — | `method-self-report` only |
+
+This gets the arbiter's Hedwig intuition **without losing Kang**, and stays reproducible.
+
+#### RE-CHECK — 9 surviving holders. NOT ACTIONED; the arbiter authorised the rule, not the re-tagging.
+
+**Verified failures — no instrument exists (§116a precondition; wrong under every version of the rule):**
+- `B644HQFS` **Baltes**, *An Endless Stream of AI Slop* — `method-mining`; 1,154 Reddit/HN posts, nobody
+  surveyed.
+- `XJAXB98T` **Yang**, *Beyond banning AI* — *"multi-stage analysis on various qualitative materials…
+  retrieved from 67 highly visible OSS projects"* (contribution guidelines, security policies, repo
+  instructions). Document analysis; nobody surveyed.
+
+**Verified failure — instrument exists, elicits preferences, but formative:**
+- `T72TU8B5` **Shukla**, *Hedwig* — the N=21 survey motivates the design.
+
+**Verified hold:** `7UB2MD8Z` **Kang** (§121b).
+
+**Not yet checked — require per-paper adjudication against the sharpened bar**, and are NOT asserted
+either way here: `6DXZGHD9` Al-Hashimi · `22JBEZNK` Virk · `Z8TPRNEU` Huang · `E9RAWBDT` Pimenova ·
+`JCTP8VXP` Ma (*ZORO*).
+
+**Direction of error.** Every failure found so far is a **false positive** — the facet applied too
+widely. Under the fail-open human layer that is the expected direction: a modal proposal stands unless
+explicitly rejected, so a loose definition accumulates membership rather than shedding it.
+
+**Interaction with F2.** `survey-input-v2` exists as a separate slug precisely because this definition
+was in flux. **The re-run must carry §121b's elicitation text plus the formative/reported sharpening
+above** — not centrality, and not the v2.13 utility text still sitting in the instrument.
+
+### 145b. §42(e) ADJUDICATED — risk flags track the CODING SCHEME, not the illustrative quotes
+
+**§42(e) has been an open watch item** since the Set C pilot: *"a lit review that surveys risks will
+trip every flag, and risk-flag counts feed the identified/measured matrix… **Not adjudicated here
+(§42)**."* Baltes (`B644HQFS`) forces it, in a second paper type — a **mining / discourse study** rather
+than a lit review — and supplies a discriminator that works for both.
+
+**The rule (arbiter, 2026-08-29 — *"(2) is the right rule"*):**
+
+> **For mining / discourse studies, `risk-*` flags track the CODING SCHEME, not the illustrative
+> quotes.** If the harm is not a code, a category, or a counted result, it is a **mention**.
+
+This is not a new bar — it is the existing uniform bar (*substantive treatment: define a metric ·
+contribute/evaluate a mitigation · report an empirical result · devote focal analysis*) made operational
+for papers whose evidence **is** a coding scheme. In such papers the *empirical result* clause has an
+exact referent: **the codes and their frequencies.** Prose around them is commentary.
+
+**The case that settles it.** Baltes qualitatively coded 1,154 Reddit/HN posts into a **15-code
+codebook**, three clusters, 1,603 codings. Reported frequencies: `structural-drivers` 256 (26.2%),
+`ai-limitations` 227, `slop-mitigations` 226. The panel proposed `risk-security` **3/3**. But:
+
+- **Security is not one of the 15 codes** — therefore no count, therefore no measured result.
+- Its whole presence is **one paragraph** inside *Codebase impact* (Quality Degradation cluster), opening
+  *"Security concerns were prominent"* and carrying a single illustrative quote (an AI that *"aborted
+  early in a middleware basically skipping most of AuthZ, then mocked out a good chunk of the AuthZ in
+  tests which caused tests to pass"*).
+
+**Three researchers with a systematic coding scheme read 1,154 posts and chose not to make security a
+category.** That is evidence *about the corpus*, and it points away from the tag. `risk-security`
+rejected; the two risk flags Baltes retains (`risk-quality`, `risk-overreliance`) correspond to actual
+clusters and codes.
+
+**Why the bar has to hold here.** If an unquantified authorial gloss counts as an empirical result, the
+bar collapses for **every** mining and discourse paper — developers discuss every harm, so every flag
+fires on every corpus. Risk-flag counts feed the identified/measured matrix, so the collapse would be
+silent and would inflate exactly the cells the matrix exists to distinguish.
+
+**Scope.** Applies to papers whose evidence production is a coding scheme or artifact count
+(`method-mining`, qualitative discourse analysis). It does **not** loosen the bar elsewhere: a systems
+paper still fires `risk-security` on a mitigation it builds and evaluates, with no code required.
+
+**Carry-over from §42(e), still open:** check at closeout whether `lit-review` papers carry
+systematically more risk flags than primaries; if so the matrix must segment by `lit-review` before
+counting. This rule makes that check sharper — segment by **evidence type**, not just by `lit-review`.
+
+#### Companion correction on the same item
+
+`B644HQFS` also carried `cal:human:facet:survey-input`, endorsed over a 3/3 panel proposal. **Removed
+2026-08-29** (arbiter: *"looks like a misapplication"*), and `cal:human:reject:facet:survey-input`
+written in its place — the rejection is required, not optional, because the human layer is **fail-open**
+and a bare removal would let the 3/3 modal resurrect the tag in `final:*`.
+
+Baltes is **mined data**: 1,154 Reddit and Hacker News posts, nobody surveyed. It fails §116a's
+instrument precondition, which stands under every version of the definition (§116a · §121b · §145a) —
+so this is a plain misapplication rather than a casualty of the rule change. Model tags left intact as
+provenance.

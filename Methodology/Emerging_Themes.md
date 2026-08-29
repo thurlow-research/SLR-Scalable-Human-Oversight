@@ -1667,10 +1667,13 @@ demote, transferable controls — where the sole-exemplar exception was exercise
 ruled demote, so the mechanism is preserved as framing rather than promoted to Core. **If a code-domain
 replication appears later, revisit.**
 
-## CANDIDATE MECHANISM — the DECISION SURFACE: what the human engages when they cannot read the artifact (2026-08-26)
+## CANDIDATE MECHANISM — the DECISION SURFACE: what the human engages when they cannot read the artifact (2026-08-26, promoted 2026-08-29)
 
-**Staged, 3 instances.** Companion to the `no-inspection` staging (§81a): that records *the human does
-not read the code*; this records **what they engage instead**.
+**PROMOTED — 4 instances, and the fourth *measures* it.** Companion to the `no-inspection` staging
+(§81a): that records *the human does not read the code*; this records **what they engage instead**.
+The stated promotion gate was "a fourth instance, or any paper that measures decision-surface quality
+rather than merely proposing one." Virk (`22JBEZNK`) satisfies both — see *The first measurement*
+below.
 
 **The claim.** In a growing set of designs the human's oversight object is **not an artifact but a
 decision** — curated, structured, and presented for a choice. The artifact may never be shown at all.
@@ -1680,6 +1683,7 @@ decision** — curated, structured, and presented for a choice. The artifact may
 | **Kasibatla**, *Decision-Oriented Programming with Aporia* (`ZH6QIU8A`) | Core · Diss Supporting | decisions explicit and structured as *"the shared medium between the programmer and the agent"*, elicited proactively | **yes** |
 | **González**, *HiLDE* (`CI93QRUH`) | Context · Diss Supporting | decision points in a completion, alternatives explained, human picks | yes (within-turn) |
 | **Zhou**, *Steering LLMs via scalable interactive oversight* (`XRTVITVP`) | Core · Diss Supporting | recursive tree of low-burden decisions, pre-generation | **no** — stops at the PRD |
+| **Virk & Liu**, *Non-programmers assessing AI-generated code* (`22JBEZNK`) | Core · **Diss Primary** | **delineated steps + alternative approaches per decision** — and the only one **measured** | yes (explains the code) |
 
 Aporia names the problem the cluster answers: *"developers **cede decision-making authority to
 agents**, often without realizing that important design decisions are being made without them."*
@@ -1699,6 +1703,58 @@ an unusable one:
 > *Provenance note:* these come from the arbiter's own system-building experience, offered as
 > comprehension of the papers. **They are a lens for reading the corpus, not evidence in it** — the
 > claim that altitude and options matter needs corpus or survey support before it enters findings.
+
+> **UPDATE 2026-08-29 — variable 2 now has partial corpus support.** Virk & Liu ran the manipulation:
+> baseline natural-language explanations, then a reformat into *"clearly delineated steps"* with
+> *"alternative approaches for each decision."* That is variable 2 built and tested. It **worked, and
+> was not enough** (below). So "options with analysis" moves from *lens* to *supported but
+> insufficient*; **altitude remains untested by anyone.**
+
+### The first measurement — and it is a qualified negative (`22JBEZNK`, 2026-08-29)
+
+The three proposal papers each argue a decision surface *should* help. Virk & Liu are the first to
+**put one in front of people and measure whether it did**, which is why this promotes the cluster.
+
+**Design.** Marketing and sales professionals evaluated LLM-generated analyses of marketing data.
+Participants were *"shown natural language explanations of the AI's code, repeatedly informed the AI
+often makes mistakes, and explicitly prompted to identify them."* Then the intervention: responses
+reformatted into delineated steps with alternatives per decision.
+
+**Result, both halves.** The intervention *"had a positive effect"* — **and** participants *"often
+struggled to reason through the AI's steps and alternatives."* Baseline detection was already poor:
+they *"frequently failed to detect critical flaws that could compromise decisionmaking."*
+
+**Three things this establishes that the proposals could not.**
+
+1. **The mechanism is real but partial.** Structuring the choice and surfacing alternatives measurably
+   improves detection. It does not get a non-expert to adequate. Anyone claiming a decision surface
+   *solves* oversight is now arguing against the only measurement in the corpus.
+2. **The residual failure is in *reasoning through* the options, not in *seeing* them.** Options were
+   present and comprehensible and the human still could not adjudicate them. That points straight at
+   the untested variable — **altitude**: choices pitched where the reviewer can grasp *what is at
+   stake* rather than *what differs*. Virk's alternatives were per *analysis decision*; whether a
+   higher-altitude framing does better is exactly the open question.
+3. **It is not a competence gap, which removes the easy remedy.** Many missed flaws *"required no
+   technical knowledge to recognize."* So the shortfall cannot be closed by training reviewers or by
+   staffing the seat with someone more technical — **the burden is on the surface, not the person.**
+   This is the strongest corpus support for the section's core claim that *oversight quality is a
+   property of interface design, not of reviewer diligence.*
+
+**Why it matters to the thesis specifically.** The scaling argument rules out reviewing everything, so
+the design space offers two escapes: **route** (review less) and **widen the pool** (review by people
+who are not scarce senior developers). Virk is the direct test of the second and it fails — *"business
+professionals cannot reliably verify AI-generated data analyses on their own"* — **even with a decision
+surface built to help them.** Widening the reviewer pool is not available as a scaling lever on
+current interface designs. That is a boundary result, and the corpus has no other.
+
+**Scope caveat.** Data-analysis code for marketing, not general software; the artifact is AI-generated
+code and the participants do review it, so this is in-domain, but the **population** is the manipulated
+variable. Do not generalise the failure rate to developer reviewers — Catalan and Ghammam cover that
+population, and this one is about who *else* could hold the seat.
+
+**Revised survey hook** (supersedes the one below, keep both questions): when an AI agent needs a human
+decision, what does the human actually see — a diff, a summary, or a choice with alternatives? **And:
+who is expected to make that call, and were they able to?**
 
 ### Why it matters
 If oversight increasingly happens at the decision layer rather than the artifact layer, then **the
@@ -2645,3 +2701,52 @@ adjudication question is uniform regardless of which specialist raised the findi
 (RQ2) isolates its two *specification* pathways, not the ensemble, so **how much the ensemble
 contributes versus the aggregator is unknown in every case.** For a design deciding how many agents to
 run, that is the number that matters most, and nobody reports it.
+
+## SPEC VALIDATION IS THE LEVERAGE POINT — a phase machine guarantees the check, not the criterion (2026-08-29)
+
+Arbiter, on TheBotCompany's **Strategy → Execution → Verification** machine: *"the nuance is the
+importance of **spec validation** (which several code review papers had)."*
+
+**Two separate guarantees, and only one is structural.**
+
+| Guarantee | Mechanism | Corpus |
+|---|---|---|
+| **Verification HAPPENS** | make it a **state** the work must transit, not an instruction the model may skip | Lyu `UB2EVUFU` (three-phase machine) · Vargas `GAD5Z8PV` (deterministic orchestration) |
+| **Verification is against the RIGHT criterion** | **validate the spec/rubric itself**, up front | Shi `MFSZPSPU` · Wang/SGCR `CTGGMIX9` · Lipsanen `7SH86C2W` · Zietsman `TA6GIUK2` |
+
+**A state machine delivers the first and is silent on the second.** If the Strategy phase emits an
+**agent-generated, unvalidated** spec, the machine has guaranteed a rigorous check **against a possibly
+wrong criterion** — verification theatre with a compliance guarantee bolted on. The failure is worse
+than a skipped check, because it produces evidence of diligence.
+
+### What the spec cluster establishes
+
+- **Jin (`UDVHQ5HR`)** — an LLM given a spec still **overcorrects**, FPR to 88.74%. *Having* a spec is
+  not enough if a model does the judging.
+- **Lipsanen (`7SH86C2W`)** — make the spec **executable** (BDD) and conformance checking becomes
+  deterministic; no judge required.
+- **Wang/SGCR (`CTGGMIX9`)** — ground the reviewer in **human-authored** specifications, compiled into
+  an explicit deterministic path. **42% developer adoption vs 22% baseline**, in production.
+- **Shi (`MFSZPSPU`)** — **validate the rubric once**, apply it to arbitrarily many artifacts.
+  **κ 0.75**, and human cost is **O(1) in the criteria** rather than O(N) in the outputs.
+- **Zietsman (`TA6GIUK2`)** — the specification *as* the quality gate.
+
+**Composed, they give the full shape:**
+
+> **Strategy (spec, human-validated) → Execution → Verification (against the validated spec, by
+> deterministic means where possible).**
+
+TheBotCompany supplies the machine. Shi supplies the validation step. SGCR supplies the grounding and
+the production evidence. **No single paper has all three**, and the combination is the strongest
+design the corpus supports.
+
+### Consequence for a fixed-roster panel
+
+A conjunctive gate inherits this exactly. Specialists checking against **criteria nobody validated**
+produce confident, unanimous, well-orchestrated agreement about the wrong thing — and §11.4's 9/9 is
+the worked example: three vendors, three runs, wrong together, because they **shared a misreading of
+the instrument**. **The instrument was the unvalidated criterion.** Decorrelating models cannot fix a
+criterion defect, because every model reads the same criterion.
+
+**This is why the criteria-definition survey area (`Survey_Instrument_Design.md`) is high-value:** the
+corpus says criteria quality is decisive, and only one paper reports validating them.
