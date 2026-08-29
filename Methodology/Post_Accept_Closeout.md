@@ -184,20 +184,26 @@ it; F2 must decide whether hybrids take both tags, the deterministic one, or a n
 different error profiles (Jin 88.74% FPR · Bugdar 24–58% precision · Raghavendra ~46% low-utility vs
 checks that either fire or do not). Conflating them erases the corpus's clearest practical result.
 
-### B11. Re-check hand-applied post-freeze tags against their later definitions (§142a)
-Five post-freeze slugs were applied **by hand before they had reference cases**. Two now have settled
-definitions from the Accept band — `agent-panel` and `cross-model`, both defined against Ullah
-(`A6ZE2A26`, §140a) and Vargas (`GAD5Z8PV`, §141c). **The first reversal has already happened:**
-`agent-panel` was removed from `I6FZ5GD2` because the definition moved, not because the original call
-was careless.
+### B11. Re-check the hand-applied post-freeze tags — one is a KNOWN ERROR (§142a)
+Five post-freeze slugs were applied **by hand, ad hoc**, outside the panel-proposes /
+human-adjudicates workflow that governs every other tag in the corpus.
+
+**One has already been found wrong.** `agent-panel` was removed from `I6FZ5GD2` — and the arbiter's
+ruling, having read the paper, is that it was an **error**, not a casualty of a changing definition
+(*"Consider it a QA correction, not a change"*). There is no panel there under any reading.
+
+**That is the less comfortable finding.** A definitional drift would have been benign. **An error means
+the ad-hoc pass has a defect rate**, and one observed error in a small set is a reason to check the
+remainder rather than assume it is sound.
 
 **Exposure:** `agent-panel` **7** hand-applied · `cross-model` **5** · `evaluator-reliability` 11 ·
 `evaluated-synthetic` 10 · `evaluated-benchmark` 9.
 
 **Do NOT re-open all of them.** The F2 restricted re-run proposes these slugs independently across the
-surviving corpus. **Where the panel disagrees with a hand-applied instance, treat it as a prompt to
-re-examine the HUMAN tag** — unusually, the human tags here predate the definitions, so the normal
-presumption (human is the criterion) is weakened for this specific set.
+surviving corpus. **Where the panel disagrees with a hand-applied instance, re-examine the HUMAN tag.**
+The normal presumption (human is the criterion) is weakened for this specific set — not because the
+arbiter is less reliable, but because these tags bypassed the workflow that catches mistakes
+everywhere else: no panel proposal to react to, no contrast class in view, no adjudication step.
 
 **Priority:** the 7 `agent-panel` and 5 `cross-model` instances, checked against §140a's discriminator
 (*same question + explicit aggregation rule* / *distinct models checking each other, not comparing*).
