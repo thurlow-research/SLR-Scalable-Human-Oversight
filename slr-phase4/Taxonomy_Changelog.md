@@ -5758,6 +5758,15 @@ catches them by construction.** So the finding reframes: the tools to catch this
 **existing engineering discipline, applied unchanged, would absorb a large share of AI-introduced
 debt** — pairing directly with Ji's shift-left (§119d) and Lipsanen's Shift-Up (§124).
 
+> **NARROWED by §133b (2026-08-28) — do NOT read this as "static analysis would solve AI code
+> quality."** It holds for **Liu's defect class** (code smells, correctness and security issues that
+> standard analysers already flag). It does **not** generalise: Parris (`3SU9QZ6F`) documents a class
+> that *"can **pass standard static analysis** while exhibiting pervasive fail-soft behavior,"* because
+> analysers are not calibrated for **failure-untruthfulness** (swallowed exceptions, optimistic
+> returns). **Liu = a PROCESS failure** — detectable, not gated. **Parris = a DETECTION failure** —
+> gated, not detectable. Existing discipline absorbs the first class only; the second needs
+> purpose-built, AI-specific checks.
+
 **`oversight-scaling-inversion` still DECLINED (0/3).** §88 requires **review failure as the cause**,
 and the paper never examines whether review occurred. **89.3% of the issues are code smells**, which
 teams routinely tolerate by choice rather than fail to catch — tolerated ≠ leaked. Given §123a, where
