@@ -6943,3 +6943,80 @@ Third of the four §126e partials to be resolved. Its single existing tag,
 82-task corpus) and was **left untouched**; the theme layer and primary were added around it. The
 §126e procedure worked as intended: check for a prior narrow-axis ruling before re-opening.
 Remaining partials: `MFSZPSPU` Shi · `I6FZ5GD2` Wang (Junpeng).
+
+## 141. Redundancy fails a direct test; `evaluated-real-data` gets its first instance (`GAD5Z8PV`, 2026-08-29)
+
+**Paper:** Vargas et al., *SLEAN: simple lightweight ensemble analysis network for multi-provider LLM
+coordination*, arXiv (2025-10-11). Three-phase protocol — **independent analysis → cross-critique →
+arbitration** — over `.txt` prompt templates. 15 bugs, 69 AI-generated fix propositions.
+**Written:** primary `ai-review`; `agent-scope-drift`, `remediation-gating`,
+`provenance-auditability`, `quality-debt`; facets `agent-panel`, `cross-model`,
+**`evaluated-real-data`**, `evaluator-reliability`, `problem-statement-anchor`, `agentic`,
+`built-system`, `framework`, `non-developer`, `risk-quality`.
+**Declined:** `rules-based-checks` (§139a), `org-governance`, `method-experiment` (1/3, §98).
+**SLR: Core · Dissertation: PRIMARY.** Arbiter: *"a 'mini' version of HOS."*
+
+### 141a. CONSENSUS IS A WEAK QUALITY SIGNAL — the redundancy hypothesis, tested directly
+
+> *"**Agreement between AI systems showed weak correlation with fix quality**: high convergence (at
+> least 80%) occurred in 4 of 15 cases and improved acceptance by only **2.4% points**."*
+
+**This is the first direct test of redundancy-as-quality-signal in the corpus, and it fails.** Two
+models agreeing barely predicts whether the fix is good.
+
+**Meanwhile the adjudication phase carried the result:** arbitration reduced code change surface by
+**83–90%**, *"enforcing minimal causal edits over scope-expanding modifications."*
+
+**Fourth independent source converging on the same conclusion** (redundancy weak, adjudication
+strong):
+
+| Source | Evidence |
+|---|---|
+| §11.4 (our own panel) | **9/9 agreement on a wrong tag** — correlated error survives unanimity |
+| Ullah `A6ZE2A26` (§140b) | **composition matters more than count**; complementary vs redundant combinations |
+| Sun `V4IRKSFI` (§134b) | ReviewFilter — a **different question** — takes production precision to 75% |
+| **Vargas (this)** | **agreement ↔ quality correlation is weak (+2.4pp)**; arbitration delivers 83–90% |
+
+**The design consequence, stated plainly: do not buy quality with agreement.** Adding models that
+answer the same question yields little. Adding a stage that asks a *different* question — *is this
+finding valid? is this edit minimal?* — is what the evidence supports.
+
+### 141b. `evaluated-real-data` — FIRST INSTANCE, deliberately placed here
+
+The slug was defined at F2a and **held through four prior candidates** (Karakaya, Liu `6ZC3H7AF`,
+Lipsanen, Minh) because §122f requires a slug's first instance to be set on a paper that has been read
+closely and sits at a grade worth defending — not established in passing on a marginal one.
+
+**This is that paper:** Core + Dissertation Primary, and it satisfies the definition exactly — *"a tool
+is developed and that tool is evaluated using real data"* (SLEAN, evaluated on **15 real software bugs
+/ 69 real fix propositions**), not a benchmark and not a synthetic corpus.
+
+**Entailment verified in the record: `evaluated-real-data` ⇒ `built-system`** — both present. This
+should be asserted in tooling at the F2 graft.
+
+### 141c. Two traps this paper walks past, both now three-deep
+
+**`rules-based-checks` DECLINED despite *"deterministic framework"* in the abstract.** The determinism
+is in the **orchestration** — *"deterministic, **file-driven coordination**"*, *"**deterministic
+orchestration** of multiple [LLMs]"* — while the analysing, critiquing and arbitrating are all done by
+LLMs. §139a governs: the theme names **how the verdict is produced**. **Third instance of the
+name-is-not-a-mechanism trap**, after Sun's *"RuleChecker"* (two fine-tuned LLMs) and Sollenberger.
+
+**`org-governance` DECLINED.** Every governance-adjacent hit refers to *other* systems (ChatDev,
+MetaGPT) or to adoption barriers. No organisational apparatus is proposed.
+
+**`cross-model` CONFIRMED against the arbiter's own hesitation** (*"can have cross modal (but really
+targeted at single model)"*). They ran **two providers**: *"AIA to [OpenAI] (**gpt-3.5-turbo**…), AIB
+to Anthropic (**claude-sonnet-4**…)"* — distinct models critiquing each other's work. **Second clean
+instance after Ullah**, and actually executed rather than merely supported.
+
+### 141d. The scope-drift control, and the problem-statement number
+
+**`agent-scope-drift` (2/3) is the corpus's cleanest instance of the theme being *controlled* rather
+than merely observed:** arbitration cut change surface **83–90%**, enforcing minimal causal edits.
+Everywhere else in the corpus scope drift is a diagnosis; here it is a measured intervention.
+
+**`problem-statement-anchor`:** of 69 AI-generated fix propositions, **47 were rejected as harmful if
+applied verbatim** — a **68% harmful rate** on AI-proposed *fixes*, which is a sharper number than the
+corpus's generation-quality statistics because it concerns remediation, where the code is being
+changed on the premise that it improves things.
