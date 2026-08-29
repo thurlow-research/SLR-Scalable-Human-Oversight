@@ -568,6 +568,27 @@ never reuse, or two constructs merge silently in `final:*`)** · corrected `surv
 Running v1 and v2 of the inversion makes the reclassification delta a **reportable measurement** of
 how far definitional wording drives tagger behaviour.
 
+**SCOPE CONFIRMED 2026-08-29 — Sets A and B are IN the re-run population.** Arbiter asked whether the
+new slugs were covered by the v2.13 run that superseded Set A and populated Set B. **They were not**,
+and the gap is structural rather than "no paper warranted them." Verified two ways:
+
+- **The instrument says so.** `Tag_Prompt_v2.13.md` carries a provenance banner: these slugs *"did not
+  exist in this instrument and **could not be proposed by any model** — `agent-panel`, `cross-model`,
+  `evaluated-synthetic`, `evaluated-benchmark`, `evaluator-reliability`, `scaling-dissent` — which is
+  what the restricted re-run (§89) exists to address."*
+- **The run output agrees.** Across both bands (20 items × 3 vendors, 60/60 files present in
+  `data/tags-v213/`), those six plus `evaluated-real-data` scored **0 vendor-votes**. The only new-slug
+  names that fired are the three whose *definitions* were later revised and which therefore carry `-v2`
+  slugs in the spec: `survey-input` (7 A / 13 B), `rules-based-checks` (9 A / 5 B),
+  `oversight-scaling-inversion` (1 A / 7 B).
+
+**Consequence.** The 15 kept papers in the calibration bands (8 in Set A, 7 in Set B) need the new
+slugs proposed like any other survivor. **To verify before the run:** whether those 15 are already
+inside the spec's 71–72 survivor population — they should be, since the population is defined by the
+F3 predicate rather than by band membership, but a library-wide scan timed out and this was not
+confirmed. If any are outside, add them. **Do not re-adjudicate their existing tags** — restricted
+OUTPUT schema, per the spec.
+
 ### F3. Materialise Phase 6
 The surviving set. **Predicate: `cal:human:primary:theme:*` present AND no `demote:context`.**
 
