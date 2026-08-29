@@ -7337,3 +7337,60 @@ explicitly rejected, so a loose definition accumulates membership rather than sh
 **Interaction with F2.** `survey-input-v2` exists as a separate slug precisely because this definition
 was in flux. **The re-run must carry §121b's elicitation text plus the formative/reported sharpening
 above** — not centrality, and not the v2.13 utility text still sitting in the instrument.
+
+### 145b. §42(e) ADJUDICATED — risk flags track the CODING SCHEME, not the illustrative quotes
+
+**§42(e) has been an open watch item** since the Set C pilot: *"a lit review that surveys risks will
+trip every flag, and risk-flag counts feed the identified/measured matrix… **Not adjudicated here
+(§42)**."* Baltes (`B644HQFS`) forces it, in a second paper type — a **mining / discourse study** rather
+than a lit review — and supplies a discriminator that works for both.
+
+**The rule (arbiter, 2026-08-29 — *"(2) is the right rule"*):**
+
+> **For mining / discourse studies, `risk-*` flags track the CODING SCHEME, not the illustrative
+> quotes.** If the harm is not a code, a category, or a counted result, it is a **mention**.
+
+This is not a new bar — it is the existing uniform bar (*substantive treatment: define a metric ·
+contribute/evaluate a mitigation · report an empirical result · devote focal analysis*) made operational
+for papers whose evidence **is** a coding scheme. In such papers the *empirical result* clause has an
+exact referent: **the codes and their frequencies.** Prose around them is commentary.
+
+**The case that settles it.** Baltes qualitatively coded 1,154 Reddit/HN posts into a **15-code
+codebook**, three clusters, 1,603 codings. Reported frequencies: `structural-drivers` 256 (26.2%),
+`ai-limitations` 227, `slop-mitigations` 226. The panel proposed `risk-security` **3/3**. But:
+
+- **Security is not one of the 15 codes** — therefore no count, therefore no measured result.
+- Its whole presence is **one paragraph** inside *Codebase impact* (Quality Degradation cluster), opening
+  *"Security concerns were prominent"* and carrying a single illustrative quote (an AI that *"aborted
+  early in a middleware basically skipping most of AuthZ, then mocked out a good chunk of the AuthZ in
+  tests which caused tests to pass"*).
+
+**Three researchers with a systematic coding scheme read 1,154 posts and chose not to make security a
+category.** That is evidence *about the corpus*, and it points away from the tag. `risk-security`
+rejected; the two risk flags Baltes retains (`risk-quality`, `risk-overreliance`) correspond to actual
+clusters and codes.
+
+**Why the bar has to hold here.** If an unquantified authorial gloss counts as an empirical result, the
+bar collapses for **every** mining and discourse paper — developers discuss every harm, so every flag
+fires on every corpus. Risk-flag counts feed the identified/measured matrix, so the collapse would be
+silent and would inflate exactly the cells the matrix exists to distinguish.
+
+**Scope.** Applies to papers whose evidence production is a coding scheme or artifact count
+(`method-mining`, qualitative discourse analysis). It does **not** loosen the bar elsewhere: a systems
+paper still fires `risk-security` on a mitigation it builds and evaluates, with no code required.
+
+**Carry-over from §42(e), still open:** check at closeout whether `lit-review` papers carry
+systematically more risk flags than primaries; if so the matrix must segment by `lit-review` before
+counting. This rule makes that check sharper — segment by **evidence type**, not just by `lit-review`.
+
+#### Companion correction on the same item
+
+`B644HQFS` also carried `cal:human:facet:survey-input`, endorsed over a 3/3 panel proposal. **Removed
+2026-08-29** (arbiter: *"looks like a misapplication"*), and `cal:human:reject:facet:survey-input`
+written in its place — the rejection is required, not optional, because the human layer is **fail-open**
+and a bare removal would let the 3/3 modal resurrect the tag in `final:*`.
+
+Baltes is **mined data**: 1,154 Reddit and Hacker News posts, nobody surveyed. It fails §116a's
+instrument precondition, which stands under every version of the definition (§116a · §121b · §145a) —
+so this is a plain misapplication rather than a casualty of the rule change. Model tags left intact as
+provenance.
