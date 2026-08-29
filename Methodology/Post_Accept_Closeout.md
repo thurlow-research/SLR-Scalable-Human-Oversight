@@ -1,7 +1,11 @@
 # Post-Accept Closeout — the single checklist
 
-**Trigger:** the Accept band (44 papers) closes. **22 of 44 reviewed as of 2026-08-28**; next paper
-alphabetically is **Kaur**.
+**Trigger:** the Accept band (44 papers) closes.
+
+**Progress (2026-08-28): 24 of 44 adjudicated · 3 partial · 17 untouched.**
+Next alphabetically: **Minh** (`74GE3TF7`). Partials awaiting a pass: `MFSZPSPU` Shi ·
+`A6ZE2A26` Ullah · `I6FZ5GD2` Wang (Junpeng) — see B7, and check each for a prior narrow-axis
+ruling before re-opening.
 
 This is the consolidated list. Items were previously scattered across `Theme_Tagging_Calibration.md`
 §10.12, `Taxonomy_Changelog.md` §120e, and the 2026-08-27/28 sessions. **Work from this file**; the
