@@ -36,17 +36,28 @@ API = "https://api.zotero.org"
 # Phase 5 reading bands. The calibration band tagged blind-first, which makes it
 # the control for the anchoring measurement -- same arbiter, same instrument,
 # proposals not visible.
+# NOTE (2026-08-28): the merged "04 - Calibration (Adjudicated)" collection [46QVUN7N] is NOT
+# Set A u Set B -- it drops Momcilovic (M74M3RFJ, Set A) and adds Otten (ZUM76CCG, a Set C pilot
+# paper). It is also mislabelled "blind-first": only Set B was tagged blind. Using it produced an
+# uninterpretable blended figure. Always use the two source collections, split.
 BANDS = {
+    "UIN658B7": "01 Accept",
     "WTKULZ5U": "02 Light Read",
     "2WE2DX36": "03 Full Read",
-    "UIN658B7": "01 Accept",
-    "46QVUN7N": "04 Calibration (blind-first)",
+    "JFN8693L": "04a Calibration Set A (model-first)",
+    "IURU9UTA": "04b Calibration Set B (BLIND)",
 }
-BLIND_FIRST = "46QVUN7N"
+# Only Set B is the anchoring control: the arbiter tagged it without seeing any model proposal.
+# Set A was tagged with model tags present (blind first read + model-aware adjudication, §34).
+BLIND_BAND = "IURU9UTA"
+MERGED_CALIBRATION_DO_NOT_USE = "46QVUN7N"
 
 MODELS = ("opus", "codex", "gemini", "fable")
 
+# Anchored at ^cal: so SUPERSEDED runs renamed with a version prefix (e.g. v1_cal:opus:...)
+# fall outside and are ignored automatically. Do not relax this anchor.
 TAG_RE = re.compile(r"^cal:(\w+):(?:primary:)?(theme|facet):([a-z0-9-]+)$")
+SUPERSEDED_RE = re.compile(r"^v\d+_cal:")
 REJECT_RE = re.compile(r"^cal:human:reject:(theme|facet):([a-z0-9-]+)$")
 
 # The frozen v2.13 instrument -- what the panel actually ran on. Anything the
@@ -94,39 +105,76 @@ def fetch_band(library: str, lib_type: str, key: str, api_key: str) -> dict:
     return items
 
 
-def split_layers(data: dict) -> tuple[dict, set, set]:
-    """(model votes per tag, human endorsements, human rejections) for one item."""
+def split_layers(data: dict) -> dict:
+    """Decompose one item's tag layers.
+
+    Returns a dict so callers cannot silently mis-order the tuple, and so new
+    signals (primary, demote, superseded) can be added without breaking callers.
+    """
     votes: collections.Counter = collections.Counter()
     human, reject = set(), set()
+    primary = None
+    demoted = False
+    superseded = 0
     for entry in data.get("tags", []):
         tag = entry["tag"]
+        if SUPERSEDED_RE.match(tag):
+            superseded += 1          # a prior instrument version, deliberately excluded
+            continue
+        if tag.startswith("demote:"):
+            demoted = True
+            continue
         m = TAG_RE.match(tag)
         if m:
             who, kind, slug = m.groups()
             if who == "human":
                 human.add((kind, slug))
+                if ":primary:" in tag:
+                    primary = slug
             elif who in MODELS:
                 votes[(kind, slug)] += 1
         m2 = REJECT_RE.match(tag)
         if m2:
             reject.add((m2.group(1), m2.group(2)))
-    return votes, human, reject
+    return {"votes": votes, "human": human, "reject": reject,
+            "primary": primary, "demoted": demoted, "superseded": superseded}
 
 
 def measure(items: dict, frozen: set) -> dict:
-    """Origination and three-state figures for one band."""
+    """Origination, three-state and TIER figures for one band.
+
+    Completeness predicate is a PRIMARY theme (or an explicit demote), not "any
+    cal:human tag" -- a targeted single-axis write leaves a human tag behind
+    without an adjudication, and the loose predicate counted those as done.
+    """
     endorsed = originated = rejected = 0
     orig_reachable = 0            # arbiter added a tag the panel COULD have proposed
     orig_by_slug: collections.Counter = collections.Counter()
     modal_total = modal_end = modal_rej = modal_silent = 0
     nonmodal_endorsed = 0
-    papers = 0
+    papers = partial = untouched = 0
+    demoted = 0
+    superseded_tags = 0
+    # tier axis: the panel proposes demotes via flags that never reach Zotero, so
+    # tier agreement is measured against the human demote tag only.
+    tier_human_demote = 0
 
     for data in items.values():
-        votes, human, reject = split_layers(data)
-        if not human and not reject:
-            continue                       # no arbiter layer yet
+        L = split_layers(data)
+        superseded_tags += L["superseded"]
+        adjudicated = L["primary"] is not None or L["demoted"]
+        if not adjudicated:
+            if L["human"] or L["reject"]:
+                partial += 1       # tagged on one axis, never given a primary
+            else:
+                untouched += 1
+            continue
         papers += 1
+        if L["demoted"]:
+            demoted += 1
+            tier_human_demote += 1
+
+        votes, human, reject = L["votes"], L["human"], L["reject"]
         proposed = set(votes)
 
         endorsed += len(human & proposed)
@@ -147,7 +195,11 @@ def measure(items: dict, frozen: set) -> dict:
     written = endorsed + originated
     pct = lambda n, d: round(n / d * 100, 1) if d else None
     return {
-        "papers_with_arbiter_layer": papers,
+        "papers_adjudicated": papers,
+        "papers_partial": partial,
+        "papers_untouched": untouched,
+        "papers_demoted": demoted,
+        "surviving": papers - demoted,
         "human_tags_written": written,
         "endorsements": endorsed,
         "originations": originated,
@@ -163,8 +215,46 @@ def measure(items: dict, frozen: set) -> dict:
         "modal_silent": modal_silent,
         "override_rate_pct": pct(modal_rej, modal_total),
         "nonmodal_endorsed": nonmodal_endorsed,
+        "superseded_tags_ignored": superseded_tags,
         "originations_by_slug": dict(orig_by_slug.most_common()),
     }
+
+
+def instrument_check(items: dict, band: str, version_dir: str = "slr-phase4/data/tags-v213") -> dict:
+    """Do this band's Zotero model tags match the CURRENT instrument's JSON?
+
+    Guards the trap that produced the bogus 80.9% origination figure: Set A's
+    Zotero layer still holds the v1 panel run, so any statistic computed from it
+    compares a v1 panel against a v2.13-aligned human layer. A high mismatch rate
+    means the band has not been written back from the current run.
+    """
+    checked = match = missing = 0
+    for key, data in items.items():
+        path = os.path.join(version_dir, "opus", f"{key}.json")
+        if not os.path.exists(path):
+            missing += 1
+            continue
+        with open(path) as fh:
+            j = json.load(fh)
+        expect = {("theme", t) for t in j.get("themes", [])} | \
+                 {("facet", f) for f in j.get("facets", [])}
+        got = set()
+        for entry in data.get("tags", []):
+            m = TAG_RE.match(entry["tag"])
+            if m and m.group(1) == "opus":
+                got.add((m.group(2), m.group(3)))
+        if not got:
+            continue
+        checked += 1
+        if got == expect:
+            match += 1
+    rate = round(match / checked * 100, 1) if checked else None
+    return {"band": band, "items_checked": checked, "matching_current_instrument": match,
+            "match_pct": rate, "no_json_on_disk": missing,
+            "WARNING": (None if (rate is None or rate >= 50)
+                        else "Zotero model layer does NOT match the current instrument -- "
+                             "likely a superseded run not yet written back. Figures for this "
+                             "band are NOT comparable to the others.")}
 
 
 def main() -> int:
@@ -188,13 +278,15 @@ def main() -> int:
     frozen = set(FROZEN_THEMES) | set(FROZEN_FACETS)
     bands, live_theme, live_facet = {}, set(), set()
 
+    checks = []
     for key, name in BANDS.items():
         items = fetch_band(library, lib_type, key, api_key)
         bands[name] = measure(items, frozen)
         bands[name]["items_in_band"] = len(items)
+        checks.append(instrument_check(items, name))
         for data in items.values():
-            votes, human, reject = split_layers(data)
-            for kind, slug in set(votes) | human | reject:
+            L = split_layers(data)
+            for kind, slug in set(L["votes"]) | L["human"] | L["reject"]:
                 (live_theme if kind == "theme" else live_facet).add(slug)
 
     snapshot = {
@@ -215,14 +307,27 @@ def main() -> int:
             "frozen_but_never_used": sorted(frozen - live_theme - live_facet),
         },
         "bands": bands,
+        "instrument_checks": checks,
         "control": {
-            "blind_first_band": BANDS[BLIND_FIRST],
-            "comment": ("The calibration band tagged blind-first, so its origination "
-                        "rate is the no-anchor baseline. Directional only: that pass "
-                        "was an exhaustive coding, while the supervised bands are "
-                        "deliberately non-exhaustive (silence = not considered)."),
+            "blind_band": BANDS[BLIND_BAND],
+            "comparison": ("Set A vs Set B is the ONLY clean anchoring contrast: same "
+                           "arbiter, same instrument, same exhaustive protocol, same era, "
+                           "differing solely in whether model tags were visible. Compare "
+                           "those two to each other -- NOT either to a supervised band."),
+            "why_not_supervised_bands": ("Light Read is confounded three ways: it was "
+                                         "deliberately non-exhaustive, the vocabulary grew "
+                                         "under it, and the confirmation protocol drifted "
+                                         "mid-band from a subset to all tags."),
+            "merged_collection_not_used": MERGED_CALIBRATION_DO_NOT_USE,
         },
         "caveats": [
+            "Silence over a modal proposal means 'scanned, nothing worth discussing' in "
+            "bands that received a pass, and 'never examined' in partially-tagged papers. "
+            "papers_partial is reported separately so the two are not conflated.",
+            "Completeness = a PRIMARY theme or an explicit demote. 'Any cal:human tag' "
+            "counts targeted single-axis writes as adjudicated and overstates coverage.",
+            "Check instrument_checks before comparing bands: a band whose Zotero model "
+            "layer predates the current instrument is not comparable to one that does not.",
             "'Originated' means absent from every model's MODAL set; only modal tags "
             "are written to Zotero, so a 1-of-3-run proposal counts as originated. "
             "Origination is therefore an upper bound.",
@@ -243,11 +348,16 @@ def main() -> int:
     print(f"wrote {path}")
     print(f"  instrument: frozen {inst['frozen_total']} -> live {inst['live_total']}")
     for name, b in bands.items():
-        if not b["papers_with_arbiter_layer"]:
+        if not b["papers_adjudicated"]:
             continue
-        print(f"  {name:30s} n={b['papers_with_arbiter_layer']:3d} "
-              f"originated {b['origination_pct']:5.1f}% "
+        print(f"  {name:36s} n={b['papers_adjudicated']:3d} "
+              f"(surv {b['surviving']:3d} / dem {b['papers_demoted']:3d} / "
+              f"part {b['papers_partial']:2d} / untouched {b['papers_untouched']:2d})  "
+              f"orig {b['origination_pct'] or 0:5.1f}%  "
               f"override {b['override_rate_pct'] or 0:5.1f}%")
+    for c in checks:
+        if c.get("WARNING"):
+            print(f"  !! {c['band']}: {c['match_pct']}% match to current instrument -- {c['WARNING']}")
     return 0
 
 

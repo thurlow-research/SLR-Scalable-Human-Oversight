@@ -322,7 +322,19 @@ the recall split, the silence reclassification, and the Light Read protocol drif
 
 ## D. Tooling
 
-### D1. `slr-tools/tag_layer_stats.py` — three defects
+### D1. `slr-tools/tag_layer_stats.py` — three defects ✅ **FIXED 2026-08-29**
+**Done on branch `claude/tag-layer-stats-fix`.** Band split (`JFN8693L` / `IURU9UTA`, merged
+`46QVUN7N` no longer used and named as do-not-use), correct blind-arm labelling, demote/tier stats,
+**primary-based completeness predicate** (partial and untouched now reported separately), and a new
+**`instrument_check()` guard** that compares each band's Zotero model layer against the current
+instrument JSON. On first run it **immediately flagged Set A at 0.0% match** — the v1-run trap that
+produced the bogus 80.9%. Superseded `v1_cal:` tags are excluded by the anchored regex and counted.
+First corrected snapshot: `tag_layer_stats_T1b_2026-08-29.json`.
+
+**T0 and T1 snapshots are retained unchanged** (layered-history rule) but **carry the artifactual
+calibration figures** — do not quote them; use T1b or later.
+
+*Original defect list, kept for the record:*
 1. **Wrong source for calibration.** Reads Zotero; Set B's panel output lived only in
    `slr-phase4/data/tags-v213/`. Fixed for Set B by the 2026-08-28 write, but the script should read
    the JSON for calibration bands regardless, or assert that Zotero coverage exists.
