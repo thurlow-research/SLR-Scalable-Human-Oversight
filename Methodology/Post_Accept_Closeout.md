@@ -192,9 +192,11 @@ human-adjudicates workflow that governs every other tag in the corpus.
 ruling, having read the paper, is that it was an **error**, not a casualty of a changing definition
 (*"Consider it a QA correction, not a change"*). There is no panel there under any reading.
 
-**That is the less comfortable finding.** A definitional drift would have been benign. **An error means
-the ad-hoc pass has a defect rate**, and one observed error in a small set is a reason to check the
-remainder rather than assume it is sound.
+**Why it happened (arbiter, 2026-08-29):** these tags were applied *while the slug was being defined*.
+**§33** staged both and instructed hand-application *"ahead of a formal graft decision"*; the reference
+case did not arrive until Ullah (§140a), ~100 papers later. So the set dates from the window of
+**maximum definitional instability** — exactly when errors and genuine boundary cases both cluster.
+Necessary at the time; the cost is that the set now needs a look.
 
 **Exposure:** `agent-panel` **7** hand-applied · `cross-model` **5** · `evaluator-reliability` 11 ·
 `evaluated-synthetic` 10 · `evaluated-benchmark` 9.

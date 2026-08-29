@@ -7048,11 +7048,21 @@ paper contains no agents checking one another, and the sole panel-like phrase de
 **model** inside a Kaggle solution. It was never a boundary case. Arbiter: *"I would say that agent
 panel was applied in error. Consider it a **QA correction**, not a change."*
 
-**The distinction matters, and the correction is the less comfortable reading.** A definitional drift
-is expected and benign — it says the vocabulary matured. **An error says the hand-application pass had
-a defect rate**, and **11 further post-freeze tags were applied in that same pass**
-(`agent-panel` ×7, `cross-model` ×5, minus this one). One observed error in a small hand-applied set
-is a reason to check the rest, not to assume they are fine.
+**When it happened explains how.** Arbiter: *"That happened as we were **defining** the agent-panel,
+is my recollection."* The record agrees — **§33** staged both slugs and instructed *"apply by hand as
+`cal:human:facet:agent-panel` / `cal:human:facet:cross-model` **ahead of a formal graft decision**."*
+These tags therefore date from the period the concept was still being **formed**, and the reference
+case did not arrive until Ullah (§140a), roughly a hundred papers later.
+
+**That is a better account than either of the assistant's two attempts.** Not a definition that
+changed underneath a sound call, and not carelessness — **application during definitional
+formation**, which is precisely when errors and genuine boundary cases both cluster. The staged-slug
+instruction made hand-application necessary; the cost is that the whole set dates from the window of
+maximum definitional instability.
+
+**It still argues for checking the rest.** **11 further post-freeze tags were applied in that same
+window** (`agent-panel` ×7, `cross-model` ×5, minus this one), all before either slug had a positive
+case. One confirmed error among them is a reason to look, not to assume.
 
 **Closeout consequence:** the F2 restricted re-run proposes these slugs independently across the
 surviving corpus. Where the panel disagrees with a hand-applied instance, **re-examine the human
