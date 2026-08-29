@@ -2597,3 +2597,51 @@ measurement.
 
 > **§11.8 guardrail.** HOS detail recorded as **design context, n=1, not evidence.** Its value here is
 > that it names a mechanism and a parameter the literature does not discuss.
+
+## REDUNDANCY HAS THREE USES, AND ONLY ONE OF THEM FAILS (2026-08-29)
+
+**Resolves an apparent contradiction the corpus had been accumulating.** Vargas found agreement
+between models correlates weakly with fix quality (+2.4pp); our own panel agreed **9/9 on a wrong tag**
+(§11.4); Ullah found composition matters more than count. Yet SGCR, Vargas and Sun **all run
+ensembles** and all report strong results. The arbiter put it directly: *"interesting that they are
+using the approach other papers say 'don't work that well'."*
+
+**They are not doing the same thing with it.**
+
+| Use of redundancy | What it is for | Verdict from the corpus |
+|---|---|---|
+| **As a QUALITY SIGNAL** — *N agreed, therefore correct* | confidence | **fails.** Vargas +2.4pp · §11.4's 9/9 · Ullah's diminishing returns |
+| **As a GENERATOR** — *N agents surface more candidate findings* | **recall** | **works** — this is what the ensembles are actually for |
+| **ADJUDICATION** — *a distinct stage decides what to emit* | **precision** | **works** — the only measured false-positive reduction in the corpus |
+
+**SGCR says so explicitly.** Its *"parallelized **ensemble inference** strategy"* exists to allow
+*"the **exploration of diverse** [suggestions]"* — diversity, not consensus — and a *"**second-order
+aggregator LLM**"* then *"merge[s] overlapping suggestions, **resolve[s] conflicts**, and
+consolidate[s] the findings."* The ensemble widens the net; the aggregator decides.
+
+**The same two-part shape, three times:**
+
+| Paper | Generator (recall) | Adjudicator (precision) |
+|---|---|---|
+| SGCR (`CTGGMIX9`) | parallel ensemble inference | second-order aggregator LLM |
+| Vargas (`GAD5Z8PV`) | independent analysis by 2 vendors | cross-critique → **arbitration** |
+| Sun (`V4IRKSFI`) | RuleChecker over 219 rules | **ReviewFilter** |
+
+**Ensembles are fine. Using agreement AS the decision is not.**
+
+### Consequence for a conjunctive gate
+
+This is where the HOS design diverges from every deployed system in the corpus. A conjunctive
+gate — *specialists check, work passes only if all are satisfied* — makes **agreement itself the
+decision**, with no adjudicating stage downstream. That is the one use of redundancy the evidence
+does not support, and it is also the configuration most exposed to compounded false positives.
+
+**The corpus's implied alternative:** keep the panel for what it is good at (**surfacing candidates
+nothing else would find** — the *"missed requirements / edge cases"* result), and add a **single shared
+adjudicator** over the combined output to decide what actually gates. **N + 1, not 2N** — the
+adjudication question is uniform regardless of which specialist raised the finding.
+
+**Open and unmeasured:** none of the three papers ablates the **ensemble** separately. SGCR's ablation
+(RQ2) isolates its two *specification* pathways, not the ensemble, so **how much the ensemble
+contributes versus the aggregator is unknown in every case.** For a design deciding how many agents to
+run, that is the number that matters most, and nobody reports it.
