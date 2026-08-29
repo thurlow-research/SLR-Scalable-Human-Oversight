@@ -2404,3 +2404,77 @@ scenario is **writing code that goes into a product** using an LLM — a build-t
 **Recorded so it is a bounded exclusion rather than an oversight.** If a reviewer asks *"what about
 programs that generate code at runtime?"*, the answer is that it is a known, named, deliberately
 scoped-out problem — not something the review missed.
+
+## Multi-agent topologies — REVISED: conjunctive gate-sets are not advisory panels (2026-08-28)
+
+**Supersedes the three-shape table recorded earlier the same day.** The arbiter's statement of the
+dissertation premise forced the correction: *"Coder produces code. Tester, Security reviewer, code
+reviewer 'check' the work and **it passes only if they are all satisfied**."*
+
+The earlier taxonomy separated shapes by *what agents are asked*. That is insufficient — the decisive
+second axis is **whether an agent can BLOCK**.
+
+| Shape | Agents answer | Aggregation | Failure mode | Corpus |
+|---|---|---|---|---|
+| **Panel (redundant)** | the **same** question | vote / consensus | correlated error survives unanimity (§11.4, 9/9 on a wrong tag) | Ullah `A6ZE2A26` |
+| **Specialist gate-set (conjunctive)** | **different** questions | **all must pass — each holds a veto** | **false positives compound** | **the HOS design** |
+| Specialist advisory | **different** questions | report; **no veto** | gaps between specialisms | Nimraka `5RKMGRNA`, David, P |
+| Relay | different questions | sequential, consumes prior output | errors **amplify** | Rasheed `DJHG9BBS` |
+| **Precision filter** | validates the **prior stage's output** | admit / suppress | **errors damped** — the only measured mitigation | Sun `V4IRKSFI`, Jin `A5WDGC7J` |
+
+### The dilemma facing conjunctive gate-sets
+
+Against measured LLM-reviewer error rates — Jin **88.74% FPR**, Bugdar **24–58% precision**,
+Raghavendra **~46% low-utility** — a conjunctive gate is the **most false-positive-exposed
+configuration in the design space**: any one veto blocks. And the obvious defence fails:
+
+- **If errors are independent**, false positives **compound** across vetoes.
+- **If errors are correlated**, unanimity buys **no redundancy** — which is §11.4's finding exactly
+  (9/9 agreement on a wrong tag, because the models shared a misreading).
+
+**Independent errors compound; correlated errors make the panel decorative.** A design must answer
+which regime it is in, and nothing in the corpus measures the correlation between specialist
+reviewers.
+
+### The precision filter is the only measured mitigation — and it replicates
+
+**Produce → validate → admit**, applied recursively to whatever artifact is at issue:
+
+| Paper | Gated artifact | Result |
+|---|---|---|
+| **Sun / BitsAI-CR** | a **review comment** | **75.0% precision** in production; validator introduced *because* the first stage hallucinated |
+| **Jin** | a **judge verdict** | FPR **88.74% → 39.96%** |
+
+The arbiter's observation: *"this paper has that pattern, but in the context of producing code review
+comments. One agent reviews, the other agent checks. Comment only stands if it passes."* **Same
+structure, one level up** — HOS gates code, BitsAI-CR gates the commentary about code.
+
+### Direction of failure — the same architecture serves opposite goals
+
+BitsAI-CR states the tradeoff and made it deliberately: *"we **prioritize precision over recall**"*,
+recall **69.0–81.8%**, and *"prioritizing precision over recall metrics is **crucial for successful**
+automated code review."*
+
+| | Protects | Fails open on | Hidden cost |
+|---|---|---|---|
+| **BitsAI-CR** | developer **attention** | **defects** — 20–30% missed | escaped issues, absent from the headline metrics |
+| **HOS conjunctive gate** | the **codebase** | **attention** | spurious blocks, delivery friction |
+
+**The transfer argument runs *a fortiori*, not against the gate design.** BitsAI-CR is **advisory** —
+nobody is blocked, and a noisy advisory system merely gets *ignored* (which is what its Outdated Rate
+measures). **A noisy gate stops delivery.** False positives cost strictly more in a blocking
+architecture. So if a validation stage was *necessary* to make advice tolerable at 75% precision, a
+conjunctive gate needs one **more** urgently.
+
+**Conclusion for the dissertation:** the ReviewFilter is not polish — **it is what makes multi-agent
+checking deployable**, and it is the only such component in the corpus with production evidence
+(12,000 WAU) behind it.
+
+### Open questions this leaves
+
+1. **Correlation between specialist reviewers** — unmeasured anywhere. Decides which horn of the
+   dilemma above applies.
+2. **Where does produce→validate→admit terminate?** The pattern is recursive; who validates the
+   validator is a design decision the corpus never discusses.
+3. **False-negative cost under suppression** — BitsAI-CR's filter removes findings, and suppressed
+   defects are invisible in precision and Outdated Rate alike.
