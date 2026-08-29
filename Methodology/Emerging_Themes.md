@@ -2232,3 +2232,36 @@ headline findings in **opposite** directions, and both directions matter:
 reviewer, its human-alone baseline is optimistic and its human-in-the-loop benefit is an upper bound.
 Catalan's engagement decay is the mechanism that erodes it in practice. Worth checking against every
 paper reporting a human-vs-AI or human+AI comparison.
+
+## The authoring-side limit — why swapping in an agent reviewer does not close the loop (`74GE3TF7`, 2026-08-28)
+
+Raised by the arbiter as a prediction, then found in the paper as its own limitation: *"Even if agents
+are doing the reviewing, we could end up in the same sad state of abandoned PRs because the coder agent
+couldn't deal with the feedback."*
+
+> *"a pattern of '**silent abandonment**': small PRs that look safe (no CI touches) but **stall because
+> the agent cannot handle subjective feedback**. This implies that while we can catch the 'explosive'
+> failures, the '**silent' failures require behavioral monitoring**."*
+
+**Why this is a distinct failure and not a variant of the others.** Almost every oversight mechanism in
+the corpus watches the **artifact** — scanners, tests, review bots, complexity gates. This failure is
+invisible to all of them, because **the artifact is fine**. The defect is in the agent's capacity to
+**iterate under feedback**: it produces something plausible, receives a subjective critique, and
+cannot converge. Minh's own structural router — AUC 0.958 on cost prediction — **misses these as false
+negatives**.
+
+**The consequence for delegation.** Automating the *reviewer* side does not help, because the
+bottleneck is on the *authoring* side. An agent reviewer would issue the same subjective feedback the
+coder agent already cannot absorb — faster, and at greater volume. Feedback throughput rises;
+convergence does not. **This is a limit on full delegation that no amount of better reviewing fixes**,
+and it pairs with §126's finding that the human+AI team beats AI alone on precision.
+
+**What it implies is needed:** signals about the *interaction*, not the artifact — Minh calls it
+*"behavioral monitoring"*, and proposes *"semantic risk models to catch subtle logic bugs that
+structural gates miss"* plus *"cryptographic identity to enable **reputation tracking**."* Per-agent
+reputation as a routing input appears nowhere else in the corpus.
+
+**Open question for the dissertation:** the corpus measures agents as *producers* (quality, security,
+debt) and as *reviewers* (Yu, Jin, McAleese). It does not measure them as **negotiators** — the ability
+to take critique and converge. If oversight is a loop rather than a gate, that capacity is the one that
+determines whether delegation terminates.
