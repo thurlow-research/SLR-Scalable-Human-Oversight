@@ -7394,3 +7394,45 @@ Baltes is **mined data**: 1,154 Reddit and Hacker News posts, nobody surveyed. I
 instrument precondition, which stands under every version of the definition (§116a · §121b · §145a) —
 so this is a plain misapplication rather than a casualty of the rule change. Model tags left intact as
 provenance.
+
+### 146a. `evaluator-reliability` CONSOLIDATED to the theme namespace (arbiter, 2026-08-29)
+
+**A slug applied by hand across sessions without a formal graft drifted across namespaces.** Caught
+while building the F2 instrument, which has to emit exactly one namespace per slug.
+
+**State before.** `evaluator-reliability` never entered `Tag_Prompt_v2.13.md` — it appears there only in
+the provenance banner listing slugs the panel *"could not propose."* Hand-application therefore had no
+declaration to anchor to, and split:
+
+| Namespace | n | Items |
+|---|---|---|
+| `cal:human:theme:evaluator-reliability` | 5 | Jin · Zhao · Zietsman · Spiess · Alami |
+| `cal:human:facet:evaluator-reliability` | 8 | Shi · Vargas · Ullah · Sun · Sollenberger · Raghavendra · McAleese · Karakaya |
+
+**Why it had to be settled before the run.** `final:*` computed over a split slug yields **two
+half-populated constructs that read as distinct findings.** The instrument must emit one namespace.
+
+**Ruling: THEME. All 13 consolidated** (8 migrated, 0 failures; model layer was empty, as expected for a
+post-freeze slug).
+
+**Rationale.** The slug names a **subject matter** — *how reliable is the evaluator?* — which is what
+themes encode. Facets in this taxonomy carry **form / method / risk** properties (`agentic`,
+`built-system`, `method-*`, `risk-*`, the `evaluated-*` ladder). And the split was not principled:
+several facet-tagged papers are squarely *about* the construct — Karakaya (*Understanding the Limits of
+Automated Evaluation*), Ullah (*operating characteristics of unanimous LLM juries*), Sollenberger
+(*exploring LLM-as-a-judge*).
+
+**A two-axis reading was considered and declined** (theme = the paper is *about* it; facet = the paper
+*reports* reliability data — the `survey-input` / `method-self-report` shape). Rejected as unwarranted:
+it would need two written definitions and a per-paper re-adjudication of the existing 5/8 split, and no
+demand for the distinction has arisen in adjudication.
+
+**NOT drift — left intact:** `cal:human:primary-proposed:theme:evaluator-reliability` on 4 items (Jin,
+Zhao, Spiess, Alami). This is a **parked proposal** layer — evaluator-reliability was weighed as the
+*primary* theme and deferred; three of the four carry `ai-review` as primary instead. A deliberate
+marker, not a namespace error.
+
+**Generalisable lesson.** §33-style hand-application ahead of a formal graft is sometimes necessary, but
+**an ungrafted slug has no declaration to keep it consistent** and will drift across sessions. Any slug
+hand-applied before its graft needs a namespace fixed at first use and recorded here, even when its
+definition is still moving.
