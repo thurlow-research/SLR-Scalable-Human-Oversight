@@ -6089,3 +6089,77 @@ A single-concern architecture (scan PRs for vulnerabilities) wired into CI/CD. �
 *"not a one-off point tool… **a focused single-concern architecture qualifies** (VibeGuard, Hedwig)."*
 Contrast Jin (§120b), where `framework` failed because the artifact was **one stage inside** someone
 else's pipeline rather than an integration design of its own.
+
+## 130. §111 INVERTED — a built instrument with no effectiveness measurement does not rescue a design paper (`5RKMGRNA`, 2026-08-28)
+
+**Paper:** Nimraka et al., *An agentic-AI solution for intelligent code review* (2025-11-19). ICR —
+parallel specialist LLM agents, GNN semantic-duplication detection, graph dependency-impact analysis,
+rule-based PR title validation, shipped as a GitHub App + VS Code extension.
+**Written:** primary `ai-review`; `built-system`, `framework`, `general-code`, `risk-quality`,
+`risk-security`. **`demote:context`, no dissertation role.**
+
+### 130a. The demote ground — the evaluation measures the software, not the oversight
+
+The arbiter's question was the right one: *"Is the paper adding enough unique insight to keep though?"*
+The evaluation section answers it:
+
+> **"IV. EVALUATION — A. Evaluation Criteria.** The evaluation of the ICR system focused on
+> **verifying its** [functionality]… **unit and integration testing**, with **all test cases passing**."
+
+**They established that the software runs.** No precision, no recall, no ground truth, no comparison
+against human reviewers — and the paper concedes the gap: *"accuracy of the underlying AI models also
+presents [a limitation]."*
+
+**The rule, as the inverse of §111.** §111 held that *a proposed instrument does not rescue a
+measurement paper*. The complement now holds: **a built instrument whose effectiveness is never
+measured does not rescue a design paper.** Building it is not evidence that it works; passing your own
+unit tests is evidence about your test suite.
+
+**Grading against the neighbours** — the same claim at three evidence levels, which is why this one
+falls out:
+
+| Paper | What was measured | Tier |
+|---|---|---|
+| Bugdar (`HJMKADKU`) | detection precision 24–58% against ground truth | Context + Supporting (the number is citable) |
+| Lipsanen (`7SH86C2W`) | comparative qualitative assessment across three approaches | Core + Supporting |
+| **ICR (this)** | **unit and integration tests pass** | **Context, no dissertation role** |
+
+This is a weaker instance of the §124d ladder gap: `built-system` records that the thing exists, and
+nothing distinguishes *"evaluated against ground truth"* from *"the test suite is green."* Reinforces
+the case for an `evaluated-self-demo` rung at F2 — ICR sits **below** even Lipsanen's self-assessment.
+
+### 130b. `agent-panel` DOES NOT APPLY — division of labour, third application
+
+> *"a **parallel multi-agent architecture** orchestrated by LangGraph… each focusing on a **distinct
+> category**: an Error Detection Agent for [errors]"* — plus security and performance agents.
+
+§110/§112a governs: **a panel is agents answering the *same* question; role specialisation is division
+of labour.** The discriminator — *"loses a job or loses a vote?"* — resolves cleanly: remove the
+Security Agent and you lose security **coverage**, not a **vote**. No agent checks another's work;
+they partition the input space.
+
+Third application after David (§110) and Dutta (§112a). **The pattern is now stable enough to state as
+a heuristic for the F2 `agent-panel` definition:** *parallel + specialist + distinct categories ⇒
+division of labour. Panels require redundancy on the same question.* "Multi-agent" in a title predicts
+nothing about which one it is.
+
+### 130c. `framework` ADDED at 1/3 — panel under-called it
+
+A multi-stage architecture (ingest PR → parallel specialist analysis → duplication/dependency checks →
+structured review), distributed as a **GitHub App and VS Code extension** for adoption. Passes §49's
+span test and §120b's reuse test. The panel put 3/3 on `built-system` and only 1/3 on `framework`,
+which reads as anchoring on *"they built it"* over *"what shape is it."* Contrast Jin (§120b), where
+`framework` was correctly rejected: one stage inside someone else's pipeline.
+
+### 130d. The design ideas are real but not attributable here
+
+The arbiter flagged the notable components: *"they looked at the **dependency graph** and search for
+**duplicated code with semantic similarity** checks. That came out of other papers and is likely
+something that any automated pipeline needs to consider."*
+
+Agreed on both halves — including the second. GNN semantic-duplicate detection pairs directly with
+**Huang** (`4T5QFWZE`), which *measured* the reuse collapse in AI-generated code; ICR builds a detector
+for the problem Huang quantified. But the ideas **originate elsewhere**, so ICR is not the citation for
+them, and it supplies no evidence that they help. **No dissertation role** on the arbiter's ruling
+(*"demote away"*). The pipeline-component thread is recorded in `Emerging_Themes.md` against its
+sources instead.
