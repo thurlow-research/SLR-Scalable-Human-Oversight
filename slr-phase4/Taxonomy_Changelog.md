@@ -6163,3 +6163,78 @@ for the problem Huang quantified. But the ideas **originate elsewhere**, so ICR 
 them, and it supplies no evidence that they help. **No dissertation role** on the arbiter's ruling
 (*"demote away"*). The pipeline-component thread is recorded in `Emerging_Themes.md` against its
 sources instead.
+
+## 131. The apparent counter-example RECONCILED — same-standards is t=0 on the decay curve (`4FGIVVTG`, 2026-08-28)
+
+**Paper:** Omidvar-Tehrani et al., *Evaluating human-AI partnership for LLM-based code migration*,
+ACM (2024). Two between-subject experiments, **N=11**, participants reviewing real QCT-generated code
+diffs, plus semi-structured interviews.
+**Written:** primary **`hitl-workflow`**; `oversight-explanation`, `automation-bias`,
+`rules-based-checks`; facets `agentic`, `steering`, `method-experiment`, `method-self-report`,
+`risk-overreliance`, `risk-security`, `risk-quality`. **Rejected:** `survey-input` (2/3).
+**SLR: Core · Dissertation: PRIMARY.**
+
+### 131a. The finding, and the half that matters more
+
+The arbiter flagged it as contrarian: *"they found that people treat the AI like a team mate, provide
+the same due diligence as they would a PR from human. This goes against some of the other data about
+them getting less scrutiny."* The text supports it — and then keeps going:
+
+> *"developers consider AI to be a **teammate and hold the code produced to the same standards** as that
+> of a teammate… they expect a certain level of rigor and thought put into it. **However, they do
+> understand that their teammates may require some hand holding in the beginning.** Developers are
+> willing to provide this handholding to teammates, **with the unspoken expectation that these
+> teammates will learn over time**."*
+
+**The teammate frame imports an expectation of learning, and that expectation is false.** A junior
+colleague absorbs correction; a model does not learn from your handholding within the engagement. So
+the patience developers extend is **priced against a return that will not arrive** — a misapplied
+mental model rather than an accurate one. This is why `automation-bias` sits at 3/3 alongside a
+same-standards finding that would otherwise look like its opposite.
+
+**Carry this into the survey design:** an instrument asking whether practitioners review AI output as
+carefully as human output may get an honest *yes* that is nonetheless uninformative, because the
+comparison class ("a teammate") carries assumptions the AI does not satisfy.
+
+### 131b. NOT a contradiction — three papers, three points on one curve
+
+The apparent conflict with the automation-bias cluster dissolves once the settings are lined up:
+
+| Paper | Setting | Result |
+|---|---|---|
+| **Omidvar** (this) | N=11 recruited **to review diffs**; reviewing *is* the task | full scrutiny |
+| **Catalan** (`5BAZZWHG`) | repeated cycles over time | **engagement decay** |
+| **Ghammam** (`SHK6KAX6`) | artifacts in the wild | oversight theatre |
+
+§126d's **idealised reviewer** applies directly: participants recruited to review are attentive *by
+construction*. Omidvar plausibly measures **t=0** — scrutiny before decay — rather than refuting decay.
+
+**This is a testable claim, not a rhetorical patch:** it predicts that initial scrutiny of AI output is
+**genuine and erodes**, rather than being absent from the outset. That distinction matters for
+intervention design — if scrutiny starts real, the remedy targets *sustaining* attention (rotation,
+forced escalation, cadence limits); if it were never there, the remedy targets *establishing* it.
+Logged in `Emerging_Themes.md`.
+
+### 131c. PRIMARY moved from `oversight-explanation` (3/3) to `hitl-workflow` (3/3)
+
+The paper states its own contribution as *"human's role in the human-AI partnership (**human as a
+director and a reviewer**) and define a **trust framework**"* — role definition and trust calibration,
+not explanation design. `oversight-explanation` is retained as a theme (comprehension of model output
+is substantively treated) but is not where the effort lives.
+
+**Fifth altitude/scope correction in the band** (§121d, §123a, §124a, §128d, this). Every one landed on
+the **primary** slot; four of the five were unanimous. The closeout action stands and is now
+well-evidenced: **check every 3/3 primary against the tie-breaker before `final:*`.**
+
+### 131d. `survey-input` REJECTED at 2/3 — the instrument requirement bites
+
+A genuine edge case, and a useful one for the B2 sweep. The interviews **do** elicit stated
+preferences — what makes developers trust model output — so they **pass §121b's elicitation test**.
+They fail **§116a's instrument requirement**: *"The intention for input-survey was a user survey —
+Likert scale, etc."* Semi-structured interviews are self-report, not a survey.
+
+**The two tests are conjunctive, and this is the first case that isolates them:** every prior ruling
+turned on elicitation (Kang on, Catalan off) or on the absence of any instrument (Ghammam, AIDev).
+Here the elicitation test passes and the tag still fails. **Both conditions must hold**, and the B2
+sweep should apply them in that order — instrument first, then elicitation — because the instrument
+check is cheaper and disposes of interview-only studies immediately.
