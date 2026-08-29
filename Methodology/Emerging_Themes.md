@@ -2359,3 +2359,48 @@ LLM reviewers is the topology most likely to manufacture confident nonsense.
 rate?* Every multi-agent paper reports end-to-end performance; none isolates whether the pipeline
 corrects or amplifies upstream mistakes. This is directly relevant to any architecture where a
 reviewing agent hands findings to a remediating agent — which is the common production shape.
+
+## The LATENCY WINDOW — available oversight is a function of time between generation and consequence (2026-08-28)
+
+Forced by Shinde (`QWHE9EXH`, STELP), which targets a setting the rest of the corpus never enters:
+LLM-generated Python executed **the moment it is produced**, in headless real-time systems where
+*"recurring human reviews [are] impractical."*
+
+**The organising claim:** the corpus's mechanisms are not competing answers to one question. They
+occupy **different windows**, and the window determines which controls are physically available.
+
+| Window between generation and consequence | Control that is possible | Corpus |
+|---|---|---|
+| **Zero** — snippet executed on generation | **containment only** — bound the blast radius; nobody ever reads it | Shinde (`QWHE9EXH`) |
+| **Short** — CI/CD, agentic PR, minutes to days | automated gates, deterministic checks, **routing** | Minh (`74GE3TF7`), Parris (`3SU9QZ6F`), Lipsanen (`7SH86C2W`), Zhong |
+| **Long** — spec, architecture, design | **human review**, explanation, debate | Kang (`7UB2MD8Z`), Zietsman, McAleese (`NRVQT89E`) |
+
+**Why this is worth having as a frame.** It dissolves a recurring apparent conflict — papers advocating
+containment, gating and review are not disagreeing about what works; they are answering for different
+windows. It also predicts the failure mode of borrowing across windows: applying a long-window
+mechanism (human review) to a zero-window problem yields **oversight theatre**, and applying a
+zero-window mechanism (containment) to a long-window problem **forfeits understanding you had time to
+acquire**.
+
+**Orthogonal to shift-left / shift-up.** Ji (§119d) and Lipsanen (§124) move *where in the lifecycle*
+the check happens. This is about *how much time exists before the code has effect* — which constrains
+what any check can be. A shift-left check still needs a window to run in.
+
+**The dissertation's scope sits in the middle band**, and saying so explicitly is useful: the thesis is
+about the **reviewable window**, and Shinde marks where that window closes.
+
+## PARKED — nested runtime generation (out of current scope, 2026-08-28)
+
+**The gap:** every oversight mechanism in the corpus assumes **the artifact reviewed is the artifact
+that runs**. That assumption fails when a reviewed program **itself calls an LLM at runtime**, or
+invokes tools that do — build-time review then certifies a program whose behaviour is not determined
+by its source. Shinde is the only corpus paper operating in that regime, and it addresses the inner
+layer only.
+
+**Arbiter's ruling (2026-08-28):** *"isn't a scenario we are considering now, so we will save it for
+future… The LLM layering is interesting to consider but is a **separate problem**."* The dissertation
+scenario is **writing code that goes into a product** using an LLM — a build-time artifact.
+
+**Recorded so it is a bounded exclusion rather than an oversight.** If a reviewer asks *"what about
+programs that generate code at runtime?"*, the answer is that it is a known, named, deliberately
+scoped-out problem — not something the review missed.
