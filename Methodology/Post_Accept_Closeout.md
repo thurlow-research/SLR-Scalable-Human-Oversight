@@ -103,18 +103,56 @@ double-count.
 §119a established that §34 does **not** bar ladder/method co-occurrence (the **world-or-tool test**
 governs). Three earlier rulings cited the misreading and need revisiting.
 
-### B5. Demote decisions needing a second look (4 papers)
-The panel's tier judgement is weak (see C3), and these are the least-corroborated calls:
+### B5. STRUCK — demotes are final (arbiter rule, 2026-08-29)
 
-| Paper | Set | panel | human | why flagged |
-|---|---|---|---|---|
-| De La Cruz (`E3E5YA2E`) | B | **0/3** | demote | no panel signal at all |
-| Navneet (`TF56EPIP`) | B | **0/3** | demote | no panel signal at all |
-| Sudarsan (`UW2R6BBJ`) | B | **3/3** | keep | kept against unanimity (§30 exception — verify it still holds) |
-| Jin (`UDVHQ5HR`) | A | **0/3** | demote | Set A parallel case |
+> **The arbitration rule:** *"if we reviewed and demoted, **we don't reconsider**. If we kept and the
+> re-run of the tagging instruments surfaces changes to the tags, **we reconsider the tags**."*
 
-`BAWCBT9R` (2/3, demoted) is corroborated twice over — **leave it**. `M74M3RFJ` and `2CKL96B8` have
-panel agreement; `VG6CIDQW` at 1/3 is noise.
+**Tier is settled. Only TAGS are revisitable, and only on kept papers.**
+
+**This item is withdrawn.** It listed four demote calls as "least-corroborated" on the ground that the
+panel gave no signal (0/3) on two of them. **That reasoning was wrong:** the corpus-wide measurement
+(§C3) shows panel demote recall is **57.4%** — the panel gives no signal on **26 of 61** human
+demotes. So *"0/3 panel signal"* is the **modal case**, not an anomaly. The figure described the
+panel's weakness on the tier axis and was misread as doubt about the rulings.
+
+`UW2R6BBJ` also carried a **documented §30 exception** at the time of the call (general-AI object →
+flag proposes, human kept) — an adjudicated decision with reasoning on file, not an open question.
+
+**Consistency:** the rule matches the rest of the design. Demoted papers are **excluded from the F2
+re-run** (D3, Core only), so no new proposals can arrive on them; and re-opening settled dispositions
+is the retroactive re-filtering §394 bars. **Kept papers** receive new-slug proposals and their tags
+are adjudicated as normal.
+
+**Not an exception:** the Jin preprint/journal consolidation (see B12) is the **one-record-per-study**
+rule, not a tier reversal. The study's disposition is the keeper's; the superseded record's tier
+becomes historical provenance.
+
+### B12. Jin preprint→journal consolidated (2026-08-29) — corpus count corrected
+`UDVHQ5HR` *Uncovering systematic failures of LLMs in verifying code against natural language
+specifications* (arXiv 2508.12358, 2025-08) and `A5WDGC7J` *Are LLMs reliable code reviewers?
+Systematic overcorrection in requirement conformance judgement* (**Automated Software Engineering**,
+2026-06) are **the same study** by Haolin Jin & Huaming Chen.
+
+**Evidence:** three verbatim shared runs including the entire 199-character opening; identical core
+finding and identical surprising result (more detailed prompting **raises** misjudgment rates). The
+journal version extends it, replacing the preprint's *"two improved prompting strategies"* with the
+**Fix-guided Verification Filter**.
+
+**Why dedupe missed it:** different discovery streams (`source:arxiv` query vs `source:snowball`) and
+different titles.
+
+**Done:** `superseded-by:A5WDGC7J` on the preprint; `supersedes:UDVHQ5HR` on the journal; `source:arxiv`
+carried to the keeper so the arXiv stream's PRISMA count stays correct; `evaluator-reliability` and
+`metrics` carried across (present only on the preprint record, legitimate for the study).
+
+**Still open:** placement of `UDVHQ5HR` into an `04-Superseded` collection. **Two exist**
+(`DLZGGSDI`, `EJ898XHK`) and phase collections are frozen — needs the arbiter's call on which, or
+whether tag-based supersession alone suffices (the memory notes supersession *is* tag-based and the
+Zotero `relations` field is unused).
+
+**COUNT CORRECTION:** the corpus is **147 unique studies**, not 148 — **71 surviving, 76 demoted**.
+The audit counted by item key; this is one study with two records. **PRISMA must report the dedupe.**
 
 ### B7. Four Accept-band papers are PARTIALLY tagged — not adjudicated
 Discovered 2026-08-28 while checking the band roster. They sit out of alphabetical order with 1–5
