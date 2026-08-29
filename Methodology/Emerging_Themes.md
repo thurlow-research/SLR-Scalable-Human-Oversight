@@ -2565,3 +2565,35 @@ because there is no code for it to inspect.
 
 **Open question:** if this is the real contribution, the right metric is **requirement coverage**, not
 defect precision. Every corpus paper measures the latter.
+
+### Bounded retry as the deadlock detector (HOS: three attempts, then escalate — 2026-08-28)
+
+The negotiated-convergence entry above left an open question: *how do you detect a loop that will not
+converge, and escalate it early?* The arbiter's answer is structural rather than diagnostic:
+***"In HOS, three attempts then escalate."***
+
+**You do not detect non-convergence — you bound it.** A fixed retry budget converts an unbounded
+problem into a bounded one and makes the human load **predictable**: escalations = deadlock rate ×
+volume, both measurable and tunable. No classifier, no monitoring model, no semantic judgement.
+
+**It is also the cheapest possible answer to Minh's blind spot.** Minh (`74GE3TF7`, §127c) found that
+structural routing misses *"silent abandonment"* — PRs that *"look safe… but stall because the agent
+cannot handle subjective feedback"* — and proposed *"behavioral monitoring"* and *"semantic risk
+models"* as the remedy. **A retry counter is behavioural monitoring**, and it costs an integer. It
+converts silent abandonment into a **detected deadlock** at the moment the budget is exhausted, which
+is exactly the class the AUC-0.958 router lets through as false negatives.
+
+**The open empirical question is the parameter, not the mechanism.** Is three right?
+
+- **Too low** → premature escalation; human attention spent on disputes the agents would have settled
+  on attempt four. The scarce resource is wasted on the thing automation was meant to absorb.
+- **Too high** → compute burned and escalation delayed; the human arrives late to a conversation that
+  stopped progressing several rounds ago.
+
+The optimum depends on the **distribution of attempts-to-convergence** — and **no corpus paper reports
+that distribution**. Every multi-agent paper reports end-to-end outcomes; none reports how many rounds
+convergence took, or what fraction never converged. That is a small, cheap, and genuinely novel
+measurement.
+
+> **§11.8 guardrail.** HOS detail recorded as **design context, n=1, not evidence.** Its value here is
+> that it names a mechanism and a parameter the literature does not discuss.

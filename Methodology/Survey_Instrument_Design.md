@@ -160,3 +160,24 @@ literature does not**, which is the strongest reason to ask.
 - **Expect the honest answer to be "nothing."** Most teams likely have a raw AI reviewer wired to PRs
   with no validation stage at all. **That is the finding**, and it is the gap BitsAI-CR's production
   evidence says matters.
+
+### Sub-area — bounded retry and escalation triggers (2026-08-28)
+
+Follows from *"In HOS, three attempts then escalate."* The corpus discusses escalation **criteria**
+(risk, complexity, confidence) and never escalation **budgets**. Practitioners running agent loops
+must have chosen a number, and nobody has asked what it is.
+
+**Ask, concretely:**
+1. **Is there a limit on how many times an agent retries before a human is brought in?** What is it,
+   and how was it chosen — measured, or guessed and never revisited?
+2. **What triggers escalation** — attempt count, elapsed time, cost, agent disagreement, or a human
+   noticing? *(Ranked or multi-select; "a human noticing" is the honest floor.)*
+3. **What fraction of agent tasks reach a human that way?** Even an order of magnitude is useful; no
+   corpus paper reports it.
+4. **What happens to work that exhausts the budget** — escalated, abandoned, or silently dropped?
+   *(Minh's silent abandonment predicts the third, and teams may not know it is happening.)*
+
+**Why it is worth the questions:** a retry budget is the cheapest behavioural monitor available and
+the only mechanism in evidence that turns **non-convergence** into a **detected event**. If most teams
+have no budget, unconverged work is being dropped without anyone counting it — which would be a
+concrete, quantifiable oversight gap rather than a conceptual one.
