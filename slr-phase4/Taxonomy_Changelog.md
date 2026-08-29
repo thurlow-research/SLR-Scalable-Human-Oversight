@@ -7537,3 +7537,56 @@ expected information is **negative**. Recorded as *closed at zero by manual revi
 the vocabulary. Reversible if a recall check is later wanted.
 
 **Net: the F2 set stays at 10** — `scaling-dissent` out, `deterministic-orchestration` in.
+
+### 148a. DEDUPE MOVED THE RECORD BUT NOT THE EVIDENCE — Jin's corpus text was the preprint
+
+**Found by the F2 calibration gate, 2026-08-29.** The gate expected a hybrid flag on Jin
+(`UDVHQ5HR`) and all three vendors declined. **The panel was right and the gold answer was wrong** —
+because the text the panel was given did not contain the hybrid.
+
+**What had happened.** The §144a consolidation merged the Jin preprint and journal records, keeping
+`UDVHQ5HR`. **Both PDFs and both extracted texts survived on the merged record** — but
+`slr-phase4/txt/UDVHQ5HR.txt`, the file the corpus pipeline reads, was still the **preprint**
+extraction.
+
+| | `UDVHQ5HR.txt` as it stood | journal version |
+|---|---|---|
+| Version | arXiv 2508.12358**v1** (2025) | *Automated Software Engineering* (2026) 33:90 |
+| Title | *Uncovering Systematic Failures of LLMs in Verifying Code…* | *Are LLMs reliable code reviewers?…* |
+| Size | 32.6 KB | **88.5 KB** |
+| Fix-guided Verification Filter | **absent** | present (8 mentions) |
+| 88.74% / 39.96% FPR | **absent** | present |
+
+**What depended on it.** Every substantive claim we have made about Jin comes from the **journal**
+text, which was attached to the key the merge removed:
+
+- **§120d** — the hybrid analysis (*"executes both against the benchmark test cases T and an augmented
+  test set T̃"*)
+- **§139a** — Jin's **88.74% FPR**, the empirical anchor for the deterministic-vs-LLM error-profile
+  argument
+- **§147a** — today's hybrid ruling, which reuses that figure
+- **`ISSUE_DRAFT_panel_adjudication.md`** — evidence item 4, the 88.74% → 39.96% filter result
+
+**The citations were not wrong — they were not REPRODUCIBLE.** Anyone checking §139a's figure against
+the surviving record's text would not have found it. That is the failure that matters in a
+dissertation, and it was silent: nothing in the pipeline compares a record's attached text to the
+version its analysis cites.
+
+**Fixed 2026-08-29.** Re-extracted the journal PDF (`WHQ57W8J`) with `pdftotext -enc UTF-8` — the
+corpus convention, per `slr-tools/zotero_pdf_to_text.py` — over `slr-phase4/txt/UDVHQ5HR.txt`. All
+three cited figures verified present. Jin re-run through the F2 panel on the corrected text. The
+preprint extraction remains at `slr-phase4/txt/A5WDGC7J.txt` and as attachment `35QRCZPV`.
+
+**GENERALISABLE — check at every future dedupe.** Consolidation is a *record* operation; the corpus
+text is a *separate file keyed by item key*, and **merging does not update it.** Where the surviving
+key is the preprint's, the corpus silently keeps the preprint text while the analysis cites the
+journal.
+
+> **Rule: after any preprint→journal consolidation, verify that `slr-phase4/txt/<survivor>.txt` is the
+> KEEPER's text, not the merged-away record's.** Cheapest check: confirm a figure or component the
+> analysis cites actually appears in the file.
+
+**Scope check owed at closeout.** Jin was found by accident. Other consolidations may carry the same
+defect — the preprint→journal convention says *keeper = journal*, so any case where the **arXiv** key
+survived is suspect. Add to the closeout: enumerate consolidated records, and for each confirm the
+corpus text matches the keeper version.
