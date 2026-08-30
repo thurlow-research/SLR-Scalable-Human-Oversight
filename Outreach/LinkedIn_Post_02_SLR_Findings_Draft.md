@@ -57,8 +57,11 @@ rubber-stamp. Most papers don't separate them. Neither did my own taxonomy until
 genuinely alarming. Its authors also name an alternative explanation for their own headline result —
 and say plainly they didn't test it.
 
-→ **The field is solution-heavy and evidence-thin.** After 147 close reads I can describe dozens of
-oversight mechanisms and almost no actual practices.
+→ **Rubber-stamping isn't a discipline problem, it's the default setting.** One study watched
+engineers' attention *decline as the task went on*, concentrating on the "happy path" — classic System 1
+thinking. Worse: familiarity with the tool appeared to push them further into it. You can't run the
+careful mode on everything, which makes **routing** — deciding what gets a human's expensive attention
+— the actual problem. It's also one of the thinnest areas in everything I read.
 
 And one finding that turned back on me: I used a three-model panel to help tag the corpus. On the
 contested calls, it was right about **half the time**. In a review partly about the limits of machine

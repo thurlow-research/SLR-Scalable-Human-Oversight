@@ -21,7 +21,7 @@ Each question below maps to a documented gap, not to a hunch:
 | Question | Grounded in |
 |---|---|
 | Who actually reviews, and when? | 147 studies describe mechanisms; almost none observe a firm |
-| How is attention allocated? | Routing/allocation is one of the thinnest clusters in the corpus |
+| How is attention allocated? | Only four of 72 retained studies are primarily about risk-based routing; dual-process evidence says the default mode is the shallow one |
 | How is oversight *evidenced*? | Emerging AI governance regimes require showing oversight occurred; the corpus barely addresses demonstrability |
 | Does it differ under regulation? | **Only three of 72 retained papers** are primarily about regulatory compliance |
 | Does letting agents disagree help? | Corpus critique is overwhelmingly one-way; mutual designs are scarce |
@@ -49,7 +49,10 @@ observation. I can describe dozens of designs and almost no practices. Nobody ha
 looks at what, at which point in the pipeline, in a real organisation under real deadline pressure.
 
 **2. How does a team decide what gets human eyes?**
-If review capacity is fixed and output is not, allocation is the whole problem. Yet routing — deciding
+This is the one I think matters most. Attention has two modes — fast and heuristic, or slow and
+analytical — and under deadline the fast one wins. One study found engineers' engagement *declined as
+the task progressed*, and that familiarity with the tool pushed them further toward skimming. You
+cannot run the careful mode on everything, so allocation is the whole game. Yet routing — deciding
 which changes actually need a person — is one of the thinnest clusters in everything I read. Most
 designs assume someone reviews everything, then discover they can't.
 
