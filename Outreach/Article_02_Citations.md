@@ -24,14 +24,24 @@ Jin's result to ByteDance. Suggested split:
 > executable evidence — rather than a second model's opinion — cut a false-positive rate from 88.7% to
 > 40.0% (Jin & Chen, 2026)."*
 
-**2. "I started with a Multivocal Literature Review (MLR)" — this isn't accurate**, and your own
-methodology says the opposite. `Selection_Criteria_By_Phase.md` records grey literature as **generally
-EXCLUDED** (blogs, vendor posts, docs), and the retained corpus is 40 preprints, 20 conference papers,
-10 journal articles and **2 grey items**. An MLR *deliberately searches* grey channels; you searched
-five academic databases plus snowball. Also note the docx says *"Most were peer-reviewed or preprints;
-some were industry reports"* — that phrasing is fine, but the MLR label above it isn't. Suggested:
-*"a systematic literature review"*, with the preprint proportion stated as the notable methodological
-choice.
+**2. "I started with a Multivocal Literature Review (MLR)" — RESOLVED, use the wording below.**
+It isn't an MLR: an MLR *deliberately searches* grey channels, and `Selection_Criteria_By_Phase.md`
+records grey literature as excluded by default. **Replacement wording (arbiter, 2026-08-29):**
+
+> *"Grey literature was excluded, except for two works I admitted on their merits: a practitioner book
+> and a research report."*
+
+**The two are `RPHK78A9` (Kim & Yegge, *Vibe Coding*, IT Revolution 2025) and `YA7XNWYE` (Ji, Jun, Wu &
+Gelles, *Cybersecurity risks of AI-generated code*, 2024)** — a trade book and a formal report.
+
+⚠ **Not CodeRabbit.** `K4CKRTEI` sits at `02-Context` — it was screened in and then **demoted**, so it
+is framing evidence in the Assignment 1 problem statement but *not* part of the retained corpus. Do not
+list it among the two.
+
+*Footnote for the dissertation, not the article: under this project's own scope note, "grey literature"
+means **web/vendor/social content**. A formally published book and a research report arguably fall
+outside that definition entirely — they are non-peer-reviewed but formally published, which is a
+different category. The article wording above works under either reading.*
 
 **3. The Deterministic Orchestration row has a blank "% of Corpus" cell.** It should read **14%**.
 
