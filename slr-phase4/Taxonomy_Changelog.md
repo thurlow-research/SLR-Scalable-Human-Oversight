@@ -7704,3 +7704,83 @@ therefore produces the census as a by-product, and the split becomes a data deci
 - a real population of **(b)-only** → split, with the instances already enumerated
 
 **Revisit at closeout with the counts in hand.**
+
+### 149a. `agent-panel` SPLIT — `peer-critique` coined (arbiter, 2026-08-29)
+
+**The most consequential taxonomy change of the session, and it turns on the arbiter's own thesis.**
+
+**How it surfaced.** The panel raised an `agent-panel` boundary flag on Vargas — Phase 1 is genuine
+redundancy, but the aggregation is *arbitration* rather than the vote §140a names. The arbiter first
+broadened the rule (*"'aggregation rule' counts since the aggregator is reasoning over the results of
+other agents"*), then caught the deeper problem himself:
+
+> *"I think that agent panel was misinterpreted. My mental model was HOS — **agents checking each
+> other**. However, as you point out, we have two scenarios — **checking each other** and **redundant
+> checks to confirm**. Worth separating those two?"*
+> *"My main thesis is around the 'checking each other'. And the bulk of HOS is the same."*
+> *"Redundancy is also HOS cross model… **Lets separate.**"*
+
+#### The discriminator: WHAT DOES THE AGENT CONSUME?
+
+> **The primary artifact** → **`agent-panel`** (redundancy: N independent answers, aggregated).
+> **Another agent's output** → **`peer-critique`** (mutual checking: B judges A's answer).
+
+#### Why the split is not optional
+
+**The two mechanisms have OPPOSITE evidence behind them, and that contrast is the review's clearest
+practical result.**
+
+| | Mechanism | Corpus evidence |
+|---|---|---|
+| `agent-panel` | same input N times; agreement as signal | **weak** — Vargas convergence **+2.4pp**; Ullah's judge errors **correlated**; unanimity buys little; our own residual precision **50%**; `counterpoint` **9/9 wrong** |
+| `peer-critique` | B's input *is* A's output — **a different question is asked** | **strong** — Vargas arbitration cut change surface **83–90%**; BitsAI-CR's ReviewFilter made it deployable at **12k WAU**; Jin's filter **88.74% → 39.96% FPR** |
+
+One tag over both would place **the mechanism that fails and the mechanism that works in the same
+bucket**, making the corpus's headline finding uncountable. This is the third instance of the same
+failure mode in one day (§139a error profiles, §147b orchestration-vs-checking), which marks it as the
+**taxonomy's recurring hazard: merging constructs that differ in their evidence, because they share
+vocabulary.**
+
+**Decisive asymmetry: MERGING IS LOSSY, SPLITTING IS REVERSIBLE.** If the two behave identically they
+collapse at closeout with counts in hand. Merged now, the distinction cannot be recovered without
+re-reading every paper. This also overrides the usual count-first discipline (§147a) — the split
+*protects an argument* rather than adding vocabulary for its own sake.
+
+#### Consequence for the thesis — the negative result becomes a DEFENCE
+
+Until now the corpus's strongest negative reads as an attack on multi-agent oversight. **It is not, and
+the split is what makes that sayable:** the failing mechanism is redundancy, which HOS uses only
+incidentally (cross-model comparison); the mechanism HOS is *built on* is peer critique, which is the
+one the evidence supports. **The literature's negative result is about the mechanism the thesis does
+not rely on.** Unavailable as a claim while the two share a tag.
+
+#### Definitions
+
+- **`agent-panel`** — N agents answer the same question about the same artifact; outputs combined by an
+  aggregation rule. **The rule need not be a vote** — arbitration and synthesis count, since an
+  aggregator *reasoning over* results is aggregating (arbiter, 2026-08-29). **Rationale must name the
+  mechanism.**
+- **`peer-critique`** *(new facet)* — an agent's input **is** another agent's output, and it evaluates
+  it. **Rationale must name the direction:** `mutual` (A↔B, Vargas Phase 2, HOS) or `one-directional`
+  (a dedicated critic never itself reviewed — McAleese `NRVQT89E`). Both fire; the split is being
+  counted. **Not a relay**, where the next agent *continues* the work rather than judging it.
+- **`cross-model` is ORTHOGONAL to both** — it records that the units are *distinct models*, not what
+  they consume. Redundancy by distinct models = `agent-panel` + `cross-model`; peer critique between
+  distinct models = `peer-critique` + `cross-model`. HOS has both structures, both cross-vendor.
+
+#### Fallout
+
+- **The F2 run of 216 calls is superseded** — it ran the narrow pre-ruling definition. Re-run. The
+  narrow-vs-split `agent-panel` delta is retained as a **measurement of definitional sensitivity**,
+  the same design §10.12 blessed for the inversion v1/v2 pair. Narrow baseline: **agent-panel 3 papers
+  at ≥2/3**.
+- **The 7 hand-applied `agent-panel` tags must be re-read under the split.** They were applied on the
+  arbiter's peer-critique mental model, so an unknown number are `peer-critique`. Until re-read, that
+  slug's human layer is a definitional artifact rather than evidence. **Added to the closeout.**
+- **`ISSUE_DRAFT_panel_adjudication.md` mis-frames HOS** and needs revising before it is filed. It
+  leads with *"HOS currently leans on… a cross-vendor panel of specialists where work passes only if
+  all are satisfied"* and builds its recommendation on **adding** adjudication — but if the bulk of HOS
+  is agents checking each other, HOS is *already* adjudication-shaped, and the negotiation/3-attempt
+  design is the primary mechanism rather than an incidental protection. The assistant reasoned from the
+  phrase *"cross-vendor panel of specialists"* instead of from what each agent consumes — **the exact
+  error this split exists to prevent.**

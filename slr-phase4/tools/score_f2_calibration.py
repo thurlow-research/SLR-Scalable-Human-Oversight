@@ -31,7 +31,7 @@ VENDORS = ("opus", "codex", "gemini")
 
 THEMES = {"evaluator-reliability", "oversight-scaling-inversion-v2", "rules-based-checks-v2"}
 FACETS = {"agent-panel", "cross-model", "evaluated-real-data", "evaluated-synthetic",
-          "evaluated-benchmark", "deterministic-orchestration", "survey-input-v2"}
+          "evaluated-benchmark", "deterministic-orchestration", "peer-critique", "survey-input-v2"}
 PERMITTED = THEMES | FACETS
 V1_LEAK = {"survey-input", "rules-based-checks", "oversight-scaling-inversion", "counterpoint",
            "scaling-dissent"}

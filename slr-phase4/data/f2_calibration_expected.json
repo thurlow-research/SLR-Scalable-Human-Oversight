@@ -5,12 +5,14 @@
     "GAD5Z8PV": {
       "author": "Vargas",
       "must": [
-        "deterministic-orchestration"
+        "deterministic-orchestration",
+        "agent-panel",
+        "peer-critique"
       ],
       "must_not": [
         "rules-based-checks-v2"
       ],
-      "why": "\u00a7147b. 'a static orchestration model with three fixed phases'; 'orchestrator with fixed prompts, which prevents early' termination. Deterministic orchestration with AI verdicts \u2014 the Q2-yes/Q1-no cell. If rules-based-checks-v2 fires here, the panel is conflating orchestration with checking, which is the exact error the facet was coined to prevent."
+      "why": "\u00a7147b. 'a static orchestration model with three fixed phases'; 'orchestrator with fixed prompts, which prevents early' termination. Deterministic orchestration with AI verdicts \u2014 the Q2-yes/Q1-no cell. If rules-based-checks-v2 fires here, the panel is conflating orchestration with checking, which is the exact error the facet was coined to prevent. \u00a7149a: BOTH multi-agent slugs fire, in sequence \u2014 Phase 1 is independent audits of the same artifact by both providers (agent-panel, aggregation = arbitration in Phase 3), Phase 2 is cross-critique where 'each provider reads its own Phase 1 audit and the peer audit' (peer-critique, direction = mutual). This is the worked example proving the two mechanisms are separable within one system, and the paper measures that the value came from the second."
     },
     "UB2EVUFU": {
       "author": "Lyu",
@@ -86,8 +88,10 @@
         "cross-model",
         "evaluator-reliability"
       ],
-      "must_not": [],
-      "why": "\u00a7140a \u2014 the reference case for the two architecture facets. Unanimous committees of 1\u20136 judges ruling on the SAME query (a vote is lost, not a job), composed of DISTINCT models with composition measured as a variable, and the paper's subject is the reliability of those juries. Also checks the \u00a7146a namespace fix: evaluator-reliability must arrive as a THEME."
+      "must_not": [
+        "peer-critique"
+      ],
+      "why": "\u00a7140a \u2014 the reference case for the two architecture facets. Unanimous committees of 1\u20136 judges ruling on the SAME query (a vote is lost, not a job), composed of DISTINCT models with composition measured as a variable, and the paper's subject is the reliability of those juries. Also checks the \u00a7146a namespace fix: evaluator-reliability must arrive as a THEME. \u00a7149a NEGATIVE for peer-critique: the jurors all judge the SAME SQL query independently \u2014 they consume the artifact, not each other's verdicts. Redundancy without mutual checking. If peer-critique fires here, the discriminator (what does the agent CONSUME) is not being applied."
     },
     "R9CDT9KB": {
       "author": "Mahmud",
@@ -106,6 +110,17 @@
         "oversight-scaling-inversion-v2"
       ],
       "why": "THE HIGHEST-RISK SLUG, tested where it is known to fail. v1 is on record as the largest single source of tag error, and \u00a7127b documents THIS PAPER as a 3/3 FALSE POSITIVE: the panel read '28.3% merge instantly' as review absence, but those are the TRIVIAL PRs, while the overload symptom is ghosting \u2014 and ghosted PRs never merge. Absence and overload fall on DIFFERENT POPULATIONS. v2 leads with the \u00a788 leakage test precisely to stop this. If it fires here, v2 has not fixed v1's defect and the slug must not be written to the corpus."
+    },
+    "NRVQT89E": {
+      "author": "McAleese",
+      "must": [
+        "peer-critique"
+      ],
+      "must_not": [
+        "cross-model",
+        "agent-panel"
+      ],
+      "why": "\u00a7149a \u2014 the ONE-DIRECTIONAL case. CriticGPT consumes the producer model's output and critiques it; the critic is never itself reviewed, and there is no second opinion on the same question. So peer-critique fires (direction must be named 'one-directional'), while agent-panel does NOT (no redundancy) and cross-model does NOT \u2014 the spec's own negative: 'ONE fine-tuned critic in a checking role', not distinct models checking each other. Tests that the panel separates the checking RELATION from the model COMPOSITION."
     }
   }
 }

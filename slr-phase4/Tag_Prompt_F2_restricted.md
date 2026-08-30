@@ -10,21 +10,21 @@ general tagging — it is deliberately partial.
 
 ## 0. WHAT THIS RUN IS, AND WHAT IT MUST NOT DO
 
-You are applying **ten new vocabulary items** to a corpus whose **existing tags are already settled by
+You are applying **eleven new vocabulary items** to a corpus whose **existing tags are already settled by
 a human arbiter**. Those existing tags are **not under review**. You are not being asked whether the
 paper's primary theme is right, whether it should have been kept, or whether its other facets hold.
 
-**You may emit only the ten slugs in §2.** Everything else in the taxonomy is unreachable by
+**You may emit only the eleven slugs in §2.** Everything else in the taxonomy is unreachable by
 construction. If you find yourself wanting to propose an existing slug, that is out of scope — say
 nothing.
 
-**Why the restriction is on the OUTPUT and not on your reading:** every one of these ten slugs is
+**Why the restriction is on the OUTPUT and not on your reading:** every one of these eleven slugs is
 defined by a **boundary against an existing slug**. You cannot apply `agent-panel` without knowing
 division of labour; you cannot apply `rules-based-checks-v2` without knowing `ai-review`. So this
 prompt *tells you about* the neighbouring concepts — you need them to draw the line — but you may
 **not emit them**.
 
-**Default to silence.** These slugs are narrow. Nine of ten have a documented history of
+**Default to silence.** These slugs are narrow. Nine have a documented history of
 over-application: the boundary corrections in §5 were each written after a panel fired a slug that did
 not hold. **A slug you are unsure about is a slug you do not emit.** Under-proposing costs one missed
 tag; over-proposing costs arbiter time and pollutes a measurement point.
@@ -54,7 +54,7 @@ Return **exactly one JSON object**, no prose around it:
 
 **The only permitted values.**
 
-| `themes` (3) | `facets` (7) |
+| `themes` (3) | `facets` (8) |
 |---|---|
 | `evaluator-reliability` | `agent-panel` |
 | `oversight-scaling-inversion-v2` | `cross-model` |
@@ -62,6 +62,7 @@ Return **exactly one JSON object**, no prose around it:
 | | `evaluated-synthetic` |
 | | `evaluated-benchmark` |
 | | `deterministic-orchestration` |
+| | `peer-critique` |
 | | `survey-input-v2` |
 
 Any other string is a **validation failure**, not a proposal. Emitting `survey-input` or
@@ -141,30 +142,68 @@ flags.** They are **ordered rungs on one evidence-strength ladder, inside `built
 
 ---
 
-## 4. THE TEN SLUGS
+## 4. THE ELEVEN SLUGS
 
-### `agent-panel` *(facet)*
+### THE MULTI-AGENT PAIR — `agent-panel` and `peer-critique` (§149a)
 
-**Fires when:** multiple agents answer **the same question** about the same artifact, and their outputs
-are combined by an **explicit aggregation rule** — vote, consensus, unanimity, majority.
-**This is redundancy, not specialisation.**
+**These two were one slug until 2026-08-29 and are now separate.** They are different mechanisms with
+**opposite evidence behind them**, so conflating them destroys the corpus's clearest result.
 
-**Discriminator — "loses a job or loses a vote?"** Remove one agent from the system. If **coverage**
-disappears (nobody is checking security any more) it is **division of labour** → do not fire. If a
-**vote** disappears (the same question now has two answers instead of three) it is a **panel** → fire.
+> ## THE DISCRIMINATOR: what does the agent CONSUME?
+> **The primary artifact** → `agent-panel` (redundancy).
+> **Another agent's output** → `peer-critique` (mutual checking).
 
-**Positive:** Ullah `A6ZE2A26` — unanimous committees of 1–6 judges, all ruling on the same SQL query,
-with committee size and composition varied as experimental variables.
+A system may have **both, in sequence** — Vargas `GAD5Z8PV` runs independent audits (panel), then
+cross-critique (peer), then arbitration. Tag both, and say which phase is which.
+
+**`cross-model` is ORTHOGONAL to both**, not an alternative: it records that the units are *distinct
+models*. Redundancy by distinct models = `agent-panel` + `cross-model`. Peer critique between distinct
+models = `peer-critique` + `cross-model`.
+
+---
+
+### `agent-panel` *(facet)* — REDUNDANCY
+
+**Fires when:** multiple agents answer **the same question** about **the same primary artifact**,
+independently, and their outputs are combined by an **aggregation rule**.
+
+**The aggregation rule need NOT be a vote.** Vote · consensus · unanimity · majority · **arbitration**
+· **synthesis** all count — an aggregator *reasoning over* the other agents' results is aggregating.
+**Name the mechanism in your rationale.**
+
+**Discriminator — "loses a job or loses a vote?"** Remove one agent. If **coverage** disappears
+(nobody is checking security any more) it is **division of labour** → do not fire. If an **opinion on
+the same question** disappears → panel → fire.
+
+**Positive:** Ullah `A6ZE2A26` — committees of 1–6 judges all ruling on the same SQL query, size and
+composition varied as experimental variables.
 
 **Negatives:**
 - Nimraka `5RKMGRNA` — parallel specialists on **distinct** categories (division of labour)
-- Rasheed `DJHG9BBS` — **relay**: sequential agents, each consuming the previous one's output
-- P `N7E3MR2V` — PM / coordination roles (different functions, not different votes)
+- Rasheed `DJHG9BBS` — **relay**: each agent transforms the previous output rather than judging it
+- P `N7E3MR2V` — PM / coordination roles (different functions, not different opinions)
 - David `6NTZ85CW` · Dutta `399HN438` — same pattern
 
-> **TRAP.** The phrase *"multi-agent"* in a title or abstract **predicts nothing**. At least five
-> distinct topologies in this corpus use it: panel · parallel division · relay · precision filter ·
-> conjunctive gate. Read the architecture, not the label.
+---
+
+### `peer-critique` *(facet — NEW §149a)* — MUTUAL CHECKING
+
+**Fires when:** an agent's **input is another agent's output**, and it **evaluates or critiques** it.
+The second agent is not redoing the work — it is **judging the first agent's answer**.
+
+**Name the DIRECTION in your rationale:**
+- **`mutual`** — A checks B *and* B checks A (Vargas Phase 2: each provider reads *"its own Phase 1
+  audit and the peer audit"*).
+- **`one-directional`** — a dedicated critic reviews a producer's output and is never itself reviewed
+  (McAleese `NRVQT89E`, CriticGPT). **Both fire**; the arbiter is counting the split.
+
+**Not this slug:** a **relay**, where the next agent *continues or transforms* the work rather than
+evaluating it. Ask whether the second agent's job is to **judge** the first's output or to **build on**
+it.
+
+> **TRAP.** *"Multi-agent"* in a title or abstract **predicts nothing** — at least six distinct
+> topologies in this corpus use the phrase: panel · peer critique · parallel division · relay ·
+> precision filter · conjunctive gate. **Read what each agent is given as input.**
 
 ---
 
