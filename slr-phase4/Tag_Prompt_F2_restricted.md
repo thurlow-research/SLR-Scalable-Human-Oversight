@@ -243,9 +243,23 @@ was evaluated. **Real data alone never suffices.**
 **Other candidates, to assess on their merits:** Minh `74GE3TF7` · Karakaya `5NZ2EDEK` ·
 Liu `6ZC3H7AF` · Lipsanen `7SH86C2W`.
 
-> **OPEN QUESTION — flag, do not resolve.** Where material is real-world-*sourced* but heavily
-> **author-curated**, it is unsettled whether **provenance** or **curation** decides. No test case
-> exists in the corpus. If you meet one, **emit a `flags` entry rather than a tag.**
+> ### SETTLED — CURATION DECIDES, NOT PROVENANCE (arbiter, 2026-08-29)
+>
+> ***"Concocting a dataset from established datasets is still synthetic."***
+>
+> **The test: did the authors CREATE the evaluation instances, or SELECT them?**
+>
+> - **Created** → `evaluated-synthetic`, **however respectable the source pool.** Deriving,
+>   modifying, or assembling instances out of HumanEval / MBPP / QuixBugs / LeetCode is **authoring
+>   test material**, not inheriting it. Constructing paired conforming / non-conforming variants is
+>   the clearest form: the second half of each pair is written by the authors.
+> - **Selected** → `evaluated-real-data`. Real-world artifacts that already existed and record
+>   something that actually happened — CVE/NVD entries, production logs, mined repository history.
+>   Choosing which real records to include is selection, not creation.
+>
+> **Worked pair.** Jin `UDVHQ5HR` curates *and modifies* established benchmark tasks into paired
+> variants → **synthetic**. Mahmud `R9CDT9KB` selects real CVE/NVD records, deliberately capping
+> fabricated material below 5% → **real-data**.
 
 ---
 

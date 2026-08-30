@@ -7590,3 +7590,50 @@ journal.
 defect — the preprint→journal convention says *keeper = journal*, so any case where the **arXiv** key
 survived is suspect. Add to the closeout: enumerate consolidated records, and for each confirm the
 corpus text matches the keeper version.
+
+### 148b. `evaluated-synthetic` vs `evaluated-real-data` — CURATION DECIDES (arbiter, 2026-08-29)
+
+**Closes a question recorded as OPEN with "NO TEST CASE EXISTS YET."** The `evaluated-real-data` entry
+in `HOS_Seeded_Theme_Candidates.md` left it unsettled whether **provenance** or **curation** decides
+when evaluation material is real-world-*sourced* but author-shaped, and warned explicitly not to infer
+the rule from `ZBF86IJM` (which has no tool-side event at all).
+
+**The test case arrived from the F2 calibration run**, and not from the arbiter or the assistant: the
+**gemini leg raised an `undecidable` flag** on Jin rather than guessing —
+
+> *"The authors evaluate their filter on a custom paired dataset constructed by curating and modifying
+> tasks from HumanEval, MBPP, and QuixBugs. It is not an as-is benchmark administration, but it is also
+> not purely self-invented material, making the correct rung unclear."*
+
+Unlike `ZBF86IJM`, Jin **has** a tool-side event — the filter runs alone — so the ladder applies and the
+question is live. *This is the flags channel doing exactly what it was built for.*
+
+**Ruling.** ***"Concocting a dataset from established datasets is still synthetic."***
+
+> **The test: did the authors CREATE the evaluation instances, or SELECT them?**
+> - **Created → `evaluated-synthetic`**, however respectable the source pool. Deriving, modifying or
+>   assembling instances out of HumanEval / MBPP / QuixBugs / LeetCode is **authoring test material**,
+>   not inheriting it.
+> - **Selected → `evaluated-real-data`.** Real-world artifacts that already existed and record
+>   something that actually happened — CVE/NVD entries, production logs, mined repository history.
+
+**Consistent with the written definition, which it sharpens rather than changes:** *"`evaluated-synthetic`
+= the authors **invented their own test data and test cases**."* The ruling extends "invented" to cover
+"concocted out of an established dataset."
+
+**Why the create/select form, and not simply "curation ⇒ synthetic".** A broad reading would swallow
+`evaluated-real-data`'s own motivating instance and leave the rung with **zero members**: Mahmud
+`R9CDT9KB` also *assembled* a corpus — 1,979 examples out of real CVE/NVD records. The distinction that
+keeps both rungs alive is **creation versus selection**:
+
+| | Source pool | What the authors did | Rung |
+|---|---|---|---|
+| **Jin** `UDVHQ5HR` | HumanEval / MBPP / QuixBugs — themselves synthetic task sets | curated **and modified** into **paired** conforming / non-conforming variants; the second half of each pair is **authored** | **`evaluated-synthetic`** |
+| **Mahmud** `R9CDT9KB` | CVE/NVD — records of vulnerabilities that actually occurred | **selected** which real records to include, capping fabricated material below 5% | **`evaluated-real-data`** |
+
+Both readings of the arbiter's rule agree on Jin; the create/select form also leaves Mahmud where the
+definition was written to put it.
+
+**Actions.** Grafted into `Tag_Prompt_F2_restricted.md` (replacing the "flag, do not resolve" note);
+Jin's calibration expectation now carries `evaluated-synthetic` as a **must**; Jin re-run, since its
+earlier outputs were produced while the question was still open.
