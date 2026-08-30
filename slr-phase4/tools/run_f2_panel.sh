@@ -68,7 +68,12 @@ codex_one () {
 gemini_one () {
   local k="$1" o="$R/data/tags-f2/gemini/$k$SFX.json"
   [ -s "$o" ] && return
-  timeout 900 agy --add-dir "$S/prompts" \
+  # --dangerously-skip-permissions matches the operator's own agy alias. Without it,
+  # headless runs auto-deny any tool needing the "command" permission and return NOTHING.
+  # Observed on 2/72 papers where gemini reached for a shell tool instead of its reader:
+  # the failure is silent (empty raw, empty JSON), so it looks like a parse error rather
+  # than a permission denial. Do not remove.
+  timeout 900 agy --dangerously-skip-permissions --add-dir "$S/prompts" \
     -p "Read the file $S/prompts/$k.txt and follow its instructions exactly. Output ONLY the single JSON object it requires — no commentary." \
     --model "$GEMINI_MODEL" < /dev/null > "$S/gemini_$k$SFX.raw" 2>"$S/gemini_$k$SFX.err"
   extract_json < "$S/gemini_$k$SFX.raw" > "$o"
