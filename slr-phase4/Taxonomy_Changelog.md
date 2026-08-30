@@ -7784,3 +7784,48 @@ not rely on.** Unavailable as a claim while the two share a tag.
   design is the primary mechanism rather than an incidental protection. The assistant reasoned from the
   phrase *"cross-vendor panel of specialists"* instead of from what each agent consumes — **the exact
   error this split exists to prevent.**
+
+### 149b. CATALOGUED ≠ IMPLEMENTED — architecture facets removed from Zhu (`ZGST9CY6`)
+
+Surfaced by the §149a `agent-panel` scan. Zhu, *Designing meaningful human oversight in AI* (AI and
+Ethics 2026), carried `agent-panel` and `cross-model`. **Full-text scan: zero mentions of multi-agent
+architecture, multiple agents, or ensembles.** Both tags traced to a **single row of the paper's
+mechanism catalogue** (Table 4):
+
+> *"**Divergence detection and independent checker** — Comparison against a second AI/system,
+> heuristic, or ruleset with alerting."*
+
+**Not an accidental mistag** — that row is the same one anchoring `Theme_Tagging_Calibration §9b`, so
+it had been read deliberately. The error was in what the reading licensed.
+
+**Arbiter, 2026-08-29:** *"correct, no agent mention in Zhu"* · *"Given Zhu is about how to make humans
+more effective in oversight, I think cross model is removed too."*
+
+**Both removed**, each with `cal:human:reject:facet:*` written alongside — required, not optional, since
+the human layer is fail-open and the pending F2 run would otherwise be free to resurrect them on a
+modal.
+
+#### The rule this establishes
+
+> **Architecture facets describe what the paper's system IS. Themes describe what the paper is ABOUT.**
+> A mechanism catalogue is *about* many things — so themes fire — but *is* no particular architecture,
+> so architecture facets do not.
+
+This is §145b's mention-versus-mechanism principle carried from mining studies to **design and
+framework papers**, and it protects a facet class that would otherwise be tripped by every paper that
+*surveys* mechanisms. `agent-panel`, `cross-model`, `peer-critique`, `deterministic-orchestration` and
+the `evaluated-*` ladder are all architecture facets and all vulnerable to this.
+
+**Zhu's ten themes are untouched and correct** — `oversight-explanation`, `risk-routing`,
+`oversight-theater`, `rules-based-checks`, `provenance-auditability` and the rest. The paper genuinely
+*is about* the mechanisms it catalogues. Only the two architecture claims were wrong.
+
+**§9b is unaffected.** Its claim is that Zhu independently names divergence detection as a *prescribed
+design mechanism* — that rests on the Table 4 content, which is unchanged, not on the facets.
+
+**Left open:** `cal:human:facet:agentic` is also an architecture facet on a paper tagged `general-ai`
+and `design-only`. Flagged for a ruling, not actioned.
+
+**Closeout item:** other design / framework / catalogue papers may carry architecture facets on the
+same basis. Screen `design-only` papers for architecture facets that rest on catalogued rather than
+implemented mechanisms.
