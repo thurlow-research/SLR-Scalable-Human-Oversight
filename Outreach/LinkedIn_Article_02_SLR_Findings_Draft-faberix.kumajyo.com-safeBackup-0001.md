@@ -1,12 +1,12 @@
-# LinkedIn Article 02 — "What 9,518 Papers Say About Overseeing AI-Generated Code"
+# LinkedIn Article 01 — "What 9,518 Papers Say About Overseeing AI-Generated Code"
 
 **Status:** draft, not posted. **Drafted:** 2026-08-29.
-**Pairs with:** `LinkedIn_Article_02_ShareText_Draft.md` — the feed commentary that drives here.
-**Images:** `assets/funnel.png` (after the methodology paragraph) · `assets/mechanisms.png`
-(inside Finding 1). Both 2400×1350. *Superseded, kept as provenance: `two-mechanisms.png` collapsed
-mutual critique into adjudication; `three-mechanisms.png` lacked the orchestration axis.*
+**Pairs with:** `LinkedIn_Post_02_SLR_Findings_Draft.md` (the teaser that drives here).
+**Images:** `assets/funnel.png` (after the methodology paragraph) · `assets/three-mechanisms.png`
+(inside Finding 1). Both 2400×1350. *`two-mechanisms.png` is superseded — it collapsed mutual critique
+into adjudication.*
 
-**Sources / fact-check:** see the Sources block in `LinkedIn_Article_02_ShareText_Draft.md` — same figures, same verification,
+**Sources / fact-check:** see the Sources block in the Post 02 draft — same figures, same verification,
 all confirmed 2026-08-29 against the live library and the published versions of each paper. **Added
 2026-08-29:** the System 1 / System 2 material is Catalan et al. (`5BAZZWHG`), *"I'm Not Reading All of
 That"* — engagement "consistently declines as tasks" progress; attention centres on the "happy path";
@@ -80,13 +80,7 @@ arbitration. Its arbitration phase cut code-change surface by **83–90%**, thou
 the whole downstream stack, not to any single stage. In the corpus overall, nearly all critique is
 one-way; mutual designs are scarce enough that I'd call the space largely unstudied.
 
-> **[IMAGE: assets/mechanisms.png]**
-
-And none of the three answers a separate question: **who decides whether any of it runs?** If a model
-controls the flow, it can skip the check or ignore the result — instruction-following is probabilistic.
-If code controls it, the check happens whether the model would have chosen it or not. About one in
-seven of the studies I kept build that way. It's orthogonal to the topologies above, and the stronger
-systems combine them: a fixed sequence of phases, with agents critiquing each other inside it.
+> **[IMAGE: assets/three-mechanisms.png]**
 
 Same label. Very different mechanisms. Most papers don't separate them — and neither did my own
 taxonomy until three weeks ago, which is how I know the distinction is easy to miss.

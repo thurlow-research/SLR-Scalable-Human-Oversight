@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#0E1A26"/>
+  <text x="72" y="62" font-family="Helvetica,Arial,sans-serif" font-size="36" font-weight="700" fill="#FFFFFF">“Multi-agent” describes three different designs</text>
+  <text x="72" y="96" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#7FA8C9">They don’t perform alike — and none of them says who’s in charge.</text>
+
+  <!-- PANEL 1 — REDUNDANCY -->
+  <rect x="72" y="118" width="316" height="342" rx="10" fill="#152736" stroke="#24384A"/>
+  <text x="94" y="156" font-family="Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#E8703A">REDUNDANCY</text>
+  <text x="94" y="180" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#9FBDD4">N agents · the SAME question</text>
+  <g font-family="Helvetica,Arial,sans-serif">
+    <rect x="94" y="198" width="80" height="34" rx="4" fill="#2E4356"/><text x="134" y="220" font-size="14" fill="#D9E7F1" text-anchor="middle">agent A</text>
+    <rect x="184" y="198" width="80" height="34" rx="4" fill="#2E4356"/><text x="224" y="220" font-size="14" fill="#D9E7F1" text-anchor="middle">agent B</text>
+    <rect x="274" y="198" width="80" height="34" rx="4" fill="#2E4356"/><text x="314" y="220" font-size="14" fill="#D9E7F1" text-anchor="middle">agent C</text>
+    <text x="224" y="254" font-size="14" fill="#7FA8C9" text-anchor="middle">↓  same diff, same question  ↓</text>
+    <rect x="184" y="266" width="80" height="34" rx="4" fill="#2E4356"/><text x="224" y="288" font-size="14" fill="#D9E7F1" text-anchor="middle">vote</text>
+  </g>
+  <line x1="94" y1="326" x2="366" y2="326" stroke="#24384A"/>
+  <text x="94" y="352" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#9FBDD4">Convergence improved</text>
+  <text x="94" y="372" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#9FBDD4">acceptance by</text>
+  <text x="94" y="404" font-family="Helvetica,Arial,sans-serif" font-size="25" font-weight="700" fill="#E8703A">2.4 points</text>
+  <text x="94" y="432" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#6F93AE">Errors correlate — agreement</text>
+  <text x="94" y="450" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#6F93AE">measures shared blind spots.</text>
+
+  <!-- PANEL 2 — ONE-WAY CRITIQUE -->
+  <rect x="442" y="118" width="316" height="342" rx="10" fill="#152736" stroke="#24384A"/>
+  <text x="464" y="156" font-family="Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#4FC08D">ONE-WAY CRITIQUE</text>
+  <text x="464" y="180" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#9FBDD4">a critic judges the output</text>
+  <g font-family="Helvetica,Arial,sans-serif">
+    <rect x="464" y="198" width="104" height="34" rx="4" fill="#2E4356"/><text x="516" y="220" font-size="14" fill="#D9E7F1" text-anchor="middle">producer</text>
+    <text x="592" y="220" font-size="17" fill="#7FA8C9" text-anchor="middle">→</text>
+    <rect x="616" y="198" width="104" height="34" rx="4" fill="#2E4356"/><text x="668" y="220" font-size="14" fill="#D9E7F1" text-anchor="middle">finding</text>
+    <text x="592" y="254" font-size="14" fill="#7FA8C9" text-anchor="middle">↓</text>
+    <rect x="464" y="266" width="256" height="34" rx="4" fill="#1E4A3A" stroke="#4FC08D"/>
+    <text x="592" y="288" font-size="14" fill="#9FE3C4" text-anchor="middle">“is this finding valid?”</text>
+  </g>
+  <line x1="464" y1="326" x2="736" y2="326" stroke="#24384A"/>
+  <text x="464" y="352" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#9FBDD4">A validation stage cut</text>
+  <text x="464" y="372" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#9FBDD4">false positives</text>
+  <text x="464" y="404" font-family="Helvetica,Arial,sans-serif" font-size="25" font-weight="700" fill="#4FC08D">88.7% → 40.0%</text>
+  <text x="464" y="432" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#6F93AE">A different question is asked.</text>
+  <text x="464" y="450" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#6F93AE">The common shape.</text>
+
+  <!-- PANEL 3 — MUTUAL CRITIQUE -->
+  <rect x="812" y="118" width="316" height="342" rx="10" fill="#172E2A" stroke="#F2A65A" stroke-width="2"/>
+  <text x="834" y="156" font-family="Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#F2A65A">MUTUAL CRITIQUE</text>
+  <text x="834" y="180" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#9FBDD4">agents challenge each other</text>
+  <g font-family="Helvetica,Arial,sans-serif">
+    <rect x="834" y="198" width="104" height="34" rx="4" fill="#2E4356"/><text x="886" y="220" font-size="14" fill="#D9E7F1" text-anchor="middle">agent A</text>
+    <text x="962" y="216" font-size="18" fill="#F2A65A" text-anchor="middle">⇄</text>
+    <rect x="986" y="198" width="104" height="34" rx="4" fill="#2E4356"/><text x="1038" y="220" font-size="14" fill="#D9E7F1" text-anchor="middle">agent B</text>
+    <text x="962" y="254" font-size="14" fill="#7FA8C9" text-anchor="middle">each reads the other’s work</text>
+    <rect x="834" y="266" width="256" height="34" rx="4" fill="#3A2E14" stroke="#F2A65A"/>
+    <text x="962" y="288" font-size="14" fill="#F7CB98" text-anchor="middle">converge — or escalate</text>
+  </g>
+  <line x1="834" y1="326" x2="1106" y2="326" stroke="#2E4A44"/>
+  <text x="834" y="352" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#9FBDD4">Rare — nearly all critique</text>
+  <text x="834" y="372" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#9FBDD4">in the corpus is one-way</text>
+  <text x="834" y="404" font-family="Helvetica,Arial,sans-serif" font-size="25" font-weight="700" fill="#F2A65A">largely unstudied</text>
+  <text x="834" y="432" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9FBDD4">The only shape that hands a</text>
+  <text x="834" y="450" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9FBDD4">human a <tspan font-weight="700" fill="#F7CB98">disagreement</tspan>, not a verdict.</text>
+
+  <!-- SUBSTRATE BAND — deterministic orchestration -->
+  <rect x="72" y="484" width="1056" height="118" rx="10" fill="#101E2C" stroke="#3D6FA0" stroke-dasharray="6 4"/>
+  <text x="94" y="518" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#7FB2E0">DETERMINISTIC ORCHESTRATION — a separate axis, underneath all three</text>
+  <text x="94" y="546" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#9FBDD4">Whichever topology you pick: does <tspan font-weight="700" fill="#D9E7F1">code</tspan> — not a model — decide which steps run, and whether their outcomes are honoured?</text>
+  <text x="94" y="574" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#9FBDD4">If a model controls the flow, it can skip the check or ignore the result. A state transition can’t be talked out of happening.</text>
+  <text x="1106" y="574" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#7FB2E0" text-anchor="end">14% of the corpus</text>
+
+  <text x="600" y="644" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#F2A65A" text-anchor="middle">Which you built decides what still needs a human — and what they get to look at.</text>
+</svg>
