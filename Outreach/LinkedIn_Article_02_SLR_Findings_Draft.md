@@ -2,8 +2,10 @@
 
 **Status:** draft, not posted. **Drafted:** 2026-08-29.
 **Pairs with:** `LinkedIn_Article_02_ShareText_Draft.md` — the feed commentary that drives here.
-**Images:** `assets/funnel.png` (after the methodology paragraph) · `assets/mechanisms.png`
-(inside Finding 1). Both 2400×1350. *Superseded, kept as provenance: `two-mechanisms.png` collapsed
+**Images:** `assets/banner.png` (cover, 1920×1080) · `assets/funnel.png` (after the methodology
+paragraph) · `assets/mechanisms.png`
+(inside Finding 1) · `assets/two-modes.png` (inside Finding 2). In-article graphics are 2400×1350.
+*Superseded, kept as provenance: `two-mechanisms.png` collapsed
 mutual critique into adjudication; `three-mechanisms.png` lacked the orchestration axis.*
 
 **Screening reliability figures** (added 2026-08-29), all from `Methodology/`: cross-model pairwise
@@ -122,6 +124,8 @@ One study watched software engineers work with an agentic coding assistant and f
 engagement consistently declined as the task went on**. What attention remained went to the "happy
 path" — the sequence where everything works. Edge cases, failure modes and the assistant's reasoning
 got progressively less.
+
+> **[IMAGE: assets/two-modes.png]**
 
 The authors connect this to dual-process theory: **System 1** is fast, heuristic and cheap; **System 2**
 is analytical, comprehensive and expensive. Reviewing a diff properly is System 2 work. Skimming it for
