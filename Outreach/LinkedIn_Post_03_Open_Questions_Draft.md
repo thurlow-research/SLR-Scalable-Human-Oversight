@@ -38,6 +38,10 @@ a concrete, checkable claim about the state of the literature.
 Last week I wrote up what the literature establishes. This is the other half — the questions it kept
 raising and never answered.
 
+They all circle one thing: **if nobody can read everything any more, how does a human stay meaningfully
+in control?** Not "is there a human in the loop" — that's a checkbox. How does the *scarce* thing get
+spent where it matters.
+
 **1. Who actually reviews AI-generated code, and at what point?**
 The corpus is full of proposed mechanisms: gates, panels, rubrics, risk scores. It is nearly empty of
 observation. I can describe dozens of designs and almost no practices. Nobody has written down who
@@ -67,8 +71,8 @@ mostly done the first.
 ---
 
 That's the gap I'm spending my PhD on: not another oversight mechanism, but an account of how
-organisations actually practise oversight of AI-generated code — and which practices survive contact
-with volume.
+organisations actually keep humans meaningfully in control of AI-generated code — and which of those
+practices survive contact with volume.
 
 More on that soon.
 

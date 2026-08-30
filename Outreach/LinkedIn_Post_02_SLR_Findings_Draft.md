@@ -39,14 +39,18 @@ All figures verified 2026-08-29 against the live Zotero library and `slr-phase4/
 **If your answer to “is this AI-generated code safe to merge?” is several models voting, the evidence
 says you built the weaker design.**
 
-I screened 9,518 papers on keeping human oversight of AI-generated code from collapsing under volume.
-147 read in full. 72 survived.
+AI writes code faster than anyone can read it. The interesting problem isn't making the machine
+check better — it's **deciding what still needs a human, and making sure those things actually reach
+one.**
+
+I screened 9,518 papers looking for what's known about that. 147 read in full. 72 survived.
 
 Three things came out of it:
 
 → **"Multi-agent review" describes two opposite designs**, and they don't perform remotely alike. One
-is the intuitive one. It's the weaker one. Most papers don't separate them — and neither did my own
-taxonomy until three weeks ago.
+is the intuitive one. It's the weaker one — and if it's the reason you've reduced human review, you've
+removed the human and kept the error. Most papers don't separate the two. Neither did my own taxonomy
+until three weeks ago.
 
 → **The problem everyone cites is far less measured than it sounds.** The strongest study I found is
 genuinely alarming. Its authors also name an alternative explanation for their own headline result —

@@ -26,7 +26,14 @@ curves appear to cross: the artifact is measurably riskier, and it receives *les
 spent the last several months trying to establish what is actually known about that — not what people
 assert, but what has been demonstrated.
 
-Here is what the literature does and does not support.
+The question underneath all of it isn't how to make machine checking better. It's **how a human stays
+meaningfully in control of work they can no longer read all of.** Telling reviewers to try harder
+doesn't survive the arithmetic, and it doesn't survive the psychology either — automation complacency
+shows up precisely under these conditions, in experts and novices alike, and resists training.
+
+So the real design problem is allocation: **what can be safely handed to a machine, so that human
+attention lands where it actually changes the outcome?** Every finding below is a partial answer to
+that, or a warning about answering it wrong.
 
 ### How I got here
 
@@ -64,6 +71,13 @@ of a second model's opinion.
 
 Same label. Opposite results. Most papers don't separate them — and neither did my own taxonomy until
 three weeks ago, which is how I know the distinction is easy to miss.
+
+**Why this matters for human oversight specifically.** The reason to care which design you built is
+that it determines *what you can stop looking at*. If you reduce human review because three models
+agreed, you have reduced it on the basis of correlated blind spots — you have removed the human and
+kept the error. If you reduce it because a validation stage suppressed the false positives, you have
+removed work that was genuinely noise. **One of those buys you scale; the other buys you the appearance
+of it.**
 
 There's a second-order version of this worth naming. Among systems that do use a checking stage, almost
 all use **one-directional** critique: a dedicated critic reviewing a producer's output. Agents actually
@@ -104,6 +118,9 @@ Five things I'd act on if I were building or buying AI coding tooling tomorrow. 
 studies above rather than in my own preferences — which is also why the list is shorter than you might
 expect.
 
+Read them all against one question: **does this protect scarce human attention, or just consume it
+differently?**
+
 **1. Make the second stage ask a different question.** If your pipeline's answer to "is this reliable?"
 is *more models voting*, you are paying for the mechanism with the weakest evidence behind it. A
 validation stage that asks "is this finding valid?" is the one that keeps showing measurable results.
@@ -120,7 +137,9 @@ third model that fails like the first two buys nothing.
 **4. Let code make the decision; let the model produce the evidence.** Several of the better-performing
 designs have models emit findings or scores while deterministic code decides accept / reject /
 escalate. A threshold can be moved, tested and explained; a model's verdict cannot. It also means the
-check can't be skipped — instruction-following is probabilistic, a state transition isn't.
+check can't be skipped — instruction-following is probabilistic, a state transition isn't. **And it is
+the only version where a human can meaningfully set policy**: you can argue about where to put a
+threshold, and be overruled about it. You cannot argue with a model's mood.
 
 **5. Use the boring tools where they apply.** Linters, scanners, type checkers and test suites have
 knowable, stable error profiles. Don't spend an LLM call on something a deterministic check already
@@ -145,10 +164,16 @@ because a human asked a different question of its output, rather than counting h
 
 ### What I'd like to know
 
-If you're running AI review over real diffs today: are your models answering the **same** question, or
-**different** ones? And does anyone check whether the flagged issues were real?
+None of this is an argument for taking humans out. It's an argument about **where to put them.** The
+scaling problem isn't solved by a better reviewer or a better model — it's solved, if at all, by
+deciding what genuinely needs a person and then making sure those things reliably reach one.
 
-I'll be writing next about what this implies for building oversight that actually scales.
+The literature is much better at proposing mechanisms than at telling you how that allocation works in
+a real organisation under deadline. That's the gap I'm spending my PhD on.
+
+If you have AI writing code in your org today: **what actually reaches a human, and who decided that?**
+
+I'll write next about the questions this raised that nobody has answered.
 
 ---
 

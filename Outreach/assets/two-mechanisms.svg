@@ -40,5 +40,5 @@
   <text x="660" y="562" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#6F93AE">A validation stage dropped false positives</text>
   <text x="660" y="586" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#6F93AE">from 88.7% to 40.0%.</text>
 
-  <text x="600" y="648" font-family="Helvetica,Arial,sans-serif" font-size="22" fill="#F2A65A" text-anchor="middle">Same label. Opposite results.</text>
+  <text x="600" y="648" font-family="Helvetica,Arial,sans-serif" font-size="22" fill="#F2A65A" text-anchor="middle">Same label. Opposite results. Which one you built decides what still needs a human.</text>
 </svg>
