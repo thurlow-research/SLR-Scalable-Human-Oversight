@@ -73,8 +73,13 @@ frozen v1 tags and must not be touched.
 - **Empty output is a valid and common result.** Most papers will get zero or one of these.
 - **No primary theme.** Primaries are settled. Never propose one.
 - **No disposition.** Never propose keep, demote, or tier.
-- **`flags` is for genuine boundary cases** — emit the flag *instead of* guessing when a definition
-  half-fits. A flagged non-emission is more useful than a confident wrong tag.
+- **`flags` has TWO uses. Both are wanted.**
+  1. **Undecidable** — a definition half-fits. Flag *instead of* guessing; a flagged non-emission is
+     more useful than a confident wrong tag.
+  2. **Census** — a pattern the arbiter has asked to have **counted**, even where **the call is
+     completely clear**. Where a slug's section says "flag it," that instruction stands *even when you
+     are certain of the answer*, and **certainty is not a reason to omit the flag.** A flag is not an
+     admission of doubt; it is a data point.
 
 ---
 
@@ -413,8 +418,10 @@ reproducibility, not independence** — the same answer every time, including wh
 Confirmed empirically: Jin, the hybrid case, runs at **88.74% FPR** — the LLM error profile, not the
 fire-or-don't profile this theme exists to isolate.
 
-**Still emit a `flags` entry when you meet one**, so the hybrid class can be counted for a possible
-future slug — but **do not emit the tag**.
+**ALWAYS emit a `flags` entry when you meet one — this is a CENSUS flag (§2 use 2), not a request for
+help.** The call is clear and you should be confident in it: **do not emit the tag, and do emit the
+flag.** The arbiter is counting how large the hybrid class is, to decide whether it earns its own slug
+later. **Being certain is not a reason to skip the flag.**
 
 ---
 
