@@ -39,26 +39,37 @@ All figures verified 2026-08-29 against the live Zotero library and `slr-phase4/
 **If your answer to "is this AI-generated code safe to merge?" is several models voting, the evidence
 says you built the weaker design.**
 
-I screened 9,518 papers on keeping human oversight of AI coding from collapsing under volume. 147 read
-in full. 72 survived.
+I spent the last several months screening 9,518 papers on how organisations keep human oversight of AI
+coding from collapsing under volume. 147 read in full. 72 survived.
 
-Three things:
+Three things worth your time:
 
-→ **"Multi-agent" is three different designs** — agents voting, a critic judging output, agents
-challenging each other. The intuitive one is the weakest. The rarest is the only one that hands a human
-a *disagreement* to judge rather than a verdict to rubber-stamp.
+**1. "Multi-agent" describes three different designs, and they don't perform alike.**
+Agents voting on the same question. A critic judging another agent's output. Agents genuinely
+challenging each other. The first is the intuitive one and the weakest — model errors correlate, so
+agreement mostly measures shared blind spots. The second is where the measurable wins are. The third is
+rare, and it's the only one that hands a human a *disagreement* to judge rather than a verdict to
+rubber-stamp.
 
-→ **Rubber-stamping isn't a discipline problem, it's the default.** One study watched engineers'
-attention decline as the task went on. Familiarity with the tool made it worse, not better.
+**2. Rubber-stamping is the default setting, not a discipline problem.**
+One study watched engineers working with a coding agent and found their attention *declined as the task
+went on*, narrowing to the "happy path" where everything works. The uncomfortable part: familiarity with
+the tool appeared to make it worse, not better. Careful review is expensive. Skimming is free. Under
+deadline, free wins — and no amount of telling people to try harder changes that.
 
-→ **Which makes routing the whole game.** You can't review everything carefully. What gets a human's
-expensive attention is the real design question — and one of the least-studied areas I found.
+**3. Which makes routing the whole game.**
+You cannot review everything carefully; that's the arithmetic we started with. So the real question
+isn't "how do we get people to review properly," it's **"which changes get the expensive kind of
+attention, and what decides that?"** Of the 72 studies I kept, **four** were primarily about that. The
+mechanism the entire problem turns on is one of the least-studied areas in the field.
 
-And one that turned back on me: I used a three-model panel to help tag this corpus. On the contested
-calls it was right about half the time.
+And one finding that turned back on me: I used a three-model panel to help tag this corpus. On the
+contested calls — where the models proposed something I hadn't — they were right about **half the
+time**. In a review partly about the limits of machine agreement, that applies to my own instrument
+too.
 
-Full write-up — the numbers, the three designs, and six things the evidence actually supports doing:
-**[ARTICLE LINK]**
+I've written the whole thing up: the numbers, the three designs side by side, and six things the
+evidence actually supports doing if you're building or buying this right now — **[ARTICLE LINK]**
 
 If you have AI writing code in your org today: what actually reaches a human, and who decided that?
 
@@ -83,9 +94,17 @@ Four readings, each of which changed this draft:
    self-implicating caveat — the "my panel was right about half the time" line is what makes the rest
    trustworthy, and it costs nothing.
 
-**Length: 219 words / ~1,320 characters.** Deliberately snappy — the article carries the weight, so
-this exists to earn a click and stand alone if it doesn't get one. Each finding is one line plus one
-supporting sentence; anything longer was competing with the article rather than feeding it.
+**Length: ~400 words**, per the arbiter's "long enough to make a point and tease, but under 500." An
+earlier 219-word cut went too far — it named the findings without landing any of them, which buys a
+click but leaves nothing if the click doesn't happen. Each finding now gets a claim plus the evidence
+that makes it stick, and stops before it starts explaining.
+
+**The signal I initially under-read: 32 SAVES against 5 reposts.** Saves mean *"useful to me, I'll come
+back to this"* — high intent, low broadcast. Combined with 31 comments on 118k impressions, the picture
+is: this audience treats the content as **reference material rather than conversation**. That argues
+for concrete, specific, re-readable claims (numbers, named mechanisms, things you can act on) over
+provocation — and it makes a six-recommendation article very saveable. The closing question stays,
+because comments are the one metric that didn't move and it costs a line.
 
 **Revised again once the article existed.** The first version summarised the findings *completely*,
 which makes a good standalone post and a poor teaser — the arbiter's note was that the last one "didn't
