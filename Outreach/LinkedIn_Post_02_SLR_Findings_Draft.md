@@ -47,10 +47,11 @@ I screened 9,518 papers looking for what's known about that. 147 read in full. 7
 
 Three things came out of it:
 
-→ **"Multi-agent review" describes two opposite designs**, and they don't perform remotely alike. One
-is the intuitive one. It's the weaker one — and if it's the reason you've reduced human review, you've
-removed the human and kept the error. Most papers don't separate the two. Neither did my own taxonomy
-until three weeks ago.
+→ **"Multi-agent" describes three different designs** — agents voting, a critic judging output, and
+agents genuinely challenging each other. They don't perform alike. The intuitive one is the weakest,
+and if it's why you've reduced human review, you removed the human and kept the error. The third is the
+rarest — and the only one that hands a person a *disagreement* to judge rather than a verdict to
+rubber-stamp. Most papers don't separate them. Neither did my own taxonomy until three weeks ago.
 
 → **The problem everyone cites is far less measured than it sounds.** The strongest study I found is
 genuinely alarming. Its authors also name an alternative explanation for their own headline result —

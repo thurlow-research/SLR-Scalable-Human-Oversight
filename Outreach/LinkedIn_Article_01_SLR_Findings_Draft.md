@@ -2,8 +2,9 @@
 
 **Status:** draft, not posted. **Drafted:** 2026-08-29.
 **Pairs with:** `LinkedIn_Post_02_SLR_Findings_Draft.md` (the teaser that drives here).
-**Images:** `assets/funnel.png` (after the methodology paragraph) · `assets/two-mechanisms.png`
-(inside Finding 1). Both 2400×1350.
+**Images:** `assets/funnel.png` (after the methodology paragraph) · `assets/three-mechanisms.png`
+(inside Finding 1). Both 2400×1350. *`two-mechanisms.png` is superseded — it collapsed mutual critique
+into adjudication.*
 
 **Sources / fact-check:** see the Sources block in the Post 02 draft — same figures, same verification,
 all confirmed 2026-08-29 against the live library and the published versions of each paper.
@@ -49,40 +50,49 @@ That attrition is worth pausing on. Roughly half the full-text corpus was cut on
 and consistently more aggressively than the model panel recommended. A great deal of published work on
 "AI coding oversight" turns out, on inspection, to be about something narrower — usually a review tool.
 
-### Finding 1: "Multi-agent" describes two opposite designs
+### Finding 1: "Multi-agent" describes three different designs
 
 This is the one I'd hand to anyone building these systems today.
 
-The intuitive design is **redundancy**: run several models over the same diff, and treat agreement as
+**Redundancy** is the intuitive design: run several agents over the same diff and treat agreement as
 confidence. It feels like a second opinion. The evidence is unkind to it. In one study, convergence
 between models improved acceptance by **2.4 percentage points**. Another benchmarked unanimous
 committees of one to six LLM judges and found their errors were *correlated* — so agreement largely
 measures shared blind spots rather than correctness.
 
-The design that works is **adjudication**: a second stage that asks a *different* question — not "do
-you also think this is a bug?" but "is this finding actually valid?" In the same study, the arbitration
-phase cut code-change surface by **83–90%**, enforcing minimal fixes over scope-expanding ones. A
-production system at ByteDance added a validation stage in front of developers specifically because the
-first stage hallucinated, and reached 75% precision with 12,000+ weekly users. Another paper dropped a
-false-positive rate from **88.7% to 40.0%** by validating verdicts against executable evidence instead
-of a second model's opinion.
+**One-way critique** asks a *different* question: not "do you also think this is a bug?" but "is this
+finding actually valid?" This is where the measurable results are. A production system at ByteDance put
+a validation stage in front of developers specifically because the first stage hallucinated, and
+reached 75% precision with 12,000+ weekly users. Another paper dropped a false-positive rate from
+**88.7% to 40.0%** by validating verdicts against executable evidence rather than a second model's
+opinion. This is the common shape in the literature.
 
-> **[IMAGE: assets/two-mechanisms.png]**
+**Mutual critique** is the third, and the rarest: agents that read *each other's* work and challenge
+it, converging or escalating rather than voting. One pipeline I looked at runs all three in sequence —
+independent audits, then cross-critique where each provider reads the other's assessment, then
+arbitration. Its arbitration phase cut code-change surface by **83–90%**, though that figure belongs to
+the whole downstream stack, not to any single stage. In the corpus overall, nearly all critique is
+one-way; mutual designs are scarce enough that I'd call the space largely unstudied.
 
-Same label. Opposite results. Most papers don't separate them — and neither did my own taxonomy until
-three weeks ago, which is how I know the distinction is easy to miss.
+> **[IMAGE: assets/three-mechanisms.png]**
 
-**Why this matters for human oversight specifically.** The reason to care which design you built is
-that it determines *what you can stop looking at*. If you reduce human review because three models
-agreed, you have reduced it on the basis of correlated blind spots — you have removed the human and
-kept the error. If you reduce it because a validation stage suppressed the false positives, you have
-removed work that was genuinely noise. **One of those buys you scale; the other buys you the appearance
-of it.**
+Same label. Very different mechanisms. Most papers don't separate them — and neither did my own
+taxonomy until three weeks ago, which is how I know the distinction is easy to miss.
 
-There's a second-order version of this worth naming. Among systems that do use a checking stage, almost
-all use **one-directional** critique: a dedicated critic reviewing a producer's output. Agents actually
-checking *each other* — mutual critique — is rare in the literature. Whether that's a gap or a signal
-is exactly what I'd like to find out.
+**Why this matters for human oversight specifically.** Which design you built determines *what you can
+stop looking at*. If you reduce human review because three models agreed, you reduced it on the basis
+of correlated blind spots — you removed the human and kept the error. If you reduce it because a
+validation stage suppressed false positives, you removed work that was genuinely noise. **One buys you
+scale; the other buys you the appearance of it.**
+
+And mutual critique changes something else — not how much reaches a human, but *what*. A voting system
+hands a person a verdict to accept or override, which is exactly the situation where rubber-stamping
+takes over. A system where agents genuinely disagree hands a person a **disagreement**: two positions,
+the reasoning behind each, and a decision that actually requires judgment. One paper does precisely
+this, presenting the full debate to a human decision-maker rather than a conclusion.
+
+That's a much better use of a scarce reviewer than asking them to confirm what the machine already
+decided. It is also the design the literature has least to say about.
 
 ### Finding 2: The problem is widely asserted and rarely measured
 

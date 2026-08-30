@@ -24,6 +24,7 @@ Each question below maps to a documented gap, not to a hunch:
 | How is attention allocated? | Routing/allocation is one of the thinnest clusters in the corpus |
 | How is oversight *evidenced*? | Emerging AI governance regimes require showing oversight occurred; the corpus barely addresses demonstrability |
 | Does it differ under regulation? | **Only three of 72 retained papers** are primarily about regulatory compliance |
+| Does letting agents disagree help? | Corpus critique is overwhelmingly one-way; mutual designs are scarce |
 | Does anything actually go wrong? | The strongest review-absence study measures absence, not consequence |
 
 The regulated-industry figure is the sharpest of these and is worth stating plainly in the post — it is
@@ -63,7 +64,14 @@ Of the 72 studies that survived my close reading, **three** were primarily about
 regulatory obligation. Finance, healthcare, aerospace — the places where "we had a human in the loop"
 has to hold up in front of an auditor — are essentially unstudied.
 
-**5. And the one underneath all of them: does anything actually go wrong?**
+**5. Does it help to let the agents disagree?**
+Nearly every checking design in the literature is one-way: a critic judges a producer's output and
+returns a verdict. Designs where agents genuinely challenge *each other* — and hand the human an
+unresolved disagreement instead of a conclusion — are scarce enough to be effectively unstudied. That
+matters, because judging a disagreement is a far better use of a scarce reviewer than confirming a
+verdict. Nobody has shown whether it works at scale.
+
+**6. And the one underneath all of them: does anything actually go wrong?**
 The strongest evidence I found shows review is frequently *absent*. It does not show what that
 absence *costs*. Measuring the gap and measuring the damage are different studies, and the field has
 mostly done the first.
