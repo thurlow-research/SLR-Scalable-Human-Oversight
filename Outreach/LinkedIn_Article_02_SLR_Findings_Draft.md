@@ -4,7 +4,8 @@
 **Pairs with:** `LinkedIn_Article_02_ShareText_Draft.md` — the feed commentary that drives here.
 **Images:** `assets/banner.png` (cover, 1920×1080) · `assets/funnel.png` (after the methodology
 paragraph) · `assets/mechanisms.png`
-(inside Finding 1) · `assets/two-modes.png` (inside Finding 2). In-article graphics are 2400×1350.
+(inside Finding 1) · `assets/two-modes.png` (inside Finding 2) · `assets/six-lessons.png` (with the
+recommendations). In-article graphics are 2400×1350.
 *Superseded, kept as provenance: `two-mechanisms.png` collapsed
 mutual critique into adjudication; `three-mechanisms.png` lacked the orchestration axis.*
 
@@ -181,6 +182,8 @@ expect.
 
 Read them all against one question: **does this protect scarce human attention, or just consume it
 differently?**
+
+> **[IMAGE: assets/six-lessons.png]**
 
 **1. Decide explicitly what gets a human — don't let it default.** If nothing in your pipeline routes,
 then attention is being allocated by whoever happens to be on call and how tired they are. Pick a
