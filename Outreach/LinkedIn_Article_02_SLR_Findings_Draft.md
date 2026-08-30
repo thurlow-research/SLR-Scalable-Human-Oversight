@@ -1,7 +1,7 @@
-# LinkedIn Article 01 — "What 9,518 Papers Say About Overseeing AI-Generated Code"
+# LinkedIn Article 02 — "What 9,518 Papers Say About Overseeing AI-Generated Code"
 
 **Status:** draft, not posted. **Drafted:** 2026-08-29.
-**Pairs with:** `LinkedIn_Post_02_SLR_Findings_Draft.md` (the teaser that drives here).
+**Pairs with:** `LinkedIn_Article_02_ShareText_Draft.md` — the feed commentary that drives here.
 **Images:** `assets/funnel.png` (after the methodology paragraph) · `assets/three-mechanisms.png`
 (inside Finding 1). Both 2400×1350. *`two-mechanisms.png` is superseded — it collapsed mutual critique
 into adjudication.*

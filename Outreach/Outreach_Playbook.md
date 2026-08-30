@@ -1,11 +1,11 @@
 # Outreach playbook — what we've learned about posting this work
 
-**Started 2026-08-29**, from Post 01's measured performance and the drafting decisions that followed.
+**Started 2026-08-29**, from Article 01's measured performance and the drafting decisions that followed.
 Update this after every post; the point is that the reasoning survives even when the drafts don't.
 
 ---
 
-## 1. The baseline — Post 01 ("Three vendors, nine months, same failure")
+## 1. The baseline — Article 01 ("Three vendors, nine months, same failure")
 
 | Metric | Value |
 |---|---|
@@ -110,8 +110,12 @@ three-mechanism diagram (the argument). Both are 2400×1350 with editable SVG so
 
 ## 7. Sequence and the standing hold
 
-**Post 01** incident pattern *(posted)* → **Post 02 + Article 01** SLR findings → **Post 03** open
-questions → RQs → *later, after candidacy:* survey call for participants.
+**Article 01** incident pattern *(published)* → **Article 02** SLR findings *(+ share text)* →
+**Post 03** open questions → RQs → *later, after candidacy:* survey call for participants.
+
+**Note the format:** Article 01 was published as a native LinkedIn **article**, which is why the
+analytics report "article views" separately from impressions. Feed commentary and article body are two
+different artifacts with different jobs — keep them in separate files.
 
 > ⚠ **No recruitment in any post until after candidacy.** Deliberate — asking too early burns the list.
 > If replies volunteer, take them to DMs and hold the names.
@@ -121,7 +125,7 @@ questions → RQs → *later, after candidacy:* survey call for participants.
 ## 8. Open questions for the next post
 
 - Does the article/teaser split actually beat a single long post for this audience? Post 02 is the
-  test — compare its click-through against Post 01's 0.4%.
+  test — compare its click-through against Article 01's 0.4%.
 - Do saves rise with the recommendations-heavy article? If the saves-as-reference read is right, they
   should.
 - Does a genuine question move comments off 31?

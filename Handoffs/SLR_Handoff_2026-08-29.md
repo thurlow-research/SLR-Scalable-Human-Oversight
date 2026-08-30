@@ -198,15 +198,22 @@ flags need rulings; the *census* flags are counts and can be summarised.
 measured performance of Post 01 and what was learned from drafting against it. Read it before writing
 any post; the drafts are disposable, the reasoning isn't.
 
-**Current set** (all drafted 2026-08-29, none posted):
-- `LinkedIn_Post_02_SLR_Findings_Draft.md` — teaser, 391 words
-- `LinkedIn_Article_01_SLR_Findings_Draft.md` — long-form, ~2,150 words, both graphics
-- `LinkedIn_Post_03_Open_Questions_Draft.md` — open questions → RQs, 428 words
+**Format note:** the pattern here is native LinkedIn **articles** with feed share-text, not plain
+posts — which is why the analytics report "article views" separately. Body and commentary are separate
+artifacts in separate files.
+
+**Current set:**
+- `LinkedIn_Article_01_Incident_Pattern.md` — **PUBLISHED**; analytics recorded on the file
+- `LinkedIn_Article_02_SLR_Findings_Draft.md` — long-form, ~2,150 words, both graphics
+- `LinkedIn_Article_02_ShareText_Draft.md` — feed commentary driving to it, 391 words
+- `LinkedIn_Post_03_Open_Questions_Draft.md` — open questions → RQs, 428 words. **Open: should this be
+  Article 03?** At 428 words it is post-length with no article behind it, against an
+  articles-by-default pattern.
 - `assets/` — funnel and three-mechanism graphics (PNG + editable SVG)
 
 **The four things most worth not re-learning:**
 
-1. **98% of Post 01's reach was out-of-network.** Assume every reader is a stranger; the first line
+1. **98% of Article 01's reach was out-of-network.** Assume every reader is a stranger; the first line
    carries the post. Credibility numbers go in paragraph two, not the hook.
 2. **32 saves against 5 reposts.** This audience files the work rather than debating it — so concrete,
    re-readable specifics (named mechanisms, real numbers, actionable items) beat provocation. A

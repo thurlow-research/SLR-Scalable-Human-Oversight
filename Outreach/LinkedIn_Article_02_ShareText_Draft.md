@@ -1,17 +1,18 @@
-# LinkedIn Post 02 — "9,518 papers later"
+# LinkedIn Article 02 — share text ("9,518 papers later")
 
 **Status:** draft, not posted. **Drafted:** 2026-08-29.
 **Angle:** solution-side findings from the SLR — the follow-up teased at the end of Post 01. Problem
 was defined there; this is what the literature does and does not actually establish.
-**Role: TEASER.** Pairs with `LinkedIn_Article_01_SLR_Findings_Draft.md`, which carries the evidence,
+**Role: SHARE COMMENTARY** for Article 02 — the text that appears in the feed above the article
+card. Pairs with `LinkedIn_Article_02_SLR_Findings_Draft.md`, which carries the evidence,
 the method and the practical recommendations. This post names *what* was found; the article shows
 *why it holds*. It must open a curiosity gap, not close one.
 
 **Flow:** contrarian claim → credibility numbers → three findings named but not proved →
 self-implicating caveat → article link → question.
 
-**Sequence:** Post 01 (incident pattern, posted) → **Post 02 + Article 01 (this — SLR findings)** →
-Post 03 (open questions → research questions) → later, after candidacy, the survey call.
+**Sequence:** **Article 01** (incident pattern — PUBLISHED) → **Article 02 (this — SLR findings)** →
+**Post 03** (open questions → research questions) → later, after candidacy, the survey call.
 **No recruitment in any of these.**
 
 ---
@@ -34,7 +35,7 @@ All figures verified 2026-08-29 against the live Zotero library and `slr-phase4/
 
 ---
 
-## Draft — TEASER (drives to Article 01)
+## Draft — SHARE TEXT (drives to Article 02)
 
 **If your answer to "is this AI-generated code safe to merge?" is several models voting, the evidence
 says you built the weaker design.**

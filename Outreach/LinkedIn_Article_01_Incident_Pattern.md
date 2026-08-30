@@ -1,6 +1,11 @@
-# LinkedIn Post 01 — "Three vendors, nine months, same failure"
+# LinkedIn Article 01 — "Three vendors, nine months, same failure"
 
-**Status:** draft, not posted. **Drafted:** 2026-08-17.
+**Status: PUBLISHED** as a LinkedIn article. **Drafted:** 2026-08-17.
+
+**Measured performance** (captured 2026-08-29): 118,615 impressions · 97,668 members reached ·
+**98% out-of-network** · 221 social engagements (149 reactions, 31 comments, **32 saves**, 5 reposts,
+4 sends) · **483 article views** · 318 profile viewers · **63 followers gained**.
+Analysis of what those numbers mean is in `Outreach_Playbook.md` §2.
 **Angle:** problem introduction/definition (not solutions) — a pattern across real AI-coding-agent
 incidents, bridging from the retirement/PhD announcement post, closing with a teaser of the SLR's
 solution-side findings for a follow-up post.

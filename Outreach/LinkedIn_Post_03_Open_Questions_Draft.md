@@ -5,8 +5,12 @@
 the dissertation study is for. Converts the SLR's weakest-evidence findings into the research
 questions, so the study reads as a response to a demonstrated gap rather than a personal interest.
 
-**Sequence:** Post 01 (incident pattern, posted) → Post 02 + Article 01 (SLR findings) →
+**Sequence:** Article 01 (incident pattern — PUBLISHED) → Article 02 (SLR findings) →
 **Post 03 (this — open questions → RQs)** → later, after candidacy, the survey call for participants.
+
+**Format question for the arbiter:** at 428 words this is post-length and has no article behind it —
+but the established pattern is publishing articles. If it should be Article 03 instead, it wants
+expanding to ~1,000 words; the five questions each have more behind them than is currently shown.
 
 ⚠ **Still no recruitment.** This post names the questions and says a study is underway. It does **not**
 ask anyone to participate. That holds until after candidacy — deliberately, because asking too early
