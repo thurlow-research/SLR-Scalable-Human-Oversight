@@ -40,7 +40,7 @@ reposts. Combined with only 31 comments against 118k impressions, the read is cl
 > shape for this audience. Chasing comments is the lower-yield play.
 
 **63 followers and 318 profile views from one post — the credibility signal worked.**
-People who engaged went looking for more. Whatever established authority in Post 01 should be kept.
+People who engaged went looking for more. Whatever established authority in Article 01 should be kept.
 In practice that's: specific numbers, named sources, and admitting limitations.
 
 **0.4% click-through is not evidence that links fail.**
@@ -124,7 +124,7 @@ different artifacts with different jobs — keep them in separate files.
 
 ## 8. Open questions for the next post
 
-- Does the article/teaser split actually beat a single long post for this audience? Post 02 is the
+- Does the article + share-text split beat a single long post for this audience? Article 02 is the
   test — compare its click-through against Article 01's 0.4%.
 - Do saves rise with the recommendations-heavy article? If the saves-as-reference read is right, they
   should.

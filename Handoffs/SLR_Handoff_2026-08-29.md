@@ -195,7 +195,7 @@ flags need rulings; the *census* flags are counts and can be summarised.
 ## 8. Outreach — drafts and the playbook
 
 `Outreach/` holds the public-facing work. **`Outreach_Playbook.md` is the durable asset** — the
-measured performance of Post 01 and what was learned from drafting against it. Read it before writing
+measured performance of Article 01 and what was learned from drafting against it. Read it before writing
 any post; the drafts are disposable, the reasoning isn't.
 
 **Format note:** the pattern here is native LinkedIn **articles** with feed share-text, not plain

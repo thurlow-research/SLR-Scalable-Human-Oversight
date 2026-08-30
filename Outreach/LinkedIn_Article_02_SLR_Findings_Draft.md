@@ -6,7 +6,7 @@
 (inside Finding 1). Both 2400×1350. *`two-mechanisms.png` is superseded — it collapsed mutual critique
 into adjudication.*
 
-**Sources / fact-check:** see the Sources block in the Post 02 draft — same figures, same verification,
+**Sources / fact-check:** see the Sources block in `LinkedIn_Article_02_ShareText_Draft.md` — same figures, same verification,
 all confirmed 2026-08-29 against the live library and the published versions of each paper. **Added
 2026-08-29:** the System 1 / System 2 material is Catalan et al. (`5BAZZWHG`), *"I'm Not Reading All of
 That"* — engagement "consistently declines as tasks" progress; attention centres on the "happy path";

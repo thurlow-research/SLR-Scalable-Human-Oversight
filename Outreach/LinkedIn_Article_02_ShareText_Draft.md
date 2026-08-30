@@ -1,7 +1,7 @@
 # LinkedIn Article 02 — share text ("9,518 papers later")
 
 **Status:** draft, not posted. **Drafted:** 2026-08-29.
-**Angle:** solution-side findings from the SLR — the follow-up teased at the end of Post 01. Problem
+**Angle:** solution-side findings from the SLR — the follow-up teased at the end of Article 01. Problem
 was defined there; this is what the literature does and does not actually establish.
 **Role: SHARE COMMENTARY** for Article 02 — the text that appears in the feed above the article
 card. Pairs with `LinkedIn_Article_02_SLR_Findings_Draft.md`, which carries the evidence,
@@ -74,16 +74,16 @@ evidence actually supports doing if you're building or buying this right now —
 
 If you have AI writing code in your org today: what actually reaches a human, and who decided that?
 
-## Structure rationale — driven by Post 01's analytics
+## Structure rationale — driven by Article 01's analytics
 
-Post 01 measured: **118,615 impressions · 97,668 members reached · 98% out-of-network · 221 social
+Article 01 measured: **118,615 impressions · 97,668 members reached · 98% out-of-network · 221 social
 engagements (149 reactions, 31 comments, 5 reposts) · 483 article views · 318 profile viewers · 63
 followers gained.**
 
 Four readings, each of which changed this draft:
 
 1. **98% out-of-network.** Almost every reader is a stranger with no context. **The first line carries
-   the entire post.** Post 02 therefore opens on a claim that is immediately useful to a practitioner
+   the entire post.** The share text therefore opens on a claim that is immediately useful to a practitioner
    and mildly arguable, not on the funnel statistic. "9,518 papers" is a *credibility* line, so it now
    sits in the second paragraph where it does that job instead.
 2. **0.19% engagement against enormous reach.** It travelled but didn't provoke — 31 comments on 118k
@@ -126,4 +126,4 @@ article → question.
 - The opener is deliberately a little combative. If it reads as too much, the softer version is:
   *"If your answer to “is this AI-generated code safe to merge?” is several models voting, the evidence
   is not on your side."*
-- Consider posting mid-week morning US time, matching whatever Post 01 used.
+- Consider posting mid-week morning US time, matching whatever Article 01 used.

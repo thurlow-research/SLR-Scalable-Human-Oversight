@@ -88,7 +88,7 @@ like to know if I'm wrong.
 - Closing question is doing real work — it's genuine prioritisation input for the study, not
   engagement bait. Read the replies.
 - Keep the "I have a guess, and I'd like to know if I'm wrong" line; it invites disagreement, which is
-  what Post 01's analytics said was missing.
+  what Article 01's analytics said was missing.
 - **No recruitment.** If replies ask to participate, take them to DMs and hold the list.
-- Consider a graphic: the same funnel image works, or a simple "5 questions" card. Post 02's data
+- Consider a graphic: the same funnel image works, or a simple "5 questions" card. Article 01's data
   suggests images help reach; not essential here.
