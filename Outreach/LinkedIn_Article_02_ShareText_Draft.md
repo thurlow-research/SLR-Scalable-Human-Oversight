@@ -3,6 +3,11 @@
 **Status:** draft, not posted. **Drafted:** 2026-08-29.
 **Angle:** solution-side findings from the SLR — the follow-up teased at the end of Article 01. Problem
 was defined there; this is what the literature does and does not actually establish.
+**Image: `assets/six-lessons.png`** (2400×1350). Deliberately not used inside the article — it would
+duplicate the recommendations prose there, whereas here it does work nothing else does: it stands alone
+if the reader never clicks, and it is the most saveable thing in the set (Article 01 drew 32 saves
+against 5 reposts, so this audience files practical specifics).
+
 **Role: SHARE COMMENTARY** for Article 02 — the text that appears in the feed above the article
 card. Pairs with `LinkedIn_Article_02_SLR_Findings_Draft.md`, which carries the evidence,
 the method and the practical recommendations. This post names *what* was found; the article shows
