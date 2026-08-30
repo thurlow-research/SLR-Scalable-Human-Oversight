@@ -292,13 +292,24 @@ outcomes are honoured — **so the AI cannot take shortcuts?***
 Keep it separate from `rules-based-checks-v2`, which answers a **different** question: *is any of the
 **checking** non-AI?* One is about **who checks**; this one is about **who controls the process**.
 
-**Fires on either form:**
+**Fires on either form. YOUR RATIONALE MUST NAME WHICH — `form (a)`, `form (b)`, or `both`.** The
+arbiter is counting the split to decide whether these are one construct or two; a rationale that does
+not name the form is incomplete.
 - **(a) Sequencing** — which steps run, and in what order, is fixed in code. **The model cannot skip a
   step**, because the harness advances the state.
 - **(b) Enforcement** — the consequence of a step's outcome is fixed in code. A failing check produces
-  rejection or escalation **without the model choosing to honour it**. **Fires regardless of what
-  produced the finding** — a linter or an LLM. *Orchestrator rejects a PR because the linter failed:
-  fires. Orchestrator rejects a PR because the AI found issues: also fires.*
+  rejection, escalation, **or an overridden verdict**, **without the model choosing to honour it**.
+  **Fires regardless of what produced the finding** — a linter or an LLM. *Orchestrator rejects a PR
+  because the linter failed: fires. Orchestrator rejects a PR because the AI found issues: also fires.
+  Code overturns a model's own verdict on executable evidence: fires.*
+
+**TOP LEVEL ONLY.** The control must sit at the **outermost** level of the contributed system's flow.
+Deterministic machinery *inside* a model-controlled loop does **not** fire — if a model decides whether
+the deterministic part runs at all, it can route around it, and the guarantee is not real.
+
+> **Judge the CONTRIBUTED SYSTEM's architecture, not the paper's centre of gravity.** A paper that is
+> mostly an empirical study can still contribute a pipeline whose top-level flow is code. Do not reason
+> "this is a study, so there is no system."
 
 **TWO PRECONDITIONS, BOTH REQUIRED:**
 
@@ -328,8 +339,15 @@ load-bearing case: **code-enforced process wrapped around model judgement.**
   coordination layer… managing phase transitions. **The orchestrator does not make software engineering
   decisions itself**; rather, it provides the scheduling infrastructure."* A three-phase state machine
   (Strategy → Execution → Verification) in code — **while** manager agents *"dynamically hire, assign"*
-  the team. **Phase sequencing is code-determined; staffing is model-determined. It fires.** The facet
-  asks about the **control flow**, not whether any model has discretion anywhere in the system.
+  the team. **Phase sequencing is code-determined; staffing is model-determined. It fires, form (a).**
+  The facet asks about the **control flow**, not whether any model has discretion anywhere.
+- **Jin `UDVHQ5HR` — form (b) alone, and the cleanest case of code overruling a model.** The
+  Fix-guided Verification Filter *"is applied **only when the judge returns NO**"*; the *"final verdict
+  is **determined by four common outcomes**"*; on Case 1 and Case 3 the code **"flip[s] the verdict to
+  YES"** — the model said NO and the code overturns it on executable evidence, with a bounded
+  **K=2** retry budget. No multi-step workflow is being sequenced, so **form (b) only**. Note this
+  paper is *mostly an empirical study*: judge the pipeline it contributes, not the paper's centre of
+  gravity.
 
 **Negative:** an LLM planner deciding what to do next.
 

@@ -35,6 +35,8 @@ CALIBRATION = [
     "T72TU8B5",  # Shukla   — survey-input-v2 NO (formative, §145a)
     "B644HQFS",  # Baltes   — survey-input-v2 NO (no instrument, §116a)
     "A6ZE2A26",  # Ullah    — agent-panel + cross-model + evaluator-reliability YES
+    "R9CDT9KB",  # Mahmud   — evaluated-real-data YES / synthetic NO (§148b contrast)
+    "74GE3TF7",  # Minh     — oversight-scaling-inversion-v2 NO (§127b 3/3 false positive)
 ]
 
 

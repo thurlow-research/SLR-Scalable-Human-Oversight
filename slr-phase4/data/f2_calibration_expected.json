@@ -15,10 +15,11 @@
     "UB2EVUFU": {
       "author": "Lyu",
       "must": [
-        "deterministic-orchestration"
+        "deterministic-orchestration",
+        "evaluated-benchmark"
       ],
       "must_not": [],
-      "why": "\u00a7147b, the MIXED case and the hardest positive. Phase transitions in code \u2014 'the orchestrator does not make software engineering decisions itself' \u2014 while manager agents 'dynamically hire, assign' the team. Tests whether the panel asks about CONTROL FLOW rather than whether any model has discretion anywhere. A miss here means precondition 1 is being over-applied."
+      "why": "\u00a7147b, the MIXED case and the hardest positive. Phase transitions in code \u2014 'the orchestrator does not make software engineering decisions itself' \u2014 while manager agents 'dynamically hire, assign' the team. Tests whether the panel asks about CONTROL FLOW rather than whether any model has discretion anywhere. A miss here means precondition 1 is being over-applied. ALSO covers evaluated-benchmark: the seeded-themes doc names 'UB2EVUFU on ProjDevBench' as the FIRST GENUINE INSTANCE of the slug \u2014 own system, third-party benchmark run as-is. Free coverage; the paper was already in the set. Expect form (a) in the rationale."
     },
     "72W6R4JG": {
       "author": "T\u00f6pfer",
@@ -43,7 +44,8 @@
     "UDVHQ5HR": {
       "author": "Jin",
       "must": [
-        "evaluated-synthetic"
+        "evaluated-synthetic",
+        "deterministic-orchestration"
       ],
       "must_not": [
         "rules-based-checks-v2"
@@ -51,7 +53,7 @@
       "flag": [
         "rules-based-checks-v2"
       ],
-      "why": "\u00a7147a + \u00a7148b. THE HYBRID and the curation ruling, on the JOURNAL text (\u00a7148a \u2014 the corpus text was the preprint until 2026-08-29 and contained neither the filter nor the 88.74% figure). rules-based-checks-v2 must NOT fire: the Fix-guided Verification Filter executes deterministically but over GPT-4o-generated tests, so the verdict is not independent of a model's judgement \u2014 \u00a7139a's third conjunct. A CENSUS flag is required anyway so the hybrid class can be counted. evaluated-synthetic MUST fire per \u00a7148b: the authors curated AND MODIFIED HumanEval/MBPP/QuixBugs tasks into paired conforming/non-conforming variants \u2014 created instances, not selected ones \u2014 and 'concocting a dataset from established datasets is still synthetic'."
+      "why": "\u00a7147a + \u00a7148b. THE HYBRID and the curation ruling, on the JOURNAL text (\u00a7148a \u2014 the corpus text was the preprint until 2026-08-29 and contained neither the filter nor the 88.74% figure). rules-based-checks-v2 must NOT fire: the Fix-guided Verification Filter executes deterministically but over GPT-4o-generated tests, so the verdict is not independent of a model's judgement \u2014 \u00a7139a's third conjunct. A CENSUS flag is required anyway so the hybrid class can be counted. evaluated-synthetic MUST fire per \u00a7148b: the authors curated AND MODIFIED HumanEval/MBPP/QuixBugs tasks into paired conforming/non-conforming variants \u2014 created instances, not selected ones \u2014 and 'concocting a dataset from established datasets is still synthetic'. deterministic-orchestration MUST fire, FORM (b) ONLY (\u00a7148c): the filter is 'applied only when the judge returns NO', the 'final verdict is determined by four common outcomes', and Cases 1/3 'flip the verdict to YES' \u2014 code overturns the model's own verdict on executable evidence, with a bounded K=2 retry. No workflow is sequenced, so form (b) alone. Tests that the panel judges the CONTRIBUTED SYSTEM rather than the paper's centre of gravity."
     },
     "7UB2MD8Z": {
       "author": "Kang",
@@ -86,6 +88,24 @@
       ],
       "must_not": [],
       "why": "\u00a7140a \u2014 the reference case for the two architecture facets. Unanimous committees of 1\u20136 judges ruling on the SAME query (a vote is lost, not a job), composed of DISTINCT models with composition measured as a variable, and the paper's subject is the reliability of those juries. Also checks the \u00a7146a namespace fix: evaluator-reliability must arrive as a THEME."
+    },
+    "R9CDT9KB": {
+      "author": "Mahmud",
+      "must": [
+        "evaluated-real-data"
+      ],
+      "must_not": [
+        "evaluated-synthetic"
+      ],
+      "why": "F2a's MOTIVATING INSTANCE and the \u00a7148b worked contrast against Jin. The authors built a trust-calibrated pipeline and evaluated it on a 1,979-example corpus ASSEMBLED FROM REAL CVE/NVD RECORDS, with synthetic material 'deliberately kept below 5% to minimize potential bias from LLM-generated examples'. SELECTED real artifacts recording things that actually happened, not CREATED instances \u2014 so real-data, not synthetic. evaluated-synthetic as must_not is the live risk: if \u00a7148b is misread as 'assembled => synthetic', this rung loses its only known member and the distinction collapses."
+    },
+    "74GE3TF7": {
+      "author": "Minh",
+      "must": [],
+      "must_not": [
+        "oversight-scaling-inversion-v2"
+      ],
+      "why": "THE HIGHEST-RISK SLUG, tested where it is known to fail. v1 is on record as the largest single source of tag error, and \u00a7127b documents THIS PAPER as a 3/3 FALSE POSITIVE: the panel read '28.3% merge instantly' as review absence, but those are the TRIVIAL PRs, while the overload symptom is ghosting \u2014 and ghosted PRs never merge. Absence and overload fall on DIFFERENT POPULATIONS. v2 leads with the \u00a788 leakage test precisely to stop this. If it fires here, v2 has not fixed v1's defect and the slug must not be written to the corpus."
     }
   }
 }

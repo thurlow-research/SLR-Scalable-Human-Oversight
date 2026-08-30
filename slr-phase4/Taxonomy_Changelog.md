@@ -7637,3 +7637,70 @@ definition was written to put it.
 **Actions.** Grafted into `Tag_Prompt_F2_restricted.md` (replacing the "flag, do not resolve" note);
 Jin's calibration expectation now carries `evaluated-synthetic` as a **must**; Jin re-run, since its
 earlier outputs were produced while the question was still open.
+
+### 148c. `deterministic-orchestration` — TOP LEVEL, and the adjudication split DEFERRED to a count
+
+Two refinements from pressure-testing the new facet against Jin, plus a correction the assistant owes.
+
+**(1) TOP LEVEL ONLY (arbiter, 2026-08-29).** *"Is the flow managed by deterministic code at the top
+level, or only used within?"* — **top level.** The facet makes an **assurance** claim, and that
+guarantee is only as strong as the **outermost** controller: a model that decides *whether* the
+deterministic part runs can route around it entirely, so a rigid component inside a model-driven loop
+buys a reliable **component**, not a reliable **process**.
+
+> **Test: what decides whether the deterministic part runs at all?** Code → fires. A model that could
+> skip or bypass it → does not.
+
+This narrows the facet deliberately. It excludes "agentic system that happens to call a linter," which
+would otherwise inflate it. **If the run returns only 3–5 instances, that is the rule working.**
+
+**(2) ASSISTANT ERROR — Jin ruled out, wrongly, then corrected.** The assistant first called Jin a
+negative on two grounds, **both wrong**, and the arbiter caught it (*"Is Jin a no? My recollection is
+that is not top level, but they all blurred?"*). Reading the journal text settles it:
+
+- *"The filter is applied **only when the judge returns NO**"* — a code-controlled conditional.
+- *"The final verdict is **determined by four common outcomes**"* — fixed rules, not a model's call.
+- Cases 1 and 3: **"flip the verdict to YES."** The model said NO; **the code overturns it** on
+  executable evidence, with a bounded **K=2** retry budget.
+
+Wrong ground A: *"the model has no discretion to remove."* **The verdict IS the discretion**, and the
+code takes it away. Wrong ground B: *"the paper is mostly a study, so the system isn't top-level"* —
+which conflates the paper's centre of gravity with the contributed system's architecture. §120d had
+already warned about exactly this conflation, on this exact paper.
+
+> **Rule added to the instrument: judge the CONTRIBUTED SYSTEM's architecture, not the paper's centre
+> of gravity.**
+
+The panel's unstable votes on Jin — 2/3, then 1/3 — were **detecting ambiguity in the definition**,
+not noise in the paper. Worth remembering as a diagnostic: *vote instability on a single paper across
+replicates is a signal the definition is underspecified.*
+
+**(3) THE ADJUDICATION QUESTION — real, but DEFERRED to a count.** Arbiter: *"Is there value in us
+differentiating adjudication from orchestration?"* The distinction **dissociates cleanly**, which is
+the test that justified splitting `deterministic-orchestration` from `rules-based-checks-v2` earlier
+the same day:
+
+| | Sequencing (form a) | Enforcement / adjudication (form b) |
+|---|---|---|
+| **Vargas** `GAD5Z8PV`, **Lyu** `UB2EVUFU` | ✓ code drives the phases | ✗ verdicts come from models |
+| **Jin** `UDVHQ5HR` | ✗ nothing multi-step to sequence | ✓ code overturns the model's verdict |
+
+And they answer different questions: sequencing asks *will the check happen* (assurance of **process**);
+adjudication asks *can the model's verdict stand unchallenged* (assurance of **decision**). The second
+is the corpus's cleanest independent arrival at *separate scoring from deciding* — proposal D of
+`ISSUE_DRAFT_panel_adjudication.md`, and the arbiter's own filed survey question (*"Judging produces
+score, routing / decisions based on score?"*).
+
+**NOT SPLIT — yet.** Only **one** adjudication-only instance is known, and §147a set the discipline
+hours earlier: **count the class before coining vocabulary.** Applying that to hybrids and abandoning
+it here would be inconsistent, and a third boundary in this slug family would cost panel accuracy now
+for a distinction that may have one member.
+
+**Instrumented instead, so the count comes free:** the instrument now **requires every
+`deterministic-orchestration` rationale to name the form — `(a)`, `(b)`, or `both`.** The F2 run
+therefore produces the census as a by-product, and the split becomes a data decision:
+
+- mostly **(a)+(b) together** → one construct, no split
+- a real population of **(b)-only** → split, with the instances already enumerated
+
+**Revisit at closeout with the counts in hand.**
