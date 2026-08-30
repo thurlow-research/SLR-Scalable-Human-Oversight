@@ -36,45 +36,31 @@ All figures verified 2026-08-29 against the live Zotero library and `slr-phase4/
 
 ## Draft — TEASER (drives to Article 01)
 
-**If your answer to “is this AI-generated code safe to merge?” is several models voting, the evidence
+**If your answer to "is this AI-generated code safe to merge?" is several models voting, the evidence
 says you built the weaker design.**
 
-AI writes code faster than anyone can read it. The interesting problem isn't making the machine
-check better — it's **deciding what still needs a human, and making sure those things actually reach
-one.**
+I screened 9,518 papers on keeping human oversight of AI coding from collapsing under volume. 147 read
+in full. 72 survived.
 
-I screened 9,518 papers looking for what's known about that. 147 read in full. 72 survived.
+Three things:
 
-Three things came out of it:
+→ **"Multi-agent" is three different designs** — agents voting, a critic judging output, agents
+challenging each other. The intuitive one is the weakest. The rarest is the only one that hands a human
+a *disagreement* to judge rather than a verdict to rubber-stamp.
 
-→ **"Multi-agent" describes three different designs** — agents voting, a critic judging output, and
-agents genuinely challenging each other. They don't perform alike. The intuitive one is the weakest,
-and if it's why you've reduced human review, you removed the human and kept the error. The third is the
-rarest — and the only one that hands a person a *disagreement* to judge rather than a verdict to
-rubber-stamp. Most papers don't separate them. Neither did my own taxonomy until three weeks ago.
+→ **Rubber-stamping isn't a discipline problem, it's the default.** One study watched engineers'
+attention decline as the task went on. Familiarity with the tool made it worse, not better.
 
-→ **The problem everyone cites is far less measured than it sounds.** The strongest study I found is
-genuinely alarming. Its authors also name an alternative explanation for their own headline result —
-and say plainly they didn't test it.
+→ **Which makes routing the whole game.** You can't review everything carefully. What gets a human's
+expensive attention is the real design question — and one of the least-studied areas I found.
 
-→ **Rubber-stamping isn't a discipline problem, it's the default setting.** One study watched
-engineers' attention *decline as the task went on*, concentrating on the "happy path" — classic System 1
-thinking. Worse: familiarity with the tool appeared to push them further into it. You can't run the
-careful mode on everything, which makes **routing** — deciding what gets a human's expensive attention
-— the actual problem. It's also one of the thinnest areas in everything I read.
+And one that turned back on me: I used a three-model panel to help tag this corpus. On the contested
+calls it was right about half the time.
 
-And one finding that turned back on me: I used a three-model panel to help tag the corpus. On the
-contested calls, it was right about **half the time**. In a review partly about the limits of machine
-agreement, that applies to my own instrument too.
+Full write-up — the numbers, the three designs, and six things the evidence actually supports doing:
+**[ARTICLE LINK]**
 
-I've written the whole thing up — the numbers, the two designs side by side, how the corpus was built,
-and **five things the evidence actually supports doing** if you're building or buying AI coding tooling
-right now: **[ARTICLE LINK]**
-
-If you have AI writing code in your org today: when something checks it, is it answering the *same*
-question the generator did, or a *different* one?
-
----
+If you have AI writing code in your org today: what actually reaches a human, and who decided that?
 
 ## Structure rationale — driven by Post 01's analytics
 
@@ -96,6 +82,10 @@ Four readings, each of which changed this draft:
 4. **63 followers and 318 profile views from one post.** The credibility signal worked. Keep the
    self-implicating caveat — the "my panel was right about half the time" line is what makes the rest
    trustworthy, and it costs nothing.
+
+**Length: 219 words / ~1,320 characters.** Deliberately snappy — the article carries the weight, so
+this exists to earn a click and stand alone if it doesn't get one. Each finding is one line plus one
+supporting sentence; anything longer was competing with the article rather than feeding it.
 
 **Revised again once the article existed.** The first version summarised the findings *completely*,
 which makes a good standalone post and a poor teaser — the arbiter's note was that the last one "didn't
