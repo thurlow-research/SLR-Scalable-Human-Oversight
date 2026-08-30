@@ -6,6 +6,14 @@
 (inside Finding 1). Both 2400×1350. *Superseded, kept as provenance: `two-mechanisms.png` collapsed
 mutual critique into adjudication; `three-mechanisms.png` lacked the orchestration axis.*
 
+**Screening reliability figures** (added 2026-08-29), all from `Methodology/`: cross-model pairwise
+Cohen's κ **0.49–0.64** and Spearman ρ ≈ 0.69 on a 250-item sample (`SLR_Status_Update_2026-07-08.md`);
+blinded human Trust Check n=50, binary keep/discard **κ = 0.30**, reproducing the Pass-1 pilot at
+**κ = 0.27**, both below the **0.4** IRR floor (same file, and `screening_multimodel_results.md`:
+"all human/LLM pairs fell below κ=0.4"); model dissent vs human **κ ≈ 0.01–0.04**
+(`Selection_Criteria_By_Phase.md` §210). **Note for accuracy:** the κ = 0.79 figure elsewhere in the
+methodology is the *unblinded human Pass-2 trust check*, NOT model-human agreement — do not mix them.
+
 **Sources / fact-check:** see the Sources block in `LinkedIn_Article_02_ShareText_Draft.md` — same figures, same verification,
 all confirmed 2026-08-29 against the live library and the published versions of each paper. **Added
 2026-08-29:** the System 1 / System 2 material is Catalan et al. (`5BAZZWHG`), *"I'm Not Reading All of
@@ -208,14 +216,30 @@ letting more through. Those are opposite tunings of the same architecture. The m
 deployment I found chose precision over recall deliberately, and accepted that it would miss things.
 Choosing by default is how teams end up with a gate nobody trusts and everybody routes around.
 
-### One caveat I have to state
+### One caveat I have to state — and it's the same finding again
 
-I used a three-model panel to help tag this corpus. On the *contested* calls — the ones where the
-models proposed something I hadn't — they were right about **half the time**.
+I used three models throughout: to screen, and later to help tag. The reliability numbers are the
+sharpest version of everything above, because they happened to me rather than to someone I read about.
 
-In a review partly about the limits of machine agreement, that finding applies to my own instrument.
-It's also the practical argument for the adjudication pattern above: the panel was useful precisely
-because a human asked a different question of its output, rather than counting how many models agreed.
+**The models agreed with each other reasonably well** — pairwise Cohen's κ of **0.49–0.64** across a
+250-item sample, Spearman ρ ≈ 0.69. **They agreed with me much less.** On a blinded 50-item check,
+model-versus-human keep/discard agreement came in at **κ = 0.30** — "fair," and below the **0.4** floor
+usually treated as acceptable for inter-rater reliability in a systematic review. It reproduced almost
+exactly in a second round (κ = 0.27), so it wasn't a bad sample.
+
+The part that settled it: **model *dissent* carried no signal about human judgment either.** Where two
+models disagreed — the obvious place to look for hard cases — agreement with my eventual call ran at
+**κ ≈ 0.01–0.04**. Chance. So there was no shortcut available: not "trust the consensus," and not even
+"only review the ones they argue about." Every record still needed a human decision.
+
+Later, at the tagging stage, the same shape appeared: on *contested* calls — where the panel proposed
+something I hadn't — it was right about **half the time**.
+
+**Models converging on each other is not the same as models converging on the truth**, and my own
+screening measured the gap. That is the redundancy finding from Finding 1, arriving from inside the
+method rather than from the literature — and it's the practical argument for the adjudication pattern:
+the panel was useful precisely because a human asked a *different* question of its output, rather than
+counting how many models agreed.
 
 ### What I'd like to know
 

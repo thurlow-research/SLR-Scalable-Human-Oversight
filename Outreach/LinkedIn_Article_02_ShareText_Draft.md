@@ -64,10 +64,11 @@ isn't "how do we get people to review properly," it's **"which changes get the e
 attention, and what decides that?"** Of the 72 studies I kept, **four** were primarily about that. The
 mechanism the entire problem turns on is one of the least-studied areas in the field.
 
-And one finding that turned back on me: I used a three-model panel to help tag this corpus. On the
-contested calls — where the models proposed something I hadn't — they were right about **half the
-time**. In a review partly about the limits of machine agreement, that applies to my own instrument
-too.
+And one finding that turned back on me. I used three models to screen this corpus. They agreed with
+*each other* at Cohen's κ 0.49–0.64. They agreed with *me* at **κ = 0.30** — below the floor usually
+considered acceptable for a systematic review. And where they disagreed with each other, that
+disagreement predicted my judgment at **chance**. Models converging on each other is not the same as
+models converging on the truth — which is Finding 1, arriving from inside my own method.
 
 I've written the whole thing up: the numbers, the three designs side by side, and six things the
 evidence actually supports doing if you're building or buying this right now — **[ARTICLE LINK]**
