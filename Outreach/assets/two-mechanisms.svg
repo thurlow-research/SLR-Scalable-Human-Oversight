@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#0E1A26"/>
+  <text x="72" y="80" font-family="Helvetica,Arial,sans-serif" font-size="40" font-weight="700" fill="#FFFFFF">“Multi-agent” describes two opposite designs</text>
+  <text x="72" y="120" font-family="Helvetica,Arial,sans-serif" font-size="23" fill="#7FA8C9">Most papers don’t separate them. The evidence does.</text>
+
+  <!-- LEFT: redundancy -->
+  <rect x="72" y="160" width="500" height="430" rx="10" fill="#152736" stroke="#24384A"/>
+  <text x="104" y="212" font-family="Helvetica,Arial,sans-serif" font-size="27" font-weight="700" fill="#E8703A">REDUNDANCY</text>
+  <text x="104" y="246" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#9FBDD4">N models · the SAME question · aggregate</text>
+
+  <g font-family="Helvetica,Arial,sans-serif">
+    <rect x="104" y="278" width="120" height="46" rx="4" fill="#2E4356"/><text x="164" y="308" font-size="19" fill="#D9E7F1" text-anchor="middle">model A</text>
+    <rect x="238" y="278" width="120" height="46" rx="4" fill="#2E4356"/><text x="298" y="308" font-size="19" fill="#D9E7F1" text-anchor="middle">model B</text>
+    <rect x="372" y="278" width="120" height="46" rx="4" fill="#2E4356"/><text x="432" y="308" font-size="19" fill="#D9E7F1" text-anchor="middle">model C</text>
+    <text x="298" y="356" font-size="19" fill="#7FA8C9" text-anchor="middle">↓   ↓   ↓   same diff, same question</text>
+    <rect x="238" y="374" width="120" height="46" rx="4" fill="#2E4356"/><text x="298" y="404" font-size="19" fill="#D9E7F1" text-anchor="middle">vote</text>
+  </g>
+  <line x1="104" y1="452" x2="540" y2="452" stroke="#24384A"/>
+  <text x="104" y="492" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#9FBDD4">Convergence improved acceptance by</text>
+  <text x="104" y="521" font-family="Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#E8703A">2.4 points</text>
+  <text x="104" y="562" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#6F93AE">Model errors correlate — agreement mostly</text>
+  <text x="104" y="586" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#6F93AE">measures shared blind spots.</text>
+
+  <!-- RIGHT: adjudication -->
+  <rect x="628" y="160" width="500" height="430" rx="10" fill="#152736" stroke="#24384A"/>
+  <text x="660" y="212" font-family="Helvetica,Arial,sans-serif" font-size="27" font-weight="700" fill="#4FC08D">ADJUDICATION</text>
+  <text x="660" y="246" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#9FBDD4">a second stage · a DIFFERENT question</text>
+
+  <g font-family="Helvetica,Arial,sans-serif">
+    <rect x="660" y="278" width="150" height="46" rx="4" fill="#2E4356"/><text x="735" y="308" font-size="19" fill="#D9E7F1" text-anchor="middle">reviewer</text>
+    <text x="828" y="308" font-size="22" fill="#7FA8C9" text-anchor="middle">→</text>
+    <rect x="852" y="278" width="150" height="46" rx="4" fill="#2E4356"/><text x="927" y="308" font-size="19" fill="#D9E7F1" text-anchor="middle">finding</text>
+    <text x="735" y="356" font-size="19" fill="#7FA8C9" text-anchor="middle">↓</text>
+    <rect x="660" y="374" width="342" height="46" rx="4" fill="#1E4A3A" stroke="#4FC08D"/>
+    <text x="831" y="404" font-size="19" fill="#9FE3C4" text-anchor="middle">“is this finding actually valid?”</text>
+  </g>
+  <line x1="660" y1="452" x2="1096" y2="452" stroke="#24384A"/>
+  <text x="660" y="492" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#9FBDD4">Arbitration cut code-change surface</text>
+  <text x="660" y="521" font-family="Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#4FC08D">83–90%</text>
+  <text x="660" y="562" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#6F93AE">A validation stage dropped false positives</text>
+  <text x="660" y="586" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#6F93AE">from 88.7% to 40.0%.</text>
+
+  <text x="600" y="648" font-family="Helvetica,Arial,sans-serif" font-size="22" fill="#F2A65A" text-anchor="middle">Same label. Opposite results.</text>
+</svg>

@@ -3,11 +3,16 @@
 **Status:** draft, not posted. **Drafted:** 2026-08-29.
 **Angle:** solution-side findings from the SLR — the follow-up teased at the end of Post 01. Problem
 was defined there; this is what the literature does and does not actually establish.
-**Flow:** funnel stat as hook → one-line method → three findings, strongest last → honest limitation →
-what's next.
+**Role: TEASER.** Pairs with `LinkedIn_Article_01_SLR_Findings_Draft.md`, which carries the evidence,
+the method and the practical recommendations. This post names *what* was found; the article shows
+*why it holds*. It must open a curiosity gap, not close one.
 
-**Sequence note:** Post 01 (incident pattern) → **Post 02 (this, SLR findings)** → Post 03 (HOS
-insights). **No call for survey participants** — that stays held until after candidacy.
+**Flow:** contrarian claim → credibility numbers → three findings named but not proved →
+self-implicating caveat → article link → question.
+
+**Sequence:** Post 01 (incident pattern, posted) → **Post 02 + Article 01 (this — SLR findings)** →
+Post 03 (open questions → research questions) → later, after candidacy, the survey call.
+**No recruitment in any of these.**
 
 ---
 
@@ -29,45 +34,37 @@ All figures verified 2026-08-29 against the live Zotero library and `slr-phase4/
 
 ---
 
-## Draft
+## Draft — TEASER (drives to Article 01)
 
-**If your AI code review runs several models and takes the majority vote, the evidence says you built
-the weaker design.**
+**If your answer to “is this AI-generated code safe to merge?” is several models voting, the evidence
+says you built the weaker design.**
 
-I spent the last several months reading everything I could find on keeping human oversight of
-AI-generated code from collapsing under volume. 9,518 papers screened. 147 read in full. 72 survived.
+I screened 9,518 papers on keeping human oversight of AI-generated code from collapsing under volume.
+147 read in full. 72 survived.
 
-Here is the finding I did not expect.
+Three things came out of it:
 
-**"Multiple AI reviewers" describes two opposite things.**
-
-*Redundancy* — several models answering the same question, then aggregating — is the intuitive design.
-The evidence is unkind to it. In one study, cross-model convergence improved acceptance by **2.4
-percentage points**. Model errors turn out to be correlated, so agreement largely measures shared blind
-spots rather than correctness.
-
-*Adjudication* — a second stage asking a **different** question, checking the first stage's output —
-behaves nothing like it. The same study's arbitration phase cut code-change surface by **83–90%**.
-Another dropped a false-positive rate from **88.7% to 40.0%** by validating verdicts against executable
-evidence rather than asking a second model whether it agreed.
-
-Same "multi-agent" label. Opposite results. Most papers don't separate them — and neither did my own
+→ **"Multi-agent review" describes two opposite designs**, and they don't perform remotely alike. One
+is the intuitive one. It's the weaker one. Most papers don't separate them — and neither did my own
 taxonomy until three weeks ago.
 
-**The second finding is about the problem itself, not the solutions.**
+→ **The problem everyone cites is far less measured than it sounds.** The strongest study I found is
+genuinely alarming. Its authors also name an alternative explanation for their own headline result —
+and say plainly they didn't test it.
 
-That AI-generated code is riskier yet gets less scrutiny is now repeated as settled. Some of the
-evidence is real: one study found **79% of merged human+AI pull requests received no external review or
-comment at all**. But most papers reach for *volume* as proof — and volume is not the same claim.
-Reviewer overload is not evidence that defects got through. Those need different measurements, and the
-second one is rarely done.
+→ **The field is solution-heavy and evidence-thin.** After 147 close reads I can describe dozens of
+oversight mechanisms and almost no actual practices.
 
-**One caveat I have to state.** I used a three-model panel to help tag this corpus. On the contested
-calls — where the models proposed something I hadn't — they were right **about half the time**. In a
-review partly *about* the limits of machine agreement, that applies to my instrument too.
+And one finding that turned back on me: I used a three-model panel to help tag the corpus. On the
+contested calls, it was right about **half the time**. In a review partly about the limits of machine
+agreement, that applies to my own instrument too.
 
-If you're running multiple models over the same diff today: are they answering the same question, or
-different ones? I'd genuinely like to know what's working in practice.
+I've written the whole thing up — the numbers, the two designs side by side, how the corpus was built,
+and **five things the evidence actually supports doing** if you're building or buying AI coding tooling
+right now: **[ARTICLE LINK]**
+
+If you have AI writing code in your org today: when something checks it, is it answering the *same*
+question the generator did, or a *different* one?
 
 ---
 
@@ -92,18 +89,23 @@ Four readings, each of which changed this draft:
    self-implicating caveat — the "my panel was right about half the time" line is what makes the rest
    trustworthy, and it costs nothing.
 
-**Cut from the earlier draft:** the "solution-heavy, evidence-thin" finding. True and central to the
-dissertation, but the least surprising of the three to a practitioner audience, and the post was long.
-It belongs in Post 03.
+**Revised again once the article existed.** The first version summarised the findings *completely*,
+which makes a good standalone post and a poor teaser — the arbiter's note was that the last one "didn't
+tease enough." Findings are now **named without being proved**: the two designs are contrasted but the
+numbers live in the article; the review-absence study is characterised but not quoted. The reader gets
+real value and a specific reason to click.
 
-**Ordering:** contrarian-and-useful → credibility → the problem claim → self-implicating caveat →
-question.
+**On the 0.4% click-through:** that is not evidence links fail. It is evidence the previous post closed
+the gap it should have opened. The fix is a better gap, not fewer links.
+
+**Ordering:** contrarian-and-useful → credibility → three named findings → self-implicating caveat →
+article → question.
 
 ## Notes for revision
 
 - Numbers are rounded for readability (88.7/40.0). Exact figures in Sources above.
 - No participant recruitment, per the content plan — that holds until after candidacy.
 - The opener is deliberately a little combative. If it reads as too much, the softer version is:
-  *"If your AI code review runs several models and takes the majority vote, the evidence is not on
-  your side."*
+  *"If your answer to “is this AI-generated code safe to merge?” is several models voting, the evidence
+  is not on your side."*
 - Consider posting mid-week morning US time, matching whatever Post 01 used.
