@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#0E1A26"/>
+  <text x="72" y="58" font-family="Helvetica,Arial,sans-serif" font-size="34" font-weight="700" fill="#FFFFFF">Six things the evidence supports doing</text>
+  <text x="72" y="92" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#7FA8C9">Read each one against a single test: does this protect scarce human attention, or just consume it differently?</text>
+
+  <g font-family="Helvetica,Arial,sans-serif">
+    <!-- 1 -->
+    <rect x="72" y="118" width="502" height="146" rx="9" fill="#152736" stroke="#24384A"/>
+    <text x="540" y="200" font-size="72" font-weight="700" fill="#22384C" text-anchor="end">1</text>
+    <text x="96" y="160" font-size="25" font-weight="700" fill="#F2A65A">Decide what gets a human</text>
+    <text x="96" y="194" font-size="18" fill="#9FBDD4">Otherwise the on-call rota decides for you.</text>
+    <text x="96" y="222" font-size="18" fill="#9FBDD4">A crude explicit rule beats an implicit one —</text>
+    <text x="96" y="246" font-size="18" fill="#9FBDD4">you can argue with it, and measure it.</text>
+
+    <!-- 2 -->
+    <rect x="626" y="118" width="502" height="146" rx="9" fill="#152736" stroke="#24384A"/>
+    <text x="1094" y="200" font-size="72" font-weight="700" fill="#22384C" text-anchor="end">2</text>
+    <text x="650" y="160" font-size="25" font-weight="700" fill="#4FC08D">Ask a different question</text>
+    <text x="650" y="194" font-size="18" fill="#9FBDD4">Not “do you also think this is a bug?” but</text>
+    <text x="650" y="222" font-size="18" fill="#9FBDD4">“is this finding valid?” The second stage</text>
+    <text x="650" y="246" font-size="18" fill="#9FBDD4">is where the measurable wins are.</text>
+
+    <!-- 3 -->
+    <rect x="72" y="280" width="502" height="146" rx="9" fill="#152736" stroke="#24384A"/>
+    <text x="540" y="362" font-size="72" font-weight="700" fill="#22384C" text-anchor="end">3</text>
+    <text x="96" y="322" font-size="25" font-weight="700" fill="#E8703A">Agreement is not confidence</text>
+    <text x="96" y="356" font-size="18" fill="#9FBDD4">Models that share training data and prompt</text>
+    <text x="96" y="384" font-size="18" fill="#9FBDD4">framing share failure modes. Convergence</text>
+    <text x="96" y="408" font-size="18" fill="#9FBDD4">measures consensus, not correctness.</text>
+
+    <!-- 4 -->
+    <rect x="626" y="280" width="502" height="146" rx="9" fill="#152736" stroke="#24384A"/>
+    <text x="1094" y="362" font-size="72" font-weight="700" fill="#22384C" text-anchor="end">4</text>
+    <text x="650" y="322" font-size="25" font-weight="700" fill="#FFFFFF">Pick checkers that fail differently</text>
+    <text x="650" y="356" font-size="18" fill="#9FBDD4">Composition beats count. If you run three</text>
+    <text x="650" y="384" font-size="18" fill="#9FBDD4">models, you should be able to say <tspan font-style="italic">how</tspan> they</text>
+    <text x="650" y="408" font-size="18" fill="#9FBDD4">differ — a third that fails alike buys nothing.</text>
+
+    <!-- 5 -->
+    <rect x="72" y="442" width="502" height="146" rx="9" fill="#152736" stroke="#24384A"/>
+    <text x="540" y="524" font-size="72" font-weight="700" fill="#22384C" text-anchor="end">5</text>
+    <text x="96" y="484" font-size="25" font-weight="700" fill="#7FB2E0">Let code make the call</text>
+    <text x="96" y="518" font-size="18" fill="#9FBDD4">Models emit findings; code decides accept,</text>
+    <text x="96" y="546" font-size="18" fill="#9FBDD4">reject or escalate. A threshold can be moved,</text>
+    <text x="96" y="570" font-size="18" fill="#9FBDD4">tested and argued with. A verdict can’t.</text>
+
+    <!-- 6 -->
+    <rect x="626" y="442" width="502" height="146" rx="9" fill="#152736" stroke="#24384A"/>
+    <text x="1094" y="524" font-size="72" font-weight="700" fill="#22384C" text-anchor="end">6</text>
+    <text x="650" y="484" font-size="25" font-weight="700" fill="#FFFFFF">Use the boring tools</text>
+    <text x="650" y="518" font-size="18" fill="#9FBDD4">Linters, scanners, type checkers and tests</text>
+    <text x="650" y="546" font-size="18" fill="#9FBDD4">have stable error profiles. Don’t spend an</text>
+    <text x="650" y="570" font-size="18" fill="#9FBDD4">LLM call on what a linter already does.</text>
+  </g>
+
+  <text x="600" y="638" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#F2A65A" text-anchor="middle">And decide what your gate protects: the codebase, or the reviewer’s attention. They pull opposite ways.</text>
+</svg>

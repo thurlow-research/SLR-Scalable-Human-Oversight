@@ -7537,3 +7537,295 @@ expected information is **negative**. Recorded as *closed at zero by manual revi
 the vocabulary. Reversible if a recall check is later wanted.
 
 **Net: the F2 set stays at 10** — `scaling-dissent` out, `deterministic-orchestration` in.
+
+### 148a. DEDUPE MOVED THE RECORD BUT NOT THE EVIDENCE — Jin's corpus text was the preprint
+
+**Found by the F2 calibration gate, 2026-08-29.** The gate expected a hybrid flag on Jin
+(`UDVHQ5HR`) and all three vendors declined. **The panel was right and the gold answer was wrong** —
+because the text the panel was given did not contain the hybrid.
+
+**What had happened.** The §144a consolidation merged the Jin preprint and journal records, keeping
+`UDVHQ5HR`. **Both PDFs and both extracted texts survived on the merged record** — but
+`slr-phase4/txt/UDVHQ5HR.txt`, the file the corpus pipeline reads, was still the **preprint**
+extraction.
+
+| | `UDVHQ5HR.txt` as it stood | journal version |
+|---|---|---|
+| Version | arXiv 2508.12358**v1** (2025) | *Automated Software Engineering* (2026) 33:90 |
+| Title | *Uncovering Systematic Failures of LLMs in Verifying Code…* | *Are LLMs reliable code reviewers?…* |
+| Size | 32.6 KB | **88.5 KB** |
+| Fix-guided Verification Filter | **absent** | present (8 mentions) |
+| 88.74% / 39.96% FPR | **absent** | present |
+
+**What depended on it.** Every substantive claim we have made about Jin comes from the **journal**
+text, which was attached to the key the merge removed:
+
+- **§120d** — the hybrid analysis (*"executes both against the benchmark test cases T and an augmented
+  test set T̃"*)
+- **§139a** — Jin's **88.74% FPR**, the empirical anchor for the deterministic-vs-LLM error-profile
+  argument
+- **§147a** — today's hybrid ruling, which reuses that figure
+- **`ISSUE_DRAFT_panel_adjudication.md`** — evidence item 4, the 88.74% → 39.96% filter result
+
+**The citations were not wrong — they were not REPRODUCIBLE.** Anyone checking §139a's figure against
+the surviving record's text would not have found it. That is the failure that matters in a
+dissertation, and it was silent: nothing in the pipeline compares a record's attached text to the
+version its analysis cites.
+
+**Fixed 2026-08-29.** Re-extracted the journal PDF (`WHQ57W8J`) with `pdftotext -enc UTF-8` — the
+corpus convention, per `slr-tools/zotero_pdf_to_text.py` — over `slr-phase4/txt/UDVHQ5HR.txt`. All
+three cited figures verified present. Jin re-run through the F2 panel on the corrected text. The
+preprint extraction remains at `slr-phase4/txt/A5WDGC7J.txt` and as attachment `35QRCZPV`.
+
+**GENERALISABLE — check at every future dedupe.** Consolidation is a *record* operation; the corpus
+text is a *separate file keyed by item key*, and **merging does not update it.** Where the surviving
+key is the preprint's, the corpus silently keeps the preprint text while the analysis cites the
+journal.
+
+> **Rule: after any preprint→journal consolidation, verify that `slr-phase4/txt/<survivor>.txt` is the
+> KEEPER's text, not the merged-away record's.** Cheapest check: confirm a figure or component the
+> analysis cites actually appears in the file.
+
+**Scope check owed at closeout.** Jin was found by accident. Other consolidations may carry the same
+defect — the preprint→journal convention says *keeper = journal*, so any case where the **arXiv** key
+survived is suspect. Add to the closeout: enumerate consolidated records, and for each confirm the
+corpus text matches the keeper version.
+
+### 148b. `evaluated-synthetic` vs `evaluated-real-data` — CURATION DECIDES (arbiter, 2026-08-29)
+
+**Closes a question recorded as OPEN with "NO TEST CASE EXISTS YET."** The `evaluated-real-data` entry
+in `HOS_Seeded_Theme_Candidates.md` left it unsettled whether **provenance** or **curation** decides
+when evaluation material is real-world-*sourced* but author-shaped, and warned explicitly not to infer
+the rule from `ZBF86IJM` (which has no tool-side event at all).
+
+**The test case arrived from the F2 calibration run**, and not from the arbiter or the assistant: the
+**gemini leg raised an `undecidable` flag** on Jin rather than guessing —
+
+> *"The authors evaluate their filter on a custom paired dataset constructed by curating and modifying
+> tasks from HumanEval, MBPP, and QuixBugs. It is not an as-is benchmark administration, but it is also
+> not purely self-invented material, making the correct rung unclear."*
+
+Unlike `ZBF86IJM`, Jin **has** a tool-side event — the filter runs alone — so the ladder applies and the
+question is live. *This is the flags channel doing exactly what it was built for.*
+
+**Ruling.** ***"Concocting a dataset from established datasets is still synthetic."***
+
+> **The test: did the authors CREATE the evaluation instances, or SELECT them?**
+> - **Created → `evaluated-synthetic`**, however respectable the source pool. Deriving, modifying or
+>   assembling instances out of HumanEval / MBPP / QuixBugs / LeetCode is **authoring test material**,
+>   not inheriting it.
+> - **Selected → `evaluated-real-data`.** Real-world artifacts that already existed and record
+>   something that actually happened — CVE/NVD entries, production logs, mined repository history.
+
+**Consistent with the written definition, which it sharpens rather than changes:** *"`evaluated-synthetic`
+= the authors **invented their own test data and test cases**."* The ruling extends "invented" to cover
+"concocted out of an established dataset."
+
+**Why the create/select form, and not simply "curation ⇒ synthetic".** A broad reading would swallow
+`evaluated-real-data`'s own motivating instance and leave the rung with **zero members**: Mahmud
+`R9CDT9KB` also *assembled* a corpus — 1,979 examples out of real CVE/NVD records. The distinction that
+keeps both rungs alive is **creation versus selection**:
+
+| | Source pool | What the authors did | Rung |
+|---|---|---|---|
+| **Jin** `UDVHQ5HR` | HumanEval / MBPP / QuixBugs — themselves synthetic task sets | curated **and modified** into **paired** conforming / non-conforming variants; the second half of each pair is **authored** | **`evaluated-synthetic`** |
+| **Mahmud** `R9CDT9KB` | CVE/NVD — records of vulnerabilities that actually occurred | **selected** which real records to include, capping fabricated material below 5% | **`evaluated-real-data`** |
+
+Both readings of the arbiter's rule agree on Jin; the create/select form also leaves Mahmud where the
+definition was written to put it.
+
+**Actions.** Grafted into `Tag_Prompt_F2_restricted.md` (replacing the "flag, do not resolve" note);
+Jin's calibration expectation now carries `evaluated-synthetic` as a **must**; Jin re-run, since its
+earlier outputs were produced while the question was still open.
+
+### 148c. `deterministic-orchestration` — TOP LEVEL, and the adjudication split DEFERRED to a count
+
+Two refinements from pressure-testing the new facet against Jin, plus a correction the assistant owes.
+
+**(1) TOP LEVEL ONLY (arbiter, 2026-08-29).** *"Is the flow managed by deterministic code at the top
+level, or only used within?"* — **top level.** The facet makes an **assurance** claim, and that
+guarantee is only as strong as the **outermost** controller: a model that decides *whether* the
+deterministic part runs can route around it entirely, so a rigid component inside a model-driven loop
+buys a reliable **component**, not a reliable **process**.
+
+> **Test: what decides whether the deterministic part runs at all?** Code → fires. A model that could
+> skip or bypass it → does not.
+
+This narrows the facet deliberately. It excludes "agentic system that happens to call a linter," which
+would otherwise inflate it. **If the run returns only 3–5 instances, that is the rule working.**
+
+**(2) ASSISTANT ERROR — Jin ruled out, wrongly, then corrected.** The assistant first called Jin a
+negative on two grounds, **both wrong**, and the arbiter caught it (*"Is Jin a no? My recollection is
+that is not top level, but they all blurred?"*). Reading the journal text settles it:
+
+- *"The filter is applied **only when the judge returns NO**"* — a code-controlled conditional.
+- *"The final verdict is **determined by four common outcomes**"* — fixed rules, not a model's call.
+- Cases 1 and 3: **"flip the verdict to YES."** The model said NO; **the code overturns it** on
+  executable evidence, with a bounded **K=2** retry budget.
+
+Wrong ground A: *"the model has no discretion to remove."* **The verdict IS the discretion**, and the
+code takes it away. Wrong ground B: *"the paper is mostly a study, so the system isn't top-level"* —
+which conflates the paper's centre of gravity with the contributed system's architecture. §120d had
+already warned about exactly this conflation, on this exact paper.
+
+> **Rule added to the instrument: judge the CONTRIBUTED SYSTEM's architecture, not the paper's centre
+> of gravity.**
+
+The panel's unstable votes on Jin — 2/3, then 1/3 — were **detecting ambiguity in the definition**,
+not noise in the paper. Worth remembering as a diagnostic: *vote instability on a single paper across
+replicates is a signal the definition is underspecified.*
+
+**(3) THE ADJUDICATION QUESTION — real, but DEFERRED to a count.** Arbiter: *"Is there value in us
+differentiating adjudication from orchestration?"* The distinction **dissociates cleanly**, which is
+the test that justified splitting `deterministic-orchestration` from `rules-based-checks-v2` earlier
+the same day:
+
+| | Sequencing (form a) | Enforcement / adjudication (form b) |
+|---|---|---|
+| **Vargas** `GAD5Z8PV`, **Lyu** `UB2EVUFU` | ✓ code drives the phases | ✗ verdicts come from models |
+| **Jin** `UDVHQ5HR` | ✗ nothing multi-step to sequence | ✓ code overturns the model's verdict |
+
+And they answer different questions: sequencing asks *will the check happen* (assurance of **process**);
+adjudication asks *can the model's verdict stand unchallenged* (assurance of **decision**). The second
+is the corpus's cleanest independent arrival at *separate scoring from deciding* — proposal D of
+`ISSUE_DRAFT_panel_adjudication.md`, and the arbiter's own filed survey question (*"Judging produces
+score, routing / decisions based on score?"*).
+
+**NOT SPLIT — yet.** Only **one** adjudication-only instance is known, and §147a set the discipline
+hours earlier: **count the class before coining vocabulary.** Applying that to hybrids and abandoning
+it here would be inconsistent, and a third boundary in this slug family would cost panel accuracy now
+for a distinction that may have one member.
+
+**Instrumented instead, so the count comes free:** the instrument now **requires every
+`deterministic-orchestration` rationale to name the form — `(a)`, `(b)`, or `both`.** The F2 run
+therefore produces the census as a by-product, and the split becomes a data decision:
+
+- mostly **(a)+(b) together** → one construct, no split
+- a real population of **(b)-only** → split, with the instances already enumerated
+
+**Revisit at closeout with the counts in hand.**
+
+### 149a. `agent-panel` SPLIT — `peer-critique` coined (arbiter, 2026-08-29)
+
+**The most consequential taxonomy change of the session, and it turns on the arbiter's own thesis.**
+
+**How it surfaced.** The panel raised an `agent-panel` boundary flag on Vargas — Phase 1 is genuine
+redundancy, but the aggregation is *arbitration* rather than the vote §140a names. The arbiter first
+broadened the rule (*"'aggregation rule' counts since the aggregator is reasoning over the results of
+other agents"*), then caught the deeper problem himself:
+
+> *"I think that agent panel was misinterpreted. My mental model was HOS — **agents checking each
+> other**. However, as you point out, we have two scenarios — **checking each other** and **redundant
+> checks to confirm**. Worth separating those two?"*
+> *"My main thesis is around the 'checking each other'. And the bulk of HOS is the same."*
+> *"Redundancy is also HOS cross model… **Lets separate.**"*
+
+#### The discriminator: WHAT DOES THE AGENT CONSUME?
+
+> **The primary artifact** → **`agent-panel`** (redundancy: N independent answers, aggregated).
+> **Another agent's output** → **`peer-critique`** (mutual checking: B judges A's answer).
+
+#### Why the split is not optional
+
+**The two mechanisms have OPPOSITE evidence behind them, and that contrast is the review's clearest
+practical result.**
+
+| | Mechanism | Corpus evidence |
+|---|---|---|
+| `agent-panel` | same input N times; agreement as signal | **weak** — Vargas convergence **+2.4pp**; Ullah's judge errors **correlated**; unanimity buys little; our own residual precision **50%**; `counterpoint` **9/9 wrong** |
+| `peer-critique` | B's input *is* A's output — **a different question is asked** | **strong** — Vargas arbitration cut change surface **83–90%**; BitsAI-CR's ReviewFilter made it deployable at **12k WAU**; Jin's filter **88.74% → 39.96% FPR** |
+
+One tag over both would place **the mechanism that fails and the mechanism that works in the same
+bucket**, making the corpus's headline finding uncountable. This is the third instance of the same
+failure mode in one day (§139a error profiles, §147b orchestration-vs-checking), which marks it as the
+**taxonomy's recurring hazard: merging constructs that differ in their evidence, because they share
+vocabulary.**
+
+**Decisive asymmetry: MERGING IS LOSSY, SPLITTING IS REVERSIBLE.** If the two behave identically they
+collapse at closeout with counts in hand. Merged now, the distinction cannot be recovered without
+re-reading every paper. This also overrides the usual count-first discipline (§147a) — the split
+*protects an argument* rather than adding vocabulary for its own sake.
+
+#### Consequence for the thesis — the negative result becomes a DEFENCE
+
+Until now the corpus's strongest negative reads as an attack on multi-agent oversight. **It is not, and
+the split is what makes that sayable:** the failing mechanism is redundancy, which HOS uses only
+incidentally (cross-model comparison); the mechanism HOS is *built on* is peer critique, which is the
+one the evidence supports. **The literature's negative result is about the mechanism the thesis does
+not rely on.** Unavailable as a claim while the two share a tag.
+
+#### Definitions
+
+- **`agent-panel`** — N agents answer the same question about the same artifact; outputs combined by an
+  aggregation rule. **The rule need not be a vote** — arbitration and synthesis count, since an
+  aggregator *reasoning over* results is aggregating (arbiter, 2026-08-29). **Rationale must name the
+  mechanism.**
+- **`peer-critique`** *(new facet)* — an agent's input **is** another agent's output, and it evaluates
+  it. **Rationale must name the direction:** `mutual` (A↔B, Vargas Phase 2, HOS) or `one-directional`
+  (a dedicated critic never itself reviewed — McAleese `NRVQT89E`). Both fire; the split is being
+  counted. **Not a relay**, where the next agent *continues* the work rather than judging it.
+- **`cross-model` is ORTHOGONAL to both** — it records that the units are *distinct models*, not what
+  they consume. Redundancy by distinct models = `agent-panel` + `cross-model`; peer critique between
+  distinct models = `peer-critique` + `cross-model`. HOS has both structures, both cross-vendor.
+
+#### Fallout
+
+- **The F2 run of 216 calls is superseded** — it ran the narrow pre-ruling definition. Re-run. The
+  narrow-vs-split `agent-panel` delta is retained as a **measurement of definitional sensitivity**,
+  the same design §10.12 blessed for the inversion v1/v2 pair. Narrow baseline: **agent-panel 3 papers
+  at ≥2/3**.
+- **The 7 hand-applied `agent-panel` tags must be re-read under the split.** They were applied on the
+  arbiter's peer-critique mental model, so an unknown number are `peer-critique`. Until re-read, that
+  slug's human layer is a definitional artifact rather than evidence. **Added to the closeout.**
+- **`ISSUE_DRAFT_panel_adjudication.md` mis-frames HOS** and needs revising before it is filed. It
+  leads with *"HOS currently leans on… a cross-vendor panel of specialists where work passes only if
+  all are satisfied"* and builds its recommendation on **adding** adjudication — but if the bulk of HOS
+  is agents checking each other, HOS is *already* adjudication-shaped, and the negotiation/3-attempt
+  design is the primary mechanism rather than an incidental protection. The assistant reasoned from the
+  phrase *"cross-vendor panel of specialists"* instead of from what each agent consumes — **the exact
+  error this split exists to prevent.**
+
+### 149b. CATALOGUED ≠ IMPLEMENTED — architecture facets removed from Zhu (`ZGST9CY6`)
+
+Surfaced by the §149a `agent-panel` scan. Zhu, *Designing meaningful human oversight in AI* (AI and
+Ethics 2026), carried `agent-panel` and `cross-model`. **Full-text scan: zero mentions of multi-agent
+architecture, multiple agents, or ensembles.** Both tags traced to a **single row of the paper's
+mechanism catalogue** (Table 4):
+
+> *"**Divergence detection and independent checker** — Comparison against a second AI/system,
+> heuristic, or ruleset with alerting."*
+
+**Not an accidental mistag** — that row is the same one anchoring `Theme_Tagging_Calibration §9b`, so
+it had been read deliberately. The error was in what the reading licensed.
+
+**Arbiter, 2026-08-29:** *"correct, no agent mention in Zhu"* · *"Given Zhu is about how to make humans
+more effective in oversight, I think cross model is removed too."*
+
+**Both removed**, each with `cal:human:reject:facet:*` written alongside — required, not optional, since
+the human layer is fail-open and the pending F2 run would otherwise be free to resurrect them on a
+modal.
+
+#### The rule this establishes
+
+> **Architecture facets describe what the paper's system IS. Themes describe what the paper is ABOUT.**
+> A mechanism catalogue is *about* many things — so themes fire — but *is* no particular architecture,
+> so architecture facets do not.
+
+This is §145b's mention-versus-mechanism principle carried from mining studies to **design and
+framework papers**, and it protects a facet class that would otherwise be tripped by every paper that
+*surveys* mechanisms. `agent-panel`, `cross-model`, `peer-critique`, `deterministic-orchestration` and
+the `evaluated-*` ladder are all architecture facets and all vulnerable to this.
+
+**Zhu's ten themes are untouched and correct** — `oversight-explanation`, `risk-routing`,
+`oversight-theater`, `rules-based-checks`, `provenance-auditability` and the rest. The paper genuinely
+*is about* the mechanisms it catalogues. Only the two architecture claims were wrong.
+
+**§9b is unaffected.** Its claim is that Zhu independently names divergence detection as a *prescribed
+design mechanism* — that rests on the Table 4 content, which is unchanged, not on the facets.
+
+**Left open:** `cal:human:facet:agentic` is also an architecture facet on a paper tagged `general-ai`
+and `design-only`. Flagged for a ruling, not actioned.
+
+**Closeout item:** other design / framework / catalogue papers may carry architecture facets on the
+same basis. Screen `design-only` papers for architecture facets that rest on catalogued rather than
+implemented mechanisms.

@@ -10,21 +10,21 @@ general tagging — it is deliberately partial.
 
 ## 0. WHAT THIS RUN IS, AND WHAT IT MUST NOT DO
 
-You are applying **ten new vocabulary items** to a corpus whose **existing tags are already settled by
+You are applying **eleven new vocabulary items** to a corpus whose **existing tags are already settled by
 a human arbiter**. Those existing tags are **not under review**. You are not being asked whether the
 paper's primary theme is right, whether it should have been kept, or whether its other facets hold.
 
-**You may emit only the ten slugs in §2.** Everything else in the taxonomy is unreachable by
+**You may emit only the eleven slugs in §2.** Everything else in the taxonomy is unreachable by
 construction. If you find yourself wanting to propose an existing slug, that is out of scope — say
 nothing.
 
-**Why the restriction is on the OUTPUT and not on your reading:** every one of these ten slugs is
+**Why the restriction is on the OUTPUT and not on your reading:** every one of these eleven slugs is
 defined by a **boundary against an existing slug**. You cannot apply `agent-panel` without knowing
 division of labour; you cannot apply `rules-based-checks-v2` without knowing `ai-review`. So this
 prompt *tells you about* the neighbouring concepts — you need them to draw the line — but you may
 **not emit them**.
 
-**Default to silence.** These slugs are narrow. Nine of ten have a documented history of
+**Default to silence.** These slugs are narrow. Nine have a documented history of
 over-application: the boundary corrections in §5 were each written after a panel fired a slug that did
 not hold. **A slug you are unsure about is a slug you do not emit.** Under-proposing costs one missed
 tag; over-proposing costs arbiter time and pollutes a measurement point.
@@ -54,7 +54,7 @@ Return **exactly one JSON object**, no prose around it:
 
 **The only permitted values.**
 
-| `themes` (3) | `facets` (7) |
+| `themes` (3) | `facets` (8) |
 |---|---|
 | `evaluator-reliability` | `agent-panel` |
 | `oversight-scaling-inversion-v2` | `cross-model` |
@@ -62,6 +62,7 @@ Return **exactly one JSON object**, no prose around it:
 | | `evaluated-synthetic` |
 | | `evaluated-benchmark` |
 | | `deterministic-orchestration` |
+| | `peer-critique` |
 | | `survey-input-v2` |
 
 Any other string is a **validation failure**, not a proposal. Emitting `survey-input` or
@@ -73,8 +74,13 @@ frozen v1 tags and must not be touched.
 - **Empty output is a valid and common result.** Most papers will get zero or one of these.
 - **No primary theme.** Primaries are settled. Never propose one.
 - **No disposition.** Never propose keep, demote, or tier.
-- **`flags` is for genuine boundary cases** — emit the flag *instead of* guessing when a definition
-  half-fits. A flagged non-emission is more useful than a confident wrong tag.
+- **`flags` has TWO uses. Both are wanted.**
+  1. **Undecidable** — a definition half-fits. Flag *instead of* guessing; a flagged non-emission is
+     more useful than a confident wrong tag.
+  2. **Census** — a pattern the arbiter has asked to have **counted**, even where **the call is
+     completely clear**. Where a slug's section says "flag it," that instruction stands *even when you
+     are certain of the answer*, and **certainty is not a reason to omit the flag.** A flag is not an
+     admission of doubt; it is a data point.
 
 ---
 
@@ -136,30 +142,68 @@ flags.** They are **ordered rungs on one evidence-strength ladder, inside `built
 
 ---
 
-## 4. THE TEN SLUGS
+## 4. THE ELEVEN SLUGS
 
-### `agent-panel` *(facet)*
+### THE MULTI-AGENT PAIR — `agent-panel` and `peer-critique` (§149a)
 
-**Fires when:** multiple agents answer **the same question** about the same artifact, and their outputs
-are combined by an **explicit aggregation rule** — vote, consensus, unanimity, majority.
-**This is redundancy, not specialisation.**
+**These two were one slug until 2026-08-29 and are now separate.** They are different mechanisms with
+**opposite evidence behind them**, so conflating them destroys the corpus's clearest result.
 
-**Discriminator — "loses a job or loses a vote?"** Remove one agent from the system. If **coverage**
-disappears (nobody is checking security any more) it is **division of labour** → do not fire. If a
-**vote** disappears (the same question now has two answers instead of three) it is a **panel** → fire.
+> ## THE DISCRIMINATOR: what does the agent CONSUME?
+> **The primary artifact** → `agent-panel` (redundancy).
+> **Another agent's output** → `peer-critique` (mutual checking).
 
-**Positive:** Ullah `A6ZE2A26` — unanimous committees of 1–6 judges, all ruling on the same SQL query,
-with committee size and composition varied as experimental variables.
+A system may have **both, in sequence** — Vargas `GAD5Z8PV` runs independent audits (panel), then
+cross-critique (peer), then arbitration. Tag both, and say which phase is which.
+
+**`cross-model` is ORTHOGONAL to both**, not an alternative: it records that the units are *distinct
+models*. Redundancy by distinct models = `agent-panel` + `cross-model`. Peer critique between distinct
+models = `peer-critique` + `cross-model`.
+
+---
+
+### `agent-panel` *(facet)* — REDUNDANCY
+
+**Fires when:** multiple agents answer **the same question** about **the same primary artifact**,
+independently, and their outputs are combined by an **aggregation rule**.
+
+**The aggregation rule need NOT be a vote.** Vote · consensus · unanimity · majority · **arbitration**
+· **synthesis** all count — an aggregator *reasoning over* the other agents' results is aggregating.
+**Name the mechanism in your rationale.**
+
+**Discriminator — "loses a job or loses a vote?"** Remove one agent. If **coverage** disappears
+(nobody is checking security any more) it is **division of labour** → do not fire. If an **opinion on
+the same question** disappears → panel → fire.
+
+**Positive:** Ullah `A6ZE2A26` — committees of 1–6 judges all ruling on the same SQL query, size and
+composition varied as experimental variables.
 
 **Negatives:**
 - Nimraka `5RKMGRNA` — parallel specialists on **distinct** categories (division of labour)
-- Rasheed `DJHG9BBS` — **relay**: sequential agents, each consuming the previous one's output
-- P `N7E3MR2V` — PM / coordination roles (different functions, not different votes)
+- Rasheed `DJHG9BBS` — **relay**: each agent transforms the previous output rather than judging it
+- P `N7E3MR2V` — PM / coordination roles (different functions, not different opinions)
 - David `6NTZ85CW` · Dutta `399HN438` — same pattern
 
-> **TRAP.** The phrase *"multi-agent"* in a title or abstract **predicts nothing**. At least five
-> distinct topologies in this corpus use it: panel · parallel division · relay · precision filter ·
-> conjunctive gate. Read the architecture, not the label.
+---
+
+### `peer-critique` *(facet — NEW §149a)* — MUTUAL CHECKING
+
+**Fires when:** an agent's **input is another agent's output**, and it **evaluates or critiques** it.
+The second agent is not redoing the work — it is **judging the first agent's answer**.
+
+**Name the DIRECTION in your rationale:**
+- **`mutual`** — A checks B *and* B checks A (Vargas Phase 2: each provider reads *"its own Phase 1
+  audit and the peer audit"*).
+- **`one-directional`** — a dedicated critic reviews a producer's output and is never itself reviewed
+  (McAleese `NRVQT89E`, CriticGPT). **Both fire**; the arbiter is counting the split.
+
+**Not this slug:** a **relay**, where the next agent *continues or transforms* the work rather than
+evaluating it. Ask whether the second agent's job is to **judge** the first's output or to **build on**
+it.
+
+> **TRAP.** *"Multi-agent"* in a title or abstract **predicts nothing** — at least six distinct
+> topologies in this corpus use the phrase: panel · peer critique · parallel division · relay ·
+> precision filter · conjunctive gate. **Read what each agent is given as input.**
 
 ---
 
@@ -238,9 +282,23 @@ was evaluated. **Real data alone never suffices.**
 **Other candidates, to assess on their merits:** Minh `74GE3TF7` · Karakaya `5NZ2EDEK` ·
 Liu `6ZC3H7AF` · Lipsanen `7SH86C2W`.
 
-> **OPEN QUESTION — flag, do not resolve.** Where material is real-world-*sourced* but heavily
-> **author-curated**, it is unsettled whether **provenance** or **curation** decides. No test case
-> exists in the corpus. If you meet one, **emit a `flags` entry rather than a tag.**
+> ### SETTLED — CURATION DECIDES, NOT PROVENANCE (arbiter, 2026-08-29)
+>
+> ***"Concocting a dataset from established datasets is still synthetic."***
+>
+> **The test: did the authors CREATE the evaluation instances, or SELECT them?**
+>
+> - **Created** → `evaluated-synthetic`, **however respectable the source pool.** Deriving,
+>   modifying, or assembling instances out of HumanEval / MBPP / QuixBugs / LeetCode is **authoring
+>   test material**, not inheriting it. Constructing paired conforming / non-conforming variants is
+>   the clearest form: the second half of each pair is written by the authors.
+> - **Selected** → `evaluated-real-data`. Real-world artifacts that already existed and record
+>   something that actually happened — CVE/NVD entries, production logs, mined repository history.
+>   Choosing which real records to include is selection, not creation.
+>
+> **Worked pair.** Jin `UDVHQ5HR` curates *and modifies* established benchmark tasks into paired
+> variants → **synthetic**. Mahmud `R9CDT9KB` selects real CVE/NVD records, deliberately capping
+> fabricated material below 5% → **real-data**.
 
 ---
 
@@ -273,13 +331,24 @@ outcomes are honoured — **so the AI cannot take shortcuts?***
 Keep it separate from `rules-based-checks-v2`, which answers a **different** question: *is any of the
 **checking** non-AI?* One is about **who checks**; this one is about **who controls the process**.
 
-**Fires on either form:**
+**Fires on either form. YOUR RATIONALE MUST NAME WHICH — `form (a)`, `form (b)`, or `both`.** The
+arbiter is counting the split to decide whether these are one construct or two; a rationale that does
+not name the form is incomplete.
 - **(a) Sequencing** — which steps run, and in what order, is fixed in code. **The model cannot skip a
   step**, because the harness advances the state.
 - **(b) Enforcement** — the consequence of a step's outcome is fixed in code. A failing check produces
-  rejection or escalation **without the model choosing to honour it**. **Fires regardless of what
-  produced the finding** — a linter or an LLM. *Orchestrator rejects a PR because the linter failed:
-  fires. Orchestrator rejects a PR because the AI found issues: also fires.*
+  rejection, escalation, **or an overridden verdict**, **without the model choosing to honour it**.
+  **Fires regardless of what produced the finding** — a linter or an LLM. *Orchestrator rejects a PR
+  because the linter failed: fires. Orchestrator rejects a PR because the AI found issues: also fires.
+  Code overturns a model's own verdict on executable evidence: fires.*
+
+**TOP LEVEL ONLY.** The control must sit at the **outermost** level of the contributed system's flow.
+Deterministic machinery *inside* a model-controlled loop does **not** fire — if a model decides whether
+the deterministic part runs at all, it can route around it, and the guarantee is not real.
+
+> **Judge the CONTRIBUTED SYSTEM's architecture, not the paper's centre of gravity.** A paper that is
+> mostly an empirical study can still contribute a pipeline whose top-level flow is code. Do not reason
+> "this is a study, so there is no system."
 
 **TWO PRECONDITIONS, BOTH REQUIRED:**
 
@@ -309,8 +378,15 @@ load-bearing case: **code-enforced process wrapped around model judgement.**
   coordination layer… managing phase transitions. **The orchestrator does not make software engineering
   decisions itself**; rather, it provides the scheduling infrastructure."* A three-phase state machine
   (Strategy → Execution → Verification) in code — **while** manager agents *"dynamically hire, assign"*
-  the team. **Phase sequencing is code-determined; staffing is model-determined. It fires.** The facet
-  asks about the **control flow**, not whether any model has discretion anywhere in the system.
+  the team. **Phase sequencing is code-determined; staffing is model-determined. It fires, form (a).**
+  The facet asks about the **control flow**, not whether any model has discretion anywhere.
+- **Jin `UDVHQ5HR` — form (b) alone, and the cleanest case of code overruling a model.** The
+  Fix-guided Verification Filter *"is applied **only when the judge returns NO**"*; the *"final verdict
+  is **determined by four common outcomes**"*; on Case 1 and Case 3 the code **"flip[s] the verdict to
+  YES"** — the model said NO and the code overturns it on executable evidence, with a bounded
+  **K=2** retry budget. No multi-step workflow is being sequenced, so **form (b) only**. Note this
+  paper is *mostly an empirical study*: judge the pipeline it contributes, not the paper's centre of
+  gravity.
 
 **Negative:** an LLM planner deciding what to do next.
 
@@ -413,8 +489,10 @@ reproducibility, not independence** — the same answer every time, including wh
 Confirmed empirically: Jin, the hybrid case, runs at **88.74% FPR** — the LLM error profile, not the
 fire-or-don't profile this theme exists to isolate.
 
-**Still emit a `flags` entry when you meet one**, so the hybrid class can be counted for a possible
-future slug — but **do not emit the tag**.
+**ALWAYS emit a `flags` entry when you meet one — this is a CENSUS flag (§2 use 2), not a request for
+help.** The call is clear and you should be confident in it: **do not emit the tag, and do emit the
+flag.** The arbiter is counting how large the hybrid class is, to decide whether it earns its own slug
+later. **Being certain is not a reason to skip the flag.**
 
 ---
 
