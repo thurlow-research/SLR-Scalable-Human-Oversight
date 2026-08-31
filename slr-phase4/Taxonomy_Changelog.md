@@ -7394,3 +7394,146 @@ Baltes is **mined data**: 1,154 Reddit and Hacker News posts, nobody surveyed. I
 instrument precondition, which stands under every version of the definition (§116a · §121b · §145a) —
 so this is a plain misapplication rather than a casualty of the rule change. Model tags left intact as
 provenance.
+
+### 146a. `evaluator-reliability` CONSOLIDATED to the theme namespace (arbiter, 2026-08-29)
+
+**A slug applied by hand across sessions without a formal graft drifted across namespaces.** Caught
+while building the F2 instrument, which has to emit exactly one namespace per slug.
+
+**State before.** `evaluator-reliability` never entered `Tag_Prompt_v2.13.md` — it appears there only in
+the provenance banner listing slugs the panel *"could not propose."* Hand-application therefore had no
+declaration to anchor to, and split:
+
+| Namespace | n | Items |
+|---|---|---|
+| `cal:human:theme:evaluator-reliability` | 5 | Jin · Zhao · Zietsman · Spiess · Alami |
+| `cal:human:facet:evaluator-reliability` | 8 | Shi · Vargas · Ullah · Sun · Sollenberger · Raghavendra · McAleese · Karakaya |
+
+**Why it had to be settled before the run.** `final:*` computed over a split slug yields **two
+half-populated constructs that read as distinct findings.** The instrument must emit one namespace.
+
+**Ruling: THEME. All 13 consolidated** (8 migrated, 0 failures; model layer was empty, as expected for a
+post-freeze slug).
+
+**Rationale.** The slug names a **subject matter** — *how reliable is the evaluator?* — which is what
+themes encode. Facets in this taxonomy carry **form / method / risk** properties (`agentic`,
+`built-system`, `method-*`, `risk-*`, the `evaluated-*` ladder). And the split was not principled:
+several facet-tagged papers are squarely *about* the construct — Karakaya (*Understanding the Limits of
+Automated Evaluation*), Ullah (*operating characteristics of unanimous LLM juries*), Sollenberger
+(*exploring LLM-as-a-judge*).
+
+**A two-axis reading was considered and declined** (theme = the paper is *about* it; facet = the paper
+*reports* reliability data — the `survey-input` / `method-self-report` shape). Rejected as unwarranted:
+it would need two written definitions and a per-paper re-adjudication of the existing 5/8 split, and no
+demand for the distinction has arisen in adjudication.
+
+**NOT drift — left intact:** `cal:human:primary-proposed:theme:evaluator-reliability` on 4 items (Jin,
+Zhao, Spiess, Alami). This is a **parked proposal** layer — evaluator-reliability was weighed as the
+*primary* theme and deferred; three of the four carry `ai-review` as primary instead. A deliberate
+marker, not a namespace error.
+
+**Generalisable lesson.** §33-style hand-application ahead of a formal graft is sometimes necessary, but
+**an ungrafted slug has no declaration to keep it consistent** and will drift across sessions. Any slug
+hand-applied before its graft needs a namespace fixed at first use and recorded here, even when its
+definition is still moving.
+
+### 147a. `rules-based-checks` — ORIGINAL INTENT AFFIRMED, and hybrids ruled OUT
+
+**Arbiter, 2026-08-29:** *"My original interpretation / intention — uses **deterministic tests** (e.g.
+scanners, linters, etc). **Very narrow.**"*
+
+This settles the §120d / B10 hybrid question, which F2 was asked to decide. **Hybrids do not take the
+tag.** Two independent routes reach the same answer:
+
+1. **§139a's own third conjunct, previously unnoticed.** The rule requires the verdict to be
+   *"computed, reproducible, **and independent of a model's judgement**."* Jin (`UDVHQ5HR`) —
+   deterministic execution over **GPT-4o-generated** tests — satisfies the first two and **fails the
+   third**: the verdict depends wholly on model-authored criteria. **Determinism downstream of a model's
+   judgement buys reproducibility, not independence.** You get the same answer every time, including
+   when it is wrong.
+2. **The original intent.** Model-generated tests are not a scanner or a linter.
+
+**Empirical confirmation.** §139a is load-bearing because deterministic checks and LLM judgements have
+**different error profiles**. Jin — the hybrid — runs at **88.74% FPR**, which is the LLM profile, not
+the fire-or-don't profile of Parris, Töpfer and Zhong. The model's errors pass through the generated
+tests and are executed faithfully.
+
+**No new slug for hybrids yet.** F2 routes them to the `flags` channel so the class can be **counted**
+before vocabulary is coined — the project's stage-count-promote discipline. **B10's hybrid question is
+now closed**; its remaining work is application (screening the ~6 plausible papers of 24), absorbed by
+the F2 run as supervised adjudication.
+
+### 147b. NEW FACET — `deterministic-orchestration` (arbiter, 2026-08-29)
+
+**Coined during F2 instrument authoring, and it exists because a prohibition needed an alternative.**
+The draft instrument warned that *"deterministic orchestration is not deterministic checking"* while
+offering nowhere to put it. A panel reading Vargas or Lyu meets real, load-bearing determinism, has only
+`rules-based-checks-v2` available, and fires into it. **Prohibitions without alternatives leak.**
+
+**Arbiter's framing — two categories:**
+> *"Category 1 — things that don't require AI and are proven tech, so use them. Category 2 — things
+> that we absolutely want to ensure are done in **particular order or in a particular way**. Using a
+> linter is (1). Orchestrator **rejecting a PR because linter failed** is (2). Orchestrator **rejecting
+> a PR because an AI found issues** is also (2)."*
+
+Category 1 is `rules-based-checks` and is a **leverage** argument: do not ask an LLM to do what a linter
+does reliably and cheaply. Category 2 is this facet.
+
+**Definition.** The process is enforced **in code**, not left to model discretion. **Two forms, either
+sufficient:**
+- **(a) Sequencing** — which steps run, and in what order, is code-determined; the model cannot skip one.
+- **(b) Enforcement** — the consequence of a step's outcome is code-determined; a failing check produces
+  rejection or escalation without the model choosing to honour it. **Fires regardless of what produced
+  the finding** — linter or LLM. This is the corpus's independently-arrived-at version of *separate
+  scoring from deciding*.
+
+**Two preconditions, both required:**
+1. **The orchestrator is NOT AI** (arbiter: *"As long as orchestrator is NOT AI"*). If a model decides
+   the sequence, nothing is deterministic. **`"orchestrator"` is standard LLM-app vocabulary and usually
+   denotes an LLM** — this is a `RuleChecker`-shaped trap (§139a): read the mechanism, not the noun.
+2. **There is model discretion being removed.** The facet is meaningful only where an agent could
+   otherwise have skipped the step or ignored the result. Deterministic machinery with no model to
+   constrain is just a pipeline — without this, form (b) fires on every `if` statement in every CI
+   config and the facet becomes uninformative.
+
+**ORTHOGONAL, NOT EXCLUSIVE** (arbiter: *"it is not exclusive with AI checks. They can both be done
+(HOS does this)"*). Two independent axes:
+
+| | **Deterministic verdict** (`rules-based-checks-v2`) | **AI verdict** (`ai-review`) |
+|---|---|---|
+| **Deterministic orchestration** | CI pipeline with static analysis | **HOS · Vargas · Lyu** — the load-bearing cell |
+| **Model orchestration** | agent that chooses to run a linter | free-form agentic reviewer |
+
+**Positives.**
+- **Vargas `GAD5Z8PV`** — *"a **static orchestration model with three fixed phases**"*; *"orchestrator
+  with **fixed prompts, which prevents early**"* termination.
+- **Lyu `UB2EVUFU`** — the best teaching case, because the system is **mixed**: *"The orchestrator is the
+  central coordination layer… managing phase transitions. **The orchestrator does not make software
+  engineering decisions itself**; rather, it provides the scheduling infrastructure."* A three-phase
+  state machine (Strategy → Execution → Verification) in code — **while** manager agents *"dynamically
+  hire, assign"* the team. **Phase sequencing is code-determined; staffing is model-determined.** The
+  facet asks about the **control flow**, not whether any model has discretion anywhere.
+- Wang & Mao — arbiter's read: *"Rules look to be deterministic orchestration, which isn't rules based
+  checks."*
+
+**Negative:** an LLM planner deciding what to do next. Agentic planning is the inverse of this facet.
+
+**Why it matters to the thesis.** It is the **structural answer to step-skipping**: instruction-following
+is probabilistic, a state transition is not. Arbiter on Vargas: *"LLMs frequently 'skipped steps' in
+orchestration even with explicit instructions."* But note the limit already recorded in
+`Emerging_Themes`: **a phase machine guarantees the check happens, not that the criterion is right.**
+
+**Added to the F2 run** (facet). Marginal cost ≈ 0 — same 72 papers, same texts, and a separate later
+run would cost a full pass.
+
+### 147c. `scaling-dissent` — CLOSED AT ZERO, dropped from the F2 run
+
+**Arbiter, 2026-08-29:** *"we didn't find any in our manual review, so it is closed."*
+
+**Removed from the F2 emittable set.** The panel's measured accuracy on this construct is **0/9** — the
+§56 polarity failure, where a thesis-**supporting** paper was tagged as opposition unanimously. With
+manual review returning zero, a panel hit is far more likely a false positive than a find, so the run's
+expected information is **negative**. Recorded as *closed at zero by manual review*; the slug remains in
+the vocabulary. Reversible if a recall check is later wanted.
+
+**Net: the F2 set stays at 10** — `scaling-dissent` out, `deterministic-orchestration` in.
