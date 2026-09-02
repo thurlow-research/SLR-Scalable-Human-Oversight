@@ -23,5 +23,26 @@
   convention), Sonnet is fine — say that too rather than upselling. Scott switches with
   `/model`; the assistant can't. Adopted 2026-08-23, after a full session of boundary
   adjudication ran on Sonnet before the question came up.
+- **Literature lookups go through the research MCP** (`papersflow`), not the local `zotero`
+  skill CLI — the MCP carries the current keys and retrieval logic. Adopted 2026-09-02. If it
+  reports as unauthenticated, run its `authenticate` tool and hand Scott the OAuth URL rather
+  than silently falling back to the skill.
+- **Read documents from the local copy Zotero already holds — never refetch.** Resolve the
+  item's child attachments, take the local path (`~/Zotero/storage/<attachmentKey>/<filename>`),
+  and read from disk. Do not re-download a PDF from the publisher, arXiv, or a DOI resolver for
+  a document the library already stores.
+- **Use the TXT attached to the item; don't convert the PDF yourself.** The corpus keeps a TXT
+  beside each PDF precisely so full-text reads are cheap and reproducible — an ad-hoc conversion
+  produces text nobody else can reproduce. When the TXT isn't there:
+  - **PDF present, no local TXT** → **ask** before converting; on approval use
+    `zotero-pdf-to-text` so the result is attached back to the item, not left in a temp dir.
+  - **No local copy at all** → **ask** before fetching; don't pull the file unprompted.
+  - **Check the attachment labels first.** One item can carry several attachments at different
+    authority levels — `59KP8GTP` holds a SUPERSEDED preprint TXT alongside the AUTHORITATIVE
+    published PDF. Match the TXT to the version you mean to quote; if the authoritative version
+    has no TXT, that is the "ask to convert" case above, not licence to read the superseded one.
+  - *Narrow exception:* re-extracting with `pdftotext -layout` is allowed when the corpus TXT's
+    reflow has destroyed structure you actually need (multi-column tables), since the stored TXT
+    genuinely cannot answer the question. Say so when you do it.
 - Project conventions live in the `slr-conventions` skill; methodology source of truth is
   `Methodology/`; the current handoff doc in `handoffs/` is the session entry point.
