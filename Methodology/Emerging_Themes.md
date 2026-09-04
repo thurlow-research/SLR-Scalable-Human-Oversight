@@ -890,10 +890,13 @@ design requirement of scalable human oversight, not an afterthought.
 
 ## Synthesis / theme-tag vocabulary (for the theme-tagging pass)
 
-**→ The operative reference is the [Tag reference — full working vocabulary](#tag-reference--full-working-vocabulary-2026-07-14)
-section at the top of this doc** (facet tags + all theme tags, each with what it captures, boundaries,
-and example keys, plus how the three tag layers stack and what's mutually exclusive). This section is
-kept only as a pointer so there is a single source of truth.
+**Status: pointer CORRECTED 2026-09-04 — the operative reference moved.** The living reference is now
+`slr-phase4/Tag_Cheatsheet.md` (definitions, boundaries, and — since 2026-09-04 — the Zotero storage
+namespace). The [Tag reference — full working vocabulary](#tag-reference--full-working-vocabulary-2026-07-14)
+section at the top of this doc is the **historical derivation record** of that vocabulary: how it was
+open-coded bottom-up in July 2026, with the layer model and example keys as they stood then. Keep it
+for provenance; do not tag from it. It predates the `cal:<vendor>:` namespace, so its `theme:<slug>`
+notation no longer matches what is in Zotero.
 
 Synthesis tags are distinct from the screening-lineage tags (`source:`, `s1:`, `s2:`, `s3:`,
 `centrality:`, `superseded-by:`, `cocite:`): they mark *why an item matters to the argument*,
