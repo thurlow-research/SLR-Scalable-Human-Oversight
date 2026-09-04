@@ -13,6 +13,10 @@
 > instrumentation-≠-contribution rule and one-event-one-classification corollary (§57) ·
 > `counterpoint` deprecation notice (§56).
 >
+> **2026-09-04 — namespace section added; NO definition changed.** The new *Tag namespace* section
+> documents how these slugs are stored in Zotero. It is **notation, not vocabulary**: no tag was
+> added, removed, or redefined, so §41 gauge constancy is untouched and nothing needs regrafting.
+>
 > **Queued for the next cut, NOT yet added here:** `agent-panel`, `cross-model`, `evaluated-synthetic`,
 > `evaluated-benchmark`, `evaluator-reliability`, `evaluated-real-data`, and
 > `oversight-scaling-inversion` **v2** on its own slug (§89). See `Taxonomy_Changelog.md` §101–§103 and
@@ -27,7 +31,78 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 **METHOD ≠ CONTRIBUTION — the apparatus rule (§50, applies to EVERY tag).** A tagged element must be part of the **proposed system / framework / findings**, not merely something the authors *used to run or analyse the study*. Ask of any candidate tag: *is this triggered by what the paper **studies**, or by how the authors **did the study**?* Research machinery earns nothing — LLM judges used to code survey responses ≠ `ai-review`; a multi-model panel used for inter-rater reliability ≠ `agent-panel`/`cross-model`; agents used to generate test stimulus ≠ `agentic` (§47); metrics used to evaluate ≠ `metrics` ("contribution, not apparatus"); the paper's own evidence production is carried by the **method-\*** facets and nothing else. Worked failure: `ID7IN65K` codes survey data with three models and reports Krippendorff's α + Cohen's κ — all 3 panel runs proposed `ai-review`, reading the methods section as content. **This is a high-frequency machine error whenever a paper's research design resembles the phenomenon under study.**
 **Documented practice counts:** empirical evidence of practitioners *exercising* a stage's mechanism earns membership in that stage's theme. **Vision-paper floor:** a stage mentioned in one scenario sentence = mention, not membership.
 
-## THEME TAGS (`theme:<slug>`)
+## TAG NAMESPACE — how these slugs are actually stored in Zotero (added 2026-09-04)
+
+> **Corrective note.** Everything below this heading in the old cheat-sheet listed **bare slugs**
+> (`ai-review`, `survey-input`) under headers reading `theme:<slug>`. That is the **JSON contract** —
+> what a tagger emits and what the arbiter reasons about — **not the Zotero storage form**. Nothing in
+> the library is stored as a bare slug, and `theme:<slug>` in Zotero means something else entirely
+> (see the collision warning). Verified against the 105-item extraction corpus, 2026-09-04.
+
+**The slug is the payload; the namespace is applied at write time.** A tagger emits bare slugs in its
+JSON (`primary_theme`, `themes[]`, `facets[]`); `slr-phase4/tools/write_tags.py` and
+`write_sweep_model_tags.py` prefix them on the way into Zotero. So the vocabulary in this file is
+correct — only the notation in the section headers was.
+
+**The live shapes** (instance counts from the extraction corpus, for sizing):
+
+| Shape | What it is | ~n |
+|---|---|---|
+| `cal:<vendor>:theme:<slug>` | a panel run's theme proposal | 1,022 |
+| `cal:<vendor>:facet:<slug>` | a panel run's facet proposal | 1,820 |
+| `cal:<vendor>:primary:theme:<slug>` | a panel run's primary pick | 288 |
+| `cal:human:theme:<slug>` · `cal:human:facet:<slug>` | **arbiter decisions** | 776 |
+| `cal:human:primary:theme:<slug>` | arbiter's primary | 84 |
+| `cal:human:reject:theme:<slug>` · `cal:human:reject:facet:<slug>` | **arbiter rejections** | 107 |
+| `cal:human:primary-proposed:theme:<slug>` | primary staged, not settled | 2 |
+| `v1_cal:<vendor>:…` | **superseded run, kept as provenance** | 186 |
+
+Vendors in the current run: `opus` · `codex` · `gemini` · plus `human`. The `v1_` layer also carries
+`fable` and `gemini-fast`, which no longer run.
+
+**Three things this file previously left unstated, each of which has bitten someone:**
+
+1. **⚠ `theme:<slug>` is a DIFFERENT, DEAD vocabulary — do not filter on it.** Bare `theme:` tags in
+   Zotero are Phase-2 routing labels (`theme:oversight`, `theme:risk`, `theme:orgs`, matching the
+   SCOPUS `00-Queue` subcollections), plus two hand-applied strays from before the `cal:` namespace
+   existed. Filtering Zotero on `theme:oversight-explanation` returns **1 item**; the real arbiter
+   roster is **28**, under `cal:human:theme:oversight-explanation`. **This is the single most
+   misleading thing the old headers implied.**
+2. **The rejection layer exists and is load-bearing.** `cal:human:reject:*` is how the arbiter
+   *removes* a modal proposal. Because the human layer is **fail-open** (a modal proposal stands
+   unless explicitly rejected), a query that reads only `cal:human:theme:*` and ignores the reject
+   tags will over-count. Whether fail-open survives is closeout item **B9**.
+3. **`v1_cal:*` is provenance and must never be deleted.** The supersession rule and its tooling live
+   in `Methodology/SLR_Methodology_Bootstrap.md` §3 and `slr-tools/supersede_model_run.py`: rename,
+   don't remove, and the prefix names the **instrument version** that produced the run, not an
+   ordinal — superseding the current run yields `v213_cal:…`, not `v2_`. `cal:human:*` is never
+   touched, because a human decision is not a model run.
+
+**`final:*` is not yet computed** — `final:* = panel modal ∪ endorsements − rejections − deprecated
+vocabulary`, blocked on B9. **Every count drawn from `cal:human:*` today is provisional.**
+
+### Other live namespaces this file does not define
+
+Present in the library, governed elsewhere, listed here so a reader stops assuming the `cal:` layer is
+all there is:
+
+- **Lineage / screening** — `source:<db>` · `s1:<coder>:<verdict>` · `s2:<coder>:<verdict>` ·
+  `s3:<coder>:<tier>` · `s4:consensus:*` / `s4:flag:*` / `s4:triage:*` (the sweep machine layer) ·
+  `s5:read` · `centrality:<n>` · `cocite:<n>` · `snowball:title-only` · `hold:no-abstract`.
+- **Tier** — `demote:context` (and `demote:discard`). **Tier lives here, never in collection
+  membership** — phase collections freeze after population and record provenance only.
+- **Dissertation** — `dissertation-category:{practice|theory|survey-insight}` ·
+  `dissertation-confidence:{high|medium}`. Added after this file was last revised.
+- **Dedupe / versioning** — `supersedes:<key>` · `superseded-by:<key>` · `orig-type:` · `orig-date:` ·
+  `orig-title:` · `review:superseded-has-decision`.
+- **Other** — `hos-area:<slug>` (9 slugs, HOS cross-reference) · `evidence:self-reported-unverified`.
+
+Canonical definitions for the lineage and dedupe namespaces are in the `slr-conventions` skill and
+`Methodology/Selection_Criteria_By_Phase.md`; this list is a pointer, not a second source of truth.
+
+---
+
+## THEME TAGS (JSON slug: `<slug>` · Zotero: `cal:<vendor>:theme:<slug>`)
 
 **Problem — quantify**
 - `oversight-scaling-inversion` — **FAIL-OPEN ONLY (§52):** AI code is riskier yet *less* inspected and **ships anyway** — PRs auto-merged unreviewed; review is the bottleneck; burden piles on maintainers. **The harm is that bad code reaches production.** *Capacity saturation that resolves **fail-closed** — agent PRs ignored/abandoned so nothing merges — is NOT this theme*: safety holds, throughput collapses, and the harm is productivity, not risk (NZJST99D, 33k agent PRs dominated by reviewer abandonment). **Synthesis test:** would the paper read naturally in a section on *bad code shipping unreviewed*? If it would jar because nothing shipped, this is the wrong home.
@@ -60,7 +135,9 @@ Pick **one PRIMARY theme** (the paper's home / where it'd be written up in depth
 - `tooling-supply-chain` — provenance/vetting of the AI **tools** (skills/MCP/agents); **+ attacks on the reviewer**. **Dependency risk *in generated code*** (hallucinated/poisoned packages the AI writes in) → `ai-code-insecurity`, NOT here (D4 ruling). Excl. keyword false-positives (hardware trojans, classic supply-chain incidents)
 - `provenance-auditability` — traceability of AI **changes** so a human *can* review; auditable record; IP/licensing. Requires a **persistent record serving HUMAN reviewability/audit** — a point-in-time "what's in use now" view → `oversight-explanation`; persistence serving only agent coordination = plumbing
 
-## FACET TAGS (functional role; orthogonal — optional, apply if they fit)
+## FACET TAGS (JSON slug: `<slug>` · Zotero: `cal:<vendor>:facet:<slug>`)
+
+*Functional role; orthogonal to theme — optional, apply if they fit.*
 - `problem-statement-anchor` — a single committee-sit-up empirical stat **anchoring the OVERALL problem statement** (the scaling inversion / two-part frame) — NOT a sub-argument's or population-specific headline number, however vivid. Never on `lit-review` (secondhand — anchor the primaries)
 - `survey-input` — adoption / preference / RAI-priority finding useful for the org survey design; requires **substantive** findings — one incidental adoption stat ≠ membership
 - `intro-framing` — position / agenda / definitional paper that *names the gap* but **doesn't operationalize a mechanism**
