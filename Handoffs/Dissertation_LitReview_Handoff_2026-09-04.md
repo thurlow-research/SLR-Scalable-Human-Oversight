@@ -264,12 +264,16 @@ carries **no theme tags at all** and needs adjudication.
 
 **Metadata defects that will surface in citations.** Fix in Zotero before generating any bibliography:
 
-- **`6ZW9QNQH`** — the `date` field holds the free-text string `"October 9, 2025"` rather than an ISO
-  date, so any `date[:4]` year extraction yields **`Octo`**. The generated short cite currently reads
-  *Mitchell & Shaaban (Octo)*. A data defect, not a script bug — it will recur anywhere the year is
-  parsed positionally.
+- **Four items hold free-text `date` fields** rather than ISO dates, so any `date[:4]` year
+  extraction returns a word fragment. Derived short cites currently read *Mitchell & Shaaban
+  **(Octo)***, *Yu et al. **(Dec.)***, *Sterz et al. **(June)*** and *Zhou et al. **(Apri)***:
+  `6ZW9QNQH` `"October 9, 2025"` · `PPMTM4DG` `"Dec. 2024"` · `TW4I6DU6` `"June 5, 2024"` ·
+  `XK3P9C96` `"April 13, 2026"`. Data defects, not a script bug — they will recur anywhere the year
+  is parsed positionally, and they also break any year-based cohort filter.
 - **`3Z45M3V3`** — dated 2023 (original arXiv posting) though the authoritative version is TOSEM 2025.
 - **`VG6CIDQW`** and **`R4WJZBSF`** — no author metadata at all, and both are in Phase 6.
+- **No item in the working set carries a DOI** in its derivable metadata — 0 of the 63 preprints and
+  working papers. DOIs must be resolved externally.
 
 ---
 
