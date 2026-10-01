@@ -244,6 +244,10 @@ The confirmed bins set extraction depth, not membership:
 | Snowball | 35 | 175 | 41 |
 | **Total** | **149** | **891** | — |
 
+> **Superseded counts (2026-09-30).** The table above is a 2026-07-13 snapshot. Final PRISMA
+> counts — 147 Core / 886 Context / 180 Discard at `03 - Final`, 72 Included — are in
+> `Methodology/PRISMA_Funnel.md` (computed from the live library; reconciliation in its §6).
+
 ---
 
 ## Cross-cutting gates (apply at every phase)

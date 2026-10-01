@@ -226,6 +226,10 @@ oversight-vs-steering-vs-guidance discriminator.
 | Snowball | 35 | 175 | 41 |
 | **Total** | **149** | **891** | — |
 
+> **Superseded counts (2026-09-30).** The table above is a 2026-07-13 snapshot. Final PRISMA
+> counts — 147 Core / 886 Context / 180 Discard at `03 - Final`, 72 Included — are in
+> `Methodology/PRISMA_Funnel.md` (computed from the live library; reconciliation in its §6).
+
 **149 cores → full-text extraction (Stage 4)**; contexts → abstract-level. Snowball cores need
 full-text fetch + TXT like the original 114.
 

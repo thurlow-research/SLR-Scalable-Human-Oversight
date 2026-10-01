@@ -105,6 +105,8 @@ before submission — do not trust prose memory for PRISMA counts.
   snowballing) run through an identical instrument and merged only at the final triage.
 - Figure: pipeline diagram (Phases 1–5) with counts at every edge (**[verify]** all counts
   against Total-Results at write-up).
+  Counts: `Methodology/PRISMA_Funnel.md` (computed 2026-09-30, library v169153; re-run
+  `slr-tools/prisma_funnel.py` at write-up).
 - Two-tier corpus design: **Core** (direct + operationalizable on scalable oversight of
   AI-generated code in org/SE-pipeline context) vs **Context** (in-scope background: behavioral,
   adoption, transferable-theory, secondary lit) — tier ≠ importance; synthesis draws on both.
