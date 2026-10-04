@@ -8346,3 +8346,15 @@ provisionals) presenting the product VARI *"as a reference architecture"*. It na
 **no implementation detail, evaluation or results**. Under §157 its facets fire either way. The
 question only decides `built-system` against `design-only`.
 
+### 157a. A COMMERCIAL PRODUCT IS `built-system` BY DEFINITION (arbiter, 2026-10-04)
+
+**Arbiter:** *"Commercial product is built-system by definition."* **Swidey `5RLPIA3K` keeps
+`built-system`.** VARI is the vendor's product, with named models per role and deployment offered.
+The paper's lack of implementation detail or evaluation does not make it a design: a product exists,
+whether or not the paper evaluates it. **No evaluation means no rung** (ladder rule 1 needs a built
+system, and a rung needs an evaluation event); it does not mean `design-only`.
+
+**General rule:** when the paper describes a **commercially offered product**, it takes
+`built-system` regardless of what evidence the paper itself presents. `design-only` is reserved for
+systems that are proposed or specified but not offered or implemented.
+
