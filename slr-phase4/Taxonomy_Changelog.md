@@ -8553,3 +8553,20 @@ All 15 general questions are ruled (§151–§165). **Coined:** `deterministic-o
 Mitropoulos rungs (§155a), and Zietsman `agent-panel` / `cross-model` (§163a). Per-paper decisions are
 in `slr-phase4/data/f2_review_rulings.json`, pending a batched Zotero write.
 
+## 166. F2 review step 2 — per-paper confirmations (Phase 6 only), from 2026-10-04
+
+Decisions are recorded per paper in `data/f2_review_rulings.json` and written in batches; this entry
+logs only the rules that surface.
+
+### 166a. `hitl-workflow` vs steering, restated (arbiter, batch 1)
+
+***"HITL is human evaluating the result, making judgements. Human directing is steering."*** This
+restates §11 as a one-line test: **a human judging the output → `hitl-workflow`; a human directing
+the generation (prompts, context selection, task steering) → steering.** Applied: Goel/Lumen
+`VG6CIDQW` `hitl-workflow` is **rejected**, because the developer controls the AI's context.
+
+**Batch 1 (10 papers):** endorsed Heander `framework`; Hjazeen `peer-critique` (§157); Lipsanen
+`rules-based-checks-v2` (as v2 defined it); Mitchell, Moreira and Omidvar-Tehrani
+`rules-based-checks-v3`; Mitropoulos `evaluator-reliability` (§164); Parris `rules-based-checks-v2`.
+Rejected Goel `hitl-workflow` (166a) and Gao `survey-input` (no survey, §116a).
+

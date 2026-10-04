@@ -10,7 +10,7 @@
    "ruling": "§152",
    "date": "2026-10-04",
    "note": "route 1: observed review absence on the MERGED population (79.0% Human+AI, 86.8% non-owner); triage not shown, only hypothesised. Mechanism note: absence tracks AI visibility (AI-only 1.7%), not demonstrated capacity overload.",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "JQPPKSFQ",
@@ -21,7 +21,7 @@
    "ruling": "§152",
    "date": "2026-10-04",
    "note": "absence shown SELECTIVE by the paper's own data (smaller/focused PRs; less in mature projects; caution on deletions)",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "SHK6KAX6",
@@ -32,7 +32,7 @@
    "ruling": "§152",
    "date": "2026-10-04",
    "note": "automated checks gated the merges; authors attribute light human review to trust",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "E95T8E88",
@@ -43,7 +43,7 @@
    "ruling": "§152",
    "date": "2026-10-04",
    "note": "'no revisions' is not review absence; no absence claim made",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "9H6FWJME",
@@ -54,7 +54,7 @@
    "ruling": "§154",
    "date": "2026-10-04",
    "note": "merged defects measured; no review signal measured on that population",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "U3IQJ4VK",
@@ -65,7 +65,7 @@
    "ruling": "§155",
    "date": "2026-10-04",
    "note": "§115: measures the effect of USING the analysers (detector → warning → LLM repair)",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "8MXATG38",
@@ -76,7 +76,7 @@
    "ruling": "§155",
    "date": "2026-10-04",
    "note": "SAST/SCA/licence scanners as a merge gate in the contributed system — use, not measurement",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "SHK6KAX6",
@@ -87,7 +87,7 @@
    "ruling": "§155",
    "date": "2026-10-04",
    "note": "Sniffer measures the corpus; instrument, not contribution (§104)",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "UIXCRBQX",
@@ -98,7 +98,7 @@
    "ruling": "§155",
    "date": "2026-10-04",
    "note": "detector yields breaking-change RATES (the world); 94-patch check validates the instrument (§104)",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "YA7XNWYE",
@@ -109,7 +109,7 @@
    "ruling": "§155",
    "date": "2026-10-04",
    "note": "ESBMC is the study's oracle, not a contributed check (§104)",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "YA7XNWYE",
@@ -120,7 +120,7 @@
    "ruling": "§155",
    "date": "2026-10-04",
    "note": "QA CORRECTION (§142a precedent): no built system — CSET report evaluating five third-party LLMs with off-the-shelf ESBMC + LLMSecEval prompts; 'not … create a new benchmark'",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "BU73N7PC",
@@ -131,7 +131,7 @@
    "ruling": "§155",
    "date": "2026-10-04",
    "note": "release-risk predictor scored retrospectively on real history — results describe the tool",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "E95T8E88",
@@ -142,7 +142,7 @@
    "ruling": "§155",
    "date": "2026-10-04",
    "note": "deletion predictor scored by cross-validation on real PRs (RQ2, tool-side)",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "74GE3TF7",
@@ -153,7 +153,7 @@
    "ruling": "§155",
    "date": "2026-10-04",
    "note": "arbiter-ruled built-system (Circuit Breaker classifier) scored on real AIDev PRs (AUC 0.958)",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "X7EN6DXZ",
@@ -164,7 +164,7 @@
    "ruling": "§155",
    "date": "2026-10-04",
    "note": "event 2: the authors' LLM-assisted iterative attack scored on 17 real CVEs / 10 real projects (pipelines rebuilt in isolation) — 100% success, 17/17",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "X7EN6DXZ",
@@ -175,7 +175,7 @@
    "ruling": "§155",
    "date": "2026-10-04",
    "note": "QA CORRECTION (§142a precedent): neither event is a benchmark run — CrossVul (event 1) is sampled for an experiment on third-party models; the 17 CVEs (event 2) are a selected real set",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "T72TU8B5",
@@ -186,7 +186,7 @@
    "ruling": "§158",
    "date": "2026-10-04",
    "note": "pattern 3: every agent action passes the CLI approval cascade, enforced independently of the model — a mandatory chokepoint the agent cannot route around; form (b)",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "JCTP8VXP",
@@ -197,7 +197,7 @@
    "ruling": "§158",
    "date": "2026-10-04",
    "note": "pattern 4: zoro-cli refuses 'complete' without proof — no other path to done; form (b); human supervisor panel is a backstop only",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "T72TU8B5",
@@ -208,7 +208,7 @@
    "ruling": "§158",
    "date": "2026-10-04",
    "note": "pattern 3: every agent action passes the CLI approval cascade, enforced independently of the model — a mandatory chokepoint the agent cannot route around; form (b)",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "JCTP8VXP",
@@ -219,7 +219,7 @@
    "ruling": "§158",
    "date": "2026-10-04",
    "note": "pattern 4: zoro-cli refuses 'complete' without proof — no other path to done; form (b); human supervisor panel is a backstop only",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "5VTAJISY",
@@ -230,7 +230,7 @@
    "ruling": "§158",
    "date": "2026-10-04",
    "note": "pattern 1: human approvals drive the stage transitions — hitl-workflow, not deterministic orchestration",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "7UB2MD8Z",
@@ -241,7 +241,7 @@
    "ruling": "§158",
    "date": "2026-10-04",
    "note": "pattern 2: the LLM terminates the loop (<DONE>); code only caps iterations",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "7UB2MD8Z",
@@ -252,7 +252,7 @@
    "ruling": "§158",
    "date": "2026-10-04",
    "note": "pattern 2: the LLM terminates the loop (<DONE>); code only caps iterations",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "X7EN6DXZ",
@@ -263,7 +263,7 @@
    "ruling": "§158",
    "date": "2026-10-04",
    "note": "pattern 1: review outcomes classified manually — human drives the loop",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "YBHHYR4P",
@@ -274,7 +274,7 @@
    "ruling": "§160",
    "date": "2026-10-04",
    "note": "per-task Likert measures belief about one's own just-completed work (overconfidence/calibration construct) — Catalan side of 'what they want vs what they did'",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "6DXZGHD9",
@@ -285,7 +285,7 @@
    "ruling": "§160",
    "date": "2026-10-04",
    "note": "questionnaire rates the significance of risks/practices — assessment of the world (cf. Sudarsan), and responses also train the ANN-ISM model (formative); v1 human tag predates §121b and stays as history",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "UB2EVUFU",
@@ -296,7 +296,7 @@
    "ruling": "§161",
    "date": "2026-10-04",
    "note": "event 1: ProjDevBench run as-is",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "UB2EVUFU",
@@ -307,7 +307,7 @@
    "ruling": "§161",
    "date": "2026-10-04",
    "note": "event 2: self-authored multi-day project briefs (created)",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "5DI9B43K",
@@ -318,7 +318,7 @@
    "ruling": "§161",
    "date": "2026-10-04",
    "note": "MSAN event on real code; second event mostly selected-real (12/20 from CRQBench) — same rung",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "5DI9B43K",
@@ -329,7 +329,7 @@
    "ruling": "§161",
    "date": "2026-10-04",
    "note": "no separate created-material event warranting a second rung",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "UW2R6BBJ",
@@ -340,7 +340,7 @@
    "ruling": "§161",
    "date": "2026-10-04",
    "note": "16-week utility deployment sits above the ladder; carried by method-field-study",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "MFSZPSPU",
@@ -351,7 +351,7 @@
    "ruling": "§161",
    "date": "2026-10-04",
    "note": "48 sanitizer bugs SELECTED from a production monorepo; patches harvested from the authors' production APR system, not hand-crafted",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "MFSZPSPU",
@@ -362,7 +362,7 @@
    "ruling": "§161",
    "date": "2026-10-04",
    "note": "curation decides (§148b): selected production material, not created",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "7V7SRG43",
@@ -373,7 +373,7 @@
    "ruling": "§161",
    "date": "2026-10-04",
    "note": "event 1: Trans-Review / AutoTransform / T5-Review — established third-party datasets, already adopted by the SOTA comparison study, run as-is",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "7V7SRG43",
@@ -384,7 +384,7 @@
    "ruling": "§161",
    "date": "2026-10-04",
    "note": "event 2: authors' own new dataset of 3,545 selected real-world commits — 'wants to be a benchmark' ≠ is one (§34 Dr.Fix)",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "6ZW9QNQH",
@@ -395,7 +395,7 @@
    "ruling": "§162",
    "date": "2026-10-04",
    "note": "design-only; single toy smoke demo, no scored workload",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "VG6CIDQW",
@@ -406,7 +406,7 @@
    "ruling": "§162",
    "date": "2026-10-04",
    "note": "analytical cognitive walkthrough — self-test level, below synthetic",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "R4WJZBSF",
@@ -417,7 +417,7 @@
    "ruling": "§162",
    "date": "2026-10-04",
    "note": "design-only; outputs predetermined by the random data generator",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "UB2EVUFU",
@@ -428,7 +428,7 @@
    "ruling": "§163",
    "date": "2026-10-04",
    "note": "Apollo (verification phase) judges Ares's output — one-directional",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "CTGGMIX9",
@@ -439,7 +439,7 @@
    "ruling": "§163",
    "date": "2026-10-04",
    "note": "implicit path: verifier ensemble judges each proposer-LLM issue — one-directional; agent-panel also stands (explicit path)",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "7V7SRG43",
@@ -450,7 +450,7 @@
    "ruling": "§163",
    "date": "2026-10-04",
    "note": "QA-Checker consumes and judges another agent's answer (alignment) — topology, not dimension judged",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "DJMBHHZN",
@@ -461,7 +461,7 @@
    "ruling": "§163",
    "date": "2026-10-04",
    "note": "as designed (§157): supervision agents review solution agents' outputs — one-directional",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "RX9SICP9",
@@ -472,7 +472,7 @@
    "ruling": "§163",
    "date": "2026-10-04",
    "note": "one model alternating generative/adversarial roles — self-critique, no second agent",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "TA6GIUK2",
@@ -483,7 +483,7 @@
    "ruling": "§163",
    "date": "2026-10-04",
    "note": "reviewers compared as experimental subjects; proposed architecture has no agent critique step",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "TA6GIUK2",
@@ -494,7 +494,7 @@
    "ruling": "§163",
    "date": "2026-10-04",
    "note": "QA CORRECTION (§142a precedent): four models review independently, reported per model, no aggregation rule — Karakaya pattern",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "TA6GIUK2",
@@ -505,7 +505,7 @@
    "ruling": "§163",
    "date": "2026-10-04",
    "note": "QA CORRECTION (§142a precedent): reviewers are subjects compared (Karakaya negative); proposed architecture has no cross-model step",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "22JBEZNK",
@@ -516,7 +516,7 @@
    "ruling": "§164",
    "date": "2026-10-04",
    "note": "evaluator-reliability is for AUTOMATED evaluators; human evaluator failure is automation bias",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "22JBEZNK",
@@ -527,7 +527,7 @@
    "ruling": "§164",
    "date": "2026-10-04",
    "note": "non-programmers, warned and incentivised, still failed to detect critical flaws in AI analyses — commission errors (Parasuraman & Manzey)",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "3SU9QZ6F",
@@ -538,7 +538,7 @@
    "ruling": "§165",
    "date": "2026-10-04",
    "note": "44:1 LLM-suppression is an explicitly secondary exploratory finding; subject is AIRA and the reward-shaped failure hypothesis",
-   "written": null
+   "written": "2026-10-04"
   },
   {
    "key": "R9CDT9KB",
@@ -549,7 +549,227 @@
    "ruling": "§165",
    "date": "2026-10-04",
    "note": "calibration analysis evaluates the authors' own tool; reliability is not the paper's subject",
-   "written": null
+   "written": "2026-10-04"
+  },
+  {
+   "key": "3SU9QZ6F",
+   "author": "Parris",
+   "kind": "theme",
+   "slug": "rules-based-checks-v3",
+   "action": "endorse",
+   "ruling": "§156 (calibration anchor)",
+   "date": "2026-10-04",
+   "note": "arbiter-settled F2c calibration anchor",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "T8E8SCCG",
+   "author": "Xie",
+   "kind": "theme",
+   "slug": "rules-based-checks-v3",
+   "action": "endorse",
+   "ruling": "§156 (calibration anchor)",
+   "date": "2026-10-04",
+   "note": "arbiter-settled F2c calibration anchor",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "72W6R4JG",
+   "author": "Töpfer",
+   "kind": "theme",
+   "slug": "rules-based-checks-v3",
+   "action": "endorse",
+   "ruling": "§156 (calibration anchor)",
+   "date": "2026-10-04",
+   "note": "arbiter-settled F2c calibration anchor",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "U3IQJ4VK",
+   "author": "Fu",
+   "kind": "theme",
+   "slug": "rules-based-checks-v3",
+   "action": "endorse",
+   "ruling": "§156 (calibration anchor)",
+   "date": "2026-10-04",
+   "note": "arbiter-settled F2c calibration anchor",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "8MXATG38",
+   "author": "Karuppuchamy",
+   "kind": "theme",
+   "slug": "rules-based-checks-v3",
+   "action": "endorse",
+   "ruling": "§156 (calibration anchor)",
+   "date": "2026-10-04",
+   "note": "arbiter-settled F2c calibration anchor",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "GAD5Z8PV",
+   "author": "Vargas",
+   "kind": "facet",
+   "slug": "deterministic-orchestration-v2",
+   "action": "endorse",
+   "ruling": "§151e (calibration anchor)",
+   "date": "2026-10-04",
+   "note": "arbiter-settled F2b calibration anchor",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "UB2EVUFU",
+   "author": "Lyu",
+   "kind": "facet",
+   "slug": "deterministic-orchestration-v2",
+   "action": "endorse",
+   "ruling": "§151e (calibration anchor)",
+   "date": "2026-10-04",
+   "note": "arbiter-settled F2b calibration anchor",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "UDVHQ5HR",
+   "author": "Jin",
+   "kind": "facet",
+   "slug": "deterministic-orchestration-v2",
+   "action": "endorse",
+   "ruling": "§151e (calibration anchor)",
+   "date": "2026-10-04",
+   "note": "arbiter-settled F2b calibration anchor",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "72W6R4JG",
+   "author": "Töpfer",
+   "kind": "facet",
+   "slug": "deterministic-orchestration-v2",
+   "action": "endorse",
+   "ruling": "§151e (calibration anchor)",
+   "date": "2026-10-04",
+   "note": "arbiter-settled F2b calibration anchor",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "R9CDT9KB",
+   "author": "Mahmud",
+   "kind": "facet",
+   "slug": "deterministic-orchestration-v2",
+   "action": "endorse",
+   "ruling": "§151e (calibration anchor)",
+   "date": "2026-10-04",
+   "note": "arbiter-settled F2b calibration anchor",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "VG6CIDQW",
+   "author": "Goel",
+   "kind": "theme",
+   "slug": "hitl-workflow",
+   "action": "reject",
+   "ruling": "§166 batch 1",
+   "date": "2026-10-04",
+   "note": "the developer DIRECTS the AI's context — steering, not a human judging the result (§11; §166)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "59KP8GTP",
+   "author": "Gao",
+   "kind": "facet",
+   "slug": "survey-input",
+   "action": "reject",
+   "ruling": "§166 batch 1",
+   "date": "2026-10-04",
+   "note": "no survey — mined PR data (§116a)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "F9JM9CI6",
+   "author": "Heander",
+   "kind": "facet",
+   "slug": "framework",
+   "action": "endorse",
+   "ruling": "§166 batch 1",
+   "date": "2026-10-04",
+   "note": "AI-OS reference architecture for a code review platform",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "VFNJSZD9",
+   "author": "Hjazeen",
+   "kind": "facet",
+   "slug": "peer-critique",
+   "action": "endorse",
+   "ruling": "§166 batch 1",
+   "date": "2026-10-04",
+   "note": "§157: designed with a secondary auditor model judging the primary agent's reasoning",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "7SH86C2W",
+   "author": "Lipsanen",
+   "kind": "theme",
+   "slug": "rules-based-checks-v2",
+   "action": "endorse",
+   "ruling": "§166 batch 1",
+   "date": "2026-10-04",
+   "note": "v2 as its instrument defined it (named positive); v3 governs synthesis and excludes it (§156)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "6ZW9QNQH",
+   "author": "Mitchell",
+   "kind": "theme",
+   "slug": "rules-based-checks-v3",
+   "action": "endorse",
+   "ruling": "§166 batch 1",
+   "date": "2026-10-04",
+   "note": "TypeScript compiler + syntactic checks validate LLM-generated code",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "X7EN6DXZ",
+   "author": "Mitropoulos",
+   "kind": "theme",
+   "slug": "evaluator-reliability",
+   "action": "endorse",
+   "ruling": "§166 batch 1",
+   "date": "2026-10-04",
+   "note": "subject is LLM reviewers' reliability under adversarial PR framing — automated evaluator (§164)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "RX9SICP9",
+   "author": "Moreira",
+   "kind": "theme",
+   "slug": "rules-based-checks-v3",
+   "action": "endorse",
+   "ruling": "§166 batch 1",
+   "date": "2026-10-04",
+   "note": "compilers and linters at the Phase 5 gate",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "4FGIVVTG",
+   "author": "Omidvar-Tehrani",
+   "kind": "theme",
+   "slug": "rules-based-checks-v3",
+   "action": "endorse",
+   "ruling": "§166 batch 1",
+   "date": "2026-10-04",
+   "note": "Java compiler/build validates migrated code (type and syntax rules)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "3SU9QZ6F",
+   "author": "Parris",
+   "kind": "theme",
+   "slug": "rules-based-checks-v2",
+   "action": "endorse",
+   "ruling": "§166 batch 1",
+   "date": "2026-10-04",
+   "note": "deterministic parser-backed rule engine — v2's own positive",
+   "written": "2026-10-04"
   }
  ]
 }
