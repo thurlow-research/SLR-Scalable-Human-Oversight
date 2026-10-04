@@ -287,6 +287,18 @@ rejected (§120b), `counterpoint` deprecated (B3).
 on those are judgements, not vote-counts, so they stand — but this is why Set A's origination moved
 54.9% → 12.7%, and it belongs in the calibration write-up.
 
+### B14. Implicit-confirmation residue — 18 tags on 10 surviving papers (2026-10-04) — **PENDING arbiter**
+Early Light Read scanned the full proposal list and queried only doubted tags, so silence on those
+papers is *implicit* confirmation (C4, changelog §150). The residue is being closed by **explicit**
+confirm or reject. The worklist, the case-law flags and the write protocol are in **changelog §150a**.
+The library backup was taken 2026-10-04. Only ruled tags are written, and unruled tags stay silent.
+- Overlaps **B2** (Gao `survey-input` is one of its silent modals) and extends **B10** (Sharma and
+  Wang `rules-based-checks` are panel proposals outside B10's count).
+- **Narrows B9** (§150b): once this and B3 are done, fail-open vs fail-closed changes `final:*` only
+  for **F2 post-freeze proposals**.
+- **Done when:** `slr-tools/silence_audit.py` reports **6** silent tags on surviving papers (all
+  `counterpoint`, which go to B3), and calibration §11.5's split has been refreshed.
+
 ### B8. Verify every item with NO `cal:human` tag — confirm it was genuinely never examined
 **Scott's rule (2026-08-28):** *"we've modified tags on every item, so if there aren't any with human
 tags, they are highly unlikely to have been examined."* Every paper that received a pass got **at
