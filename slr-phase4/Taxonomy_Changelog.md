@@ -8314,3 +8314,35 @@ theme fires — even if other parts use the tool only as an instrument."***
 **Round 2** (fixed instrument, all 10 re-run): **recall 5/5, all at 3/3 · false positives 0, all
 must-nots at 0/3 · output contract clean → PASSED.** The full run is cleared.
 
+## 157. F2 review Q6 — architecture facets describe a paper's OWN SPECIFIED architecture; `design-only` carries the unbuilt status (2026-10-04)
+
+**Arbiter's ruling (option B):** architecture facets (`agent-panel`, `peer-critique`, `cross-model`,
+`deterministic-orchestration`, `deterministic-orchestration-v2`) fire on the architecture a paper
+**specifies for its own system**, built or not. **Evaluation status is carried by `design-only`**, so a
+facet on a design-only paper reads "*designed* with X", not "*has* X".
+
+**Why:** this is §23's precedent applied to facets. Unevaluated work is kept and marked `design-only`;
+it is not withheld. 13 of the 15 flagged papers already carry `design-only`, so any facet count can
+be split into built and designed. Withholding facets would lose the design intent these papers carry:
+which mechanisms practitioners and vendors **propose**, which is relevant to the survey and to HOS.
+
+**What still does NOT fire:**
+- **Catalogues (§149b stands).** A paper surveying *other people's* mechanisms specifies no
+  architecture of its own (Zhu `ZGST9CY6`).
+- **The evaluation rungs.** `evaluated-*` still requires a built system (ladder rule 1).
+
+**Applications:**
+- **Tisi `DJMBHHZN`:** the human `agent-panel` stands, and the panel agrees 2/3.
+- **Hjazeen `VFNJSZD9`:** `peer-critique` (2/3) is applicable under this rule, since the *"secondary
+  auditor model, architecturally isolated from the primary coding agent"* evaluates the primary
+  agent's reasoning. Confirm in the per-paper pass.
+- **F2b's census of 14 "unbuilt design" flags on `deterministic-orchestration-v2`** becomes per-paper
+  work. Each paper is judged on whether its own specified design holds the flow in code.
+
+**Open sub-question: Swidey `5RLPIA3K`, built or designed?** Arbiter-tagged `built-system`. The text is
+a vendor technical white paper (Thirty Seven Inc., the founder and CEO as author, two USPTO
+provisionals) presenting the product VARI *"as a reference architecture"*. It names the models per role
+(Claude Sonnet 4 as Advocate and Adversary, GPT-5.2 as Arbitrator) and offers deployment, but contains
+**no implementation detail, evaluation or results**. Under §157 its facets fire either way. The
+question only decides `built-system` against `design-only`.
+
