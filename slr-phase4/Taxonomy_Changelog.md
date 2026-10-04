@@ -8582,3 +8582,9 @@ anecdotes and others' reports are not its own study); Mahmud original `determini
 `rules-based-checks` **v1** as v1 was defined (v3 governs and does not fire), and Baltes with **both** mode
 facets, because the paper spans agent PRs and inline tools.
 
+**Batch 4 (10 papers, 29 decisions):** all leans accepted. **Rejected:** McAleese `evaluated-synthetic`
+(§34 classed the inserted-bug task as world-side), and Sistla and Sun original
+`deterministic-orchestration` (§151, the variant; `-v2` carries them). **Added (arbiter-originated):**
+Swidey `deterministic-orchestration-v2`. That keeps the superset property, since the original fires and
+F2b's "unbuilt" flag is settled by §157a.
+
