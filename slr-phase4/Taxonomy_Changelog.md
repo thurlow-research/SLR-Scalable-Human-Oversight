@@ -8575,3 +8575,10 @@ Rejected Goel `hitl-workflow` (166a) and Gao `survey-input` (no survey, §116a).
 Wang and Zhou `deterministic-orchestration-v2` (Zhou's code loop advances while the user only answers,
 so it is not §158 pattern 1); Watanabe `risk-routing`; Yu `evaluator-reliability`.
 
+**Batch 3 (10 papers, 20 decisions):** all of the assistant's leans accepted. **Rejected:** Eze
+`regulatory-compliance` (the EU AI Act only as a keyword, §43/§44); Kim `method-field-study` (a book's
+anecdotes and others' reports are not its own study); Mahmud original `deterministic-orchestration`
+(§147b precondition 2; `-v2` carries it, §151e). Everything else is endorsed, including Lyu
+`rules-based-checks` **v1** as v1 was defined (v3 governs and does not fire), and Baltes with **both** mode
+facets, because the paper spans agent PRs and inline tools.
+

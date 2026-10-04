@@ -880,6 +880,226 @@
    "date": "2026-10-04",
    "note": "BDD scenarios via behave — v2 as defined; v3 excludes (§156)",
    "written": "2026-10-04"
+  },
+  {
+   "key": "R4WJZBSF",
+   "author": "Vanam",
+   "kind": "facet",
+   "slug": "assistive",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "snippet-level suggestions accepted piecewise",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "R4WJZBSF",
+   "author": "Vanam",
+   "kind": "theme",
+   "slug": "org-governance",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "org-wide ethical-risk monitoring, dashboards, internal audit",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "BU73N7PC",
+   "author": "Abreu",
+   "kind": "facet",
+   "slug": "framework",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "release-risk gate integrated into CI/Phabricator — buildable pipeline framework",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "BU73N7PC",
+   "author": "Abreu",
+   "kind": "facet",
+   "slug": "metrics",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "diff risk score defined as a deliverable",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "B644HQFS",
+   "author": "Baltes",
+   "kind": "facet",
+   "slug": "agentic",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "burden of reviewing agent PRs",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "B644HQFS",
+   "author": "Baltes",
+   "kind": "facet",
+   "slug": "assistive",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "slop from inline tools — paper spans both modes",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "6F3S8IB7",
+   "author": "Bara",
+   "kind": "theme",
+   "slug": "automation-bias",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "dependency trap; silent detection decline; competence maintenance",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "6F3S8IB7",
+   "author": "Bara",
+   "kind": "facet",
+   "slug": "framework",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "HAIF (design-only)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "9MV2IVNU",
+   "author": "Eze",
+   "kind": "facet",
+   "slug": "risk-overreliance",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "automation bias and intervention controls",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "9MV2IVNU",
+   "author": "Eze",
+   "kind": "theme",
+   "slug": "regulatory-compliance",
+   "action": "reject",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "EU AI Act appears only as a keyword — motivation, not mapping (§43/§44)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "UDVHQ5HR",
+   "author": "Jin",
+   "kind": "facet",
+   "slug": "deterministic-orchestration",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "§147b form-(b) positive",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "UDVHQ5HR",
+   "author": "Jin",
+   "kind": "facet",
+   "slug": "evaluated-synthetic",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "§148b: paired variants created from benchmarks",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "7UB2MD8Z",
+   "author": "Kang",
+   "kind": "facet",
+   "slug": "evaluated-synthetic",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "HumanEval mutated into almost-right bugs — created",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "7UB2MD8Z",
+   "author": "Kang",
+   "kind": "facet",
+   "slug": "survey-input-v2",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "§121b defining positive (70% agreed)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "RPHK78A9",
+   "author": "Kim",
+   "kind": "facet",
+   "slug": "method-field-study",
+   "action": "reject",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "book: anecdotes and other organisations' reports, not an observed study",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "RPHK78A9",
+   "author": "Kim",
+   "kind": "theme",
+   "slug": "rules-based-checks-v3",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "about running static analysis and linters in the process",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "UB2EVUFU",
+   "author": "Lyu",
+   "kind": "facet",
+   "slug": "deterministic-orchestration",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "§147b form-(a) positive",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "UB2EVUFU",
+   "author": "Lyu",
+   "kind": "theme",
+   "slug": "rules-based-checks",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "v1 as defined (executable tests, CI); v3 governs and does not fire",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "R9CDT9KB",
+   "author": "Mahmud",
+   "kind": "facet",
+   "slug": "evaluated-real-data",
+   "action": "endorse",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "F2 calibration real-data anchor (§148b)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "R9CDT9KB",
+   "author": "Mahmud",
+   "kind": "facet",
+   "slug": "deterministic-orchestration",
+   "action": "reject",
+   "ruling": "§166 batch 3",
+   "date": "2026-10-04",
+   "note": "bounded classifiers, no discretion to remove — §147b precondition 2 fails; -v2 endorsed (§151e)",
+   "written": "2026-10-04"
   }
  ]
 }
