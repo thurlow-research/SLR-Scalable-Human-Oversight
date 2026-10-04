@@ -270,8 +270,8 @@ different error profiles (Jin 88.74% FPR · Bugdar 24–58% precision · Raghave
 checks that either fire or do not). Conflating them erases the corpus's clearest practical result.
 
 ### B11. Re-check the hand-applied post-freeze tags — one is a KNOWN ERROR (§142a)
-> ✅ **CLOSED 2026-10-04 (§169)** — residual of 6: 5 QA-corrected, McAleese stands. 9 hand-applied errors found in total, all
-> where the panel disagreed with the human tag.
+> ✅ **CLOSED 2026-10-04 (§169)** — residual of 6: 5 QA-corrected, McAleese stands. **8** hand-applied errors found in total (corrected
+> from 9 by §170 — Ji's benchmark rung was right under §119b), all where the panel disagreed with the human tag.
 > **PARTLY DONE 2026-10-04** — F2 review corrected four hand-applied tags (Ji, Mitropoulos rungs §155a; Zietsman
 > `agent-panel`/`cross-model` §163a). **Residual:** hand-applied tags the F2 panel did **not** back (≤1/3) — not covered by
 > the step-2 queue, which only held panel-backed proposals. To check next.

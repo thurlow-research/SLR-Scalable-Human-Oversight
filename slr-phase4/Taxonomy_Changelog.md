@@ -8677,3 +8677,31 @@ formative window, as §142a predicted. **Every one was caught where the panel di
 tag.** That is a concrete case of the review's own disagreement-as-signal mechanism, and worth a
 sentence in the methods chapter.
 
+## 170. CORRECTION — §119b stands: a ladder rung does NOT require a built system; today's Ji rejection reversed (2026-10-04)
+
+**Assistant error, caught during closeout B4.** The F2 instrument (`Tag_Prompt_F2_restricted.md` §3, written
+2026-08-29) states *"all three [rungs] entail `built-system`"*. **That rule was never ruled by the arbiter**, and it
+contradicts §119b (arbiter, 2026-08-27/28): ***"The ladder rates EVIDENCE STRENGTH, not artifact maturity. A
+contributed system is not required."*** The closeout's F2a table agrees (`evaluated-benchmark`: built "(either)"). Only
+**`evaluated-real-data` ⇒ `built-system`** was approved (F2a).
+
+**§155a's Ji `YA7XNWYE` rejection rested on the un-ruled rule, and on a paper §119b had itself ruled.** That ruling
+covered LLMSecEval's 67 published prompts, held constant across five third-party models: `evaluated-benchmark`, with
+no `built-system`. The assistant presented the tag as an error without surfacing §119b, and the arbiter agreed on that
+incomplete picture. **Arbiter, re-asked with both rules in view: §119b stands.**
+
+**Actions:**
+- The `cal:human:reject:facet:evaluated-benchmark` tag written on Ji today was **removed**. It was a same-session
+  assistant error, not an arbiter judgement, and removal was explicitly approved. **Ji's original endorsement
+  stands.** The ledger entry is kept, marked `reversed`.
+- **§169's count is corrected to 8 hand-applied errors** (Ji was right).
+- **Unaffected:** Mitropoulos `evaluated-benchmark` stays rejected. Neither event runs a benchmark as-is (CrossVul
+  was *sampled*). Jin `evaluated-benchmark` stays rejected. The later rulings §148b and the F2 calibration put its
+  *modified* paired variants on the synthetic rung, and they govern over §119b's earlier citation of Jin. §162's
+  floor rulings (Mitchell, Vanam) rested on there being no scored evaluation, not on built status.
+
+**Known limitation to record:** **the F2 panel was instructed under the un-ruled rule.** It may therefore have
+under-proposed `evaluated-benchmark` on papers that benchmark *third-party* systems against an accepted benchmark run
+as-is. The instrument of record is not edited (layered history). Any such paper surfaces only by hand. Ji is the known
+case.
+
