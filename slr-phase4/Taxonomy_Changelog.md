@@ -8358,3 +8358,23 @@ system, and a rung needs an evaluation event); it does not mean `design-only`.
 `built-system` regardless of what evidence the paper itself presents. `design-only` is reserved for
 systems that are proposed or specified but not offered or implemented.
 
+## 158. F2 review Q8 — enforcement must sit WHERE THE AI CANNOT ROUTE AROUND IT: outermost flow, or a mandatory chokepoint (2026-10-04)
+
+**Ruling (arbiter, 2026-10-04, accepting all recommendations).** For both `deterministic-orchestration`
+and `-v2`, §147b's "top level only" means **the enforcement must sit where the AI cannot route around
+it**. That is either the **outermost flow** (the original reading), or **a mandatory chokepoint that
+every action or completion claim must pass**. A loop driven by a human, or ended by a model, does not
+qualify.
+
+| Pattern | Papers | Ruling |
+|---|---|---|
+| **1. A human drives the phases**, and code gates inside | Takerngsaksiri `5VTAJISY` · Lipsanen `7SH86C2W` · Kasibatla `ZH6QIU8A` · Moreira `RX9SICP9` · Mitropoulos `X7EN6DXZ` | **No fire.** A human is the orchestrator. That is `hitl-workflow`, not deterministic orchestration |
+| **2. The model ends the loop** inside a code skeleton | Kang `7UB2MD8Z` | **No fire.** The LLM decides `<DONE>`, and code only caps iterations |
+| **3. An interception layer on every agent action** | **Shukla `T72TU8B5`** | **Fires, form (b), both tags.** Every action passes a CLI approval cascade *"enforced … independently of the model's reasoning"*. The agent chooses *what* to attempt, but cannot bypass the gate |
+| **4. A gate the agent calls itself, with no other path to done** | **Ma `JCTP8VXP`** | **Fires, form (b), both tags.** `zoro-cli` refuses "complete" without proof. The human supervisor panel is only a backstop |
+
+**This resolves F2b's Shukla contradiction (§151g).** F2's 3/3 on the original tag was right. F2b's
+0/3 on `-v2` came from the F2b instrument's "agent-invoked gate" census rule. Shukla and Ma now carry
+**both** tags, so `-v2`'s superset property holds. Rejections are written where a panel proposal
+existed: Takerngsaksiri (original 1/3), Kang (both 1/3), Mitropoulos (`-v2` 1/3).
+

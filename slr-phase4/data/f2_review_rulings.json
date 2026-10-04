@@ -176,6 +176,94 @@
    "date": "2026-10-04",
    "note": "QA CORRECTION (§142a precedent): neither event is a benchmark run — CrossVul (event 1) is sampled for an experiment on third-party models; the 17 CVEs (event 2) are a selected real set",
    "written": null
+  },
+  {
+   "key": "T72TU8B5",
+   "author": "Shukla",
+   "kind": "facet",
+   "slug": "deterministic-orchestration",
+   "action": "endorse",
+   "ruling": "§158",
+   "date": "2026-10-04",
+   "note": "pattern 3: every agent action passes the CLI approval cascade, enforced independently of the model — a mandatory chokepoint the agent cannot route around; form (b)",
+   "written": null
+  },
+  {
+   "key": "JCTP8VXP",
+   "author": "Ma",
+   "kind": "facet",
+   "slug": "deterministic-orchestration",
+   "action": "endorse",
+   "ruling": "§158",
+   "date": "2026-10-04",
+   "note": "pattern 4: zoro-cli refuses 'complete' without proof — no other path to done; form (b); human supervisor panel is a backstop only",
+   "written": null
+  },
+  {
+   "key": "T72TU8B5",
+   "author": "Shukla",
+   "kind": "facet",
+   "slug": "deterministic-orchestration-v2",
+   "action": "endorse",
+   "ruling": "§158",
+   "date": "2026-10-04",
+   "note": "pattern 3: every agent action passes the CLI approval cascade, enforced independently of the model — a mandatory chokepoint the agent cannot route around; form (b)",
+   "written": null
+  },
+  {
+   "key": "JCTP8VXP",
+   "author": "Ma",
+   "kind": "facet",
+   "slug": "deterministic-orchestration-v2",
+   "action": "endorse",
+   "ruling": "§158",
+   "date": "2026-10-04",
+   "note": "pattern 4: zoro-cli refuses 'complete' without proof — no other path to done; form (b); human supervisor panel is a backstop only",
+   "written": null
+  },
+  {
+   "key": "5VTAJISY",
+   "author": "Takerngsaksiri",
+   "kind": "facet",
+   "slug": "deterministic-orchestration",
+   "action": "reject",
+   "ruling": "§158",
+   "date": "2026-10-04",
+   "note": "pattern 1: human approvals drive the stage transitions — hitl-workflow, not deterministic orchestration",
+   "written": null
+  },
+  {
+   "key": "7UB2MD8Z",
+   "author": "Kang",
+   "kind": "facet",
+   "slug": "deterministic-orchestration",
+   "action": "reject",
+   "ruling": "§158",
+   "date": "2026-10-04",
+   "note": "pattern 2: the LLM terminates the loop (<DONE>); code only caps iterations",
+   "written": null
+  },
+  {
+   "key": "7UB2MD8Z",
+   "author": "Kang",
+   "kind": "facet",
+   "slug": "deterministic-orchestration-v2",
+   "action": "reject",
+   "ruling": "§158",
+   "date": "2026-10-04",
+   "note": "pattern 2: the LLM terminates the loop (<DONE>); code only caps iterations",
+   "written": null
+  },
+  {
+   "key": "X7EN6DXZ",
+   "author": "Mitropoulos",
+   "kind": "facet",
+   "slug": "deterministic-orchestration-v2",
+   "action": "reject",
+   "ruling": "§158",
+   "date": "2026-10-04",
+   "note": "pattern 1: review outcomes classified manually — human drives the loop",
+   "written": null
   }
  ]
 }
