@@ -8188,3 +8188,44 @@ rejected under route 1 (§152).
 inspected the specific lines**. Repository data does not carry this. It is an item for the survey
 instrument and an HOS provenance requirement.
 
+## 155. F2 review Q4 — instrument vs contribution applied (§104/§115); two hand-applied rungs QA-corrected (2026-10-04)
+
+**Principle (already settled):** §104 — machinery that is merely *used* to measure something is an
+instrument, not a contribution. §115 — it becomes a contribution when the paper measures the effect of
+*using* it. The rungs follow the ladder rules: a rung requires a built system, and the results must
+describe the tool, not the world.
+
+| Paper | Tag | Panel | Ruling |
+|---|---|---|---|
+| Fu `U3IQJ4VK` | `rules-based-checks-v2` | 2/3 | **endorse** — §115 (detector → warning → LLM repair, 19.3% → 55.5%) |
+| Karuppuchamy `8MXATG38` | `rules-based-checks-v2` | 3/3 | **endorse** — scanners as a merge gate (use, not measurement) |
+| Ghammam `SHK6KAX6` · Ferdous `UIXCRBQX` · Ji `YA7XNWYE` | `rules-based-checks-v2` | 1/3 each | **reject** — the tool is the study's instrument or oracle |
+| Abreu `BU73N7PC` · Watanabe `E95T8E88` | `evaluated-real-data` | 3/3 | **endorse** — predictors scored as tools on real history |
+| Minh `74GE3TF7` | `evaluated-real-data` | 2/3 | **endorse** — follows from the arbiter's own `built-system` (Circuit Breaker, AUC 0.958 on real PRs) |
+| Mitropoulos `X7EN6DXZ` | `evaluated-real-data` | 1/3 | **endorse** — see 155a |
+| Parris `3SU9QZ6F` | (no rung) | 0/3 | **none** — AIRA is built, but its results describe code populations. Built with no rung is valid |
+| Ullah `A6ZE2A26` | `evaluated-synthetic` | 2/3 | **stands** — the existing human tag, now confirmed by the panel |
+
+### 155a. Two hand-applied rungs were ERRORS — QA corrections, following §142a
+
+Both were hand-applied rungs. Per the §142a precedent, **the endorsement is kept as history and a
+`cal:human:reject:` is written alongside**. This is a QA correction, not a definition change.
+
+- **Ji `YA7XNWYE` — `evaluated-benchmark` rejected.** There is **no built system**. It is a CSET policy
+  report: *"we tested five code generation models using the same programming language, assessment
+  tool, and prompts"* (GPT-4, GPT-3.5-turbo, Code Llama, WizardCoder, Mistral), with an off-the-shelf
+  checker (ESBMC) and an existing prompt set (LLMSecEval). It explicitly declines to *"create a new
+  benchmark."* **`built-system` was checked and was not missed** (arbiter request). `method-experiment`
+  stays.
+- **Mitropoulos `X7EN6DXZ` — `evaluated-benchmark` rejected, `evaluated-real-data` endorsed.** The
+  paper has two events. **Event 1:** six third-party LLMs on 250 pairs *sampled* from CrossVul. No own
+  system, so `method-experiment`, no rung. **Event 2:** the authors' **LLM-assisted iterative attack**
+  against the review pipelines of **17 real CVEs across 10 real-world projects**, rebuilt *"in
+  controlled, isolated environments [that] do not involve live production systems"*. Its results
+  describe the tool (100% success, 17/17; 53% on the first attempt; $19.36 total). The material is
+  real and selected, so it is real-data under §148b. Neither event is a benchmark run.
+
+**For closeout B11 (hand-applied post-freeze tags):** two of the hand-applied rungs examined here were
+errors, both from the ladder's formative period. That supports re-checking the remaining hand-applied
+rungs.
+

@@ -55,6 +55,127 @@
    "date": "2026-10-04",
    "note": "merged defects measured; no review signal measured on that population",
    "written": null
+  },
+  {
+   "key": "U3IQJ4VK",
+   "author": "Fu",
+   "kind": "theme",
+   "slug": "rules-based-checks-v2",
+   "action": "endorse",
+   "ruling": "§155",
+   "date": "2026-10-04",
+   "note": "§115: measures the effect of USING the analysers (detector → warning → LLM repair)",
+   "written": null
+  },
+  {
+   "key": "8MXATG38",
+   "author": "Karuppuchamy",
+   "kind": "theme",
+   "slug": "rules-based-checks-v2",
+   "action": "endorse",
+   "ruling": "§155",
+   "date": "2026-10-04",
+   "note": "SAST/SCA/licence scanners as a merge gate in the contributed system — use, not measurement",
+   "written": null
+  },
+  {
+   "key": "SHK6KAX6",
+   "author": "Ghammam",
+   "kind": "theme",
+   "slug": "rules-based-checks-v2",
+   "action": "reject",
+   "ruling": "§155",
+   "date": "2026-10-04",
+   "note": "Sniffer measures the corpus; instrument, not contribution (§104)",
+   "written": null
+  },
+  {
+   "key": "UIXCRBQX",
+   "author": "Ferdous",
+   "kind": "theme",
+   "slug": "rules-based-checks-v2",
+   "action": "reject",
+   "ruling": "§155",
+   "date": "2026-10-04",
+   "note": "detector yields breaking-change RATES (the world); 94-patch check validates the instrument (§104)",
+   "written": null
+  },
+  {
+   "key": "YA7XNWYE",
+   "author": "Ji",
+   "kind": "theme",
+   "slug": "rules-based-checks-v2",
+   "action": "reject",
+   "ruling": "§155",
+   "date": "2026-10-04",
+   "note": "ESBMC is the study's oracle, not a contributed check (§104)",
+   "written": null
+  },
+  {
+   "key": "YA7XNWYE",
+   "author": "Ji",
+   "kind": "facet",
+   "slug": "evaluated-benchmark",
+   "action": "reject",
+   "ruling": "§155",
+   "date": "2026-10-04",
+   "note": "QA CORRECTION (§142a precedent): no built system — CSET report evaluating five third-party LLMs with off-the-shelf ESBMC + LLMSecEval prompts; 'not … create a new benchmark'",
+   "written": null
+  },
+  {
+   "key": "BU73N7PC",
+   "author": "Abreu",
+   "kind": "facet",
+   "slug": "evaluated-real-data",
+   "action": "endorse",
+   "ruling": "§155",
+   "date": "2026-10-04",
+   "note": "release-risk predictor scored retrospectively on real history — results describe the tool",
+   "written": null
+  },
+  {
+   "key": "E95T8E88",
+   "author": "Watanabe",
+   "kind": "facet",
+   "slug": "evaluated-real-data",
+   "action": "endorse",
+   "ruling": "§155",
+   "date": "2026-10-04",
+   "note": "deletion predictor scored by cross-validation on real PRs (RQ2, tool-side)",
+   "written": null
+  },
+  {
+   "key": "74GE3TF7",
+   "author": "Minh",
+   "kind": "facet",
+   "slug": "evaluated-real-data",
+   "action": "endorse",
+   "ruling": "§155",
+   "date": "2026-10-04",
+   "note": "arbiter-ruled built-system (Circuit Breaker classifier) scored on real AIDev PRs (AUC 0.958)",
+   "written": null
+  },
+  {
+   "key": "X7EN6DXZ",
+   "author": "Mitropoulos",
+   "kind": "facet",
+   "slug": "evaluated-real-data",
+   "action": "endorse",
+   "ruling": "§155",
+   "date": "2026-10-04",
+   "note": "event 2: the authors' LLM-assisted iterative attack scored on 17 real CVEs / 10 real projects (pipelines rebuilt in isolation) — 100% success, 17/17",
+   "written": null
+  },
+  {
+   "key": "X7EN6DXZ",
+   "author": "Mitropoulos",
+   "kind": "facet",
+   "slug": "evaluated-benchmark",
+   "action": "reject",
+   "ruling": "§155",
+   "date": "2026-10-04",
+   "note": "QA CORRECTION (§142a precedent): neither event is a benchmark run — CrossVul (event 1) is sampled for an experiment on third-party models; the 17 CVEs (event 2) are a selected real set",
+   "written": null
   }
  ]
 }
