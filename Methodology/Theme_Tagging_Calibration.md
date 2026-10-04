@@ -922,6 +922,11 @@ are excluded from this table for the reasons above, plus the Set C pilot, Otten 
 (`UDVHQ5HR`) sits in both Accept and Set A after the §144 merge and is counted among the 57:
 57 + 14 + 1 = 72.
 
+> **Counting correction (2026-10-04, changelog §173).** The figures in this section were computed with a vote counter
+> that counted **tags rather than vendors**, so a single model's primary (written as both `primary:theme:X` and
+> `theme:X`) passed as 2/3. The inflation is small (≤15 of ~1,050 proposals). **Corrected, post-review, surviving
+> papers: 48 of 509 = 9.4% rejected** (`tag_layer_stats_T2b_2026-10-04.json`; `slr-tools/silence_audit.py`).
+
 **On the papers that survive into synthesis, the arbiter overturned roughly one model-agreed tag in
 eleven.** The pooled 7.7% understates this, because it averages in demoted papers whose tags were
 never checked. Per band, rejections ran Light Read 52 / 678 (7.7%), Accept

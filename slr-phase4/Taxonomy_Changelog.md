@@ -8746,3 +8746,25 @@ One entry for the whole correction, as closeout C9 asked. The calibration doc is
 
 **Not to be quoted anywhere:** the T0/T1 snapshots' calibration figures (D1), 80.9%, and ~96%.
 
+## 173. CORRECTION — panel votes were counting TAGS, not VENDORS; a single model's primary passed as a 2/3 majority (2026-10-04)
+
+**Found while building F1.** `tag_layer_stats.split_layers` (shared by every stats and queue script) incremented a vote
+for each `cal:<model>:*` tag. Models write **both** `cal:<m>:primary:theme:X` and `cal:<m>:theme:X` for their primary
+(202 such pairs), so **one vendor counted as two votes**. **15 single-vendor proposals were treated as panel-modal**
+across the reading bands. The 13 on kept or demoted papers include Vanam `org-governance`, Watanabe `risk-routing`,
+Goel `hitl-workflow`, Ma `agent-scope-drift`, Zhou `oversight-scaling-inversion`, and Huang-adjacent Set A themes.
+
+**Fix:** votes now count **distinct vendors** (unit-tested: one vendor's primary + theme = 1; two vendors = 2).
+
+**Impact:**
+- **No ruling is invalidated.** Every affected proposal on a kept paper received an explicit arbiter ruling on its
+  merits in the F2 review. **But the panel-support figures shown for them were overstated** (e.g. Vanam
+  `org-governance`, Watanabe `risk-routing` and Goel `hitl-workflow` were presented as 2/3 but were one vendor). The
+  step-2 queue is still 0.
+- **Statistics:** the denominators of modal-proposal figures were slightly inflated (≤15 of ~1,050).
+  **Corrected surviving-paper override (post-review): 48 / 509 = 9.4%** (was reported 49 / 511 = 9.6%).
+  **T2 regenerated as `tag_layer_stats_T2b_2026-10-04.json`.** T0, T1, T1b, T2prep and T2 stay as recorded
+  (layered history) **but carry the inflation; quote T2b or later.**
+- **F1 (`final:*`) is computed with the fixed counter**, so a single model's primary never enters the reportable set
+  as a "panel majority".
+

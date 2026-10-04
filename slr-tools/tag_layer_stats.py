@@ -111,7 +111,10 @@ def split_layers(data: dict) -> dict:
     Returns a dict so callers cannot silently mis-order the tuple, and so new
     signals (primary, demote, superseded) can be added without breaking callers.
     """
-    votes: collections.Counter = collections.Counter()
+    # Votes count DISTINCT VENDORS, not tags. A model that picks X as primary writes both
+    # cal:<m>:primary:theme:X and cal:<m>:theme:X; counting tags made one vendor look like two, so a
+    # single model's primary passed as a 2/3 majority (15 cases found 2026-10-04, changelog §173).
+    voters: dict = collections.defaultdict(set)
     human, reject = set(), set()
     primary = None
     demoted = False
@@ -132,10 +135,11 @@ def split_layers(data: dict) -> dict:
                 if ":primary:" in tag:
                     primary = slug
             elif who in MODELS:
-                votes[(kind, slug)] += 1
+                voters[(kind, slug)].add(who)
         m2 = REJECT_RE.match(tag)
         if m2:
             reject.add((m2.group(1), m2.group(2)))
+    votes = collections.Counter({k: len(v) for k, v in voters.items()})
     return {"votes": votes, "human": human, "reject": reject,
             "primary": primary, "demoted": demoted, "superseded": superseded}
 
