@@ -1,0 +1,49 @@
+{
+ "_comment": "Arbiter rulings from the F2 review (Taxonomy_Changelog §151 on). One entry per (paper, kind, slug): action endorse|reject, the ruling § and date. Applied to Zotero in batches as cal:human:<kind>:<slug> / cal:human:reject:<kind>:<slug>; 'written' records the batch.",
+ "rulings": [
+  {
+   "key": "59KP8GTP",
+   "author": "Gao",
+   "kind": "theme",
+   "slug": "oversight-scaling-inversion-v2",
+   "action": "endorse",
+   "ruling": "§152",
+   "date": "2026-10-04",
+   "note": "route 1: observed review absence on the MERGED population (79.0% Human+AI, 86.8% non-owner); triage not shown, only hypothesised. Mechanism note: absence tracks AI visibility (AI-only 1.7%), not demonstrated capacity overload.",
+   "written": null
+  },
+  {
+   "key": "JQPPKSFQ",
+   "author": "Branco",
+   "kind": "theme",
+   "slug": "oversight-scaling-inversion-v2",
+   "action": "reject",
+   "ruling": "§152",
+   "date": "2026-10-04",
+   "note": "absence shown SELECTIVE by the paper's own data (smaller/focused PRs; less in mature projects; caution on deletions)",
+   "written": null
+  },
+  {
+   "key": "SHK6KAX6",
+   "author": "Ghammam",
+   "kind": "theme",
+   "slug": "oversight-scaling-inversion-v2",
+   "action": "reject",
+   "ruling": "§152",
+   "date": "2026-10-04",
+   "note": "automated checks gated the merges; authors attribute light human review to trust",
+   "written": null
+  },
+  {
+   "key": "E95T8E88",
+   "author": "Watanabe",
+   "kind": "theme",
+   "slug": "oversight-scaling-inversion-v2",
+   "action": "reject",
+   "ruling": "§152",
+   "date": "2026-10-04",
+   "note": "'no revisions' is not review absence; no absence claim made",
+   "written": null
+  }
+ ]
+}

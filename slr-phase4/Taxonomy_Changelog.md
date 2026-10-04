@@ -8087,3 +8087,45 @@ agent-invoked gate on 9**. These are inputs to questions 6 and 8. **A 1/3-only p
 (Parris, Huang, Kang, Abreu, McAleese, Vanam, Mitropoulos) stays in the review queue and is not
 written as model-agreed.
 
+## 152. F2 review Q1 — observed review absence counts unless the paper shows it is SELECTIVE; Gao fires, with a mechanism note (2026-10-04)
+
+**Question:** does `oversight-scaling-inversion-v2` route 1 (*observed review absence*) fire on absence
+that may be a choice rather than capacity being outrun?
+
+**Arbiter's ruling (2026-10-04): the middle reading.** **Observed absence of review counts unless the
+paper itself shows it to be selective or chosen.** A cause the paper only *hypothesises* does not
+discharge it.
+
+| Paper | Ruling | Why |
+|---|---|---|
+| **Gao `59KP8GTP`** | **fires** (endorses codex + gemini, 2/3) | Absence on the **merged** population: Human+AI 79.0% merged with no human feedback, and 86.8% for non-owners. The triage explanation (*"low-hanging fruit"*) is an untested hypothesis (*"we did not analyse the reasons"*) |
+| Branco `JQPPKSFQ` | **rejected** | The paper's own data show the absence is **selective**: auto-merged PRs are *"smaller and more focused"* and *"less common in more mature, well-governed projects"*, with maintainers *"more cautious when agents remove existing code"* |
+| Ghammam `SHK6KAX6` | **rejected** | Merges came *"immediately after automated checks passed"*, so oversight was present. The authors attribute the light human review to **trust** |
+| Watanabe `E95T8E88` | **rejected** | *"75.6% contain no revisions"* is not review absence, and the paper makes no absence claim |
+
+### 152a. MECHANISM NOTE — Gao demonstrates absence, not capacity overload
+
+Gao's **Table 2** (the authoritative MSR '26 text; derived from "# No Human" over merged entries)
+contains the decisive contrast, within the same repositories and period:
+
+| Who is visibly the author | Merged with no human feedback | Mean reviews |
+|---|---|---|
+| **AI-only** (a bot is the author) | **1.7%** (83 / 4,751) | 3.21 |
+| Human-only | 19.8% (27,707 / 140,042) | 4.98–5.52 |
+| **Human+AI** (AI only in a commit trailer) | **79.0%** (15,219 / 19,263) | 0.15–0.62 |
+
+If capacity were simply being outrun, the bot-authored PRs would go unreviewed too. Instead they are
+among the most reviewed. **Absence tracks how visible the AI involvement is** (plus ownership), not
+volume. That is consistent with an **attention account**: a human author's name invites a quick scan
+of code that looks correct. This is the arbiter's System 1 / System 2 hypothesis. The dissertation
+uses Gao for the *result*, not this mechanism, and its theoretical base (Parasuraman & Manzey's
+attention-driven complacency) fits it.
+
+**Consequence for citation:** Gao is the corpus's one demonstration of review **absence** on merged
+AI work. **It must not be cited as evidence that review capacity is outrun.** The tag is retained
+because route 1 is about observed absence; the mechanism belongs to the fieldwork.
+
+**Source-version check:** Gao's corpus TXT is identical to the authoritative published TXT
+(`RPIQ6R4W`, MSR '26). Table 2's values come from `pdftotext -layout` on the published PDF
+(`5JPXMWWP`), the allowed re-extraction, because the stored TXT's reflow drops table cells.
+
