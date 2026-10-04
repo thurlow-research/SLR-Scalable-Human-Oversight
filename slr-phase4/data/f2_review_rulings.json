@@ -506,6 +506,28 @@
    "date": "2026-10-04",
    "note": "QA CORRECTION (§142a precedent): reviewers are subjects compared (Karakaya negative); proposed architecture has no cross-model step",
    "written": null
+  },
+  {
+   "key": "22JBEZNK",
+   "author": "Virk",
+   "kind": "theme",
+   "slug": "evaluator-reliability",
+   "action": "reject",
+   "ruling": "§164",
+   "date": "2026-10-04",
+   "note": "evaluator-reliability is for AUTOMATED evaluators; human evaluator failure is automation bias",
+   "written": null
+  },
+  {
+   "key": "22JBEZNK",
+   "author": "Virk",
+   "kind": "theme",
+   "slug": "automation-bias",
+   "action": "endorse",
+   "ruling": "§164",
+   "date": "2026-10-04",
+   "note": "non-programmers, warned and incentivised, still failed to detect critical flaws in AI analyses — commission errors (Parasuraman & Manzey)",
+   "written": null
   }
  ]
 }

@@ -8511,3 +8511,20 @@ genuine benefit is ***"diversity plus external grounding."*** It is also sceptic
 aggregation (the *"popularity trap"*, citing Vallecillos-Ruiz et al.). **This is relevant to HOS's
 multi-vendor design and to the synthesis**, even though the architecture facet does not apply.
 
+## 164. F2 review Q14a — `evaluator-reliability` is for AUTOMATED evaluators; HUMAN evaluator failure is automation bias (2026-10-04)
+
+**Arbiter:** ***"Human failure is automation bias."***
+
+**Rule:** `evaluator-reliability` covers whether an **automated** evaluator (an LLM judge, critic,
+reviewer model or metric) can be trusted. That matches all six of its worked positives. When the
+**human** overseer fails to catch AI errors, that is **`automation-bias`** (Parasuraman & Manzey:
+omission errors, and commission errors in following flawed automated output). This is the
+dissertation's Chapter 1 theoretical base. The two oversight questions, *can we trust the AI checker?*
+and *can we trust the human checker?*, stay separable in the synthesis. **No definition change; no new
+slug.**
+
+**Applied — Virk `22JBEZNK`:** `evaluator-reliability` **rejected** (codex 1/3), and `automation-bias`
+**endorsed** (arbiter-originated). Marketing and sales professionals, *"repeatedly informed the AI often
+makes mistakes, and explicitly prompted to identify them"* and paid to find them, *"frequently failed to
+detect critical flaws … many of which required no technical knowledge to recognize."*
+
