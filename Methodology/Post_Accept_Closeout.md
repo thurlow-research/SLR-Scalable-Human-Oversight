@@ -373,6 +373,8 @@ measurement. It completes the tier-error picture in both directions, where §11.
 Recompute at band close; the 32% will move.
 
 ### C4. §10.8 / §11.5 — silence is a **weak endorsement**, not "unexamined"
+> **Propagated 2026-10-04** → `Taxonomy_Changelog.md` §150 and calibration §10.8 / §11.5. Residue of
+> 18 implicitly confirmed tags on 10 surviving papers sent for explicit confirmation.
 Scott (2026-08-28): in Light Read, silence means *"did not need big discussion"* — tags were **lightly
 scanned and inconsistencies discussed/updated**. §11.5 currently labels the 98 silent proposals
 *"stands on modality,"* which reads as passing through unexamined. Reclassifying ~19% of Light Read

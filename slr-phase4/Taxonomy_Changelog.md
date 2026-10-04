@@ -7829,3 +7829,35 @@ and `design-only`. Flagged for a ruling, not actioned.
 **Closeout item:** other design / framework / catalogue papers may carry architecture facets on the
 same basis. Screen `design-only` papers for architecture facets that rest on catalogued rather than
 implemented mechanisms.
+
+## 150. SILENCE HAS THREE MEANINGS — implicit confirmation, unverified, and no signal (2026-10-04)
+
+**Supersedes the "Not considered" row of §46.** That row described silence as one state. The work
+produced three, depending on where the silence sits:
+
+| Where | Meaning | Count (frozen v2.13 vocabulary, live 2026-10-04) |
+|---|---|---|
+| Panel-modal proposal, **surviving** paper | **Implicitly confirmed** — the full list was scanned, only doubted tags were queried | 24 tags on 14 papers |
+| Panel-modal proposal, **demoted** paper | **Unverified** — demote short-circuits tag verification (§42) | 251 tags on 45 papers |
+| Tag neither proposed nor added | **No signal** — arbiter tagging is non-exhaustive (§45) | — |
+
+**Why implicit confirmation exists at all: the protocol shifted during Light Read.** The arbiter
+(2026-10-04): *"when we started, I reviewed all the tags and only asked about tags that I questioned.
+We later shifted into a mode of explicitly confirming/denying everything."* Closeout C4 (2026-08-28)
+recorded the same shift. The data bears it out: every surviving paper worked in the later mode carries
+**zero** silent proposals.
+
+**Resolution — close out the residue rather than document around it.** 6 of the 24 are the deprecated
+`counterpoint` (§56) and go with closeout sweep B3. The remaining **18 tags on 10 papers** go to the
+arbiter for explicit confirm or reject (`slr-tools/silence_audit.py --list`). New decisions are
+written with the date they are made. Implicit confirmations are **not** back-written as `cal:human:*`
+tags, because that would claim decisions that were not made at the time (layered history).
+
+**Silence is not proof of a scan.** A proposal can also arrive after adjudication. For example, Jin's
+`counterpoint` (`UDVHQ5HR`) came in through the §144 record merge. That is one more reason to confirm
+the residue explicitly rather than presume it.
+
+**Consequence for the reported override rate** (`Theme_Tagging_Calibration.md` §11.5). The pooled
+T1 figure (7.7%) averages in demoted papers whose tags were never checked. **On surviving papers the
+rate is 9.0% (46 of 511)**, and that is the figure to lead with.
+

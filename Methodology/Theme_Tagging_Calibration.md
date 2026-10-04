@@ -733,7 +733,17 @@ The arbiter's pass is **deliberately non-exhaustive**, so silence had to be give
 - **endorsement** — `cal:human:theme|facet:*`, additive
 - **rejection** — `cal:human:reject:*`, subtractive; needed wherever a panel proposal is **modal**, or
   the deprecated/incorrect tag survives into `final:*`
-- **silence** — not considered; the panel proposal stands or falls on its own modality
+- **silence** — no human tag; the panel proposal stands on its own modality. **What silence
+  *means* depends on where it sits** (`Taxonomy_Changelog.md` §150; closeout C4):
+  - *surviving paper, early Light Read* → **implicitly confirmed**. The arbiter scanned the full
+    proposal list and queried only the tags in doubt. Later papers were confirmed or rejected
+    tag by tag, so on them silence does not occur. This residue (18 tags on 10 papers, plus 6 on
+    the deprecated `counterpoint`) is being closed out by explicit confirmation.
+  - *demoted paper* → **unverified**. A demote short-circuits tag verification (§42), because the tags
+    have no downstream consumer.
+
+  A tag the panel never proposed and the arbiter never added is a different thing: **no signal**.
+  Arbiter tagging is non-exhaustive, so omission is not rejection.
 
 **Silence is not disagreement.** This is why the assistant prompts the arbiter per paper with the
 specific contested tags rather than presenting a full list.
@@ -745,9 +755,10 @@ do not enter Phase 6 synthesis, so their tag depth has no consumer (§42). Effor
 what the tags are used for — to **downstream consequence**, never to panel agreement (§11.8).
 
 The panel's role here is **recall**: it holds the whole vocabulary against every paper so the arbiter
-does not have to. Its proposals are **suggestions, never facts** — measured at T1 on the closed
-corpus, **7.7% of panel-modal proposals were overturned** by the arbiter (81 of 1,053 across 128
-production-band studies; 8.3% at the T0 interim) (§11.5).
+does not have to. Its proposals are **suggestions, never facts**. On the papers that survive into
+synthesis, the arbiter overturned **9.0% of panel-modal proposals** (46 of 511, 57 studies). Pooled
+over all 128 production-band studies the figure is 7.7% at T1, against 8.3% at the T0 interim
+(§11.5).
 
 ### 10.10 What the design deliberately does NOT do
 - **No feedback between raters, and no revision rounds.** Taggers never see one another's output. The
@@ -795,8 +806,10 @@ noise concentrates (§3.1–3.2), and model signatures show directional bias (§
   `tag_layer_stats_T2prep_2026-08-29.json` in the same directory (Accept closed 44/44, all bands
   adjudicated, instrument still frozen; filed under its pre-re-run name). T2 waits on the D1 fix to
   `slr-tools/tag_layer_stats.py` (`Restricted_Rerun_Spec.md`).
-- **Human override rate is the headline reliability figure** and is computed by that script —
-  **7.7% at T1** on the closed corpus (8.3% at the T0 interim).
+- **Human override rate is the headline reliability figure.** **9.0% on surviving papers**
+  (`slr-tools/silence_audit.py`). Pooled over all production bands it is 7.7% at T1
+  (`tag_layer_stats.py`), against 8.3% at the T0 interim. Lead with the surviving-paper figure
+  (§11.5).
 
 ---
 
@@ -883,9 +896,23 @@ proposals**:
 |---|---|---|
 | human endorsed | 698 | 66.3% |
 | **human rejected** | **81** | **7.7%** |
-| human silent (stands on modality) | 275 | 26.1% |
+| human silent | 275 | 26.1% |
 
-Plus **58 non-modal proposals rescued**. Per band, rejections ran Light Read 52 / 678 (7.7%), Accept
+Plus **58 non-modal proposals rescued**.
+
+**The pooled table mixes two populations, and the split is the figure to report.** Demoted papers
+skip tag verification (§42), so most of the silent row is *unverified*, not scanned. Split by
+outcome (live library 2026-10-04, frozen v2.13 vocabulary only, `slr-tools/silence_audit.py`; one
+rejection more than the 2026-08-29 snapshot):
+
+| | Studies | Modal proposals | Endorsed | **Rejected** | Silent |
+|---|---:|---:|---:|---:|---:|
+| **Surviving** (feed synthesis) | 57 | 511 | 442 (86.5%) | **46 (9.0%)** | 24 (4.7%) — *implicitly confirmed* |
+| Demoted | 71 | 542 | 255 (47.0%) | 36 (6.6%) | 251 (46.3%) — *unverified* |
+
+**On the papers that survive into synthesis, the arbiter overturned roughly one model-agreed tag in
+eleven.** The pooled 7.7% understates this, because it averages in demoted papers whose tags were
+never checked. Per band, rejections ran Light Read 52 / 678 (7.7%), Accept
 29 / 321 (9.0%), and Full Read 0 / 54 (all six Full Read papers were demoted, and §42's demote
 short-circuit skips tag verification). One Accept-band tag carries both an endorsement and a
 rejection, so the three rows sum to 1,054. Source: `tag_layer_stats_T2prep_2026-08-29.json`.
@@ -899,7 +926,8 @@ not an override rate.
 proposals into Zotero from 2026-08-30. A run today measures the T2 state: match to v2.13 falls in
 every band, and `-v2` slugs appear. The 2026-08-29 snapshot is the record of T1.
 
-**Roughly one modal proposal in thirteen is wrong** (one in twelve at the T0 interim). A 3/3
+**Roughly one modal proposal in eleven is wrong on the surviving papers** (one in thirteen pooled;
+one in twelve at the T0 interim). A 3/3
 auto-accept band would have shipped those into the reported statistics. This single figure carries
 the argument better than the anecdotes in §11.4, and it is recomputed at every measurement point
 (§11.9).
@@ -1094,7 +1122,7 @@ Figures are regenerated by `slr-tools/tag_layer_stats.py` at three points:
 | Point | State | Question it answers |
 |---|---|---|
 | **T0** | now, frozen instrument | baseline — `tag_layer_stats_T0_2026-08-26.json` |
-| **T1** | Light Read + Accept closed, still frozen | do the T0 rates hold over the full corpus? — **yes, approximately: override 7.7% vs 8.3%** (§11.5); `tag_layer_stats_T2prep_2026-08-29.json` |
+| **T1** | Light Read + Accept closed, still frozen | do the T0 rates hold over the full corpus? — **yes, approximately: pooled override 7.7% vs 8.3%; 9.0% on surviving papers** (§11.5); `tag_layer_stats_T2prep_2026-08-29.json` |
 | **T2** | after the restricted re-run on the revised instrument | was the gap the *instrument* or the *panel*? |
 
 **T1→T2 is the informative comparison.** If origination on the post-freeze slugs collapses toward
