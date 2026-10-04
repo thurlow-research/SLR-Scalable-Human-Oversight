@@ -44,6 +44,17 @@
    "date": "2026-10-04",
    "note": "'no revisions' is not review absence; no absence claim made",
    "written": null
+  },
+  {
+   "key": "9H6FWJME",
+   "author": "Liu",
+   "kind": "theme",
+   "slug": "oversight-scaling-inversion-v2",
+   "action": "reject",
+   "ruling": "§154",
+   "date": "2026-10-04",
+   "note": "merged defects measured; no review signal measured on that population",
+   "written": null
   }
  ]
 }

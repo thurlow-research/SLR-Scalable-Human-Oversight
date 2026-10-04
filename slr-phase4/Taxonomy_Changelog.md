@@ -8129,3 +8129,62 @@ because route 1 is about observed absence; the mechanism belongs to the fieldwor
 (`RPIQ6R4W`, MSR '26). Table 2's values come from `pdftotext -layout` on the published PDF
 (`5JPXMWWP`), the allowed re-extraction, because the stored TXT's reflow drops table cells.
 
+## 153. F2 review Q2 — no evidence means conjecture, and conjecture does not count (2026-10-04)
+
+**Arbiter:** *"If there is no evidence, it is conjecture so it doesn't count."*
+
+**Rule:** a paper that frames, argues or asserts the inversion **without first-party evidence** (no
+observed review absence, no measured merged defects of its own) does **not** fire
+`oversight-scaling-inversion-v2`. This holds however central the thesis is to the paper. Cited
+third-party findings and single motivating anecdotes are not the paper's evidence.
+
+**Applied to 11 papers. No model proposed the tag on any of them, so nothing is written.** Silence is
+correct here.
+- **Position, vision or framework:** Wang `2KPHQ5IV`, Kamalı `3ZVMBGPB`, Casserini `95CPB7CF`,
+  Jessee `JVWUYDME`, Bara `6F3S8IB7`.
+- **Discourse or qualitative (self-report):** Baltes `B644HQFS`, Pimenova `E9RAWBDT`.
+- **Policy analysis:** Yang `XJAXB98T`.
+- **Cited or anecdotal:** Moreira `RX9SICP9`, Xie `T8E8SCCG`, Kim `RPHK78A9`.
+
+**Recorded as a count, not a tag.** 11 of the 72 Phase 6 papers frame the inversion as conjecture, and
+one (Gao, §152) demonstrates review absence. The inversion is the field's working premise, but it is
+asserted far more often than it is shown.
+
+## 154. F2 review Q3 — merged defects without a measured review signal do not fire; a correlational route 2 is PARKED as a possible `-v3` (2026-10-04)
+
+**Ruling (arbiter, 2026-10-04): no fire** for Liu `9H6FWJME` (rejecting gemini's 1/3), He `REZGA5WF`
+and Huang `4T5QFWZE`. Each measures defects, and none measures review on the defect population:
+- **Liu** — 22.7% of AI-introduced issues survive at HEAD, but no review signal is measured.
+  *"It is unlikely that all AI-generated code receives a thorough human review"* is inference from
+  volume, and the paper declines a human baseline.
+- **He** — the paper's own model attributes the debt to codebase size, and AI tools *"may not
+  necessarily introduce more code quality issues than non-adopting projects moving with the same
+  velocity."*
+- **Huang** — redundancy is measured on Dataset B (crewAI, 617 PRs) and reviewer sentiment on
+  Dataset A (3,858 PRs). This is §127b's population mismatch.
+
+**The arbiter's concern, recorded because it shapes the next decision:** *"It may be very difficult to
+prove that lack of review is causation; correlation might be what we are limited to deducing. To get
+causation, some means would need to be put in place to confirm that a human actually looked at the code
+where the problem later occurred. We might be throwing out useful data by setting that bar too high."*
+
+**Why the ruling stands under either bar.** None of the three would pass even a correlational test
+(defects plus a measured review signal on the same population), so relaxing route 2 recovers nothing
+here. The papers stay Core with their other tags, and Liu's survival figure remains problem-statement
+evidence. They are excluded only as evidence *for the inversion mechanism*.
+
+### 154a. PARKED — a correlational route 2 as `oversight-scaling-inversion-v3`
+
+Settle this after the remaining F2-review questions, with the full picture in view. **Candidate
+definition:** route 1 unchanged; **route 2 = defects measurably present in merged code AND a measured
+review signal (absence, lightness, or speed) on the same population**. This is association, not
+causation. It is a definition change, so per the provenance practice it would be a new slug and `-v2`
+would stay the strict standard. **It would yield a tiered claim:** "inversion demonstrated once
+(Gao, `-v2`), associated in N papers (`-v3`)." **First candidate: Ghammam `SHK6KAX6`**, which has
+smells in the same merged population where 61.4% merged with no human modification. That paper was
+rejected under route 1 (§152).
+
+**Design implication (fieldwork and HOS):** causal evidence requires a **per-change record that a human
+inspected the specific lines**. Repository data does not carry this. It is an item for the survey
+instrument and an HOS provenance requirement.
+
