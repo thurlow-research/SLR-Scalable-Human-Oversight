@@ -385,6 +385,39 @@
    "date": "2026-10-04",
    "note": "event 2: authors' own new dataset of 3,545 selected real-world commits — 'wants to be a benchmark' ≠ is one (§34 Dr.Fix)",
    "written": null
+  },
+  {
+   "key": "6ZW9QNQH",
+   "author": "Mitchell",
+   "kind": "facet",
+   "slug": "evaluated-synthetic",
+   "action": "reject",
+   "ruling": "§162",
+   "date": "2026-10-04",
+   "note": "design-only; single toy smoke demo, no scored workload",
+   "written": null
+  },
+  {
+   "key": "VG6CIDQW",
+   "author": "Goel",
+   "kind": "facet",
+   "slug": "evaluated-synthetic",
+   "action": "reject",
+   "ruling": "§162",
+   "date": "2026-10-04",
+   "note": "analytical cognitive walkthrough — self-test level, below synthetic",
+   "written": null
+  },
+  {
+   "key": "R4WJZBSF",
+   "author": "Vanam",
+   "kind": "facet",
+   "slug": "evaluated-synthetic",
+   "action": "reject",
+   "ruling": "§162",
+   "date": "2026-10-04",
+   "note": "design-only; outputs predetermined by the random data generator",
+   "written": null
   }
  ]
 }

@@ -8466,3 +8466,17 @@ not yet adopted by anyone (the 'wants to be a benchmark ≠ is one' distinction)
 the rung its **curation** earns (selected → real-data, created → synthetic). It becomes a benchmark
 only once it is **adopted** by others and run under its established protocol.
 
+## 162. F2 review Q12 — the floor of the ladder: smoke demos, analytical walkthroughs and fabricated outputs earn no rung (2026-10-04)
+
+**Ruling: no rung for all three; `evaluated-synthetic` rejected.**
+- **Mitchell `6ZW9QNQH`** (panel 2/3): `design-only` (arbiter). The proof of concept runs on one
+  hand-built toy example, with no scored workload and no metric. Ladder rule 1 already excludes it.
+- **Goel (Lumen) `VG6CIDQW`** (1/3): `built-system`, but the evaluation is a cognitive walkthrough /
+  analytical inspection (*"design-oriented evaluation"*; *"the absence of an empirical user study"*).
+  That is the self-test level, below synthetic.
+- **Vanam `R4WJZBSF`** (2/3): `design-only` (§23 carve-out). The reported numbers are predetermined
+  by the random data generator (`np.random.choice`; the ~60% ADS equals the `p=[0.6,0.4]` parameter).
+
+**The floor, stated:** the first rung requires **a built system run on a workload whose outcomes are
+scored**. Demonstrations, inspections and generator-determined outputs sit below it.
+
