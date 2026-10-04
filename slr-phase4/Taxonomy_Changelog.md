@@ -8229,3 +8229,72 @@ Both were hand-applied rungs. Per the §142a precedent, **the endorsement is kep
 errors, both from the ladder's formative period. That supports re-checking the remaining hand-applied
 rungs.
 
+## 156. F2 review Q5 — TESTS ARE EXCLUDED from rules-based checks; `rules-based-checks-v3` coined; test authorship parked; Jin re-read (2026-10-04)
+
+**How the ruling was reached** (recorded because the arbiter changed position during the discussion,
+and the final position is the one that governs):
+1. *"The intent of the rules based check is whether the code is validated using deterministic
+   evaluations like linters, security scanners, etc. alongside any AI evaluation … The inspiration is
+   diversity of validation."*
+2. *"I wanted to know which cases use static analysis for validating the code."*
+3. *"Tests count too, regardless of human or AI authored. They yield a concrete and reproducible yes
+   or no."*
+4. After re-reading Jin (156c): *"Realistically in practice, nobody is going to have models write code
+   and humans write tests. The opposite is more likely. I think the key insight is whether the same
+   'model' (note, human counts as a different model in this context) wrote the tests. **Let's go back
+   to excluding tests** as a 'deterministic rules based check' and we might add additional analysis on
+   test authorship in a future exercise."*
+
+### 156a. Ruling and the new slug
+
+**`rules-based-checks-v3`** *(theme)*: code is validated against **rules** by a **deterministic,
+non-AI evaluator**. Static analysers, linters, security scanners, type checkers, formal verifiers, and
+policy or constraint rule engines all count. **Tests are excluded, whoever authored them.**
+- **The boundary is rules vs examples.** A rules-based check tests code against **general properties
+  or policies** ("no empty exception handlers", "no hard-coded secrets", a temporal property). A test
+  checks behaviour on **specific examples**.
+- **Worked edge case — Töpfer `72W6R4JG` fires.** Its FCL verifier checks execution traces at runtime,
+  but against general temporal-logic rules (*"the Dragon is eventually dead"*), not examples. It is
+  dynamic, but it is still a rule.
+- **Carried forward unchanged:** §139a (an LLM-scored rubric is `ai-review`) and §104/§115 (a tool
+  used only to *measure* the world is an instrument; it fires when the paper's system or process uses
+  it, or the paper measures the effect of using it).
+- **`-v2` stays as measured.** It admitted human-intent tests (Lipsanen was one of its worked
+  positives), and `-v3` is narrower. This follows the provenance practice.
+
+**Q5 outcome: Lipsanen `7SH86C2W` and Zietsman `TA6GIUK2` do NOT fire `-v3`.** Both validate with
+tests only (Robot Framework acceptance tests; BDD scenarios run with `behave`). Neither paper mentions
+static analysis.
+
+**Application: a one-slug panel run (F2c),** with a calibration gate, on the arbiter's instruction
+(*"I'd be OK just running the new model if that is cleanest"*). It is cleaner than hand-application,
+because `-v2`'s positives include test-only papers that `-v3` must now exclude.
+
+### 156b. PARKED — test authorship as a future exercise
+
+**The variable:** whether the **same author** wrote both the code and its tests. A human counts as a
+different "model" from any LLM. Same-author tests yield a reproducible yes or no that is **correlated
+with the producer's errors**: a shared misreading of the spec passes straight through. **In practice
+the realistic arrangement is models writing both.** Contrast cases already in the corpus: Lipsanen
+(tests generated from requirements **before** the code exists) and Ma (the coding agent writes and runs
+tests for **its own** work). **F2c collects a census flag** on every test-based validation it meets,
+recording authorship relative to the code, so the exercise starts with data.
+
+### 156c. CORRECTION — §147a misread Jin's 88.74%
+
+§147a cited *"Jin, the hybrid case, runs at 88.74% FPR — the LLM error profile."* **That is wrong.**
+In the authoritative journal text (*Autom. Softw. Eng.* (2026) 33:90, Table 4, p. 24), **88.74% is
+GPT-4o's FPR as a pure LLM judge** on MBPP (Full setup). **The hybrid Fix-guided Verification Filter cut
+it to 39.96%.** Llama-3.1-8B went from 90.81% to 23.56%, and QuixBugs from 51.0% to 24.0%.
+
+**What Jin actually shows:**
+1. **Execution-grounding more than halves LLM-judge error.**
+2. **The authors backstop model-authored tests with human ones.** The filter runs the benchmark's
+   human reference tests **and** GPT-4o-generated augmented tests. When the generated tests fail both
+   versions (Case 2), they *"over-extended the spec"* and the filter **falls back to the benchmark
+   tests only**.
+3. **There is no ablation,** so the contribution of the model-authored tests alone is not isolated.
+
+**§147a's conclusion (hybrids out of `-v2`) is untouched; only its evidence is corrected.** Jin is
+retained as a key citation for 156b (arbiter flagged it for dissertation follow-up).
+

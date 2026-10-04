@@ -1,0 +1,16 @@
+{
+  "_comment": "Expected panel output for the F2c calibration set (rules-based-checks-v3 only). Every entry is ARBITER-SETTLED. Töpfer, Fu, Karuppuchamy (must) and Lipsanen, Zietsman, Jin, Ghammam, Ji (must_not) are deliberately NOT named in the instrument, so the gate tests the wording. Parris and Xie are named positives and act as controls.",
+  "_scoring": "Fails if a must is missed or a must_not fires at >=2/3 vendor agreement.",
+  "cases": {
+    "3SU9QZ6F": {"author": "Parris",       "must": ["rules-based-checks-v3"], "must_not": [], "why": "§139a positive — AIRA's parser-backed deterministic engine (named control)."},
+    "T8E8SCCG": {"author": "Xie",          "must": ["rules-based-checks-v3"], "must_not": [], "why": "-v2 positive — VibeGuard scanner + coded hard-block rules (named control)."},
+    "72W6R4JG": {"author": "Töpfer",       "must": ["rules-based-checks-v3"], "must_not": [], "why": "§156 worked edge case (arbiter 2026-10-04): FCL verifier checks runtime traces against GENERAL temporal rules — rules, not examples. Blind."},
+    "U3IQJ4VK": {"author": "Fu",           "must": ["rules-based-checks-v3"], "must_not": [], "why": "§115/§155: CodeQL/ESLint/Bandit in a loop whose effect is measured (detector → warning → LLM repair). Blind."},
+    "8MXATG38": {"author": "Karuppuchamy", "must": ["rules-based-checks-v3"], "must_not": [], "why": "§155: SAST/SCA/licence scanners as a merge gate in the contributed system. Blind."},
+    "7SH86C2W": {"author": "Lipsanen",     "must": [], "must_not": ["rules-based-checks-v3"], "why": "§156: validates with Robot Framework acceptance tests only; no static analysis. Was a -v2 positive — this is the narrowing. Blind."},
+    "TA6GIUK2": {"author": "Zietsman",     "must": [], "must_not": ["rules-based-checks-v3"], "why": "§156: BDD scenarios run with behave — tests only. Blind."},
+    "UDVHQ5HR": {"author": "Jin",          "must": [], "must_not": ["rules-based-checks-v3"], "why": "§156: Fix-guided Verification Filter runs benchmark + model-generated tests — tests only. Blind."},
+    "SHK6KAX6": {"author": "Ghammam",      "must": [], "must_not": ["rules-based-checks-v3"], "why": "§155/§104: Sniffer measures the mined corpus — instrument, not use. Blind."},
+    "YA7XNWYE": {"author": "Ji",           "must": [], "must_not": ["rules-based-checks-v3"], "why": "§155/§104: ESBMC is the oracle scoring third-party models — instrument. Blind."}
+  }
+}
