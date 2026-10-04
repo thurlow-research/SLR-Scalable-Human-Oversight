@@ -1578,6 +1578,17 @@
    "date": "2026-10-04",
    "note": "QA CORRECTION (§142a precedent): Advocate/Adversary debate + Arbitrator = mutual critique (peer-critique), not N agents on the same question aggregated by rule",
    "written": "2026-10-04"
+  },
+  {
+   "key": "TA6GIUK2",
+   "author": "Zietsman",
+   "kind": "facet",
+   "slug": "evaluated-synthetic",
+   "action": "endorse",
+   "ruling": "§171 B4",
+   "date": "2026-10-04",
+   "note": "§99b's decline rested on the §34 misreading; under §119a (world-or-tool, both may co-occur) + §119b (rungs rate evidence strength, no built system needed) four third-party models on an authored planted-bug corpus = synthetic rung, alongside method-experiment",
+   "written": "2026-10-04"
   }
  ]
 }

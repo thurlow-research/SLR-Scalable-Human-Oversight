@@ -8705,3 +8705,18 @@ under-proposed `evaluated-benchmark` on papers that benchmark *third-party* syst
 as-is. The instrument of record is not edited (layered history). Any such paper surfaces only by hand. Ji is the known
 case.
 
+## 171. B4 CLOSED — the three §34-misreading rulings re-checked (2026-10-04)
+
+Per §119a, §34 never barred ladder rungs and method facets from co-occurring. The **world-or-tool test**
+governs, and a paper doing both earns both. With §119b reaffirmed (§170: rungs rate evidence strength,
+and no built system is needed):
+- **§77 Töpfer `72W6R4JG` — outcome stands, reason corrected.** The ablation characterises the authors'
+  own tool, so it is tool-side: `evaluated-synthetic`, no method facet. **The stated "§34 fork" reason is
+  superseded by the world-or-tool test.**
+- **§97 Zhou `XK3P9C96` — out of scope.** It is demoted, and demotes are final (B5).
+- **§99b Zietsman `TA6GIUK2` — `evaluated-synthetic` APPLIED** (arbiter). The decline rested on the
+  misreading. Four third-party models on an **authored** planted-bug corpus is synthetic-strength
+  evidence, alongside the existing `method-experiment`. This is the same shape as Ji
+  (`evaluated-benchmark` plus `method-experiment` for third-party models). The author's *"directional
+  evidence, not a controlled demonstration"* fits the ladder's lowest rung.
+

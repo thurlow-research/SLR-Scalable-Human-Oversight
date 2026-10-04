@@ -4,7 +4,7 @@
 
 **STATUS 2026-10-04 (closeout pass):** Accept band closed 44/44 (§143); F2 run, F2b, F2c and the full F2 review
 done (§151–§167); Phase 6 = 72. **Done:** A1, A2, B1, B2, B3, B5, B7, B8, B9, B10, B13, B14, D1, D2/T2, F2-PREP, F2,
-F2a, F3. **Open:** B4 · C1–C3, C6–C9 · E1, E3, E4, E6, E7, E8 · F1 · F4 · F5 · F6. *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
+F2a, F3. **Open:** C1–C3, C6–C9 · E1, E3, E4, E6, E7, E8 · F1 · F4 · F5 · F6. *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
 
 *Historical progress line (2026-08-28):* **Progress (2026-08-28): 24 of 44 adjudicated · 3 partial · 17 untouched.**
 Next alphabetically: **Minh** (`74GE3TF7`). Partials awaiting a pass: `MFSZPSPU` Shi ·
@@ -120,6 +120,7 @@ deprecated vocabulary at the `final:*` computation step — confirm the sweep an
 double-count.
 
 ### B4. §34 misread — re-check §77, §97, §99b
+> ✅ **CLOSED 2026-10-04 (§171)** — Töpfer stands (reason corrected); Zhou out of scope (demoted); Zietsman gains `evaluated-synthetic`.
 §119a established that §34 does **not** bar ladder/method co-occurrence (the **world-or-tool test**
 governs). Three earlier rulings cited the misreading and need revisiting.
 
