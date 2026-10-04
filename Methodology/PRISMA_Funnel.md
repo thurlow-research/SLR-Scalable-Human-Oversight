@@ -178,8 +178,12 @@ been adjudicated: none lack a human primary (43 demoted papers also carry one).
   `Q-CW-2026-08-15`, filed to Dissertation Lit Review). 3 further query records lack a Phase-1
   bucket but progressed through later stages, so they are not counted as unscreened.
 - **121 snowball `hold:no-abstract`** records: held for human exception review by design
-  (`Stage4_Snowball…` §3), and none has been advanced. Report as "not screened — no abstract
-  after enrichment."
+  (`Stage4_Snowball…` §3), and none has been advanced. **Decided (arbiter, 2026-10-04): report as "not
+  screened — no abstract after enrichment"**; may be revisited later. If revisited, add the result as
+  a separately counted pass, not by revising these figures.
+- **None of the 78 unscreened query records reached any later stage.** 0 are in Phase 3 triage,
+  0 in `03 - Final` and 0 in Phase 6, so the included set is unaffected. One (`CTEMUBEX`, combustion
+  science) is a title duplicate of a screened record (`4WJNSATQ`). Q-arXiv-07's decision is still open.
 
 ### 5.2 Stage-to-stage leaks (±1–3 records; itemized in the JSON)
 

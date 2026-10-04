@@ -287,6 +287,20 @@ rejected (§120b), `counterpoint` deprecated (B3).
 on those are judgements, not vote-counts, so they stand — but this is why Set A's origination moved
 54.9% → 12.7%, and it belongs in the calibration write-up.
 
+### B14. Implicit-confirmation residue — 18 tags on 10 surviving papers (2026-10-04) — **PENDING arbiter**
+Early Light Read scanned the full proposal list and queried only doubted tags, so silence on those
+papers is *implicit* confirmation (C4, changelog §150). The residue is being closed by **explicit**
+confirm or reject. The worklist, the case-law flags and the write protocol are in **changelog §150a**.
+The library backup was taken 2026-10-04. Only ruled tags are written, and unruled tags stay silent.
+- Overlaps **B2** (Gao `survey-input` is one of its silent modals) and extends **B10** (Sharma and
+  Wang `rules-based-checks` are panel proposals outside B10's count).
+- **Narrows B9** (§150b): once this and B3 are done, fail-open vs fail-closed changes `final:*` only
+  for **F2 post-freeze proposals**. Those are covered by the planned F2 review: 55 of 75 modal F2
+  proposals were still silent on 33 papers at 2026-10-04. **B9 is retired when that review completes**,
+  with no separate convention decision needed.
+- **Done when:** `slr-tools/silence_audit.py` reports **6** silent tags on surviving papers (all
+  `counterpoint`, which go to B3), and calibration §11.5's split has been refreshed.
+
 ### B8. Verify every item with NO `cal:human` tag — confirm it was genuinely never examined
 **Scott's rule (2026-08-28):** *"we've modified tags on every item, so if there aren't any with human
 tags, they are highly unlikely to have been examined."* Every paper that received a pass got **at
@@ -373,6 +387,8 @@ measurement. It completes the tier-error picture in both directions, where §11.
 Recompute at band close; the 32% will move.
 
 ### C4. §10.8 / §11.5 — silence is a **weak endorsement**, not "unexamined"
+> **Propagated 2026-10-04** → `Taxonomy_Changelog.md` §150 and calibration §10.8 / §11.5. Residue of
+> 18 implicitly confirmed tags on 10 surviving papers sent for explicit confirmation.
 Scott (2026-08-28): in Light Read, silence means *"did not need big discussion"* — tags were **lightly
 scanned and inconsistencies discussed/updated**. §11.5 currently labels the 98 silent proposals
 *"stands on modality,"* which reads as passing through unexamined. Reclassifying ~19% of Light Read
