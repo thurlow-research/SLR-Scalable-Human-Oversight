@@ -8416,3 +8416,21 @@ yield output, it was a complete parsed object, so no silent mis-extraction is po
 vendor. Of the 28 with a label agreed by ≥2 vendors: **human-authored 11 · same-as-code 5 · mixed 5 ·
 unclear 7.**
 
+## 160. F2 review Q10 — elicitation edge cases: trust-in-own-output and risk-significance ratings are NOT preferences (2026-10-04)
+
+The test is §121b's line: ***"Kang asked people what they want; Catalan measured what they did."***
+
+- **Perry `YBHHYR4P` — no** (rejects codex 1/3). The per-task Likert items (*"I think I solved this
+  task … securely"*, *"I trusted the AI to produce secure code"*) measure participants' **belief about
+  the work they just did**. They are compared with the actual security of the code to show
+  overconfidence. That is a calibration **construct**, not a stated preference. **Retained as a key
+  automation-bias result:** AI-assisted participants wrote less secure code *and* rated it more
+  secure. That is a theme-level finding.
+- **Al-Hashimi `6DXZGHD9` — no** (rejects opus + codex 2/3). The questionnaire asks practitioners to
+  rate the significance of risks and practices. That is an **assessment of the world**, consistent
+  with Sudarsan (§159), not what they want. Its responses also train the ANN-ISM model, which is
+  formative use. **The arbiter's v1 `survey-input` tag predates §121b's elicitation test and stays as
+  history**; the frozen v1 layer is not revised.
+
+The arbiter judged both "on the line" readings and accepted the recommendations.
+

@@ -264,6 +264,28 @@
    "date": "2026-10-04",
    "note": "pattern 1: review outcomes classified manually — human drives the loop",
    "written": null
+  },
+  {
+   "key": "YBHHYR4P",
+   "author": "Perry",
+   "kind": "facet",
+   "slug": "survey-input-v2",
+   "action": "reject",
+   "ruling": "§160",
+   "date": "2026-10-04",
+   "note": "per-task Likert measures belief about one's own just-completed work (overconfidence/calibration construct) — Catalan side of 'what they want vs what they did'",
+   "written": null
+  },
+  {
+   "key": "6DXZGHD9",
+   "author": "Al-Hashimi",
+   "kind": "facet",
+   "slug": "survey-input-v2",
+   "action": "reject",
+   "ruling": "§160",
+   "date": "2026-10-04",
+   "note": "questionnaire rates the significance of risks/practices — assessment of the world (cf. Sudarsan), and responses also train the ANN-ISM model (formative); v1 human tag predates §121b and stays as history",
+   "written": null
   }
  ]
 }
