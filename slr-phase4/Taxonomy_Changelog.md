@@ -7927,3 +7927,71 @@ silent proposals the synthesis actually consumes, done as one auditable act rath
 firefighting. That narrows B9 to a decision about F2 proposals alone, which can be made explicitly
 before `final:*` is computed.
 
+## 151. F2 REVIEW OPENS — `deterministic-orchestration-v2` coined: code at the top level dispatching models for bounded tasks (2026-10-04)
+
+**First ruling of the F2 review** (handoff 2026-08-29 §7, items 1–2). The 149 F2 flags were grouped
+into 15 general questions. This one came from question 7.
+
+**Arbiter, 2026-10-04:** *"Another variant is orchestration at the top level being code driven, firing
+up models for specific tasks … asking since HOS is evolving to that."* · *"Add a v[ersion] for the
+widening."*
+
+### 151a. Why a new tag, not a wider definition
+
+`deterministic-orchestration` (§147b) has **two preconditions**. Precondition 2 reads *"there is model
+discretion actually being removed … deterministic machinery with no model to constrain is just a
+pipeline."* That excludes the arbiter's variant. When the code dispatches models for **single, bounded
+tasks** (classify, filter, verify), no model ever holds flow discretion, so none is "removed". The F2
+models applied it correctly and **withheld** on exactly these papers.
+
+Widening precondition 2 would change a definition the F2 panel was measured against. **Following the
+project's provenance practice (the `-v2` slugs of F2), the original stays fixed and the widening gets
+its own tag.** The `-v2` suffix follows that convention; there is no gap in the numbering.
+
+### 151b. Definition — `deterministic-orchestration-v2` *(facet)*
+
+**Everything in §147b, with precondition 2 replaced.**
+
+> **Fires when code, not a model, controls the outermost flow — which steps run, in what order, and
+> what their outcomes trigger — AND at least one step is performed by a model.**
+> Either the code **removes** discretion a model would otherwise have (the original case), **or** the
+> code **withholds** it by design, dispatching models only for bounded tasks whose outputs the code
+> then routes.
+
+- **Still required:** precondition 1 (the orchestrator is not AI) and **top level only** (§147b).
+- **Still excluded:** a deterministic pipeline with **no model in it** (the CI-`if`-statement case,
+  which is still just a pipeline); a model that decides what happens next.
+- **Not decided here:** a code gate sitting under an outermost loop that a **human** drives. That is
+  F2-review question 8, pending.
+- **Superset of the original.** Every original positive also fires `-v2`, so the `-v2` set is complete
+  on its own and is the one to cite for the code-dispatches-models pattern.
+
+**Why it matters (HOS).** This is the architecture HOS is moving toward: code holds the process, and
+models are called as bounded, replaceable workers. The original tag counts papers that *constrain an
+agent*; `-v2` counts papers that *never hand the agent the process at all*. The corpus count of the
+second pattern is a design-relevant finding in its own right.
+
+### 151c. Candidates, and how the tag is applied
+
+**No panel ran on `-v2`, so every instance is arbiter-applied** in the F2 per-paper pass (step 2), and
+is reported as human-originated. Candidates:
+- **Original positives (expected to carry over):** Vargas `GAD5Z8PV` · Lyu `UB2EVUFU` ·
+  Tang `7V7SRG43` · Jin `UDVHQ5HR` · Shukla `T72TU8B5` · Ma `JCTP8VXP` (Ma depends on question 8).
+- **Withheld under the original precondition 2, the variant itself:** Mahmud `R9CDT9KB` · Sun
+  `V4IRKSFI` · Sistla `5DI9B43K`.
+- **One model proposed the original:** Wang `CTGGMIX9` · Zhou `XRTVITVP` · Ullah `A6ZE2A26`.
+- **Excluded unless question 6 rules otherwise** (the paper's own system is unbuilt): Swidey
+  `5RLPIA3K` · Jessee `JVWUYDME` · Hjazeen `VFNJSZD9`.
+
+**F2 statistics for `deterministic-orchestration` stay as measured under §147b's original
+precondition.**
+
+### 151d. Record key change — Fu `3Z45M3V3` → `U3IQJ4VK`
+
+Zotero dedupe merged Fu's preprint record into the journal version (*Security weaknesses of
+Copilot-generated code in GitHub projects: an empirical study*), which is in Phase 6. The F2 run files
+are filed under the old key. The merged record carries the F2 proposals
+(`rules-based-checks-v2`, opus + codex) and the §115 human tag. Earlier entries citing `3Z45M3V3`
+(§113, §115) are **not** rewritten (layered history); this entry is the mapping. Per §148a, check
+which version `U3IQJ4VK`'s corpus TXT is before quoting from it.
+
