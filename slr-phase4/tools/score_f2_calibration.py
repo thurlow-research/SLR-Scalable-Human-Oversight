@@ -25,13 +25,17 @@ import os
 import sys
 
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EXPECTED = os.path.join(R, "data", "f2_calibration_expected.json")
-RUNDIR = os.path.join(R, "data", "tags-f2")
+# F2b (§151): F2_EXPECTED / F2_RUNDIR / F2_THEMES / F2_FACETS override the F2 defaults.
+EXPECTED = os.path.join(R, "data", os.environ.get("F2_EXPECTED", "f2_calibration_expected.json"))
+RUNDIR = os.path.join(R, "data", os.environ.get("F2_RUNDIR", "tags-f2"))
 VENDORS = ("opus", "codex", "gemini")
 
 THEMES = {"evaluator-reliability", "oversight-scaling-inversion-v2", "rules-based-checks-v2"}
 FACETS = {"agent-panel", "cross-model", "evaluated-real-data", "evaluated-synthetic",
           "evaluated-benchmark", "deterministic-orchestration", "peer-critique", "survey-input-v2"}
+if "F2_THEMES" in os.environ or "F2_FACETS" in os.environ:
+    THEMES = {s for s in os.environ.get("F2_THEMES", "").split(",") if s}
+    FACETS = {s for s in os.environ.get("F2_FACETS", "").split(",") if s}
 PERMITTED = THEMES | FACETS
 V1_LEAK = {"survey-input", "rules-based-checks", "oversight-scaling-inversion", "counterpoint",
            "scaling-dissent"}

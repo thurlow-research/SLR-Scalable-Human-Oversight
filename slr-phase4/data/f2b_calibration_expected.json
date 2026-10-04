@@ -1,0 +1,12 @@
+{
+  "_comment": "Expected panel output for the F2b calibration set (deterministic-orchestration-v2 only). Every entry is an ARBITER-SETTLED answer: Vargas/Lyu/Jin carry over from the original facet's settled positives (§147b; -v2 is a superset); Töpfer, Mahmud and Parris were settled by the arbiter on 2026-10-04 (§151). Töpfer and Mahmud are deliberately NOT named in the instrument, so they test whether the form-(c) definition reads correctly rather than whether the panel can copy an example.",
+  "_scoring": "Fails if a must is missed or a must_not fires at >=2/3 vendor agreement.",
+  "cases": {
+    "GAD5Z8PV": {"author": "Vargas",  "must": ["deterministic-orchestration-v2"], "must_not": [], "why": "§147b positive (form a); -v2 is a superset."},
+    "UB2EVUFU": {"author": "Lyu",     "must": ["deterministic-orchestration-v2"], "must_not": [], "why": "§147b mixed positive (form a): code phases, model staffing."},
+    "UDVHQ5HR": {"author": "Jin",     "must": ["deterministic-orchestration-v2"], "must_not": [], "why": "§147b/§148c positive, form (b) only: code flips the judge's verdict on executable evidence."},
+    "72W6R4JG": {"author": "Töpfer",  "must": ["deterministic-orchestration-v2"], "must_not": [], "why": "Arbiter 2026-10-04 (§151): code builds the prompt, calls the LLM to generate the adaptation manager, runs it under the FCL verifier, feeds violations back for repair — form (c) [+ (a)]. The ORIGINAL facet was settled NO here (precondition 2); this is the contrast that proves the widening."},
+    "R9CDT9KB": {"author": "Mahmud",  "must": ["deterministic-orchestration-v2"], "must_not": [], "why": "Arbiter 2026-10-04 (§151): fixed code pipeline classification → impact → action, three LLMs as classifiers, code-computed trust score and thresholds mapping to CI gate actions — form (c) + (b). The F2 panel withheld the original here (2/3 codex+gemini emitted, opus withheld on precondition 2)."},
+    "3SU9QZ6F": {"author": "Parris",  "must": [], "must_not": ["deterministic-orchestration-v2"], "why": "Arbiter 2026-10-04 (§151): all three studies use AIRA's deterministic engine only; the optional LLM/hybrid scan mode is reported separately as a comparison. Tests precondition 2: a pipeline with no model step does not fire."}
+  }
+}

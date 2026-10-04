@@ -21,6 +21,9 @@ S="${PANEL_S:?set PANEL_S to the scratchpad panel dir (prompts/ inside)}"
 R="$(cd "$(dirname "$0")/.." && pwd)"
 WORKERS="${WORKERS:-4}"
 RUN="${RUN:-r1}"
+# F2b (§151): F2_OUT / F2_INSTR override the output dir and the instrument name recorded in meta.
+OUT="${F2_OUT:-$R/data/tags-f2}"
+INSTR="${F2_INSTR:-Tag_Prompt_F2_restricted.md}"
 LEGS="${LEGS:-codex gemini opus}"
 KEYS_FILE="${KEYS_FILE:-$S/f2_keys.json}"
 KEYS=$(python3 -c "import json;print(' '.join(json.load(open('$KEYS_FILE'))))")
@@ -38,11 +41,11 @@ CLAUDE_CLI="claude-cli $(claude --version 2>/dev/null | grep -o '[0-9.]*' | head
 sfx () { [ "$RUN" = "r1" ] && echo "" || echo ".$RUN"; }
 SFX="$(sfx)"
 
-for v in codex gemini opus; do mkdir -p "$R/data/tags-f2/$v"; done
+for v in codex gemini opus; do mkdir -p "$OUT/$v"; done
 
 meta () {
-  printf '{"model":"%s","effort":"%s","cli":"%s","run":"%s","instrument":"Tag_Prompt_F2_restricted.md","ts":"%s"}\n' \
-    "$2" "$3" "$4" "$RUN" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "${1%.json}.meta.json"
+  printf '{"model":"%s","effort":"%s","cli":"%s","run":"%s","instrument":"%s","ts":"%s"}\n' \
+    "$2" "$3" "$4" "$RUN" "$INSTR" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "${1%.json}.meta.json"
 }
 
 extract_json () { python3 -c "
@@ -55,7 +58,7 @@ for c in sorted(cands,key=len,reverse=True):
 "; }
 
 codex_one () {
-  local k="$1" o="$R/data/tags-f2/codex/$k$SFX.json"
+  local k="$1" o="$OUT/codex/$k$SFX.json"
   [ -s "$o" ] && return
   timeout 900 codex exec --skip-git-repo-check -c model="$CODEX_MODEL" \
     -c model_reasoning_effort="$CODEX_EFFORT" "$(cat "$S/prompts/$k.txt")" \
@@ -66,7 +69,7 @@ codex_one () {
 }
 
 gemini_one () {
-  local k="$1" o="$R/data/tags-f2/gemini/$k$SFX.json"
+  local k="$1" o="$OUT/gemini/$k$SFX.json"
   [ -s "$o" ] && return
   # --dangerously-skip-permissions matches the operator's own agy alias. Without it,
   # headless runs auto-deny any tool needing the "command" permission and return NOTHING.
@@ -82,7 +85,7 @@ gemini_one () {
 }
 
 opus_one () {
-  local k="$1" o="$R/data/tags-f2/opus/$k$SFX.json"
+  local k="$1" o="$OUT/opus/$k$SFX.json"
   [ -s "$o" ] && return
   timeout 900 claude -p "$(cat "$S/prompts/$k.txt")" --model "$OPUS_MODEL" \
     < /dev/null > "$S/opus_$k$SFX.raw" 2>"$S/opus_$k$SFX.err"
@@ -100,7 +103,7 @@ shard_loop () {  # shard_loop <fn> <shard-index>
 }
 
 echo "F2 run=$RUN legs='$LEGS' keys=$(echo "$KEYS" | wc -w | tr -d ' ') workers=$WORKERS"
-echo "out: $R/data/tags-f2/<vendor>/  (nothing written to Zotero)"
+echo "out: $OUT/<vendor>/  (nothing written to Zotero)"
 
 PIDS=""
 for w in $(seq 0 $(( WORKERS - 1 ))); do

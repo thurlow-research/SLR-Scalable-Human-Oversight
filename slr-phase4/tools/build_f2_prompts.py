@@ -20,7 +20,8 @@ import os
 import sys
 
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-INSTRUMENT = os.path.join(R, "Tag_Prompt_F2_restricted.md")
+# F2b (§151) reuses this builder: F2_INSTRUMENT / F2_CALIBRATION / F2_KEYS override the defaults.
+INSTRUMENT = os.path.join(R, os.environ.get("F2_INSTRUMENT", "Tag_Prompt_F2_restricted.md"))
 TXT = os.path.join(R, "txt")
 
 # The calibration set: papers whose answers are already settled by the arbiter,
@@ -43,7 +44,7 @@ CALIBRATION = [
 
 def phase6_keys() -> list[str]:
     """Read the Phase 6 roster from the sidecar the run writes, or fail loudly."""
-    p = os.path.join(R, "data", "f2_phase6_keys.json")
+    p = os.path.join(R, "data", os.environ.get("F2_KEYS", "f2_phase6_keys.json"))
     if not os.path.exists(p):
         sys.exit(f"missing {p} — generate it from Phase 6 - Kept Core (R9ZHDXMN) first")
     with open(p) as fh:
@@ -67,7 +68,8 @@ def main() -> int:
     with open(INSTRUMENT) as fh:
         instrument = fh.read()
 
-    keys = CALIBRATION if args.calibration else phase6_keys()
+    cal = os.environ["F2_CALIBRATION"].split(",") if os.environ.get("F2_CALIBRATION") else CALIBRATION
+    keys = cal if args.calibration else phase6_keys()
     missing = [k for k in keys if not os.path.exists(os.path.join(TXT, f"{k}.txt"))]
     if missing:
         sys.exit(f"ABORT: no TXT for {len(missing)} key(s): {missing}")

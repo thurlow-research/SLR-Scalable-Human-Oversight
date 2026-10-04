@@ -7995,3 +7995,34 @@ are filed under the old key. The merged record carries the F2 proposals
 (§113, §115) are **not** rewritten (layered history); this entry is the mapping. Per §148a, check
 which version `U3IQJ4VK`'s corpus TXT is before quoting from it.
 
+### 151e. F2b — a panel run for `-v2`, and the three anchors that gate it (arbiter, 2026-10-04)
+
+**Arbiter:** run the panel on the new facet, rather than leaving it human-applied only. Scope is **the new
+facet only**. The original `deterministic-orchestration` is not re-run, so its F2 results remain the
+measurement under §147b's precondition.
+
+- **Instrument:** `slr-phase4/Tag_Prompt_F2b_det_orch_v2.md`. It allows one slug, and the rationale
+  must name the form: **(a) sequencing**, **(b) enforcement**, or **(c) dispatch**. Form (c) is the
+  widening, so naming it lets the variant be counted separately. Questions 6 (unbuilt design) and 8
+  (human-driven outer loop) are still open, so the instrument says **flag, don't emit** for both,
+  and the run cannot pre-empt those rulings.
+- **Panel:** the F2 configuration, which is opus + codex + gemini with pinned identities, one run each,
+  over the 72 Phase 6 papers. Output goes to `data/tags-f2b/`.
+- **Calibration gate** (`data/f2b_calibration_expected.json`). Fails on a missed must, or on a
+  must_not firing at 2 of 3 or more.
+
+| Paper | Answer | Settled by |
+|---|---|---|
+| Vargas `GAD5Z8PV` · Lyu `UB2EVUFU` · Jin `UDVHQ5HR` | **fires** | §147b positives; `-v2` is a superset |
+| **Töpfer `72W6R4JG`** | **fires** | **arbiter, 2026-10-04.** Code builds the prompt, calls the LLM to generate the adaptation manager, runs it under the FCL verifier, and feeds violations back for repair. The original facet was settled **no** here (precondition 2), so this is the contrast that demonstrates the widening |
+| **Mahmud `R9CDT9KB`** | **fires** | **arbiter, 2026-10-04.** A fixed code pipeline (classify → impact → action) with three LLM classifiers, a code-computed trust score, and code thresholds mapping to CI gate actions |
+| **Parris `3SU9QZ6F`** | **must not** | **arbiter, 2026-10-04.** The evaluated flow is AIRA's deterministic engine only, and the LLM mode is an optional comparison. This tests that a pipeline with no model in it is still excluded |
+
+**Töpfer and Mahmud are deliberately not named in the instrument.** The gate therefore tests whether
+the form-(c) wording reads correctly, not whether the panel can copy an example.
+
+- **Fu's corpus text.** `U3IQJ4VK` carried no corpus TXT. The TXT attached to the merged record
+  (`6I6P6Z36`) is the **journal** version: its byline adds Yu and Chen, matching the "Full Text PDF". It
+  was copied in as `txt/U3IQJ4VK.txt`, so F2b reads the authoritative version. The old `3Z45M3V3.txt`
+  is the arXiv v4 preprint, which is the §148a pattern.
+
