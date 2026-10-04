@@ -8780,3 +8780,26 @@ synthesis reads (rbc → `-v3`, inversion → `-v2`, survey-input → `-v2`, det
 - **Checks:** one primary per item · `counterpoint` excluded (0 leaked) · no namespace collisions · Phase 6 only.
 - **`final:*` is a derived layer.** A recompute replaces it wholesale, and the `cal:*` layers are never touched.
 
+## 175. F6 DONE — eight human keeps reversed by machine without review, re-adjudicated; AgentCoder prepped for merge (2026-10-04)
+
+These eight were kept by the arbiter at Pass 1, then discarded by the **machine** without human review: by the Pass-2
+screen (`s2:machine:discard`) or, for Imai, by Opus triage below the review floor. That is the one combination the
+layered-history rule does not sanction (human = criterion). They are re-adjudicated as a **new layer**: `s4:human:*`
+tags and a new collection, **`Reconsider (F6 process-integrity, 2026-10-04)` [U7GGGEN2]**. Phase collections stay
+frozen and the `s1`/`s2`/`s3` layers are untouched (§548).
+
+| Paper | Ruling |
+|---|---|
+| **Karpathy `Z4IKFZJ4`** — *"There's a new kind of coding I call vibecoding"* (the origin of the term) | **Context** (`intro-framing` anchor). This is grey literature under the extreme-relevance exception |
+| **Pappu `2XV8ZVM8`** — *Multi-agent teams hold experts back* | **Reinstated to triage** (`s4:human:keep`). **Tier call pending**: a possible counter-finding on multi-agent panels |
+| **Imai `Y9G3DA92`** — Copilot vs human pair-programming (21-participant experiment) | **Context** |
+| **Dong `D3ZU22JC`** · **Alenezi `UG5D8G6U`** · **J. Wang `EN5DT6ZJ`** — reviews of LLM code generation / AI-driven SE | **Context + `lit-review`**. **Kept** (arbiter: *"the Context + lit-review are kept (not discarded)"*) |
+| **Li `6NR73DTR`** (UX designers' perceptions) · **Liang `MBKP4DCY`** (LLM-assisted *writing*) | **Discard confirmed.** Not about code |
+
+**PRISMA:** report as a separately counted **process-integrity re-adjudication**: 8 examined, 6 reinstated (5 Context +
+1 to triage), 2 discards confirmed. Phase 6 (72) is unchanged unless Pappu's tier call returns Core.
+
+**AgentCoder (`G3FF4MDW` snowball/discarded ↔ `WWDHF6EU` retrieval/Dissertation Queue)** is one study with two unlinked
+records. `zotero-merge-prep --commit` unioned their metadata (confidence 1.00; arXiv DOI 10.48550/arXiv.2312.13010).
+**The merge is a client action for the arbiter: master = `G3FF4MDW`** (it carries the screening lineage).
+
