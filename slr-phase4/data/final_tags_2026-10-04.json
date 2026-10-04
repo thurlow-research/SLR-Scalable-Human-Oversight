@@ -1,0 +1,1284 @@
+{
+ "computed": "2026-10-04T23:50:27+00:00",
+ "formula": "final = panel modal (>=2 distinct vendors) ∪ human endorsements − human rejections − deprecated (§101a, §173)",
+ "deprecated": [
+  "counterpoint"
+ ],
+ "items": {
+  "22JBEZNK": {
+   "title": "Non-programmers assessing AI-generated code: a case study of business users analyzing data",
+   "primary": "oversight-explanation",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:method-experiment",
+    "final:facet:method-self-report",
+    "final:facet:non-developer",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:facet:survey-input",
+    "final:primary:theme:oversight-explanation",
+    "final:theme:automation-bias",
+    "final:theme:oversight-explanation"
+   ]
+  },
+  "2KPHQ5IV": {
+   "title": "Scaling human-AI coding collaboration requires a governable consensus layer",
+   "primary": "provenance-auditability",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:design-only",
+    "final:facet:framework",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:primary:theme:provenance-auditability",
+    "final:theme:hitl-workflow",
+    "final:theme:oversight-explanation",
+    "final:theme:oversight-scaling-inversion",
+    "final:theme:oversight-theater",
+    "final:theme:provenance-auditability",
+    "final:theme:rules-based-checks",
+    "final:theme:rules-based-checks-v3"
+   ]
+  },
+  "3SU9QZ6F": {
+   "title": "AIRA: AI-induced risk audit: a structured inspection framework for AI-generated code",
+   "primary": "rules-based-checks",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:framework",
+    "final:facet:method-field-study",
+    "final:facet:method-mining",
+    "final:facet:metrics",
+    "final:facet:problem-statement-anchor",
+    "final:facet:risk-quality",
+    "final:primary:theme:rules-based-checks",
+    "final:theme:ai-review",
+    "final:theme:quality-debt",
+    "final:theme:rules-based-checks",
+    "final:theme:rules-based-checks-v2",
+    "final:theme:rules-based-checks-v3"
+   ]
+  },
+  "3ZVMBGPB": {
+   "title": "Rethinking code review in the age of AI: a vision for agentic code review",
+   "primary": "ai-review",
+   "final": [
+    "final:facet:design-only",
+    "final:facet:framework",
+    "final:facet:general-code",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:primary:theme:ai-review",
+    "final:theme:ai-review",
+    "final:theme:hitl-workflow",
+    "final:theme:oversight-explanation",
+    "final:theme:oversight-scaling-inversion",
+    "final:theme:risk-routing",
+    "final:theme:rules-based-checks"
+   ]
+  },
+  "4AXDVW7J": {
+   "title": "Ethical prompt engineering for AI-driven SE: evidence-informed interaction-time governance roadmap to 2030",
+   "primary": "org-governance",
+   "final": [
+    "final:facet:design-only",
+    "final:facet:lit-review",
+    "final:facet:risk-bias",
+    "final:facet:risk-ip",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-security",
+    "final:facet:steering",
+    "final:primary:theme:org-governance",
+    "final:theme:org-governance",
+    "final:theme:oversight-explanation",
+    "final:theme:provenance-auditability",
+    "final:theme:regulatory-compliance"
+   ]
+  },
+  "4FGIVVTG": {
+   "title": "Evaluating human-AI partnership for LLM-based code migration",
+   "primary": "hitl-workflow",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:method-experiment",
+    "final:facet:method-self-report",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:facet:steering",
+    "final:primary:theme:hitl-workflow",
+    "final:theme:automation-bias",
+    "final:theme:hitl-workflow",
+    "final:theme:oversight-explanation",
+    "final:theme:rules-based-checks",
+    "final:theme:rules-based-checks-v3"
+   ]
+  },
+  "4T5QFWZE": {
+   "title": "More code, less reuse: investigating code quality and reviewer sentiment towards AI-generated pull requests",
+   "primary": "quality-debt",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:method-mining",
+    "final:facet:metrics",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:primary:theme:quality-debt",
+    "final:theme:automation-bias",
+    "final:theme:quality-debt"
+   ]
+  },
+  "59KP8GTP": {
+   "title": "On autopilot? An empirical study of human–AI teaming and review practices in open source",
+   "primary": "oversight-scaling-inversion",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:method-mining",
+    "final:facet:problem-statement-anchor",
+    "final:primary:theme:oversight-scaling-inversion",
+    "final:theme:org-governance",
+    "final:theme:oversight-scaling-inversion",
+    "final:theme:oversight-scaling-inversion-v2"
+   ]
+  },
+  "59ZW4R58": {
+   "title": "The gotchas of AI coding and vibe coding. It’s all about support and maintenance",
+   "primary": "quality-debt",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:assistive",
+    "final:facet:design-only",
+    "final:facet:framework",
+    "final:facet:metrics",
+    "final:facet:non-developer",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:primary:theme:quality-debt",
+    "final:theme:hitl-workflow",
+    "final:theme:org-governance",
+    "final:theme:oversight-explanation",
+    "final:theme:provenance-auditability",
+    "final:theme:quality-debt",
+    "final:theme:rules-based-checks"
+   ]
+  },
+  "5BAZZWHG": {
+   "title": "\"I'm not reading all of that\": understanding software engineers' level of cognitive engagement with agentic coding assistants",
+   "primary": "automation-bias",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:method-experiment",
+    "final:facet:risk-overreliance",
+    "final:primary:theme:automation-bias",
+    "final:theme:automation-bias",
+    "final:theme:oversight-explanation"
+   ]
+  },
+  "5DI9B43K": {
+   "title": "Towards verified code reasoning by LLMs",
+   "primary": "formal-methods",
+   "final": [
+    "final:facet:built-system",
+    "final:facet:deterministic-orchestration-v2",
+    "final:facet:evaluated-real-data",
+    "final:facet:framework",
+    "final:facet:general-code",
+    "final:facet:risk-quality",
+    "final:facet:routing-signal",
+    "final:primary:theme:formal-methods",
+    "final:theme:ai-review",
+    "final:theme:evaluator-reliability",
+    "final:theme:formal-methods",
+    "final:theme:rules-based-checks",
+    "final:theme:rules-based-checks-v3"
+   ]
+  },
+  "5RLPIA3K": {
+   "title": "Adversarial verification as reference architecture for EU AI act article 14 compliance in employment AI",
+   "primary": "regulatory-compliance",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:cross-model",
+    "final:facet:deterministic-orchestration",
+    "final:facet:deterministic-orchestration-v2",
+    "final:facet:framework",
+    "final:facet:general-ai",
+    "final:facet:non-developer",
+    "final:facet:peer-critique",
+    "final:facet:risk-bias",
+    "final:facet:risk-overreliance",
+    "final:primary:theme:regulatory-compliance",
+    "final:theme:ai-review",
+    "final:theme:hitl-workflow",
+    "final:theme:oversight-explanation",
+    "final:theme:oversight-theater",
+    "final:theme:provenance-auditability",
+    "final:theme:regulatory-compliance",
+    "final:theme:risk-routing"
+   ]
+  },
+  "5VTAJISY": {
+   "title": "Human-In-the-loop software development agents",
+   "primary": "hitl-workflow",
+   "final": [
+    "final:facet:adopted",
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:evaluated-benchmark",
+    "final:facet:evaluated-real-data",
+    "final:facet:framework",
+    "final:facet:method-field-study",
+    "final:facet:method-self-report",
+    "final:facet:risk-quality",
+    "final:facet:steering",
+    "final:primary:theme:hitl-workflow",
+    "final:theme:hitl-workflow",
+    "final:theme:rules-based-checks-v2",
+    "final:theme:rules-based-checks-v3"
+   ]
+  },
+  "6DXZGHD9": {
+   "title": "A generative AI cybersecurity risks mitigation model for code generation: using ANN-ISM hybrid approach",
+   "primary": "org-governance",
+   "final": [
+    "final:facet:built-system",
+    "final:facet:expert-validated",
+    "final:facet:method-field-study",
+    "final:facet:method-self-report",
+    "final:facet:metrics",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:facet:survey-input",
+    "final:primary:theme:org-governance",
+    "final:theme:ai-code-insecurity",
+    "final:theme:org-governance"
+   ]
+  },
+  "6F3S8IB7": {
+   "title": "HAIF: a human-AI integration framework for hybrid team operations",
+   "primary": "org-governance",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:assistive",
+    "final:facet:design-only",
+    "final:facet:framework",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:primary:theme:org-governance",
+    "final:theme:automation-bias",
+    "final:theme:hitl-workflow",
+    "final:theme:org-governance",
+    "final:theme:oversight-scaling-inversion",
+    "final:theme:provenance-auditability",
+    "final:theme:risk-routing"
+   ]
+  },
+  "6ZW9QNQH": {
+   "title": "Position: vibe coding needs vibe reasoning: improving vibe coding with formal verification",
+   "primary": "formal-methods",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:design-only",
+    "final:facet:framework",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:primary:theme:formal-methods",
+    "final:theme:formal-methods",
+    "final:theme:hitl-workflow",
+    "final:theme:oversight-explanation",
+    "final:theme:quality-debt",
+    "final:theme:rules-based-checks",
+    "final:theme:rules-based-checks-v3"
+   ]
+  },
+  "72W6R4JG": {
+   "title": "Vibe-coding: feedback-based automated verification with no human code inspection, a feasibility study",
+   "primary": "rules-based-checks",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:deterministic-orchestration-v2",
+    "final:facet:evaluated-synthetic",
+    "final:facet:framework",
+    "final:facet:non-developer",
+    "final:facet:risk-quality",
+    "final:primary:theme:rules-based-checks",
+    "final:theme:formal-methods",
+    "final:theme:remediation-gating",
+    "final:theme:rules-based-checks",
+    "final:theme:rules-based-checks-v2",
+    "final:theme:rules-based-checks-v3"
+   ]
+  },
+  "74GE3TF7": {
+   "title": "Early-stage prediction of review effort in AI-generated pull requests",
+   "primary": "risk-routing",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:evaluated-real-data",
+    "final:facet:method-mining",
+    "final:facet:problem-statement-anchor",
+    "final:facet:routing-signal",
+    "final:primary:theme:risk-routing",
+    "final:theme:risk-routing"
+   ]
+  },
+  "7SH86C2W": {
+   "title": "Shift-up: a framework for software engineering guardrails in AI-native software development -- initial findings",
+   "primary": "hitl-workflow",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:framework",
+    "final:facet:risk-quality",
+    "final:facet:steering",
+    "final:primary:theme:hitl-workflow",
+    "final:theme:agent-scope-drift",
+    "final:theme:hitl-workflow",
+    "final:theme:provenance-auditability",
+    "final:theme:rules-based-checks",
+    "final:theme:rules-based-checks-v2"
+   ]
+  },
+  "7UB2MD8Z": {
+   "title": "Explainable automated debugging via large language model-driven scientific debugging",
+   "primary": "oversight-explanation",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:evaluated-benchmark",
+    "final:facet:evaluated-synthetic",
+    "final:facet:general-code",
+    "final:facet:method-experiment",
+    "final:facet:method-self-report",
+    "final:facet:risk-overreliance",
+    "final:facet:routing-signal",
+    "final:facet:survey-input",
+    "final:facet:survey-input-v2",
+    "final:primary:theme:oversight-explanation",
+    "final:theme:hitl-workflow",
+    "final:theme:oversight-explanation"
+   ]
+  },
+  "7V7SRG43": {
+   "title": "CodeAgent: autonomous communicative agents for code review",
+   "primary": "ai-review",
+   "final": [
+    "final:facet:built-system",
+    "final:facet:deterministic-orchestration",
+    "final:facet:deterministic-orchestration-v2",
+    "final:facet:evaluated-benchmark",
+    "final:facet:evaluated-real-data",
+    "final:facet:framework",
+    "final:facet:general-code",
+    "final:facet:peer-critique",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:primary:theme:ai-review",
+    "final:theme:agent-scope-drift",
+    "final:theme:ai-review"
+   ]
+  },
+  "84D2AMVM": {
+   "title": "Realizing the promise of AI governance involving humans-in-the-loop",
+   "primary": "automation-bias",
+   "final": [
+    "final:facet:general-ai",
+    "final:facet:intro-framing",
+    "final:facet:lit-review",
+    "final:facet:risk-overreliance",
+    "final:primary:theme:automation-bias",
+    "final:theme:automation-bias",
+    "final:theme:hitl-workflow",
+    "final:theme:org-governance",
+    "final:theme:oversight-theater",
+    "final:theme:regulatory-compliance",
+    "final:theme:risk-routing"
+   ]
+  },
+  "8MXATG38": {
+   "title": "AI-augmented software engineering for rapid feature delivery and operations automation",
+   "primary": "org-governance",
+   "final": [
+    "final:facet:adopted",
+    "final:facet:assistive",
+    "final:facet:built-system",
+    "final:facet:framework",
+    "final:facet:method-field-study",
+    "final:facet:risk-ip",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:facet:steering",
+    "final:primary:theme:org-governance",
+    "final:theme:ai-review",
+    "final:theme:hitl-workflow",
+    "final:theme:org-governance",
+    "final:theme:risk-routing",
+    "final:theme:rules-based-checks",
+    "final:theme:rules-based-checks-v2",
+    "final:theme:rules-based-checks-v3"
+   ]
+  },
+  "95CPB7CF": {
+   "title": "Beyond the 'diff': addressing agentic entropy in agentic software development",
+   "primary": "oversight-explanation",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:design-only",
+    "final:facet:framework",
+    "final:facet:non-developer",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:primary:theme:oversight-explanation",
+    "final:theme:agent-scope-drift",
+    "final:theme:automation-bias",
+    "final:theme:oversight-explanation",
+    "final:theme:oversight-scaling-inversion",
+    "final:theme:oversight-theater",
+    "final:theme:provenance-auditability",
+    "final:theme:quality-debt"
+   ]
+  },
+  "9H6FWJME": {
+   "title": "Debt behind the AI boom: A large-scale empirical study of AI-generated code in the wild",
+   "primary": "quality-debt",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:assistive",
+    "final:facet:method-mining",
+    "final:facet:problem-statement-anchor",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:primary:theme:quality-debt",
+    "final:theme:ai-code-insecurity",
+    "final:theme:quality-debt"
+   ]
+  },
+  "9MV2IVNU": {
+   "title": "Human-in-the-loop isn't a checkbox: designing meaningful intervention in automated AI decisions",
+   "primary": "oversight-theater",
+   "final": [
+    "final:facet:design-only",
+    "final:facet:general-ai",
+    "final:facet:metrics",
+    "final:facet:risk-overreliance",
+    "final:primary:theme:oversight-theater",
+    "final:theme:hitl-workflow",
+    "final:theme:org-governance",
+    "final:theme:oversight-explanation",
+    "final:theme:oversight-theater",
+    "final:theme:provenance-auditability",
+    "final:theme:risk-routing"
+   ]
+  },
+  "A6ZE2A26": {
+   "title": "Vibe coding on trial: operating characteristics of unanimous LLM juries",
+   "primary": "ai-review",
+   "final": [
+    "final:facet:agent-panel",
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:cross-model",
+    "final:facet:deterministic-orchestration-v2",
+    "final:facet:evaluated-synthetic",
+    "final:facet:method-experiment",
+    "final:facet:metrics",
+    "final:facet:risk-quality",
+    "final:facet:routing-signal",
+    "final:primary:theme:ai-review",
+    "final:theme:ai-review",
+    "final:theme:evaluator-reliability",
+    "final:theme:risk-routing"
+   ]
+  },
+  "B644HQFS": {
+   "title": "\"An endless stream of AI slop\": How developers discuss the burden of AI-assisted software development",
+   "primary": "quality-debt",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:assistive",
+    "final:facet:method-mining",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:primary:theme:quality-debt",
+    "final:theme:automation-bias",
+    "final:theme:hitl-workflow",
+    "final:theme:org-governance",
+    "final:theme:oversight-scaling-inversion",
+    "final:theme:quality-debt"
+   ]
+  },
+  "BU73N7PC": {
+   "title": "Moving faster and reducing risk: Using LLMs in release deployment",
+   "primary": "risk-routing",
+   "final": [
+    "final:facet:adopted",
+    "final:facet:built-system",
+    "final:facet:evaluated-real-data",
+    "final:facet:framework",
+    "final:facet:general-code",
+    "final:facet:method-experiment",
+    "final:facet:metrics",
+    "final:facet:risk-quality",
+    "final:primary:theme:risk-routing",
+    "final:theme:ai-review",
+    "final:theme:risk-routing"
+   ]
+  },
+  "CTGGMIX9": {
+   "title": "SGCR: A Specification-Grounded Framework for Trustworthy LLM Code Review",
+   "primary": "ai-review",
+   "final": [
+    "final:facet:adopted",
+    "final:facet:agent-panel",
+    "final:facet:built-system",
+    "final:facet:deterministic-orchestration-v2",
+    "final:facet:framework",
+    "final:facet:general-code",
+    "final:facet:method-field-study",
+    "final:facet:metrics",
+    "final:facet:peer-critique",
+    "final:facet:risk-quality",
+    "final:primary:theme:ai-review",
+    "final:theme:ai-review",
+    "final:theme:oversight-explanation"
+   ]
+  },
+  "DJMBHHZN": {
+   "title": "MOSAICO: management, orchestration and supervision of AI-agent COmmunities for reliable AI in software engineering",
+   "primary": "ai-review",
+   "final": [
+    "final:facet:agent-panel",
+    "final:facet:agentic",
+    "final:facet:design-only",
+    "final:facet:framework",
+    "final:facet:peer-critique",
+    "final:facet:risk-quality",
+    "final:primary:theme:ai-review",
+    "final:theme:agent-scope-drift",
+    "final:theme:ai-review",
+    "final:theme:hitl-workflow",
+    "final:theme:oversight-explanation",
+    "final:theme:tooling-supply-chain"
+   ]
+  },
+  "E95T8E88": {
+   "title": "What to cut? Predicting unnecessary methods in agentic code generation",
+   "primary": "oversight-scaling-inversion",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:evaluated-real-data",
+    "final:facet:method-mining",
+    "final:facet:metrics",
+    "final:facet:risk-quality",
+    "final:facet:routing-signal",
+    "final:primary:theme:oversight-scaling-inversion",
+    "final:theme:oversight-scaling-inversion",
+    "final:theme:quality-debt",
+    "final:theme:risk-routing"
+   ]
+  },
+  "E9RAWBDT": {
+   "title": "Good vibrations? A qualitative study of Co-creation, communication, flow, and trust in vibe coding",
+   "primary": "automation-bias",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:method-mining",
+    "final:facet:method-self-report",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:facet:steering",
+    "final:facet:survey-input",
+    "final:primary:theme:automation-bias",
+    "final:theme:ai-review",
+    "final:theme:automation-bias",
+    "final:theme:hitl-workflow",
+    "final:theme:oversight-scaling-inversion",
+    "final:theme:quality-debt"
+   ]
+  },
+  "F2C2DWSI": {
+   "title": "AI-assisted programming decreases the productivity of experienced developers by increasing the technical debt and maintenance burden",
+   "primary": "quality-debt",
+   "final": [
+    "final:facet:assistive",
+    "final:facet:method-mining",
+    "final:facet:metrics",
+    "final:facet:problem-statement-anchor",
+    "final:facet:risk-quality",
+    "final:primary:theme:quality-debt",
+    "final:theme:quality-debt"
+   ]
+  },
+  "F9JM9CI6": {
+   "title": "Support, not automation: towards AI-supported code review for code quality and beyond",
+   "primary": "oversight-explanation",
+   "final": [
+    "final:facet:design-only",
+    "final:facet:framework",
+    "final:facet:general-code",
+    "final:primary:theme:oversight-explanation",
+    "final:theme:ai-review",
+    "final:theme:oversight-explanation",
+    "final:theme:risk-routing"
+   ]
+  },
+  "GAD5Z8PV": {
+   "title": "SLEAN: simple lightweight ensemble analysis network for multi-provider LLM coordination: design, implementation, and vibe coding bug investigation case study",
+   "primary": "ai-review",
+   "final": [
+    "final:facet:agent-panel",
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:cross-model",
+    "final:facet:deterministic-orchestration",
+    "final:facet:deterministic-orchestration-v2",
+    "final:facet:evaluated-synthetic",
+    "final:facet:framework",
+    "final:facet:metrics",
+    "final:facet:non-developer",
+    "final:facet:peer-critique",
+    "final:facet:problem-statement-anchor",
+    "final:facet:risk-quality",
+    "final:primary:theme:ai-review",
+    "final:theme:agent-scope-drift",
+    "final:theme:ai-review",
+    "final:theme:provenance-auditability",
+    "final:theme:quality-debt",
+    "final:theme:remediation-gating"
+   ]
+  },
+  "JCTP8VXP": {
+   "title": "ZORO: active rules for reliable vibe coding",
+   "primary": "hitl-workflow",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:deterministic-orchestration",
+    "final:facet:deterministic-orchestration-v2",
+    "final:facet:evaluated-synthetic",
+    "final:facet:framework",
+    "final:facet:method-experiment",
+    "final:facet:method-field-study",
+    "final:facet:method-self-report",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:facet:survey-input",
+    "final:primary:theme:hitl-workflow",
+    "final:theme:agent-scope-drift",
+    "final:theme:hitl-workflow",
+    "final:theme:oversight-explanation",
+    "final:theme:provenance-auditability",
+    "final:theme:remediation-gating",
+    "final:theme:rules-based-checks"
+   ]
+  },
+  "JQPPKSFQ": {
+   "title": "LGTM! Characteristics of auto-merged LLM-based agentic PRs",
+   "primary": "oversight-scaling-inversion",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:method-mining",
+    "final:facet:problem-statement-anchor",
+    "final:primary:theme:oversight-scaling-inversion",
+    "final:theme:oversight-scaling-inversion"
+   ]
+  },
+  "JVWUYDME": {
+   "title": "Scapegoat-as-a-service: moving from \"human-in-the-loop\" to \"human-in-command\" in regulated systems",
+   "primary": "hitl-workflow",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:design-only",
+    "final:facet:general-ai",
+    "final:facet:risk-overreliance",
+    "final:primary:theme:hitl-workflow",
+    "final:theme:hitl-workflow",
+    "final:theme:org-governance",
+    "final:theme:oversight-explanation",
+    "final:theme:oversight-theater",
+    "final:theme:provenance-auditability",
+    "final:theme:regulatory-compliance",
+    "final:theme:risk-routing"
+   ]
+  },
+  "MFSZPSPU": {
+   "title": "Towards a human-in-the-loop framework for reliable patch evaluation using an LLM-as-a-judge",
+   "primary": "hitl-workflow",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:evaluated-real-data",
+    "final:facet:framework",
+    "final:facet:method-field-study",
+    "final:facet:peer-critique",
+    "final:primary:theme:hitl-workflow",
+    "final:theme:ai-review",
+    "final:theme:evaluator-reliability",
+    "final:theme:hitl-workflow"
+   ]
+  },
+  "NRVQT89E": {
+   "title": "LLM Critics Help Catch LLM Bugs",
+   "primary": "ai-review",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:evaluated-real-data",
+    "final:facet:method-experiment",
+    "final:facet:method-field-study",
+    "final:facet:peer-critique",
+    "final:facet:problem-statement-anchor",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:primary:theme:ai-review",
+    "final:theme:ai-review",
+    "final:theme:automation-bias",
+    "final:theme:evaluator-reliability",
+    "final:theme:hitl-workflow",
+    "final:theme:oversight-explanation"
+   ]
+  },
+  "PPMTM4DG": {
+   "title": "Fight fire with fire: how much can we trust ChatGPT on source code-related tasks?",
+   "primary": "ai-review",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:assistive",
+    "final:facet:method-experiment",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:primary:theme:ai-review",
+    "final:theme:ai-review",
+    "final:theme:evaluator-reliability",
+    "final:theme:oversight-explanation"
+   ]
+  },
+  "R4WJZBSF": {
+   "title": "A framework for quantifying ethical and regulatory risks in big data analytics and AI-assisted banking software development",
+   "primary": "regulatory-compliance",
+   "final": [
+    "final:facet:assistive",
+    "final:facet:design-only",
+    "final:facet:framework",
+    "final:facet:metrics",
+    "final:facet:risk-bias",
+    "final:facet:risk-ip",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:primary:theme:regulatory-compliance",
+    "final:theme:hitl-workflow",
+    "final:theme:org-governance",
+    "final:theme:regulatory-compliance"
+   ]
+  },
+  "R9CDT9KB": {
+   "title": "Trust-calibrated multi-stage large language model pipeline for vulnerability assessment in DevSecOps workflows",
+   "primary": "risk-routing",
+   "final": [
+    "final:facet:agent-panel",
+    "final:facet:built-system",
+    "final:facet:cross-model",
+    "final:facet:deterministic-orchestration-v2",
+    "final:facet:evaluated-real-data",
+    "final:facet:framework",
+    "final:facet:general-code",
+    "final:facet:metrics",
+    "final:facet:risk-security",
+    "final:primary:theme:risk-routing",
+    "final:theme:ai-review",
+    "final:theme:oversight-explanation",
+    "final:theme:risk-routing"
+   ]
+  },
+  "REZGA5WF": {
+   "title": "Speed at the cost of quality: how Cursor AI increases short-term velocity and long-term complexity in open-source projects",
+   "primary": "quality-debt",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:method-mining",
+    "final:facet:risk-quality",
+    "final:primary:theme:quality-debt",
+    "final:theme:oversight-scaling-inversion",
+    "final:theme:quality-debt"
+   ]
+  },
+  "RPHK78A9": {
+   "title": "Vibe coding: building production-grade software with GenAI, chat, agents, and beyond",
+   "primary": "hitl-workflow",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:assistive",
+    "final:facet:non-developer",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:facet:steering",
+    "final:primary:theme:hitl-workflow",
+    "final:theme:agent-scope-drift",
+    "final:theme:ai-review",
+    "final:theme:automation-bias",
+    "final:theme:hitl-workflow",
+    "final:theme:org-governance",
+    "final:theme:oversight-scaling-inversion",
+    "final:theme:quality-debt",
+    "final:theme:risk-routing",
+    "final:theme:rules-based-checks",
+    "final:theme:rules-based-checks-v3"
+   ]
+  },
+  "RX9SICP9": {
+   "title": "IACDM: interactive adversarial convergence development methodology -- a structured framework for AI-assisted software development",
+   "primary": "hitl-workflow",
+   "final": [
+    "final:facet:adopted",
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:framework",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:facet:steering",
+    "final:primary:theme:hitl-workflow",
+    "final:theme:ai-review",
+    "final:theme:hitl-workflow",
+    "final:theme:rules-based-checks",
+    "final:theme:rules-based-checks-v3"
+   ]
+  },
+  "SHK6KAX6": {
+   "title": "AI builds, we analyze: an empirical study of AI-generated build code quality",
+   "primary": "quality-debt",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:method-mining",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:primary:theme:quality-debt",
+    "final:theme:ai-code-insecurity",
+    "final:theme:oversight-theater",
+    "final:theme:quality-debt"
+   ]
+  },
+  "T2EG4BE2": {
+   "title": "Vibe coding in practice: flow, technical debt, and guidelines for sustainable use",
+   "primary": "quality-debt",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:method-mining",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:facet:steering",
+    "final:primary:theme:quality-debt",
+    "final:theme:agent-scope-drift",
+    "final:theme:ai-code-insecurity",
+    "final:theme:ai-review",
+    "final:theme:automation-bias",
+    "final:theme:hitl-workflow",
+    "final:theme:org-governance",
+    "final:theme:oversight-scaling-inversion",
+    "final:theme:provenance-auditability",
+    "final:theme:quality-debt",
+    "final:theme:rules-based-checks"
+   ]
+  },
+  "T72TU8B5": {
+   "title": "Hedwig: dynamic autonomy for coding agents under local oversight",
+   "primary": "risk-routing",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:deterministic-orchestration",
+    "final:facet:deterministic-orchestration-v2",
+    "final:facet:evaluated-synthetic",
+    "final:facet:framework",
+    "final:facet:method-self-report",
+    "final:facet:metrics",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:facet:routing-signal",
+    "final:facet:steering",
+    "final:primary:theme:risk-routing",
+    "final:theme:hitl-workflow",
+    "final:theme:oversight-explanation",
+    "final:theme:risk-routing"
+   ]
+  },
+  "T8E8SCCG": {
+   "title": "VibeGuard: a security gate framework for AI-generated code",
+   "primary": "rules-based-checks",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:evaluated-synthetic",
+    "final:facet:framework",
+    "final:facet:risk-security",
+    "final:primary:theme:rules-based-checks",
+    "final:theme:ai-code-insecurity",
+    "final:theme:rules-based-checks",
+    "final:theme:rules-based-checks-v2",
+    "final:theme:rules-based-checks-v3"
+   ]
+  },
+  "TA6GIUK2": {
+   "title": "The specification as quality gate: three hypotheses on AI-assisted code review",
+   "primary": "ai-review",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:evaluated-synthetic",
+    "final:facet:intro-framing",
+    "final:facet:method-experiment",
+    "final:facet:risk-quality",
+    "final:primary:theme:ai-review",
+    "final:theme:ai-review",
+    "final:theme:evaluator-reliability",
+    "final:theme:rules-based-checks",
+    "final:theme:rules-based-checks-v2"
+   ]
+  },
+  "TW4I6DU6": {
+   "title": "On the quest for effectiveness in human oversight: Interdisciplinary perspectives",
+   "primary": "hitl-workflow",
+   "final": [
+    "final:facet:general-ai",
+    "final:facet:intro-framing",
+    "final:facet:risk-overreliance",
+    "final:primary:theme:hitl-workflow",
+    "final:theme:automation-bias",
+    "final:theme:hitl-workflow",
+    "final:theme:oversight-explanation",
+    "final:theme:oversight-theater",
+    "final:theme:regulatory-compliance"
+   ]
+  },
+  "U3IQJ4VK": {
+   "title": "Security weaknesses of Copilot-generated code in GitHub projects: an empirical study",
+   "primary": "ai-code-insecurity",
+   "final": [
+    "final:facet:assistive",
+    "final:facet:method-experiment",
+    "final:facet:method-mining",
+    "final:facet:problem-statement-anchor",
+    "final:facet:risk-security",
+    "final:primary:theme:ai-code-insecurity",
+    "final:theme:ai-code-insecurity",
+    "final:theme:rules-based-checks",
+    "final:theme:rules-based-checks-v2",
+    "final:theme:rules-based-checks-v3"
+   ]
+  },
+  "UB2EVUFU": {
+   "title": "Self-organizing multi-agent systems for continuous software development",
+   "primary": "ai-review",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:deterministic-orchestration",
+    "final:facet:deterministic-orchestration-v2",
+    "final:facet:evaluated-benchmark",
+    "final:facet:evaluated-synthetic",
+    "final:facet:framework",
+    "final:facet:peer-critique",
+    "final:facet:risk-quality",
+    "final:facet:steering",
+    "final:primary:theme:ai-review",
+    "final:theme:ai-review",
+    "final:theme:hitl-workflow",
+    "final:theme:provenance-auditability",
+    "final:theme:remediation-gating",
+    "final:theme:rules-based-checks"
+   ]
+  },
+  "UDVHQ5HR": {
+   "title": "Are LLMs reliable code reviewers? systematic overcorrection in requirement conformance judgement",
+   "primary": "ai-review",
+   "final": [
+    "final:facet:built-system",
+    "final:facet:deterministic-orchestration",
+    "final:facet:deterministic-orchestration-v2",
+    "final:facet:evaluated-synthetic",
+    "final:facet:general-code",
+    "final:facet:method-experiment",
+    "final:facet:metrics",
+    "final:primary:theme:ai-review",
+    "final:theme:ai-review",
+    "final:theme:evaluator-reliability",
+    "final:theme:rules-based-checks"
+   ]
+  },
+  "UIXCRBQX": {
+   "title": "Safer builders, risky maintainers: a comparative study of breaking changes in human vs agentic PRs",
+   "primary": "quality-debt",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:method-mining",
+    "final:facet:risk-quality",
+    "final:facet:routing-signal",
+    "final:primary:theme:quality-debt",
+    "final:theme:quality-debt"
+   ]
+  },
+  "UW2R6BBJ": {
+   "title": "Secure AI-SDLC for critical infrastructure: operationalizing the NIST AI RMF with evidence-driven controls",
+   "primary": "regulatory-compliance",
+   "final": [
+    "final:facet:expert-validated",
+    "final:facet:framework",
+    "final:facet:general-ai",
+    "final:facet:method-field-study",
+    "final:facet:method-self-report",
+    "final:facet:metrics",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:primary:theme:regulatory-compliance",
+    "final:theme:org-governance",
+    "final:theme:provenance-auditability",
+    "final:theme:regulatory-compliance",
+    "final:theme:tooling-supply-chain"
+   ]
+  },
+  "V4IRKSFI": {
+   "title": "BitsAI-CR: automated code review via LLM in practice",
+   "primary": "ai-review",
+   "final": [
+    "final:facet:adopted",
+    "final:facet:built-system",
+    "final:facet:deterministic-orchestration-v2",
+    "final:facet:evaluated-real-data",
+    "final:facet:framework",
+    "final:facet:general-code",
+    "final:facet:method-field-study",
+    "final:facet:method-mining",
+    "final:facet:metrics",
+    "final:facet:peer-critique",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:primary:theme:ai-review",
+    "final:theme:ai-review"
+   ]
+  },
+  "VFNJSZD9": {
+   "title": "Beyond SAST and DAST: a unified security testing architecture for autonomous coding agents",
+   "primary": "ai-code-insecurity",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:design-only",
+    "final:facet:framework",
+    "final:facet:metrics",
+    "final:facet:peer-critique",
+    "final:facet:risk-security",
+    "final:primary:theme:ai-code-insecurity",
+    "final:theme:ai-code-insecurity",
+    "final:theme:ai-review",
+    "final:theme:org-governance",
+    "final:theme:provenance-auditability",
+    "final:theme:regulatory-compliance",
+    "final:theme:rules-based-checks",
+    "final:theme:tooling-supply-chain"
+   ]
+  },
+  "VG6CIDQW": {
+   "title": "Lumen: developer agency through transparent context control in AI-assisted programming",
+   "primary": "oversight-explanation",
+   "final": [
+    "final:facet:assistive",
+    "final:facet:built-system",
+    "final:facet:steering",
+    "final:primary:theme:oversight-explanation",
+    "final:theme:oversight-explanation"
+   ]
+  },
+  "VTDG995V": {
+   "title": "Calibration and correctness of language models for code",
+   "primary": "ai-review",
+   "final": [
+    "final:facet:assistive",
+    "final:facet:method-experiment",
+    "final:facet:metrics",
+    "final:facet:risk-quality",
+    "final:primary:theme:ai-review",
+    "final:theme:ai-review",
+    "final:theme:evaluator-reliability",
+    "final:theme:oversight-explanation"
+   ]
+  },
+  "WPWF7A32": {
+   "title": "DevLicOps: a framework for mitigating licensing risks in AI-generated code",
+   "primary": "org-governance",
+   "final": [
+    "final:facet:assistive",
+    "final:facet:design-only",
+    "final:facet:risk-ip",
+    "final:facet:steering",
+    "final:primary:theme:org-governance",
+    "final:theme:hitl-workflow",
+    "final:theme:org-governance",
+    "final:theme:provenance-auditability",
+    "final:theme:regulatory-compliance",
+    "final:theme:risk-routing",
+    "final:theme:rules-based-checks",
+    "final:theme:rules-based-checks-v3"
+   ]
+  },
+  "X7EN6DXZ": {
+   "title": "Measuring and exploiting contextual bias in LLM-assisted security code review",
+   "primary": "tooling-supply-chain",
+   "final": [
+    "final:facet:built-system",
+    "final:facet:evaluated-real-data",
+    "final:facet:general-code",
+    "final:facet:method-experiment",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-security",
+    "final:primary:theme:tooling-supply-chain",
+    "final:theme:ai-review",
+    "final:theme:evaluator-reliability",
+    "final:theme:tooling-supply-chain"
+   ]
+  },
+  "XJAXB98T": {
+   "title": "Beyond banning AI: a first look at GenAI governance in open source software communities",
+   "primary": "org-governance",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:assistive",
+    "final:facet:method-mining",
+    "final:facet:risk-ip",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:facet:steering",
+    "final:primary:theme:org-governance",
+    "final:theme:hitl-workflow",
+    "final:theme:org-governance",
+    "final:theme:provenance-auditability"
+   ]
+  },
+  "XRTVITVP": {
+   "title": "Steering LLMs via scalable interactive oversight",
+   "primary": "oversight-explanation",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:built-system",
+    "final:facet:deterministic-orchestration-v2",
+    "final:facet:evaluated-synthetic",
+    "final:facet:framework",
+    "final:facet:method-experiment",
+    "final:facet:non-developer",
+    "final:facet:steering",
+    "final:primary:theme:oversight-explanation",
+    "final:theme:hitl-workflow",
+    "final:theme:oversight-explanation"
+   ]
+  },
+  "YA7XNWYE": {
+   "title": "Cybersecurity risks of AI-generated code",
+   "primary": "ai-code-insecurity",
+   "final": [
+    "final:facet:assistive",
+    "final:facet:evaluated-benchmark",
+    "final:facet:method-experiment",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:facet:risk-security",
+    "final:primary:theme:ai-code-insecurity",
+    "final:theme:ai-code-insecurity",
+    "final:theme:org-governance",
+    "final:theme:regulatory-compliance",
+    "final:theme:tooling-supply-chain"
+   ]
+  },
+  "YBHHYR4P": {
+   "title": "Do users write more insecure code with AI assistants?",
+   "primary": "ai-code-insecurity",
+   "final": [
+    "final:facet:assistive",
+    "final:facet:method-experiment",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-security",
+    "final:primary:theme:ai-code-insecurity",
+    "final:theme:ai-code-insecurity",
+    "final:theme:automation-bias"
+   ]
+  },
+  "Z8TPRNEU": {
+   "title": "Professional Software Developers Don't Vibe, They Control: AI Agent Use for Coding in 2025",
+   "primary": "hitl-workflow",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:method-field-study",
+    "final:facet:method-self-report",
+    "final:facet:risk-quality",
+    "final:facet:steering",
+    "final:facet:survey-input",
+    "final:facet:survey-input-v2",
+    "final:primary:theme:hitl-workflow",
+    "final:theme:agent-scope-drift",
+    "final:theme:ai-review",
+    "final:theme:hitl-workflow",
+    "final:theme:quality-debt"
+   ]
+  },
+  "ZGST9CY6": {
+   "title": "Designing meaningful human oversight in AI",
+   "primary": "org-governance",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:design-only",
+    "final:facet:general-ai",
+    "final:facet:metrics",
+    "final:facet:risk-bias",
+    "final:facet:risk-overreliance",
+    "final:primary:theme:org-governance",
+    "final:theme:ai-review",
+    "final:theme:automation-bias",
+    "final:theme:hitl-workflow",
+    "final:theme:org-governance",
+    "final:theme:oversight-explanation",
+    "final:theme:oversight-theater",
+    "final:theme:provenance-auditability",
+    "final:theme:risk-routing",
+    "final:theme:rules-based-checks"
+   ]
+  },
+  "ZH6QIU8A": {
+   "title": "Decision-Oriented Programming with Aporia",
+   "primary": "oversight-explanation",
+   "final": [
+    "final:facet:assistive",
+    "final:facet:built-system",
+    "final:facet:method-experiment",
+    "final:facet:risk-overreliance",
+    "final:facet:risk-quality",
+    "final:facet:steering",
+    "final:primary:theme:oversight-explanation",
+    "final:theme:ai-review",
+    "final:theme:oversight-explanation",
+    "final:theme:provenance-auditability"
+   ]
+  },
+  "ZUM76CCG": {
+   "title": "Generative AI in systems engineering: a framework for risk assessment of large language models",
+   "primary": "org-governance",
+   "final": [
+    "final:facet:agentic",
+    "final:facet:assistive",
+    "final:facet:general-ai",
+    "final:facet:intro-framing",
+    "final:primary:theme:org-governance",
+    "final:theme:hitl-workflow",
+    "final:theme:org-governance"
+   ]
+  }
+ }
+}
