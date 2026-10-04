@@ -8570,3 +8570,8 @@ the generation (prompts, context selection, task steering) → steering.** Appli
 `rules-based-checks-v3`; Mitropoulos `evaluator-reliability` (§164); Parris `rules-based-checks-v2`.
 Rejected Goel `hitl-workflow` (166a) and Gao `survey-input` (no survey, §116a).
 
+**Batch 2 (10 papers, all endorsed):** Shi `peer-critique`; Shukla `evaluated-synthetic`; Spiess
+`oversight-explanation`; Töpfer and Zietsman `rules-based-checks-v2` (Zietsman as v2 defined it); Ullah,
+Wang and Zhou `deterministic-orchestration-v2` (Zhou's code loop advances while the user only answers,
+so it is not §158 pattern 1); Watanabe `risk-routing`; Yu `evaluator-reliability`.
+

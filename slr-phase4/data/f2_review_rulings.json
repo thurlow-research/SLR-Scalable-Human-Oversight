@@ -770,6 +770,116 @@
    "date": "2026-10-04",
    "note": "deterministic parser-backed rule engine — v2's own positive",
    "written": "2026-10-04"
+  },
+  {
+   "key": "MFSZPSPU",
+   "author": "Shi",
+   "kind": "facet",
+   "slug": "peer-critique",
+   "action": "endorse",
+   "ruling": "§166 batch 2",
+   "date": "2026-10-04",
+   "note": "LLM judge evaluates patches from a separate APR agent — one-directional",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "T72TU8B5",
+   "author": "Shukla",
+   "kind": "facet",
+   "slug": "evaluated-synthetic",
+   "action": "endorse",
+   "ruling": "§166 batch 2",
+   "date": "2026-10-04",
+   "note": "self-constructed tasks with synthetic personas — created",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "VTDG995V",
+   "author": "Spiess",
+   "kind": "theme",
+   "slug": "oversight-explanation",
+   "action": "endorse",
+   "ruling": "§166 batch 2",
+   "date": "2026-10-04",
+   "note": "calibrated confidence helps the human understand the AI's reliability (§11)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "72W6R4JG",
+   "author": "Töpfer",
+   "kind": "theme",
+   "slug": "rules-based-checks-v2",
+   "action": "endorse",
+   "ruling": "§166 batch 2",
+   "date": "2026-10-04",
+   "note": "FCL constraint verifier — v2's own positive",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "A6ZE2A26",
+   "author": "Ullah",
+   "kind": "facet",
+   "slug": "deterministic-orchestration-v2",
+   "action": "endorse",
+   "ruling": "§166 batch 2",
+   "date": "2026-10-04",
+   "note": "form (c): pipeline dispatches generator and jury; code applies unanimity rule",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "CTGGMIX9",
+   "author": "Wang",
+   "kind": "facet",
+   "slug": "deterministic-orchestration-v2",
+   "action": "endorse",
+   "ruling": "§166 batch 2",
+   "date": "2026-10-04",
+   "note": "forms (a)+(c): fixed dual-pathway pipeline dispatching bounded model workers",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "E95T8E88",
+   "author": "Watanabe",
+   "kind": "theme",
+   "slug": "risk-routing",
+   "action": "endorse",
+   "ruling": "§166 batch 2",
+   "date": "2026-10-04",
+   "note": "computed, producer-independent deletion prediction routes reviewer attention",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "PPMTM4DG",
+   "author": "Yu",
+   "kind": "theme",
+   "slug": "evaluator-reliability",
+   "action": "endorse",
+   "ruling": "§166 batch 2",
+   "date": "2026-10-04",
+   "note": "whether ChatGPT can verify its own code — automated evaluator (§164)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "XRTVITVP",
+   "author": "Zhou",
+   "kind": "facet",
+   "slug": "deterministic-orchestration-v2",
+   "action": "endorse",
+   "ruling": "§166 batch 2",
+   "date": "2026-10-04",
+   "note": "form (c): code while-loop advances; the user only answers questions (not §158 pattern 1)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "TA6GIUK2",
+   "author": "Zietsman",
+   "kind": "theme",
+   "slug": "rules-based-checks-v2",
+   "action": "endorse",
+   "ruling": "§166 batch 2",
+   "date": "2026-10-04",
+   "note": "BDD scenarios via behave — v2 as defined; v3 excludes (§156)",
+   "written": "2026-10-04"
   }
  ]
 }
