@@ -191,6 +191,8 @@ endorsements and inflate the panel's apparent precision. **C4 applies to Light R
 with a completed pass), not to partially-tagged papers.**
 
 ### B9. DECIDE: should the human layer fail OPEN or fail CLOSED? (before `final:*`)
+> **Largely retired 2026-10-04 (§150b, §166b):** the F2 review left **no silent proposals** on the synthesis set
+> (frozen + F2-family vocabulary, Phase 6). The convention now matters only for demoted papers, which have no consumer.
 Raised by the arbiter 2026-08-28 while reading Parris (`3SU9QZ6F`) on fail-soft behaviour:
 *"We've had in HOS (and even **this session**) loads of issues with failing open when we should fail
 closed."*
@@ -287,7 +289,7 @@ rejected (§120b), `counterpoint` deprecated (B3).
 on those are judgements, not vote-counts, so they stand — but this is why Set A's origination moved
 54.9% → 12.7%, and it belongs in the calibration write-up.
 
-### B14. Implicit-confirmation residue — 18 tags on 10 surviving papers (2026-10-04) — **PENDING arbiter**
+### B14. Implicit-confirmation residue — 18 tags on 10 surviving papers (2026-10-04) — ✅ **DONE 2026-10-04** (changelog §166b: 6 silent tags remain on surviving papers, all `counterpoint` → B3)
 Early Light Read scanned the full proposal list and queried only doubted tags, so silence on those
 papers is *implicit* confirmation (C4, changelog §150). The residue is being closed by **explicit**
 confirm or reject. The worklist, the case-law flags and the write protocol are in **changelog §150a**.

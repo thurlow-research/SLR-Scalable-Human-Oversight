@@ -1419,6 +1419,105 @@
    "date": "2026-10-04",
    "note": "§151: the variant — non-agentic pipeline, precondition 2 fails on the original",
    "written": "2026-10-04"
+  },
+  {
+   "key": "5VTAJISY",
+   "author": "Takerngsaksiri",
+   "kind": "facet",
+   "slug": "evaluated-benchmark",
+   "action": "endorse",
+   "ruling": "§166 batch 5",
+   "date": "2026-10-04",
+   "note": "SWE-bench Verified run as-is — separate event",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "5VTAJISY",
+   "author": "Takerngsaksiri",
+   "kind": "facet",
+   "slug": "evaluated-real-data",
+   "action": "endorse",
+   "ruling": "§166 batch 5",
+   "date": "2026-10-04",
+   "note": "369 real Atlassian JIRA issues/PRs — separate event",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "5VTAJISY",
+   "author": "Takerngsaksiri",
+   "kind": "theme",
+   "slug": "rules-based-checks-v2",
+   "action": "endorse",
+   "ruling": "§166 batch 5",
+   "date": "2026-10-04",
+   "note": "compilers and linters drive self-refinement",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "5VTAJISY",
+   "author": "Takerngsaksiri",
+   "kind": "theme",
+   "slug": "rules-based-checks-v3",
+   "action": "endorse",
+   "ruling": "§166 batch 5",
+   "date": "2026-10-04",
+   "note": "compilers and linters drive self-refinement (rule-checking needs no top-level position)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "WPWF7A32",
+   "author": "Sharma",
+   "kind": "theme",
+   "slug": "rules-based-checks-v3",
+   "action": "endorse",
+   "ruling": "§166 batch 5",
+   "date": "2026-10-04",
+   "note": "SCA licence scanners block pushes deterministically",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "WPWF7A32",
+   "author": "Sharma",
+   "kind": "theme",
+   "slug": "rules-based-checks",
+   "action": "endorse",
+   "ruling": "§166 batch 5",
+   "date": "2026-10-04",
+   "note": "SCA licence scanners (v1)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "WPWF7A32",
+   "author": "Sharma",
+   "kind": "theme",
+   "slug": "hitl-workflow",
+   "action": "endorse",
+   "ruling": "§166 batch 5",
+   "date": "2026-10-04",
+   "note": "manual audit teams can overrule/block commits — human judging output (§166a)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "WPWF7A32",
+   "author": "Sharma",
+   "kind": "theme",
+   "slug": "provenance-auditability",
+   "action": "endorse",
+   "ruling": "§166 batch 5",
+   "date": "2026-10-04",
+   "note": "AI-code tagging, audit-trail commits, SBOM tracking",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "WPWF7A32",
+   "author": "Sharma",
+   "kind": "theme",
+   "slug": "risk-routing",
+   "action": "endorse",
+   "ruling": "§166 batch 5",
+   "date": "2026-10-04",
+   "note": "module criticality + SCA severity tiers route human audit — computed, producer-independent",
+   "written": "2026-10-04"
   }
  ]
 }

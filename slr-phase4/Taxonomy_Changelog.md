@@ -8588,3 +8588,28 @@ facets, because the paper spans agent PRs and inline tools.
 Swidey `deterministic-orchestration-v2`. That keeps the superset property, since the original fires and
 F2b's "unbuilt" flag is settled by §157a.
 
+**Batch 5 (2 papers, 9 decisions, all endorsed):** Takerngsaksiri, with `evaluated-benchmark` (SWE-bench
+Verified) and `evaluated-real-data` (369 real JIRA issues) as two events, and `rules-based-checks-v2`
+and `-v3` (compilers and linters in self-refinement; rule-checking needs no top-level position).
+Sharma, with `rules-based-checks` v1 and `-v3` (SCA licence scanners), `hitl-workflow` (audit teams can
+block commits, §166a), `provenance-auditability` and `risk-routing`. **This closes the last four §150a
+implicit-confirmation tags.**
+
+### 166b. STEP 2 COMPLETE — the F2 review is closed for the 72 kept articles (2026-10-04)
+
+- **Review queue: 0 open decisions.** Every panel proposal at 2/3 or more on Phase 6 has a human ruling.
+- **Ledger** (`data/f2_review_rulings.json`): **138 rulings, 102 endorse and 36 reject, all written
+  and verified.**
+- **Silence audit** (`slr-tools/silence_audit.py`): the surviving papers have **6 silent tags, all
+  `counterpoint`**, which go to sweep B3. **Closeout B14's done condition is met.**
+- **B9 (fail-open vs fail-closed) no longer bears on the frozen and F2-family vocabulary for the
+  synthesis set**, because nothing there is silent (§150b). It survives only for demoted papers, which
+  have no consumer.
+- **Note on §11.5's figures.** The surviving-paper override rate is now **9.6% (49 of 511)**, against
+  9.0% before the review, because the review added rejections on frozen-vocabulary tags (e.g. Gao
+  `survey-input`, Goel `hitl-workflow`, Eze `regulatory-compliance`). **The T1 figure in §11.5 stays as
+  recorded**: it is the measurement at T1. The post-review state belongs to the T2 point.
+
+**Still open:** sweep B3 (`counterpoint`); the parked `oversight-scaling-inversion-v3` (§154a) and
+test-authorship exercise (§156b); T2 measurement; `final:*` computation.
+
