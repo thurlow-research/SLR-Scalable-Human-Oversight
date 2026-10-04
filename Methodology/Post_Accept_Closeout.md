@@ -4,7 +4,7 @@
 
 **STATUS 2026-10-04 (closeout pass):** Accept band closed 44/44 (§143); F2 run, F2b, F2c and the full F2 review
 done (§151–§167); Phase 6 = 72. **Done:** A1, A2, B1, B2, B3, B5, B7, B8, B9, B10, B13, B14, D1, D2/T2, F2-PREP, F2,
-F2a, F3. **Open:** E1, E3, E4, E6, E7, E8 · F1 · F4 · F5 · F6. *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
+F2a, F3. **Open:** E1, E3, E4, E6, E7, E8 · F4 · F5 · F6. *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
 
 *Historical progress line (2026-08-28):* **Progress (2026-08-28): 24 of 44 adjudicated · 3 partial · 17 untouched.**
 Next alphabetically: **Minh** (`74GE3TF7`). Partials awaiting a pass: `MFSZPSPU` Shi ·
@@ -580,6 +580,7 @@ alongside — same principle as A1.
 ## F. Forward work — after A–E
 
 ### F1. Compute `final:*`
+> ✅ **DONE 2026-10-04 (§174)** — 843 `final:*` tags on the 72 kept articles; all checks pass; 0 entered on silence alone.
 > **Required checks (added 2026-10-04):** (1) read `slr-phase4/data/deprecated_vocabulary.json` and emit **no** listed
 > slug into `final:*` (§101a), so **0** `final:*:counterpoint` tags; (2) do not count deprecated-slug rejections in the
 > override statistics, because only judgements count; (3) Phase 6 only for the synthesis set.

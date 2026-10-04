@@ -8768,3 +8768,15 @@ Goel `hitl-workflow`, Ma `agent-scope-drift`, Zhou `oversight-scaling-inversion`
 - **F1 (`final:*`) is computed with the fixed counter**, so a single model's primary never enters the reportable set
   as a "panel majority".
 
+## 174. F1 DONE — `final:*` computed and written for the 72 kept articles (2026-10-04)
+
+`slr-tools/compute_final.py`: **final = panel modal (≥2 distinct vendors, §173) ∪ human endorsements − human rejections
+− deprecated vocabulary (§101a).** All versions are emitted, and `data/governing_versions.json` says which one the
+synthesis reads (rbc → `-v3`, inversion → `-v2`, survey-input → `-v2`, deterministic-orchestration → `-v2`).
+- **843 tags on 72 items** (771 theme/facet + 72 primary), written and verified with 0 failures. The snapshot is
+  `data/final_tags_2026-10-04.json`.
+- **Sources:** 658 are panel-modal and human-endorsed; 113 are human-only; **0 entered on silence alone**. B9's
+  fail-open/closed question is therefore moot for the synthesis set, empirically.
+- **Checks:** one primary per item · `counterpoint` excluded (0 leaked) · no namespace collisions · Phase 6 only.
+- **`final:*` is a derived layer.** A recompute replaces it wholesale, and the `cal:*` layers are never touched.
+
