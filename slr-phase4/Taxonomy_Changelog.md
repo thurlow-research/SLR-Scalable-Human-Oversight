@@ -8480,3 +8480,34 @@ only once it is **adopted** by others and run under its established protocol.
 **The floor, stated:** the first rung requires **a built system run on a workload whose outcomes are
 scored**. Demonstrations, inspections and generator-determined outputs sit below it.
 
+## 163. F2 review Q13 — `peer-critique` scope: the test is topology (consume and JUDGE another agent's output); Zietsman's panel tags QA-corrected (2026-10-04)
+
+**Rule (§149a):** *"What does the agent consume?"* If it is another agent's output, and the agent
+**judges** it (rather than transforming or continuing it), that is `peer-critique`. **Which
+dimension is judged does not matter.**
+
+| Paper | Ruling |
+|---|---|
+| Lyu `UB2EVUFU` | **fires**, one-directional: Apollo judges Ares's output (panel 3/3) |
+| Wang `CTGGMIX9` | **fires**, one-directional: a verifier ensemble judges each proposer-LLM issue (2/3). The human `agent-panel` also stands (explicit path) |
+| Tang `7V7SRG43` | **fires**, one-directional: QA-Checker judges another agent's answer for alignment (2/3) |
+| Tisi `DJMBHHZN` | **fires as designed** (§157): supervision agents review solution agents' outputs. Arbiter-originated (panel 0/3, flagged only) |
+| Moreira `RX9SICP9` | **no**: one model alternates roles (*"the same LLM operates all rounds"*), so it is self-critique |
+| Zietsman `TA6GIUK2` | **no** `peer-critique`; see 163a |
+
+### 163a. Zietsman — `agent-panel` and `cross-model` QA-corrected (§142a precedent)
+
+Full-text check (arbiter request). Experiment 3's four models (Claude Sonnet 4.6, Codex/gpt-5.4,
+Gemini, Amazon Q) each review independently, and results are reported **per model, with no aggregation
+rule**. That is the **Karakaya pattern** (§122): models compared *as subjects*. The paper's *proposed*
+architecture (*"specifications first, deterministic verification pipeline second, AI review only for the
+structural and architectural residual"*) has no panel and no cross-model step. **Both hand-applied tags
+are rejected as QA corrections**, from the same formative period as Ji and Mitropoulos (§155a).
+
+**The finding is retained as a cited result, because it argues directly about cross-model oversight:**
+*"model diversity does not supply ground truth. A cross-family reviewer without an external
+specification is still checking code against code, not code against intent."* The condition for
+genuine benefit is ***"diversity plus external grounding."*** It is also sceptical of consensus
+aggregation (the *"popularity trap"*, citing Vallecillos-Ruiz et al.). **This is relevant to HOS's
+multi-vendor design and to the synthesis**, even though the architecture facet does not apply.
+

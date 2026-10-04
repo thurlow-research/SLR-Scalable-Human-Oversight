@@ -418,6 +418,94 @@
    "date": "2026-10-04",
    "note": "design-only; outputs predetermined by the random data generator",
    "written": null
+  },
+  {
+   "key": "UB2EVUFU",
+   "author": "Lyu",
+   "kind": "facet",
+   "slug": "peer-critique",
+   "action": "endorse",
+   "ruling": "§163",
+   "date": "2026-10-04",
+   "note": "Apollo (verification phase) judges Ares's output — one-directional",
+   "written": null
+  },
+  {
+   "key": "CTGGMIX9",
+   "author": "Wang",
+   "kind": "facet",
+   "slug": "peer-critique",
+   "action": "endorse",
+   "ruling": "§163",
+   "date": "2026-10-04",
+   "note": "implicit path: verifier ensemble judges each proposer-LLM issue — one-directional; agent-panel also stands (explicit path)",
+   "written": null
+  },
+  {
+   "key": "7V7SRG43",
+   "author": "Tang",
+   "kind": "facet",
+   "slug": "peer-critique",
+   "action": "endorse",
+   "ruling": "§163",
+   "date": "2026-10-04",
+   "note": "QA-Checker consumes and judges another agent's answer (alignment) — topology, not dimension judged",
+   "written": null
+  },
+  {
+   "key": "DJMBHHZN",
+   "author": "Tisi",
+   "kind": "facet",
+   "slug": "peer-critique",
+   "action": "endorse",
+   "ruling": "§163",
+   "date": "2026-10-04",
+   "note": "as designed (§157): supervision agents review solution agents' outputs — one-directional",
+   "written": null
+  },
+  {
+   "key": "RX9SICP9",
+   "author": "Moreira",
+   "kind": "facet",
+   "slug": "peer-critique",
+   "action": "reject",
+   "ruling": "§163",
+   "date": "2026-10-04",
+   "note": "one model alternating generative/adversarial roles — self-critique, no second agent",
+   "written": null
+  },
+  {
+   "key": "TA6GIUK2",
+   "author": "Zietsman",
+   "kind": "facet",
+   "slug": "peer-critique",
+   "action": "reject",
+   "ruling": "§163",
+   "date": "2026-10-04",
+   "note": "reviewers compared as experimental subjects; proposed architecture has no agent critique step",
+   "written": null
+  },
+  {
+   "key": "TA6GIUK2",
+   "author": "Zietsman",
+   "kind": "facet",
+   "slug": "agent-panel",
+   "action": "reject",
+   "ruling": "§163",
+   "date": "2026-10-04",
+   "note": "QA CORRECTION (§142a precedent): four models review independently, reported per model, no aggregation rule — Karakaya pattern",
+   "written": null
+  },
+  {
+   "key": "TA6GIUK2",
+   "author": "Zietsman",
+   "kind": "facet",
+   "slug": "cross-model",
+   "action": "reject",
+   "ruling": "§163",
+   "date": "2026-10-04",
+   "note": "QA CORRECTION (§142a precedent): reviewers are subjects compared (Karakaya negative); proposed architecture has no cross-model step",
+   "written": null
   }
  ]
 }
