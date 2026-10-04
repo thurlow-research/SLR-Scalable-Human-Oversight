@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a) + (b). (a) Sequencing: the contributed system's outermost flow is Algorithm 1, an orchestrator 'implemented in JavaScript and running on Node.js' that runs the fixed Strategy→Execution→Verification loop — 'invoking agents according to the current phase... managing phase transitions' and explicitly 'does not make software engineering decisions itself.' The model managers (Athena/Ares/Apollo) and workers perform the steps, but code advances the state machine; a model cannot skip Verification (§3.2, Fig. 1, Alg. 1). (b) Enforcement: Apollo's verdict is routed by code — 'if verdict ≠ Pass then budget ← ⌊budget/2⌋', looping 'until verdict = Pass or budget = 0', after which code marks the milestone failed and returns control to Athena. The consequence of the verdict (bounded exponential-decay retry / escalation) is fixed in code, with no model choosing whether to honor it. All three preconditions hold: the orchestrator is non-AI code; at least one step is a model (the agents); and the control sits at the outermost level. The self-organizing team layer (managers dynamically hire/assign/fire workers) is model-determined discretion BELOW the top-level phase sequencing — per the settled Lyu reading, that does not defeat the facet, which asks who controls the process, not whether any model has discretion anywhere."
+  },
+  "flags": []
+}

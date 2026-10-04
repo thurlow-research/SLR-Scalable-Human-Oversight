@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Boundary/undecidable: AIRA's canonical contributed system is a model-free deterministic static analysis engine (parser-backed rule engine; all three studies run the static engine exclusively), which is precondition-2's explicit 'static analyser / rule engine' negative — nothing to orchestrate around. It has an OPTIONAL LLM/hybrid scan mode where top-level code runs the static scan plus an LLM over surfaces and merges findings, which superficially resembles form (c) dispatch. I do not emit because (1) the LLM is explicitly 'optional enrichment, not ground truth,' not part of the defining architecture; (2) the LLM mode is a single-stage scan+merge, lacking form (c)'s code-driven routing/thresholds/state-machine deciding what each model output triggers (block/escalate/retry); and (3) in its most-developed use (Study 5.5) the LLM is the subject being evaluated, not a dispatched worker — the other listed negative. Flagging so the arbiter can count the optional-model-augmentation-over-a-deterministic-core pattern."
+    }
+  ]
+}

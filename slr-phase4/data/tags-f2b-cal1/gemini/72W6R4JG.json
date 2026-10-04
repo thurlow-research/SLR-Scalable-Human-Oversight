@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [
+    "deterministic-orchestration-v2"
+  ],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (c) — the contributed system is a fully automated vibe-coding framework where a fixed code loop calls an LLM to generate an adaptation manager, executes it, and feeds the code's deterministic constraint verification results back to the model for iterative repair."
+  },
+  "flags": []
+}

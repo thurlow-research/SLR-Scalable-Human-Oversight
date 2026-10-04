@@ -8026,3 +8026,30 @@ the form-(c) wording reads correctly, not whether the panel can copy an example.
   was copied in as `txt/U3IQJ4VK.txt`, so F2b reads the authoritative version. The old `3Z45M3V3.txt`
   is the arXiv v4 preprint, which is the §148a pattern.
 
+### 151f. F2b calibration round 1 FAILED on one anchor — the gate caught an instrument defect (2026-10-04)
+
+**Round 1** (`data/tags-f2b-cal1/`, kept as the record). **Recall was 5/5 at 3/3**, including both blind
+anchors: Töpfer and Mahmud fired on every vendor. The form-(c) wording reads correctly. **One defect:
+Parris `3SU9QZ6F` fired 2/3** (codex and gemini), against the arbiter's must-not.
+
+**Cause: the instrument said "judge the contributed system" but not *as the paper evaluates it*.** Both
+vendors fired through AIRA's **optional** LLM and hybrid scan modes and its cloud fallback. No
+reported study uses them (Studies 1–3 run the deterministic engine only, and §5.5's LLM is a *subject
+being evaluated*). Opus withheld on exactly the arbiter's ground: the LLM is *"optional enrichment,
+not ground truth"* and *"not part of the defining architecture."*
+
+**Fix (wording only; it implements a settled ruling and introduces no new decision):**
+- a paragraph under the definition: ***"Judge the system AS THE PAPER EVALUATES IT. Optional modes,
+  fallbacks, plug-ins or configurations that the paper's own evaluation does not exercise do not
+  count"***;
+- a matching negative: *a deterministic core with optional model augmentation the evaluation does not
+  use*.
+
+Because the instrument changed, **all six calibration papers are re-run** (round 2,
+`data/tags-f2b/`). Round 1 does not mix into the measurement.
+
+**Run-integrity note.** During round 1 the output directory was briefly moved by an assistant error and
+then restored. One write was lost: gemini on Parris. Its raw CLI output was intact, so the JSON was
+recovered with the runner's own extraction step, and the meta record says so. No call was repeated, and
+no other output was affected (raw-vs-JSON check on all 18).
+

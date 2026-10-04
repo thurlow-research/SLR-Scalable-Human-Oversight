@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a) — SLEAN's contributed system is a Python orchestrator (main.py + YAML) that runs a 'static orchestration model with three fixed phases' in strict order: Phase 1 independent analysis → Phase 2 cross-critique → Phase 3 arbitration. Code advances the state ('Each run executed a deterministic sequence: Phase 1 to 3'; 'orchestrator with fixed prompts, which prevents early' convergence); the LLM providers are dispatched for bounded jobs (analyze / critique / arbitrate) and never decide what runs next — 'Providers never communicate directly; all interaction flows through the orchestrator.' Precondition 1 met (orchestrator is code, not a model). Precondition 2 met (each phase is performed by a model). Precondition 3 met (the three-phase control sits at the outermost level of the contributed flow). The accept/reject verdicts are produced by the arbitrating model, not enforced by code, so form (b) does not fire; this is the arbiter's settled form-(a) anchor positive."
+  },
+  "flags": []
+}

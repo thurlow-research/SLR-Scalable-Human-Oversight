@@ -99,6 +99,12 @@ about **who controls the process**, not **who checks**.
 > **Judge the CONTRIBUTED SYSTEM's architecture, not the paper's centre of gravity.** A paper that is
 > mostly an empirical study can still contribute a pipeline whose top-level flow is code. Equally, a
 > model the authors merely *evaluate* (the subject of a study) is not a step in a contributed system.
+>
+> **Judge the system AS THE PAPER EVALUATES IT.** Optional modes, fallbacks, plug-ins or configurations
+> that the paper's own evaluation does **not** exercise do not count. If every reported study runs the
+> model-free path, the system is model-free for this facet, even if a model can be switched on.
+> *(Calibration round 1, 2026-10-04: two of three vendors fired on a deterministic engine through its
+> optional LLM mode, which no reported study used. That is the error this paragraph exists to prevent.)*
 
 **Positives (settled under the original, and so also positives here):**
 - **Vargas `GAD5Z8PV`** — *"a static orchestration model with three fixed phases"*; *"orchestrator with
@@ -122,6 +128,8 @@ to the model for repair.
 - An **LLM planner / manager agent** deciding what to do next (the inverse).
 - An **agent that chooses** to run a linter or a test — the model decides whether the step happens.
 - A **deterministic pipeline with no model in it** (precondition 2).
+- A **deterministic core with OPTIONAL model augmentation** (an LLM scan mode, a cloud fallback, a hybrid
+  merge) that the paper's evaluation does not use. Judge the evaluated configuration.
 - A system where the models are only the **subjects being evaluated**, not steps the authors' system
   dispatches.
 

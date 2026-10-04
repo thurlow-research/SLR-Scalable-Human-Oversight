@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a)+(b)+(c). (c) Dispatch is the core: top-level code runs a fixed pipeline that calls three LLMs per stage as bounded workers (classify / assess impact / recommend action) and itself aggregates their outputs via confidence-weighted voting — 'sum of confidence scores from models predicting each vulnerability type and choose the type with maximum total confidence'; models are components, not controllers. (a) Sequencing: three fixed sequential stages (classification -> impact -> action) with confidence propagated forward in code; no model can skip a stage. (b) Enforcement: code computes trust score tau=0.4*theta1+0.3*theta2+0.3*theta3 and fixed threshold rules deterministically map it to the CI/CD consequence (>=0.8 approve, 0.6-0.8 warn, 0.3-0.6 require-review, <0.3/critical block) with no model choosing to honour it. Preconditions met: orchestrator is non-AI (voting/propagation/thresholds are code), at least one step is a model (3 LLMs per stage), control is top-level."
+  },
+  "flags": []
+}

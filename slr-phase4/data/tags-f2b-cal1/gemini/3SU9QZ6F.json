@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [
+    "deterministic-orchestration-v2"
+  ],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (c) — top-level code controls the flow and calls models as bounded workers, as seen in the Web scanner's fixed fallback hierarchy ('cloud or Ollama route -> deterministic server-side static scan') which decides what runs next, and the CLI's hybrid mode that deterministically merges static and LLM findings."
+  },
+  "flags": []
+}

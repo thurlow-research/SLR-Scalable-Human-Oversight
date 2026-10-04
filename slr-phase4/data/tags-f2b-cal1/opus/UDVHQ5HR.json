@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (b) — the Fix-guided Verification Filter is code that enforces the consequence of a step's outcome without a model choosing to honour it: it is 'applied only when the judge returns NO and provides a fix', then 'the final verdict is determined by four common outcomes' computed from executable tests — Case 1 (equivalent) and Case 3 (over-repair) 'flip the verdict to YES', overturning the LLM judge's NO on runtime evidence, with a bounded K=2 re-judge retry (Case 2). The LLM judge and GPT-4o test generation are model steps (precondition 2); the overriding harness is non-AI code at the top of the contributed system's flow."
+  },
+  "flags": []
+}
