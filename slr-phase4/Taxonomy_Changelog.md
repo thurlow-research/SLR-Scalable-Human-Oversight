@@ -8528,3 +8528,28 @@ slug.**
 makes mistakes, and explicitly prompted to identify them"* and paid to find them, *"frequently failed to
 detect critical flaws … many of which required no technical knowledge to recognize."*
 
+## 165. F2 review Q14b and Q15 — side findings are not the subject; arbitration by a distinct model IS a cross-model check (2026-10-04)
+
+**Q14b — `evaluator-reliability` needs reliability to be the paper's SUBJECT:**
+- **Parris `3SU9QZ6F` — rejected** (codex 1/3). The 44:1 LLM-suppression result is *"a secondary
+  exploratory finding, not primary evidence"*. It remains quotable.
+- **Mahmud `R9CDT9KB` — rejected** (codex 1/3). Its calibration section (ECE 0.173) evaluates the
+  authors' own tool; reliability is not the subject.
+- **McAleese `NRVQT89E` — stands** on the arbiter's existing tag.
+
+**Q15 — Swidey `5RLPIA3K`: `cross-model` stands** (arbiter's existing tag, panel 2/3). The
+Arbitrator (GPT-5.2, *"a different provider … to reduce single-source bias"*) consumes and rules on the
+Claude Advocate's and Adversary's outputs. **Arbitrating between other models' outputs is a check on
+them**, with an explicit decorrelation rationale (the definition's *"so that their errors can differ"*).
+It is closer to Ullah (positive) than to Karakaya (models compared as subjects). **Note:** two of the
+three agents share a model family, so the decorrelation is partial. (The assistant's earlier "no"
+suggestion was revised on re-reading the definition.)
+
+### 165a. F2 REVIEW — QUESTION PHASE COMPLETE
+
+All 15 general questions are ruled (§151–§165). **Coined:** `deterministic-orchestration-v2` (§151),
+`rules-based-checks-v3` (§156). **Parked:** `oversight-scaling-inversion-v3`, the correlational route 2
+(§154a), and the test-authorship exercise (§156b). **QA corrections to hand-applied tags:** Ji and
+Mitropoulos rungs (§155a), and Zietsman `agent-panel` / `cross-model` (§163a). Per-paper decisions are
+in `slr-phase4/data/f2_review_rulings.json`, pending a batched Zotero write.
+

@@ -528,6 +528,28 @@
    "date": "2026-10-04",
    "note": "non-programmers, warned and incentivised, still failed to detect critical flaws in AI analyses — commission errors (Parasuraman & Manzey)",
    "written": null
+  },
+  {
+   "key": "3SU9QZ6F",
+   "author": "Parris",
+   "kind": "theme",
+   "slug": "evaluator-reliability",
+   "action": "reject",
+   "ruling": "§165",
+   "date": "2026-10-04",
+   "note": "44:1 LLM-suppression is an explicitly secondary exploratory finding; subject is AIRA and the reward-shaped failure hypothesis",
+   "written": null
+  },
+  {
+   "key": "R9CDT9KB",
+   "author": "Mahmud",
+   "kind": "theme",
+   "slug": "evaluator-reliability",
+   "action": "reject",
+   "ruling": "§165",
+   "date": "2026-10-04",
+   "note": "calibration analysis evaluates the authors' own tool; reliability is not the paper's subject",
+   "written": null
   }
  ]
 }
