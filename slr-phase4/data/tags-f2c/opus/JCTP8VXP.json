@@ -1,0 +1,9 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    { "slug": "rules-based-checks-v3",
+      "issue": "TESTS: agent-generated executable unit tests for 'testable'-level rules (e.g. test('Validate UI uses brandColors'), Fig 1/2; jest-axe accessibility tests exist in the SnakeGame eval repo); AUTHOR: same-as-code — the coding agent (Cline/Claude Sonnet 4.6 in tech eval; Codex in usage scenario/user study) that generates the code also writes and runs the unit test to prove each testable rule via `zoro prove-rule --test` (§4.2, §4.2.1, ZORO.md App. A.4)" }
+  ]
+}

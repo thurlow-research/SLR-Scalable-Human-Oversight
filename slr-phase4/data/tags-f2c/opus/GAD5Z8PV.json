@@ -1,0 +1,9 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    { "slug": "rules-based-checks-v3",
+      "issue": "TESTS: manual functional/acceptance testing — each accepted fix applied to the buggy codebase and the program run with test inputs to verify the reported bug was resolved; AUTHOR: human — 'The bug fixes were checked manually, applied and tested in the code' / 'All fixes were independently validated by applying each fix to the buggy codebase, executing the program with test inputs'; code (fixes) is LLM-generated, testing done by the authors" }
+  ]
+}

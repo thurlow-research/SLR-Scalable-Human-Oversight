@@ -1,0 +1,13 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "HULA's AI Coding Agent runs a self-refinement loop in which generated code is validated against compiler and linter feedback: 'the AI Coding Agent (C) undertakes self-refinement, improving the generated code based on feedback from code validation tools such as compilers and linters. The refinement is conducted iteratively until the code successfully passes the validation tools or the maximum number of attempts is reached' (Sec IV, Stage 3). Linters/compilers are deterministic, non-AI evaluators checking general syntactic/style/code-quality rules on the model-generated code; this is use inside the paper's own system (the generation loop), not mere measurement — so the theme fires. (The GPT-4 LLM-as-a-Judge code-similarity scoring is AI review, not rules-based, and is only an evaluation metric; it does not count toward this theme.)"
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unit tests used for functional-correctness evaluation (SWE-bench Verified '%Issues for Perfect Passing Test Cases'); the paper's offline evaluation validates the model-generated code by running these unit tests; AUTHOR: human — SWE-bench Verified unit tests are 'written by developers' while the code under test is produced by HULA's AI Coding Agent; internal dataset had no unit tests ('due to the unavailability of unit testing in our internal dataset')."
+    }
+  ]
+}

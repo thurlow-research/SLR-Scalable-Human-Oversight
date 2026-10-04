@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: benchmark bug-revealing/regression tests run as the validation signal — the edit-and-execute DSL's RUN command executes the failing test during the hypothesize-observe-conclude loop, and patch 'plausibility' is decided by running each dataset's test suite ('a fix that makes all tests pass is deemed a plausible patch'); AUTHOR: human — tests are the benchmarks' own suites (Defects4J v1.2/2.0 and BugsInPy are real-world bugs carrying developer-written tests; ARHE reuses the human-authored HumanEval tests, with bugs injected by mutation), while the patched code is LLM-generated (ChatGPT/Codex/CodeGen)"
+    }
+  ]
+}

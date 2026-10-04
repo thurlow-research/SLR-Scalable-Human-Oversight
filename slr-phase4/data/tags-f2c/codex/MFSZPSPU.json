@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"rules-based-checks-v3","issue":"TESTS: bug-reproduction/failing tests used to verify Fail-to-Pass patches; AUTHOR: unclear — the paper checks whether the pre-existing failing test from each sanitizer bug report passes after applying a generated patch, but does not identify who authored the tests."}]}

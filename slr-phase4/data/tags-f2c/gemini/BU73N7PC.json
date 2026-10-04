@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "UNDECIDABLE: Developers execute linters (Table II), but these are just part of the existing CI pipeline whose output is fed into the predictive models, rather than the core validation mechanism being studied."
+    },
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: automated tests, canary tests; AUTHOR: same-as-code — human engineers author both the diffs and the tests they execute (Table II: 'Commands (build, lint, tests) executed... by the diff author')"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [],
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: program execution with test inputs; AUTHOR: unclear — All fixes were independently validated by applying each fix to the buggy codebase, executing the program with test inputs"
+    }
+  ]
+}

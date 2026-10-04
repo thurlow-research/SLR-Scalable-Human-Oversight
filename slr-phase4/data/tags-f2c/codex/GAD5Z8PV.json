@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"rules-based-checks-v3","issue":"TESTS: program execution with test inputs to verify each applied fix resolves the reported behavior; AUTHOR: unclear — the paper states that all fixes were applied and tested with test inputs, but does not identify who authored those inputs."}]}

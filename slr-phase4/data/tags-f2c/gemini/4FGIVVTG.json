@@ -1,0 +1,15 @@
+{
+  "themes": [
+    "rules-based-checks-v3"
+  ],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "Java compiler and build tool; Java syntax and type rules; validates that the AI-migrated code successfully compiles in Java 17."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unit tests; AUTHOR: human — QCT conducts unit tests on the migrated code using the legacy tests present in the open-source repository."
+    }
+  ]
+}

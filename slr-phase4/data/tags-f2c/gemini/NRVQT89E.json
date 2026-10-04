@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: test suite; AUTHOR: human — \"we could evaluate model solutions using the test suite\""
+    }
+  ]
+}

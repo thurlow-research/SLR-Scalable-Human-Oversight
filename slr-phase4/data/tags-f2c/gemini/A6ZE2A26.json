@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: execution-based check on database instances; AUTHOR: human — compare a model's first SQL answer to a human-authored ground-truth query"
+    }
+  ]
+}

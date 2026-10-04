@@ -1,0 +1,8 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "Deterministic rule-based static analysers — CodeQL (security-and-quality query suites), Bandit (73 Python security rules), and ESLint security plugins — compute pass/fail CWE verdicts on the code (no model judges the verdict). RQ1/RQ2 use them only as a measuring instrument over a mined corpus (would not fire alone), but RQ3 runs an analyze→fix→re-analyze loop: the analysers' warning messages are fed back to Copilot Chat and the paper measures the resulting fix rate (enhanced-prompt 55.5% vs basic 31.8% vs /fix 19.3%). Feeding the tool's findings into a model and measuring the change is use, not mere measurement — mixed use fires."
+  },
+  "flags": []
+}

@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"rules-based-checks-v3","issue":"TESTS: automated tests, in-house user testing, and canary tests; AUTHOR: unclear — diffs include a test plan listing build/lint/test commands executed by the diff author, but the paper does not identify who authored the tests."}]}

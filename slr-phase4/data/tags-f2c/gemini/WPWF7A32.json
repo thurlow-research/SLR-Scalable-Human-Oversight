@@ -1,0 +1,15 @@
+{
+  "themes": [
+    "rules-based-checks-v3"
+  ],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "The proposed DevLicOps framework uses SCA tools like SCANOSS, FOSSA, and Black Duck to automatically scan code for open-source license compliance."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: automated tests; AUTHOR: unclear — \"Once the code passes automated tests, it can be merged into the main branch\""
+    }
+  ]
+}

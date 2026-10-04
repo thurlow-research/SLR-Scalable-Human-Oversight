@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "Undecidable: The framework mentions identifying 'syntax errors and policy violations' and gives 'exact static analysis queries' as an example of an agent's tool trace, but it is unclear if a deterministic, non-AI evaluator is explicitly used to compute the verdict."
+    },
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: test results; AUTHOR: unclear — The Summary Generation Agent synthesizes behavioral evidence to define potential architectural regressions and test results."
+    }
+  ]
+}

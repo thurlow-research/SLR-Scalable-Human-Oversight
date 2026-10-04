@@ -1,0 +1,13 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "The coded constraint verifier checks runtime traces using generic architectural rules and formal FCL temporal constraints, validating interface/execution correctness, ensemble assignments, and multi-step functional behavior; violations are fed back to the LLM for repair."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: multiple execution tests over varied initial states and random seeds; AUTHOR: human — the domain expert provides the test set, and candidate adaptation managers must pass all checks across that suite."
+    }
+  ]
+}

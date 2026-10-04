@@ -1,0 +1,8 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "SCA license-compliance scanners (SCANOSS, FOSSA, Black Duck) are embedded in the CI/CD pipeline at the 'code push' stage and scan ACA-generated code against predefined lists of acceptable/unacceptable OSS licenses (general policy rules, e.g. flag/block GPL or AGPL matches, report copy percentages and risk levels per company policy). The pass/flag/block verdict is computed by the scanner and automated scripts — deterministic, non-AI policy-rule checking — which hard-blocks non-compliant pushes. This is prescribed as an integral validation step inside the paper's DevLicOps process (not used as the study's measuring instrument), so the theme fires on the paper's specified design (§157 design-only carries status; §158 enforcement the AI cannot route around)."
+  },
+  "flags": []
+}

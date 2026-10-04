@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "WITHHELD (undecidable → silence): this is a qualitative study of developer practice (13 field observations + 99-respondent survey), not a code-generation/validation system the authors built. The only deterministic rule-based tool that appears is a LINTER, cited once as participant P13's verification strategy ('Reviewed output via linter feedback and test execution', Table 2; 'reviewing via linter feedback', Sec 3.2). The paper neither operates a linter inside a system/loop nor measures the effect of linting — it only observes that a subject used one in their own workflow. §104/§115 use-vs-measurement bar not met, so theme does not fire. Flagging because a vendor could over-fire on the P13 linter."
+    },
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: test execution / unit tests / TDD appear prominently as a REPORTED developer validation practice, not as the paper's own pipeline (writing tests rated 19:2 suitable; P1/P4/P6/P12/P13 test systematically; P6 'has agents generate test cases for every agentic change'); AUTHOR: mixed/unclear — P6 = same-as-code/different-model (the agent writes tests for the agent-written code), other participants author/run tests themselves (human), and the survey aggregates across 99 respondents without stating authorship. Caveat: this is observational reportage, so the §4 'paper's system or process validates code with tests' gate is only loosely met; recording for the census regardless since test authorship data is present."
+    }
+  ]
+}

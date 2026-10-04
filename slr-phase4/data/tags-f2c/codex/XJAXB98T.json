@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"rules-based-checks-v3","issue":"TESTS: local project tests and test-coverage evidence for pull requests; AUTHOR: unclear — the paper reports requirements such as pasted local test logs and mentions AI-assisted changes with test coverage, but does not identify who authored the tests."}]}

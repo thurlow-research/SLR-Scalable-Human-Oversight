@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "UNDECIDABLE: The text is a methodology book that recommends using linters and static analyzers in the 'vibe coding' process, making it unclear if this constitutes a 'system or process' within the context of the theme."
+    },
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unit tests, integration tests, acceptance tests; AUTHOR: mixed — The book advocates humans writing tests (TDD) as well as having the AI assistant write tests for the code it generates."
+    }
+  ]
+}

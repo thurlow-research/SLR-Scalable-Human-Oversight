@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"rules-based-checks-v3","issue":"TESTS: benchmark test suites and ChatGPT-generated test reports/cases; AUTHOR: mixed — human-provided dataset tests establish correctness for model-generated/repaired code, while the same ChatGPT that produces the code also generates test reports and cases for self-verification."}]}

@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: Fail-to-Pass (F2P) reproduction tests — each sampled patch is kept only if 'the failing test from the bug report now passes after applying the patch' (§4.1); pass@k is also the baseline execution signal. AUTHOR: human — the failing/reproduction tests are pre-existing developer tests in Google's monorepo attached to each sanitizer bug report, not authored by the APR agent that generates the patches; the paper does not explicitly state authorship but the tests predate and are independent of the model-generated code."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "themes": [
+    "rules-based-checks-v3"
+  ],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "Soufflé (a Datalog engine) is used as a formal verifier to deterministically evaluate Datalog rules capturing program semantics and verification conditions to validate uninitialized variable errors and program equivalence."
+  },
+  "flags": []
+}

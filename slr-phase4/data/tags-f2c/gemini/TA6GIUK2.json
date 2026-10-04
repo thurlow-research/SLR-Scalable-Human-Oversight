@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: BDD scenarios via behave; AUTHOR: unclear — experiment was 'implemented by a Claude Code agent' but bugs were 'planted by someone who already knew where they were'"
+    }
+  ]
+}

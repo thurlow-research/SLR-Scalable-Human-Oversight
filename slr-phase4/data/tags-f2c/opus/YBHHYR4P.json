@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: ad-hoc correctness tests written and run by individual human participants to check their solutions (e.g. P1008 wrote tests over the AI's ECDSA code; P1045's correctness tests failed to catch a buffer overflow / int overflow in the AI's C code); AUTHOR: human — in the experiment group participants (humans) tested AI-generated code, while control-group participants wrote both code and tests (same-as-code). Informal participant behavior, not a systematic test suite; the study's formal security/correctness verdict was manual expert coding by two raters, not tests."
+    }
+  ]
+}

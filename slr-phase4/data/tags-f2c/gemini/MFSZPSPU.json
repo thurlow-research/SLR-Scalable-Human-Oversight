@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: bug reproduction tests; AUTHOR: human — 'verify the F2P behavior of each patch by checking if the failing test from the bug report now passes after applying the patch'"
+    }
+  ]
+}

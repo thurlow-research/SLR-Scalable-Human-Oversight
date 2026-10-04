@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unit, integration, and end-to-end tests; AUTHOR: same-as-code — \"In one of our prototype systems, the VC tools assistantgenerated test suite for an authentication workflow passed consistently\""
+    }
+  ]
+}

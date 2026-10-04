@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: benchmark bug-revealing and regression test suites; AUTHOR: human — AutoSD runs existing human-authored HumanEval/Defects4J/BugsInPy tests to validate model-generated patches; hypothesis verdicts are judged by the LLM."
+    }
+  ]
+}

@@ -8378,3 +8378,41 @@ qualify.
 **both** tags, so `-v2`'s superset property holds. Rejections are written where a panel proposal
 existed: Takerngsaksiri (original 1/3), Kang (both 1/3), Mitropoulos (`-v2` 1/3).
 
+## 159. F2 review Q9 — `survey-input-v2` definition KEPT (three conjunctive tests; no centrality); no on all five (2026-10-04)
+
+**The arbiter considered and declined both changes.** One was a centrality test (*"is the survey the
+central point, or a mechanism to evaluate something else?"*), now the **third** time it has been raised
+(§121b, §145a). The other was widening test 1 to tallied structured interviews in mixed-methods
+designs. **The three conjunctive tests stand:** instrument (§116a), elicitation (§121b), reported
+finding (§145a). The arbiter's own example, *"a survey to check whether the prototype worked"*, is
+already excluded by the elicitation test (performance, not preference; cf. HULA).
+
+| Paper | Fails | Note |
+|---|---|---|
+| Sudarsan `UW2R6BBJ` | 1, 2 | Experts rate the authors' framework. Correctly **`expert-validated`** (human, and panel 3/3) |
+| Wang `CTGGMIX9` | 1, 2 | "Anonymous surveys" reported as themes; acceptance of its own tool |
+| Sun `V4IRKSFI` | 1 or 2 | The N=137 survey measures effectiveness. The preferences (feature requests, 11/12) come from the 12 interviews. No single instrument passes both |
+| Kim `RPHK78A9` | 1, 2 | Other organisations' surveys, cited secondhand; satisfaction |
+| Karuppuchamy `8MXATG38` | 1 | The arbiter's earlier **rejection of `method-self-report`** (one evaluation event, one method) already ruled the "survey feedback" part of the single field deployment, not a separate survey instrument. **Its *"∼95% affirmed the continued necessity of human code review"* remains a quotable result.** |
+
+No model proposed the tag on any of the five, so **nothing is written**.
+
+### 156e. F2c run — 216/216 valid; a runner extraction bug found and fixed (2026-10-04)
+
+**`-v3` fires (≥2/3) on 13 of 72 papers**, compared with 8 for `-v2` in F2. The widening comes from
+mechanism-level reading: Sistla's Soufflé verifier, Mitchell's compile-time checks, Sharma's licence
+scanners, and design or position papers *about* rule-based checking (a theme, so §149b and §157 apply).
+**Dropped relative to `-v2`: Lipsanen and Zietsman** (tests only, which is the intended narrowing).
+
+**Runner bug (fixed in `run_f2_panel.sh`).** The JSON extractor matched greedily from the first `{` to
+the last `}`. When the prose before the JSON contained a brace (Wang `CTGGMIX9`: the paper's
+*"{M1…Mn}"* notation), the span did not parse and the runner silently wrote an **empty** file. It now
+scans every `{` and keeps the largest span that decodes to an object. **Opus on Wang was recovered from
+the original raw output** (verdict: no fire). A diagnostic re-run gave the same verdict, and the meta
+record says so. **All F2/F2b/F2c outputs were scanned: no other empty files.** When the old regex did
+yield output, it was a complete parsed object, so no silent mis-extraction is possible.
+
+**Test-authorship census (§156b data):** 39 papers have test-based validation flagged by at least one
+vendor. Of the 28 with a label agreed by ≥2 vendors: **human-authored 11 · same-as-code 5 · mixed 5 ·
+unclear 7.**
+

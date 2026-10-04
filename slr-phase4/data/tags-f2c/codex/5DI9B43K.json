@@ -1,0 +1,1 @@
+{"themes":["rules-based-checks-v3"],"facets":[],"rationales":{"rules-based-checks-v3":"Soufflé deterministically evaluates Datalog facts and inference rules against task-specific verification conditions, validating whether an LLM agent’s reasoning about uninitialized-variable errors and program equivalence is logically substantiated."},"flags":[]}

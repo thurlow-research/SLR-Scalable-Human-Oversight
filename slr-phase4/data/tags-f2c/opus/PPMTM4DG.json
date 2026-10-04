@@ -1,0 +1,9 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    { "slug": "rules-based-checks-v3",
+      "issue": "TESTS: benchmark test suites bundled with the datasets — correctness of ChatGPT's generated/repaired code judged by pass/fail against provided test cases (code generation: MBXP & HumanEval-X; program repair: QuixBugs-Python/Java & HumanEval-JavaR; repair also human-adjudicated for overfitting); AUTHOR: human — tests are dataset-provided (HumanEval-X 'human-crafted', HumanEval-JavaR 'manually created by Jiang et al.'), code under test is ChatGPT-generated" }
+  ]
+}

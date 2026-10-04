@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "UNDECIDABLE: The paper is an observational study of human developers using agents. One participant (P13) used 'linter feedback' to review code manually. It is unclear if this manual use of a linter qualifies as a tool validating code 'within the paper's system or process'."
+    },
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: manual testing and automated test cases; AUTHOR: mixed — P6 had agents generate test cases for every agentic change, S31 had AI sketch tests for humans to refine, and others manually tested code."
+    }
+  ]
+}

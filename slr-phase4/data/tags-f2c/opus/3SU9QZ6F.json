@@ -1,0 +1,8 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "Tool: AIRA, a parser-backed deterministic static analysis engine (Python AST-based; JS/TS/JSX via esprima with lexical fallback), with LLM augmentation explicitly optional/non-authoritative ('the primary scanner is parser-backed deterministic analysis — not LLM-assisted classification'). Rules: 15 checks encoding general code properties about failure-truthfulness that hold across inputs — e.g. success returned after a critical failure (C01), broad exception suppression (C03), distributed fallback weakening guarantees (C04), bypass/override paths (C05), confidence misrepresentation (C13) — scored by coded severity heuristics (HIGH/MEDIUM/LOW), not by a model's judgment. Validates: whether code honestly represents its internal success/failure state (fail-closed behavior) for governance/safety-critical systems. AIRA is the paper's contributed, released system for validating code (open-sourced CLI + web scanner), so it is use-within-a-system, not a third-party analyser serving only as the study's measuring instrument."
+  },
+  "flags": []
+}

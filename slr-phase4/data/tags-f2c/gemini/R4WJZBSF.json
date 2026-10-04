@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "UNDECIDABLE: The framework computes a Plagiarism Risk Score using a deterministic cosine similarity threshold (> 0.8) on AI-generated CodeBERT embeddings, and a Bias Propagation Index checking against a dictionary of terms (described as BERT semantic similarity but implemented in the code snippet as exact string matching). It is unclear if applying deterministic thresholds/dictionary checks to AI model embeddings and outputs counts as a deterministic, non-AI rules-based check."
+    }
+  ]
+}

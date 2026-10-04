@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: adversarial robustness tests; AUTHOR: unclear — evaluated against 100 adversarial test scenarios using FGSM/PGD"
+    }
+  ]
+}

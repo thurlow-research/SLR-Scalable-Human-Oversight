@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "Undecidable: The system uses a 'deviation detector' to compare an agent's 'stated intent' (derived from reasoning traces) against 'machine-readable' architectural seeds. It is unclear if this comparison is performed by a deterministic rule-based engine or an AI model judging the intent."
+    }
+  ]
+}

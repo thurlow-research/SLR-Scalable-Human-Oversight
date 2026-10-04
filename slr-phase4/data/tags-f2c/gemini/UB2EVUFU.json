@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unit tests, CI tests, benchmark suites; AUTHOR: mixed — workers add test cases ('test cases added' tracked in progress metrics), plus human-provided benchmarks (Polybench, TPC-H, ProjDevBench OJ)"
+    }
+  ]
+}

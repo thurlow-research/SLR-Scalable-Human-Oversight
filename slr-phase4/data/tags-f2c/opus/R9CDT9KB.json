@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "UNDECIDABLE/BOUNDARY (resolved to NOT-FIRE, flagged for arbiter visibility). The paper's own proposed SYSTEM is entirely LLM-based: all three pipeline stages query GPT-4/Claude/Gemini, and verdicts come from confidence-weighted voting over LLM outputs. The only deterministic code is (a) the trust-score formula τ=0.4·θ1+0.3·θ2+0.3·θ3 and (b) threshold rules mapping that trust score to CI/CD actions (BLOCK/REQUIRE REVIEW/WARN/APPROVE) — but that is confidence-based decision routing (deterministic orchestration, §3 'Also not this theme'), not checking code against general rules/properties. Genuine rule-based SAST tools ARE present and central — Bandit (AST pattern rules) and Semgrep (semantic pattern rules) in §VI — but ONLY as external comparison baselines: the paper runs them on a 233-example subset to report their detection rates (62.7% / 47.6%) against the LLM's 97.4%. They are not components of the proposed system, and their findings are never fed into any loop. Under §104/§115 this is the SAST-as-measuring-instrument/baseline case ('the oracle that scores' / 'count defects'), which does NOT fire; there is no detector→warning→repair loop and no measured effect-of-use. The §VIII 'deploy Bandit+Semgrep as blocking gates in parallel' is a future recommendation, not built or measured. Flagging because deterministic rule-based checkers are prominent in the paper even though they stay out of the proposed system."
+    }
+  ]
+}

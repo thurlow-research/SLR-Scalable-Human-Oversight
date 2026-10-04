@@ -1,0 +1,13 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "Constraint verifier evaluates FCL (Functional Constraints Logic) first-order temporal-logic formulas plus generic architectural constraints over the AM's execution traces — general temporal/safety properties (e.g. 'Dragon eventually dead', '>=1 attack within first 15 steps', 'farmers stay in Village') and structural invariants (importable/no exceptions, valid ensemble names, exactly one ensemble per villager). Verdicts are computed algorithmically (windowed counting operator, witness/counterexample construction), not LLM-judged; the LLM only generates the adaptation manager and consumes the violation report. The verifier runs inside the vibe-coding feedback loop to accept/repair the code, so it is system use, not a measuring instrument. General-property runtime monitoring = rules-based check (RULES side of the boundary), not example-based tests."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: simulation/scenario runs over a test suite of varied initial states + random seeds, with a win/loss outcome-metric baseline variant; AUTHOR: human - 'The domain expert can state desired behavior as constraints ... and provide a test set' and 'executing multiple test runs from varied initial states and random seeds', while the adaptation-manager code is LLM-generated (seeds are randomized)."
+    }
+  ]
+}

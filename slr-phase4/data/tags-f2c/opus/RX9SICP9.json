@@ -1,0 +1,13 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "IACDM's VA-automatic verification agents are 'unit tests, linters, compilers' (§8.2); formal gate G5 (Table 7) is 'Compile + lint' giving a binary VA-automatic verdict on 'Syntax, types, style.' Linters + compilers/type-checkers are deterministic non-AI evaluators checking model-generated code against general syntax/type/style rules, used as a validation gate within the methodology's own process (not as a measuring instrument). The LLM-run adversarial 'lens' critique is separate AI review and does not fire this theme. Design-only methodology paper (no empirical implementation), but the lint/compile gate is a prescribed step of the process it defines."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unit/functional test suite plus mandatory manual testing (Phase 6, gate G6 'Test suite + manual', '100% tests passing'); AUTHOR: unclear — methodology prescribes testing against interfaces but never states whether the GA that wrote the code, a different model, or a human authors the automated tests"
+    }
+  ]
+}

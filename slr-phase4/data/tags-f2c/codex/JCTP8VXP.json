@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"rules-based-checks-v3","issue":"TESTS: executable unit tests for testable rules; AUTHOR: same-as-code — the coding agent generates the implementation and the rule-specific unit tests, runs them, and submits their results as evidence."}]}

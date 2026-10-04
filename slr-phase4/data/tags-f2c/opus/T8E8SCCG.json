@@ -1,0 +1,8 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "VibeGuard is a pre-publish security gate built from five deterministic scanners — ArtifactScanner (file-tree pattern/size checks), ConfigScanner (minimum-security invariants on package.json/.npmignore/Dockerfile), SourceMapScanner (parses .map JSON for a populated sourcesContent field and residual sourceMappingURL), SecretScanner (credential regexes with placeholder filtering), and DependencyScanner (unpinned versions, missing lockfiles, install hooks, insecure URLs). A coded PolicyEngine aggregates the Finding objects and computes the pass/fail verdict from severity-count thresholds plus hard-block rules (e.g. block on any source map containing sourcesContent). The rules are general security properties over the artifact — code, not an LLM, computes every verdict. VibeGuard is the paper's own system and the evaluation measures its detection/gate performance, so this is use, not mere instrument measurement."
+  },
+  "flags": []
+}

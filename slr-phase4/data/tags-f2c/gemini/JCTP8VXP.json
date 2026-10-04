@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unit tests; AUTHOR: same-as-code — Codex generates a backfill script for all existing LogEntry records, runs a unit test to verify it, and submits proof"
+    }
+  ]
+}

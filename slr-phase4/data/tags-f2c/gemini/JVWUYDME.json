@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [],
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "Undecidable: The paper proposes evaluating AI agent action proposals ('Action Previews' / payloads) against policy constraints using a deterministic engine like Open Policy Agent. It is unclear if checking these transaction payloads qualifies as validating 'code' under the theme definition."
+    }
+  ]
+}

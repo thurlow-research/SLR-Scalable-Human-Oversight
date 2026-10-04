@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: benchmark tests and spec-constrained augmented tests; AUTHOR: mixed — human reference tests plus GPT-4o augmented tests"
+    }
+  ]
+}

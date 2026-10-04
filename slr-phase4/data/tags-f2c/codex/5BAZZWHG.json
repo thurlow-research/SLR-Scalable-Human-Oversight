@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"rules-based-checks-v3","issue":"TESTS: execution-based acceptance check on the provided Excel-file task; AUTHOR: human — researchers supplied the fixed task and working-directory inputs, while Cline generated and ran the code and participants inspected the resulting workbook."}]}

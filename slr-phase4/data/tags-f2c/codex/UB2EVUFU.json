@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"rules-based-checks-v3","issue":"TESTS: unit, CI, online-judge, benchmark, and regression tests; AUTHOR: mixed — agents add and run project tests, while validation also uses human/external OJ and benchmark suites such as PolyBench and TPC-H."}]}

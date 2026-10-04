@@ -48,13 +48,18 @@ meta () {
     "$2" "$3" "$4" "$RUN" "$INSTR" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "${1%.json}.meta.json"
 }
 
+# Scan every '{' and keep the LARGEST span that decodes to a JSON object. The earlier greedy
+# first-'{'-to-last-'}' regex failed whenever prose before the JSON contained a brace (e.g. a paper's
+# "{M1…Mn}" notation), silently writing an empty file (F2c, 2026-10-04, opus/CTGGMIX9).
 extract_json () { python3 -c "
-import sys,re,json
-s=sys.stdin.read()
-cands=re.findall(r'\{.*\}', s, re.DOTALL)
-for c in sorted(cands,key=len,reverse=True):
-    try: json.loads(c); print(c); break
-    except: continue
+import sys,json
+s=sys.stdin.read(); d=json.JSONDecoder(); best=None
+for i,ch in enumerate(s):
+    if ch!='{': continue
+    try: o,end=d.raw_decode(s,i)
+    except ValueError: continue
+    if isinstance(o,dict) and (best is None or end-i>len(best)): best=s[i:end]
+if best: print(best)
 "; }
 
 codex_one () {

@@ -1,0 +1,13 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "RetailCo runs deterministic SAST, software-composition analysis (SCA), and license scanners on AI-generated code; these enforce vulnerability, dependency, and licensing rules, with high-risk findings blocking merge."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unit and integration tests; AUTHOR: same-as-code — the LLM assistant generated cross-service code changes and suggested tests that validated end-to-end create, list, search, and index flows."
+    }
+  ]
+}

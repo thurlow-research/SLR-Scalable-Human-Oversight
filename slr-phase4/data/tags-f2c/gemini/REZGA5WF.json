@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unspecified; AUTHOR: same-as-code — The agent can \"execute tests, and iteratively debug code\" while developers rely on it for both \"feature implementation\" and \"test generation\""
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "UNDECIDABLE (half-fit): position/vision paper, no implemented system and no evaluation/measurement. It centrally PROPOSES deterministic rule-based checks as validation components — an Auditor enforcing a feature-parity contract (12 vs 13 features) that blocks the A/B analysis before inference (§4.2); 'cheap discriminating checks (type/schema checks, ... static analyses)' (§3.2.2); Ψ 'implemented via static analysis (e.g., AST) [28], dynamic invariant detection [8]' i.e. Daikon-style invariants (§3.2.1); round-trip drift measured and threshold-flagged (§3.2.2). These are genuinely rule-based deterministic (parity contract, type/schema, AST, invariant detection) — NOT LLM-judged. BUT nothing is built, run, or measured: the §104/§115 'use within the paper's system or process, or measure the effect of using it' condition is not met because there is no realized system and no measurement — the checks exist only as proposed architecture and in two explicitly 'illustrative scenarios' (§4). Flagging instead of guessing per §2/§0."
+    },
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unit tests cited as discriminating checks (§3.2.2) and 'test results' as evidence E feeding Ψ (§3.1.1, §3.2.1), plus 'predicted test outcomes' in review (§3.3.2) and 'passing tests' as a governance-task baseline (§5); AUTHOR: unclear — position paper describes no experiment and never states who authors the tests (code and tests are both hypothetical in the illustrative case studies)."
+    }
+  ]
+}

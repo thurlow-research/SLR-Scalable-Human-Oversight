@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: VC-tool-generated unit/integration/end-to-end tests run on the authors' own vibe-coded MVPs (§2 'validate changes through automatic testing of the generated code'; §3.5 Cursor 'can generate unit, integration, and end-to-end tests'); AUTHOR: same-as-code — the same VC assistant that generated the code generated its test suite, §3.5 'the VC tools assistant-generated test suite ... relied entirely on mocked responses created by the model itself'"
+    }
+  ]
+}
