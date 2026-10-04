@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design — the paper explicitly presents a visionary, proposed framework rather than an implemented or evaluated system; its specified fixed lifecycle and bounded specialized-agent dispatch would otherwise suggest forms (a) and (c)"
+    },
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human outer loop — PR authors and reviewers initiate stages, select or approve outputs, request agent actions, and make the approval, rejection, revision, and merge decisions; the inner automated portions would otherwise suggest forms (a) and (c)"
+    }
+  ]
+}

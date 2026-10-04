@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (b) — Enforcement. The contributed system is the Fix-guided Verification Filter (§7). It is code, not a model, that holds the final decision: it is 'applied only when the judge returns NO and provides a fix', executes both the original c and the model's proposed fix ĉ against benchmark tests T plus GPT-4o-generated augmented tests T̃, and 'the final verdict is determined by four common outcomes'. On Case 1 (equivalent) and Case 3 (over-repair) the code 'flip[s] the verdict to YES' — overturning the judge model's own NO on executable evidence, with no model choosing to honour the override; Case 2 drives a bounded K=2 re-judge; Case 4 keeps the verdict. The consequence of each test outcome is fixed in code. Preconditions: (1) the orchestrator is not AI — the filter's four-case logic and test execution are deterministic; (2) model steps exist — the judge produces verdict+fix and GPT-4o produces augmented tests; (3) top level — the filter code, not any model, decides the final verdict. Matches the settled positive in the instrument (form (b) alone)."
+  },
+  "flags": []
+}

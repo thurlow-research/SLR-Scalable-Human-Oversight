@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [
+    "deterministic-orchestration-v2"
+  ],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (c) — The top-level Python evaluation pipeline calls models as bounded workers (one to generate SQL, and a committee of others to return binary correctness judgments). Code then parses these votes and applies a deterministic routing rule (unanimous AND threshold) to decide whether the output is accepted."
+  },
+  "flags": []
+}

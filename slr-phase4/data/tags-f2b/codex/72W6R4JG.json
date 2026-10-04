@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "forms (a), (b), and (c) — the implemented framework deterministically constructs a prompt, calls the LLM to generate or revise an adaptation manager, executes it across the test suite, and runs constraint verification. Code accepts a candidate only when all checks pass; otherwise it appends the violation report and triggers another bounded repair iteration, aborting after 10 unsuccessful iterations. Thus code fixes the sequence and consequences and dispatches the LLM only for bounded generation/repair tasks."
+  },
+  "flags": []
+}

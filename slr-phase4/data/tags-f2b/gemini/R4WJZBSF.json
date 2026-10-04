@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Unclear if a linear metric calculation script (calling CodeBERT/BERT to compute evaluation scores) constitutes 'orchestration', as it does not route workflow actions, manage state transitions, or trigger consequences beyond visualization."
+    }
+  ]
+}

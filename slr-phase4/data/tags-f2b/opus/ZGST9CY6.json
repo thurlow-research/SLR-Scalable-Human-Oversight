@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design — the contributed system is the four end-to-end oversight 'patterns' plus the layered-agency framework and mechanism catalogue, which the paper states are conceptual/design-oriented, never implemented or run (§8 'framework remains conceptual and design-oriented'; §4 'evaluation is interpretive rather than experimental'; 'No datasets were generated or analysed'). The 12 'known uses' are third-party systems analyzed as subjects, not steps the authors dispatch. If built, the patterns would most resemble form (c) dispatch with (b) enforcement elements — top-level code assembling explanation packs and routing model outputs through a rules-checker divergence alert, calibrated-confidence abstain, and risk-weighted sampling — but it is specified, not built."
+    },
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human outer loop — even as specified, each pattern's outermost progression is advanced by a human reviewer (approve / veto / substitute, 'final decision authority retained'; abstain routes uncertain cases to human judgement). The code enforces gates/routing (divergence detection, abstain thresholds, sampling) but the top-level decision crossing is human, not code. Inner enforcement form would be (b)."
+    }
+  ]
+}

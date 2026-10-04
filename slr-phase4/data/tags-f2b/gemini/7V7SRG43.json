@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [
+    "deterministic-orchestration-v2"
+  ],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a) and form (b) — the system's top-level flow is fixed in code as a waterfall model with four sequential phases (form a), and within phases, conversations are governed by a code-enforced retry loop that iterates until an LLM QA-checker approves or a maximum dialogue turn limit is reached (form b)"
+  },
+  "flags": []
+}

@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a) + form (b) + form (c) — code fixes the four-stage sequence of Context Preparation, RuleChecker, ReviewFilter, and Comment Aggregation; RuleChecker and ReviewFilter are bounded LLM workers rather than controllers; and the harness automatically applies ReviewFilter's yes/no result to retain or reject each generated comment before deterministic aggregation."
+  },
+  "flags": []
+}

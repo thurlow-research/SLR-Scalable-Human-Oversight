@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "The system uses Force Sampling Beam Search (FSBS) at inference: a fixed code loop that iteratively calls a policy model to generate a single critique highlight, calls a reward model to score it, and prunes the beam. This half-fits form (c) dispatch, but it is fundamentally a search/decoding algorithm rather than a task-level workflow orchestrator."
+    }
+  ]
+}

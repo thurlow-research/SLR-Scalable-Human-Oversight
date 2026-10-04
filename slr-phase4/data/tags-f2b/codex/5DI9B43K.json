@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "forms (a), (b), and (c) — the evaluated system follows a code-held Analyzer → Formalizer → Soufflé Verifier pipeline; code dispatches LLMs for bounded analysis and predicate-generation tasks, iterates formalization under a fixed maximum of five calls, and then runs the deterministic verifier. The verifier's result can reject or overturn the analyzer's equivalence judgment without a model choosing whether to honor it."
+  },
+  "flags": []
+}

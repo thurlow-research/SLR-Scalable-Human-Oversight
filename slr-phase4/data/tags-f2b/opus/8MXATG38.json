@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Census pattern 2 (human-driven outer loop). The contributed system is human-in-the-loop by explicit design: all code changes are developer-initiated/approved (Case Study 1 is purely advisory), remediation 'always requires human confirmation,' and every triage disposition is human-gated ('no tickets were auto-closed without explicit human approval'; maintainers review/CI patches before merge). The only code-orchestrated component is the bug-triage ENRICHMENT pipeline (parse→classify→owner-route→dedupe→propose), which dispatches models for bounded jobs and routes their outputs in code — inner form (c) — but it feeds human decisions rather than advancing the outer flow itself. Also undecidable whether this triage sub-service rises to 'the contributed system' (code top-level flow) or is an advisory enrichment feeder inside a human-driven SDLC blueprint; thinly described and partly adopted from prior work [6]. Built/deployed, so NOT census pattern 1."
+    }
+  ]
+}

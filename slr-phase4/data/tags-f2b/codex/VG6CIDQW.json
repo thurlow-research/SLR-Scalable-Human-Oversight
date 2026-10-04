@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"deterministic-orchestration-v2","issue":"human outer loop — form (c): Lumen’s code dispatches models for bounded file-summary and completion tasks, but the developer advances the outermost flow by double-copying, selecting context, and submitting the query."}]}

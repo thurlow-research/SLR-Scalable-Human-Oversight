@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "CENSUS pattern 1 — UNBUILT DESIGN. The document is explicitly a 'reference architecture' / 'Technical White Paper' (Thirty Seven Inc.) that presents VARI's Adversarial Verification System in present-tense design language but reports NO implementation, NO run, and NO evaluation of VARI itself (no results, no deployment; the only case study, Mobley v. Workday, is about a third-party system, not VARI). Patent-provisional references and named models (Claude Sonnet 4 ×2, GPT-5.2) are design specificity, not evidence of a built/evaluated system; §6 'Implementation Considerations' is entirely prospective. Per §4, do not emit — flag and count. WHICH FORM IT WOULD BE if built: (a)+(b)+(c). (a) fixed Advocate→Adversary→Arbitrator sequence, no step skippable; (b) code-enforced consequences — automatic escalation on bias flag / sub-threshold confidence / irreconcilable positions / insufficient data, 'automatic and cannot be overridden by configuration', plus a UI gate that enables the decision only after all three agent outputs are viewed; (c) three LLMs dispatched as bounded workers (advocacy, four-dimension adversarial check, synthesis) with code sequencing/routing. Orchestrator reads as code (threshold/rule-based escalation; no manager/planner LLM decides the sequence), but the orchestration layer is specified, not implemented — which is itself the reason this is pattern 1."
+    },
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "CENSUS pattern 2 (secondary, for counting against F2 Q8) — HUMAN terminal-decision gate. VARI's core principle is 'AI does not decide. AI informs. Human decides… The system cannot produce a final decision.' The automated three-agent pipeline yields a documented recommendation, then a human makes the terminal employment decision (Advance/Reject/Request More Information) by clicking after reviewing the debate. Note: the agent PHASES run automatically (not human-advanced), so this is a human terminal-decision gate on code-sequenced output rather than a human manually driving the phases — a weaker fit for pattern 2 than a true human-driven outer loop. Flagged for the census regardless; moot for emission since pattern 1 (unbuilt) already blocks it."
+    }
+  ]
+}

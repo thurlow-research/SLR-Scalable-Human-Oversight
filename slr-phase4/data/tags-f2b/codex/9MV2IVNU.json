@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design — the paper specifies but does not implement or run an intervention architecture; enforced risk-triggered escalation and execution-boundary controls would be form (b), with code routing model outputs to bounded human review."
+    },
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human outer loop — in the proposed workflow, a reviewer advances the outermost process by approving, overriding, deferring, or escalating before execution; the inner enforced gate would be form (b)."
+    }
+  ]
+}

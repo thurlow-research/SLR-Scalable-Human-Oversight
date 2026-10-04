@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Undecidable / out-of-target boundary. RPHK78A9 is a practitioner trade book on vibe-coding *methodology*, not a paper contributing an evaluated system. Its entire thesis is a human-as-'head chef' outer loop directing fallible AI, plus autonomous coding agents that 'autonomously generate, refine, and manage code' and decide their own next steps — the explicit inverse of this facet (precondition 1). There is no architecturally-evaluated contributed system to judge, so per 'judge the CONTRIBUTED SYSTEM' I do not emit. The one structure that half-fits is a war-story tool, Gene's 'writer's workbench': code generates N LLM draft-candidates in parallel (with per-model multipliers) and then runs a code-driven tournament/one-pass ranking that calls LLMs as bounded workers and picks the winner — which structurally resembles form (c) dispatch, and it was genuinely built and run (71M tokens). But it is an incidental personal illustration, never presented or evaluated as the book's contribution. Whether a methodology book's anecdotal, code-orchestrated LLM-dispatch tool should fire this facet is the call I am leaving to the arbiter rather than guessing."
+    }
+  ]
+}

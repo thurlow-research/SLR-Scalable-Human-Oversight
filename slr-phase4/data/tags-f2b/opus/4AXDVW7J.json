@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Census pattern 1 (unbuilt design): the paper is a design-science rapid-review roadmap whose contribution is knowledge artifacts — a reference capability model (G1–G4), reporting kit (K1–K9), EPE control-family taxonomy, and Agenda-2030 cards. §7 states it 'does not ship an executable artifact'; no system is built or run. If the EPE reference capability model were implemented as described, its code-controlled interaction-time layer (bind context → dispatch model for a bounded SE task → run verification passes → route via abstention/escalation thresholds; orchestration/tooling locus per Table 7) would be form (c) dispatch, with form (b) enforcement from code-fixed escalation/abstention rules. Flagging for count rather than emitting because it is a reference architecture with no implementation. Secondary note: the described outer loop is largely human-driven (reviewer acceptance, escalation hand-offs), which also touches census pattern 2."
+    }
+  ]
+}

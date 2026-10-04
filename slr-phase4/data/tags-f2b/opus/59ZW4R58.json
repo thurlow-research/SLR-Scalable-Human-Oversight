@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design — VIBE4M is explicitly a framework of 'processes, rules and guidelines, or policies' that are 'not automated yet' (§7.6); the paper defers an automated implementation to a future paper, and §7.4's validation is only 'proposed', never run. No contributed system is built or evaluated. If built, it would most plausibly be form (b) (CIW 'Maintainability Gates' — code-enforced thresholds that must be met before integration) combined with form (c) (dispatching AI for bounded jobs: documentation generation, explainability, doc coverage/consistency scoring). Secondary caveat: the ACIP as specified centers a human 'dual-review system where reviewers must explicitly confirm their understanding', so the outermost loop as described is human-driven (would also be a human-outer-loop flag if it were built)."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (c) + (a) — The contributed system is a code while-loop over a tree (Algorithm 1): `while T contains unresolved nodes do; v_t ← Depth-first traversal(T); P_t ← Interact(...); M ← UpdateContext; t←t+1; end while; D* ← GeneratePRD(T,M)`. Top-level code holds the process and dispatches models only for bounded jobs — InitializeTree (tree decomposition), per-node Interact (question generation), the tree-update step (a separate bounded call, run on o4-mini or GPT-5), and GeneratePRD — with the code itself deciding, via DFS traversal and the unresolved-nodes termination condition, which bounded call fires next and when the run ends. No model decides the outer sequence (form c). The DFS order and the loop are fixed in code so no step can be skipped; the harness advances the state t←t+1 (form a). Precondition 2 is met many times over (interaction/tree-update/PRD generation are all LLM calls: GPT-5, Claude, Gemini, o4-mini, Qwen3). Per the Lyu precedent, the tree-updater reshaping node content — like model-determined staffing — does not defeat the facet: the control flow (DFS traversal + while-loop) is code. In the primary evaluated configuration the 'user' is itself a deepseek-R1 simulator, so the entire outer loop is code dispatching model calls, with no human advancing the progression (not the human-outer-loop census case). The Fig. 8 waterfall / coding-agent routing is explicit future work and is excluded as unevaluated."
+  },
+  "flags": []
+}

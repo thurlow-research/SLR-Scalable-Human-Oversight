@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Boundary/undecidable — reading the method, the contributed artifact is a diff-risk-score (DRS) classifier and the empirical finding that change-aware, risk-aligned LLMs predict SEV-causing diffs best; the LLMs (and the logistic-regression / StarBERT baselines) are the SUBJECTS being evaluated, which §3's negatives exclude. The only code-controlled flow is the production gate: run the model on a diff, then apply a context-selected threshold (green/weekend/yellow/red) to block or allow it, with a code-mediated manager-escalation override. If anything fires, it is form (b) enforcement — code, not a model, enforces the gate's consequence (block/escalate) on the model's risk finding, at the top level, 'without a model choosing to honour it' — with a weak form (c) flavour (code calls the model as a bounded scorer and the threshold decides what the output triggers). I did NOT emit because thresholding a single classifier's probability is the universal, trivial way any ML classifier is deployed; there is no multi-step process to orchestrate (one scoring step, no sequencing, no routing to a 'next stage'), so treating it as orchestration would fire on essentially every 'classifier + threshold in production' paper — too broad, and against 'default to silence.' Flagging so the arbiter can rule whether a deterministic gate over a classifier score (vs. a multi-step model-dispatching pipeline) is in scope for the facet."
+    }
+  ]
+}

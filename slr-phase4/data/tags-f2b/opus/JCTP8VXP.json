@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Census pattern 2 (human outer loop + agent-invoked gate). Zoro is a plugin layered on top of an existing LLM coding agent; the outermost flow is advanced by (i) the coding agent — an LLM — which generates and executes the plan step by step and decides when to advance, and (ii) the human, who reviews the enriched plan, types 'execute the plan!', reviews evidence, and clicks 'Evolve Rules' to drive the Enrich→Enforce→Evolve phase transitions. The deterministic piece, zoro-cli, is a gate the agent invokes as a tool via ZORO.md (zoro update-step / zoro prove-rule) and could decline to call — the authors add a Supervisor Panel precisely as 'a safety net for cases where the agent still deviates despite zoro-cli constraints.' The inner enforcement is form (b) (CLI rejects step-completion when strict rules are unproven, forcing the agent back) with a form (a) sequencing component (cannot advance while the current step is incomplete), but that machinery sits INSIDE a model- and human-driven loop, not at the top level (precondition 3 fails). Flag, do not emit."
+    }
+  ]
+}

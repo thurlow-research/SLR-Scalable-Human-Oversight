@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design (census pattern 1). The contributed artifact is a conceptual governance/intervention architecture — Rubber-Stamp Risk + the Override/Escalate/Explain/Execution-Boundary controls, a KPI set, and a PDCA operating model. There is no implemented system and no reported study or run; §5 'use cases' are illustrative applications, not evaluations. Nothing is built or exercised, so the facet cannot fire on an evaluated configuration. Form it would be IF built: primarily (b) enforcement — escalation triggers and Execution Boundary Control are code-fixed gates that route/withhold the model's output before the irreversible action, with a model (the ML decision model) as the step being gated; secondarily (c)-flavored dispatch via risk-based routing. Also carries census pattern 2 (human-driven outer loop): the outermost progression is advanced by the human reviewer (override/approve/escalate at the execution boundary), which is the paper's entire thesis — the code enforces the gate but a human, not code, drives what happens next."
+    }
+  ]
+}

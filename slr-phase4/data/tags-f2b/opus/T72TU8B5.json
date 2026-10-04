@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Boundary / undecidable (flag-not-emit). Hedwig's outermost flow is a model-controlled autonomous coding agent (Sonnet 4.6) that decides what to read/plan/edit next — the inverse of this facet (precondition 1/3). The deterministic contribution is a three-tier approval cascade (CLI-enforced hard constraints + logistic-regression policy engine) that gates each proposed action into silent-approve / surface / human-check-in. That is a governance/veto layer bounding the action space and escalating, not top-level control of which steps run or in what order. It leans toward form (b) enforcement — hard constraints produce rejection 'independently of the model's reasoning' and are non-bypassable (model never routes around them) — but the enforcement sits INSIDE a model-controlled loop (precondition 3 excludes), and the phase handling is described as tracking/gating ('only allows actions appropriate to that stage'), not a Lyu-style code state machine that drives phase transitions. Judgment call: does a non-bypassable, CLI-enforced guardrail-plus-escalation layer over an otherwise autonomous agent count as code 'controlling the process', or merely bounding/checking it? I read it as bounding (the model still controls the process), so I do not emit — but surfacing for the arbiter because the non-bypassable enforcement is more structured than a clean negative."
+    }
+  ]
+}

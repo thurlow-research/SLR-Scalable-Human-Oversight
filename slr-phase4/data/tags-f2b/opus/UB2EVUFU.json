@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a) + form (b). (a) Sequencing: the non-AI orchestrator (JavaScript/Node.js — 'does not make software engineering decisions itself') drives a fixed three-phase state machine Strategy→Execution→Verification (Alg. 1); managers cannot skip a phase, the orchestrator parses their structured directives and 'drive[s] phase transitions' itself, transiting to Verification on a completion claim and to the next Strategy on pass. (b) Enforcement: Apollo returns a pass/fail verdict (model step), and code acts on it deterministically — Alg. 1 lines 6–9: 'if verdict ≠ Pass then budget ← budget/2' and loop 'until verdict = Pass or budget = 0', then marks the milestone failed and returns to Athena. The exponential-decay retry/escalation is fixed in code, with no model choosing whether to honour the fail. Manager discretion over staffing is intra-phase and does not touch the top-level control flow (cf. settled Lyu positive)."
+  },
+  "flags": []
+}

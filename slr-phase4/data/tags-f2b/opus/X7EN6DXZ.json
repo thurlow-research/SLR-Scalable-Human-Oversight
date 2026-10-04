@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human outer loop (census pattern 2); inner would be form (c). This paper is a measurement-and-exploitation study: its §3 exploratory pipeline (Fig 3: query-gen → detection extraction → analysis) is pure model-as-subject measurement — the 6 LLMs are the things being evaluated, not steps the authors' system dispatches — so it is a clean negative. The only candidate contributed system is the LLM-assisted iterative refinement ATTACK pipeline (§4.2, Fig 7), which IS built and run (17 CVEs, 100% success, $19.36), so it is not census pattern 1 (unbuilt). Its inner architecture reads as form (c) dispatch: a bounded K=10 loop that calls the attacker LLM for a bounded job (seed-generate PR metadata, then refine from the review file), runs the ACR against the artifact, and feeds the review result back to the LLM for repair until approval or t=10. HOWEVER, in the configuration the paper actually evaluates, the OUTERMOST progression is advanced by a human, not code: 'We manually classify the review outcome' into Approve/Unclear/Reject — and that manual classification is exactly what gates whether the loop stops or refines again — and 'We require manual approval for all tool uses' during each Claude Code review (an author approves file ops, git, web searches). The ACR being attacked (Claude Code) is also the subject under evaluation, not a step in the authors' own dispatched flow. Because the outermost control is human-advanced in the evaluated runs, precondition 3 (top-level control must be code) is not met; flagging per F2 question 8 rather than emitting."
+    }
+  ]
+}

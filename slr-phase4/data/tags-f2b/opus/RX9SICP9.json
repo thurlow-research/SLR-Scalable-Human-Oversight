@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human outer loop (census pattern 2). IACDM is a methodology, not a code-orchestrated system: its 8 phases (0–7) are advanced by the human operator, who approves every gate G0–G7 and owns the stopping criterion ('The stopping criterion belongs to the human operator'; operator 'approves gates, arbitrates trade-offs'). The paper explicitly states the GA/VA model operates 'at the level of process architecture: the separation is between human-in-the-loop design phases and discrete approval gates, not between two automated LLM agents. The contribution is organisational, not computational.' There is no top-level code advancing state — precondition 1/3 fails. Inner structure, if one abstracts the process, would be form (a) fixed phase sequencing 0–7 plus form (b) gate-rejection returning the artifact to the GA with VA feedback (Gk=rejected → GA(original_prompt+VA_feedback)); the only deterministic gates (G5 compile+lint, G6 test suite) are VA-automatic checks the human passes through, not an orchestrator. Flagged clear, not emitted, per §4."
+    }
+  ]
+}

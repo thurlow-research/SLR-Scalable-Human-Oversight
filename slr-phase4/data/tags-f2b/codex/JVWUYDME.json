@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design — the proposed MV-HIC control plane would implement form (b) by deterministically routing policy-check PASS outcomes to execution and FAIL outcomes to advisory/escalation, but the paper is conceptual, reports no implementation or system run, and states that a companion reference implementation is only planned"
+    }
+  ]
+}

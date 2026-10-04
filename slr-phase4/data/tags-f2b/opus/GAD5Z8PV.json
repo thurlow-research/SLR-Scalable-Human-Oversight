@@ -1,0 +1,8 @@
+{
+  "themes":  [],
+  "facets":  ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a), with (c) — Code (the Python runner over a static three-phase orchestration model) fixes which steps run and their order: Phase 1 independent analysis → Phase 2 cross-critique → Phase 3 arbitration, strictly sequenced ('static orchestration model with three fixed phases'; 'orchestrator with fixed prompts, which prevents early' convergence; 'This sequencing yields determinism at the workflow level'). No model decides what runs next; providers 'never communicate directly; all interaction flows through the orchestrator.' Also form (c): the orchestrator dispatches each LLM provider as a bounded worker (analyze / critique / arbitrate, one job per call), persists each output as a versioned artifact, and itself routes it to the next phase. Models are components, not controllers. All three preconditions met: orchestrator is non-AI code; every phase is performed by a model; the control sits at the outermost level of the contributed system."
+  },
+  "flags":   []
+}

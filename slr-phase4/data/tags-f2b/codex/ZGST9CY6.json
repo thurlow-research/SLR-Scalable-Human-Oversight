@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design — the proposed oversight architectures specify code-fixed sequencing, routing, thresholds, abstention, escalation, and circuit-breaker consequences around model-performed tasks, which would implicate forms (a), (b), and (c), but the paper explicitly describes the framework as conceptual and design-oriented, reports no implementation or execution of its four patterns, and reserves empirical testing and field deployment for future work"
+    }
+  ]
+}

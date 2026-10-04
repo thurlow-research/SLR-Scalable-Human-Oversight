@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human outer loop — inner form (c). RQ3 runs a scan→fix→re-scan sequence where a deterministic static analyser (CodeQL/Bandit/ESLint) produces warnings that are fed to a model (Copilot Chat) for repair, then the fix is re-verified by the analyser — the shape of form (c) dispatch (code loop calling a model as a bounded worker and feeding its own verification result back for repair). But the outermost progression is advanced entirely by humans: authors manually select snippets, paste the warning-enhanced prompts into the IDE chat, accept/reject each suggestion, and re-run the tools by hand. No orchestration code holds the process. RQ1/RQ2 are a manual + no-model-in-the-tool pipeline (precondition 2 fails there) and the code-generation models are the evaluated subjects, not dispatched steps. §5.2.1 only proposes an automated gated pipeline (unbuilt)."
+    }
+  ]
+}

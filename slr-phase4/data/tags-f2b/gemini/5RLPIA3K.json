@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design (reference architecture white paper) and human outer loop (human decides every time); would be form (a) sequencing and form (b) enforcement"
+    }
+  ]
+}

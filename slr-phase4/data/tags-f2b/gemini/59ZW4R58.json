@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design (form b): the paper proposes the VIBE4M framework with maintainability gates and documentation verification loops, but Section 7.6 explicitly states the framework is 'not automated yet' and lacks an implementation."
+    }
+  ]
+}

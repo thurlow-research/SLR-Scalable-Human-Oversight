@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a) + form (c) — the implemented Colab program fixes the outermost sequence in code: generate synthetic inputs, invoke CodeBERT for bounded embedding and similarity work, compute the remaining metrics, aggregate them into ERS, and visualize the results. Code advances every stage and dispatches the model as a bounded worker; no model decides which step runs next."
+  },
+  "flags": []
+}

@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human outer loop — the inner implementation/verification cycle is a test-gated repair loop (form (b) enforcement: failing acceptance tests trigger another code-generation iteration until pass; and form (c): generate→run tests→feed verification result back to the model for repair). But the OUTERMOST progression is advanced by a human: the developer selects/opens the next GitHub issue, reviews each plan, and opens a new issue after tests pass (§5.3, Fig. 2b). No top-level code orchestrator holds the process — phases are driven by manual issue management, so precondition 3 (top-level control is code, not human) is not met. Flag per F2 census question 8."
+    }
+  ]
+}

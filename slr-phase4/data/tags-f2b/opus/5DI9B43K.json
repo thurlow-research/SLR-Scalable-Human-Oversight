@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a) + (c) — The contributed system is a fixed code pipeline: MSAN (§4) runs agent -> fill-missing-code -> trace-extraction -> formalize -> Soufffle verify; equivalence (Fig.16, §5) runs Analyzer -> Formalizer -> Verifier. (a) Code advances the state through these fixed stages; the agent cannot skip the post-facto Soufffle verification — it always runs on the agent's output. (c) Top-level code dispatches models as bounded workers (ReACT agent = reasoning answer; LLM formalizer = Datalog predicates, iterative formalizer loop capped at 5 and outputs concatenated by code) and routes the predicates to the deterministic Soufffle engine; no model controls what runs next. Precond.1: no LLM orchestrator at the outer level. Precond.2: agent + formalizer are model steps. Precond.3: the agent's internal model-controlled ReACT loop is one bounded stage, not the outermost flow; verification sits outside it. Built and evaluated on 20 MSAN + 20 equivalence queries."
+  },
+  "flags": []
+}

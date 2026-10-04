@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [
+    "deterministic-orchestration-v2"
+  ],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a) and form (c) — The framework employs a fixed dual-pathway code pipeline that dictates which steps run and in what order (form a). The top-level code dispatches models as bounded workers for specific tasks like review, proposing, verification, and aggregation, routing their outputs deterministically without any model controlling the overall flow (form c)."
+  },
+  "flags": []
+}

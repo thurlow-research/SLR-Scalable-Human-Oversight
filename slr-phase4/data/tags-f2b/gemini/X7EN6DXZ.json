@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [
+    "deterministic-orchestration-v2"
+  ],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (c) — the contributed LLM-assisted attack uses a code loop that calls an LLM as a bounded worker to generate adversarial PR metadata, submits it to an ACR pipeline, and feeds the review feedback back to the LLM for iterative refinement. It also exhibits form (b) as the consequence of a rejection is fixed in code (a bounded retry up to t=10 iterations)."
+  },
+  "flags": []
+}

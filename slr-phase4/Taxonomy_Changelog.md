@@ -8053,3 +8053,37 @@ then restored. One write was lost: gemini on Parris. Its raw CLI output was inta
 recovered with the runner's own extraction step, and the meta record says so. No call was repeated, and
 no other output was affected (raw-vs-JSON check on all 18).
 
+### 151g. F2b results — `deterministic-orchestration-v2` fires on 11 of 72; seven are the dispatch pattern (2026-10-04)
+
+**Run:** 216 of 216 valid. One opus output (Kang `7UB2MD8Z`) was malformed JSON (a trailing comma). That
+single call was re-run with the same verdict, and the malformed attempt is kept in scratchpad.
+**Written to Zotero** (arbiter-authorised, backup taken 2026-10-04): **39 model-proposal tags on 18
+papers** (codex 15 · gemini 12 · opus 12). The write is additive, nothing in the `cal:human:*` layer was
+touched, and all 18 were verified.
+
+**Fires at ≥ 2/3 on 11 papers:**
+
+| | Papers |
+|---|---|
+| **New under the widening** (original < 2/3) | Töpfer `72W6R4JG` 3/3 · Ullah `A6ZE2A26` 3/3 · Wang `CTGGMIX9` 3/3 · Zhou `XRTVITVP` 2/3 |
+| **Original was 2/3, now unanimous** | Mahmud `R9CDT9KB` · Sun `V4IRKSFI` · Sistla `5DI9B43K` |
+| **Original positives carried over** | Vargas `GAD5Z8PV` · Lyu `UB2EVUFU` · Tang `7V7SRG43` · Jin `UDVHQ5HR` (form b only) |
+
+**The finding for HOS:** **seven built systems in the corpus implement code-at-the-top dispatching
+models as bounded workers** (the four new papers plus Mahmud, Sun and Sistla). Most rationales name
+form (c).
+
+**Original positives that do not carry over.** All three are consistent with the instrument's
+flag-don't-emit rule, pending rulings:
+- Swidey `5RLPIA3K` — an unbuilt reference architecture (question 6).
+- Ma `JCTP8VXP` — an agent-invoked gate (question 8).
+- **Shukla `T72TU8B5` — a contradiction for the arbiter.** F2 fired the original 3/3 (form b: a
+  CLI approval cascade enforced on every action). F2b fires 0/3: opus reads Hedwig's outermost flow
+  as a model-controlled agent, and codex and gemini are silent. **`-v2` is a superset, so a confirmed
+  original should imply `-v2`.** One of the two runs is wrong about where Hedwig's top level sits.
+
+**Census flags** (vendor count ≥ 2): **unbuilt design on 14 papers** and **human outer loop or
+agent-invoked gate on 9**. These are inputs to questions 6 and 8. **A 1/3-only proposal on 7 papers**
+(Parris, Huang, Kang, Abreu, McAleese, Vanam, Mitropoulos) stays in the review queue and is not
+written as model-agreed.
+

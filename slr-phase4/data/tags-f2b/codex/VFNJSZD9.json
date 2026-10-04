@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"deterministic-orchestration-v2","issue":"unbuilt design — UAST is explicitly a logical architecture, not an implemented or evaluated system; if built as specified, its parallel analysis pipeline, code-driven feedback routing, policy gates, and automatic session termination would fit forms (b) and (c)"}]}

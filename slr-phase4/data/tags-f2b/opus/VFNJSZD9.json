@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design (§4 census 1). The contributed system UAST is explicitly 'a logical architecture, not an implemented system' (§9.1); no implementation exists and no reported study exercises it. AVT is a taxonomy and ARSM is a scoring formula shown only via a hand-computed worked example (§6.4) — neither is a running system. WERE UAST built as described it would fire: primarily form (c) dispatch — a code pipeline dispatching models as bounded workers (Layer 1 SSA's LLM-assisted semantic analysis; Layer 4 ARA's architecturally-isolated secondary auditor model) across five layers, with code aggregating their outputs in the ASC store and routing each; plus form (a) sequencing — priority-ordered Security Signal Injection (ARA findings first, then PCV, then SSA/BDA); plus form (b) enforcement — code-mandated immediate session termination on a detected compromised reasoning process. Held per §4: flagged for the arbiter's count, not emitted."
+    }
+  ]
+}

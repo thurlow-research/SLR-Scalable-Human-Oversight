@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a)+(c)+(b) — The contributed system is a fixed three-stage code pipeline (Stage 1 classification → Stage 2 impact analysis → Stage 3 action recommendation), described as 'three sequential analytical stages'; code advances the state through the stages in fixed order and no model can skip one — form (a). At each stage, top-level code dispatches three LLMs (GPT-4, Claude, Gemini) as bounded workers for a single task, then itself aggregates their outputs by confidence-weighted voting, computes the trust score τ=0.4·θ1+0.3·θ2+0.3·θ3, and routes on it — the models are components, not controllers — form (c). The final CI/CD gate is fixed in code by trust-score+severity threshold rules (≥0.8 approve, 0.6–0.8 warn, 0.3–0.6 review, <0.3 or critical → 'force deployment blocking'), the consequence set deterministically without a model choosing to honour it — form (b). No planner/manager agent decides the flow; the LLMs are integral steps and the pipeline is built and run end-to-end (Stage 1 validated; Stages 2–3 run as demonstrations), so neither census pattern applies."
+  },
+  "flags": []
+}

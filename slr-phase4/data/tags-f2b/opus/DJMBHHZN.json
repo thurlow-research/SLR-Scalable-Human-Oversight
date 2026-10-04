@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Census pattern 1 (unbuilt design): CAiSE25 project-exhibition / vision paper for the MOSAICO EU project (Jan 2025–Dec 2027), reporting at month 3 with only 'early prototypes'; the four Solutions are specified objectives and the 4 use cases are future validation — no contributed system is built or evaluated. Which form it would be: NONE. Even as specified the outer orchestration is AI-driven — Collaboration Agents (fine-tuned LLMs) compute decomposition, assignment and the collaboration patterns, and the paper explicitly claims 'dynamic patterns defined by AI agents' against 'static' ones. That is the inverse of the facet (precondition 1 fails); the deterministic machinery present (e.g. majority-vote tallying in the Decision Engine) sits inside the model-controlled flow (precondition 3 fails). Flagged for counting per §4, not emitted."
+    }
+  ]
+}
