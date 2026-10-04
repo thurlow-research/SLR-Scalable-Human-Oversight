@@ -8613,3 +8613,24 @@ implicit-confirmation tags.**
 **Still open:** sweep B3 (`counterpoint`); the parked `oversight-scaling-inversion-v3` (§154a) and
 test-authorship exercise (§156b); T2 measurement; `final:*` computation.
 
+## 167. B3 RESOLVED — the `counterpoint` "sweep" is §101a's computation-step exclusion, made concrete (2026-10-04)
+
+The arbiter asked to do closeout B3. **It had already been decided, and the decision was not to sweep**
+(§101a, 2026-08-26): *"OK to leave counterpoints on, we will likely not use them but let's not lose the
+information."* The B3 tracker entry was never updated after that ruling. It is now.
+
+**What was done (no Zotero writes):**
+- **`slr-phase4/data/deprecated_vocabulary.json`** is the single auditable list of the
+  `final:*` formula's fourth term (*− deprecated vocabulary*). Its first entry is `counterpoint`
+  (deprecated §56, excluded at computation §101a). A future deprecation is one new entry, not a sweep.
+- **The step-2 tooling reads it** (`silence_audit.py`, `f2_step2_batch.py`, `f2_review_queue.py`),
+  replacing three hard-coded copies.
+- **F1 gains explicit checks:** no deprecated slug may appear in `final:*`, and deprecated-slug
+  rejections are not counted as judgements in the override statistics. That is the double-count B3
+  warned about.
+
+**Scope recorded (Phase 6):** 9 papers where `counterpoint` would otherwise reach `final:*` (6
+modal-silent: Wang `2KPHQ5IV`, Jin, Eze, Zietsman, Xu, Zhu; 3 human-endorsed before §56: Huang
+`Z8TPRNEU`, Heander, Goel), plus 4 demoted papers. **The cal:* layers are untouched.** Legacy
+applications stay as provenance and are never read as scaling dissent (§56b).
+

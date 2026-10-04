@@ -1,0 +1,7 @@
+{
+  "_comment": "Deprecated tag vocabulary — the fourth term of final:* = panel modal ∪ human endorsements − human rejections − deprecated vocabulary (Taxonomy_Changelog §101a). Tags listed here are NEVER emitted into final:*, whatever their panel modality or human endorsement. The cal:* layers are not edited: legacy applications stay as provenance (§56b, 'never to be read as scaling dissent'). A deprecation is ONE auditable act — add an entry here, do not sweep papers.",
+  "deprecated": [
+    {"slug": "counterpoint", "kind": "facet", "deprecated": "2026-08-24", "ruling": "§56", "excluded_at_final": "§101a",
+     "reason": "polarity inversion — the definition never asked WHICH position a paper argues against, so papers arguing FOR better oversight scored as dissent (Jessee 9/9). Replaced, not redefined, by scaling-dissent (§56c), itself closed at zero (§147c)."}
+  ]
+}

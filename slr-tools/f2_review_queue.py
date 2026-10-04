@@ -34,7 +34,7 @@ VENDORS = ("opus", "codex", "gemini")
 ALIAS = {"3Z45M3V3": "U3IQJ4VK"}
 V1_OF = {"oversight-scaling-inversion-v2": "oversight-scaling-inversion",
          "survey-input-v2": "survey-input", "rules-based-checks-v2": "rules-based-checks"}
-DEPRECATED = {"counterpoint"}
+DEPRECATED = {d["slug"] for d in json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "slr-phase4", "data", "deprecated_vocabulary.json")))["deprecated"]}  # §101a
 
 
 def load_runs(rundir):

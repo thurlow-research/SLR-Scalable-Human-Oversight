@@ -7,13 +7,14 @@ For each, shows panel support and the models' own one-line reason. Read-only.
 
 Usage:  python3 slr-tools/f2_step2_batch.py [--batch N] [--size 10]
 """
-import argparse, collections, glob, json, os, re, sys
+import argparse
+import json, collections, glob, json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 import tag_layer_stats as T
 R = os.path.join(os.path.dirname(HERE), "slr-phase4", "data")
 ALIAS = {"3Z45M3V3": "U3IQJ4VK"}
 F2 = set(json.load(open(os.path.join(R, "f2_census.json")))) | {"deterministic-orchestration-v2", "rules-based-checks-v3"}
-DEP = {"counterpoint"}
+DEP = {d["slug"] for d in json.load(open(os.path.join(R, "deprecated_vocabulary.json")))["deprecated"]}  # §101a
 
 def reasons():
     out = collections.defaultdict(lambda: collections.defaultdict(list))

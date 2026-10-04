@@ -19,6 +19,7 @@ Usage:  python3 slr-tools/silence_audit.py [--list]
 from __future__ import annotations
 
 import argparse
+import json
 import collections
 import os
 import re
@@ -28,7 +29,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import tag_layer_stats as T  # noqa: E402
 
 BANDS = {"WTKULZ5U": "Light Read", "UIN658B7": "Accept", "2WE2DX36": "Full Read"}
-DEPRECATED = {"counterpoint"}          # §56; removed by closeout sweep B3, not by confirmation
+DEPRECATED = {d["slug"] for d in json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "slr-phase4", "data", "deprecated_vocabulary.json")))["deprecated"]}  # §101a
 VENDOR_RE = re.compile(r"^cal:(opus|codex|gemini):(?:primary:)?(theme|facet):([a-z0-9-]+)$")
 
 
@@ -71,7 +72,7 @@ def main():
               f"{c[cat, 'silent']:4d} ({c[cat, 'silent'] / m:5.1%})")
     live = [r for r in implicit if r[6] not in DEPRECATED]
     print(f"\nimplicitly confirmed: {len(implicit)} tags on {len({r[1] for r in implicit})} papers; "
-          f"{len(implicit) - len(live)} deprecated (B3 sweep) -> "
+          f"{len(implicit) - len(live)} deprecated (excluded at final:*, §101a) -> "
           f"{len(live)} to confirm on {len({r[1] for r in live})} papers")
     if a.list:
         for band, k, au, title, prim, kind, slug, v in live:

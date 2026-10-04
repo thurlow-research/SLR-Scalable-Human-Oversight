@@ -93,7 +93,16 @@ were proposed as refinements and withdrawn — see §121b). Worked pair: Catalan
 cognitive engagement → **off**; Kang `7UB2MD8Z` asks what developers *want* → **on**. The two facets
 **co-occur** freely; they are different axes.
 
-### B3. Deprecated-tag sweep — `counterpoint` (§56)
+### B3. Deprecated-tag sweep — `counterpoint` (§56) — ✅ **RESOLVED 2026-10-04 by §101a: NO sweep**
+> **Already decided 2026-08-26 (§101a):** *"OK to leave counterpoints on, we will likely not use them but let's
+> not lose the information."* Deprecation is handled **once, at the `final:*` computation**, not by per-paper
+> rejects. Made concrete as `slr-phase4/data/deprecated_vocabulary.json` (the single list the computation reads),
+> and the step-2 tooling now reads it. **Why not sweep:** bulk rejections would inflate the override statistics
+> (administrative acts counted as judgements) and contradict the arbiter's own pre-§56 `counterpoint`
+> endorsements (Huang `Z8TPRNEU`, Heander `F9JM9CI6`, Goel `VG6CIDQW`). **Scope at resolution (Phase 6):**
+> 9 papers where `counterpoint` would otherwise reach `final:*` (6 modal-silent, 3 human-endorsed), plus 4
+> demoted. The 9 Phase-6 human **rejections** of `counterpoint` are genuine judgements and stay. **Double-count
+> check → F1.**
 Survives into `final:*` on any paper where it was modal and never rejected, because silence lets a
 modal proposal stand. **Do it as one bulk auditable act**, not per paper. Note §101a already excludes
 deprecated vocabulary at the `final:*` computation step — confirm the sweep and the exclusion don't
@@ -524,6 +533,9 @@ alongside — same principle as A1.
 ## F. Forward work — after A–E
 
 ### F1. Compute `final:*`
+> **Required checks (added 2026-10-04):** (1) read `slr-phase4/data/deprecated_vocabulary.json` and emit **no** listed
+> slug into `final:*` (§101a), so **0** `final:*:counterpoint` tags; (2) do not count deprecated-slug rejections in the
+> override statistics, because only judgements count; (3) Phase 6 only for the synthesis set.
 `final:* = panel modal ∪ human endorsements − human rejections − deprecated vocabulary` (§101a).
 **Blocked on all of Section B.**
 
