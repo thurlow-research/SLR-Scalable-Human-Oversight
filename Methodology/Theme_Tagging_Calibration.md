@@ -910,6 +910,12 @@ rejection more than the 2026-08-29 snapshot):
 | **Surviving** (feed synthesis) | 57 | 511 | 442 (86.5%) | **46 (9.0%)** | 24 (4.7%) — *implicitly confirmed* |
 | Demoted | 71 | 542 | 255 (47.0%) | 36 (6.6%) | 251 (46.3%) — *unverified* |
 
+**Why 57 and not 72.** The 57 are the surviving papers in the three production bands (Light Read 35,
+Accept 22). Phase 6's 72 also includes the 14 calibration-only survivors (Set A 7, Set B 7), which
+are excluded from this table for the reasons above, plus the Set C pilot, Otten (`ZUM76CCG`). Jin
+(`UDVHQ5HR`) sits in both Accept and Set A after the §144 merge and is counted among the 57:
+57 + 14 + 1 = 72.
+
 **On the papers that survive into synthesis, the arbiter overturned roughly one model-agreed tag in
 eleven.** The pooled 7.7% understates this, because it averages in demoted papers whose tags were
 never checked. Per band, rejections ran Light Read 52 / 678 (7.7%), Accept

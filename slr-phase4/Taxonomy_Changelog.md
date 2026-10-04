@@ -7914,6 +7914,14 @@ when nothing is silent. B9 then matters in only two places:
 - **Post-freeze proposals from the F2 restricted re-run** (2026-08-30 on). These are new silence on
   surviving papers, and they are now the only place where the choice changes the result.
 
+**The F2 run is the classification pass over everything that was planned to pick these tags up, and
+its review is what retires B9.** F2 ran on all 72 Phase 6 papers (3 vendors × k=3, 11 slugs) and
+wrote 262 model proposals on 55 papers. They are still *proposals*. Of the 75 that are panel-modal,
+**20 are endorsed, 0 rejected and 55 silent, on 33 papers** (live library, 2026-10-04). The planned
+arbiter review (handoff 2026-08-29 §7, item 2: strong panel signal with no human tag, weak signal
+with one, plus a full sweep of the four definition-changed slugs) turns that silence into explicit
+rulings. Once it is done, fail-open vs fail-closed changes nothing in `final:*` for the synthesis set.
+
 **So the residue close-out is B9's option (c) applied to a defined subset.** It is fail-closed for the
 silent proposals the synthesis actually consumes, done as one auditable act rather than per-tag
 firefighting. That narrows B9 to a decision about F2 proposals alone, which can be made explicitly

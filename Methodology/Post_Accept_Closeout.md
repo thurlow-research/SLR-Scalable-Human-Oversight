@@ -295,7 +295,9 @@ The library backup was taken 2026-10-04. Only ruled tags are written, and unrule
 - Overlaps **B2** (Gao `survey-input` is one of its silent modals) and extends **B10** (Sharma and
   Wang `rules-based-checks` are panel proposals outside B10's count).
 - **Narrows B9** (§150b): once this and B3 are done, fail-open vs fail-closed changes `final:*` only
-  for **F2 post-freeze proposals**.
+  for **F2 post-freeze proposals**. Those are covered by the planned F2 review: 55 of 75 modal F2
+  proposals were still silent on 33 papers at 2026-10-04. **B9 is retired when that review completes**,
+  with no separate convention decision needed.
 - **Done when:** `slr-tools/silence_audit.py` reports **6** silent tags on surviving papers (all
   `counterpoint`, which go to B3), and calibration §11.5's split has been refreshed.
 
