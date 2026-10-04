@@ -745,8 +745,9 @@ do not enter Phase 6 synthesis, so their tag depth has no consumer (§42). Effor
 what the tags are used for — to **downstream consequence**, never to panel agreement (§11.8).
 
 The panel's role here is **recall**: it holds the whole vocabulary against every paper so the arbiter
-does not have to. Its proposals are **suggestions, never facts** — measured at T0, **8.3% of
-panel-modal proposals were overturned** by the arbiter (§11.5).
+does not have to. Its proposals are **suggestions, never facts** — measured at T1 on the closed
+corpus, **7.7% of panel-modal proposals were overturned** by the arbiter (81 of 1,053 across 128
+production-band studies; 8.3% at the T0 interim) (§11.5).
 
 ### 10.10 What the design deliberately does NOT do
 - **No feedback between raters, and no revision rounds.** Taggers never see one another's output. The
@@ -789,10 +790,13 @@ noise concentrates (§3.1–3.2), and model signatures show directional bias (§
   survives into `final:*` on any paper where it was modal and never rejected, since silence lets a
   modal proposal stand. Handle as one bulk act rather than per paper, so the deprecation is a single
   auditable event.
-- **T1 and T2 measurement points are outstanding** (§11.9). Regenerate with
-  `slr-tools/tag_layer_stats.py`; T0 is frozen at `slr-phase4/data/tags-v213/tag_layer_stats_T0_2026-08-26.json`.
+- **T1 is recorded; T2 is outstanding** (§11.9). T0:
+  `slr-phase4/data/tags-v213/tag_layer_stats_T0_2026-08-26.json`. T1:
+  `tag_layer_stats_T2prep_2026-08-29.json` in the same directory (Accept closed 44/44, all bands
+  adjudicated, instrument still frozen; filed under its pre-re-run name). T2 waits on the D1 fix to
+  `slr-tools/tag_layer_stats.py` (`Restricted_Rerun_Spec.md`).
 - **Human override rate is the headline reliability figure** and is computed by that script —
-  8.3% at T0, to be recomputed on the closed corpus.
+  **7.7% at T1** on the closed corpus (8.3% at the T0 interim).
 
 ---
 
@@ -871,9 +875,34 @@ models):
 Plus **29 non-modal (1/3) proposals rescued** by human endorsement — found by the panel, and
 discarded by any consensus rule.
 
-**Roughly one modal proposal in twelve is wrong.** A 3/3 auto-accept band would have shipped those
-into the reported statistics. This single figure carries the argument better than the anecdotes in
-§11.4, and it is recomputed at every measurement point (§11.9).
+**Final figure — T1, closed corpus (recorded 2026-08-29; reported 2026-10-04).** Across all **128
+production-band studies** — Light Read 78, Accept 44, Full Read 6 — and **1,053 panel-modal
+proposals**:
+
+| | n | % |
+|---|---|---|
+| human endorsed | 698 | 66.3% |
+| **human rejected** | **81** | **7.7%** |
+| human silent (stands on modality) | 275 | 26.1% |
+
+Plus **58 non-modal proposals rescued**. Per band, rejections ran Light Read 52 / 678 (7.7%), Accept
+29 / 321 (9.0%), and Full Read 0 / 54 (all six Full Read papers were demoted, and §42's demote
+short-circuit skips tag verification). One Accept-band tag carries both an endorsement and a
+rejection, so the three rows sum to 1,054. Source: `tag_layer_stats_T2prep_2026-08-29.json`.
+
+**Both calibration sets are excluded.** Set A's Zotero model layer was still the v1 run at T1 (0%
+match to v2.13), so its figures compare a v1 panel against a v2.13-aligned human layer. Set B was
+tagged blind before any model ran and carries no rejection tags, so its 0% reflects the protocol,
+not an override rate.
+
+**T1 cannot be regenerated from the live library.** The F2 restricted re-run wrote post-freeze
+proposals into Zotero from 2026-08-30. A run today measures the T2 state: match to v2.13 falls in
+every band, and `-v2` slugs appear. The 2026-08-29 snapshot is the record of T1.
+
+**Roughly one modal proposal in thirteen is wrong** (one in twelve at the T0 interim). A 3/3
+auto-accept band would have shipped those into the reported statistics. This single figure carries
+the argument better than the anecdotes in §11.4, and it is recomputed at every measurement point
+(§11.9).
 
 ### 11.6 What the panel is actually for — recall and coding consistency
 The correction is **not** that the panel is untrustworthy. It is that panel output has a different
@@ -1043,6 +1072,15 @@ Two different comparisons, both worth stating because they answer different ques
 
 All are human-originated. `evaluated-real-data` is staged with no uses yet.
 
+**At sweep closeout (2026-08-29) the vocabulary was 51 distinct tags**: the 44 frozen, plus the 6
+above, plus `evaluated-real-data` (first instance §141). The T1 snapshot reports 52 because
+`evaluator-reliability` appeared in both the theme and facet namespaces; §146a consolidated it to the
+theme namespace. **51 is the frozen-instrument-era final.** The F2 cut that followed is a separate
+versioned revision, not growth under the frozen instrument. It added `peer-critique` (split from
+`agent-panel`, §149a) and `deterministic-orchestration` (§147b), giving 53 concepts. It also
+redefined three existing tags as `-v2` slugs while leaving the v1 forms in place, so a raw count of
+tag names in Zotero after F2 is 56.
+
 **Every one of the 45 cheatsheet tags has fired at least once** — no dead vocabulary, which is a
 small instrument-validity result worth reporting.
 
@@ -1056,7 +1094,7 @@ Figures are regenerated by `slr-tools/tag_layer_stats.py` at three points:
 | Point | State | Question it answers |
 |---|---|---|
 | **T0** | now, frozen instrument | baseline — `tag_layer_stats_T0_2026-08-26.json` |
-| **T1** | Light Read + Accept closed, still frozen | do the T0 rates hold over the full corpus? |
+| **T1** | Light Read + Accept closed, still frozen | do the T0 rates hold over the full corpus? — **yes, approximately: override 7.7% vs 8.3%** (§11.5); `tag_layer_stats_T2prep_2026-08-29.json` |
 | **T2** | after the restricted re-run on the revised instrument | was the gap the *instrument* or the *panel*? |
 
 **T1→T2 is the informative comparison.** If origination on the post-freeze slugs collapses toward
