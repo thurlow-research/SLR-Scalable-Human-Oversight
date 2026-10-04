@@ -286,6 +286,105 @@
    "date": "2026-10-04",
    "note": "questionnaire rates the significance of risks/practices — assessment of the world (cf. Sudarsan), and responses also train the ANN-ISM model (formative); v1 human tag predates §121b and stays as history",
    "written": null
+  },
+  {
+   "key": "UB2EVUFU",
+   "author": "Lyu",
+   "kind": "facet",
+   "slug": "evaluated-benchmark",
+   "action": "endorse",
+   "ruling": "§161",
+   "date": "2026-10-04",
+   "note": "event 1: ProjDevBench run as-is",
+   "written": null
+  },
+  {
+   "key": "UB2EVUFU",
+   "author": "Lyu",
+   "kind": "facet",
+   "slug": "evaluated-synthetic",
+   "action": "endorse",
+   "ruling": "§161",
+   "date": "2026-10-04",
+   "note": "event 2: self-authored multi-day project briefs (created)",
+   "written": null
+  },
+  {
+   "key": "5DI9B43K",
+   "author": "Sistla",
+   "kind": "facet",
+   "slug": "evaluated-real-data",
+   "action": "endorse",
+   "ruling": "§161",
+   "date": "2026-10-04",
+   "note": "MSAN event on real code; second event mostly selected-real (12/20 from CRQBench) — same rung",
+   "written": null
+  },
+  {
+   "key": "5DI9B43K",
+   "author": "Sistla",
+   "kind": "facet",
+   "slug": "evaluated-synthetic",
+   "action": "reject",
+   "ruling": "§161",
+   "date": "2026-10-04",
+   "note": "no separate created-material event warranting a second rung",
+   "written": null
+  },
+  {
+   "key": "UW2R6BBJ",
+   "author": "Sudarsan",
+   "kind": "facet",
+   "slug": "evaluated-synthetic",
+   "action": "reject",
+   "ruling": "§161",
+   "date": "2026-10-04",
+   "note": "16-week utility deployment sits above the ladder; carried by method-field-study",
+   "written": null
+  },
+  {
+   "key": "MFSZPSPU",
+   "author": "Shi",
+   "kind": "facet",
+   "slug": "evaluated-real-data",
+   "action": "endorse",
+   "ruling": "§161",
+   "date": "2026-10-04",
+   "note": "48 sanitizer bugs SELECTED from a production monorepo; patches harvested from the authors' production APR system, not hand-crafted",
+   "written": null
+  },
+  {
+   "key": "MFSZPSPU",
+   "author": "Shi",
+   "kind": "facet",
+   "slug": "evaluated-synthetic",
+   "action": "reject",
+   "ruling": "§161",
+   "date": "2026-10-04",
+   "note": "curation decides (§148b): selected production material, not created",
+   "written": null
+  },
+  {
+   "key": "7V7SRG43",
+   "author": "Tang",
+   "kind": "facet",
+   "slug": "evaluated-benchmark",
+   "action": "endorse",
+   "ruling": "§161",
+   "date": "2026-10-04",
+   "note": "event 1: Trans-Review / AutoTransform / T5-Review — established third-party datasets, already adopted by the SOTA comparison study, run as-is",
+   "written": null
+  },
+  {
+   "key": "7V7SRG43",
+   "author": "Tang",
+   "kind": "facet",
+   "slug": "evaluated-real-data",
+   "action": "endorse",
+   "ruling": "§161",
+   "date": "2026-10-04",
+   "note": "event 2: authors' own new dataset of 3,545 selected real-world commits — 'wants to be a benchmark' ≠ is one (§34 Dr.Fix)",
+   "written": null
   }
  ]
 }

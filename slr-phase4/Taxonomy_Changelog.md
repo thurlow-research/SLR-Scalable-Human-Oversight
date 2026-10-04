@@ -8434,3 +8434,35 @@ The test is §121b's line: ***"Kang asked people what they want; Catalan measure
 
 The arbiter judged both "on the line" readings and accepted the recommendations.
 
+## 161. F2 review Q11 — ladder rungs for mixed provenance; "wants to be a benchmark ≠ is one" re-applied (2026-10-04)
+
+**Rule:** §148b, *curation decides*. Created instances are synthetic, selected real ones are
+real-data, and a recognised third-party benchmark run under its own protocol is benchmark. One event
+gets one rung; two rungs require two separate events.
+
+| Paper | Ruling |
+|---|---|
+| Zhou `XRTVITVP` | **synthetic** — already settled (human tag, panel 3/3) |
+| Lyu `UB2EVUFU` | **benchmark + synthetic** — two events: ProjDevBench run as-is, and self-authored multi-day briefs |
+| Sistla `5DI9B43K` | **real-data**. The MSAN event uses real code, and the second event is mostly selected-real (12 of 20 from CRQBench), so it is the same rung. Synthetic is rejected |
+| Sudarsan `UW2R6BBJ` | **no rung**. A 16-week utility deployment sits above the ladder and is carried by `method-field-study`. Synthetic is rejected |
+| Shi `MFSZPSPU` | **real-data**. 48 sanitizer bugs are *selected* from a production monorepo. The judged patches are *harvested* from the authors' production APR system, not hand-crafted |
+| **Tang `7V7SRG43`** | **benchmark + real-data**, two events (161a) |
+
+### 161a. Tang — the Dr.Fix principle applied (§34)
+
+The arbiter recalled the earlier ruling: ***"hoping your work became a benchmark doesn't count as
+benchmark."*** §34 recorded it on Dr.Fix: *"self-labeled 'our benchmark', release-upon-acceptance only,
+not yet adopted by anyone (the 'wants to be a benchmark ≠ is one' distinction)."*
+- **Event 1 (code revision):** Trans-Review, AutoTransform and T5-Review are **established third-party
+  datasets** (Tufano et al.; Thongtanunam et al.), already used by the state-of-the-art study (Zhou et
+  al., 2023), and reused as-is *"to conduct a fair and reliable comparison"*. **→ benchmark.**
+- **Event 2 (advanced review tasks):** *"We build a new dataset comprising 3,545 real-world code
+  changes … valuable for evaluating advanced code review tasks"* is the authors' own release. That is
+  **not a benchmark until others adopt it.** The commits were selected from GitHub, not created.
+  **→ real-data.**
+
+**General rule, restated:** a dataset the authors build and release as an evaluation resource takes
+the rung its **curation** earns (selected → real-data, created → synthetic). It becomes a benchmark
+only once it is **adopted** by others and run under its established protocol.
+
