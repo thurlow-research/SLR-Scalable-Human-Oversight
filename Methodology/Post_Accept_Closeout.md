@@ -4,7 +4,7 @@
 
 **STATUS 2026-10-04 (closeout pass):** Accept band closed 44/44 (§143); F2 run, F2b, F2c and the full F2 review
 done (§151–§167); Phase 6 = 72. **Done:** A1, A2, B1, B2, B3, B5, B7, B8, B9, B10, B13, B14, D1, D2/T2, F2-PREP, F2,
-F2a, F3. **Open:** C1–C3, C6–C9 · E1, E3, E4, E6, E7, E8 · F1 · F4 · F5 · F6. *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
+F2a, F3. **Open:** E1, E3, E4, E6, E7, E8 · F1 · F4 · F5 · F6. *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
 
 *Historical progress line (2026-08-28):* **Progress (2026-08-28): 24 of 44 adjudicated · 3 partial · 17 untouched.**
 Next alphabetically: **Minh** (`74GE3TF7`). Partials awaiting a pass: `MFSZPSPU` Shi ·
@@ -373,6 +373,7 @@ JSON. **Decide, don't leave implicit.**
 > affected numbers should not be quoted in the dissertation, a paper, or a talk.
 
 ### C1. §11.7 — retire the 80.9% origination figure ⚠️ **it is an artifact**
+> ✅ **DONE 2026-10-04** — §11.7 rewritten; 80.9% retired with a correction box (changelog §172).
 `tag_layer_stats.py` reads the Zotero tag layer, but **Set B had no model tags in Zotero** until
 2026-08-28. With an empty comparator every human tag counted as "originated," so Set B computed as
 **100%**; blended with Set A it produced the reported **80.9%**.
@@ -395,6 +396,7 @@ drifted mid-band (C4). On comparable vocabulary only it reads 3.5% vs Set B's 8.
 a 2.4× anchoring effect and is not one.
 
 ### C2. §11.7 — remove the "~96% panel recall" claim
+> ✅ **DONE 2026-10-04** — removed; recall from exhaustive arms (Set B 91.6%) (changelog §172).
 It is read off the supervised bands' origination rate. But Scott was **not** hunting exhaustively for
 misses there, so a low origination rate cannot distinguish *"the panel missed nothing"* from
 *"nobody went looking."*
@@ -404,6 +406,7 @@ misses there, so a low origination rate cannot distinguish *"the panel missed no
 agreement.
 
 ### C3. **NEW** — split tag recall from tier recall
+> ✅ **DONE 2026-10-04** — split in §11.7 (tags ~90% vs tier 57.4%) (changelog §172).
 The panel is a **decent tagger and a poor triager**, and one number has been standing for both:
 
 | axis | recall |
@@ -447,11 +450,13 @@ silence by protocol, later ones by judgement. Relevant to the re-run (F2): a new
 landing on an early paper meets a thinner human layer, so **early papers deserve the closer look**.
 
 ### C5. §11.6b — Set B answers the open question
+> ✅ **DONE 2026-10-04** — the open control-band question resolved in the doc (changelog §172).
 §11.6b (written 2026-08-28) flags as unresolved whether the blind calibration band was also
 *unassisted*. **It was**: first ten co-tagged (and drove taxonomy revisions), **next ten blind**. So
 there **is** an unassisted arm, **n=10** — it is the *supervised* bands that have none.
 
 ### C6. §11.9 / §41 — restricted re-run scope + a falsifiable prediction
+> ✅ **DONE 2026-10-04** — result written into §11.9 (7.7% → 5.5%) (changelog §172).
 > **PREDICTION TESTED 2026-10-04 (T2):** recorded 2026-08-28, before the F2 run. Predicted Light Read origination
 > 7.7% → ~3.5% if the frozen instrument was the binding constraint. **Observed at T2: 5.5% — a PARTIAL collapse:**
 > roughly half the gap was the instrument, half the panel. Write up under C (calibration §11.9).
@@ -464,6 +469,7 @@ binding constraint rather than panel recall, **those should largely collapse, ta
 origination from 7.7% → ~3.5%.** If it does not collapse, the gap was the panel.
 
 ### C7. Fable — record the design history
+> ✅ **DONE 2026-10-04** — §11.10 row + uniform-panel principle (changelog §172).
 Intended as a **tiebreaker on model disagreement**; superseded by **k=3 runs of all three vendors**.
 Repeated sampling of every vendor measures intra-rater reliability, where a tiebreaker only ever cast
 a deciding vote on contested items. **Principle to state generally: panel composition must be uniform
@@ -472,11 +478,13 @@ of 10 Set B papers and was deliberately **not** written.) Fable also stays gated
 permission.
 
 ### C8. Full Read band is 6-for-6 demoted
+> ✅ **DONE 2026-10-04** — sentence added to §10.2 (changelog §172).
 Nothing survived the deepest reading protocol. Probably correct if Full Read was reserved for
 borderline cases — but a band with a **100% demote rate** needs one sentence in the methods chapter,
 or it reads as a protocol that could not pass anything.
 
 ### C9. Changelog §121 — the whole correction as one entry
+> ✅ **DONE 2026-10-04** — written as §172 (§121 was already taken) (changelog §172).
 Cover: the Set B model-tag write, the 80.9% artifact and its cause, the corrected A-vs-B contrast,
 the recall split, the silence reclassification, and the Light Read protocol drift.
 

@@ -8720,3 +8720,29 @@ and no built system is needed):
   (`evaluated-benchmark` plus `method-experiment` for third-party models). The author's *"directional
   evidence, not a controlled demonstration"* fits the ladder's lowest rung.
 
+## 172. CONSOLIDATED CORRECTION (closeout C9) — the calibration figures previously stated as fact (2026-10-04)
+
+One entry for the whole correction, as closeout C9 asked. The calibration doc is updated (§10.2, §11.7, §11.9, §11.10).
+
+1. **The Set B model-tag write (2026-08-28)** gave the blind calibration arm a model layer in Zotero for the first time.
+2. **The 80.9% origination figure was an artifact.** It was computed when Set B had no model tags (every human tag
+   counted as originated, so 100%) and blended with a Set A still holding the superseded v1 run. **Retired.**
+3. **Corrected anchoring contrast** (the only clean comparison: same arbiter, instrument, exhaustive protocol and era,
+   differing only in whether proposals were visible): **Set A (model-first) 12.7% vs Set B (blind) 9.5%** (after the A1
+   supersession; T2: 10.4% vs 7.8%). **No anchoring effect is detectable.** Light Read is retired as a control.
+4. **"~96% panel recall" is retired.** It was read off a non-exhaustive band. **Recall comes from the exhaustive arms:
+   Set B 91.6% (76/83, headline), Set A 89.4%.**
+5. **Tag recall and tier recall are split.** Tags ~90% vs **tier 57.4%** (the panel is silent on 26 of 61 human demotes;
+   tier precision 71.4%). The panel is a decent tagger and a poor triager.
+6. **Silence reclassification** (§150; C4): silence on a surviving early-Light-Read paper is implicit confirmation, on a
+   demoted paper it is unverified, and an unproposed tag carries no signal. The residue was closed explicitly (§166b).
+7. **Light Read protocol drift:** it began with subset confirmation and moved to all-tag confirmation, so the band is
+   not homogeneous (§150).
+8. **C5:** an unassisted arm exists (Set B, n = 10, blind). The supervised bands have none.
+9. **C6:** the pre-registered prediction was a partial hit. Light Read origination went 7.7% → 5.5% (predicted
+   ~3.5%), so roughly half the gap was the instrument and half the panel.
+10. **C7:** panel composition must be uniform. Fable was a dropped tiebreaker, and its partial output was never written.
+11. **C8:** Full Read was 6-for-6 demoted, the expected result for the panel-split band.
+
+**Not to be quoted anywhere:** the T0/T1 snapshots' calibration figures (D1), 80.9%, and ~96%.
+
