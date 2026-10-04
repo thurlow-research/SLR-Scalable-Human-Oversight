@@ -8653,3 +8653,27 @@ pre-registered prediction tested:** Light Read origination fell from 7.7% to **5
 predicted ~3.5% if the frozen instrument were the whole constraint. That is a **partial** collapse:
 roughly half the gap was the instrument and half the panel.
 
+## 169. B11 CLOSED — the hand-applied post-freeze tags the panel did not back (2026-10-04)
+
+The residual is the hand-applied post-freeze tags on kept papers with F2 panel support of 1/3 or less,
+excluding those already ruled. There were **6**, and McAleese `evaluator-reliability` stood under §165.
+**The other 5 are QA corrections (§142a precedent: the endorsement is kept and a reject is added):**
+- **Jin `UDVHQ5HR` `evaluated-benchmark`.** One event, made of curated and modified paired variants,
+  so synthetic (§148b, endorsed in batch 3). One event takes one rung.
+- **Vargas `GAD5Z8PV` `evaluated-real-data`.** The bugs are embedded in auto-generated codebases
+  (synthetic), and there is no separate real-data event.
+- **Vargas `GAD5Z8PV` `evaluator-reliability`.** *"Agreement between AI systems showed weak correlation
+  with fix quality … improved acceptance by only 2.4% points"* is a finding about **panel consensus as a
+  signal**, and `agent-panel`/`peer-critique` carry it. It is a side finding (§165). **It stays a key
+  quotable result.**
+- **Sun `V4IRKSFI` `evaluator-reliability`.** The paper evaluates its own tool's precision (§165,
+  cf. Mahmud).
+- **Swidey `5RLPIA3K` `agent-panel`.** A debate plus an arbitrator is mutual critique (`peer-critique`,
+  batch 4), not N agents on the same question aggregated by a rule.
+
+**Pattern across B11 and the F2 review:** **9 of the hand-applied post-freeze tags examined were
+errors** (Ji, Mitropoulos ×1 each §155a; Zietsman ×2 §163a; these 5). All date from the slugs'
+formative window, as §142a predicted. **Every one was caught where the panel disagreed with the human
+tag.** That is a concrete case of the review's own disagreement-as-signal mechanism, and worth a
+sentence in the methods chapter.
+

@@ -1518,6 +1518,61 @@
    "date": "2026-10-04",
    "note": "module criticality + SCA severity tiers route human audit — computed, producer-independent",
    "written": "2026-10-04"
+  },
+  {
+   "key": "UDVHQ5HR",
+   "author": "Jin",
+   "kind": "facet",
+   "slug": "evaluated-benchmark",
+   "action": "reject",
+   "ruling": "§169 B11",
+   "date": "2026-10-04",
+   "note": "QA CORRECTION (§142a precedent): one event — curated+modified paired variants → synthetic (§148b); one event, one rung",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "GAD5Z8PV",
+   "author": "Vargas",
+   "kind": "facet",
+   "slug": "evaluated-real-data",
+   "action": "reject",
+   "ruling": "§169 B11",
+   "date": "2026-10-04",
+   "note": "QA CORRECTION (§142a precedent): bugs embedded in auto-generated codebases → synthetic; no separate real-data event",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "GAD5Z8PV",
+   "author": "Vargas",
+   "kind": "theme",
+   "slug": "evaluator-reliability",
+   "action": "reject",
+   "ruling": "§169 B11",
+   "date": "2026-10-04",
+   "note": "QA CORRECTION (§142a precedent): the 2.4pp consensus finding is about panel agreement as a signal — side finding (§165); carried by agent-panel/peer-critique",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "V4IRKSFI",
+   "author": "Sun",
+   "kind": "theme",
+   "slug": "evaluator-reliability",
+   "action": "reject",
+   "ruling": "§169 B11",
+   "date": "2026-10-04",
+   "note": "QA CORRECTION (§142a precedent): measures its own LLM reviewer's precision — tool evaluation, not the subject (§165, cf. Mahmud)",
+   "written": "2026-10-04"
+  },
+  {
+   "key": "5RLPIA3K",
+   "author": "Swidey",
+   "kind": "facet",
+   "slug": "agent-panel",
+   "action": "reject",
+   "ruling": "§169 B11",
+   "date": "2026-10-04",
+   "note": "QA CORRECTION (§142a precedent): Advocate/Adversary debate + Arbitrator = mutual critique (peer-critique), not N agents on the same question aggregated by rule",
+   "written": "2026-10-04"
   }
  ]
 }

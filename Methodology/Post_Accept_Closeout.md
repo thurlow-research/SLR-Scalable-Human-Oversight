@@ -4,7 +4,7 @@
 
 **STATUS 2026-10-04 (closeout pass):** Accept band closed 44/44 (§143); F2 run, F2b, F2c and the full F2 review
 done (§151–§167); Phase 6 = 72. **Done:** A1, A2, B1, B2, B3, B5, B7, B8, B9, B10, B13, B14, D1, D2/T2, F2-PREP, F2,
-F2a, F3. **Open:** B4 · B11 residual · C1–C3, C6–C9 · E1, E3, E4, E6, E7, E8 · F1 · F4 · F5 · F6. *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
+F2a, F3. **Open:** B4 · C1–C3, C6–C9 · E1, E3, E4, E6, E7, E8 · F1 · F4 · F5 · F6. *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
 
 *Historical progress line (2026-08-28):* **Progress (2026-08-28): 24 of 44 adjudicated · 3 partial · 17 untouched.**
 Next alphabetically: **Minh** (`74GE3TF7`). Partials awaiting a pass: `MFSZPSPU` Shi ·
@@ -270,6 +270,8 @@ different error profiles (Jin 88.74% FPR · Bugdar 24–58% precision · Raghave
 checks that either fire or do not). Conflating them erases the corpus's clearest practical result.
 
 ### B11. Re-check the hand-applied post-freeze tags — one is a KNOWN ERROR (§142a)
+> ✅ **CLOSED 2026-10-04 (§169)** — residual of 6: 5 QA-corrected, McAleese stands. 9 hand-applied errors found in total, all
+> where the panel disagreed with the human tag.
 > **PARTLY DONE 2026-10-04** — F2 review corrected four hand-applied tags (Ji, Mitropoulos rungs §155a; Zietsman
 > `agent-panel`/`cross-model` §163a). **Residual:** hand-applied tags the F2 panel did **not** back (≤1/3) — not covered by
 > the step-2 queue, which only held panel-backed proposals. To check next.
