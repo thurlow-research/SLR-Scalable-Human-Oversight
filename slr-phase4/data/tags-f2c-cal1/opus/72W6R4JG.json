@@ -1,0 +1,13 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "The 'constraint verifier' is a deterministic, non-LLM runtime monitor. It evaluates (i) generic architectural invariants — no exceptions/importable, valid ensemble names, exactly-one-ensemble-per-villager — and (ii) functional constraints written in FCL, a first-order temporal logic over execution traces (e.g. '\u25c7 Attack \u22651 within first 15 steps', '\u2200 farmers stay in Village', 'go-to-cave implies eventual attack'). These are GENERAL properties that must hold across every run, not example assertions, so they fall squarely under the \u00a73 clause 'runtime monitors that check execution against general temporal or constraint rules is a rules-based check, even though it is dynamic.' The verdict (counting window satisfactions, checking valuations/witness sets) is computed algorithmically and drives AM acceptance and the repair-feedback report inside the paper's own loop — use, not measurement. The LLM only generates and repairs the adaptation manager; it does not compute the verdict. Also a formal/temporal verifier per the 'formal verifiers and model checkers' entry."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: a suite of execution test runs over varied initial states and random seeds; a candidate AM is accepted only if it passes across the whole suite, and the metrics-only baseline variant uses pure win/loss domain-outcome as the acceptance oracle (acceptance/benchmark-style testing over scenarios). AUTHOR: human \u2014 the domain expert 'provides a test set' (\u00a71.2) and states the constraints; the adaptation-manager code under test is LLM-generated."
+    }
+  ]
+}

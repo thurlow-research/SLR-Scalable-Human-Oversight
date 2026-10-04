@@ -1,0 +1,13 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "CI-integrated SAST, software-composition analysis (SCA), and license scanners deterministically check AI-generated diffs for security vulnerabilities, risky dependencies, and licensing violations; high-risk findings block merge."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unit, edge-case, and integration tests; AUTHOR: unclear — LLMs propose tests for AI-assisted code, but the paper does not establish whether the same model produced both the code and its tests."
+    }
+  ]
+}

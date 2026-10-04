@@ -1,0 +1,10 @@
+{
+  "themes": [
+    "rules-based-checks-v3"
+  ],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "VibeGuard uses static scanners (ArtifactScanner, ConfigScanner, SourceMapScanner, SecretScanner, DependencyScanner) and a policy engine with coded thresholds and hard-block rules to validate publish artifacts and packaging configuration prior to deployment."
+  },
+  "flags": []
+}

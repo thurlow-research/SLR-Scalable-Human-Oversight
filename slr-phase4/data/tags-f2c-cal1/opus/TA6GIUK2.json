@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: BDD acceptance scenarios run via `behave`, optimally targeted at the planted defects (Condition B in all three experiments); AUTHOR: mixed — experimental design 'proposed by Claude' and 'implemented by a Claude Code agent', corpus in Exp 3 'designed collaboratively across six models', while a human independent researcher planted the bugs and the BDD scenarios were written to target them; the paper does not separately state, per function, whether the same agent wrote the buggy code and its scenario"
+    }
+  ]
+}

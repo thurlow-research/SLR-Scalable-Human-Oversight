@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"rules-based-checks-v3","issue":"TESTS: benchmark reference tests plus GPT-4o-generated spec-constrained augmented tests; AUTHOR: mixed — human benchmark tests are combined with model-generated augmented tests to execute and compare the original code and proposed fix."}]}

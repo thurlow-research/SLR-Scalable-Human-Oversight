@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: benchmark reference unit-test suites (HumanEval/MBPP/QuixBugs) plus GPT-4o-generated spec-constrained augmented tests, executed inside the proposed Fix-guided Verification Filter (§7) to compare original code c vs. the judge model's proposed fix ĉ and flip/keep the NO verdict; AUTHOR: mixed — pre-existing human-authored benchmark test suites + model-generated (GPT-4o) augmented tests, while the fix code under test is produced by each of the five judge models (so augmentation is same-model only when GPT-4o is also the judge, different-model otherwise)"
+    }
+  ]
+}

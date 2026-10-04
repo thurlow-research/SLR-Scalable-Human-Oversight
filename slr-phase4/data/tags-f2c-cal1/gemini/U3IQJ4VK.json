@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "Undecidable — static analysis tools (CodeQL, Bandit, ESLint) are used as measuring instruments and oracles (which excludes them), but the study also measures the effect of providing the tools' warnings to Copilot Chat to improve its fix rate, half-fitting 'measure the effect of using it'."
+    }
+  ]
+}

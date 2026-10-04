@@ -89,6 +89,12 @@ scanners) · type checkers · formal verifiers and model checkers · policy or c
    paper's system or process**, or the paper must **measure the effect of using it**. A static
    analyser used only as the study's **measuring instrument** — to count defects in a mined corpus, or
    as the oracle that scores third-party models — does **not** fire.
+   **Mixed use fires.** If **any** part of the paper uses the tool inside a system or loop, or
+   **measures the effect of using it** (e.g. feeding its findings back to a model and measuring the
+   change), the theme fires — **even if other parts of the same paper use the tool only as an
+   instrument.** Only papers that use it *solely* as an instrument stay out.
+   *(Calibration round 1, 2026-10-04: two vendors withheld on a paper that used analysers both to
+   count defects and in a measured detector → warning → repair loop. That is mixed use, and it fires.)*
 
 **Also not this theme:** *deterministic orchestration* — fixed control flow sequencing the steps — is
 not deterministic *checking*. Rigid control flow with an LLM judge at the end does not fire.

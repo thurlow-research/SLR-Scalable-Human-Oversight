@@ -1,0 +1,13 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "Deployed CI governance runs SAST/SCA and license scanners on AI-generated code diffs: 'AI-generated diffs are subject to SAST/SCA, license checks, and required reviews; high-risk findings block merge' (III.D); 'AI-generated code passed SAST/SCA/license scans' (IV.D). These are deterministic security/dependency/license analysers checking general properties (vulnerability patterns, known-CVE dependencies, license policy); the verdict (pass / high-risk-block) is computed by the scanners, not judged by a model, and the checks validate code within the RetailCo system's merge pipeline (use, not mere measurement). Distinct from the CI-triggered 'AI reviewer' (an LLM), which is AI review and does not fire."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: LLM-suggested unit/edge-case/integration tests used to validate code (III 'CI jobs prompt LLMs to propose unit/edge-case tests from recent diffs'; Case Study 1 'LLM-suggested unit/integration tests validated end-to-end flows'; coverage 40%→95%); AUTHOR: same-as-code — the same LLM assistant pipeline that produces code suggestions also drafts the tests, with humans deciding which tests to keep ('Humans decide which tests to keep and what fixes to land')."
+    }
+  ]
+}

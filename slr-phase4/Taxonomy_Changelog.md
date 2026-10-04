@@ -8298,3 +8298,19 @@ it to 39.96%.** Llama-3.1-8B went from 90.81% to 23.56%, and QuixBugs from 51.0%
 **§147a's conclusion (hybrids out of `-v2`) is untouched; only its evidence is corrected.** Jin is
 retained as a key citation for 156b (arbiter flagged it for dissertation follow-up).
 
+### 156d. F2c calibration — round 1 missed Fu (mixed use), wording fixed, round 2 PASSED (2026-10-04)
+
+**Round 1** (`data/tags-f2c-cal1/`): 9 of 10 anchors correct. **All three test-only anchors (Lipsanen,
+Zietsman, Jin) scored 0/3**, so the tests exclusion reads correctly. Töpfer's rules-vs-examples edge
+case scored 3/3. **The miss was Fu `U3IQJ4VK`, at 1/3.** Opus and gemini flagged it undecidable on the
+use-vs-measurement condition. Fu uses CodeQL, Bandit and ESLint **both** as instruments (RQ1–2 count
+CWEs in mined code) **and** in a detector → warning → repair loop whose effect is measured (RQ3). The
+instrument did not say which use wins.
+
+**Fix (wording only; it implements §115, which already ruled this exact paper):** ***"Mixed use fires.
+If any part of the paper uses the tool inside a system or loop, or measures the effect of using it, the
+theme fires — even if other parts use the tool only as an instrument."***
+
+**Round 2** (fixed instrument, all 10 re-run): **recall 5/5, all at 3/3 · false positives 0, all
+must-nots at 0/3 · output contract clean → PASSED.** The full run is cleared.
+

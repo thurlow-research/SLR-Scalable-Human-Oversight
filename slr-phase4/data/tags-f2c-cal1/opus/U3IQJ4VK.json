@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "UNDECIDABLE (use vs measurement, §104/§115). The validators are unambiguously deterministic rule-based checkers — CodeQL ('find weaknesses in a codebase based on known weaknesses/rules', security-and-quality query suites), Bandit (73 security rules), and ESLint security plugins — not LLM judges, so conditions 1–2 are clearly met. The open question is condition 3. RQ1/RQ2 use these tools purely as the study's MEASURING INSTRUMENT to count CWE defects across a mined 733-snippet GitHub corpus of third-party Copilot/CodeWhisperer/Codeium code — the textbook §104/§115 non-fire ('count defects in a mined corpus'). RQ3 is the hinge: the static-analysis warnings are fed INTO a Copilot-Chat repair loop (generate → scan → LLM fix → re-scan) and the paper MEASURES THE EFFECT of injecting them — basic prompt 31.8% vs enhanced prompt (with warning messages) 55.5% fix rate — which approaches the 'measure the effect of using it' clause that would fire. But in that same loop the tools also serve as the oracle scoring a third-party model's (Copilot Chat's) fixes, which is the named §104/§115 exclusion. The paper proposes no secure-generation system of its own; it is fundamentally a measurement study. Flagging for arbiter ruling rather than guessing (default-to-silence, §0/§2). No §4 census flag: the paper validates code via static analysis, not tests."
+    }
+  ]
+}
