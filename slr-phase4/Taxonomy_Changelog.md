@@ -8634,3 +8634,22 @@ modal-silent: Wang `2KPHQ5IV`, Jin, Eze, Zietsman, Xu, Zhu; 3 human-endorsed bef
 `Z8TPRNEU`, Heander, Goel), plus 4 demoted papers. **The cal:* layers are untouched.** Legacy
 applications stay as provenance and are never read as scaling dissent (§56b).
 
+## 168. Closeout decision round (arbiter, 2026-10-04)
+
+- **B6 — model `demote:context` flags stay in the run JSON**, documented. They feed tier recall (C3).
+  Demotes are final and human-owned, so a Zotero model-flag layer would have no consumer.
+- **B12 — closed.** The §144 client merge folded Jin's preprint into `UDVHQ5HR`, so nothing is left to
+  file.
+- **E2 — promotion removes a paper from the Dissertation Queue.** 8 papers were removed (Primary is
+  unchanged).
+- **E5 — Gao `59KP8GTP` is the "oversight fails at scale" anchor; Branco `JQPPKSFQ` → `02 -
+  Supporting`.** This is consistent with Chapter 1, which uses Branco for agentic PRs being merged
+  without review more often.
+- **E9 — no authority signals beyond #1** (manual Google Scholar counts). Authority stays holistic and
+  qualitative (§132b).
+
+Also: **B8 swept clean** (0 Final-Core items lack a human layer or a demote). **T2 recorded**. **C6's
+pre-registered prediction tested:** Light Read origination fell from 7.7% to **5.5%**, against the
+predicted ~3.5% if the frozen instrument were the whole constraint. That is a **partial** collapse:
+roughly half the gap was the instrument and half the panel.
+

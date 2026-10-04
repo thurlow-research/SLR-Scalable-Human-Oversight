@@ -4,7 +4,7 @@
 
 **STATUS 2026-10-04 (closeout pass):** Accept band closed 44/44 (§143); F2 run, F2b, F2c and the full F2 review
 done (§151–§167); Phase 6 = 72. **Done:** A1, A2, B1, B2, B3, B5, B7, B8, B9, B10, B13, B14, D1, D2/T2, F2-PREP, F2,
-F2a, F3. **Open:** A3 (documented below) · B4 · B6 · B11 residual · B12 · C1–C3, C6–C9 · E1–E9 · F1 · F4 · F5 · F6.
+F2a, F3. **Open:** B4 · B11 residual · C1–C3, C6–C9 · E1, E3, E4, E6, E7, E8 · F1 · F4 · F5 · F6. *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
 
 *Historical progress line (2026-08-28):* **Progress (2026-08-28): 24 of 44 adjudicated · 3 partial · 17 untouched.**
 Next alphabetically: **Minh** (`74GE3TF7`). Partials awaiting a pass: `MFSZPSPU` Shi ·
@@ -149,6 +149,8 @@ rule, not a tier reversal. The study's disposition is the keeper's; the supersed
 becomes historical provenance.
 
 ### B12. Jin preprint→journal consolidated (2026-08-29) — corpus count corrected
+> ✅ **CLOSED 2026-10-04:** the 2026-08-29 client merge (§144) folded the preprint record INTO `UDVHQ5HR`, so no separate
+> superseded record remains to file. Supersession is tag-based (`supersedes:`), and the merged key is mapped in §144a.
 `UDVHQ5HR` *Uncovering systematic failures of LLMs in verifying code against natural language
 specifications* (arXiv 2508.12358, 2025-08) and `A5WDGC7J` *Are LLMs reliable code reviewers?
 Systematic overcorrection in requirement conformance judgement* (**Automated Software Engineering**,
@@ -353,6 +355,8 @@ A "no human tags" sweep will **not** surface the B7 papers, because they *have* 
 why they stayed invisible until the roster was checked by hand.
 
 ### B6. Model `demote:context` flags have no home in Zotero
+> ✅ **DECIDED 2026-10-04: JSON only.** Model demote flags stay in the run JSON (they feed tier recall, C3). Demotes are
+> final and human-owned (B5); a Zotero model-flag layer would have no consumer.
 5 records across `BAWCBT9R` and `UW2R6BBJ` (and any others surfaced by A1). The `cal:` namespace has
 **no flag form** — Light Read encodes only `primary`/`theme`/`facet`. Either define a form
 (e.g. `cal:<model>:flag:demote-context`) or record deliberately that model flags live only in the
@@ -511,7 +515,9 @@ alongside — same principle as A1.
 
 - **E1. SSRN item types + published-version check** — 12 items. OpenAlex → Semantic Scholar. If a
   journal version is found post-search, tag `source:retrieval` and **do not inflate the count**.
-- **E2. Dissertation Queue hygiene** — `03 - Queue` [4PE2T47Q] vs `01 - Primary` [WVZFNSEC]:
+- ✅ **E2 DONE 2026-10-04 — promotion removes from Queue.** 8 papers removed from `03 - Queue` (Primary unchanged):
+  `4T5QFWZE` `59KP8GTP` `5BAZZWHG` `9H6FWJME` `A6ZE2A26` `REZGA5WF` `UDVHQ5HR` `UIXCRBQX`.
+  *Original:* **E2. Dissertation Queue hygiene** — `03 - Queue` [4PE2T47Q] vs `01 - Primary` [WVZFNSEC]:
   **16 of 21** Primary members were removed from Queue, **5 were not** (Jin included, added
   2026-08-28). Settle whether promotion removes from Queue and sweep the 6. *Distinct from the
   phase-collection freeze rule — the Dissertation folder is a working triage, not a phase record.*
@@ -520,7 +526,9 @@ alongside — same principle as A1.
 - **E4. Back-fill the Validation Apparatus harvest** from the Light Read band — candidates listed at
   the foot of `Validation_Apparatus_Harvest.md`: `72W6R4JG` Töpfer · `TA6GIUK2` Zietsman ·
   `96XE669R` Zhong · `VZ27QUPQ` Zhuo (**§51 disqualifier — reference-grounded**) · `T2EG4BE2` Waseem.
-- **E5. Choose the "oversight fails at scale" anchor** — Gao vs Branco — and **place Branco** in a
+- ✅ **E5 DONE 2026-10-04 — Gao `59KP8GTP` is the anchor** (central to Chapter 1; §152 mechanism note). **Branco
+  `JQPPKSFQ` → `02 - Supporting`** (removed from Queue per E2).
+  *Original:* **E5. Choose the "oversight fails at scale" anchor** — Gao vs Branco — and **place Branco** in a
   dissertation collection.
 - **E6. Verify the dissertation-queue records** created for Du / Huang / Islam (the agent-checks-agent
   gap, surfaced via Gemini and deliberately **not** added to the corpus).
@@ -545,7 +553,9 @@ alongside — same principle as A1.
   - **Constraint:** this is for **defending** the corpus in the methods chapter, **not re-filtering
     it**. Counts are uninformative in a corpus that is 77% 2025–26 — *"uninformative, not damning"*.
 
-- **E9. Decide whether authority signals #2–#8 are adopted** (`Selection_Criteria_By_Phase.md` §394).
+- ✅ **E9 DECIDED 2026-10-04 — none beyond #1.** Authority stays a holistic, qualitative input (§132b); #7 is handled by the
+  record-status re-check; only #1 (manual Google Scholar counts, E8) proceeds.
+  *Original:* **E9. Decide whether authority signals #2–#8 are adopted** (`Selection_Criteria_By_Phase.md` §394).
   Only #1 is decided. Standing ruling (§132b, 2026-08-28): **credibility of authorship is A factor,
   not THE factor** — legitimate as qualitative input to a holistic assessment (it is already one of
   the four Garousi criteria), **not** as a sole ground and **never** as a retroactive re-filter
