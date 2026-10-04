@@ -312,6 +312,8 @@ Each database its own column. "Other methods" streams (Coursework, Practitioner 
 
 ### Per-stage counts to report
 
+This review's computed counts: `Methodology/PRISMA_Funnel.md` (script: `slr-tools/prisma_funnel.py`).
+
 - Records identified (broken out by source)
 - Records after deduplication
 - Records screened at title/abstract

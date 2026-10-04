@@ -1,0 +1,173 @@
+{
+  "snapshot_version": "169153",
+  "identification": {
+    "items_in_slr_tree": 9518,
+    "per_source_records_overlapping": {
+      "ACM": {
+        "records": 350,
+        "superseded": 0
+      },
+      "IEEE Xplore": {
+        "records": 939,
+        "superseded": 0
+      },
+      "SCOPUS": {
+        "records": 1082,
+        "superseded": 0
+      },
+      "SSRN": {
+        "records": 3785,
+        "superseded": 3
+      },
+      "Web of Science": {
+        "records": 331,
+        "superseded": 0
+      },
+      "arXiv": {
+        "records": 470,
+        "superseded": 2
+      },
+      "Coursework": {
+        "records": 99,
+        "superseded": 1
+      },
+      "Practitioner Network": {
+        "records": 7,
+        "superseded": 0
+      },
+      "Committee Recommendations": {
+        "records": 153,
+        "superseded": 1
+      },
+      "Citation Snowballing": {
+        "records": 2747,
+        "superseded": 0
+      }
+    },
+    "records_any_import": 9509,
+    "removed_as_duplicate_superseded": 7,
+    "non_record_items_in_tree": 9,
+    "unique_records": 9502,
+    "query_stream": 6807,
+    "  of_which_database": 6557,
+    "  of_which_other_methods_only": 250,
+    "snowball_stream": 2695,
+    "snowball_hits_already_in_query_stream": 52
+  },
+  "phase1": {
+    "query": {
+      "discard": 2750,
+      "maybe": 2031,
+      "keep": 1945
+    },
+    "query_conflicts": 2,
+    "query_unscreened": 81,
+    "query_unscreened_by_collection": {
+      "Q-arXiv-07": 67,
+      "Q-SCO-03": 2,
+      "01-Imports": 1,
+      "01-Keep/01-Keep/01-Import/02-Below-55 (30-54)/Q-arXiv-07/02-Context/04-Cocite-1": 1,
+      "Dissertation Lit Review/Q-CW-2026-08-15": 1,
+      "01-Core/01-Keep/01-Core/Q-arXiv-06/Phase 6 - Kept Core/01-Dups/Q-arXiv-01/03-Moderate (40-59)/04-Superseded/02 - Light Read/01 - Primary/a - non-SSRN Screening": 1,
+      "Q-SCO-02/a - non-SSRN Screening": 2,
+      "02-Cocite-3-4/01-Keep/01-Keep/01-Import/Q-arXiv-02/02-Context/Q-arXiv-01/04-Superseded/02-Context": 1,
+      "Q-SCO-04": 1,
+      "Q-SCO-05/a - non-SSRN Screening": 1,
+      "Q-SCO-04/a - non-SSRN Screening": 1,
+      "Q-SCO-02": 1,
+      "Q-SCO-01/Q-SCO-02/a - non-SSRN Screening": 1
+    },
+    "snowball": {
+      "discard": 2316,
+      "keep": 353,
+      "maybe": 26
+    },
+    "snowball_conflicts": 0,
+    "snowball_unscreened": 0,
+    "snowball_held_no_abstract": 121,
+    "snowball_held_by_p1_bucket": {
+      "keep": 121
+    }
+  },
+  "phase2": {
+    "query_input_p1_keep_maybe": 3976,
+    "query_cells": {
+      "keep->keep": 905,
+      "keep->maybe": 11,
+      "keep->discard": 1022,
+      "maybe->keep": 59,
+      "maybe->maybe": 73,
+      "maybe->discard": 1896
+    },
+    "query_eligible": 964,
+    "query_p1_pass_missing_from_p2": 11,
+    "query_in_p2_but_p1_discard": 1,
+    "snowball_s2opus": {
+      "keep": 248,
+      "discard": 184
+    }
+  },
+  "phase3": {
+    "query_triage": {
+      "core": 112,
+      "core+context": 1,
+      "context": 713,
+      "discard": 139
+    },
+    "query_eligible_not_triaged": 2,
+    "query_triaged_not_eligible": 3,
+    "snowball_triage": {
+      "core": 33,
+      "context": 171,
+      "discard": 40
+    },
+    "snowball_triage_records_in_query_stream": 6,
+    "final_merged": {
+      "core": 145,
+      "core+context": 2,
+      "context": 886,
+      "discard": 180
+    },
+    "final_by_stream": {
+      "core": {
+        "query": 114,
+        "snowball": 33
+      },
+      "context": {
+        "query": 717,
+        "snowball": 171
+      },
+      "discard": {
+        "query": 140,
+        "snowball": 40
+      }
+    },
+    "final_superseded_still_filed": {
+      "core": 0,
+      "context": 0,
+      "discard": 0
+    },
+    "triaged_not_in_final": 0,
+    "final_core_s3human": {
+      "core": 129,
+      "(none)": 16
+    }
+  },
+  "fulltext": {
+    "core_entering_fulltext": 147,
+    "demoted_to_context": 75,
+    "not_demoted": 72,
+    "not_demoted_with_human_primary": 72,
+    "not_demoted_without_human_primary": [],
+    "demoted_but_have_primary": 43,
+    "phase6_collection": 72,
+    "phase6_superseded": [],
+    "phase6_minus_predicate": [],
+    "predicate_minus_phase6": [],
+    "phase6_from_stream": {
+      "query": 55,
+      "snowball": 17
+    },
+    "phase6_not_from_final_core": []
+  }
+}
