@@ -4,7 +4,7 @@
 
 **STATUS 2026-10-04 (closeout pass):** Accept band closed 44/44 (§143); F2 run, F2b, F2c and the full F2 review
 done (§151–§167); Phase 6 = 72. **Done:** A1, A2, B1, B2, B3, B5, B7, B8, B9, B10, B13, B14, D1, D2/T2, F2-PREP, F2,
-F2a, F3. **Open:** E3, E8 · F4 · F5 . *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
+F2a, F3. **Open:** E8 · F4 · F5 . *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
 
 *Historical progress line (2026-08-28):* **Progress (2026-08-28): 24 of 44 adjudicated · 3 partial · 17 untouched.**
 Next alphabetically: **Minh** (`74GE3TF7`). Partials awaiting a pass: `MFSZPSPU` Shi ·
@@ -534,7 +534,8 @@ alongside — same principle as A1.
   **16 of 21** Primary members were removed from Queue, **5 were not** (Jin included, added
   2026-08-28). Settle whether promotion removes from Queue and sweep the 6. *Distinct from the
   phase-collection freeze rule — the Dissertation folder is a working triage, not a phase record.*
-- **E3. Back-fill named-use rationales** on Dissertation Supporting members (§109a criterion, extended
+- ✅ **E3 DONE 2026-10-04 (§178)** — 19 named-use notes written; all 29 Supporting members now carry a rationale.
+  *Original:* **E3. Back-fill named-use rationales** on Dissertation Supporting members (§109a criterion, extended
   prospectively at §112b).
 - ✅ **E4 DONE 2026-10-04 (§177b)** — 5 entries back-filled; Zhong v2/ICML title follow-up pending.
   *Original:* **E4. Back-fill the Validation Apparatus harvest** from the Light Read band — candidates listed at

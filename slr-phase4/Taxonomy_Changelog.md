@@ -8892,3 +8892,28 @@ added 2.4 points) and **Pappu** (integrative compromise). **Note for the arbiter
 a snowball record with `s1:sonnet:discard`, a machine discard of the primary source for a claim the synthesis uses.
 Whether to cite it directly (as dissertation reading, outside the corpus) is the arbiter's call.
 
+## 178. E3 DONE — every Dissertation Supporting member carries a named use; Vallecillos-Ruiz and Zhong added (2026-10-04)
+
+**Additions to `02 - Supporting` (arbiter):** Vallecillos-Ruiz `FRV9ZXRW`, the primary source for the popularity trap
+(§177e; it remains outside the corpus as a snowball record with `s1:sonnet:discard`), and Zhong `96XE669R` (VeriCode;
+Context). **Supporting now has 29 members.**
+
+**§109a back-fill:** before this pass, 8 of the 29 already had a rationale. Six carried §109a notes (Chang, Borg,
+Raghavendra, Shinde, P, Naulty, and Ehsani's arbiter note). Three carried placement reasons recorded earlier (Spiess:
+*"a survey question, not a citation"*; Kim & Yegge: *"background and anecdotal evidence"*; Bowman: *"Context tier and
+dissertation value are independent axes"*). The **other 19 received a child note**, *"Dissertation note — Supporting
+(§109a named use)"*, tagged `dissertation:named-use` and written by the assistant under the arbiter's authorization
+(*"Go ahead and add notes for E3"*). Each names **one** use, drawn from the abstract, the changelog and the harvest
+entries. Edit freely.
+
+**Clusters among the named uses**, useful when writing:
+- **Decision-surfacing:** Aporia `ZH6QIU8A` (before generation), HiLDE `CI93QRUH` (within the turn), Zhou `XRTVITVP`
+  (decomposition).
+- **Against consensus aggregation:** Vallecillos-Ruiz `FRV9ZXRW`, Pappu `2XV8ZVM8` (+ Vargas).
+- **External reference beats a second opinion:** Zietsman `TA6GIUK2`, Fu `U3IQJ4VK`, Zhong `96XE669R`.
+- **Regulatory framing:** Swidey `5RLPIA3K` (COI caveat), Tuape `XZEHQYNZ`.
+- **Checkpoint placement:** Zhou `XK3P9C96`.
+- **Theory of human review:** Langer `5DCQDB4C` (signal detection).
+- **Survey-instrument vocabulary:** Choudhuri `ID7IN65K`, Karakaya `5NZ2EDEK`, Karuppuchamy `8MXATG38`, Lipsanen
+  `7SH86C2W`.
+
