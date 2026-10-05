@@ -4,7 +4,7 @@
 
 **STATUS 2026-10-04 (closeout pass):** Accept band closed 44/44 (§143); F2 run, F2b, F2c and the full F2 review
 done (§151–§167); Phase 6 = 72. **Done:** A1, A2, B1, B2, B3, B5, B7, B8, B9, B10, B13, B14, D1, D2/T2, F2-PREP, F2,
-F2a, F3. **Open:** E1, E3, E4, E6, E7, E8 · F4 · F5 · F6 follow-up (Pappu tier). *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
+F2a, F3. **Open:** E3, E4, E6, E7, E8 · F4 · F5 · F6 follow-up (Pappu tier). *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
 
 *Historical progress line (2026-08-28):* **Progress (2026-08-28): 24 of 44 adjudicated · 3 partial · 17 untouched.**
 Next alphabetically: **Minh** (`74GE3TF7`). Partials awaiting a pass: `MFSZPSPU` Shi ·
@@ -524,7 +524,9 @@ alongside — same principle as A1.
 
 ## E. Records, bibliographic, housekeeping
 
-- **E1. SSRN item types + published-version check** — 12 items. OpenAlex → Semantic Scholar. If a
+- ✅ **E1 DONE 2026-10-04 (§176)** — 4 mistyped working papers among the kept articles retyped to `preprint`; no published
+  versions found (OpenAlex + Semantic Scholar).
+  *Original:* **E1. SSRN item types + published-version check** — 12 items. OpenAlex → Semantic Scholar. If a
   journal version is found post-search, tag `source:retrieval` and **do not inflate the count**.
 - ✅ **E2 DONE 2026-10-04 — promotion removes from Queue.** 8 papers removed from `03 - Queue` (Primary unchanged):
   `4T5QFWZE` `59KP8GTP` `5BAZZWHG` `9H6FWJME` `A6ZE2A26` `REZGA5WF` `UDVHQ5HR` `UIXCRBQX`.

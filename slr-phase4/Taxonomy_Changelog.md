@@ -8808,3 +8808,23 @@ records. `zotero-merge-prep --commit` unioned their metadata (confidence 1.00; a
 collections (the snowball import and discard collections, plus Dissertation `03 - Queue`). `WWDHF6EU` is in the trash. **Key
 mapping: `WWDHF6EU` → `G3FF4MDW`.**
 
+## 176. E1 DONE — mistyped working papers among the kept articles retyped to `preprint`; no published versions found (2026-10-04)
+
+**Scope** (per the §375 ruling: fix only papers actually read and cited) is the **72 kept articles**, checked for
+`journalArticle` with no journal name. That covers SSRN items and the same artifact on arXiv. **Four** were found;
+Zhu (published, *AI and Ethics*) and Hjazeen (retyped 2026-08-25) were already correct.
+
+**Published-version check, OpenAlex then Semantic Scholar:** **none found.** Every match is a repository copy (SSRN,
+arXiv, Zenodo). Jessee and Eze are not indexed by Semantic Scholar. **No `source:retrieval`, and no count change.**
+
+| Paper | Retyped to | Identifier |
+|---|---|---|
+| Jessee `JVWUYDME` | preprint, repository SSRN | SSRN 6052874 · DOI 10.2139/ssrn.6052874 |
+| Eze `9MV2IVNU` | preprint, repository SSRN | SSRN 6552159 · DOI 10.2139/ssrn.6552159 |
+| Swidey `5RLPIA3K` | preprint, repository SSRN (vendor white paper; still `built-system` per §157a) | SSRN 5958495 · DOI 10.2139/ssrn.5958495 |
+| Casserini `95CPB7CF` | preprint, repository arXiv | arXiv:2604.16323 · DOI 10.48550/arXiv.2604.16323 |
+
+Follows the Hjazeen precedent: an `orig-type:journal-article` tag, and the original type plus the fields the preprint
+type cannot hold (publisher, pages) preserved verbatim in *Extra*. Title, creators and abstract were verified unchanged.
+**Reminder (§375): never derive PRISMA stream counts from `itemType`; use `source:*`.**
+
