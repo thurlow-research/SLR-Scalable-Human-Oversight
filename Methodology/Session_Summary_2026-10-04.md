@@ -23,7 +23,7 @@ merged; #25 and #26 await the arbiter's merge).
   ChatGPT ≈ 56–60%, Gemini ≈ 65%.
 - **Calibration figures corrected** (closeout C1–C9, §172). Two headline numbers were **retired as artifacts**:
   80.9% origination, and ~96% panel recall. They were replaced with exhaustive-arm figures: tag recall **91.6%** (blind
-  Set B), tier recall **57.4%**, and **no detectable anchoring** (Set A 12.7% vs Set B 9.5%).
+  Set B), tier recall **57.4%**, and **no detectable anchoring** (human origination, Set A vs Set B: 10.4% vs 7.8% at T2/T3; 12.7% vs 9.5% at T2prep-b).
 
 ## 2. F2 review — 15 general questions (§151–§165)
 

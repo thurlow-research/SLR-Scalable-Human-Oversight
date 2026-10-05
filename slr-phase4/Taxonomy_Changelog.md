@@ -8973,3 +8973,23 @@ screening, tagging"*, plus a methodology summary of the day's work.
 - **Not carried into the reference sheet:** the funnel script's 129 / 16 split of `s3:human` tags on final Core sums
   to 145, not 147. It has no documented explanation, so it is left out of quotable figures pending a look.
 
+## 182. Calibration design restated in the arbiter's terms: three rounds (2026-10-04)
+
+`Methodology/Calibration_Sets_Summary.md` consolidates a design that §1, §5 item 7 and §7 of
+`Theme_Tagging_Calibration.md` describe piecemeal, in terminology that shifted over time. Claude Desktop drafted it,
+and Claude Code revised it to the arbiter's account:
+1. **Set A (10), co-tagged** by the human and Claude: **validated the tagging**. Vocabulary gaps and definition
+   problems were resolved here.
+2. **Set B (10), the human-tagged "training set"**: the instructions were refined against it, and models were scored
+   against it.
+3. **Set C, the AI-tagged "validation set"**: piloted the AI-first workflow of the full sweep.
+
+"Training" means the instrument was refined; **no model was trained**.
+
+**Open discrepancy:** the arbiter recalls Set C as **ten** studies. Zotero `U65X7JNA` and `calib_sets.json` hold **one**
+(`ZUM76CCG`, defined 2026-07-20 as *"designated test cases, growing as probes surface"*). **RESOLVED the same day (arbiter: *"Set C may have been
+abbreviated"*):** Set C was planned as a set and abbreviated to its one study, whose pilot closed 2026-08-15. The
+production sweep then carried the AI-first validation. The record stands and no members are added. **Terminology note:** the record's *"co-tagging protocol"* (§7) was named during
+**Set B** and means human-tags + AI-QA. The arbiter's "co-tagged" refers to **Set A**. The summary keeps the arbiter's
+usage and states the distinction.
+
