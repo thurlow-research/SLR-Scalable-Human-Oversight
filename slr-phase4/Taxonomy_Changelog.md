@@ -8828,3 +8828,13 @@ Follows the Hjazeen precedent: an `orig-type:journal-article` tag, and the origi
 type cannot hold (publisher, pages) preserved verbatim in *Extra*. Title, creators and abstract were verified unchanged.
 **Reminder (§375): never derive PRISMA stream counts from `itemType`; use `source:*`.**
 
+**175b. Pappu `2XV8ZVM8` — tier: CONTEXT (arbiter, 2026-10-04).** *Multi-agent teams hold experts back*: self-organizing
+LLM teams lose up to 37.6% against their best member through *"integrative compromise"* (averaging expert and
+non-expert views), which worsens with team size, while consensus-seeking buys robustness to adversarial agents. It fails
+Core test 1 (general multi-agent teams, not oversight of AI-generated code). It is **retained as transferable evidence
+against consensus aggregation**, the third independent signal alongside Zietsman's *"popularity trap"* (§163a) and
+Vargas's 2.4-point agreement result (§169), and it bears on HOS's choice of critique over averaging. `s4:human:context`
+added; the earlier `s4:human:keep` (reinstated to triage) stays as layered history. **F6 is fully closed: 8 examined,
+6 reinstated as Context (Karpathy, Pappu, Imai, Dong, Alenezi, J. Wang), 2 discards confirmed. Phase 6 is unchanged
+at 72.**
+

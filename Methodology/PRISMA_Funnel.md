@@ -204,8 +204,8 @@ Phase-6 papers (`5VTAJISY`, `6ZW9QNQH`, `95CPB7CF`). **Rule:** a record is super
 
 Eight records the **arbiter kept at Pass 1** were later discarded **by machine** without human review (Pass 2, or Opus
 triage below the review floor). They were re-adjudicated as a **new layer** (`s4:human:*`; collection `Reconsider`), not
-by revising these funnel figures: **6 reinstated** (5 to Context, 1 — Pappu — to triage, tier pending), **2 discards
-confirmed**. Report this pass separately in PRISMA; the counts above stay as recorded.
+by revising these funnel figures: **6 reinstated, all to Context** (Pappu's triage call returned Context, §175b), **2 discards
+confirmed**. Phase 6 is unchanged at 72. Report this pass separately in PRISMA; the counts above stay as recorded.
 
 ### 5.4 Outside the funnel (post-closure supplementary material)
 
