@@ -1,0 +1,9 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    { "slug": "rules-based-checks-v3",
+      "issue": "TESTS: execution-grounded differential tests — model-generated candidate SQL executed on 10 independently seeded MySQL instances, results canonicalized and compared to a reference query's results, labeled correct only if all 10 match (Sec III-C); AUTHOR: human — the 82 prompts and their ground-truth reference SQL queries were human-authored/'carefully crafted' by the authors (Sec III-B), while the candidate code is LLM-generated" }
+  ]
+}

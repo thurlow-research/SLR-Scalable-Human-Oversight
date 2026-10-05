@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design (census #1). The contributed system (MV-HIC / the HIC control plane) is a proposed reference architecture, not built or run: §16.1 states the companion reference implementation is a 'planned artifact of this research program,' and §3 says the paper 'does not present new empirical results.' Were it built and evaluated, it would fire — form (b) enforcement (deterministic envelope check routes PASS→frozen-payload execution / FAIL→escalation, code honoring the outcome, not a model; §8, §9.1, §9.3, Fig. 1) with form (c) dispatch (top-level code calls the model only for the bounded probabilistic proposal, then assembles artifacts and routes). Orchestrator is non-AI code, there is a model step, and enforcement is top-level, so all preconditions would hold. Not a human-outer-loop case: the design explicitly replaces per-item human approval with programmatic boundary enforcement."
+    }
+  ]
+}

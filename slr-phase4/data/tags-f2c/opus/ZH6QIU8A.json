@@ -1,0 +1,9 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    { "slug": "rules-based-checks-v3",
+      "issue": "TESTS: per-decision executable test suites, example-based integration/acceptance tests (e.g. 'reviewer_a (assigned) + GET /papers/2 -> 200', 'reviewer NOT assigned + GET /papers/1 -> 403', 'user POST /page -> 403'); auto-run during implementation to validate code against each decision (§3.1, §3.3). AUTHOR: same-as-code — both code and tests produced by Claude Code / Claude Sonnet 4.6, but via distinct agent roles: the planner formalizes decisions into test suites, the implementer writes the codebase (§3.3, §4.2.2)." }
+  ]
+}

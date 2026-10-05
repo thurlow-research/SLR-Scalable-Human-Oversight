@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: correctness tests; AUTHOR: human — participants wrote tests to check the AI-generated code for correctness"
+    }
+  ]
+}

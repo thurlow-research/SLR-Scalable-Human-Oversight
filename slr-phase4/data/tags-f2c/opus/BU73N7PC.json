@@ -1,0 +1,9 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    { "slug": "rules-based-checks-v3",
+      "issue": "TESTS: author-run test plan — 'Commands (build, lint, tests) executed (and outputs) by the diff author to validate the code changes' (Table II) — used only as an LLM input feature; plus 'peer review, in-house user testing, automated tests, and canary tests' in Meta's pre-deploy process (§II-A, background). AUTHOR: same-as-code (human) — the diff author is a Meta engineer validating their own human-written diff. Note: code here is human-authored; the paper's models only predict SEV risk, they do not generate code, and no deterministic rule-checker computes the gating verdict." }
+  ]
+}

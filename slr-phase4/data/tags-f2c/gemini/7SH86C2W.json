@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: BDD/acceptance and unit tests; AUTHOR: mixed — Claude Sonnet 4.5 generated the BDD tests while GPT-5.0-Codex generated the code (Shift-Up approach), whereas GPT-5.0-Codex generated both code and unit tests (structured vibe coding)."
+    }
+  ]
+}

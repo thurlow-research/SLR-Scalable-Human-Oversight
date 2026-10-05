@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [
+    "deterministic-orchestration-v2"
+  ],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a) — the Review Comment Generation pipeline runs in a fixed sequence controlled by code (Context Preparation, RuleChecker LLM, ReviewFilter LLM, Comment Aggregation) where models cannot skip steps because the harness advances the state."
+  },
+  "flags": []
+}

@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design — HAIF is a proposed protocol-based framework developed via Design Science Research; the abstract and §2.5/§5-§12 state it completes DSR activities 1-4 with only analytical evaluation, and 'Empirical validation is identified as future work.' §8 is an 'illustrative scenario,' not a run. There is no contributed software system that was built or executed, so nothing to assess for top-level control. Would-be form if ever built: (a)/(b) — fixed Scrum/Kanban phase sequencing plus validation gates (extended Definition of Done, tier-protocol checks that block 'Done')."
+    },
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human-driven outer loop — even taken as specified, the outermost progression is advanced by humans, not code. The Hybrid Work Owner (a human: SM/Tech Lead) leads tier classification at sprint planning (§7.2, §B.2); humans perform validation per tier and any team member demotes a tier manually (§6.3, §B.3); tier transitions are decided in the retrospective by the team (§7.2, §B.4). The framework is explicitly 'tool-agnostic' with 'zero roles' and no orchestrator code — the gates (DoD, validation checklists in App. A) are enforced by human reviewers clicking through ceremonies. The models here are the delegated producers, not steps dispatched by a code orchestrator. Inner form of the enforced gates would be (b)."
+    }
+  ]
+}

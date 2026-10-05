@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design — The contributed Type III 'Vibe Reasoning' system (§4) is a position/vision: specified in aspirational terms ('should', 'could', 'Promising Directions', 'future work'), not built or run. §5 reports only a thin proof-of-concept with a single toy illustrative result (no study). If built as envisioned, the side-car is a fixed pipeline — LLM autoformalization dispatched as a bounded step, then deterministic syntactic/compiler verification, then feedback integration — i.e. it would be form (c) dispatch (with form (a) sequencing). Flagging per §4.1."
+    },
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human/agent-driven outer loop — Even the §5 POC is a side-car integrated 'with Claude Code... via hooks that run on code changes.' The outermost progression (which features/revisions happen next) is advanced by the human developer plus the Claude Code LLM agent; the deterministic autoformalize→verify→emit sequence sits reactively below that model-driven loop, not at top level (precondition 3). Inner part would be form (c)/(a). Flagging per §4.2."
+    }
+  ]
+}

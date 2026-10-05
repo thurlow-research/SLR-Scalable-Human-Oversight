@@ -1,0 +1,15 @@
+{
+  "themes": [
+    "rules-based-checks-v3"
+  ],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "SAST, SCA, and license scanners validate AI-generated diffs against security vulnerabilities, dependency risks, and licensing rules, blocking merges on high-risk findings."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unit, integration, and edge-case tests; AUTHOR: mixed — LLM assistants propose tests from recent diffs, which humans then review and decide to keep."
+    }
+  ]
+}

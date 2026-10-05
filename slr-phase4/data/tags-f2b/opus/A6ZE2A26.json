@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (b) (with (c)) — The contributed artifact is a code-controlled acceptance gate: each judge model is dispatched for one bounded binary task (vote 'correct'/'incorrect' on a candidate SQL), and plain Python applies a fixed unanimous AND rule to turn those model verdicts into accept/reject. 'LangChain only as a light wrapper to issue model calls... prompt templates, vote parsing, and committee logic are implemented in plain Python'; 'accepted only if every committee member votes correct.' Form (b): the consequence is fixed in code — any single 'incorrect' vote deterministically produces rejection, with no model choosing to honour it (directly analogous to Jin `UDVHQ5HR`, where the final verdict is determined by code aggregating model outputs). Form (c): top-level code calls the models as bounded workers and itself decides what each output triggers (approve vs. fall back to human). Verdicts are AI (the checking axis); the aggregation/decision flow is code. Preconditions met: orchestrator is plain Python (1); judges are model steps (2); the aggregation is the outermost control, no model decides the sequence (3). Built and run (pipeline executes, TPR/FPR/J reported), so not the 'unbuilt design' census case; accept/reject is code-automated, not human-advanced, so not the 'human outer loop' case."
+  },
+  "flags": []
+}

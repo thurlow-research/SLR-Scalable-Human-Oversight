@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Census (unbuilt design) + boundary note. The system (PoE) is proposed with a conceptually-described 'technical implementation' but no empirical run/evaluation — Section 5 is Conclusion/Future Work ('empirical studies are needed'); the two user profiles and the DB-caching scenario are illustrative/hypothetical. Form it would be: NONE. Decisive non-fire reason is architecture, not the unbuilt status: PoE is a process-explainability/monitoring layer wrapping an AUTONOMOUS coding agent. The LLM agent controls the outermost flow (fails precondition 1 — orchestrator is AI); PoE's deterministic parts (transparent proxy, deviation detector, DAG) sit around a model-controlled loop (fails precondition 3). The 'deviation detector' surfaces violations to a human reviewer and 'complements, rather than replaces, existing review' — no code enforcement, so not form (b) despite the controlling/deviation vocabulary. This is the inverse of the facet, so it would not fire even if built."
+    }
+  ]
+}

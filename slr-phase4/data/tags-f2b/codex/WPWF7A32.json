@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design — DevLicOps specifies potential form (b) enforcement, including automated CI/CD scripts that flag and block noncompliant ACA-generated code, but the framework is not implemented or evaluated."
+    },
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human outer loop — the proposed inner form (b) gate sits within a process advanced by developers, managers, audit teams, and legal reviewers, who fix or replace code, document exceptions, conduct audits, and authorize progression."
+    }
+  ]
+}

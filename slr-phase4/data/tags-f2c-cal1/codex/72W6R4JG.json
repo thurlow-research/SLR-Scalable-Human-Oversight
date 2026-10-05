@@ -1,0 +1,13 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "The implemented constraint verifier deterministically checks executed adaptation-manager traces against generic architectural rules and Functional Constraints Logic temporal formulas, validating interface/execution correctness, valid and unique ensemble assignments, and required multi-step behavior."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: multi-run execution suite using varied initial states and random seeds; AUTHOR: human — the domain expert provides the test set, and candidate adaptation managers must pass all checks across it."
+    }
+  ]
+}

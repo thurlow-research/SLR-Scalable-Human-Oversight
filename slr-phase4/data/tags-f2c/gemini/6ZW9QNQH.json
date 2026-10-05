@@ -1,0 +1,10 @@
+{
+  "themes": [
+    "rules-based-checks-v3"
+  ],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "TypeScript compiler and lightweight syntactic checks used to validate structural properties and type constraints (e.g., exhaustive switch handling, object satisfaction) of LLM-generated code"
+  },
+  "flags": []
+}

@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Mechanics half-fit but the contributed-system precondition does not. The paper's AI apparatus is a code-sequenced two-phase flow (Coding Phase: a generate-run-until-it-executes repair loop citing InterCode/LEVER — resembles form (c); then an Explanation Phase — resembles form (a) sequencing). However, this is a human-subjects study whose stated contributions are two surveys; the humans are the subject, and the LLM pipeline is instrumentation to produce survey stimuli, not a contributed/evaluated system. Reinforced by human curation of the outputs ('All explanations are manually reviewed and, when necessary, adjusted by the authors'). Held as undecidable rather than fired: the only thing between it and (a)+(c) is the 'judge the contributed system, not the apparatus' call."
+    }
+  ]
+}

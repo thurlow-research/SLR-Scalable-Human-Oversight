@@ -1,0 +1,15 @@
+{
+  "themes": [
+    "rules-based-checks-v3"
+  ],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "The Agentic Consensus system utilizes static analysis (e.g., AST), type/schema checks, and structural invariants (like feature parity contracts) to validate proposed code and artifact changes against the consensus graph."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unit tests; AUTHOR: unclear — the system runs unit tests and an Auditor agent 'generates evidence', but explicit authorship of the tests is not definitively detailed."
+    }
+  ]
+}

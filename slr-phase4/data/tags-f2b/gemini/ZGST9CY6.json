@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design (form b) / human outer loop (form b): The paper proposes a conceptual framework and design patterns without implementing a system. The patterns describe code-enforced thresholds triggering abstention/escalation (form b) within a human-driven outer evaluation loop."
+    }
+  ]
+}

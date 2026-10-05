@@ -1,0 +1,13 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "At gate G5, compiler and linter tooling deterministically applies syntax, type, and style rules to validate the implemented code before progression."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: automated test suite plus mandatory manual testing; AUTHOR: unclear — Phase 6 requires all tests to pass and verifies functional correctness, UX, and specification coverage, but the paper does not state who authors the tests."
+    }
+  ]
+}

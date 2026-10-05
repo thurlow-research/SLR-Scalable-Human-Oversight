@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: Robot Framework acceptance tests; AUTHOR: different-model — Tests were generated using Claude Sonnet 4.5 via prompting, while code implementation used GPT-5.0-Codex."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Undecidable boundary case — would be form (c) if it fires. This is an empirical study (RQ1 code-quality/redundancy, RQ2 reviewer sentiment over the AIDev dataset) whose contributed artifact is a measurement framework with two fixed code pipelines: (1) Snapshot-based Semantic Differential Analysis — extract F_base functions, call CodeSage-Large for embeddings, exclude Move/Rename via PyRef, compute MRS = max cos-sim, report AMR; (2) sentiment pipeline — collect/filter PR comments, drop bots, classify with Emotion English DistilRoBERTa-base, average per PR. By literal construction the top-level flow is code and it dispatches models (an embedding model; a sentiment classifier) for bounded jobs — form (c) 'models as components, not controllers.' BUT the facet's control-flow tension does not really apply: these models are feature extractors in a batch measurement instrument, not decision-capable workers whose discretion code withholds (preconditions presuppose a model that *could* have taken the wheel), and no stage output triggers any process control (block/escalate/retry/approve) — the outputs are only aggregated into research statistics. No routing, no state machine, no consequence. Fits form (c) by form, falls outside the facet's intent (who controls the *process* of a task-performing system). Flagging rather than guessing."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: pre-written BDD scenarios run via behave, optimally targeted at single planted bugs; AUTHOR: same-as-code — the planted-bug Python corpus and the matched BDD scenarios were produced by the same experimental source (human researcher planted the bugs; a Claude Code agent implemented the Claude-proposed design), and Exp.3's corpus was designed collaboratively across six models; code-under-test and its tests share authorship (§2.5)."
+    }
+  ]
+}

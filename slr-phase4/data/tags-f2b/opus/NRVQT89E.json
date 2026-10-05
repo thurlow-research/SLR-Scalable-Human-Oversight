@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Boundary / undecidable — would be form (c) if it fires. The evaluated flagship system is CriticGPT = RL+FSBS (\"Unless otherwise noted, CriticGPT refers to RL+FSBS at the 50th percentile\", §2.3), so FSBS is a genuine evaluated configuration, not an optional unused mode. In FSBS each critique is produced by deterministic code running a fixed beam search: force-sample n=4 highlight continuations, score them with the reward model and keep top k=2, repeat for d=4 rounds, then select the final critique by argmax of rm_score + LENGTH_MODIFIER*num_highlights (28 candidates total). Code holds the process and dispatches TWO models as bounded workers — the critic policy to generate, the separate reward model to score — and routes their outputs itself (prune to top-k, final argmax); no model decides what runs next, and this is the outermost inference flow (preconditions 1 'not AI orchestrator', 2 '≥1 model step', 3 'top level' all met). This matches the §151 widening almost verbatim ('code holds the process and dispatches models only for bounded tasks… then routes their outputs itself'). BUT it is a reward-model-guided decoding/search strategy over a single contributed critic model, not the heterogeneous multi-step task workflow of the worked positives (Vargas/Lyu/Jin); a reasonable judge could call FSBS 'just a decoding strategy' and the contributed artifact simply a model (clean negative). Per §0 'default to silence / when unsure, flag instead of emit', I am flagging rather than firing and leaving the call to the arbiter. (Secondary note: the oversight method as actually deployed — Human+CriticGPT, §2.1.3, contractor edits a pre-filled critique — has a human as the outer loop with no code gate, so census pattern 2 does not cleanly apply either.)"
+    }
+  ]
+}

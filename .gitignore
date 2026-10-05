@@ -49,3 +49,6 @@ slr-phase4/data/critique/gemini_ka*.md
 # expected-answers file ARE source and stay tracked.
 slr-phase4/data/tags-f2/
 slr-phase4/data/tags-f2-narrow/
+
+# Full-text PDFs / TXT extractions awaiting Zotero attachment — never commit (public repo)
+new_pdfs/

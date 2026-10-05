@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (c), also (a) and (b) — The contributed system's inference flow is a fixed four-stage code pipeline (§3.1, §3.3): Context Preparation (code: tree-sitter diff partitioning + annotation) → RuleChecker (fine-tuned LLM, bounded job: detect issues against the 219-rule taxonomy) → ReviewFilter (fine-tuned LLM, bounded job: binary yes/no retain decision) → Comment Aggregation (code: cosine-similarity dedup). This is form (c) dispatch: top-level code calls two LLMs as bounded workers, one task per call, and itself routes their outputs — no model ever decides what runs next. There is no manager/planner agent; the authors explicitly contrast with multi-agent review systems in related work, so precondition 1 (orchestrator is not AI) holds; RuleChecker and ReviewFilter satisfy precondition 2 (model steps present); the pipeline is the system's outermost flow and runs automatically on each MR diff (§3.6, Fig. 5), so precondition 3 (top level) holds. Form (a) also fires — the four stages run in a code-fixed order; RuleChecker cannot skip ReviewFilter. Form (b) also fires — ReviewFilter emits a yes/no verdict and the code deterministically drops any comment it rejects (filter rate 55.25%, Table 3), the model's verdict honoured by code, not by a model choosing to. The data flywheel is a separate offline human+code training loop, not part of the inference control flow, and does not affect the call."
+  },
+  "flags": []
+}

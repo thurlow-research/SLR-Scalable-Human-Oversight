@@ -673,6 +673,12 @@ being an instrument for surfacing the contested surface.
 **panel agreement** instead; that band was removed — see **§11** for why and for the measured
 override rate that settled it.
 
+**Full Read was 6-for-6 demoted (C8).** Nothing survived the deepest reading protocol. That is the expected
+outcome rather than a protocol that could not pass anything: Full Read was the original design's HUMAN band —
+the papers on which the panel **split** (§11.2) — so it concentrated the contested cases, and a full read resolved every one of them
+to Context. (Its tag figures are correspondingly uninformative: §42's demote short-circuit skips tag
+verification.)
+
 ### 10.3 Instrument
 A single frozen vocabulary — **v2.13**, 17 themes + 27 facets = **44 tags** — identical for every
 tagger. **Frozen deliberately for gauge constancy**: the instrument must not move while measurements
@@ -916,6 +922,11 @@ are excluded from this table for the reasons above, plus the Set C pilot, Otten 
 (`UDVHQ5HR`) sits in both Accept and Set A after the §144 merge and is counted among the 57:
 57 + 14 + 1 = 72.
 
+> **Counting correction (2026-10-04, changelog §173).** The figures in this section were computed with a vote counter
+> that counted **tags rather than vendors**, so a single model's primary (written as both `primary:theme:X` and
+> `theme:X`) passed as 2/3. The inflation is small (≤15 of ~1,050 proposals). **Corrected, post-review, surviving
+> papers: 48 of 509 = 9.4% rejected** (`tag_layer_stats_T2b_2026-10-04.json`; `slr-tools/silence_audit.py`).
+
 **On the papers that survive into synthesis, the arbiter overturned roughly one model-agreed tag in
 eleven.** The pooled 7.7% understates this, because it averages in demoted papers whose tags were
 never checked. Per band, rejections ran Light Read 52 / 678 (7.7%), Accept
@@ -1002,12 +1013,9 @@ difference between them is **who speaks first**, not whether the check happened.
 arbiter independently…"* is unsupported for Light Read, Full Read, and Accept. The figures below
 describe an **assisted arbiter throughout**, and that qualifier has to travel with them.
 
-**Open — the control band's status (resolve before §11.7 is written up).** The blind-first calibration
-band (n=20) is the control for anchoring, and it is documented as blind to **panel proposals**. Whether
-it was also **unassisted** is not recorded and is not inferable from the tag data. It matters: if that
-pass was assistant-mediated too, then the review has **no unassisted arm at all** and the 80.9% vs 8.0%
-comparison contrasts *blind-to-panel* against *panel-supervised*, both assisted — a narrower claim than
-§11.7 currently implies. **Arbiter to confirm from memory of that session.**
+**RESOLVED (C5, 2026-10-04) — the control band's status.** The calibration band was *not* uniformly assisted: the
+first ten papers were co-tagged and drove taxonomy revisions; **the next ten (Set B) were tagged blind and unassisted.**
+So there **is** an unassisted arm, n = 10 — it is the *supervised* bands that have none. §11.7 uses Set B as the control.
 
 **Why this belongs in the write-up: it changes what the origination statistic means.** A tag the
 arbiter reaches **in dialogue with the assistant** is written `cal:human:*`, and if the panel also
@@ -1032,36 +1040,64 @@ other people's systems: *where does the human actually sit when the vocabulary e
 hold?* Here the answer is **adjudication over machine-maintained recall, in both directions** — which
 is `hitl-workflow` over `ai-review`, self-applied. Cross-referenced in `Emerging_Themes.md`.
 
-### 11.7 The anchoring limitation — real, measured, and narrower than expected
-Supervision creates an obvious risk: validation is **anchored by what gets proposed**. A tag no
-model offers is one the arbiter is less likely to add — automation bias in our own instrument.
+### 11.7 The anchoring limitation — measured, and NOT detected
 
-At T0 the effect is measurable, and the design happens to contain its own control. The blind-first
-calibration band (§1) had the same arbiter tag the same instrument **without seeing proposals**:
+> **CORRECTED 2026-10-04 (closeout C1–C3, C5; changelog §172).** An earlier version of this section reported the
+> blind-first calibration band at **80.9%** origination against Light Read's 8.0%, and inferred **"~96% panel recall."**
+> **Both figures are retired.** 80.9% was an artifact: Set B had **no model tags in Zotero** when it was computed, so every
+> human tag counted as "originated" (Set B = 100%), blended with a Set A that still held the superseded v1 run. "~96%
+> recall" was read off a **non-exhaustive** band and cannot distinguish *the panel missed nothing* from *nobody looked*.
+> Neither number should be quoted.
 
-| Band | human tags | originated by the human |
+Supervision creates an obvious risk: validation is **anchored by what gets proposed**. A tag no model
+offers is one the arbiter is less likely to add — automation bias in our own instrument.
+
+**The design contains a clean control.** Set A and Set B are the only comparison that differs *solely*
+in whether model proposals were visible: same arbiter, same instrument, same **exhaustive** protocol,
+same era. Set A was tagged with model output present (blind first read, model-aware adjudication);
+**Set B was tagged blind and unassisted** (C5: the first ten calibration papers were co-tagged and drove
+the instrument; the next ten were blind).
+
+| Band | protocol | originated by the human |
 |---|---|---|
-| Light Read (supervised) | 438 | **8.0%** |
-| Calibration (blind-first) | 157 | **80.9%** |
+| Set A — AI Calibration (`JFN8693L`) | model-first, exhaustive | **12.7%** |
+| **Set B — Human Calibration (`IURU9UTA`)** | **blind**, exhaustive | **9.5%** |
 
-But **17 of the 35 Light Read originations are post-freeze tags the panel could not propose** —
-`evaluated-synthetic`, `agent-panel`, `cross-model`, `evaluated-benchmark`, `evaluator-reliability`.
-Excluding what was unreachable, human origination against the vocabulary the panel *could* see is
-**~4%**.
+*Source: `tag_layer_stats_T2prep-b_2026-08-29.json` (after Set A's v1 → v2.13 supersession). The direction holds at T2
+(`…T2_2026-10-04.json`): 10.4% vs 7.8%.*
 
-**So the limitation lands somewhere more useful than "the arbiter gets anchored": panel recall on
-its own vocabulary is ~96%, and the real bound is that a frozen instrument caps what can be proposed
-at all.** The mitigation is instrument revision (§41 graft + restricted re-run), not more human
-vigilance.
+**No anchoring effect is detectable** — the blind arm originates *slightly less* than the model-first arm
+(n = 10 each; the difference is noise-scale). **Light Read is retired as a control** rather than
+reinterpreted: it is confounded three ways — non-exhaustive by design, vocabulary growing under it, and a
+confirmation protocol that drifted mid-band (§10.8, §150).
 
-Three caveats belong in the write-up rather than in a reviewer's question:
-- **"Originated" means absent from every model's *modal* set.** Only modal tags reach Zotero, so a
-  1-of-3-run proposal counts as originated; 8.0% is an **upper bound**.
-- **80.9% vs 8.0% is directional, not an effect size.** The blind-first pass was an *exhaustive*
-  coding; the supervised pass is deliberately non-exhaustive (§10.8, silence = not considered). The
-  share attributable to anchoring versus to intended design is not separable from these data.
-- **Because the vocabulary was co-authored with the arbiter**, recall is measured against a *shared*
-  instrument, not independent ground truth. Standard for codebook studies; still ours to say.
+**Recall must be estimated from the exhaustive arms only:** **Set B 76/83 = 91.6%** (headline — a blind
+arbiter cannot have been anchored into agreement), Set A 59/66 = 89.4%.
+
+**Tag recall and tier recall are different numbers, and one must never stand for the other.** The panel
+is a **decent tagger and a poor triager**:
+
+| axis | recall |
+|---|---|
+| tags (Set B, blind, exhaustive) | **~90%** |
+| **tier / demote** (all bands, n = 125) | **57.4%** — the panel gives *no signal* on 26 of 61 human demotes; tier precision 71.4% |
+
+Errors run both ways on tier: Eze (`9MV2IVNU`) — panel 9/9 demote, arbiter kept (over-demotes); the
+Accept band — 0 model flags across 22 reviewed, 7 human demotes (under-demotes, on the very band
+constituted by model confidence — further detection in §11.3's sense).
+
+**The real bound is the frozen instrument, not panel recall — and that is now measured.** C6 recorded a
+falsifiable prediction **before** the F2 restricted re-run: if the frozen vocabulary was the binding
+constraint, Light Read origination should collapse from 7.7% toward ~3.5% once the post-freeze slugs
+became proposable. **Observed at T2b: 5.7% — a partial collapse:** roughly half the gap was the
+instrument, half the panel (§11.9).
+
+Caveats that travel with these figures:
+- **"Originated" = absent from every model's *modal* set** (only modal tags reach Zotero), so origination
+  is an **upper bound**.
+- **n = 10 per calibration arm.** Direction, not effect size.
+- **The vocabulary was co-authored with the arbiter**, so recall is against a *shared* instrument, not
+  independent ground truth. Standard for codebook studies; still ours to say.
 
 ### 11.8 What survives from the ladder, and the two axes
 The triage ladder was not deleted — it was **demoted from gate to sort order**. Tripwires (sprawl,
@@ -1131,6 +1167,13 @@ Figures are regenerated by `slr-tools/tag_layer_stats.py` at three points:
 | **T1** | Light Read + Accept closed, still frozen | do the T0 rates hold over the full corpus? — **yes, approximately: pooled override 7.7% vs 8.3%; 9.0% on surviving papers** (§11.5); `tag_layer_stats_T2prep_2026-08-29.json` |
 | **T2** | after the restricted re-run on the revised instrument | was the gap the *instrument* or the *panel*? |
 
+**MEASURED 2026-10-04 (T2b, `tag_layer_stats_T2b_2026-10-04.json`) — the prediction recorded before the run (closeout
+C6) was a partial hit.** Light Read origination moved **7.7% (T1) → 5.7% (T2b, vendor-count corrected; 5.5% at T2)**, against a predicted ~3.5% if the frozen
+instrument were the whole constraint. Roughly **half the gap was the instrument and half the panel**: once the
+post-freeze slugs became proposable the panel picked up many of the arbiter's originations, but not all. (Caveat
+for the comparison: between T1 and T2 the arbiter also ruled on the new proposals — §151–§166 — so T2 reflects
+both the restricted re-run *and* its review.)
+
 **T1→T2 is the informative comparison.** If origination on the post-freeze slugs collapses toward
 zero, the gap was the instrument. If the panel still misses them with the definitions in hand, that
 is a panel capability limit and a reportable finding.
@@ -1142,7 +1185,7 @@ is a panel capability limit and a reportable finding.
 ### 11.10 Earlier changes, with what prompted each
 | Change | Prompted by |
 |---|---|
-| Fable 5 added as a fourth tagger (2026-07-14), later dropped | cost per marginal disagreement not justified once the decisive comparison ran (§3.5) |
+| Fable 5 added as a fourth tagger (2026-07-14), later dropped | designed as a **tiebreaker on model disagreement**; superseded by **k = 3 runs of every vendor**, which measures intra-rater reliability where a tiebreaker only casts a deciding vote on contested items. Cost per marginal disagreement not justified once the decisive comparison ran (§3.5). **General principle (C7): panel composition must be uniform across the corpus — a vendor run on a subset cannot enter the statistics.** Fable output exists for 5 of 10 Set B papers and was deliberately **not** written; Fable stays gated on per-run permission. |
 | k=3 replication: disagreement-triggered → universal | run-to-run variability observed during assignment; needed to separate intra-model instability from inter-model disagreement (§5) |
 | Persona framing evaluated and **rejected** | no measurable effect at panel tier (§8.1) |
 | Prompt splitting assessed and **declined** | no length effect at panel tier; three of the four longest papers were unanimous and correct (§8.2) |

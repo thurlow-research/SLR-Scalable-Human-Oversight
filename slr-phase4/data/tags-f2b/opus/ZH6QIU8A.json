@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human outer loop (census pattern #2, F2 question 8) — inner part would be form (c). The contributed system (Aporia, a VS Code extension in TypeScript) does dispatch three bounded Claude Code workers — a questioner (generates design questions), a planner (formalizes decisions into test suites), and an implementer (edits the codebase) — via the Agent Client Protocol, with the extension managing async state, queueing/batching, and auto-generating a test suite on each committed decision and auto-running tests on implement (§3.3). That stage dispatch is code calling models as bounded components = form (c). BUT the OUTERMOST progression is advanced by the human programmer: they type the goal, engage with or dismiss each question, add custom decisions, judge when the design is 'sufficiently well-defined,' and click 'Implement plan' (8 in Fig. 3) to trigger implementation (§3.1). Phase transitions (elicit → decide → implement → validate) are driven by the human, not by code — so precondition 3 (TOP LEVEL = code) is not met. Built and evaluated (N=14 user study), so not the unbuilt-design pattern. Flagging per §4 rather than emitting."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "UNDECIDABLE: half-fit. The paper proposes machine-readable 'architectural seeds' (invariants, security requirements, design patterns) and a 'deviation detector' that flags divergences — which is constraint/rule-engine-shaped. But it does NOT fire on two grounds: (1) the detector compares the agent's natural-language STATED INTENT from reasoning traces (e.g. 'query the database directly from the controller for lower latency') against the seeds, not code against deterministic rules — a semantic comparison that requires NL understanding, so the verdict is not plainly code-computed (cond. 1 unmet / unspecified mechanism); it is explicitly positioned as complementary to, not an instance of, code/diff static analysis. (2) It is a position/vision paper: §4 says 'we implement a reasoning-action loop' but there is no implementation detail, no evaluation, no experiment, no measured effect — the conclusion is 'Conclusion and Future Work' full of 'future research should' (cond. 3 'use, not mere measurement' unmet). Flagging rather than emitting per default-to-silence."
+    }
+  ]
+}

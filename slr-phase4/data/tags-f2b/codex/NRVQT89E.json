@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "forms (a), (b), and (c) — the evaluated FSBS harness fixes four rounds of force-sampling, reward-model scoring, top-k selection, and continued sampling; after each round, code selects the highest-scoring completions and forces the next highlight, then deterministically chooses the final critique by maximizing rm_score + LENGTH_MODIFIER * num_highlights. The policy and reward models perform bounded generation and scoring tasks, while code controls the outer sequence and the consequences of their outputs."
+  },
+  "flags": []
+}

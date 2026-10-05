@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"rules-based-checks-v3","issue":"UNDECIDABLE: MV-HIC specifies deterministic policy engines such as Open Policy Agent to check proposed actions and payloads against operating-envelope rules, thresholds, and circuit breakers, but the paper does not apply these checks to code validation."}]}

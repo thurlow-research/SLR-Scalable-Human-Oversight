@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [
+    "deterministic-orchestration-v2"
+  ],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a) — The orchestrator is a central coordination layer implemented in JavaScript/Node.js that drives the project through a fixed three-phase lifecycle (Strategy → Execution → Verification). Phase sequencing and transitions are code-determined, meaning the model cannot skip a step."
+  },
+  "flags": []
+}

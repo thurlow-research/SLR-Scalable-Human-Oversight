@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design — explicit vision paper; the five-stage framework (§4) is proposed/specified but never implemented, run, or evaluated (all conditional/future tense, no reported study). Form it WOULD be if built: primarily (a) a fixed five-stage sequence (PR Creation→Augmentation→Reviewer Selection→AI-Assisted Review→Retrospective) with code-conditioned bypasses, plus (c) code dispatching the four bounded PR-Augmentation analysis agents concurrently then a Summary Generation agent. Do-not-emit per §4.1."
+    },
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human outer loop / model-led inner stage — even as designed, the OUTERMOST progression is advanced by humans at HITL quality gates (PR author 'finalizes and creates PR'; reviewer 'decides to approve or request revisions'; Fig. 2 'Human Control Points'), and the AI-Assisted Code Review stage is led by an LLM 'PR Review Agent' that 'manages the entire review lifecycle and delegates to subordinate agents' (the manager-agent inverse of the facet). So top-level code control (precondition 3) is not cleanly met. Flagged per §4 pattern 2."
+    }
+  ]
+}

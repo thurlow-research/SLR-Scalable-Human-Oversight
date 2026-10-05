@@ -1,0 +1,8 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "AIRA is a parser-backed deterministic static analysis engine (Python AST-based; JS/TS/JSX esprima-backed) applying 15 hard-coded checks for failure-truthfulness patterns — e.g. C01 success-returned-after-critical-failure, C03 broad exception suppression, C05 bypass/override paths, C13 confidence misrepresentation. Verdicts (PASS/FAIL/UNKNOWN) are computed by code, not an LLM (LLM augmentation is explicitly optional enrichment, not ground truth). It validates (AI-generated) code against general properties about whether the code truthfully represents its own success/failure state, and is deployed fail-closed in governance/compliance pipelines — use, not mere measurement."
+  },
+  "flags": []
+}

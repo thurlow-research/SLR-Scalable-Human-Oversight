@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (c) + (b) (also a) — §5.1: the implemented framework constructs prompts, calls the LLM via API to generate/revise the AM (bounded per-call worker), executes it in the adaptation loop, runs the deterministic generic+FCL constraint verifier, and itself routes the outcome — accept and stop, or append the violation report and re-prompt, up to a code-bounded 10 iterations (§5.2). This is the canonical form-(c) code loop named in the instrument: 'calls a model to generate an artifact, runs it, and feeds the code's own verification result back to the model for repair.' Form (b) also fires: a failing constraint check produces a code-enforced report+retry/acceptance with no model choosing to honour the verdict (the verdict itself is deterministic FCL, §3.4, §4). Sequence generate→execute→verify→feedback is code-fixed (a). Preconditions met: orchestrator is code not AI (the LLM is only the AM generator; the AM is generated code under test, not a top-level controller) — precond 1; LLM is the in-loop model step — precond 2; control is outermost, the LLM never decides whether verification runs or whether to iterate — precond 3. Judged as evaluated: all three feedback-level variants run this same automated code loop."
+  },
+  "flags": []
+}

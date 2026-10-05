@@ -1,0 +1,9 @@
+{
+  "themes": [],
+  "facets": [
+    "deterministic-orchestration-v2"
+  ],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (b) — the filter is applied only when the judge returns NO, the final verdict is determined by four common outcomes, and on two cases the code flips the verdict to YES, demonstrating code overturning a model's verdict on executable evidence with a bounded K=2 retry."
+  }
+}

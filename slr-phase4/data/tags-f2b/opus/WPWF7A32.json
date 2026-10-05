@@ -1,0 +1,11 @@
+{
+  "themes":  [],
+  "facets":  [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design — DevLicOps is a governance/process framework with no implementation, run, or evaluation (vision/reference-framework paper). Were it built, it would at most be form (b)-shaped (SCA tool blocks a code push on a critical-license finding in CI/CD), but it would still not fire: the SCA scanners are deterministic with no model step, the ACAs are the governed subjects rather than dispatched bounded workers, and the outer loop is human (policy-setting + manual audit teams with override authority). Flagging for the census per §4."
+    }
+  ]
+}

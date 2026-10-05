@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human outer loop — inner part is form (c). The only deterministic machinery is the Stage-3 self-refinement loop: code runs compilers/linters on the Coding Agent's output and iterates, feeding verification results back to the model for repair, bounded by a max-attempts cap (form (c) dispatch, with form (b) enforcement of the bounded retry). But this loop is nested inside a human-gated flow: the Human Agent approves the plan before coding begins (Stage 2→3), reviews/re-requests code, and agrees before the PR is raised (Stage 3→4). The outermost progression is advanced by the human, not by code, so the deterministic part is not at top level. Census pattern 2 (F2 question 8)."
+    }
+  ]
+}

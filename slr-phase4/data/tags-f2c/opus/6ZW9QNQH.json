@@ -1,0 +1,13 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "The §5 proof-of-concept 'Vibe Reasoning' Type III side-car validates LLM-generated TypeScript using the TypeScript compiler plus lightweight syntactic checks (e.g. assertNever, which 'turns exhaustive handling into a compile-time check'; satisfies Record<K,V>), run via Claude Code hooks on code changes. The rules are general type-level properties — exhaustive handling of union-type switches, discriminated-union coverage, complete finite-key coverage, union-alias constraints — not example-based tests. Specs are LLM-generated (autoformalization) but the verdict is computed deterministically by the compiler/syntactic checker, not judged by a model (so §139a does not apply). It is used inside the system to validate/fix code: the prototype 'can emit the lines in red in Listing 1, flagging and fixing both bugs.' Static/type checking of general properties → fires."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "UNDECIDABLE-ADJACENT: this is a position paper; the bulk (Type I/II/III vision, autoformalization, continuous verification) is aspirational 'promising directions' and does NOT fire on its own. Emitting rests entirely on the small §5 proof-of-concept, which really does use the TS compiler + syntactic checks as a deterministic evaluator within the side-car. Specs are LLM-generated but compiler-evaluated — flagging the LLM-in-the-loop so the arbiter can confirm the verdict-locus reading. No census flag: the paper's system validates via compiler checks, not tests (tests are explicitly discussed only as a burden to 'transcend', §3/§4.1), so there is no test-based validation to attribute."
+    }
+  ]
+}

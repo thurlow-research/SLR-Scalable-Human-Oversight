@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Human-driven outer loop (F2 census pattern 2) — the would-be form is (a) sequencing. The contributed framework is a fixed two-stage pipeline: (1) an LLM drafts a per-bug rubric from the bug context + ground-truth patch; (2) two human developers review and refine the draft into the 'golden' rubric (r_gold = H(r)); (3) an LLM judge applies the golden rubric to each F2P patch, emitting VALID/INVALID + justification. The step order is fixed, but the OUTERMOST progression is advanced by a human: the mandatory human refinement is the gate between stage 1 and stage 2, and it is load-bearing, not optional — the §6 ablation shows the un-refined draft rubric (r) collapses the judge from κ=0.57→0.38 (recall 0.93→0.66), so the framework only works through the human step. Stage 2 is 'a repeatable, automated process,' but it is a single bounded model call per patch whose verdict is stored for analysis and triggers nothing downstream — no code enforcement (b) or routing/dispatch (c). The self-improving autonomous loop that would route judge outputs is explicitly Future Work, not built. So the only top-level sequencing is gated by a human, not held by code → flag, do not emit."
+    }
+  ]
+}

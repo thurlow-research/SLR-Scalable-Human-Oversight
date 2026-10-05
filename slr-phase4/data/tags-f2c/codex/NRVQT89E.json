@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"rules-based-checks-v3","issue":"TESTS: competitive-programming test suite; AUTHOR: unclear — model-generated solutions were labeled passing or failing by execution against a test suite, but the paper does not state who wrote the tests."}]}

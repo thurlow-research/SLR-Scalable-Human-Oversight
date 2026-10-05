@@ -31,14 +31,18 @@ import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 R = os.path.dirname(HERE)
-RUNDIR = os.path.join(R, "data", "tags-f2")
-KEYS = os.path.join(R, "data", "f2_phase6_keys.json")
+# F2b (§151): F2_RUNDIR / F2_KEYS / F2_THEMES / F2_FACETS override the F2 defaults.
+RUNDIR = os.path.join(R, "data", os.environ.get("F2_RUNDIR", "tags-f2"))
+KEYS = os.path.join(R, "data", os.environ.get("F2_KEYS", "f2_phase6_keys.json"))
 VENDORS = ("opus", "codex", "gemini")
 
 THEMES = {"evaluator-reliability", "oversight-scaling-inversion-v2", "rules-based-checks-v2"}
 FACETS = {"agent-panel", "peer-critique", "cross-model", "evaluated-real-data",
           "evaluated-synthetic", "evaluated-benchmark", "deterministic-orchestration",
           "survey-input-v2"}
+if "F2_THEMES" in os.environ or "F2_FACETS" in os.environ:
+    THEMES = {s for s in os.environ.get("F2_THEMES", "").split(",") if s}
+    FACETS = {s for s in os.environ.get("F2_FACETS", "").split(",") if s}
 PERMITTED = THEMES | FACETS
 
 LIB = os.environ.get("ZOTERO_LIBRARY_ID")

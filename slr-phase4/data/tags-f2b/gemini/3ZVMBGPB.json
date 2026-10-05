@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [],
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design + form (c) and form (a). This is a vision paper proposing a theoretical framework that has not been built. If implemented, it would also feature a human outer loop, with humans advancing the outermost sequence between stages."
+    }
+  ]
+}

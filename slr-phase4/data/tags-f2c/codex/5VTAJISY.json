@@ -1,0 +1,13 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "HULA iteratively feeds compiler and linter findings back to its AI Coding Agent; these deterministic tools apply language syntax and code-quality rules to validate generated code until it passes or the retry limit is reached."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: SWE-bench Verified unit tests; AUTHOR: human — the benchmark contains unit tests written by developers, which are executed against HULA-generated code to measure functional correctness."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "themes": [
+    "rules-based-checks-v3"
+  ],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "Compilers and linters (VA-automatic) check the generated code against syntax, types, and style rules at the Phase 5 gate."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unit tests and test suite; AUTHOR: unclear — Phase 6 uses a test suite but does not specify whether the human operator or AI generative agent writes the tests"
+    }
+  ]
+}

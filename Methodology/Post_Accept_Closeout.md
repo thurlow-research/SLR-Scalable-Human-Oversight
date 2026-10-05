@@ -2,7 +2,11 @@
 
 **Trigger:** the Accept band (44 papers) closes.
 
-**Progress (2026-08-28): 24 of 44 adjudicated · 3 partial · 17 untouched.**
+**STATUS 2026-10-04 (closeout pass):** Accept band closed 44/44 (§143); F2 run, F2b, F2c and the full F2 review
+done (§151–§167); Phase 6 = 72. **Done:** A1, A2, B1, B2, B3, B5, B7, B8, B9, B10, B13, B14, D1, D2/T2, F2-PREP, F2,
+F2a, F3. **Open:** E8 · F4 · F5 . *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
+
+*Historical progress line (2026-08-28):* **Progress (2026-08-28): 24 of 44 adjudicated · 3 partial · 17 untouched.**
 Next alphabetically: **Minh** (`74GE3TF7`). Partials awaiting a pass: `MFSZPSPU` Shi ·
 `A6ZE2A26` Ullah · `I6FZ5GD2` Wang (Junpeng) — see B7, and check each for a prior narrow-axis
 ruling before re-opening.
@@ -56,11 +60,15 @@ instrument evolved substantially"*).
 - **Set B** [IURU9UTA] was written 2026-08-28 and is correct — it has no prior run, so it needs nothing.
 
 ### A2. Build the tag-rename tool
+> ✅ **DONE** — `slr-tools/supersede_model_run.py` (used for A1, 2026-08-29).
 The Zotero CLI has `tag-add` but **no rename and no remove**; A1 needs a raw version-guarded PATCH
 (`If-Unmodified-Since-Version`) across ~300 tags on 10 items. Build it as a reusable script — the
 same operation recurs at **every** future instrument revision, not just this one.
 
 ### A3. `04 - Calibration (Adjudicated)` [46QVUN7N] is mis-scoped
+> **DOCUMENTED 2026-10-04 (no edit — phase-freeze rule):** `46QVUN7N` ≠ Set A ∪ Set B (drops Momcilovic `M74M3RFJ`, adds
+> Otten `ZUM76CCG`). **Tooling no longer uses it** (D1 names it do-not-use); calibration figures come from `JFN8693L` and
+> `IURU9UTA`, split. Left as-is as a frozen record; no new collection needed.
 It is **not** Set A ∪ Set B: it **drops** Momcilovic (`M74M3RFJ`, Set A) and **adds** Otten
 (`ZUM76CCG`, the Set C pilot). Either fix the membership or document it — but **stop using it as the
 calibration band in tooling** either way (see D1). Note the phase-freeze rule: if this collection is
@@ -71,11 +79,14 @@ already "populated and frozen," the correct fix is a **new** collection, not an 
 ## B. Corpus-level tag corrections — all before `final:*` is computed
 
 ### B1. `oversight-scaling-inversion` re-check — **largest known single source of tag error**
+> ✅ **SUPERSEDED 2026-10-04** — `-v2` got its own slug (F2); every modal proposal on kept papers is now ruled (§152–§154, §166b).
+> v1 stays frozen. Demoted papers are out of scope (demotes are final, B5).
 15 papers carry it on arbiter silence. 4 of 10 examined cases were rejected, and the §88 leakage test
 raises the bar further. Includes **Ghammam** per §117d. The v2 re-run (F2) resolves much of it
 automatically **provided v2 gets its own slug**.
 
 ### B2. `survey-input` re-check (~10 silent-modal instances)
+> ✅ **SUPERSEDED 2026-10-04** — `survey-input-v2` (F2) + Q9/Q10 rulings (§159–§160) + step 2 (§166b): 0 open on kept papers.
 §116a narrowed it to papers containing an actual **user survey** (Likert-type instrument). Self-report
 is the *genus* (questionnaires, interviews, focus groups, diaries); survey is one *species*. Scott has
 been enforcing the narrow lens on everything he ruled explicitly, so exposure is only the silent
@@ -93,13 +104,23 @@ were proposed as refinements and withdrawn — see §121b). Worked pair: Catalan
 cognitive engagement → **off**; Kang `7UB2MD8Z` asks what developers *want* → **on**. The two facets
 **co-occur** freely; they are different axes.
 
-### B3. Deprecated-tag sweep — `counterpoint` (§56)
+### B3. Deprecated-tag sweep — `counterpoint` (§56) — ✅ **RESOLVED 2026-10-04 by §101a: NO sweep**
+> **Already decided 2026-08-26 (§101a):** *"OK to leave counterpoints on, we will likely not use them but let's
+> not lose the information."* Deprecation is handled **once, at the `final:*` computation**, not by per-paper
+> rejects. Made concrete as `slr-phase4/data/deprecated_vocabulary.json` (the single list the computation reads),
+> and the step-2 tooling now reads it. **Why not sweep:** bulk rejections would inflate the override statistics
+> (administrative acts counted as judgements) and contradict the arbiter's own pre-§56 `counterpoint`
+> endorsements (Huang `Z8TPRNEU`, Heander `F9JM9CI6`, Goel `VG6CIDQW`). **Scope at resolution (Phase 6):**
+> 9 papers where `counterpoint` would otherwise reach `final:*` (6 modal-silent, 3 human-endorsed), plus 4
+> demoted. The 9 Phase-6 human **rejections** of `counterpoint` are genuine judgements and stay. **Double-count
+> check → F1.**
 Survives into `final:*` on any paper where it was modal and never rejected, because silence lets a
 modal proposal stand. **Do it as one bulk auditable act**, not per paper. Note §101a already excludes
 deprecated vocabulary at the `final:*` computation step — confirm the sweep and the exclusion don't
 double-count.
 
 ### B4. §34 misread — re-check §77, §97, §99b
+> ✅ **CLOSED 2026-10-04 (§171)** — Töpfer stands (reason corrected); Zhou out of scope (demoted); Zietsman gains `evaluated-synthetic`.
 §119a established that §34 does **not** bar ladder/method co-occurrence (the **world-or-tool test**
 governs). Three earlier rulings cited the misreading and need revisiting.
 
@@ -129,6 +150,8 @@ rule, not a tier reversal. The study's disposition is the keeper's; the supersed
 becomes historical provenance.
 
 ### B12. Jin preprint→journal consolidated (2026-08-29) — corpus count corrected
+> ✅ **CLOSED 2026-10-04:** the 2026-08-29 client merge (§144) folded the preprint record INTO `UDVHQ5HR`, so no separate
+> superseded record remains to file. Supersession is tag-based (`supersedes:`), and the merged key is mapped in §144a.
 `UDVHQ5HR` *Uncovering systematic failures of LLMs in verifying code against natural language
 specifications* (arXiv 2508.12358, 2025-08) and `A5WDGC7J` *Are LLMs reliable code reviewers?
 Systematic overcorrection in requirement conformance judgement* (**Automated Software Engineering**,
@@ -155,6 +178,8 @@ Zotero `relations` field is unused).
 The audit counted by item key; this is one study with two records. **PRISMA must report the dedupe.**
 
 ### B7. Four Accept-band papers are PARTIALLY tagged — not adjudicated
+> ✅ **DONE** — McAleese closed 2026-08-28 (§126e); Shi `MFSZPSPU` and Ullah `A6ZE2A26` now carry primaries in Phase 6;
+> Wang (Junpeng) `I6FZ5GD2` adjudicated and demoted with a primary (§142).
 Discovered 2026-08-28 while checking the band roster. They sit out of alphabetical order with 1–5
 human tags each, **no primary theme**, and **19 of 22 modal proposals silent** — the shape of a
 targeted earlier write, not an Accept-band pass:
@@ -191,6 +216,8 @@ endorsements and inflate the panel's apparent precision. **C4 applies to Light R
 with a completed pass), not to partially-tagged papers.**
 
 ### B9. DECIDE: should the human layer fail OPEN or fail CLOSED? (before `final:*`)
+> **Largely retired 2026-10-04 (§150b, §166b):** the F2 review left **no silent proposals** on the synthesis set
+> (frozen + F2-family vocabulary, Phase 6). The convention now matters only for demoted papers, which have no consumer.
 Raised by the arbiter 2026-08-28 while reading Parris (`3SU9QZ6F`) on fail-soft behaviour:
 *"We've had in HOS (and even **this session**) loads of issues with failing open when we should fail
 closed."*
@@ -218,6 +245,8 @@ the pathology it studies — worth a sentence in the methods chapter, under the 
 (illustration, not evidence).
 
 ### B10. `rules-based-checks` re-check — the evaluation must be DETERMINISTIC (§139a)
+> ✅ **SUPERSEDED 2026-10-04** — `-v2` (F2) and `-v3` (F2c, tests excluded, §156) run and ruled; 0 open on kept papers.
+> Jin's hybrid question settled by §147a + §156.
 **Rule (arbiter, 2026-08-28):** *"Rubrics that are LLM evaluated are not rules-based-checks."* The
 theme names **how the verdict is produced**, not how the criteria are written. Rule-shaped criteria
 scored by a model are `ai-review`.
@@ -242,6 +271,11 @@ different error profiles (Jin 88.74% FPR · Bugdar 24–58% precision · Raghave
 checks that either fire or do not). Conflating them erases the corpus's clearest practical result.
 
 ### B11. Re-check the hand-applied post-freeze tags — one is a KNOWN ERROR (§142a)
+> ✅ **CLOSED 2026-10-04 (§169)** — residual of 6: 5 QA-corrected, McAleese stands. **8** hand-applied errors found in total (corrected
+> from 9 by §170 — Ji's benchmark rung was right under §119b), all where the panel disagreed with the human tag.
+> **PARTLY DONE 2026-10-04** — F2 review corrected four hand-applied tags (Ji, Mitropoulos rungs §155a; Zietsman
+> `agent-panel`/`cross-model` §163a). **Residual:** hand-applied tags the F2 panel did **not** back (≤1/3) — not covered by
+> the step-2 queue, which only held panel-backed proposals. To check next.
 Five post-freeze slugs were applied **by hand, ad hoc**, outside the panel-proposes /
 human-adjudicates workflow that governs every other tag in the corpus.
 
@@ -268,6 +302,8 @@ everywhere else: no panel proposal to react to, no contrast class in view, no ad
 (*same question + explicit aggregation rule* / *distinct models checking each other, not comparing*).
 
 ### B13. Set A — 7 unconsidered proposals from the v2.13 write-back (§144b)
+> ✅ **DONE** — the step-2 queue covered every frozen-vocabulary modal proposal on kept papers (Set A survivors included)
+> and closed at 0 (§166b).
 Set A was tagged **model-first** with **v1** proposals in view; the A1 supersession replaced them with
 **v2.13** proposals the arbiter never saw. Under the arbitration rule (kept papers, changed tags →
 reconsider the tags) these are reviewable. Demoted Set A papers are **excluded** — demotes are final.
@@ -287,7 +323,7 @@ rejected (§120b), `counterpoint` deprecated (B3).
 on those are judgements, not vote-counts, so they stand — but this is why Set A's origination moved
 54.9% → 12.7%, and it belongs in the calibration write-up.
 
-### B14. Implicit-confirmation residue — 18 tags on 10 surviving papers (2026-10-04) — **PENDING arbiter**
+### B14. Implicit-confirmation residue — 18 tags on 10 surviving papers (2026-10-04) — ✅ **DONE 2026-10-04** (changelog §166b: 6 silent tags remain on surviving papers, all `counterpoint` → B3)
 Early Light Read scanned the full proposal list and queried only doubted tags, so silence on those
 papers is *implicit* confirmation (C4, changelog §150). The residue is being closed by **explicit**
 confirm or reject. The worklist, the case-law flags and the write protocol are in **changelog §150a**.
@@ -302,6 +338,8 @@ The library backup was taken 2026-10-04. Only ruled tags are written, and unrule
   `counterpoint`, which go to B3), and calibration §11.5's split has been refreshed.
 
 ### B8. Verify every item with NO `cal:human` tag — confirm it was genuinely never examined
+> ✅ **DONE 2026-10-04** — sweep over `03 - Final / 01-Core` (147): **0** items lack both a human layer and a demote.
+> The 22 untouched of 2026-08-28 have all since been worked.
 **Scott's rule (2026-08-28):** *"we've modified tags on every item, so if there aren't any with human
 tags, they are highly unlikely to have been examined."* Every paper that received a pass got **at
 least one** human tag written, so **absence of `cal:human:*` is a reliable proxy for "not looked at."**
@@ -320,6 +358,8 @@ A "no human tags" sweep will **not** surface the B7 papers, because they *have* 
 why they stayed invisible until the roster was checked by hand.
 
 ### B6. Model `demote:context` flags have no home in Zotero
+> ✅ **DECIDED 2026-10-04: JSON only.** Model demote flags stay in the run JSON (they feed tier recall, C3). Demotes are
+> final and human-owned (B5); a Zotero model-flag layer would have no consumer.
 5 records across `BAWCBT9R` and `UW2R6BBJ` (and any others surfaced by A1). The `cal:` namespace has
 **no flag form** — Light Read encodes only `primary`/`theme`/`facet`. Either define a form
 (e.g. `cal:<model>:flag:demote-context`) or record deliberately that model flags live only in the
@@ -333,6 +373,7 @@ JSON. **Decide, don't leave implicit.**
 > affected numbers should not be quoted in the dissertation, a paper, or a talk.
 
 ### C1. §11.7 — retire the 80.9% origination figure ⚠️ **it is an artifact**
+> ✅ **DONE 2026-10-04** — §11.7 rewritten; 80.9% retired with a correction box (changelog §172).
 `tag_layer_stats.py` reads the Zotero tag layer, but **Set B had no model tags in Zotero** until
 2026-08-28. With an empty comparator every human tag counted as "originated," so Set B computed as
 **100%**; blended with Set A it produced the reported **80.9%**.
@@ -355,6 +396,7 @@ drifted mid-band (C4). On comparable vocabulary only it reads 3.5% vs Set B's 8.
 a 2.4× anchoring effect and is not one.
 
 ### C2. §11.7 — remove the "~96% panel recall" claim
+> ✅ **DONE 2026-10-04** — removed; recall from exhaustive arms (Set B 91.6%) (changelog §172).
 It is read off the supervised bands' origination rate. But Scott was **not** hunting exhaustively for
 misses there, so a low origination rate cannot distinguish *"the panel missed nothing"* from
 *"nobody went looking."*
@@ -364,6 +406,7 @@ misses there, so a low origination rate cannot distinguish *"the panel missed no
 agreement.
 
 ### C3. **NEW** — split tag recall from tier recall
+> ✅ **DONE 2026-10-04** — split in §11.7 (tags ~90% vs tier 57.4%) (changelog §172).
 The panel is a **decent tagger and a poor triager**, and one number has been standing for both:
 
 | axis | recall |
@@ -407,11 +450,16 @@ silence by protocol, later ones by judgement. Relevant to the re-run (F2): a new
 landing on an early paper meets a thinner human layer, so **early papers deserve the closer look**.
 
 ### C5. §11.6b — Set B answers the open question
+> ✅ **DONE 2026-10-04** — the open control-band question resolved in the doc (changelog §172).
 §11.6b (written 2026-08-28) flags as unresolved whether the blind calibration band was also
 *unassisted*. **It was**: first ten co-tagged (and drove taxonomy revisions), **next ten blind**. So
 there **is** an unassisted arm, **n=10** — it is the *supervised* bands that have none.
 
 ### C6. §11.9 / §41 — restricted re-run scope + a falsifiable prediction
+> ✅ **DONE 2026-10-04** — result written into §11.9 (7.7% → 5.5%) (changelog §172).
+> **PREDICTION TESTED 2026-10-04 (T2):** recorded 2026-08-28, before the F2 run. Predicted Light Read origination
+> 7.7% → ~3.5% if the frozen instrument was the binding constraint. **Observed at T2: 5.5% — a PARTIAL collapse:**
+> roughly half the gap was the instrument, half the panel. Write up under C (calibration §11.9).
 Scope: re-run models on the **new vocabulary elements only**, not revisiting old rulings, plus quick
 validation of anything that pops. That isolates the instrument as the variable.
 
@@ -421,6 +469,7 @@ binding constraint rather than panel recall, **those should largely collapse, ta
 origination from 7.7% → ~3.5%.** If it does not collapse, the gap was the panel.
 
 ### C7. Fable — record the design history
+> ✅ **DONE 2026-10-04** — §11.10 row + uniform-panel principle (changelog §172).
 Intended as a **tiebreaker on model disagreement**; superseded by **k=3 runs of all three vendors**.
 Repeated sampling of every vendor measures intra-rater reliability, where a tiebreaker only ever cast
 a deciding vote on contested items. **Principle to state generally: panel composition must be uniform
@@ -429,11 +478,13 @@ of 10 Set B papers and was deliberately **not** written.) Fable also stays gated
 permission.
 
 ### C8. Full Read band is 6-for-6 demoted
+> ✅ **DONE 2026-10-04** — sentence added to §10.2 (changelog §172).
 Nothing survived the deepest reading protocol. Probably correct if Full Read was reserved for
 borderline cases — but a band with a **100% demote rate** needs one sentence in the methods chapter,
 or it reads as a protocol that could not pass anything.
 
 ### C9. Changelog §121 — the whole correction as one entry
+> ✅ **DONE 2026-10-04** — written as §172 (§121 was already taken) (changelog §172).
 Cover: the Set B model-tag write, the 80.9% artifact and its cause, the corrected A-vs-B contrast,
 the recall split, the silence reclassification, and the Light Read protocol drift.
 
@@ -464,6 +515,7 @@ calibration figures** — do not quote them; use T1b or later.
 Also add: **demote-tag reading**, so tier recall (C3) is computed rather than hand-rolled.
 
 ### D2. Regenerate T0 / T1 snapshots on the fixed script
+> ✅ **DONE** — T1b/T2prep (2026-08-29) on the fixed script; **T2 recorded 2026-10-04** (`tag_layer_stats_T2_2026-10-04.json`).
 T0 is frozen at `slr-phase4/data/tags-v213/tag_layer_stats_T0_2026-08-26.json`. Both current snapshots
 carry the artifactual calibration figures. **Keep the originals** (provenance) and regenerate
 alongside — same principle as A1.
@@ -472,20 +524,29 @@ alongside — same principle as A1.
 
 ## E. Records, bibliographic, housekeeping
 
-- **E1. SSRN item types + published-version check** — 12 items. OpenAlex → Semantic Scholar. If a
+- ✅ **E1 DONE 2026-10-04 (§176)** — 4 mistyped working papers among the kept articles retyped to `preprint`; no published
+  versions found (OpenAlex + Semantic Scholar).
+  *Original:* **E1. SSRN item types + published-version check** — 12 items. OpenAlex → Semantic Scholar. If a
   journal version is found post-search, tag `source:retrieval` and **do not inflate the count**.
-- **E2. Dissertation Queue hygiene** — `03 - Queue` [4PE2T47Q] vs `01 - Primary` [WVZFNSEC]:
+- ✅ **E2 DONE 2026-10-04 — promotion removes from Queue.** 8 papers removed from `03 - Queue` (Primary unchanged):
+  `4T5QFWZE` `59KP8GTP` `5BAZZWHG` `9H6FWJME` `A6ZE2A26` `REZGA5WF` `UDVHQ5HR` `UIXCRBQX`.
+  *Original:* **E2. Dissertation Queue hygiene** — `03 - Queue` [4PE2T47Q] vs `01 - Primary` [WVZFNSEC]:
   **16 of 21** Primary members were removed from Queue, **5 were not** (Jin included, added
   2026-08-28). Settle whether promotion removes from Queue and sweep the 6. *Distinct from the
   phase-collection freeze rule — the Dissertation folder is a working triage, not a phase record.*
-- **E3. Back-fill named-use rationales** on Dissertation Supporting members (§109a criterion, extended
+- ✅ **E3 DONE 2026-10-04 (§178)** — 19 named-use notes written; all 29 Supporting members now carry a rationale.
+  *Original:* **E3. Back-fill named-use rationales** on Dissertation Supporting members (§109a criterion, extended
   prospectively at §112b).
-- **E4. Back-fill the Validation Apparatus harvest** from the Light Read band — candidates listed at
+- ✅ **E4 DONE 2026-10-04 (§177b)** — 5 entries back-filled; Zhong upgraded to ICML 2026 (§179).
+  *Original:* **E4. Back-fill the Validation Apparatus harvest** from the Light Read band — candidates listed at
   the foot of `Validation_Apparatus_Harvest.md`: `72W6R4JG` Töpfer · `TA6GIUK2` Zietsman ·
   `96XE669R` Zhong · `VZ27QUPQ` Zhuo (**§51 disqualifier — reference-grounded**) · `T2EG4BE2` Waseem.
-- **E5. Choose the "oversight fails at scale" anchor** — Gao vs Branco — and **place Branco** in a
+- ✅ **E5 DONE 2026-10-04 — Gao `59KP8GTP` is the anchor** (central to Chapter 1; §152 mechanism note). **Branco
+  `JQPPKSFQ` → `02 - Supporting`** (removed from Queue per E2).
+  *Original:* **E5. Choose the "oversight fails at scale" anchor** — Gao vs Branco — and **place Branco** in a
   dissertation collection.
-- **E6. Verify the dissertation-queue records** created for Du / Huang / Islam (the agent-checks-agent
+- ✅ **E6 DONE 2026-10-04 (§177c)** — Du upgraded to ICML 2024; Islam abstract back-filled; AgentCoder merged.
+  *Original:* **E6. Verify the dissertation-queue records** created for Du / Huang / Islam (the agent-checks-agent
   gap, surfaced via Gemini and deliberately **not** added to the corpus).
 - **E8. Google Scholar citation retrieval — DECIDED but not executed.**
   `Selection_Criteria_By_Phase.md` §394 signal #1: manually retrieve GS counts, with Semantic Scholar
@@ -508,13 +569,16 @@ alongside — same principle as A1.
   - **Constraint:** this is for **defending** the corpus in the methods chapter, **not re-filtering
     it**. Counts are uninformative in a corpus that is 77% 2025–26 — *"uninformative, not damning"*.
 
-- **E9. Decide whether authority signals #2–#8 are adopted** (`Selection_Criteria_By_Phase.md` §394).
+- ✅ **E9 DECIDED 2026-10-04 — none beyond #1.** Authority stays a holistic, qualitative input (§132b); #7 is handled by the
+  record-status re-check; only #1 (manual Google Scholar counts, E8) proceeds.
+  *Original:* **E9. Decide whether authority signals #2–#8 are adopted** (`Selection_Criteria_By_Phase.md` §394).
   Only #1 is decided. Standing ruling (§132b, 2026-08-28): **credibility of authorship is A factor,
   not THE factor** — legitimate as qualitative input to a holistic assessment (it is already one of
   the four Garousi criteria), **not** as a sole ground and **never** as a retroactive re-filter
   (HARKing). If any of #2–#8 is to bear on the write-up, decide it and apply it **uniformly**.
 
-- **E7. Confirm the untracked dir** `Scalable AI Coding Governance - 2026-08-27 - Light Reads
+- ✅ **E7 DONE 2026-10-04 (§177d)** — export sits under ignored `Backups/`; `new_pdfs/` added to `.gitignore`.
+  *Original:* **E7. Confirm the untracked dir** `Scalable AI Coding Governance - 2026-08-27 - Light Reads
   Completed/` should stay untracked. **Repo is PUBLIC** — never commit paper full texts.
 
 ---
@@ -522,10 +586,15 @@ alongside — same principle as A1.
 ## F. Forward work — after A–E
 
 ### F1. Compute `final:*`
+> ✅ **DONE 2026-10-04 (§174)** — 843 `final:*` tags on the 72 kept articles; all checks pass; 0 entered on silence alone.
+> **Required checks (added 2026-10-04):** (1) read `slr-phase4/data/deprecated_vocabulary.json` and emit **no** listed
+> slug into `final:*` (§101a), so **0** `final:*:counterpoint` tags; (2) do not count deprecated-slug rejections in the
+> override statistics, because only judgements count; (3) Phase 6 only for the synthesis set.
 `final:* = panel modal ∪ human endorsements − human rejections − deprecated vocabulary` (§101a).
 **Blocked on all of Section B.**
 
 ### F2-PREP. Restricted re-run spec — DRAFTED, awaiting 4 decisions
+> ✅ **DONE** — decisions taken; F2 executed 2026-08-29/30 (§144–§149; handoff 2026-08-29).
 `slr-phase4/Restricted_Rerun_Spec.md` (2026-08-28). **Prep only, not authorised to run.**
 
 **Design settled:** restricted **output**, discriminative **context** — the prompt admits only the 9
@@ -543,6 +612,7 @@ excluded).** Also blocked on **D1 tooling** — `tag_layer_stats.py` must be fix
 recorded, or T2 inherits the T0/T1 band defects.
 
 ### F2a. `evaluated-real-data` — definition SETTLED (2026-08-28), ready to graft
+> ✅ **GRAFTED** in the F2 instrument; 10 instances at ≥2/3 (census); ruled in the F2 review.
 
 Scott's formulation, which is the definition of record:
 
@@ -575,6 +645,8 @@ artifact on a case they built. Weakest evidence there is, common in this literat
 unmarked; `built-system` says only that the thing exists.
 
 ### F2. Next versioned instrument cut (§41) + restricted re-run
+> ✅ **DONE** — F2 (11 slugs, 2026-08-29/30) + F2b (`deterministic-orchestration-v2`) + F2c (`rules-based-checks-v3`),
+> 2026-10-04; all reviewed (§151–§166).
 Graft: `scaling-dissent` · the `evaluated-*` ladder · `agent-panel` · `cross-model` ·
 `evaluator-reliability` · `evaluated-real-data` · **`oversight-scaling-inversion` v2 (its own slug —
 never reuse, or two constructs merge silently in `final:*`)** · corrected `survey-input` text ·
@@ -606,6 +678,7 @@ confirmed. If any are outside, add them. **Do not re-adjudicate their existing t
 OUTPUT schema, per the spec.
 
 ### F3. Materialise Phase 6
+> ✅ **DONE** — `Phase 6 - Kept Core` [R9ZHDXMN], 72 (2026-08-29; reconciled 57 + 14 + 1, calibration §11.5).
 The surviving set. **Predicate: `cal:human:primary:theme:*` present AND no `demote:context`.**
 
 **Use the PRIMARY, not "any `cal:human` tag."** Two weaker predicates are both wrong:
@@ -668,6 +741,8 @@ commitment that any is real:
 | Mode convergence (assistive ≡ agentic failure profile) | §119c | **CLOSED** by Liu `9H6FWJME` (§125a) |
 
 ### F6. Process-integrity items, independent of any gap
+> ✅ **DONE 2026-10-04 (§175)** — **fully closed**: Pappu `2XV8ZVM8` → **Context** (§175b) (the **AgentCoder merge was done and verified
+> 2026-10-04**: survivor `G3FF4MDW`, §175a).
 Small, defined populations — worth doing regardless of whether a gap is found, because they are
 records where the review's own rules were not applied, not judgements about scope.
 
@@ -683,6 +758,8 @@ records where the review's own rules were not applied, not judgements about scop
   contradictory dispositions. Breaks the one-record-per-study rule. Merge per the dedupe convention.
 
 ### F4. HOS audit → survey question bank
+> ▶ **STARTED 2026-10-04 (§180)** — Question bank v0 written (about 55 items, 9 constructs, provenance C/H/S). HOS audit run
+> after corpus close. Further work (wording, mapping, pilot) continues outside the SLR session.
 `Methodology/Survey_Instrument_Design.md`. Mine `~/Code/Thurlow-Research/HumanOversightSystem/Human`
 for questions informed by HOS **and** the SLR findings. 13 survey hooks already banked. HOS path is
 recorded but **deliberately unread** so far. Survey call-for-participants stays held until **after

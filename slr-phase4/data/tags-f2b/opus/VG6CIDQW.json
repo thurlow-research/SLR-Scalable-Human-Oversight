@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human outer loop (census pattern #2, F2 Q8) — flagging though the call is clear. The outermost progression of the contributed system (Lumen) is advanced entirely by the developer: double-copy to trigger, inspect the dependency graph, manually check/uncheck which files enter the context, write the query, and submit. No code holds the top-level control; the human does, deciding whether each step happens at all. The inner machinery that code *does* hold is form (c) dispatch: on a trigger the pipeline runs a fixed sequence — file detection → NetworkX dependency analysis → bounded model calls to summarize files (Anthropic, Groq fallback) — and callCompletionAPI deterministically assembles context_parts (accumulated buffer + selected file + smart-match) then dispatches one bounded completion call. Models are bounded workers (summarize-this-file, complete-this-query) that code sequences, but only within human-initiated actions, so precondition 3 (TOP LEVEL ONLY) fails. Not unbuilt: an open-source implementation exists (github.com/lumenEngines/Core), though the evaluation is a cognitive walkthrough rather than a runtime study."
+    }
+  ]
+}

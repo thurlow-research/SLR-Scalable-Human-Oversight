@@ -1,0 +1,10 @@
+{
+  "themes": [
+    "rules-based-checks-v3"
+  ],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "CodeQL, Bandit, ESLint, and Cppcheck validate the security of Copilot-generated code against security rules mapping to CWEs. The paper measures the effect of these tools by feeding their warnings into Copilot Chat to evaluate its ability to remediate the identified security issues."
+  },
+  "flags": []
+}

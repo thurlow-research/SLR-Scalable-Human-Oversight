@@ -1,0 +1,8 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "VibeGuard — five deterministic scanners (ArtifactScanner pattern/size checks, ConfigScanner packaging-invariant checks, SourceMapScanner JSON-parsing for a populated sourcesContent field, regex-based SecretScanner, DependencyScanner for unpinned versions/missing lockfiles/install hooks/insecure URLs) emit Finding objects; a coded PolicyEngine turns them into a pass/fail gate via severity-count thresholds plus name-independent hard-block rules (e.g. block any source map containing sourcesContent). The rules are general packaging/security properties checked across the entire published artifact, the verdict is computed entirely by code with no LLM in the loop, and VibeGuard is the paper's own system whose effect the study measures. Fires."
+  },
+  "flags": []
+}

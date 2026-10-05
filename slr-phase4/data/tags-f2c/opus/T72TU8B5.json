@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    { "slug": "rules-based-checks-v3",
+      "issue": "UNDECIDABLE: Hedwig's 'hard constraints' are deterministically enforced at the CLI layer (e.g. 'never write to files under config/prod/'), independent of the model — resembling a policy/constraint rule engine. But they gate proposed ACTIONS against path/permission policy (authorization/access control), not analyse the code change against general correctness/safety properties, so this reads as governance gating rather than code validation. The learned logistic-regression policy engine is likewise deterministic/non-AI but scores check-in routing, not code. Flagging instead of emitting." },
+    { "slug": "rules-based-checks-v3",
+      "issue": "TESTS: project test-suite run as the system's verification gate ('any approved change is also checked against the project's test suite as configured by the developer'; demo reports '4/4 verification passes'); AUTHOR: human — tests are part of the developer-provided demo project (route handlers, service layer, tests, spec file) while the code changes are model-generated; paper does not state the model authored the tests." }
+  ]
+}

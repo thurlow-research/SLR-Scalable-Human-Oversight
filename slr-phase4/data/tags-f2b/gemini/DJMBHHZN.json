@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design - would be form (a) and (b) via user-provided BPMN collaboration patterns and rule-based governance policies"
+    }
+  ]
+}

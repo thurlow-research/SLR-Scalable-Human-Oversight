@@ -1,0 +1,8 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "Tool: Soufflé, a Datalog engine for program analysis and formal verification (§3.2, §5.3). Rules: the VerificationCondition is encoded as Datalog rules/facts capturing general code properties — a memory-error property for MSAN bugs (∃x uninitialized(x) ∧ flow ∧ use, §4.1) and a program-equivalence property over def/use/flow/controldep predicates (§5.1). What it validates: the agent's formalized reasoning steps about code (is an access memory-safe? are two programs equivalent?). The verdict (verified / don't-know / equivalent / not-equivalent) is computed deterministically by the Soufflé engine checking AgentClaims against the VerificationCondition — the paper explicitly positions this as the non-AI alternative to LLM-as-judge (§3). An LLM is used only to *extract/formalize* predicates, but the pass/fail verdict is computed by the deterministic verifier, and the verifier is the core system component (use, not mere instrument). Fires as a formal verifier."
+  },
+  "flags": []
+}

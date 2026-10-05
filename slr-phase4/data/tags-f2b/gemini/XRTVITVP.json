@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [
+    "deterministic-orchestration-v2"
+  ],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (c) — the outermost flow is controlled by Algorithm 1, a deterministic while loop that iteratively traverses a requirement tree. The code loop calls models as bounded workers for specific tasks (initialization, user interaction, context updating, and PRD generation) and itself decides the execution sequence."
+  },
+  "flags": []
+}

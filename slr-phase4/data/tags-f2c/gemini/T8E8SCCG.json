@@ -1,0 +1,10 @@
+{
+  "themes": [
+    "rules-based-checks-v3"
+  ],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "VibeGuard uses deterministic scanners (ArtifactScanner, ConfigScanner, SourceMapScanner, SecretScanner, DependencyScanner) that apply hard-block rules, regular expressions, and thresholds to validate configuration files and build artifacts before publishing."
+  },
+  "flags": []
+}

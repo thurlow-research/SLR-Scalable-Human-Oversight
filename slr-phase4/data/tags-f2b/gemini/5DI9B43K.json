@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [
+    "deterministic-orchestration-v2"
+  ],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a) — The system's outermost flow is a fixed code pipeline (Fig. 16) that sequences three stages: an Analyzer agent, a Formalizer, and a deterministic Verifier. The progression between these stages is fixed in code, meaning the model cannot alter the sequence or skip the verification step."
+  },
+  "flags": []
+}

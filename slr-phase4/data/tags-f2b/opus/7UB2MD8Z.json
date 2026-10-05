@@ -1,0 +1,13 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (c) + (a) — Code holds the outermost flow and dispatches LLMs as bounded workers. Form (c): a fixed pipeline (Fig. 1 A–E) where code generates the prompt, calls an LLM for one hypothesis+experiment (B), then 'The experiment script will be passed to a background debugger/code executor process, which runs the script and returns the actual result' (C), calls an LLM for a bounded verdict (D), and routes the output itself to either loop or fix-generation; §3.3: 'rejected hypotheses are automatically removed from the prompt prior to patch generation' is code mutating state. The models are components; none decides what runs next. Form (a): the hypothesize-observe-conclude cycle is a fixed code loop the model cannot reorder or skip, with a code-enforced cap ('maximum iteration limit, s, is set to 3'). Preconditions: orchestrator is code (debugger execution and routing are deterministic); multiple model steps (hypothesis, conclusion, fix); top-level — the loop is the contributed system's outermost flow, and the debugger path is the configuration every reported study exercises."
+  },
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Boundary: loop termination is model-driven — 'the LLM may predict a separate <DONE> token at this step if it predicts the debugging process is complete,' ending the loop early. The code enforces only the s=3 ceiling, not continuation (contrast Vargas, where code 'prevents early termination'). I judge it fires because the model's only control over the outer loop is this one bounded stop-signal under a code-enforced cap — it cannot reorder/skip steps, choose whether the debugger runs, or alter the A-E architecture, all of which are code. Flagging so the arbiter can weigh model-permissive termination against the code-held structure."
+    }
+  ]
+}

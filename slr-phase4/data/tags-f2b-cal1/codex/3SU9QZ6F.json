@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (c) — AIRA’s implemented CLI dispatches an LLM as a bounded code-analysis worker in LLM and hybrid modes, while top-level code selects the configured scan path and merges the model’s structured findings with deterministic static results; the model does not control what runs next. The reported LLM comparison confirms this path was built and run."
+  },
+  "flags": []
+}

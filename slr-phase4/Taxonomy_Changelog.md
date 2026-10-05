@@ -7927,3 +7927,1074 @@ silent proposals the synthesis actually consumes, done as one auditable act rath
 firefighting. That narrows B9 to a decision about F2 proposals alone, which can be made explicitly
 before `final:*` is computed.
 
+## 151. F2 REVIEW OPENS — `deterministic-orchestration-v2` coined: code at the top level dispatching models for bounded tasks (2026-10-04)
+
+**First ruling of the F2 review** (handoff 2026-08-29 §7, items 1–2). The 149 F2 flags were grouped
+into 15 general questions. This one came from question 7.
+
+**Arbiter, 2026-10-04:** *"Another variant is orchestration at the top level being code driven, firing
+up models for specific tasks … asking since HOS is evolving to that."* · *"Add a v[ersion] for the
+widening."*
+
+### 151a. Why a new tag, not a wider definition
+
+`deterministic-orchestration` (§147b) has **two preconditions**. Precondition 2 reads *"there is model
+discretion actually being removed … deterministic machinery with no model to constrain is just a
+pipeline."* That excludes the arbiter's variant. When the code dispatches models for **single, bounded
+tasks** (classify, filter, verify), no model ever holds flow discretion, so none is "removed". The F2
+models applied it correctly and **withheld** on exactly these papers.
+
+Widening precondition 2 would change a definition the F2 panel was measured against. **Following the
+project's provenance practice (the `-v2` slugs of F2), the original stays fixed and the widening gets
+its own tag.** The `-v2` suffix follows that convention; there is no gap in the numbering.
+
+### 151b. Definition — `deterministic-orchestration-v2` *(facet)*
+
+**Everything in §147b, with precondition 2 replaced.**
+
+> **Fires when code, not a model, controls the outermost flow — which steps run, in what order, and
+> what their outcomes trigger — AND at least one step is performed by a model.**
+> Either the code **removes** discretion a model would otherwise have (the original case), **or** the
+> code **withholds** it by design, dispatching models only for bounded tasks whose outputs the code
+> then routes.
+
+- **Still required:** precondition 1 (the orchestrator is not AI) and **top level only** (§147b).
+- **Still excluded:** a deterministic pipeline with **no model in it** (the CI-`if`-statement case,
+  which is still just a pipeline); a model that decides what happens next.
+- **Not decided here:** a code gate sitting under an outermost loop that a **human** drives. That is
+  F2-review question 8, pending.
+- **Superset of the original.** Every original positive also fires `-v2`, so the `-v2` set is complete
+  on its own and is the one to cite for the code-dispatches-models pattern.
+
+**Why it matters (HOS).** This is the architecture HOS is moving toward: code holds the process, and
+models are called as bounded, replaceable workers. The original tag counts papers that *constrain an
+agent*; `-v2` counts papers that *never hand the agent the process at all*. The corpus count of the
+second pattern is a design-relevant finding in its own right.
+
+### 151c. Candidates, and how the tag is applied
+
+**No panel ran on `-v2`, so every instance is arbiter-applied** in the F2 per-paper pass (step 2), and
+is reported as human-originated. Candidates:
+- **Original positives (expected to carry over):** Vargas `GAD5Z8PV` · Lyu `UB2EVUFU` ·
+  Tang `7V7SRG43` · Jin `UDVHQ5HR` · Shukla `T72TU8B5` · Ma `JCTP8VXP` (Ma depends on question 8).
+- **Withheld under the original precondition 2, the variant itself:** Mahmud `R9CDT9KB` · Sun
+  `V4IRKSFI` · Sistla `5DI9B43K`.
+- **One model proposed the original:** Wang `CTGGMIX9` · Zhou `XRTVITVP` · Ullah `A6ZE2A26`.
+- **Excluded unless question 6 rules otherwise** (the paper's own system is unbuilt): Swidey
+  `5RLPIA3K` · Jessee `JVWUYDME` · Hjazeen `VFNJSZD9`.
+
+**F2 statistics for `deterministic-orchestration` stay as measured under §147b's original
+precondition.**
+
+### 151d. Record key change — Fu `3Z45M3V3` → `U3IQJ4VK`
+
+Zotero dedupe merged Fu's preprint record into the journal version (*Security weaknesses of
+Copilot-generated code in GitHub projects: an empirical study*), which is in Phase 6. The F2 run files
+are filed under the old key. The merged record carries the F2 proposals
+(`rules-based-checks-v2`, opus + codex) and the §115 human tag. Earlier entries citing `3Z45M3V3`
+(§113, §115) are **not** rewritten (layered history); this entry is the mapping. Per §148a, check
+which version `U3IQJ4VK`'s corpus TXT is before quoting from it.
+
+### 151e. F2b — a panel run for `-v2`, and the three anchors that gate it (arbiter, 2026-10-04)
+
+**Arbiter:** run the panel on the new facet, rather than leaving it human-applied only. Scope is **the new
+facet only**. The original `deterministic-orchestration` is not re-run, so its F2 results remain the
+measurement under §147b's precondition.
+
+- **Instrument:** `slr-phase4/Tag_Prompt_F2b_det_orch_v2.md`. It allows one slug, and the rationale
+  must name the form: **(a) sequencing**, **(b) enforcement**, or **(c) dispatch**. Form (c) is the
+  widening, so naming it lets the variant be counted separately. Questions 6 (unbuilt design) and 8
+  (human-driven outer loop) are still open, so the instrument says **flag, don't emit** for both,
+  and the run cannot pre-empt those rulings.
+- **Panel:** the F2 configuration, which is opus + codex + gemini with pinned identities, one run each,
+  over the 72 Phase 6 papers. Output goes to `data/tags-f2b/`.
+- **Calibration gate** (`data/f2b_calibration_expected.json`). Fails on a missed must, or on a
+  must_not firing at 2 of 3 or more.
+
+| Paper | Answer | Settled by |
+|---|---|---|
+| Vargas `GAD5Z8PV` · Lyu `UB2EVUFU` · Jin `UDVHQ5HR` | **fires** | §147b positives; `-v2` is a superset |
+| **Töpfer `72W6R4JG`** | **fires** | **arbiter, 2026-10-04.** Code builds the prompt, calls the LLM to generate the adaptation manager, runs it under the FCL verifier, and feeds violations back for repair. The original facet was settled **no** here (precondition 2), so this is the contrast that demonstrates the widening |
+| **Mahmud `R9CDT9KB`** | **fires** | **arbiter, 2026-10-04.** A fixed code pipeline (classify → impact → action) with three LLM classifiers, a code-computed trust score, and code thresholds mapping to CI gate actions |
+| **Parris `3SU9QZ6F`** | **must not** | **arbiter, 2026-10-04.** The evaluated flow is AIRA's deterministic engine only, and the LLM mode is an optional comparison. This tests that a pipeline with no model in it is still excluded |
+
+**Töpfer and Mahmud are deliberately not named in the instrument.** The gate therefore tests whether
+the form-(c) wording reads correctly, not whether the panel can copy an example.
+
+- **Fu's corpus text.** `U3IQJ4VK` carried no corpus TXT. The TXT attached to the merged record
+  (`6I6P6Z36`) is the **journal** version: its byline adds Yu and Chen, matching the "Full Text PDF". It
+  was copied in as `txt/U3IQJ4VK.txt`, so F2b reads the authoritative version. The old `3Z45M3V3.txt`
+  is the arXiv v4 preprint, which is the §148a pattern.
+
+### 151f. F2b calibration round 1 FAILED on one anchor — the gate caught an instrument defect (2026-10-04)
+
+**Round 1** (`data/tags-f2b-cal1/`, kept as the record). **Recall was 5/5 at 3/3**, including both blind
+anchors: Töpfer and Mahmud fired on every vendor. The form-(c) wording reads correctly. **One defect:
+Parris `3SU9QZ6F` fired 2/3** (codex and gemini), against the arbiter's must-not.
+
+**Cause: the instrument said "judge the contributed system" but not *as the paper evaluates it*.** Both
+vendors fired through AIRA's **optional** LLM and hybrid scan modes and its cloud fallback. No
+reported study uses them (Studies 1–3 run the deterministic engine only, and §5.5's LLM is a *subject
+being evaluated*). Opus withheld on exactly the arbiter's ground: the LLM is *"optional enrichment,
+not ground truth"* and *"not part of the defining architecture."*
+
+**Fix (wording only; it implements a settled ruling and introduces no new decision):**
+- a paragraph under the definition: ***"Judge the system AS THE PAPER EVALUATES IT. Optional modes,
+  fallbacks, plug-ins or configurations that the paper's own evaluation does not exercise do not
+  count"***;
+- a matching negative: *a deterministic core with optional model augmentation the evaluation does not
+  use*.
+
+Because the instrument changed, **all six calibration papers are re-run** (round 2,
+`data/tags-f2b/`). Round 1 does not mix into the measurement.
+
+**Run-integrity note.** During round 1 the output directory was briefly moved by an assistant error and
+then restored. One write was lost: gemini on Parris. Its raw CLI output was intact, so the JSON was
+recovered with the runner's own extraction step, and the meta record says so. No call was repeated, and
+no other output was affected (raw-vs-JSON check on all 18).
+
+### 151g. F2b results — `deterministic-orchestration-v2` fires on 11 of 72; seven are the dispatch pattern (2026-10-04)
+
+**Run:** 216 of 216 valid. One opus output (Kang `7UB2MD8Z`) was malformed JSON (a trailing comma). That
+single call was re-run with the same verdict, and the malformed attempt is kept in scratchpad.
+**Written to Zotero** (arbiter-authorised, backup taken 2026-10-04): **39 model-proposal tags on 18
+papers** (codex 15 · gemini 12 · opus 12). The write is additive, nothing in the `cal:human:*` layer was
+touched, and all 18 were verified.
+
+**Fires at ≥ 2/3 on 11 papers:**
+
+| | Papers |
+|---|---|
+| **New under the widening** (original < 2/3) | Töpfer `72W6R4JG` 3/3 · Ullah `A6ZE2A26` 3/3 · Wang `CTGGMIX9` 3/3 · Zhou `XRTVITVP` 2/3 |
+| **Original was 2/3, now unanimous** | Mahmud `R9CDT9KB` · Sun `V4IRKSFI` · Sistla `5DI9B43K` |
+| **Original positives carried over** | Vargas `GAD5Z8PV` · Lyu `UB2EVUFU` · Tang `7V7SRG43` · Jin `UDVHQ5HR` (form b only) |
+
+**The finding for HOS:** **seven built systems in the corpus implement code-at-the-top dispatching
+models as bounded workers** (the four new papers plus Mahmud, Sun and Sistla). Most rationales name
+form (c).
+
+**Original positives that do not carry over.** All three are consistent with the instrument's
+flag-don't-emit rule, pending rulings:
+- Swidey `5RLPIA3K` — an unbuilt reference architecture (question 6).
+- Ma `JCTP8VXP` — an agent-invoked gate (question 8).
+- **Shukla `T72TU8B5` — a contradiction for the arbiter.** F2 fired the original 3/3 (form b: a
+  CLI approval cascade enforced on every action). F2b fires 0/3: opus reads Hedwig's outermost flow
+  as a model-controlled agent, and codex and gemini are silent. **`-v2` is a superset, so a confirmed
+  original should imply `-v2`.** One of the two runs is wrong about where Hedwig's top level sits.
+
+**Census flags** (vendor count ≥ 2): **unbuilt design on 14 papers** and **human outer loop or
+agent-invoked gate on 9**. These are inputs to questions 6 and 8. **A 1/3-only proposal on 7 papers**
+(Parris, Huang, Kang, Abreu, McAleese, Vanam, Mitropoulos) stays in the review queue and is not
+written as model-agreed.
+
+## 152. F2 review Q1 — observed review absence counts unless the paper shows it is SELECTIVE; Gao fires, with a mechanism note (2026-10-04)
+
+**Question:** does `oversight-scaling-inversion-v2` route 1 (*observed review absence*) fire on absence
+that may be a choice rather than capacity being outrun?
+
+**Arbiter's ruling (2026-10-04): the middle reading.** **Observed absence of review counts unless the
+paper itself shows it to be selective or chosen.** A cause the paper only *hypothesises* does not
+discharge it.
+
+| Paper | Ruling | Why |
+|---|---|---|
+| **Gao `59KP8GTP`** | **fires** (endorses codex + gemini, 2/3) | Absence on the **merged** population: Human+AI 79.0% merged with no human feedback, and 86.8% for non-owners. The triage explanation (*"low-hanging fruit"*) is an untested hypothesis (*"we did not analyse the reasons"*) |
+| Branco `JQPPKSFQ` | **rejected** | The paper's own data show the absence is **selective**: auto-merged PRs are *"smaller and more focused"* and *"less common in more mature, well-governed projects"*, with maintainers *"more cautious when agents remove existing code"* |
+| Ghammam `SHK6KAX6` | **rejected** | Merges came *"immediately after automated checks passed"*, so oversight was present. The authors attribute the light human review to **trust** |
+| Watanabe `E95T8E88` | **rejected** | *"75.6% contain no revisions"* is not review absence, and the paper makes no absence claim |
+
+### 152a. MECHANISM NOTE — Gao demonstrates absence, not capacity overload
+
+Gao's **Table 2** (the authoritative MSR '26 text; derived from "# No Human" over merged entries)
+contains the decisive contrast, within the same repositories and period:
+
+| Who is visibly the author | Merged with no human feedback | Mean reviews |
+|---|---|---|
+| **AI-only** (a bot is the author) | **1.7%** (83 / 4,751) | 3.21 |
+| Human-only | 19.8% (27,707 / 140,042) | 4.98–5.52 |
+| **Human+AI** (AI only in a commit trailer) | **79.0%** (15,219 / 19,263) | 0.15–0.62 |
+
+If capacity were simply being outrun, the bot-authored PRs would go unreviewed too. Instead they are
+among the most reviewed. **Absence tracks how visible the AI involvement is** (plus ownership), not
+volume. That is consistent with an **attention account**: a human author's name invites a quick scan
+of code that looks correct. This is the arbiter's System 1 / System 2 hypothesis. The dissertation
+uses Gao for the *result*, not this mechanism, and its theoretical base (Parasuraman & Manzey's
+attention-driven complacency) fits it.
+
+**Consequence for citation:** Gao is the corpus's one demonstration of review **absence** on merged
+AI work. **It must not be cited as evidence that review capacity is outrun.** The tag is retained
+because route 1 is about observed absence; the mechanism belongs to the fieldwork.
+
+**Source-version check:** Gao's corpus TXT is identical to the authoritative published TXT
+(`RPIQ6R4W`, MSR '26). Table 2's values come from `pdftotext -layout` on the published PDF
+(`5JPXMWWP`), the allowed re-extraction, because the stored TXT's reflow drops table cells.
+
+## 153. F2 review Q2 — no evidence means conjecture, and conjecture does not count (2026-10-04)
+
+**Arbiter:** *"If there is no evidence, it is conjecture so it doesn't count."*
+
+**Rule:** a paper that frames, argues or asserts the inversion **without first-party evidence** (no
+observed review absence, no measured merged defects of its own) does **not** fire
+`oversight-scaling-inversion-v2`. This holds however central the thesis is to the paper. Cited
+third-party findings and single motivating anecdotes are not the paper's evidence.
+
+**Applied to 11 papers. No model proposed the tag on any of them, so nothing is written.** Silence is
+correct here.
+- **Position, vision or framework:** Wang `2KPHQ5IV`, Kamalı `3ZVMBGPB`, Casserini `95CPB7CF`,
+  Jessee `JVWUYDME`, Bara `6F3S8IB7`.
+- **Discourse or qualitative (self-report):** Baltes `B644HQFS`, Pimenova `E9RAWBDT`.
+- **Policy analysis:** Yang `XJAXB98T`.
+- **Cited or anecdotal:** Moreira `RX9SICP9`, Xie `T8E8SCCG`, Kim `RPHK78A9`.
+
+**Recorded as a count, not a tag.** 11 of the 72 Phase 6 papers frame the inversion as conjecture, and
+one (Gao, §152) demonstrates review absence. The inversion is the field's working premise, but it is
+asserted far more often than it is shown.
+
+## 154. F2 review Q3 — merged defects without a measured review signal do not fire; a correlational route 2 is PARKED as a possible `-v3` (2026-10-04)
+
+**Ruling (arbiter, 2026-10-04): no fire** for Liu `9H6FWJME` (rejecting gemini's 1/3), He `REZGA5WF`
+and Huang `4T5QFWZE`. Each measures defects, and none measures review on the defect population:
+- **Liu** — 22.7% of AI-introduced issues survive at HEAD, but no review signal is measured.
+  *"It is unlikely that all AI-generated code receives a thorough human review"* is inference from
+  volume, and the paper declines a human baseline.
+- **He** — the paper's own model attributes the debt to codebase size, and AI tools *"may not
+  necessarily introduce more code quality issues than non-adopting projects moving with the same
+  velocity."*
+- **Huang** — redundancy is measured on Dataset B (crewAI, 617 PRs) and reviewer sentiment on
+  Dataset A (3,858 PRs). This is §127b's population mismatch.
+
+**The arbiter's concern, recorded because it shapes the next decision:** *"It may be very difficult to
+prove that lack of review is causation; correlation might be what we are limited to deducing. To get
+causation, some means would need to be put in place to confirm that a human actually looked at the code
+where the problem later occurred. We might be throwing out useful data by setting that bar too high."*
+
+**Why the ruling stands under either bar.** None of the three would pass even a correlational test
+(defects plus a measured review signal on the same population), so relaxing route 2 recovers nothing
+here. The papers stay Core with their other tags, and Liu's survival figure remains problem-statement
+evidence. They are excluded only as evidence *for the inversion mechanism*.
+
+### 154a. PARKED — a correlational route 2 as `oversight-scaling-inversion-v3`
+
+Settle this after the remaining F2-review questions, with the full picture in view. **Candidate
+definition:** route 1 unchanged; **route 2 = defects measurably present in merged code AND a measured
+review signal (absence, lightness, or speed) on the same population**. This is association, not
+causation. It is a definition change, so per the provenance practice it would be a new slug and `-v2`
+would stay the strict standard. **It would yield a tiered claim:** "inversion demonstrated once
+(Gao, `-v2`), associated in N papers (`-v3`)." **First candidate: Ghammam `SHK6KAX6`**, which has
+smells in the same merged population where 61.4% merged with no human modification. That paper was
+rejected under route 1 (§152).
+
+**Design implication (fieldwork and HOS):** causal evidence requires a **per-change record that a human
+inspected the specific lines**. Repository data does not carry this. It is an item for the survey
+instrument and an HOS provenance requirement.
+
+## 155. F2 review Q4 — instrument vs contribution applied (§104/§115); two hand-applied rungs QA-corrected (2026-10-04)
+
+**Principle (already settled):** §104 — machinery that is merely *used* to measure something is an
+instrument, not a contribution. §115 — it becomes a contribution when the paper measures the effect of
+*using* it. The rungs follow the ladder rules: a rung requires a built system, and the results must
+describe the tool, not the world.
+
+| Paper | Tag | Panel | Ruling |
+|---|---|---|---|
+| Fu `U3IQJ4VK` | `rules-based-checks-v2` | 2/3 | **endorse** — §115 (detector → warning → LLM repair, 19.3% → 55.5%) |
+| Karuppuchamy `8MXATG38` | `rules-based-checks-v2` | 3/3 | **endorse** — scanners as a merge gate (use, not measurement) |
+| Ghammam `SHK6KAX6` · Ferdous `UIXCRBQX` · Ji `YA7XNWYE` | `rules-based-checks-v2` | 1/3 each | **reject** — the tool is the study's instrument or oracle |
+| Abreu `BU73N7PC` · Watanabe `E95T8E88` | `evaluated-real-data` | 3/3 | **endorse** — predictors scored as tools on real history |
+| Minh `74GE3TF7` | `evaluated-real-data` | 2/3 | **endorse** — follows from the arbiter's own `built-system` (Circuit Breaker, AUC 0.958 on real PRs) |
+| Mitropoulos `X7EN6DXZ` | `evaluated-real-data` | 1/3 | **endorse** — see 155a |
+| Parris `3SU9QZ6F` | (no rung) | 0/3 | **none** — AIRA is built, but its results describe code populations. Built with no rung is valid |
+| Ullah `A6ZE2A26` | `evaluated-synthetic` | 2/3 | **stands** — the existing human tag, now confirmed by the panel |
+
+### 155a. Two hand-applied rungs were ERRORS — QA corrections, following §142a
+
+Both were hand-applied rungs. Per the §142a precedent, **the endorsement is kept as history and a
+`cal:human:reject:` is written alongside**. This is a QA correction, not a definition change.
+
+- **Ji `YA7XNWYE` — `evaluated-benchmark` rejected.** There is **no built system**. It is a CSET policy
+  report: *"we tested five code generation models using the same programming language, assessment
+  tool, and prompts"* (GPT-4, GPT-3.5-turbo, Code Llama, WizardCoder, Mistral), with an off-the-shelf
+  checker (ESBMC) and an existing prompt set (LLMSecEval). It explicitly declines to *"create a new
+  benchmark."* **`built-system` was checked and was not missed** (arbiter request). `method-experiment`
+  stays.
+- **Mitropoulos `X7EN6DXZ` — `evaluated-benchmark` rejected, `evaluated-real-data` endorsed.** The
+  paper has two events. **Event 1:** six third-party LLMs on 250 pairs *sampled* from CrossVul. No own
+  system, so `method-experiment`, no rung. **Event 2:** the authors' **LLM-assisted iterative attack**
+  against the review pipelines of **17 real CVEs across 10 real-world projects**, rebuilt *"in
+  controlled, isolated environments [that] do not involve live production systems"*. Its results
+  describe the tool (100% success, 17/17; 53% on the first attempt; $19.36 total). The material is
+  real and selected, so it is real-data under §148b. Neither event is a benchmark run.
+
+**For closeout B11 (hand-applied post-freeze tags):** two of the hand-applied rungs examined here were
+errors, both from the ladder's formative period. That supports re-checking the remaining hand-applied
+rungs.
+
+## 156. F2 review Q5 — TESTS ARE EXCLUDED from rules-based checks; `rules-based-checks-v3` coined; test authorship parked; Jin re-read (2026-10-04)
+
+**How the ruling was reached** (recorded because the arbiter changed position during the discussion,
+and the final position is the one that governs):
+1. *"The intent of the rules based check is whether the code is validated using deterministic
+   evaluations like linters, security scanners, etc. alongside any AI evaluation … The inspiration is
+   diversity of validation."*
+2. *"I wanted to know which cases use static analysis for validating the code."*
+3. *"Tests count too, regardless of human or AI authored. They yield a concrete and reproducible yes
+   or no."*
+4. After re-reading Jin (156c): *"Realistically in practice, nobody is going to have models write code
+   and humans write tests. The opposite is more likely. I think the key insight is whether the same
+   'model' (note, human counts as a different model in this context) wrote the tests. **Let's go back
+   to excluding tests** as a 'deterministic rules based check' and we might add additional analysis on
+   test authorship in a future exercise."*
+
+### 156a. Ruling and the new slug
+
+**`rules-based-checks-v3`** *(theme)*: code is validated against **rules** by a **deterministic,
+non-AI evaluator**. Static analysers, linters, security scanners, type checkers, formal verifiers, and
+policy or constraint rule engines all count. **Tests are excluded, whoever authored them.**
+- **The boundary is rules vs examples.** A rules-based check tests code against **general properties
+  or policies** ("no empty exception handlers", "no hard-coded secrets", a temporal property). A test
+  checks behaviour on **specific examples**.
+- **Worked edge case — Töpfer `72W6R4JG` fires.** Its FCL verifier checks execution traces at runtime,
+  but against general temporal-logic rules (*"the Dragon is eventually dead"*), not examples. It is
+  dynamic, but it is still a rule.
+- **Carried forward unchanged:** §139a (an LLM-scored rubric is `ai-review`) and §104/§115 (a tool
+  used only to *measure* the world is an instrument; it fires when the paper's system or process uses
+  it, or the paper measures the effect of using it).
+- **`-v2` stays as measured.** It admitted human-intent tests (Lipsanen was one of its worked
+  positives), and `-v3` is narrower. This follows the provenance practice.
+
+**Q5 outcome: Lipsanen `7SH86C2W` and Zietsman `TA6GIUK2` do NOT fire `-v3`.** Both validate with
+tests only (Robot Framework acceptance tests; BDD scenarios run with `behave`). Neither paper mentions
+static analysis.
+
+**Application: a one-slug panel run (F2c),** with a calibration gate, on the arbiter's instruction
+(*"I'd be OK just running the new model if that is cleanest"*). It is cleaner than hand-application,
+because `-v2`'s positives include test-only papers that `-v3` must now exclude.
+
+### 156b. PARKED — test authorship as a future exercise
+
+**The variable:** whether the **same author** wrote both the code and its tests. A human counts as a
+different "model" from any LLM. Same-author tests yield a reproducible yes or no that is **correlated
+with the producer's errors**: a shared misreading of the spec passes straight through. **In practice
+the realistic arrangement is models writing both.** Contrast cases already in the corpus: Lipsanen
+(tests generated from requirements **before** the code exists) and Ma (the coding agent writes and runs
+tests for **its own** work). **F2c collects a census flag** on every test-based validation it meets,
+recording authorship relative to the code, so the exercise starts with data.
+
+### 156c. CORRECTION — §147a misread Jin's 88.74%
+
+§147a cited *"Jin, the hybrid case, runs at 88.74% FPR — the LLM error profile."* **That is wrong.**
+In the authoritative journal text (*Autom. Softw. Eng.* (2026) 33:90, Table 4, p. 24), **88.74% is
+GPT-4o's FPR as a pure LLM judge** on MBPP (Full setup). **The hybrid Fix-guided Verification Filter cut
+it to 39.96%.** Llama-3.1-8B went from 90.81% to 23.56%, and QuixBugs from 51.0% to 24.0%.
+
+**What Jin actually shows:**
+1. **Execution-grounding more than halves LLM-judge error.**
+2. **The authors backstop model-authored tests with human ones.** The filter runs the benchmark's
+   human reference tests **and** GPT-4o-generated augmented tests. When the generated tests fail both
+   versions (Case 2), they *"over-extended the spec"* and the filter **falls back to the benchmark
+   tests only**.
+3. **There is no ablation,** so the contribution of the model-authored tests alone is not isolated.
+
+**§147a's conclusion (hybrids out of `-v2`) is untouched; only its evidence is corrected.** Jin is
+retained as a key citation for 156b (arbiter flagged it for dissertation follow-up).
+
+### 156d. F2c calibration — round 1 missed Fu (mixed use), wording fixed, round 2 PASSED (2026-10-04)
+
+**Round 1** (`data/tags-f2c-cal1/`): 9 of 10 anchors correct. **All three test-only anchors (Lipsanen,
+Zietsman, Jin) scored 0/3**, so the tests exclusion reads correctly. Töpfer's rules-vs-examples edge
+case scored 3/3. **The miss was Fu `U3IQJ4VK`, at 1/3.** Opus and gemini flagged it undecidable on the
+use-vs-measurement condition. Fu uses CodeQL, Bandit and ESLint **both** as instruments (RQ1–2 count
+CWEs in mined code) **and** in a detector → warning → repair loop whose effect is measured (RQ3). The
+instrument did not say which use wins.
+
+**Fix (wording only; it implements §115, which already ruled this exact paper):** ***"Mixed use fires.
+If any part of the paper uses the tool inside a system or loop, or measures the effect of using it, the
+theme fires — even if other parts use the tool only as an instrument."***
+
+**Round 2** (fixed instrument, all 10 re-run): **recall 5/5, all at 3/3 · false positives 0, all
+must-nots at 0/3 · output contract clean → PASSED.** The full run is cleared.
+
+## 157. F2 review Q6 — architecture facets describe a paper's OWN SPECIFIED architecture; `design-only` carries the unbuilt status (2026-10-04)
+
+**Arbiter's ruling (option B):** architecture facets (`agent-panel`, `peer-critique`, `cross-model`,
+`deterministic-orchestration`, `deterministic-orchestration-v2`) fire on the architecture a paper
+**specifies for its own system**, built or not. **Evaluation status is carried by `design-only`**, so a
+facet on a design-only paper reads "*designed* with X", not "*has* X".
+
+**Why:** this is §23's precedent applied to facets. Unevaluated work is kept and marked `design-only`;
+it is not withheld. 13 of the 15 flagged papers already carry `design-only`, so any facet count can
+be split into built and designed. Withholding facets would lose the design intent these papers carry:
+which mechanisms practitioners and vendors **propose**, which is relevant to the survey and to HOS.
+
+**What still does NOT fire:**
+- **Catalogues (§149b stands).** A paper surveying *other people's* mechanisms specifies no
+  architecture of its own (Zhu `ZGST9CY6`).
+- **The evaluation rungs.** `evaluated-*` still requires a built system (ladder rule 1).
+
+**Applications:**
+- **Tisi `DJMBHHZN`:** the human `agent-panel` stands, and the panel agrees 2/3.
+- **Hjazeen `VFNJSZD9`:** `peer-critique` (2/3) is applicable under this rule, since the *"secondary
+  auditor model, architecturally isolated from the primary coding agent"* evaluates the primary
+  agent's reasoning. Confirm in the per-paper pass.
+- **F2b's census of 14 "unbuilt design" flags on `deterministic-orchestration-v2`** becomes per-paper
+  work. Each paper is judged on whether its own specified design holds the flow in code.
+
+**Open sub-question: Swidey `5RLPIA3K`, built or designed?** Arbiter-tagged `built-system`. The text is
+a vendor technical white paper (Thirty Seven Inc., the founder and CEO as author, two USPTO
+provisionals) presenting the product VARI *"as a reference architecture"*. It names the models per role
+(Claude Sonnet 4 as Advocate and Adversary, GPT-5.2 as Arbitrator) and offers deployment, but contains
+**no implementation detail, evaluation or results**. Under §157 its facets fire either way. The
+question only decides `built-system` against `design-only`.
+
+### 157a. A COMMERCIAL PRODUCT IS `built-system` BY DEFINITION (arbiter, 2026-10-04)
+
+**Arbiter:** *"Commercial product is built-system by definition."* **Swidey `5RLPIA3K` keeps
+`built-system`.** VARI is the vendor's product, with named models per role and deployment offered.
+The paper's lack of implementation detail or evaluation does not make it a design: a product exists,
+whether or not the paper evaluates it. **No evaluation means no rung** (ladder rule 1 needs a built
+system, and a rung needs an evaluation event); it does not mean `design-only`.
+
+**General rule:** when the paper describes a **commercially offered product**, it takes
+`built-system` regardless of what evidence the paper itself presents. `design-only` is reserved for
+systems that are proposed or specified but not offered or implemented.
+
+## 158. F2 review Q8 — enforcement must sit WHERE THE AI CANNOT ROUTE AROUND IT: outermost flow, or a mandatory chokepoint (2026-10-04)
+
+**Ruling (arbiter, 2026-10-04, accepting all recommendations).** For both `deterministic-orchestration`
+and `-v2`, §147b's "top level only" means **the enforcement must sit where the AI cannot route around
+it**. That is either the **outermost flow** (the original reading), or **a mandatory chokepoint that
+every action or completion claim must pass**. A loop driven by a human, or ended by a model, does not
+qualify.
+
+| Pattern | Papers | Ruling |
+|---|---|---|
+| **1. A human drives the phases**, and code gates inside | Takerngsaksiri `5VTAJISY` · Lipsanen `7SH86C2W` · Kasibatla `ZH6QIU8A` · Moreira `RX9SICP9` · Mitropoulos `X7EN6DXZ` | **No fire.** A human is the orchestrator. That is `hitl-workflow`, not deterministic orchestration |
+| **2. The model ends the loop** inside a code skeleton | Kang `7UB2MD8Z` | **No fire.** The LLM decides `<DONE>`, and code only caps iterations |
+| **3. An interception layer on every agent action** | **Shukla `T72TU8B5`** | **Fires, form (b), both tags.** Every action passes a CLI approval cascade *"enforced … independently of the model's reasoning"*. The agent chooses *what* to attempt, but cannot bypass the gate |
+| **4. A gate the agent calls itself, with no other path to done** | **Ma `JCTP8VXP`** | **Fires, form (b), both tags.** `zoro-cli` refuses "complete" without proof. The human supervisor panel is only a backstop |
+
+**This resolves F2b's Shukla contradiction (§151g).** F2's 3/3 on the original tag was right. F2b's
+0/3 on `-v2` came from the F2b instrument's "agent-invoked gate" census rule. Shukla and Ma now carry
+**both** tags, so `-v2`'s superset property holds. Rejections are written where a panel proposal
+existed: Takerngsaksiri (original 1/3), Kang (both 1/3), Mitropoulos (`-v2` 1/3).
+
+## 159. F2 review Q9 — `survey-input-v2` definition KEPT (three conjunctive tests; no centrality); no on all five (2026-10-04)
+
+**The arbiter considered and declined both changes.** One was a centrality test (*"is the survey the
+central point, or a mechanism to evaluate something else?"*), now the **third** time it has been raised
+(§121b, §145a). The other was widening test 1 to tallied structured interviews in mixed-methods
+designs. **The three conjunctive tests stand:** instrument (§116a), elicitation (§121b), reported
+finding (§145a). The arbiter's own example, *"a survey to check whether the prototype worked"*, is
+already excluded by the elicitation test (performance, not preference; cf. HULA).
+
+| Paper | Fails | Note |
+|---|---|---|
+| Sudarsan `UW2R6BBJ` | 1, 2 | Experts rate the authors' framework. Correctly **`expert-validated`** (human, and panel 3/3) |
+| Wang `CTGGMIX9` | 1, 2 | "Anonymous surveys" reported as themes; acceptance of its own tool |
+| Sun `V4IRKSFI` | 1 or 2 | The N=137 survey measures effectiveness. The preferences (feature requests, 11/12) come from the 12 interviews. No single instrument passes both |
+| Kim `RPHK78A9` | 1, 2 | Other organisations' surveys, cited secondhand; satisfaction |
+| Karuppuchamy `8MXATG38` | 1 | The arbiter's earlier **rejection of `method-self-report`** (one evaluation event, one method) already ruled the "survey feedback" part of the single field deployment, not a separate survey instrument. **Its *"∼95% affirmed the continued necessity of human code review"* remains a quotable result.** |
+
+No model proposed the tag on any of the five, so **nothing is written**.
+
+### 156e. F2c run — 216/216 valid; a runner extraction bug found and fixed (2026-10-04)
+
+**`-v3` fires (≥2/3) on 13 of 72 papers**, compared with 8 for `-v2` in F2. The widening comes from
+mechanism-level reading: Sistla's Soufflé verifier, Mitchell's compile-time checks, Sharma's licence
+scanners, and design or position papers *about* rule-based checking (a theme, so §149b and §157 apply).
+**Dropped relative to `-v2`: Lipsanen and Zietsman** (tests only, which is the intended narrowing).
+
+**Runner bug (fixed in `run_f2_panel.sh`).** The JSON extractor matched greedily from the first `{` to
+the last `}`. When the prose before the JSON contained a brace (Wang `CTGGMIX9`: the paper's
+*"{M1…Mn}"* notation), the span did not parse and the runner silently wrote an **empty** file. It now
+scans every `{` and keeps the largest span that decodes to an object. **Opus on Wang was recovered from
+the original raw output** (verdict: no fire). A diagnostic re-run gave the same verdict, and the meta
+record says so. **All F2/F2b/F2c outputs were scanned: no other empty files.** When the old regex did
+yield output, it was a complete parsed object, so no silent mis-extraction is possible.
+
+**Test-authorship census (§156b data):** 39 papers have test-based validation flagged by at least one
+vendor. Of the 28 with a label agreed by ≥2 vendors: **human-authored 11 · same-as-code 5 · mixed 5 ·
+unclear 7.**
+
+## 160. F2 review Q10 — elicitation edge cases: trust-in-own-output and risk-significance ratings are NOT preferences (2026-10-04)
+
+The test is §121b's line: ***"Kang asked people what they want; Catalan measured what they did."***
+
+- **Perry `YBHHYR4P` — no** (rejects codex 1/3). The per-task Likert items (*"I think I solved this
+  task … securely"*, *"I trusted the AI to produce secure code"*) measure participants' **belief about
+  the work they just did**. They are compared with the actual security of the code to show
+  overconfidence. That is a calibration **construct**, not a stated preference. **Retained as a key
+  automation-bias result:** AI-assisted participants wrote less secure code *and* rated it more
+  secure. That is a theme-level finding.
+- **Al-Hashimi `6DXZGHD9` — no** (rejects opus + codex 2/3). The questionnaire asks practitioners to
+  rate the significance of risks and practices. That is an **assessment of the world**, consistent
+  with Sudarsan (§159), not what they want. Its responses also train the ANN-ISM model, which is
+  formative use. **The arbiter's v1 `survey-input` tag predates §121b's elicitation test and stays as
+  history**; the frozen v1 layer is not revised.
+
+The arbiter judged both "on the line" readings and accepted the recommendations.
+
+## 161. F2 review Q11 — ladder rungs for mixed provenance; "wants to be a benchmark ≠ is one" re-applied (2026-10-04)
+
+**Rule:** §148b, *curation decides*. Created instances are synthetic, selected real ones are
+real-data, and a recognised third-party benchmark run under its own protocol is benchmark. One event
+gets one rung; two rungs require two separate events.
+
+| Paper | Ruling |
+|---|---|
+| Zhou `XRTVITVP` | **synthetic** — already settled (human tag, panel 3/3) |
+| Lyu `UB2EVUFU` | **benchmark + synthetic** — two events: ProjDevBench run as-is, and self-authored multi-day briefs |
+| Sistla `5DI9B43K` | **real-data**. The MSAN event uses real code, and the second event is mostly selected-real (12 of 20 from CRQBench), so it is the same rung. Synthetic is rejected |
+| Sudarsan `UW2R6BBJ` | **no rung**. A 16-week utility deployment sits above the ladder and is carried by `method-field-study`. Synthetic is rejected |
+| Shi `MFSZPSPU` | **real-data**. 48 sanitizer bugs are *selected* from a production monorepo. The judged patches are *harvested* from the authors' production APR system, not hand-crafted |
+| **Tang `7V7SRG43`** | **benchmark + real-data**, two events (161a) |
+
+### 161a. Tang — the Dr.Fix principle applied (§34)
+
+The arbiter recalled the earlier ruling: ***"hoping your work became a benchmark doesn't count as
+benchmark."*** §34 recorded it on Dr.Fix: *"self-labeled 'our benchmark', release-upon-acceptance only,
+not yet adopted by anyone (the 'wants to be a benchmark ≠ is one' distinction)."*
+- **Event 1 (code revision):** Trans-Review, AutoTransform and T5-Review are **established third-party
+  datasets** (Tufano et al.; Thongtanunam et al.), already used by the state-of-the-art study (Zhou et
+  al., 2023), and reused as-is *"to conduct a fair and reliable comparison"*. **→ benchmark.**
+- **Event 2 (advanced review tasks):** *"We build a new dataset comprising 3,545 real-world code
+  changes … valuable for evaluating advanced code review tasks"* is the authors' own release. That is
+  **not a benchmark until others adopt it.** The commits were selected from GitHub, not created.
+  **→ real-data.**
+
+**General rule, restated:** a dataset the authors build and release as an evaluation resource takes
+the rung its **curation** earns (selected → real-data, created → synthetic). It becomes a benchmark
+only once it is **adopted** by others and run under its established protocol.
+
+## 162. F2 review Q12 — the floor of the ladder: smoke demos, analytical walkthroughs and fabricated outputs earn no rung (2026-10-04)
+
+**Ruling: no rung for all three; `evaluated-synthetic` rejected.**
+- **Mitchell `6ZW9QNQH`** (panel 2/3): `design-only` (arbiter). The proof of concept runs on one
+  hand-built toy example, with no scored workload and no metric. Ladder rule 1 already excludes it.
+- **Goel (Lumen) `VG6CIDQW`** (1/3): `built-system`, but the evaluation is a cognitive walkthrough /
+  analytical inspection (*"design-oriented evaluation"*; *"the absence of an empirical user study"*).
+  That is the self-test level, below synthetic.
+- **Vanam `R4WJZBSF`** (2/3): `design-only` (§23 carve-out). The reported numbers are predetermined
+  by the random data generator (`np.random.choice`; the ~60% ADS equals the `p=[0.6,0.4]` parameter).
+
+**The floor, stated:** the first rung requires **a built system run on a workload whose outcomes are
+scored**. Demonstrations, inspections and generator-determined outputs sit below it.
+
+## 163. F2 review Q13 — `peer-critique` scope: the test is topology (consume and JUDGE another agent's output); Zietsman's panel tags QA-corrected (2026-10-04)
+
+**Rule (§149a):** *"What does the agent consume?"* If it is another agent's output, and the agent
+**judges** it (rather than transforming or continuing it), that is `peer-critique`. **Which
+dimension is judged does not matter.**
+
+| Paper | Ruling |
+|---|---|
+| Lyu `UB2EVUFU` | **fires**, one-directional: Apollo judges Ares's output (panel 3/3) |
+| Wang `CTGGMIX9` | **fires**, one-directional: a verifier ensemble judges each proposer-LLM issue (2/3). The human `agent-panel` also stands (explicit path) |
+| Tang `7V7SRG43` | **fires**, one-directional: QA-Checker judges another agent's answer for alignment (2/3) |
+| Tisi `DJMBHHZN` | **fires as designed** (§157): supervision agents review solution agents' outputs. Arbiter-originated (panel 0/3, flagged only) |
+| Moreira `RX9SICP9` | **no**: one model alternates roles (*"the same LLM operates all rounds"*), so it is self-critique |
+| Zietsman `TA6GIUK2` | **no** `peer-critique`; see 163a |
+
+### 163a. Zietsman — `agent-panel` and `cross-model` QA-corrected (§142a precedent)
+
+Full-text check (arbiter request). Experiment 3's four models (Claude Sonnet 4.6, Codex/gpt-5.4,
+Gemini, Amazon Q) each review independently, and results are reported **per model, with no aggregation
+rule**. That is the **Karakaya pattern** (§122): models compared *as subjects*. The paper's *proposed*
+architecture (*"specifications first, deterministic verification pipeline second, AI review only for the
+structural and architectural residual"*) has no panel and no cross-model step. **Both hand-applied tags
+are rejected as QA corrections**, from the same formative period as Ji and Mitropoulos (§155a).
+
+**The finding is retained as a cited result, because it argues directly about cross-model oversight:**
+*"model diversity does not supply ground truth. A cross-family reviewer without an external
+specification is still checking code against code, not code against intent."* The condition for
+genuine benefit is ***"diversity plus external grounding."*** It is also sceptical of consensus
+aggregation (the *"popularity trap"*, citing Vallecillos-Ruiz et al.). **This is relevant to HOS's
+multi-vendor design and to the synthesis**, even though the architecture facet does not apply.
+
+## 164. F2 review Q14a — `evaluator-reliability` is for AUTOMATED evaluators; HUMAN evaluator failure is automation bias (2026-10-04)
+
+**Arbiter:** ***"Human failure is automation bias."***
+
+**Rule:** `evaluator-reliability` covers whether an **automated** evaluator (an LLM judge, critic,
+reviewer model or metric) can be trusted. That matches all six of its worked positives. When the
+**human** overseer fails to catch AI errors, that is **`automation-bias`** (Parasuraman & Manzey:
+omission errors, and commission errors in following flawed automated output). This is the
+dissertation's Chapter 1 theoretical base. The two oversight questions, *can we trust the AI checker?*
+and *can we trust the human checker?*, stay separable in the synthesis. **No definition change; no new
+slug.**
+
+**Applied — Virk `22JBEZNK`:** `evaluator-reliability` **rejected** (codex 1/3), and `automation-bias`
+**endorsed** (arbiter-originated). Marketing and sales professionals, *"repeatedly informed the AI often
+makes mistakes, and explicitly prompted to identify them"* and paid to find them, *"frequently failed to
+detect critical flaws … many of which required no technical knowledge to recognize."*
+
+## 165. F2 review Q14b and Q15 — side findings are not the subject; arbitration by a distinct model IS a cross-model check (2026-10-04)
+
+**Q14b — `evaluator-reliability` needs reliability to be the paper's SUBJECT:**
+- **Parris `3SU9QZ6F` — rejected** (codex 1/3). The 44:1 LLM-suppression result is *"a secondary
+  exploratory finding, not primary evidence"*. It remains quotable.
+- **Mahmud `R9CDT9KB` — rejected** (codex 1/3). Its calibration section (ECE 0.173) evaluates the
+  authors' own tool; reliability is not the subject.
+- **McAleese `NRVQT89E` — stands** on the arbiter's existing tag.
+
+**Q15 — Swidey `5RLPIA3K`: `cross-model` stands** (arbiter's existing tag, panel 2/3). The
+Arbitrator (GPT-5.2, *"a different provider … to reduce single-source bias"*) consumes and rules on the
+Claude Advocate's and Adversary's outputs. **Arbitrating between other models' outputs is a check on
+them**, with an explicit decorrelation rationale (the definition's *"so that their errors can differ"*).
+It is closer to Ullah (positive) than to Karakaya (models compared as subjects). **Note:** two of the
+three agents share a model family, so the decorrelation is partial. (The assistant's earlier "no"
+suggestion was revised on re-reading the definition.)
+
+### 165a. F2 REVIEW — QUESTION PHASE COMPLETE
+
+All 15 general questions are ruled (§151–§165). **Coined:** `deterministic-orchestration-v2` (§151),
+`rules-based-checks-v3` (§156). **Parked:** `oversight-scaling-inversion-v3`, the correlational route 2
+(§154a), and the test-authorship exercise (§156b). **QA corrections to hand-applied tags:** Ji and
+Mitropoulos rungs (§155a), and Zietsman `agent-panel` / `cross-model` (§163a). Per-paper decisions are
+in `slr-phase4/data/f2_review_rulings.json`, pending a batched Zotero write.
+
+## 166. F2 review step 2 — per-paper confirmations (Phase 6 only), from 2026-10-04
+
+Decisions are recorded per paper in `data/f2_review_rulings.json` and written in batches; this entry
+logs only the rules that surface.
+
+### 166a. `hitl-workflow` vs steering, restated (arbiter, batch 1)
+
+***"HITL is human evaluating the result, making judgements. Human directing is steering."*** This
+restates §11 as a one-line test: **a human judging the output → `hitl-workflow`; a human directing
+the generation (prompts, context selection, task steering) → steering.** Applied: Goel/Lumen
+`VG6CIDQW` `hitl-workflow` is **rejected**, because the developer controls the AI's context.
+
+**Batch 1 (10 papers):** endorsed Heander `framework`; Hjazeen `peer-critique` (§157); Lipsanen
+`rules-based-checks-v2` (as v2 defined it); Mitchell, Moreira and Omidvar-Tehrani
+`rules-based-checks-v3`; Mitropoulos `evaluator-reliability` (§164); Parris `rules-based-checks-v2`.
+Rejected Goel `hitl-workflow` (166a) and Gao `survey-input` (no survey, §116a).
+
+**Batch 2 (10 papers, all endorsed):** Shi `peer-critique`; Shukla `evaluated-synthetic`; Spiess
+`oversight-explanation`; Töpfer and Zietsman `rules-based-checks-v2` (Zietsman as v2 defined it); Ullah,
+Wang and Zhou `deterministic-orchestration-v2` (Zhou's code loop advances while the user only answers,
+so it is not §158 pattern 1); Watanabe `risk-routing`; Yu `evaluator-reliability`.
+
+**Batch 3 (10 papers, 20 decisions):** all of the assistant's leans accepted. **Rejected:** Eze
+`regulatory-compliance` (the EU AI Act only as a keyword, §43/§44); Kim `method-field-study` (a book's
+anecdotes and others' reports are not its own study); Mahmud original `deterministic-orchestration`
+(§147b precondition 2; `-v2` carries it, §151e). Everything else is endorsed, including Lyu
+`rules-based-checks` **v1** as v1 was defined (v3 governs and does not fire), and Baltes with **both** mode
+facets, because the paper spans agent PRs and inline tools.
+
+**Batch 4 (10 papers, 29 decisions):** all leans accepted. **Rejected:** McAleese `evaluated-synthetic`
+(§34 classed the inserted-bug task as world-side), and Sistla and Sun original
+`deterministic-orchestration` (§151, the variant; `-v2` carries them). **Added (arbiter-originated):**
+Swidey `deterministic-orchestration-v2`. That keeps the superset property, since the original fires and
+F2b's "unbuilt" flag is settled by §157a.
+
+**Batch 5 (2 papers, 9 decisions, all endorsed):** Takerngsaksiri, with `evaluated-benchmark` (SWE-bench
+Verified) and `evaluated-real-data` (369 real JIRA issues) as two events, and `rules-based-checks-v2`
+and `-v3` (compilers and linters in self-refinement; rule-checking needs no top-level position).
+Sharma, with `rules-based-checks` v1 and `-v3` (SCA licence scanners), `hitl-workflow` (audit teams can
+block commits, §166a), `provenance-auditability` and `risk-routing`. **This closes the last four §150a
+implicit-confirmation tags.**
+
+### 166b. STEP 2 COMPLETE — the F2 review is closed for the 72 kept articles (2026-10-04)
+
+- **Review queue: 0 open decisions.** Every panel proposal at 2/3 or more on Phase 6 has a human ruling.
+- **Ledger** (`data/f2_review_rulings.json`): **138 rulings, 102 endorse and 36 reject, all written
+  and verified.**
+- **Silence audit** (`slr-tools/silence_audit.py`): the surviving papers have **6 silent tags, all
+  `counterpoint`**, which go to sweep B3. **Closeout B14's done condition is met.**
+- **B9 (fail-open vs fail-closed) no longer bears on the frozen and F2-family vocabulary for the
+  synthesis set**, because nothing there is silent (§150b). It survives only for demoted papers, which
+  have no consumer.
+- **Note on §11.5's figures.** The surviving-paper override rate is now **9.6% (49 of 511)**, against
+  9.0% before the review, because the review added rejections on frozen-vocabulary tags (e.g. Gao
+  `survey-input`, Goel `hitl-workflow`, Eze `regulatory-compliance`). **The T1 figure in §11.5 stays as
+  recorded**: it is the measurement at T1. The post-review state belongs to the T2 point.
+
+**Still open:** sweep B3 (`counterpoint`); the parked `oversight-scaling-inversion-v3` (§154a) and
+test-authorship exercise (§156b); T2 measurement; `final:*` computation.
+
+## 167. B3 RESOLVED — the `counterpoint` "sweep" is §101a's computation-step exclusion, made concrete (2026-10-04)
+
+The arbiter asked to do closeout B3. **It had already been decided, and the decision was not to sweep**
+(§101a, 2026-08-26): *"OK to leave counterpoints on, we will likely not use them but let's not lose the
+information."* The B3 tracker entry was never updated after that ruling. It is now.
+
+**What was done (no Zotero writes):**
+- **`slr-phase4/data/deprecated_vocabulary.json`** is the single auditable list of the
+  `final:*` formula's fourth term (*− deprecated vocabulary*). Its first entry is `counterpoint`
+  (deprecated §56, excluded at computation §101a). A future deprecation is one new entry, not a sweep.
+- **The step-2 tooling reads it** (`silence_audit.py`, `f2_step2_batch.py`, `f2_review_queue.py`),
+  replacing three hard-coded copies.
+- **F1 gains explicit checks:** no deprecated slug may appear in `final:*`, and deprecated-slug
+  rejections are not counted as judgements in the override statistics. That is the double-count B3
+  warned about.
+
+**Scope recorded (Phase 6):** 9 papers where `counterpoint` would otherwise reach `final:*` (6
+modal-silent: Wang `2KPHQ5IV`, Jin, Eze, Zietsman, Xu, Zhu; 3 human-endorsed before §56: Huang
+`Z8TPRNEU`, Heander, Goel), plus 4 demoted papers. **The cal:* layers are untouched.** Legacy
+applications stay as provenance and are never read as scaling dissent (§56b).
+
+## 168. Closeout decision round (arbiter, 2026-10-04)
+
+- **B6 — model `demote:context` flags stay in the run JSON**, documented. They feed tier recall (C3).
+  Demotes are final and human-owned, so a Zotero model-flag layer would have no consumer.
+- **B12 — closed.** The §144 client merge folded Jin's preprint into `UDVHQ5HR`, so nothing is left to
+  file.
+- **E2 — promotion removes a paper from the Dissertation Queue.** 8 papers were removed (Primary is
+  unchanged).
+- **E5 — Gao `59KP8GTP` is the "oversight fails at scale" anchor; Branco `JQPPKSFQ` → `02 -
+  Supporting`.** This is consistent with Chapter 1, which uses Branco for agentic PRs being merged
+  without review more often.
+- **E9 — no authority signals beyond #1** (manual Google Scholar counts). Authority stays holistic and
+  qualitative (§132b).
+
+Also: **B8 swept clean** (0 Final-Core items lack a human layer or a demote). **T2 recorded**. **C6's
+pre-registered prediction tested:** Light Read origination fell from 7.7% to **5.5%**, against the
+predicted ~3.5% if the frozen instrument were the whole constraint. That is a **partial** collapse:
+roughly half the gap was the instrument and half the panel.
+
+## 169. B11 CLOSED — the hand-applied post-freeze tags the panel did not back (2026-10-04)
+
+The residual is the hand-applied post-freeze tags on kept papers with F2 panel support of 1/3 or less,
+excluding those already ruled. There were **6**, and McAleese `evaluator-reliability` stood under §165.
+**The other 5 are QA corrections (§142a precedent: the endorsement is kept and a reject is added):**
+- **Jin `UDVHQ5HR` `evaluated-benchmark`.** One event, made of curated and modified paired variants,
+  so synthetic (§148b, endorsed in batch 3). One event takes one rung.
+- **Vargas `GAD5Z8PV` `evaluated-real-data`.** The bugs are embedded in auto-generated codebases
+  (synthetic), and there is no separate real-data event.
+- **Vargas `GAD5Z8PV` `evaluator-reliability`.** *"Agreement between AI systems showed weak correlation
+  with fix quality … improved acceptance by only 2.4% points"* is a finding about **panel consensus as a
+  signal**, and `agent-panel`/`peer-critique` carry it. It is a side finding (§165). **It stays a key
+  quotable result.**
+- **Sun `V4IRKSFI` `evaluator-reliability`.** The paper evaluates its own tool's precision (§165,
+  cf. Mahmud).
+- **Swidey `5RLPIA3K` `agent-panel`.** A debate plus an arbitrator is mutual critique (`peer-critique`,
+  batch 4), not N agents on the same question aggregated by a rule.
+
+**Pattern across B11 and the F2 review:** **9 of the hand-applied post-freeze tags examined were
+errors** (Ji, Mitropoulos ×1 each §155a; Zietsman ×2 §163a; these 5). All date from the slugs'
+formative window, as §142a predicted. **Every one was caught where the panel disagreed with the human
+tag.** That is a concrete case of the review's own disagreement-as-signal mechanism, and worth a
+sentence in the methods chapter.
+
+## 170. CORRECTION — §119b stands: a ladder rung does NOT require a built system; today's Ji rejection reversed (2026-10-04)
+
+**Assistant error, caught during closeout B4.** The F2 instrument (`Tag_Prompt_F2_restricted.md` §3, written
+2026-08-29) states *"all three [rungs] entail `built-system`"*. **That rule was never ruled by the arbiter**, and it
+contradicts §119b (arbiter, 2026-08-27/28): ***"The ladder rates EVIDENCE STRENGTH, not artifact maturity. A
+contributed system is not required."*** The closeout's F2a table agrees (`evaluated-benchmark`: built "(either)"). Only
+**`evaluated-real-data` ⇒ `built-system`** was approved (F2a).
+
+**§155a's Ji `YA7XNWYE` rejection rested on the un-ruled rule, and on a paper §119b had itself ruled.** That ruling
+covered LLMSecEval's 67 published prompts, held constant across five third-party models: `evaluated-benchmark`, with
+no `built-system`. The assistant presented the tag as an error without surfacing §119b, and the arbiter agreed on that
+incomplete picture. **Arbiter, re-asked with both rules in view: §119b stands.**
+
+**Actions:**
+- The `cal:human:reject:facet:evaluated-benchmark` tag written on Ji today was **removed**. It was a same-session
+  assistant error, not an arbiter judgement, and removal was explicitly approved. **Ji's original endorsement
+  stands.** The ledger entry is kept, marked `reversed`.
+- **§169's count is corrected to 8 hand-applied errors** (Ji was right).
+- **Unaffected:** Mitropoulos `evaluated-benchmark` stays rejected. Neither event runs a benchmark as-is (CrossVul
+  was *sampled*). Jin `evaluated-benchmark` stays rejected. The later rulings §148b and the F2 calibration put its
+  *modified* paired variants on the synthetic rung, and they govern over §119b's earlier citation of Jin. §162's
+  floor rulings (Mitchell, Vanam) rested on there being no scored evaluation, not on built status.
+
+**Known limitation to record:** **the F2 panel was instructed under the un-ruled rule.** It may therefore have
+under-proposed `evaluated-benchmark` on papers that benchmark *third-party* systems against an accepted benchmark run
+as-is. The instrument of record is not edited (layered history). Any such paper surfaces only by hand. Ji is the known
+case.
+
+## 171. B4 CLOSED — the three §34-misreading rulings re-checked (2026-10-04)
+
+Per §119a, §34 never barred ladder rungs and method facets from co-occurring. The **world-or-tool test**
+governs, and a paper doing both earns both. With §119b reaffirmed (§170: rungs rate evidence strength,
+and no built system is needed):
+- **§77 Töpfer `72W6R4JG` — outcome stands, reason corrected.** The ablation characterises the authors'
+  own tool, so it is tool-side: `evaluated-synthetic`, no method facet. **The stated "§34 fork" reason is
+  superseded by the world-or-tool test.**
+- **§97 Zhou `XK3P9C96` — out of scope.** It is demoted, and demotes are final (B5).
+- **§99b Zietsman `TA6GIUK2` — `evaluated-synthetic` APPLIED** (arbiter). The decline rested on the
+  misreading. Four third-party models on an **authored** planted-bug corpus is synthetic-strength
+  evidence, alongside the existing `method-experiment`. This is the same shape as Ji
+  (`evaluated-benchmark` plus `method-experiment` for third-party models). The author's *"directional
+  evidence, not a controlled demonstration"* fits the ladder's lowest rung.
+
+## 172. CONSOLIDATED CORRECTION (closeout C9) — the calibration figures previously stated as fact (2026-10-04)
+
+One entry for the whole correction, as closeout C9 asked. The calibration doc is updated (§10.2, §11.7, §11.9, §11.10).
+
+1. **The Set B model-tag write (2026-08-28)** gave the blind calibration arm a model layer in Zotero for the first time.
+2. **The 80.9% origination figure was an artifact.** It was computed when Set B had no model tags (every human tag
+   counted as originated, so 100%) and blended with a Set A still holding the superseded v1 run. **Retired.**
+3. **Corrected anchoring contrast** (the only clean comparison: same arbiter, instrument, exhaustive protocol and era,
+   differing only in whether proposals were visible): **Set A (model-first) 12.7% vs Set B (blind) 9.5%** (after the A1
+   supersession; T2: 10.4% vs 7.8%). **No anchoring effect is detectable.** Light Read is retired as a control.
+4. **"~96% panel recall" is retired.** It was read off a non-exhaustive band. **Recall comes from the exhaustive arms:
+   Set B 91.6% (76/83, headline), Set A 89.4%.**
+5. **Tag recall and tier recall are split.** Tags ~90% vs **tier 57.4%** (the panel is silent on 26 of 61 human demotes;
+   tier precision 71.4%). The panel is a decent tagger and a poor triager.
+6. **Silence reclassification** (§150; C4): silence on a surviving early-Light-Read paper is implicit confirmation, on a
+   demoted paper it is unverified, and an unproposed tag carries no signal. The residue was closed explicitly (§166b).
+7. **Light Read protocol drift:** it began with subset confirmation and moved to all-tag confirmation, so the band is
+   not homogeneous (§150).
+8. **C5:** an unassisted arm exists (Set B, n = 10, blind). The supervised bands have none.
+9. **C6:** the pre-registered prediction was a partial hit. Light Read origination went 7.7% → 5.5% (predicted
+   ~3.5%), so roughly half the gap was the instrument and half the panel.
+10. **C7:** panel composition must be uniform. Fable was a dropped tiebreaker, and its partial output was never written.
+11. **C8:** Full Read was 6-for-6 demoted, the expected result for the panel-split band.
+
+**Not to be quoted anywhere:** the T0/T1 snapshots' calibration figures (D1), 80.9%, and ~96%.
+
+## 173. CORRECTION — panel votes were counting TAGS, not VENDORS; a single model's primary passed as a 2/3 majority (2026-10-04)
+
+**Found while building F1.** `tag_layer_stats.split_layers` (shared by every stats and queue script) incremented a vote
+for each `cal:<model>:*` tag. Models write **both** `cal:<m>:primary:theme:X` and `cal:<m>:theme:X` for their primary
+(202 such pairs), so **one vendor counted as two votes**. **15 single-vendor proposals were treated as panel-modal**
+across the reading bands. The 13 on kept or demoted papers include Vanam `org-governance`, Watanabe `risk-routing`,
+Goel `hitl-workflow`, Ma `agent-scope-drift`, Zhou `oversight-scaling-inversion`, and Huang-adjacent Set A themes.
+
+**Fix:** votes now count **distinct vendors** (unit-tested: one vendor's primary + theme = 1; two vendors = 2).
+
+**Impact:**
+- **No ruling is invalidated.** Every affected proposal on a kept paper received an explicit arbiter ruling on its
+  merits in the F2 review. **But the panel-support figures shown for them were overstated** (e.g. Vanam
+  `org-governance`, Watanabe `risk-routing` and Goel `hitl-workflow` were presented as 2/3 but were one vendor). The
+  step-2 queue is still 0.
+- **Statistics:** the denominators of modal-proposal figures were slightly inflated (≤15 of ~1,050).
+  **Corrected surviving-paper override (post-review): 48 / 509 = 9.4%** (was reported 49 / 511 = 9.6%).
+  **T2 regenerated as `tag_layer_stats_T2b_2026-10-04.json`.** T0, T1, T1b, T2prep and T2 stay as recorded
+  (layered history) **but carry the inflation; quote T2b or later.**
+- **F1 (`final:*`) is computed with the fixed counter**, so a single model's primary never enters the reportable set
+  as a "panel majority".
+
+## 174. F1 DONE — `final:*` computed and written for the 72 kept articles (2026-10-04)
+
+`slr-tools/compute_final.py`: **final = panel modal (≥2 distinct vendors, §173) ∪ human endorsements − human rejections
+− deprecated vocabulary (§101a).** All versions are emitted, and `data/governing_versions.json` says which one the
+synthesis reads (rbc → `-v3`, inversion → `-v2`, survey-input → `-v2`, deterministic-orchestration → `-v2`).
+- **843 tags on 72 items** (771 theme/facet + 72 primary), written and verified with 0 failures. The snapshot is
+  `data/final_tags_2026-10-04.json`.
+- **Sources:** 658 are panel-modal and human-endorsed; 113 are human-only; **0 entered on silence alone**. B9's
+  fail-open/closed question is therefore moot for the synthesis set, empirically.
+- **Checks:** one primary per item · `counterpoint` excluded (0 leaked) · no namespace collisions · Phase 6 only.
+- **`final:*` is a derived layer.** A recompute replaces it wholesale, and the `cal:*` layers are never touched.
+
+## 175. F6 DONE — eight human keeps reversed by machine without review, re-adjudicated; AgentCoder prepped for merge (2026-10-04)
+
+These eight were kept by the arbiter at Pass 1, then discarded by the **machine** without human review: by the Pass-2
+screen (`s2:machine:discard`) or, for Imai, by Opus triage below the review floor. That is the one combination the
+layered-history rule does not sanction (human = criterion). They are re-adjudicated as a **new layer**: `s4:human:*`
+tags and a new collection, **`Reconsider (F6 process-integrity, 2026-10-04)` [U7GGGEN2]**. Phase collections stay
+frozen and the `s1`/`s2`/`s3` layers are untouched (§548).
+
+| Paper | Ruling |
+|---|---|
+| **Karpathy `Z4IKFZJ4`** — *"There's a new kind of coding I call vibecoding"* (the origin of the term) | **Context** (`intro-framing` anchor). This is grey literature under the extreme-relevance exception |
+| **Pappu `2XV8ZVM8`** — *Multi-agent teams hold experts back* | **Reinstated to triage** (`s4:human:keep`). **Tier call pending**: a possible counter-finding on multi-agent panels |
+| **Imai `Y9G3DA92`** — Copilot vs human pair-programming (21-participant experiment) | **Context** |
+| **Dong `D3ZU22JC`** · **Alenezi `UG5D8G6U`** · **J. Wang `EN5DT6ZJ`** — reviews of LLM code generation / AI-driven SE | **Context + `lit-review`**. **Kept** (arbiter: *"the Context + lit-review are kept (not discarded)"*) |
+| **Li `6NR73DTR`** (UX designers' perceptions) · **Liang `MBKP4DCY`** (LLM-assisted *writing*) | **Discard confirmed.** Not about code |
+
+**PRISMA:** report as a separately counted **process-integrity re-adjudication**: 8 examined, 6 reinstated (5 Context +
+1 to triage), 2 discards confirmed. Phase 6 (72) is unchanged unless Pappu's tier call returns Core.
+
+**AgentCoder (`G3FF4MDW` snowball/discarded ↔ `WWDHF6EU` retrieval/Dissertation Queue)** is one study with two unlinked
+records. `zotero-merge-prep --commit` unioned their metadata (confidence 1.00; arXiv DOI 10.48550/arXiv.2312.13010).
+**The merge is a client action for the arbiter: master = `G3FF4MDW`** (it carries the screening lineage).
+
+**175a. AgentCoder merge verified (2026-10-04).** The arbiter merged it in the client. **Survivor `G3FF4MDW`** carries
+`dc:replaces → WWDHF6EU`, the union of tags (`source:snowball`, `cocite:1`, `s1:sonnet:discard`, `source:retrieval`) and of
+collections (the snowball import and discard collections, plus Dissertation `03 - Queue`). `WWDHF6EU` is in the trash. **Key
+mapping: `WWDHF6EU` → `G3FF4MDW`.**
+
+## 176. E1 DONE — mistyped working papers among the kept articles retyped to `preprint`; no published versions found (2026-10-04)
+
+**Scope** (per the §375 ruling: fix only papers actually read and cited) is the **72 kept articles**, checked for
+`journalArticle` with no journal name. That covers SSRN items and the same artifact on arXiv. **Four** were found;
+Zhu (published, *AI and Ethics*) and Hjazeen (retyped 2026-08-25) were already correct.
+
+**Published-version check, OpenAlex then Semantic Scholar:** **none found.** Every match is a repository copy (SSRN,
+arXiv, Zenodo). Jessee and Eze are not indexed by Semantic Scholar. **No `source:retrieval`, and no count change.**
+
+| Paper | Retyped to | Identifier |
+|---|---|---|
+| Jessee `JVWUYDME` | preprint, repository SSRN | SSRN 6052874 · DOI 10.2139/ssrn.6052874 |
+| Eze `9MV2IVNU` | preprint, repository SSRN | SSRN 6552159 · DOI 10.2139/ssrn.6552159 |
+| Swidey `5RLPIA3K` | preprint, repository SSRN (vendor white paper; still `built-system` per §157a) | SSRN 5958495 · DOI 10.2139/ssrn.5958495 |
+| Casserini `95CPB7CF` | preprint, repository arXiv | arXiv:2604.16323 · DOI 10.48550/arXiv.2604.16323 |
+
+Follows the Hjazeen precedent: an `orig-type:journal-article` tag, and the original type plus the fields the preprint
+type cannot hold (publisher, pages) preserved verbatim in *Extra*. Title, creators and abstract were verified unchanged.
+**Reminder (§375): never derive PRISMA stream counts from `itemType`; use `source:*`.**
+
+**175b. Pappu `2XV8ZVM8` — tier: CONTEXT (arbiter, 2026-10-04).** *Multi-agent teams hold experts back*: self-organizing
+LLM teams lose up to 37.6% against their best member through *"integrative compromise"* (averaging expert and
+non-expert views), which worsens with team size, while consensus-seeking buys robustness to adversarial agents. It fails
+Core test 1 (general multi-agent teams, not oversight of AI-generated code). It is **retained as transferable evidence
+against consensus aggregation**, the third independent signal alongside Zietsman's *"popularity trap"* (§163a) and
+Vargas's 2.4-point agreement result (§169), and it bears on HOS's choice of critique over averaging. `s4:human:context`
+added; the earlier `s4:human:keep` (reinstated to triage) stays as layered history. **F6 is fully closed: 8 examined,
+6 reinstated as Context (Karpathy, Pappu, Imai, Dong, Alenezi, J. Wang), 2 discards confirmed. Phase 6 is unchanged
+at 72.** **Added to Dissertation `02 - Supporting` [BWPP3DZA]** (arbiter, 2026-10-04) as evidence against consensus aggregation.
+
+## 177. Post-closeout recompute; E4, E6 and E7 done; a correction to §175b (2026-10-04)
+
+### 177a. Statistics recomputed against the live library (arbiter: *"Recompute statistics based on the work we just completed"*)
+- **PRISMA funnel**, recomputed from snapshot **v169436** (was v169153): **every count is identical** (9,502 → 147 Core → 72
+  Included; final triage 147 Core / 888 Context / 180 Discard). The only diff is bookkeeping: one of the 67 unscreened
+  Q-arXiv-07 records is now also filed in a Dissertation collection. The unscreened total is unchanged.
+  - **The F6 pass (§175) is deliberately outside these figures.** The funnel script does not read the `s4:` layer, and
+    the pass is reported separately (`PRISMA_Funnel.md` §5.3a): 8 examined → 6 Context (Karpathy, Pappu, Imai, Dong,
+    Alenezi, J. Wang) + 2 discards confirmed. All 8 came in through the snowball stream. **Context including the pass is
+    888 + 6 = 894.**
+- **Tag-layer statistics, T3** (`tags-v213/tag_layer_stats_T3_2026-10-04.json`): **0 differences from T2b.** Light Read
+  origination stays at **5.7%**, Set A 10.4%, Set B 7.8%. The F6, E1 and merge work touched no `cal:*` layer.
+- **`final:*`, dry-run recompute:** 72 items · 843 tags (658 modal+human · 113 human-only · 72 primary) · **0 items drift**
+  from what F1 wrote (§174). All checks pass.
+- **Namespace note:** `s4:` already appears on `ZUM76CCG` (Set C pilot: `s4:consensus:*`, `s4:flag:*`,
+  `s4:triage:*`), with a different meaning from F6's `s4:human:*`. The prefixes do not collide and no script reads
+  `s4:` generically. Recorded so that a later reader does not merge the two senses.
+
+### 177b. E4 DONE — Validation Apparatus Harvest back-filled
+There are five new entries in `Validation_Apparatus_Harvest.md`: **Töpfer** `72W6R4JG` (Core), **Waseem** `T2EG4BE2` (Core),
+**Zhong** `96XE669R` (**Context**, demoted), **Zhuo** `VZ27QUPQ` (**Context**; §51 split between the deployable mechanism
+and the reference-grounded evidence), and **Zietsman** `TA6GIUK2` (Core). Each was drafted from the corpus TXT with line
+grounding. The common thread: **a deterministic external signal (spec, detector, execution) beats more model
+judgment**, and Töpfer adds that removing human code inspection only moves the human to the specification, which
+nothing checks.
+- **Follow-up found:** Zhong's corpus TXT is arXiv v2, retitled *SWE-IF* (ICML 2026), but the Zotero record still has
+  the v1 title *Vibe checker*. This is a published-version candidate under the preprint→journal convention; **awaiting
+  the arbiter**.
+
+### 177c. E6 DONE — dissertation-queue records for the agent-checks-agent gap verified
+- **Huang (AgentCoder) `G3FF4MDW`:** merged survivor (§175a). Its metadata is complete.
+- **Du `GGKFBJKH`**, *Improving factuality and reasoning … through multiagent debate*: **upgraded to its published
+  version**, ICML 2024 (PMLR 235, pp. 11733–11763), confirmed via Semantic Scholar. It was converted to conferencePaper
+  with the original type and date kept in an `orig-type:` / `orig-date:` tag and in *Extra*.
+- **Islam `Z56N5GNP`**, *MapCoder* (ACL 2024): the full abstract was back-filled from OpenAlex. It had held a
+  162-character note-form abstract, which is kept in *Extra*.
+- These remain **outside the corpus by design** (Gemini surfaced them as a gap, and they were not added). Du and
+  AgentCoder carry `s1:sonnet:discard` from the snowball. Their Queue membership is a dissertation-reading decision,
+  not a screening one.
+
+### 177d. E7 DONE — no paper text reaches the public repo
+The "Light Reads Completed" export sits under `Backups/`, and both `Backups/` and `.gitignore:38` exclude it. A second
+untracked folder, **`new_pdfs/`**, was *not* ignored, which put it one `git add -A` away from publishing full texts. It
+is now in `.gitignore`.
+
+### 177e. CORRECTION to §175b — the "popularity trap" is Vallecillos-Ruiz et al., not Zietsman
+§175b calls the anti-consensus signal *"Zietsman's 'popularity trap'"*. Zietsman **relays** it. The finding belongs to
+**Vallecillos-Ruiz, Hort & Moonen, *Wisdom and delusion of LLM ensembles for code generation and repair*
+(`FRV9ZXRW`, arXiv:2510.21513)**, which §163a attributed correctly. The three independent signals against consensus
+aggregation are therefore **Vallecillos-Ruiz** (consensus filters out minority-correct solutions), **Vargas** (agreement
+added 2.4 points) and **Pappu** (integrative compromise). **Note for the arbiter:** `FRV9ZXRW` is in the library only as
+a snowball record with `s1:sonnet:discard`, a machine discard of the primary source for a claim the synthesis uses.
+Whether to cite it directly (as dissertation reading, outside the corpus) is the arbiter's call.
+
+## 178. E3 DONE — every Dissertation Supporting member carries a named use; Vallecillos-Ruiz and Zhong added (2026-10-04)
+
+**Additions to `02 - Supporting` (arbiter):** Vallecillos-Ruiz `FRV9ZXRW`, the primary source for the popularity trap
+(§177e; it remains outside the corpus as a snowball record with `s1:sonnet:discard`), and Zhong `96XE669R` (VeriCode;
+Context). **Supporting now has 29 members.**
+
+**§109a back-fill:** before this pass, 10 of the 29 already had a rationale. Seven carried §109a-style notes (Chang, Borg,
+Raghavendra, Shinde, P, Naulty, and Ehsani's arbiter note). Three carried placement reasons recorded earlier (Spiess:
+*"a survey question, not a citation"*; Kim & Yegge: *"background and anecdotal evidence"*; Bowman: *"Context tier and
+dissertation value are independent axes"*). The **other 19 received a child note**, *"Dissertation note — Supporting
+(§109a named use)"*, tagged `dissertation:named-use` and written by the assistant under the arbiter's authorization
+(*"Go ahead and add notes for E3"*). Each names **one** use, drawn from the abstract, the changelog and the harvest
+entries. Edit freely.
+
+**Clusters among the named uses**, useful when writing:
+- **Decision-surfacing:** Aporia `ZH6QIU8A` (before generation), HiLDE `CI93QRUH` (within the turn), Zhou `XRTVITVP`
+  (decomposition).
+- **Against consensus aggregation:** Vallecillos-Ruiz `FRV9ZXRW`, Pappu `2XV8ZVM8` (+ Vargas).
+- **External reference beats a second opinion:** Zietsman `TA6GIUK2`, Fu `U3IQJ4VK`, Zhong `96XE669R`.
+- **Regulatory framing:** Swidey `5RLPIA3K` (COI caveat), Tuape `XZEHQYNZ`.
+- **Checkpoint placement:** Zhou `XK3P9C96`.
+- **Theory of human review:** Langer `5DCQDB4C` (signal detection).
+- **Survey-instrument vocabulary:** Choudhuri `ID7IN65K`, Karakaya `5NZ2EDEK`, Karuppuchamy `8MXATG38`, Lipsanen
+  `7SH86C2W`.
+
+## 179. Zhong `96XE669R` upgraded to its published version (arbiter, 2026-10-04)
+The §177b follow-up is resolved. The record is now a **conferencePaper**: *SWE-IF: aligning code evaluation with human preference*,
+Proceedings of the 43rd ICML (Seoul), PMLR 306, 2026. The venue comes from the v2 camera-ready (corpus TXT ll. 74–75).
+Semantic Scholar and OpenAlex do not yet index the proceedings, and no page range is available yet. The v1 title (*Vibe
+checker*), original type and date are preserved in `orig-type:` / `orig-date:` tags and *Extra*. It is the same record
+rather than a new one, so the count is unchanged and there is no `source:retrieval` (Du precedent, §177c). The tier is
+unchanged (Context, `demote:context`). The harvest entry header and the §178 named-use note were updated to match.
+
+## 180. F4 STARTED — survey question bank v0 written; the HOS audit ran after the corpus closed (2026-10-04)
+
+**Arbiter:** the starter *"should be done from your session since you have the memory. Then further work moves
+elsewhere."* `Methodology/Survey_Instrument_Design.md` now holds **Question bank v0**: about 55 draft items across 9
+constructs. They cover routing, independence, external reference, finding validation, human attention, escalation,
+governance, oversight that fails open, and measurement. Every item carries provenance.
+
+- **HOS audit timing:** HOS materials were opened for the first time on **2026-10-04, after F1 wrote `final:*`
+  (§174)**, so they could not have influenced any tagging ruling. This is the clean answer to the committee's
+  contamination question.
+- **Audit yield:** 30 cited learnings from `HumanOversightSystem/Human`: 14 new seeds and 16 that sharpen banked
+  areas. About 35 of 97 findings were read.
+- **New provenance class `S` (SLR-process, reflexive).** This review's own pipeline is an AI-assisted oversight system,
+  and today it hit three failures the survey should ask about:
+  - a machine stage reversing human decisions unreviewed (§175 → G6);
+  - agreement counted by tag instead of by independent source (§173 → I6);
+  - silence read as confirmation (§150 → F3).
+  Like HOS, `S` is **instrument-design input, never evidence**.
+- **Corpus seeds added from the F2 review:** test authorship (§156b → I2), auto-merge (Branco → R7), regeneration as a
+  trigger (Waseem → X4), who reviews the spec (Töpfer → X3), deterministic-check diversity (§156 → X2), enforcement
+  location (§158 → I7/G3), orchestration in code vs model (§151 → G5), consensus vs critique (Vallecillos-Ruiz/Pappu →
+  V5), abstain on clean code (Zhuo → V4), evaluating vs steering (A4).
+- **Status:** the closeout's F4 item is **started, not done**. Wording, construct-to-hypothesis mapping and piloting
+  move to a separate workstream (handoff in the doc).
+
+## 181. Session-end recompute of all SLR statistics; quotable-figures reference and session summary (2026-10-04)
+
+**Arbiter:** *"recompute all statistics on the SLR that I might need to quote explaining our search process,
+screening, tagging"*, plus a methodology summary of the day's work.
+
+- **Recomputed by script against snapshot v169436:**
+  - funnel: `prisma_funnel.py`
+  - screening rates and κ: `screening_reliability.py`, every stage
+  - tag layers: `tag_layer_stats.py`, T3
+  - the final layer: `compute_final.py`, dry run
+  - silence: `silence_audit.py`
+- **Result:** every published PRISMA count and every screening rate and κ **reproduced exactly**. T3 matches T2b in every
+  field, and `final:*` shows zero drift.
+- **New:** `Methodology/SLR_Statistics_Reference.md`, a single sheet of quotable figures (search, screening,
+  reliability, tagging, and the final tag distribution) with the source script and detail document for each.
+  `Methodology/Session_Summary_2026-10-04.md` records the day's work.
+- **CORRECTION to §177a.** *"Context including the pass is 888 + 6 = 894"* mixed conventions. 888 is the per-stream
+  sum, which counts the two Core+Context records in both tiers. The funnel's convention is **886**. Correct figures:
+  abstract-level Context **886 + 6 = 892**; retained Context tier **961 + 6 = 967**. `PRISMA_Funnel.md` has been
+  updated. §177a stands as written, corrected here.
+- **Not carried into the reference sheet:** the funnel script's 129 / 16 split of `s3:human` tags on final Core sums
+  to 145, not 147. It has no documented explanation, so it is left out of quotable figures pending a look.
+
+## 182. Calibration design restated in the arbiter's terms: three rounds (2026-10-04)
+
+`Methodology/Calibration_Sets_Summary.md` consolidates a design that §1, §5 item 7 and §7 of
+`Theme_Tagging_Calibration.md` describe piecemeal, in terminology that shifted over time. Claude Desktop drafted it,
+and Claude Code revised it to the arbiter's account:
+1. **Set A (10), co-tagged** by the human and Claude: **validated the tagging**. Vocabulary gaps and definition
+   problems were resolved here.
+2. **Set B (10), the human-tagged "training set"**: the instructions were refined against it, and models were scored
+   against it.
+3. **Set C, the AI-tagged "validation set"**: piloted the AI-first workflow of the full sweep.
+
+"Training" means the instrument was refined; **no model was trained**.
+
+**Open discrepancy:** the arbiter recalls Set C as **ten** studies. Zotero `U65X7JNA` and `calib_sets.json` hold **one**
+(`ZUM76CCG`, defined 2026-07-20 as *"designated test cases, growing as probes surface"*). **RESOLVED the same day (arbiter: *"Set C may have been
+abbreviated"*):** Set C was planned as a set and abbreviated to its one study, whose pilot closed 2026-08-15. The
+production sweep then carried the AI-first validation. The record stands and no members are added. **Terminology note:** the record's *"co-tagging protocol"* (§7) was named during
+**Set B** and means human-tags + AI-QA. The arbiter's "co-tagged" refers to **Set A**. The summary keeps the arbiter's
+usage and states the distinction.
+
+**182a. Set C restated (arbiter, 2026-10-04):** *"I think Set C was one to check, and then we started tagging more
+broadly."* Set C was a **single-study check by design**, not an abbreviated set. That supersedes §182's "abbreviated"
+reading. The record (one member, `ZUM76CCG`, pilot closed 2026-08-15, §32) stands unchanged. The dissertation wording now
+reads: the third round used a single study to check the AI-first workflow, and broad tagging then began in that mode.
+

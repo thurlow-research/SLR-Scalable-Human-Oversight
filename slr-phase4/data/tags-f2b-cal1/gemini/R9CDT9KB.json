@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [
+    "deterministic-orchestration-v2"
+  ],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a), form (b), and form (c) — The system is a sequential three-stage pipeline fixed in code (form a) that dispatches LLM ensembles as bounded workers at each stage to classify vulnerabilities, analyze impact, and recommend actions (form c). The orchestrator then aggregates confidence scores and applies deterministic threshold rules to enforce the final CI/CD action (form b)."
+  },
+  "flags": []
+}

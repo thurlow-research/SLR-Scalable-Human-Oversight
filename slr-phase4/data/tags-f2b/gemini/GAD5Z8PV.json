@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [
+    "deterministic-orchestration-v2"
+  ],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a) — the system employs a static orchestration model with three fixed phases (independent analysis, cross-critique, and final arbitration) where the orchestrator uses fixed prompts and controls the state sequence, preventing early termination or model-driven skipping of steps."
+  },
+  "flags": []
+}

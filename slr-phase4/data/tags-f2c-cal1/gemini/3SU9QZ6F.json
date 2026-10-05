@@ -1,0 +1,10 @@
+{
+  "themes": [
+    "rules-based-checks-v3"
+  ],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "aira (AI-Induced Risk Audit), a deterministic static analysis engine that validates Python, JavaScript, and TypeScript code against 15 checks targeting failure truthfulness and fail-soft behavior (e.g., exception suppression, audit integrity)."
+  },
+  "flags": []
+}

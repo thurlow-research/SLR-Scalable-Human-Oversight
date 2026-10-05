@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a), form (b), and form (c) — code fixes the three-stage order (classification, impact analysis, then action recommendation), dispatches three LLMs as bounded workers within each stage, aggregates their outputs and propagates confidence using specified formulas, and applies deterministic trust-score and severity thresholds to trigger approval, warning, human review, or deployment blocking."
+  },
+  "flags": []
+}

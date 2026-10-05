@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: integration test suites; AUTHOR: same-as-code — a planner agent generates the test suites and an implementer agent writes the code, both being instances of Claude Code"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Census pattern 1 — unbuilt design. The paper is an explicit vision/reference architecture ('we present a vision', 'we envision an adaptive code review pipeline', contributions are 'an architectural design' plus 'an outline of future research to realize this vision'); the system is proposed, never built or run, so no evaluated configuration exists. Would it be a form if built? No: the proposed AI-OS architecture puts a 'central LLM … responsible for interpreting user input, planning, and coordination' at the top, coordinating subordinate agents — an LLM planner/coordinator advancing the flow, which is the inverse of the facet (fails precondition 1, orchestrator is NOT AI). The outer loop is additionally human-driven (approve/reject/revise 'left … up to the users'). Flagged for the count rather than emitted."
+    }
+  ]
+}

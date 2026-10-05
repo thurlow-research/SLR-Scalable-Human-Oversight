@@ -1,0 +1,8 @@
+{
+  "themes": [],
+  "facets": ["deterministic-orchestration-v2"],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a) + (b). form (a): the contributed system is a fixed four-phase waterfall — Basic Info Sync → Code Review → Code Alignment → Document (\"The waterfall model breaks the code review process at the phase level into four sequential phases\"). Algorithm 1 makes the control explicit: a deterministic `while p ≤ 4` loop that switches on the phase number and increments p itself (Update: p=2, p=3, p=4, p=5 End). No agent decides which phase runs next or can skip one — the harness advances the state while LLM role-agents (CEO/CTO/Coder/Reviewer) perform the bounded work inside each phase. Preconditions all met: (1) the phase sequencer is code, not an LLM planner — the CEO's \"decision-maker\" role is about review verdicts inside conversations, not about advancing the flow; (2) ≥1 step is a model (the agents do the actual consistency/vulnerability/format/revision work); (3) the waterfall is the outermost level of the contributed system. form (b): the per-conversation QA-Checker refinement loop is bounded and terminated by code — retry while quality score < threshold τ, hard-capped at the maximum number of dialogue turns (10, App. C), so the loop ends regardless of the model's own judgment."
+  },
+  "flags": []
+}

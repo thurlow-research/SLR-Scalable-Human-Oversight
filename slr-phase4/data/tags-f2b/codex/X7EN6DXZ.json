@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human outer loop — the iterative attack has an inner form (b)+(c) pattern (rejection triggers another bounded LLM refinement, while approval or t=10 stops the loop), but the authors manually classify each review outcome as Approve, Unclear, or Reject and manually approve the review agent's tool uses; that human judgment advances the evaluated outermost progression."
+    }
+  ]
+}

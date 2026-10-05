@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"deterministic-orchestration-v2","issue":"unbuilt design — the proposed Gated Triage Policy would be form (b)/(c), with code dispatching the bounded LightGBM prediction and enforcing fast-fail or fast-track consequences, but the paper only trains and evaluates the predictor; it does not build or run that orchestration."}]}

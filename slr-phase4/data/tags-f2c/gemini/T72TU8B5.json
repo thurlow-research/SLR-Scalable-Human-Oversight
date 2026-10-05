@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "UNDECIDABLE: The CLI checks proposed actions against hard constraints (e.g. 'never write to files under config/prod/'). It is unclear if checking action metadata counts as validating code against rules."
+    },
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: project's test suite; AUTHOR: human — 'any approved change is also checked against the project’s test suite as configured by the developer'"
+    }
+  ]
+}

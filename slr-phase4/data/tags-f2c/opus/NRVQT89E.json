@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: benchmark/competition test suite (DeepMind Code Contests, §7.8) used to label model-sampled solutions as passing or failing to build a paired correct/incorrect dataset; AUTHOR: human — the Code Contests problems ship with human-authored test cases, while the code under test is model-generated (ChatGPT-4 samples)"
+    }
+  ]
+}

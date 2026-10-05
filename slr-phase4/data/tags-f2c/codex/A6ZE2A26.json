@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"rules-based-checks-v3","issue":"TESTS: execution-based comparison on ten independently seeded database instances against reference-query results; AUTHOR: human — the authors use human-authored ground-truth SQL and their evaluation pipeline to test model-generated candidate queries."}]}

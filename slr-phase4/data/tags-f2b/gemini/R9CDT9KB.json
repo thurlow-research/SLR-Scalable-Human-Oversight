@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [
+    "deterministic-orchestration-v2"
+  ],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (c) — the architecture is a fixed pipeline that calls LLM ensembles as bounded workers for three sequential stages (classification, impact analysis, action recommendation). Top-level code aggregates their confidence scores and uses threshold rules to determine the final CI/CD consequence (block, review, warn, or approve)."
+  },
+  "flags": []
+}

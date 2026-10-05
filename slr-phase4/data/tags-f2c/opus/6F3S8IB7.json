@@ -1,0 +1,9 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    { "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unit tests (illustrative/hypothetical only — DSR paper, empirical validation deferred to future work); AUTHOR: unclear — §8 scenario lists both 'API endpoints' and 'Unit tests' as AI 'Code gen.' backlog items (single AI assistant implied, no distinct test-author named); dev remark 'haven't written a unit test from scratch in three months' implies AI authors the tests, but same-vs-different model not stated." }
+  ]
+}

@@ -200,6 +200,17 @@ loser's `superseded-by:`. Treating the bare tag as "removed duplicate" would wro
 Phase-6 papers (`5VTAJISY`, `6ZW9QNQH`, `95CPB7CF`). **Rule:** a record is superseded only if
 `superseded-by:<key>` names a *different, existing* key. The tag tidy-up belongs to Stage 6 cleanup.
 
+> **Recomputed 2026-10-04 against snapshot v169436 (changelog §177a): all counts above unchanged.** Context including
+> the §5.3a pass: abstract-level 886 + 6 = **892**; retained Context tier 961 + 6 = **967** *(corrected §181: an earlier
+> "888 + 6 = 894" double-counted the two Core+Context records)*.
+
+### 5.3a Process-integrity re-adjudication (2026-10-04, changelog §175) — a separately counted pass
+
+Eight records the **arbiter kept at Pass 1** were later discarded **by machine** without human review (Pass 2, or Opus
+triage below the review floor). They were re-adjudicated as a **new layer** (`s4:human:*`; collection `Reconsider`), not
+by revising these funnel figures: **6 reinstated, all to Context** (Pappu's triage call returned Context, §175b), **2 discards
+confirmed**. Phase 6 is unchanged at 72. Report this pass separately in PRISMA; the counts above stay as recorded.
+
 ### 5.4 Outside the funnel (post-closure supplementary material)
 
 `Sept 2026 Papers` (13 items, `s3:sonnet:*` only) and `Forward Snowball - to screen` (4,

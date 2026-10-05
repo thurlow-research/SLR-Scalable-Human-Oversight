@@ -1,0 +1,8 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "DevLicOps embeds deterministic Software Composition Analysis tools such as SCANOSS, FOSSA, and Black Duck into CI/CD; they scan AI-generated code against predefined acceptable and prohibited license lists and coded policy thresholds, then flag or block pushes containing license violations."
+  },
+  "flags": []
+}

@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"rules-based-checks-v3","issue":"TESTS: pre-written BDD scenarios executed with behave against planted-bug Python functions; AUTHOR: unclear — the paper says Claude proposed the experimental design and a Claude Code agent implemented it, but does not identify who authored the BDD scenarios."}]}

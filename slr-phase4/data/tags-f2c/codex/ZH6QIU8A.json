@@ -1,0 +1,1 @@
+{"themes":[],"facets":[],"rationales":{},"flags":[{"slug":"rules-based-checks-v3","issue":"TESTS: LLM-generated per-decision executable test suites, automatically run to validate implementations; AUTHOR: same-as-code — Aporia uses specialized planner and implementer agents that are both instances of Claude Code using Claude Sonnet 4.6."}]}

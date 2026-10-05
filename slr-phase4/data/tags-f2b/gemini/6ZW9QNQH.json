@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "agent-invoked gate / human outer loop — inner part is form (c) dispatch (the side-car is invoked via hooks on code changes; it deterministically calls an LLM to autoformalize constraints, runs verification, and feeds the result back to the main agent for repair)"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "themes": [],
+  "facets": [
+    "deterministic-orchestration-v2"
+  ],
+  "rationales": {
+    "deterministic-orchestration-v2": "form (a) — the system uses a three-phase state machine (Strategy -> Execution -> Verification) where the orchestrator, implemented in code (Node.js), manages phase transitions and sequencing, while agents handle staffing and execution within those fixed phases."
+  },
+  "flags": []
+}

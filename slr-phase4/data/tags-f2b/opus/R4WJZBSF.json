@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "Undecidable, boundary on form (c). The evaluated system (the Google Colab notebook) is a fixed Python script whose top-level flow is pure code: it runs generate_synthetic_data → compute_prs → compute_bpi → compute_eg → compute_ads → compute_ers → visualize in a hard-coded sequence, and one of those steps dispatches a model as a bounded worker — compute_prs calls CodeBERT to embed code snippets, then code computes cosine similarity, applies a 0.8 threshold, and aggregates via fixed MCDA weights. Non-AI orchestrator (satisfies precond. 1), a model step exists (CodeBERT, precond. 2), and it is the outermost level (precond. 3). So it literally matches form (c) dispatch / form (a) sequencing. BUT it is a weak fit the arbiter should rule on: (1) it is a linear metric-aggregation script with NO outcome-based routing — a stage's output only gets summed, nothing is blocked/escalated/retried/routed, so the 'what each output triggers' element of the facet is essentially absent; (2) the only genuine model call is an embedding/encoder (CodeBERT) used for one similarity metric — of the four reported metrics, PRS alone is model-derived, while BPI is string matching (BERT is defined but dead code) and EG/ADS are np.random, so 'orchestration around a model' is thin; (3) the richer 5-layer architecture (Fig. 1: streaming ingestion, governance/feedback, retraining triggers) that would look more like orchestration is specified-but-unbuilt — only the synthetic-data notebook is actually run. Judged as evaluated, the thing that fires is a trivial embedding-metric pipeline, not the model-dispatch-with-routing the facet targets. Flagging rather than emitting per 'default to silence'."
+    }
+  ]
+}

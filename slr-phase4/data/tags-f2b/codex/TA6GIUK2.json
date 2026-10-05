@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design — the proposed specification-first, deterministic-verification-second, AI-review-third architecture would be form (a), with build-stopping test failures potentially form (b), but that integrated system is not built or run; the models in the reported experiments are subjects being evaluated, not workers in the contributed system"
+    }
+  ]
+}

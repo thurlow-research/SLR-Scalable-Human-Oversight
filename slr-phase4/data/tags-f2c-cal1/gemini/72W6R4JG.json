@@ -1,0 +1,15 @@
+{
+  "themes": [
+    "rules-based-checks-v3"
+  ],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "A constraint verifier evaluates the generated adaptation manager's execution traces against generic architectural constraints and Functional Constraints Logic (FCL) temporal formulas."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: test runs from varied initial states and random seeds; AUTHOR: human — the domain expert provides a test set"
+    }
+  ]
+}

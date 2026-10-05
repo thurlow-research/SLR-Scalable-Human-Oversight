@@ -1,0 +1,38 @@
+{
+ "_comment": "Which version of each multi-version construct the synthesis READS (arbiter, 2026-10-04: 'all versions + a governing-version map'). final:* carries every non-deprecated version that survives the formula; this map resolves which one answers a synthesis question. Non-governing versions remain reportable (e.g. for the v1→v2 reclassification delta).",
+ "governing": {
+  "rules-based-checks": {
+   "read": "rules-based-checks-v3",
+   "versions": [
+    "rules-based-checks",
+    "rules-based-checks-v2",
+    "rules-based-checks-v3"
+   ],
+   "ruling": "§156 — static analysis / rule checks, tests excluded"
+  },
+  "oversight-scaling-inversion": {
+   "read": "oversight-scaling-inversion-v2",
+   "versions": [
+    "oversight-scaling-inversion",
+    "oversight-scaling-inversion-v2"
+   ],
+   "ruling": "§152–§154 — leakage routes, first-party evidence; -v3 (correlational) parked §154a"
+  },
+  "survey-input": {
+   "read": "survey-input-v2",
+   "versions": [
+    "survey-input",
+    "survey-input-v2"
+   ],
+   "ruling": "§159 — three conjunctive tests kept"
+  },
+  "deterministic-orchestration": {
+   "read": "deterministic-orchestration-v2",
+   "versions": [
+    "deterministic-orchestration",
+    "deterministic-orchestration-v2"
+   ],
+   "ruling": "§151/§158 — -v2 is the superset (removed OR withheld discretion); the original is the narrower 'discretion removed' subset"
+  }
+ }
+}

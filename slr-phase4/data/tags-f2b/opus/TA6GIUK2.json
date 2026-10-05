@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design — the paper's contributed system is the §5.1 architecture (specifications → deterministic verification pipeline → AI review scoped to the architectural residual), which is proposed/implied, not built or run. §5.2 explicitly frames it as open ('the controlled demonstration… remains incomplete'). If built it would be form (c) dispatch (code holds the process; the deterministic pipeline gates and a model is called only for the bounded structural/architectural residual) combined with form (a) sequencing (specs first, deterministic pipeline second, AI review third, fixed order). The §2.5 experiments are a comparison study — the models are the subjects under evaluation, and the BDD/behave side has no model in it — so they are not a contributed orchestration system."
+    }
+  ]
+}

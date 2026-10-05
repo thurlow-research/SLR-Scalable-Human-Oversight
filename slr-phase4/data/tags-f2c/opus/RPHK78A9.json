@@ -1,0 +1,13 @@
+{
+  "themes": ["rules-based-checks-v3"],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "Mechanism: deterministic static analysers + linters (non-AI), prescribed and used within the vibe-coding process (not as a measuring instrument). The book's org-wide rule hierarchy lists 'always run static analysis' and 'run tests before commits' as foundational engineering rules (Ch.19), and the 'Automate Linting and Correction' workflow runs cleanup/linting passes over AI-generated code that key off deterministic signals — unused variables, style/formatting inconsistencies, and compiler warnings ('compiler squawks') — 'automated as part of your testing and CI processes' (Ch.14/16). Rules checked: coding-standard/style rules, language/type rules (compiler), and security-vulnerability patterns. Validates: AI-generated code for style/quality/security compliance within the prescribed process. Orthogonal mixed use — much elegance checking, 'custom lint checks' via AGENTS.md, and security review are delegated to LLMs (and static analysis is elsewhere cited as a baseline LLMs 'outperform'), but deterministic static analysis/linting is explicitly part of the process, so the theme fires."
+  },
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: unit/integration/UI-smoke tests + test-driven development are the book's central code-validation practice (also regression suites, performance benchmarks, and 'tracer bullet' end-to-end checks); AUTHOR: mixed — the canonical workflow has the coding agent write both the implementation AND its own tests ('Have AI Write the Tests'; Simon Willison ships AI-written Go plus its tests to production = same-as-code), but AI also writes NEW tests for pre-existing human-written code (Steve's Wyvern Spock->Kotlin test migration = model tests over human code); humans always review/run the tests, occasionally hand-writing them."
+    }
+  ]
+}

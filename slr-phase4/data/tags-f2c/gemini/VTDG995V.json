@@ -1,0 +1,11 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "rules-based-checks-v3",
+      "issue": "TESTS: functional test suites; AUTHOR: human — tests from HumanEval, MBPP, DyPyBench, and Defects4J used to evaluate model-generated code"
+    }
+  ]
+}

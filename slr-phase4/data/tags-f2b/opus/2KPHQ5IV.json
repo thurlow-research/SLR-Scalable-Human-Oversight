@@ -1,0 +1,15 @@
+{
+  "themes": [],
+  "facets": [],
+  "rationales": {},
+  "flags": [
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "unbuilt design — vision/position paper ('We propose Agentic Consensus', 'We argue…', 'We propose benchmark task families'); no implementation and no reported run. Section 4's 'case studies' are explicitly 'illustrative scenarios' narrated in the conditional, not evaluations of a built system; Section 5 proposes (not runs) the metrics/benchmarks. If built, the form it would most plausibly be is (b) enforcement — the Auditor's feature-parity contract check that 'blocks' analysis 'before inference begins' (§4.2). Caveat weakening even that: §3.3 is titled 'Autonomous Agentic Orchestration' with specialized agents that 'negotiate', i.e. the proposed top-level control is partly model-driven, which would also stress preconditions 1/3."
+    },
+    {
+      "slug": "deterministic-orchestration-v2",
+      "issue": "human outer loop — the outermost progression is advanced by a human by design: §3.2.3 'Human-Gated Review as a Control Surface', 'the human decision is gated on structure', and §3.3 'Commit/Rollback remains a human decision in all cases' / 'humans commit or reject'. The inner enforcement part would be form (b) (the parity-contract gate). Flagged for the census alongside the unbuilt-design flag, which governs since nothing is built."
+    }
+  ]
+}

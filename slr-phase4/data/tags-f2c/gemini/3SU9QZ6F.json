@@ -1,0 +1,10 @@
+{
+  "themes": [
+    "rules-based-checks-v3"
+  ],
+  "facets": [],
+  "rationales": {
+    "rules-based-checks-v3": "AIRA uses a deterministic static analysis engine with 15 parser-backed rules to validate code for failure truthfulness and fail-soft behavior."
+  },
+  "flags": []
+}
