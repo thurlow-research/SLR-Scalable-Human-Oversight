@@ -8993,3 +8993,8 @@ production sweep then carried the AI-first validation. The record stands and no 
 **Set B** and means human-tags + AI-QA. The arbiter's "co-tagged" refers to **Set A**. The summary keeps the arbiter's
 usage and states the distinction.
 
+**182a. Set C restated (arbiter, 2026-10-04):** *"I think Set C was one to check, and then we started tagging more
+broadly."* Set C was a **single-study check by design**, not an abbreviated set. That supersedes §182's "abbreviated"
+reading. The record (one member, `ZUM76CCG`, pilot closed 2026-08-15, §32) stands unchanged. The dissertation wording now
+reads: the third round used a single study to check the AI-first workflow, and broad tagging then began in that mode.
+

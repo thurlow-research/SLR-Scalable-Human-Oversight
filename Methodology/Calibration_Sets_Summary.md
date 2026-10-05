@@ -19,7 +19,7 @@ article describe it consistently.
 |---|---|---|---|---|
 | 1 | **Set A** — `01-AI Calibration Run` (`JFN8693L`) | **Co-tagged set: validated the tagging** | Co-tagged by the human and Claude (the model panel tagged first; the human and Claude reconciled every tag) | **Validate the tagging approach.** Gaps in the vocabulary and problems with tag definitions were identified and resolved here. Instrument gate PASS and freeze at v2.1, 2026-07-18 |
 | 2 | **Set B** — `02-Human Calibration Run` (`IURU9UTA`) | **"Training set"** | Tagged by the human, blind and first (no model tags existed); Claude audited afterwards without proposing tags; models tagged after the human set was recorded | **Human-labelled reference.** The coding instructions were refined against these labels (v2.2 → v2.13), and model output was scored against them |
-| 3 | **Set C** — `03-Set C - AI Tag, Human Validate` (`U65X7JNA`) | **"Validation set"** | Tagged by the AI models first under the frozen instrument; the human validated | **Validate the AI-first workflow** used for the full sweep. **Abbreviated to one study** (`ZUM76CCG`, pilot closed 2026-08-15); the production sweep then carried the AI-first validation role (§3, item 1) |
+| 3 | **Set C** — `03-Set C - AI Tag, Human Validate` (`U65X7JNA`) | **"Validation set"** | Tagged by the AI models first under the frozen instrument; the human validated | **A single-study check of the AI-first workflow** (`ZUM76CCG`, pilot closed 2026-08-15). Broad tagging of the corpus began after it (§3, item 1) |
 
 **Terminology note for write-ups.** "Training" here means the instrument (instructions and vocabulary)
 was refined against human labels. **No model was trained or fine-tuned.** In the dissertation, use
@@ -39,12 +39,13 @@ From `calib_sets.json` (random draw, `random.seed(714)`, from the 149-item Core 
 
 ## 3. Open discrepancies (resolve before final write-up)
 
-1. **Set C size — RESOLVED 2026-10-04 (arbiter: *"Set C may have been abbreviated"*).** Set C was planned as an
-   AI-first validation set, but it was **abbreviated to a single study**, Otten `ZUM76CCG`. Its pilot closed on
-   2026-08-15 once that study was adjudicated (org-governance primary, §32 altitude precedent). The AI-first,
-   human-validate workflow it was meant to validate was then run at scale in the production sweep, so the sweep's
-   override and recall figures (`SLR_Statistics_Reference.md` §4.2) are the measured result of that workflow. The record
-   (`calib_sets.json`, `U65X7JNA`) is correct as it stands, and no members are added.
+1. **Set C size — RESOLVED 2026-10-04.** Arbiter: *"I think Set C was one to check, and then we started tagging more
+   broadly."* Set C was a **single-study check** of the AI-first, human-validate workflow (Otten `ZUM76CCG`), not a set
+   of ten. Its pilot closed on 2026-08-15 once that study was adjudicated (§32, altitude precedent), and broad tagging
+   of the corpus began in the same AI-first mode. The sweep's override and recall figures
+   (`SLR_Statistics_Reference.md` §4.2) are therefore the measured result of that workflow at scale. The record
+   (`calib_sets.json`, `U65X7JNA`) is correct as it stands, and no members are added. *(An intermediate reading on the
+   same day, "abbreviated", is superseded by this one.)*
 2. **Which set was "co-tagged."** `Theme_Tagging_Calibration.md` §7 names a co-tagging protocol
    (human tags blind, then AI quality assurance) arising **during Set B**, and says all ten Set B papers
    were ultimately co-tagged in that sense. Closeout C5 (2026-10-04) states the **first ten** calibration
@@ -67,15 +68,15 @@ From `calib_sets.json` (random draw, `random.seed(714)`, from the 149-item Core 
 
 ## 5. Dissertation wording (Appendix A, draft 2026-10-04)
 
-> Before the full set was coded, the coding approach was developed and checked in three calibration rounds. In the
-> first, ten randomly selected core studies were co-tagged by the human and Claude. This round served to validate the
-> tagging: the gaps in the vocabulary and the problems with tag definitions that it exposed were identified and
-> resolved before the next round. In the second, the human tagged a further ten randomly selected studies first,
-> without seeing any model output. This human-labelled set served as a training set: the coding instructions were
-> refined against it, and the models' tags were scored against it. The third round, a validation set in which the AI
-> models tagged first under the frozen instructions and the human validated their tags, was abbreviated to a single
-> study. The AI-first workflow it piloted was then applied to the full set, where the human adjudicated the model
-> proposals on every study retained for synthesis. No model was trained or fine-tuned; "training" here means only that
-> the coding instructions and vocabulary were refined against human labels.
+> Before the full set was coded, the coding approach was developed and checked in three calibration rounds before
+> broad tagging began. In the first, ten randomly selected core studies were co-tagged by the human and Claude. This
+> round served to validate the tagging: the gaps in the vocabulary and the problems with tag definitions that it
+> exposed were identified and resolved before the next round. In the second, the human tagged a further ten randomly
+> selected studies first, without seeing any model output. This human-labelled set served as a training set: the
+> coding instructions were refined against it, and the models' tags were scored against it. In the third round, a
+> single study was used to check the AI-first workflow: the AI models tagged first under the frozen instructions, and
+> the human validated their tags. Broad tagging of the corpus then began in that mode, with the human adjudicating the
+> model proposals on every study retained for synthesis. No model was trained or fine-tuned; "training" here means
+> only that the coding instructions and vocabulary were refined against human labels.
 
-The third-round sentence reflects the resolution of discrepancy 1 (abbreviated to one study).
+The third-round sentence reflects the resolution of discrepancy 1 (a single-study check by design).
