@@ -200,6 +200,9 @@ loser's `superseded-by:`. Treating the bare tag as "removed duplicate" would wro
 Phase-6 papers (`5VTAJISY`, `6ZW9QNQH`, `95CPB7CF`). **Rule:** a record is superseded only if
 `superseded-by:<key>` names a *different, existing* key. The tag tidy-up belongs to Stage 6 cleanup.
 
+> **Recomputed 2026-10-04 against snapshot v169436 (changelog §177a): all counts above unchanged.** Context including
+> the §5.3a pass is 888 + 6 = **894**.
+
 ### 5.3a Process-integrity re-adjudication (2026-10-04, changelog §175) — a separately counted pass
 
 Eight records the **arbiter kept at Pass 1** were later discarded **by machine** without human review (Pass 2, or Opus

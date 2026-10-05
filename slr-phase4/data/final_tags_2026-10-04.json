@@ -1,5 +1,5 @@
 {
- "computed": "2026-10-04T23:50:27+00:00",
+ "computed": "2026-10-04T23:52:01+00:00",
  "formula": "final = panel modal (>=2 distinct vendors) ∪ human endorsements − human rejections − deprecated (§101a, §173)",
  "deprecated": [
   "counterpoint"

@@ -8837,3 +8837,58 @@ Vargas's 2.4-point agreement result (§169), and it bears on HOS's choice of cri
 added; the earlier `s4:human:keep` (reinstated to triage) stays as layered history. **F6 is fully closed: 8 examined,
 6 reinstated as Context (Karpathy, Pappu, Imai, Dong, Alenezi, J. Wang), 2 discards confirmed. Phase 6 is unchanged
 at 72.** **Added to Dissertation `02 - Supporting` [BWPP3DZA]** (arbiter, 2026-10-04) as evidence against consensus aggregation.
+
+## 177. Post-closeout recompute; E4, E6 and E7 done; a correction to §175b (2026-10-04)
+
+### 177a. Statistics recomputed against the live library (arbiter: *"Recompute statistics based on the work we just completed"*)
+- **PRISMA funnel**, recomputed from snapshot **v169436** (was v169153): **every count is identical** (9,502 → 147 Core → 72
+  Included; final triage 147 Core / 888 Context / 180 Discard). The only diff is bookkeeping: one of the 67 unscreened
+  Q-arXiv-07 records is now also filed in a Dissertation collection. The unscreened total is unchanged.
+  - **The F6 pass (§175) is deliberately outside these figures.** The funnel script does not read the `s4:` layer, and
+    the pass is reported separately (`PRISMA_Funnel.md` §5.3a): 8 examined → 6 Context (Karpathy, Pappu, Imai, Dong,
+    Alenezi, J. Wang) + 2 discards confirmed. All 8 came in through the snowball stream. **Context including the pass is
+    888 + 6 = 894.**
+- **Tag-layer statistics, T3** (`tags-v213/tag_layer_stats_T3_2026-10-04.json`): **0 differences from T2b.** Light Read
+  origination stays at **5.7%**, Set A 10.4%, Set B 7.8%. The F6, E1 and merge work touched no `cal:*` layer.
+- **`final:*`, dry-run recompute:** 72 items · 843 tags (658 modal+human · 113 human-only · 72 primary) · **0 items drift**
+  from what F1 wrote (§174). All checks pass.
+- **Namespace note:** `s4:` already appears on `ZUM76CCG` (Set C pilot: `s4:consensus:*`, `s4:flag:*`,
+  `s4:triage:*`), with a different meaning from F6's `s4:human:*`. The prefixes do not collide and no script reads
+  `s4:` generically. Recorded so that a later reader does not merge the two senses.
+
+### 177b. E4 DONE — Validation Apparatus Harvest back-filled
+There are five new entries in `Validation_Apparatus_Harvest.md`: **Töpfer** `72W6R4JG` (Core), **Waseem** `T2EG4BE2` (Core),
+**Zhong** `96XE669R` (**Context**, demoted), **Zhuo** `VZ27QUPQ` (**Context**; §51 split between the deployable mechanism
+and the reference-grounded evidence), and **Zietsman** `TA6GIUK2` (Core). Each was drafted from the corpus TXT with line
+grounding. The common thread: **a deterministic external signal (spec, detector, execution) beats more model
+judgment**, and Töpfer adds that removing human code inspection only moves the human to the specification, which
+nothing checks.
+- **Follow-up found:** Zhong's corpus TXT is arXiv v2, retitled *SWE-IF* (ICML 2026), but the Zotero record still has
+  the v1 title *Vibe checker*. This is a published-version candidate under the preprint→journal convention; **awaiting
+  the arbiter**.
+
+### 177c. E6 DONE — dissertation-queue records for the agent-checks-agent gap verified
+- **Huang (AgentCoder) `G3FF4MDW`:** merged survivor (§175a). Its metadata is complete.
+- **Du `GGKFBJKH`**, *Improving factuality and reasoning … through multiagent debate*: **upgraded to its published
+  version**, ICML 2024 (PMLR 235, pp. 11733–11763), confirmed via Semantic Scholar. It was converted to conferencePaper
+  with the original type and date kept in an `orig-type:` / `orig-date:` tag and in *Extra*.
+- **Islam `Z56N5GNP`**, *MapCoder* (ACL 2024): the full abstract was back-filled from OpenAlex. It had held a
+  162-character note-form abstract, which is kept in *Extra*.
+- These remain **outside the corpus by design** (Gemini surfaced them as a gap, and they were not added). Du and
+  AgentCoder carry `s1:sonnet:discard` from the snowball. Their Queue membership is a dissertation-reading decision,
+  not a screening one.
+
+### 177d. E7 DONE — no paper text reaches the public repo
+The "Light Reads Completed" export sits under `Backups/`, and both `Backups/` and `.gitignore:38` exclude it. A second
+untracked folder, **`new_pdfs/`**, was *not* ignored, which put it one `git add -A` away from publishing full texts. It
+is now in `.gitignore`.
+
+### 177e. CORRECTION to §175b — the "popularity trap" is Vallecillos-Ruiz et al., not Zietsman
+§175b calls the anti-consensus signal *"Zietsman's 'popularity trap'"*. Zietsman **relays** it. The finding belongs to
+**Vallecillos-Ruiz, Hort & Moonen, *Wisdom and delusion of LLM ensembles for code generation and repair*
+(`FRV9ZXRW`, arXiv:2510.21513)**, which §163a attributed correctly. The three independent signals against consensus
+aggregation are therefore **Vallecillos-Ruiz** (consensus filters out minority-correct solutions), **Vargas** (agreement
+added 2.4 points) and **Pappu** (integrative compromise). **Note for the arbiter:** `FRV9ZXRW` is in the library only as
+a snowball record with `s1:sonnet:discard`, a machine discard of the primary source for a claim the synthesis uses.
+Whether to cite it directly (as dissertation reading, outside the corpus) is the arbiter's call.
+

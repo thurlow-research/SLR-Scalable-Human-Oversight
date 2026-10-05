@@ -4,7 +4,7 @@
 
 **STATUS 2026-10-04 (closeout pass):** Accept band closed 44/44 (§143); F2 run, F2b, F2c and the full F2 review
 done (§151–§167); Phase 6 = 72. **Done:** A1, A2, B1, B2, B3, B5, B7, B8, B9, B10, B13, B14, D1, D2/T2, F2-PREP, F2,
-F2a, F3. **Open:** E3, E4, E6, E7, E8 · F4 · F5 . *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
+F2a, F3. **Open:** E3, E8 · F4 · F5 . *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
 
 *Historical progress line (2026-08-28):* **Progress (2026-08-28): 24 of 44 adjudicated · 3 partial · 17 untouched.**
 Next alphabetically: **Minh** (`74GE3TF7`). Partials awaiting a pass: `MFSZPSPU` Shi ·
@@ -536,14 +536,16 @@ alongside — same principle as A1.
   phase-collection freeze rule — the Dissertation folder is a working triage, not a phase record.*
 - **E3. Back-fill named-use rationales** on Dissertation Supporting members (§109a criterion, extended
   prospectively at §112b).
-- **E4. Back-fill the Validation Apparatus harvest** from the Light Read band — candidates listed at
+- ✅ **E4 DONE 2026-10-04 (§177b)** — 5 entries back-filled; Zhong v2/ICML title follow-up pending.
+  *Original:* **E4. Back-fill the Validation Apparatus harvest** from the Light Read band — candidates listed at
   the foot of `Validation_Apparatus_Harvest.md`: `72W6R4JG` Töpfer · `TA6GIUK2` Zietsman ·
   `96XE669R` Zhong · `VZ27QUPQ` Zhuo (**§51 disqualifier — reference-grounded**) · `T2EG4BE2` Waseem.
 - ✅ **E5 DONE 2026-10-04 — Gao `59KP8GTP` is the anchor** (central to Chapter 1; §152 mechanism note). **Branco
   `JQPPKSFQ` → `02 - Supporting`** (removed from Queue per E2).
   *Original:* **E5. Choose the "oversight fails at scale" anchor** — Gao vs Branco — and **place Branco** in a
   dissertation collection.
-- **E6. Verify the dissertation-queue records** created for Du / Huang / Islam (the agent-checks-agent
+- ✅ **E6 DONE 2026-10-04 (§177c)** — Du upgraded to ICML 2024; Islam abstract back-filled; AgentCoder merged.
+  *Original:* **E6. Verify the dissertation-queue records** created for Du / Huang / Islam (the agent-checks-agent
   gap, surfaced via Gemini and deliberately **not** added to the corpus).
 - **E8. Google Scholar citation retrieval — DECIDED but not executed.**
   `Selection_Criteria_By_Phase.md` §394 signal #1: manually retrieve GS counts, with Semantic Scholar
@@ -574,7 +576,8 @@ alongside — same principle as A1.
   the four Garousi criteria), **not** as a sole ground and **never** as a retroactive re-filter
   (HARKing). If any of #2–#8 is to bear on the write-up, decide it and apply it **uniformly**.
 
-- **E7. Confirm the untracked dir** `Scalable AI Coding Governance - 2026-08-27 - Light Reads
+- ✅ **E7 DONE 2026-10-04 (§177d)** — export sits under ignored `Backups/`; `new_pdfs/` added to `.gitignore`.
+  *Original:* **E7. Confirm the untracked dir** `Scalable AI Coding Governance - 2026-08-27 - Light Reads
   Completed/` should stay untracked. **Repo is PUBLIC** — never commit paper full texts.
 
 ---

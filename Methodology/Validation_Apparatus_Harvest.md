@@ -253,8 +253,200 @@ pipelines, then read methods sections.
   error can be the opposite — **rejecting correct work** — which no amount of adding reviewers fixes,
   and which burns exactly the human attention that oversight is trying to conserve.
 
+### `72W6R4JG` — Töpfer, Plášil, Bureš & Hnětynka (2026), *Vibe-coding: feedback-based automated verification with no human code inspection, a feasibility study* · **SLR: Core**
+- **Layers:** LLM generates an adaptation manager (AM) from a templated prompt → the AM runs inside the
+  adaptation loop over **multiple test runs from varied initial states and random seeds** → constraint
+  verifier, in two layers: **generic constraints** (importable/executable, valid ensemble names, exactly
+  one group per agent), then **functional constraints** in **FCL**, a bounded first-order temporal logic
+  → violation report appended to the prompt → LLM revises. Acceptance is all-or-nothing: *"accepted only
+  if it passes all checks across the suite of test runs."*
+- **Automated components:** fully deterministic runtime verification over execution traces. For each
+  violated formula the verifier builds a **counterexample** (step range, set valuations, smallest witness
+  set) rendered as *"what failed", "when it failed", and "what evidence supports it"*. **Deployable under
+  §51:** it checks against a **specification** (temporal rules), not a reference solution.
+- **AI-as-checker:** no. The verifier is formal; the LLM (GPT-5 nano / mini) only generates and repairs.
+  The authors still call the verifier *an automated "reviewer" that points to specific violations*.
+- **Human position:** **upstream only, and deliberately out of the code.** A domain expert *"who cannot
+  reliably inspect code"* writes the constraints and the test set. The AM *"is not manually inspected;
+  only feedback-loop refinement is allowed."* Human effort moves from reading code to writing the spec.
+- **Escalation trigger:** none to a human. A bounded repair loop runs **at most 10 unsuccessful
+  iterations, then aborts**. The paper does not say what happens after an abort.
+- **Stated rationale — argued, and tested.** A failure taxonomy from preliminary runs
+  (syntactic/interface → architectural → behavioural) *"motivates layered constraint verification"*. The
+  authors also test the granularity of feedback by comparing metrics-only, generic-only and full
+  constraint feedback. Full feedback *"typically converges within a few iterations"*, while metrics-only
+  *"often stalls"* and swings into *"unstable oscillations"*.
+- **Domain:** Collective Adaptive Systems; a synthetic game *"crafted so that an LLM is unlikely to have
+  been trained to its exact rules"*. The intended users are non-programmer domain experts. The authors
+  call the evidence *"feasibility … rather than a definitive guarantee"*: one scenario, ten attempts per
+  variant.
+- **Why it matters — the transferable design lesson:** this is the harvest's clearest case of **removing
+  human code inspection on purpose and putting a formal specification in its place**.
+  (1) **How useful a check is as feedback depends on how specific it is, not only on its verdict.** The
+  same pass/fail, reported at finer grain, turns *"trial-and-error into directed correction"*. This
+  extends Fu, where an external warning nearly triples repair success.
+  (2) **Taking the human out of the code does not take them out of the loop. It moves them to the spec,
+  and nothing checks the spec.** The authors flag this themselves (*"constraints may mis-specify
+  intent"*), so the oversight question becomes *who reviews the constraints*.
+
+### `T2EG4BE2` — Waseem, Ahmad, Kemell et al. (2025), *Vibe coding in practice: flow, technical debt, and guidelines for sustainable use* · **SLR: Core**
+- **What kind of paper this is:** an **experience report, not a built system.** The apparatus below is
+  **recommended practice** drawn from failures the authors observed. It was not evaluated, and nothing
+  in it is measured.
+- **Layers (testing):** an explicit three-layer discipline: (1) *"AI-generated unit tests complemented by
+  human-written edge cases"* → (2) *"contract and interface tests across services"* → (3) *"continuous
+  performance and security gates embedded within CI pipelines."*
+- **Layers (merge/deploy):** AI code is *"a first draft that must pass strict automated gates such as
+  linting, type checks, and tests before merging"*. Regression checks run **before regenerated code is
+  accepted**. BDD/ATDD scenarios serve as canonical specifications, alongside SAST/DAST/SBOM and
+  policy-as-code gates. Observability and rollback follow deployment.
+- **Automated components:** all **deployable** under §51, since they run against the project's own spec
+  and tests. One scan was actually run, on 7 of the authors' own MVPs: 970 issues, 801 of them high
+  severity. *(The reported severities do not sum to 970; figures quoted as published.)*
+- **AI-as-checker:** yes, and **explicitly ranked below the human and deterministic checks**: *"AI-based
+  checks used only as supportive tools"*. Agent findings are to be *"periodically validate[d] … with
+  manual penetration tests"*, and compliance agents are *"advisory"*. Whether checker and generator share
+  a vendor is not specified.
+- **The negative case behind layer 1:** an assistant-generated auth test suite *"passed consistently,
+  even though the login was broken"*, because the tests *"relied entirely on mocked responses created by
+  the model itself"*. Manual exploratory testing caught it.
+- **Human position:** spread across the process, not only at the end. Humans write the edge-case tests,
+  revalidate *"after each major regeneration cycle"*, and sign off *"high-impact regenerated components"*.
+  Industry teams treat vibe coding as *"unsafe by default for customer-facing systems without extra
+  hardening and review."*
+- **Escalation trigger:** **risk class and events**, not a computed threshold: high impact, customer
+  exposure, and any regeneration event. One further gate is proposed but never specified: *"gate merges
+  when explanations diverge from intended design or requirements."*
+- **Stated rationale:** **argued, from anecdote.** *"Without such multi-layer safeguards, auto-generated
+  test suites provide an illusion of reliability"*, and *"Regeneration speed routinely outpaces human
+  review."*
+- **Domain:** general vibe-coded MVPs and microservices (web, Python/JS/TS).
+- **Why it matters — the transferable design lesson:** this is the harvest's clearest **practitioner**
+  case that **tests the AI writes do not check the code the AI writes**. The mocked-auth suite is
+  same-model self-validation in miniature, which bears on the parked test-authorship exercise (§156b). The
+  paper also names **regeneration**, not authorship, as the event that should trigger re-checking. A
+  machine can detect regeneration, which makes it a candidate routing signal. Read the paper as norms,
+  not evidence.
+
+### `96XE669R` — Zhong, Zhou, Chang et al. (Google DeepMind / UIUC, 2025), *Vibe checker: aligning code evaluation with human preference* (VeriCode) · **SLR: Context**
+*Corpus TXT is arXiv v2, retitled* SWE-IF: Aligning Code Evaluation with Human Preference *(ICML 2026). The Zotero record still carries the v1 title (closeout follow-up).*
+- **The apparatus has two parallel axes, not a ladder.** (1) **Functionality:** the benchmarks' unit
+  tests (pass@1). (2) **Instruction following:** **VeriCode**, 30 non-functional instructions in five
+  categories (style 9, logic/patterns 9, documentation 6, error handling 4, library/API 2). Each has a
+  **deterministic verifier** with a binary verdict. The axes are scored separately and then blended into
+  a composite.
+- **What the checks are:** 27 of the 30 verifiers are **Ruff linter rules** (E501, PLR0912, D-docstring,
+  PTH…); the rest are custom AST/regex tests *"when no direct rule exists."* Parameters expand them into
+  *"hundreds of distinct and checkable constraints."*
+- **§51:** the instruction-following verifiers are **deployable**, since they inspect only the generated
+  code. The functionality axis is **test-suite-grounded**: it needs per-task unit tests, so it does not
+  transfer to code that has none.
+- **AI-as-checker:** **no, deliberately.** LLMs appear only in **benchmark construction**: Claude 4 Opus
+  selects and parameterises instructions, chosen over Gemini 2.5 Pro for a 0.96% vs 2.47% rate of invalid
+  parameters. That step is itself checked, by a rule-based validator and by two authors spot-checking 500
+  instructions (100% valid).
+- **Human position:** **absent from grading.** Humans act at construction (expert review, borderline
+  difficulty calls) and as the **criterion**: LMArena coding Elo from more than 800K human votes. The
+  human is the yardstick, not a gate.
+- **Escalation trigger:** none at evaluation. At construction, instructions whose difficulty is
+  borderline go to manual review.
+- **Stated rationale — argued, and honestly bounded.** Deterministic checks are chosen to avoid *"the
+  cost or variance of human or LLM judgment"*. The authors also say what is out of reach: API design,
+  maintainability and elegance *"lie beyond what deterministic checks can capture"*, with LLM-as-judge
+  named as the extension.
+- **Findings that bear on oversight:** adding non-functional instructions **breaks functionality**
+  (pass@1 falls 5.85% / 6.61% with five instructions). Compliance decays multiplicatively: the best model
+  satisfies all five only 46.75% / 40.95% of the time. A **composite of instruction-following and
+  functionality tracks human preference better than either alone**.
+- **Why it matters — the transferable design lesson:** it turns the human "vibe check" into cheap,
+  reference-free deterministic checks. It then validates those checks **against human preference rather
+  than ground truth**, which is criterion validity for a rules layer and rare in this corpus. Two
+  cautions: (a) the validation is at **model-ranking level**, not the individual accept/reject decision a
+  gate needs; (b) **a rules layer needs a functional layer beside it, or it rewards compliant broken
+  code.**
+
+### `VZ27QUPQ` — Zhuo, He, Sun, Xing, Lo, Grundy & Du (2026), *Identifying and mitigating API misuse in large language models* (Dr.Fix) · **SLR: Context**
+- **Two apparatus, to be kept apart:** (a) the **study apparatus** that measures misuse and scores
+  repairs; (b) **Dr.Fix**, the proposed repair pipeline. The §51 disqualifier applies to (a) in full. It
+  does not apply to how (b) operates, only to the evidence that (b) works.
+- **Layers (Dr.Fix):** four few-shot LLM stages, **Detect → Classify** (Intent / Hallucination /
+  Missing / Redundancy) **→ Reason** (*"validates the detected misuse"*, a self-verification step) **→
+  Fix** (a *"repair suggestion"*). One backbone runs all four, at temperature 0.
+- **Deployable (b):** the prompts take only the snippet, with no reference. Detect has an **abstain
+  clause**: *"Please answer with 'No Issue' if there is no obvious API misuse."*
+- **Reference-grounded (a), §51:** a misuse **is defined as an Exact-Match failure against the
+  developer's original code**. Repair quality is BLEU / CodeBERTScore / EM against *"reference fixed
+  code"*. "No misuse" means *"snippets that exactly match the reference source code"*. Nothing is
+  executed: the corpus has no *"environment configurations … and oracles"*. **Dr.Fix can be deployed as
+  a mechanism but is unvalidated as a gate**: its scores measure resemblance to what a developer once
+  wrote, not correctness.
+- **AI-as-checker:** yes, and Dr.Fix *is* an LLM checking LLM output. The **checker is a different model
+  from the generator, by design**: completion models generate, frontier instruction models fix. **Vendor
+  separation is incidental, not argued**, since GPT-4o checking Copilot output is effectively the same
+  vendor. The Reason stage is the same model checking its own detection.
+- **Human position:** **none in Dr.Fix.** Humans appear only offline. Two authors hand-coded 1,200
+  EM-failed samples (κ = 0.97, ~300 h), and they were triggered by a reference mismatch, so this human
+  layer also sits downstream of a §51 signal.
+- **Escalation trigger:** none. The only branch is the abstain.
+- **Stated rationale:** **argued, partly tested.** Staging exists because one-pass repair *"often
+  produces syntactically valid but semantically incomplete or inconsistent fixes"*. Only the taxonomy is
+  ablated. The Reason stage's contribution is never isolated, and each configuration was run once.
+- **Domain:** IDE-style API completion, Python and Java. **Measured:** Java-Method EM 52 → 96 (GPT-4o).
+  On clean code GPT-4o correctly abstains **84%** of the time, so it **flags 16% of correct code**.
+- **Why it matters — the transferable design lesson:** **the part worth carrying over is the abstain
+  clause plus the refusal metric, not the repair.** An explicit "No Issue" exit, measured on known-clean
+  inputs, is the same two-sided error discipline as Jin, approached from the other end. **The caution:**
+  "misuse" and "fixed" both mean *"matches the original developer"*, which is unavailable in production
+  and penalises valid alternatives. **Contrast Fu:** there an external deterministic detector drives the
+  repair and a re-scan confirms it. Dr.Fix closes the loop inside one model, and only a reference it
+  would never have in deployment shows that the loop worked.
+
+### `TA6GIUK2` — Zietsman (2026), *The specification as quality gate: three hypotheses on AI-assisted code review* · **SLR: Core**
+- **Layers (prescribed, in order):** **specifications first** (BDD scenarios, contract tests, mutation
+  testing) → a **deterministic verification pipeline**, *"the reviewer for behavioural correctness. Pass
+  or fail, no opinions"* → architectural tooling, then **AI review only for the unarticulated structural
+  residual** → runtime verification → user feedback (*"not part of the engineering pipeline at all"*).
+- **The structure routes by specifiability, not by risk.** A five-category residual taxonomy (A not yet
+  specified · B specifiable but uneconomic · C unspecifiable pre-execution · D structural · E
+  specification defects) assigns each class its own tool. AI review gets only Category D's uncodified
+  remainder, plus B where it *"draws from a different prior than the generator"*. Compare Dutta: this is
+  partitioning with an *argued* allocation rule.
+- **Automated components:** BDD (`behave`), ArchUnit / Dependency Cruiser, Pact. **Deployable (§51)**,
+  because the spec is written before the code. **Caveat for the experiments:** the scenarios were
+  *"optimally targeted at the planted defects in a way that production specifications would not be"*, so
+  the BDD arm is oracle-advantaged.
+- **AI-as-checker:** yes, and it is what the paper puts on trial. Experiments 1–2 are same-family (Claude
+  reviewing Claude). Experiment 3 is a four-model panel that is only partly cross-vendor. *"Diversity
+  reduces correlation. Specification eliminates circularity. Both are required."*
+- **Head-to-head:** BDD caught **5/5** planted bugs in every experiment. AI review ranged from **0% to
+  100%** depending on how opaque the domain convention was, and was **0/20** on the ICD-10-CM rule. On
+  the ICAO fuel-reserve bug, Claude *"confidently asserted the swapped values as the correct ICAO
+  rules"*: the reviewer argued *for* the defect.
+- **Human position:** **upstream and terminal, not per-change.** The human holds intent (*"the judgment
+  that scenarios accurately describe what the system should do remain human responsibilities"*), decides
+  on Category D advice (*"The agent advises; the human decides"*), and owns Category E (*"a human loop and
+  cannot be automated away"*).
+- **Escalation trigger:** *"the scenario fails, the build stops"*. Otherwise work is routed by defect
+  class, with no threshold.
+- **Stated rationale:** **the most heavily argued entry in the harvest**: ensemble-independence theory
+  (Dietterich; Hansen & Salamon), Cynefin, and the oracle problem (Barr et al.). The author calls the
+  claim *"structural, not empirical"* and the experiments directional (n = 5 functions each, planted
+  bugs).
+- **The "popularity trap" is cited here, not found here.** It belongs to **Vallecillos-Ruiz, Hort & Moonen
+  (`FRV9ZXRW`, arXiv:2510.21513)**: consensus selection *"filters out the minority correct solutions and
+  amplifies the shared error"*. Cite the primary source (changelog §177). Zietsman also cites Pappu
+  `2XV8ZVM8` and Jin `A5WDGC7J`.
+- **Reflexive note:** the experiment *"was proposed by Claude … and implemented by a Claude Code agent.
+  The model being tested proposed its own methodology for being tested."*
+- **Why it matters — the transferable design lesson:** this is the harvest's clearest argument that
+  **an external reference, not a second opinion, is what makes a check non-circular**. Without a spec,
+  *"the review checks code against itself, not against intent"*, and adding vendors lowers correlation
+  without supplying ground truth. AI review is moved from **gate to advisor on the residual the gate
+  cannot see**. Jin (execution overrides the judge), Fu (an external detector drives repair) and Töpfer
+  (a formal spec replaces inspection) all point the same way: **a deterministic external signal beats
+  more model judgment.**
+
 ## Back-fill candidates from the Light Read band (at closeout)
-`72W6R4JG` Töpfer (FCL constraint verifier + bounded repair loop) · `TA6GIUK2` Zietsman (BDD vs AI
-review head-to-head) · `96XE669R` Zhong (VeriCode's 30 deterministic verifiers) · `VZ27QUPQ` Zhuo
-(Dr.Fix detect-reason-fix; **reference-grounded — note the §51 disqualifier**) · `T2EG4BE2` Waseem
-(three-layer testing discipline + CI gates).
+✅ **Back-filled 2026-10-04 (closeout E4, changelog §177)**: Töpfer, Waseem, Zhong, Zhuo and Zietsman, above. Each entry
+was drafted from the corpus TXT with line-level grounding and checked against the Zotero tier (Zhong and Zhuo are
+Context, the other three Core).
