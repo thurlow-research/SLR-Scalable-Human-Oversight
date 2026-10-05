@@ -1,7 +1,9 @@
 # Org survey instrument — design notes and question bank
 
-**Status: QUEUED — do not start until the Accept band is closed.** Commissioned 2026-08-27.
-This file currently holds the *specification* and the hooks banked so far; the audit itself waits.
+**Status: STARTER BANK v0 WRITTEN 2026-10-04** (see *Question bank v0* at the end). Commissioned 2026-08-27.
+The HOS audit ran on **2026-10-04, after the corpus closed**: the 72 Included were adjudicated and `final:*` was written
+(changelog §174). The timing guardrail below is therefore satisfied. Further work (wording, construct mapping, piloting)
+continues outside the SLR session; see *Handoff* at the end.
 
 ## Commission
 
@@ -264,3 +266,160 @@ is a large gap. Asking both in the same block makes the gap visible to the respo
 - **Expect vendor defaults to dominate.** If most teams run an off-the-shelf reviewer with criteria
   they have never read, that is the finding — and it means the criteria governing their oversight were
   written by someone with no knowledge of their codebase.
+
+---
+
+## Question bank v0 — STARTER (2026-10-04)
+
+Drafted at the close of the SLR session, while the corpus rulings were fresh. **These are draft directions, not final
+wording.** Every item follows the cautions above: ask about **artifacts and events** rather than attitudes, do not
+lead, and do not ask by architecture name.
+
+### Provenance key — every item carries one or more
+
+| Code | Source | Status in the dissertation |
+|---|---|---|
+| **C** | SLR corpus finding (changelog § or Zotero key) | Evidence. The question tests whether practice matches the literature |
+| **H** | HOS operational learning (`HumanOversightSystem/Human/…`; cite HOS as Thurlow 2026, Zenodo DOI 10.5281/zenodo.21347272) | **Instrument-design input only. Never cited as evidence** (guardrail) |
+| **S** | **SLR-process (reflexive)**: a failure this review's own screening and tagging pipeline hit and caught | Instrument-design input only, like H. The SLR pipeline is itself an AI-assisted oversight system, and its failures are field observations of the same kind |
+| **B#** | One of the 13 hooks banked above | Absorbed here and kept with its original source |
+
+**H-path shorthand:** `D#` = `Human/DECISIONS.md` decision; `F/x` = `Human/research/findings/x.md`; `O#` =
+`Human/research/OBSERVATIONS.md`.
+
+### 1. Routing and triage: what decides how much review a change gets
+
+| ID | Draft question | Prov. | Source |
+|---|---|---|---|
+| R1 | What lets a change **skip** review, and separately, what **forces** one into review? Is it the same signal? | C | B1 |
+| R2 | **What produces** the signal that sets review depth: the assistant itself, a different model, or a deterministic tool? Was that a deliberate choice? | C | B4 |
+| R3 | When an AI tool labels its own change ("low risk", "trivial", a confidence score), **can that label reduce** review? Has anyone compared the labels with what the changes actually touched? | H+C | D51/D33 (99.9% of agent PRs self-rate 8–10, with flat defect rates); Spiess `VTDG995V` (calibration) |
+| R4 | Does review depth depend on the **kind of task** (feature, fix, refactor, dependency/chore), or only on which areas the change touches? | H | F/maintenance-class-changes… (refactor/chore 6.7–9.4% vs 2.7–2.9%) |
+| R5 | Is there a **size or scope limit** on AI changes submitted for review? What happens when one exceeds it: split, rejected, or reviewed anyway? | H+C | `Human/docs/PR-SIZE-POLICY.md`; F/agentic-prs-are-larger…; B9 |
+| R6 | Are **auto-merged** or lightly reviewed AI changes ever **sampled afterwards** for deeper review? What fraction, and has a sample ever found a defect? | H | D17 (salted red-team sample of the auto-pass lane) |
+| R7 | Does your organization **auto-merge** agent-authored changes? Under what conditions, and are some kinds of change (e.g. deletions) never auto-merged? | C | Branco `JQPPKSFQ` (all-or-none auto-merge; caution on deletions) |
+| R8 | For agents that run **on a schedule or loop**, is an action that repeats every cycle approved differently from one taken once? | H | F/hos-scores-severity…exposure (about 144 cycles/day turned benign conditions into outages and overruns). *Candidate silence* |
+| R9 | Is there a defined level below which AI may **approve or merge without a human**? Has it moved, which way, and who decided? Can individual teams loosen the central rules? | H | D50; F/human-approval-model-design (`OVERSEER_CEILING`) |
+
+### 2. Independence: is the checker actually separate from the producer?
+
+| ID | Draft question | Prov. | Source |
+|---|---|---|---|
+| I1 | Is the person who **reviews** AI output the same person who **prompted** it? If so, what else in the loop is independent? | C | B13 |
+| I2 | Who writes the **tests** for AI-generated code: the same tool that wrote the code, a different model, or people? If people, do they write all of them or only the edge cases? | C | §156b test-authorship census (28 papers with an agreed label: human 11 · same-as-code 5 · mixed 5 · unclear 7); Waseem `T2EG4BE2` (model-written mocked tests *"passed consistently, even though the login was broken"*); Jin `A5WDGC7J` |
+| I3 | If your process names separate author and reviewer steps (or agents), **how would you find out a run skipped the review step?** Has it happened? | H | F/orchestrator-absorbs-roles… (a capable orchestrator did the work itself, with no visible trace) |
+| I4 | When a second reviewer (AI or human) examines a change, do they **see the first reviewer's findings** before forming their own view? | H | D22 (panel kept blind to internal findings) |
+| I5 | Do your AI reviewers **see the author's PR title or description**? Has anyone considered whether that text could steer the review? | H | D53 (author text treated as untrusted; a cited study steered acceptance through framing) |
+| I6 | When **two reviewers "agree"**, could they be the same source counted twice: the same model, the same vendor, or the same prompt? How would you know? | S+C | §173: this SLR's panel counted *tags*, not *vendors*, so 15 single-model primaries passed as 2-of-3 majorities until caught; F2b panel (9/9 wrong agreement, §11.4) |
+| I7 | Do agents act under **their own accounts or a developer's**? Is "human approved" **enforced by the platform**, or by a script that runs in the agent's environment? | H+C | F/human-gate-enforcement-limits; F/actor-identity…; §158 (enforcement must sit *"where the AI cannot route around it"*). *Candidate silence* |
+
+### 3. External reference: what is AI output checked *against*?
+
+| ID | Draft question | Prov. | Source |
+|---|---|---|---|
+| X1 | Is AI output checked against an **external reference** (spec, tests, formal constraints), or only by other models? | C | B5; Zietsman `TA6GIUK2` |
+| X2 | Which **deterministic checks** (static analysis, linters, type checkers, security/dependency scanners, policy rules) run **alongside** AI review? Were any added *because* of AI adoption? | C | §156 (`rules-based-checks-v3`: the arbiter's intent is *"diversity of validation"*); Fu `U3IQJ4VK` (static-analysis warnings fed back fix up to 55.5%) |
+| X3 | When humans write a **specification or constraints** instead of reading the code, **who reviews the specification?** | C | Töpfer `72W6R4JG` (human code inspection removed; *"constraints may mis-specify intent"*); harvest §177b |
+| X4 | Is **regenerated** code re-checked as if it were new? Does regeneration trigger anything (re-review, regression run)? | C | Waseem `T2EG4BE2` (*"Regeneration speed routinely outpaces human review"*) |
+| X5 | Do teams feed existing **requirements and architecture artifacts** (BDD scenarios, ADRs, diagrams) to their agents? | C | Lipsanen `7SH86C2W`; §177b |
+
+### 4. Validating AI-review findings (extends *QUESTION AREA — validating agent feedback* above)
+
+| ID | Draft question | Prov. | Source |
+|---|---|---|---|
+| V1 | Is there **anything between an AI reviewer and the developer** that filters, ranks or suppresses findings? | C | existing area Q1; Sun `V4IRKSFI`; Jin `A5WDGC7J` |
+| V2 | Are AI findings split into **"blocks merge"** and **"worth a look"**? If anything is ordered before a human reads it, by what rule? | H+C | `Human/docs/HANDLING-FINDINGS.md`; F/corroboration-ranked-review… |
+| V3 | Before acting on an AI-reported bug, does anyone **reproduce it**? Has acting on an AI finding ever **changed correct code**? | H+C | F/reviewer-agents-file-confident-non-reproducing-reports (3 of 4 did not reproduce); Jin (false positives on correct code) |
+| V4 | Can your AI reviewer say **"no issue"**? Has anyone measured how often it flags **code already known to be correct**? | C | Zhuo `VZ27QUPQ` (an abstain clause; still flags 16% of clean code) |
+| V5 | When several models check the same work and **disagree**, is the outcome decided by **majority, by a judging model, or by a human**? Does anyone track **which model's findings prove correct**? | C+H | Vallecillos-Ruiz `FRV9ZXRW` (consensus filters out minority-correct answers); Pappu `2XV8ZVM8`; Vargas; F2b panel audit (one vendor 2/2 verified, another 0/3) |
+| V6 | If an AI gate **finds something new on every run**, what counts as passing? Has a team **skipped or disabled** an AI gate because it never passed? | H | F/nondeterministic-review-gate-converges-on-zero-new |
+| V7 | Is the accept/reject decision made **in code from a score**, or **by the model**? Could you make the gate stricter **without re-prompting or retraining**? | C | existing *SCORE vs VERDICT* sub-area |
+
+### 5. Human attention: what humans actually see and do
+
+| ID | Draft question | Prov. | Source |
+|---|---|---|---|
+| A1 | Is there a point where a human is **required to read** AI-generated code? If not, what replaced it? | C | B2 |
+| A2 | Must every AI review comment be **acknowledged** before merge, even if it isn't acted on? Can a reviewer record "considered, not changing"? | H | F/attention-guarantees-not-fix-mandates |
+| A3 | When an AI **summarizes or recommends**, does the reviewer see that **before or after** the diff and evidence? | H+C | F/richer-ai-explanations-may-increase-overreliance…; B7; Langer `5DCQDB4C` (sensitivity vs response bias) |
+| A4 | In your process, is the human mainly **evaluating results** (judging what the AI produced) or **steering** (directing what it does next)? Both, at different points? | C | arbiter ruling in the F2 review (*"hitl is human evaluating the result … Human directing is steering"*); decision-surfacing trio Aporia/HiLDE/Zhou |
+| A5 | Has senior engineers' time **reviewing vs authoring** changed since AI adoption? | C | B3 |
+| A6 | Does a **cap on in-flight AI changes** exist? When agents sit idle, can you tell **waiting-on-a-human** from **no work**? | H | F/safety-serialization-makes-the-human-the-rate-limiter (blocked 83 times in 18 days). *Candidate silence* |
+| A7 | When AI review volume rose, did **review depth per change** fall? Is anything measured that would show it? | C | oversight-scaling inversion: Gao `59KP8GTP` (anchor, E5); Branco |
+
+### 6. Escalation, retry and stalls (extends the retry-budget sub-area)
+
+| ID | Draft question | Prov. | Source |
+|---|---|---|---|
+| E1 | Is there a **retry limit** before a human is brought in? What triggers escalation, and what happens to work that exhausts the budget? | C+H | existing sub-area |
+| E2 | When an **unattended agent keeps failing or skipping**, what alerts a human, and after how long? What is the **longest a stall went unnoticed**? | H | `DECISIONS.md` dated entries (a guard silently skipped cycles for about 42 h) |
+| E3 | When an agent hits an **ambiguous requirement**, does it **stop and ask** or **proceed on an assumption**? Whom does it ask first? | H+C | F/spec-gap-routing-chain; B11 |
+
+### 7. Governance, override and sign-off
+
+| ID | Draft question | Prov. | Source |
+|---|---|---|---|
+| G1 | When a failing check is **bypassed to ship**, is the bypass recorded? Does it **expire**? Has the same check been bypassed repeatedly? | H | D45; F/an-override-must-expire… (four releases on a "permanent" override). *Candidate silence* |
+| G2 | When gates were introduced on **existing code**, how were the pre-existing failures handled? Could an agent apply the exemption itself? | H | D29; F/brownfield-governance-adoption |
+| G3 | **Who can switch an autonomous agent on or off**? Is there an emergency stop? Can the agent change its own enablement? | H+C | F/two-key-enable-for-autonomous-systems; §158 |
+| G4 | Is human approval needed **before an agent starts** a task, **at merge**, or both? Does it differ for bugs vs features? | H+C | F/human-approval-model-design; B8 |
+| G5 | Is the **workflow sequence** (what runs next, when it is done) decided **by code or by the model**? | C | §151 / §158 (`deterministic-orchestration-v2`: code at the top level dispatching models; LLMs skip steps even under explicit instruction) |
+| G6 | Can an **automated stage overturn a human decision** without a human seeing it? | S | §175 / F6: this SLR's machine screen discarded eight records the arbiter had kept, unreviewed. Caught only by a deliberate audit |
+| G7 | Do you govern **assistive and agentic** use under **one policy** or two? Does formal **sign-off** change how often reviewers modify AI changes? | C | B6; B12 |
+| G8 | Is contributor **disclosure** of AI assistance required? Are the **prompts** behind a change kept with it? | C+H | B10; D8/D21; F/prompt-resident-governance-is-unattributable |
+
+### 8. Oversight tooling that fails open: does your oversight actually run?
+
+| ID | Draft question | Prov. | Source |
+|---|---|---|---|
+| F1 | How would you know if an AI review step or scanner **stopped running but still reported success**? Has it happened? | H | `Human/research/sessions/2026-08-04-controls-that-never-fire.md` (seven controls present in code and tests that never fired; a dead reviewer reporting "no findings" for about two months). *Candidate silence* |
+| F2 | Are any checks **run on developer machines**, with CI only confirming that they ran? | H | F/attestation-displaces-the-execution-it-attests-to |
+| F3 | When a reviewer returns **nothing**, can you tell **"checked, found nothing"** from **"did not check"**? | S+H | §150 (*silence has three meanings*: confirmation, unverified, no signal); F/explicit-na-audit-entries |
+| F4 | When **review policy changes**, does anything check that the tooling **actually implements** it? Has a documented rule been found unenforced? | H | F/a-decision-records-intent-not-enforcement |
+| F5 | When an AI change is **rejected**, or a review step is skipped as not applicable, is a **reason recorded**? | H | F/unexplained-pr-rejection… (64% of rejected agentic PRs had no reason, cited study) |
+
+### 9. Measurement, cost and criteria
+
+| ID | Draft question | Prov. | Source |
+|---|---|---|---|
+| M1 | Do you record **how often AI changes need human intervention**, and **why** (a policy-protected area vs assessed risk)? | H | O11 (dogfooding inflates intervention rates). *Candidate silence* |
+| M2 | Does anyone track **whether the AI reviewer is right**, including **what it misses**? | C | existing area Q4; Karakaya `5NZ2EDEK` (developer actions are not ground truth) |
+| M3 | Where does your **most expensive AI review** run (every change, pre-PR, release)? Has **cost or quota** ever led you to reduce or turn off a review step? | H | F/three-tier-review-cost-model |
+| M4 | Where did your AI reviewer's **criteria** come from, is there a document, and who reviewed it? | C | existing *CRITERIA* area (Shi `MFSZPSPU`) |
+
+### Cross-cutting design rules for v1
+
+1. **Per discipline.** Run the core of blocks 1–3 per discipline (coverage requirement above). Expect asymmetry: AI
+   output volume and oversight depth are likely uncorrelated across disciplines.
+2. **H and S items are never findings.** If a practitioner answer echoes an HOS learning, report the answer, not the
+   echo.
+3. **Ask about events, not intentions.** *"Has it happened?"* and *"What is the longest…?"* items (F1, E2, G1, V6) are
+   the hardest to answer aspirationally. Keep them.
+4. **Expect "we don't know" and "nothing".** For F1, V4, M2 and A6, those answers are the finding. Make them easy
+   to give.
+
+### Candidate silences: where the survey can answer what the literature cannot
+
+Most of these come from **HOS** (the auditor's judgement, not yet checked against the full corpus). They are
+contribution candidates **only if** the F5 gap assessment confirms the corpus is silent on them:
+- forge-proofing the human gate as two guarantees, identity and enforcement location (I7);
+- override expiry (G1);
+- exposure frequency for looping agents (R8);
+- oversight that fails open (F1–F3);
+- serialization latency as the human bottleneck (A6);
+- the reason for intervention, protected area vs assessed risk (M1).
+
+Already silent in the corpus: retry budgets (E1), criteria validation (M4), what AI reviewers miss (M2), and every
+non-code discipline.
+
+### Handoff: where this goes next (outside the SLR session)
+
+1. **Dedupe and word.** About 55 items across 9 constructs. Cut to an instrument length (probably 25–35 core items plus
+   a per-discipline block). Use the existing cautions as the wording test.
+2. **Map constructs to the dissertation's hypotheses**, and record which items are measures and which are context.
+3. **Cross-walk against F5** (the gap assessment) to confirm or retire each candidate silence.
+4. **HOS material not yet read in the audit:** about 60 of 97 findings, `docs/OVERSIGHT-RUNBOOK.md`, `docs/specs/`,
+   versioned design docs, and `Improvements/work/`. A second pass could add seeds, but the 30 above already cover all
+   nine constructs. Note: the cited `activation.py` (G3) is absent from the current HOS tree.
+5. **Timing:** the call for participants stays **held until after candidacy** (locked).
+

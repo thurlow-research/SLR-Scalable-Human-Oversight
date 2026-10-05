@@ -8925,3 +8925,28 @@ checker*), original type and date are preserved in `orig-type:` / `orig-date:` t
 rather than a new one, so the count is unchanged and there is no `source:retrieval` (Du precedent, §177c). The tier is
 unchanged (Context, `demote:context`). The harvest entry header and the §178 named-use note were updated to match.
 
+## 180. F4 STARTED — survey question bank v0 written; the HOS audit ran after the corpus closed (2026-10-04)
+
+**Arbiter:** the starter *"should be done from your session since you have the memory. Then further work moves
+elsewhere."* `Methodology/Survey_Instrument_Design.md` now holds **Question bank v0**: about 55 draft items across 9
+constructs. They cover routing, independence, external reference, finding validation, human attention, escalation,
+governance, oversight that fails open, and measurement. Every item carries provenance.
+
+- **HOS audit timing:** HOS materials were opened for the first time on **2026-10-04, after F1 wrote `final:*`
+  (§174)**, so they could not have influenced any tagging ruling. This is the clean answer to the committee's
+  contamination question.
+- **Audit yield:** 30 cited learnings from `HumanOversightSystem/Human`: 14 new seeds and 16 that sharpen banked
+  areas. About 35 of 97 findings were read.
+- **New provenance class `S` (SLR-process, reflexive).** This review's own pipeline is an AI-assisted oversight system,
+  and today it hit three failures the survey should ask about:
+  - a machine stage reversing human decisions unreviewed (§175 → G6);
+  - agreement counted by tag instead of by independent source (§173 → I6);
+  - silence read as confirmation (§150 → F3).
+  Like HOS, `S` is **instrument-design input, never evidence**.
+- **Corpus seeds added from the F2 review:** test authorship (§156b → I2), auto-merge (Branco → R7), regeneration as a
+  trigger (Waseem → X4), who reviews the spec (Töpfer → X3), deterministic-check diversity (§156 → X2), enforcement
+  location (§158 → I7/G3), orchestration in code vs model (§151 → G5), consensus vs critique (Vallecillos-Ruiz/Pappu →
+  V5), abstain on clean code (Zhuo → V4), evaluating vs steering (A4).
+- **Status:** the closeout's F4 item is **started, not done**. Wording, construct-to-hypothesis mapping and piloting
+  move to a separate workstream (handoff in the doc).
+

@@ -758,6 +758,8 @@ records where the review's own rules were not applied, not judgements about scop
   contradictory dispositions. Breaks the one-record-per-study rule. Merge per the dedupe convention.
 
 ### F4. HOS audit → survey question bank
+> ▶ **STARTED 2026-10-04 (§180)** — Question bank v0 written (about 55 items, 9 constructs, provenance C/H/S). HOS audit run
+> after corpus close. Further work (wording, mapping, pilot) continues outside the SLR session.
 `Methodology/Survey_Instrument_Design.md`. Mine `~/Code/Thurlow-Research/HumanOversightSystem/Human`
 for questions informed by HOS **and** the SLR findings. 13 survey hooks already banked. HOS path is
 recorded but **deliberately unread** so far. Survey call-for-participants stays held until **after
