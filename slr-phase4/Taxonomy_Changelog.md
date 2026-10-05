@@ -8950,3 +8950,26 @@ governance, oversight that fails open, and measurement. Every item carries prove
 - **Status:** the closeout's F4 item is **started, not done**. Wording, construct-to-hypothesis mapping and piloting
   move to a separate workstream (handoff in the doc).
 
+## 181. Session-end recompute of all SLR statistics; quotable-figures reference and session summary (2026-10-04)
+
+**Arbiter:** *"recompute all statistics on the SLR that I might need to quote explaining our search process,
+screening, tagging"*, plus a methodology summary of the day's work.
+
+- **Recomputed by script against snapshot v169436:**
+  - funnel: `prisma_funnel.py`
+  - screening rates and κ: `screening_reliability.py`, every stage
+  - tag layers: `tag_layer_stats.py`, T3
+  - the final layer: `compute_final.py`, dry run
+  - silence: `silence_audit.py`
+- **Result:** every published PRISMA count and every screening rate and κ **reproduced exactly**. T3 matches T2b in every
+  field, and `final:*` shows zero drift.
+- **New:** `Methodology/SLR_Statistics_Reference.md`, a single sheet of quotable figures (search, screening,
+  reliability, tagging, and the final tag distribution) with the source script and detail document for each.
+  `Methodology/Session_Summary_2026-10-04.md` records the day's work.
+- **CORRECTION to §177a.** *"Context including the pass is 888 + 6 = 894"* mixed conventions. 888 is the per-stream
+  sum, which counts the two Core+Context records in both tiers. The funnel's convention is **886**. Correct figures:
+  abstract-level Context **886 + 6 = 892**; retained Context tier **961 + 6 = 967**. `PRISMA_Funnel.md` has been
+  updated. §177a stands as written, corrected here.
+- **Not carried into the reference sheet:** the funnel script's 129 / 16 split of `s3:human` tags on final Core sums
+  to 145, not 147. It has no documented explanation, so it is left out of quotable figures pending a look.
+
