@@ -537,7 +537,7 @@ alongside — same principle as A1.
 - ✅ **E3 DONE 2026-10-04 (§178)** — 19 named-use notes written; all 29 Supporting members now carry a rationale.
   *Original:* **E3. Back-fill named-use rationales** on Dissertation Supporting members (§109a criterion, extended
   prospectively at §112b).
-- ✅ **E4 DONE 2026-10-04 (§177b)** — 5 entries back-filled; Zhong v2/ICML title follow-up pending.
+- ✅ **E4 DONE 2026-10-04 (§177b)** — 5 entries back-filled; Zhong upgraded to ICML 2026 (§179).
   *Original:* **E4. Back-fill the Validation Apparatus harvest** from the Light Read band — candidates listed at
   the foot of `Validation_Apparatus_Harvest.md`: `72W6R4JG` Töpfer · `TA6GIUK2` Zietsman ·
   `96XE669R` Zhong · `VZ27QUPQ` Zhuo (**§51 disqualifier — reference-grounded**) · `T2EG4BE2` Waseem.

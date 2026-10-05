@@ -328,8 +328,8 @@ pipelines, then read methods sections.
   machine can detect regeneration, which makes it a candidate routing signal. Read the paper as norms,
   not evidence.
 
-### `96XE669R` — Zhong, Zhou, Chang et al. (Google DeepMind / UIUC, 2025), *Vibe checker: aligning code evaluation with human preference* (VeriCode) · **SLR: Context**
-*Corpus TXT is arXiv v2, retitled* SWE-IF: Aligning Code Evaluation with Human Preference *(ICML 2026). The Zotero record still carries the v1 title (closeout follow-up).*
+### `96XE669R` — Zhong, Zhou, Chang et al. (Google DeepMind / UIUC, ICML 2026), *SWE-IF: aligning code evaluation with human preference* (VeriCode) · **SLR: Context**
+*Published version (PMLR 306); the v1 preprint (2025) was titled* Vibe checker. *Zotero record upgraded 2026-10-04 (§179).*
 - **The apparatus has two parallel axes, not a ladder.** (1) **Functionality:** the benchmarks' unit
   tests (pass@1). (2) **Instruction following:** **VeriCode**, 30 non-functional instructions in five
   categories (style 9, logic/patterns 9, documentation 6, error handling 4, library/API 2). Each has a

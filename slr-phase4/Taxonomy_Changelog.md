@@ -8917,3 +8917,11 @@ entries. Edit freely.
 - **Survey-instrument vocabulary:** Choudhuri `ID7IN65K`, Karakaya `5NZ2EDEK`, Karuppuchamy `8MXATG38`, Lipsanen
   `7SH86C2W`.
 
+## 179. Zhong `96XE669R` upgraded to its published version (arbiter, 2026-10-04)
+The §177b follow-up is resolved. The record is now a **conferencePaper**: *SWE-IF: aligning code evaluation with human preference*,
+Proceedings of the 43rd ICML (Seoul), PMLR 306, 2026. The venue comes from the v2 camera-ready (corpus TXT ll. 74–75).
+Semantic Scholar and OpenAlex do not yet index the proceedings, and no page range is available yet. The v1 title (*Vibe
+checker*), original type and date are preserved in `orig-type:` / `orig-date:` tags and *Extra*. It is the same record
+rather than a new one, so the count is unchanged and there is no `source:retrieval` (Du precedent, §177c). The tier is
+unchanged (Context, `demote:context`). The harvest entry header and the §178 named-use note were updated to match.
+
