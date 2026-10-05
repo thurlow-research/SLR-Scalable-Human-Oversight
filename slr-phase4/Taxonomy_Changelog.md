@@ -8898,7 +8898,7 @@ Whether to cite it directly (as dissertation reading, outside the corpus) is the
 (§177e; it remains outside the corpus as a snowball record with `s1:sonnet:discard`), and Zhong `96XE669R` (VeriCode;
 Context). **Supporting now has 29 members.**
 
-**§109a back-fill:** before this pass, 8 of the 29 already had a rationale. Six carried §109a notes (Chang, Borg,
+**§109a back-fill:** before this pass, 10 of the 29 already had a rationale. Seven carried §109a-style notes (Chang, Borg,
 Raghavendra, Shinde, P, Naulty, and Ehsani's arbiter note). Three carried placement reasons recorded earlier (Spiess:
 *"a survey question, not a citation"*; Kim & Yegge: *"background and anecdotal evidence"*; Bowman: *"Context tier and
 dissertation value are independent axes"*). The **other 19 received a child note**, *"Dissertation note — Supporting
