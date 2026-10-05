@@ -68,15 +68,15 @@ From `calib_sets.json` (random draw, `random.seed(714)`, from the 149-item Core 
 
 ## 5. Dissertation wording (Appendix A, draft 2026-10-04)
 
-> Before the full set was coded, the coding approach was developed and checked in three calibration rounds before
-> broad tagging began. In the first, ten randomly selected core studies were co-tagged by the human and Claude. This
-> round served to validate the tagging: the gaps in the vocabulary and the problems with tag definitions that it
-> exposed were identified and resolved before the next round. In the second, the human tagged a further ten randomly
-> selected studies first, without seeing any model output. This human-labelled set served as a training set: the
-> coding instructions were refined against it, and the models' tags were scored against it. In the third round, a
-> single study was used to check the AI-first workflow: the AI models tagged first under the frozen instructions, and
-> the human validated their tags. Broad tagging of the corpus then began in that mode, with the human adjudicating the
-> model proposals on every study retained for synthesis. No model was trained or fine-tuned; "training" here means
-> only that the coding instructions and vocabulary were refined against human labels.
+> The coding approach was developed and checked in three calibration rounds before broad tagging began. In the first,
+> ten randomly selected core studies were co-tagged by the human and Claude. This round served to validate the
+> tagging: the gaps in the vocabulary and the problems with tag definitions that it exposed were identified and
+> resolved before the next round. In the second, the human tagged a further ten randomly selected studies first,
+> without seeing any model output. This human-labelled set served as a training set: the coding instructions were
+> refined against it, and the models' tags were scored against it. In the third round, a single study was used to
+> check the AI-first workflow: the AI models tagged first under the frozen instructions, and the human validated their
+> tags. Broad tagging of the corpus then began in that mode, with the human adjudicating the model proposals on every
+> study retained for synthesis. No model was trained or fine-tuned; "training" here means only that the coding
+> instructions and vocabulary were refined against human labels.
 
 The third-round sentence reflects the resolution of discrepancy 1 (a single-study check by design).
