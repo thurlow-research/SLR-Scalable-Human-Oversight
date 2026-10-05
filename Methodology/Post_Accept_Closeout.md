@@ -4,7 +4,7 @@
 
 **STATUS 2026-10-04 (closeout pass):** Accept band closed 44/44 (§143); F2 run, F2b, F2c and the full F2 review
 done (§151–§167); Phase 6 = 72. **Done:** A1, A2, B1, B2, B3, B5, B7, B8, B9, B10, B13, B14, D1, D2/T2, F2-PREP, F2,
-F2a, F3. **Open:** E1, E3, E4, E6, E7, E8 · F4 · F5 · F6 follow-ups (Pappu tier; AgentCoder merge). *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
+F2a, F3. **Open:** E1, E3, E4, E6, E7, E8 · F4 · F5 · F6 follow-up (Pappu tier). *(A3, B6, B12, E2, E5, E9 closed 2026-10-04.)*
 
 *Historical progress line (2026-08-28):* **Progress (2026-08-28): 24 of 44 adjudicated · 3 partial · 17 untouched.**
 Next alphabetically: **Minh** (`74GE3TF7`). Partials awaiting a pass: `MFSZPSPU` Shi ·
@@ -735,8 +735,8 @@ commitment that any is real:
 | Mode convergence (assistive ≡ agentic failure profile) | §119c | **CLOSED** by Liu `9H6FWJME` (§125a) |
 
 ### F6. Process-integrity items, independent of any gap
-> ✅ **DONE 2026-10-04 (§175)** except two follow-ups: **Pappu `2XV8ZVM8` tier call** (reinstated to triage) and the
-> **AgentCoder client merge** (prepped; master `G3FF4MDW`).
+> ✅ **DONE 2026-10-04 (§175)** except two follow-ups: **Pappu `2XV8ZVM8` tier call** (reinstated to triage) (the **AgentCoder merge was done and verified
+> 2026-10-04**: survivor `G3FF4MDW`, §175a).
 Small, defined populations — worth doing regardless of whether a gap is found, because they are
 records where the review's own rules were not applied, not judgements about scope.
 

@@ -8803,3 +8803,8 @@ frozen and the `s1`/`s2`/`s3` layers are untouched (§548).
 records. `zotero-merge-prep --commit` unioned their metadata (confidence 1.00; arXiv DOI 10.48550/arXiv.2312.13010).
 **The merge is a client action for the arbiter: master = `G3FF4MDW`** (it carries the screening lineage).
 
+**175a. AgentCoder merge verified (2026-10-04).** The arbiter merged it in the client. **Survivor `G3FF4MDW`** carries
+`dc:replaces → WWDHF6EU`, the union of tags (`source:snowball`, `cocite:1`, `s1:sonnet:discard`, `source:retrieval`) and of
+collections (the snowball import and discard collections, plus Dissertation `03 - Queue`). `WWDHF6EU` is in the trash. **Key
+mapping: `WWDHF6EU` → `G3FF4MDW`.**
+
