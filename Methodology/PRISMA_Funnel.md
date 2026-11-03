@@ -9,6 +9,14 @@ snapshot figures in earlier docs (9,518 / 983 / 970 / 149 / 148 / 147-with-76-de
 for how each reconciles. To refresh: `python3 slr-tools/prisma_funnel.py --dump lib.json` (RO key)
 then `--snapshot lib.json`; Phase-6 must still equal the computed predicate (§4) or something moved.
 
+> **Recomputed 2026-11-03 against snapshot v169999** (`PRISMA_Funnel_v169999.json`), after the
+> 2026-11-02 re-examination (§5.3b). **v169999 is now the snapshot of record.** The tables below still
+> show v169153. Every figure that changed, and why, is in `Appendix_A_Text_v169999.md` §1. Headline at
+> v169999: 9,501 identified · 199 not screened · 9,299 screened → 1,212 advanced · 1,219 triaged →
+> 148 Core (+1 via re-examination) · 889 Context · 182 Discard · 149 full text → 75 demoted, 2 pending ·
+> **72 included**. Figure A1 is drawn from the JSON by `slr-tools/prisma_diagram.py`
+> (`Methodology/figures/`).
+
 PRISMA mapping follows the alignment note in `SLR_Paper_Outline_v0_2026-08.md` §3.1: internal
 Phases 1–2 = **Screening**; Phase 3 (abstract-level triage + human ≥55 review) **and** Phases 4–5
 (full-text read) together = one multi-pass **Eligibility** determination; Phase 6 = **Included**.
@@ -210,6 +218,30 @@ Eight records the **arbiter kept at Pass 1** were later discarded **by machine**
 triage below the review floor). They were re-adjudicated as a **new layer** (`s4:human:*`; collection `Reconsider`), not
 by revising these funnel figures: **6 reinstated, all to Context** (Pappu's triage call returned Context, §175b), **2 discards
 confirmed**. Phase 6 is unchanged at 72. Report this pass separately in PRISMA; the counts above stay as recorded.
+
+### 5.3b Re-examination pass (2026-11-02) — a second separately counted pass
+
+Twelve records were re-adjudicated in the `s4:human:*` layer (tag `reexam:2026-11-02`; collection
+`Reconsider (re-examination, 2026-11-02)` `QUA8EW43`, with 01-Core / 02-Context / 03-Discard). Change
+log, plan and applier: `~/Code/Thurlow-Research/reexam_2026-11-02/` (outside the repo).
+
+| Group | Records | Call |
+|---|---|---|
+| Blinded human-50 cores scored below the 55 floor | `VFZXPDJX` Dai · `4VXJUF5I` · `TLJPGLK9` · `QYT8RRWL` | core · context · discard · discard |
+| Blinded human-50 Contexts that Opus discarded | `HCQSZWZR` · `PMSYQJQQ` · `6UQMFSB8` | context ×3 |
+| Phase-2 eligible, never triaged | `2HTDGAT4` · `GFJN2SVU` | discard ×2 |
+| Snowball Opus cores ≥ 55, triaged but never filed or reviewed | `ZSTZT2KN` Grewal · `7EK8G7I4` · `7UZ5FCF4` | core · context · context |
+
+**Filing rule used.** Records the pipeline never filed (`2HTDGAT4`, `GFJN2SVU`, `7EK8G7I4`, `7UZ5FCF4`,
+`ZSTZT2KN`, plus `IM6DJDEE`, which carried its July `s3:human:context` but was never filed) were added
+(add-only) to the Phase-3 and 03-Final collections the pipeline's own rules select. This completes a
+missed step and revises nothing, and it is why triage moved 1,213 → 1,219. Records that already had a
+filed decision were placed only in the re-examination collection; their Phase-3 placement is unchanged,
+as in §5.3a. Dai enters full text through `01-Core` of that collection; Grewal through Final/01-Core.
+
+**Not yet decided:** full-text calls on Dai and Grewal; 77 more records with the F6 signature (human
+Pass-1 keep → machine Pass-2 discard, no human Pass-2 decision); the 45–54 triage band (308 records);
+18 dissertation-cited records that left the review at a model-only step (`followup:full-eval`).
 
 ### 5.4 Outside the funnel (post-closure supplementary material)
 
