@@ -1,12 +1,13 @@
-# Appendix A and Figure A1 text, recomputed at snapshot v169999 (2026-11-03)
+# Appendix A and Figure A1 text, recomputed at snapshot v170005 (2026-11-03)
 
 Ready-to-paste dissertation text for Chapters 1–2 and Appendix A after the 2026-11-02 re-examination.
-Every number comes from `PRISMA_Funnel_v169999.json` (`slr-tools/prisma_funnel.py`) or the record lists
+Every number comes from `PRISMA_Funnel_v170005.json` (`slr-tools/prisma_funnel.py`) or the record lists
 in `PRISMA_Funnel.md` §5.3b. Figure: `Methodology/figures/PRISMA_Flow_Diagram.{png,svg}`
 (`slr-tools/prisma_diagram.py`).
 
-**Still open, and marked [PENDING] below:** the full-text decisions on Dai (`VFZXPDJX`) and Grewal
-(`ZSTZT2KN`); the arbiter's decisions on review sheet 4a (77 records) and sheet 4b (308 records); the
+**Full-text decisions made 2026-11-03:** Dai (`VFZXPDJX`) kept as core and added to Phase 6, with theme
+tagging deferred (`followup:tagging`); Grewal (`ZSTZT2KN`) demoted to Context. **Still open, and marked
+[PENDING] below:** the arbiter's decisions on review sheet 4a (77 records) and sheet 4b (308 records); the
 full evaluation of the 18 `followup:full-eval` records. Each one can change the counts here. Re-run the
 two scripts once they land.
 
@@ -27,8 +28,8 @@ two scripts once they land.
 | Context at triage | 886 | 889 | `7EK8G7I4`, `7UZ5FCF4`, `IM6DJDEE` |
 | Discard at triage | 180 | 182 | `2HTDGAT4`, `GFJN2SVU` |
 | Full text | 147 | 149 | + Grewal (triage) + Dai (re-examination) |
-| Full-text decisions pending | 0 | 2 | Dai, Grewal |
-| Included | 72 | 72 | unchanged until the two decisions land [PENDING] |
+| Demoted after full text | 75 | 76 | Grewal |
+| Included | 72 | **73** | Dai (kept core; theme tagging deferred) |
 | Figure note ᵇ "two advancing records were not triaged" | 2 | 0 | both now triaged |
 | Table A1: advanced but not triaged / context at triage | 1 / 15 | 0 / 16 | Jiang `7UZ5FCF4` now triaged (Context) |
 
@@ -38,7 +39,7 @@ Box counts (top to bottom): identified 9,501 (databases 6,557; other methods 250
 snowballing 2,694); duplicates removed 6; not screened 199 (no abstract after enrichment 121; query
 records 78); screened 9,299; excluded 8,087; assessed in relevance triage 1,219; classified at abstract
 level as context 889 and discarded 182; core studies assessed in full text 149; reclassified as context
-after full-text review 75, decision pending 2; included 72.
+after full-text review 76; included 73.
 
 > **Decision for the arbiter: duplicates box.** The 9,501 count is post-dedupe, and most duplicates were
 > removed by client merges that delete the losing record. The pre-dedupe total cannot be recovered
@@ -55,8 +56,7 @@ after full-text review 75, decision pending 2; included 72.
 > screened in the snowball stream or under a merged duplicate record.
 > ᵇ A total of 1,212 records advanced from title and abstract screening (964 query, 248 snowball);
 > seven additional records reached triage through the snowball stream or a merged duplicate.
-> ᶜ Includes one study classified as core in the November 2026 re-examination. Full-text decisions on
-> two studies were pending at the time of writing. [PENDING: replace the last sentence once decided.]
+> ᶜ Includes one study classified as core in the November 2026 re-examination.
 
 ## 3. Appendix A, Screening process (replaces the four numbered stages)
 
@@ -88,9 +88,8 @@ after full-text review 75, decision pending 2; included 72.
 >    reviewed. In total, 148 studies were classified as core.
 >
 > 4. Full-text review. A total of 149 core studies were read in full, including one classified as
->    core in the November 2026 re-examination. Of the 147 with completed decisions, 75 (51.0%) were
->    reclassified as context; none moved the other way. Seventy-two studies were retained in the final
->    corpus. [PENDING: Dai and Grewal decisions; update 147, 75, 51.0%, and 72.]
+>    core in the November 2026 re-examination. Of these, 76 (51.0%) were reclassified as context; none
+>    moved the other way. Seventy-three studies were retained in the final corpus.
 
 ᵃ *Disclosure to keep or drop:* the project documents record no reason for setting the floor at 55
 rather than lower; for the snowball stream, 55 was chosen over 50 so that the two streams would match.
@@ -148,21 +147,25 @@ adjacent empirical evidence 32, author's prior work 1 (67).
 `followup:full-eval`). Once they are evaluated, recompute this paragraph. Any that reach the final
 corpus leave Table A1.]
 
-Table A1 note: unchanged except the corpus count, *"…not among the 72 studies in the systematic
-corpus."* [PENDING: 72.]
+Table A1 note: change the corpus count to 73, *"…not among the 73 studies in the systematic
+corpus."* Table A1 itself is unchanged: neither Dai nor Grewal is in `10 - Used`.
 
 ## 8. Every place the final corpus count "72" appears (`Thurlow_Chapter_1+2.docx`, 2026-11-02 22:40)
 
 | # | Location | Text |
 |---|---|---|
-| 1 | Ch. 1, methodology preview paragraph | "Of these, 147 studies were assessed in full text, and 72 were retained in the final corpus." (147 → 149 once decided) |
+| 1 | Ch. 1, methodology preview paragraph | "Of these, 147 studies were assessed in full text, and 72 were retained in the final corpus." → "149 … and 73 were retained" |
 | 2 | Ch. 2, introduction | "…yielding a final corpus of 72 studies." |
 | 3 | Ch. 2, Screening | "…leaving 72 studies in the final corpus." (also 147, 75) |
-| 4 | Ch. 2, Analysis | "843 tags across the 72 studies" (843 changes if either pending study is kept) |
+| 4 | Ch. 2, Analysis | "843 tags across the 72 studies" → see the tags note below |
 | 5 | App. A, Screening process step 4 | "72 studies were retained in the final corpus." |
 | 6 | App. A, Table A1 note | "…not among the 72 studies in the systematic corpus." |
 | 7 | App. A, Thematic coding, last paragraph | "The final coding set for the 72 included studies comprised 843 tags…" |
 
 Linked figures to update in the same edit: 9,502 → 9,501 (Ch. 1, Ch. 2 Screening, App. A step 1);
 9,300 → 9,299; 1,208 → 1,212; "147 were classified as core" → 148; 147 / 75 / 51.0% in full-text
-sentences [PENDING].
+sentences → 149 / 76 / 51.0%; every "72" → 73.
+
+**Tags note (rows 4 and 7).** Dai has no theme tags yet, so "843 tags across the 73 studies" would be
+false. Either drop the tag count, or write *"…843 tags across 72 of the 73 included studies; one study
+added in the November 2026 re-examination was not coded."*

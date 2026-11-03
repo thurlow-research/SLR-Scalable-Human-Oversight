@@ -278,7 +278,10 @@ def funnel(lib):
     s4core = {k for k in qstream | sstream if "s4:human:core" in lib.tags(k)}
     core = {k for k, v in fin.items() if "core" in v} | s4core
     demoted = {k for k in core if "demote:context" in lib.tags(k)}
-    reviewed = {k for k in core if any(t.startswith("cal:human:primary:") for t in lib.tags(k))}
+    # Kept after full text = human primary theme, or an arbiter full-text keep with theme tagging
+    # deferred (`followup:tagging`; Dai VFZXPDJX, 2026-11-03). The dissertation uses the tier, not the tags.
+    reviewed = {k for k in core if any(t.startswith("cal:human:primary:") for t in lib.tags(k))
+                or "followup:tagging" in lib.tags(k)}
     p6 = lib.members(PHASE6, deep=False)
     surv = (core - demoted) & reviewed
     R["fulltext"] = {
@@ -288,6 +291,7 @@ def funnel(lib):
         "not_demoted": len(core - demoted),
         "not_demoted_with_human_primary": len(surv),
         "not_demoted_without_human_primary": sorted(core - demoted - reviewed),
+        "kept_pending_theme_tagging": sorted(k for k in core - demoted if "followup:tagging" in lib.tags(k)),
         "demoted_but_have_primary": len(demoted & reviewed),
         "phase6_collection": len(p6),
         "phase6_superseded": sorted(p6 & sup),

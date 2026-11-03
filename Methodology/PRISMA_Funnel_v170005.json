@@ -1,5 +1,5 @@
 {
-  "snapshot_version": "169999",
+  "snapshot_version": "170005",
   "identification": {
     "items_in_slr_tree": 9516,
     "per_source_records_overlapping": {
@@ -57,30 +57,30 @@
   "phase1": {
     "query": {
       "maybe": 2031,
-      "discard": 2750,
-      "keep": 1945
+      "keep": 1945,
+      "discard": 2750
     },
     "query_conflicts": 2,
     "query_unscreened": 81,
     "query_unscreened_by_collection": {
-      "Q-SCO-02": 1,
       "Q-arXiv-07": 66,
-      "Dissertation Lit Review/10 - Used/Q-arXiv-07": 1,
-      "02-Cocite-3-4/01-Keep/01-Keep/01-Import/10 - Used/Q-arXiv-02/02-Context/Q-arXiv-01/04-Superseded/02-Context": 1,
-      "Q-SCO-05/a - non-SSRN Screening": 1,
-      "01-Core/01-Keep/01-Core/Q-arXiv-06/Phase 6 - Kept Core/01-Dups/Q-arXiv-01/03-Moderate (40-59)/04-Superseded/02 - Light Read/01 - Primary/a - non-SSRN Screening": 1,
-      "01-Keep/01-Keep/01-Import/02-Below-55 (30-54)/Q-arXiv-07/02-Context/04-Cocite-1": 1,
-      "01-Imports": 1,
+      "Q-SCO-04": 1,
       "Q-SCO-02/a - non-SSRN Screening": 2,
+      "Dissertation Lit Review/10 - Used/Q-arXiv-07": 1,
       "Q-SCO-03": 2,
+      "01-Imports": 1,
       "Q-SCO-01/Q-SCO-02/a - non-SSRN Screening": 1,
       "Q-SCO-04/a - non-SSRN Screening": 1,
+      "02-Cocite-3-4/01-Keep/01-Keep/01-Import/10 - Used/Q-arXiv-02/02-Context/Q-arXiv-01/04-Superseded/02-Context": 1,
+      "01-Keep/01-Keep/01-Import/02-Below-55 (30-54)/Q-arXiv-07/02-Context/04-Cocite-1": 1,
+      "Q-SCO-02": 1,
+      "01-Core/01-Keep/01-Core/Q-arXiv-06/Phase 6 - Kept Core/01-Dups/Q-arXiv-01/03-Moderate (40-59)/04-Superseded/02 - Light Read/01 - Primary/a - non-SSRN Screening": 1,
       "Dissertation Lit Review/Q-CW-2026-08-15/10 - Used": 1,
-      "Q-SCO-04": 1
+      "Q-SCO-05/a - non-SSRN Screening": 1
     },
     "snowball": {
-      "discard": 2315,
       "keep": 353,
+      "discard": 2315,
       "maybe": 26
     },
     "snowball_conflicts": 0,
@@ -222,20 +222,20 @@
     "  of_which_via_readjudication_only": [
       "VFZXPDJX"
     ],
-    "demoted_to_context": 75,
-    "not_demoted": 74,
-    "not_demoted_with_human_primary": 72,
-    "not_demoted_without_human_primary": [
-      "VFZXPDJX",
-      "ZSTZT2KN"
+    "demoted_to_context": 76,
+    "not_demoted": 73,
+    "not_demoted_with_human_primary": 73,
+    "not_demoted_without_human_primary": [],
+    "kept_pending_theme_tagging": [
+      "VFZXPDJX"
     ],
     "demoted_but_have_primary": 43,
-    "phase6_collection": 72,
+    "phase6_collection": 73,
     "phase6_superseded": [],
     "phase6_minus_predicate": [],
     "predicate_minus_phase6": [],
     "phase6_from_stream": {
-      "query": 55,
+      "query": 56,
       "snowball": 17
     },
     "phase6_not_from_final_core": []
