@@ -130,8 +130,10 @@ Replace *"Records below the threshold were excluded without individual review."*
 > Records below the threshold kept the model's classification without individual review.
 
 Also in Ch. 2 Screening, replace "1,208 records advanced" with **"A total of 1,212 records advanced"**,
-and "147 were classified as core" with **"148 were classified as core"**. The rest of that paragraph
-depends on the pending full-text decisions.
+"147 were classified as core" with **"148 were classified as core"**, and "Full-text review reclassified
+75 of these as contextual, leaving 72 studies in the final corpus" with **"Full-text review, which also
+included one study classified as core in a later re-examination, reclassified 76 of 149 as contextual,
+leaving 73 studies in the final corpus."** Change "9,502" to 9,501 in the same paragraph.
 
 ## 7. Supplementary sources (Table A1 note and breakdown paragraph)
 
