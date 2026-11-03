@@ -48,6 +48,10 @@ P3_QUERY = {"core": "539H8RBQ", "context": "85JVIR9X", "discard": "JIMGLVAL"}
 P3_SNOW = {"core": "UPTNJTIS", "context": "WX9WW6A7", "discard": "3GZZNLAR"}   # subtrees
 FINAL = {"core": "3S9B658S", "context": "QE8TWEJQ", "discard": "72SVYQMU"}
 PHASE6 = "R9ZHDXMN"
+# Separately reported human re-adjudication passes (s4:human:* layer; never revises Phases 1-3).
+# A record belongs to the 2026-11-02 pass if it carries REEXAM_TAG, otherwise to F6.
+RECONSIDER = {"f6_2026-10-04": "U7GGGEN2", "reexam_2026-11-02": "QUA8EW43"}
+REEXAM_TAG = "reexam:2026-11-02"
 BUCKET = {"00": "queue", "01": "keep", "02": "maybe", "03": "discard", "04": "superseded"}
 
 
@@ -242,20 +246,52 @@ def funnel(lib):
         "final_superseded_still_filed": {b: len(lib.members(c) & sup) for b, c in FINAL.items()},
         "triaged_not_in_final": len((set(t3q) | (set(t3s) & sstream)) - set(fin)),
         "final_core_s3human": human(k for k, v in fin.items() if v == ["core"]),
+        "query_unscreened_progressed": sorted(k for k in qun if k in p2 or k in t3q or k in t3s or k in fin),
+    }
+
+    # ---- Re-adjudication passes (s4:human:*), reported separately -------------------
+    def s4(k):
+        return sorted({t.split(":")[2] for t in lib.tags(k) if t.startswith("s4:human:")})
+
+    def placed(k):  # pipeline placement as it stands now (includes this pass's add-only filing)
+        if k in fin:
+            return "final:" + "+".join(fin[k])
+        if k in eligible_q or k in (set(t3s) & sstream):
+            return "advanced, not in Final"
+        if k in p2:
+            return f"phase2:{p2[k][1]}"
+        return f"phase1:{qd.get(k) or sd.get(k) or 'unscreened'}"
+    passes = {}
+    for k in sorted(k for k in qstream | sstream if s4(k)):
+        name = "reexam_2026-11-02" if REEXAM_TAG in lib.tags(k) else "f6_2026-10-04"
+        passes.setdefault(name, []).append((k, "/".join(s4(k)), placed(k)))
+    R["readjudication"] = {
+        name: {"records": len(rows),
+               "s4_call": dict(collections.Counter(c for _, c, _ in rows)),
+               "placement_and_call": dict(collections.Counter(f"{p} -> {c}" for _, c, p in rows)),
+               "collection_members": len(lib.members(RECONSIDER[name], deep=True)),
+               "keys": {k: f"{p} -> {c}" for k, c, p in rows}}
+        for name, rows in sorted(passes.items())
     }
 
     # ---- Phases 4-6 (full-text eligibility, finalized) --------------------------------
-    core = {k for k, v in fin.items() if "core" in v}
+    s4core = {k for k in qstream | sstream if "s4:human:core" in lib.tags(k)}
+    core = {k for k, v in fin.items() if "core" in v} | s4core
     demoted = {k for k in core if "demote:context" in lib.tags(k)}
-    reviewed = {k for k in core if any(t.startswith("cal:human:primary:") for t in lib.tags(k))}
+    # Kept after full text = human primary theme, or an arbiter full-text keep with theme tagging
+    # deferred (`followup:tagging`; Dai VFZXPDJX, 2026-11-03). The dissertation uses the tier, not the tags.
+    reviewed = {k for k in core if any(t.startswith("cal:human:primary:") for t in lib.tags(k))
+                or "followup:tagging" in lib.tags(k)}
     p6 = lib.members(PHASE6, deep=False)
     surv = (core - demoted) & reviewed
     R["fulltext"] = {
         "core_entering_fulltext": len(core),
+        "  of_which_via_readjudication_only": sorted(s4core - {k for k, v in fin.items() if "core" in v}),
         "demoted_to_context": len(demoted),
         "not_demoted": len(core - demoted),
         "not_demoted_with_human_primary": len(surv),
         "not_demoted_without_human_primary": sorted(core - demoted - reviewed),
+        "kept_pending_theme_tagging": sorted(k for k in core - demoted if "followup:tagging" in lib.tags(k)),
         "demoted_but_have_primary": len(demoted & reviewed),
         "phase6_collection": len(p6),
         "phase6_superseded": sorted(p6 & sup),
