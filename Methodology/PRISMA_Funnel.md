@@ -249,7 +249,7 @@ Pass-1 keep → machine Pass-2 discard, no human Pass-2 decision); the 45–54 t
 ### 5.4 Outside the funnel (post-closure supplementary material)
 
 `Sept 2026 Papers` (13 items, `s3:sonnet:*` only) and `Forward Snowball - to screen` (4,
-`source:forward-snowball`) were not run through this instrument and contribute **0** to the 72.
+`source:forward-snowball`) were not run through this instrument and contribute **0** to the 73.
 If the F5 gap-driven search adds studies, report it as a separate "other methods" stream with its
 own counts, not by revising these.
 
