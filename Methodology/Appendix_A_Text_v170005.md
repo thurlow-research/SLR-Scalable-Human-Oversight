@@ -6,10 +6,13 @@ in `PRISMA_Funnel.md` §5.3b. Figure: `Methodology/figures/PRISMA_Flow_Diagram.{
 (`slr-tools/prisma_diagram.py`).
 
 **Full-text decisions made 2026-11-03:** Dai (`VFZXPDJX`) kept as core and added to Phase 6, with theme
-tagging deferred (`followup:tagging`); Grewal (`ZSTZT2KN`) demoted to Context. **Still open, and marked
-[PENDING] below:** the arbiter's decisions on review sheet 4a (77 records) and sheet 4b (308 records); the
-full evaluation of the 18 `followup:full-eval` records. Each one can change the counts here. Re-run the
-two scripts once they land.
+tagging deferred (`followup:tagging`); Grewal (`ZSTZT2KN`) demoted to Context.
+
+**Decided 2026-11-04 (written to Zotero, `reexam_2026-11-02/change_log.md`):** the arbiter reviewed all of
+sheet 4a (77 records: 52 context, 25 discard), a sample of 31 from sheet 4b (30 random + `4LCRC3BZ`:
+28 context, 3 discard), and all 18 `followup:full-eval` records (16 context, 2 discard). None was core, so
+the corpus stays at 73. Two further 4b records were decided ad hoc (`8L2G3J4Q`, `DUBFF52U`: context).
+Tagged `s4:human:<tier>` + `reexam:2026-11-02` and filed under Reconsider (re-examination, 2026-11-02).
 
 ---
 
@@ -20,7 +23,8 @@ two scripts once they land.
 | Unique records | 9,502 | 9,501 | Snowball stub `2DEDF5PN` merged into Johnson et al. (2013) `F4ZS7B6Z` on 2026-10-28 (same study) |
 | Snowball stream | 2,695 | 2,694 | same merge |
 | Screened | 9,300 | 9,299 | same merge (the stub was a Pass-1 discard) |
-| Duplicate records removed (box) | 7 | 6 | One leftover superseded arXiv duplicate was merged in the client. The script counts only superseded records still present, so the box understates removals. See §2 note |
+| Records identified (box) | 9,501 (post-dedupe) | **11,198** | Now the pre-dedupe count from the import folders (source of truth): databases 8,189, other methods 263, snowball 2,746 |
+| Duplicate records removed (box) | 7 | **1,697** | 11,198 identified − 9,501 unique. The old box counted only unmerged superseded records |
 | Advanced from screening | 1,208 | 1,212 | 248 snowball records carry `s2:opus:keep`, not 244. Four were triaged by Opus but never filed, so they were missing from the old count (`7EK8G7I4`, `7UZ5FCF4`, `IM6DJDEE`, `ZSTZT2KN`) |
 | Excluded at screening | 8,092 | 8,087 | −1 merge, −4 now counted as advanced |
 | Triaged | 1,213 | 1,219 | +4 snowball records filed; +2 eligible query records now triaged (`2HTDGAT4`, `GFJN2SVU`) |
@@ -35,23 +39,19 @@ two scripts once they land.
 
 ## 2. Figure A1
 
-Box counts (top to bottom): identified 9,501 (databases 6,557; other methods 250; citation
-snowballing 2,694); duplicates removed 6; not screened 199 (no abstract after enrichment 121; query
-records 78); screened 9,299; excluded 8,087; assessed in relevance triage 1,219; classified at abstract
-level as context 889 and discarded 182; core studies assessed in full text 149; reclassified as context
-after full-text review 76; included 73.
+Box counts (top to bottom): identified 11,198 (database searches 8,189; other methods 263; citation
+snowballing 2,746); duplicates removed 1,697, unique records 9,501; not screened 199 (no abstract after
+enrichment 121; query records 78); screened 9,299; excluded 8,087; assessed in relevance triage 1,219;
+classified at abstract level as context 889 and discarded 182; core studies assessed in full text 149;
+reclassified as context after full-text review 76; included 73.
 
-> **Decision for the arbiter: duplicates box.** The 9,501 count is post-dedupe, and most duplicates were
-> removed by client merges that delete the losing record. The pre-dedupe total cannot be recovered
-> from the library (`PRISMA_Funnel.md` §2.2). "n = 6" counts only the superseded duplicates still
-> present, so it understates the duplicates actually removed. Options: (a) take raw hit counts from
-> `Query_Composition_and_Log.xlsx` and report raw − 9,501; (b) keep the box and add
-> "duplicates removed before import are not shown" to the note.
+**Duplicates box: decided 2026-11-03.** Counts come from the import folders. A merged record keeps
+every import batch it came in through, so the folders hold the pre-dedupe count.
 
 **Notes (paste under the figure):**
 
-> *Note.* Counts show each record's classification at the stage named. Twenty records re-adjudicated in
-> two later passes are reported separately in the text and do not change these counts, except as noted in c.
+> *Note.* Counts show each record's classification at the stage named. Records re-adjudicated in
+> later passes are reported separately in the text and do not change these counts, except as noted in c.
 > ᵃ Screened (9,299) plus not screened (199) equals 9,498; the remaining three query records were
 > screened in the snowball stream or under a merged duplicate record.
 > ᵇ A total of 1,212 records advanced from title and abstract screening (964 query, 248 snowball);
@@ -60,7 +60,10 @@ after full-text review 76; included 73.
 
 ## 3. Appendix A, Screening process (replaces the four numbered stages)
 
-> 1. Identification. The literature search yielded 9,501 unique records after de-duplication. Of
+> 1. Identification. The searches identified 11,198 records: 8,189 from database searches (ACM
+>    Digital Library 365, IEEE Xplore 1,305, Scopus 1,125, SSRN 4,559, Web of Science 337, arXiv 498),
+>    263 from other methods (committee recommendations 157, coursework 99, practitioner network 7), and
+>    2,746 from backward citation snowballing. Removing 1,697 duplicates left 9,501 unique records. Of
 >    these, 199 were not screened: 121 snowball records had no accessible abstract after data
 >    enrichment, and 78 query records were never assigned a screening decision. None of these
 >    records advanced to later stages.
@@ -72,7 +75,10 @@ after full-text review 76; included 73.
 >    human recorded a decision, in which case the human decision governed. Of the 8,087 exclusions,
 >    the human decided 1,427; the remaining exclusions, including all snowball exclusions, rested on
 >    model decisions alone. Among the 956 records Claude discarded that the human also coded, the
->    human agreed on 919 (96.1%). After this evaluation, 1,212 records advanced.
+>    human agreed on 919 (96.1%). Of the snowball exclusions, 823 records had no abstract and were
+>    excluded on the title alone: metadata enrichment and the abstract check were applied only to
+>    snowball records the first screen retained. Given the volume of material and limited human review
+>    capacity, incomplete records were not pursued further. After this evaluation, 1,212 records advanced.
 >
 > 3. Relevance triage. A total of 1,219 records were triaged by how directly they addressed oversight
 >    of AI-generated code in organizational or development-pipeline contexts. Claude Opus assigned
@@ -81,19 +87,21 @@ after full-text review 76; included 73.
 >    classification. Records scoring below 55 kept the model's classification, most often context,
 >    without human review, and could not enter full-text review. The threshold was set in July 2026
 >    after a blinded 50-record sample showed that the model's core classifications held at scores of
->    75 and above, and that the human identified core studies the model had scored between 45 and 55.ᵃ
->    In that sample, four of the eight records the human classified as core scored below 55. These
+>    75 and above, and that the human identified core studies the model had scored between 45 and 55.
+>    The threshold was not set lower because human review capacity was limited: lowering it to 45
+>    would have added 308 records (253 query, 55 snowball) to the 428 already reviewed. In that sample, four of the eight records the human classified as core scored below 55. These
 >    records, and three records the sample had moved from discard to context, were re-examined in
->    November 2026 (see Re-adjudication passes). No other sample of below-threshold records was
->    reviewed. In total, 148 studies were classified as core.
+>    November 2026, together with a random sample of the records scored 45 to 54 (see Re-adjudication
+>    passes). In total, 148 studies were classified as core.
 >
 > 4. Full-text review. A total of 149 core studies were read in full, including one classified as
 >    core in the November 2026 re-examination. Of these, 76 (51.0%) were reclassified as context; none
 >    moved the other way. Seventy-three studies were retained in the final corpus.
 
-ᵃ *Disclosure to keep or drop:* the project documents record no reason for setting the floor at 55
-rather than lower; for the snowball stream, 55 was chosen over 50 so that the two streams would match.
-If kept, add: "The documents do not record why the threshold was not set lower."
+**Threshold rationale: decided 2026-11-03.** The arbiter states the floor was not set lower
+because of limited human review capacity. The text now says so, with the size of the 45–54 band
+(sheet 4b, 308 records) to show the cost. For the snowball stream, 55 was chosen over 50 so that the
+two streams would match.
 
 ## 4. Appendix A, new subsection: Re-adjudication passes (after Screening process)
 
@@ -106,8 +114,20 @@ If kept, add: "The documents do not record why the threshold was not set lower."
 > model discards that sample had classified as context, two records that advanced from screening but
 > were never triaged, and three records the model scored as core above the threshold that were never
 > filed for human review. Two were classified as core and entered full-text review, six as context,
-> and four as discard. The November pass also found 77 further records with the same pattern as the
-> October pass. [PENDING: "These were reviewed by the human; n were reinstated …" once sheet 4a is decided.]
+> and four as discard. Both core studies were read in full and classified under the same criteria as
+> the rest of the corpus: one was retained and one was reclassified as context. Thematic coding of the
+> retained study was deferred and does not affect its inclusion. The November pass also found 77
+> further records with the same pattern as the October pass. The human reviewed all 77: 52 were
+> reinstated as context and 25 exclusions were confirmed, seven of them for lack of an abstract. To
+> check the triage threshold, the human also reviewed a random sample of 30 of the 308 records scored
+> 45 to 54, plus one record from that band the human had retained at screening; none was classified
+> as core (28 context, three discard). Finally, the human evaluated the 18 supplementary sources cited in
+> this dissertation that had left the review at a step decided by a model alone (three of them also
+> appear in the groups above): 16 were classified as context and two as discard. No record in the
+> November pass beyond the two noted above was classified as core, so the final corpus is unchanged.
+> Records classified as context in these passes were read and classified under the same criteria as
+> the rest of the corpus; their thematic coding was deferred. Several informed the theoretical framing,
+> methods, and adjacent-domain evidence in this dissertation.
 
 ## 5. Appendix A, Use of AI tools (sentence replacements)
 
@@ -145,12 +165,21 @@ adjacent empirical evidence 32, author's prior work 1 (67).
 > later reinstated as context in a re-adjudication pass), three were identified but not screened, 16
 > were classified as context at triage, and seven were demoted after full-text review.
 
-[PENDING: 18 of the 41 left the review at a step decided by a model alone or never decided (tag
-`followup:full-eval`). Once they are evaluated, recompute this paragraph. Any that reach the final
-corpus leave Table A1.]
+Add after that paragraph (decided 2026-11-04):
+
+> Eighteen of the 41 had left the review at a step decided by a model alone. The human later evaluated
+> all 18 and classified 16 as context and two as discard (see Re-adjudication passes); none entered the
+> systematic corpus.
+
+The breakdown above is unchanged: it reports the step at which each source left the review.
 
 Table A1 note: change the corpus count to 73, *"…not among the 73 studies in the systematic
 corpus."* Table A1 itself is unchanged: neither Dai nor Grewal is in `10 - Used`.
+
+Add after the Table A1 note (decided 2026-11-03):
+> Supplementary sources classified as context informed the theoretical framing, historical baseline,
+> and adjacent evidence; only studies directly addressing human oversight of AI-generated code with an
+> operationalizable mechanism, measurement, or finding were included in the systematic corpus.
 
 ## 8. Every place the final corpus count "72" appears (`Thurlow_Chapter_1+2.docx`, 2026-11-02 22:40)
 
@@ -164,10 +193,19 @@ corpus."* Table A1 itself is unchanged: neither Dai nor Grewal is in `10 - Used`
 | 6 | App. A, Table A1 note | "…not among the 72 studies in the systematic corpus." |
 | 7 | App. A, Thematic coding, last paragraph | "The final coding set for the 72 included studies comprised 843 tags…" |
 
-Linked figures to update in the same edit: 9,502 → 9,501 (Ch. 1, Ch. 2 Screening, App. A step 1);
+Linked figures to update in the same edit: 9,502 → 9,501 unique records, and add 11,198 identified / 1,697 duplicates removed where the draft gives the search yield (Ch. 1, Ch. 2 Screening, App. A step 1);
 9,300 → 9,299; 1,208 → 1,212; "147 were classified as core" → 148; 147 / 75 / 51.0% in full-text
 sentences → 149 / 76 / 51.0%; every "72" → 73.
 
-**Tags note (rows 4 and 7).** Dai has no theme tags yet, so "843 tags across the 73 studies" would be
-false. Either drop the tag count, or write *"…843 tags across 72 of the 73 included studies; one study
-added in the November 2026 re-examination was not coded."*
+**Tags note (rows 4 and 7). Decided 2026-11-03:** inclusion is what the dissertation relies on, and
+theme coding is not used. Studies brought to full-text review by the re-examination were read in full
+and classified like every other study, but their coding is deferred. So the 843 stays tied to the 72
+studies coded before the re-examination, and the text says that coding was deferred for the others:
+
+- Row 4 (Ch. 2, Analysis): *"…843 tags across the 72 studies included before the November 2026
+  re-examination; coding of the study added by that re-examination was deferred."*
+- Row 7 (App. A, Thematic coding): *"The final coding set for the 72 studies included before the
+  November 2026 re-examination comprised 843 tags… Thematic coding of the study added by that
+  re-examination was deferred."*
+
+The sheets decided 2026-11-04 added no included studies, so "the study" stands.

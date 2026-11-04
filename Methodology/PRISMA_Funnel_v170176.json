@@ -1,0 +1,381 @@
+{
+  "snapshot_version": "170176",
+  "identification": {
+    "items_in_slr_tree": 9516,
+    "per_source_records_overlapping": {
+      "ACM": {
+        "records": 350,
+        "superseded": 0,
+        "import_memberships": 365
+      },
+      "IEEE Xplore": {
+        "records": 939,
+        "superseded": 0,
+        "import_memberships": 1305
+      },
+      "SCOPUS": {
+        "records": 1082,
+        "superseded": 0,
+        "import_memberships": 1125
+      },
+      "SSRN": {
+        "records": 3785,
+        "superseded": 3,
+        "import_memberships": 4559
+      },
+      "Web of Science": {
+        "records": 331,
+        "superseded": 0,
+        "import_memberships": 337
+      },
+      "arXiv": {
+        "records": 470,
+        "superseded": 1,
+        "import_memberships": 498
+      },
+      "Coursework": {
+        "records": 99,
+        "superseded": 1,
+        "import_memberships": 99
+      },
+      "Practitioner Network": {
+        "records": 7,
+        "superseded": 0,
+        "import_memberships": 7
+      },
+      "Committee Recommendations": {
+        "records": 153,
+        "superseded": 1,
+        "import_memberships": 157
+      },
+      "Citation Snowballing": {
+        "records": 2746,
+        "superseded": 0,
+        "import_memberships": 2746
+      }
+    },
+    "identified_before_dedup": 11198,
+    "  before_dedup_by_group": {
+      "database": 8189,
+      "other_methods": 263,
+      "snowball": 2746
+    },
+    "duplicates_removed": 1697,
+    "records_any_import": 9507,
+    "removed_as_duplicate_superseded": 6,
+    "non_record_items_in_tree": 9,
+    "unique_records": 9501,
+    "query_stream": 6807,
+    "  of_which_database": 6557,
+    "  of_which_other_methods_only": 250,
+    "snowball_stream": 2694,
+    "snowball_hits_already_in_query_stream": 52
+  },
+  "phase1": {
+    "query": {
+      "maybe": 2031,
+      "discard": 2750,
+      "keep": 1945
+    },
+    "query_conflicts": 2,
+    "query_unscreened": 81,
+    "query_unscreened_by_collection": {
+      "Q-arXiv-07": 66,
+      "Q-SCO-02/a - non-SSRN Screening": 2,
+      "Q-SCO-03": 2,
+      "Q-SCO-05/a - non-SSRN Screening": 1,
+      "Q-SCO-01/Q-SCO-02/a - non-SSRN Screening": 1,
+      "02-Cocite-3-4/01-Keep/01-Keep/01-Import/10 - Used/Q-arXiv-02/02-Context/Q-arXiv-01/04-Superseded/02-Context": 1,
+      "01-Core/01-Keep/01-Core/Q-arXiv-06/Phase 6 - Kept Core/01-Dups/Q-arXiv-01/03-Moderate (40-59)/04-Superseded/02 - Light Read/01 - Primary/a - non-SSRN Screening": 1,
+      "Q-SCO-04/a - non-SSRN Screening": 1,
+      "01-Imports": 1,
+      "01-Keep/01-Keep/01-Import/02-Below-55 (30-54)/Q-arXiv-07/02-Context/04-Cocite-1": 1,
+      "Dissertation Lit Review/Q-CW-2026-08-15/10 - Used/02-Context": 1,
+      "Q-SCO-02": 1,
+      "Q-SCO-04": 1,
+      "Dissertation Lit Review/10 - Used/Q-arXiv-07/02-Context": 1
+    },
+    "snowball": {
+      "discard": 2315,
+      "keep": 353,
+      "maybe": 26
+    },
+    "snowball_conflicts": 0,
+    "snowball_unscreened": 0,
+    "snowball_held_no_abstract": 121,
+    "snowball_held_by_p1_bucket": {
+      "keep": 121
+    }
+  },
+  "phase2": {
+    "query_input_p1_keep_maybe": 3976,
+    "query_cells": {
+      "keep->keep": 905,
+      "keep->maybe": 11,
+      "keep->discard": 1022,
+      "maybe->keep": 59,
+      "maybe->maybe": 73,
+      "maybe->discard": 1896
+    },
+    "query_eligible": 964,
+    "query_p1_pass_missing_from_p2": 11,
+    "query_in_p2_but_p1_discard": 1,
+    "snowball_s2opus": {
+      "keep": 248,
+      "discard": 184
+    }
+  },
+  "phase3": {
+    "query_triage": {
+      "core": 112,
+      "core+context": 1,
+      "context": 713,
+      "discard": 141
+    },
+    "query_eligible_not_triaged": 0,
+    "query_triaged_not_eligible": 3,
+    "snowball_triage": {
+      "core": 34,
+      "context": 174,
+      "discard": 40
+    },
+    "snowball_triage_records_in_query_stream": 6,
+    "final_merged": {
+      "core": 146,
+      "core+context": 2,
+      "context": 889,
+      "discard": 182
+    },
+    "final_by_stream": {
+      "core": {
+        "query": 114,
+        "snowball": 34
+      },
+      "context": {
+        "query": 717,
+        "snowball": 174
+      },
+      "discard": {
+        "query": 142,
+        "snowball": 40
+      }
+    },
+    "final_superseded_still_filed": {
+      "core": 0,
+      "context": 0,
+      "discard": 0
+    },
+    "triaged_not_in_final": 0,
+    "final_core_s3human": {
+      "(none)": 17,
+      "core": 129
+    },
+    "query_unscreened_progressed": [
+      "95CPB7CF",
+      "CKKGWMRH",
+      "WJCVBW54"
+    ]
+  },
+  "readjudication": {
+    "f6_2026-10-04": {
+      "records": 8,
+      "s4_call": {
+        "context/keep": 1,
+        "discard": 2,
+        "context": 5
+      },
+      "placement_and_call": {
+        "phase2:discard -> context/keep": 1,
+        "phase2:discard -> discard": 2,
+        "phase2:discard -> context": 4,
+        "final:context -> context": 1
+      },
+      "collection_members": 6,
+      "keys": {
+        "2XV8ZVM8": "phase2:discard -> context/keep",
+        "6NR73DTR": "phase2:discard -> discard",
+        "D3ZU22JC": "phase2:discard -> context",
+        "EN5DT6ZJ": "phase2:discard -> context",
+        "MBKP4DCY": "phase2:discard -> discard",
+        "UG5D8G6U": "phase2:discard -> context",
+        "Y9G3DA92": "final:context -> context",
+        "Z4IKFZJ4": "phase2:discard -> context"
+      }
+    },
+    "reexam_2026-11-02": {
+      "records": 129,
+      "s4_call": {
+        "context": 102,
+        "discard": 25,
+        "core": 2
+      },
+      "placement_and_call": {
+        "final:context -> context": 35,
+        "final:discard -> discard": 2,
+        "phase2:discard -> context": 52,
+        "final:context -> discard": 5,
+        "phase2:discard -> discard": 18,
+        "phase1:discard -> context": 10,
+        "final:discard -> context": 3,
+        "phase1:unscreened -> context": 2,
+        "final:context -> core": 1,
+        "final:core -> core": 1
+      },
+      "collection_members": 129,
+      "keys": {
+        "2ETU3JB3": "final:context -> context",
+        "2HTDGAT4": "final:discard -> discard",
+        "37FEWW5S": "final:context -> context",
+        "3AW4MRY5": "phase2:discard -> context",
+        "3B8NDLS8": "phase2:discard -> context",
+        "3G7II8HD": "phase2:discard -> context",
+        "3HVIJ28X": "final:context -> context",
+        "4HBKKG58": "phase2:discard -> context",
+        "4LCRC3BZ": "final:context -> discard",
+        "4VXJUF5I": "final:context -> context",
+        "5DMEXMK5": "phase2:discard -> discard",
+        "5HT7MJV3": "final:context -> context",
+        "5QQA7SQ4": "phase1:discard -> context",
+        "5R7EHXXM": "phase2:discard -> context",
+        "6BWAN4ED": "phase2:discard -> discard",
+        "6NCT5BBV": "phase1:discard -> context",
+        "6UQMFSB8": "final:discard -> context",
+        "7BU88K3Z": "final:context -> context",
+        "7EK8G7I4": "final:context -> context",
+        "7MBTHCTK": "phase1:discard -> context",
+        "7QKJH8EG": "phase2:discard -> context",
+        "7RV3XLMV": "phase2:discard -> context",
+        "7UZ5FCF4": "final:context -> context",
+        "8BLIERUP": "final:context -> discard",
+        "8CXNIACS": "phase1:discard -> context",
+        "8EEKFTQL": "final:context -> context",
+        "8L2G3J4Q": "final:context -> context",
+        "8Z342WIC": "phase2:discard -> context",
+        "9B53AL9V": "phase2:discard -> context",
+        "9M7JFHUB": "phase2:discard -> context",
+        "9SFJQ2XG": "phase1:unscreened -> context",
+        "A7PJTYNA": "phase2:discard -> context",
+        "B4JWDAMV": "final:context -> context",
+        "B4RFHXND": "phase2:discard -> context",
+        "BD83WAWV": "phase2:discard -> discard",
+        "BJQGEUQH": "phase1:unscreened -> context",
+        "C7IDQY9P": "phase2:discard -> discard",
+        "CLLY28KV": "phase2:discard -> discard",
+        "D62FTR38": "final:context -> context",
+        "DICCFNNX": "final:context -> discard",
+        "DM2XHMV9": "phase2:discard -> context",
+        "DUBFF52U": "final:context -> context",
+        "DVSMWXME": "phase2:discard -> context",
+        "DXDKC299": "final:context -> context",
+        "E5H4XA9J": "phase2:discard -> discard",
+        "E74QS5GA": "phase2:discard -> discard",
+        "E7ZAP5M5": "phase2:discard -> context",
+        "ECBCGAGQ": "final:context -> context",
+        "EPIZ2QCL": "phase2:discard -> discard",
+        "F365ZXBX": "phase2:discard -> discard",
+        "F4ZS7B6Z": "phase1:discard -> context",
+        "F8DZBKQF": "phase2:discard -> context",
+        "G9QRERTM": "phase2:discard -> context",
+        "GFJN2SVU": "final:discard -> discard",
+        "H2F9R5RA": "final:context -> context",
+        "H59NQ796": "final:context -> context",
+        "HCQJX2AW": "phase2:discard -> context",
+        "HCQSZWZR": "final:discard -> context",
+        "HKF4489L": "phase2:discard -> context",
+        "HRE92EIT": "phase2:discard -> discard",
+        "I2GKH6KF": "phase2:discard -> context",
+        "IAZKUZWM": "phase2:discard -> context",
+        "IITL85U7": "phase2:discard -> discard",
+        "INU3M3BG": "final:context -> context",
+        "J8FP9HT5": "phase2:discard -> context",
+        "JAN7FV3A": "final:context -> context",
+        "JPX83RER": "phase2:discard -> context",
+        "KS3A9IIE": "phase2:discard -> discard",
+        "LER562J8": "phase2:discard -> context",
+        "LGQ63SMF": "phase2:discard -> context",
+        "LI8B7LK7": "phase2:discard -> context",
+        "LLU6CTBC": "phase2:discard -> context",
+        "MHD4UPDP": "phase2:discard -> context",
+        "MT6L8AUG": "phase2:discard -> context",
+        "N2IDSH4J": "phase2:discard -> context",
+        "N6436VDK": "final:context -> context",
+        "NK5VHI9V": "final:context -> context",
+        "NZVJCVFA": "phase1:discard -> context",
+        "P3SQKC4R": "final:context -> context",
+        "PMSYQJQQ": "final:discard -> context",
+        "PQK3T4XZ": "phase2:discard -> context",
+        "PW5CXZYH": "phase2:discard -> context",
+        "QCZGHKL6": "phase2:discard -> context",
+        "QI2K2TJZ": "phase2:discard -> context",
+        "QYT8RRWL": "final:context -> discard",
+        "R264LFGD": "phase2:discard -> context",
+        "R3CSB477": "phase2:discard -> context",
+        "R9FJFY29": "phase2:discard -> context",
+        "RAAVB72Z": "phase2:discard -> context",
+        "RAD67P8T": "phase2:discard -> context",
+        "RGJP64BN": "phase2:discard -> discard",
+        "S84X892J": "final:context -> context",
+        "SI8QMR68": "final:context -> context",
+        "T59KIUC7": "phase1:discard -> context",
+        "TA32ID52": "phase2:discard -> discard",
+        "TEFL3IWF": "final:context -> context",
+        "TG5P3J99": "phase2:discard -> context",
+        "TLJPGLK9": "final:context -> discard",
+        "TZFN9PMG": "phase2:discard -> discard",
+        "U76S5GVK": "phase2:discard -> context",
+        "U7KVI9E2": "final:context -> context",
+        "UPGXSW4H": "phase2:discard -> context",
+        "UPVFC3N9": "final:context -> context",
+        "US8P9HN6": "final:context -> context",
+        "UU8XQFGB": "final:context -> context",
+        "UYTMXP9Z": "phase2:discard -> context",
+        "V3R66RYU": "phase2:discard -> discard",
+        "VFZXPDJX": "final:context -> core",
+        "VR9V8XT8": "phase2:discard -> context",
+        "VVSDJXJC": "final:context -> context",
+        "VXX49JTI": "phase1:discard -> context",
+        "WRF2X8QE": "final:context -> context",
+        "WVZ5GWEG": "phase2:discard -> context",
+        "X2PTNJS2": "phase2:discard -> context",
+        "XAZKF497": "final:context -> context",
+        "XBJRR3N9": "phase2:discard -> context",
+        "XBK7KB3E": "final:context -> context",
+        "XXCF6IHG": "final:context -> context",
+        "XXEC6H77": "phase1:discard -> context",
+        "Y4F9T9UD": "phase2:discard -> discard",
+        "YHSP7V2U": "phase2:discard -> discard",
+        "Z92JTT7T": "phase1:discard -> context",
+        "Z955M55A": "phase2:discard -> context",
+        "ZE2I8XMU": "phase2:discard -> context",
+        "ZIXPRZN4": "phase2:discard -> context",
+        "ZK3DSYDX": "phase2:discard -> context",
+        "ZRCSMTFA": "phase2:discard -> context",
+        "ZSTZT2KN": "final:core -> core",
+        "ZX8V7UJS": "final:context -> context"
+      }
+    }
+  },
+  "fulltext": {
+    "core_entering_fulltext": 149,
+    "  of_which_via_readjudication_only": [
+      "VFZXPDJX"
+    ],
+    "demoted_to_context": 76,
+    "not_demoted": 73,
+    "not_demoted_with_human_primary": 73,
+    "not_demoted_without_human_primary": [],
+    "kept_pending_theme_tagging": [
+      "VFZXPDJX"
+    ],
+    "demoted_but_have_primary": 43,
+    "phase6_collection": 73,
+    "phase6_superseded": [],
+    "phase6_minus_predicate": [],
+    "predicate_minus_phase6": [],
+    "phase6_from_stream": {
+      "query": 56,
+      "snowball": 17
+    },
+    "phase6_not_from_final_core": []
+  }
+}

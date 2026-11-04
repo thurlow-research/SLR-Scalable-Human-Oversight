@@ -12,10 +12,15 @@ then `--snapshot lib.json`; Phase-6 must still equal the computed predicate (§4
 > **Recomputed 2026-11-03 against snapshot v170005** (`PRISMA_Funnel_v170005.json`), after the
 > 2026-11-02 re-examination (§5.3b). **v170005 is now the snapshot of record.** The tables below still
 > show v169153. Every figure that changed, and why, is in `Appendix_A_Text_v170005.md` §1. Headline at
-> v170005: 9,501 identified · 199 not screened · 9,299 screened → 1,212 advanced · 1,219 triaged →
+> v170005: 11,198 identified (import folders) · 1,697 duplicates removed · 9,501 unique · 199 not screened · 9,299 screened → 1,212 advanced · 1,219 triaged →
 > 148 Core (+1 via re-examination) · 889 Context · 182 Discard · 149 full text → 76 demoted ·
 > **73 included** (Dai kept, theme tagging deferred; Grewal demoted). Figure A1 is drawn from the JSON by `slr-tools/prisma_diagram.py`
 > (`Methodology/figures/`).
+>
+> **Re-run 2026-11-04 at snapshot v170176** (`PRISMA_Funnel_v170176.json`) after the arbiter's
+> 2026-11-04 decisions (§5.3b). Every Figure A1 count is unchanged; only the re-adjudication tallies
+> moved (re-examination: 129 records, 102 context, 25 discard, 2 core). **v170176 is now the snapshot
+> of record.** Edits for the Chapter 1–2 draft: `Handoffs/Dissertation_DocUpdate_Handoff_2026-11-04.md`.
 
 PRISMA mapping follows the alignment note in `SLR_Paper_Outline_v0_2026-08.md` §3.1: internal
 Phases 1–2 = **Screening**; Phase 3 (abstract-level triage + human ≥55 review) **and** Phases 4–5
@@ -83,12 +88,17 @@ as intended (Phase 1 deliberately loose; Phase 2 is the operationalizability scr
   stream and are counted there, not twice.
 - **Duplicates.** Deduplication ran at several points (DOI/title dedupe at import; 7 published↔preprint
   pairs at Stage 3; 47 cross-type groups and 14 cross-stream overlaps in the snowball; later
-  preprint→journal merges, e.g. `UDVHQ5HR`→`A5WDGC7J`). Most were resolved by **client-side Zotero
-  merges, which delete the losing record**, so a pre-dedupe total cannot be recovered from the
-  library. The 9,502 figure is **post-dedupe**. Only **7** superseded records are still in the library
-  as separate items, and they are excluded. Raw per-query hit counts (pre-dedupe) live in
-  `Query_Composition_and_Log.xlsx`, which is not in the repo; take PRISMA's "records identified"
-  box from there and its "duplicates removed" as raw − 9,502.
+  preprint→journal merges, e.g. `UDVHQ5HR`→`A5WDGC7J`). Most were resolved by client-side Zotero
+  merges, which delete the losing record but keep the union of the copies' collections, so a merged
+  record still sits in every import batch that brought it in. **The import folders are the source of
+  truth for records identified (arbiter, 2026-11-03):** identified before dedup = memberships summed
+  over the import-batch collections; duplicates removed = that − unique records. At v170005:
+  **11,198 identified** (databases 8,189: ACM 365, IEEE 1,305, Scopus 1,125, SSRN 4,559, WoS 337,
+  arXiv 498; other methods 263: committee 157, coursework 99, practitioner network 7; snowball
+  2,746) → **1,697 duplicates removed** → **9,501 unique**. The 6 superseded records still present as
+  separate items are part of the 1,697. (Zotero's `dc:replaces` merge relation is *not* usable for
+  this: it also records copies merged in from non-SLR collections, and overcounts to 1,924.) This
+  replaces the earlier note that a pre-dedupe total could not be recovered.
 - **Not records:** 9 items in the SLR tree are not search records (software entries for HOS and
   Claude Code, an OpenAthens stub, 6 webpage stubs). They are excluded from all counts.
 
@@ -170,6 +180,15 @@ been adjudicated: none lack a human primary (43 demoted papers also carry one).
 
 ## 5. Open items and residue (do not hide in the write-up)
 
+### 5.0 Snowball records excluded on title alone — **823** (disclosed 2026-11-03)
+
+823 snowball records with no abstract were Pass-1 discards by Sonnet on the title alone. Enrichment
+(OpenAlex backfill) and the abstract gate (`hold:no-abstract`) ran only on the 495 records the first
+snowball screen kept or marked maybe, so these never reached either. Arbiter: given the volume of material and limited human review capacity,
+incomplete records were not pursued; disclosed, not re-screened. They are among the
+8,087 excluded. (Snowball: 944 of 2,694 records lack an abstract = 823 discards + 121 held;
+query stream: 135 of 6,807.)
+
 ### 5.1 Records identified but never screened — **78 query + 121 snowball**
 
 - **67 from `Q-arXiv-07`** (imported 2026-05-23): no `source:` tag, no `s1:` tag, no screening bucket,
@@ -223,7 +242,7 @@ confirmed**. Phase 6 is unchanged at 72. Report this pass separately in PRISMA; 
 
 Twelve records were re-adjudicated in the `s4:human:*` layer (tag `reexam:2026-11-02`; collection
 `Reconsider (re-examination, 2026-11-02)` `QUA8EW43`, with 01-Core / 02-Context / 03-Discard). Change
-log, plan and applier: `~/Code/Thurlow-Research/reexam_2026-11-02/` (outside the repo).
+log, plan and applier: `Working-Files/reexam_2026-11-02/` (gitignored; OneDrive-backed).
 
 | Group | Records | Call |
 |---|---|---|
@@ -242,14 +261,34 @@ as in §5.3a. Dai enters full text through `01-Core` of that collection; Grewal 
 **Full text (2026-11-03):** Dai kept as core and added to Phase 6 (theme tagging deferred,
 `followup:tagging`; the funnel's Phase 6 check accepts that tag); Grewal demoted to Context.
 
-**Not yet decided:** 77 more records with the F6 signature (human
-Pass-1 keep → machine Pass-2 discard, no human Pass-2 decision); the 45–54 triage band (308 records);
-18 dissertation-cited records that left the review at a model-only step (`followup:full-eval`).
+**Decided 2026-11-04** (arbiter; written as `s4:human:<tier>` + `reexam:2026-11-02` and filed in the
+re-examination collection's 02-Context / 03-Discard; plan `plan_review_all_2026-11-04.json`, built by
+`build_plan_review_all.py` from the arbiter's sheet `review_all_2026-11-03.csv`; 117 items written,
+verified by a zero-change re-run):
+
+| Group | Records | Context | Discard | Core |
+|---|---:|---:|---:|---:|
+| F6 signature (human Pass-1 keep → machine Pass-2 discard), sheet 4a | 77 | 52 | 25ᵃ | 0 |
+| 45–54 triage band, sheet 4b: random sample of 30 (seed 20261104) + `4LCRC3BZ` | 31 | 28 | 3 | 0 |
+| Dissertation-cited records that left at a model-only step (`followup:full-eval`)ᵇ | 18 | 16 | 2ᵃ | 0 |
+
+ᵃ Includes records with no abstract, discarded under the consistent no-abstract rule (4a: 7;
+follow-ups: McIntosh `M5C2UN9T`, Sandoval `CVIFPTEF`). ᵇ Three overlap the sheets (`IAZKUZWM` in 4a;
+`7BU88K3Z`, `XXCF6IHG` in 4b). Three cells were settled by agreed default: `ECBCGAGQ` and `8EEKFTQL`
+context (blank), `YHSP7V2U` discard (abstract pasted into the decision cell).
+
+No record was classified core, so Phase 6 stays at 73. Two further 4b records were decided ad hoc
+(`8L2G3J4Q`, `DUBFF52U`: context) and are not counted in the sample result.
+
+**Still open:** the other 269 records of the 45–54 band are unreviewed (disclosed in Appendix A as a
+sample). Two of them carry `s2:human:keep` without a triage call (`24ZVGAAA` Sattlegger 2024,
+`HQIXPITB` Singh & Szajnfarber 2024). Theme tagging of the context-tier re-examined records, and of
+Dai, is deferred: the dissertation relies on inclusion, not tags.
 
 ### 5.4 Outside the funnel (post-closure supplementary material)
 
 `Sept 2026 Papers` (13 items, `s3:sonnet:*` only) and `Forward Snowball - to screen` (4,
-`source:forward-snowball`) were not run through this instrument and contribute **0** to the 72.
+`source:forward-snowball`) were not run through this instrument and contribute **0** to the 73.
 If the F5 gap-driven search adds studies, report it as a separate "other methods" stream with its
 own counts, not by revising these.
 

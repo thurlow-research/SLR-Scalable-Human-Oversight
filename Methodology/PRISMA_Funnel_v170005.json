@@ -5,45 +5,62 @@
     "per_source_records_overlapping": {
       "ACM": {
         "records": 350,
-        "superseded": 0
+        "superseded": 0,
+        "import_memberships": 365
       },
       "IEEE Xplore": {
         "records": 939,
-        "superseded": 0
+        "superseded": 0,
+        "import_memberships": 1305
       },
       "SCOPUS": {
         "records": 1082,
-        "superseded": 0
+        "superseded": 0,
+        "import_memberships": 1125
       },
       "SSRN": {
         "records": 3785,
-        "superseded": 3
+        "superseded": 3,
+        "import_memberships": 4559
       },
       "Web of Science": {
         "records": 331,
-        "superseded": 0
+        "superseded": 0,
+        "import_memberships": 337
       },
       "arXiv": {
         "records": 470,
-        "superseded": 1
+        "superseded": 1,
+        "import_memberships": 498
       },
       "Coursework": {
         "records": 99,
-        "superseded": 1
+        "superseded": 1,
+        "import_memberships": 99
       },
       "Practitioner Network": {
         "records": 7,
-        "superseded": 0
+        "superseded": 0,
+        "import_memberships": 7
       },
       "Committee Recommendations": {
         "records": 153,
-        "superseded": 1
+        "superseded": 1,
+        "import_memberships": 157
       },
       "Citation Snowballing": {
         "records": 2746,
-        "superseded": 0
+        "superseded": 0,
+        "import_memberships": 2746
       }
     },
+    "identified_before_dedup": 11198,
+    "  before_dedup_by_group": {
+      "database": 8189,
+      "other_methods": 263,
+      "snowball": 2746
+    },
+    "duplicates_removed": 1697,
     "records_any_import": 9507,
     "removed_as_duplicate_superseded": 6,
     "non_record_items_in_tree": 9,
@@ -56,31 +73,31 @@
   },
   "phase1": {
     "query": {
-      "maybe": 2031,
+      "discard": 2750,
       "keep": 1945,
-      "discard": 2750
+      "maybe": 2031
     },
     "query_conflicts": 2,
     "query_unscreened": 81,
     "query_unscreened_by_collection": {
       "Q-arXiv-07": 66,
-      "Q-SCO-04": 1,
-      "Q-SCO-02/a - non-SSRN Screening": 2,
-      "Dissertation Lit Review/10 - Used/Q-arXiv-07": 1,
       "Q-SCO-03": 2,
-      "01-Imports": 1,
+      "01-Core/01-Keep/01-Core/Q-arXiv-06/Phase 6 - Kept Core/01-Dups/Q-arXiv-01/03-Moderate (40-59)/04-Superseded/02 - Light Read/01 - Primary/a - non-SSRN Screening": 1,
+      "Q-SCO-02": 1,
+      "Q-SCO-04": 1,
+      "02-Cocite-3-4/01-Keep/01-Keep/01-Import/10 - Used/Q-arXiv-02/02-Context/Q-arXiv-01/04-Superseded/02-Context": 1,
+      "Dissertation Lit Review/Q-CW-2026-08-15/10 - Used": 1,
+      "Q-SCO-05/a - non-SSRN Screening": 1,
+      "01-Keep/01-Keep/01-Import/02-Below-55 (30-54)/Q-arXiv-07/02-Context/04-Cocite-1": 1,
+      "Dissertation Lit Review/10 - Used/Q-arXiv-07": 1,
+      "Q-SCO-02/a - non-SSRN Screening": 2,
       "Q-SCO-01/Q-SCO-02/a - non-SSRN Screening": 1,
       "Q-SCO-04/a - non-SSRN Screening": 1,
-      "02-Cocite-3-4/01-Keep/01-Keep/01-Import/10 - Used/Q-arXiv-02/02-Context/Q-arXiv-01/04-Superseded/02-Context": 1,
-      "01-Keep/01-Keep/01-Import/02-Below-55 (30-54)/Q-arXiv-07/02-Context/04-Cocite-1": 1,
-      "Q-SCO-02": 1,
-      "01-Core/01-Keep/01-Core/Q-arXiv-06/Phase 6 - Kept Core/01-Dups/Q-arXiv-01/03-Moderate (40-59)/04-Superseded/02 - Light Read/01 - Primary/a - non-SSRN Screening": 1,
-      "Dissertation Lit Review/Q-CW-2026-08-15/10 - Used": 1,
-      "Q-SCO-05/a - non-SSRN Screening": 1
+      "01-Imports": 1
     },
     "snowball": {
-      "keep": 353,
       "discard": 2315,
+      "keep": 353,
       "maybe": 26
     },
     "snowball_conflicts": 0,
@@ -104,8 +121,8 @@
     "query_p1_pass_missing_from_p2": 11,
     "query_in_p2_but_p1_discard": 1,
     "snowball_s2opus": {
-      "keep": 248,
-      "discard": 184
+      "discard": 184,
+      "keep": 248
     }
   },
   "phase3": {
