@@ -81,8 +81,9 @@ every import batch it came in through, so the folders hold the pre-dedupe count.
 >    classification. Records scoring below 55 kept the model's classification, most often context,
 >    without human review, and could not enter full-text review. The threshold was set in July 2026
 >    after a blinded 50-record sample showed that the model's core classifications held at scores of
->    75 and above, and that the human identified core studies the model had scored between 45 and 55.ᵃ
->    In that sample, four of the eight records the human classified as core scored below 55. These
+>    75 and above, and that the human identified core studies the model had scored between 45 and 55.
+>    The threshold was not set lower because human review capacity was limited: lowering it to 45
+>    would have added 308 records (253 query, 55 snowball) to the 428 already reviewed. In that sample, four of the eight records the human classified as core scored below 55. These
 >    records, and three records the sample had moved from discard to context, were re-examined in
 >    November 2026 (see Re-adjudication passes). No other sample of below-threshold records was
 >    reviewed. In total, 148 studies were classified as core.
@@ -91,9 +92,10 @@ every import batch it came in through, so the folders hold the pre-dedupe count.
 >    core in the November 2026 re-examination. Of these, 76 (51.0%) were reclassified as context; none
 >    moved the other way. Seventy-three studies were retained in the final corpus.
 
-ᵃ *Disclosure to keep or drop:* the project documents record no reason for setting the floor at 55
-rather than lower; for the snowball stream, 55 was chosen over 50 so that the two streams would match.
-If kept, add: "The documents do not record why the threshold was not set lower."
+**Threshold rationale: decided 2026-11-03.** The arbiter states the floor was not set lower
+because of limited human review capacity. The text now says so, with the size of the 45–54 band
+(sheet 4b, 308 records) to show the cost. For the snowball stream, 55 was chosen over 50 so that the
+two streams would match.
 
 ## 4. Appendix A, new subsection: Re-adjudication passes (after Screening process)
 
