@@ -74,8 +74,8 @@ every import batch it came in through, so the folders hold the pre-dedupe count.
 >    model decisions alone. Among the 956 records Claude discarded that the human also coded, the
 >    human agreed on 919 (96.1%). Of the snowball exclusions, 823 records had no abstract and were
 >    excluded on the title alone: metadata enrichment and the abstract check were applied only to
->    snowball records the first screen retained. Given the volume of material, incomplete records were
->    not pursued further. After this evaluation, 1,212 records advanced.
+>    snowball records the first screen retained. Given the volume of material and limited human review
+>    capacity, incomplete records were not pursued further. After this evaluation, 1,212 records advanced.
 >
 > 3. Relevance triage. A total of 1,219 records were triaged by how directly they addressed oversight
 >    of AI-generated code in organizational or development-pipeline contexts. Claude Opus assigned

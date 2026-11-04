@@ -179,8 +179,8 @@ been adjudicated: none lack a human primary (43 demoted papers also carry one).
 
 823 snowball records with no abstract were Pass-1 discards by Sonnet on the title alone. Enrichment
 (OpenAlex backfill) and the abstract gate (`hold:no-abstract`) ran only on the 495 records the first
-snowball screen kept or marked maybe, so these never reached either. Arbiter: given the volume of
-material, incomplete records were not pursued; disclosed, not re-screened. They are among the
+snowball screen kept or marked maybe, so these never reached either. Arbiter: given the volume of material and limited human review capacity,
+incomplete records were not pursued; disclosed, not re-screened. They are among the
 8,087 excluded. (Snowball: 944 of 2,694 records lack an abstract = 823 discards + 121 held;
 query stream: 135 of 6,807.)
 
