@@ -6,10 +6,13 @@ in `PRISMA_Funnel.md` §5.3b. Figure: `Methodology/figures/PRISMA_Flow_Diagram.{
 (`slr-tools/prisma_diagram.py`).
 
 **Full-text decisions made 2026-11-03:** Dai (`VFZXPDJX`) kept as core and added to Phase 6, with theme
-tagging deferred (`followup:tagging`); Grewal (`ZSTZT2KN`) demoted to Context. **Still open, and marked
-[PENDING] below:** the arbiter's decisions on review sheet 4a (77 records) and sheet 4b (308 records); the
-full evaluation of the 18 `followup:full-eval` records. Each one can change the counts here. Re-run the
-two scripts once they land.
+tagging deferred (`followup:tagging`); Grewal (`ZSTZT2KN`) demoted to Context.
+
+**Decided 2026-11-04 (written to Zotero, `reexam_2026-11-02/change_log.md`):** the arbiter reviewed all of
+sheet 4a (77 records: 52 context, 25 discard), a sample of 31 from sheet 4b (30 random + `4LCRC3BZ`:
+28 context, 3 discard), and all 18 `followup:full-eval` records (16 context, 2 discard). None was core, so
+the corpus stays at 73. Two further 4b records were decided ad hoc (`8L2G3J4Q`, `DUBFF52U`: context).
+Tagged `s4:human:<tier>` + `reexam:2026-11-02` and filed under Reconsider (re-examination, 2026-11-02).
 
 ---
 
@@ -47,8 +50,8 @@ every import batch it came in through, so the folders hold the pre-dedupe count.
 
 **Notes (paste under the figure):**
 
-> *Note.* Counts show each record's classification at the stage named. Twenty records re-adjudicated in
-> two later passes are reported separately in the text and do not change these counts, except as noted in c.
+> *Note.* Counts show each record's classification at the stage named. Records re-adjudicated in
+> later passes are reported separately in the text and do not change these counts, except as noted in c.
 > ᵃ Screened (9,299) plus not screened (199) equals 9,498; the remaining three query records were
 > screened in the snowball stream or under a merged duplicate record.
 > ᵇ A total of 1,212 records advanced from title and abstract screening (964 query, 248 snowball);
@@ -88,8 +91,8 @@ every import batch it came in through, so the folders hold the pre-dedupe count.
 >    The threshold was not set lower because human review capacity was limited: lowering it to 45
 >    would have added 308 records (253 query, 55 snowball) to the 428 already reviewed. In that sample, four of the eight records the human classified as core scored below 55. These
 >    records, and three records the sample had moved from discard to context, were re-examined in
->    November 2026 (see Re-adjudication passes). No other sample of below-threshold records was
->    reviewed. In total, 148 studies were classified as core.
+>    November 2026, together with a random sample of the records scored 45 to 54 (see Re-adjudication
+>    passes). In total, 148 studies were classified as core.
 >
 > 4. Full-text review. A total of 149 core studies were read in full, including one classified as
 >    core in the November 2026 re-examination. Of these, 76 (51.0%) were reclassified as context; none
@@ -114,8 +117,17 @@ two streams would match.
 > and four as discard. Both core studies were read in full and classified under the same criteria as
 > the rest of the corpus: one was retained and one was reclassified as context. Thematic coding of the
 > retained study was deferred and does not affect its inclusion. The November pass also found 77
-> further records with the same pattern as the
-> October pass. [PENDING: "These were reviewed by the human; n were reinstated …" once sheet 4a is decided.]
+> further records with the same pattern as the October pass. The human reviewed all 77: 52 were
+> reinstated as context and 25 exclusions were confirmed, seven of them for lack of an abstract. To
+> check the triage threshold, the human also reviewed a random sample of 30 of the 308 records scored
+> 45 to 54, plus one record from that band the human had retained at screening; none was classified
+> as core (28 context, three discard). Finally, the human evaluated the 18 supplementary sources cited in
+> this dissertation that had left the review at a step decided by a model alone (three of them also
+> appear in the groups above): 16 were classified as context and two as discard. No record in the
+> November pass beyond the two noted above was classified as core, so the final corpus is unchanged.
+> Records classified as context in these passes were read and classified under the same criteria as
+> the rest of the corpus; their thematic coding was deferred. Several informed the theoretical framing,
+> methods, and adjacent-domain evidence in this dissertation.
 
 ## 5. Appendix A, Use of AI tools (sentence replacements)
 
@@ -153,9 +165,13 @@ adjacent empirical evidence 32, author's prior work 1 (67).
 > later reinstated as context in a re-adjudication pass), three were identified but not screened, 16
 > were classified as context at triage, and seven were demoted after full-text review.
 
-[PENDING: 18 of the 41 left the review at a step decided by a model alone or never decided (tag
-`followup:full-eval`). Once they are evaluated, recompute this paragraph. Any that reach the final
-corpus leave Table A1.]
+Add after that paragraph (decided 2026-11-04):
+
+> Eighteen of the 41 had left the review at a step decided by a model alone. The human later evaluated
+> all 18 and classified 16 as context and two as discard (see Re-adjudication passes); none entered the
+> systematic corpus.
+
+The breakdown above is unchanged: it reports the step at which each source left the review.
 
 Table A1 note: change the corpus count to 73, *"…not among the 73 studies in the systematic
 corpus."* Table A1 itself is unchanged: neither Dai nor Grewal is in `10 - Used`.
@@ -192,4 +208,4 @@ studies coded before the re-examination, and the text says that coding was defer
   November 2026 re-examination comprised 843 tags… Thematic coding of the study added by that
   re-examination was deferred."*
 
-If the pending sheets add more included studies, change "the study" to "the n studies".
+The sheets decided 2026-11-04 added no included studies, so "the study" stands.
