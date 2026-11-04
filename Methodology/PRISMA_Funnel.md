@@ -175,6 +175,15 @@ been adjudicated: none lack a human primary (43 demoted papers also carry one).
 
 ## 5. Open items and residue (do not hide in the write-up)
 
+### 5.0 Snowball records excluded on title alone — **823** (disclosed 2026-11-03)
+
+823 snowball records with no abstract were Pass-1 discards by Sonnet on the title alone. Enrichment
+(OpenAlex backfill) and the abstract gate (`hold:no-abstract`) ran only on the 495 records the first
+snowball screen kept or marked maybe, so these never reached either. Arbiter: given the volume of
+material, incomplete records were not pursued; disclosed, not re-screened. They are among the
+8,087 excluded. (Snowball: 944 of 2,694 records lack an abstract = 823 discards + 121 held;
+query stream: 135 of 6,807.)
+
 ### 5.1 Records identified but never screened — **78 query + 121 snowball**
 
 - **67 from `Q-arXiv-07`** (imported 2026-05-23): no `source:` tag, no `s1:` tag, no screening bucket,
