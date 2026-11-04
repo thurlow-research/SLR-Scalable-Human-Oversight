@@ -12,7 +12,7 @@ then `--snapshot lib.json`; Phase-6 must still equal the computed predicate (§4
 > **Recomputed 2026-11-03 against snapshot v170005** (`PRISMA_Funnel_v170005.json`), after the
 > 2026-11-02 re-examination (§5.3b). **v170005 is now the snapshot of record.** The tables below still
 > show v169153. Every figure that changed, and why, is in `Appendix_A_Text_v170005.md` §1. Headline at
-> v170005: 9,501 identified · 199 not screened · 9,299 screened → 1,212 advanced · 1,219 triaged →
+> v170005: 11,198 identified (import folders) · 1,697 duplicates removed · 9,501 unique · 199 not screened · 9,299 screened → 1,212 advanced · 1,219 triaged →
 > 148 Core (+1 via re-examination) · 889 Context · 182 Discard · 149 full text → 76 demoted ·
 > **73 included** (Dai kept, theme tagging deferred; Grewal demoted). Figure A1 is drawn from the JSON by `slr-tools/prisma_diagram.py`
 > (`Methodology/figures/`).
@@ -83,12 +83,17 @@ as intended (Phase 1 deliberately loose; Phase 2 is the operationalizability scr
   stream and are counted there, not twice.
 - **Duplicates.** Deduplication ran at several points (DOI/title dedupe at import; 7 published↔preprint
   pairs at Stage 3; 47 cross-type groups and 14 cross-stream overlaps in the snowball; later
-  preprint→journal merges, e.g. `UDVHQ5HR`→`A5WDGC7J`). Most were resolved by **client-side Zotero
-  merges, which delete the losing record**, so a pre-dedupe total cannot be recovered from the
-  library. The 9,502 figure is **post-dedupe**. Only **7** superseded records are still in the library
-  as separate items, and they are excluded. Raw per-query hit counts (pre-dedupe) live in
-  `Query_Composition_and_Log.xlsx`, which is not in the repo; take PRISMA's "records identified"
-  box from there and its "duplicates removed" as raw − 9,502.
+  preprint→journal merges, e.g. `UDVHQ5HR`→`A5WDGC7J`). Most were resolved by client-side Zotero
+  merges, which delete the losing record but keep the union of the copies' collections, so a merged
+  record still sits in every import batch that brought it in. **The import folders are the source of
+  truth for records identified (arbiter, 2026-11-03):** identified before dedup = memberships summed
+  over the import-batch collections; duplicates removed = that − unique records. At v170005:
+  **11,198 identified** (databases 8,189: ACM 365, IEEE 1,305, Scopus 1,125, SSRN 4,559, WoS 337,
+  arXiv 498; other methods 263: committee 157, coursework 99, practitioner network 7; snowball
+  2,746) → **1,697 duplicates removed** → **9,501 unique**. The 6 superseded records still present as
+  separate items are part of the 1,697. (Zotero's `dc:replaces` merge relation is *not* usable for
+  this: it also records copies merged in from non-SLR collections, and overcounts to 1,924.) This
+  replaces the earlier note that a pre-dedupe total could not be recovered.
 - **Not records:** 9 items in the SLR tree are not search records (software entries for HOS and
   Claude Code, an OpenAthens stub, 6 webpage stubs). They are excluded from all counts.
 

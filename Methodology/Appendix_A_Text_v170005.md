@@ -20,7 +20,8 @@ two scripts once they land.
 | Unique records | 9,502 | 9,501 | Snowball stub `2DEDF5PN` merged into Johnson et al. (2013) `F4ZS7B6Z` on 2026-10-28 (same study) |
 | Snowball stream | 2,695 | 2,694 | same merge |
 | Screened | 9,300 | 9,299 | same merge (the stub was a Pass-1 discard) |
-| Duplicate records removed (box) | 7 | 6 | One leftover superseded arXiv duplicate was merged in the client. The script counts only superseded records still present, so the box understates removals. See §2 note |
+| Records identified (box) | 9,501 (post-dedupe) | **11,198** | Now the pre-dedupe count from the import folders (source of truth): databases 8,189, other methods 263, snowball 2,746 |
+| Duplicate records removed (box) | 7 | **1,697** | 11,198 identified − 9,501 unique. The old box counted only unmerged superseded records |
 | Advanced from screening | 1,208 | 1,212 | 248 snowball records carry `s2:opus:keep`, not 244. Four were triaged by Opus but never filed, so they were missing from the old count (`7EK8G7I4`, `7UZ5FCF4`, `IM6DJDEE`, `ZSTZT2KN`) |
 | Excluded at screening | 8,092 | 8,087 | −1 merge, −4 now counted as advanced |
 | Triaged | 1,213 | 1,219 | +4 snowball records filed; +2 eligible query records now triaged (`2HTDGAT4`, `GFJN2SVU`) |
@@ -35,18 +36,14 @@ two scripts once they land.
 
 ## 2. Figure A1
 
-Box counts (top to bottom): identified 9,501 (databases 6,557; other methods 250; citation
-snowballing 2,694); duplicates removed 6; not screened 199 (no abstract after enrichment 121; query
-records 78); screened 9,299; excluded 8,087; assessed in relevance triage 1,219; classified at abstract
-level as context 889 and discarded 182; core studies assessed in full text 149; reclassified as context
-after full-text review 76; included 73.
+Box counts (top to bottom): identified 11,198 (database searches 8,189; other methods 263; citation
+snowballing 2,746); duplicates removed 1,697, unique records 9,501; not screened 199 (no abstract after
+enrichment 121; query records 78); screened 9,299; excluded 8,087; assessed in relevance triage 1,219;
+classified at abstract level as context 889 and discarded 182; core studies assessed in full text 149;
+reclassified as context after full-text review 76; included 73.
 
-> **Decision for the arbiter: duplicates box.** The 9,501 count is post-dedupe, and most duplicates were
-> removed by client merges that delete the losing record. The pre-dedupe total cannot be recovered
-> from the library (`PRISMA_Funnel.md` §2.2). "n = 6" counts only the superseded duplicates still
-> present, so it understates the duplicates actually removed. Options: (a) take raw hit counts from
-> `Query_Composition_and_Log.xlsx` and report raw − 9,501; (b) keep the box and add
-> "duplicates removed before import are not shown" to the note.
+**Duplicates box: decided 2026-11-03.** Counts come from the import folders. A merged record keeps
+every import batch it came in through, so the folders hold the pre-dedupe count.
 
 **Notes (paste under the figure):**
 
@@ -60,7 +57,10 @@ after full-text review 76; included 73.
 
 ## 3. Appendix A, Screening process (replaces the four numbered stages)
 
-> 1. Identification. The literature search yielded 9,501 unique records after de-duplication. Of
+> 1. Identification. The searches identified 11,198 records: 8,189 from database searches (ACM
+>    Digital Library 365, IEEE Xplore 1,305, Scopus 1,125, SSRN 4,559, Web of Science 337, arXiv 498),
+>    263 from other methods (committee recommendations 157, coursework 99, practitioner network 7), and
+>    2,746 from backward citation snowballing. Removing 1,697 duplicates left 9,501 unique records. Of
 >    these, 199 were not screened: 121 snowball records had no accessible abstract after data
 >    enrichment, and 78 query records were never assigned a screening decision. None of these
 >    records advanced to later stages.
@@ -167,7 +167,7 @@ corpus."* Table A1 itself is unchanged: neither Dai nor Grewal is in `10 - Used`
 | 6 | App. A, Table A1 note | "…not among the 72 studies in the systematic corpus." |
 | 7 | App. A, Thematic coding, last paragraph | "The final coding set for the 72 included studies comprised 843 tags…" |
 
-Linked figures to update in the same edit: 9,502 → 9,501 (Ch. 1, Ch. 2 Screening, App. A step 1);
+Linked figures to update in the same edit: 9,502 → 9,501 unique records, and add 11,198 identified / 1,697 duplicates removed where the draft gives the search yield (Ch. 1, Ch. 2 Screening, App. A step 1);
 9,300 → 9,299; 1,208 → 1,212; "147 were classified as core" → 148; 147 / 75 / 51.0% in full-text
 sentences → 149 / 76 / 51.0%; every "72" → 73.
 

@@ -31,9 +31,9 @@ screened = sum(p1["query"].values()) + sum(p1["snowball"].values()) - held
 advanced = p2["query_eligible"] + p2["snowball_s2opus"].get("keep", 0)
 fm = p3["final_merged"]
 C = {
-    "identified": idn["unique_records"], "database": idn["  of_which_database"],
-    "other": idn["  of_which_other_methods_only"], "snowball": idn["snowball_stream"],
-    "dups": idn["removed_as_duplicate_superseded"], "not_screened": held + unscreened_q,
+    "identified": idn["identified_before_dedup"], "database": idn["  before_dedup_by_group"]["database"],
+    "other": idn["  before_dedup_by_group"]["other_methods"], "snowball": idn["  before_dedup_by_group"]["snowball"],
+    "dups": idn["duplicates_removed"], "unique": idn["unique_records"], "not_screened": held + unscreened_q,
     "held": held, "unscreened_q": unscreened_q, "screened": screened, "excluded": screened - advanced,
     "advanced": advanced, "triaged": sum(fm.values()), "context": fm.get("context", 0),
     "discard": fm.get("discard", 0), "triage_core": sum(v for k, v in fm.items() if "core" in k),
@@ -79,11 +79,11 @@ lcx = LX + LW / 2
 # Identification
 stage(84, 33, "Identification")
 box(LX, 87, LW, 28,
-    f"Records identified after\nremoving duplicates\n(n = {n(C['identified'])})\n\n"
+    f"Records identified\n(n = {n(C['identified'])})\n\n"
     f"Database searches (n = {n(C['database'])})\n"
     f"Other methods: committee,\ncoursework, practitioner\nnetwork (n = {n(C['other'])})\n"
     f"Citation snowballing (n = {n(C['snowball'])})")
-box(RX, 96, RW, 10, f"Duplicate records\nremoved (n = {n(C['dups'])})")
+box(RX, 95, RW, 12, f"Duplicate records\nremoved (n = {n(C['dups'])})\nUnique records\n(n = {n(C['unique'])})")
 arrow(LX + LW, 101, RX, 101)
 
 # Screening
