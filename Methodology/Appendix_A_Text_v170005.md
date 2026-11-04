@@ -160,6 +160,11 @@ corpus leave Table A1.]
 Table A1 note: change the corpus count to 73, *"…not among the 73 studies in the systematic
 corpus."* Table A1 itself is unchanged: neither Dai nor Grewal is in `10 - Used`.
 
+Add after the Table A1 note (decided 2026-11-03):
+> Supplementary sources classified as context informed the theoretical framing, historical baseline,
+> and adjacent evidence; only studies directly addressing human oversight of AI-generated code with an
+> operationalizable mechanism, measurement, or finding were included in the systematic corpus.
+
 ## 8. Every place the final corpus count "72" appears (`Thurlow_Chapter_1+2.docx`, 2026-11-02 22:40)
 
 | # | Location | Text |
