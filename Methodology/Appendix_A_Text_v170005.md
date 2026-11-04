@@ -106,7 +106,10 @@ If kept, add: "The documents do not record why the threshold was not set lower."
 > model discards that sample had classified as context, two records that advanced from screening but
 > were never triaged, and three records the model scored as core above the threshold that were never
 > filed for human review. Two were classified as core and entered full-text review, six as context,
-> and four as discard. The November pass also found 77 further records with the same pattern as the
+> and four as discard. Both core studies were read in full and classified under the same criteria as
+> the rest of the corpus: one was retained and one was reclassified as context. Thematic coding of the
+> retained study was deferred and does not affect its inclusion. The November pass also found 77
+> further records with the same pattern as the
 > October pass. [PENDING: "These were reviewed by the human; n were reinstated …" once sheet 4a is decided.]
 
 ## 5. Appendix A, Use of AI tools (sentence replacements)
@@ -168,6 +171,15 @@ Linked figures to update in the same edit: 9,502 → 9,501 (Ch. 1, Ch. 2 Screeni
 9,300 → 9,299; 1,208 → 1,212; "147 were classified as core" → 148; 147 / 75 / 51.0% in full-text
 sentences → 149 / 76 / 51.0%; every "72" → 73.
 
-**Tags note (rows 4 and 7).** Dai has no theme tags yet, so "843 tags across the 73 studies" would be
-false. Either drop the tag count, or write *"…843 tags across 72 of the 73 included studies; one study
-added in the November 2026 re-examination was not coded."*
+**Tags note (rows 4 and 7). Decided 2026-11-03:** inclusion is what the dissertation relies on, and
+theme coding is not used. Studies brought to full-text review by the re-examination were read in full
+and classified like every other study, but their coding is deferred. So the 843 stays tied to the 72
+studies coded before the re-examination, and the text says that coding was deferred for the others:
+
+- Row 4 (Ch. 2, Analysis): *"…843 tags across the 72 studies included before the November 2026
+  re-examination; coding of the study added by that re-examination was deferred."*
+- Row 7 (App. A, Thematic coding): *"The final coding set for the 72 studies included before the
+  November 2026 re-examination comprised 843 tags… Thematic coding of the study added by that
+  re-examination was deferred."*
+
+If the pending sheets add more included studies, change "the study" to "the n studies".
