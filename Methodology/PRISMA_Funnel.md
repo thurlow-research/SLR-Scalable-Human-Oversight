@@ -237,7 +237,7 @@ confirmed**. Phase 6 is unchanged at 72. Report this pass separately in PRISMA; 
 
 Twelve records were re-adjudicated in the `s4:human:*` layer (tag `reexam:2026-11-02`; collection
 `Reconsider (re-examination, 2026-11-02)` `QUA8EW43`, with 01-Core / 02-Context / 03-Discard). Change
-log, plan and applier: `~/Code/Thurlow-Research/reexam_2026-11-02/` (outside the repo).
+log, plan and applier: `Working-Files/reexam_2026-11-02/` (gitignored; OneDrive-backed).
 
 | Group | Records | Call |
 |---|---|---|
