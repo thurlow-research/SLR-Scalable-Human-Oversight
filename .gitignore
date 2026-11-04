@@ -52,3 +52,7 @@ slr-phase4/data/tags-f2-narrow/
 
 # Full-text PDFs / TXT extractions awaiting Zotero attachment — never commit (public repo)
 new_pdfs/
+
+# Local working files (Zotero write plans, review sheets, preimages, fetched full texts).
+# Backed up by OneDrive, never published: they hold abstracts and copyrighted PDFs.
+Working-Files/
