@@ -14,13 +14,21 @@ then `--snapshot lib.json`; Phase-6 must still equal the computed predicate (§4
 > show v169153. Every figure that changed, and why, is in `Appendix_A_Text_v170005.md` §1. Headline at
 > v170005: 11,198 identified (import folders) · 1,697 duplicates removed · 9,501 unique · 199 not screened · 9,299 screened → 1,212 advanced · 1,219 triaged →
 > 148 Core (+1 via re-examination) · 889 Context · 182 Discard · 149 full text → 76 demoted ·
-> **73 included** (Dai kept, theme tagging deferred; Grewal demoted). Figure A1 is drawn from the JSON by `slr-tools/prisma_diagram.py`
+> **73 included** (Dai kept, theme-tagged 2026-11-05; Grewal demoted). Figure A1 is drawn from the JSON by `slr-tools/prisma_diagram.py`
 > (`Methodology/figures/`).
 >
 > **Re-run 2026-11-04 at snapshot v170176** (`PRISMA_Funnel_v170176.json`) after the arbiter's
 > 2026-11-04 decisions (§5.3b). Every Figure A1 count is unchanged; only the re-adjudication tallies
 > moved (re-examination: 129 records, 102 context, 25 discard, 2 core). **v170176 is now the snapshot
 > of record.** Edits for the Chapter 1–2 draft: `Handoffs/Dissertation_DocUpdate_Handoff_2026-11-04.md`.
+>
+> **Re-run 2026-11-05 at snapshot v170192** (`PRISMA_Funnel_v170192.json`) after Dai was theme-tagged
+> (`Taxonomy_Changelog.md` §183). Every Figure A1 count is unchanged (diagram counts diffed against
+> v170176: identical), and `kept_pending_theme_tagging` is now empty. One re-adjudication tally moved
+> for an unrelated reason: the arbiter added `DXNH2447` (the PRISMA 2020 statement, snowball,
+> `s1:sonnet:discard`) to the re-examination as `s4:human:discard` on 2026-11-05, so that collection is
+> 130 records (102 context, 26 discard, 2 core). **v170192 is now the snapshot of record.** Draft edits:
+> `Handoffs/Dissertation_DocUpdate_Handoff_2026-11-05.md`.
 
 PRISMA mapping follows the alignment note in `SLR_Paper_Outline_v0_2026-08.md` §3.1: internal
 Phases 1–2 = **Screening**; Phase 3 (abstract-level triage + human ≥55 review) **and** Phases 4–5
@@ -260,6 +268,8 @@ as in §5.3a. Dai enters full text through `01-Core` of that collection; Grewal 
 
 **Full text (2026-11-03):** Dai kept as core and added to Phase 6 (theme tagging deferred,
 `followup:tagging`; the funnel's Phase 6 check accepts that tag); Grewal demoted to Context.
+**Dai theme-tagged 2026-11-05** (arbiter; `Taxonomy_Changelog.md` §183): `followup:tagging` removed, `final:*`
+recomputed (73 items, 851 tags; snapshot `slr-phase4/data/final_tags_2026-11-05.json`).
 
 **Decided 2026-11-04** (arbiter; written as `s4:human:<tier>` + `reexam:2026-11-02` and filed in the
 re-examination collection's 02-Context / 03-Discard; plan `plan_review_all_2026-11-04.json`, built by
@@ -282,8 +292,8 @@ No record was classified core, so Phase 6 stays at 73. Two further 4b records we
 
 **Still open:** the other 269 records of the 45–54 band are unreviewed (disclosed in Appendix A as a
 sample). Two of them carry `s2:human:keep` without a triage call (`24ZVGAAA` Sattlegger 2024,
-`HQIXPITB` Singh & Szajnfarber 2024). Theme tagging of the context-tier re-examined records, and of
-Dai, is deferred: the dissertation relies on inclusion, not tags.
+`HQIXPITB` Singh & Szajnfarber 2024). Theme tagging of the context-tier re-examined records is deferred: the dissertation relies on
+inclusion, not tags. (Dai, the one included re-examination record, was tagged 2026-11-05, §183.)
 
 ### 5.4 Outside the funnel (post-closure supplementary material)
 

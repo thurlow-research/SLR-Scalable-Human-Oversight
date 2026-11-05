@@ -294,7 +294,7 @@ def funnel(lib):
     core = {k for k, v in fin.items() if "core" in v} | s4core
     demoted = {k for k in core if "demote:context" in lib.tags(k)}
     # Kept after full text = human primary theme, or an arbiter full-text keep with theme tagging
-    # deferred (`followup:tagging`; Dai VFZXPDJX, 2026-11-03). The dissertation uses the tier, not the tags.
+    # deferred (`followup:tagging`; Dai VFZXPDJX, 2026-11-03; tagged 2026-11-05, so the clause is now inert). The dissertation uses the tier, not the tags.
     reviewed = {k for k in core if any(t.startswith("cal:human:primary:") for t in lib.tags(k))
                 or "followup:tagging" in lib.tags(k)}
     p6 = lib.members(PHASE6, deep=False)

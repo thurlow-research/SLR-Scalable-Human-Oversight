@@ -8,6 +8,9 @@ in `PRISMA_Funnel.md` §5.3b. Figure: `Methodology/figures/PRISMA_Flow_Diagram.{
 **Full-text decisions made 2026-11-03:** Dai (`VFZXPDJX`) kept as core and added to Phase 6, with theme
 tagging deferred (`followup:tagging`); Grewal (`ZSTZT2KN`) demoted to Context.
 
+> **Update 2026-11-05:** Dai is now theme-tagged (`Taxonomy_Changelog.md` §183), so the tags note below is
+> superseded: the coding set is **851 tags across all 73 studies**. See the revised tags note.
+
 **Decided 2026-11-04 (written to Zotero, `reexam_2026-11-02/change_log.md`):** the arbiter reviewed all of
 sheet 4a (77 records: 52 context, 25 discard), a sample of 31 from sheet 4b (30 random + `4LCRC3BZ`:
 28 context, 3 discard), and all 18 `followup:full-eval` records (16 context, 2 discard). None was core, so
@@ -33,7 +36,7 @@ Tagged `s4:human:<tier>` + `reexam:2026-11-02` and filed under Reconsider (re-ex
 | Discard at triage | 180 | 182 | `2HTDGAT4`, `GFJN2SVU` |
 | Full text | 147 | 149 | + Grewal (triage) + Dai (re-examination) |
 | Demoted after full text | 75 | 76 | Grewal |
-| Included | 72 | **73** | Dai (kept core; theme tagging deferred) |
+| Included | 72 | **73** | Dai (kept core; theme-tagged 2026-11-05) |
 | Figure note ᵇ "two advancing records were not triaged" | 2 | 0 | both now triaged |
 | Table A1: advanced but not triaged / context at triage | 1 / 15 | 0 / 16 | Jiang `7UZ5FCF4` now triaged (Context) |
 
@@ -197,15 +200,16 @@ Linked figures to update in the same edit: 9,502 → 9,501 unique records, and a
 9,300 → 9,299; 1,208 → 1,212; "147 were classified as core" → 148; 147 / 75 / 51.0% in full-text
 sentences → 149 / 76 / 51.0%; every "72" → 73.
 
-**Tags note (rows 4 and 7). Decided 2026-11-03:** inclusion is what the dissertation relies on, and
-theme coding is not used. Studies brought to full-text review by the re-examination were read in full
-and classified like every other study, but their coding is deferred. So the 843 stays tied to the 72
-studies coded before the re-examination, and the text says that coding was deferred for the others:
+**Tags note (rows 4 and 7). Revised 2026-11-05** (supersedes the 2026-11-03 note, which deferred Dai's
+coding and tied 843 to the 72 studies coded before the re-examination). Dai was tagged by the arbiter on
+2026-11-05 and `final:*` recomputed: **851 tags across all 73 studies** (778 theme/facet + 73 primary;
+658 panel-modal and human-endorsed, 120 human-only; 0 on silence alone). Dai's eight tags are all
+human-only, because Dai was never in the panel sweep. The deferral wording is withdrawn:
 
-- Row 4 (Ch. 2, Analysis): *"…843 tags across the 72 studies included before the November 2026
-  re-examination; coding of the study added by that re-examination was deferred."*
-- Row 7 (App. A, Thematic coding): *"The final coding set for the 72 studies included before the
-  November 2026 re-examination comprised 843 tags… Thematic coding of the study added by that
-  re-examination was deferred."*
+- Row 4 (Ch. 2, Analysis): *"The final set comprised 851 tags across the 73 studies, all endorsed or
+  added by the author."*
+- Row 7 (App. A, Thematic coding): *"The final coding set for the 73 included studies comprised 851
+  tags, each either endorsed or added by the human,"* (no deferral sentence).
 
-The sheets decided 2026-11-04 added no included studies, so "the study" stands.
+Context-tier records from the re-examination remain uncoded; that sentence in "Re-adjudication passes"
+stays.
