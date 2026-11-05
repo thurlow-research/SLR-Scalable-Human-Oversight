@@ -13,6 +13,10 @@ Rules applied (Methodology/SLR_Methodology_Bootstrap.md §3; Selection_Criteria_
     (24 self + 20 dangling of 56 at snapshot 169153); counting the bare tag over-removes.
   * A record filed in both Final/Core and Final/Context (merged query+snowball records) counts
     as Core: it entered full-text reading, which is where its tier was finally decided.
+  * Identified before dedup = memberships summed over the import-batch collections (folder
+    counts are the source of truth). A client merge keeps the union of the copies' collections,
+    so a merged record still sits in every batch that brought it in. Duplicates removed =
+    identified before dedup - unique records.
   * Stream: a record in any query/other-methods import belongs to the QUERY stream (the query
     record is master); the snowball stream is snowball-only records. A record is scored only
     against its own stream's buckets.
@@ -114,6 +118,10 @@ class Lib:
         roots = [c for c in self.sub(src) if self.cols[c]["name"].startswith("01-Import")]
         return set().union(set(), *(self.members(r) for r in roots))
 
+    def import_memberships(self, src):
+        roots = [c for c in self.sub(src) if self.cols[c]["name"].startswith("01-Import")]
+        return sum(len(self.by_col[c]) for r in roots for c in self.sub(r))
+
     def buckets(self, src):
         out = collections.defaultdict(set)
         for c in self.sub(src):
@@ -150,16 +158,23 @@ def funnel(lib):
     per_src, Q, O = {}, set(), set()
     for name in QUERY_SOURCES + OTHER_SOURCES:
         imp = lib.imports(lib.source(name))
-        per_src[name] = {"records": len(imp), "superseded": len(imp & sup)}
+        per_src[name] = {"records": len(imp), "superseded": len(imp & sup),
+                         "import_memberships": lib.import_memberships(lib.source(name))}
         (Q if name in QUERY_SOURCES else O).update(imp)
     SB = lib.imports(lib.source(SNOWBALL))
-    per_src[SNOWBALL] = {"records": len(SB), "superseded": len(SB & sup)}
+    per_src[SNOWBALL] = {"records": len(SB), "superseded": len(SB & sup),
+                         "import_memberships": lib.import_memberships(lib.source(SNOWBALL))}
+    before = {grp: sum(per_src[n]["import_memberships"] for n in names) for grp, names in
+              (("database", QUERY_SOURCES), ("other_methods", OTHER_SOURCES), ("snowball", [SNOWBALL]))}
     qstream = (Q | O) - sup
     sstream = SB - Q - O - sup
     cross = (SB & (Q | O)) - sup
     R["identification"] = {
         "items_in_slr_tree": len(tree),
         "per_source_records_overlapping": per_src,
+        "identified_before_dedup": sum(before.values()),
+        "  before_dedup_by_group": before,
+        "duplicates_removed": sum(before.values()) - len((Q | O | SB) - sup),
         "records_any_import": len(Q | O | SB),
         "removed_as_duplicate_superseded": len((Q | O | SB) & sup),
         "non_record_items_in_tree": len(tree - Q - O - SB),
@@ -279,7 +294,7 @@ def funnel(lib):
     core = {k for k, v in fin.items() if "core" in v} | s4core
     demoted = {k for k in core if "demote:context" in lib.tags(k)}
     # Kept after full text = human primary theme, or an arbiter full-text keep with theme tagging
-    # deferred (`followup:tagging`; Dai VFZXPDJX, 2026-11-03). The dissertation uses the tier, not the tags.
+    # deferred (`followup:tagging`; Dai VFZXPDJX, 2026-11-03; tagged 2026-11-05, so the clause is now inert). The dissertation uses the tier, not the tags.
     reviewed = {k for k in core if any(t.startswith("cal:human:primary:") for t in lib.tags(k))
                 or "followup:tagging" in lib.tags(k)}
     p6 = lib.members(PHASE6, deep=False)

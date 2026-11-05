@@ -8998,3 +8998,35 @@ broadly."* Set C was a **single-study check by design**, not an abbreviated set.
 reading. The record (one member, `ZUM76CCG`, pilot closed 2026-08-15, §32) stands unchanged. The dissertation wording now
 reads: the third round used a single study to check the AI-first workflow, and broad tagging then began in that mode.
 
+
+## 183. Dai (`VFZXPDJX`) theme-tagged; hand-simulated mechanism = `design-only` + `method-experiment` (2026-11-05)
+
+Dai, Liu & Xu (2024), *Enhancing human-machine pair inspection with risk number and code inspection diagram*, kept
+core at the 2026-11-02 re-examination with tagging deferred (`followup:tagging`). Never in the panel sweep, so there
+are no `cal:<vendor>:*` proposals: the arbiter ruled on an assistant read of the item's TXT (`88X8SUBU`), and every tag
+is human-only. Unwritten tags are simply absent (no modal proposal to reject).
+- **Written:** primary `risk-routing` (computed, producer-independent Risk Number fitted to historical bug data; the
+  checklist is restricted to top-RN statements and their slices and ordered by RN, i.e. an operationalized allocation
+  of inspection attention) · `oversight-explanation` (the Code Inspection Diagram guides the human's judgment) ·
+  `design-only` · `method-experiment` (12 students, three conditions, significance tests) · `risk-quality` ·
+  `general-code` (students wrote the code themselves; no AI generation in the evaluation) · `metrics` (quality).
+- **Not tagged:** `rules-based-checks` (static analysis computes the signal; the human detects: plumbing) ·
+  `risk-security` (CWE-derived checklist items and one illustrative example fall short of substantive treatment) ·
+  `framework` (one task, fails the §49 span rule) · `method-mining` (the GitHub/ONNX analysis calibrates the metric:
+  §57 instrumentation) · `automation-bias` (one cited intro sentence) · mode pair (no AI generation studied).
+- **183a. New precedent: a mechanism whose machine role is SIMULATED BY HAND under controlled conditions, with no
+  implementation, is `design-only` + `method-experiment`, not `built-system`.** The authors state the tooling is
+  "still under development"; in the experiment one partner computed Risk Numbers and drew the CID by hand. Lab use
+  alone would not have blocked `built-system` (a lab prototype qualifies); the missing implementation does. This
+  narrows `design-only`'s "never credibly runs it" to **never implemented** for this case, with the run recorded on
+  the method axis. The pairing is deliberate and not a contradiction.
+- **183b. `metrics` on a routing paper (BU73N7PC trap does not fire):** the Risk Number is contribution #1, fully
+  specified (eqs. 1–3, calibration procedure, Table 1 vs Cognitive Complexity). Noted weaknesses, which are
+  evidence-strength matters and not tag criteria: reused from Dai et al. (2023); its role is ordering; fitted to three
+  nesting levels with level 2 interpolated; never validated against held-out defects.
+- **Effects:** `followup:tagging` removed. `final:*` recomputed by `compute_final.py` semantics, written for Dai only
+  (the other 72 are byte-identical to `final_tags_2026-10-04.json` apart from two title-case changes): **73 items ·
+  851 tags** (778 theme/facet + 73 primary; 658 modal+human · 120 human-only · 0 silence). Snapshot
+  `slr-phase4/data/final_tags_2026-11-05.json`. Per-slug moves: risk-routing 17→18 (primary 4→5),
+  oversight-explanation 27→28, design-only 15→16, method-experiment 18→19, metrics 20→21, risk-quality 47→48,
+  general-code 11→12. The Figure A1 counts are unchanged.
